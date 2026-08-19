@@ -15,6 +15,13 @@ export class AuctionSlotsComponent {
     this.activeRole = 'A'; // 'P' | 'D' | 'C' | 'A' | 'ALL'
     this.searchQuery = '';
     this.onlyAvailable = false;
+    // Su mobile: Slot 1 aperto di default, gli altri collassati
+    this.collapsedSlots = {
+      slot_1: false,
+      slot_2: true,
+      slot_3: true,
+      slot_4: true
+    };
   }
 
   init() {
@@ -148,23 +155,27 @@ export class AuctionSlotsComponent {
     this.container.innerHTML = `
       <div class="auction-slots-page">
 
-        <!-- Griglia dei 4 Slot da 10 Giocatori -->
+        <!-- Griglia dei 4 Slot da 10 Giocatori (con supporto Accordion su mobile) -->
         <div class="auction-slots-grid">
           ${slotTiersMeta.map((tier, tierIdx) => {
       const players = currentRoleData[tier.slotKey] || [];
       const offset = tierIdx * 10;
       const availableCount = players.filter(p => p.isAvailable !== false).length;
+      const isCollapsed = Boolean(this.collapsedSlots?.[tier.slotKey]);
 
       return `
-              <div class="slot-tier-column" data-slot="${tier.slotKey}">
+              <div class="slot-tier-column ${isCollapsed ? 'is-collapsed' : ''}" data-slot="${tier.slotKey}">
                 <div class="slot-tier-header ${tier.headerClass}">
                   <div class="slot-tier-title-box">
                     <h3><i class="fa-solid ${tier.icon}"></i> ${tier.title}</h3>
                     <div class="slot-tier-desc">${tier.subtitle}</div>
                   </div>
-                  <span class="slot-count-badge" title="Disponibili / Totale nello Slot">
-                    <span style="color: var(--accent-neon-green);">${availableCount}</span>/${players.length}
-                  </span>
+                  <div class="slot-header-right-meta">
+                    <span class="slot-count-badge" title="Disponibili / Totale nello Slot">
+                      <span style="color: var(--accent-neon-green);">${availableCount}</span>/${players.length}
+                    </span>
+                    <i class="fa-solid fa-chevron-down slot-accordion-arrow"></i>
+                  </div>
                 </div>
 
                 <div class="slot-players-list">
@@ -327,29 +338,26 @@ export class AuctionSlotsComponent {
       });
     });
 
-    // Click e Doppio Click su card giocatore
-    this.container.querySelectorAll('.slot-player-card').forEach(card => {
-      // Singolo click -> Seleziona giocatore e squadra
-      card.addEventListener('click', (e) => {
-        if (e.target.closest('.slot-availability-dot-btn') || e.target.closest('.slot-appetibilita-input')) {
-          return;
+    // Accordion Toggle: Cliccando sull'header dello slot espandi/collassi la lista su mobile
+    this.container.querySelectorAll('.slot-tier-header').forEach(header => {
+      header.addEventListener('click', (e) => {
+        if (e.target.closest('button') || e.target.closest('input')) return;
+        const column = header.closest('.slot-tier-column');
+        if (column) {
+          const isNowCollapsed = column.classList.toggle('is-collapsed');
+          const slotKey = column.dataset.slot;
+          if (slotKey) {
+            this.collapsedSlots[slotKey] = isNowCollapsed;
+          }
         }
-        const playerId = card.dataset.playerId;
-        const teamId = card.dataset.teamId;
-        if (teamId && teamId !== store.currentTeamId) {
-          store.setTeam(teamId);
-        }
-        store.selectPlayer(playerId);
       });
+    });
 
-      // Doppio click -> Passa direttamente a Lavagna Tattica, aprendo la squadra e la scheda del giocatore
-      card.addEventListener('dblclick', (e) => {
-        if (e.target.closest('.slot-availability-dot-btn') || e.target.closest('.slot-appetibilita-input')) {
-          return;
-        }
-        e.preventDefault();
-        e.stopPropagation();
+    // Click e Doppio Click / Doppio Tocco su card giocatore nello slot asta
+    this.container.querySelectorAll('.slot-player-card').forEach(card => {
+      let lastTap = 0;
 
+      const handleGoToTacticalWithInspector = () => {
         const playerId = card.dataset.playerId;
         const teamId = card.dataset.teamId;
 
@@ -358,15 +366,70 @@ export class AuctionSlotsComponent {
           store.setTeam(teamId);
         }
 
-        // 2. Seleziona il calciatore (apre la sidebar right / ispettore)
+        // 2. Seleziona il calciatore (apre la scheda)
         store.selectPlayer(playerId);
 
-        // 3. Passa alla vista 'tactical'
+        // 3. Passa alla vista 'tactical' (Campo)
         store.setView('tactical');
+
+        // 4. Desktop: apri sidebar se collassata
+        if (document.body.classList.contains('right-sidebar-collapsed')) {
+          document.body.classList.remove('right-sidebar-collapsed');
+        }
+
+        // 5. Mobile: apri il drawer della scheda laterale e attiva il backdrop
+        const sidebarInspector = document.querySelector('#sidebar-inspector');
+        const sidebarTeams = document.querySelector('#sidebar-teams');
+        const backdrop = document.querySelector('#mobile-drawer-backdrop');
+        const toggleInspectorBtn = document.querySelector('#mobile-inspector-btn');
+        const toggleFieldBtn = document.querySelector('#mobile-field-btn');
+
+        if (window.innerWidth <= 900) {
+          sidebarInspector?.classList.add('mobile-open');
+          sidebarTeams?.classList.remove('mobile-open');
+          backdrop?.classList.remove('hidden');
+          if (toggleInspectorBtn) toggleInspectorBtn.classList.add('active');
+          if (toggleFieldBtn) toggleFieldBtn.classList.remove('active');
+        }
 
         const player = store.getPlayer(playerId);
         const team = store.getTeam(teamId);
         notify.info(`Aperta lavagna tattica (${team ? team.name : ''}) con la scheda di ${player ? player.name : ''}`);
+      };
+
+      // Native dblclick per mouse Desktop
+      card.addEventListener('dblclick', (e) => {
+        if (e.target.closest('.slot-availability-dot-btn') || e.target.closest('.slot-appetibilita-input')) {
+          return;
+        }
+        e.preventDefault();
+        e.stopPropagation();
+        handleGoToTacticalWithInspector();
+      });
+
+      // Click e doppio tocco per Mobile & Desktop
+      card.addEventListener('click', (e) => {
+        if (e.target.closest('.slot-availability-dot-btn') || e.target.closest('.slot-appetibilita-input')) {
+          return;
+        }
+        const now = Date.now();
+        const timesince = now - lastTap;
+
+        if (timesince < 350 && timesince > 0) {
+          // Doppio click / tocco rapido -> Porta al campo con la scheda aperta
+          e.stopPropagation();
+          handleGoToTacticalWithInspector();
+          lastTap = 0;
+        } else {
+          // Singolo click / tocco -> Seleziona giocatore e squadra
+          lastTap = now;
+          const playerId = card.dataset.playerId;
+          const teamId = card.dataset.teamId;
+          if (teamId && teamId !== store.currentTeamId) {
+            store.setTeam(teamId);
+          }
+          store.selectPlayer(playerId);
+        }
       });
     });
   }

@@ -99,124 +99,67 @@ export function createPlayerCard(player, options = {}) {
     const gol = player.stats?.gol ?? 0;
     const assist = player.stats?.assist ?? 0;
 
-    // Card con supporto 3D Flip Card sul campo
+    // Card Tattica sul Campo (Visualizzazione Diretta con tutte le statistiche)
     card.innerHTML = `
-      <div class="card-flip-inner">
-        <!-- FRONTE CARD (Dati Tattici in Primo Piano) -->
-        <div class="card-face card-front">
-          ${!isAvailable ? `
-            <div class="card-taken-overlay" title="Giocatore già acquistato / non disponibile all'asta">
-              <span class="taken-stamp">PRESO</span>
-            </div>
-          ` : ''}
+      <div class="card-glow-border" style="--role-color: ${roleInfo.color}; --status-color: ${statusInfo.color}"></div>
 
-          <!-- NOME CALCIATORE & 3 RIGHE DATI FANTACALCIO -->
-          <div class="card-info">
-            <div class="card-header-row">
-              <div class="player-name" title="${sanitizeHtml(player.name)}">
-                ${sanitizeHtml(displayName)}
-              </div>
-              <div class="card-top-bar">
-                <span class="asta-availability-dot ${isAvailable ? 'is-available' : 'is-taken'}" title="Stato Asta: ${isAvailable ? 'Disponibile (clicca per segnare PRESO)' : 'PRESO (clicca per segnare DISPONIBILE)'}">
-                  <i class="fa-solid ${isAvailable ? 'fa-circle-check' : 'fa-circle-xmark'}"></i>
-                </span>
-              </div>
-            </div>
-            <div class="card-stats-rows">
-              <!-- Riga 1: Appetibilità, Titolarità, Ruolo + Flags -->
-              <div class="card-stats-row">
-                <span class="player-appetibilita ${appetibilitaClass}" title="Indice Appetibilità Fantacalcio: ${appetibilitaVal}/100">
-                  <i class="fa-solid fa-fire"></i>${appetibilitaVal}
-                </span>
-                ${titolarita !== undefined ? `<span class="tit-badge ${titClass}" title="% Titolarità">${titolarita}%</span>` : ''}
-                <span class="slot-role-tag-sub" style="background: ${roleInfo.bgColor}; color: ${roleInfo.color}; border: 1px solid ${roleInfo.borderColor};" title="Posizione: ${player.role}${player.mantraRole ? ` (Mantra: ${player.mantraRole})` : ''}">${player.role || classicRole}</span>
-                ${fantaBadges.join('')}
-              </div>
-
-              <!-- Riga 2: Quotazioni -->
-              <div class="card-stats-row stat-row-nums">
-                <span class="stat-chip" title="Quotazione Iniziale">QtA ${qtA}</span>
-                <span class="stat-chip" title="FantaValore Mercato">FVM ${fvm}</span>
-              </div>
-
-              <!-- Riga 3: Medie -->
-              <div class="card-stats-row stat-row-nums">
-                <span class="stat-chip" title="Fantamedia">FM ${fmVal}</span>
-                <span class="stat-chip" title="Media Voto">MV ${mvVal}</span>
-              </div>
-
-              <!-- Riga 4: Presenze, Gol, Assist -->
-              <div class="card-stats-row stat-row-nums">
-                <span class="stat-chip" title="Presenze"><i class="fa-solid fa-calendar"></i> ${presenze}</span>
-                <span class="stat-chip" title="Goal">⚽ ${gol}</span>
-                <span class="stat-chip" title="Assist">🅰 ${assist}</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- BADGES INFERIORI (Ballottaggio) -->
-          <div class="card-bottom-badges">
-            ${ballottaggioBadge}
-          </div>
+      ${!isAvailable ? `
+        <div class="card-taken-overlay" title="Giocatore già acquistato / non disponibile all'asta">
+          <span class="taken-stamp">PRESO</span>
         </div>
+      ` : ''}
 
-        <!-- RETRO CARD (Note Tattiche & Consigli Asta) -->
-        <div class="card-face card-back">
-          <div class="card-back-header">
-            <span class="card-back-title" title="${sanitizeHtml(player.name)}">${sanitizeHtml(displayName)}</span>
-            <button class="back-flip-close-btn" title="Gira di nuovo al fronte">
-              <i class="fa-solid fa-rotate-left"></i>
-            </button>
-          </div>
-
-          <div class="card-back-content">
-            ${positionNotes.trim() ? `
-              <div class="card-back-section">
-                <span class="back-section-label"><i class="fa-solid fa-clipboard"></i> Tattica:</span>
-                <p class="back-notes-text">${sanitizeHtml(positionNotes)}</p>
-              </div>
-            ` : ''}
-
-            ${fantaComment.trim() ? `
-              <div class="card-back-section">
-                <span class="back-section-label"><i class="fa-solid fa-coins"></i> Asta:</span>
-                <p class="back-notes-text">${sanitizeHtml(fantaComment)}</p>
-              </div>
-            ` : ''}
-
-            ${!hasNotes ? `
-              <p class="back-empty-hint">
-                <i class="fa-regular fa-comment"></i> Nessuna nota.<br/>Apri Scheda per scriverne una!
-              </p>
-            ` : ''}
-          </div>
-
-          <div class="card-back-footer">
-            <span class="back-hint-text"><i class="fa-solid fa-hand-pointer"></i> Doppio click per girare</span>
-          </div>
+      <!-- NOME CALCIATORE & STATO ASTA -->
+      <div class="card-header-row">
+        <div class="player-name" title="${sanitizeHtml(player.name)}">
+          ${sanitizeHtml(displayName)}
+        </div>
+        <div class="card-top-bar">
+          <span class="asta-availability-dot ${isAvailable ? 'is-available' : 'is-taken'}" title="Stato Asta: ${isAvailable ? 'Disponibile (clicca per segnare PRESO)' : 'PRESO (clicca per segnare DISPONIBILE)'}">
+            <i class="fa-solid ${isAvailable ? 'fa-circle-check' : 'fa-circle-xmark'}"></i>
+          </span>
         </div>
       </div>
+
+      <!-- RIGHE STATISTICHE COMPLETE FANTACALCIO -->
+      <div class="card-stats-rows">
+        <!-- Riga 1: Appetibilità, Titolarità, Ruolo + Flags -->
+        <div class="card-stats-row">
+          <span class="player-appetibilita ${appetibilitaClass}" title="Indice Appetibilità Fantacalcio: ${appetibilitaVal}/100">
+            <i class="fa-solid fa-fire"></i>${appetibilitaVal}
+          </span>
+          ${titolarita !== undefined ? `<span class="tit-badge ${titClass}" title="% Titolarità">${titolarita}%</span>` : ''}
+          <span class="slot-role-tag-sub" style="background: ${roleInfo.bgColor}; color: ${roleInfo.color}; border: 1px solid ${roleInfo.borderColor};" title="Posizione: ${player.role}${player.mantraRole ? ` (Mantra: ${player.mantraRole})` : ''}">${player.role || classicRole}</span>
+          ${fantaBadges.join('')}
+        </div>
+
+        <!-- Riga 2: Quotazione Iniziale & FantaValore Mercato -->
+        <div class="card-stats-row stat-row-nums">
+          <span class="stat-chip" title="Quotazione Attuale (Classic)">QtA ${qtA}</span>
+          <span class="stat-chip" title="FantaValore Mercato (base 1000)">FVM ${fvm}</span>
+        </div>
+
+        <!-- Riga 3: Fantamedia & Media Voto -->
+        <div class="card-stats-row stat-row-nums">
+          <span class="stat-chip" title="Fantamedia">FM ${fmVal}</span>
+          <span class="stat-chip" title="Media Voto">MV ${mvVal}</span>
+        </div>
+
+        <!-- Riga 4: Presenze, Gol, Assist -->
+        <div class="card-stats-row stat-row-nums">
+          <span class="stat-chip" title="Presenze"><i class="fa-solid fa-calendar"></i> ${presenze}</span>
+          <span class="stat-chip" title="Gol Segnati">⚽ ${gol}</span>
+          <span class="stat-chip" title="Assist">🅰 ${assist}</span>
+        </div>
+      </div>
+
+      <!-- BADGES INFERIORI (Ballottaggio) -->
+      ${ballottaggioBadge ? `
+        <div class="card-bottom-badges">
+          ${ballottaggioBadge}
+        </div>
+      ` : ''}
     `;
-
-    // Doppio click sull'intera card per girarla
-    card.addEventListener('dblclick', (e) => {
-      e.stopPropagation();
-      e.preventDefault();
-      card.classList.toggle('is-flipped');
-    });
-
-    const backFace = card.querySelector('.card-back');
-    backFace?.addEventListener('click', (e) => {
-      e.stopPropagation();
-      card.classList.remove('is-flipped');
-    });
-
-    const closeBackBtn = card.querySelector('.back-flip-close-btn');
-    closeBackBtn?.addEventListener('click', (e) => {
-      e.stopPropagation();
-      card.classList.remove('is-flipped');
-    });
-
   } else {
     // Card standard per Panchina (compatta)
     card.innerHTML = `
@@ -253,6 +196,60 @@ export function createPlayerCard(player, options = {}) {
       </div>
     `;
   }
+
+  // Gestione Universale Click (selezione) e Doppio Click / Doppio Tocco (apertura scheda)
+  let lastTapTime = 0;
+
+  const triggerOpenInspector = () => {
+    store.selectPlayer(player.id, slotId);
+
+    // Desktop: apri sidebar destra se collassata
+    if (document.body.classList.contains('right-sidebar-collapsed')) {
+      document.body.classList.remove('right-sidebar-collapsed');
+    }
+
+    // Mobile: apri drawer sidebar destra
+    const sidebarInspector = document.querySelector('#sidebar-inspector');
+    const sidebarTeams = document.querySelector('#sidebar-teams');
+    const backdrop = document.querySelector('#mobile-drawer-backdrop');
+    const toggleInspectorBtn = document.querySelector('#mobile-inspector-btn');
+    const toggleFieldBtn = document.querySelector('#mobile-field-btn');
+
+    if (window.innerWidth <= 900) {
+      sidebarInspector?.classList.add('mobile-open');
+      sidebarTeams?.classList.remove('mobile-open');
+      backdrop?.classList.remove('hidden');
+      if (toggleInspectorBtn) toggleInspectorBtn.classList.add('active');
+      if (toggleFieldBtn) toggleFieldBtn.classList.remove('active');
+    }
+  };
+
+  // 1. Native dblclick per mouse Desktop
+  card.addEventListener('dblclick', (e) => {
+    if (e.target.closest('.asta-availability-dot')) return;
+    e.stopPropagation();
+    e.preventDefault();
+    triggerOpenInspector();
+  });
+
+  // 2. Click / Touch handler per singolo click (selezione) e doppio tocco mobile (<350ms)
+  card.addEventListener('click', (e) => {
+    if (e.target.closest('.asta-availability-dot')) return;
+    e.stopPropagation();
+
+    const currentTime = Date.now();
+    const tapLength = currentTime - lastTapTime;
+
+    if (tapLength < 350 && tapLength > 0) {
+      // Doppio tocco / click rapido -> Apre la scheda
+      triggerOpenInspector();
+      lastTapTime = 0;
+    } else {
+      // Singolo tocco / click -> Seleziona il giocatore
+      lastTapTime = currentTime;
+      store.selectPlayer(player.id, slotId);
+    }
+  });
 
   // Listener per toggle rapido disponibilità asta
   const astaToggleBtn = card.querySelector('.asta-availability-dot');

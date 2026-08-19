@@ -5,10 +5,11 @@
 .player-card {
   position: relative;
   width: 150px;
-  height: 64px;
+  height: auto;
+  min-height: 68px;
   background: linear-gradient(145deg, #162238 0%, #0d1524 100%);
   border-radius: var(--radius-sm);
-  padding: 3px 5px 2px 5px;
+  padding: 3px 5px 3px 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -542,208 +543,12 @@
 }
 
 /* ==========================================================================
-   3D FLIP CARD TATTICA SUL CAMPO (NOTE & COMMENTI SUL RETRO)
+   CARD TATTICA SUL CAMPO
    ========================================================================== */
 .pitch-slot-card {
-  perspective: 1000px;
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  padding: 0 !important;
-  height: auto;
-  min-height: 74px;
+  cursor: grab;
 }
 
-.card-flip-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  transform-style: preserve-3d;
-}
-
-.player-card.is-flipped .card-flip-inner {
-  transform: rotateY(180deg);
-}
-
-.card-face {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  border-radius: var(--radius-md);
-  box-shadow:
-    0 8px 20px rgba(0, 0, 0, 0.75),
-    inset 0 1px 1px rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-}
-
-.card-face.card-front {
-  background: linear-gradient(145deg, #162238 0%, #0d1524 100%);
-  padding: 2px 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  z-index: 2;
-  transform: rotateY(0deg);
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-.card-face.card-back {
-  background: linear-gradient(145deg, #0d1829 0%, #080e1a 100%);
-  transform: rotateY(180deg);
-  padding: 6px 7px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: left;
-  border-color: rgba(0, 210, 255, 0.4);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.85), 0 0 14px rgba(0, 210, 255, 0.2);
-  z-index: 1;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.card-back-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding-bottom: 3px;
-  margin-bottom: 2px;
-}
-
-.card-back-title {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 800;
-  font-size: 0.72rem;
-  color: var(--accent-neon-cyan);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 60px;
-}
-
-.back-flip-close-btn {
-  background: none;
-  border: none;
-  color: var(--text-dim);
-  cursor: pointer;
-  padding: 0 2px;
-  font-size: 0.72rem;
-  transition: var(--transition-fast);
-}
-
-.back-flip-close-btn:hover {
-  color: var(--accent-neon-green);
-  transform: rotate(180deg);
-}
-
-.card-back-content {
-  flex: 1;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  font-size: 0.62rem;
-  color: #e2e8f0;
-  line-height: 1.15;
-}
-
-.card-back-section {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-}
-
-.back-section-label {
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 800;
-  font-size: 0.65rem;
-  color: #ffb703;
-  display: flex;
-  align-items: center;
-  gap: 3px;
-  text-transform: uppercase;
-}
-
-.back-notes-text {
-  font-size: 0.6rem;
-  color: #cbd5e1;
-  word-break: break-word;
-  max-height: 40px;
-  overflow-y: auto;
-  line-height: 1.15;
-}
-
-.back-empty-hint {
-  font-size: 0.58rem;
-  color: var(--text-dim);
-  font-style: italic;
-  text-align: center;
-  margin-top: 4px;
-}
-
-.card-back-footer {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  padding-top: 2px;
-  margin-top: 2px;
-  text-align: center;
-}
-
-.back-hint-text {
-  font-size: 0.55rem;
-  color: var(--text-muted);
-  display: inline-flex;
-  align-items: center;
-  gap: 3px;
-}
-
-/* Pulsante Flip sulla Card Frontale */
-.card-flip-trigger-btn {
-  background: rgba(10, 14, 23, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: var(--text-muted);
-  border-radius: 50%;
-  width: 17px;
-  height: 17px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.55rem;
-  cursor: pointer;
-  transition: var(--transition-fast);
-  margin-left: 1px;
-}
-
-.card-flip-trigger-btn:hover {
-  color: var(--accent-neon-cyan);
-  border-color: var(--accent-neon-cyan);
-  background: rgba(0, 210, 255, 0.2);
-  transform: scale(1.15);
-}
-
-.card-flip-trigger-btn.has-notes {
-  color: #ffb703;
-  border-color: rgba(255, 183, 3, 0.6);
-  background: rgba(255, 183, 3, 0.18);
-  box-shadow: 0 0 6px rgba(255, 183, 3, 0.5);
-  animation: notesGlowPulse 2.5s infinite ease-in-out;
-}
-
-@keyframes notesGlowPulse {
-
-  0%,
-  100% {
-    box-shadow: 0 0 4px rgba(255, 183, 3, 0.4);
-  }
-
-  50% {
-    box-shadow: 0 0 8px rgba(255, 183, 3, 0.8);
-  }
+.pitch-slot-card:active {
+  cursor: grabbing;
 }

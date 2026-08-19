@@ -434,24 +434,31 @@ body.is-resizing-sidebar .sidebar-resizer {
 /* Checkbox Specialisti Piazzati */
 .specialists-checkbox-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
   margin-bottom: 12px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .checkbox-chip {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
   background: var(--bg-secondary);
   border: 1px solid var(--border-color);
-  padding: 6px 8px;
+  padding: 6px 6px;
   border-radius: var(--radius-sm);
-  font-size: 0.78rem;
+  font-size: 0.74rem;
   font-weight: 600;
   color: var(--text-muted);
   cursor: pointer;
   transition: var(--transition-fast);
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
 }
 
 .checkbox-chip input {
@@ -465,7 +472,8 @@ body.is-resizing-sidebar .sidebar-resizer {
 }
 
 .chip-icon {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  flex-shrink: 0;
 }
 
 /* Badge Ufficiale da CSV */
@@ -482,25 +490,33 @@ body.is-resizing-sidebar .sidebar-resizer {
   align-items: center;
   gap: 4px;
   text-transform: uppercase;
+  flex-shrink: 0;
 }
 
-/* Griglia Statistiche Ufficiali Sola Lettura */
+/* Griglia Statistiche Ufficiali Sola Lettura (Fluida e Auto-Adattante) */
 .stats-display-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 8px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .stat-display-card {
   background: var(--bg-secondary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
-  padding: 6px 6px;
+  padding: 6px 3px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   transition: var(--transition-fast);
+  min-width: 0;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .stat-display-card:hover {
@@ -509,24 +525,31 @@ body.is-resizing-sidebar .sidebar-resizer {
 }
 
 .stat-d-label {
-  font-size: 0.62rem;
+  font-size: 0.58rem;
   font-weight: 700;
   color: var(--text-dim);
   text-transform: uppercase;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   margin-bottom: 2px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100%;
+  width: 100%;
+  display: block;
 }
 
 .stat-d-value {
   font-family: 'Rajdhani', sans-serif;
   font-weight: 800;
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   color: #ffffff;
   line-height: 1.1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  width: 100%;
 }
 
 .stat-display-card.highlight-fm .stat-d-value {

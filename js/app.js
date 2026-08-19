@@ -219,31 +219,84 @@ class App {
     // Tasti mobili per aprire drawer squadre e ispettore
     const toggleTeamsBtn = document.querySelector('#mobile-teams-btn');
     const toggleFieldBtn = document.querySelector('#mobile-field-btn');
+    const toggleAuctionBtn = document.querySelector('#mobile-auction-btn');
     const toggleInspectorBtn = document.querySelector('#mobile-inspector-btn');
     const sidebarTeams = document.querySelector('#sidebar-teams');
     const sidebarInspector = document.querySelector('#sidebar-inspector');
+    const backdrop = document.querySelector('#mobile-drawer-backdrop');
+
+    const updateMobileNav = (activeId) => {
+      [toggleTeamsBtn, toggleFieldBtn, toggleAuctionBtn, toggleInspectorBtn].forEach(btn => {
+        if (btn) {
+          btn.classList.toggle('active', btn.id === activeId);
+        }
+      });
+    };
+
+    const closeDrawers = () => {
+      sidebarTeams?.classList.remove('mobile-open');
+      sidebarInspector?.classList.remove('mobile-open');
+      backdrop?.classList.add('hidden');
+      if (store.activeView === 'auction_slots') {
+        updateMobileNav('mobile-auction-btn');
+      } else {
+        updateMobileNav('mobile-field-btn');
+      }
+    };
+
+    const openLeftDrawer = () => {
+      sidebarTeams?.classList.add('mobile-open');
+      sidebarInspector?.classList.remove('mobile-open');
+      backdrop?.classList.remove('hidden');
+      updateMobileNav('mobile-teams-btn');
+    };
+
+    const openRightDrawer = () => {
+      sidebarInspector?.classList.add('mobile-open');
+      sidebarTeams?.classList.remove('mobile-open');
+      backdrop?.classList.remove('hidden');
+      updateMobileNav('mobile-inspector-btn');
+    };
 
     toggleTeamsBtn?.addEventListener('click', () => {
-      sidebarTeams.classList.toggle('mobile-open');
-      sidebarInspector.classList.remove('mobile-open');
+      if (sidebarTeams?.classList.contains('mobile-open')) {
+        closeDrawers();
+      } else {
+        openLeftDrawer();
+      }
     });
 
     toggleFieldBtn?.addEventListener('click', () => {
-      sidebarTeams.classList.remove('mobile-open');
-      sidebarInspector.classList.remove('mobile-open');
+      closeDrawers();
+      this.switchView('tactical');
+    });
+
+    toggleAuctionBtn?.addEventListener('click', () => {
+      closeDrawers();
+      this.switchView('auction_slots');
     });
 
     toggleInspectorBtn?.addEventListener('click', () => {
-      sidebarInspector.classList.toggle('mobile-open');
-      sidebarTeams.classList.remove('mobile-open');
-    });
-
-    // Chiudi drawer al click su elementi interni
-    document.addEventListener('click', (e) => {
-      if (e.target.closest('.team-list-item')) {
-        sidebarTeams.classList.remove('mobile-open');
+      if (sidebarInspector?.classList.contains('mobile-open')) {
+        closeDrawers();
+      } else {
+        openRightDrawer();
       }
     });
+
+    backdrop?.addEventListener('click', closeDrawers);
+
+    // Chiudi drawer al click su elementi interni come cambio squadra o pulsanti di chiusura
+    document.addEventListener('click', (e) => {
+      if (e.target.closest('.team-list-item') && window.innerWidth <= 900) {
+        closeDrawers();
+      }
+      if (e.target.closest('.mobile-drawer-close-btn')) {
+        closeDrawers();
+      }
+    });
+
+
 
     // Sidebar sinistra chiudibile (desktop) / drawer (mobile)
     const COLLAPSE_KEY = 'fantaoliva_left_sidebar_collapsed';

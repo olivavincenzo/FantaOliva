@@ -272,15 +272,27 @@
   margin-top: 2px;
 }
 
-.slot-count-badge {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 0.78rem;
-  font-weight: 800;
-  padding: 2px 8px;
-  border-radius: var(--radius-pill);
-  background: rgba(10, 14, 23, 0.8);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: var(--text-primary);
+.slot-header-right-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.slot-accordion-arrow {
+  display: none;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  transition: transform var(--transition-fast);
+}
+
+.slot-tier-header {
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-glass);
+  cursor: pointer;
+  user-select: none;
 }
 
 /* Lista Giocatori dentro lo Slot */
