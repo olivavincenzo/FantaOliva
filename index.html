@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>FantaOliva - Serie A Tactical Board & Fantacalcio</title>
+  <meta name="description" content="Lavagna tattica interattiva per il Fantacalcio e le squadre di Serie A con interfaccia EA Sports FC / FIFA. Moduli, titolari, panchina, ballottaggi e statistiche.">
+  <meta name="theme-color" content="#0a0e17">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Rajdhani:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/pitch.css">
+  <link rel="stylesheet" href="css/player-card.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/modals.css">
+  <link rel="stylesheet" href="css/auction-slots.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <div class="app-layout">
+    
+    <!-- HEADER TATTICO SUPERIORE -->
+    <header class="app-header">
+      
+      <!-- Sezione Sinistra: Logo Brand FantaOliva -->
+      <div class="header-left-section">
+        <div class="brand-logo-glow">
+          <i class="fa-solid fa-futbol"></i>
+        </div>
+        <div class="brand-titles">
+          <h1 class="brand-name">FANTA<span class="brand-accent">OLIVA</span></h1>
+          <span class="brand-tagline">SERIE A TACTICAL BOARD</span>
+        </div>
+      </div>
+
+      <!-- Sezione Centrale: Switcher Viste (Lavagna Tattica / Guida Slot Asta) -->
+      <div class="header-center-section">
+        <div class="view-switch-nav">
+          <button id="view-tab-tactical" class="view-switch-btn is-active" title="Visualizza Campo e Lavagna Tattica">
+            <i class="fa-solid fa-futbol"></i> <span>Lavagna Tattica</span>
+          </button>
+          <button id="view-tab-auction" class="view-switch-btn" title="Visualizza Guida Asta con i 4 Slot da 10 Giocatori">
+            <i class="fa-solid fa-layer-group"></i> <span>Guida Slot Asta</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Sezione Destra: Azioni Globali -->
+      <div class="header-right-section">
+        <button id="open-import-csv-btn" class="fanta-btn secondary-btn" title="Importa file CSV Statistiche Fantacalcio">
+          <i class="fa-solid fa-file-csv"></i> <span class="btn-text-hide">Importa CSV</span>
+        </button>
+        <button id="open-team-notes-btn" class="fanta-btn secondary-btn" title="Note generali sulla squadra e strategie">
+          <i class="fa-solid fa-clipboard-list"></i> <span class="btn-text-hide">Note</span>
+        </button>
+        <button id="open-history-btn" class="fanta-btn secondary-btn" title="Storico versioni e formazioni">
+          <i class="fa-solid fa-clock-rotate-left"></i> <span class="btn-text-hide">Storico</span>
+        </button>
+        <button id="export-image-btn" class="fanta-btn secondary-btn" title="Scarica immagine della formazione per WhatsApp/Social">
+          <i class="fa-solid fa-camera"></i> <span class="btn-text-hide">PNG</span>
+        </button>
+        <button id="save-formation-btn" class="fanta-btn primary-btn" title="Salva modifiche della formazione">
+          <i class="fa-solid fa-floppy-disk"></i> <span>Salva</span>
+        </button>
+        <button id="reset-formation-btn" class="fanta-btn danger-btn icon-only-btn" title="Ripristina formazione di default">
+          <i class="fa-solid fa-rotate-left"></i>
+        </button>
+      </div>
+
+    </header>
+
+    <!-- VISTA 1: LAVAGNA TATTICA INTERATTIVA (CAMPO + SIDEBARS) -->
+    <div class="tactical-view-wrapper" id="tactical-view-wrapper">
+      <!-- SIDEBAR SINISTRA: SELETTORE SQUADRE SERIE A -->
+      <aside class="app-sidebar-left" id="sidebar-teams" aria-label="Elenco Squadre Serie A">
+        <!-- Rendered by TeamSelectorComponent -->
+      </aside>
+
+      <!-- ZONA CENTRALE: CAMPO DA CALCIO TATTICO -->
+      <main class="app-main-content" id="main-content">
+        
+        <!-- Toolbar Tattica Centrale (Modulo + Linee + Posizione Libera + Reset) -->
+        <div class="pitch-tactical-toolbar" id="pitch-tactical-toolbar">
+          <div class="formation-selector-group" id="header-formation-group">
+            <label for="formation-select" class="formation-label">MODULO</label>
+            <select id="formation-select" class="formation-select" aria-label="Seleziona Modulo Tattico">
+              <!-- Popolato via JS -->
+            </select>
+          </div>
+
+          <div class="tactical-toggles-group" id="header-toggles-group">
+            <button id="toggle-lines-btn" class="fanta-btn secondary-btn is-active" title="Mostra/Nascondi linee di coordinazione tattica">
+              <i class="fa-solid fa-diagram-project"></i> <span class="btn-text-hide">Linee</span>
+            </button>
+            <button id="toggle-free-drag-btn" class="fanta-btn secondary-btn" title="Modalità Posizionamento Libero: trascina i giocatori ovunque sul campo">
+              <i class="fa-solid fa-up-down-left-right"></i> <span class="btn-text-hide">Pos. Libera</span>
+            </button>
+            <button id="reset-positions-btn" class="fanta-btn secondary-btn icon-only-btn" title="Riallinea posizioni standard del modulo">
+              <i class="fa-solid fa-arrows-to-dot"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="pitch-container" id="pitch-container">
+          <!-- Rendered by PitchComponent -->
+        </div>
+      </main>
+
+      <!-- SEPARATORE DI RIDIMENSIONAMENTO SCHEDA GIOCATORE -->
+      <div class="sidebar-resizer" id="sidebar-inspector-resizer" title="Trascina verso sinistra per allargare la scheda giocatore"></div>
+
+      <!-- SIDEBAR DESTRA: ISPETTORE GIOCATORE, SOSTITUTI & PANCHINA -->
+      <aside class="app-sidebar-right" id="sidebar-inspector" aria-label="Scheda Giocatore e Panchina">
+        <!-- Rendered by PlayerInspectorComponent -->
+      </aside>
+    </div>
+
+    <!-- VISTA 2: GUIDA ASTA PER SLOT (4 SLOT DA 10 GIOCATORI PER RUOLO) -->
+    <div class="auction-view-wrapper hidden" id="auction-view-wrapper">
+      <!-- Rendered by AuctionSlotsComponent -->
+    </div>
+
+    <!-- BARRA MOBILE INFERIORE -->
+    <nav class="mobile-action-bar" aria-label="Menu Mobile">
+      <button id="mobile-teams-btn" class="mobile-nav-btn">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>Squadre</span>
+      </button>
+      <button id="mobile-field-btn" class="mobile-nav-btn active">
+        <i class="fa-solid fa-futbol"></i>
+        <span>Campo</span>
+      </button>
+      <button id="mobile-auction-btn" class="mobile-nav-btn">
+        <i class="fa-solid fa-layer-group"></i>
+        <span>Slot Asta</span>
+      </button>
+      <button id="mobile-inspector-btn" class="mobile-nav-btn">
+        <i class="fa-solid fa-clipboard-user"></i>
+        <span>Scheda</span>
+      </button>
+      <button id="mobile-notes-btn" class="mobile-nav-btn" onclick="document.querySelector('#open-team-notes-btn').click()">
+        <i class="fa-solid fa-file-pen"></i>
+        <span>Note</span>
+      </button>
+    </nav>
+
+  </div>
+
+  <!-- ==========================================================================
+       FINESTRE MODALI
+       ========================================================================== -->
+
+  <!-- MODALE: NOTE DI SQUADRA -->
+  <div class="modal-backdrop hidden" id="team-notes-modal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-header">
+        <h3 class="modal-title" id="team-notes-title"><i class="fa-solid fa-clipboard-list"></i> Note Tattiche Squadra</h3>
+        <button class="modal-close-btn" id="close-team-notes-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="section-desc">Inserisci annotazioni generali sulla gestione tattica, turnover per le coppe, gerarchie calci piazzati e consigli generali per il fantacalcio.</p>
+        <textarea id="team-notes-textarea" class="fanta-textarea" rows="12" placeholder="Scrivi qui le note tattiche della squadra..."></textarea>
+      </div>
+      <div class="modal-footer">
+        <button class="fanta-btn secondary-btn" id="cancel-team-notes-btn">Annulla</button>
+        <button class="fanta-btn success-btn" id="save-team-notes-btn"><i class="fa-solid fa-floppy-disk"></i> Salva Note</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODALE: STORICO VERSIONI & SNAPSHOT -->
+  <div class="modal-backdrop hidden" id="history-modal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-header">
+        <h3 class="modal-title"><i class="fa-solid fa-clock-rotate-left"></i> Storico Formazioni & Versioni</h3>
+        <button class="modal-close-btn" id="close-history-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="history-create-box">
+          <input type="text" id="snapshot-name-input" class="fanta-input" placeholder="Nome versione (es. 1ª Giornata vs Juventus)..." />
+          <button id="create-snapshot-btn" class="fanta-btn primary-btn">
+            <i class="fa-solid fa-camera-retro"></i> Salva Snapshot
+          </button>
+        </div>
+
+        <div class="history-list-box" id="history-list-container">
+          <!-- Rendered by HistoryManager -->
+        </div>
+
+        <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid var(--border-color); display: flex; gap: 10px; justify-content: flex-end;">
+          <button id="export-json-btn" class="fanta-btn secondary-btn btn-sm">
+            <i class="fa-solid fa-download"></i> Scarica Backup JSON
+          </button>
+          <button id="import-json-btn" class="fanta-btn secondary-btn btn-sm">
+            <i class="fa-solid fa-upload"></i> Importa Backup JSON
+          </button>
+          <input type="file" id="import-file-input" accept=".json" class="hidden" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODALE: AGGIUNGI GIOCATORE (CATALOGO CSV & PERSONALIZZATO) -->
+  <div class="modal-backdrop hidden" id="add-player-modal" role="dialog" aria-modal="true">
+    <div class="fanta-modal modal-lg">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <i class="fa-solid fa-user-plus modal-title-icon" style="color: var(--accent-neon-green);"></i>
+          <h3 class="modal-title">Aggiungi Giocatore alla Rosa</h3>
+        </div>
+        <button class="modal-close-btn" id="close-add-player-btn" aria-label="Chiudi modale">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Tab Switcher: Catalogo CSV vs Personalizzato -->
+      <div class="modal-tabs-header">
+        <button type="button" class="modal-tab-btn is-active" id="tab-csv-catalog-btn">
+          <i class="fa-solid fa-database"></i> Cerca nel Database Serie A (CSV)
+        </button>
+        <button type="button" class="modal-tab-btn" id="tab-custom-player-btn">
+          <i class="fa-solid fa-pen-to-square"></i> Crea Giocatore Manuale
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <!-- SEZIONE 1: RICERCA NEL CATALOGO CSV (DEFAULT) -->
+        <div id="catalog-section">
+          <div class="catalog-search-bar">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input 
+              type="text" 
+              id="catalog-search-input" 
+              class="fanta-input search-input" 
+              placeholder="Cerca per nome, squadra o ruolo (es. Kean, Koopmeiners, Lukaku, Barella, Retegui...)" 
+              autocomplete="off"
+            />
+            <button type="button" id="catalog-clear-btn" class="clear-search-btn hidden">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <!-- Filtri Ruolo Rapidi -->
+          <div class="catalog-role-filters">
+            <button type="button" class="filter-pill is-active" data-role-filter="ALL">TUTTI</button>
+            <button type="button" class="filter-pill" data-role-filter="P">PORTIERI</button>
+            <button type="button" class="filter-pill" data-role-filter="D">DIFENSORI</button>
+            <button type="button" class="filter-pill" data-role-filter="C">CENTROCAMPISTI</button>
+            <button type="button" class="filter-pill" data-role-filter="A">ATTACCANTI</button>
+          </div>
+
+          <!-- Lista Risultati Giocatori dal CSV -->
+          <div class="catalog-results-list" id="catalog-results-list">
+            <!-- I risultati vengono renderizzati dinamicamente da JS -->
+          </div>
+        </div>
+
+        <!-- SEZIONE 2: CREAZIONE MANUALE (HIDDEN BY DEFAULT) -->
+        <form id="add-player-form" class="hidden">
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label>Nome Completo Giocatore:</label>
+              <input type="text" id="new-player-name" class="fanta-input" placeholder="Es. Mario Rossi" required />
+            </div>
+            <div class="form-group">
+              <label><i class="fa-solid fa-fire" style="color: #ff4d4d;"></i> Appetibilità (0-100):</label>
+              <input type="number" id="new-player-appetibilita" class="fanta-input" min="0" max="100" value="50" />
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label>Ruolo Tattico:</label>
+              <select id="new-player-role" class="fanta-select">
+                <option value="POR">POR - Portiere</option>
+                <option value="DC">DC - Difensore Centrale</option>
+                <option value="TD">TD - Terzino Destro</option>
+                <option value="TS">TS - Terzino Sinistro</option>
+                <option value="E">E - Esterno a Tutta Fascia</option>
+                <option value="M">M - Mediano</option>
+                <option value="C" selected>C - Centrocampista / Mezzala</option>
+                <option value="T">T - Trequartista</option>
+                <option value="W">W - Ala Offensiva</option>
+                <option value="A">A - Seconda Punta</option>
+                <option value="PC">PC - Punta Centrale</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Ruolo Fantacalcio:</label>
+              <select id="new-player-fantaRole" class="fanta-select">
+                <option value="P">P - Portiere</option>
+                <option value="D">D - Difensore</option>
+                <option value="C" selected>C - Centrocampista</option>
+                <option value="A">A - Attaccante</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Stato Iniziale:</label>
+            <select id="new-player-status" class="fanta-select">
+              <option value="tit_sicuro">🟢 Titolare sicuro</option>
+              <option value="probabile">🟢 Probabile titolare</option>
+              <option value="ballottaggio">🟡 In ballottaggio</option>
+              <option value="turnover">🟠 Possibile turnover</option>
+              <option value="riserva" selected>⚪ Riserva</option>
+              <option value="infortunato">🔴 Infortunato</option>
+              <option value="squalificato">🔴 Squalificato</option>
+            </select>
+          </div>
+
+          <div class="specialists-checkbox-row" style="margin-top: 10px;">
+            <label class="checkbox-chip">
+              <input type="checkbox" id="new-player-rigorista" />
+              <span class="chip-icon">🎯</span> Rigorista
+            </label>
+            <label class="checkbox-chip">
+              <input type="checkbox" id="new-player-punizioni" />
+              <span class="chip-icon">📐</span> Punizioni
+            </label>
+            <label class="checkbox-chip">
+              <input type="checkbox" id="new-player-corner" />
+              <span class="chip-icon">🚩</span> Corner
+            </label>
+          </div>
+
+          <div class="form-grid-2" style="margin-top: 10px;">
+            <div class="form-group">
+              <label>Fantamedia Iniziale:</label>
+              <input type="number" id="new-player-fantamedia" class="fanta-input" step="0.1" value="6.0" />
+            </div>
+            <div class="form-group">
+              <label>Media Voto:</label>
+              <input type="number" id="new-player-mediaVoto" class="fanta-input" step="0.1" value="6.0" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Note / Commento:</label>
+            <textarea id="new-player-comment" class="fanta-textarea" rows="2" placeholder="Annotazioni sul giocatore..."></textarea>
+          </div>
+
+          <div class="modal-footer" style="padding-left: 0; padding-right: 0; margin-top: 16px;">
+            <button type="button" class="fanta-btn secondary-btn" id="cancel-add-player-btn">Annulla</button>
+            <button type="submit" class="fanta-btn primary-btn"><i class="fa-solid fa-user-plus"></i> Salva e Aggiungi</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="modal-footer" id="catalog-footer">
+        <button type="button" class="fanta-btn secondary-btn" id="close-catalog-btn">Chiudi</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODALE IMPORTAZIONE CSV STATISTICHE -->
+  <div class="modal-backdrop hidden" id="import-csv-modal" role="dialog" aria-modal="true" aria-labelledby="import-csv-title">
+    <div class="fanta-modal modal-md">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <i class="fa-solid fa-file-csv modal-title-icon" style="color: var(--accent-neon-green);"></i>
+          <h3 id="import-csv-title">Importa Statistiche da CSV</h3>
+        </div>
+        <button class="modal-close-btn" id="close-import-csv-btn" aria-label="Chiudi modale">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-description">
+          Carica il file ufficiale delle statistiche Fantacalcio (formato <code>.csv</code>) per aggiornare automaticamente le statistiche, i voti, i gol, gli assist e i rigori di tutti i giocatori di Serie A.
+        </p>
+
+        <!-- Dropzone per il file CSV -->
+        <div class="csv-dropzone" id="csv-dropzone">
+          <i class="fa-solid fa-cloud-arrow-up dropzone-icon"></i>
+          <span class="dropzone-text">Trascina qui il file <strong>.csv</strong> oppure</span>
+          <label class="fanta-btn primary-btn btn-sm dropzone-btn">
+            <i class="fa-solid fa-folder-open"></i> Seleziona File CSV
+            <input type="file" id="csv-file-input" accept=".csv" class="hidden" />
+          </label>
+        </div>
+
+        <!-- Preview del caricamento -->
+        <div class="csv-preview-container hidden" id="csv-preview-container">
+          <div class="csv-file-info">
+            <i class="fa-solid fa-file-lines"></i>
+            <span class="csv-file-name" id="csv-file-name">statistiche.csv</span>
+            <span class="csv-file-size" id="csv-file-size">39 KB</span>
+          </div>
+          <div class="csv-stats-summary" id="csv-stats-summary">
+            <span class="csv-badge"><i class="fa-solid fa-shield-halved"></i> <strong id="csv-teams-count">0</strong> Squadre</span>
+            <span class="csv-badge"><i class="fa-solid fa-users"></i> <strong id="csv-players-count">0</strong> Giocatori</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="fanta-btn secondary-btn" id="cancel-import-csv-btn">Annulla</button>
+        <button class="fanta-btn success-btn hidden" id="apply-csv-btn">
+          <i class="fa-solid fa-bolt"></i> Applica Statistiche
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notifications Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Main JavaScript App Entry -->
+  <script type="module" src="js/app.js"></script>
+
+</body>
+</html>

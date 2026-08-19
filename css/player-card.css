@@ -1,0 +1,425 @@
+/**
+ * FantaOliva - Stili Card Giocatore (EA Sports FC Tactical Card Aesthetics)
+ */
+
+.player-card {
+  position: relative;
+  width: 76px;
+  height: 84px;
+  background: linear-gradient(145deg, #162238 0%, #0d1524 100%);
+  border-radius: var(--radius-md);
+  padding: 4px 5px 3px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 
+    0 6px 16px rgba(0, 0, 0, 0.7),
+    inset 0 1px 1px rgba(255, 255, 255, 0.15);
+  cursor: grab;
+  touch-action: none;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-fast);
+  user-select: none;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.player-card:active {
+  cursor: grabbing;
+}
+
+.player-card:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 
+    0 12px 28px rgba(0, 0, 0, 0.9),
+    0 0 15px rgba(0, 255, 135, 0.3);
+  border-color: rgba(0, 255, 135, 0.6);
+  z-index: 30;
+}
+
+/* Card Selezionata */
+.player-card.is-selected {
+  border-color: var(--accent-neon-green) !important;
+  box-shadow: 
+    0 0 20px rgba(0, 255, 135, 0.6),
+    0 10px 25px rgba(0, 0, 0, 0.8) !important;
+  transform: translateY(-2px) scale(1.04);
+}
+
+.player-card.is-selected::after {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border: 2px solid var(--accent-neon-green);
+  border-radius: calc(var(--radius-md) + 3px);
+  pointer-events: none;
+  animation: selectPulse 2s infinite ease-in-out;
+}
+
+@keyframes selectPulse {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 0.3; }
+}
+
+/* Card in fase di trascinamento */
+.player-card.is-being-dragged {
+  opacity: 0.35;
+  transform: scale(0.95);
+}
+
+/* Evidenziazione Drop Target */
+.player-card.drop-target-hover, .pitch-slot-card.drop-target-hover {
+  border-color: var(--accent-neon-cyan) !important;
+  box-shadow: 0 0 25px rgba(0, 210, 255, 0.8) !important;
+  transform: scale(1.08) !important;
+}
+
+/* Card Top Bar (Numero, Ruolo, Status Dot) */
+.card-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  line-height: 1;
+}
+
+.player-appetibilita {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 0 4px;
+  border-radius: 3px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  background: rgba(10, 14, 23, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffb703;
+}
+
+.player-appetibilita i {
+  font-size: 0.58rem;
+}
+
+.player-appetibilita.app-high {
+  color: #ff4d4d;
+  border-color: rgba(255, 77, 77, 0.45);
+  background: rgba(255, 77, 77, 0.12);
+  text-shadow: 0 0 6px rgba(255, 77, 77, 0.6);
+}
+
+.player-appetibilita.app-mid {
+  color: #ffb703;
+  border-color: rgba(255, 183, 3, 0.45);
+  background: rgba(255, 183, 3, 0.1);
+}
+
+.player-appetibilita.app-low {
+  color: #94a3b8;
+  border-color: rgba(148, 163, 184, 0.3);
+  background: rgba(148, 163, 184, 0.08);
+}
+
+.role-badge {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.62rem;
+  font-weight: 800;
+  padding: 1px 3px;
+  border-radius: 3px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Avatar / Silhouette */
+.card-avatar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.card-avatar-initials {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 0.8rem;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Info Giocatore */
+.card-info {
+  text-align: center;
+  width: 100%;
+}
+
+.player-name {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 0.68rem;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.1;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+  max-width: 66px;
+  margin: 0 auto;
+}
+
+.player-submeta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 0.58rem;
+  color: var(--text-muted);
+  margin-top: 1px;
+}
+
+.fanta-role-tag {
+  font-weight: 700;
+  color: var(--accent-neon-cyan);
+}
+
+.fm-score {
+  color: var(--accent-gold);
+  font-weight: 600;
+}
+
+/* Badge Inferiori & Ballottaggio */
+.card-bottom-badges {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  min-height: 12px;
+}
+
+.fanta-badge {
+  font-size: 0.6rem;
+  line-height: 1;
+}
+
+.ballottaggio-pill {
+  background: rgba(255, 209, 102, 0.25);
+  border: 1px solid var(--accent-gold);
+  color: var(--accent-gold);
+  font-size: 0.55rem;
+  font-weight: 800;
+  padding: 0 3px;
+  border-radius: var(--radius-pill);
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+/* Variante Compatta (Panchina & Liste) */
+.player-card.is-compact {
+  width: 100%;
+  flex: 1;
+  min-width: 0;
+  height: 72px;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 12px;
+}
+
+.player-card.is-compact .card-top-bar {
+  width: auto;
+  flex-direction: column;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.player-card.is-compact .card-info {
+  text-align: left;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.player-card.is-compact .card-avatar-container {
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.player-card.is-compact .card-avatar-initials {
+  width: 36px;
+  height: 36px;
+  font-size: 1rem;
+}
+
+.player-card.is-compact .player-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  max-width: none !important;
+  width: 100%;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+.player-card.is-compact .player-submeta {
+  justify-content: flex-start;
+  font-size: 0.72rem;
+  gap: 8px;
+  margin-top: 3px;
+}
+
+.player-card.is-compact .card-bottom-badges {
+  flex-direction: column;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+
+.player-card.is-compact.is-unavailable {
+  opacity: 0.55;
+  filter: grayscale(0.6);
+  border-color: rgba(239, 35, 60, 0.4) !important;
+}
+
+.player-card.is-compact .card-taken-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 14, 23, 0.4);
+  border-radius: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 14px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.player-card.is-compact .taken-stamp {
+  font-size: 0.75rem;
+  transform: none;
+}
+
+/* Drag Ghost Element (Elemento Fluttuante durante il trascinamento) */
+.tactical-drag-ghost {
+  position: fixed;
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(-50%, -50%) scale(1.1);
+  background: rgba(16, 24, 39, 0.95);
+  border: 2px solid var(--accent-neon-green);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 255, 135, 0.5);
+  border-radius: var(--radius-md);
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  backdrop-filter: blur(8px);
+}
+
+.ghost-badge {
+  background: var(--accent-neon-green);
+  color: var(--text-inverse);
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 800;
+  font-size: 0.9rem;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ghost-name {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.ghost-role {
+  font-size: 0.75rem;
+  color: var(--accent-neon-cyan);
+  font-weight: 700;
+  margin-left: 6px;
+}
+
+/* ==========================================================================
+   STATO ASTA FANTACALCIO: PRESO / DISPONIBILE
+   ========================================================================== */
+.player-card.is-unavailable {
+  opacity: 0.55;
+  filter: grayscale(0.5) contrast(0.9);
+  border-color: rgba(239, 35, 60, 0.4) !important;
+}
+
+.player-card.is-unavailable:hover {
+  opacity: 0.85;
+  filter: grayscale(0.2);
+}
+
+.card-taken-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 14, 23, 0.45);
+  border-radius: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.taken-stamp {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 900;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: #ff4d4d;
+  border: 1.5px solid #ff4d4d;
+  background: rgba(255, 77, 77, 0.15);
+  padding: 1px 6px;
+  border-radius: 4px;
+  transform: rotate(-12deg);
+  box-shadow: 0 0 10px rgba(255, 77, 77, 0.4);
+  text-shadow: 0 0 4px rgba(255, 77, 77, 0.8);
+}
+
+.asta-availability-dot {
+  font-size: 0.75rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-fast);
+  padding: 1px;
+}
+
+.asta-availability-dot.is-available {
+  color: var(--accent-neon-green);
+  filter: drop-shadow(0 0 4px rgba(0, 255, 135, 0.6));
+}
+
+.asta-availability-dot.is-taken {
+  color: #ff4d4d;
+  filter: drop-shadow(0 0 6px rgba(255, 77, 77, 0.8));
+}
+
+.asta-availability-dot:hover {
+  transform: scale(1.25);
+}
+

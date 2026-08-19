@@ -1,0 +1,386 @@
+/**
+ * FantaOliva - Grafica e Stili del Campo da Calcio (Soccer Pitch)
+ */
+
+.pitch-container {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.pitch-outer-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+}
+
+.soccer-pitch {
+  position: relative;
+  height: 94%;
+  max-height: 820px;
+  width: auto;
+  max-width: 96%;
+  aspect-ratio: 1 / 1.38;
+  background: radial-gradient(ellipse at center, #1b4d2e 0%, #123821 65%, #0a2414 100%);
+  border-radius: var(--radius-lg);
+  box-shadow: 
+    0 20px 50px rgba(0, 0, 0, 0.9),
+    inset 0 0 40px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  border: 4px solid #1e3a29;
+  display: block;
+}
+
+/* Strisce alternate del manto erboso */
+.pitch-grass-stripes {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.025) 0px,
+    rgba(255, 255, 255, 0.025) 38px,
+    rgba(0, 0, 0, 0.04) 38px,
+    rgba(0, 0, 0, 0.04) 76px
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Mappatura e Linee Regolamentari */
+.pitch-lines {
+  position: absolute;
+  inset: 12px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Bordo perimetrale */
+.pitch-boundary {
+  position: absolute;
+  inset: 0;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  border-radius: 4px;
+}
+
+/* Linea di metà campo */
+.halfway-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.55);
+  transform: translateY(-50%);
+}
+
+/* Cerchio di centrocampo */
+.center-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 140px;
+  height: 140px;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-spot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+}
+
+/* Area di Rigore Superiore (Attacco) */
+.penalty-box.top-box {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 55%;
+  height: 17%;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  border-top: none;
+}
+
+.goal-box.top-goal-box {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26%;
+  height: 7%;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  border-top: none;
+}
+
+.penalty-spot.top-spot {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
+}
+
+.penalty-arc.top-arc {
+  position: absolute;
+  top: 17%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  border-top: none;
+  border-bottom-left-radius: 90px;
+  border-bottom-right-radius: 90px;
+}
+
+.goal-frame.top-goal {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18%;
+  height: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-bottom: none;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.15) 2px,
+    transparent 2px,
+    transparent 4px
+  );
+}
+
+/* Area di Rigore Inferiore (Difesa / Portiere) */
+.penalty-box.bottom-box {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 55%;
+  height: 17%;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  border-bottom: none;
+}
+
+.goal-box.bottom-goal-box {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26%;
+  height: 7%;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  border-bottom: none;
+}
+
+.penalty-spot.bottom-spot {
+  position: absolute;
+  bottom: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
+}
+
+.penalty-arc.bottom-arc {
+  position: absolute;
+  bottom: 17%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  border-bottom: none;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+}
+
+.goal-frame.bottom-goal {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18%;
+  height: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-top: none;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.15) 2px,
+    transparent 2px,
+    transparent 4px
+  );
+}
+
+/* Archi d'angolo */
+.corner-arc {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+}
+
+.corner-arc.top-left {
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+  border-top-left-radius: 20px;
+}
+
+.corner-arc.top-right {
+  top: 0;
+  right: 0;
+  border-left: none;
+  border-bottom: none;
+  border-top-right-radius: 20px;
+}
+
+.corner-arc.bottom-left {
+  bottom: 0;
+  left: 0;
+  border-right: none;
+  border-top: none;
+  border-bottom-left-radius: 20px;
+}
+
+.corner-arc.bottom-right {
+  bottom: 0;
+  right: 0;
+  border-left: none;
+  border-top: none;
+  border-bottom-right-radius: 20px;
+}
+
+/* Layer SVG Linee Tattiche */
+.tactical-lines-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 3;
+}
+
+/* Layer Slot Giocatori sul campo */
+.pitch-slots-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.pitch-slot-wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: auto;
+  transition: left 0.35s cubic-bezier(0.16, 1, 0.3, 1), top 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 15;
+}
+
+.slot-role-tag {
+  margin-top: 3px;
+  background: rgba(10, 14, 23, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--text-muted);
+  font-size: 0.62rem;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: var(--radius-pill);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  backdrop-filter: blur(4px);
+}
+
+/* Sostituti visualizzati sotto la card sul campo */
+.slot-substitutes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  margin-top: 2px;
+  width: 100%;
+}
+
+.pitch-sub-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(14, 21, 37, 0.94);
+  border: 1px solid rgba(0, 210, 255, 0.45);
+  border-radius: var(--radius-pill);
+  padding: 1px 6px;
+  font-size: 0.64rem;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  transition: var(--transition-fast);
+  max-width: 95px;
+  white-space: nowrap;
+}
+
+.pitch-sub-pill:hover {
+  background: rgba(0, 210, 255, 0.25);
+  border-color: var(--accent-neon-cyan);
+  box-shadow: 0 0 8px rgba(0, 210, 255, 0.4);
+  transform: translateY(-1px);
+}
+
+.pitch-sub-pill .sub-prefix {
+  color: var(--accent-neon-cyan);
+  font-size: 0.58rem;
+  font-weight: 800;
+}
+
+.pitch-sub-pill .sub-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 55px;
+}
+
+.pitch-sub-pill .sub-quick-swap-btn {
+  background: none;
+  border: none;
+  color: var(--accent-neon-green);
+  cursor: pointer;
+  padding: 0 2px;
+  font-size: 0.62rem;
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.pitch-sub-pill .sub-quick-swap-btn:hover {
+  transform: rotate(180deg);
+  color: #ffffff;
+}

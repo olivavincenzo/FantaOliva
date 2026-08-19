@@ -1,0 +1,591 @@
+/**
+ * FantaOliva - Design System & Layout Principale (EA FC Tactical Board Theme)
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Rajdhani:wght@600;700&display=swap');
+
+:root {
+  /* Palette Colori Cyber Dark / EA Sports FC */
+  --bg-primary: #0a0e17;
+  --bg-secondary: #111827;
+  --bg-surface: #162032;
+  --bg-surface-elevated: #1e293b;
+  --bg-glass: rgba(22, 32, 50, 0.75);
+  --bg-glass-heavy: rgba(16, 24, 39, 0.88);
+
+  /* Accenti Neon */
+  --accent-neon-green: #00ff87;
+  --accent-neon-cyan: #00d2ff;
+  --accent-gold: #ffb703;
+  --accent-orange: #fb8500;
+  --accent-red: #ef233c;
+  --accent-purple: #8338ec;
+
+  /* Testi */
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --text-inverse: #0f172a;
+
+  /* Bordi & Linee */
+  --border-color: rgba(255, 255, 255, 0.1);
+  --border-subtle: rgba(255, 255, 255, 0.05);
+  --border-glow: rgba(0, 255, 135, 0.3);
+
+  /* Gradienti */
+  --grad-surface: linear-gradient(180deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.95) 100%);
+  --grad-primary: linear-gradient(135deg, #00ff87 0%, #00d2ff 100%);
+  --grad-gold: linear-gradient(135deg, #ffb703 0%, #fb8500 100%);
+  --grad-danger: linear-gradient(135deg, #ef233c 0%, #d90429 100%);
+
+  /* Ombre & Glow */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 12px 35px rgba(0, 0, 0, 0.8);
+  --glow-green: 0 0 15px rgba(0, 255, 135, 0.4);
+  --glow-cyan: 0 0 15px rgba(0, 210, 255, 0.4);
+
+  /* Raggi & Transizioni */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+  --radius-pill: 9999px;
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Dimensioni Layout */
+  --left-sidebar-width: 290px;
+  --right-sidebar-width: 370px;
+  --header-height: 64px;
+}
+
+/* Reset Globale */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  line-height: 1.5;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+}
+
+h1, h2, h3, h4, h5, h6, .brand-name, .inspector-name, .team-title {
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* App Master Layout */
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(circle at 50% 20%, #152238 0%, #0a0e17 70%);
+  overflow: hidden;
+}
+
+/* Wrapper Vista 1: Lavagna Tattica (Squadre + Campo + Ispettore) */
+.tactical-view-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - var(--header-height));
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  flex: 1;
+}
+
+.tactical-view-wrapper.hidden {
+  display: none !important;
+}
+
+/* Wrapper Vista 2: Guida Asta per Slot */
+.auction-view-wrapper {
+  height: calc(100vh - var(--header-height));
+  width: 100vw;
+  overflow: hidden;
+  flex: 1;
+}
+
+/* Header Tattico Superiore */
+.app-header {
+  background: var(--bg-glass-heavy);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  gap: 12px;
+  z-index: 50;
+  box-shadow: var(--shadow-sm);
+  height: var(--header-height);
+  flex-shrink: 0;
+}
+
+/* Switcher Viste (Lavagna Tattica / Guida Asta) */
+.view-switch-nav {
+  display: flex;
+  align-items: center;
+  background: rgba(10, 14, 23, 0.85);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-pill);
+  padding: 3px;
+  gap: 2px;
+}
+
+.view-switch-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 5px 13px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: var(--transition-fast);
+}
+
+.view-switch-btn:hover {
+  color: var(--text-primary);
+}
+
+.view-switch-btn.is-active {
+  background: var(--accent-neon-cyan);
+  color: #0a0e17;
+  font-weight: 800;
+  box-shadow: 0 0 12px rgba(0, 210, 255, 0.45);
+}
+
+.header-left-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  flex-shrink: 0;
+}
+
+.header-left-section .brand-logo-glow {
+  width: 38px;
+  height: 38px;
+  background: var(--grad-primary);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: var(--text-inverse);
+  box-shadow: var(--glow-green);
+  flex-shrink: 0;
+}
+
+.header-left-section .brand-titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-left-section .brand-name {
+  font-size: 1.25rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.header-left-section .brand-accent {
+  color: var(--accent-neon-green);
+}
+
+.header-left-section .brand-tagline {
+  font-size: 0.62rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+/* Centro Header: Selettore Modulo & Controlli Rapidi */
+.header-center-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.formation-selector-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 4px 10px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+}
+
+.formation-label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--accent-neon-green);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.formation-select {
+  background: var(--bg-surface);
+  color: #ffffff;
+  border: 1px solid var(--border-color);
+  padding: 5px 10px;
+  border-radius: var(--radius-sm);
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 800;
+  outline: none;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.formation-select:hover, .formation-select:focus {
+  border-color: var(--accent-neon-green);
+  box-shadow: 0 0 10px rgba(0, 255, 135, 0.25);
+}
+
+.tactical-toggles-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Header Destro: Azioni (Salva, Note, Storico, Export) */
+.header-right-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+/* Pulsanti Tattici Stilizzati */
+.fanta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: var(--radius-md);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 0.82rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  white-space: nowrap;
+  outline: none;
+}
+
+.fanta-btn.btn-sm {
+  padding: 4px 8px;
+  font-size: 0.76rem;
+  border-radius: var(--radius-sm);
+}
+
+.fanta-btn.btn-full {
+  width: 100%;
+}
+
+.fanta-btn.primary-btn {
+  background: var(--grad-primary);
+  color: var(--text-inverse);
+  box-shadow: var(--glow-green);
+}
+
+.fanta-btn.primary-btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.1);
+  box-shadow: 0 0 18px rgba(0, 255, 135, 0.6);
+}
+
+.fanta-btn.secondary-btn {
+  background: var(--bg-surface);
+  color: var(--text-main);
+  border-color: var(--border-color);
+}
+
+.fanta-btn.secondary-btn:hover {
+  background: var(--bg-surface-elevated);
+  border-color: var(--accent-neon-cyan);
+  color: var(--accent-neon-cyan);
+}
+
+.fanta-btn.success-btn {
+  background: #10b981;
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.4);
+}
+
+.fanta-btn.success-btn:hover {
+  background: #059669;
+}
+
+.fanta-btn.danger-btn {
+  background: rgba(239, 35, 60, 0.15);
+  color: var(--accent-red);
+  border-color: rgba(239, 35, 60, 0.3);
+}
+
+.fanta-btn.danger-btn:hover {
+  background: var(--accent-red);
+  color: #ffffff;
+}
+
+.fanta-btn.icon-only-btn {
+  padding: 8px 12px;
+}
+
+.fanta-btn.is-active {
+  background: rgba(0, 255, 135, 0.2);
+  border-color: var(--accent-neon-green);
+  color: var(--accent-neon-green);
+}
+
+/* Sidebar Sinistra (Squadre Serie A) */
+.app-sidebar-left {
+  width: var(--left-sidebar-width);
+  min-width: var(--left-sidebar-width);
+  max-width: var(--left-sidebar-width);
+  background: var(--bg-glass-heavy);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  z-index: 30;
+  flex-shrink: 0;
+}
+
+/* Sezione Centrale (Campo da Gioco & Toolbar Tattica) */
+.app-main-content {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8px 12px 10px 12px;
+  overflow: hidden;
+  z-index: 10;
+  gap: 6px;
+}
+
+/* Toolbar Tattica Centrale (Modulo, Linee, Pos. Libera, Riallinea) */
+.pitch-tactical-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(14, 21, 37, 0.85);
+  border: 1px solid var(--border-glass);
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  z-index: 25;
+  flex-shrink: 0;
+}
+
+/* Sidebar Destra (Ispettore Giocatore & Panchina) */
+.app-sidebar-right {
+  width: var(--right-sidebar-width);
+  min-width: var(--right-sidebar-width);
+  max-width: var(--right-sidebar-width);
+  background: var(--bg-glass-heavy);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-left: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  z-index: 30;
+  flex-shrink: 0;
+}
+
+/* Campi Form e Input Tattici */
+.fanta-input, .fanta-select, .fanta-textarea {
+  width: 100%;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  padding: 9px 12px;
+  border-radius: var(--radius-md);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.88rem;
+  outline: none;
+  transition: var(--transition-fast);
+}
+
+.fanta-input:focus, .fanta-select:focus, .fanta-textarea:focus {
+  border-color: var(--accent-neon-green);
+  box-shadow: 0 0 10px rgba(0, 255, 135, 0.25);
+  background: var(--bg-surface);
+}
+
+.fanta-textarea {
+  resize: vertical;
+  min-height: 70px;
+}
+
+.fanta-textarea-sm {
+  width: 100%;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+  resize: none;
+}
+
+.fanta-textarea-sm:focus {
+  border-color: var(--accent-neon-cyan);
+}
+
+/* Scrollbar Personalizzata */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-neon-green);
+}
+
+/* Toast Notifications Container */
+.toast-container {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.toast-message {
+  pointer-events: auto;
+  min-width: 320px;
+  max-width: 480px;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-color);
+  padding: 12px 18px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-main);
+  font-size: 0.9rem;
+  font-weight: 500;
+  animation: toastSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.toast-message.toast-success {
+  border-left: 4px solid var(--accent-neon-green);
+}
+.toast-message.toast-success .toast-icon {
+  color: var(--accent-neon-green);
+}
+
+.toast-message.toast-warning {
+  border-left: 4px solid var(--accent-gold);
+}
+.toast-message.toast-warning .toast-icon {
+  color: var(--accent-gold);
+}
+
+.toast-message.toast-error {
+  border-left: 4px solid var(--accent-red);
+}
+.toast-message.toast-error .toast-icon {
+  color: var(--accent-red);
+}
+
+.toast-message.toast-info {
+  border-left: 4px solid var(--accent-neon-cyan);
+}
+.toast-message.toast-info .toast-icon {
+  color: var(--accent-neon-cyan);
+}
+
+.toast-close {
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  font-size: 1.2rem;
+  margin-left: auto;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.toast-close:hover {
+  color: var(--text-main);
+}
+
+.toast-fade-out {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+@keyframes toastSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Mobile Action Bar Trigger Buttons */
+.mobile-action-bar {
+  display: none;
+}

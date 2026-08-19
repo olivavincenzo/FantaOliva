@@ -1,0 +1,177 @@
+/**
+ * FantaOliva - Responsive Design (Tablet, Mobile & Touch Adaptations)
+ */
+
+@media (max-width: 1366px) {
+  :root {
+    --left-sidebar-width: 220px;
+    --right-sidebar-width: 330px;
+  }
+}
+
+@media (max-width: 1100px) {
+  :root {
+    --left-sidebar-width: 200px;
+    --right-sidebar-width: 300px;
+  }
+
+  .header-team-name {
+    font-size: 1.15rem;
+  }
+
+  .formation-label {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  :root {
+    --header-height: 60px;
+  }
+
+  .tactical-view-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - var(--header-height) - 56px);
+    position: relative;
+  }
+
+  .app-sidebar-left {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    bottom: 56px;
+    width: 320px;
+    max-width: 85vw;
+    transform: translateX(-100%);
+    transition: transform var(--transition-smooth);
+    z-index: 100;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .app-sidebar-left.mobile-open {
+    transform: translateX(0);
+  }
+
+  .app-sidebar-right {
+    position: fixed;
+    top: var(--header-height);
+    right: 0;
+    bottom: 56px;
+    width: 400px;
+    max-width: 92vw;
+    transform: translateX(100%);
+    transition: transform var(--transition-smooth);
+    z-index: 100;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .app-sidebar-right.mobile-open {
+    transform: translateX(0);
+  }
+
+  .app-main-content {
+    width: 100vw;
+    height: calc(100vh - var(--header-height) - 56px);
+    padding: 8px;
+  }
+
+  .player-card {
+    width: 74px;
+    height: 82px;
+    padding: 4px 4px 2px 4px;
+  }
+
+  .player-card .card-avatar-initials {
+    width: 26px;
+    height: 26px;
+    font-size: 0.75rem;
+  }
+
+  .player-card .player-name {
+    font-size: 0.65rem;
+  }
+
+  /* Barra di Navigazione Mobile Inferiore */
+  .mobile-action-bar {
+    grid-area: mobile-bar;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--bg-surface);
+    border-top: 1px solid var(--border-color);
+    z-index: 90;
+    padding: 0 10px;
+  }
+
+  .mobile-nav-btn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 6px 0;
+    transition: var(--transition-fast);
+  }
+
+  .mobile-nav-btn i {
+    font-size: 1.1rem;
+  }
+
+  .mobile-nav-btn:hover, .mobile-nav-btn:active {
+    color: var(--accent-neon-green);
+  }
+}
+
+@media (max-width: 600px) {
+  .header-left-section {
+    gap: 8px;
+  }
+
+  .header-team-crest {
+    width: 38px;
+    height: 38px;
+  }
+
+  .header-team-name {
+    font-size: 1rem;
+  }
+
+  .header-team-submeta {
+    display: none;
+  }
+
+  .header-right-section .btn-text-hide {
+    display: none;
+  }
+
+  .tactical-toggles-group {
+    display: none;
+  }
+
+  .player-card {
+    width: 66px;
+    height: 76px;
+  }
+
+  .player-card .player-number {
+    font-size: 0.65rem;
+  }
+
+  .player-card .role-badge {
+    font-size: 0.55rem;
+  }
+
+  .slot-role-tag {
+    font-size: 0.55rem;
+    padding: 0 4px;
+  }
+}
