@@ -189,7 +189,7 @@ export class AuctionSlotsComponent {
                     const isAvailable = p.isAvailable !== false;
 
                     return `
-                      <div class="slot-player-card ${!isAvailable ? 'is-taken' : ''}" data-player-id="${p.id}" data-team-id="${p.teamId || ''}">
+                      <div class="slot-player-card ${!isAvailable ? 'is-taken' : ''}" data-player-id="${p.id}" data-team-id="${p.teamId || ''}" title="${sanitizeHtml(p.name)} (${sanitizeHtml(p.teamName || 'Serie A')}) - Doppio click per aprire la Lavagna Tattica">
                         
                         <!-- RIGA 1: Posizione Slot, Club, Nome, Ruolo & Icona Disponibilità Asta -->
                         <div class="slot-row-1-identity">
@@ -324,15 +324,46 @@ export class AuctionSlotsComponent {
       });
     });
 
-    // Click su card giocatore -> Seleziona
+    // Click e Doppio Click su card giocatore
     this.container.querySelectorAll('.slot-player-card').forEach(card => {
-      card.addEventListener('click', () => {
+      // Singolo click -> Seleziona giocatore e squadra
+      card.addEventListener('click', (e) => {
+        if (e.target.closest('.slot-availability-dot-btn') || e.target.closest('.slot-appetibilita-input')) {
+          return;
+        }
         const playerId = card.dataset.playerId;
         const teamId = card.dataset.teamId;
-        if (teamId) {
+        if (teamId && teamId !== store.currentTeamId) {
           store.setTeam(teamId);
         }
         store.selectPlayer(playerId);
+      });
+
+      // Doppio click -> Passa direttamente a Lavagna Tattica, aprendo la squadra e la scheda del giocatore
+      card.addEventListener('dblclick', (e) => {
+        if (e.target.closest('.slot-availability-dot-btn') || e.target.closest('.slot-appetibilita-input')) {
+          return;
+        }
+        e.preventDefault();
+        e.stopPropagation();
+
+        const playerId = card.dataset.playerId;
+        const teamId = card.dataset.teamId;
+
+        // 1. Imposta la squadra del calciatore
+        if (teamId && teamId !== store.currentTeamId) {
+          store.setTeam(teamId);
+        }
+
+        // 2. Seleziona il calciatore (apre la sidebar right / ispettore)
+        store.selectPlayer(playerId);
+
+        // 3. Passa alla vista 'tactical'
+        store.setView('tactical');
+
+        const player = store.getPlayer(playerId);
+        const team = store.getTeam(teamId);
+        notify.info(`Aperta lavagna tattica (${team ? team.name : ''}) con la scheda di ${player ? player.name : ''}`);
       });
     });
   }

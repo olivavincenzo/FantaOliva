@@ -57,7 +57,8 @@ class App {
     this.updateHeader();
   }
 
-  bindViewSwitcher() {
+  switchView(viewName) {
+    store.setView(viewName);
     const tacticalTab = document.querySelector('#view-tab-tactical');
     const auctionTab = document.querySelector('#view-tab-auction');
     const tacticalView = document.querySelector('#tactical-view-wrapper');
@@ -67,34 +68,38 @@ class App {
     const mobileFieldBtn = document.querySelector('#mobile-field-btn');
     const mobileAuctionBtn = document.querySelector('#mobile-auction-btn');
 
-    const switchView = (viewName) => {
-      store.setView(viewName);
-      if (viewName === 'tactical') {
-        tacticalTab?.classList.add('is-active');
-        auctionTab?.classList.remove('is-active');
-        tacticalView?.classList.remove('hidden');
-        auctionView?.classList.add('hidden');
-        formationGroup?.classList.remove('hidden');
-        togglesGroup?.classList.remove('hidden');
-        mobileFieldBtn?.classList.add('active');
-        mobileAuctionBtn?.classList.remove('active');
-      } else if (viewName === 'auction_slots') {
-        tacticalTab?.classList.remove('is-active');
-        auctionTab?.classList.add('is-active');
-        tacticalView?.classList.add('hidden');
-        auctionView?.classList.remove('hidden');
-        formationGroup?.classList.add('hidden');
-        togglesGroup?.classList.add('hidden');
-        mobileFieldBtn?.classList.remove('active');
-        mobileAuctionBtn?.classList.add('active');
-        this.auctionSlots?.render();
-      }
-    };
+    if (viewName === 'tactical') {
+      tacticalTab?.classList.add('is-active');
+      auctionTab?.classList.remove('is-active');
+      tacticalView?.classList.remove('hidden');
+      auctionView?.classList.add('hidden');
+      formationGroup?.classList.remove('hidden');
+      togglesGroup?.classList.remove('hidden');
+      mobileFieldBtn?.classList.add('active');
+      mobileAuctionBtn?.classList.remove('active');
+    } else if (viewName === 'auction_slots') {
+      tacticalTab?.classList.remove('is-active');
+      auctionTab?.classList.add('is-active');
+      tacticalView?.classList.add('hidden');
+      auctionView?.classList.remove('hidden');
+      formationGroup?.classList.add('hidden');
+      togglesGroup?.classList.add('hidden');
+      mobileFieldBtn?.classList.remove('active');
+      mobileAuctionBtn?.classList.add('active');
+      this.auctionSlots?.render();
+    }
+  }
 
-    tacticalTab?.addEventListener('click', () => switchView('tactical'));
-    auctionTab?.addEventListener('click', () => switchView('auction_slots'));
-    mobileFieldBtn?.addEventListener('click', () => switchView('tactical'));
-    mobileAuctionBtn?.addEventListener('click', () => switchView('auction_slots'));
+  bindViewSwitcher() {
+    const tacticalTab = document.querySelector('#view-tab-tactical');
+    const auctionTab = document.querySelector('#view-tab-auction');
+    const mobileFieldBtn = document.querySelector('#mobile-field-btn');
+    const mobileAuctionBtn = document.querySelector('#mobile-auction-btn');
+
+    tacticalTab?.addEventListener('click', () => this.switchView('tactical'));
+    auctionTab?.addEventListener('click', () => this.switchView('auction_slots'));
+    mobileFieldBtn?.addEventListener('click', () => this.switchView('tactical'));
+    mobileAuctionBtn?.addEventListener('click', () => this.switchView('auction_slots'));
   }
 
   populateFormationSelect() {
@@ -403,6 +408,9 @@ class App {
   subscribeStoreEvents() {
     store.subscribe('team:changed', () => this.updateHeader());
     store.subscribe('formation:changed', () => this.updateHeader());
+    store.subscribe('view:changed', (viewName) => {
+      this.switchView(viewName);
+    });
   }
 }
 
