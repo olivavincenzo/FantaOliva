@@ -458,6 +458,34 @@
     padding: 4px 6px;
   }
 
+  /* Lista Verticale Titolari su Mobile */
+  .pitch-vertical-list-container {
+    border-radius: var(--radius-md);
+  }
+
+  .pitch-vertical-list-scroll {
+    padding: 8px 6px;
+    gap: 10px;
+  }
+
+  .pitch-list-dept-section {
+    padding: 8px 6px;
+    gap: 8px;
+  }
+
+  .pitch-list-dept-header {
+    padding-bottom: 5px;
+  }
+
+  .pitch-list-dept-header .dept-title-box {
+    font-size: 0.85rem;
+  }
+
+  .pitch-list-dept-items-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 6px;
+  }
+
   /* Card Giocatore su Campo Tattico (Formato Orizzontale Proporzionato) */
   .player-card {
     width: 104px;

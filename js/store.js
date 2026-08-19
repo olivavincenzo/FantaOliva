@@ -18,6 +18,7 @@ class Store {
     this.selectedSlotId = null;
     this.showTacticalLines = true;
     this.isFreeDragMode = true;
+    this.pitchLayoutMode = localStorage.getItem('fantaoliva_pitch_layout_mode') || 'pitch'; // 'pitch' | 'list'
     this.activeBenchFilter = 'ALL';
     this.snapshots = [];
     this.subscribers = new Map();
@@ -692,6 +693,21 @@ class Store {
     if (this.activeView === view) return;
     this.activeView = view;
     this.emit('view:changed', view);
+  }
+
+  setPitchLayoutMode(mode) {
+    if (this.pitchLayoutMode === mode) return;
+    this.pitchLayoutMode = mode;
+    try {
+      localStorage.setItem('fantaoliva_pitch_layout_mode', mode);
+    } catch (e) { /* ignored */ }
+    this.emit('pitch:layoutChanged', mode);
+  }
+
+  togglePitchLayoutMode() {
+    const nextMode = this.pitchLayoutMode === 'pitch' ? 'list' : 'pitch';
+    this.setPitchLayoutMode(nextMode);
+    return nextMode;
   }
 
   // --- GUIDA ASTA PER SLOT (4 SLOT DA 10 GIOCATORI PER RUOLO) ---

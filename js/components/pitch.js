@@ -18,6 +18,7 @@ export class PitchComponent {
     this.pitchEl = null;
     this.slotsLayer = null;
     this.linesSvgLayer = null;
+    this.verticalListEl = null;
 
     this.init();
   }
@@ -32,6 +33,7 @@ export class PitchComponent {
   renderBasePitch() {
     this.container.innerHTML = `
       <div class="pitch-outer-wrapper">
+        <!-- 1. CAMPO DA CALCIO GRAFICO (Visualizzazione Standard) -->
         <div class="soccer-pitch" id="soccer-pitch">
           <!-- Effetto manto erboso a strisce -->
           <div class="pitch-grass-stripes"></div>
@@ -85,12 +87,16 @@ export class PitchComponent {
           <!-- Layer degli Slot Giocatori sul campo -->
           <div class="pitch-slots-layer" id="pitch-slots-layer"></div>
         </div>
+
+        <!-- 2. LISTA VERTICALE TITOLARI SEMPLIFICATA (A ➔ C ➔ D ➔ P) -->
+        <div class="pitch-vertical-list-container hidden" id="pitch-vertical-list"></div>
       </div>
     `;
 
     this.pitchEl = this.container.querySelector('#soccer-pitch');
     this.slotsLayer = this.container.querySelector('#pitch-slots-layer');
     this.linesSvgLayer = this.container.querySelector('#tactical-lines-group');
+    this.verticalListEl = this.container.querySelector('#pitch-vertical-list');
   }
 
   subscribeEvents() {
@@ -101,6 +107,7 @@ export class PitchComponent {
     store.subscribe('player:updated', () => this.updatePitch());
     store.subscribe('ballottaggio:updated', () => this.updatePitch());
     store.subscribe('ui:linesToggled', (show) => this.toggleLinesVisibility(show));
+    store.subscribe('pitch:layoutChanged', () => this.updatePitch());
     store.subscribe('position:customized', () => {
       this.updateSlotsPositions();
       this.renderTacticalLines();
@@ -108,6 +115,20 @@ export class PitchComponent {
   }
 
   updatePitch() {
+    const isListMode = store.pitchLayoutMode === 'list';
+
+    if (isListMode) {
+      if (this.pitchEl) this.pitchEl.style.display = 'none';
+      if (this.verticalListEl) {
+        this.verticalListEl.classList.remove('hidden');
+        this.renderVerticalList();
+      }
+      return;
+    }
+
+    if (this.pitchEl) this.pitchEl.style.display = 'block';
+    if (this.verticalListEl) this.verticalListEl.classList.add('hidden');
+
     const lineup = store.getLineupPlayers();
     const selectedPlayer = store.getSelectedPlayer();
 
@@ -129,7 +150,7 @@ export class PitchComponent {
         isSelected
       });
 
-      // Bind Pointer Event per avviare il Drag & Drop unificato
+      // Bind Pointer Event per avviare il Drag & Drop unificato sul campo grafico
       card.addEventListener('pointerdown', (e) => {
         dragDrop.startDrag(e, {
           type: 'pitch',
@@ -198,13 +219,129 @@ export class PitchComponent {
     const selectedPlayer = store.getSelectedPlayer();
     const selectedId = selectedPlayer ? selectedPlayer.id : null;
 
-    this.slotsLayer.querySelectorAll('.player-card').forEach(card => {
+    this.container.querySelectorAll('.player-card').forEach(card => {
       if (card.dataset.playerId === selectedId) {
         card.classList.add('is-selected');
       } else {
         card.classList.remove('is-selected');
       }
     });
+  }
+
+  renderVerticalList() {
+    if (!this.verticalListEl) return;
+
+    const lineup = store.getLineupPlayers();
+    const selectedPlayer = store.getSelectedPlayer();
+
+    // Raggruppa i titolari rigorosamente per reparto:
+    // 1. Attaccanti (A)
+    // 2. Centrocampisti (C)
+    // 3. Difensori (D)
+    // 4. Portiere (P)
+    const departments = [
+      { key: 'A', name: 'Attaccanti', icon: 'fa-futbol', colorClass: 'dept-attack', items: [] },
+      { key: 'C', name: 'Centrocampisti', icon: 'fa-bolt', colorClass: 'dept-midfield', items: [] },
+      { key: 'D', name: 'Difensori', icon: 'fa-shield', colorClass: 'dept-defense', items: [] },
+      { key: 'P', name: 'Portiere', icon: 'fa-mitten', colorClass: 'dept-goalkeeper', items: [] }
+    ];
+
+    lineup.forEach(item => {
+      const r = (item.player?.classicRole || item.player?.role || item.slot.role || '').toUpperCase();
+      if (r === 'A' || r.includes('A') || r === 'PC' || r === 'AD' || r === 'AS') {
+        departments[0].items.push(item);
+      } else if (r === 'C' || r.includes('C') || r === 'TRQ' || r === 'MED' || r === 'CC' || r === 'E') {
+        departments[1].items.push(item);
+      } else if (r === 'D' || r.includes('D') || r === 'DC' || r === 'TD' || r === 'TS' || r === 'B') {
+        departments[2].items.push(item);
+      } else if (r === 'P' || r.includes('P') || r === 'POR') {
+        departments[3].items.push(item);
+      } else {
+        departments[1].items.push(item);
+      }
+    });
+
+    this.verticalListEl.innerHTML = '';
+
+    const scrollWrapper = document.createElement('div');
+    scrollWrapper.className = 'pitch-vertical-list-scroll';
+
+    departments.forEach(dept => {
+      if (dept.items.length === 0) return;
+
+      const deptSection = document.createElement('div');
+      deptSection.className = `pitch-list-dept-section ${dept.colorClass}`;
+
+      deptSection.innerHTML = `
+        <div class="pitch-list-dept-header">
+          <div class="dept-title-box">
+            <i class="fa-solid ${dept.icon}"></i>
+            <span>${dept.name}</span>
+          </div>
+          <span class="dept-count-badge">${dept.items.length} ${dept.items.length === 1 ? 'Titolare' : 'Titolari'}</span>
+        </div>
+        <div class="pitch-list-dept-items-grid"></div>
+      `;
+
+      const gridEl = deptSection.querySelector('.pitch-list-dept-items-grid');
+
+      dept.items.forEach(item => {
+        const rowItem = document.createElement('div');
+        rowItem.className = 'pitch-list-slot-item';
+        rowItem.dataset.slotId = item.slot.id;
+
+        const isSelected = selectedPlayer && item.player && selectedPlayer.id === item.player.id;
+
+        const card = createPlayerCard(item.player, {
+          slotId: item.slot.id,
+          slotRole: item.slot.role || item.slot.label,
+          isLineup: true,
+          isSelected
+        });
+
+        rowItem.appendChild(card);
+
+        // Rendering sostituti e ballottaggi
+        const substitutesList = item.player?.substitutes || [];
+        if (substitutesList.length > 0) {
+          const subsContainer = document.createElement('div');
+          subsContainer.className = 'slot-substitutes-container';
+
+          substitutesList.forEach((subId, idx) => {
+            const subPlayer = store.getPlayer(subId);
+            if (!subPlayer) return;
+
+            const subTit = subPlayer.stats?.titolarita ?? subPlayer.titolaritaPerc ?? 50;
+            const subTitClass = getTitolaritaClass(subTit);
+            const subIsTaken = subPlayer.isAvailable === false;
+
+            const subPill = document.createElement('div');
+            subPill.className = `pitch-sub-pill ${subIsTaken ? 'is-taken' : ''}`;
+            subPill.title = `${idx + 1}ª Scelta Sostituto: ${subPlayer.name} (${subPlayer.role}) - ${subTit}% Titolarità${subIsTaken ? ' - PRESO' : ''}`;
+            subPill.innerHTML = `
+              <span class="sub-prefix">${idx + 1}ª</span>
+              <span class="sub-name">${sanitizeHtml(subPlayer.name || subPlayer.displayName)}</span>
+              <span class="sub-tit-badge ${subTitClass}">${subTit}% Tit</span>
+            `;
+
+            subPill.addEventListener('click', (e) => {
+              e.stopPropagation();
+              store.selectPlayer(subPlayer.id);
+            });
+
+            subsContainer.appendChild(subPill);
+          });
+
+          rowItem.appendChild(subsContainer);
+        }
+
+        gridEl.appendChild(rowItem);
+      });
+
+      scrollWrapper.appendChild(deptSection);
+    });
+
+    this.verticalListEl.appendChild(scrollWrapper);
   }
 
   renderTacticalLines() {
