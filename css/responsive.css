@@ -494,7 +494,7 @@
   /* Sidebar Sinistra come Drawer Mobile */
   .app-sidebar-left {
     position: fixed;
-    top: var(--header-height);
+    top: 0;
     left: 0;
     bottom: var(--mobile-bar-height);
     width: 300px;
@@ -524,7 +524,7 @@
   /* Sidebar Destra come Drawer Mobile */
   .app-sidebar-right {
     position: fixed;
-    top: var(--header-height);
+    top: 0;
     right: 0;
     bottom: var(--mobile-bar-height);
     width: 380px;
@@ -551,14 +551,14 @@
     display: none !important;
   }
 
-  /* Backdrop Overlay per i Drawer */
+  /* Backdrop Overlay per i Drawer (A schermo intero) */
   .mobile-drawer-backdrop {
     position: fixed;
-    top: var(--header-height);
+    top: 0;
     left: 0;
     right: 0;
-    bottom: var(--mobile-bar-height);
-    background: rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     z-index: 140;
