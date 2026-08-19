@@ -222,6 +222,35 @@
     overflow: hidden;
   }
 
+  .listone-view-wrapper {
+    height: calc(100vh - var(--header-height) - var(--mobile-bar-height));
+    height: calc(100dvh - var(--header-height) - var(--mobile-bar-height));
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .listone-page-container {
+    padding: 6px 8px 14px 8px;
+    gap: 8px;
+  }
+
+  .listone-toolbar-card {
+    padding: 8px 10px;
+  }
+
+  .listone-toolbar-row {
+    gap: 8px;
+  }
+
+  .listone-search-box {
+    min-width: 140px;
+    flex: 1;
+  }
+
+  .listone-count-badge {
+    margin-left: 0;
+  }
+
   .auction-slots-page {
     height: 100%;
     padding: 6px 8px 20px 8px;

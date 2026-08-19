@@ -252,6 +252,13 @@ class Store {
         if (found) return found;
       }
     }
+
+    // 3. Fallback sul catalogo completo CSV
+    if (typeof CSV_PLAYER_CATALOG !== 'undefined' && Array.isArray(CSV_PLAYER_CATALOG)) {
+      const cat = CSV_PLAYER_CATALOG.find(p => p && p.id === playerId);
+      if (cat) return cat;
+    }
+
     return null;
   }
 
@@ -270,6 +277,94 @@ class Store {
       }
     }
     return list.length > 0 ? list : (team.players || []);
+  }
+
+  getAllPlayersFlat() {
+    // 1. Mappa giocatori con modifiche/presenza nelle squadre per conservare disponibilità, appetibilità, note, ecc.
+    const modifiedMap = new Map();
+    const playerTeamMap = new Map();
+
+    for (const team of this.teams) {
+      if (team.lineup) {
+        for (const p of Object.values(team.lineup)) {
+          if (p && p.id) {
+            modifiedMap.set(p.id, p);
+            playerTeamMap.set(p.id, { teamId: team.id, teamName: team.name, isStarter: true });
+          }
+        }
+      }
+      if (team.bench) {
+        for (const p of team.bench) {
+          if (p && p.id) {
+            modifiedMap.set(p.id, p);
+            playerTeamMap.set(p.id, { teamId: team.id, teamName: team.name, isStarter: false });
+          }
+        }
+      }
+      if (team.players) {
+        for (const p of team.players) {
+          if (p && p.id) {
+            modifiedMap.set(p.id, p);
+            if (!playerTeamMap.has(p.id)) {
+              playerTeamMap.set(p.id, { teamId: team.id, teamName: team.name, isStarter: false });
+            }
+          }
+        }
+      }
+    }
+
+    // 2. Se CSV_PLAYER_CATALOG è presente, usa il catalogo completo come base
+    const baseList = (typeof CSV_PLAYER_CATALOG !== 'undefined' && Array.isArray(CSV_PLAYER_CATALOG) && CSV_PLAYER_CATALOG.length > 0)
+      ? CSV_PLAYER_CATALOG
+      : [];
+
+    const all = [];
+    const seenIds = new Set();
+
+    // 3. Processa i calciatori del catalogo completo
+    baseList.forEach(catPlayer => {
+      if (!catPlayer || !catPlayer.id) return;
+      seenIds.add(catPlayer.id);
+
+      const mod = modifiedMap.get(catPlayer.id);
+      const teamInfo = playerTeamMap.get(catPlayer.id);
+
+      const p = mod ? { ...catPlayer, ...mod } : { ...catPlayer };
+
+      p.teamId = p.teamId || teamInfo?.teamId || '';
+      p.teamName = p.teamName || teamInfo?.teamName || p.club || 'Serie A';
+      if (p.isAvailable === undefined) {
+        p.isAvailable = true;
+      }
+
+      if (p.appetibilita === undefined) {
+        const fm = p.stats?.fantamedia || 6.0;
+        const tit = p.stats?.titolarita || 50;
+        const gol = p.stats?.gol || 0;
+        const ass = p.stats?.assist || 0;
+        let baseApp = Math.round((tit * 0.45) + ((fm - 5.5) * 14) + (gol * 1.8) + (ass * 0.8));
+        p.appetibilita = Math.min(100, Math.max(10, baseApp));
+      }
+
+      all.push(p);
+    });
+
+    // 4. Aggiungi eventuali altri giocatori presenti nelle squadre ma non nel catalogo
+    modifiedMap.forEach((modPlayer, id) => {
+      if (!seenIds.has(id)) {
+        seenIds.add(id);
+        const teamInfo = playerTeamMap.get(id);
+        all.push({
+          ...modPlayer,
+          teamId: modPlayer.teamId || teamInfo?.teamId || '',
+          teamName: modPlayer.teamName || teamInfo?.teamName || 'Serie A',
+          isAvailable: modPlayer.isAvailable !== false,
+          appetibilita: modPlayer.appetibilita ?? 50
+        });
+      }
+    });
+
+    return all;
   }
 
   getSelectedPlayer() {

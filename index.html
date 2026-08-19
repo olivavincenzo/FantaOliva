@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="css/sidebar.css">
   <link rel="stylesheet" href="css/modals.css">
   <link rel="stylesheet" href="css/auction-slots.css">
+  <link rel="stylesheet" href="css/listone.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 
@@ -36,15 +37,19 @@
     <!-- HEADER TATTICO SUPERIORE -->
     <header class="app-header">
 
-      <!-- Sezione Sinistra: Switcher Viste (Lavagna Tattica / Guida Slot Asta) -->
+      <!-- Sezione Sinistra: Switcher Viste (Lavagna Tattica / Guida Slot Asta / Listone) -->
       <div class="header-left-section">
         <div class="view-switch-nav">
           <button id="view-tab-tactical" class="view-switch-btn is-active" title="Visualizza Campo e Lavagna Tattica">
-            <i class="fa-solid fa-futbol"></i> <span>Lavagna Tattica</span>
+            <i class="fa-solid fa-futbol"></i> <span>Lavagna</span>
           </button>
           <button id="view-tab-auction" class="view-switch-btn"
             title="Visualizza Guida Asta con i 4 Slot da 10 Giocatori">
-            <i class="fa-solid fa-layer-group"></i> <span>Guida Slot Asta</span>
+            <i class="fa-solid fa-layer-group"></i> <span>Slot Asta</span>
+          </button>
+          <button id="view-tab-listone" class="view-switch-btn"
+            title="Visualizza Listone Completo con tutti i calciatori di Serie A">
+            <i class="fa-solid fa-table-list"></i> <span>Listone</span>
           </button>
         </div>
       </div>
@@ -209,6 +214,11 @@
       <!-- Rendered by AuctionSlotsComponent -->
     </div>
 
+    <!-- VISTA 3: LISTONE COMPLETO CALCIATORI SERIE A -->
+    <div class="listone-view-wrapper hidden" id="listone-view-wrapper">
+      <!-- Rendered by PlayersListoneComponent -->
+    </div>
+
     <!-- BACKDROP OVERLAY PER DRAWER MOBILI (SQUADRE / ISPETTORE) -->
     <div class="mobile-drawer-backdrop hidden" id="mobile-drawer-backdrop"></div>
 
@@ -225,6 +235,10 @@
       <button id="mobile-auction-btn" class="mobile-nav-btn">
         <i class="fa-solid fa-layer-group"></i>
         <span>Slot Asta</span>
+      </button>
+      <button id="mobile-listone-btn" class="mobile-nav-btn">
+        <i class="fa-solid fa-table-list"></i>
+        <span>Listone</span>
       </button>
       <button id="mobile-inspector-btn" class="mobile-nav-btn">
         <i class="fa-solid fa-clipboard-user"></i>
