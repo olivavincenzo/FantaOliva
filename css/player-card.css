@@ -550,7 +550,8 @@
   border: none !important;
   box-shadow: none !important;
   padding: 0 !important;
-  height: 86px;
+  height: auto;
+  min-height: 74px;
 }
 
 .card-flip-inner {
@@ -588,6 +589,9 @@
   justify-content: flex-start;
   z-index: 2;
   transform: rotateY(0deg);
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
 .card-face.card-back {
