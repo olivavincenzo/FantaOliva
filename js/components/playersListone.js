@@ -14,7 +14,8 @@ export class PlayersListoneComponent {
     this.searchQuery = '';
     this.activeRole = 'ALL'; // 'ALL' | 'P' | 'D' | 'C' | 'A'
     this.selectedTeam = 'ALL';
-    this.availabilityFilter = 'ALL'; // 'ALL' | 'AVAILABLE' | 'TAKEN'
+    this.availabilityFilter = 'ALL'; // 'ALL' | 'AVAILABLE' | 'TAKEN' | 'FAVORITES'
+    this.onlyFavorites = false;
     this.sortBy = 'appetibilita'; // 'appetibilita' | 'fantamedia' | 'mediaVoto' | 'qtA' | 'fvm' | 'gol' | 'assist' | 'presenze' | 'titolarita' | 'name' | 'teamName'
     this.sortOrder = 'desc'; // 'asc' | 'desc'
     this._searchTimer = null;
@@ -27,6 +28,12 @@ export class PlayersListoneComponent {
 
   subscribeEvents() {
     store.subscribe('player:updated', () => {
+      if (store.activeView === 'listone') {
+        this.render();
+      }
+    });
+
+    store.subscribe('favorite:toggled', () => {
       if (store.activeView === 'listone') {
         this.render();
       }
@@ -66,11 +73,17 @@ export class PlayersListoneComponent {
       filtered = filtered.filter(p => p.teamId === this.selectedTeam);
     }
 
-    // 3. Filtro Disponibilità Asta
+    // 3. Filtro Disponibilità Asta & Preferiti
     if (this.availabilityFilter === 'AVAILABLE') {
       filtered = filtered.filter(p => p.isAvailable !== false);
     } else if (this.availabilityFilter === 'TAKEN') {
       filtered = filtered.filter(p => p.isAvailable === false);
+    } else if (this.availabilityFilter === 'FAVORITES') {
+      filtered = filtered.filter(p => p.isFavorite || store.isPlayerFavorite(p.id));
+    }
+
+    if (this.onlyFavorites) {
+      filtered = filtered.filter(p => p.isFavorite || store.isPlayerFavorite(p.id));
     }
 
     // 4. Ricerca Testuale (Nome o Squadra)
@@ -236,6 +249,7 @@ export class PlayersListoneComponent {
             <!-- Filtro Stato Asta (Desktop) -->
             <div class="listone-avail-filter-group">
               <button class="listone-avail-btn ${this.availabilityFilter === 'ALL' ? 'is-active' : ''}" data-avail="ALL" title="Mostra tutti i calciatori">Tutti</button>
+              <button class="listone-avail-btn fav-btn ${this.availabilityFilter === 'FAVORITES' ? 'is-active' : ''}" data-avail="FAVORITES" title="Solo calciatori preferiti"><i class="fa-solid fa-star"></i> Preferiti</button>
               <button class="listone-avail-btn avail-green ${this.availabilityFilter === 'AVAILABLE' ? 'is-active' : ''}" data-avail="AVAILABLE" title="Solo calciatori disponibili"><i class="fa-solid fa-circle-check"></i> Disponibili</button>
               <button class="listone-avail-btn avail-red ${this.availabilityFilter === 'TAKEN' ? 'is-active' : ''}" data-avail="TAKEN" title="Solo calciatori già presi"><i class="fa-solid fa-circle-xmark"></i> Presi</button>
             </div>
@@ -323,11 +337,16 @@ export class PlayersListoneComponent {
                   const isFreeKick = p.isFreeKickTaker || p.punizioni;
                   const isCorner = p.isCornerTaker || p.corner;
 
+                  const isFavorite = store.isPlayerFavorite(p.id) || p.isFavorite;
+
                   return `
                     <tr class="listone-row ${!isAvailable ? 'is-taken' : ''}" data-player-id="${p.id}" data-team-id="${p.teamId || ''}" title="${sanitizeHtml(p.name)} - Doppio click per aprire la scheda tecnica">
                       
-                      <!-- 1. Stato Asta Toggle -->
+                      <!-- 1. Stato Asta & Preferiti Toggle -->
                       <td class="col-center col-action">
+                        <button class="listone-fav-btn ${isFavorite ? 'is-fav' : ''}" data-player-id="${p.id}" title="${isFavorite ? 'Rimuovi dai Preferiti' : 'Aggiungi ai Preferiti'}">
+                          <i class="fa-${isFavorite ? 'solid' : 'regular'} fa-star"></i>
+                        </button>
                         <button class="listone-availability-btn ${isAvailable ? 'is-available' : 'is-taken'}" data-player-id="${p.id}" title="${isAvailable ? 'Disponibile all\'asta (clicca per segnare PRESO)' : 'PRESO (clicca per segnare DISPONIBILE)'}">
                           <i class="fa-solid ${isAvailable ? 'fa-circle-check' : 'fa-circle-xmark'}"></i>
                         </button>
@@ -506,7 +525,17 @@ export class PlayersListoneComponent {
       input.addEventListener('click', (e) => e.stopPropagation());
     });
 
-    // 7. Toggle Disponibilità Asta
+    // 7. Toggle Preferiti
+    this.container.querySelectorAll('.listone-fav-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const playerId = btn.dataset.playerId;
+        const newState = store.togglePlayerFavorite(playerId);
+        notify.success(newState ? '⭐ Aggiunto ai Preferiti!' : '⭐ Rimosso dai Preferiti');
+      });
+    });
+
+    // 8. Toggle Disponibilità Asta
     this.container.querySelectorAll('.listone-availability-btn').forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.stopPropagation();
@@ -635,11 +664,12 @@ export class PlayersListoneComponent {
         </select>
       </div>
 
-      <!-- Disponibilità Asta -->
+      <!-- Disponibilità Asta & Preferiti -->
       <div class="modal-filter-section" style="margin-top: 12px;">
-        <label class="modal-filter-label"><i class="fa-solid fa-filter"></i> Stato Asta (Disponibilità):</label>
+        <label class="modal-filter-label"><i class="fa-solid fa-filter"></i> Stato Asta & Preferiti:</label>
         <div class="modal-filter-pills-grid">
           <button type="button" class="modal-avail-pill ${tempAvail === 'ALL' ? 'is-active' : ''}" data-avail="ALL">Tutti</button>
+          <button type="button" class="modal-avail-pill fav-pill ${tempAvail === 'FAVORITES' ? 'is-active' : ''}" data-avail="FAVORITES"><i class="fa-solid fa-star"></i> Solo Preferiti</button>
           <button type="button" class="modal-avail-pill avail-green ${tempAvail === 'AVAILABLE' ? 'is-active' : ''}" data-avail="AVAILABLE"><i class="fa-solid fa-circle-check"></i> Solo Disponibili</button>
           <button type="button" class="modal-avail-pill avail-red ${tempAvail === 'TAKEN' ? 'is-active' : ''}" data-avail="TAKEN"><i class="fa-solid fa-circle-xmark"></i> Solo Presi</button>
         </div>

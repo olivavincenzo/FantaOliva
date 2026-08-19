@@ -517,3 +517,32 @@
 
 .slot-availability-btn.is-available { color: var(--accent-success); border-color: rgba(34, 197, 94, 0.3); }
 .slot-availability-btn.is-taken { color: var(--accent-red); border-color: rgba(229, 57, 53, 0.3); }
+
+.auction-filter-btn.fav-filter-btn.is-active {
+  background: rgba(245, 158, 11, 0.2);
+  border-color: #f59e0b;
+  color: #fbbf24;
+}
+
+.slot-fav-star-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 1px 3px;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.2);
+  transition: color var(--transition-fast), transform var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.slot-fav-star-btn:hover {
+  color: #f59e0b;
+  transform: scale(1.2);
+}
+
+.slot-fav-star-btn.is-fav {
+  color: #f59e0b;
+}

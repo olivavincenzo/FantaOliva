@@ -199,6 +199,24 @@ export function createPlayerCard(player, options = {}) {
 
   // Gestione Universale Click (selezione) e Doppio Click / Doppio Tocco (apertura scheda)
   let lastTapTime = 0;
+  let pointerStartX = 0;
+  let pointerStartY = 0;
+  let hasMoved = false;
+
+  card.addEventListener('pointerdown', (e) => {
+    pointerStartX = e.clientX;
+    pointerStartY = e.clientY;
+    hasMoved = false;
+  }, { passive: true });
+
+  card.addEventListener('pointermove', (e) => {
+    if (!hasMoved) {
+      const dist = Math.hypot(e.clientX - pointerStartX, e.clientY - pointerStartY);
+      if (dist > 8) {
+        hasMoved = true;
+      }
+    }
+  }, { passive: true });
 
   const triggerOpenInspector = () => {
     store.selectPlayer(player.id, slotId);
@@ -235,6 +253,11 @@ export function createPlayerCard(player, options = {}) {
   // 2. Click / Touch handler per singolo click (selezione) e doppio tocco mobile (<350ms)
   card.addEventListener('click', (e) => {
     if (e.target.closest('.asta-availability-dot')) return;
+    if (hasMoved) {
+      // È stato uno scorrimento (scroll), non selezionare il calciatore
+      hasMoved = false;
+      return;
+    }
     e.stopPropagation();
 
     const currentTime = Date.now();

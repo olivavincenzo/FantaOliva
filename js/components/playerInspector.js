@@ -123,6 +123,7 @@ export class PlayerInspectorComponent {
     const mantraRole = player.mantraRole || '';
 
     const isAvailable = player.isAvailable !== false;
+    const isFavorite = store.isPlayerFavorite(player.id);
 
     this.container.innerHTML = `
       <div class="inspector-header">
@@ -132,6 +133,9 @@ export class PlayerInspectorComponent {
             <span class="role-badge" style="background: ${roleInfo.bgColor}; color: ${roleInfo.color}; border: 1px solid ${roleInfo.borderColor}">
               ${player.role} (${player.classicRole || player.fantaRole || 'C'}${mantraRole ? ` · ${mantraRole}` : ''})
             </span>
+            <button id="toggle-player-favorite-btn" class="inspector-favorite-toggle ${isFavorite ? 'is-fav' : ''}" title="${isFavorite ? 'Rimuovi dai Preferiti' : 'Aggiungi ai Preferiti'}">
+              <i class="fa-${isFavorite ? 'solid' : 'regular'} fa-star"></i>
+            </button>
             <button id="toggle-player-auction-btn" class="inspector-auction-toggle ${isAvailable ? 'is-available' : 'is-taken'}" title="Clicca per cambiare lo stato per l'asta">
               <i class="fa-solid ${isAvailable ? 'fa-circle-check' : 'fa-circle-xmark'}"></i>
               <span>${isAvailable ? 'Disponibile' : 'Preso'}</span>
@@ -160,6 +164,13 @@ export class PlayerInspectorComponent {
         <div class="tab-content" id="inspector-tab-container"></div>
       </div>
     `;
+
+    // Bind toggle preferiti
+    const favToggleBtn = this.container.querySelector('#toggle-player-favorite-btn');
+    favToggleBtn?.addEventListener('click', () => {
+      const newFav = store.togglePlayerFavorite(player.id);
+      notify.success(newFav ? `⭐ ${fullName} aggiunto ai Preferiti!` : `⭐ ${fullName} rimosso dai Preferiti`);
+    });
 
     // Bind toggle disponibilità asta
     const auctionToggleBtn = this.container.querySelector('#toggle-player-auction-btn');

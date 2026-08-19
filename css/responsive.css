@@ -1147,10 +1147,29 @@
 
   /* Vista Lista su Mobile: Colonna Singola con Card Grandi, Font Generosi e Massima Leggibilità */
   .pitch-vertical-list-container {
-    width: 100%;
-    flex: 1;
-    min-height: 0;
-    box-sizing: border-box;
+    width: 100% !important;
+    height: 100% !important;
+    flex: 1 1 0% !important;
+    min-height: 0 !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .pitch-vertical-list-scroll {
+    width: 100% !important;
+    height: 100% !important;
+    flex: 1 1 0% !important;
+    min-height: 0 !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    touch-action: pan-y !important;
+    box-sizing: border-box !important;
+    padding: 8px 10px calc(var(--mobile-bar-height) + 24px) 10px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
   }
 
   .pitch-list-dept-header .dept-title-box {
@@ -1180,6 +1199,9 @@
     min-height: 64px !important;
     padding: 10px 14px !important;
     border-radius: var(--radius-xs) !important;
+    touch-action: pan-y !important;
+    user-select: none !important;
+    -webkit-user-select: none !important;
   }
 
   .pitch-list-slot-item .player-card .card-header-row .player-name {

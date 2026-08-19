@@ -21,12 +21,18 @@ class Store {
     this.pitchLayoutMode = localStorage.getItem('fantaoliva_pitch_layout_mode') || 'pitch'; // 'pitch' | 'list'
     this.activeBenchFilter = 'ALL';
     this.snapshots = [];
+    this.favoritePlayerIds = new Set();
     this.subscribers = new Map();
   }
 
   init() {
     // Carica dati da localStorage o inizializza con i dati di default
     try {
+      const savedFavs = localStorage.getItem('fantaoliva_favorites');
+      if (savedFavs) {
+        this.favoritePlayerIds = new Set(JSON.parse(savedFavs));
+      }
+
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved) {
         this.teams = JSON.parse(saved);
@@ -333,6 +339,7 @@ class Store {
 
       p.teamId = p.teamId || teamInfo?.teamId || '';
       p.teamName = p.teamName || teamInfo?.teamName || p.club || 'Serie A';
+      p.isFavorite = this.favoritePlayerIds.has(p.id);
       if (p.isAvailable === undefined) {
         p.isAvailable = true;
       }
@@ -359,6 +366,7 @@ class Store {
           teamId: modPlayer.teamId || teamInfo?.teamId || '',
           teamName: modPlayer.teamName || teamInfo?.teamName || 'Serie A',
           isAvailable: modPlayer.isAvailable !== false,
+          isFavorite: this.favoritePlayerIds.has(id),
           appetibilita: modPlayer.appetibilita ?? 50
         });
       }
@@ -841,8 +849,51 @@ class Store {
     this.emit('team:changed', this.getCurrentTeam());
   }
 
+  // --- PREFERITI CALCIATORI ---
+  isPlayerFavorite(playerId) {
+    return this.favoritePlayerIds.has(playerId);
+  }
+
+  togglePlayerFavorite(playerId) {
+    if (!playerId) return false;
+    const isFav = this.favoritePlayerIds.has(playerId);
+    if (isFav) {
+      this.favoritePlayerIds.delete(playerId);
+    } else {
+      this.favoritePlayerIds.add(playerId);
+    }
+    try {
+      localStorage.setItem('fantaoliva_favorites', JSON.stringify(Array.from(this.favoritePlayerIds)));
+    } catch (e) {
+      console.warn('Errore salvataggio preferiti:', e);
+    }
+
+    // Aggiorna stato in memoria
+    for (const team of this.teams) {
+      if (team.lineup) {
+        for (const p of Object.values(team.lineup)) {
+          if (p && p.id === playerId) p.isFavorite = !isFav;
+          if (p && p.substitutes) {
+            for (const s of p.substitutes) {
+              if (s && s.id === playerId) s.isFavorite = !isFav;
+            }
+          }
+        }
+      }
+      if (team.bench) {
+        for (const p of team.bench) {
+          if (p && p.id === playerId) p.isFavorite = !isFav;
+        }
+      }
+    }
+    this.saveToStorage();
+    this.emit('player:updated', null);
+    this.emit('favorite:toggled', { playerId, isFavorite: !isFav });
+    return !isFav;
+  }
+
   // --- GUIDA ASTA PER SLOT (4 SLOT DA 10 GIOCATORI PER RUOLO) ---
-  getAuctionSlotsData(roleFilter = 'ALL', searchQuery = '', onlyAvailable = false) {
+  getAuctionSlotsData(roleFilter = 'ALL', searchQuery = '', onlyAvailable = false, onlyFavorites = false) {
     // Mappa giocatori modificati in memoria per conservare modifiche su appetibilità e disponibilità
     const modifiedMap = new Map();
     for (const team of this.teams) {
@@ -861,6 +912,8 @@ class Store {
     const allPlayers = CSV_PLAYER_CATALOG.map(catPlayer => {
       const mod = modifiedMap.get(catPlayer.id);
       const p = mod ? { ...catPlayer, ...mod } : { ...catPlayer };
+
+      p.isFavorite = this.favoritePlayerIds.has(p.id);
 
       if (p.isAvailable === undefined) {
         p.isAvailable = true;
@@ -886,6 +939,10 @@ class Store {
 
       if (onlyAvailable) {
         list = list.filter(p => p.isAvailable !== false);
+      }
+
+      if (onlyFavorites) {
+        list = list.filter(p => this.favoritePlayerIds.has(p.id));
       }
 
       if (searchQuery) {
@@ -914,6 +971,7 @@ class Store {
         slot3: list.slice(20, 30),
         slot4: list.slice(30, 40),
         totalAvailable: list.filter(p => p.isAvailable !== false).length,
+        totalFavorites: list.filter(p => this.favoritePlayerIds.has(p.id)).length,
         totalCount: list.length
       };
     });

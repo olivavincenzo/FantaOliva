@@ -339,6 +339,36 @@
 .listone-availability-btn.is-available { color: var(--accent-success); }
 .listone-availability-btn.is-taken { color: var(--accent-red); }
 
+.listone-fav-btn {
+  background: none;
+  border: none;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+  line-height: 1;
+  margin-right: 4px;
+}
+
+.listone-fav-btn:hover {
+  color: #f59e0b;
+  transform: scale(1.2);
+}
+
+.listone-fav-btn.is-fav {
+  color: #f59e0b;
+}
+
+.listone-avail-btn.fav-btn.is-active,
+.modal-avail-pill.fav-pill.is-active {
+  background: rgba(245, 158, 11, 0.2) !important;
+  border-color: #f59e0b !important;
+  color: #fbbf24 !important;
+}
+
 .listone-role-box {
   display: inline-flex;
   align-items: center;

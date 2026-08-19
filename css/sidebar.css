@@ -228,6 +228,33 @@ body.is-resizing-sidebar .sidebar-resizer {
   color: var(--text-secondary);
 }
 
+.inspector-favorite-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 24px;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xs);
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.inspector-favorite-toggle:hover {
+  border-color: #f59e0b;
+  color: #f59e0b;
+  transform: scale(1.1);
+}
+
+.inspector-favorite-toggle.is-fav {
+  background: rgba(245, 158, 11, 0.15);
+  border-color: #f59e0b;
+  color: #f59e0b;
+}
+
 .inspector-auction-toggle {
   display: inline-flex;
   align-items: center;

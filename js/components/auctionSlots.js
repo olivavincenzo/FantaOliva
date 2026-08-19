@@ -15,6 +15,7 @@ export class AuctionSlotsComponent {
     this.activeRole = 'A'; // 'P' | 'D' | 'C' | 'A' | 'ALL'
     this.searchQuery = '';
     this.onlyAvailable = false;
+    this.onlyFavorites = false;
     // Su mobile: Slot 1 aperto di default, gli altri collassati (apribili al click)
     this.collapsedSlots = {
       slot1: false,
@@ -31,6 +32,12 @@ export class AuctionSlotsComponent {
 
   subscribeEvents() {
     store.subscribe('player:updated', () => {
+      if (store.activeView === 'auction_slots') {
+        this.render();
+      }
+    });
+
+    store.subscribe('favorite:toggled', () => {
       if (store.activeView === 'auction_slots') {
         this.render();
       }
@@ -70,10 +77,15 @@ export class AuctionSlotsComponent {
     this.render();
   }
 
+  toggleOnlyFavorites() {
+    this.onlyFavorites = !this.onlyFavorites;
+    this.render();
+  }
+
   render() {
     if (!this.container) return;
 
-    const data = store.getAuctionSlotsData(this.activeRole, this.searchQuery, this.onlyAvailable);
+    const data = store.getAuctionSlotsData(this.activeRole, this.searchQuery, this.onlyAvailable, this.onlyFavorites);
 
     const rolesMeta = [
       { key: 'A', label: 'Attaccanti', shortLabel: 'A', icon: 'fa-bolt', pillClass: 'role-pill-a' },
@@ -84,33 +96,37 @@ export class AuctionSlotsComponent {
 
     const slotTiersMeta = [
       {
+        tier: 1,
         slotKey: 'slot1',
-        title: '1º Slot',
-        subtitle: 'Top Assoluti & 1ª Fascia Asta',
+        title: '1º Slot - Top Assoluti',
+        subtitle: 'Titolari inamovibili, rigoristi e top player',
         headerClass: 'slot-1-header',
         icon: 'fa-crown',
-        color: '#ffb703'
+        color: '#f59e0b'
       },
       {
+        tier: 2,
         slotKey: 'slot2',
-        title: '2º Slot',
-        subtitle: 'Semi-Top & Titolari Inamovibili',
+        title: '2º Slot - Ottimi Titolari',
+        subtitle: 'Rendimento costante e bonus frequenti',
         headerClass: 'slot-2-header',
         icon: 'fa-star',
-        color: '#00d2ff'
+        color: '#38bdf8'
       },
       {
+        tier: 3,
         slotKey: 'slot3',
-        title: '3º Slot',
-        subtitle: 'Buoni Titolari & Regolari',
+        title: '3º Slot - Titolari / Low Cost',
+        subtitle: 'Buoni titolari per completare i reparti',
         headerClass: 'slot-3-header',
         icon: 'fa-shield-halved',
-        color: '#00ff87'
+        color: '#4ade80'
       },
       {
+        tier: 4,
         slotKey: 'slot4',
-        title: '4º Slot',
-        subtitle: 'Scommesse, Jolly & Low-Cost',
+        title: '4º Slot - Scommesse / Ballottaggi',
+        subtitle: 'Jolly, giovani talenti e potenziali sorprese',
         headerClass: 'slot-4-header',
         icon: 'fa-dice',
         color: '#c084fc'
@@ -142,7 +158,7 @@ export class AuctionSlotsComponent {
             <button id="open-auction-filters-btn" class="auction-mobile-filters-btn" title="Apri filtri avanzati">
               <i class="fa-solid fa-sliders"></i>
               <span>Filtri</span>
-              ${this.onlyAvailable || this.activeRole !== 'A' ? '<span class="filter-active-dot"></span>' : ''}
+              ${this.onlyAvailable || this.onlyFavorites || this.activeRole !== 'A' ? '<span class="filter-active-dot"></span>' : ''}
             </button>
 
             <!-- Tabs Ruolo Rapido (Desktop) -->
@@ -155,6 +171,12 @@ export class AuctionSlotsComponent {
                 </button>
               `).join('')}
             </div>
+
+            <!-- Filtro Preferiti (Desktop) -->
+            <button id="toggle-filter-favorites-btn" class="auction-filter-btn fav-filter-btn ${this.onlyFavorites ? 'is-active' : ''}" title="Mostra solo i giocatori contrassegnati come preferiti">
+              <i class="fa-solid fa-star"></i>
+              <span>Preferiti</span>
+            </button>
 
             <!-- Filtro Disponibili (Desktop) -->
             <button id="toggle-filter-available-btn" class="auction-filter-btn ${this.onlyAvailable ? 'is-active' : ''}" title="Mostra solo i giocatori ancora disponibili per l'asta">
@@ -226,6 +248,9 @@ export class AuctionSlotsComponent {
                           <div class="slot-role-and-actions">
                             <span class="slot-role-tag-mini" title="${mantraRole ? `Ruolo Mantra: ${mantraRole}` : ''}">${p.role || p.classicRole}${mantraRole ? ` · ${mantraRole}` : ''}</span>
                             ${!isAvailable ? `<span class="slot-taken-badge">PRESO</span>` : ''}
+                            <button class="slot-fav-star-btn ${p.isFavorite ? 'is-fav' : ''}" data-player-id="${p.id}" title="${p.isFavorite ? 'Rimuovi dai Preferiti' : 'Aggiungi ai Preferiti'}">
+                              <i class="fa-${p.isFavorite ? 'solid' : 'regular'} fa-star"></i>
+                            </button>
                             <button class="slot-availability-dot-btn ${isAvailable ? 'is-available' : 'is-taken'}" data-player-id="${p.id}" title="${isAvailable ? 'Disponibile all\'asta (clicca per segnare PRESO)' : 'PRESO (clicca per segnare DISPONIBILE)'}">
                               <i class="fa-solid ${isAvailable ? 'fa-circle-check' : 'fa-circle-xmark'}"></i>
                             </button>
@@ -288,6 +313,12 @@ export class AuctionSlotsComponent {
       });
     });
 
+    // Filtro Preferiti Toggle
+    const favFilterBtn = this.container.querySelector('#toggle-filter-favorites-btn');
+    favFilterBtn?.addEventListener('click', () => {
+      this.toggleOnlyFavorites();
+    });
+
     // Filtro Disponibili Toggle
     const filterBtn = this.container.querySelector('#toggle-filter-available-btn');
     filterBtn?.addEventListener('click', () => {
@@ -339,6 +370,16 @@ export class AuctionSlotsComponent {
       });
 
       input.addEventListener('click', (e) => e.stopPropagation());
+    });
+
+    // Toggle Rapido Preferiti nel singolo Slot
+    this.container.querySelectorAll('.slot-fav-star-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const playerId = btn.dataset.playerId;
+        const newState = store.togglePlayerFavorite(playerId);
+        notify.success(newState ? '⭐ Aggiunto ai Preferiti!' : '⭐ Rimosso dai Preferiti');
+      });
     });
 
     // Toggle Rapido Disponibilità Asta nel singolo Slot (Icona accanto al ruolo)
@@ -467,6 +508,7 @@ export class AuctionSlotsComponent {
 
     let tempRole = this.activeRole;
     let tempOnlyAvailable = this.onlyAvailable;
+    let tempOnlyFavorites = this.onlyFavorites;
 
     modalBody.innerHTML = `
       <div class="modal-filter-section">
@@ -481,8 +523,12 @@ export class AuctionSlotsComponent {
       </div>
 
       <div class="modal-filter-section" style="margin-top: 14px;">
-        <label class="modal-filter-label"><i class="fa-solid fa-filter"></i> Stato Giocatori per l'Asta:</label>
-        <div class="modal-filter-toggle-row">
+        <label class="modal-filter-label"><i class="fa-solid fa-filter"></i> Filtri Avanzati Asta:</label>
+        <div class="modal-filter-toggle-row" style="display: flex; flex-direction: column; gap: 8px;">
+          <label class="modal-checkbox-label">
+            <input type="checkbox" id="modal-only-favorites-check" ${tempOnlyFavorites ? 'checked' : ''} />
+            <span>⭐ Mostra solo <strong>Preferiti</strong></span>
+          </label>
           <label class="modal-checkbox-label">
             <input type="checkbox" id="modal-only-available-check" ${tempOnlyAvailable ? 'checked' : ''} />
             <span>Mostra solo calciatori <strong>Disponibili</strong></span>
@@ -523,8 +569,10 @@ export class AuctionSlotsComponent {
     // Applica Filtri
     const applyBtn = document.getElementById('apply-auction-filters-btn');
     const applyHandler = () => {
-      const checkEl = document.getElementById('modal-only-available-check');
-      this.onlyAvailable = checkEl ? checkEl.checked : false;
+      const availEl = document.getElementById('modal-only-available-check');
+      const favEl = document.getElementById('modal-only-favorites-check');
+      this.onlyAvailable = availEl ? availEl.checked : false;
+      this.onlyFavorites = favEl ? favEl.checked : false;
       this.setRole(tempRole);
       modal.classList.add('hidden');
       applyBtn?.removeEventListener('click', applyHandler);
