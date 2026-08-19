@@ -6,44 +6,9 @@
    SIDEBAR SINISTRA: SELETTORE SQUADRE SERIE A
    ========================================================================== */
 .team-sidebar-header {
-  padding: 14px 14px 10px 14px;
+  padding: 10px 10px 8px 10px;
   border-bottom: 1px solid var(--border-color);
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
   background: rgba(10, 14, 23, 0.4);
-}
-
-.sidebar-section-title-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.sidebar-section-title {
-  font-family: 'Outfit', sans-serif;
-  font-size: 0.95rem;
-  font-weight: 800;
-  color: var(--text-primary);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.sidebar-section-title i {
-  color: var(--accent-neon-green);
-  font-size: 0.9rem;
-}
-
-.teams-count-badge {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 0.75rem;
-  font-weight: 800;
-  color: var(--accent-neon-green);
-  background: rgba(0, 255, 135, 0.12);
-  border: 1px solid rgba(0, 255, 135, 0.25);
-  padding: 1px 7px;
-  border-radius: var(--radius-pill);
 }
 
 .sidebar-brand {
@@ -141,9 +106,9 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 8px 12px;
+  padding: 10px 14px;
   border-radius: var(--radius-md);
-  background: rgba(18, 27, 44, 0.8);
+  background: rgba(18, 27, 44, 0.7);
   border: 1px solid rgba(255, 255, 255, 0.08);
   cursor: pointer;
   transition: var(--transition-fast);
@@ -151,44 +116,19 @@
 }
 
 .team-list-item::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  border-top-left-radius: var(--radius-md);
-  border-bottom-left-radius: var(--radius-md);
-  background: var(--team-primary, #ffffff);
-  opacity: 0.8;
-  transition: var(--transition-fast);
+  display: none !important;
 }
 
 .team-list-item:hover {
   background: rgba(30, 43, 68, 0.95);
-  border-color: rgba(0, 255, 135, 0.4);
+  border-color: rgba(0, 255, 135, 0.35);
   transform: translateX(2px);
 }
 
 .team-list-item.is-active {
-  background: linear-gradient(90deg, rgba(0, 255, 135, 0.15) 0%, rgba(0, 210, 255, 0.06) 100%);
+  background: rgba(0, 255, 135, 0.12);
   border-color: var(--accent-neon-green);
-  box-shadow: 0 0 12px rgba(0, 255, 135, 0.12);
-}
-
-.team-list-item.is-active::before {
-  width: 5px;
-  background: var(--accent-neon-green);
-  opacity: 1;
-}
-
-.team-crest-wrapper {
-  width: 34px;
-  height: 34px;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  box-shadow: 0 0 12px rgba(0, 255, 135, 0.18);
 }
 
 .team-meta {
@@ -261,25 +201,6 @@
   transform: translateX(2px);
 }
 
-.team-sidebar-footer {
-  padding: 10px 14px;
-  border-top: 1px solid var(--border-color);
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.quick-stats-badge {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--text-muted);
-}
-
-.quick-stats-badge i {
-  color: var(--accent-neon-green);
-}
-
 /* ==========================================================================
    MANIGLIA DI RIDIMENSIONAMENTO LATERALE (SIDEBAR RESIZER)
    ========================================================================== */
@@ -345,29 +266,10 @@ body.is-resizing-sidebar .sidebar-resizer {
 }
 
 .inspector-player-summary {
-  padding: 16px 18px 12px 18px;
+  padding: 14px 18px 10px 18px;
   display: flex;
   align-items: center;
   gap: 14px;
-}
-
-.inspector-avatar {
-  width: 48px;
-  height: 48px;
-  border-radius: var(--radius-md);
-  background: var(--bg-secondary);
-  border: 2px solid var(--accent-neon-green);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.inspector-num {
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 900;
-  font-size: 1.4rem;
-  color: #ffffff;
 }
 
 .inspector-main-info {
@@ -565,39 +467,78 @@ body.is-resizing-sidebar .sidebar-resizer {
   font-size: 0.9rem;
 }
 
-/* Mini Grid Statistiche Fantacalcio */
-.stats-mini-grid {
+/* Badge Ufficiale da CSV */
+.csv-badge-official {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--accent-neon-cyan);
+  background: rgba(0, 210, 255, 0.08);
+  border: 1px solid rgba(0, 210, 255, 0.25);
+  padding: 1px 7px;
+  border-radius: var(--radius-pill);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  text-transform: uppercase;
+}
+
+/* Griglia Statistiche Ufficiali Sola Lettura */
+.stats-display-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 8px;
 }
 
-.stat-input-box {
+.stat-display-card {
   background: var(--bg-secondary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
-  padding: 6px;
+  padding: 6px 6px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: var(--transition-fast);
 }
 
-.stat-input-box label {
-  font-size: 0.65rem;
+.stat-display-card:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: var(--bg-surface-elevated);
+}
+
+.stat-d-label {
+  font-size: 0.62rem;
   font-weight: 700;
   color: var(--text-dim);
   text-transform: uppercase;
+  letter-spacing: 0.02em;
   margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 
-.stat-input-box input {
-  background: none;
-  border: none;
-  color: #ffffff;
+.stat-d-value {
   font-family: 'Rajdhani', sans-serif;
-  font-weight: 700;
-  font-size: 1.05rem;
-  width: 100%;
-  outline: none;
+  font-weight: 800;
+  font-size: 1.15rem;
+  color: #ffffff;
+  line-height: 1.1;
+}
+
+.stat-display-card.highlight-fm .stat-d-value {
+  color: var(--accent-gold);
+  text-shadow: 0 0 6px rgba(255, 209, 102, 0.4);
+}
+
+.stat-d-value.stat-positive {
+  color: var(--accent-neon-green);
+}
+
+.stat-d-value.stat-negative {
+  color: #ff4d4d;
 }
 
 .input-with-suffix {

@@ -25,19 +25,18 @@
 
 .soccer-pitch {
   position: relative;
-  height: 94%;
-  max-height: 820px;
-  width: auto;
-  max-width: 96%;
-  aspect-ratio: 1 / 1.38;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   background: radial-gradient(ellipse at center, #1b4d2e 0%, #123821 65%, #0a2414 100%);
   border-radius: var(--radius-lg);
   box-shadow: 
     0 20px 50px rgba(0, 0, 0, 0.9),
-    inset 0 0 40px rgba(0, 0, 0, 0.7),
+    inset 0 0 50px rgba(0, 0, 0, 0.6),
     0 0 0 1px rgba(255, 255, 255, 0.1);
   overflow: hidden;
-  border: 4px solid #1e3a29;
+  border: 3px solid #1e3a29;
   display: block;
 }
 
@@ -308,16 +307,37 @@
 
 .slot-role-tag {
   margin-top: 3px;
-  background: rgba(10, 14, 23, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(10, 14, 23, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   color: var(--text-muted);
-  font-size: 0.62rem;
-  font-weight: 700;
-  padding: 1px 6px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 1px 8px;
   border-radius: var(--radius-pill);
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.slot-pos-badge {
+  color: #ffffff;
+  font-weight: 900;
   text-transform: uppercase;
-  backdrop-filter: blur(4px);
+}
+
+.slot-divider {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.8rem;
+}
+
+.slot-mantra-badge {
+  color: var(--accent-neon-cyan);
+  font-weight: 800;
+  font-size: 0.7rem;
 }
 
 /* Sostituti visualizzati sotto la card sul campo */
@@ -325,27 +345,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2px;
-  margin-top: 2px;
+  gap: 3px;
+  margin-top: 3px;
   width: 100%;
 }
 
 .pitch-sub-pill {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  background: rgba(14, 21, 37, 0.94);
+  gap: 5px;
+  background: rgba(14, 21, 37, 0.95);
   border: 1px solid rgba(0, 210, 255, 0.45);
   border-radius: var(--radius-pill);
-  padding: 1px 6px;
-  font-size: 0.64rem;
+  padding: 2px 8px;
+  font-size: 0.72rem;
   color: #ffffff;
   font-weight: 700;
   cursor: pointer;
   backdrop-filter: blur(6px);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
   transition: var(--transition-fast);
-  max-width: 95px;
+  max-width: 126px;
   white-space: nowrap;
 }
 
@@ -358,29 +378,22 @@
 
 .pitch-sub-pill .sub-prefix {
   color: var(--accent-neon-cyan);
-  font-size: 0.58rem;
+  font-size: 0.65rem;
   font-weight: 800;
 }
 
 .pitch-sub-pill .sub-name {
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 55px;
+  max-width: 60px;
 }
 
-.pitch-sub-pill .sub-quick-swap-btn {
-  background: none;
-  border: none;
-  color: var(--accent-neon-green);
-  cursor: pointer;
-  padding: 0 2px;
-  font-size: 0.62rem;
-  display: inline-flex;
-  align-items: center;
-  transition: transform 0.2s ease;
-}
-
-.pitch-sub-pill .sub-quick-swap-btn:hover {
-  transform: rotate(180deg);
-  color: #ffffff;
+.pitch-sub-pill .sub-tit-badge {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 1px 4px;
+  border-radius: 3px;
+  margin-left: auto;
+  letter-spacing: 0.02em;
 }

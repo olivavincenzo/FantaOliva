@@ -11,7 +11,7 @@ import { store } from '../store.js';
 import { ROLES, PLAYER_STATUSES } from '../data/roles.js';
 import { renderBallottaggioSection } from './ballottaggioManager.js';
 import { renderBenchPanel } from './benchManager.js';
-import { sanitizeHtml } from '../utils/helpers.js';
+import { sanitizeHtml, getTitolaritaClass } from '../utils/helpers.js';
 import { notify } from '../utils/notifications.js';
 
 export class PlayerInspectorComponent {
@@ -51,9 +51,6 @@ export class PlayerInspectorComponent {
       this.container.innerHTML = `
         <div class="inspector-header">
           <div class="inspector-player-summary">
-            <div class="inspector-avatar" style="border-color: var(--accent-neon-green)">
-              <i class="fa-solid fa-users"></i>
-            </div>
             <div class="inspector-main-info">
               <h2 class="inspector-name">${sanitizeHtml(currentTeam?.name || 'Squadra')}</h2>
               <div class="inspector-tags-row">
@@ -116,25 +113,23 @@ export class PlayerInspectorComponent {
     }
 
     const roleInfo = ROLES[player.role] || ROLES.C;
-    const statusInfo = PLAYER_STATUSES[player.status] || PLAYER_STATUSES.tit_sicuro;
     const fullName = player.name + (player.surname ? ' ' + player.surname : '');
+    const titolaritaHeader = player.stats?.titolarita ?? player.titolaritaPerc ?? 50;
+    const headerTitClass = getTitolaritaClass(titolaritaHeader);
 
     const isAvailable = player.isAvailable !== false;
 
     this.container.innerHTML = `
       <div class="inspector-header">
         <div class="inspector-player-summary">
-          <div class="inspector-avatar" style="border-color: ${roleInfo.color}; box-shadow: 0 0 12px ${roleInfo.color}40">
-            <span class="inspector-initial" style="font-weight: 800; font-size: 1.4rem; color: ${roleInfo.color};">${(fullName || 'G').charAt(0).toUpperCase()}</span>
-          </div>
           <div class="inspector-main-info">
             <h2 class="inspector-name">${sanitizeHtml(fullName)}</h2>
             <div class="inspector-tags-row">
               <span class="role-badge" style="background: ${roleInfo.bgColor}; color: ${roleInfo.color}; border: 1px solid ${roleInfo.borderColor}">
                 ${player.role} (${player.classicRole || player.fantaRole || 'C'})
               </span>
-              <span class="status-pill" style="background: ${statusInfo.bgColor}; color: ${statusInfo.color}; border: 1px solid ${statusInfo.borderColor}">
-                ${statusInfo.badge} ${statusInfo.shortLabel}
+              <span class="team-tag tit-header-badge ${headerTitClass}" title="Probabilità di Titolarità">
+                <i class="fa-solid fa-chart-pie"></i> ${titolaritaHeader}% Tit.
               </span>
               <button id="toggle-player-auction-btn" class="inspector-auction-toggle ${isAvailable ? 'is-available' : 'is-taken'}" title="Clicca per cambiare lo stato per l'asta">
                 <i class="fa-solid ${isAvailable ? 'fa-circle-check' : 'fa-circle-xmark'}"></i>
@@ -192,7 +187,6 @@ export class PlayerInspectorComponent {
     const displayName = player.displayName || player.name || '';
     const classicRole = player.classicRole || player.fantaRole || 'C';
     const role = player.role || 'C';
-    const status = player.status || 'tit_sicuro';
     const appetibilitaVal = player.appetibilita !== undefined ? Number(player.appetibilita) : (player.stats?.titolarita ?? 50);
 
     const isRigorista = player.isPenaltyTaker ?? player.rigorista ?? false;
@@ -200,39 +194,30 @@ export class PlayerInspectorComponent {
     const isCorner = player.isCornerTaker ?? player.corner ?? false;
 
     const titolarita = player.stats?.titolarita ?? player.titolaritaPerc ?? 50;
-    const fm = player.stats?.fantamedia ?? player.fantamedia ?? 6.0;
-    const mv = player.stats?.mediaVoto ?? player.mediaVoto ?? 6.0;
-    const gol = player.stats?.gol ?? player.gol ?? 0;
-    const assist = player.stats?.assist ?? player.assist ?? 0;
-    const amm = player.stats?.ammonizioni ?? player.ammonizioni ?? 0;
-    const esp = player.stats?.espulsioni ?? player.espulsioni ?? 0;
+    const fm = player.stats?.fantamedia ?? player.fantamedia;
+    const mv = player.stats?.mediaVoto ?? player.mediaVoto;
+    const pv = player.stats?.pv ?? player.pv ?? 0;
+    const gol = player.stats?.gol ?? player.stats?.gf ?? player.gol ?? 0;
+    const gs = player.stats?.gs ?? player.gs ?? 0;
+    const assist = player.stats?.assist ?? player.stats?.ass ?? player.assist ?? 0;
+    const amm = player.stats?.ammonizioni ?? player.stats?.amm ?? player.ammonizioni ?? 0;
+    const esp = player.stats?.espulsioni ?? player.stats?.esp ?? player.espulsioni ?? 0;
+    const rPlus = player.stats?.rPlus ?? player.stats?.rigoriSegnati ?? 0;
+    const rMinus = player.stats?.rMinus ?? player.stats?.rigoriSbagliati ?? 0;
+
     const comment = player.positionNotes || player.comment || '';
     const fantaComment = player.fantaComment || '';
-
-    const roleOptions = Object.keys(ROLES).map(code => {
-      const r = ROLES[code];
-      return `<option value="${code}" ${role === code ? 'selected' : ''}>${r.code} - ${r.name} (${r.fantaRole})</option>`;
-    }).join('');
-
-    const statusOptions = Object.keys(PLAYER_STATUSES).map(key => {
-      const s = PLAYER_STATUSES[key];
-      return `<option value="${s.id}" ${status === s.id ? 'selected' : ''}>${s.badge} ${s.label}</option>`;
-    }).join('');
 
     container.innerHTML = `
       <form id="player-edit-form" class="inspector-form">
         
-        <!-- SEZIONE 1: IDENTITÀ E RUOLO TATTICO -->
+        <!-- SEZIONE 1: VALUTAZIONE ASTA & TITOLARITÀ (MODIFICABILE) -->
         <div class="form-section-card">
           <div class="form-section-title">
-            <i class="fa-solid fa-id-card"></i> Dati Tattici & Ruolo
+            <i class="fa-solid fa-fire" style="color: #ff4d4d;"></i> Valutazione Asta & Titolarità
           </div>
 
           <div class="form-grid-2">
-            <div class="form-group">
-              <label>Nome Giocatore:</label>
-              <input type="text" id="edit-displayName" class="fanta-input" value="${sanitizeHtml(displayName)}" required />
-            </div>
             <div class="form-group">
               <label title="Indice da 0 a 100 per la valutazione all'asta del fantacalcio">
                 <i class="fa-solid fa-fire" style="color: #ff4d4d;"></i> Appetibilità (0-100):
@@ -242,100 +227,97 @@ export class PlayerInspectorComponent {
                 <span>/100</span>
               </div>
             </div>
-          </div>
 
-          <div class="form-grid-2">
             <div class="form-group">
-              <label>Ruolo Tattico Primario:</label>
-              <select id="edit-role" class="fanta-select">
-                ${roleOptions}
-              </select>
+              <label title="Probabilità di titolarità nelle formazioni di Serie A">
+                <i class="fa-solid fa-chart-pie" style="color: var(--accent-neon-cyan);"></i> % Titolarità:
+              </label>
+              <div class="input-with-suffix">
+                <input type="number" id="edit-titolaritaPerc" class="fanta-input" min="0" max="100" value="${titolarita}" />
+                <span>%</span>
+              </div>
             </div>
-            <div class="form-group">
-              <label>Ruolo Classico Fantacalcio:</label>
-              <select id="edit-fantaRole" class="fanta-select">
-                <option value="P" ${classicRole === 'P' ? 'selected' : ''}>P - Portiere</option>
-                <option value="D" ${classicRole === 'D' ? 'selected' : ''}>D - Difensore</option>
-                <option value="C" ${classicRole === 'C' ? 'selected' : ''}>C - Centrocampista</option>
-                <option value="A" ${classicRole === 'A' ? 'selected' : ''}>A - Attaccante</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label>Stato Giocatore:</label>
-            <select id="edit-status" class="fanta-select status-select">
-              ${statusOptions}
-            </select>
           </div>
         </div>
 
-        <!-- SEZIONE 2: FANTACALCIO & SPECIALISTI PIAZZATI -->
+        <!-- SEZIONE 2: SPECIALISTI CALCI PIAZZATI (MODIFICABILE) -->
         <div class="form-section-card">
           <div class="form-section-title">
-            <i class="fa-solid fa-chart-line"></i> Parametri & Statistiche Fantacalcio
+            <i class="fa-solid fa-bullseye" style="color: var(--accent-gold);"></i> Specialisti Calci Piazzati
           </div>
 
           <div class="specialists-checkbox-row">
             <label class="checkbox-chip ${isRigorista ? 'is-checked' : ''}">
               <input type="checkbox" id="edit-rigorista" ${isRigorista ? 'checked' : ''} />
-              <span class="chip-icon">🎯</span> Rigorista
+              <span class="chip-icon">🎯</span> 1º Rigorista
             </label>
             <label class="checkbox-chip ${isPunizioni ? 'is-checked' : ''}">
               <input type="checkbox" id="edit-punizioni" ${isPunizioni ? 'checked' : ''} />
-              <span class="chip-icon">📐</span> Punizioni
+              <span class="chip-icon">📐</span> Tiratore Punizioni
             </label>
             <label class="checkbox-chip ${isCorner ? 'is-checked' : ''}">
               <input type="checkbox" id="edit-corner" ${isCorner ? 'checked' : ''} />
-              <span class="chip-icon">🚩</span> Corner
+              <span class="chip-icon">🚩</span> Tiratore Corner
             </label>
           </div>
+        </div>
 
-          <div class="stats-mini-grid">
-            <div class="stat-input-box">
-              <label title="Probabilità di titolarità">% Titolarità</label>
-              <div class="input-with-suffix">
-                <input type="number" id="edit-titolaritaPerc" min="0" max="100" value="${titolarita}" />
-                <span>%</span>
-              </div>
+        <!-- SEZIONE 3: STATISTICHE SERIE A DA CSV (SOLA LETTURA) -->
+        <div class="form-section-card read-only-section">
+          <div class="form-section-title" style="justify-content: space-between;">
+            <span><i class="fa-solid fa-chart-simple" style="color: var(--accent-neon-cyan);"></i> Statistiche Serie A (da CSV)</span>
+            <span class="csv-badge-official"><i class="fa-solid fa-lock"></i> Ufficiale</span>
+          </div>
+
+          <div class="stats-display-grid">
+            <div class="stat-display-card highlight-fm">
+              <span class="stat-d-label">Fantamedia</span>
+              <span class="stat-d-value">${fm ? Number(fm).toFixed(2) : '-'}</span>
             </div>
 
-            <div class="stat-input-box">
-              <label title="Fantamedia stagionale">Fantamedia</label>
-              <input type="number" id="edit-fantamedia" step="0.01" min="0" max="15" value="${fm}" />
+            <div class="stat-display-card">
+              <span class="stat-d-label">Media Voto</span>
+              <span class="stat-d-value">${mv ? Number(mv).toFixed(2) : '-'}</span>
             </div>
 
-            <div class="stat-input-box">
-              <label title="Media voto pura">Media Voto</label>
-              <input type="number" id="edit-mediaVoto" step="0.01" min="0" max="10" value="${mv}" />
+            <div class="stat-display-card">
+              <span class="stat-d-label">Partite (PV)</span>
+              <span class="stat-d-value">${pv}</span>
             </div>
 
-            <div class="stat-input-box">
-              <label title="Gol segnati">Gol</label>
-              <input type="number" id="edit-gol" min="0" value="${gol}" />
+            <div class="stat-display-card">
+              <span class="stat-d-label">${classicRole === 'P' ? 'Gol Subiti' : 'Gol Fatti'}</span>
+              <span class="stat-d-value ${classicRole === 'P' ? 'stat-negative' : 'stat-positive'}">
+                ${classicRole === 'P' ? gs : gol}
+              </span>
             </div>
 
-            <div class="stat-input-box">
-              <label title="Assist forniti">Assist</label>
-              <input type="number" id="edit-assist" min="0" value="${assist}" />
+            <div class="stat-display-card">
+              <span class="stat-d-label">Assist</span>
+              <span class="stat-d-value ${assist > 0 ? 'stat-positive' : ''}">${assist}</span>
             </div>
 
-            <div class="stat-input-box">
-              <label title="Cartellini gialli">Amm.</label>
-              <input type="number" id="edit-ammonizioni" min="0" value="${amm}" />
+            <div class="stat-display-card">
+              <span class="stat-d-label">Rigori (+/-)</span>
+              <span class="stat-d-value">${rPlus}/${rMinus}</span>
             </div>
 
-            <div class="stat-input-box">
-              <label title="Cartellini rossi">Esp.</label>
-              <input type="number" id="edit-espulsioni" min="0" value="${esp}" />
+            <div class="stat-display-card">
+              <span class="stat-d-label">Ammonizioni</span>
+              <span class="stat-d-value">${amm}</span>
+            </div>
+
+            <div class="stat-display-card">
+              <span class="stat-d-label">Espulsioni</span>
+              <span class="stat-d-value ${esp > 0 ? 'stat-negative' : ''}">${esp}</span>
             </div>
           </div>
         </div>
 
-        <!-- SEZIONE 3: NOTE TATTICHE E FANTACONSIGLI -->
+        <!-- SEZIONE 4: NOTE TATTICHE E FANTACONSIGLI (MODIFICABILE) -->
         <div class="form-section-card">
           <div class="form-section-title">
-            <i class="fa-solid fa-comment-dots"></i> Commenti Tattici & Posizione
+            <i class="fa-solid fa-comment-dots" style="color: #ffb703;"></i> Commenti Tattici & Consigli Asta
           </div>
 
           <div class="form-group">
@@ -361,19 +343,18 @@ export class PlayerInspectorComponent {
 
     // Helper unificato per estrarre e salvare tutti i dati del form
     const saveCurrentForm = (notifyUser = false) => {
-      const newDisplayName = container.querySelector('#edit-displayName')?.value.trim() || player.name || player.displayName;
       const isRigoristaVal = Boolean(container.querySelector('#edit-rigorista')?.checked);
       const isPunizioniVal = Boolean(container.querySelector('#edit-punizioni')?.checked);
       const isCornerVal = Boolean(container.querySelector('#edit-corner')?.checked);
 
       const updatedData = {
-        name: newDisplayName,
-        displayName: newDisplayName,
+        name: player.name,
+        displayName: player.displayName || player.name,
+        role: player.role || 'C',
+        classicRole: player.classicRole || player.fantaRole || 'C',
+        fantaRole: player.fantaRole || player.classicRole || 'C',
         appetibilita: Math.min(100, Math.max(0, Number(container.querySelector('#edit-appetibilita')?.value) || 0)),
-        role: container.querySelector('#edit-role')?.value || player.role || 'C',
-        classicRole: container.querySelector('#edit-fantaRole')?.value || player.classicRole || 'C',
-        fantaRole: container.querySelector('#edit-fantaRole')?.value || player.classicRole || 'C',
-        status: container.querySelector('#edit-status')?.value || player.status || 'tit_sicuro',
+        status: player.status || 'tit_sicuro',
         isPenaltyTaker: isRigoristaVal,
         rigorista: isRigoristaVal,
         isFreeKickTaker: isPunizioniVal,
@@ -385,19 +366,13 @@ export class PlayerInspectorComponent {
         fantaComment: container.querySelector('#edit-fantaComment')?.value.trim() ?? '',
         stats: {
           ...(player.stats || {}),
-          titolarita: Number(container.querySelector('#edit-titolaritaPerc')?.value) ?? 50,
-          fantamedia: Number(container.querySelector('#edit-fantamedia')?.value) ?? 6.0,
-          mediaVoto: Number(container.querySelector('#edit-mediaVoto')?.value) ?? 6.0,
-          gol: Number(container.querySelector('#edit-gol')?.value) ?? 0,
-          assist: Number(container.querySelector('#edit-assist')?.value) ?? 0,
-          ammonizioni: Number(container.querySelector('#edit-ammonizioni')?.value) ?? 0,
-          espulsioni: Number(container.querySelector('#edit-espulsioni')?.value) ?? 0
+          titolarita: Number(container.querySelector('#edit-titolaritaPerc')?.value) ?? (player.stats?.titolarita ?? 50)
         }
       };
 
       store.updatePlayer(player.id, updatedData);
       if (notifyUser) {
-        notify.success(`Dati di ${newDisplayName} salvati!`);
+        notify.success(`Dati di ${player.displayName || player.name} salvati!`);
       }
     };
 

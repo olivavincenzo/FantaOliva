@@ -297,127 +297,285 @@
   border-radius: 4px;
 }
 
-/* Card Giocatore nel Tier */
+/* Card Giocatore nel Tier a 4 Righe */
 .slot-player-card {
-  background: rgba(10, 14, 23, 0.7);
+  background: rgba(10, 14, 23, 0.8);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-md);
-  padding: 9px 12px;
+  padding: 10px 12px;
   display: flex;
-  align-items: center;
-  gap: 10px;
+  flex-direction: column;
+  gap: 7px;
   transition: var(--transition-fast);
   cursor: pointer;
 }
 
 .slot-player-card:hover {
+  background: rgba(20, 30, 50, 0.95);
+  border-color: rgba(0, 210, 255, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+
+.slot-player-card.is-taken {
+  opacity: 0.55;
+  background: rgba(10, 14, 23, 0.45);
+  border-color: rgba(255, 77, 77, 0.2);
+  filter: grayscale(0.4);
+  padding: 6px 10px;
+  gap: 4px;
+}
+
+.slot-player-card.is-taken:hover {
+  opacity: 0.9;
+  filter: none;
+  border-color: rgba(255, 77, 77, 0.45);
   background: rgba(20, 30, 50, 0.85);
-  border-color: rgba(0, 210, 255, 0.35);
-  transform: translateX(3px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
-/* Numero Posizione nel Tier */
-.slot-player-rank {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 0.85rem;
-  font-weight: 800;
-  color: var(--text-dim);
-  width: 22px;
-  text-align: center;
-  flex-shrink: 0;
+/* Nascondi Riga 2 (Appetibilità/Titolarità) e Riga 3 (Statistiche) quando il giocatore è PRESO */
+.slot-player-card.is-taken .slot-row-2-indices,
+.slot-player-card.is-taken .slot-row-3-stats {
+  display: none !important;
 }
 
-/* Informazioni Principali Giocatore */
-.slot-player-main {
-  flex: 1;
-  min-width: 0;
-}
-
-.slot-player-name-row {
+/* ==========================================================================
+   RIGA 1: Posizione Slot (#Rank), Club, Nome & Ruolo Giocatore
+   ========================================================================== */
+.slot-row-1-identity {
   display: flex;
   align-items: center;
   gap: 6px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 6px;
+}
+
+.slot-player-rank {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: var(--accent-gold);
+  flex-shrink: 0;
+}
+
+.slot-team-tag {
+  font-size: 0.68rem;
+  font-weight: 800;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.08);
+  padding: 2px 6px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  flex-shrink: 0;
 }
 
 .slot-player-name {
   font-family: 'Outfit', sans-serif;
-  font-size: 0.88rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.2;
 }
 
-.slot-team-tag {
-  font-size: 0.65rem;
-  font-weight: 800;
-  color: var(--text-muted);
-  background: rgba(255, 255, 255, 0.06);
-  padding: 1px 4px;
-  border-radius: 3px;
+.slot-role-and-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
   flex-shrink: 0;
 }
 
 .slot-role-tag-mini {
-  font-size: 0.65rem;
+  font-size: 0.68rem;
   font-weight: 800;
   color: var(--accent-neon-cyan);
-  background: rgba(0, 210, 255, 0.12);
-  padding: 1px 4px;
+  background: rgba(0, 210, 255, 0.14);
+  padding: 2px 6px;
   border-radius: 3px;
   flex-shrink: 0;
 }
 
-/* Statistiche & Badge */
-.slot-player-meta-row {
+.slot-taken-badge {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 900;
+  color: #ff4d4d;
+  background: rgba(255, 77, 77, 0.15);
+  border: 1px solid rgba(255, 77, 77, 0.4);
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+
+.slot-availability-dot-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  padding: 0 2px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease, filter 0.15s ease;
+  line-height: 1;
+}
+
+.slot-availability-dot-btn:hover {
+  transform: scale(1.25);
+}
+
+.slot-availability-dot-btn.is-available {
+  color: var(--accent-neon-green);
+  filter: drop-shadow(0 0 5px rgba(0, 255, 135, 0.6));
+}
+
+.slot-availability-dot-btn.is-taken {
+  color: #ff4d4d;
+  filter: drop-shadow(0 0 5px rgba(255, 77, 77, 0.6));
+}
+
+/* ==========================================================================
+   RIGA 2: Indice Appetibilità & Indice Titolarità
+   ========================================================================== */
+.slot-row-2-indices {
   display: flex;
   align-items: center;
-  gap: 6px;
-  margin-top: 3px;
-  font-size: 0.72rem;
-  color: var(--text-muted);
-  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 4px 6px;
+  border-radius: var(--radius-sm);
 }
 
-.slot-stat-badge {
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 700;
-  color: var(--text-primary);
-}
-
-.slot-specialist-icon {
-  font-size: 0.72rem;
-}
-
-/* Input Appetibilità Regolabile */
 .slot-appetibilita-box {
   display: flex;
   align-items: center;
   gap: 4px;
-  flex-shrink: 0;
+}
+
+.index-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-muted);
 }
 
 .slot-appetibilita-input {
-  width: 44px;
-  height: 28px;
+  width: 38px;
+  height: 22px;
   text-align: center;
   font-family: 'Rajdhani', sans-serif;
   font-size: 0.9rem;
   font-weight: 800;
-  background: rgba(10, 14, 23, 0.9);
+  background: rgba(0, 0, 0, 0.4);
   border: 1px solid rgba(255, 183, 3, 0.4);
-  border-radius: var(--radius-sm);
+  border-radius: 3px;
   color: #ffb703;
-  transition: var(--transition-fast);
+  padding: 0;
 }
 
 .slot-appetibilita-input:focus {
   outline: none;
   border-color: #ff4d4d;
   color: #ff4d4d;
-  box-shadow: 0 0 8px rgba(255, 77, 77, 0.5);
+}
+
+.index-suffix {
+  font-size: 0.68rem;
+  color: var(--text-dim);
+}
+
+.slot-titolarita-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.slot-tit-badge {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 1px 6px;
+  border-radius: 3px;
+  letter-spacing: 0.02em;
+  display: inline-flex;
+  align-items: center;
+}
+
+.slot-tit-badge.tit-high {
+  color: #00ff87;
+  background: rgba(0, 255, 135, 0.16);
+  border: 1px solid rgba(0, 255, 135, 0.45);
+}
+
+.slot-tit-badge.tit-mid-high {
+  color: #00d2ff;
+  background: rgba(0, 210, 255, 0.16);
+  border: 1px solid rgba(0, 210, 255, 0.45);
+}
+
+.slot-tit-badge.tit-mid {
+  color: #ffb703;
+  background: rgba(255, 183, 3, 0.16);
+  border: 1px solid rgba(255, 183, 3, 0.45);
+}
+
+.slot-tit-badge.tit-low {
+  color: #ff4d4d;
+  background: rgba(255, 77, 77, 0.16);
+  border: 1px solid rgba(255, 77, 77, 0.45);
+}
+
+/* ==========================================================================
+   RIGA 3: FM, MV, Gol, Assist, Rigorista, Punizioni & Corner
+   ========================================================================== */
+.slot-row-3-stats {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.slot-stat-pill {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.slot-stat-pill strong {
+  color: #ffffff;
+}
+
+.slot-stat-pill.stat-gol {
+  color: #00ff87;
+  border-color: rgba(0, 255, 135, 0.3);
+}
+
+.slot-stat-pill.stat-ass {
+  color: #00d2ff;
+  border-color: rgba(0, 210, 255, 0.3);
+}
+
+.slot-specialist-chip {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--accent-gold);
+  background: rgba(255, 183, 3, 0.12);
+  border: 1px solid rgba(255, 183, 3, 0.3);
+  padding: 2px 6px;
+  border-radius: 3px;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.slot-player-card.is-taken .slot-player-name {
+  text-decoration: line-through;
+  color: var(--text-dim);
 }
 
 .slot-empty-state {
@@ -431,21 +589,6 @@
   font-size: 1.8rem;
   margin-bottom: 8px;
   opacity: 0.5;
-}
-
-/* ==========================================================================
-   STATO PRESO / DISPONIBILE NEGLI SLOT ASTA
-   ========================================================================== */
-.slot-player-card.is-taken {
-  opacity: 0.5;
-  background: rgba(10, 14, 23, 0.45);
-  border-color: rgba(255, 77, 77, 0.25);
-  filter: grayscale(0.55);
-}
-
-.slot-player-card.is-taken .slot-player-name {
-  text-decoration: line-through;
-  color: var(--text-dim);
 }
 
 .slot-player-card.is-taken:hover {

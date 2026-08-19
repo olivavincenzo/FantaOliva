@@ -1,33 +1,63 @@
 /**
- * Gestore per il ridimensionamento interattivo della sidebar destra (Ispettore / Scheda Giocatore)
- * Consente di trascinare il bordo sinistro della sidebar per allargarla o stringerla a piacere.
+ * Gestore per il ridimensionamento interattivo di entrambe le sidebar:
+ * - Sidebar Sinistra (Club Serie A) tramite #sidebar-teams-resizer
+ * - Sidebar Destra (Ispettore / Scheda Giocatore) tramite #sidebar-inspector-resizer
  */
 
 export function initSidebarResizer() {
-  const resizer = document.getElementById('sidebar-inspector-resizer');
-  const sidebar = document.getElementById('sidebar-inspector');
-  if (!resizer || !sidebar) return;
+  initResizablePanel({
+    resizerId: 'sidebar-teams-resizer',
+    panelId: 'sidebar-teams',
+    storageKey: 'fantaoliva_teams_sidebar_width',
+    cssVarName: '--left-sidebar-width',
+    minWidth: 160,
+    maxWidthLimit: (winW) => Math.min(480, winW * 0.4),
+    side: 'left'
+  });
 
-  const STORAGE_KEY_WIDTH = 'fantaoliva_inspector_width';
+  initResizablePanel({
+    resizerId: 'sidebar-inspector-resizer',
+    panelId: 'sidebar-inspector',
+    storageKey: 'fantaoliva_inspector_width',
+    cssVarName: '--right-sidebar-width',
+    minWidth: 280,
+    maxWidthLimit: (winW) => Math.min(850, winW - 320),
+    side: 'right'
+  });
+}
+
+function initResizablePanel({
+  resizerId,
+  panelId,
+  storageKey,
+  cssVarName,
+  minWidth,
+  maxWidthLimit,
+  side
+}) {
+  const resizer = document.getElementById(resizerId);
+  const panel = document.getElementById(panelId);
+  if (!resizer || !panel) return;
+
+  function applyWidth(widthPx) {
+    panel.style.width = `${widthPx}px`;
+    panel.style.minWidth = `${widthPx}px`;
+    panel.style.maxWidth = `${widthPx}px`;
+    document.documentElement.style.setProperty(cssVarName, `${widthPx}px`);
+  }
 
   // Ripristina larghezza salvata se valida
   try {
-    const savedWidth = localStorage.getItem(STORAGE_KEY_WIDTH);
+    const savedWidth = localStorage.getItem(storageKey);
     if (savedWidth) {
       const numW = Number(savedWidth);
-      if (!isNaN(numW) && numW >= 280 && numW <= window.innerWidth * 0.7) {
+      const maxW = maxWidthLimit(window.innerWidth);
+      if (!isNaN(numW) && numW >= minWidth && numW <= maxW) {
         applyWidth(numW);
       }
     }
   } catch (e) {
     // Ignora fallback localStorage
-  }
-
-  function applyWidth(widthPx) {
-    sidebar.style.width = `${widthPx}px`;
-    sidebar.style.minWidth = `${widthPx}px`;
-    sidebar.style.maxWidth = `${widthPx}px`;
-    document.documentElement.style.setProperty('--right-sidebar-width', `${widthPx}px`);
   }
 
   let isDragging = false;
@@ -37,7 +67,7 @@ export function initSidebarResizer() {
   const onStart = (clientX) => {
     isDragging = true;
     startX = clientX;
-    startWidth = sidebar.getBoundingClientRect().width;
+    startWidth = panel.getBoundingClientRect().width;
     document.body.classList.add('is-resizing-sidebar');
     resizer.classList.add('is-dragging');
   };
@@ -57,11 +87,18 @@ export function initSidebarResizer() {
   const onMove = (clientX) => {
     if (!isDragging) return;
 
-    // Poiché si trova a destra, trascinare verso sinistra (clientX minore) aumenta la larghezza:
-    const deltaX = startX - clientX;
-    const minWidth = 280;
-    const maxWidth = Math.min(850, window.innerWidth - 320);
-    const newWidth = Math.min(Math.max(startWidth + deltaX, minWidth), maxWidth);
+    let newWidth = startWidth;
+    if (side === 'left') {
+      // Per il pannello sinistro, trascinare verso destra (clientX maggiore) aumenta la larghezza
+      const deltaX = clientX - startX;
+      const maxW = maxWidthLimit(window.innerWidth);
+      newWidth = Math.min(Math.max(startWidth + deltaX, minWidth), maxW);
+    } else {
+      // Per il pannello destro, trascinare verso sinistra (clientX minore) aumenta la larghezza
+      const deltaX = startX - clientX;
+      const maxW = maxWidthLimit(window.innerWidth);
+      newWidth = Math.min(Math.max(startWidth + deltaX, minWidth), maxW);
+    }
 
     applyWidth(newWidth);
   };
@@ -73,8 +110,8 @@ export function initSidebarResizer() {
     resizer.classList.remove('is-dragging');
 
     try {
-      const finalWidth = Math.round(sidebar.getBoundingClientRect().width);
-      localStorage.setItem(STORAGE_KEY_WIDTH, String(finalWidth));
+      const finalWidth = Math.round(panel.getBoundingClientRect().width);
+      localStorage.setItem(storageKey, String(finalWidth));
     } catch (e) {
       // ignore
     }

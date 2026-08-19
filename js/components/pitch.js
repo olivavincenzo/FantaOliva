@@ -10,6 +10,7 @@
 import { store } from '../store.js';
 import { createPlayerCard } from './playerCard.js';
 import { dragDrop } from '../utils/dragDrop.js';
+import { sanitizeHtml, getTitolaritaClass } from '../utils/helpers.js';
 
 export class PitchComponent {
   constructor(container) {
@@ -137,10 +138,20 @@ export class PitchComponent {
         });
       });
 
-      // Etichetta del ruolo slot di posizione
+      // Etichetta del ruolo tattico di posizione + ruolo Mantra del giocatore
       const slotLabel = document.createElement('div');
       slotLabel.className = 'slot-role-tag';
-      slotLabel.textContent = item.slot.label || item.slot.role;
+      
+      const posRole = item.slot.role || item.slot.label || '';
+      const mantraRole = item.player?.mantraRole || item.player?.role;
+
+      if (item.player && mantraRole && mantraRole.toUpperCase() !== posRole.toUpperCase()) {
+        slotLabel.innerHTML = `<span class="slot-pos-badge">${sanitizeHtml(posRole)}</span><span class="slot-divider">·</span><span class="slot-mantra-badge" title="Ruolo Mantra: ${sanitizeHtml(mantraRole)}">${sanitizeHtml(mantraRole)}</span>`;
+      } else if (item.player && mantraRole) {
+        slotLabel.innerHTML = `<span class="slot-pos-badge">${sanitizeHtml(posRole)}</span><span class="slot-mantra-badge">(${sanitizeHtml(mantraRole)})</span>`;
+      } else {
+        slotLabel.innerHTML = `<span class="slot-pos-badge">${sanitizeHtml(posRole || item.slot.label)}</span>`;
+      }
 
       slotWrapper.appendChild(card);
       slotWrapper.appendChild(slotLabel);
@@ -155,24 +166,19 @@ export class PitchComponent {
           const subPlayer = store.getPlayer(subId);
           if (!subPlayer) return;
 
+          const subTit = subPlayer.stats?.titolarita ?? subPlayer.titolaritaPerc ?? 50;
+          const subTitClass = getTitolaritaClass(subTit);
+
           const subPill = document.createElement('div');
           subPill.className = 'pitch-sub-pill';
-          subPill.title = `${idx + 1}ª Scelta Sostituto: ${subPlayer.name} (${subPlayer.role})`;
+          subPill.title = `${idx + 1}ª Scelta Sostituto: ${subPlayer.name} (${subPlayer.role}) - ${subTit}% Titolarità (Clicca per ispezionare)`;
           subPill.innerHTML = `
             <span class="sub-prefix">${idx + 1}ª</span>
-            <span class="sub-name">${subPlayer.name || subPlayer.displayName}</span>
-            <button type="button" class="sub-quick-swap-btn" title="Promuovi subito ${subPlayer.name} titolare">
-              <i class="fa-solid fa-repeat"></i>
-            </button>
+            <span class="sub-name">${sanitizeHtml(subPlayer.name || subPlayer.displayName)}</span>
+            <span class="sub-tit-badge ${subTitClass}" title="% Titolarità">${subTit}% Tit</span>
           `;
 
-          // Tasto di swap rapido
-          subPill.querySelector('.sub-quick-swap-btn')?.addEventListener('click', (e) => {
-            e.stopPropagation();
-            store.assignPlayerToSlot(item.slot.id, subPlayer.id);
-          });
-
-          // Click sulla pillola per selezionare il sostituto nell'ispettore
+          // Click sulla pillola per selezionare e ispezionare il sostituto
           subPill.addEventListener('click', (e) => {
             e.stopPropagation();
             store.selectPlayer(subPlayer.id);

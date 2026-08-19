@@ -51,3 +51,12 @@ export function formatDate(dateInput) {
 export function clamp(num, min, max) {
   return Math.min(Math.max(num, min), max);
 }
+
+export function getTitolaritaClass(perc) {
+  const val = Number(perc);
+  if (isNaN(val)) return 'tit-mid';
+  if (val >= 70) return 'tit-high';      // Verde (Titolare)
+  if (val >= 50) return 'tit-mid-high';  // Ciano (Favorevole)
+  if (val >= 35) return 'tit-mid';       // Oro/Ambra (Ballottaggio)
+  return 'tit-low';                      // Rosso (Riserva)
+}

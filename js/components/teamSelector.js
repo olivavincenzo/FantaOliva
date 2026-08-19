@@ -29,21 +29,13 @@ export class TeamSelectorComponent {
   render() {
     this.container.innerHTML = `
       <div class="team-sidebar-header">
-        <div class="sidebar-section-title-row">
-          <div class="sidebar-section-title">
-            <i class="fa-solid fa-shield-halved"></i>
-            <span>Club Serie A</span>
-          </div>
-          <span class="teams-count-badge">20 Club</span>
-        </div>
-
         <div class="team-search-box">
           <i class="fa-solid fa-magnifying-glass search-icon"></i>
           <input 
             type="text" 
             id="team-search-input" 
             class="team-search-input" 
-            placeholder="Cerca squadra o città..." 
+            placeholder="Cerca squadra..." 
             autocomplete="off"
           />
           <button id="clear-search-btn" class="clear-search-btn hidden" aria-label="Cancella ricerca">
@@ -54,13 +46,6 @@ export class TeamSelectorComponent {
 
       <div class="team-list-container" id="team-list-container">
         <!-- Rendered via JS -->
-      </div>
-
-      <div class="team-sidebar-footer">
-        <div class="quick-stats-badge">
-          <i class="fa-solid fa-shield-halved"></i>
-          <span>20 Squadre Serie A</span>
-        </div>
       </div>
     `;
 
@@ -94,21 +79,15 @@ export class TeamSelectorComponent {
 
     this.teamListEl.innerHTML = filtered.map(team => {
       const isActive = currentTeam && currentTeam.id === team.id;
-      const badgeSvg = getTeamBadgeSvg(team.shortName, team.primaryColor, team.secondaryColor, team.accentColor, `sb_${team.id}`);
 
       return `
         <div 
           class="team-list-item ${isActive ? 'is-active' : ''}" 
           data-team-id="${team.id}"
-          style="--team-primary: ${team.primaryColor}; --team-secondary: ${team.secondaryColor};"
         >
-          <div class="team-crest-wrapper">
-            ${badgeSvg}
-          </div>
           <div class="team-meta">
             <div class="team-name-row">
               <span class="team-title">${sanitizeHtml(team.name)}</span>
-              <span class="team-formation-badge">${team.defaultFormation || '4-3-3'}</span>
             </div>
             <div class="team-sub-row">
               <span class="team-coach"><i class="fa-solid fa-user-tie"></i> ${sanitizeHtml(team.coach || 'Allenatore')}</span>
