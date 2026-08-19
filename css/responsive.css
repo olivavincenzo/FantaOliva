@@ -1153,8 +1153,12 @@
     min-height: 0 !important;
     box-sizing: border-box !important;
     overflow: hidden !important;
-    display: flex !important;
+    display: flex;
     flex-direction: column !important;
+  }
+
+  .pitch-vertical-list-container.hidden {
+    display: none !important;
   }
 
   .pitch-vertical-list-scroll {

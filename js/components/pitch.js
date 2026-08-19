@@ -171,16 +171,26 @@ export class PitchComponent {
     const isListMode = store.pitchLayoutMode === 'list';
 
     if (isListMode) {
-      if (this.pitchEl) this.pitchEl.style.display = 'none';
+      if (this.pitchEl) {
+        this.pitchEl.style.display = 'none';
+        this.pitchEl.classList.add('hidden');
+      }
       if (this.verticalListEl) {
+        this.verticalListEl.style.display = 'flex';
         this.verticalListEl.classList.remove('hidden');
         this.renderVerticalList();
       }
       return;
     }
 
-    if (this.pitchEl) this.pitchEl.style.display = 'block';
-    if (this.verticalListEl) this.verticalListEl.classList.add('hidden');
+    if (this.pitchEl) {
+      this.pitchEl.style.display = 'block';
+      this.pitchEl.classList.remove('hidden');
+    }
+    if (this.verticalListEl) {
+      this.verticalListEl.style.display = 'none';
+      this.verticalListEl.classList.add('hidden');
+    }
 
     const lineup = store.getLineupPlayers();
     const selectedPlayer = store.getSelectedPlayer();
