@@ -36,6 +36,11 @@
     position: relative;
   }
 
+  /* Su mobile le sidebar sono drawer nascosti di default: nascondi anche i resizer */
+  .sidebar-resizer {
+    display: none !important;
+  }
+
   .app-sidebar-left {
     position: fixed;
     top: var(--header-height);
