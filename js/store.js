@@ -724,16 +724,6 @@ class Store {
     this.emit('ballottaggio:updated', team.ballottaggi);
   }
 
-  // --- NOTE SQUADRA ---
-  updateTeamNotes(notes) {
-    const team = this.getCurrentTeam();
-    if (!team) return;
-
-    team.teamNotes = notes;
-    this.saveToStorage();
-    this.emit('team:notesUpdated', notes);
-  }
-
   // --- STORICO & SNAPSHOTS ---
   getSnapshotsForCurrentTeam() {
     return this.snapshots.filter(s => s.teamId === this.currentTeamId);
@@ -753,8 +743,7 @@ class Store {
       formationSlots: deepClone(team.formationSlots),
       customPositions: deepClone(team.customPositions || {}),
       players: deepClone(team.players),
-      ballottaggi: deepClone(team.ballottaggi || []),
-      teamNotes: team.teamNotes || ''
+      ballottaggi: deepClone(team.ballottaggi || [])
     };
 
     this.snapshots.unshift(snapshot);
@@ -775,7 +764,6 @@ class Store {
     team.customPositions = deepClone(snapshot.customPositions || {});
     team.players = deepClone(snapshot.players);
     team.ballottaggi = deepClone(snapshot.ballottaggi || []);
-    team.teamNotes = snapshot.teamNotes;
 
     this.currentTeamId = team.id;
     this.saveToStorage();

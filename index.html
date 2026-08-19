@@ -103,15 +103,6 @@
           </div>
         </button>
 
-        <button id="open-team-notes-btn" class="dropdown-menu-item"
-          title="Note generali sulla squadra e strategie">
-          <div class="dropdown-item-icon icon-gold"><i class="fa-solid fa-clipboard-list"></i></div>
-          <div class="dropdown-item-text">
-            <span class="item-title">Note Squadra</span>
-            <span class="item-desc">Strategie, commenti e appunti asta</span>
-          </div>
-        </button>
-
         <button id="open-history-btn" class="dropdown-menu-item" title="Storico versioni e formazioni">
           <div class="dropdown-item-icon icon-blue"><i class="fa-solid fa-clock-rotate-left"></i></div>
           <div class="dropdown-item-text">
@@ -205,11 +196,6 @@
         <i class="fa-solid fa-table-list"></i>
         <span>Listone</span>
       </button>
-      <button id="mobile-notes-btn" class="mobile-nav-btn"
-        onclick="document.querySelector('#open-team-notes-btn').click()">
-        <i class="fa-solid fa-file-pen"></i>
-        <span>Note</span>
-      </button>
       <button id="mobile-settings-btn" class="mobile-nav-btn" title="Impostazioni, Import CSV ed Esporta">
         <i class="fa-solid fa-gear"></i>
         <span>Menu</span>
@@ -221,28 +207,6 @@
   <!-- ==========================================================================
        FINESTRE MODALI
        ========================================================================== -->
-
-  <!-- MODALE: NOTE DI SQUADRA -->
-  <div class="modal-backdrop hidden" id="team-notes-modal">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-header">
-        <h3 class="modal-title" id="team-notes-title"><i class="fa-solid fa-clipboard-list"></i> Note Tattiche Squadra
-        </h3>
-        <button class="modal-close-btn" id="close-team-notes-btn">&times;</button>
-      </div>
-      <div class="modal-body">
-        <p class="section-desc">Inserisci annotazioni generali sulla gestione tattica, turnover per le coppe, gerarchie
-          calci piazzati e consigli generali per il fantacalcio.</p>
-        <textarea id="team-notes-textarea" class="fanta-textarea" rows="12"
-          placeholder="Scrivi qui le note tattiche della squadra..."></textarea>
-      </div>
-      <div class="modal-footer">
-        <button class="fanta-btn secondary-btn" id="cancel-team-notes-btn">Annulla</button>
-        <button class="fanta-btn success-btn" id="save-team-notes-btn"><i class="fa-solid fa-floppy-disk"></i> Salva
-          Note</button>
-      </div>
-    </div>
-  </div>
 
   <!-- MODALE: STORICO VERSIONI & SNAPSHOT -->
   <div class="modal-backdrop hidden" id="history-modal">

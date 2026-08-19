@@ -10,7 +10,6 @@ import { PitchComponent } from './components/pitch.js';
 import { PlayerInspectorComponent } from './components/playerInspector.js';
 import { AuctionSlotsComponent } from './components/auctionSlots.js';
 import { PlayersListoneComponent } from './components/playersListone.js';
-import { initTeamNotesModal } from './components/teamNotes.js';
 import { initHistoryModal } from './components/historyManager.js';
 import { initExportModal } from './components/exporter.js';
 import { initSidebarResizer } from './utils/resizer.js';
@@ -41,7 +40,6 @@ class App {
     this.listone.init();
 
     // 3. Inizializzazione Modali, Resizer e Utility
-    initTeamNotesModal();
     initHistoryModal();
     initExportModal();
     initSidebarResizer();
