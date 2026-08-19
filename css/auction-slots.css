@@ -279,14 +279,17 @@
 }
 
 /* Card Giocatore nel Tier */
+/* Card Giocatore nel Tier */
 .slot-player-card {
   background: var(--bg-surface-elevated);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-xs);
-  padding: 6px 8px;
+  padding: 6px 10px;
   display: flex;
-  flex-direction: column;
-  gap: 3px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px 8px;
   transition: var(--transition-fast);
   cursor: pointer;
 }
@@ -300,21 +303,6 @@
   background: var(--bg-primary);
 }
 
-.slot-player-card.is-taken .slot-row-2-indices,
-.slot-player-card.is-taken .slot-row-3-stats {
-  display: none !important;
-}
-
-/* RIGA 1: Posizione Slot (#Rank), Club, Nome & Ruolo */
-.slot-row-1-identity {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  flex-wrap: wrap;
-  border-bottom: 1px solid var(--border-subtle);
-  padding-bottom: 3px;
-}
-
 .slot-player-rank {
   font-family: var(--font-main);
   font-size: 0.75rem;
@@ -323,35 +311,43 @@
   flex-shrink: 0;
 }
 
-.slot-team-tag {
-  font-size: 0.62rem;
-  font-weight: 700;
+.slot-role-tag-mini {
+  font-family: var(--font-main);
+  font-size: 0.65rem;
+  font-weight: 800;
   color: var(--text-secondary);
-  text-transform: uppercase;
+  background: var(--bg-primary);
+  padding: 1px 4px;
+  border-radius: 2px;
+  border: 1px solid var(--border-color);
   flex-shrink: 0;
 }
 
 .slot-player-name {
   font-family: var(--font-main);
-  font-size: 0.82rem;
-  font-weight: 700;
+  font-size: 0.88rem;
+  font-weight: 800;
   color: #ffffff;
   line-height: 1.2;
-}
-
-.slot-role-and-actions {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  margin-left: auto;
   flex-shrink: 0;
 }
 
-.slot-role-tag-mini {
-  font-family: var(--font-main);
-  font-size: 0.62rem;
-  font-weight: 800;
+.slot-team-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
   color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 1px 4px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.slot-role-and-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
   flex-shrink: 0;
 }
 
@@ -366,7 +362,7 @@
 .slot-availability-dot-btn {
   background: none;
   border: none;
-  font-size: 0.80rem;
+  font-size: 0.85rem;
   padding: 0 1px;
   cursor: pointer;
   display: inline-flex;
@@ -383,102 +379,98 @@
 .slot-availability-dot-btn.is-available { color: var(--accent-success); }
 .slot-availability-dot-btn.is-taken { color: var(--accent-red); }
 
-/* RIGA 2: Indici */
-.slot-row-2-indices {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 4px;
-}
-
 .slot-appetibilita-box {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 3px;
+  gap: 2px;
+  background: rgba(239, 68, 68, 0.12);
+  padding: 1px 5px;
+  border-radius: 2px;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  font-size: 0.72rem;
+  flex-shrink: 0;
 }
 
-.index-label {
+.slot-appetibilita-box::before {
+  content: "App: ";
   font-size: 0.65rem;
-  font-weight: 600;
-  color: var(--text-secondary);
+  font-weight: 700;
+  color: var(--accent-red);
 }
 
 .slot-appetibilita-input {
-  width: 28px;
+  width: 26px;
   height: 16px;
   text-align: center;
   font-family: var(--font-main);
   font-size: 0.75rem;
   font-weight: 700;
-  background: var(--bg-primary);
-  border: 1px solid var(--border-color);
-  border-radius: 2px;
+  background: transparent;
+  border: none;
   color: #ffffff;
   padding: 0;
 }
 
 .slot-appetibilita-input:focus {
   outline: none;
-  border-color: var(--accent-red);
 }
 
-.index-suffix {
-  font-size: 0.60rem;
-  color: var(--text-dim);
+.slot-appetibilita-box .index-suffix {
+  display: none;
 }
 
 .slot-titolarita-box {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 3px;
+  flex-shrink: 0;
 }
 
 .slot-tit-badge {
   font-family: var(--font-main);
-  font-size: 0.65rem;
+  font-size: 0.70rem;
   font-weight: 700;
   display: inline-flex;
   align-items: center;
-}
-
-.slot-tit-badge.tit-high { color: var(--accent-success); }
-.slot-tit-badge.tit-mid-high { color: #3b82f6; }
-.slot-tit-badge.tit-mid { color: #f59e0b; }
-.slot-tit-badge.tit-low { color: var(--accent-red); }
-
-/* RIGA 3: Statistiche */
-.slot-row-3-stats {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  flex-wrap: wrap;
+  background: var(--bg-primary);
+  padding: 1px 5px;
+  border-radius: 2px;
+  color: var(--text-dim);
 }
 
 .slot-stat-pill {
   font-family: var(--font-main);
-  font-size: 0.68rem;
+  font-size: 0.70rem;
   font-weight: 600;
   color: var(--text-secondary);
-  background: transparent;
-  border: none;
-  padding: 0;
+  background: var(--bg-primary);
+  padding: 1px 5px;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .slot-stat-pill strong {
   color: #ffffff;
   font-weight: 700;
+  margin-left: 2px;
 }
 
 .slot-stat-pill.stat-gol { color: var(--accent-success); }
 .slot-stat-pill.stat-ass { color: #3b82f6; }
 
 .slot-specialist-chip {
-  font-size: 0.62rem;
+  font-size: 0.65rem;
   font-weight: 700;
   color: #f59e0b;
   display: inline-flex;
   align-items: center;
   gap: 2px;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  padding: 1px 4px;
+  border-radius: 2px;
+  flex-shrink: 0;
 }
 
 .slot-player-card.is-taken .slot-player-name {

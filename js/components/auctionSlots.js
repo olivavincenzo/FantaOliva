@@ -239,56 +239,47 @@ export class AuctionSlotsComponent {
         return `
                       <div class="slot-player-card ${!isAvailable ? 'is-taken' : ''}" data-player-id="${p.id}" data-team-id="${p.teamId || ''}" title="${sanitizeHtml(p.name)} (${sanitizeHtml(p.teamName || 'Serie A')}) - Doppio click per aprire la Lavagna Tattica">
                         
-                        <!-- RIGA 1: Posizione Slot, Club, Nome, Ruolo & Icona Disponibilità Asta -->
-                        <div class="slot-row-1-identity">
-                          <span class="slot-player-rank">#${rankNum}</span>
-                          <span class="slot-team-tag">${sanitizeHtml(p.teamName || 'Serie A')}</span>
-                          <span class="slot-player-name" title="${sanitizeHtml(p.name)}">${sanitizeHtml(p.name)}</span>
-                          
-                          <div class="slot-role-and-actions">
-                            <span class="slot-role-tag-mini" title="${mantraRole ? `Ruolo Mantra: ${mantraRole}` : ''}">${p.role || p.classicRole}${mantraRole ? ` · ${mantraRole}` : ''}</span>
-                            ${!isAvailable ? `<span class="slot-taken-badge">PRESO</span>` : ''}
-                            <button class="slot-fav-star-btn ${p.isFavorite ? 'is-fav' : ''}" data-player-id="${p.id}" title="${p.isFavorite ? 'Rimuovi dai Preferiti' : 'Aggiungi ai Preferiti'}">
-                              <i class="fa-${p.isFavorite ? 'solid' : 'regular'} fa-star"></i>
-                            </button>
-                            <button class="slot-availability-dot-btn ${isAvailable ? 'is-available' : 'is-taken'}" data-player-id="${p.id}" title="${isAvailable ? 'Disponibile all\'asta (clicca per segnare PRESO)' : 'PRESO (clicca per segnare DISPONIBILE)'}">
-                              <i class="fa-solid ${isAvailable ? 'fa-circle-check' : 'fa-circle-xmark'}"></i>
-                            </button>
-                          </div>
+                        <span class="slot-player-rank">#${rankNum}</span>
+                        <span class="slot-role-tag-mini" title="${mantraRole ? `Ruolo Mantra: ${mantraRole}` : ''}">${p.role || p.classicRole}${mantraRole ? ` · ${mantraRole}` : ''}</span>
+                        <span class="slot-player-name" title="${sanitizeHtml(p.name)}">${sanitizeHtml(p.name)}</span>
+                        <span class="slot-team-tag">${sanitizeHtml(p.teamName || 'Serie A')}</span>
+                        
+                        <div class="slot-role-and-actions">
+                          ${!isAvailable ? `<span class="slot-taken-badge">PRESO</span>` : ''}
+                          <button class="slot-fav-star-btn ${p.isFavorite ? 'is-fav' : ''}" data-player-id="${p.id}" title="${p.isFavorite ? 'Rimuovi dai Preferiti' : 'Aggiungi ai Preferiti'}">
+                            <i class="fa-${p.isFavorite ? 'solid' : 'regular'} fa-star"></i>
+                          </button>
+                          <button class="slot-availability-dot-btn ${isAvailable ? 'is-available' : 'is-taken'}" data-player-id="${p.id}" title="${isAvailable ? 'Disponibile all\'asta (clicca per segnare PRESO)' : 'PRESO (clicca per segnare DISPONIBILE)'}">
+                            <i class="fa-solid ${isAvailable ? 'fa-circle-check' : 'fa-circle-xmark'}"></i>
+                          </button>
                         </div>
 
-                        <!-- RIGA 2: Indice di Appetibilità & Indice di Titolarità -->
-                        <div class="slot-row-2-indices">
-                          <div class="slot-appetibilita-box" title="Modifica Indice Appetibilità (0-100)">
-                            <i class="fa-solid fa-fire" style="color: #ff4d4d; font-size: 0.85rem;"></i>
-                            <input 
-                              type="number" 
-                              class="slot-appetibilita-input" 
-                              data-player-id="${p.id}" 
-                              min="0" 
-                              max="100" 
-                              value="${appVal}"
-                            />
-                            <span class="index-suffix">/100</span>
-                          </div>
-
-                          <div class="slot-titolarita-box">
-                            <span class="slot-tit-badge ${titClass}" title="Probabilità di Titolarità in Serie A">${titolarita}% Tit</span>
-                          </div>
+                        <div class="slot-appetibilita-box" title="Modifica Indice Appetibilità (0-100)">
+                          <i class="fa-solid fa-fire" style="color: #ff4d4d; font-size: 0.85rem;"></i>
+                          <input 
+                            type="number" 
+                            class="slot-appetibilita-input" 
+                            data-player-id="${p.id}" 
+                            min="0" 
+                            max="100" 
+                            value="${appVal}"
+                          />
+                          <span class="index-suffix">/100</span>
                         </div>
 
-                        <!-- RIGA 3: Qt, FVM, FM, MV, Gol, Assist, Rigorista, Punizioni & Corner -->
-                        <div class="slot-row-3-stats">
-                          ${qtA !== '-' ? `<span class="slot-stat-pill" title="Quotazione Attuale 2026/27">Qt: <strong>${qtA}</strong></span>` : ''}
-                          ${fvm !== '-' ? `<span class="slot-stat-pill" title="FantaValore di Mercato">FVM: <strong>${fvm}</strong></span>` : ''}
-                          <span class="slot-stat-pill" title="Fantamedia">FM: <strong>${fm}</strong></span>
-                          <span class="slot-stat-pill" title="Media Voto">MV: <strong>${mv}</strong></span>
-                          ${gol > 0 ? `<span class="slot-stat-pill stat-gol" title="Gol segnati">⚽ ${gol}</span>` : ''}
-                          ${ass > 0 ? `<span class="slot-stat-pill stat-ass" title="Assist forniti">🅰️ ${ass}</span>` : ''}
-                          ${p.isPenaltyTaker ? `<span class="slot-specialist-chip" title="1º Rigorista">🎯 Rigori</span>` : ''}
-                          ${p.isFreeKickTaker ? `<span class="slot-specialist-chip" title="Tiratore Punizioni">📐 Punizioni</span>` : ''}
-                          ${p.isCornerTaker ? `<span class="slot-specialist-chip" title="Tiratore Corner">🚩 Corner</span>` : ''}
+                        <div class="slot-titolarita-box">
+                          <span class="slot-tit-badge ${titClass}" title="Probabilità di Titolarità in Serie A">${titolarita}% Tit</span>
                         </div>
+
+                        ${qtA !== '-' ? `<span class="slot-stat-pill" title="Quotazione Attuale 2026/27">Qt: <strong>${qtA}</strong></span>` : ''}
+                        ${fvm !== '-' ? `<span class="slot-stat-pill" title="FantaValore di Mercato">FVM: <strong>${fvm}</strong></span>` : ''}
+                        <span class="slot-stat-pill" title="Fantamedia">FM: <strong>${fm}</strong></span>
+                        <span class="slot-stat-pill" title="Media Voto">MV: <strong>${mv}</strong></span>
+                        ${gol > 0 ? `<span class="slot-stat-pill stat-gol" title="Gol segnati">⚽ ${gol}</span>` : ''}
+                        ${ass > 0 ? `<span class="slot-stat-pill stat-ass" title="Assist forniti">🅰️ ${ass}</span>` : ''}
+                        ${p.isPenaltyTaker ? `<span class="slot-specialist-chip" title="1º Rigorista">🎯 Rigori</span>` : ''}
+                        ${p.isFreeKickTaker ? `<span class="slot-specialist-chip" title="Tiratore Punizioni">📐 Punizioni</span>` : ''}
+                        ${p.isCornerTaker ? `<span class="slot-specialist-chip" title="Tiratore Corner">🚩 Corner</span>` : ''}
 
                       </div>
                     `;

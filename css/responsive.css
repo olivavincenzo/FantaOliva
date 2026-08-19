@@ -794,38 +794,197 @@
 
   .slot-tier-column:not(.is-collapsed) .slot-players-list {
     display: flex !important;
-    padding: 6px 6px;
-    gap: 4px;
+    flex-direction: column !important;
+    padding: 8px 6px !important;
+    gap: 8px !important;
     max-height: none !important;
     overflow: visible !important;
     height: auto !important;
   }
 
+  /* Slot Player Card su Mobile: Stile Card Fluida Moderna (come Listone) */
   .slot-player-card {
-    padding: 4px 6px;
-    gap: 2px;
-    border-radius: 2px;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    gap: 6px 8px !important;
+    padding: 10px 12px !important;
+    background: var(--bg-surface) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: var(--radius-xs) !important;
+    box-shadow: var(--shadow-sm) !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    min-height: auto !important;
+    touch-action: pan-y !important;
   }
 
-  .slot-row-1-identity {
-    padding-bottom: 2px;
-    gap: 3px;
+  .slot-player-card:hover,
+  .slot-player-card:active {
+    background: var(--bg-surface-elevated) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
   }
 
-  .slot-player-rank { font-size: 0.72rem; }
-  .slot-team-tag { font-size: 0.55rem; padding: 0 2px; }
-  .slot-player-name { font-size: 0.76rem; }
-  .slot-role-tag-mini { font-size: 0.55rem; }
-  .slot-taken-badge { font-size: 0.52rem; }
-  .slot-availability-dot-btn { font-size: 0.75rem; }
+  /* Flusso Orizzontale Continuo con Wrap: display contents su tutti i wrapper riga */
+  .slot-row-1-identity,
+  .slot-row-2-indices,
+  .slot-row-3-stats {
+    display: contents !important;
+  }
 
-  .slot-row-2-indices { gap: 2px; }
-  .index-label { font-size: 0.58rem; }
-  .slot-appetibilita-input { width: 24px; height: 14px; font-size: 0.68rem; }
-  .index-suffix { font-size: 0.55rem; }
-  .slot-tit-badge { font-size: 0.55rem; }
-  .slot-row-3-stats { gap: 2px; }
-  .slot-stat-pill { font-size: 0.55rem; }
+  .slot-player-rank {
+    order: 1 !important;
+    font-size: 0.76rem !important;
+    font-weight: 700 !important;
+    color: var(--text-dim) !important;
+    flex-shrink: 0 !important;
+  }
+
+  .slot-role-tag-mini {
+    order: 2 !important;
+    font-size: 0.70rem !important;
+    font-weight: 700 !important;
+    padding: 2px 6px !important;
+    border-radius: 2px !important;
+    background: var(--bg-surface-elevated) !important;
+    border: 1px solid var(--border-color) !important;
+    flex-shrink: 0 !important;
+  }
+
+  .slot-player-name {
+    order: 3 !important;
+    font-size: 0.95rem !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    letter-spacing: -0.01em !important;
+    flex: 0 1 auto !important;
+    min-width: 0 !important;
+    white-space: nowrap !important;
+  }
+
+  .slot-team-tag {
+    order: 4 !important;
+    font-size: 0.75rem !important;
+    font-weight: 700 !important;
+    padding: 2px 6px !important;
+    border-radius: var(--radius-xs) !important;
+    background: var(--bg-surface-elevated) !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--text-secondary) !important;
+    flex-shrink: 0 !important;
+  }
+
+  .slot-role-and-actions {
+    order: 5 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .slot-fav-star-btn {
+    font-size: 0.95rem !important;
+    padding: 2px 3px !important;
+  }
+
+  .slot-availability-dot-btn {
+    font-size: 0.95rem !important;
+    padding: 2px 3px !important;
+  }
+
+  .slot-taken-badge {
+    font-size: 0.62rem !important;
+    font-weight: 800 !important;
+    padding: 1px 4px !important;
+  }
+
+  /* Statistiche e Pillole: continuano nel flusso orizzontale a capo */
+  .slot-appetibilita-box {
+    order: 6 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 3px !important;
+    background: rgba(239, 68, 68, 0.12) !important;
+    padding: 2px 6px !important;
+    border-radius: 2px !important;
+    border: 1px solid rgba(239, 68, 68, 0.3) !important;
+    font-size: 0.80rem !important;
+    flex-shrink: 0 !important;
+  }
+
+  .slot-appetibilita-box::before {
+    content: "App: ";
+    font-size: 0.70rem;
+    font-weight: 700;
+    color: var(--accent-red);
+  }
+
+  .slot-appetibilita-input {
+    width: 28px !important;
+    height: 18px !important;
+    font-size: 0.80rem !important;
+    font-weight: 800 !important;
+    background: transparent !important;
+    border: none !important;
+    color: #ffffff !important;
+    text-align: center !important;
+  }
+
+  .slot-appetibilita-box .index-suffix {
+    display: none !important;
+  }
+
+  .slot-titolarita-box {
+    order: 7 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    flex-shrink: 0 !important;
+  }
+
+  .slot-tit-badge {
+    display: inline-flex !important;
+    align-items: center !important;
+    font-size: 0.78rem !important;
+    font-weight: 700 !important;
+    background: var(--bg-primary) !important;
+    padding: 2px 6px !important;
+    border-radius: 2px !important;
+    color: var(--text-dim);
+  }
+
+  .slot-stat-pill {
+    order: 8 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    font-size: 0.78rem !important;
+    font-weight: 700 !important;
+    background: var(--bg-primary) !important;
+    padding: 2px 6px !important;
+    border-radius: 2px !important;
+    color: var(--text-dim) !important;
+    flex-shrink: 0 !important;
+  }
+
+  .slot-stat-pill strong {
+    color: #ffffff !important;
+    margin-left: 2px !important;
+  }
+
+  .slot-specialist-chip {
+    order: 9 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    font-size: 0.72rem !important;
+    font-weight: 700 !important;
+    padding: 2px 5px !important;
+    gap: 3px !important;
+    border-radius: 2px !important;
+    background: rgba(245, 158, 11, 0.12) !important;
+    border: 1px solid rgba(245, 158, 11, 0.3) !important;
+    color: #f59e0b !important;
+    flex-shrink: 0 !important;
+  }
 
   /* Nascondi resizer */
   .sidebar-resizer {
