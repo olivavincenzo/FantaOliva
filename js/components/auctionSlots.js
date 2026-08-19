@@ -113,47 +113,48 @@ export class AuctionSlotsComponent {
 
     const currentRoleData = data[this.activeRole] || { slot1: [], slot2: [], slot3: [], slot4: [] };
 
-    // Render controlli asta nell'header-center-section
-    const headerControls = document.querySelector('#auction-controls-row');
-    if (headerControls) {
-      headerControls.innerHTML = `
-        <!-- Tabs Ruolo -->
-        <div class="auction-role-tabs">
-          ${rolesMeta.map(r => `
-            <button class="auction-role-btn ${this.activeRole === r.key ? 'is-active' : ''}" data-role="${r.key}">
-              <i class="fa-solid ${r.icon}"></i> ${r.label}
-            </button>
-          `).join('')}
-        </div>
-
-        <!-- Filtro Disponibili -->
-        <button id="toggle-filter-available-btn" class="auction-filter-btn ${this.onlyAvailable ? 'is-active' : ''}" title="Mostra solo i giocatori ancora disponibili per l'asta">
-          <i class="fa-solid ${this.onlyAvailable ? 'fa-eye' : 'fa-filter'}"></i>
-          <span>${this.onlyAvailable ? 'Solo Disponibili' : 'Tutti'}</span>
-        </button>
-
-        <!-- Reset Stato Asta -->
-        <button id="reset-auction-status-btn" class="auction-filter-btn reset-btn" title="Ripristina tutti i giocatori come disponibili per una nuova asta">
-          <i class="fa-solid fa-rotate-left"></i>
-          <span>Reset Asta</span>
-        </button>
-
-        <!-- Ricerca -->
-        <div class="auction-search-box">
-          <i class="fa-solid fa-magnifying-glass search-icon"></i>
-          <input 
-            type="text" 
-            class="auction-search-input" 
-            placeholder="Cerca giocatore o club..." 
-            value="${sanitizeHtml(this.searchQuery)}"
-          />
-          ${this.searchQuery ? `<button class="auction-search-clear" title="Pulisci ricerca"><i class="fa-solid fa-xmark"></i></button>` : ''}
-        </div>
-      `;
-    }
-
     this.container.innerHTML = `
       <div class="auction-slots-page">
+
+        <!-- BARRA STRUMENTI & FILTRI SLOT ASTA (Integrata nella pagina, visibile sia su mobile che desktop) -->
+        <div class="auction-toolbar-card">
+          <div class="auction-toolbar-row">
+
+            <!-- Tabs Ruolo Rapido -->
+            <div class="auction-role-tabs" aria-label="Filtro per Ruolo Asta">
+              ${rolesMeta.map(r => `
+                <button class="auction-role-btn ${this.activeRole === r.key ? 'is-active' : ''}" data-role="${r.key}">
+                  <i class="fa-solid ${r.icon}"></i> <span>${r.label}</span>
+                </button>
+              `).join('')}
+            </div>
+
+            <!-- Ricerca Testuale -->
+            <div class="auction-search-box">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              <input 
+                type="text" 
+                class="auction-search-input" 
+                placeholder="Cerca giocatore o club..." 
+                value="${sanitizeHtml(this.searchQuery)}"
+              />
+              ${this.searchQuery ? `<button class="auction-search-clear" title="Pulisci ricerca"><i class="fa-solid fa-xmark"></i></button>` : ''}
+            </div>
+
+            <!-- Filtro Disponibili -->
+            <button id="toggle-filter-available-btn" class="auction-filter-btn ${this.onlyAvailable ? 'is-active' : ''}" title="Mostra solo i giocatori ancora disponibili per l'asta">
+              <i class="fa-solid ${this.onlyAvailable ? 'fa-eye' : 'fa-filter'}"></i>
+              <span>${this.onlyAvailable ? 'Solo Disponibili' : 'Tutti'}</span>
+            </button>
+
+            <!-- Reset Stato Asta -->
+            <button id="reset-auction-status-btn" class="auction-filter-btn reset-btn" title="Ripristina tutti i giocatori come disponibili per una nuova asta">
+              <i class="fa-solid fa-rotate-left"></i>
+              <span>Reset Asta</span>
+            </button>
+
+          </div>
+        </div>
 
         <!-- Griglia dei 4 Slot da 10 Giocatori (con supporto Accordion su mobile) -->
         <div class="auction-slots-grid">
@@ -265,23 +266,21 @@ export class AuctionSlotsComponent {
   }
 
   bindEvents() {
-    const headerControls = document.querySelector('#auction-controls-row');
-
-    // Ruolo Tabs (nell'header)
-    headerControls?.querySelectorAll('.auction-role-btn').forEach(btn => {
+    // Ruolo Tabs
+    this.container.querySelectorAll('.auction-role-btn').forEach(btn => {
       btn.addEventListener('click', () => {
         this.setRole(btn.dataset.role);
       });
     });
 
-    // Filtro Disponibili Toggle (nell'header)
-    const filterBtn = headerControls?.querySelector('#toggle-filter-available-btn');
+    // Filtro Disponibili Toggle
+    const filterBtn = this.container.querySelector('#toggle-filter-available-btn');
     filterBtn?.addEventListener('click', () => {
       this.toggleOnlyAvailable();
     });
 
-    // Reset Asta (nell'header)
-    const resetAstaBtn = headerControls?.querySelector('#reset-auction-status-btn');
+    // Reset Asta
+    const resetAstaBtn = this.container.querySelector('#reset-auction-status-btn');
     resetAstaBtn?.addEventListener('click', () => {
       if (confirm('Vuoi ripristinare tutti i calciatori come DISPONIBILI per una nuova asta?')) {
         store.resetAllAuctionAvailability();
@@ -289,15 +288,14 @@ export class AuctionSlotsComponent {
       }
     });
 
-    // Ricerca (nell'header)
-    const searchInput = headerControls?.querySelector('.auction-search-input');
+    // Ricerca Testuale Debounced
+    const searchInput = this.container.querySelector('.auction-search-input');
     searchInput?.addEventListener('input', (e) => {
       this.searchQuery = e.target.value;
-      // Debounced live filter
       clearTimeout(this._searchTimer);
       this._searchTimer = setTimeout(() => {
         this.render();
-        const input = headerControls?.querySelector('.auction-search-input');
+        const input = this.container.querySelector('.auction-search-input');
         if (input) {
           input.focus();
           input.setSelectionRange(input.value.length, input.value.length);
@@ -305,7 +303,7 @@ export class AuctionSlotsComponent {
       }, 250);
     });
 
-    const clearBtn = headerControls?.querySelector('.auction-search-clear');
+    const clearBtn = this.container.querySelector('.auction-search-clear');
     clearBtn?.addEventListener('click', () => {
       this.searchQuery = '';
       this.render();

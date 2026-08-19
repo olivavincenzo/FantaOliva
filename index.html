@@ -54,124 +54,90 @@
         </div>
       </div>
 
-      <!-- Sezione Centrale: Toolbar Tattica (Lavagna) o Controlli Asta (Guida Slot Asta) -->
+      <!-- Sezione Centrale: Controlli Contestuali Asta (Guida Slot Asta) -->
       <div class="header-center-section">
-        <!-- Squadra Attiva -->
-        <div class="header-active-team" id="header-active-team">
-          <span class="header-team-titles">
-            <span class="header-team-name" id="header-active-team-name"></span>
-            <span class="header-team-submeta" id="header-active-team-submeta"></span>
-          </span>
-        </div>
-
-        <!-- Toolbar Tattica (Attiva in Vista Lavagna) -->
-        <div class="pitch-tactical-toolbar" id="pitch-tactical-toolbar">
-          <div class="formation-selector-group" id="header-formation-group">
-            <select id="formation-select" class="formation-select" aria-label="Seleziona Modulo Tattico">
-              <!-- Popolato via JS -->
-            </select>
-          </div>
-
-          <div class="tactical-toggles-group" id="header-toggles-group">
-            <button id="toggle-pitch-layout-btn" class="fanta-btn secondary-btn"
-              title="Cambia visualizzazione: Campo Grafico / Lista Verticale Titolari">
-              <i class="fa-solid fa-list-ol"></i> <span class="btn-text-hide">Lista</span>
-            </button>
-            <button id="toggle-lines-btn" class="fanta-btn secondary-btn is-active"
-              title="Mostra/Nascondi linee di coordinazione tattica">
-              <i class="fa-solid fa-diagram-project"></i> <span class="btn-text-hide">Linee</span>
-            </button>
-            <button id="reset-positions-btn" class="fanta-btn secondary-btn icon-only-btn"
-              title="Riallinea posizioni standard del modulo">
-              <i class="fa-solid fa-arrows-to-dot"></i>
-            </button>
-          </div>
-        </div>
-
         <!-- Controlli Guida Slot Asta (Attivi in Vista Guida Slot Asta) -->
         <div class="auction-controls-row hidden" id="auction-controls-row">
           <!-- Rendered by AuctionSlotsComponent -->
         </div>
       </div>
 
-      <!-- Sezione Destra: Menu Impostazioni -->
+      <!-- Sezione Destra: Pulsante Impostazioni Desktop -->
       <div class="header-right-section">
-        <!-- Dropdown Menu Impostazioni & Strumenti -->
-        <div class="header-dropdown-wrapper" id="header-settings-wrapper">
-          <button id="settings-dropdown-toggle" class="fanta-btn secondary-btn settings-toggle-btn"
-            title="Impostazioni, Strumenti e Backup" aria-haspopup="true" aria-expanded="false">
-            <i class="fa-solid fa-gear"></i> <span class="btn-text-hide">Impostazioni</span> <i
-              class="fa-solid fa-chevron-down dropdown-arrow"></i>
-          </button>
-
-          <div class="header-dropdown-menu" id="header-settings-menu">
-            <div class="dropdown-menu-header">
-              <span class="dropdown-menu-title"><i class="fa-solid fa-sliders"></i> Strumenti & Opzioni</span>
-            </div>
-
-            <div class="dropdown-items-list">
-              <button id="save-formation-btn" class="dropdown-menu-item item-save"
-                title="Salva modifiche della formazione">
-                <div class="dropdown-item-icon icon-green"><i class="fa-solid fa-floppy-disk"></i></div>
-                <div class="dropdown-item-text">
-                  <span class="item-title">Salva Formazione</span>
-                  <span class="item-desc">Salva la configurazione corrente</span>
-                </div>
-              </button>
-
-              <div class="dropdown-divider"></div>
-
-              <button id="open-import-csv-btn" class="dropdown-menu-item"
-                title="Importa file CSV Statistiche Fantacalcio">
-                <div class="dropdown-item-icon icon-cyan"><i class="fa-solid fa-file-csv"></i></div>
-                <div class="dropdown-item-text">
-                  <span class="item-title">Importa CSV</span>
-                  <span class="item-desc">Quotazioni 2026/27 e statistiche</span>
-                </div>
-              </button>
-
-              <button id="open-team-notes-btn" class="dropdown-menu-item"
-                title="Note generali sulla squadra e strategie">
-                <div class="dropdown-item-icon icon-gold"><i class="fa-solid fa-clipboard-list"></i></div>
-                <div class="dropdown-item-text">
-                  <span class="item-title">Note Squadra</span>
-                  <span class="item-desc">Strategie, commenti e appunti asta</span>
-                </div>
-              </button>
-
-              <button id="open-history-btn" class="dropdown-menu-item" title="Storico versioni e formazioni">
-                <div class="dropdown-item-icon icon-blue"><i class="fa-solid fa-clock-rotate-left"></i></div>
-                <div class="dropdown-item-text">
-                  <span class="item-title">Storico Versioni</span>
-                  <span class="item-desc">Ripristina configurazioni precedenti</span>
-                </div>
-              </button>
-
-              <button id="export-image-btn" class="dropdown-menu-item"
-                title="Scarica immagine della formazione per WhatsApp/Social">
-                <div class="dropdown-item-icon icon-green"><i class="fa-solid fa-camera"></i></div>
-                <div class="dropdown-item-text">
-                  <span class="item-title">Esporta Grafica (PNG)</span>
-                  <span class="item-desc">Genera immagine per WhatsApp e social</span>
-                </div>
-              </button>
-
-              <div class="dropdown-divider"></div>
-
-              <button id="reset-formation-btn" class="dropdown-menu-item item-danger"
-                title="Ripristina formazione di default">
-                <div class="dropdown-item-icon icon-red"><i class="fa-solid fa-rotate-left"></i></div>
-                <div class="dropdown-item-text">
-                  <span class="item-title">Ripristina Default</span>
-                  <span class="item-desc">Resetta formazione ai valori iniziali</span>
-                </div>
-              </button>
-            </div>
-          </div>
-        </div>
+        <button id="settings-dropdown-toggle" class="fanta-btn secondary-btn settings-toggle-btn"
+          title="Impostazioni, Strumenti e Backup" aria-haspopup="true" aria-expanded="false">
+          <i class="fa-solid fa-gear"></i> <span class="btn-text-hide">Impostazioni</span> <i
+            class="fa-solid fa-chevron-down dropdown-arrow"></i>
+        </button>
       </div>
 
     </header>
+
+    <!-- MENU DROPDOWN IMPOSTAZIONI & STRUMENTI (Accessibile sia da Desktop Header che da Mobile Bar) -->
+    <div class="header-dropdown-menu" id="header-settings-menu" role="menu" aria-label="Menu Impostazioni e Strumenti">
+      <div class="dropdown-menu-header">
+        <span class="dropdown-menu-title"><i class="fa-solid fa-sliders"></i> Strumenti & Opzioni</span>
+      </div>
+
+      <div class="dropdown-items-list">
+        <button id="save-formation-btn" class="dropdown-menu-item item-save"
+          title="Salva modifiche della formazione">
+          <div class="dropdown-item-icon icon-green"><i class="fa-solid fa-floppy-disk"></i></div>
+          <div class="dropdown-item-text">
+            <span class="item-title">Salva Formazione</span>
+            <span class="item-desc">Salva la configurazione corrente</span>
+          </div>
+        </button>
+
+        <div class="dropdown-divider"></div>
+
+        <button id="open-import-csv-btn" class="dropdown-menu-item"
+          title="Importa file CSV Statistiche Fantacalcio">
+          <div class="dropdown-item-icon icon-cyan"><i class="fa-solid fa-file-csv"></i></div>
+          <div class="dropdown-item-text">
+            <span class="item-title">Importa CSV</span>
+            <span class="item-desc">Quotazioni 2026/27 e statistiche</span>
+          </div>
+        </button>
+
+        <button id="open-team-notes-btn" class="dropdown-menu-item"
+          title="Note generali sulla squadra e strategie">
+          <div class="dropdown-item-icon icon-gold"><i class="fa-solid fa-clipboard-list"></i></div>
+          <div class="dropdown-item-text">
+            <span class="item-title">Note Squadra</span>
+            <span class="item-desc">Strategie, commenti e appunti asta</span>
+          </div>
+        </button>
+
+        <button id="open-history-btn" class="dropdown-menu-item" title="Storico versioni e formazioni">
+          <div class="dropdown-item-icon icon-blue"><i class="fa-solid fa-clock-rotate-left"></i></div>
+          <div class="dropdown-item-text">
+            <span class="item-title">Storico Versioni</span>
+            <span class="item-desc">Ripristina configurazioni precedenti</span>
+          </div>
+        </button>
+
+        <button id="export-image-btn" class="dropdown-menu-item"
+          title="Scarica immagine della formazione per WhatsApp/Social">
+          <div class="dropdown-item-icon icon-green"><i class="fa-solid fa-camera"></i></div>
+          <div class="dropdown-item-text">
+            <span class="item-title">Esporta Grafica (PNG)</span>
+            <span class="item-desc">Genera immagine per WhatsApp e social</span>
+          </div>
+        </button>
+
+        <div class="dropdown-divider"></div>
+
+        <button id="reset-formation-btn" class="dropdown-menu-item item-danger"
+          title="Ripristina formazione di default">
+          <div class="dropdown-item-icon icon-red"><i class="fa-solid fa-rotate-left"></i></div>
+          <div class="dropdown-item-text">
+            <span class="item-title">Ripristina Default</span>
+            <span class="item-desc">Resetta formazione ai valori iniziali</span>
+          </div>
+        </button>
+      </div>
+    </div>
 
     <!-- VISTA 1: LAVAGNA TATTICA INTERATTIVA (CAMPO + SIDEBARS) -->
     <div class="tactical-view-wrapper" id="tactical-view-wrapper">
@@ -222,12 +188,8 @@
     <!-- BACKDROP OVERLAY PER DRAWER MOBILI (SQUADRE / ISPETTORE) -->
     <div class="mobile-drawer-backdrop hidden" id="mobile-drawer-backdrop"></div>
 
-    <!-- BARRA MOBILE INFERIORE -->
+    <!-- BARRA MOBILE INFERIORE (Navigazione Sezioni & Menu) -->
     <nav class="mobile-action-bar" aria-label="Menu Mobile">
-      <button id="mobile-teams-btn" class="mobile-nav-btn">
-        <i class="fa-solid fa-shield-halved"></i>
-        <span>Squadre</span>
-      </button>
       <button id="mobile-field-btn" class="mobile-nav-btn active">
         <i class="fa-solid fa-futbol"></i>
         <span>Campo</span>
@@ -240,14 +202,14 @@
         <i class="fa-solid fa-table-list"></i>
         <span>Listone</span>
       </button>
-      <button id="mobile-inspector-btn" class="mobile-nav-btn">
-        <i class="fa-solid fa-clipboard-user"></i>
-        <span>Scheda</span>
-      </button>
       <button id="mobile-notes-btn" class="mobile-nav-btn"
         onclick="document.querySelector('#open-team-notes-btn').click()">
         <i class="fa-solid fa-file-pen"></i>
         <span>Note</span>
+      </button>
+      <button id="mobile-settings-btn" class="mobile-nav-btn" title="Impostazioni, Import CSV ed Esporta">
+        <i class="fa-solid fa-gear"></i>
+        <span>Menu</span>
       </button>
     </nav>
 

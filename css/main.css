@@ -339,20 +339,20 @@ h1, h2, h3, h4, h5, h6, .brand-name, .inspector-name, .team-title {
   transition: transform var(--transition-fast);
 }
 
-.header-dropdown-wrapper.is-open .settings-toggle-btn .dropdown-arrow {
+.settings-toggle-btn.is-active .dropdown-arrow {
   transform: rotate(180deg);
 }
 
-.header-dropdown-wrapper.is-open .settings-toggle-btn {
+.settings-toggle-btn.is-active {
   border-color: var(--accent-neon-green);
   background: var(--bg-surface);
   box-shadow: 0 0 12px rgba(0, 255, 135, 0.3);
 }
 
 .header-dropdown-menu {
-  position: absolute;
-  top: calc(100% + 8px);
-  right: 0;
+  position: fixed;
+  top: calc(var(--header-height) - 4px);
+  right: 18px;
   width: 270px;
   background: linear-gradient(165deg, #131d31 0%, #0c1220 100%);
   border: 1px solid rgba(255, 255, 255, 0.14);
@@ -372,7 +372,7 @@ h1, h2, h3, h4, h5, h6, .brand-name, .inspector-name, .team-title {
   pointer-events: none;
 }
 
-.header-dropdown-wrapper.is-open .header-dropdown-menu {
+.header-dropdown-menu.is-open {
   opacity: 1;
   visibility: visible;
   transform: translateY(0) scale(1);
@@ -531,6 +531,10 @@ h1, h2, h3, h4, h5, h6, .brand-name, .inspector-name, .team-title {
 
 .fanta-btn.btn-full {
   width: 100%;
+}
+
+.mobile-only-btn {
+  display: none !important;
 }
 
 .fanta-btn.primary-btn {

@@ -53,12 +53,26 @@
   margin: 4px 0 0 0;
 }
 
-/* Controlli: Tabs Ruolo e Ricerca (nell'Header) */
-.auction-controls-row {
+/* ==========================================================================
+   BARRA STRUMENTI & FILTRI GUIDA ASTA (Sempre visibile in cima)
+   ========================================================================== */
+.auction-toolbar-card {
+  background: rgba(14, 21, 37, 0.75);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-lg);
+  padding: 10px 14px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  flex-shrink: 0;
+  margin-bottom: 6px;
+}
+
+.auction-toolbar-row {
   display: flex;
   align-items: center;
-  gap: 10px;
-  flex-wrap: nowrap;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 .auction-role-tabs {

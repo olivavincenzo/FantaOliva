@@ -8,6 +8,7 @@
  */
 
 import { store } from '../store.js';
+import { FORMATION_LIST } from '../data/formations.js';
 import { createPlayerCard } from './playerCard.js';
 import { dragDrop } from '../utils/dragDrop.js';
 import { sanitizeHtml, getTitolaritaClass } from '../utils/helpers.js';
@@ -25,12 +26,16 @@ export class PitchComponent {
 
   init() {
     this.renderBasePitch();
-    dragDrop.init(this.pitchEl);
     this.subscribeEvents();
     this.updatePitch();
   }
 
   renderBasePitch() {
+    const formationOptions = FORMATION_LIST.map(f => {
+      const isSel = store.getCurrentFormation()?.id === f.id ? 'selected' : '';
+      return `<option value="${f.id}" ${isSel}>${f.name}</option>`;
+    }).join('');
+
     this.container.innerHTML = `
       <div class="pitch-outer-wrapper">
         <!-- 1. CAMPO DA CALCIO GRAFICO (Visualizzazione Standard) -->
@@ -84,6 +89,49 @@ export class PitchComponent {
             <g id="tactical-lines-group"></g>
           </svg>
 
+          <!-- HUD TATTICO SUL CAMPO (4 ANGOLI) -->
+          <!-- 1. TOP-LEFT: Watermark Squadra & Allenatore -->
+          <div class="pitch-hud-corner pitch-hud-top-left" id="pitch-watermark-overlay">
+            <div class="pitch-watermark-club" id="pitch-watermark-club"></div>
+            <div class="pitch-watermark-coach" id="pitch-watermark-coach"></div>
+          </div>
+
+          <!-- 2. TOP-RIGHT: Selettore Modulo Tattico Glassmorphic -->
+          <div class="pitch-hud-corner pitch-hud-top-right">
+            <div class="pitch-hud-formation-box">
+              <i class="fa-solid fa-shapes formation-icon"></i>
+              <select id="formation-select" class="pitch-hud-formation-select" aria-label="Seleziona Modulo Tattico">
+                ${formationOptions}
+              </select>
+              <i class="fa-solid fa-chevron-down formation-arrow"></i>
+            </div>
+          </div>
+
+          <!-- 3. BOTTOM-LEFT: Pulsante Squadre Rapido -->
+          <div class="pitch-hud-corner pitch-hud-bottom-left">
+            <button id="pitch-hud-teams-btn" class="pitch-hud-btn" title="Seleziona Squadra Serie A">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span>Squadre</span>
+            </button>
+          </div>
+
+          <!-- 4. BOTTOM-RIGHT: Strumenti Tattici Glassmorphic -->
+          <div class="pitch-hud-corner pitch-hud-bottom-right">
+            <div class="pitch-hud-tools-pill">
+              <button id="toggle-pitch-layout-btn" class="pitch-hud-btn" title="Cambia visualizzazione: Campo Grafico / Lista Verticale Titolari">
+                <i class="fa-solid fa-list-ol"></i>
+                <span class="btn-text-hide">Lista</span>
+              </button>
+              <button id="toggle-lines-btn" class="pitch-hud-btn is-active" title="Mostra/Nascondi linee tattiche">
+                <i class="fa-solid fa-diagram-project"></i>
+                <span class="btn-text-hide">Linee</span>
+              </button>
+              <button id="reset-positions-btn" class="pitch-hud-btn icon-only" title="Riallinea posizioni standard del modulo">
+                <i class="fa-solid fa-arrows-to-dot"></i>
+              </button>
+            </div>
+          </div>
+
           <!-- Layer degli Slot Giocatori sul campo -->
           <div class="pitch-slots-layer" id="pitch-slots-layer"></div>
         </div>
@@ -97,6 +145,7 @@ export class PitchComponent {
     this.slotsLayer = this.container.querySelector('#pitch-slots-layer');
     this.linesSvgLayer = this.container.querySelector('#tactical-lines-group');
     this.verticalListEl = this.container.querySelector('#pitch-vertical-list');
+    if (this.pitchEl) dragDrop.init(this.pitchEl);
   }
 
   subscribeEvents() {
@@ -128,6 +177,22 @@ export class PitchComponent {
 
     if (this.pitchEl) this.pitchEl.style.display = 'block';
     if (this.verticalListEl) this.verticalListEl.classList.add('hidden');
+
+    // Aggiornamento Watermark Squadra & Allenatore in alto a sinistra sul campo
+    const team = store.getCurrentTeam();
+    const clubEl = this.container.querySelector('#pitch-watermark-club');
+    const coachEl = this.container.querySelector('#pitch-watermark-coach');
+    if (team) {
+      if (clubEl) clubEl.textContent = team.name || '';
+      if (coachEl) coachEl.textContent = team.coach ? `All. ${team.coach}` : '';
+    }
+
+    // Sincronizza valore modulo nel selettore HUD
+    const formationSelect = this.container.querySelector('#formation-select');
+    const currFormation = store.getCurrentFormation();
+    if (formationSelect && currFormation) {
+      formationSelect.value = currFormation.id;
+    }
 
     const lineup = store.getLineupPlayers();
     const selectedPlayer = store.getSelectedPlayer();
@@ -262,6 +327,48 @@ export class PitchComponent {
     });
 
     this.verticalListEl.innerHTML = '';
+
+    const topbar = document.createElement('div');
+    topbar.className = 'pitch-vertical-list-topbar';
+    topbar.innerHTML = `
+      <div class="list-topbar-left">
+        <button id="list-back-to-pitch-btn" class="pitch-hud-btn" title="Torna al Campo Grafico">
+          <i class="fa-solid fa-futbol"></i>
+          <span>Campo</span>
+        </button>
+        <button id="list-teams-btn" class="pitch-hud-btn" title="Seleziona Squadra Serie A">
+          <i class="fa-solid fa-shield-halved"></i>
+          <span>Squadre</span>
+        </button>
+      </div>
+      <div class="list-topbar-right">
+        <div class="pitch-hud-formation-box">
+          <i class="fa-solid fa-shapes formation-icon"></i>
+          <select id="list-formation-select" class="pitch-hud-formation-select" aria-label="Seleziona Modulo Tattico">
+            ${FORMATION_LIST.map(f => `<option value="${f.id}" ${store.getCurrentFormation()?.id === f.id ? 'selected' : ''}>${f.name}</option>`).join('')}
+          </select>
+          <i class="fa-solid fa-chevron-down formation-arrow"></i>
+        </div>
+      </div>
+    `;
+
+    this.verticalListEl.appendChild(topbar);
+
+    // Eventi per i pulsanti della topbar nella lista verticale
+    topbar.querySelector('#list-back-to-pitch-btn')?.addEventListener('click', () => {
+      store.setPitchLayoutMode('pitch');
+    });
+
+    topbar.querySelector('#list-teams-btn')?.addEventListener('click', () => {
+      const sidebarTeams = document.querySelector('#sidebar-teams');
+      const backdrop = document.querySelector('#mobile-drawer-backdrop');
+      if (sidebarTeams) sidebarTeams.classList.add('mobile-open');
+      if (backdrop) backdrop.classList.remove('hidden');
+    });
+
+    topbar.querySelector('#list-formation-select')?.addEventListener('change', (e) => {
+      store.setFormation(e.target.value);
+    });
 
     const scrollWrapper = document.createElement('div');
     scrollWrapper.className = 'pitch-vertical-list-scroll';

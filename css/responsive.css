@@ -45,8 +45,8 @@
    ========================================================================== */
 @media (max-width: 900px) {
   :root {
-    --header-height: 50px;
-    --mobile-bar-height: 54px;
+    --header-height: 0px;
+    --mobile-bar-height: calc(62px + env(safe-area-inset-bottom, 0px));
   }
 
   .app-layout {
@@ -55,29 +55,43 @@
     overflow: hidden;
   }
 
-  /* Header mobile compatto */
+  /* Header visibile rimosso su Mobile (ingombro zero) */
   .app-header {
-    height: var(--header-height);
-    padding: 0 8px;
-    gap: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 60;
+    height: 0 !important;
+    min-height: 0 !important;
+    max-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    overflow: visible !important;
+    background: transparent !important;
+    box-shadow: none !important;
   }
 
-  /* Su mobile il cambio vista è già presente nella mobile-action-bar in basso: nascondi header-left-section */
-  .header-left-section {
+  .header-left-section,
+  .header-center-section,
+  .settings-toggle-btn {
     display: none !important;
   }
 
-  .header-center-section {
-    flex: 1;
-    min-width: 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 8px;
+  .header-right-section {
+    display: block !important;
+    height: 0 !important;
+    width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+
+  .header-active-team {
+    cursor: pointer;
+    user-select: none;
+    transition: var(--transition-fast);
+  }
+
+  .header-active-team:active {
+    transform: scale(0.96);
+    filter: brightness(1.2);
   }
 
   /* Toolbar Tattica Centrale su Mobile */
@@ -196,35 +210,64 @@
     display: none;
   }
 
+  /* Menu Impostazioni su Mobile (Bottom Sheet Popup) */
   .header-dropdown-menu {
-    position: absolute;
-    top: calc(100% + 6px);
-    right: 0;
-    width: min(260px, calc(100vw - 16px));
-    z-index: 1000;
+    position: fixed !important;
+    bottom: calc(var(--mobile-bar-height) + 12px) !important;
+    top: auto !important;
+    left: 12px !important;
+    right: 12px !important;
+    width: calc(100vw - 24px) !important;
+    max-width: 360px !important;
+    margin: 0 auto !important;
+    z-index: 600 !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transform: translateY(20px) scale(0.95) !important;
+    pointer-events: none !important;
+    transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1), transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.25s !important;
   }
 
-  /* Wrapper Viste con spazio per la barra inferiore */
+  .header-dropdown-menu.is-open {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) scale(1) !important;
+    pointer-events: auto !important;
+    background: linear-gradient(165deg, #131d31 0%, #0c1220 100%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    border-radius: var(--radius-lg) !important;
+    box-shadow: 0 16px 50px rgba(0, 0, 0, 0.95), 0 0 25px rgba(0, 210, 255, 0.35) !important;
+  }
+
+  /* Wrapper Viste con spazio esclusivo per la barra inferiore */
   .tactical-view-wrapper {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - var(--header-height) - var(--mobile-bar-height));
-    height: calc(100dvh - var(--header-height) - var(--mobile-bar-height));
+    flex: 1 1 0% !important;
+    height: calc(100vh - var(--mobile-bar-height)) !important;
+    height: calc(100dvh - var(--mobile-bar-height)) !important;
+    max-height: calc(100dvh - var(--mobile-bar-height)) !important;
     width: 100vw;
     position: relative;
     overflow: hidden;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   .auction-view-wrapper {
-    height: calc(100vh - var(--header-height) - var(--mobile-bar-height));
-    height: calc(100dvh - var(--header-height) - var(--mobile-bar-height));
+    flex: 1 1 0% !important;
+    height: calc(100vh - var(--mobile-bar-height)) !important;
+    height: calc(100dvh - var(--mobile-bar-height)) !important;
+    max-height: calc(100dvh - var(--mobile-bar-height)) !important;
     width: 100vw;
     overflow: hidden;
   }
 
   .listone-view-wrapper {
-    height: calc(100vh - var(--header-height) - var(--mobile-bar-height));
-    height: calc(100dvh - var(--header-height) - var(--mobile-bar-height));
+    flex: 1 1 0% !important;
+    height: calc(100vh - var(--mobile-bar-height)) !important;
+    height: calc(100dvh - var(--mobile-bar-height)) !important;
+    max-height: calc(100dvh - var(--mobile-bar-height)) !important;
     width: 100vw;
     overflow: hidden;
   }
@@ -255,6 +298,43 @@
     height: 100%;
     padding: 6px 8px 20px 8px;
     overflow-y: auto;
+    gap: 8px;
+  }
+
+  .auction-toolbar-card {
+    padding: 8px 10px;
+    margin-bottom: 4px;
+  }
+
+  .auction-toolbar-row {
+    gap: 8px;
+  }
+
+  .auction-role-tabs {
+    padding: 2px;
+  }
+
+  .auction-role-btn {
+    padding: 4px 8px;
+    font-size: 0.72rem;
+    gap: 3px;
+  }
+
+  .auction-search-box {
+    min-width: 130px;
+    flex: 1;
+  }
+
+  .auction-search-input {
+    width: 100%;
+    font-size: 0.75rem;
+    padding: 4px 24px 4px 26px;
+  }
+
+  .auction-filter-btn {
+    padding: 4px 8px;
+    font-size: 0.72rem;
+    gap: 4px;
   }
 
   .auction-slots-grid {
@@ -484,7 +564,151 @@
   .app-main-content {
     width: 100vw;
     height: 100%;
-    padding: 4px 6px;
+    padding: 6px 6px 12px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .pitch-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .pitch-outer-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  .soccer-pitch {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+    border-radius: var(--radius-md);
+  }
+
+  /* Linee e marcature proporzionate su mobile */
+  .pitch-lines {
+    inset: 6px;
+  }
+
+  .penalty-box.top-box, .penalty-box.bottom-box {
+    width: 52%;
+    height: 13%;
+  }
+
+  .goal-box.top-goal-box, .goal-box.bottom-goal-box {
+    width: 28%;
+    height: 5%;
+  }
+
+  .center-circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* HUD 4 Angoli su Mobile */
+  .pitch-hud-corner {
+    z-index: 20;
+    pointer-events: none;
+  }
+
+  .pitch-hud-corner > * {
+    pointer-events: auto;
+  }
+
+  .pitch-hud-top-left {
+    top: 6px;
+    left: 8px;
+    max-width: 48%;
+  }
+
+  .pitch-watermark-club {
+    font-size: 0.95rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .pitch-watermark-coach {
+    font-size: 0.58rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .pitch-hud-top-right {
+    top: 6px;
+    right: 8px;
+  }
+
+  .pitch-hud-formation-box {
+    padding: 1px 6px 1px 20px;
+  }
+
+  .pitch-hud-formation-box .formation-icon {
+    left: 6px;
+    font-size: 0.65rem;
+  }
+
+  .pitch-hud-formation-box .formation-arrow {
+    right: 6px;
+    font-size: 0.55rem;
+  }
+
+  .pitch-hud-formation-select {
+    font-size: 0.70rem;
+    padding: 2px 14px 2px 2px;
+  }
+
+  .pitch-hud-bottom-left {
+    position: absolute !important;
+    bottom: 14px !important;
+    left: 10px !important;
+    z-index: 45 !important;
+    display: flex !important;
+  }
+
+  .pitch-hud-bottom-right {
+    position: absolute !important;
+    bottom: 14px !important;
+    right: 10px !important;
+    z-index: 45 !important;
+    display: flex !important;
+  }
+
+  .pitch-hud-tools-pill {
+    display: flex !important;
+    padding: 4px 6px !important;
+    gap: 4px !important;
+    background: rgba(14, 21, 37, 0.95) !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.85) !important;
+    backdrop-filter: blur(14px) !important;
+  }
+
+  .pitch-hud-btn {
+    padding: 4px 8px !important;
+    font-size: 0.72rem !important;
+    gap: 4px !important;
+    background: rgba(255, 255, 255, 0.14) !important;
+    display: inline-flex !important;
+  }
+
+  .pitch-hud-btn .btn-text-hide {
+    display: none;
   }
 
   /* Lista Verticale Titolari su Mobile */
@@ -515,63 +739,73 @@
     gap: 6px;
   }
 
-  /* Card Giocatore su Campo Tattico (Formato Orizzontale Proporzionato) */
+  /* Card Giocatore su Campo Tattico (Formato Orizzontale Proporzionato anti-sovrapposizione) */
   .player-card {
-    width: 104px;
+    width: min(84px, calc(19.2vw - 3px));
     height: auto;
-    min-height: 58px;
-    padding: 2px 4px 3px 4px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.65);
+    min-height: 48px;
+    padding: 2px 3px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
   }
 
   .player-card .card-header-row .player-name {
-    font-size: 0.60rem;
+    font-size: 0.54rem;
+    max-width: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .player-card .stat-chip {
-    font-size: 0.50rem;
-    line-height: 1.1;
-    padding: 1px 2px;
+    font-size: 0.44rem;
+    line-height: 1.05;
+    padding: 0 1px;
   }
 
   .player-card .player-appetibilita {
-    font-size: 0.52rem;
-    padding: 0 2px;
+    font-size: 0.46rem;
+    padding: 0 1px;
   }
 
   .player-card .tit-badge {
-    font-size: 0.52rem;
-    padding: 0 2px;
+    font-size: 0.46rem;
+    padding: 0 1px;
   }
 
   .player-card .slot-role-tag-sub {
-    font-size: 0.50rem;
-    padding: 0 2px;
+    font-size: 0.44rem;
+    padding: 0 1px;
   }
 
   .player-card .card-availability-dot {
-    width: 6px;
-    height: 6px;
+    width: 5px;
+    height: 5px;
   }
 
   .pitch-sub-pill {
-    height: 13px;
-    padding: 0 4px;
-    font-size: 0.52rem;
-    gap: 2px;
+    height: 12px;
+    padding: 0 2px;
+    font-size: 0.46rem;
+    gap: 1px;
+    max-width: min(84px, calc(19.2vw - 3px));
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .pitch-sub-pill .sub-prefix {
-    font-size: 0.50rem;
+    font-size: 0.44rem;
   }
 
   .pitch-sub-pill .sub-name {
-    font-size: 0.52rem;
+    font-size: 0.46rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .pitch-sub-pill .sub-tit-badge {
-    font-size: 0.52rem;
-    padding: 0 2px;
+    font-size: 0.44rem;
+    padding: 0 1px;
   }
 
   /* Barra di Navigazione Mobile Inferiore Touch-Friendly */
@@ -582,15 +816,17 @@
     left: 0;
     right: 0;
     height: var(--mobile-bar-height);
-    background: rgba(10, 14, 23, 0.96);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    background: rgba(10, 14, 23, 0.98);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border-top: 1px solid var(--border-glass);
     z-index: 160;
     justify-content: space-around;
     align-items: center;
-    padding: 0 4px;
-    box-shadow: 0 -4px 18px rgba(0, 0, 0, 0.6);
+    padding-left: 4px;
+    padding-right: 4px;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.7);
   }
 
   .mobile-nav-btn {
@@ -649,52 +885,7 @@
    SMARTPHONE MEDIO & PICCOLO (<= 650px)
    ========================================================================== */
 @media (max-width: 650px) {
-  .app-header {
-    padding: 0 6px;
-    gap: 4px;
-  }
-
-  .view-switch-nav {
-    padding: 2px;
-    gap: 2px;
-  }
-
-  .view-switch-btn {
-    padding: 4px 7px;
-    font-size: 0.72rem;
-    gap: 4px;
-  }
-
-  /* Toolbar Tattica Centrale */
-  .pitch-tactical-toolbar {
-    padding: 2px 6px;
-    gap: 4px;
-  }
-
-  .formation-selector-group {
-    padding: 2px 4px;
-  }
-
-  .formation-select {
-    padding: 2px 4px;
-    font-size: 0.76rem;
-    max-width: 84px;
-  }
-
-  .tactical-toggles-group {
-    gap: 4px;
-  }
-
-  .tactical-toggles-group .fanta-btn {
-    padding: 3px 6px;
-    font-size: 0.72rem;
-  }
-
-  .btn-text-hide {
-    display: none;
-  }
-
-  /* Controlli Asta nell'Header */
+  /* Controlli Asta su schermi compatti */
   .auction-controls-row {
     gap: 4px;
     flex-wrap: nowrap;
@@ -731,69 +922,6 @@
 
   .auction-search-input:focus {
     width: 120px;
-  }
-
-  /* Menu Impostazioni */
-  .settings-toggle-btn {
-    padding: 4px 6px;
-    font-size: 0.76rem;
-  }
-
-  .header-dropdown-menu {
-    width: calc(100vw - 16px);
-    max-width: 260px;
-    right: -2px;
-  }
-
-  /* Card su campo per schermi compatti */
-  .player-card {
-    width: 88px;
-    height: auto;
-    min-height: 52px;
-    padding: 2px 3px;
-  }
-
-  .player-card .card-header-row .player-name {
-    font-size: 0.56rem;
-  }
-
-  .player-card .stat-chip {
-    font-size: 0.44rem;
-    line-height: 1.05;
-    padding: 0 1px;
-  }
-
-  .player-card .player-appetibilita {
-    font-size: 0.48rem;
-    padding: 0 1px;
-  }
-
-  .player-card .tit-badge {
-    font-size: 0.48rem;
-    padding: 0 1px;
-  }
-
-  .player-card .slot-role-tag-sub {
-    font-size: 0.46rem;
-    padding: 0 1px;
-  }
-
-  .pitch-sub-pill {
-    height: 12px;
-    padding: 0 3px;
-    font-size: 0.48rem;
-  }
-
-  .pitch-sub-pill .sub-prefix {
-    font-size: 0.46rem;
-  }
-
-  .pitch-sub-pill .sub-name {
-    font-size: 0.48rem;
-  }
-
-  .pitch-sub-pill .sub-tit-badge {
-    font-size: 0.48rem;
   }
 
   /* Modali su Mobile */

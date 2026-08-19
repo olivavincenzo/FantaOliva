@@ -182,42 +182,62 @@ class App {
       notify.success('Formazione salvata con successo!');
     });
 
-    // Menu Dropdown Impostazioni & Strumenti
-    const settingsWrapper = document.querySelector('#header-settings-wrapper');
+    // Menu Dropdown Impostazioni & Strumenti (Desktop Header & Mobile Action Bar)
     const settingsToggleBtn = document.querySelector('#settings-dropdown-toggle');
+    const mobileSettingsBtn = document.querySelector('#mobile-settings-btn');
     const settingsMenu = document.querySelector('#header-settings-menu');
 
-    if (settingsWrapper && settingsToggleBtn) {
-      settingsToggleBtn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const isOpen = settingsWrapper.classList.toggle('is-open');
-        settingsToggleBtn.setAttribute('aria-expanded', isOpen);
-      });
+    const toggleSettings = (e) => {
+      e?.stopPropagation();
+      if (!settingsMenu) return;
+      const isOpen = settingsMenu.classList.toggle('is-open');
+      settingsToggleBtn?.setAttribute('aria-expanded', isOpen);
+      settingsToggleBtn?.classList.toggle('is-active', isOpen);
+      mobileSettingsBtn?.classList.toggle('active', isOpen);
 
-      // Chiudi dropdown quando si clicca su una voce del menu
-      settingsMenu?.querySelectorAll('.dropdown-menu-item').forEach((item) => {
-        item.addEventListener('click', () => {
-          settingsWrapper.classList.remove('is-open');
-          settingsToggleBtn.setAttribute('aria-expanded', 'false');
-        });
-      });
-
-      // Chiudi al click all'esterno
-      document.addEventListener('click', (e) => {
-        if (!settingsWrapper.contains(e.target)) {
-          settingsWrapper.classList.remove('is-open');
-          settingsToggleBtn.setAttribute('aria-expanded', 'false');
+      const backdrop = document.querySelector('#mobile-drawer-backdrop');
+      if (window.innerWidth <= 900) {
+        if (isOpen) {
+          backdrop?.classList.remove('hidden');
+        } else {
+          backdrop?.classList.add('hidden');
         }
-      });
+      }
+    };
 
-      // Chiudi con il tasto ESC
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && settingsWrapper.classList.contains('is-open')) {
-          settingsWrapper.classList.remove('is-open');
-          settingsToggleBtn.setAttribute('aria-expanded', 'false');
-        }
-      });
-    }
+    const closeSettings = () => {
+      if (!settingsMenu) return;
+      settingsMenu.classList.remove('is-open');
+      settingsToggleBtn?.setAttribute('aria-expanded', 'false');
+      settingsToggleBtn?.classList.remove('is-active');
+      mobileSettingsBtn?.classList.remove('active');
+      const backdrop = document.querySelector('#mobile-drawer-backdrop');
+      if (window.innerWidth <= 900) {
+        backdrop?.classList.add('hidden');
+      }
+    };
+
+    settingsToggleBtn?.addEventListener('click', toggleSettings);
+    mobileSettingsBtn?.addEventListener('click', toggleSettings);
+
+    // Chiudi dropdown quando si clicca su una voce del menu
+    settingsMenu?.querySelectorAll('.dropdown-menu-item').forEach((item) => {
+      item.addEventListener('click', closeSettings);
+    });
+
+    // Chiudi al click all'esterno
+    document.addEventListener('click', (e) => {
+      if (settingsMenu && !settingsMenu.contains(e.target) && !e.target.closest('#mobile-settings-btn') && !e.target.closest('#settings-dropdown-toggle')) {
+        closeSettings();
+      }
+    });
+
+    // Chiudi con il tasto ESC
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && settingsMenu?.classList.contains('is-open')) {
+        closeSettings();
+      }
+    });
 
     // Pulsante Reset Formazione ai default della squadra
     const resetBtn = document.querySelector('#reset-formation-btn');
@@ -274,18 +294,18 @@ class App {
   }
 
   bindResponsiveToggles() {
-    // Tasti mobili per aprire drawer squadre e ispettore
-    const toggleTeamsBtn = document.querySelector('#mobile-teams-btn');
+    // Tasti navigazione mobile inferiore (4 sezioni principali)
     const toggleFieldBtn = document.querySelector('#mobile-field-btn');
     const toggleAuctionBtn = document.querySelector('#mobile-auction-btn');
     const toggleListoneBtn = document.querySelector('#mobile-listone-btn');
-    const toggleInspectorBtn = document.querySelector('#mobile-inspector-btn');
     const sidebarTeams = document.querySelector('#sidebar-teams');
     const sidebarInspector = document.querySelector('#sidebar-inspector');
     const backdrop = document.querySelector('#mobile-drawer-backdrop');
+    const mobileOpenTeamsBtn = document.querySelector('#mobile-open-teams-btn');
+    const headerActiveTeam = document.querySelector('#header-active-team');
 
     const updateMobileNav = (activeId) => {
-      [toggleTeamsBtn, toggleFieldBtn, toggleAuctionBtn, toggleListoneBtn, toggleInspectorBtn].forEach(btn => {
+      [toggleFieldBtn, toggleAuctionBtn, toggleListoneBtn].forEach(btn => {
         if (btn) {
           btn.classList.toggle('active', btn.id === activeId);
         }
@@ -309,21 +329,39 @@ class App {
       sidebarTeams?.classList.add('mobile-open');
       sidebarInspector?.classList.remove('mobile-open');
       backdrop?.classList.remove('hidden');
-      updateMobileNav('mobile-teams-btn');
     };
 
     const openRightDrawer = () => {
       sidebarInspector?.classList.add('mobile-open');
       sidebarTeams?.classList.remove('mobile-open');
       backdrop?.classList.remove('hidden');
-      updateMobileNav('mobile-inspector-btn');
     };
 
-    toggleTeamsBtn?.addEventListener('click', () => {
+    // Apertura Drawer Squadre da pulsante dedicato nell'HUD del campo
+    const pitchHudTeamsBtn = document.querySelector('#pitch-hud-teams-btn');
+    pitchHudTeamsBtn?.addEventListener('click', () => {
       if (sidebarTeams?.classList.contains('mobile-open')) {
         closeDrawers();
       } else {
         openLeftDrawer();
+      }
+    });
+
+    mobileOpenTeamsBtn?.addEventListener('click', () => {
+      if (sidebarTeams?.classList.contains('mobile-open')) {
+        closeDrawers();
+      } else {
+        openLeftDrawer();
+      }
+    });
+
+    headerActiveTeam?.addEventListener('click', () => {
+      if (window.innerWidth <= 900) {
+        if (sidebarTeams?.classList.contains('mobile-open')) {
+          closeDrawers();
+        } else {
+          openLeftDrawer();
+        }
       }
     });
 
@@ -337,19 +375,17 @@ class App {
       this.switchView('auction_slots');
     });
 
-    toggleInspectorBtn?.addEventListener('click', () => {
-      if (sidebarInspector?.classList.contains('mobile-open')) {
-        closeDrawers();
-      } else {
-        openRightDrawer();
-      }
+    toggleListoneBtn?.addEventListener('click', () => {
+      closeDrawers();
+      this.switchView('listone');
     });
 
     backdrop?.addEventListener('click', closeDrawers);
 
-    // Chiudi drawer al click su elementi interni come cambio squadra o pulsanti di chiusura
+    // Quando si seleziona una squadra dal drawer su mobile, passa alla vista Campo e chiudi il drawer
     document.addEventListener('click', (e) => {
       if (e.target.closest('.team-list-item') && window.innerWidth <= 900) {
+        this.switchView('tactical');
         closeDrawers();
       }
       if (e.target.closest('.mobile-drawer-close-btn')) {

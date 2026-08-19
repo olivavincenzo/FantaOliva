@@ -286,6 +286,195 @@
   z-index: 3;
 }
 
+/* ==========================================================================
+   HUD TATTICO INTEGRATO SUL CAMPO DA CALCIO (4 ANGOLI)
+   ========================================================================== */
+.pitch-hud-corner {
+  position: absolute;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.pitch-hud-corner > * {
+  pointer-events: auto;
+}
+
+/* 1. TOP-LEFT: Watermark Info Squadra & Allenatore (In secondo piano rispetto alle card) */
+.pitch-hud-top-left {
+  top: 14px;
+  left: 16px;
+  z-index: 4;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  user-select: none;
+}
+
+.pitch-watermark-club {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.40);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.pitch-watermark-coach {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(0, 255, 135, 0.55);
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* 2. TOP-RIGHT: Selettore Modulo Glassmorphic */
+.pitch-hud-top-right {
+  top: 14px;
+  right: 16px;
+}
+
+.pitch-hud-formation-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: rgba(14, 21, 37, 0.80);
+  border: 1px solid rgba(0, 255, 135, 0.4);
+  border-radius: var(--radius-pill);
+  padding: 2px 8px 2px 28px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5), 0 0 12px rgba(0, 255, 135, 0.2);
+  transition: var(--transition-fast);
+}
+
+.pitch-hud-formation-box:hover {
+  border-color: var(--accent-neon-green);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6), 0 0 16px rgba(0, 255, 135, 0.4);
+}
+
+.pitch-hud-formation-box .formation-icon {
+  position: absolute;
+  left: 10px;
+  color: var(--accent-neon-green);
+  font-size: 0.75rem;
+  pointer-events: none;
+}
+
+.pitch-hud-formation-box .formation-arrow {
+  position: absolute;
+  right: 10px;
+  color: var(--text-dim);
+  font-size: 0.65rem;
+  pointer-events: none;
+}
+
+.pitch-hud-formation-select {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 800;
+  padding: 4px 20px 4px 4px;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.pitch-hud-formation-select option {
+  background: #0f172a;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* 3. BOTTOM-LEFT: Pulsante Squadre Rapido */
+.pitch-hud-bottom-left {
+  bottom: 14px;
+  left: 16px;
+}
+
+/* 4. BOTTOM-RIGHT: HUD Strumenti Tattici */
+.pitch-hud-bottom-right {
+  bottom: 14px;
+  right: 16px;
+}
+
+.pitch-hud-tools-pill {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(14, 21, 37, 0.80);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-pill);
+  padding: 4px 6px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+}
+
+/* Pulsanti HUD Generici */
+.pitch-hud-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-pill);
+  color: var(--text-primary);
+  padding: 5px 10px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: var(--transition-fast);
+  white-space: nowrap;
+  outline: none;
+  backdrop-filter: blur(8px);
+}
+
+.pitch-hud-btn:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.pitch-hud-btn.is-active {
+  background: rgba(0, 255, 135, 0.22);
+  border-color: var(--accent-neon-green);
+  color: var(--accent-neon-green);
+  box-shadow: 0 0 10px rgba(0, 255, 135, 0.35);
+}
+
+.pitch-hud-btn.icon-only {
+  padding: 5px 8px;
+}
+
+/* Topbar per visualizzazione Lista Verticale */
+.pitch-vertical-list-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: rgba(14, 21, 37, 0.85);
+  border-bottom: 1px solid var(--border-glass);
+  backdrop-filter: blur(10px);
+  flex-shrink: 0;
+  gap: 8px;
+}
+
+.list-topbar-left, .list-topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 /* Layer Slot Giocatori sul campo */
 .pitch-slots-layer {
   position: absolute;
