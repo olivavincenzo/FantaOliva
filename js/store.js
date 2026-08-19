@@ -809,6 +809,56 @@ class Store {
 
     return result;
   }
+
+  // --- EXPORT / IMPORT JSON COMPLETO (tutte le squadre) ---
+
+  exportStateJson() {
+    const exportData = {
+      version: 'fantaoliva_v2026_27',
+      exportDate: new Date().toISOString(),
+      teams: this.teams,
+      snapshots: this.snapshots,
+      currentTeamId: this.currentTeamId,
+      currentFormationId: this.currentFormationId
+    };
+    return JSON.stringify(exportData, null, 2);
+  }
+
+  importStateJson(jsonString) {
+    try {
+      const data = JSON.parse(jsonString);
+
+      // Verifica validità base
+      if (!data.teams || typeof data.teams !== 'object') {
+        console.error('JSON non valido: manca il campo "teams".');
+        return false;
+      }
+
+      // Importa tutte le squadre
+      this.teams = data.teams;
+
+      // Importa snapshot se presenti
+      if (Array.isArray(data.snapshots)) {
+        this.snapshots = data.snapshots;
+      }
+
+      // Ripristina squadra e modulo se presenti
+      if (data.currentTeamId && this.teams[data.currentTeamId]) {
+        this.currentTeamId = data.currentTeamId;
+      }
+      if (data.currentFormationId) {
+        this.currentFormationId = data.currentFormationId;
+      }
+
+      this.saveToStorage();
+      this.emit('team:changed', this.currentTeamId);
+      this.emit('formation:changed', this.currentFormationId);
+      return true;
+    } catch (e) {
+      console.error('Errore importazione JSON:', e);
+      return false;
+    }
+  }
 }
 
 export const store = new Store();

@@ -132,19 +132,6 @@ export class PlayerInspectorComponent {
               <span class="role-badge" style="background: ${roleInfo.bgColor}; color: ${roleInfo.color}; border: 1px solid ${roleInfo.borderColor}">
                 ${player.role} (${player.classicRole || player.fantaRole || 'C'}${mantraRole ? ` · ${mantraRole}` : ''})
               </span>
-              <span class="team-tag tit-header-badge ${headerTitClass}" title="Probabilità di Titolarità">
-                <i class="fa-solid fa-chart-pie"></i> ${titolaritaHeader}% Tit.
-              </span>
-              ${qtA !== '-' ? `
-                <span class="team-tag" title="Quotazione Attuale 2026/27 (Classic)">
-                  <i class="fa-solid fa-coins" style="color: var(--accent-gold);"></i> Qt.A ${qtA}
-                </span>
-              ` : ''}
-              ${fvm !== '-' ? `
-                <span class="team-tag" title="FantaValore di Mercato (Classic, base 1000)">
-                  <i class="fa-solid fa-scale-balanced" style="color: var(--accent-neon-cyan);"></i> FVM ${fvm}
-                </span>
-              ` : ''}
               <button id="toggle-player-auction-btn" class="inspector-auction-toggle ${isAvailable ? 'is-available' : 'is-taken'}" title="Clicca per cambiare lo stato per l'asta">
                 <i class="fa-solid ${isAvailable ? 'fa-circle-check' : 'fa-circle-xmark'}"></i>
                 <span>${isAvailable ? 'Disponibile' : 'Preso'}</span>
@@ -236,9 +223,7 @@ export class PlayerInspectorComponent {
         
         <!-- SEZIONE 1: VALUTAZIONE ASTA & TITOLARITÀ (MODIFICABILE) -->
         <div class="form-section-card">
-          <div class="form-section-title">
-            <i class="fa-solid fa-fire" style="color: #ff4d4d;"></i> Valutazione Asta & Titolarità
-          </div>
+   
 
           <div class="form-grid-2">
             <div class="form-group">
@@ -265,9 +250,7 @@ export class PlayerInspectorComponent {
 
         <!-- SEZIONE 2: SPECIALISTI CALCI PIAZZATI (MODIFICABILE) -->
         <div class="form-section-card">
-          <div class="form-section-title">
-            <i class="fa-solid fa-bullseye" style="color: var(--accent-gold);"></i> Specialisti Calci Piazzati
-          </div>
+         
 
           <div class="specialists-checkbox-row">
             <label class="checkbox-chip ${isRigorista ? 'is-checked' : ''}">
