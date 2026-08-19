@@ -4,7 +4,7 @@
 
 .player-card {
   position: relative;
-  width: 106px;
+  width: 150px;
   height: 64px;
   background: linear-gradient(145deg, #162238 0%, #0d1524 100%);
   border-radius: var(--radius-sm);
@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 
+  box-shadow:
     0 6px 16px rgba(0, 0, 0, 0.75),
     inset 0 1px 1px rgba(255, 255, 255, 0.15);
   cursor: grab;
@@ -28,35 +28,25 @@
 
 .player-card:hover {
   transform: translateY(-2px) scale(1.04);
-  box-shadow: 
+  box-shadow:
     0 10px 24px rgba(0, 0, 0, 0.85),
     0 0 12px rgba(0, 255, 135, 0.3);
   border-color: rgba(0, 255, 135, 0.6);
   z-index: 30;
 }
 
-/* Card Selezionata */
+/* Card Selezionata: tutta la card si accende di verde */
 .player-card.is-selected {
   border-color: var(--accent-neon-green) !important;
-  box-shadow: 
+  box-shadow:
     0 0 18px rgba(0, 255, 135, 0.6),
     0 8px 20px rgba(0, 0, 0, 0.8) !important;
   transform: translateY(-2px) scale(1.04);
 }
 
-.player-card.is-selected::after {
-  content: '';
-  position: absolute;
-  inset: -2px;
-  border: 2px solid var(--accent-neon-green);
-  border-radius: calc(var(--radius-sm) + 2px);
-  pointer-events: none;
-  animation: selectPulse 2s infinite ease-in-out;
-}
-
-@keyframes selectPulse {
-  0%, 100% { opacity: 0.8; }
-  50% { opacity: 0.3; }
+.player-card.is-selected .card-face.card-front {
+  background: linear-gradient(145deg, rgba(0, 255, 135, 0.28), rgba(13, 21, 36, 0.92));
+  border-color: var(--accent-neon-green) !important;
 }
 
 /* Card in fase di trascinamento */
@@ -66,7 +56,8 @@
 }
 
 /* Evidenziazione Drop Target */
-.player-card.drop-target-hover, .pitch-slot-card.drop-target-hover {
+.player-card.drop-target-hover,
+.pitch-slot-card.drop-target-hover {
   border-color: var(--accent-neon-cyan) !important;
   box-shadow: 0 0 20px rgba(0, 210, 255, 0.8) !important;
   transform: scale(1.06) !important;
@@ -76,10 +67,27 @@
 .card-top-bar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: flex-end;
+  width: auto;
   line-height: 1;
   min-height: 7px;
+}
+
+/* Riga header card: nome a sinistra + stato asta a destra */
+.card-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 3px;
+}
+
+.card-header-row .player-name {
+  flex: 1;
+  min-width: 0;
+  max-width: none;
+  margin: 0;
+  text-align: left;
 }
 
 .player-appetibilita {
@@ -146,8 +154,10 @@
   padding: 1px 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex: 1;
+  min-height: 0;
 }
 
 .player-name {
@@ -221,7 +231,9 @@
 }
 
 /* Verde: Titolare (≥ 70%) */
-.tit-badge.tit-high, .sub-tit-badge.tit-high, .tit-header-badge.tit-high {
+.tit-badge.tit-high,
+.sub-tit-badge.tit-high,
+.tit-header-badge.tit-high {
   color: #00ff87 !important;
   background: rgba(0, 255, 135, 0.18) !important;
   border: 1px solid rgba(0, 255, 135, 0.5) !important;
@@ -229,7 +241,9 @@
 }
 
 /* Ciano: Favorito (50% - 69%) */
-.tit-badge.tit-mid-high, .sub-tit-badge.tit-mid-high, .tit-header-badge.tit-mid-high {
+.tit-badge.tit-mid-high,
+.sub-tit-badge.tit-mid-high,
+.tit-header-badge.tit-mid-high {
   color: #00d2ff !important;
   background: rgba(0, 210, 255, 0.18) !important;
   border: 1px solid rgba(0, 210, 255, 0.5) !important;
@@ -237,7 +251,9 @@
 }
 
 /* Ambra/Oro: Ballottaggio aperto (35% - 49%) */
-.tit-badge.tit-mid, .sub-tit-badge.tit-mid, .tit-header-badge.tit-mid {
+.tit-badge.tit-mid,
+.sub-tit-badge.tit-mid,
+.tit-header-badge.tit-mid {
   color: #ffb703 !important;
   background: rgba(255, 183, 3, 0.18) !important;
   border: 1px solid rgba(255, 183, 3, 0.5) !important;
@@ -245,7 +261,9 @@
 }
 
 /* Rosso/Corallo: Riserva (< 35%) */
-.tit-badge.tit-low, .sub-tit-badge.tit-low, .tit-header-badge.tit-low {
+.tit-badge.tit-low,
+.sub-tit-badge.tit-low,
+.tit-header-badge.tit-low {
   color: #ff4d4d !important;
   background: rgba(255, 77, 77, 0.18) !important;
   border: 1px solid rgba(255, 77, 77, 0.5) !important;
@@ -277,6 +295,54 @@
   display: inline-flex;
   align-items: center;
   gap: 2px;
+}
+
+/* ==========================================================================
+   CARD IN CAMPO: 3 RIGHE DATI SOTTO IL NOME
+   ========================================================================== */
+.card-stats-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  width: 100%;
+  flex: 1;
+  justify-content: space-evenly;
+}
+
+.card-stats-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  white-space: nowrap;
+  width: 100%;
+  min-height: 11px;
+}
+
+.stat-row-nums {
+  justify-content: space-between;
+}
+
+.stat-chip {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: #cbd5e1;
+  background: rgba(10, 14, 23, 0.7);
+  border-radius: 2px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  flex: 1;
+  text-align: center;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.stat-chip i {
+  font-size: 0.42rem;
+  margin-right: 1px;
+  color: var(--text-muted);
 }
 
 /* Variante Compatta (Panchina & Liste) */
@@ -484,6 +550,7 @@
   border: none !important;
   box-shadow: none !important;
   padding: 0 !important;
+  height: 86px;
 }
 
 .card-flip-inner {
@@ -507,7 +574,7 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: var(--radius-md);
-  box-shadow: 
+  box-shadow:
     0 8px 20px rgba(0, 0, 0, 0.75),
     inset 0 1px 1px rgba(255, 255, 255, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.14);
@@ -515,10 +582,10 @@
 
 .card-face.card-front {
   background: linear-gradient(145deg, #162238 0%, #0d1524 100%);
-  padding: 3px 5px 3px 5px;
+  padding: 2px 5px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   z-index: 2;
   transform: rotateY(0deg);
 }
@@ -666,7 +733,13 @@
 }
 
 @keyframes notesGlowPulse {
-  0%, 100% { box-shadow: 0 0 4px rgba(255, 183, 3, 0.4); }
-  50% { box-shadow: 0 0 8px rgba(255, 183, 3, 0.8); }
-}
 
+  0%,
+  100% {
+    box-shadow: 0 0 4px rgba(255, 183, 3, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 8px rgba(255, 183, 3, 0.8);
+  }
+}

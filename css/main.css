@@ -232,6 +232,44 @@ h1, h2, h3, h4, h5, h6, .brand-name, .inspector-name, .team-title {
   gap: 10px;
 }
 
+/* Squadra Attiva nel Centro Header */
+.header-active-team {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--border-color);
+  padding: 4px 12px 4px 6px;
+  border-radius: var(--radius-md);
+  flex-shrink: 0;
+}
+
+.header-team-titles {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  min-width: 0;
+}
+
+.header-team-name {
+  font-size: 1.1rem;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.header-team-submeta {
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .formation-selector-group {
   display: flex;
   align-items: center;
@@ -565,6 +603,54 @@ h1, h2, h3, h4, h5, h6, .brand-name, .inspector-name, .team-title {
   overflow: hidden;
   z-index: 30;
   flex-shrink: 0;
+  transition: width var(--transition-smooth), min-width var(--transition-smooth), max-width var(--transition-smooth);
+}
+
+/* Sidebar sinistra collassata (chiudibile) */
+body.left-sidebar-collapsed .app-sidebar-left {
+  width: 0 !important;
+  min-width: 0 !important;
+  max-width: 0 !important;
+  border-right: none;
+  overflow: hidden;
+}
+
+body.left-sidebar-collapsed .left-sidebar-resizer {
+  display: none;
+}
+
+/* Tab laterale per riaprire la sidebar sinistra */
+.reopen-sidebar-btn {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 45;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 64px;
+  border-radius: 0 8px 8px 0;
+  background: var(--bg-glass-heavy);
+  border: 1px solid var(--border-color);
+  border-left: none;
+  color: var(--accent-neon-cyan);
+  font-size: 0.75rem;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition: var(--transition-fast);
+  padding: 0;
+}
+
+body.left-sidebar-collapsed #reopen-left-sidebar-btn {
+  display: flex;
+}
+
+.reopen-sidebar-btn:hover {
+  color: #ffffff;
+  border-color: var(--accent-neon-cyan);
+  box-shadow: 0 0 10px rgba(0, 210, 255, 0.4);
 }
 
 /* Sezione Centrale (Campo da Gioco) */
@@ -613,9 +699,41 @@ h1, h2, h3, h4, h5, h6, .brand-name, .inspector-name, .team-title {
   overflow: hidden;
   z-index: 30;
   flex-shrink: 0;
+  transition: width var(--transition-smooth), min-width var(--transition-smooth), max-width var(--transition-smooth);
 }
 
-/* Campi Form e Input Tattici */
+/* Sidebar destra collassata (chiudibile) */
+body.right-sidebar-collapsed .app-sidebar-right {
+  width: 0 !important;
+  min-width: 0 !important;
+  max-width: 0 !important;
+  border-left: none;
+  overflow: hidden;
+  transition: width var(--transition-smooth), min-width var(--transition-smooth), max-width var(--transition-smooth);
+}
+
+body.right-sidebar-collapsed #sidebar-inspector-resizer {
+  display: none;
+}
+
+body.right-sidebar-collapsed #reopen-right-sidebar-btn {
+  display: flex;
+}
+
+.reopen-sidebar-btn.right {
+  left: auto;
+  right: 0;
+  border-radius: 8px 0 0 8px;
+  border-left: 1px solid var(--border-color);
+  border-right: none;
+}
+
+.reopen-sidebar-btn.right:hover {
+  border-left-color: var(--accent-neon-cyan);
+  box-shadow: 0 0 10px rgba(0, 210, 255, 0.4);
+}
+
+/* Campo Form e Input Tattici */
 .fanta-input, .fanta-select, .fanta-textarea {
   width: 100%;
   background: var(--bg-secondary);

@@ -153,10 +153,11 @@ export class PitchComponent {
 
           const subTit = subPlayer.stats?.titolarita ?? subPlayer.titolaritaPerc ?? 50;
           const subTitClass = getTitolaritaClass(subTit);
+          const subIsTaken = subPlayer.isAvailable === false;
 
           const subPill = document.createElement('div');
-          subPill.className = 'pitch-sub-pill';
-          subPill.title = `${idx + 1}ª Scelta Sostituto: ${subPlayer.name} (${subPlayer.role}) - ${subTit}% Titolarità (Clicca per ispezionare)`;
+          subPill.className = `pitch-sub-pill ${subIsTaken ? 'is-taken' : ''}`;
+          subPill.title = `${idx + 1}ª Scelta Sostituto: ${subPlayer.name} (${subPlayer.role}) - ${subTit}% Titolarità${subIsTaken ? ' - PRESO (non disponibile all\'asta)' : ''} (Clicca per ispezionare)`;
           subPill.innerHTML = `
             <span class="sub-prefix">${idx + 1}ª</span>
             <span class="sub-name">${sanitizeHtml(subPlayer.name || subPlayer.displayName)}</span>

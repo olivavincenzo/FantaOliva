@@ -51,6 +51,14 @@
 
       <!-- Sezione Centrale: Toolbar Tattica (Lavagna) o Controlli Asta (Guida Slot Asta) -->
       <div class="header-center-section">
+        <!-- Squadra Attiva -->
+        <div class="header-active-team" id="header-active-team">
+          <span class="header-team-titles">
+            <span class="header-team-name" id="header-active-team-name"></span>
+            <span class="header-team-submeta" id="header-active-team-submeta"></span>
+          </span>
+        </div>
+
         <!-- Toolbar Tattica (Attiva in Vista Lavagna) -->
         <div class="pitch-tactical-toolbar" id="pitch-tactical-toolbar">
           <div class="formation-selector-group" id="header-formation-group">
@@ -169,6 +177,14 @@
 
       <!-- ZONA CENTRALE: CAMPO DA CALCIO TATTICO -->
       <main class="app-main-content" id="main-content">
+        <button id="reopen-left-sidebar-btn" class="reopen-sidebar-btn"
+          title="Apri il pannello squadre">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <button id="reopen-right-sidebar-btn" class="reopen-sidebar-btn right"
+          title="Apri il pannello ispettore">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
         <div class="pitch-container" id="pitch-container">
           <!-- Rendered by PitchComponent -->
         </div>

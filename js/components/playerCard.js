@@ -91,43 +91,71 @@ export function createPlayerCard(player, options = {}) {
   const hasNotes = Boolean(positionNotes.trim() || fantaComment.trim());
 
   if (isLineup) {
+    const qtA = player.quotazioni?.qtA ?? '-';
+    const fvm = player.quotazioni?.fvm ?? '-';
+    const fmVal = player.stats?.fantamedia ?? player.fantamedia ?? '-';
+    const mvVal = player.stats?.mediaVoto ?? '-';
+    const presenze = player.stats?.presenze ?? 0;
+    const gol = player.stats?.gol ?? 0;
+    const assist = player.stats?.assist ?? 0;
+
     // Card con supporto 3D Flip Card sul campo
     card.innerHTML = `
       <div class="card-flip-inner">
         <!-- FRONTE CARD (Dati Tattici in Primo Piano) -->
         <div class="card-face card-front">
-          <div class="card-glow-border" style="--role-color: ${roleInfo.color}; --status-color: ${statusInfo.color}"></div>
-
           ${!isAvailable ? `
             <div class="card-taken-overlay" title="Giocatore già acquistato / non disponibile all'asta">
               <span class="taken-stamp">PRESO</span>
             </div>
           ` : ''}
 
-          <!-- HEADER: Stato Asta in alto a destra -->
-          <div class="card-top-bar" style="justify-content: flex-end;">
-            <span class="asta-availability-dot ${isAvailable ? 'is-available' : 'is-taken'}" title="Stato Asta: ${isAvailable ? 'Disponibile (clicca per segnare PRESO)' : 'PRESO (clicca per segnare DISPONIBILE)'}">
-              <i class="fa-solid ${isAvailable ? 'fa-circle-check' : 'fa-circle-xmark'}"></i>
-            </span>
-          </div>
-
-          <!-- NOME CALCIATORE & DATI FANTACALCIO -->
+          <!-- NOME CALCIATORE & 3 RIGHE DATI FANTACALCIO -->
           <div class="card-info">
-            <div class="player-name" title="${sanitizeHtml(player.name)}">
-              ${sanitizeHtml(displayName)}
+            <div class="card-header-row">
+              <div class="player-name" title="${sanitizeHtml(player.name)}">
+                ${sanitizeHtml(displayName)}
+              </div>
+              <div class="card-top-bar">
+                <span class="asta-availability-dot ${isAvailable ? 'is-available' : 'is-taken'}" title="Stato Asta: ${isAvailable ? 'Disponibile (clicca per segnare PRESO)' : 'PRESO (clicca per segnare DISPONIBILE)'}">
+                  <i class="fa-solid ${isAvailable ? 'fa-circle-check' : 'fa-circle-xmark'}"></i>
+                </span>
+              </div>
             </div>
-            <div class="player-submeta">
-              <span class="player-appetibilita ${appetibilitaClass}" title="Indice Appetibilità Fantacalcio: ${appetibilitaVal}/100">
-                <i class="fa-solid fa-fire"></i>${appetibilitaVal}
-              </span>
-              ${titolarita !== undefined ? `<span class="tit-badge ${titClass}" title="% Titolarità">${titolarita}% Tit</span>` : ''}
-              <span class="slot-role-tag-sub" style="background: ${roleInfo.bgColor}; color: ${roleInfo.color}; border: 1px solid ${roleInfo.borderColor};" title="Posizione: ${player.role}${player.mantraRole ? ` (Mantra: ${player.mantraRole})` : ''}">${player.role || classicRole}</span>
+            <div class="card-stats-rows">
+              <!-- Riga 1: Appetibilità, Titolarità, Ruolo + Flags -->
+              <div class="card-stats-row">
+                <span class="player-appetibilita ${appetibilitaClass}" title="Indice Appetibilità Fantacalcio: ${appetibilitaVal}/100">
+                  <i class="fa-solid fa-fire"></i>${appetibilitaVal}
+                </span>
+                ${titolarita !== undefined ? `<span class="tit-badge ${titClass}" title="% Titolarità">${titolarita}%</span>` : ''}
+                <span class="slot-role-tag-sub" style="background: ${roleInfo.bgColor}; color: ${roleInfo.color}; border: 1px solid ${roleInfo.borderColor};" title="Posizione: ${player.role}${player.mantraRole ? ` (Mantra: ${player.mantraRole})` : ''}">${player.role || classicRole}</span>
+                ${fantaBadges.join('')}
+              </div>
+
+              <!-- Riga 2: Quotazioni -->
+              <div class="card-stats-row stat-row-nums">
+                <span class="stat-chip" title="Quotazione Iniziale">QtA ${qtA}</span>
+                <span class="stat-chip" title="FantaValore Mercato">FVM ${fvm}</span>
+              </div>
+
+              <!-- Riga 3: Medie -->
+              <div class="card-stats-row stat-row-nums">
+                <span class="stat-chip" title="Fantamedia">FM ${fmVal}</span>
+                <span class="stat-chip" title="Media Voto">MV ${mvVal}</span>
+              </div>
+
+              <!-- Riga 4: Presenze, Gol, Assist -->
+              <div class="card-stats-row stat-row-nums">
+                <span class="stat-chip" title="Presenze"><i class="fa-solid fa-calendar"></i> ${presenze}</span>
+                <span class="stat-chip" title="Goal">⚽ ${gol}</span>
+                <span class="stat-chip" title="Assist">🅰 ${assist}</span>
+              </div>
             </div>
           </div>
 
-          <!-- BADGES RIGORISTA, PIAZZATI & BALLOTTAGGI -->
+          <!-- BADGES INFERIORI (Ballottaggio) -->
           <div class="card-bottom-badges">
-            ${fantaBadges.join('')}
             ${ballottaggioBadge}
           </div>
         </div>

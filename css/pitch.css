@@ -365,3 +365,21 @@
   line-height: 1.1;
   flex-shrink: 0;
 }
+
+/* Sostituto marcato PRESO (non disponibile all'asta) */
+.pitch-sub-pill.is-taken {
+  border-color: rgba(239, 35, 60, 0.55);
+  background: rgba(30, 10, 14, 0.95);
+  opacity: 0.85;
+}
+
+.pitch-sub-pill.is-taken:hover {
+  border-color: #ff4d4d;
+  background: rgba(239, 35, 60, 0.2);
+  box-shadow: 0 0 6px rgba(255, 77, 77, 0.4);
+}
+
+.pitch-sub-pill.is-taken .sub-name {
+  text-decoration: line-through;
+  text-decoration-color: rgba(255, 77, 77, 0.7);
+}

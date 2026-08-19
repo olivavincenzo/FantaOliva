@@ -5,7 +5,6 @@
 
 import { store } from './store.js';
 import { FORMATION_LIST } from './data/formations.js';
-import { getTeamBadgeSvg } from './data/initialData.js';
 import { TeamSelectorComponent } from './components/teamSelector.js';
 import { PitchComponent } from './components/pitch.js';
 import { PlayerInspectorComponent } from './components/playerInspector.js';
@@ -67,6 +66,7 @@ class App {
     const auctionControls = document.querySelector('#auction-controls-row');
     const mobileFieldBtn = document.querySelector('#mobile-field-btn');
     const mobileAuctionBtn = document.querySelector('#mobile-auction-btn');
+    const activeTeam = document.querySelector('#header-active-team');
 
     if (viewName === 'tactical') {
       tacticalTab?.classList.add('is-active');
@@ -77,6 +77,7 @@ class App {
       auctionControls?.classList.add('hidden');
       mobileFieldBtn?.classList.add('active');
       mobileAuctionBtn?.classList.remove('active');
+      activeTeam?.classList.remove('hidden');
     } else if (viewName === 'auction_slots') {
       tacticalTab?.classList.remove('is-active');
       auctionTab?.classList.add('is-active');
@@ -86,6 +87,7 @@ class App {
       auctionControls?.classList.remove('hidden');
       mobileFieldBtn?.classList.remove('active');
       mobileAuctionBtn?.classList.add('active');
+      activeTeam?.classList.add('hidden');
       this.auctionSlots?.render();
     }
   }
@@ -112,10 +114,24 @@ class App {
   }
 
   updateHeader() {
+    const team = store.getCurrentTeam();
     const formation = store.getCurrentFormation();
     const formationSelect = document.querySelector('#formation-select');
     if (formationSelect && formation) {
       formationSelect.value = formation.id;
+    }
+
+    const teamNameEl = document.querySelector('#header-active-team-name');
+    const teamSubmetaEl = document.querySelector('#header-active-team-submeta');
+
+    if (team) {
+      if (teamNameEl) teamNameEl.textContent = team.name;
+      if (teamSubmetaEl) {
+        teamSubmetaEl.textContent = team.coach || '';
+      }
+    } else {
+      if (teamNameEl) teamNameEl.textContent = '';
+      if (teamSubmetaEl) teamSubmetaEl.textContent = '';
     }
   }
 
@@ -228,6 +244,71 @@ class App {
         sidebarTeams.classList.remove('mobile-open');
       }
     });
+
+    // Sidebar sinistra chiudibile (desktop) / drawer (mobile)
+    const COLLAPSE_KEY = 'fantaoliva_left_sidebar_collapsed';
+
+    const setLeftSidebarCollapsed = (collapsed) => {
+      document.body.classList.toggle('left-sidebar-collapsed', collapsed);
+      if (collapsed) {
+        sidebarTeams?.classList.remove('mobile-open');
+      }
+      try {
+        localStorage.setItem(COLLAPSE_KEY, collapsed ? '1' : '0');
+      } catch (err) {
+        /* ignorato */
+      }
+    };
+
+    // Sidebar destra chiudibile (desktop) / drawer (mobile)
+    const COLLAPSE_RIGHT_KEY = 'fantaoliva_right_sidebar_collapsed';
+
+    const setRightSidebarCollapsed = (collapsed) => {
+      document.body.classList.toggle('right-sidebar-collapsed', collapsed);
+      if (collapsed) {
+        sidebarInspector?.classList.remove('mobile-open');
+      }
+      try {
+        localStorage.setItem(COLLAPSE_RIGHT_KEY, collapsed ? '1' : '0');
+      } catch (err) {
+        /* ignorato */
+      }
+    };
+
+    document.addEventListener('click', (e) => {
+      if (e.target.closest('#reopen-left-sidebar-btn')) {
+        setLeftSidebarCollapsed(false);
+        return;
+      }
+
+      if (e.target.closest('#reopen-right-sidebar-btn')) {
+        setRightSidebarCollapsed(false);
+      }
+    });
+
+    // Doppio click sulla maniglia di resize per chiudere completamente la sidebar
+    // (l'apertura avviene dalla linguetta laterale ai bordi del campo)
+    document.querySelector('#sidebar-teams-resizer')?.addEventListener('dblclick', (e) => {
+      e.preventDefault();
+      setLeftSidebarCollapsed(true);
+    });
+
+    document.querySelector('#sidebar-inspector-resizer')?.addEventListener('dblclick', (e) => {
+      e.preventDefault();
+      setRightSidebarCollapsed(true);
+    });
+
+    // Ripristina lo stato salvato
+    try {
+      if (localStorage.getItem(COLLAPSE_KEY) === '1') {
+        setLeftSidebarCollapsed(true);
+      }
+      if (localStorage.getItem(COLLAPSE_RIGHT_KEY) === '1') {
+        setRightSidebarCollapsed(true);
+      }
+    } catch (err) {
+      /* ignorato */
+    }
   }
 
   initAddPlayerModal() {
