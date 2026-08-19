@@ -140,7 +140,7 @@ class App {
     if (!select) return;
 
     select.innerHTML = FORMATION_LIST.map(f => {
-      return `<option value="${f.id}">${f.name}</option>`;
+      return `<option value="${f.id}">${f.id}</option>`;
     }).join('');
   }
 
@@ -157,9 +157,7 @@ class App {
 
     if (team) {
       if (teamNameEl) teamNameEl.textContent = team.name;
-      if (teamSubmetaEl) {
-        teamSubmetaEl.textContent = team.coach || '';
-      }
+      if (teamSubmetaEl) teamSubmetaEl.textContent = '';
     } else {
       if (teamNameEl) teamNameEl.textContent = '';
       if (teamSubmetaEl) teamSubmetaEl.textContent = '';

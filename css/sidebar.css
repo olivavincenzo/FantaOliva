@@ -1,54 +1,14 @@
 /**
- * FantaOliva - Stili Pannelli Laterali (Left Team Selector & Right Player Inspector)
+ * FantaOliva - Stili Pannelli Laterali (Football Management & Sports Analytics Premium SaaS)
  */
 
 /* ==========================================================================
    SIDEBAR SINISTRA: SELETTORE SQUADRE SERIE A
    ========================================================================== */
 .team-sidebar-header {
-  padding: 10px 10px 8px 10px;
+  padding: 8px 12px;
   border-bottom: 1px solid var(--border-color);
-  background: rgba(10, 14, 23, 0.4);
-}
-
-.sidebar-brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.brand-logo-glow {
-  width: 36px;
-  height: 36px;
-  background: var(--grad-primary);
-  border-radius: var(--radius-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.15rem;
-  color: var(--text-inverse);
-  box-shadow: var(--glow-green);
-  flex-shrink: 0;
-}
-
-.brand-name {
-  font-size: 1.2rem;
-  font-weight: 900;
-  letter-spacing: 0.04em;
-  line-height: 1;
-  color: #ffffff;
-}
-
-.brand-accent {
-  color: var(--accent-neon-green);
-}
-
-.brand-tagline {
-  font-size: 0.62rem;
-  font-weight: 700;
-  color: var(--text-muted);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  background: var(--bg-surface);
 }
 
 .team-search-box {
@@ -59,33 +19,27 @@
 
 .team-search-box .search-icon {
   position: absolute;
-  left: 10px;
+  left: 8px;
   color: var(--text-dim);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   pointer-events: none;
 }
 
 .team-search-input {
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  border: 1px solid var(--border-color);
+  background: none;
+  border: none;
   color: #ffffff;
-  padding: 7px 28px 7px 30px;
-  border-radius: var(--radius-md);
-  font-size: 0.82rem;
+  padding: 5px 24px 5px 24px;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
   outline: none;
   transition: var(--transition-fast);
 }
 
-.team-search-input:focus {
-  border-color: var(--accent-neon-green);
-  box-shadow: 0 0 10px rgba(0, 255, 135, 0.25);
-  background: rgba(0, 0, 0, 0.7);
-}
-
 .clear-search-btn {
   position: absolute;
-  right: 8px;
+  right: 6px;
   background: none;
   border: none;
   color: var(--text-dim);
@@ -96,39 +50,29 @@
 .team-list-container {
   flex: 1;
   overflow-y: auto;
-  padding: 8px 10px;
+  padding: 2px 0;
   display: flex;
   flex-direction: column;
-  gap: 5px;
 }
 
 .team-list-item {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 10px 14px;
-  border-radius: var(--radius-md);
-  background: rgba(18, 27, 44, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  gap: 8px;
+  padding: 7px 12px;
+  border-bottom: 1px solid var(--border-subtle);
   cursor: pointer;
   transition: var(--transition-fast);
-  position: relative;
-}
-
-.team-list-item::before {
-  display: none !important;
+  background: transparent;
 }
 
 .team-list-item:hover {
-  background: rgba(30, 43, 68, 0.95);
-  border-color: rgba(0, 255, 135, 0.35);
-  transform: translateX(2px);
+  background: var(--bg-surface-elevated);
 }
 
 .team-list-item.is-active {
-  background: rgba(0, 255, 135, 0.12);
-  border-color: var(--accent-neon-green);
-  box-shadow: 0 0 12px rgba(0, 255, 135, 0.18);
+  background: var(--bg-surface-elevated);
+  border-left: 2px solid var(--accent-red);
 }
 
 .team-meta {
@@ -136,7 +80,7 @@
   min-width: 0;
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 1px;
 }
 
 .team-name-row {
@@ -147,73 +91,44 @@
 }
 
 .team-title {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 800;
-  font-size: 0.95rem;
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 0.85rem;
   color: #ffffff;
-  letter-spacing: 0.01em;
+  letter-spacing: -0.01em;
   text-transform: uppercase;
   line-height: 1.2;
 }
 
 .team-formation-badge {
-  background: rgba(0, 210, 255, 0.15);
-  border: 1px solid rgba(0, 210, 255, 0.3);
-  padding: 1px 6px;
-  border-radius: 4px;
-  font-weight: 800;
-  color: var(--accent-neon-cyan);
+  color: var(--text-secondary);
   font-size: 0.68rem;
-  flex-shrink: 0;
-  font-family: 'Rajdhani', sans-serif;
-}
-
-.team-sub-row {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.72rem;
-  color: #94a3b8;
-}
-
-.team-coach {
-  color: #94a3b8;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 0.72rem;
-}
-
-.team-coach i {
-  color: var(--accent-neon-green);
-  font-size: 0.65rem;
+  font-weight: 700;
+  font-family: var(--font-main);
 }
 
 .team-active-indicator {
   color: var(--text-dim);
-  font-size: 0.7rem;
+  font-size: 0.60rem;
   transition: transform var(--transition-fast);
   flex-shrink: 0;
 }
 
 .team-list-item.is-active .team-active-indicator {
-  color: var(--accent-neon-green);
-  transform: translateX(2px);
+  color: var(--accent-red);
 }
 
-/* ==========================================================================
-   MANIGLIA DI RIDIMENSIONAMENTO LATERALE (SIDEBAR RESIZER)
-   ========================================================================== */
+/* Maniglia Resizer */
 .sidebar-resizer {
-  width: 12px;
+  width: 6px;
   height: 100%;
   cursor: col-resize;
   z-index: 45;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: -6px;
-  margin-right: -6px;
+  margin-left: -3px;
+  margin-right: -3px;
   position: relative;
   touch-action: none;
   flex-shrink: 0;
@@ -223,24 +138,21 @@
 
 .sidebar-resizer::after {
   content: '';
-  width: 3px;
-  height: 48px;
-  background: rgba(255, 255, 255, 0.25);
-  border-radius: 4px;
-  transition: all var(--transition-fast);
+  width: 2px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.10);
+  border-radius: 1px;
 }
 
 .sidebar-resizer:hover,
 .sidebar-resizer.is-dragging {
-  background: rgba(0, 210, 255, 0.12);
+  background: var(--accent-red-subtle);
 }
 
 .sidebar-resizer:hover::after,
 .sidebar-resizer.is-dragging::after {
-  background: var(--accent-neon-cyan);
-  box-shadow: 0 0 12px rgba(0, 210, 255, 0.9);
-  height: 72px;
-  width: 4px;
+  background: var(--accent-red);
+  height: 40px;
 }
 
 body.is-resizing-sidebar {
@@ -258,7 +170,7 @@ body.is-resizing-sidebar .sidebar-resizer {
 }
 
 /* ==========================================================================
-   SIDEBAR DESTRA: ISPETTORE GIOCATORE & SCHEDA FANTACALCIO
+   SIDEBAR DESTRA: ISPETTORE GIOCATORE (Sports Analytics Pro - Layout Editoriale)
    ========================================================================== */
 .inspector-header {
   border-bottom: 1px solid var(--border-color);
@@ -267,59 +179,57 @@ body.is-resizing-sidebar .sidebar-resizer {
 }
 
 .inspector-player-summary {
-  padding: 14px 18px 10px 18px;
+  padding: 8px 12px;
   display: flex;
   align-items: center;
-  gap: 14px;
-}
-
-.inspector-main-info {
-  flex: 1;
-  min-width: 0;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
 }
 
 .inspector-name {
-  font-size: 1.15rem;
+  font-size: 0.95rem;
   font-weight: 800;
   color: #ffffff;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  letter-spacing: -0.01em;
+  flex: 1;
+  min-width: 0;
+  text-align: left;
 }
 
 .inspector-tags-row {
   display: flex;
   align-items: center;
-  gap: 6px;
-  margin-top: 4px;
-  flex-wrap: wrap;
+  gap: 5px;
+  flex-shrink: 0;
+  margin: 0;
 }
 
 .status-pill {
-  font-size: 0.68rem;
+  font-size: 0.65rem;
   font-weight: 700;
-  padding: 1px 6px;
-  border-radius: var(--radius-pill);
+  padding: 1px 4px;
+  border-radius: 2px;
 }
 
 .team-tag {
-  font-size: 0.68rem;
-  font-weight: 700;
-  background: rgba(255, 255, 255, 0.08);
-  padding: 1px 6px;
-  border-radius: 3px;
-  color: var(--text-muted);
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--text-secondary);
 }
 
 .inspector-auction-toggle {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
-  font-family: 'Outfit', sans-serif;
+  gap: 4px;
+  font-family: var(--font-main);
   font-size: 0.68rem;
-  font-weight: 800;
-  padding: 2px 8px;
-  border-radius: var(--radius-pill);
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: var(--radius-xs);
   cursor: pointer;
   border: 1px solid transparent;
   transition: var(--transition-fast);
@@ -327,138 +237,154 @@ body.is-resizing-sidebar .sidebar-resizer {
 }
 
 .inspector-auction-toggle.is-available {
-  background: rgba(0, 255, 135, 0.15);
-  border-color: var(--accent-neon-green);
-  color: var(--accent-neon-green);
-}
-
-.inspector-auction-toggle.is-available:hover {
-  background: rgba(0, 255, 135, 0.25);
-  box-shadow: 0 0 10px rgba(0, 255, 135, 0.4);
+  background: rgba(34, 197, 94, 0.12);
+  border-color: var(--accent-success);
+  color: var(--accent-success);
 }
 
 .inspector-auction-toggle.is-taken {
-  background: rgba(255, 77, 77, 0.18);
-  border-color: #ff4d4d;
-  color: #ff4d4d;
+  background: var(--accent-red-subtle);
+  border-color: var(--accent-red);
+  color: var(--accent-red);
 }
 
-.inspector-auction-toggle.is-taken:hover {
-  background: rgba(255, 77, 77, 0.3);
-  box-shadow: 0 0 10px rgba(255, 77, 77, 0.45);
-}
-
-/* Tab Navigation */
+/* Tab Navigation (Senza sfondo, senza bordi, con divisori verticali) */
 .inspector-tabs-nav {
   display: flex;
   border-top: 1px solid var(--border-color);
-  background: rgba(0, 0, 0, 0.3);
+  background: transparent;
+  padding: 0;
+  gap: 0;
 }
 
 .inspector-tab-btn {
   flex: 1;
-  background: none;
+  background: transparent;
   border: none;
-  padding: 10px 6px;
-  font-family: 'Outfit', sans-serif;
-  font-size: 0.78rem;
-  font-weight: 700;
-  color: var(--text-muted);
+  padding: 8px 4px;
+  font-family: var(--font-main);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-secondary);
   cursor: pointer;
-  transition: var(--transition-fast);
-  border-bottom: 2px solid transparent;
+  transition: color var(--transition-fast);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 4px;
+  outline: none;
+  border-radius: 0;
+  position: relative;
+}
+
+.inspector-tab-btn+.inspector-tab-btn {
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .inspector-tab-btn:hover {
-  color: var(--text-main);
-  background: rgba(255, 255, 255, 0.03);
+  color: #ffffff;
+  background: transparent;
 }
 
 .inspector-tab-btn.is-active {
-  color: var(--accent-neon-green);
-  border-bottom-color: var(--accent-neon-green);
-  background: rgba(0, 255, 135, 0.06);
+  color: #ffffff;
+  background: #ffffff0d;
+  font-weight: 700;
 }
+
+
 
 .inspector-body {
   flex: 1;
   overflow-y: auto;
-  padding: 16px;
+  padding: 12px 14px;
 }
 
-/* Sezioni Form Inspector */
+/* Sezioni Form Inspector (Senza Card Annidate, con Divider Sottili) */
 .form-section-card {
-  background: rgba(22, 32, 50, 0.5);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
-  padding: 14px;
-  margin-bottom: 14px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0 0 12px 0;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.form-section-card:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .form-section-title {
-  font-family: 'Outfit', sans-serif;
-  font-size: 0.85rem;
-  font-weight: 800;
-  color: var(--accent-neon-cyan);
+  font-family: var(--font-main);
+  font-size: 0.70rem;
+  font-weight: 700;
+  color: var(--text-secondary);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 5px;
+}
+
+.form-section-title i {
+  color: var(--accent-red);
+  font-size: 0.68rem;
 }
 
 .form-grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-bottom: 10px;
+  gap: 8px;
+  margin-bottom: 6px;
 }
 
 .form-group {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .form-group label {
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.68rem;
   font-weight: 600;
-  color: var(--text-muted);
-  margin-bottom: 4px;
+  color: var(--text-secondary);
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
 }
 
-/* Checkbox Specialisti Piazzati */
+/* Checkbox Specialisti Piazzati (Lineari, Trasparenti) */
 .specialists-checkbox-row {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 6px;
-  margin-bottom: 12px;
+  gap: 4px;
+  margin-bottom: 8px;
   width: 100%;
-  box-sizing: border-box;
 }
 
 .checkbox-chip {
   display: flex;
   align-items: center;
-  gap: 4px;
-  background: var(--bg-secondary);
+  gap: 3px;
+  background: transparent;
   border: 1px solid var(--border-color);
-  padding: 6px 6px;
-  border-radius: var(--radius-sm);
-  font-size: 0.74rem;
+  padding: 4px 5px;
+  border-radius: var(--radius-xs);
+  font-size: 0.70rem;
   font-weight: 600;
-  color: var(--text-muted);
+  color: var(--text-secondary);
   cursor: pointer;
   transition: var(--transition-fast);
-  min-width: 0;
-  overflow: hidden;
   white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
-  box-sizing: border-box;
+}
+
+.checkbox-chip:hover {
+  border-color: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
 }
 
 .checkbox-chip input {
@@ -466,160 +392,141 @@ body.is-resizing-sidebar .sidebar-resizer {
 }
 
 .checkbox-chip.is-checked {
-  background: rgba(0, 255, 135, 0.15);
-  border-color: var(--accent-neon-green);
-  color: var(--accent-neon-green);
+  background: var(--accent-red-subtle);
+  border-color: var(--accent-red);
+  color: var(--accent-red);
+  font-weight: 700;
 }
 
 .chip-icon {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   flex-shrink: 0;
 }
 
 /* Badge Ufficiale da CSV */
 .csv-badge-official {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 0.68rem;
+  font-family: var(--font-main);
+  font-size: 0.60rem;
   font-weight: 700;
-  color: var(--accent-neon-cyan);
-  background: rgba(0, 210, 255, 0.08);
-  border: 1px solid rgba(0, 210, 255, 0.25);
-  padding: 1px 7px;
-  border-radius: var(--radius-pill);
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
+  color: var(--text-dim);
   text-transform: uppercase;
-  flex-shrink: 0;
+  letter-spacing: 0.04em;
 }
 
-/* Griglia Statistiche Ufficiali Sola Lettura (Fluida e Auto-Adattante) */
+/* Griglia Statistiche Tabulari (Sola Lettura, Senza Mini-Scatole) */
 .stats-display-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 6px;
+  gap: 8px 4px;
   width: 100%;
-  box-sizing: border-box;
+  padding: 4px 0;
 }
 
 .stat-display-card {
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-sm);
-  padding: 6px 3px;
+  background: transparent;
+  border: none;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  transition: var(--transition-fast);
+  align-items: flex-start;
   min-width: 0;
   width: 100%;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-
-.stat-display-card:hover {
-  border-color: rgba(255, 255, 255, 0.2);
-  background: var(--bg-surface-elevated);
 }
 
 .stat-d-label {
   font-size: 0.58rem;
-  font-weight: 700;
-  color: var(--text-dim);
+  font-weight: 600;
+  color: var(--text-secondary);
   text-transform: uppercase;
-  letter-spacing: 0.01em;
-  margin-bottom: 2px;
+  letter-spacing: 0.02em;
+  margin-bottom: 1px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100%;
-  width: 100%;
   display: block;
 }
 
 .stat-d-value {
-  font-family: 'Rajdhani', sans-serif;
+  font-family: var(--font-main);
   font-weight: 800;
   font-size: 1.05rem;
   color: #ffffff;
   line-height: 1.1;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 100%;
-  width: 100%;
 }
 
 .stat-display-card.highlight-fm .stat-d-value {
-  color: var(--accent-gold);
-  text-shadow: 0 0 6px rgba(255, 209, 102, 0.4);
-}
-
-.stat-display-card.highlight-fvm .stat-d-value {
-  color: var(--accent-neon-cyan);
-  text-shadow: 0 0 6px rgba(0, 210, 255, 0.4);
+  color: #ffffff;
 }
 
 .stat-d-value.stat-positive {
-  color: var(--accent-neon-green);
+  color: var(--accent-success);
 }
 
 .stat-d-value.stat-negative {
-  color: #ff4d4d;
+  color: var(--accent-red);
 }
 
 .input-with-suffix {
   display: flex;
   align-items: center;
+  background: transparent;
+}
+
+.input-with-suffix .fanta-input {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 0.82rem;
 }
 
 .input-with-suffix span {
-  font-size: 0.75rem;
+  font-size: 0.70rem;
   color: var(--text-dim);
-  margin-left: 2px;
+  margin-left: 3px;
 }
 
 .inspector-actions {
-  margin-top: 16px;
+  margin-top: 10px;
 }
 
 /* ==========================================================================
-   TAB SOSTITUTI E GERARCHIA
+   TAB SOSTITUTI & BALLOTTAGGI
    ========================================================================== */
 .section-desc {
-  font-size: 0.78rem;
-  color: var(--text-muted);
-  margin-bottom: 12px;
+  font-size: 0.70rem;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
 }
 
 .substitutes-list-box {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  margin-bottom: 12px;
+  gap: 3px;
+  margin-bottom: 8px;
 }
 
 .substitute-item-row {
   display: flex;
   align-items: center;
-  gap: 10px;
-  background: var(--bg-secondary);
+  gap: 6px;
+  background: transparent;
   border: 1px solid var(--border-color);
-  padding: 8px 10px;
-  border-radius: var(--radius-sm);
+  padding: 5px 7px;
+  border-radius: var(--radius-xs);
+  transition: var(--transition-fast);
+}
+
+.substitute-item-row:hover {
+  background: var(--bg-surface-elevated);
 }
 
 .sub-priority-badge {
-  background: var(--bg-surface-elevated);
-  border: 1px solid var(--accent-neon-cyan);
-  color: var(--accent-neon-cyan);
-  font-size: 0.68rem;
+  color: var(--text-secondary);
+  font-size: 0.62rem;
   font-weight: 800;
-  padding: 2px 6px;
-  border-radius: 4px;
-  white-space: nowrap;
+  font-family: var(--font-main);
 }
 
 .sub-player-info {
@@ -630,40 +537,39 @@ body.is-resizing-sidebar .sidebar-resizer {
 .sub-name {
   display: block;
   font-weight: 700;
-  font-size: 0.85rem;
+  font-size: 0.80rem;
   color: #ffffff;
 }
 
 .sub-meta {
-  font-size: 0.7rem;
-  color: var(--text-muted);
+  font-size: 0.65rem;
+  color: var(--text-secondary);
 }
 
 .sub-actions {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 2px;
 }
 
 .sub-action-btn {
-  background: var(--bg-surface);
+  background: transparent;
   border: 1px solid var(--border-color);
-  color: var(--text-muted);
-  width: 26px;
-  height: 26px;
-  border-radius: 4px;
+  color: var(--text-secondary);
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   cursor: pointer;
   transition: var(--transition-fast);
 }
 
 .sub-action-btn:hover {
-  background: var(--bg-surface-elevated);
   color: #ffffff;
-  border-color: var(--accent-neon-cyan);
+  border-color: rgba(255, 255, 255, 0.25);
 }
 
 .sub-action-btn.remove-sub-btn:hover {
@@ -673,38 +579,38 @@ body.is-resizing-sidebar .sidebar-resizer {
 
 .add-sub-box {
   display: flex;
-  gap: 8px;
+  gap: 6px;
   align-items: center;
 }
 
 /* ==========================================================================
-   BALLOTTAGGI DUELLO GRAFICA
+   BALLOTTAGGI DUELLO
    ========================================================================== */
 .ballottaggio-header-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
 }
 
 .section-title {
-  font-family: 'Outfit', sans-serif;
-  font-size: 0.85rem;
+  font-family: var(--font-main);
+  font-size: 0.78rem;
   font-weight: 800;
-  color: var(--accent-gold);
+  color: #ffffff;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
 }
 
 .duel-graphic-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--bg-secondary);
+  background: transparent;
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
-  padding: 12px 16px;
-  margin-bottom: 10px;
+  border-radius: var(--radius-xs);
+  padding: 8px 12px;
+  margin-bottom: 8px;
 }
 
 .duel-player {
@@ -719,99 +625,98 @@ body.is-resizing-sidebar .sidebar-resizer {
 
 .duel-name {
   font-weight: 700;
-  font-size: 0.88rem;
+  font-size: 0.82rem;
   color: #ffffff;
 }
 
 .duel-perc {
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 900;
-  font-size: 1.4rem;
+  font-family: var(--font-main);
+  font-weight: 800;
+  font-size: 1.2rem;
   line-height: 1;
 }
 
 .perc-a {
-  color: var(--accent-neon-green);
+  color: var(--accent-red);
 }
 
 .perc-b {
-  color: var(--accent-gold);
+  color: var(--text-secondary);
 }
 
 .duel-vs-circle {
-  width: 32px;
-  height: 32px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
-  background: var(--bg-surface-elevated);
-  border: 1px solid var(--border-color);
+  background: var(--bg-primary);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 900;
-  font-size: 0.8rem;
+  font-family: var(--font-main);
+  font-weight: 800;
+  font-size: 0.65rem;
   color: var(--text-dim);
 }
 
 .duel-bar-wrapper {
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
 .duel-bar {
-  height: 10px;
+  height: 4px;
   width: 100%;
-  background: #000000;
-  border-radius: var(--radius-pill);
+  background: var(--bg-primary);
+  border-radius: 2px;
   display: flex;
   overflow: hidden;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .duel-bar-fill-a {
-  background: var(--accent-neon-green);
+  background: var(--accent-red);
   transition: width var(--transition-fast);
 }
 
 .duel-bar-fill-b {
-  background: var(--accent-gold);
+  background: #4b5563;
   transition: width var(--transition-fast);
 }
 
 .duel-range-slider {
   width: 100%;
-  accent-color: var(--accent-neon-green);
+  accent-color: var(--accent-red);
   cursor: pointer;
 }
 
 .duel-comments-box {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-bottom: 14px;
+  gap: 6px;
+  margin-bottom: 10px;
 }
 
 .duel-comment-item .comment-label {
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: 0.75rem;
+  gap: 4px;
+  font-size: 0.70rem;
   font-weight: 700;
-  color: var(--text-muted);
-  margin-bottom: 4px;
+  color: var(--text-secondary);
+  margin-bottom: 2px;
 }
 
 .dot-a {
-  width: 8px;
-  height: 8px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
-  background: var(--accent-neon-green);
+  background: var(--accent-red);
 }
 
 .dot-b {
-  width: 8px;
-  height: 8px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
-  background: var(--accent-gold);
+  background: #4b5563;
 }
 
 /* ==========================================================================
@@ -821,105 +726,114 @@ body.is-resizing-sidebar .sidebar-resizer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
 }
 
 .bench-count {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-family: 'Outfit', sans-serif;
-  font-size: 0.88rem;
+  gap: 4px;
+  font-family: var(--font-main);
+  font-size: 0.78rem;
   font-weight: 800;
   color: #ffffff;
 }
 
+/* Filtri Ruolo Panchina (Senza sfondo, con divisori verticali) */
 .role-filter-pills {
   display: flex;
-  gap: 6px;
-  margin-bottom: 14px;
+  gap: 0;
+  margin-bottom: 8px;
   overflow-x: auto;
-  padding-bottom: 4px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 2px;
 }
 
 .filter-pill {
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  color: var(--text-muted);
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-family: var(--font-main);
   font-size: 0.72rem;
-  font-weight: 700;
-  padding: 4px 10px;
-  border-radius: var(--radius-pill);
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 0;
   cursor: pointer;
   white-space: nowrap;
-  transition: var(--transition-fast);
+  transition: color var(--transition-fast);
+}
+
+.filter-pill+.filter-pill {
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .filter-pill:hover {
-  background: var(--bg-surface-elevated);
+  background: transparent;
   color: #ffffff;
 }
 
 .filter-pill.is-active {
-  background: var(--accent-neon-green);
-  color: var(--text-inverse);
-  border-color: var(--accent-neon-green);
+  background: transparent;
+  color: #ffffff;
+  font-weight: 700;
 }
 
 .bench-cards-grid {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
 }
 
 .bench-card-wrapper {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
   width: 100%;
 }
 
 .quick-sub-btn {
-  background: var(--bg-surface);
+  background: transparent;
   border: 1px solid var(--border-color);
-  color: var(--accent-neon-green);
-  padding: 8px 10px;
-  border-radius: var(--radius-sm);
-  font-family: 'Outfit', sans-serif;
-  font-size: 0.75rem;
-  font-weight: 700;
+  color: var(--accent-red);
+  padding: 4px 6px;
+  border-radius: var(--radius-xs);
+  font-family: var(--font-main);
+  font-size: 0.68rem;
+  font-weight: 600;
   cursor: pointer;
   transition: var(--transition-fast);
   white-space: nowrap;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
-  height: 72px;
+  gap: 1px;
+  height: 48px;
   justify-content: center;
 }
 
 .quick-sub-btn:hover {
-  background: rgba(0, 255, 135, 0.15);
-  border-color: var(--accent-neon-green);
+  background: var(--accent-red-subtle);
+  border-color: var(--accent-red);
 }
 
-.empty-bench-state, .inspector-empty-state, .empty-subs-notice, .ballottaggio-empty-state {
+.empty-bench-state,
+.inspector-empty-state,
+.empty-subs-notice,
+.ballottaggio-empty-state {
   text-align: center;
-  padding: 24px 16px;
+  padding: 16px 8px;
   color: var(--text-dim);
 }
 
 .empty-icon-circle {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background: var(--bg-secondary);
-  border: 1px dashed var(--border-color);
+  background: var(--bg-surface-elevated);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 14px auto;
-  font-size: 1.5rem;
-  color: var(--accent-neon-green);
+  margin: 0 auto 8px auto;
+  font-size: 1rem;
+  color: var(--accent-red);
 }

@@ -1,26 +1,25 @@
 /**
- * FantaOliva - Stili Card Giocatore (EA Sports FC Tactical Card Aesthetics)
+ * FantaOliva - Stili Card Giocatore (Football Management & Sports Analytics Premium SaaS)
  */
 
 .player-card {
   position: relative;
-  width: 150px;
+  width: 124px;
   height: auto;
-  min-height: 68px;
-  background: linear-gradient(145deg, #162238 0%, #0d1524 100%);
-  border-radius: var(--radius-sm);
-  padding: 3px 5px 3px 5px;
+  min-height: 48px;
+  background: var(--bg-surface);
+  border-radius: var(--radius-xs);
+  padding: 4px 6px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  box-shadow:
-    0 6px 16px rgba(0, 0, 0, 0.75),
-    inset 0 1px 1px rgba(255, 255, 255, 0.15);
+  justify-content: center;
+  gap: 2px;
+  box-shadow: var(--shadow-sm);
   cursor: grab;
   touch-action: none;
-  transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-fast);
+  transition: border-color var(--transition-fast), background-color var(--transition-fast);
   user-select: none;
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  border: 1px solid var(--border-color);
 }
 
 .player-card:active {
@@ -28,183 +27,77 @@
 }
 
 .player-card:hover {
-  transform: translateY(-2px) scale(1.04);
-  box-shadow:
-    0 10px 24px rgba(0, 0, 0, 0.85),
-    0 0 12px rgba(0, 255, 135, 0.3);
-  border-color: rgba(0, 255, 135, 0.6);
+  border-color: rgba(255, 255, 255, 0.25);
+  background: var(--bg-surface-elevated);
   z-index: 30;
 }
 
-/* Card Selezionata: tutta la card si accende di verde */
+/* Card Selezionata: sottile linea di evidenziazione rossa */
 .player-card.is-selected {
-  border-color: var(--accent-neon-green) !important;
-  box-shadow:
-    0 0 18px rgba(0, 255, 135, 0.6),
-    0 8px 20px rgba(0, 0, 0, 0.8) !important;
-  transform: translateY(-2px) scale(1.04);
-}
-
-.player-card.is-selected .card-face.card-front {
-  background: linear-gradient(145deg, rgba(0, 255, 135, 0.28), rgba(13, 21, 36, 0.92));
-  border-color: var(--accent-neon-green) !important;
+  border-color: var(--accent-red) !important;
+  background: var(--bg-surface-elevated);
+  box-shadow: 0 0 0 1px var(--accent-red) !important;
 }
 
 /* Card in fase di trascinamento */
 .player-card.is-being-dragged {
-  opacity: 0.35;
-  transform: scale(0.95);
+  opacity: 0.3;
+  transform: scale(0.96);
 }
 
 /* Evidenziazione Drop Target */
 .player-card.drop-target-hover,
 .pitch-slot-card.drop-target-hover {
-  border-color: var(--accent-neon-cyan) !important;
-  box-shadow: 0 0 20px rgba(0, 210, 255, 0.8) !important;
-  transform: scale(1.06) !important;
+  border-color: var(--accent-red) !important;
+  box-shadow: 0 0 8px rgba(229, 57, 53, 0.4) !important;
 }
 
-/* Card Top Bar (Numero, Ruolo, Status Dot) */
-.card-top-bar {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: auto;
-  line-height: 1;
-  min-height: 7px;
-}
-
-/* Riga header card: nome a sinistra + stato asta a destra */
+/* Riga Header Card: Ruolo + Nome + Stato Asta */
 .card-header-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  gap: 3px;
-}
-
-.card-header-row .player-name {
-  flex: 1;
+  gap: 4px;
   min-width: 0;
-  max-width: none;
-  margin: 0;
-  text-align: left;
-}
-
-.player-appetibilita {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 0.64rem;
-  font-weight: 800;
-  display: inline-flex;
-  align-items: center;
-  gap: 2px;
-  padding: 0 3px;
-  border-radius: 2px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  background: rgba(10, 14, 23, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: #ffb703;
-  flex-shrink: 0;
-}
-
-.player-appetibilita i {
-  font-size: 0.55rem;
-}
-
-.player-appetibilita.app-high {
-  color: #ff4d4d;
-  border-color: rgba(255, 77, 77, 0.45);
-  background: rgba(255, 77, 77, 0.12);
-  text-shadow: 0 0 5px rgba(255, 77, 77, 0.6);
-}
-
-.player-appetibilita.app-mid {
-  color: #ffb703;
-  border-color: rgba(255, 183, 3, 0.45);
-  background: rgba(255, 183, 3, 0.1);
-}
-
-.player-appetibilita.app-low {
-  color: #94a3b8;
-  border-color: rgba(148, 163, 184, 0.3);
-  background: rgba(148, 163, 184, 0.08);
-}
-
-.role-badge {
-  font-family: 'Outfit', sans-serif;
-  font-size: 0.65rem;
-  font-weight: 800;
-  padding: 0 4px;
-  border-radius: 2px;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-}
-
-.status-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-/* Info Giocatore & Nome */
-.card-info {
-  text-align: center;
-  width: 100%;
-  padding: 1px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-  flex: 1;
-  min-height: 0;
 }
 
 .player-name {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 800;
-  font-size: 0.82rem;
+  flex: 1;
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 0.78rem;
   color: #ffffff;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  line-height: 1.1;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
-  max-width: 96px;
-  margin: 0 auto;
-  letter-spacing: 0.01em;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: left;
 }
 
-.player-submeta {
+.card-top-bar {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 3px;
-  font-size: 0.62rem;
-  color: var(--text-muted);
-  margin-top: 1px;
-  flex-wrap: nowrap;
-  white-space: nowrap;
-  width: 100%;
+  flex-shrink: 0;
 }
 
-.fanta-role-tag {
+.role-badge {
+  font-family: var(--font-main);
+  font-size: 0.60rem;
   font-weight: 800;
-  font-size: 0.62rem;
-  color: var(--accent-neon-cyan);
-  background: rgba(0, 210, 255, 0.12);
-  padding: 0 3px;
+  padding: 1px 3px;
   border-radius: 2px;
+  text-transform: uppercase;
 }
 
 .slot-role-tag-sub {
-  font-family: 'Outfit', sans-serif;
-  font-size: 0.60rem;
+  font-family: var(--font-main);
+  font-size: 0.58rem;
   font-weight: 800;
-  padding: 0 3px;
+  padding: 0 2px;
   border-radius: 2px;
-  letter-spacing: 0.02em;
   text-transform: uppercase;
   line-height: 1.1;
   display: inline-flex;
@@ -213,156 +106,105 @@
   flex-shrink: 0;
 }
 
-.fm-score {
-  color: var(--accent-gold);
-  font-weight: 700;
-  font-size: 0.62rem;
-}
-
-.tit-badge {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 0.62rem;
-  font-weight: 800;
-  padding: 0 3px;
-  border-radius: 2px;
-  letter-spacing: 0.02em;
-  line-height: 1.1;
-  transition: var(--transition-fast);
-  flex-shrink: 0;
-}
-
-/* Verde: Titolare (≥ 70%) */
-.tit-badge.tit-high,
-.sub-tit-badge.tit-high,
-.tit-header-badge.tit-high {
-  color: #00ff87 !important;
-  background: rgba(0, 255, 135, 0.18) !important;
-  border: 1px solid rgba(0, 255, 135, 0.5) !important;
-  text-shadow: 0 0 5px rgba(0, 255, 135, 0.5);
-}
-
-/* Ciano: Favorito (50% - 69%) */
-.tit-badge.tit-mid-high,
-.sub-tit-badge.tit-mid-high,
-.tit-header-badge.tit-mid-high {
-  color: #00d2ff !important;
-  background: rgba(0, 210, 255, 0.18) !important;
-  border: 1px solid rgba(0, 210, 255, 0.5) !important;
-  text-shadow: 0 0 5px rgba(0, 210, 255, 0.5);
-}
-
-/* Ambra/Oro: Ballottaggio aperto (35% - 49%) */
-.tit-badge.tit-mid,
-.sub-tit-badge.tit-mid,
-.tit-header-badge.tit-mid {
-  color: #ffb703 !important;
-  background: rgba(255, 183, 3, 0.18) !important;
-  border: 1px solid rgba(255, 183, 3, 0.5) !important;
-  text-shadow: 0 0 5px rgba(255, 183, 3, 0.5);
-}
-
-/* Rosso/Corallo: Riserva (< 35%) */
-.tit-badge.tit-low,
-.sub-tit-badge.tit-low,
-.tit-header-badge.tit-low {
-  color: #ff4d4d !important;
-  background: rgba(255, 77, 77, 0.18) !important;
-  border: 1px solid rgba(255, 77, 77, 0.5) !important;
-  text-shadow: 0 0 5px rgba(255, 77, 77, 0.5);
-}
-
-/* Badge Inferiori & Ballottaggio */
-.card-bottom-badges {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2px;
-  min-height: 8px;
-}
-
-.fanta-badge {
-  font-size: 0.62rem;
-  line-height: 1;
-}
-
-.ballottaggio-pill {
-  background: rgba(255, 209, 102, 0.25);
-  border: 1px solid var(--accent-gold);
-  color: var(--accent-gold);
-  font-size: 0.62rem;
-  font-weight: 800;
-  padding: 1px 4px;
-  border-radius: var(--radius-pill);
-  display: inline-flex;
-  align-items: center;
-  gap: 2px;
-}
-
-/* ==========================================================================
-   CARD IN CAMPO: 3 RIGHE DATI SOTTO IL NOME
-   ========================================================================== */
+/* Metriche Essenziali (FM, Titolarità, Appetibilità) */
 .card-stats-rows {
   display: flex;
   flex-direction: column;
   gap: 1px;
   width: 100%;
-  flex: 1;
-  justify-content: space-evenly;
 }
 
 .card-stats-row {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 2px;
+  justify-content: space-between;
+  gap: 4px;
   white-space: nowrap;
   width: 100%;
-  min-height: 11px;
-}
-
-.stat-row-nums {
-  justify-content: space-between;
 }
 
 .stat-chip {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 0.6rem;
+  font-family: var(--font-main);
+  font-size: 0.62rem;
   font-weight: 700;
-  color: #cbd5e1;
-  background: rgba(10, 14, 23, 0.7);
-  border-radius: 2px;
+  color: var(--text-secondary);
+  background: transparent;
+  border: none;
   line-height: 1.2;
-  letter-spacing: 0.02em;
-  flex: 1;
-  text-align: center;
-  min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
-.stat-chip i {
-  font-size: 0.42rem;
-  margin-right: 1px;
-  color: var(--text-muted);
+.stat-chip.stat-fm {
+  color: #ffffff;
+  font-weight: 800;
 }
 
-/* Variante Compatta (Panchina & Liste) */
+.player-appetibilita {
+  font-family: var(--font-main);
+  font-size: 0.60rem;
+  font-weight: 700;
+  color: #f59e0b;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.player-appetibilita i {
+  font-size: 0.50rem;
+}
+
+.player-appetibilita.app-high { color: var(--accent-red); }
+.player-appetibilita.app-mid { color: #f59e0b; }
+.player-appetibilita.app-low { color: var(--text-dim); }
+
+.tit-badge {
+  font-family: var(--font-main);
+  font-size: 0.60rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.tit-badge.tit-high { color: var(--accent-success); }
+.tit-badge.tit-mid-high { color: #3b82f6; }
+.tit-badge.tit-mid { color: #f59e0b; }
+.tit-badge.tit-low { color: var(--accent-red); }
+
+.fanta-badge {
+  font-size: 0.58rem;
+  line-height: 1;
+}
+
+.ballottaggio-pill {
+  color: #f59e0b;
+  font-size: 0.58rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+/* Variante Compatta per Panchina (Riga Tabulare Pulita) */
 .player-card.is-compact {
   width: 100%;
   flex: 1;
   min-width: 0;
-  height: 72px;
+  height: 48px;
+  min-height: 48px;
   flex-direction: row;
   align-items: center;
-  padding: 8px 12px;
-  gap: 12px;
+  padding: 4px 8px;
+  gap: 8px;
+  border-radius: var(--radius-xs);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+}
+
+.player-card.is-compact:hover {
+  background: var(--bg-surface-elevated);
 }
 
 .player-card.is-compact .card-top-bar {
-  width: auto;
   flex-direction: column;
-  gap: 4px;
-  flex-shrink: 0;
+  gap: 2px;
 }
 
 .player-card.is-compact .card-info {
@@ -378,13 +220,21 @@
 }
 
 .player-card.is-compact .card-avatar-initials {
-  width: 36px;
-  height: 36px;
-  font-size: 1rem;
+  width: 26px;
+  height: 26px;
+  font-size: 0.76rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
 }
 
 .player-card.is-compact .player-name {
-  font-size: 0.95rem;
+  font-size: 0.82rem;
   font-weight: 700;
   max-width: none !important;
   width: 100%;
@@ -396,10 +246,12 @@
 }
 
 .player-card.is-compact .player-submeta {
+  display: flex;
+  align-items: center;
   justify-content: flex-start;
-  font-size: 0.72rem;
-  gap: 8px;
-  margin-top: 3px;
+  font-size: 0.65rem;
+  gap: 6px;
+  color: var(--text-secondary);
 }
 
 .player-card.is-compact .card-bottom-badges {
@@ -408,93 +260,20 @@
   flex-shrink: 0;
 }
 
-.player-card.is-compact.is-unavailable {
-  opacity: 0.55;
-  filter: grayscale(0.6);
-  border-color: rgba(239, 35, 60, 0.4) !important;
-}
-
-.player-card.is-compact .card-taken-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(10, 14, 23, 0.4);
-  border-radius: inherit;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding-right: 14px;
-  z-index: 5;
-  pointer-events: none;
-}
-
-.player-card.is-compact .taken-stamp {
-  font-size: 0.75rem;
-  transform: none;
-}
-
-/* Drag Ghost Element (Elemento Fluttuante durante il trascinamento) */
-.tactical-drag-ghost {
-  position: fixed;
-  pointer-events: none;
-  z-index: 10000;
-  transform: translate(-50%, -50%) scale(1.1);
-  background: rgba(16, 24, 39, 0.95);
-  border: 2px solid var(--accent-neon-green);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 255, 135, 0.5);
-  border-radius: var(--radius-md);
-  padding: 8px 14px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #ffffff;
-  backdrop-filter: blur(8px);
-}
-
-.ghost-badge {
-  background: var(--accent-neon-green);
-  color: var(--text-inverse);
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 800;
-  font-size: 0.9rem;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.ghost-name {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 700;
-  font-size: 0.9rem;
-}
-
-.ghost-role {
-  font-size: 0.75rem;
-  color: var(--accent-neon-cyan);
-  font-weight: 700;
-  margin-left: 6px;
-}
-
-/* ==========================================================================
-   STATO ASTA FANTACALCIO: PRESO / DISPONIBILE
-   ========================================================================== */
+/* Stato Asta Calciatore */
 .player-card.is-unavailable {
-  opacity: 0.55;
-  filter: grayscale(0.5) contrast(0.9);
-  border-color: rgba(239, 35, 60, 0.4) !important;
+  opacity: 0.5;
+  filter: grayscale(0.6);
 }
 
 .player-card.is-unavailable:hover {
   opacity: 0.85;
-  filter: grayscale(0.2);
 }
 
 .card-taken-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(10, 14, 23, 0.45);
+  background: rgba(15, 17, 21, 0.55);
   border-radius: inherit;
   display: flex;
   align-items: center;
@@ -504,22 +283,19 @@
 }
 
 .taken-stamp {
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 900;
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
-  color: #ff4d4d;
-  border: 1.5px solid #ff4d4d;
-  background: rgba(255, 77, 77, 0.15);
-  padding: 1px 6px;
-  border-radius: 4px;
-  transform: rotate(-12deg);
-  box-shadow: 0 0 10px rgba(255, 77, 77, 0.4);
-  text-shadow: 0 0 4px rgba(255, 77, 77, 0.8);
+  font-family: var(--font-main);
+  font-weight: 800;
+  font-size: 0.65rem;
+  letter-spacing: 0.04em;
+  color: var(--accent-red);
+  border: 1px solid var(--accent-red);
+  background: var(--accent-red-subtle);
+  padding: 1px 4px;
+  border-radius: 2px;
 }
 
 .asta-availability-dot {
-  font-size: 0.75rem;
+  font-size: 0.68rem;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -528,23 +304,58 @@
   padding: 1px;
 }
 
-.asta-availability-dot.is-available {
-  color: var(--accent-neon-green);
-  filter: drop-shadow(0 0 4px rgba(0, 255, 135, 0.6));
-}
-
-.asta-availability-dot.is-taken {
-  color: #ff4d4d;
-  filter: drop-shadow(0 0 6px rgba(255, 77, 77, 0.8));
-}
+.asta-availability-dot.is-available { color: var(--accent-success); }
+.asta-availability-dot.is-taken { color: var(--accent-red); }
 
 .asta-availability-dot:hover {
-  transform: scale(1.25);
+  transform: scale(1.15);
 }
 
-/* ==========================================================================
-   CARD TATTICA SUL CAMPO
-   ========================================================================== */
+/* Drag Ghost */
+.tactical-drag-ghost {
+  position: fixed;
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+  background: var(--bg-surface);
+  border: 1px solid var(--accent-red);
+  box-shadow: var(--shadow-md);
+  border-radius: var(--radius-xs);
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #ffffff;
+}
+
+.ghost-badge {
+  background: var(--accent-red);
+  color: #ffffff;
+  font-family: var(--font-main);
+  font-weight: 800;
+  font-size: 0.75rem;
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ghost-name {
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 0.80rem;
+}
+
+.ghost-role {
+  font-size: 0.68rem;
+  color: var(--text-secondary);
+  font-weight: 700;
+  margin-left: 4px;
+}
+
+/* Slot Card Tattica */
 .pitch-slot-card {
   cursor: grab;
 }

@@ -51,12 +51,10 @@ export class PlayerInspectorComponent {
       this.container.innerHTML = `
         <div class="inspector-header">
           <div class="inspector-player-summary">
-            <div class="inspector-main-info">
-              <h2 class="inspector-name">${sanitizeHtml(currentTeam?.name || 'Squadra')}</h2>
-              <div class="inspector-tags-row">
-                <span class="team-tag">${sanitizeHtml(currentTeam?.shortName || '')}</span>
-                <span class="team-tag">${benchCount} in Panchina</span>
-              </div>
+            <h2 class="inspector-name">${sanitizeHtml(currentTeam?.name || 'Squadra')}</h2>
+            <div class="inspector-tags-row">
+              <span class="team-tag">${sanitizeHtml(currentTeam?.shortName || '')}</span>
+              <span class="team-tag">${benchCount} in Panchina</span>
             </div>
           </div>
 
@@ -126,17 +124,15 @@ export class PlayerInspectorComponent {
     this.container.innerHTML = `
       <div class="inspector-header">
         <div class="inspector-player-summary">
-          <div class="inspector-main-info">
-            <h2 class="inspector-name">${sanitizeHtml(fullName)}</h2>
-            <div class="inspector-tags-row">
-              <span class="role-badge" style="background: ${roleInfo.bgColor}; color: ${roleInfo.color}; border: 1px solid ${roleInfo.borderColor}">
-                ${player.role} (${player.classicRole || player.fantaRole || 'C'}${mantraRole ? ` · ${mantraRole}` : ''})
-              </span>
-              <button id="toggle-player-auction-btn" class="inspector-auction-toggle ${isAvailable ? 'is-available' : 'is-taken'}" title="Clicca per cambiare lo stato per l'asta">
-                <i class="fa-solid ${isAvailable ? 'fa-circle-check' : 'fa-circle-xmark'}"></i>
-                <span>${isAvailable ? 'Disponibile' : 'Preso'}</span>
-              </button>
-            </div>
+          <h2 class="inspector-name" title="${sanitizeHtml(fullName)}">${sanitizeHtml(fullName)}</h2>
+          <div class="inspector-tags-row">
+            <span class="role-badge" style="background: ${roleInfo.bgColor}; color: ${roleInfo.color}; border: 1px solid ${roleInfo.borderColor}">
+              ${player.role} (${player.classicRole || player.fantaRole || 'C'}${mantraRole ? ` · ${mantraRole}` : ''})
+            </span>
+            <button id="toggle-player-auction-btn" class="inspector-auction-toggle ${isAvailable ? 'is-available' : 'is-taken'}" title="Clicca per cambiare lo stato per l'asta">
+              <i class="fa-solid ${isAvailable ? 'fa-circle-check' : 'fa-circle-xmark'}"></i>
+              <span>${isAvailable ? 'Disponibile' : 'Preso'}</span>
+            </button>
           </div>
         </div>
 

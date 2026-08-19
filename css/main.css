@@ -1,78 +1,86 @@
 /**
- * FantaOliva - Design System & Layout Principale (EA FC Tactical Board Theme)
+ * FantaOliva - Design System & Master Layout (Football Manager & Sports Analytics Premium SaaS)
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Rajdhani:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
 
 :root {
-  /* Palette Colori Cyber Dark / EA Sports FC */
-  --bg-primary: #0a0e17;
-  --bg-secondary: #111827;
-  --bg-surface: #162032;
-  --bg-surface-elevated: #1e293b;
-  --bg-glass: rgba(22, 32, 50, 0.75);
-  --bg-glass-heavy: rgba(16, 24, 39, 0.88);
+  /* Palette Colori Premium SaaS */
+  --bg-primary: #0F1115;
+  --bg-surface: #161A21;
+  --bg-surface-elevated: #1D2228;
+  --bg-card: #161A21;
+  --bg-card-hover: #1D2228;
+  --bg-input: #0F1115;
 
-  /* Accenti Neon */
-  --accent-neon-green: #00ff87;
-  --accent-neon-cyan: #00d2ff;
-  --accent-gold: #ffb703;
-  --accent-orange: #fb8500;
-  --accent-red: #ef233c;
-  --accent-purple: #8338ec;
+  /* Accenti */
+  --accent-red: #E53935;
+  --accent-red-hover: #D32F2F;
+  --accent-red-subtle: rgba(229, 57, 53, 0.12);
+  --accent-red-secondary: #FF6B6B;
+  --accent-success: #22C55E;
 
-  /* Testi */
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
-  --text-dim: #64748b;
-  --text-inverse: #0f172a;
+  /* Ruoli Fantacalcio */
+  --role-p: #EAB308;
+  --role-d: #3B82F6;
+  --role-c: #10B981;
+  --role-a: #EF4444;
 
-  /* Bordi & Linee */
-  --border-color: rgba(255, 255, 255, 0.1);
-  --border-subtle: rgba(255, 255, 255, 0.05);
-  --border-glow: rgba(0, 255, 135, 0.3);
+  /* Testi & Contrasti */
+  --text-main: #FFFFFF;
+  --text-primary: #FFFFFF;
+  --text-secondary: #A3A8B3;
+  --text-muted: #A3A8B3;
+  --text-dim: #6B7280;
+  --text-inverse: #FFFFFF;
 
-  /* Gradienti */
-  --grad-surface: linear-gradient(180deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.95) 100%);
-  --grad-primary: linear-gradient(135deg, #00ff87 0%, #00d2ff 100%);
-  --grad-gold: linear-gradient(135deg, #ffb703 0%, #fb8500 100%);
-  --grad-danger: linear-gradient(135deg, #ef233c 0%, #d90429 100%);
+  /* Bordi & Divider Sottili Lineari */
+  --border-color: rgba(255, 255, 255, 0.07);
+  --border-subtle: rgba(255, 255, 255, 0.04);
+  --border-card: rgba(255, 255, 255, 0.07);
+  --border-focus: rgba(229, 57, 53, 0.5);
 
-  /* Ombre & Glow */
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
-  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.6);
-  --shadow-lg: 0 12px 35px rgba(0, 0, 0, 0.8);
-  --glow-green: 0 0 15px rgba(0, 255, 135, 0.4);
-  --glow-cyan: 0 0 15px rgba(0, 210, 255, 0.4);
+  /* Ombre Discrete */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.6);
 
-  /* Raggi & Transizioni */
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 16px;
-  --radius-xl: 22px;
-  --radius-pill: 9999px;
-  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  /* Raggi Controllati (Niente bubble shapes) */
+  --radius-xs: 3px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-pill: 4px;
+
+  /* Transizioni */
+  --transition-fast: 0.12s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Font Families */
+  --font-main: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
 
   /* Dimensioni Layout */
-  --left-sidebar-width: 290px;
-  --right-sidebar-width: 370px;
-  --header-height: 64px;
+  --left-sidebar-width: 260px;
+  --right-sidebar-width: 340px;
+  --header-height: 52px;
 }
 
-/* Reset Globale */
-*, *::before, *::after {
+/* Reset */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: var(--font-body);
   background-color: var(--bg-primary);
   color: var(--text-main);
-  line-height: 1.5;
+  line-height: 1.45;
   overflow: hidden;
   height: 100vh;
   width: 100vw;
@@ -81,22 +89,27 @@ body {
   user-select: none;
 }
 
-h1, h2, h3, h4, h5, h6, .brand-name, .inspector-name, .team-title {
-  font-family: 'Outfit', sans-serif;
-  letter-spacing: -0.02em;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-main);
+  letter-spacing: -0.01em;
 }
 
-/* App Master Layout */
+/* Master App Layout */
 .app-layout {
   display: flex;
   flex-direction: column;
   height: 100vh;
   width: 100vw;
-  background: radial-gradient(circle at 50% 20%, #152238 0%, #0a0e17 70%);
+  background-color: var(--bg-primary);
   overflow: hidden;
 }
 
-/* Wrapper Vista 1: Lavagna Tattica (Squadre + Campo + Ispettore) */
+/* Wrapper Viste */
 .tactical-view-wrapper {
   display: flex;
   flex-direction: row;
@@ -111,88 +124,48 @@ h1, h2, h3, h4, h5, h6, .brand-name, .inspector-name, .team-title {
   display: none !important;
 }
 
-/* Wrapper Vista 2: Guida Asta per Slot */
 .auction-view-wrapper {
   height: calc(100vh - var(--header-height));
   width: 100vw;
   overflow: hidden;
   flex: 1;
+  background-color: var(--bg-primary);
 }
 
-/* Header Tattico Superiore */
+/* ==========================================================================
+   HEADER SUPERIORE (Orizzontale, Pulito, Senza Box Inutili)
+   ========================================================================== */
 .app-header {
-  background: var(--bg-glass-heavy);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: var(--bg-surface);
   border-bottom: 1px solid var(--border-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 16px;
-  gap: 12px;
+  gap: 16px;
   z-index: 50;
-  box-shadow: var(--shadow-sm);
   height: var(--header-height);
   flex-shrink: 0;
-}
-
-/* Switcher Viste (Lavagna Tattica / Guida Asta) */
-.view-switch-nav {
-  display: flex;
-  align-items: center;
-  background: rgba(10, 14, 23, 0.85);
-  border: 1px solid var(--border-glass);
-  border-radius: var(--radius-pill);
-  padding: 3px;
-  gap: 2px;
-}
-
-.view-switch-btn {
-  background: none;
-  border: none;
-  color: var(--text-muted);
-  font-family: 'Outfit', sans-serif;
-  font-size: 0.8rem;
-  font-weight: 700;
-  padding: 5px 13px;
-  border-radius: var(--radius-pill);
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  transition: var(--transition-fast);
-}
-
-.view-switch-btn:hover {
-  color: var(--text-primary);
-}
-
-.view-switch-btn.is-active {
-  background: var(--accent-neon-cyan);
-  color: #0a0e17;
-  font-weight: 800;
-  box-shadow: 0 0 12px rgba(0, 210, 255, 0.45);
 }
 
 .header-left-section {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   min-width: 0;
   flex-shrink: 0;
 }
 
 .header-left-section .brand-logo-glow {
-  width: 38px;
-  height: 38px;
-  background: var(--grad-primary);
-  border-radius: var(--radius-md);
+  width: 28px;
+  height: 28px;
+  background: var(--accent-red);
+  border-radius: var(--radius-xs);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
-  color: var(--text-inverse);
-  box-shadow: var(--glow-green);
+  font-size: 0.90rem;
+  color: #ffffff;
   flex-shrink: 0;
 }
 
@@ -202,140 +175,176 @@ h1, h2, h3, h4, h5, h6, .brand-name, .inspector-name, .team-title {
 }
 
 .header-left-section .brand-name {
-  font-size: 1.25rem;
-  font-weight: 900;
-  letter-spacing: 0.05em;
-  line-height: 1;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
   color: #ffffff;
 }
 
 .header-left-section .brand-accent {
-  color: var(--accent-neon-green);
+  color: var(--accent-red);
 }
 
 .header-left-section .brand-tagline {
-  font-size: 0.62rem;
-  font-weight: 700;
-  color: var(--text-muted);
-  letter-spacing: 0.1em;
+  font-size: 0.60rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  margin-top: 2px;
 }
 
-/* Centro Header: Toolbar Tattica Centrale */
+/* Switcher Viste (2 pulsanti senza bordi, senza sfondo, separati da una linea verticale) */
+.view-switch-nav {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  padding: 0;
+  gap: 0;
+}
+
+.view-switch-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-family: var(--font-main);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 4px 14px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color var(--transition-fast);
+  position: relative;
+  outline: none;
+}
+
+.view-switch-btn+.view-switch-btn {
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.view-switch-btn:hover {
+  color: var(--text-primary);
+}
+
+.view-switch-btn.is-active {
+  background: transparent;
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: none;
+}
+
+/* Centro Header: Info Squadra & Modulo */
 .header-center-section {
   display: flex;
   align-items: center;
   justify-content: center;
   flex: 1;
   min-width: 0;
-  gap: 10px;
+  gap: 12px;
 }
 
-/* Squadra Attiva nel Centro Header */
 .header-active-team {
   display: flex;
   align-items: center;
-  gap: 10px;
-  background: rgba(0, 0, 0, 0.35);
-  border: 1px solid var(--border-color);
-  padding: 4px 12px 4px 6px;
-  border-radius: var(--radius-md);
-  flex-shrink: 0;
+  gap: 8px;
+  min-width: 0;
 }
 
 .header-team-titles {
   display: flex;
   flex-direction: column;
-  line-height: 1.1;
+  line-height: 1.15;
   min-width: 0;
 }
 
 .header-team-name {
-  font-size: 1.1rem;
-  font-weight: 900;
-  letter-spacing: 0.02em;
+  font-size: 0.92rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .header-team-submeta {
-  font-size: 0.6rem;
-  font-weight: 700;
-  color: var(--text-muted);
-  letter-spacing: 0.06em;
+  font-size: 0.62rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .formation-selector-group {
   display: flex;
   align-items: center;
-  gap: 8px;
-  background: rgba(0, 0, 0, 0.45);
-  padding: 3px 8px;
-  border-radius: var(--radius-pill);
-  border: 1px solid var(--border-color);
+  gap: 6px;
 }
 
 .formation-label {
-  font-size: 0.72rem;
-  font-weight: 800;
-  color: var(--accent-neon-green);
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--text-secondary);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
 }
 
 .formation-select {
-  background: var(--bg-surface);
+  background: var(--bg-primary);
   color: #ffffff;
   border: 1px solid var(--border-color);
-  padding: 4px 8px;
-  border-radius: var(--radius-sm);
-  font-family: 'Outfit', sans-serif;
-  font-size: 0.84rem;
-  font-weight: 800;
+  padding: 3px 6px;
+  border-radius: var(--radius-xs);
+  font-family: var(--font-main);
+  font-size: 0.78rem;
+  font-weight: 700;
   outline: none;
   cursor: pointer;
-  transition: var(--transition-fast);
 }
 
-.formation-select:hover, .formation-select:focus {
-  border-color: var(--accent-neon-green);
-  box-shadow: 0 0 10px rgba(0, 255, 135, 0.25);
+.formation-select:focus {
+  border-color: var(--accent-red);
 }
 
 .tactical-toggles-group {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
 }
 
-/* Header Destro: Azioni & Menu Impostazioni */
+/* Header Destro: Impostazioni & Strumenti */
 .header-right-section {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   flex-shrink: 0;
-}
-
-/* Dropdown Menu Impostazioni */
-.header-dropdown-wrapper {
-  position: relative;
-  display: inline-flex;
 }
 
 .settings-toggle-btn {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
+  gap: 6px;
   cursor: pointer;
+  padding: 4px 8px;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 0.80rem;
+  font-family: var(--font-main);
+  font-weight: 600;
+  transition: color var(--transition-fast);
+  outline: none;
+}
+
+.settings-toggle-btn:hover,
+.settings-toggle-btn.is-active {
+  color: #ffffff;
+  background: transparent;
 }
 
 .settings-toggle-btn .dropdown-arrow {
-  font-size: 0.65rem;
+  font-size: 0.55rem;
   transition: transform var(--transition-fast);
 }
 
@@ -343,55 +352,45 @@ h1, h2, h3, h4, h5, h6, .brand-name, .inspector-name, .team-title {
   transform: rotate(180deg);
 }
 
-.settings-toggle-btn.is-active {
-  border-color: var(--accent-neon-green);
-  background: var(--bg-surface);
-  box-shadow: 0 0 12px rgba(0, 255, 135, 0.3);
-}
-
+/* Dropdown Menu */
 .header-dropdown-menu {
   position: fixed;
-  top: calc(var(--header-height) - 4px);
-  right: 18px;
-  width: 270px;
-  background: linear-gradient(165deg, #131d31 0%, #0c1220 100%);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: var(--radius-lg);
-  box-shadow: 
-    0 18px 45px rgba(0, 0, 0, 0.85),
-    0 0 20px rgba(0, 210, 255, 0.15),
-    inset 0 1px 1px rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  padding: 6px;
+  top: calc(var(--header-height) + 4px);
+  right: 16px;
+  width: 240px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-lg);
+  padding: 4px;
   z-index: 1000;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(-8px) scale(0.97);
-  transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.2s;
+  transform: translateY(-4px);
+  transition: opacity 0.15s, transform 0.15s, visibility 0.15s;
   pointer-events: none;
 }
 
 .header-dropdown-menu.is-open {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0) scale(1);
+  transform: translateY(0);
   pointer-events: auto;
 }
 
 .dropdown-menu-header {
-  padding: 8px 10px 6px 10px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  margin-bottom: 4px;
+  padding: 6px 8px 4px 8px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 2px;
 }
 
 .dropdown-menu-title {
-  font-family: 'Outfit', sans-serif;
-  font-size: 0.72rem;
-  font-weight: 800;
+  font-family: var(--font-main);
+  font-size: 0.68rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--accent-neon-cyan);
+  letter-spacing: 0.04em;
+  color: var(--accent-red);
   display: flex;
   align-items: center;
   gap: 6px;
@@ -400,18 +399,18 @@ h1, h2, h3, h4, h5, h6, .brand-name, .inspector-name, .team-title {
 .dropdown-items-list {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 1px;
 }
 
 .dropdown-menu-item {
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 7px 9px;
+  gap: 8px;
+  padding: 6px 8px;
   background: transparent;
-  border: 1px solid transparent;
-  border-radius: var(--radius-md);
+  border: none;
+  border-radius: var(--radius-xs);
   color: var(--text-primary);
   text-align: left;
   cursor: pointer;
@@ -420,52 +419,20 @@ h1, h2, h3, h4, h5, h6, .brand-name, .inspector-name, .team-title {
 }
 
 .dropdown-menu-item:hover {
-  background: rgba(255, 255, 255, 0.07);
-  border-color: rgba(255, 255, 255, 0.12);
-  transform: translateX(2px);
+  background: var(--bg-surface-elevated);
 }
 
 .dropdown-item-icon {
-  width: 30px;
-  height: 30px;
-  border-radius: var(--radius-sm);
+  width: 22px;
+  height: 22px;
+  border-radius: var(--radius-xs);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.90rem;
+  font-size: 0.75rem;
   flex-shrink: 0;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.dropdown-item-icon.icon-cyan {
-  color: var(--accent-neon-cyan);
-  background: rgba(0, 210, 255, 0.12);
-  border-color: rgba(0, 210, 255, 0.3);
-}
-
-.dropdown-item-icon.icon-gold {
-  color: var(--accent-gold);
-  background: rgba(255, 183, 3, 0.12);
-  border-color: rgba(255, 183, 3, 0.3);
-}
-
-.dropdown-item-icon.icon-blue {
-  color: #3b82f6;
-  background: rgba(59, 130, 246, 0.12);
-  border-color: rgba(59, 130, 246, 0.3);
-}
-
-.dropdown-item-icon.icon-green {
-  color: var(--accent-neon-green);
-  background: rgba(0, 255, 135, 0.12);
-  border-color: rgba(0, 255, 135, 0.3);
-}
-
-.dropdown-item-icon.icon-red {
-  color: #ff4d4d;
-  background: rgba(255, 77, 77, 0.12);
-  border-color: rgba(255, 77, 77, 0.3);
+  background: var(--bg-primary);
+  color: var(--text-secondary);
 }
 
 .dropdown-item-text {
@@ -475,106 +442,84 @@ h1, h2, h3, h4, h5, h6, .brand-name, .inspector-name, .team-title {
 }
 
 .dropdown-item-text .item-title {
-  font-family: 'Outfit', sans-serif;
-  font-size: 0.80rem;
-  font-weight: 700;
+  font-family: var(--font-main);
+  font-size: 0.76rem;
+  font-weight: 600;
   color: #ffffff;
   line-height: 1.2;
 }
 
 .dropdown-item-text .item-desc {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.66rem;
-  color: var(--text-muted);
-  line-height: 1.2;
-  margin-top: 1px;
+  font-family: var(--font-body);
+  font-size: 0.62rem;
+  color: var(--text-secondary);
+  line-height: 1.1;
 }
 
 .dropdown-divider {
   height: 1px;
-  background: rgba(255, 255, 255, 0.08);
-  margin: 4px 6px;
+  background: var(--border-color);
+  margin: 3px 4px;
 }
 
-.dropdown-menu-item.item-danger:hover {
-  background: rgba(255, 77, 77, 0.12);
-  border-color: rgba(255, 77, 77, 0.3);
-}
-
-.dropdown-menu-item.item-danger:hover .item-title {
-  color: #ff4d4d;
-}
-
-/* Pulsanti Tattici Stilizzati */
+/* Pulsanti Generali */
 .fanta-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  padding: 6px 12px;
-  border-radius: var(--radius-md);
-  font-family: 'Outfit', sans-serif;
-  font-weight: 700;
-  font-size: 0.82rem;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: var(--radius-xs);
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 0.76rem;
   border: 1px solid transparent;
   cursor: pointer;
   transition: var(--transition-fast);
   white-space: nowrap;
   outline: none;
+  height: 28px;
 }
 
 .fanta-btn.btn-sm {
-  padding: 4px 8px;
-  font-size: 0.76rem;
-  border-radius: var(--radius-sm);
+  padding: 2px 6px;
+  font-size: 0.70rem;
+  height: 24px;
 }
 
 .fanta-btn.btn-full {
   width: 100%;
 }
 
-.mobile-only-btn {
-  display: none !important;
-}
-
 .fanta-btn.primary-btn {
-  background: var(--grad-primary);
-  color: var(--text-inverse);
-  box-shadow: var(--glow-green);
+  background: var(--accent-red);
+  color: #ffffff;
 }
 
 .fanta-btn.primary-btn:hover {
-  transform: translateY(-1px);
-  filter: brightness(1.1);
-  box-shadow: 0 0 18px rgba(0, 255, 135, 0.6);
+  background: var(--accent-red-hover);
 }
 
 .fanta-btn.secondary-btn {
-  background: var(--bg-surface);
-  color: var(--text-main);
+  background: transparent;
+  color: var(--text-secondary);
   border-color: var(--border-color);
 }
 
 .fanta-btn.secondary-btn:hover {
   background: var(--bg-surface-elevated);
-  border-color: var(--accent-neon-cyan);
-  color: var(--accent-neon-cyan);
+  color: #ffffff;
 }
 
 .fanta-btn.success-btn {
-  background: #10b981;
+  background: var(--accent-success);
   color: #ffffff;
-  box-shadow: 0 0 12px rgba(16, 185, 129, 0.4);
-}
-
-.fanta-btn.success-btn:hover {
-  background: #059669;
 }
 
 .fanta-btn.danger-btn {
-  background: rgba(239, 35, 60, 0.15);
+  background: transparent;
   color: var(--accent-red);
-  border-color: rgba(239, 35, 60, 0.3);
+  border-color: rgba(229, 57, 53, 0.3);
 }
 
 .fanta-btn.danger-btn:hover {
@@ -582,24 +527,18 @@ h1, h2, h3, h4, h5, h6, .brand-name, .inspector-name, .team-title {
   color: #ffffff;
 }
 
-.fanta-btn.icon-only-btn {
-  padding: 8px 12px;
-}
-
 .fanta-btn.is-active {
-  background: rgba(0, 255, 135, 0.2);
-  border-color: var(--accent-neon-green);
-  color: var(--accent-neon-green);
+  background: var(--accent-red-subtle);
+  border-color: var(--accent-red);
+  color: var(--accent-red);
 }
 
-/* Sidebar Sinistra (Squadre Serie A) */
+/* Sidebar Sinistra */
 .app-sidebar-left {
   width: var(--left-sidebar-width);
   min-width: var(--left-sidebar-width);
   max-width: var(--left-sidebar-width);
-  background: var(--bg-glass-heavy);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: var(--bg-surface);
   border-right: 1px solid var(--border-color);
   display: flex;
   flex-direction: column;
@@ -607,10 +546,9 @@ h1, h2, h3, h4, h5, h6, .brand-name, .inspector-name, .team-title {
   overflow: hidden;
   z-index: 30;
   flex-shrink: 0;
-  transition: width var(--transition-smooth), min-width var(--transition-smooth), max-width var(--transition-smooth);
+  transition: width var(--transition-smooth);
 }
 
-/* Sidebar sinistra collassata (chiudibile) */
 body.left-sidebar-collapsed .app-sidebar-left {
   width: 0 !important;
   min-width: 0 !important;
@@ -623,7 +561,6 @@ body.left-sidebar-collapsed .left-sidebar-resizer {
   display: none;
 }
 
-/* Tab laterale per riaprire la sidebar sinistra */
 .reopen-sidebar-btn {
   position: absolute;
   left: 0;
@@ -633,18 +570,15 @@ body.left-sidebar-collapsed .left-sidebar-resizer {
   display: none;
   align-items: center;
   justify-content: center;
-  width: 22px;
-  height: 64px;
-  border-radius: 0 8px 8px 0;
-  background: var(--bg-glass-heavy);
+  width: 18px;
+  height: 48px;
+  border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
+  background: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-left: none;
-  color: var(--accent-neon-cyan);
-  font-size: 0.75rem;
+  color: var(--accent-red);
+  font-size: 0.70rem;
   cursor: pointer;
-  backdrop-filter: blur(8px);
-  transition: var(--transition-fast);
-  padding: 0;
 }
 
 body.left-sidebar-collapsed #reopen-left-sidebar-btn {
@@ -653,11 +587,10 @@ body.left-sidebar-collapsed #reopen-left-sidebar-btn {
 
 .reopen-sidebar-btn:hover {
   color: #ffffff;
-  border-color: var(--accent-neon-cyan);
-  box-shadow: 0 0 10px rgba(0, 210, 255, 0.4);
+  background: var(--bg-surface-elevated);
 }
 
-/* Sezione Centrale (Campo da Gioco) */
+/* Area Principale Campo */
 .app-main-content {
   flex: 1;
   min-width: 0;
@@ -667,35 +600,17 @@ body.left-sidebar-collapsed #reopen-left-sidebar-btn {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 6px 10px;
   overflow: hidden;
   z-index: 10;
+  background-color: var(--bg-surface);
 }
 
-/* Toolbar Tattica Centrale (ora ospitata nell'Header) */
-.pitch-tactical-toolbar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  background: rgba(10, 14, 23, 0.85);
-  border: 1px solid var(--border-glass);
-  padding: 3px 10px;
-  border-radius: var(--radius-pill);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
-  z-index: 25;
-  flex-shrink: 0;
-}
-
-/* Sidebar Destra (Ispettore Giocatore & Panchina) */
+/* Sidebar Destra */
 .app-sidebar-right {
   width: var(--right-sidebar-width);
   min-width: var(--right-sidebar-width);
   max-width: var(--right-sidebar-width);
-  background: var(--bg-glass-heavy);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: var(--bg-surface);
   border-left: 1px solid var(--border-color);
   display: flex;
   flex-direction: column;
@@ -703,17 +618,15 @@ body.left-sidebar-collapsed #reopen-left-sidebar-btn {
   overflow: hidden;
   z-index: 30;
   flex-shrink: 0;
-  transition: width var(--transition-smooth), min-width var(--transition-smooth), max-width var(--transition-smooth);
+  transition: width var(--transition-smooth);
 }
 
-/* Sidebar destra collassata (chiudibile) */
 body.right-sidebar-collapsed .app-sidebar-right {
   width: 0 !important;
   min-width: 0 !important;
   max-width: 0 !important;
   border-left: none;
   overflow: hidden;
-  transition: width var(--transition-smooth), min-width var(--transition-smooth), max-width var(--transition-smooth);
 }
 
 body.right-sidebar-collapsed #sidebar-inspector-resizer {
@@ -727,144 +640,120 @@ body.right-sidebar-collapsed #reopen-right-sidebar-btn {
 .reopen-sidebar-btn.right {
   left: auto;
   right: 0;
-  border-radius: 8px 0 0 8px;
+  border-radius: var(--radius-xs) 0 0 var(--radius-xs);
   border-left: 1px solid var(--border-color);
   border-right: none;
 }
 
-.reopen-sidebar-btn.right:hover {
-  border-left-color: var(--accent-neon-cyan);
-  box-shadow: 0 0 10px rgba(0, 210, 255, 0.4);
-}
-
-/* Campo Form e Input Tattici */
-.fanta-input, .fanta-select, .fanta-textarea {
+/* Form Input & Select */
+.fanta-input,
+.fanta-select,
+.fanta-textarea {
   width: 100%;
-  background: var(--bg-secondary);
+  background: var(--bg-input);
   border: 1px solid var(--border-color);
   color: var(--text-main);
-  padding: 9px 12px;
-  border-radius: var(--radius-md);
-  font-family: 'Inter', sans-serif;
-  font-size: 0.88rem;
+  padding: 6px 8px;
+  border-radius: var(--radius-xs);
+  font-family: var(--font-body);
+  font-size: 0.80rem;
   outline: none;
   transition: var(--transition-fast);
 }
 
-.fanta-input:focus, .fanta-select:focus, .fanta-textarea:focus {
-  border-color: var(--accent-neon-green);
-  box-shadow: 0 0 10px rgba(0, 255, 135, 0.25);
-  background: var(--bg-surface);
+.fanta-input:focus,
+.fanta-select:focus,
+.fanta-textarea:focus {
+  border-color: var(--accent-red);
 }
 
 .fanta-textarea {
   resize: vertical;
-  min-height: 70px;
+  min-height: 50px;
 }
 
 .fanta-textarea-sm {
   width: 100%;
-  background: var(--bg-secondary);
+  background: var(--bg-input);
   border: 1px solid var(--border-color);
   color: var(--text-main);
-  padding: 6px 10px;
-  border-radius: var(--radius-sm);
-  font-size: 0.82rem;
-  font-family: 'Inter', sans-serif;
+  padding: 4px 6px;
+  border-radius: var(--radius-xs);
+  font-size: 0.75rem;
+  font-family: var(--font-body);
   outline: none;
   resize: none;
 }
 
 .fanta-textarea-sm:focus {
-  border-color: var(--accent-neon-cyan);
+  border-color: var(--accent-red);
 }
 
-/* Scrollbar Personalizzata */
+/* Scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 4px;
+  height: 4px;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.2);
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.10);
+  border-radius: 2px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-neon-green);
+  background: var(--accent-red);
 }
 
-/* Toast Notifications Container */
+/* Toast (Disabilitati) */
 .toast-container {
-  position: fixed;
-  bottom: 24px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  z-index: 9999;
-  pointer-events: none;
+  display: none !important;
 }
 
 .toast-message {
   pointer-events: auto;
-  min-width: 320px;
-  max-width: 480px;
-  background: var(--bg-surface-elevated);
+  min-width: 280px;
+  max-width: 420px;
+  background: var(--bg-surface);
   border: 1px solid var(--border-color);
-  padding: 12px 18px;
-  border-radius: var(--radius-md);
+  padding: 8px 12px;
+  border-radius: var(--radius-xs);
   box-shadow: var(--shadow-lg);
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   color: var(--text-main);
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   font-weight: 500;
-  animation: toastSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: toastSlideUp 0.15s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .toast-message.toast-success {
-  border-left: 4px solid var(--accent-neon-green);
-}
-.toast-message.toast-success .toast-icon {
-  color: var(--accent-neon-green);
+  border-left: 3px solid var(--accent-success);
 }
 
 .toast-message.toast-warning {
-  border-left: 4px solid var(--accent-gold);
-}
-.toast-message.toast-warning .toast-icon {
-  color: var(--accent-gold);
+  border-left: 3px solid #f59e0b;
 }
 
 .toast-message.toast-error {
-  border-left: 4px solid var(--accent-red);
-}
-.toast-message.toast-error .toast-icon {
-  color: var(--accent-red);
+  border-left: 3px solid var(--accent-red);
 }
 
 .toast-message.toast-info {
-  border-left: 4px solid var(--accent-neon-cyan);
-}
-.toast-message.toast-info .toast-icon {
-  color: var(--accent-neon-cyan);
+  border-left: 3px solid #3b82f6;
 }
 
 .toast-close {
   background: none;
   border: none;
   color: var(--text-dim);
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-left: auto;
   cursor: pointer;
-  line-height: 1;
 }
 
 .toast-close:hover {
@@ -873,15 +762,16 @@ body.right-sidebar-collapsed #reopen-right-sidebar-btn {
 
 .toast-fade-out {
   opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.3s, transform 0.3s;
+  transform: translateY(4px);
+  transition: opacity 0.15s, transform 0.15s;
 }
 
 @keyframes toastSlideUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(8px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -892,7 +782,6 @@ body.right-sidebar-collapsed #reopen-right-sidebar-btn {
   display: none !important;
 }
 
-/* Mobile Action Bar Trigger Buttons */
 .mobile-action-bar {
   display: none;
 }

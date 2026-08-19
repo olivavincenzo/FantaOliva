@@ -1,6 +1,5 @@
 /**
- * Stili per la pagina Guida Asta per Slot (Auction Slots View)
- * Griglia tattica a 4 slot per ruolo (Portieri, Difensori, Centrocampisti, Attaccanti)
+ * Stili per la pagina Guida Asta per Slot (Football Management & Sports Analytics Premium SaaS)
  */
 
 .auction-slots-page {
@@ -8,10 +7,9 @@
   flex-direction: column;
   height: calc(100vh - var(--header-height));
   overflow-y: auto;
-  padding: 12px 24px 20px 24px;
-  background: radial-gradient(circle at 50% 10%, rgba(0, 210, 255, 0.04) 0%, transparent 60%),
-              radial-gradient(circle at 80% 80%, rgba(220, 5, 45, 0.03) 0%, transparent 50%),
-              var(--bg-pitch-dark);
+  padding: 8px 14px 14px 14px;
+  background-color: var(--bg-primary);
+  gap: 8px;
 }
 
 /* Header & Banner Guida Asta */
@@ -20,58 +18,48 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 16px;
-  padding: 18px 24px;
-  background: rgba(14, 21, 37, 0.75);
-  border: 1px solid var(--border-glass);
-  border-radius: var(--radius-lg);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-  margin-bottom: 20px;
+  gap: 10px;
+  padding: 10px 14px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xs);
 }
 
 .auction-title-group h1 {
-  font-family: 'Outfit', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 900;
+  font-family: var(--font-main);
+  font-size: 1.15rem;
+  font-weight: 800;
   color: var(--text-primary);
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   margin: 0;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.01em;
 }
 
 .auction-title-group h1 i {
-  color: #ff4d4d;
-  filter: drop-shadow(0 0 8px rgba(255, 77, 77, 0.6));
+  color: var(--accent-red);
 }
 
 .auction-title-group p {
-  color: var(--text-muted);
-  font-size: 0.84rem;
-  margin: 4px 0 0 0;
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  margin: 1px 0 0 0;
 }
 
-/* ==========================================================================
-   BARRA STRUMENTI & FILTRI GUIDA ASTA (Sempre visibile in cima)
-   ========================================================================== */
+/* Barra Strumenti & Filtri Guida Asta */
 .auction-toolbar-card {
-  background: rgba(14, 21, 37, 0.75);
-  border: 1px solid var(--border-glass);
-  border-radius: var(--radius-lg);
-  padding: 10px 14px;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xs);
+  padding: 6px 10px;
   flex-shrink: 0;
-  margin-bottom: 6px;
 }
 
 .auction-toolbar-row {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   flex-wrap: wrap;
 }
 
@@ -80,73 +68,72 @@
   display: flex;
   align-items: center;
   flex: 1 1 200px;
-  min-width: 160px;
+  min-width: 150px;
 }
 
 .auction-search-box .search-icon {
   position: absolute;
-  left: 12px;
+  left: 8px;
   color: var(--text-dim);
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   pointer-events: none;
 }
 
 .auction-search-input {
   width: 100%;
-  background: rgba(8, 12, 20, 0.75);
+  background: var(--bg-primary);
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-pill);
-  padding: 6px 30px 6px 32px;
+  border-radius: var(--radius-xs);
+  padding: 5px 24px 5px 26px;
   color: var(--text-primary);
-  font-family: 'Inter', sans-serif;
-  font-size: 0.82rem;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
   transition: var(--transition-fast);
 }
 
 .auction-search-input:focus {
   outline: none;
-  border-color: var(--accent-neon-cyan);
-  box-shadow: 0 0 10px rgba(0, 210, 255, 0.3);
-  background: rgba(12, 18, 30, 0.95);
+  border-color: var(--accent-red);
 }
 
 .auction-search-clear {
   position: absolute;
-  right: 10px;
+  right: 6px;
   background: none;
   border: none;
   color: var(--text-dim);
   cursor: pointer;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
 }
 
 .auction-search-clear:hover {
   color: var(--text-primary);
 }
 
+/* Ruolo Tabs */
 .auction-role-tabs {
   display: flex;
-  background: rgba(10, 14, 23, 0.85);
-  padding: 3px;
-  border-radius: var(--radius-pill);
-  border: 1px solid var(--border-glass);
-  gap: 2px;
+  background: var(--bg-primary);
+  padding: 2px;
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--border-color);
+  gap: 1px;
 }
 
 .auction-role-btn {
   background: none;
   border: none;
-  color: var(--text-muted);
-  font-family: 'Outfit', sans-serif;
-  font-size: 0.78rem;
-  font-weight: 700;
-  padding: 5px 12px;
-  border-radius: var(--radius-pill);
+  color: var(--text-secondary);
+  font-family: var(--font-main);
+  font-size: 0.74rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: var(--radius-xs);
   cursor: pointer;
   transition: var(--transition-fast);
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 4px;
   white-space: nowrap;
 }
 
@@ -154,312 +141,196 @@
   color: var(--text-primary);
 }
 
-.auction-role-btn.role-pill-a.is-active {
-  background: #ff4d4d;
-  color: #ffffff;
-  box-shadow: 0 0 12px rgba(255, 77, 77, 0.5);
-  font-weight: 800;
-}
+.auction-role-btn.role-pill-a.is-active { background: var(--role-a); color: #ffffff; font-weight: 700; }
+.auction-role-btn.role-pill-c.is-active { background: var(--role-c); color: #ffffff; font-weight: 700; }
+.auction-role-btn.role-pill-d.is-active { background: var(--role-d); color: #ffffff; font-weight: 700; }
+.auction-role-btn.role-pill-p.is-active { background: var(--role-p); color: #000000; font-weight: 700; }
 
-.auction-role-btn.role-pill-c.is-active {
-  background: #00d2ff;
-  color: #0a0e17;
-  box-shadow: 0 0 12px rgba(0, 210, 255, 0.5);
-  font-weight: 800;
-}
+.role-label-desktop { display: inline; }
+.role-label-mobile { display: none; }
 
-.auction-role-btn.role-pill-d.is-active {
-  background: #00ff87;
-  color: #0a0e17;
-  box-shadow: 0 0 12px rgba(0, 255, 135, 0.5);
-  font-weight: 800;
-}
-
-.auction-role-btn.role-pill-p.is-active {
-  background: #ffb703;
-  color: #0a0e17;
-  box-shadow: 0 0 12px rgba(255, 183, 3, 0.5);
-  font-weight: 800;
-}
-
-.role-label-desktop {
-  display: inline;
-}
-
-.role-label-mobile {
-  display: none;
-}
-
-/* Pulsanti Filtro Disponibilità e Reset Asta */
+/* Pulsanti Filtro */
 .auction-filter-btn {
-  background: rgba(10, 14, 23, 0.85);
-  border: 1px solid var(--border-glass);
-  color: var(--text-muted);
-  font-family: 'Outfit', sans-serif;
-  font-size: 0.78rem;
-  font-weight: 700;
-  padding: 5px 11px;
-  border-radius: var(--radius-pill);
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-family: var(--font-main);
+  font-size: 0.74rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: var(--radius-xs);
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 4px;
   transition: var(--transition-fast);
   white-space: nowrap;
+  height: 26px;
 }
 
 .auction-filter-btn:hover {
   color: var(--text-primary);
-  border-color: rgba(255, 255, 255, 0.2);
+  background: var(--bg-surface-elevated);
 }
 
 .auction-filter-btn.is-active {
-  background: rgba(0, 255, 135, 0.18);
-  border-color: var(--accent-neon-green);
-  color: var(--accent-neon-green);
-  box-shadow: 0 0 12px rgba(0, 255, 135, 0.35);
-  font-weight: 800;
+  background: rgba(34, 197, 94, 0.15);
+  border-color: var(--accent-success);
+  color: var(--accent-success);
+  font-weight: 700;
 }
 
 .auction-filter-btn.reset-btn:hover {
-  background: rgba(255, 77, 77, 0.2);
-  border-color: #ff4d4d;
-  color: #ff4d4d;
+  background: var(--accent-red-subtle);
+  border-color: var(--accent-red);
+  color: var(--accent-red);
 }
 
-.auction-search-box {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-
-
-.auction-search-clear {
-  position: absolute;
-  right: 10px;
-  background: none;
-  border: none;
-  color: var(--text-dim);
-  cursor: pointer;
-  font-size: 0.85rem;
-}
-
-.auction-search-clear:hover {
-  color: var(--accent-crimson);
-}
-
-/* Griglia dei 4 Slot */
+/* Griglia 4 Slot */
 .auction-slots-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
+  gap: 10px;
   width: 100%;
   flex: 1;
   min-height: 0;
 }
 
 @media (max-width: 1400px) {
-  .auction-slots-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  .auction-slots-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
-  .auction-slots-grid {
-    grid-template-columns: 1fr;
-  }
+  .auction-slots-grid { grid-template-columns: 1fr; }
 }
 
-/* Singolo Tier Slot Column */
+/* Singola Colonna Tier Slot */
 .slot-tier-column {
-  background: rgba(14, 21, 37, 0.65);
-  border: 1px solid var(--border-glass);
-  border-radius: var(--radius-lg);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xs);
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
-  transition: var(--transition-normal);
   min-height: 0;
 }
 
-.slot-tier-column:hover {
-  border-color: rgba(255, 255, 255, 0.2);
-  transform: translateY(-2px);
-}
-
-/* Header Slot con colore tematico */
+/* Header Slot */
 .slot-tier-header {
-  padding: 14px 18px;
+  padding: 8px 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--border-glass);
+  border-bottom: 1px solid var(--border-color);
+  background: var(--bg-surface-elevated);
 }
 
-.slot-1-header {
-  background: linear-gradient(135deg, rgba(255, 183, 3, 0.25), rgba(255, 77, 77, 0.1));
-  border-bottom-color: rgba(255, 183, 3, 0.35);
-}
-
-.slot-2-header {
-  background: linear-gradient(135deg, rgba(0, 210, 255, 0.25), rgba(0, 102, 178, 0.1));
-  border-bottom-color: rgba(0, 210, 255, 0.35);
-}
-
-.slot-3-header {
-  background: linear-gradient(135deg, rgba(0, 255, 135, 0.2), rgba(0, 132, 61, 0.1));
-  border-bottom-color: rgba(0, 255, 135, 0.35);
-}
-
-.slot-4-header {
-  background: linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(90, 45, 130, 0.1));
-  border-bottom-color: rgba(168, 85, 247, 0.35);
-}
+.slot-1-header { border-left: 2px solid #f59e0b; }
+.slot-2-header { border-left: 2px solid #3b82f6; }
+.slot-3-header { border-left: 2px solid #10b981; }
+.slot-4-header { border-left: 2px solid #a855f7; }
 
 .slot-tier-title-box h3 {
-  font-family: 'Outfit', sans-serif;
-  font-size: 1.05rem;
+  font-family: var(--font-main);
+  font-size: 0.88rem;
   font-weight: 800;
   margin: 0;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 5px;
+  color: #ffffff;
 }
 
-.slot-1-header h3 { color: #ffb703; }
-.slot-2-header h3 { color: var(--accent-neon-cyan); }
-.slot-3-header h3 { color: var(--accent-neon-green); }
-.slot-4-header h3 { color: #c084fc; }
+.slot-1-header h3 i { color: #f59e0b; }
+.slot-2-header h3 i { color: #3b82f6; }
+.slot-3-header h3 i { color: #10b981; }
+.slot-4-header h3 i { color: #a855f7; }
 
 .slot-tier-desc {
-  font-size: 0.72rem;
-  color: var(--text-muted);
-  margin-top: 2px;
+  font-size: 0.65rem;
+  color: var(--text-secondary);
 }
 
 .slot-header-right-meta {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
 }
 
 .slot-accordion-arrow {
   display: none;
-  font-size: 0.82rem;
-  color: var(--text-muted);
-  transition: transform var(--transition-fast);
-}
-
-.slot-tier-header {
-  padding: 14px 18px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid var(--border-glass);
-  cursor: pointer;
-  user-select: none;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
 }
 
 /* Lista Giocatori dentro lo Slot */
 .slot-players-list {
-  padding: 10px;
+  padding: 6px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
   flex: 1;
   min-height: 0;
   overflow-y: auto;
 }
 
-.slot-players-list::-webkit-scrollbar {
-  width: 5px;
-}
-
-.slot-players-list::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 4px;
-}
-
-/* Card Giocatore nel Tier a 4 Righe */
+/* Card Giocatore nel Tier */
 .slot-player-card {
-  background: rgba(10, 14, 23, 0.8);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: var(--radius-md);
-  padding: 10px 12px;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xs);
+  padding: 6px 8px;
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 3px;
   transition: var(--transition-fast);
   cursor: pointer;
 }
 
 .slot-player-card:hover {
-  background: rgba(20, 30, 50, 0.95);
-  border-color: rgba(0, 210, 255, 0.4);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.04);
 }
 
 .slot-player-card.is-taken {
-  opacity: 0.55;
-  background: rgba(10, 14, 23, 0.45);
-  border-color: rgba(255, 77, 77, 0.2);
-  filter: grayscale(0.4);
-  padding: 6px 10px;
-  gap: 4px;
+  opacity: 0.5;
+  background: var(--bg-primary);
 }
 
-.slot-player-card.is-taken:hover {
-  opacity: 0.9;
-  filter: none;
-  border-color: rgba(255, 77, 77, 0.45);
-  background: rgba(20, 30, 50, 0.85);
-}
-
-/* Nascondi Riga 2 (Appetibilità/Titolarità) e Riga 3 (Statistiche) quando il giocatore è PRESO */
 .slot-player-card.is-taken .slot-row-2-indices,
 .slot-player-card.is-taken .slot-row-3-stats {
   display: none !important;
 }
 
-/* ==========================================================================
-   RIGA 1: Posizione Slot (#Rank), Club, Nome & Ruolo Giocatore
-   ========================================================================== */
+/* RIGA 1: Posizione Slot (#Rank), Club, Nome & Ruolo */
 .slot-row-1-identity {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
   flex-wrap: wrap;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 3px;
 }
 
 .slot-player-rank {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 0.88rem;
+  font-family: var(--font-main);
+  font-size: 0.75rem;
   font-weight: 800;
-  color: var(--accent-gold);
+  color: var(--text-dim);
   flex-shrink: 0;
 }
 
 .slot-team-tag {
-  font-size: 0.68rem;
-  font-weight: 800;
-  color: var(--text-muted);
-  background: rgba(255, 255, 255, 0.08);
-  padding: 2px 6px;
-  border-radius: 3px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  color: var(--text-secondary);
   text-transform: uppercase;
   flex-shrink: 0;
 }
 
 .slot-player-name {
-  font-family: 'Outfit', sans-serif;
-  font-size: 0.95rem;
-  font-weight: 800;
+  font-family: var(--font-main);
+  font-size: 0.82rem;
+  font-weight: 700;
   color: #ffffff;
   line-height: 1.2;
 }
@@ -467,153 +338,111 @@
 .slot-role-and-actions {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
   margin-left: auto;
   flex-shrink: 0;
 }
 
 .slot-role-tag-mini {
-  font-size: 0.68rem;
+  font-family: var(--font-main);
+  font-size: 0.62rem;
   font-weight: 800;
-  color: var(--accent-neon-cyan);
-  background: rgba(0, 210, 255, 0.14);
-  padding: 2px 6px;
-  border-radius: 3px;
+  color: var(--text-secondary);
   flex-shrink: 0;
 }
 
 .slot-taken-badge {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 0.65rem;
-  font-weight: 900;
-  color: #ff4d4d;
-  background: rgba(255, 77, 77, 0.15);
-  border: 1px solid rgba(255, 77, 77, 0.4);
-  padding: 1px 5px;
-  border-radius: 3px;
+  font-family: var(--font-main);
+  font-size: 0.60rem;
+  font-weight: 800;
+  color: var(--accent-red);
+  padding: 0 3px;
 }
 
 .slot-availability-dot-btn {
   background: none;
   border: none;
-  font-size: 1rem;
-  padding: 0 2px;
+  font-size: 0.80rem;
+  padding: 0 1px;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.15s ease, filter 0.15s ease;
+  transition: transform 0.12s ease;
   line-height: 1;
 }
 
 .slot-availability-dot-btn:hover {
-  transform: scale(1.25);
+  transform: scale(1.15);
 }
 
-.slot-availability-dot-btn.is-available {
-  color: var(--accent-neon-green);
-  filter: drop-shadow(0 0 5px rgba(0, 255, 135, 0.6));
-}
+.slot-availability-dot-btn.is-available { color: var(--accent-success); }
+.slot-availability-dot-btn.is-taken { color: var(--accent-red); }
 
-.slot-availability-dot-btn.is-taken {
-  color: #ff4d4d;
-  filter: drop-shadow(0 0 5px rgba(255, 77, 77, 0.6));
-}
-
-/* ==========================================================================
-   RIGA 2: Indice Appetibilità & Indice Titolarità
-   ========================================================================== */
+/* RIGA 2: Indici */
 .slot-row-2-indices {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 8px;
-  background: rgba(255, 255, 255, 0.02);
-  padding: 4px 6px;
-  border-radius: var(--radius-sm);
+  gap: 4px;
 }
 
 .slot-appetibilita-box {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 3px;
 }
 
 .index-label {
-  font-size: 0.72rem;
+  font-size: 0.65rem;
   font-weight: 600;
-  color: var(--text-muted);
+  color: var(--text-secondary);
 }
 
 .slot-appetibilita-input {
-  width: 38px;
-  height: 22px;
+  width: 28px;
+  height: 16px;
   text-align: center;
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 0.9rem;
-  font-weight: 800;
-  background: rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(255, 183, 3, 0.4);
-  border-radius: 3px;
-  color: #ffb703;
+  font-family: var(--font-main);
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+  color: #ffffff;
   padding: 0;
 }
 
 .slot-appetibilita-input:focus {
   outline: none;
-  border-color: #ff4d4d;
-  color: #ff4d4d;
+  border-color: var(--accent-red);
 }
 
 .index-suffix {
-  font-size: 0.68rem;
+  font-size: 0.60rem;
   color: var(--text-dim);
 }
 
 .slot-titolarita-box {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 3px;
 }
 
 .slot-tit-badge {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 0.7rem;
-  font-weight: 800;
-  padding: 1px 6px;
-  border-radius: 3px;
-  letter-spacing: 0.02em;
+  font-family: var(--font-main);
+  font-size: 0.65rem;
+  font-weight: 700;
   display: inline-flex;
   align-items: center;
 }
 
-.slot-tit-badge.tit-high {
-  color: #00ff87;
-  background: rgba(0, 255, 135, 0.16);
-  border: 1px solid rgba(0, 255, 135, 0.45);
-}
+.slot-tit-badge.tit-high { color: var(--accent-success); }
+.slot-tit-badge.tit-mid-high { color: #3b82f6; }
+.slot-tit-badge.tit-mid { color: #f59e0b; }
+.slot-tit-badge.tit-low { color: var(--accent-red); }
 
-.slot-tit-badge.tit-mid-high {
-  color: #00d2ff;
-  background: rgba(0, 210, 255, 0.16);
-  border: 1px solid rgba(0, 210, 255, 0.45);
-}
-
-.slot-tit-badge.tit-mid {
-  color: #ffb703;
-  background: rgba(255, 183, 3, 0.16);
-  border: 1px solid rgba(255, 183, 3, 0.45);
-}
-
-.slot-tit-badge.tit-low {
-  color: #ff4d4d;
-  background: rgba(255, 77, 77, 0.16);
-  border: 1px solid rgba(255, 77, 77, 0.45);
-}
-
-/* ==========================================================================
-   RIGA 3: FM, MV, Gol, Assist, Rigorista, Punizioni & Corner
-   ========================================================================== */
+/* RIGA 3: Statistiche */
 .slot-row-3-stats {
   display: flex;
   align-items: center;
@@ -622,41 +451,30 @@
 }
 
 .slot-stat-pill {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 0.74rem;
-  font-weight: 700;
-  color: var(--text-muted);
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 2px 6px;
-  border-radius: 3px;
+  font-family: var(--font-main);
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: transparent;
+  border: none;
+  padding: 0;
 }
 
 .slot-stat-pill strong {
   color: #ffffff;
+  font-weight: 700;
 }
 
-.slot-stat-pill.stat-gol {
-  color: #00ff87;
-  border-color: rgba(0, 255, 135, 0.3);
-}
-
-.slot-stat-pill.stat-ass {
-  color: #00d2ff;
-  border-color: rgba(0, 210, 255, 0.3);
-}
+.slot-stat-pill.stat-gol { color: var(--accent-success); }
+.slot-stat-pill.stat-ass { color: #3b82f6; }
 
 .slot-specialist-chip {
-  font-size: 0.68rem;
+  font-size: 0.62rem;
   font-weight: 700;
-  color: var(--accent-gold);
-  background: rgba(255, 183, 3, 0.12);
-  border: 1px solid rgba(255, 183, 3, 0.3);
-  padding: 2px 6px;
-  border-radius: 3px;
+  color: #f59e0b;
   display: inline-flex;
   align-items: center;
-  gap: 3px;
+  gap: 2px;
 }
 
 .slot-player-card.is-taken .slot-player-name {
@@ -665,69 +483,33 @@
 }
 
 .slot-empty-state {
-  padding: 30px 16px;
+  padding: 20px 10px;
   text-align: center;
   color: var(--text-dim);
-  font-size: 0.82rem;
+  font-size: 0.78rem;
 }
 
 .slot-empty-state i {
-  font-size: 1.8rem;
-  margin-bottom: 8px;
-  opacity: 0.5;
-}
-
-.slot-player-card.is-taken:hover {
-  opacity: 0.8;
-  filter: grayscale(0.2);
-}
-
-.slot-taken-badge {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 0.65rem;
-  font-weight: 800;
-  color: #ff4d4d;
-  background: rgba(255, 77, 77, 0.15);
-  border: 1px solid rgba(255, 77, 77, 0.35);
-  padding: 1px 5px;
-  border-radius: 3px;
-  letter-spacing: 0.05em;
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+  opacity: 0.4;
 }
 
 .slot-availability-btn {
-  background: rgba(10, 14, 23, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 3px 8px;
-  border-radius: var(--radius-pill);
-  font-family: 'Outfit', sans-serif;
-  font-size: 0.72rem;
-  font-weight: 800;
+  background: transparent;
+  border: 1px solid var(--border-color);
+  padding: 2px 5px;
+  border-radius: var(--radius-xs);
+  font-family: var(--font-main);
+  font-size: 0.68rem;
+  font-weight: 600;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 3px;
   transition: var(--transition-fast);
   flex-shrink: 0;
 }
 
-.slot-availability-btn.is-available {
-  color: var(--accent-neon-green);
-  border-color: rgba(0, 255, 135, 0.35);
-  background: rgba(0, 255, 135, 0.08);
-}
-
-.slot-availability-btn.is-available:hover {
-  background: rgba(0, 255, 135, 0.22);
-  box-shadow: 0 0 8px rgba(0, 255, 135, 0.4);
-}
-
-.slot-availability-btn.is-taken {
-  color: #ff4d4d;
-  border-color: rgba(255, 77, 77, 0.4);
-  background: rgba(255, 77, 77, 0.15);
-}
-
-.slot-availability-btn.is-taken:hover {
-  background: rgba(255, 77, 77, 0.3);
-  box-shadow: 0 0 8px rgba(255, 77, 77, 0.5);
-}
+.slot-availability-btn.is-available { color: var(--accent-success); border-color: rgba(34, 197, 94, 0.3); }
+.slot-availability-btn.is-taken { color: var(--accent-red); border-color: rgba(229, 57, 53, 0.3); }

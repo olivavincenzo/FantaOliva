@@ -63,8 +63,7 @@ export class TeamSelectorComponent {
       if (!query) return true;
       return t.name.toLowerCase().includes(query) ||
              t.city.toLowerCase().includes(query) ||
-             t.shortName.toLowerCase().includes(query) ||
-             (t.coach && t.coach.toLowerCase().includes(query));
+             t.shortName.toLowerCase().includes(query);
     });
 
     if (filtered.length === 0) {
@@ -88,9 +87,6 @@ export class TeamSelectorComponent {
           <div class="team-meta">
             <div class="team-name-row">
               <span class="team-title">${sanitizeHtml(team.name)}</span>
-            </div>
-            <div class="team-sub-row">
-              <span class="team-coach"><i class="fa-solid fa-user-tie"></i> ${sanitizeHtml(team.coach || 'Allenatore')}</span>
             </div>
           </div>
           <div class="team-active-indicator">
