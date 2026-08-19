@@ -70,10 +70,10 @@ export class AuctionSlotsComponent {
     const data = store.getAuctionSlotsData(this.activeRole, this.searchQuery, this.onlyAvailable);
 
     const rolesMeta = [
-      { key: 'A', label: 'Attaccanti (A)', icon: 'fa-bolt' },
-      { key: 'C', label: 'Centrocampisti (C)', icon: 'fa-gears' },
-      { key: 'D', label: 'Difensori (D)', icon: 'fa-shield' },
-      { key: 'P', label: 'Portieri (P)', icon: 'fa-hands' }
+      { key: 'A', label: 'Attaccanti', shortLabel: 'A', icon: 'fa-bolt', pillClass: 'role-pill-a' },
+      { key: 'C', label: 'Centrocampisti', shortLabel: 'C', icon: 'fa-gears', pillClass: 'role-pill-c' },
+      { key: 'D', label: 'Difensori', shortLabel: 'D', icon: 'fa-shield', pillClass: 'role-pill-d' },
+      { key: 'P', label: 'Portieri', shortLabel: 'P', icon: 'fa-hands', pillClass: 'role-pill-p' }
     ];
 
     const slotTiersMeta = [
@@ -116,29 +116,31 @@ export class AuctionSlotsComponent {
     this.container.innerHTML = `
       <div class="auction-slots-page">
 
-        <!-- BARRA STRUMENTI & FILTRI SLOT ASTA (Integrata nella pagina, visibile sia su mobile che desktop) -->
+        <!-- BARRA STRUMENTI & FILTRI SLOT ASTA (Fluida e Responsive) -->
         <div class="auction-toolbar-card">
           <div class="auction-toolbar-row">
 
-            <!-- Tabs Ruolo Rapido -->
-            <div class="auction-role-tabs" aria-label="Filtro per Ruolo Asta">
-              ${rolesMeta.map(r => `
-                <button class="auction-role-btn ${this.activeRole === r.key ? 'is-active' : ''}" data-role="${r.key}">
-                  <i class="fa-solid ${r.icon}"></i> <span>${r.label}</span>
-                </button>
-              `).join('')}
-            </div>
-
-            <!-- Ricerca Testuale -->
+            <!-- Ricerca Testuale Ampia -->
             <div class="auction-search-box">
               <i class="fa-solid fa-magnifying-glass search-icon"></i>
               <input 
                 type="text" 
                 class="auction-search-input" 
-                placeholder="Cerca giocatore o club..." 
+                placeholder="Cerca calciatore o club..." 
                 value="${sanitizeHtml(this.searchQuery)}"
               />
               ${this.searchQuery ? `<button class="auction-search-clear" title="Pulisci ricerca"><i class="fa-solid fa-xmark"></i></button>` : ''}
+            </div>
+
+            <!-- Tabs Ruolo Rapido -->
+            <div class="auction-role-tabs" aria-label="Filtro per Ruolo Asta">
+              ${rolesMeta.map(r => `
+                <button class="auction-role-btn ${r.pillClass} ${this.activeRole === r.key ? 'is-active' : ''}" data-role="${r.key}" title="${r.label}">
+                  <i class="fa-solid ${r.icon}"></i>
+                  <span class="role-label-desktop">${r.label}</span>
+                  <span class="role-label-mobile">${r.shortLabel}</span>
+                </button>
+              `).join('')}
             </div>
 
             <!-- Filtro Disponibili -->

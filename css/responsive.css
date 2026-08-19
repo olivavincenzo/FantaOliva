@@ -178,22 +178,7 @@
     white-space: nowrap;
   }
 
-  .auction-search-box {
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
 
-  .auction-search-input {
-    width: 75px;
-    padding: 3px 18px 3px 22px;
-    font-size: 0.70rem;
-    transition: width 0.2s ease;
-  }
-
-  .auction-search-input:focus {
-    width: 110px;
-  }
 
   /* Header Destro (Impostazioni) */
   .header-right-section {
@@ -307,34 +292,54 @@
   }
 
   .auction-toolbar-row {
+    display: flex;
     gap: 8px;
-  }
-
-  .auction-role-tabs {
-    padding: 2px;
-  }
-
-  .auction-role-btn {
-    padding: 4px 8px;
-    font-size: 0.72rem;
-    gap: 3px;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
   .auction-search-box {
-    min-width: 130px;
-    flex: 1;
+    flex: 1 1 100%;
+    width: 100%;
+    min-width: 0;
+    order: 1;
   }
 
   .auction-search-input {
     width: 100%;
-    font-size: 0.75rem;
-    padding: 4px 24px 4px 26px;
+    font-size: 0.82rem;
+    padding: 6px 28px 6px 30px;
+  }
+
+  .auction-role-tabs {
+    order: 2;
+    padding: 2px;
+    gap: 2px;
+  }
+
+  .auction-role-btn {
+    padding: 4px 9px;
+    font-size: 0.72rem;
+    gap: 3px;
+  }
+
+  .role-label-desktop {
+    display: none !important;
+  }
+
+  .role-label-mobile {
+    display: inline !important;
   }
 
   .auction-filter-btn {
+    order: 3;
     padding: 4px 8px;
     font-size: 0.72rem;
     gap: 4px;
+  }
+
+  .auction-filter-btn.reset-btn {
+    order: 4;
   }
 
   .auction-slots-grid {
@@ -902,27 +907,7 @@
     padding: 2px;
   }
 
-  .auction-role-btn {
-    padding: 3px 6px;
-    font-size: 0.70rem;
-    gap: 3px;
-  }
 
-  .auction-filter-btn {
-    padding: 3px 6px;
-    font-size: 0.70rem;
-    gap: 3px;
-  }
-
-  .auction-search-input {
-    width: 80px;
-    padding: 3px 18px 3px 22px;
-    font-size: 0.70rem;
-  }
-
-  .auction-search-input:focus {
-    width: 120px;
-  }
 
   /* Modali su Mobile */
   .fanta-modal,
