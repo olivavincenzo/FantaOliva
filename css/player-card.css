@@ -4,16 +4,16 @@
 
 .player-card {
   position: relative;
-  width: 114px;
-  height: 104px;
+  width: 106px;
+  height: 64px;
   background: linear-gradient(145deg, #162238 0%, #0d1524 100%);
-  border-radius: var(--radius-md);
-  padding: 6px 8px 5px 8px;
+  border-radius: var(--radius-sm);
+  padding: 3px 5px 2px 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 
-    0 8px 22px rgba(0, 0, 0, 0.8),
+    0 6px 16px rgba(0, 0, 0, 0.75),
     inset 0 1px 1px rgba(255, 255, 255, 0.15);
   cursor: grab;
   touch-action: none;
@@ -27,10 +27,10 @@
 }
 
 .player-card:hover {
-  transform: translateY(-3px) scale(1.04);
+  transform: translateY(-2px) scale(1.04);
   box-shadow: 
-    0 14px 30px rgba(0, 0, 0, 0.9),
-    0 0 16px rgba(0, 255, 135, 0.3);
+    0 10px 24px rgba(0, 0, 0, 0.85),
+    0 0 12px rgba(0, 255, 135, 0.3);
   border-color: rgba(0, 255, 135, 0.6);
   z-index: 30;
 }
@@ -39,17 +39,17 @@
 .player-card.is-selected {
   border-color: var(--accent-neon-green) !important;
   box-shadow: 
-    0 0 22px rgba(0, 255, 135, 0.6),
-    0 10px 25px rgba(0, 0, 0, 0.8) !important;
+    0 0 18px rgba(0, 255, 135, 0.6),
+    0 8px 20px rgba(0, 0, 0, 0.8) !important;
   transform: translateY(-2px) scale(1.04);
 }
 
 .player-card.is-selected::after {
   content: '';
   position: absolute;
-  inset: -3px;
+  inset: -2px;
   border: 2px solid var(--accent-neon-green);
-  border-radius: calc(var(--radius-md) + 3px);
+  border-radius: calc(var(--radius-sm) + 2px);
   pointer-events: none;
   animation: selectPulse 2s infinite ease-in-out;
 }
@@ -68,8 +68,8 @@
 /* Evidenziazione Drop Target */
 .player-card.drop-target-hover, .pitch-slot-card.drop-target-hover {
   border-color: var(--accent-neon-cyan) !important;
-  box-shadow: 0 0 25px rgba(0, 210, 255, 0.8) !important;
-  transform: scale(1.08) !important;
+  box-shadow: 0 0 20px rgba(0, 210, 255, 0.8) !important;
+  transform: scale(1.06) !important;
 }
 
 /* Card Top Bar (Numero, Ruolo, Status Dot) */
@@ -79,33 +79,35 @@
   justify-content: space-between;
   width: 100%;
   line-height: 1;
+  min-height: 7px;
 }
 
 .player-appetibilita {
   font-family: 'Rajdhani', sans-serif;
-  font-size: 0.84rem;
+  font-size: 0.64rem;
   font-weight: 800;
   display: inline-flex;
   align-items: center;
-  gap: 3px;
-  padding: 1px 5px;
-  border-radius: 3px;
+  gap: 2px;
+  padding: 0 3px;
+  border-radius: 2px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   background: rgba(10, 14, 23, 0.85);
   border: 1px solid rgba(255, 255, 255, 0.15);
   color: #ffb703;
+  flex-shrink: 0;
 }
 
 .player-appetibilita i {
-  font-size: 0.68rem;
+  font-size: 0.55rem;
 }
 
 .player-appetibilita.app-high {
   color: #ff4d4d;
   border-color: rgba(255, 77, 77, 0.45);
   background: rgba(255, 77, 77, 0.12);
-  text-shadow: 0 0 6px rgba(255, 77, 77, 0.6);
+  text-shadow: 0 0 5px rgba(255, 77, 77, 0.6);
 }
 
 .player-appetibilita.app-mid {
@@ -122,17 +124,17 @@
 
 .role-badge {
   font-family: 'Outfit', sans-serif;
-  font-size: 0.74rem;
+  font-size: 0.65rem;
   font-weight: 800;
-  padding: 1px 5px;
-  border-radius: 3px;
-  letter-spacing: 0.03em;
+  padding: 0 4px;
+  border-radius: 2px;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
 }
 
 .status-dot {
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   display: inline-block;
 }
@@ -141,7 +143,7 @@
 .card-info {
   text-align: center;
   width: 100%;
-  padding: 2px 0;
+  padding: 1px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -150,15 +152,15 @@
 
 .player-name {
   font-family: 'Outfit', sans-serif;
-  font-weight: 900;
-  font-size: 0.95rem;
+  font-weight: 800;
+  font-size: 0.82rem;
   color: #ffffff;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  line-height: 1.15;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
-  max-width: 102px;
+  line-height: 1.1;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+  max-width: 96px;
   margin: 0 auto;
   letter-spacing: 0.01em;
 }
@@ -167,36 +169,55 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  font-size: 0.72rem;
+  gap: 3px;
+  font-size: 0.62rem;
   color: var(--text-muted);
-  margin-top: 3px;
-  flex-wrap: wrap;
+  margin-top: 1px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  width: 100%;
 }
 
 .fanta-role-tag {
   font-weight: 800;
-  font-size: 0.72rem;
+  font-size: 0.62rem;
   color: var(--accent-neon-cyan);
   background: rgba(0, 210, 255, 0.12);
-  padding: 0 4px;
-  border-radius: 3px;
+  padding: 0 3px;
+  border-radius: 2px;
+}
+
+.slot-role-tag-sub {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.60rem;
+  font-weight: 800;
+  padding: 0 3px;
+  border-radius: 2px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  line-height: 1.1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .fm-score {
   color: var(--accent-gold);
   font-weight: 700;
-  font-size: 0.72rem;
+  font-size: 0.62rem;
 }
 
 .tit-badge {
   font-family: 'Rajdhani', sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.62rem;
   font-weight: 800;
-  padding: 1px 5px;
-  border-radius: 3px;
+  padding: 0 3px;
+  border-radius: 2px;
   letter-spacing: 0.02em;
+  line-height: 1.1;
   transition: var(--transition-fast);
+  flex-shrink: 0;
 }
 
 /* Verde: Titolare (≥ 70%) */
@@ -204,7 +225,7 @@
   color: #00ff87 !important;
   background: rgba(0, 255, 135, 0.18) !important;
   border: 1px solid rgba(0, 255, 135, 0.5) !important;
-  text-shadow: 0 0 6px rgba(0, 255, 135, 0.5);
+  text-shadow: 0 0 5px rgba(0, 255, 135, 0.5);
 }
 
 /* Ciano: Favorito (50% - 69%) */
@@ -212,7 +233,7 @@
   color: #00d2ff !important;
   background: rgba(0, 210, 255, 0.18) !important;
   border: 1px solid rgba(0, 210, 255, 0.5) !important;
-  text-shadow: 0 0 6px rgba(0, 210, 255, 0.5);
+  text-shadow: 0 0 5px rgba(0, 210, 255, 0.5);
 }
 
 /* Ambra/Oro: Ballottaggio aperto (35% - 49%) */
@@ -220,7 +241,7 @@
   color: #ffb703 !important;
   background: rgba(255, 183, 3, 0.18) !important;
   border: 1px solid rgba(255, 183, 3, 0.5) !important;
-  text-shadow: 0 0 6px rgba(255, 183, 3, 0.5);
+  text-shadow: 0 0 5px rgba(255, 183, 3, 0.5);
 }
 
 /* Rosso/Corallo: Riserva (< 35%) */
@@ -228,7 +249,7 @@
   color: #ff4d4d !important;
   background: rgba(255, 77, 77, 0.18) !important;
   border: 1px solid rgba(255, 77, 77, 0.5) !important;
-  text-shadow: 0 0 6px rgba(255, 77, 77, 0.5);
+  text-shadow: 0 0 5px rgba(255, 77, 77, 0.5);
 }
 
 /* Badge Inferiori & Ballottaggio */
@@ -236,12 +257,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4px;
-  min-height: 14px;
+  gap: 2px;
+  min-height: 8px;
 }
 
 .fanta-badge {
-  font-size: 0.78rem;
+  font-size: 0.62rem;
   line-height: 1;
 }
 
@@ -494,7 +515,7 @@
 
 .card-face.card-front {
   background: linear-gradient(145deg, #162238 0%, #0d1524 100%);
-  padding: 5px 6px 4px 6px;
+  padding: 3px 5px 3px 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

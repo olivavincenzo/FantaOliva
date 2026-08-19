@@ -111,10 +111,7 @@ export class AuctionSlotsComponent {
         
         <!-- Header Banner & Controlli -->
         <div class="auction-header-banner">
-          <div class="auction-title-group">
-            <h1><i class="fa-solid fa-layer-group"></i> Guida Asta per Slot</h1>
-            <p>I migliori 40 giocatori per ruolo suddivisi in 4 Slot da 10 giocatori in base all'Indice di Appetibilità.</p>
-          </div>
+
 
           <div class="auction-controls-row">
             <!-- Tabs Ruolo -->
@@ -155,11 +152,11 @@ export class AuctionSlotsComponent {
         <!-- Griglia dei 4 Slot da 10 Giocatori -->
         <div class="auction-slots-grid">
           ${slotTiersMeta.map((tier, tierIdx) => {
-            const players = currentRoleData[tier.slotKey] || [];
-            const offset = tierIdx * 10;
-            const availableCount = players.filter(p => p.isAvailable !== false).length;
+      const players = currentRoleData[tier.slotKey] || [];
+      const offset = tierIdx * 10;
+      const availableCount = players.filter(p => p.isAvailable !== false).length;
 
-            return `
+      return `
               <div class="slot-tier-column" data-slot="${tier.slotKey}">
                 <div class="slot-tier-header ${tier.headerClass}">
                   <div class="slot-tier-title-box">
@@ -178,17 +175,20 @@ export class AuctionSlotsComponent {
                       <p>Nessun giocatore corrisponde ai filtri attivi.</p>
                     </div>
                   ` : players.map((p, idx) => {
-                    const rankNum = offset + idx + 1;
-                    const fm = p.stats?.fantamedia ? Number(p.stats.fantamedia).toFixed(2) : '-';
-                    const mv = p.stats?.mediaVoto ? Number(p.stats.mediaVoto).toFixed(2) : '-';
-                    const gol = p.stats?.gol || 0;
-                    const ass = p.stats?.assist || 0;
-                    const appVal = p.appetibilita !== undefined ? Number(p.appetibilita) : 50;
-                    const titolarita = p.stats?.titolarita ?? p.titolaritaPerc ?? 50;
-                    const titClass = getTitolaritaClass(titolarita);
-                    const isAvailable = p.isAvailable !== false;
+        const rankNum = offset + idx + 1;
+        const fm = p.stats?.fantamedia ? Number(p.stats.fantamedia).toFixed(2) : '-';
+        const mv = p.stats?.mediaVoto ? Number(p.stats.mediaVoto).toFixed(2) : '-';
+        const gol = p.stats?.gol || 0;
+        const ass = p.stats?.assist || 0;
+        const appVal = p.appetibilita !== undefined ? Number(p.appetibilita) : 50;
+        const titolarita = p.stats?.titolarita ?? p.titolaritaPerc ?? 50;
+        const titClass = getTitolaritaClass(titolarita);
+        const isAvailable = p.isAvailable !== false;
+        const qtA = p.quotazioni?.qtA ?? '-';
+        const fvm = p.quotazioni?.fvm ?? '-';
+        const mantraRole = p.mantraRole || '';
 
-                    return `
+        return `
                       <div class="slot-player-card ${!isAvailable ? 'is-taken' : ''}" data-player-id="${p.id}" data-team-id="${p.teamId || ''}" title="${sanitizeHtml(p.name)} (${sanitizeHtml(p.teamName || 'Serie A')}) - Doppio click per aprire la Lavagna Tattica">
                         
                         <!-- RIGA 1: Posizione Slot, Club, Nome, Ruolo & Icona Disponibilità Asta -->
@@ -198,7 +198,7 @@ export class AuctionSlotsComponent {
                           <span class="slot-player-name" title="${sanitizeHtml(p.name)}">${sanitizeHtml(p.name)}</span>
                           
                           <div class="slot-role-and-actions">
-                            <span class="slot-role-tag-mini">${p.role || p.classicRole}</span>
+                            <span class="slot-role-tag-mini" title="${mantraRole ? `Ruolo Mantra: ${mantraRole}` : ''}">${p.role || p.classicRole}${mantraRole ? ` · ${mantraRole}` : ''}</span>
                             ${!isAvailable ? `<span class="slot-taken-badge">PRESO</span>` : ''}
                             <button class="slot-availability-dot-btn ${isAvailable ? 'is-available' : 'is-taken'}" data-player-id="${p.id}" title="${isAvailable ? 'Disponibile all\'asta (clicca per segnare PRESO)' : 'PRESO (clicca per segnare DISPONIBILE)'}">
                               <i class="fa-solid ${isAvailable ? 'fa-circle-check' : 'fa-circle-xmark'}"></i>
@@ -226,8 +226,10 @@ export class AuctionSlotsComponent {
                           </div>
                         </div>
 
-                        <!-- RIGA 3: FM, MV, Gol, Assist, Rigorista, Punizioni & Corner -->
+                        <!-- RIGA 3: Qt, FVM, FM, MV, Gol, Assist, Rigorista, Punizioni & Corner -->
                         <div class="slot-row-3-stats">
+                          ${qtA !== '-' ? `<span class="slot-stat-pill" title="Quotazione Attuale 2026/27">Qt: <strong>${qtA}</strong></span>` : ''}
+                          ${fvm !== '-' ? `<span class="slot-stat-pill" title="FantaValore di Mercato">FVM: <strong>${fvm}</strong></span>` : ''}
                           <span class="slot-stat-pill" title="Fantamedia">FM: <strong>${fm}</strong></span>
                           <span class="slot-stat-pill" title="Media Voto">MV: <strong>${mv}</strong></span>
                           ${gol > 0 ? `<span class="slot-stat-pill stat-gol" title="Gol segnati">⚽ ${gol}</span>` : ''}
@@ -239,11 +241,11 @@ export class AuctionSlotsComponent {
 
                       </div>
                     `;
-                  }).join('')}
+      }).join('')}
                 </div>
               </div>
             `;
-          }).join('')}
+    }).join('')}
         </div>
 
       </div>

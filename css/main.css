@@ -222,12 +222,14 @@ h1, h2, h3, h4, h5, h6, .brand-name, .inspector-name, .team-title {
   margin-top: 2px;
 }
 
-/* Centro Header: Selettore Modulo & Controlli Rapidi */
+/* Centro Header: Toolbar Tattica Centrale */
 .header-center-section {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-width: 0;
   gap: 10px;
-  flex-shrink: 0;
 }
 
 .formation-selector-group {
@@ -235,13 +237,13 @@ h1, h2, h3, h4, h5, h6, .brand-name, .inspector-name, .team-title {
   align-items: center;
   gap: 8px;
   background: rgba(0, 0, 0, 0.45);
-  padding: 4px 10px;
-  border-radius: var(--radius-md);
+  padding: 3px 8px;
+  border-radius: var(--radius-pill);
   border: 1px solid var(--border-color);
 }
 
 .formation-label {
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 800;
   color: var(--accent-neon-green);
   text-transform: uppercase;
@@ -252,10 +254,10 @@ h1, h2, h3, h4, h5, h6, .brand-name, .inspector-name, .team-title {
   background: var(--bg-surface);
   color: #ffffff;
   border: 1px solid var(--border-color);
-  padding: 5px 10px;
+  padding: 4px 8px;
   border-radius: var(--radius-sm);
   font-family: 'Outfit', sans-serif;
-  font-size: 0.88rem;
+  font-size: 0.84rem;
   font-weight: 800;
   outline: none;
   cursor: pointer;
@@ -273,12 +275,196 @@ h1, h2, h3, h4, h5, h6, .brand-name, .inspector-name, .team-title {
   gap: 6px;
 }
 
-/* Header Destro: Azioni (Salva, Note, Storico, Export) */
+/* Header Destro: Azioni & Menu Impostazioni */
 .header-right-section {
   display: flex;
   align-items: center;
   gap: 8px;
   flex-shrink: 0;
+}
+
+/* Dropdown Menu Impostazioni */
+.header-dropdown-wrapper {
+  position: relative;
+  display: inline-flex;
+}
+
+.settings-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+}
+
+.settings-toggle-btn .dropdown-arrow {
+  font-size: 0.65rem;
+  transition: transform var(--transition-fast);
+}
+
+.header-dropdown-wrapper.is-open .settings-toggle-btn .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.header-dropdown-wrapper.is-open .settings-toggle-btn {
+  border-color: var(--accent-neon-green);
+  background: var(--bg-surface);
+  box-shadow: 0 0 12px rgba(0, 255, 135, 0.3);
+}
+
+.header-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: 270px;
+  background: linear-gradient(165deg, #131d31 0%, #0c1220 100%);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius-lg);
+  box-shadow: 
+    0 18px 45px rgba(0, 0, 0, 0.85),
+    0 0 20px rgba(0, 210, 255, 0.15),
+    inset 0 1px 1px rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 6px;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px) scale(0.97);
+  transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.2s;
+  pointer-events: none;
+}
+
+.header-dropdown-wrapper.is-open .header-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+.dropdown-menu-header {
+  padding: 8px 10px 6px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 4px;
+}
+
+.dropdown-menu-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent-neon-cyan);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dropdown-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.dropdown-menu-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 9px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  text-align: left;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  outline: none;
+}
+
+.dropdown-menu-item:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.12);
+  transform: translateX(2px);
+}
+
+.dropdown-item-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.90rem;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-item-icon.icon-cyan {
+  color: var(--accent-neon-cyan);
+  background: rgba(0, 210, 255, 0.12);
+  border-color: rgba(0, 210, 255, 0.3);
+}
+
+.dropdown-item-icon.icon-gold {
+  color: var(--accent-gold);
+  background: rgba(255, 183, 3, 0.12);
+  border-color: rgba(255, 183, 3, 0.3);
+}
+
+.dropdown-item-icon.icon-blue {
+  color: #3b82f6;
+  background: rgba(59, 130, 246, 0.12);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.dropdown-item-icon.icon-green {
+  color: var(--accent-neon-green);
+  background: rgba(0, 255, 135, 0.12);
+  border-color: rgba(0, 255, 135, 0.3);
+}
+
+.dropdown-item-icon.icon-red {
+  color: #ff4d4d;
+  background: rgba(255, 77, 77, 0.12);
+  border-color: rgba(255, 77, 77, 0.3);
+}
+
+.dropdown-item-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.dropdown-item-text .item-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.80rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.dropdown-item-text .item-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.66rem;
+  color: var(--text-muted);
+  line-height: 1.2;
+  margin-top: 1px;
+}
+
+.dropdown-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 4px 6px;
+}
+
+.dropdown-menu-item.item-danger:hover {
+  background: rgba(255, 77, 77, 0.12);
+  border-color: rgba(255, 77, 77, 0.3);
+}
+
+.dropdown-menu-item.item-danger:hover .item-title {
+  color: #ff4d4d;
 }
 
 /* Pulsanti Tattici Stilizzati */
@@ -381,7 +567,7 @@ h1, h2, h3, h4, h5, h6, .brand-name, .inspector-name, .team-title {
   flex-shrink: 0;
 }
 
-/* Sezione Centrale (Campo da Gioco & Toolbar Tattica) */
+/* Sezione Centrale (Campo da Gioco) */
 .app-main-content {
   flex: 1;
   min-width: 0;
@@ -390,22 +576,21 @@ h1, h2, h3, h4, h5, h6, .brand-name, .inspector-name, .team-title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  padding: 8px 12px 10px 12px;
+  justify-content: center;
+  padding: 6px 10px;
   overflow: hidden;
   z-index: 10;
-  gap: 6px;
 }
 
-/* Toolbar Tattica Centrale (Modulo, Linee, Pos. Libera, Riallinea) */
+/* Toolbar Tattica Centrale (ora ospitata nell'Header) */
 .pitch-tactical-toolbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  background: rgba(14, 21, 37, 0.85);
+  gap: 8px;
+  background: rgba(10, 14, 23, 0.85);
   border: 1px solid var(--border-glass);
-  padding: 4px 12px;
+  padding: 3px 10px;
   border-radius: var(--radius-pill);
   backdrop-filter: blur(12px);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);

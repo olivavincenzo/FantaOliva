@@ -305,95 +305,63 @@
   z-index: 15;
 }
 
-.slot-role-tag {
-  margin-top: 3px;
-  background: rgba(10, 14, 23, 0.92);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  color: var(--text-muted);
-  font-size: 0.72rem;
-  font-weight: 800;
-  padding: 1px 8px;
-  border-radius: var(--radius-pill);
-  letter-spacing: 0.04em;
-  backdrop-filter: blur(6px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  white-space: nowrap;
-}
-
-.slot-pos-badge {
-  color: #ffffff;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.slot-divider {
-  color: rgba(255, 255, 255, 0.3);
-  font-size: 0.8rem;
-}
-
-.slot-mantra-badge {
-  color: var(--accent-neon-cyan);
-  font-weight: 800;
-  font-size: 0.7rem;
-}
-
 /* Sostituti visualizzati sotto la card sul campo */
 .slot-substitutes-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3px;
-  margin-top: 3px;
+  gap: 1px;
+  margin-top: 1px;
   width: 100%;
 }
 
 .pitch-sub-pill {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 3px;
   background: rgba(14, 21, 37, 0.95);
   border: 1px solid rgba(0, 210, 255, 0.45);
   border-radius: var(--radius-pill);
-  padding: 2px 8px;
-  font-size: 0.72rem;
+  padding: 0 6px;
+  height: 15px;
+  font-size: 0.60rem;
   color: #ffffff;
   font-weight: 700;
   cursor: pointer;
   backdrop-filter: blur(6px);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   transition: var(--transition-fast);
-  max-width: 126px;
   white-space: nowrap;
 }
 
 .pitch-sub-pill:hover {
   background: rgba(0, 210, 255, 0.25);
   border-color: var(--accent-neon-cyan);
-  box-shadow: 0 0 8px rgba(0, 210, 255, 0.4);
+  box-shadow: 0 0 6px rgba(0, 210, 255, 0.4);
   transform: translateY(-1px);
 }
 
 .pitch-sub-pill .sub-prefix {
   color: var(--accent-neon-cyan);
-  font-size: 0.65rem;
+  font-size: 0.58rem;
   font-weight: 800;
+  flex-shrink: 0;
 }
 
 .pitch-sub-pill .sub-name {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 60px;
+  white-space: nowrap;
+  font-size: 0.60rem;
+  font-weight: 700;
 }
 
 .pitch-sub-pill .sub-tit-badge {
   font-family: 'Rajdhani', sans-serif;
-  font-size: 0.68rem;
+  font-size: 0.60rem;
   font-weight: 800;
-  padding: 1px 4px;
-  border-radius: 3px;
-  margin-left: auto;
+  padding: 0 3px;
+  border-radius: 2px;
+  margin-left: 2px;
   letter-spacing: 0.02em;
+  line-height: 1.1;
+  flex-shrink: 0;
 }

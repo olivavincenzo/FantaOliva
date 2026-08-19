@@ -9,20 +9,22 @@ import { sanitizeHtml, getTitolaritaClass } from '../utils/helpers.js';
 export function createPlayerCard(player, options = {}) {
   const {
     slotId = null,
+    slotRole = null,
     isLineup = false,
     isSelected = false,
     compact = false
   } = options;
 
   if (!player) {
-    // Card slot vuoto
+    // Card slot vuoto: mostra direttamente il ruolo/posizione dello slot
     const emptyCard = document.createElement('div');
     emptyCard.className = `player-card empty-slot ${isSelected ? 'is-selected' : ''}`;
     if (slotId) emptyCard.dataset.slotId = slotId;
+    const labelText = slotRole ? `${slotRole}` : 'Seleziona';
     emptyCard.innerHTML = `
       <div class="empty-slot-content">
         <i class="fa-solid fa-plus-circle empty-icon"></i>
-        <span class="empty-text">Seleziona</span>
+        <span class="empty-text">${sanitizeHtml(labelText)}</span>
       </div>
     `;
     return emptyCard;
@@ -102,11 +104,8 @@ export function createPlayerCard(player, options = {}) {
             </div>
           ` : ''}
 
-          <!-- HEADER: Appetibilità & Stato Asta -->
-          <div class="card-top-bar">
-            <span class="player-appetibilita ${appetibilitaClass}" title="Indice Appetibilità Fantacalcio: ${appetibilitaVal}/100">
-              <i class="fa-solid fa-fire"></i>${appetibilitaVal}
-            </span>
+          <!-- HEADER: Stato Asta in alto a destra -->
+          <div class="card-top-bar" style="justify-content: flex-end;">
             <span class="asta-availability-dot ${isAvailable ? 'is-available' : 'is-taken'}" title="Stato Asta: ${isAvailable ? 'Disponibile (clicca per segnare PRESO)' : 'PRESO (clicca per segnare DISPONIBILE)'}">
               <i class="fa-solid ${isAvailable ? 'fa-circle-check' : 'fa-circle-xmark'}"></i>
             </span>
@@ -118,8 +117,11 @@ export function createPlayerCard(player, options = {}) {
               ${sanitizeHtml(displayName)}
             </div>
             <div class="player-submeta">
-              ${fm ? `<span class="fm-score" title="Fantamedia">FM ${Number(fm).toFixed(1)}</span>` : ''}
+              <span class="player-appetibilita ${appetibilitaClass}" title="Indice Appetibilità Fantacalcio: ${appetibilitaVal}/100">
+                <i class="fa-solid fa-fire"></i>${appetibilitaVal}
+              </span>
               ${titolarita !== undefined ? `<span class="tit-badge ${titClass}" title="% Titolarità">${titolarita}% Tit</span>` : ''}
+              <span class="slot-role-tag-sub" style="background: ${roleInfo.bgColor}; color: ${roleInfo.color}; border: 1px solid ${roleInfo.borderColor};" title="Posizione: ${player.role}${player.mantraRole ? ` (Mantra: ${player.mantraRole})` : ''}">${player.role || classicRole}</span>
             </div>
           </div>
 
@@ -198,13 +200,7 @@ export function createPlayerCard(player, options = {}) {
         </div>
       ` : ''}
 
-      <div class="card-top-bar">
-        <span class="player-appetibilita ${appetibilitaClass}" title="Indice Appetibilità Fantacalcio: ${appetibilitaVal}/100">
-          <i class="fa-solid fa-fire"></i>${appetibilitaVal}
-        </span>
-        <span class="role-badge" style="background-color: ${roleInfo.bgColor}; color: ${roleInfo.color}; border-color: ${roleInfo.borderColor}">
-          ${player.role}
-        </span>
+      <div class="card-top-bar" style="justify-content: flex-end;">
         <span class="asta-availability-dot ${isAvailable ? 'is-available' : 'is-taken'}" title="Stato Asta: ${isAvailable ? 'Disponibile (clicca per segnare PRESO)' : 'PRESO (clicca per segnare DISPONIBILE)'}">
           <i class="fa-solid ${isAvailable ? 'fa-circle-check' : 'fa-circle-xmark'}"></i>
         </span>
@@ -215,9 +211,11 @@ export function createPlayerCard(player, options = {}) {
           ${sanitizeHtml(displayName)}
         </div>
         <div class="player-submeta">
-          <span class="fanta-role-tag">${classicRole}</span>
-          ${fm ? `<span class="fm-score" title="Fantamedia">FM ${Number(fm).toFixed(1)}</span>` : ''}
+          <span class="player-appetibilita ${appetibilitaClass}" title="Indice Appetibilità Fantacalcio: ${appetibilitaVal}/100">
+            <i class="fa-solid fa-fire"></i>${appetibilitaVal}
+          </span>
           ${titolarita !== undefined ? `<span class="tit-badge ${titClass}" title="% Titolarità">${titolarita}% Tit</span>` : ''}
+          <span class="slot-role-tag-sub" style="background: ${roleInfo.bgColor}; color: ${roleInfo.color}; border: 1px solid ${roleInfo.borderColor};" title="Ruolo: ${player.role} (${classicRole})">${player.role}</span>
         </div>
       </div>
 

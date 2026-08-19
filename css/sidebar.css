@@ -533,6 +533,11 @@ body.is-resizing-sidebar .sidebar-resizer {
   text-shadow: 0 0 6px rgba(255, 209, 102, 0.4);
 }
 
+.stat-display-card.highlight-fvm .stat-d-value {
+  color: var(--accent-neon-cyan);
+  text-shadow: 0 0 6px rgba(0, 210, 255, 0.4);
+}
+
 .stat-d-value.stat-positive {
   color: var(--accent-neon-green);
 }

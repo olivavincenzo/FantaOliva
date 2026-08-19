@@ -117,6 +117,10 @@ export class PlayerInspectorComponent {
     const titolaritaHeader = player.stats?.titolarita ?? player.titolaritaPerc ?? 50;
     const headerTitClass = getTitolaritaClass(titolaritaHeader);
 
+    const qtA = player.quotazioni?.qtA ?? '-';
+    const fvm = player.quotazioni?.fvm ?? '-';
+    const mantraRole = player.mantraRole || '';
+
     const isAvailable = player.isAvailable !== false;
 
     this.container.innerHTML = `
@@ -126,11 +130,21 @@ export class PlayerInspectorComponent {
             <h2 class="inspector-name">${sanitizeHtml(fullName)}</h2>
             <div class="inspector-tags-row">
               <span class="role-badge" style="background: ${roleInfo.bgColor}; color: ${roleInfo.color}; border: 1px solid ${roleInfo.borderColor}">
-                ${player.role} (${player.classicRole || player.fantaRole || 'C'})
+                ${player.role} (${player.classicRole || player.fantaRole || 'C'}${mantraRole ? ` · ${mantraRole}` : ''})
               </span>
               <span class="team-tag tit-header-badge ${headerTitClass}" title="Probabilità di Titolarità">
                 <i class="fa-solid fa-chart-pie"></i> ${titolaritaHeader}% Tit.
               </span>
+              ${qtA !== '-' ? `
+                <span class="team-tag" title="Quotazione Attuale 2026/27 (Classic)">
+                  <i class="fa-solid fa-coins" style="color: var(--accent-gold);"></i> Qt.A ${qtA}
+                </span>
+              ` : ''}
+              ${fvm !== '-' ? `
+                <span class="team-tag" title="FantaValore di Mercato (Classic, base 1000)">
+                  <i class="fa-solid fa-scale-balanced" style="color: var(--accent-neon-cyan);"></i> FVM ${fvm}
+                </span>
+              ` : ''}
               <button id="toggle-player-auction-btn" class="inspector-auction-toggle ${isAvailable ? 'is-available' : 'is-taken'}" title="Clicca per cambiare lo stato per l'asta">
                 <i class="fa-solid ${isAvailable ? 'fa-circle-check' : 'fa-circle-xmark'}"></i>
                 <span>${isAvailable ? 'Disponibile' : 'Preso'}</span>
@@ -186,12 +200,21 @@ export class PlayerInspectorComponent {
   renderDetailsTab(container, player) {
     const displayName = player.displayName || player.name || '';
     const classicRole = player.classicRole || player.fantaRole || 'C';
+    const mantraRole = player.mantraRole || '';
     const role = player.role || 'C';
     const appetibilitaVal = player.appetibilita !== undefined ? Number(player.appetibilita) : (player.stats?.titolarita ?? 50);
 
     const isRigorista = player.isPenaltyTaker ?? player.rigorista ?? false;
     const isPunizioni = player.isFreeKickTaker ?? player.punizioni ?? false;
     const isCorner = player.isCornerTaker ?? player.corner ?? false;
+
+    // Quotazioni 2026/27
+    const qtA = player.quotazioni?.qtA ?? '-';
+    const qtI = player.quotazioni?.qtI ?? '-';
+    const fvm = player.quotazioni?.fvm ?? '-';
+    const qtAM = player.quotazioni?.qtAM ?? '-';
+    const qtIM = player.quotazioni?.qtIM ?? '-';
+    const fvmM = player.quotazioni?.fvmM ?? '-';
 
     const titolarita = player.stats?.titolarita ?? player.titolaritaPerc ?? 50;
     const fm = player.stats?.fantamedia ?? player.fantamedia;
@@ -262,7 +285,57 @@ export class PlayerInspectorComponent {
           </div>
         </div>
 
-        <!-- SEZIONE 3: STATISTICHE SERIE A DA CSV (SOLA LETTURA) -->
+        <!-- SEZIONE 3: QUOTAZIONI & VALUTAZIONI UFFICIALI 2026/27 (SOLA LETTURA DA CSV) -->
+        <div class="form-section-card read-only-section">
+          <div class="form-section-title" style="justify-content: space-between;">
+            <span><i class="fa-solid fa-coins" style="color: var(--accent-gold);"></i> Quotazioni & FVM (2026/27)</span>
+            <span class="csv-badge-official"><i class="fa-solid fa-lock"></i> Ufficiale 2026/27</span>
+          </div>
+
+          <div class="stats-display-grid">
+            <div class="stat-display-card highlight-fm">
+              <span class="stat-d-label">Qt.A (Classic)</span>
+              <span class="stat-d-value">${qtA}</span>
+            </div>
+
+            <div class="stat-display-card">
+              <span class="stat-d-label">Qt.I (Classic)</span>
+              <span class="stat-d-value">${qtI}</span>
+            </div>
+
+            <div class="stat-display-card highlight-fm">
+              <span class="stat-d-label">FVM Classic</span>
+              <span class="stat-d-value">${fvm}</span>
+            </div>
+
+            <div class="stat-display-card">
+              <span class="stat-d-label">Ruolo Mantra</span>
+              <span class="stat-d-value" style="font-size: 0.95rem; color: var(--accent-neon-cyan);">${sanitizeHtml(mantraRole || '-')}</span>
+            </div>
+
+            <div class="stat-display-card">
+              <span class="stat-d-label">Qt.A (Mantra)</span>
+              <span class="stat-d-value">${qtAM}</span>
+            </div>
+
+            <div class="stat-display-card">
+              <span class="stat-d-label">Qt.I (Mantra)</span>
+              <span class="stat-d-value">${qtIM}</span>
+            </div>
+
+            <div class="stat-display-card">
+              <span class="stat-d-label">FVM Mantra</span>
+              <span class="stat-d-value">${fvmM}</span>
+            </div>
+
+            <div class="stat-display-card">
+              <span class="stat-d-label">Club 2026/27</span>
+              <span class="stat-d-value" style="font-size: 0.88rem;">${sanitizeHtml(player.teamName || 'Serie A')}</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SEZIONE 4: STATISTICHE SERIE A DA CSV (SOLA LETTURA) -->
         <div class="form-section-card read-only-section">
           <div class="form-section-title" style="justify-content: space-between;">
             <span><i class="fa-solid fa-chart-simple" style="color: var(--accent-neon-cyan);"></i> Statistiche Serie A (da CSV)</span>
@@ -314,7 +387,7 @@ export class PlayerInspectorComponent {
           </div>
         </div>
 
-        <!-- SEZIONE 4: NOTE TATTICHE E FANTACONSIGLI (MODIFICABILE) -->
+        <!-- SEZIONE 5: NOTE TATTICHE E FANTACONSIGLI (MODIFICABILE) -->
         <div class="form-section-card">
           <div class="form-section-title">
             <i class="fa-solid fa-comment-dots" style="color: #ffb703;"></i> Commenti Tattici & Consigli Asta
@@ -352,6 +425,7 @@ export class PlayerInspectorComponent {
         displayName: player.displayName || player.name,
         role: player.role || 'C',
         classicRole: player.classicRole || player.fantaRole || 'C',
+        mantraRole: player.mantraRole || '',
         fantaRole: player.fantaRole || player.classicRole || 'C',
         appetibilita: Math.min(100, Math.max(0, Number(container.querySelector('#edit-appetibilita')?.value) || 0)),
         status: player.status || 'tit_sicuro',
@@ -364,6 +438,7 @@ export class PlayerInspectorComponent {
         positionNotes: container.querySelector('#edit-comment')?.value.trim() ?? '',
         comment: container.querySelector('#edit-comment')?.value.trim() ?? '',
         fantaComment: container.querySelector('#edit-fantaComment')?.value.trim() ?? '',
+        quotazioni: player.quotazioni || {},
         stats: {
           ...(player.stats || {}),
           titolarita: Number(container.querySelector('#edit-titolaritaPerc')?.value) ?? (player.stats?.titolarita ?? 50)

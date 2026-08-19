@@ -7,8 +7,8 @@ import { INITIAL_TEAMS, CSV_PLAYER_CATALOG } from './data/initialData.js';
 import { FORMATIONS } from './data/formations.js';
 import { deepClone, generateId } from './utils/helpers.js';
 
-const STORAGE_KEY = 'fantaoliva_app_data_v2026_2';
-const SNAPSHOTS_KEY = 'fantaoliva_snapshots_v2026_2';
+const STORAGE_KEY = 'fantaoliva_app_data_v2026_27_master';
+const SNAPSHOTS_KEY = 'fantaoliva_snapshots_v2026_27_master';
 
 class Store {
   constructor() {
@@ -169,12 +169,11 @@ class Store {
   // --- CATALOGO GENERALE CSV ---
   getPlayerCatalog(query = '', roleFilter = '') {
     const q = query.trim().toLowerCase();
-    const currentTeam = this.getCurrentTeam();
-    const currentSquadIds = new Set(this.getAllPlayers().map(p => p.name.toLowerCase()));
+    const currentSquadIds = new Set(this.getAllPlayers().map(p => (p.csvId || p.name).toLowerCase()));
 
     return CSV_PLAYER_CATALOG.filter(p => {
       // Escludi giocatori già presenti nella squadra attiva
-      if (currentSquadIds.has(p.name.toLowerCase())) return false;
+      if (currentSquadIds.has((p.csvId || p.name).toLowerCase())) return false;
 
       if (roleFilter && roleFilter !== 'ALL') {
         if (roleFilter === 'P' && p.classicRole !== 'P') return false;
@@ -186,6 +185,7 @@ class Store {
       if (!q) return true;
       return p.name.toLowerCase().includes(q) ||
              (p.teamName && p.teamName.toLowerCase().includes(q)) ||
+             (p.mantraRole && p.mantraRole.toLowerCase().includes(q)) ||
              p.role.toLowerCase().includes(q);
     });
   }
@@ -384,19 +384,37 @@ class Store {
 
     const player = {
       id,
+      csvId: newPlayerData.csvId || '',
       name,
       displayName: name,
+      teamName: team.name,
+      teamId: team.id,
       appetibilita: newPlayerData.appetibilita !== undefined ? Math.min(100, Math.max(0, Number(newPlayerData.appetibilita))) : (stats.titolarita ?? 50),
       role: newPlayerData.role || 'C',
       classicRole: newPlayerData.classicRole || newPlayerData.fantaRole || 'C',
       mantraRole: newPlayerData.mantraRole || newPlayerData.role || 'C',
+      fantaRole: newPlayerData.classicRole || newPlayerData.fantaRole || 'C',
       status: newPlayerData.status || 'riserva',
       isPenaltyTaker: isPenalty,
       isFreeKickTaker: isFreeKick,
       isCornerTaker: isCorner,
+      rigorista: isPenalty,
+      punizioni: isFreeKick,
+      corner: isCorner,
+      quotazioni: newPlayerData.quotazioni || {
+        qtA: Number(newPlayerData.qtA) || 1,
+        qtI: Number(newPlayerData.qtI) || 1,
+        diff: Number(newPlayerData.diff) || 0,
+        qtAM: Number(newPlayerData.qtAM) || 1,
+        qtIM: Number(newPlayerData.qtIM) || 1,
+        diffM: Number(newPlayerData.diffM) || 0,
+        fvm: Number(newPlayerData.fvm) || 1,
+        fvmM: Number(newPlayerData.fvmM) || 1
+      },
       stats,
       substitutes: newPlayerData.substitutes || [],
-      positionNotes: newPlayerData.positionNotes || newPlayerData.comment || ''
+      positionNotes: newPlayerData.positionNotes || newPlayerData.comment || '',
+      fantaComment: newPlayerData.fantaComment || ''
     };
 
     team.bench = team.bench || [];

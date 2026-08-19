@@ -63,8 +63,8 @@ class App {
     const auctionTab = document.querySelector('#view-tab-auction');
     const tacticalView = document.querySelector('#tactical-view-wrapper');
     const auctionView = document.querySelector('#auction-view-wrapper');
-    const formationGroup = document.querySelector('#header-formation-group');
-    const togglesGroup = document.querySelector('#header-toggles-group');
+    const tacticalToolbar = document.querySelector('#pitch-tactical-toolbar');
+    const auctionControls = document.querySelector('#auction-controls-row');
     const mobileFieldBtn = document.querySelector('#mobile-field-btn');
     const mobileAuctionBtn = document.querySelector('#mobile-auction-btn');
 
@@ -73,8 +73,8 @@ class App {
       auctionTab?.classList.remove('is-active');
       tacticalView?.classList.remove('hidden');
       auctionView?.classList.add('hidden');
-      formationGroup?.classList.remove('hidden');
-      togglesGroup?.classList.remove('hidden');
+      tacticalToolbar?.classList.remove('hidden');
+      auctionControls?.classList.add('hidden');
       mobileFieldBtn?.classList.add('active');
       mobileAuctionBtn?.classList.remove('active');
     } else if (viewName === 'auction_slots') {
@@ -82,8 +82,8 @@ class App {
       auctionTab?.classList.add('is-active');
       tacticalView?.classList.add('hidden');
       auctionView?.classList.remove('hidden');
-      formationGroup?.classList.add('hidden');
-      togglesGroup?.classList.add('hidden');
+      tacticalToolbar?.classList.add('hidden');
+      auctionControls?.classList.remove('hidden');
       mobileFieldBtn?.classList.remove('active');
       mobileAuctionBtn?.classList.add('active');
       this.auctionSlots?.render();
@@ -134,6 +134,43 @@ class App {
       store.saveToStorage();
       notify.success('Formazione salvata con successo!');
     });
+
+    // Menu Dropdown Impostazioni & Strumenti
+    const settingsWrapper = document.querySelector('#header-settings-wrapper');
+    const settingsToggleBtn = document.querySelector('#settings-dropdown-toggle');
+    const settingsMenu = document.querySelector('#header-settings-menu');
+
+    if (settingsWrapper && settingsToggleBtn) {
+      settingsToggleBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = settingsWrapper.classList.toggle('is-open');
+        settingsToggleBtn.setAttribute('aria-expanded', isOpen);
+      });
+
+      // Chiudi dropdown quando si clicca su una voce del menu
+      settingsMenu?.querySelectorAll('.dropdown-menu-item').forEach((item) => {
+        item.addEventListener('click', () => {
+          settingsWrapper.classList.remove('is-open');
+          settingsToggleBtn.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      // Chiudi al click all'esterno
+      document.addEventListener('click', (e) => {
+        if (!settingsWrapper.contains(e.target)) {
+          settingsWrapper.classList.remove('is-open');
+          settingsToggleBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      // Chiudi con il tasto ESC
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && settingsWrapper.classList.contains('is-open')) {
+          settingsWrapper.classList.remove('is-open');
+          settingsToggleBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
 
     // Pulsante Reset Formazione ai default della squadra
     const resetBtn = document.querySelector('#reset-formation-btn');
@@ -262,6 +299,9 @@ class App {
         const mv = p.stats && typeof p.stats.mediaVoto === 'number' ? p.stats.mediaVoto.toFixed(2) : '-';
         const gol = p.stats?.gol || 0;
         const ass = p.stats?.assist || 0;
+        const qtA = p.quotazioni?.qtA ?? '-';
+        const fvm = p.quotazioni?.fvm ?? '-';
+        const mantra = p.mantraRole || '';
 
         return `
           <div class="catalog-player-card">
@@ -271,13 +311,15 @@ class App {
                 <span class="catalog-player-name">${p.name}</span>
                 <div class="catalog-player-meta">
                   <span class="catalog-club-tag"><i class="fa-solid fa-shield"></i> ${p.teamName || 'Serie A'}</span>
-                  <span class="role-badge" style="padding: 2px 6px; font-size: 0.7rem;">${p.role} (${p.classicRole})</span>
+                  <span class="role-badge" style="padding: 2px 6px; font-size: 0.7rem;">${p.role} (${p.classicRole}${mantra ? ` · ${mantra}` : ''})</span>
                 </div>
               </div>
             </div>
             <div class="catalog-stats-row">
-              <span class="catalog-stat-pill" title="Fantamedia">FM ${fm}</span>
-              <span class="catalog-stat-pill" title="Media Voto">MV ${mv}</span>
+              ${qtA !== '-' ? `<span class="catalog-stat-pill" title="Quotazione Attuale 2026/27"><i class="fa-solid fa-coins"></i> Qt ${qtA}</span>` : ''}
+              ${fvm !== '-' ? `<span class="catalog-stat-pill" title="FantaValore di Mercato"><i class="fa-solid fa-scale-balanced"></i> FVM ${fvm}</span>` : ''}
+              ${fm !== '-' && Number(fm) > 0 ? `<span class="catalog-stat-pill" title="Fantamedia">FM ${fm}</span>` : ''}
+              ${mv !== '-' && Number(mv) > 0 ? `<span class="catalog-stat-pill" title="Media Voto">MV ${mv}</span>` : ''}
               ${gol > 0 ? `<span class="catalog-stat-pill goals">⚽ ${gol}</span>` : ''}
               ${ass > 0 ? `<span class="catalog-stat-pill">🅰️ ${ass}</span>` : ''}
               <button type="button" class="fanta-btn success-btn btn-sm js-add-catalog-player" data-player-id="${p.id}">

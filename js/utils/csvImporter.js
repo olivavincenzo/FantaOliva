@@ -158,9 +158,15 @@ export class CsvImporter {
     const headers = rows[headerIndex];
     const colId = headers.indexOf('Id');
     const colR = headers.indexOf('R');
-    const colRm = headers.indexOf('Rm');
+    const colRm = headers.findIndex(h => h === 'Rm' || h === 'RM');
     const colNome = headers.indexOf('Nome');
     const colSquadra = headers.indexOf('Squadra');
+    const colQtA = headers.findIndex(h => h.startsWith('Qt.A') && !h.includes('M'));
+    const colQtI = headers.findIndex(h => h.startsWith('Qt.I') && !h.includes('M'));
+    const colFvm = headers.findIndex(h => h.startsWith('FVM') && !h.includes('M'));
+    const colQtAM = headers.findIndex(h => h.includes('Qt.A M') || h.includes('Qt.AM'));
+    const colQtIM = headers.findIndex(h => h.includes('Qt.I M') || h.includes('Qt.IM'));
+    const colFvmM = headers.findIndex(h => h.includes('FVM M') || h.includes('FVMM'));
     const colPv = headers.indexOf('Pv');
     const colMv = headers.indexOf('Mv');
     const colFm = headers.indexOf('Fm');
@@ -189,6 +195,13 @@ export class CsvImporter {
       const roleClassic = colR !== -1 ? r[colR] : 'C';
       const roleMantra = colRm !== -1 ? r[colRm] : '';
 
+      const qtA = colQtA !== -1 ? parseInt(r[colQtA]) || 1 : null;
+      const qtI = colQtI !== -1 ? parseInt(r[colQtI]) || 1 : null;
+      const fvm = colFvm !== -1 ? parseInt(r[colFvm]) || 1 : null;
+      const qtAM = colQtAM !== -1 ? parseInt(r[colQtAM]) || qtA : null;
+      const qtIM = colQtIM !== -1 ? parseInt(r[colQtIM]) || qtI : null;
+      const fvmM = colFvmM !== -1 ? parseInt(r[colFvmM]) || fvm : null;
+
       const pv = colPv !== -1 ? parseInt(r[colPv]) || 0 : 0;
       const mv = colMv !== -1 ? parseFloat((r[colMv] || '0').replace(',', '.')) || 0 : 0;
       const fm = colFm !== -1 ? parseFloat((r[colFm] || '0').replace(',', '.')) || 0 : 0;
@@ -211,6 +224,16 @@ export class CsvImporter {
         name: playerName,
         classicRole: roleClassic,
         mantraRole: roleMantra,
+        quotazioni: qtA !== null ? {
+          qtA: qtA || 1,
+          qtI: qtI || 1,
+          diff: (qtA && qtI) ? qtA - qtI : 0,
+          qtAM: qtAM || qtA || 1,
+          qtIM: qtIM || qtI || 1,
+          diffM: (qtAM && qtIM) ? qtAM - qtIM : 0,
+          fvm: fvm || 1,
+          fvmM: fvmM || fvm || 1
+        } : null,
         pv, mv, fm, gf, gs, rp, rc, rPlus, rMinus, ass, amm, esp
       });
       totalPlayers++;
@@ -294,6 +317,12 @@ export class CsvImporter {
           });
 
           if (match) {
+            if (match.quotazioni) {
+              player.quotazioni = match.quotazioni;
+            }
+            if (match.classicRole) player.classicRole = match.classicRole;
+            if (match.mantraRole) player.mantraRole = match.mantraRole;
+
             player.stats = {
               fantamedia: match.fm,
               mediaVoto: match.mv,
@@ -322,6 +351,12 @@ export class CsvImporter {
 
           const existingInBench = team.bench.find(p => p && p.name.toLowerCase() === csvP.name.toLowerCase());
           if (existingInBench) {
+            if (csvP.quotazioni) {
+              existingInBench.quotazioni = csvP.quotazioni;
+            }
+            if (csvP.classicRole) existingInBench.classicRole = csvP.classicRole;
+            if (csvP.mantraRole) existingInBench.mantraRole = csvP.mantraRole;
+
             existingInBench.stats = {
               fantamedia: csvP.fm,
               mediaVoto: csvP.mv,
@@ -345,15 +380,27 @@ export class CsvImporter {
             const slug = csvP.name.toLowerCase().replace(/[^a-z0-9]/g, '_');
             const newP = {
               id: `${team.id}_${slug}_${csvP.csvId}`,
+              csvId: csvP.csvId,
               name: csvP.name,
               number: Math.floor(Math.random() * 98) + 1,
               role: tacticalRole,
               classicRole: csvP.classicRole,
               mantraRole: csvP.mantraRole,
+              fantaRole: csvP.classicRole,
               status: csvP.pv >= 20 ? 'probabile' : (csvP.pv >= 10 ? 'ballottaggio' : 'riserva'),
               isPenaltyTaker: csvP.rc > 0 || csvP.rPlus > 0,
               isFreeKickTaker: (csvP.classicRole === 'C' || csvP.classicRole === 'A') && (csvP.gf >= 2 || csvP.ass >= 2),
               isCornerTaker: (csvP.classicRole === 'C' || csvP.classicRole === 'D') && csvP.ass >= 2,
+              quotazioni: csvP.quotazioni || {
+                qtA: 1,
+                qtI: 1,
+                diff: 0,
+                qtAM: 1,
+                qtIM: 1,
+                diffM: 0,
+                fvm: 1,
+                fvmM: 1
+              },
               stats: {
                 fantamedia: csvP.fm,
                 mediaVoto: csvP.mv,
@@ -370,7 +417,8 @@ export class CsvImporter {
                 titolarita: Math.min(100, Math.round((csvP.pv / 38) * 100))
               },
               substitutes: [],
-              positionNotes: ''
+              positionNotes: '',
+              fantaComment: ''
             };
             team.bench.push(newP);
             updatedPlayersCount++;

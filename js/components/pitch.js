@@ -124,6 +124,7 @@ export class PitchComponent {
 
       const card = createPlayerCard(item.player, {
         slotId: item.slot.id,
+        slotRole: item.slot.role || item.slot.label,
         isLineup: true,
         isSelected
       });
@@ -138,31 +139,15 @@ export class PitchComponent {
         });
       });
 
-      // Etichetta del ruolo tattico di posizione + ruolo Mantra del giocatore
-      const slotLabel = document.createElement('div');
-      slotLabel.className = 'slot-role-tag';
-      
-      const posRole = item.slot.role || item.slot.label || '';
-      const mantraRole = item.player?.mantraRole || item.player?.role;
-
-      if (item.player && mantraRole && mantraRole.toUpperCase() !== posRole.toUpperCase()) {
-        slotLabel.innerHTML = `<span class="slot-pos-badge">${sanitizeHtml(posRole)}</span><span class="slot-divider">·</span><span class="slot-mantra-badge" title="Ruolo Mantra: ${sanitizeHtml(mantraRole)}">${sanitizeHtml(mantraRole)}</span>`;
-      } else if (item.player && mantraRole) {
-        slotLabel.innerHTML = `<span class="slot-pos-badge">${sanitizeHtml(posRole)}</span><span class="slot-mantra-badge">(${sanitizeHtml(mantraRole)})</span>`;
-      } else {
-        slotLabel.innerHTML = `<span class="slot-pos-badge">${sanitizeHtml(posRole || item.slot.label)}</span>`;
-      }
-
       slotWrapper.appendChild(card);
-      slotWrapper.appendChild(slotLabel);
 
-      // Rendering dei sostituti assegnati sotto al titolare
+      // Rendering di tutti i sostituti assegnati sotto al titolare
       const substitutesList = item.player?.substitutes || [];
       if (substitutesList.length > 0) {
         const subsContainer = document.createElement('div');
         subsContainer.className = 'slot-substitutes-container';
 
-        substitutesList.slice(0, 2).forEach((subId, idx) => {
+        substitutesList.forEach((subId, idx) => {
           const subPlayer = store.getPlayer(subId);
           if (!subPlayer) return;
 
