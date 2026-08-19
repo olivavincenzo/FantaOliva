@@ -208,7 +208,14 @@ export class PlayersListoneComponent {
               ${this.searchQuery ? `<button class="listone-search-clear" title="Pulisci ricerca"><i class="fa-solid fa-xmark"></i></button>` : ''}
             </div>
 
-            <!-- Filtro Ruolo Rapido -->
+            <!-- Pulsante Filtri Mobile -->
+            <button id="open-listone-filters-btn" class="listone-mobile-filters-btn" title="Apri filtri avanzati">
+              <i class="fa-solid fa-sliders"></i>
+              <span>Filtri</span>
+              ${this.activeRole !== 'ALL' || this.selectedTeam !== 'ALL' || this.availabilityFilter !== 'ALL' ? '<span class="filter-active-dot"></span>' : ''}
+            </button>
+
+            <!-- Filtro Ruolo Rapido (Desktop) -->
             <div class="listone-role-filters" aria-label="Filtro per Ruolo">
               <button class="listone-filter-pill ${this.activeRole === 'ALL' ? 'is-active' : ''}" data-role="ALL">Tutti</button>
               <button class="listone-filter-pill role-pill-p ${this.activeRole === 'P' ? 'is-active' : ''}" data-role="P">P</button>
@@ -217,7 +224,7 @@ export class PlayersListoneComponent {
               <button class="listone-filter-pill role-pill-a ${this.activeRole === 'A' ? 'is-active' : ''}" data-role="A">A</button>
             </div>
 
-            <!-- Filtro Squadra Dropdown -->
+            <!-- Filtro Squadra Dropdown (Desktop) -->
             <div class="listone-team-filter-wrapper">
               <i class="fa-solid fa-shield-halved team-filter-icon"></i>
               <select class="listone-team-select" id="listone-team-select" aria-label="Filtro Squadra">
@@ -226,7 +233,7 @@ export class PlayersListoneComponent {
               </select>
             </div>
 
-            <!-- Filtro Stato Asta (Disponibile / Preso) -->
+            <!-- Filtro Stato Asta (Desktop) -->
             <div class="listone-avail-filter-group">
               <button class="listone-avail-btn ${this.availabilityFilter === 'ALL' ? 'is-active' : ''}" data-avail="ALL" title="Mostra tutti i calciatori">Tutti</button>
               <button class="listone-avail-btn avail-green ${this.availabilityFilter === 'AVAILABLE' ? 'is-active' : ''}" data-avail="AVAILABLE" title="Solo calciatori disponibili"><i class="fa-solid fa-circle-check"></i> Disponibili</button>
@@ -586,5 +593,140 @@ export class PlayersListoneComponent {
         }
       });
     });
+
+    // Listener Pulsante Filtri Mobile
+    const openFiltersBtn = this.container.querySelector('#open-listone-filters-btn');
+    openFiltersBtn?.addEventListener('click', () => {
+      this.openFiltersModal();
+    });
+  }
+
+  openFiltersModal() {
+    const modal = document.getElementById('listone-filters-modal');
+    const modalBody = document.getElementById('listone-filters-modal-body');
+    if (!modal || !modalBody) return;
+
+    const teams = Object.values(store.teams || {});
+    let tempRole = this.activeRole;
+    let tempTeam = this.selectedTeam;
+    let tempAvail = this.availabilityFilter;
+    let tempSort = this.sortBy;
+    let tempOrder = this.sortOrder;
+
+    modalBody.innerHTML = `
+      <!-- Ruolo -->
+      <div class="modal-filter-section">
+        <label class="modal-filter-label"><i class="fa-solid fa-users"></i> Filtra per Ruolo:</label>
+        <div class="modal-filter-pills-grid" id="modal-listone-roles">
+          <button type="button" class="modal-role-pill ${tempRole === 'ALL' ? 'is-active' : ''}" data-role="ALL">Tutti</button>
+          <button type="button" class="modal-role-pill role-pill-p ${tempRole === 'P' ? 'is-active' : ''}" data-role="P">Portieri (P)</button>
+          <button type="button" class="modal-role-pill role-pill-d ${tempRole === 'D' ? 'is-active' : ''}" data-role="D">Difensori (D)</button>
+          <button type="button" class="modal-role-pill role-pill-c ${tempRole === 'C' ? 'is-active' : ''}" data-role="C">Centrocampisti (C)</button>
+          <button type="button" class="modal-role-pill role-pill-a ${tempRole === 'A' ? 'is-active' : ''}" data-role="A">Attaccanti (A)</button>
+        </div>
+      </div>
+
+      <!-- Squadra -->
+      <div class="modal-filter-section" style="margin-top: 12px;">
+        <label class="modal-filter-label"><i class="fa-solid fa-shield-halved"></i> Filtra per Squadra Serie A:</label>
+        <select class="fanta-input modal-select-input" id="modal-listone-team-select" style="width: 100%; height: 38px; font-size: 0.90rem; font-weight: 700;">
+          <option value="ALL" ${tempTeam === 'ALL' ? 'selected' : ''}>Tutte le Squadre (${teams.length})</option>
+          ${teams.map(t => `<option value="${t.id}" ${tempTeam === t.id ? 'selected' : ''}>${sanitizeHtml(t.name)}</option>`).join('')}
+        </select>
+      </div>
+
+      <!-- Disponibilità Asta -->
+      <div class="modal-filter-section" style="margin-top: 12px;">
+        <label class="modal-filter-label"><i class="fa-solid fa-filter"></i> Stato Asta (Disponibilità):</label>
+        <div class="modal-filter-pills-grid">
+          <button type="button" class="modal-avail-pill ${tempAvail === 'ALL' ? 'is-active' : ''}" data-avail="ALL">Tutti</button>
+          <button type="button" class="modal-avail-pill avail-green ${tempAvail === 'AVAILABLE' ? 'is-active' : ''}" data-avail="AVAILABLE"><i class="fa-solid fa-circle-check"></i> Solo Disponibili</button>
+          <button type="button" class="modal-avail-pill avail-red ${tempAvail === 'TAKEN' ? 'is-active' : ''}" data-avail="TAKEN"><i class="fa-solid fa-circle-xmark"></i> Solo Presi</button>
+        </div>
+      </div>
+
+      <!-- Ordinamento -->
+      <div class="modal-filter-section" style="margin-top: 12px;">
+        <label class="modal-filter-label"><i class="fa-solid fa-arrow-down-wide-short"></i> Ordina Lista per:</label>
+        <div class="form-grid-2">
+          <select class="fanta-input modal-select-input" id="modal-listone-sort-select" style="height: 38px; font-size: 0.88rem; font-weight: 700;">
+            <option value="appetibilita" ${tempSort === 'appetibilita' ? 'selected' : ''}>Appetibilità</option>
+            <option value="fvm" ${tempSort === 'fvm' ? 'selected' : ''}>FantaValore (FVM)</option>
+            <option value="qtA" ${tempSort === 'qtA' ? 'selected' : ''}>Quotazione (QtA)</option>
+            <option value="fantamedia" ${tempSort === 'fantamedia' ? 'selected' : ''}>Fantamedia</option>
+            <option value="mediaVoto" ${tempSort === 'mediaVoto' ? 'selected' : ''}>Media Voto</option>
+            <option value="titolarita" ${tempSort === 'titolarita' ? 'selected' : ''}>% Titolarità</option>
+            <option value="gol" ${tempSort === 'gol' ? 'selected' : ''}>Gol Segnati</option>
+            <option value="assist" ${tempSort === 'assist' ? 'selected' : ''}>Assist</option>
+            <option value="name" ${tempSort === 'name' ? 'selected' : ''}>Nome Calciatore</option>
+          </select>
+          <select class="fanta-input modal-select-input" id="modal-listone-order-select" style="height: 38px; font-size: 0.88rem; font-weight: 700;">
+            <option value="desc" ${tempOrder === 'desc' ? 'selected' : ''}>Decrescente (Alto -> Basso)</option>
+            <option value="asc" ${tempOrder === 'asc' ? 'selected' : ''}>Crescente (Basso -> Alto)</option>
+          </select>
+        </div>
+      </div>
+    `;
+
+    // Ruolo clicks
+    modalBody.querySelectorAll('#modal-listone-roles .modal-role-pill').forEach(btn => {
+      btn.addEventListener('click', () => {
+        modalBody.querySelectorAll('#modal-listone-roles .modal-role-pill').forEach(b => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+        tempRole = btn.dataset.role;
+      });
+    });
+
+    // Avail clicks
+    modalBody.querySelectorAll('.modal-avail-pill').forEach(btn => {
+      btn.addEventListener('click', () => {
+        modalBody.querySelectorAll('.modal-avail-pill').forEach(b => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+        tempAvail = btn.dataset.avail;
+      });
+    });
+
+    // Close
+    const closeBtn = document.getElementById('close-listone-filters-btn');
+    const closeHandler = () => {
+      modal.classList.add('hidden');
+      closeBtn?.removeEventListener('click', closeHandler);
+    };
+    closeBtn?.addEventListener('click', closeHandler);
+
+    // Reset button
+    const resetBtn = document.getElementById('reset-modal-listone-btn');
+    const resetHandler = () => {
+      this.activeRole = 'ALL';
+      this.selectedTeam = 'ALL';
+      this.availabilityFilter = 'ALL';
+      this.sortBy = 'appetibilita';
+      this.sortOrder = 'desc';
+      modal.classList.add('hidden');
+      this.render();
+      notify.info('Filtri ripristinati.');
+    };
+    resetBtn?.addEventListener('click', resetHandler);
+
+    // Apply button
+    const applyBtn = document.getElementById('apply-listone-filters-btn');
+    const applyHandler = () => {
+      const teamEl = document.getElementById('modal-listone-team-select');
+      const sortEl = document.getElementById('modal-listone-sort-select');
+      const orderEl = document.getElementById('modal-listone-order-select');
+
+      this.activeRole = tempRole;
+      this.availabilityFilter = tempAvail;
+      this.selectedTeam = teamEl ? teamEl.value : 'ALL';
+      this.sortBy = sortEl ? sortEl.value : 'appetibilita';
+      this.sortOrder = orderEl ? orderEl.value : 'desc';
+
+      modal.classList.add('hidden');
+      this.render();
+      applyBtn?.removeEventListener('click', applyHandler);
+    };
+    applyBtn?.addEventListener('click', applyHandler);
+
+    modal.classList.remove('hidden');
   }
 }

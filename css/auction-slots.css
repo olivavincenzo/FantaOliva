@@ -63,6 +63,10 @@
   flex-wrap: wrap;
 }
 
+.auction-mobile-filters-btn {
+  display: none;
+}
+
 .auction-search-box {
   position: relative;
   display: flex;

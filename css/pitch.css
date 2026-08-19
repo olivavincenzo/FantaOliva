@@ -450,10 +450,12 @@
   white-space: nowrap;
 }
 
-/* Vista Tabellare Verticale Alternativa */
+/* Vista Tabellare Verticale Alternativa (Colonna Singola, Elementi Ingranditi) */
 .pitch-vertical-list-container {
   width: 100%;
   height: 100%;
+  flex: 1;
+  min-height: 0;
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-xs);
@@ -465,20 +467,20 @@
 .pitch-vertical-list-scroll {
   flex: 1;
   overflow-y: auto;
-  padding: 10px;
+  padding: 12px 14px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .pitch-list-dept-section {
   background: transparent;
   border: none;
   border-bottom: 1px solid var(--border-color);
-  padding: 0 0 10px 0;
+  padding: 0 0 12px 0;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
 }
 
 .pitch-list-dept-section:last-child {
@@ -490,19 +492,108 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 4px;
+  padding-bottom: 2px;
 }
 
 .pitch-list-dept-header .dept-title-box {
   font-family: var(--font-main);
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   font-weight: 800;
   text-transform: uppercase;
   color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pitch-list-dept-header .dept-count-badge {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--text-dim);
 }
 
 .pitch-list-dept-items-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.pitch-list-slot-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.pitch-list-slot-item .player-card {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-height: 54px;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   gap: 6px;
+  background: var(--bg-surface-elevated);
+}
+
+.pitch-list-slot-item .player-card .card-header-row .player-name {
+  font-size: 0.90rem;
+  font-weight: 800;
+  max-width: none;
+}
+
+.pitch-list-slot-item .player-card .stat-chip {
+  font-size: 0.72rem;
+}
+
+.pitch-list-slot-item .player-card .player-appetibilita,
+.pitch-list-slot-item .player-card .tit-badge {
+  font-size: 0.70rem;
+}
+
+.pitch-list-slot-item .player-card .role-badge,
+.pitch-list-slot-item .player-card .slot-role-tag-sub {
+  font-size: 0.68rem;
+  padding: 2px 5px;
+}
+
+.pitch-list-slot-item .slot-substitutes-container {
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 2px;
+}
+
+.pitch-list-slot-item .pitch-sub-pill {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto;
+  min-height: 24px;
+  padding: 3px 8px;
+  font-size: 0.70rem;
+  border-radius: var(--radius-xs);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background: var(--bg-primary);
+}
+
+.pitch-list-slot-item .pitch-sub-pill .sub-prefix {
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+
+.pitch-list-slot-item .pitch-sub-pill .sub-name {
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.pitch-list-slot-item .pitch-sub-pill .sub-tit-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
 }

@@ -36,6 +36,10 @@
   flex-wrap: wrap;
 }
 
+.listone-mobile-filters-btn {
+  display: none;
+}
+
 .listone-search-box {
   position: relative;
   display: flex;

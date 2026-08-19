@@ -184,33 +184,91 @@
     display: none;
   }
 
-  /* Menu Impostazioni su Mobile */
+  /* Menu Impostazioni su Mobile: Finestra Modale Centrata */
   .header-dropdown-menu {
     position: fixed !important;
-    bottom: calc(var(--mobile-bar-height) + 6px) !important;
-    top: auto !important;
-    left: 8px !important;
-    right: 8px !important;
-    width: calc(100vw - 16px) !important;
-    max-width: 320px !important;
-    margin: 0 auto !important;
-    z-index: 600 !important;
+    top: 50% !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: auto !important;
+    width: calc(100vw - 32px) !important;
+    max-width: 380px !important;
+    z-index: 1000 !important;
     opacity: 0 !important;
     visibility: hidden !important;
-    transform: translateY(10px) !important;
+    transform: translate(-50%, -46%) scale(0.97) !important;
     pointer-events: none !important;
-    transition: opacity 0.15s, transform 0.15s, visibility 0.15s !important;
+    background: var(--bg-surface) !important;
+    background-color: #14171d !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: var(--radius-sm) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.85), 0 0 0 1px rgba(255, 255, 255, 0.08) !important;
+    overflow: hidden !important;
+    transition: opacity 0.18s cubic-bezier(0.16, 1, 0.3, 1), transform 0.18s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.18s !important;
   }
 
   .header-dropdown-menu.is-open {
     opacity: 1 !important;
     visibility: visible !important;
-    transform: translateY(0) !important;
+    transform: translate(-50%, -50%) scale(1) !important;
     pointer-events: auto !important;
-    background: var(--bg-surface) !important;
-    border: 1px solid var(--border-color) !important;
+  }
+
+  .header-dropdown-menu .dropdown-menu-header {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 12px 14px !important;
+    background: var(--bg-surface-elevated, #1a1e24) !important;
+    border-bottom: 1px solid var(--border-color) !important;
+  }
+
+  .header-dropdown-menu .dropdown-menu-title {
+    font-family: var(--font-main);
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    letter-spacing: -0.01em;
+  }
+
+  .header-dropdown-menu .dropdown-menu-title i {
+    color: var(--accent-red);
+  }
+
+  .header-dropdown-menu .dropdown-items-list {
+    padding: 10px 12px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 4px !important;
+    background: #14171d !important;
+  }
+
+  .header-dropdown-menu .dropdown-menu-item {
+    padding: 10px 12px !important;
     border-radius: var(--radius-xs) !important;
-    box-shadow: var(--shadow-lg) !important;
+    min-height: 44px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+
+  .header-dropdown-menu .dropdown-item-icon {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 1.1rem !important;
+    border-radius: var(--radius-xs) !important;
+  }
+
+  .header-dropdown-menu .dropdown-item-text .item-title {
+    font-size: 0.92rem !important;
+    font-weight: 700 !important;
+  }
+
+  .header-dropdown-menu .dropdown-item-text .item-desc {
+    font-size: 0.72rem !important;
   }
 
   /* Wrapper Viste */
@@ -234,7 +292,8 @@
     height: calc(100dvh - var(--mobile-bar-height)) !important;
     max-height: calc(100dvh - var(--mobile-bar-height)) !important;
     width: 100vw;
-    overflow: hidden;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
   }
 
   .listone-view-wrapper {
@@ -247,87 +306,439 @@
   }
 
   .listone-page-container {
-    padding: 4px 6px 10px 6px;
-    gap: 4px;
+    padding: 6px 8px 14px 8px;
+    gap: 6px;
   }
 
   .listone-toolbar-card {
-    padding: 4px 6px;
+    padding: 6px 10px;
+    margin-bottom: 6px;
   }
 
   .listone-toolbar-row {
-    gap: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
   }
 
   .listone-search-box {
-    min-width: 120px;
     flex: 1;
+    min-width: 0;
+  }
+
+  .listone-search-box .search-icon {
+    font-size: 1.05rem;
+    left: 10px;
+  }
+
+  .listone-search-input {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 8px 30px 8px 34px;
+    min-height: 40px;
+    box-sizing: border-box;
+  }
+
+  .listone-search-clear {
+    font-size: 1.05rem;
+    right: 10px;
+  }
+
+  .listone-mobile-filters-btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px 12px;
+    background: var(--bg-surface-elevated);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-xs);
+    color: #ffffff;
+    font-family: var(--font-main);
+    font-size: 0.90rem;
+    font-weight: 700;
+    min-height: 40px;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .listone-mobile-filters-btn:hover {
+    border-color: rgba(255, 255, 255, 0.25);
+  }
+
+  .listone-mobile-filters-btn i {
+    font-size: 1.05rem;
+    color: var(--accent-red);
+  }
+
+  .listone-role-filters,
+  .listone-team-filter-wrapper,
+  .listone-avail-filter-group {
+    display: none !important;
   }
 
   .listone-count-badge {
+    font-size: 0.80rem;
+    font-weight: 700;
+    padding: 6px 8px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 0;
+    flex-shrink: 0;
   }
 
-  .auction-slots-page {
-    height: 100%;
-    padding: 4px 6px 14px 6px;
-    overflow-y: auto;
+  /* Listone Table su Mobile: Trasformazione in card fluide con wrap automatico */
+  .listone-table-card {
+    background: transparent !important;
+    border: none !important;
+  }
+
+  .listone-table-responsive-wrapper {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+  }
+
+  .listone-table {
+    display: block !important;
+    width: 100% !important;
+    white-space: normal !important;
+    border-collapse: separate !important;
+  }
+
+  .listone-table thead {
+    display: none !important;
+  }
+
+  .listone-table tbody {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+    width: 100% !important;
+  }
+
+  .listone-row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    gap: 6px 8px !important;
+    padding: 10px 12px !important;
+    background: var(--bg-surface) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: var(--radius-xs) !important;
+    box-shadow: var(--shadow-sm);
+    white-space: normal !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .listone-row:hover,
+  .listone-row:active {
+    background: var(--bg-surface-elevated) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+  }
+
+  .listone-row td {
+    display: inline-flex !important;
+    align-items: center !important;
+    padding: 0 !important;
+    border: none !important;
+    white-space: normal !important;
+    font-size: 0.82rem;
+  }
+
+  /* Riga 1: Identità (Asta, Ruolo, Nome Calciatore a sinistra, Squadra a destra) */
+  .listone-row .col-action {
+    order: 1;
+    width: auto !important;
+    min-width: 0 !important;
+  }
+
+  .listone-row .col-role {
+    order: 2;
+    width: auto !important;
+    min-width: 0 !important;
+  }
+
+  .listone-row .col-name {
+    order: 3;
+    flex: 1 1 auto;
+    min-width: 120px;
+    font-size: 0.95rem;
+    font-weight: 700;
+  }
+
+  .listone-row .col-name .player-main-name {
+    font-size: 0.95rem !important;
+    font-weight: 800 !important;
+    color: #ffffff;
+  }
+
+  .listone-row .col-team {
+    order: 4;
+    width: auto !important;
+    min-width: 0 !important;
+    margin-left: auto;
+    font-size: 0.82rem;
+  }
+
+  /* Elementi Statistiche: vanno a capo fluidamente quando non c'è più spazio */
+  .listone-row .col-appetibilita {
+    order: 5;
+    width: auto !important;
+    min-width: 0 !important;
+    display: inline-flex !important;
+    align-items: center;
+    gap: 3px;
+    background: rgba(239, 68, 68, 0.12);
+    padding: 2px 6px !important;
+    border-radius: 2px;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+  }
+
+  .listone-row .col-appetibilita::before {
+    content: "App: ";
+    font-size: 0.70rem;
+    font-weight: 700;
+    color: var(--accent-red);
+  }
+
+  .listone-row .col-tit {
+    order: 6;
+    width: auto !important;
+    min-width: 0 !important;
+    background: var(--bg-primary);
+    padding: 2px 6px !important;
+    border-radius: 2px;
+  }
+
+  .listone-row .col-tit::before {
+    content: "Tit: ";
+    font-size: 0.70rem;
+    font-weight: 700;
+    color: var(--text-dim);
+    margin-right: 2px;
+  }
+
+  .listone-row .col-qta {
+    order: 7;
+    width: auto !important;
+    min-width: 0 !important;
+    background: var(--bg-primary);
+    padding: 2px 6px !important;
+    border-radius: 2px;
+  }
+
+  .listone-row .col-qta::before {
+    content: "QtA: ";
+    font-size: 0.70rem;
+    font-weight: 700;
+    color: var(--text-dim);
+    margin-right: 2px;
+  }
+
+  .listone-row .col-fvm {
+    order: 8;
+    width: auto !important;
+    min-width: 0 !important;
+    background: var(--bg-primary);
+    padding: 2px 6px !important;
+    border-radius: 2px;
+  }
+
+  .listone-row .col-fvm::before {
+    content: "FVM: ";
+    font-size: 0.70rem;
+    font-weight: 700;
+    color: var(--text-dim);
+    margin-right: 2px;
+  }
+
+  .listone-row .col-fm {
+    order: 9;
+    width: auto !important;
+    min-width: 0 !important;
+    background: var(--bg-primary);
+    padding: 2px 6px !important;
+    border-radius: 2px;
+  }
+
+  .listone-row .col-fm::before {
+    content: "FM: ";
+    font-size: 0.70rem;
+    font-weight: 700;
+    color: var(--text-dim);
+    margin-right: 2px;
+  }
+
+  .listone-row .col-mv {
+    order: 10;
+    width: auto !important;
+    min-width: 0 !important;
+    background: var(--bg-primary);
+    padding: 2px 6px !important;
+    border-radius: 2px;
+  }
+
+  .listone-row .col-mv::before {
+    content: "MV: ";
+    font-size: 0.70rem;
+    font-weight: 700;
+    color: var(--text-dim);
+    margin-right: 2px;
+  }
+
+  .listone-row .col-gol {
+    order: 11;
+    width: auto !important;
+    min-width: 0 !important;
+    background: var(--bg-primary);
+    padding: 2px 6px !important;
+    border-radius: 2px;
+  }
+
+  .listone-row .col-gol::before {
+    content: "Gol: ";
+    font-size: 0.70rem;
+    font-weight: 700;
+    color: var(--text-dim);
+    margin-right: 2px;
+  }
+
+  .listone-row .col-ass {
+    order: 12;
+    width: auto !important;
+    min-width: 0 !important;
+    background: var(--bg-primary);
+    padding: 2px 6px !important;
+    border-radius: 2px;
+  }
+
+  .listone-row .col-ass::before {
+    content: "Ass: ";
+    font-size: 0.70rem;
+    font-weight: 700;
+    color: var(--text-dim);
+    margin-right: 2px;
+  }
+
+  .listone-row .col-pres {
+    order: 13;
+    width: auto !important;
+    min-width: 0 !important;
+    background: var(--bg-primary);
+    padding: 2px 6px !important;
+    border-radius: 2px;
+  }
+
+  .listone-row .col-pres::before {
+    content: "Pres: ";
+    font-size: 0.70rem;
+    font-weight: 700;
+    color: var(--text-dim);
+    margin-right: 2px;
+  }
+
+  .listone-row .col-specialisti {
+    order: 14;
+    width: auto !important;
+    min-width: 0 !important;
+    display: inline-flex !important;
     gap: 4px;
   }
 
+  .auction-slots-page {
+    height: auto !important;
+    min-height: 100%;
+    padding: 6px 8px calc(var(--mobile-bar-height) + 24px) 8px !important;
+    overflow: visible !important;
+    gap: 8px;
+    box-sizing: border-box;
+  }
+
   .auction-toolbar-card {
-    padding: 4px 6px;
-    margin-bottom: 2px;
+    padding: 6px 10px;
+    margin-bottom: 6px;
   }
 
   .auction-toolbar-row {
     display: flex;
-    gap: 4px;
-    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
+    gap: 8px;
+    width: 100%;
   }
 
   .auction-search-box {
-    flex: 1 1 100%;
-    width: 100%;
+    flex: 1;
     min-width: 0;
-    order: 1;
+    order: unset;
+  }
+
+  .auction-search-box .search-icon {
+    font-size: 1.05rem;
+    left: 10px;
   }
 
   .auction-search-input {
     width: 100%;
-    font-size: 0.78rem;
-    padding: 4px 20px 4px 22px;
+    font-size: 0.95rem;
+    padding: 8px 30px 8px 34px;
+    min-height: 40px;
+    box-sizing: border-box;
   }
 
-  .auction-role-tabs {
-    order: 2;
-    padding: 1px;
-    gap: 1px;
+  .auction-search-clear {
+    font-size: 1.05rem;
+    right: 10px;
   }
 
-  .auction-role-btn {
-    padding: 2px 6px;
-    font-size: 0.68rem;
-    gap: 2px;
+  .auction-mobile-filters-btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: var(--bg-surface-elevated);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-xs);
+    color: #ffffff;
+    font-family: var(--font-main);
+    font-size: 0.90rem;
+    font-weight: 700;
+    min-height: 40px;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+    position: relative;
   }
 
-  .role-label-desktop { display: none !important; }
-  .role-label-mobile { display: inline !important; }
-
-  .auction-filter-btn {
-    order: 3;
-    padding: 2px 5px;
-    font-size: 0.68rem;
-    gap: 2px;
+  .auction-mobile-filters-btn:hover {
+    border-color: rgba(255, 255, 255, 0.25);
   }
 
-  .auction-filter-btn.reset-btn { order: 4; }
+  .auction-mobile-filters-btn i {
+    font-size: 1.05rem;
+    color: var(--accent-red);
+  }
+
+  .auction-role-tabs,
+  #toggle-filter-available-btn,
+  #reset-auction-status-btn {
+    display: none !important;
+  }
 
   .auction-slots-grid {
     grid-template-columns: 1fr !important;
-    gap: 6px;
-    padding-bottom: 10px;
+    gap: 8px;
+    height: auto !important;
+    overflow: visible !important;
+    padding-bottom: 20px;
   }
 
   .slot-tier-column {
@@ -335,6 +746,8 @@
     background: var(--bg-surface);
     box-shadow: var(--shadow-sm);
     min-height: 0;
+    height: auto !important;
+    overflow: visible !important;
   }
 
   .slot-tier-column.is-collapsed {
@@ -381,10 +794,11 @@
 
   .slot-tier-column:not(.is-collapsed) .slot-players-list {
     display: flex !important;
-    padding: 4px 6px;
-    gap: 3px;
-    max-height: 360px;
-    overflow-y: auto;
+    padding: 6px 6px;
+    gap: 4px;
+    max-height: none !important;
+    overflow: visible !important;
+    height: auto !important;
   }
 
   .slot-player-card {
@@ -423,13 +837,14 @@
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     bottom: var(--mobile-bar-height);
-    width: 280px;
-    max-width: 86vw;
+    width: 100vw !important;
+    max-width: 100vw !important;
     transform: translateX(-100%);
     transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
     z-index: 150;
-    box-shadow: 6px 0 20px rgba(0, 0, 0, 0.7);
+    box-shadow: none;
     background: var(--bg-surface);
   }
 
@@ -438,10 +853,10 @@
   }
 
   body.left-sidebar-collapsed .app-sidebar-left {
-    width: 280px !important;
+    width: 100vw !important;
     min-width: 0 !important;
-    max-width: 86vw !important;
-    border-right: 1px solid var(--border-color);
+    max-width: 100vw !important;
+    border-right: none;
   }
 
   body.left-sidebar-collapsed .left-sidebar-resizer,
@@ -449,18 +864,19 @@
     display: none !important;
   }
 
-  /* Sidebar Destra come Drawer */
+  /* Sidebar Destra (Scheda Giocatore) a Schermo Intero */
   .app-sidebar-right {
     position: fixed;
     top: 0;
+    left: 0;
     right: 0;
     bottom: var(--mobile-bar-height);
-    width: 340px;
-    max-width: 92vw;
+    width: 100vw !important;
+    max-width: 100vw !important;
     transform: translateX(100%);
     transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
     z-index: 150;
-    box-shadow: -6px 0 20px rgba(0, 0, 0, 0.7);
+    box-shadow: none;
     background: var(--bg-surface);
   }
 
@@ -469,15 +885,52 @@
   }
 
   body.right-sidebar-collapsed .app-sidebar-right {
-    width: 340px !important;
+    width: 100vw !important;
     min-width: 0 !important;
-    max-width: 92vw !important;
-    border-left: 1px solid var(--border-color);
+    max-width: 100vw !important;
+    border-left: none;
   }
 
   body.right-sidebar-collapsed #sidebar-inspector-resizer,
   body.right-sidebar-collapsed #reopen-right-sidebar-btn {
     display: none !important;
+  }
+
+  /* Pulsante Chiudi Drawer X su Mobile */
+  .mobile-drawer-close-btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-xs);
+    color: #ffffff;
+    font-size: 1.15rem;
+    cursor: pointer;
+    padding: 0;
+    flex-shrink: 0;
+    margin-left: 6px;
+    transition: var(--transition-fast);
+  }
+
+  .mobile-drawer-close-btn:active {
+    background: var(--accent-red-subtle);
+    border-color: var(--accent-red);
+    color: var(--accent-red);
+  }
+
+  .team-sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+  }
+
+  .team-sidebar-header .team-search-box {
+    flex: 1;
+    min-width: 0;
   }
 
   /* Backdrop Overlay */
@@ -555,16 +1008,28 @@
     height: 76px;
   }
 
-  /* Toolbar Superiore al Campo su Mobile */
+  /* Toolbar Superiore al Campo su Mobile (Grandi come mobile-action-bar) */
   .pitch-top-toolbar {
-    padding: 2px 4px;
-    min-height: 28px;
-    gap: 4px;
+    padding: 4px 10px;
+    min-height: 48px;
+    gap: 8px;
+    box-sizing: border-box;
+  }
+
+  .pitch-team-trigger {
+    padding: 6px 10px;
+    font-size: 1.05rem;
+    gap: 8px;
+  }
+
+  .pitch-team-trigger i {
+    font-size: 1.25rem;
   }
 
   .pitch-watermark-club {
-    font-size: 0.80rem;
-    max-width: 80px;
+    font-size: 1.05rem;
+    font-weight: 800;
+    max-width: 140px;
     overflow: hidden;
     text-overflow: ellipsis;
   }
@@ -572,21 +1037,21 @@
   .pitch-formation-picker {
     background: transparent;
     border: none;
-    padding: 0 10px 0 0;
-    margin-right: 4px;
-    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 0 18px 0 0;
+    margin-right: 6px;
+    border-right: 1px solid rgba(255, 255, 255, 0.20);
   }
 
   .pitch-formation-picker .formation-arrow {
-    right: 3px;
-    font-size: 0.45rem;
+    right: 4px;
+    font-size: 0.65rem;
   }
 
   .pitch-formation-select {
-    font-size: 0.72rem;
+    font-size: 1.05rem;
     font-weight: 800;
-    padding: 1px 2px;
-    max-width: 54px;
+    padding: 6px 6px;
+    max-width: 75px;
   }
 
   .pitch-toolbar-group {
@@ -597,13 +1062,18 @@
   }
 
   .pitch-toolbar-btn {
-    padding: 2px 5px;
-    font-size: 0.62rem;
-    gap: 2px;
+    padding: 6px 12px;
+    font-size: 0.95rem;
+    gap: 6px;
+    min-height: 40px;
+  }
+
+  .pitch-toolbar-btn i {
+    font-size: 1.20rem;
   }
 
   .pitch-toolbar-btn + .pitch-toolbar-btn {
-    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    border-left: 1px solid rgba(255, 255, 255, 0.20);
   }
 
   .pitch-toolbar-btn .btn-text-hide {
@@ -611,12 +1081,31 @@
   }
 
   /* Card Giocatore sul Campo */
-  .player-card {
+  .pitch-slot-wrapper {
     width: min(80px, calc(19vw - 2px));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .player-card {
+    width: 100% !important;
     height: auto;
     min-height: 40px;
     padding: 2px;
     border-radius: 2px;
+    box-sizing: border-box;
+  }
+
+  .slot-substitutes-container {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1px;
+    box-sizing: border-box;
   }
 
   .player-card .card-header-row .player-name {
@@ -639,15 +1128,132 @@
   .player-card .card-availability-dot { width: 3px; height: 3px; }
 
   .pitch-sub-pill {
-    height: 10px;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    height: 11px;
     padding: 0 2px;
     font-size: 0.42rem;
-    gap: 1px;
-    max-width: min(80px, calc(19vw - 2px));
+    gap: 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
-  .pitch-sub-pill .sub-prefix { font-size: 0.40rem; }
+  .pitch-sub-pill .sub-prefix { font-size: 0.40rem; flex-shrink: 0; }
+  .pitch-sub-pill .sub-info-row { display: flex; align-items: center; justify-content: space-between; flex: 1; min-width: 0; gap: 2px; }
   .pitch-sub-pill .sub-name { font-size: 0.42rem; }
+  .pitch-sub-pill .sub-tit-badge { font-size: 0.40rem; flex-shrink: 0; }
+
+  /* Vista Lista su Mobile: Colonna Singola con Card Grandi, Font Generosi e Massima Leggibilità */
+  .pitch-vertical-list-container {
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+    box-sizing: border-box;
+  }
+
+  .pitch-list-dept-header .dept-title-box {
+    font-size: 0.95rem !important;
+  }
+
+  .pitch-list-dept-header .dept-count-badge {
+    font-size: 0.76rem !important;
+  }
+
+  .pitch-list-dept-items-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+
+  .pitch-list-slot-item {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 5px !important;
+  }
+
+  .pitch-list-slot-item .player-card {
+    width: 100% !important;
+    min-height: 64px !important;
+    padding: 10px 14px !important;
+    border-radius: var(--radius-xs) !important;
+  }
+
+  .pitch-list-slot-item .player-card .card-header-row .player-name {
+    font-size: 1.02rem !important;
+    max-width: none !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.01em !important;
+  }
+
+  .pitch-list-slot-item .player-card .asta-availability-dot i {
+    font-size: 1.05rem !important;
+  }
+
+  .pitch-list-slot-item .player-card .card-stats-rows {
+    gap: 5px !important;
+    margin-top: 4px !important;
+  }
+
+  .pitch-list-slot-item .player-card .card-stats-row {
+    gap: 8px !important;
+  }
+
+  .pitch-list-slot-item .player-card .stat-chip {
+    font-size: 0.80rem !important;
+    font-weight: 700 !important;
+    padding: 2px 6px !important;
+  }
+
+  .pitch-list-slot-item .player-card .player-appetibilita,
+  .pitch-list-slot-item .player-card .tit-badge {
+    font-size: 0.82rem !important;
+    font-weight: 800 !important;
+    padding: 2px 6px !important;
+  }
+
+  .pitch-list-slot-item .player-card .slot-role-tag-sub {
+    font-size: 0.80rem !important;
+    font-weight: 800 !important;
+    padding: 2px 6px !important;
+  }
+
+  .pitch-list-slot-item .player-card .fanta-badge {
+    font-size: 0.90rem !important;
+  }
+
+  .pitch-list-slot-item .player-card .ballottaggio-pill {
+    font-size: 0.78rem !important;
+    font-weight: 700 !important;
+    padding: 2px 6px !important;
+  }
+
+  .pitch-list-slot-item .pitch-sub-pill {
+    height: auto !important;
+    min-height: 28px !important;
+    padding: 4px 10px !important;
+    font-size: 0.80rem !important;
+    border-radius: var(--radius-xs) !important;
+  }
+
+  .pitch-list-slot-item .pitch-sub-pill .sub-prefix {
+    font-size: 0.75rem !important;
+    font-weight: 800 !important;
+  }
+
+  .pitch-list-slot-item .pitch-sub-pill .sub-name {
+    font-size: 0.88rem !important;
+    font-weight: 700 !important;
+  }
+
+  .pitch-list-slot-item .pitch-sub-pill .sub-tit-badge {
+    font-size: 0.78rem !important;
+    font-weight: 800 !important;
+    padding: 1px 5px !important;
+  }
 
   /* Barra di Navigazione Mobile Inferiore */
   .mobile-action-bar {
@@ -758,9 +1364,14 @@
    SMARTPHONE MOLTO PICCOLO (<= 400px)
    ========================================================================== */
 @media (max-width: 400px) {
-  .player-card {
+  .pitch-slot-wrapper {
     width: 70px;
-    height: 38px;
+  }
+
+  .player-card {
+    width: 100% !important;
+    height: auto;
+    min-height: 38px;
     padding: 1px 2px;
   }
 
@@ -773,7 +1384,8 @@
   }
 
   .pitch-sub-pill {
-    height: 9px;
+    width: 100% !important;
+    height: 10px;
     font-size: 0.40rem;
   }
 

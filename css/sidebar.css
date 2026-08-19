@@ -9,6 +9,13 @@
   padding: 8px 12px;
   border-bottom: 1px solid var(--border-color);
   background: var(--bg-surface);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mobile-drawer-close-btn {
+  display: none;
 }
 
 .team-search-box {

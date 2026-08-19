@@ -42,6 +42,9 @@ export class TeamSelectorComponent {
             <i class="fa-solid fa-xmark"></i>
           </button>
         </div>
+        <button class="mobile-drawer-close-btn" title="Chiudi squadre" aria-label="Chiudi">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
       </div>
 
       <div class="team-list-container" id="team-list-container">

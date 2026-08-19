@@ -14,11 +14,13 @@
   animation: modalFadeIn 0.15s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-.modal-dialog {
+.modal-dialog,
+.fanta-modal {
   background: var(--bg-surface);
+  background-color: #14171d !important;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.85), 0 0 0 1px rgba(255, 255, 255, 0.08);
   width: 100%;
   max-width: 520px;
   max-height: 90vh;
@@ -26,9 +28,22 @@
   flex-direction: column;
   overflow: hidden;
   animation: modalPopIn 0.18s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  position: relative;
+  z-index: 1000;
 }
 
-.modal-dialog.modal-lg {
+.modal-dialog.modal-sm,
+.fanta-modal.modal-sm {
+  max-width: 440px;
+}
+
+.modal-dialog.modal-md,
+.fanta-modal.modal-md {
+  max-width: 540px;
+}
+
+.modal-dialog.modal-lg,
+.fanta-modal.modal-lg {
   max-width: 660px;
 }
 
@@ -38,18 +53,30 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--bg-surface-elevated);
+  background: var(--bg-surface-elevated, #1a1e24) !important;
 }
 
+.modal-title-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.modal-title-group h3,
 .modal-title {
   font-family: var(--font-main);
   font-size: 0.95rem;
   font-weight: 800;
   color: #ffffff;
+  margin: 0;
   display: flex;
   align-items: center;
   gap: 6px;
   letter-spacing: -0.01em;
+}
+
+.modal-title-icon {
+  font-size: 1.0rem;
 }
 
 .modal-title i {
@@ -71,19 +98,20 @@
 }
 
 .modal-body {
-  padding: 12px 14px;
+  padding: 14px 16px;
   overflow-y: auto;
   flex: 1;
+  background: var(--bg-surface, #14171d) !important;
 }
 
 .modal-footer {
-  padding: 8px 14px;
+  padding: 10px 14px;
   border-top: 1px solid var(--border-color);
-  background: var(--bg-surface-elevated);
+  background: var(--bg-surface-elevated, #1a1e24) !important;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 6px;
+  gap: 8px;
 }
 
 /* Storico Versioni */
@@ -194,4 +222,103 @@
 @keyframes modalPopIn {
   from { opacity: 0; transform: scale(0.97) translateY(4px); }
   to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* Stili Modali Filtri Mobile */
+.modal-filter-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.modal-filter-label {
+  font-family: var(--font-main);
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.modal-filter-label i {
+  color: var(--accent-red);
+  font-size: 0.85rem;
+}
+
+.modal-filter-pills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 6px;
+  width: 100%;
+}
+
+.modal-role-pill,
+.modal-avail-pill {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xs);
+  color: var(--text-secondary);
+  font-family: var(--font-main);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 8px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transition: var(--transition-fast);
+}
+
+.modal-role-pill:hover,
+.modal-avail-pill:hover {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.modal-role-pill.is-active,
+.modal-avail-pill.is-active {
+  background: var(--accent-red-subtle);
+  border-color: var(--accent-red);
+  color: var(--accent-red);
+  font-weight: 800;
+}
+
+.modal-avail-pill.avail-green.is-active {
+  background: rgba(34, 197, 94, 0.15);
+  border-color: var(--accent-success);
+  color: var(--accent-success);
+}
+
+.modal-avail-pill.avail-red.is-active {
+  background: var(--accent-red-subtle);
+  border-color: var(--accent-red);
+  color: var(--accent-red);
+}
+
+.modal-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 0.88rem;
+  color: var(--text-primary);
+}
+
+.modal-checkbox-label input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent-red);
+}
+
+.filter-active-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent-red);
+  display: inline-block;
+  margin-left: 2px;
 }

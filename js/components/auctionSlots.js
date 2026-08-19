@@ -15,12 +15,12 @@ export class AuctionSlotsComponent {
     this.activeRole = 'A'; // 'P' | 'D' | 'C' | 'A' | 'ALL'
     this.searchQuery = '';
     this.onlyAvailable = false;
-    // Su mobile: Slot 1 aperto di default, gli altri collassati
+    // Su mobile: Slot 1 aperto di default, gli altri collassati (apribili al click)
     this.collapsedSlots = {
-      slot_1: false,
-      slot_2: true,
-      slot_3: true,
-      slot_4: true
+      slot1: false,
+      slot2: true,
+      slot3: true,
+      slot4: true
     };
   }
 
@@ -51,6 +51,12 @@ export class AuctionSlotsComponent {
 
   setRole(role) {
     this.activeRole = role;
+    this.collapsedSlots = {
+      slot1: false,
+      slot2: true,
+      slot3: true,
+      slot4: true
+    };
     this.render();
   }
 
@@ -132,7 +138,14 @@ export class AuctionSlotsComponent {
               ${this.searchQuery ? `<button class="auction-search-clear" title="Pulisci ricerca"><i class="fa-solid fa-xmark"></i></button>` : ''}
             </div>
 
-            <!-- Tabs Ruolo Rapido -->
+            <!-- Pulsante Filtri Mobile -->
+            <button id="open-auction-filters-btn" class="auction-mobile-filters-btn" title="Apri filtri avanzati">
+              <i class="fa-solid fa-sliders"></i>
+              <span>Filtri</span>
+              ${this.onlyAvailable || this.activeRole !== 'A' ? '<span class="filter-active-dot"></span>' : ''}
+            </button>
+
+            <!-- Tabs Ruolo Rapido (Desktop) -->
             <div class="auction-role-tabs" aria-label="Filtro per Ruolo Asta">
               ${rolesMeta.map(r => `
                 <button class="auction-role-btn ${r.pillClass} ${this.activeRole === r.key ? 'is-active' : ''}" data-role="${r.key}" title="${r.label}">
@@ -143,13 +156,13 @@ export class AuctionSlotsComponent {
               `).join('')}
             </div>
 
-            <!-- Filtro Disponibili -->
+            <!-- Filtro Disponibili (Desktop) -->
             <button id="toggle-filter-available-btn" class="auction-filter-btn ${this.onlyAvailable ? 'is-active' : ''}" title="Mostra solo i giocatori ancora disponibili per l'asta">
               <i class="fa-solid ${this.onlyAvailable ? 'fa-eye' : 'fa-filter'}"></i>
               <span>${this.onlyAvailable ? 'Solo Disponibili' : 'Tutti'}</span>
             </button>
 
-            <!-- Reset Stato Asta -->
+            <!-- Reset Stato Asta (Desktop) -->
             <button id="reset-auction-status-btn" class="auction-filter-btn reset-btn" title="Ripristina tutti i giocatori come disponibili per una nuova asta">
               <i class="fa-solid fa-rotate-left"></i>
               <span>Reset Asta</span>
@@ -432,5 +445,92 @@ export class AuctionSlotsComponent {
         }
       });
     });
+
+    // Listener Pulsante Filtri Mobile
+    const openFiltersBtn = this.container.querySelector('#open-auction-filters-btn');
+    openFiltersBtn?.addEventListener('click', () => {
+      this.openFiltersModal();
+    });
+  }
+
+  openFiltersModal() {
+    const modal = document.getElementById('auction-filters-modal');
+    const modalBody = document.getElementById('auction-filters-modal-body');
+    if (!modal || !modalBody) return;
+
+    const rolesMeta = [
+      { key: 'A', label: 'Attaccanti', icon: 'fa-bolt' },
+      { key: 'C', label: 'Centrocampisti', icon: 'fa-gears' },
+      { key: 'D', label: 'Difensori', icon: 'fa-shield' },
+      { key: 'P', label: 'Portieri', icon: 'fa-hands' }
+    ];
+
+    let tempRole = this.activeRole;
+    let tempOnlyAvailable = this.onlyAvailable;
+
+    modalBody.innerHTML = `
+      <div class="modal-filter-section">
+        <label class="modal-filter-label"><i class="fa-solid fa-users"></i> Seleziona Ruolo Asta:</label>
+        <div class="modal-filter-pills-grid" id="modal-auction-roles">
+          ${rolesMeta.map(r => `
+            <button type="button" class="modal-role-pill ${tempRole === r.key ? 'is-active' : ''}" data-role="${r.key}">
+              <i class="fa-solid ${r.icon}"></i> ${r.label}
+            </button>
+          `).join('')}
+        </div>
+      </div>
+
+      <div class="modal-filter-section" style="margin-top: 14px;">
+        <label class="modal-filter-label"><i class="fa-solid fa-filter"></i> Stato Giocatori per l'Asta:</label>
+        <div class="modal-filter-toggle-row">
+          <label class="modal-checkbox-label">
+            <input type="checkbox" id="modal-only-available-check" ${tempOnlyAvailable ? 'checked' : ''} />
+            <span>Mostra solo calciatori <strong>Disponibili</strong></span>
+          </label>
+        </div>
+      </div>
+    `;
+
+    // Selezione ruolo dentro il modale
+    modalBody.querySelectorAll('.modal-role-pill').forEach(btn => {
+      btn.addEventListener('click', () => {
+        modalBody.querySelectorAll('.modal-role-pill').forEach(b => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+        tempRole = btn.dataset.role;
+      });
+    });
+
+    // Chiusura
+    const closeBtn = document.getElementById('close-auction-filters-btn');
+    const closeHandler = () => {
+      modal.classList.add('hidden');
+      closeBtn?.removeEventListener('click', closeHandler);
+    };
+    closeBtn?.addEventListener('click', closeHandler);
+
+    // Reset Asta
+    const resetBtn = document.getElementById('reset-modal-auction-btn');
+    const resetHandler = () => {
+      if (confirm('Vuoi ripristinare tutti i calciatori come DISPONIBILI per una nuova asta?')) {
+        store.resetAllAuctionAvailability();
+        notify.success('Tutti i giocatori sono ora DISPONIBILI all\'asta!');
+        modal.classList.add('hidden');
+        this.render();
+      }
+    };
+    resetBtn?.addEventListener('click', resetHandler);
+
+    // Applica Filtri
+    const applyBtn = document.getElementById('apply-auction-filters-btn');
+    const applyHandler = () => {
+      const checkEl = document.getElementById('modal-only-available-check');
+      this.onlyAvailable = checkEl ? checkEl.checked : false;
+      this.setRole(tempRole);
+      modal.classList.add('hidden');
+      applyBtn?.removeEventListener('click', applyHandler);
+    };
+    applyBtn?.addEventListener('click', applyHandler);
+
+    modal.classList.remove('hidden');
   }
 }

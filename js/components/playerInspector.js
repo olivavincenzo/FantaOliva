@@ -55,6 +55,9 @@ export class PlayerInspectorComponent {
             <div class="inspector-tags-row">
               <span class="team-tag">${sanitizeHtml(currentTeam?.shortName || '')}</span>
               <span class="team-tag">${benchCount} in Panchina</span>
+              <button class="mobile-drawer-close-btn" title="Chiudi scheda" aria-label="Chiudi">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
             </div>
           </div>
 
@@ -132,6 +135,9 @@ export class PlayerInspectorComponent {
             <button id="toggle-player-auction-btn" class="inspector-auction-toggle ${isAvailable ? 'is-available' : 'is-taken'}" title="Clicca per cambiare lo stato per l'asta">
               <i class="fa-solid ${isAvailable ? 'fa-circle-check' : 'fa-circle-xmark'}"></i>
               <span>${isAvailable ? 'Disponibile' : 'Preso'}</span>
+            </button>
+            <button class="mobile-drawer-close-btn" title="Chiudi scheda" aria-label="Chiudi">
+              <i class="fa-solid fa-xmark"></i>
             </button>
           </div>
         </div>

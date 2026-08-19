@@ -223,10 +223,30 @@ class App {
       item.addEventListener('click', closeSettings);
     });
 
-    // Chiudi al click all'esterno
-    document.addEventListener('click', (e) => {
-      if (settingsMenu && !settingsMenu.contains(e.target) && !e.target.closest('#mobile-settings-btn') && !e.target.closest('#settings-dropdown-toggle')) {
+    // Chiudi modale impostazioni al click sulla X
+    const closeSettingsBtn = settingsMenu?.querySelector('#close-settings-menu-btn');
+    closeSettingsBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      closeSettings();
+    });
+
+    settingsMenu?.querySelectorAll('.mobile-drawer-close-btn').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
         closeSettings();
+      });
+    });
+
+    // Chiudi al click all'esterno o sul backdrop
+    document.addEventListener('click', (e) => {
+      if (settingsMenu?.classList.contains('is-open')) {
+        if (e.target.closest('#close-settings-menu-btn') || e.target.closest('#mobile-drawer-backdrop')) {
+          closeSettings();
+          return;
+        }
+        if (!settingsMenu.contains(e.target) && !e.target.closest('#mobile-settings-btn') && !e.target.closest('#settings-dropdown-toggle')) {
+          closeSettings();
+        }
       }
     });
 

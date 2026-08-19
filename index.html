@@ -76,7 +76,10 @@
     <!-- MENU DROPDOWN IMPOSTAZIONI & STRUMENTI (Accessibile sia da Desktop Header che da Mobile Bar) -->
     <div class="header-dropdown-menu" id="header-settings-menu" role="menu" aria-label="Menu Impostazioni e Strumenti">
       <div class="dropdown-menu-header">
-        <span class="dropdown-menu-title"><i class="fa-solid fa-sliders"></i> Strumenti & Opzioni</span>
+        <span class="dropdown-menu-title"><i class="fa-solid fa-sliders"></i> Strumenti & Impostazioni</span>
+        <button class="mobile-drawer-close-btn" id="close-settings-menu-btn" title="Chiudi impostazioni" aria-label="Chiudi">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
       </div>
 
       <div class="dropdown-items-list">
@@ -475,6 +478,50 @@
         <button class="fanta-btn success-btn hidden" id="apply-csv-btn">
           <i class="fa-solid fa-bolt"></i> Applica Statistiche
         </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODALE FILTRI SLOT ASTA (MOBILE) -->
+  <div class="modal-backdrop hidden" id="auction-filters-modal" role="dialog" aria-modal="true" aria-labelledby="auction-filters-title">
+    <div class="fanta-modal modal-sm">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <i class="fa-solid fa-sliders modal-title-icon" style="color: var(--accent-red);"></i>
+          <h3 id="auction-filters-title">Filtri Slot Asta</h3>
+        </div>
+        <button class="modal-close-btn" id="close-auction-filters-btn" aria-label="Chiudi filtri">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal-body" id="auction-filters-modal-body">
+        <!-- Rendered dynamically -->
+      </div>
+      <div class="modal-footer">
+        <button class="fanta-btn secondary-btn" id="reset-modal-auction-btn"><i class="fa-solid fa-rotate-left"></i> Reset Asta</button>
+        <button class="fanta-btn primary-btn" id="apply-auction-filters-btn"><i class="fa-solid fa-check"></i> Applica Filtri</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODALE FILTRI LISTONE & SVINCOLATI (MOBILE) -->
+  <div class="modal-backdrop hidden" id="listone-filters-modal" role="dialog" aria-modal="true" aria-labelledby="listone-filters-title">
+    <div class="fanta-modal modal-md">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <i class="fa-solid fa-sliders modal-title-icon" style="color: var(--accent-red);"></i>
+          <h3 id="listone-filters-title">Filtri Svincolati & Listone</h3>
+        </div>
+        <button class="modal-close-btn" id="close-listone-filters-btn" aria-label="Chiudi filtri">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal-body" id="listone-filters-modal-body">
+        <!-- Rendered dynamically -->
+      </div>
+      <div class="modal-footer">
+        <button class="fanta-btn secondary-btn" id="reset-modal-listone-btn"><i class="fa-solid fa-rotate-left"></i> Reset Filtri</button>
+        <button class="fanta-btn primary-btn" id="apply-listone-filters-btn"><i class="fa-solid fa-check"></i> Applica Filtri</button>
       </div>
     </div>
   </div>
