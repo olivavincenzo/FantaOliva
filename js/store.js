@@ -17,7 +17,7 @@ class Store {
     this.selectedPlayerId = null;
     this.selectedSlotId = null;
     this.showTacticalLines = true;
-    this.isFreeDragMode = false;
+    this.isFreeDragMode = true;
     this.activeBenchFilter = 'ALL';
     this.snapshots = [];
     this.subscribers = new Map();

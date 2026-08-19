@@ -197,13 +197,6 @@ class App {
       notify.info(isVisible ? 'Linee tattiche abilitate' : 'Linee tattiche nascoste');
     });
 
-    // Toggle Modalità Posizionamento Libero
-    const toggleFreeDragBtn = document.querySelector('#toggle-free-drag-btn');
-    toggleFreeDragBtn?.addEventListener('click', () => {
-      const isFree = store.toggleFreeDragMode();
-      toggleFreeDragBtn.classList.toggle('is-active', isFree);
-      notify.info(isFree ? 'Modalità spostamento libero attiva: trascina ovunque sul campo' : 'Modalità standard: rilascio per scambiare');
-    });
   }
 
   bindResponsiveToggles() {
