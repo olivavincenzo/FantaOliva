@@ -397,12 +397,19 @@
 
 .player-card.is-compact .core-metrics.compact-metrics {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 0.8fr;
   padding: 6px 0 5px;
   margin-top: 5px;
-  gap: 4px;
+  gap: 3px;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
+}
+
+.player-card.is-compact .role {
+  width: 18px;
+  height: 15px;
+  font-size: 8.5px;
+  border-radius: 4px;
 }
 
 .player-card.is-compact .metric-value {
@@ -411,7 +418,7 @@
 }
 
 .player-card.is-compact .metric-label {
-  font-size: 8px;
+  font-size: 7.5px;
   margin-top: 1px;
 }
 

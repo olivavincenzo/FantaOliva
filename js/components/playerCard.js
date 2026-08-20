@@ -145,7 +145,6 @@ export function createPlayerCard(player, options = {}) {
   // Header player top con info piazzati (rigorista, punizioni, corner)
   const headerHtml = `
     <header class="player-top">
-      ${!compact ? `<div class="avatar">${initials}</div>` : ''}
       <div class="identity">
         <h3 class="player-name" title="${sanitizeHtml(player.name)}">${sanitizeHtml(displayName)}</h3>
         <div class="player-set-pieces-row">
@@ -163,20 +162,9 @@ export function createPlayerCard(player, options = {}) {
     </header>
   `;
 
-  // Metriche Core: 2 colonne in modalità compatta (campo), 3 colonne in modalità standard (lista/slot)
-  const metricsHtml = compact ? `
-    <div class="core-metrics compact-metrics">
-      <div class="metric">
-        <div class="metric-value ${isElite ? 'elite' : ''}">${appetibilitaVal}</div>
-        <span class="metric-label">Appetibilità</span>
-      </div>
-      <div class="metric">
-        <div class="metric-value">${titolarita !== undefined ? `${titolarita}%` : '—'}</div>
-        <span class="metric-label">Titolarità</span>
-      </div>
-    </div>
-  ` : `
-    <div class="core-metrics">
+  // Metriche Core: 3 colonne (Appetibilità, Titolarità, Ruolo)
+  const metricsHtml = `
+    <div class="core-metrics ${compact ? 'compact-metrics' : ''}">
       <div class="metric">
         <div class="metric-value ${isElite ? 'elite' : ''}">${appetibilitaVal}</div>
         <span class="metric-label">Appetibilità</span>

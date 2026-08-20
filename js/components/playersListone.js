@@ -18,6 +18,7 @@ export class PlayersListoneComponent {
     this.onlyFavorites = false;
     this.sortBy = 'appetibilita'; // 'appetibilita' | 'fantamedia' | 'mediaVoto' | 'qtA' | 'fvm' | 'gol' | 'assist' | 'presenze' | 'name' | 'teamName'
     this.sortOrder = 'desc'; // 'asc' | 'desc'
+    this.gridColumns = Number((typeof localStorage !== 'undefined' ? localStorage.getItem('fantaoliva_listone_cols') : null) || 2);
     this._searchTimer = null;
     this.renderLimit = 40; // Progressive loading batch size
     this._scrollListenerBound = false;
@@ -213,7 +214,16 @@ export class PlayersListoneComponent {
             <p class="context">Asta 2026/27 · Serie A</p>
             <h1 class="team-title-heading">LISTONE COMPLETO</h1>
           </div>
-          <div style="display: flex; align-items: center; gap: 8px;">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <div class="section-columns-switcher" title="Disposizione colonne listone">
+              <span class="cols-label">Colonne</span>
+              <div class="cols-button-group">
+                <button type="button" class="col-btn ${this.gridColumns === 1 ? 'is-active' : ''}" data-cols="1">1</button>
+                <button type="button" class="col-btn ${this.gridColumns === 2 ? 'is-active' : ''}" data-cols="2">2</button>
+                <button type="button" class="col-btn ${this.gridColumns === 3 ? 'is-active' : ''}" data-cols="3">3</button>
+                <button type="button" class="col-btn ${this.gridColumns === 4 ? 'is-active' : ''}" data-cols="4">4</button>
+              </div>
+            </div>
             <span class="listone-total-badge" title="Calciatori visualizzati / Totale">
               <strong>${filtered.length}</strong>/${total}
             </span>
@@ -274,7 +284,7 @@ export class PlayersListoneComponent {
 
         <!-- LISTA CARDS CALCIATORI EDITORIAL MINIMAL -->
         <div class="listone-cards-container" id="listone-cards-container">
-          <div class="listone-cards-grid" id="listone-cards-grid"></div>
+          <div class="listone-cards-grid cols-${this.gridColumns}" id="listone-cards-grid"></div>
 
           ${filtered.length > this.renderLimit ? `
             <div class="listone-load-more-box" style="text-align: center; padding: 14px 0 20px;">
@@ -318,6 +328,19 @@ export class PlayersListoneComponent {
   }
 
   bindEvents() {
+    // Selettore Colonne 1 2 3 4
+    this.container.querySelectorAll('.section-columns-switcher .col-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const cols = Number(btn.dataset.cols) || 2;
+        this.gridColumns = cols;
+        if (typeof localStorage !== 'undefined') {
+          localStorage.setItem('fantaoliva_listone_cols', cols);
+        }
+        this.render();
+      });
+    });
+
     // Ruolo Tabs
     this.container.querySelectorAll('.filters .filter[data-role]').forEach(btn => {
       btn.addEventListener('click', () => {

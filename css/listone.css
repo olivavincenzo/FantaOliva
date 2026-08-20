@@ -91,18 +91,39 @@
 }
 
 .listone-cards-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  display: grid;
+  gap: 12px;
   width: 100%;
   box-sizing: border-box;
+  align-items: start;
 }
 
-@media (min-width: 901px) {
-  .listone-cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-    gap: 12px;
-    align-items: start;
+.listone-cards-grid.cols-1 {
+  grid-template-columns: 1fr;
+}
+
+.listone-cards-grid.cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.listone-cards-grid.cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.listone-cards-grid.cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (max-width: 900px) {
+  .listone-cards-grid.cols-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .listone-cards-grid.cols-2,
+  .listone-cards-grid.cols-3,
+  .listone-cards-grid.cols-4 {
+    grid-template-columns: 1fr;
   }
 }
