@@ -121,17 +121,15 @@ export function createPlayerCard(player, options = {}) {
     `;
   }
 
-  // Template Strutturale Editorial Minimal
-  card.innerHTML = `
+  // Header player top con info piazzati (rigorista, punizioni, corner)
+  const headerHtml = `
     <header class="player-top">
-      <div class="avatar">${initials}</div>
+      ${!compact ? `<div class="avatar">${initials}</div>` : ''}
       <div class="identity">
         <h3 class="player-name" title="${sanitizeHtml(player.name)}">${sanitizeHtml(displayName)}</h3>
-        <div class="player-meta">
-          ${rank ? `<span class="rank-badge">#${rank}</span><span class="separator">·</span>` : ''}
-          <span>${sanitizeHtml(teamName)}</span>
-          <span class="separator">·</span>
-          <span>${sanitizeHtml(statusText)}</span>
+        <div class="player-set-pieces-row">
+          ${rank ? `<span class="rank-badge">#${rank}</span>` : ''}
+          <span class="set-pieces-badge ${piazzatiText !== '—' ? 'has-set-pieces' : ''}">${piazzatiText}</span>
         </div>
       </div>
       <button class="availability ${isAvailable ? 'available' : 'taken'}" type="button" title="Stato Asta: ${isAvailable ? 'Disponibile (clicca per segnare PRESO)' : 'PRESO (clicca per segnare DISPONIBILE)'}" aria-label="Cambia stato asta">
@@ -142,7 +140,21 @@ export function createPlayerCard(player, options = {}) {
         </svg>
       </button>
     </header>
+  `;
 
+  // Metriche Core: 2 colonne in modalità compatta (campo), 3 colonne in modalità standard (lista/slot)
+  const metricsHtml = compact ? `
+    <div class="core-metrics compact-metrics">
+      <div class="metric">
+        <div class="metric-value ${isElite ? 'elite' : ''}">${appetibilitaVal}</div>
+        <span class="metric-label">Appetibilità</span>
+      </div>
+      <div class="metric">
+        <div class="metric-value">${titolarita !== undefined ? `${titolarita}%` : '—'}</div>
+        <span class="metric-label">Titolarità</span>
+      </div>
+    </div>
+  ` : `
     <div class="core-metrics">
       <div class="metric">
         <div class="metric-value ${isElite ? 'elite' : ''}">${appetibilitaVal}</div>
@@ -156,12 +168,23 @@ export function createPlayerCard(player, options = {}) {
         <span class="role">${player.role || classicRole}</span>
         <span class="metric-label">Ruolo</span>
       </div>
-      <div class="metric">
-        <div class="set-pieces">${piazzatiText}</div>
-        <span class="metric-label">Piazzati</span>
+    </div>
+  `;
+
+  // Data rail: compatto o completo
+  const railHtml = compact ? `
+    <div class="data-rail compact-rail">
+      <div class="market-list">
+        <div class="market"><label>QtA</label><strong>${qtA}</strong></div>
+        <div class="market"><label>FVM</label><strong>${fvm}</strong></div>
+      </div>
+      <div class="season">
+        <span>FM <strong>${fmVal}</strong></span>
+        <span>G <strong>${gol}</strong></span>
+        <span>A <strong>${assist}</strong></span>
       </div>
     </div>
-
+  ` : `
     <div class="data-rail">
       <div class="market-list">
         <div class="market"><label>QtA</label><strong>${qtA}</strong></div>
@@ -175,7 +198,13 @@ export function createPlayerCard(player, options = {}) {
         <span>A <strong>${assist}</strong></span>
       </div>
     </div>
+  `;
 
+  // Template Strutturale Editorial Minimal
+  card.innerHTML = `
+    ${headerHtml}
+    ${metricsHtml}
+    ${railHtml}
     ${ballottaggioHtml}
   `;
 

@@ -405,6 +405,7 @@ export class PitchComponent {
         slotId: item.slot.id,
         slotRole: item.slot.role || item.slot.label,
         isLineup: true,
+        compact: true,
         isSelected
       });
 

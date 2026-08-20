@@ -279,32 +279,7 @@ class App {
       notify.info('Posizioni riallineate alle coordinate standard del modulo');
     });
 
-    // Toggle Layout Campo (Campo Grafico vs Lista Verticale Titolari)
-    const toggleLayoutBtn = document.querySelector('#toggle-pitch-layout-btn');
-    const updateLayoutBtnState = () => {
-      const isList = store.pitchLayoutMode === 'list';
-      if (toggleLayoutBtn) {
-        toggleLayoutBtn.classList.toggle('is-active', isList);
-        toggleLayoutBtn.innerHTML = isList 
-          ? '<i class="fa-solid fa-futbol"></i> <span class="btn-text-hide">Campo</span>' 
-          : '<i class="fa-solid fa-list-ol"></i> <span class="btn-text-hide">Lista</span>';
-        toggleLayoutBtn.title = isList 
-          ? 'Passa alla visualizzazione Campo Grafico' 
-          : 'Passa alla visualizzazione Lista Verticale Titolari (A-C-D-P)';
-      }
-    };
 
-    updateLayoutBtnState();
-
-    toggleLayoutBtn?.addEventListener('click', () => {
-      const newMode = store.togglePitchLayoutMode();
-      updateLayoutBtnState();
-      notify.info(newMode === 'list' ? 'Visualizzazione Lista Verticale (A ➔ C ➔ D ➔ P)' : 'Visualizzazione Campo Grafico');
-    });
-
-    store.subscribe('pitch:layoutChanged', () => {
-      updateLayoutBtnState();
-    });
 
     // Toggle Linee Tattiche
     const toggleLinesBtn = document.querySelector('#toggle-lines-btn');

@@ -540,8 +540,14 @@
 .pitch-slot-wrapper {
   position: absolute;
   transform: translate(-50%, -50%);
-  width: 140px;
+  width: 135px;
   cursor: grab;
+}
+
+@media (max-width: 900px) {
+  .pitch-slot-wrapper {
+    width: 108px;
+  }
 }
 
 .pitch-slot-wrapper:active {
