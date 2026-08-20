@@ -1152,12 +1152,14 @@
     inset: 5px;
   }
 
-  .penalty-box.top-box, .penalty-box.bottom-box {
+  .penalty-box.top-box,
+  .penalty-box.bottom-box {
     width: 52%;
     height: 13%;
   }
 
-  .goal-box.top-goal-box, .goal-box.bottom-goal-box {
+  .goal-box.top-goal-box,
+  .goal-box.bottom-goal-box {
     width: 28%;
     height: 5%;
   }
@@ -1231,7 +1233,7 @@
     font-size: 1.20rem;
   }
 
-  .pitch-toolbar-btn + .pitch-toolbar-btn {
+  .pitch-toolbar-btn+.pitch-toolbar-btn {
     border-left: 1px solid rgba(255, 255, 255, 0.20);
   }
 
@@ -1281,10 +1283,22 @@
     padding: 0;
   }
 
-  .player-card .player-appetibilita { font-size: 0.42rem; }
-  .player-card .tit-badge { font-size: 0.42rem; }
-  .player-card .slot-role-tag-sub { font-size: 0.40rem; }
-  .player-card .card-availability-dot { width: 3px; height: 3px; }
+  .player-card .player-appetibilita {
+    font-size: 0.42rem;
+  }
+
+  .player-card .tit-badge {
+    font-size: 0.42rem;
+  }
+
+  .player-card .slot-role-tag-sub {
+    font-size: 0.40rem;
+  }
+
+  .player-card .card-availability-dot {
+    width: 3px;
+    height: 3px;
+  }
 
   .pitch-sub-pill {
     width: 100% !important;
@@ -1299,10 +1313,28 @@
     justify-content: space-between;
   }
 
-  .pitch-sub-pill .sub-prefix { font-size: 0.40rem; flex-shrink: 0; }
-  .pitch-sub-pill .sub-info-row { display: flex; align-items: center; justify-content: space-between; flex: 1; min-width: 0; gap: 2px; }
-  .pitch-sub-pill .sub-name { font-size: 0.42rem; }
-  .pitch-sub-pill .sub-tit-badge { font-size: 0.40rem; flex-shrink: 0; }
+  .pitch-sub-pill .sub-prefix {
+    font-size: 0.40rem;
+    flex-shrink: 0;
+  }
+
+  .pitch-sub-pill .sub-info-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    min-width: 0;
+    gap: 2px;
+  }
+
+  .pitch-sub-pill .sub-name {
+    font-size: 0.42rem;
+  }
+
+  .pitch-sub-pill .sub-tit-badge {
+    font-size: 0.40rem;
+    flex-shrink: 0;
+  }
 
   /* Vista Lista su Mobile: Colonna Singola con Card Grandi, Font Generosi e Massima Leggibilità */
   .pitch-vertical-list-container {
@@ -1361,7 +1393,7 @@
     width: 100% !important;
     min-height: 64px !important;
     padding: 10px 14px !important;
-    border-radius: var(--radius-xs) !important;
+    border-radius: var(--radius-xl) !important;
     touch-action: pan-y !important;
     user-select: none !important;
     -webkit-user-select: none !important;

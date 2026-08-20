@@ -139,14 +139,10 @@ export function createPlayerCard(player, options = {}) {
           <span class="stat-chip" title="FantaValore Mercato (base 1000)">FVM ${fvm}</span>
         </div>
 
-        <!-- Riga 3: Fantamedia & Media Voto -->
+        <!-- Riga 3: Fantamedia, Media Voto, Presenze, Gol, Assist -->
         <div class="card-stats-row stat-row-nums">
           <span class="stat-chip" title="Fantamedia">FM ${fmVal}</span>
           <span class="stat-chip" title="Media Voto">MV ${mvVal}</span>
-        </div>
-
-        <!-- Riga 4: Presenze, Gol, Assist -->
-        <div class="card-stats-row stat-row-nums">
           <span class="stat-chip" title="Presenze"><i class="fa-solid fa-calendar"></i> ${presenze}</span>
           <span class="stat-chip" title="Gol Segnati">⚽ ${gol}</span>
           <span class="stat-chip" title="Assist">🅰 ${assist}</span>

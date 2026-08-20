@@ -145,13 +145,37 @@
   color: var(--text-primary);
 }
 
-.auction-role-btn.role-pill-a.is-active { background: var(--role-a); color: #ffffff; font-weight: 700; }
-.auction-role-btn.role-pill-c.is-active { background: var(--role-c); color: #ffffff; font-weight: 700; }
-.auction-role-btn.role-pill-d.is-active { background: var(--role-d); color: #ffffff; font-weight: 700; }
-.auction-role-btn.role-pill-p.is-active { background: var(--role-p); color: #000000; font-weight: 700; }
+.auction-role-btn.role-pill-a.is-active {
+  background: var(--role-a);
+  color: #ffffff;
+  font-weight: 700;
+}
 
-.role-label-desktop { display: inline; }
-.role-label-mobile { display: none; }
+.auction-role-btn.role-pill-c.is-active {
+  background: var(--role-c);
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.auction-role-btn.role-pill-d.is-active {
+  background: var(--role-d);
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.auction-role-btn.role-pill-p.is-active {
+  background: var(--role-p);
+  color: #000000;
+  font-weight: 700;
+}
+
+.role-label-desktop {
+  display: inline;
+}
+
+.role-label-mobile {
+  display: none;
+}
 
 /* Pulsanti Filtro */
 .auction-filter-btn {
@@ -201,11 +225,15 @@
 }
 
 @media (max-width: 1400px) {
-  .auction-slots-grid { grid-template-columns: repeat(2, 1fr); }
+  .auction-slots-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
-  .auction-slots-grid { grid-template-columns: 1fr; }
+  .auction-slots-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Singola Colonna Tier Slot */
@@ -229,10 +257,21 @@
   background: var(--bg-surface-elevated);
 }
 
-.slot-1-header { border-left: 2px solid #f59e0b; }
-.slot-2-header { border-left: 2px solid #3b82f6; }
-.slot-3-header { border-left: 2px solid #10b981; }
-.slot-4-header { border-left: 2px solid #a855f7; }
+.slot-1-header {
+  border-left: 2px solid #f59e0b;
+}
+
+.slot-2-header {
+  border-left: 2px solid #3b82f6;
+}
+
+.slot-3-header {
+  border-left: 2px solid #10b981;
+}
+
+.slot-4-header {
+  border-left: 2px solid #a855f7;
+}
 
 .slot-tier-title-box h3 {
   font-family: var(--font-main);
@@ -245,10 +284,21 @@
   color: #ffffff;
 }
 
-.slot-1-header h3 i { color: #f59e0b; }
-.slot-2-header h3 i { color: #3b82f6; }
-.slot-3-header h3 i { color: #10b981; }
-.slot-4-header h3 i { color: #a855f7; }
+.slot-1-header h3 i {
+  color: #f59e0b;
+}
+
+.slot-2-header h3 i {
+  color: #3b82f6;
+}
+
+.slot-3-header h3 i {
+  color: #10b981;
+}
+
+.slot-4-header h3 i {
+  color: #a855f7;
+}
 
 .slot-tier-desc {
   font-size: 0.65rem;
@@ -283,7 +333,7 @@
 .slot-player-card {
   background: var(--bg-surface-elevated);
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-xs);
+  border-radius: var(--radius-xl);
   padding: 6px 10px;
   display: flex;
   flex-direction: row;
@@ -376,8 +426,13 @@
   transform: scale(1.15);
 }
 
-.slot-availability-dot-btn.is-available { color: var(--accent-success); }
-.slot-availability-dot-btn.is-taken { color: var(--accent-red); }
+.slot-availability-dot-btn.is-available {
+  color: var(--accent-success);
+}
+
+.slot-availability-dot-btn.is-taken {
+  color: var(--accent-red);
+}
 
 .slot-appetibilita-box {
   display: inline-flex;
@@ -456,8 +511,13 @@
   margin-left: 2px;
 }
 
-.slot-stat-pill.stat-gol { color: var(--accent-success); }
-.slot-stat-pill.stat-ass { color: #3b82f6; }
+.slot-stat-pill.stat-gol {
+  color: var(--accent-success);
+}
+
+.slot-stat-pill.stat-ass {
+  color: #3b82f6;
+}
 
 .slot-specialist-chip {
   font-size: 0.65rem;
@@ -507,8 +567,15 @@
   flex-shrink: 0;
 }
 
-.slot-availability-btn.is-available { color: var(--accent-success); border-color: rgba(34, 197, 94, 0.3); }
-.slot-availability-btn.is-taken { color: var(--accent-red); border-color: rgba(229, 57, 53, 0.3); }
+.slot-availability-btn.is-available {
+  color: var(--accent-success);
+  border-color: rgba(34, 197, 94, 0.3);
+}
+
+.slot-availability-btn.is-taken {
+  color: var(--accent-red);
+  border-color: rgba(229, 57, 53, 0.3);
+}
 
 .auction-filter-btn.fav-filter-btn.is-active {
   background: rgba(245, 158, 11, 0.2);

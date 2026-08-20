@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#f6f6f8" />
+  <title>Giocatori — Asta</title>
+  <style>
+    :root {
+      --canvas: #f6f6f8;
+      --paper: #ffffff;
+      --ink: #101014;
+      --body: #36363d;
+      --muted: #85858e;
+      --line: #e9e9ed;
+      --soft: #f3f3f5;
+      --green: #4a9b58;
+      --green-bg: #edf8ed;
+      --red: #cf555d;
+      --red-bg: #fcedee;
+      --role-bg: #f0f0f3;
+      --violet: #7560b9;
+      --violet-bg: #f3f1fb;
+      --card-shadow: 0 2px 10px rgba(18, 18, 25, .035);
+      --floating-shadow: 0 7px 24px rgba(18, 18, 25, .11);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-width: 320px;
+      margin: 0;
+      color: var(--ink);
+      background: #e7e7eb;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .app {
+      width: min(100%, 430px);
+      min-height: 100svh;
+      margin: 0 auto;
+      padding: max(19px, env(safe-area-inset-top)) 13px calc(104px + env(safe-area-inset-bottom));
+      background: var(--canvas);
+    }
+
+    .topbar {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 7px 3px 22px;
+    }
+
+    .context {
+      margin: 0 0 5px;
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 580;
+      line-height: 1;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 25px;
+      font-weight: 780;
+      letter-spacing: -.065em;
+      line-height: .98;
+    }
+
+    .circle-button {
+      display: grid;
+      width: 39px;
+      height: 39px;
+      place-items: center;
+      color: var(--ink);
+      background: var(--paper);
+      border: 0;
+      border-radius: 50%;
+      box-shadow: var(--card-shadow);
+      font-size: 16px;
+    }
+
+    .search {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      height: 44px;
+      padding: 0 14px;
+      margin-bottom: 12px;
+      color: var(--muted);
+      background: var(--paper);
+      border-radius: 14px;
+      box-shadow: var(--card-shadow);
+    }
+
+    .search-icon {
+      width: 16px;
+      height: 16px;
+      color: var(--body);
+    }
+
+    .search-label {
+      font-size: 12px;
+      font-weight: 520;
+    }
+
+    .filters {
+      display: flex;
+      gap: 7px;
+      overflow-x: auto;
+      padding: 1px 1px 5px;
+      margin: 0 0 24px;
+      scrollbar-width: none;
+    }
+
+    .filters::-webkit-scrollbar {
+      display: none;
+    }
+
+    .filter {
+      height: 30px;
+      flex: 0 0 auto;
+      padding: 0 12px;
+      color: var(--body);
+      background: transparent;
+      border: 1px solid #dedee4;
+      border-radius: 99px;
+      font-size: 10px;
+      font-weight: 670;
+    }
+
+    .filter.active {
+      color: #fff;
+      background: var(--ink);
+      border-color: var(--ink);
+    }
+
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      padding: 0 3px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+
+    .section-header h2 {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 760;
+      letter-spacing: -.035em;
+    }
+
+    .section-header span {
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 560;
+    }
+
+    .player-list {
+      display: grid;
+      gap: 11px;
+    }
+
+    .player-card {
+      padding: 14px;
+      background: var(--paper);
+      border-radius: 17px;
+      box-shadow: var(--card-shadow);
+    }
+
+    .player-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .avatar {
+      display: grid;
+      width: 38px;
+      height: 38px;
+      flex: 0 0 38px;
+      place-items: center;
+      color: var(--body);
+      background: var(--soft);
+      border-radius: 11px;
+      font-size: 11px;
+      font-weight: 830;
+      letter-spacing: -.04em;
+    }
+
+    .identity {
+      min-width: 0;
+      flex: 1;
+    }
+
+    .player-name {
+      overflow: hidden;
+      margin: 0;
+      font-size: 14px;
+      font-weight: 780;
+      letter-spacing: -.025em;
+      line-height: 1.15;
+      text-overflow: ellipsis;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .player-meta {
+      display: flex;
+      gap: 5px;
+      overflow: hidden;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 540;
+      line-height: 1;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .separator {
+      color: #c0c0c7;
+    }
+
+    .availability {
+      display: grid;
+      width: 26px;
+      height: 26px;
+      flex: 0 0 26px;
+      place-items: center;
+      border-radius: 50%;
+    }
+
+    .availability svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    .available {
+      color: var(--green);
+      background: var(--green-bg);
+    }
+
+    .taken {
+      color: var(--red);
+      background: var(--red-bg);
+    }
+
+    .core-metrics {
+      display: grid;
+      grid-template-columns: 1.1fr 1.05fr .66fr 1.15fr;
+      gap: 4px;
+      padding: 13px 0 12px;
+      margin-top: 13px;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .metric {
+      min-width: 0;
+    }
+
+    .metric-value {
+      display: flex;
+      align-items: center;
+      min-height: 18px;
+      color: var(--ink);
+      font-size: 15px;
+      font-weight: 790;
+      letter-spacing: -.04em;
+      line-height: 1;
+      white-space: nowrap;
+    }
+
+    .metric-label {
+      display: block;
+      overflow: hidden;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 8.5px;
+      font-weight: 620;
+      letter-spacing: .01em;
+      line-height: 1;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .metric-value.elite {
+      color: var(--green);
+    }
+
+    .role {
+      display: grid;
+      width: 23px;
+      height: 19px;
+      place-items: center;
+      color: var(--body);
+      background: var(--role-bg);
+      border-radius: 6px;
+      font-size: 10px;
+      font-weight: 860;
+    }
+
+    .set-pieces {
+      display: flex;
+      align-items: center;
+      min-height: 18px;
+      color: var(--body);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: -.02em;
+      white-space: nowrap;
+    }
+
+    .data-rail {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding-top: 11px;
+    }
+
+    .market-list {
+      display: flex;
+      flex: 0 0 auto;
+      gap: 5px;
+    }
+
+    .market {
+      display: flex;
+      align-items: baseline;
+      gap: 3px;
+      padding: 5px 7px;
+      background: var(--soft);
+      border-radius: 7px;
+      line-height: 1;
+    }
+
+    .market label {
+      color: var(--muted);
+      font-size: 9px;
+      font-weight: 620;
+    }
+
+    .market strong {
+      font-size: 11px;
+      font-weight: 810;
+    }
+
+    .season {
+      display: flex;
+      justify-content: flex-end;
+      gap: 6px;
+      min-width: 0;
+      overflow: hidden;
+    }
+
+    .season span {
+      color: var(--muted);
+      font-size: 9px;
+      font-weight: 600;
+      line-height: 1;
+      white-space: nowrap;
+    }
+
+    .season strong {
+      color: var(--ink);
+      font-size: 10px;
+      font-weight: 800;
+    }
+
+    .duel {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 8px;
+      margin-top: 10px;
+      color: var(--violet);
+      background: var(--violet-bg);
+      border-radius: 99px;
+      font-size: 9px;
+      font-weight: 680;
+      line-height: 1;
+    }
+
+    .duel svg {
+      width: 11px;
+      height: 11px;
+    }
+
+    .bottom-area {
+      position: fixed;
+      z-index: 5;
+      bottom: 0;
+      left: 50%;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      width: min(100%, 430px);
+      padding: 10px 13px max(10px, env(safe-area-inset-bottom));
+      background: linear-gradient(transparent, rgba(246, 246, 248, .88) 25%, rgba(246, 246, 248, .98));
+      transform: translateX(-50%);
+    }
+
+    .bottom-nav {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: space-around;
+      height: 49px;
+      background: rgba(255, 255, 255, .96);
+      border-radius: 99px;
+      box-shadow: var(--floating-shadow);
+    }
+
+    .nav-item {
+      display: grid;
+      width: 42px;
+      height: 38px;
+      place-items: center;
+      color: #62626b;
+      border-radius: 13px;
+    }
+
+    .nav-item svg {
+      width: 17px;
+      height: 17px;
+      stroke-width: 1.8;
+    }
+
+    .nav-item.active {
+      color: #fff;
+      background: var(--ink);
+    }
+
+    .add-button {
+      display: grid;
+      width: 49px;
+      height: 49px;
+      flex: 0 0 49px;
+      place-items: center;
+      color: var(--ink);
+      background: var(--paper);
+      border: 0;
+      border-radius: 50%;
+      box-shadow: var(--floating-shadow);
+      font-size: 23px;
+      font-weight: 370;
+    }
+
+    svg {
+      fill: none;
+      stroke: currentColor;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    @media (max-width: 355px) {
+      .app {
+        padding-inline: 10px;
+      }
+
+      .player-card {
+        padding: 12px;
+      }
+
+      .season {
+        gap: 4px;
+      }
+
+      .season span {
+        font-size: 8.3px;
+      }
+
+      .market {
+        padding-inline: 6px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <p class="context">Asta 2026/27 · Serie A</p>
+        <h1>INTER</h1>
+      </div><button class="circle-button" type="button" aria-label="Notifiche">⇄</button>
+    </header>
+    <div class="search" role="search" aria-label="Cerca giocatori"><svg class="search-icon" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="6.5" />
+        <path d="m16 16 4 4" />
+      </svg><span class="search-label">Cerca giocatore o squadra</span></div>
+    <nav class="filters" aria-label="Filtri giocatori"><button class="filter active" type="button">Tutti ·
+        145</button><button class="filter" type="button">ATT</button><button class="filter"
+        type="button">CEN</button><button class="filter" type="button">DIF</button>
+      <button class="filter" type="button">POR</button>
+    </nav>
+
+    <div class="section-header">
+      <h2>Attaccanti</h2><span>4-2-3-1</span>
+    </div>
+
+    <section class="player-list" aria-label="Elenco giocatori">
+      <article class="player-card">
+        <header class="player-top">
+          <div class="avatar">LM</div>
+          <div class="identity">
+            <h3 class="player-name">Lautaro Martinez</h3>
+            <div class="player-meta"><span>Inter</span><span class="separator">·</span><span>Titolarissimo</span></div>
+          </div><span class="availability available" title="Disponibile"><svg viewBox="0 0 24 24">
+              <path d="m5 12 4 4L19 6" />
+            </svg></span>
+        </header>
+        <div class="core-metrics">
+          <div class="metric">
+            <div class="metric-value elite">88</div><span class="metric-label">Appetibilità</span>
+          </div>
+          <div class="metric">
+            <div class="metric-value">95%</div><span class="metric-label">Titolarità</span>
+          </div>
+          <div class="metric"><span class="role">A</span><span class="metric-label">Ruolo</span></div>
+          <div class="metric">
+            <div class="set-pieces">Rig. · Pun.</div><span class="metric-label">Piazzati</span>
+          </div>
+        </div>
+        <div class="data-rail">
+          <div class="market-list">
+            <div class="market"><label>QtA</label><strong>38</strong></div>
+            <div class="market"><label>FVM</label><strong>310</strong></div>
+          </div>
+          <div class="season"><span>FM <strong>8.42</strong></span><span>MV <strong>6.70</strong></span><span>PG
+              <strong>34</strong></span><span>G <strong>24</strong></span><span>A <strong>6</strong></span></div>
+        </div>
+        <span class="duel"><svg viewBox="0 0 24 24">
+            <path d="M12 3v18M6 6h12M5 6l-3 7h7L6 6Zm13 0-3 7h7l-3-7Z" />
+          </svg>Ballottaggio · 60% vs Taremi</span>
+      </article>
+
+      <article class="player-card">
+        <header class="player-top">
+          <div class="avatar">DV</div>
+          <div class="identity">
+            <h3 class="player-name">Dusan Vlahovic</h3>
+            <div class="player-meta"><span>Juventus</span><span class="separator">·</span><span>Titolare</span></div>
+          </div><span class="availability available" title="Disponibile"><svg viewBox="0 0 24 24">
+              <path d="m5 12 4 4L19 6" />
+            </svg></span>
+        </header>
+        <div class="core-metrics">
+          <div class="metric">
+            <div class="metric-value elite">82</div><span class="metric-label">Appetibilità</span>
+          </div>
+          <div class="metric">
+            <div class="metric-value">89%</div><span class="metric-label">Titolarità</span>
+          </div>
+          <div class="metric"><span class="role">A</span><span class="metric-label">Ruolo</span></div>
+          <div class="metric">
+            <div class="set-pieces">Rig.</div><span class="metric-label">Piazzati</span>
+          </div>
+        </div>
+        <div class="data-rail">
+          <div class="market-list">
+            <div class="market"><label>QtA</label><strong>34</strong></div>
+            <div class="market"><label>FVM</label><strong>277</strong></div>
+          </div>
+          <div class="season"><span>FM <strong>7.68</strong></span><span>MV <strong>6.42</strong></span><span>PG
+              <strong>29</strong></span><span>G <strong>16</strong></span><span>A <strong>4</strong></span></div>
+        </div>
+      </article>
+
+      <article class="player-card">
+        <header class="player-top">
+          <div class="avatar">TK</div>
+          <div class="identity">
+            <h3 class="player-name">Teun Koopmeiners</h3>
+            <div class="player-meta"><span>Juventus</span><span class="separator">·</span><span>Titolare</span></div>
+          </div><span class="availability taken" title="Preso"><svg viewBox="0 0 24 24">
+              <path d="m7 7 10 10M17 7 7 17" />
+            </svg></span>
+        </header>
+        <div class="core-metrics">
+          <div class="metric">
+            <div class="metric-value">74</div><span class="metric-label">Appetibilità</span>
+          </div>
+          <div class="metric">
+            <div class="metric-value">90%</div><span class="metric-label">Titolarità</span>
+          </div>
+          <div class="metric"><span class="role">C</span><span class="metric-label">Ruolo</span></div>
+          <div class="metric">
+            <div class="set-pieces">Pun. · Cor.</div><span class="metric-label">Piazzati</span>
+          </div>
+        </div>
+        <div class="data-rail">
+          <div class="market-list">
+            <div class="market"><label>QtA</label><strong>28</strong></div>
+            <div class="market"><label>FVM</label><strong>225</strong></div>
+          </div>
+          <div class="season"><span>FM <strong>7.12</strong></span><span>MV <strong>6.35</strong></span><span>PG
+              <strong>32</strong></span><span>G <strong>8</strong></span><span>A <strong>7</strong></span></div>
+        </div>
+      </article>
+
+      <article class="player-card">
+        <header class="player-top">
+          <div class="avatar">AB</div>
+          <div class="identity">
+            <h3 class="player-name">Alessandro Buongiorno</h3>
+            <div class="player-meta"><span>Napoli</span><span class="separator">·</span><span>Titolare</span></div>
+          </div><span class="availability available" title="Disponibile"><svg viewBox="0 0 24 24">
+              <path d="m5 12 4 4L19 6" />
+            </svg></span>
+        </header>
+        <div class="core-metrics">
+          <div class="metric">
+            <div class="metric-value">68</div><span class="metric-label">Appetibilità</span>
+          </div>
+          <div class="metric">
+            <div class="metric-value">87%</div><span class="metric-label">Titolarità</span>
+          </div>
+          <div class="metric"><span class="role">D</span><span class="metric-label">Ruolo</span></div>
+          <div class="metric">
+            <div class="set-pieces">—</div><span class="metric-label">Piazzati</span>
+          </div>
+        </div>
+        <div class="data-rail">
+          <div class="market-list">
+            <div class="market"><label>QtA</label><strong>16</strong></div>
+            <div class="market"><label>FVM</label><strong>126</strong></div>
+          </div>
+          <div class="season"><span>FM <strong>6.48</strong></span><span>MV <strong>6.21</strong></span><span>PG
+              <strong>30</strong></span><span>G <strong>3</strong></span><span>A <strong>1</strong></span></div>
+        </div>
+      </article>
+    </section>
+
+    <div class="section-header">
+      <h2>Centrocampisti</h2>
+    </div>
+
+    <section class="player-list" aria-label="Elenco giocatori">
+      <article class="player-card">
+        <header class="player-top">
+          <div class="avatar">LM</div>
+          <div class="identity">
+            <h3 class="player-name">Lautaro Martinez</h3>
+            <div class="player-meta"><span>Inter</span><span class="separator">·</span><span>Titolarissimo</span></div>
+          </div><span class="availability available" title="Disponibile"><svg viewBox="0 0 24 24">
+              <path d="m5 12 4 4L19 6" />
+            </svg></span>
+        </header>
+        <div class="core-metrics">
+          <div class="metric">
+            <div class="metric-value elite">88</div><span class="metric-label">Appetibilità</span>
+          </div>
+          <div class="metric">
+            <div class="metric-value">95%</div><span class="metric-label">Titolarità</span>
+          </div>
+          <div class="metric"><span class="role">A</span><span class="metric-label">Ruolo</span></div>
+          <div class="metric">
+            <div class="set-pieces">Rig. · Pun.</div><span class="metric-label">Piazzati</span>
+          </div>
+        </div>
+        <div class="data-rail">
+          <div class="market-list">
+            <div class="market"><label>QtA</label><strong>38</strong></div>
+            <div class="market"><label>FVM</label><strong>310</strong></div>
+          </div>
+          <div class="season"><span>FM <strong>8.42</strong></span><span>MV <strong>6.70</strong></span><span>PG
+              <strong>34</strong></span><span>G <strong>24</strong></span><span>A <strong>6</strong></span></div>
+        </div>
+        <span class="duel"><svg viewBox="0 0 24 24">
+            <path d="M12 3v18M6 6h12M5 6l-3 7h7L6 6Zm13 0-3 7h7l-3-7Z" />
+          </svg>Ballottaggio · 60% vs Taremi</span>
+      </article>
+
+      <article class="player-card">
+        <header class="player-top">
+          <div class="avatar"></div>
+          <div class="identity">
+            <h3 class="player-name">Lautaro Martinez</h3>
+            <div class="player-meta"><span>Inter</span><span class="separator">·</span><span>Titolarissimo</span></div>
+          </div><span class="availability available" title="Disponibile"><svg viewBox="0 0 24 24">
+              <path d="m5 12 4 4L19 6" />
+            </svg></span>
+        </header>
+        <div class="core-metrics">
+          <div class="metric">
+            <div class="metric-value elite">88</div><span class="metric-label">Appetibilità</span>
+          </div>
+          <div class="metric">
+            <div class="metric-value">95%</div><span class="metric-label">Titolarità</span>
+          </div>
+          <div class="metric"><span class="role">A</span><span class="metric-label">Ruolo</span></div>
+          <div class="metric">
+            <div class="set-pieces">Rig. · Pun.</div><span class="metric-label">Piazzati</span>
+          </div>
+        </div>
+        <div class="data-rail">
+          <div class="market-list">
+            <div class="market"><label>QtA</label><strong>38</strong></div>
+            <div class="market"><label>FVM</label><strong>310</strong></div>
+          </div>
+          <div class="season"><span>FM <strong>8.42</strong></span><span>MV <strong>6.70</strong></span><span>PG
+              <strong>34</strong></span><span>G <strong>24</strong></span><span>A <strong>6</strong></span></div>
+        </div>
+        <span class="duel"><svg viewBox="0 0 24 24">
+            <path d="M12 3v18M6 6h12M5 6l-3 7h7L6 6Zm13 0-3 7h7l-3-7Z" />
+          </svg>Ballottaggio · 60% vs Taremi</span>
+      </article>
+    </section>
+  </main>
+
+
+
+  <div class="bottom-area">
+    <nav class="bottom-nav" aria-label="Navigazione principale"><span class="nav-item" aria-label="Home"><svg
+          viewBox="0 0 24 24">
+          <path d="m3 10 9-7 9 7v10H3z" />
+          <path d="M9 20v-6h6v6" />
+        </svg></span><span class="nav-item active" aria-label="Giocatori"><svg viewBox="0 0 24 24">
+          <circle cx="12" cy="7" r="3" />
+          <path d="M5 21c.8-4.2 3.1-6 7-6s6.2 1.8 7 6" />
+        </svg></span><span class="nav-item" aria-label="Rosa"><svg viewBox="0 0 24 24">
+          <path d="M5 7h14M5 12h14M5 17h14" />
+        </svg></span><span class="nav-item" aria-label="Profilo"><svg viewBox="0 0 24 24">
+          <circle cx="12" cy="8" r="4" />
+          <path d="M4 21c1.2-4.2 3.9-6 8-6s6.8 1.8 8 6" />
+        </svg></span></nav><button class="add-button" type="button" aria-label="Aggiungi">+</button>
+  </div>
+</body>
+
+</html>
