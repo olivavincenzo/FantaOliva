@@ -9,10 +9,12 @@ import { deepClone, generateId } from './utils/helpers.js';
 
 const STORAGE_KEY = 'fantaoliva_app_data_v2026_27_master';
 const SNAPSHOTS_KEY = 'fantaoliva_snapshots_v2026_27_master';
+const CUSTOM_CATALOG_KEY = 'fantaoliva_custom_catalog_v2026_27';
 
 class Store {
   constructor() {
     this.teams = [];
+    this.playerCatalog = [];
     this.currentTeamId = 'inter';
     this.selectedPlayerId = null;
     this.selectedSlotId = null;
@@ -31,6 +33,17 @@ class Store {
       const savedFavs = localStorage.getItem('fantaoliva_favorites');
       if (savedFavs) {
         this.favoritePlayerIds = new Set(JSON.parse(savedFavs));
+      }
+
+      const savedCatalog = localStorage.getItem(CUSTOM_CATALOG_KEY);
+      if (savedCatalog) {
+        try {
+          this.playerCatalog = JSON.parse(savedCatalog);
+        } catch (e) {
+          this.playerCatalog = deepClone(CSV_PLAYER_CATALOG);
+        }
+      } else {
+        this.playerCatalog = deepClone(CSV_PLAYER_CATALOG);
       }
 
       const saved = localStorage.getItem(STORAGE_KEY);
@@ -58,7 +71,17 @@ class Store {
     } catch (e) {
       console.warn('Errore nel parsing del localStorage, ripristino dati demo:', e);
       this.teams = deepClone(INITIAL_TEAMS);
+      this.playerCatalog = deepClone(CSV_PLAYER_CATALOG);
       this.saveToStorage();
+    }
+  }
+
+  saveCatalog(catalog = null) {
+    try {
+      if (catalog) this.playerCatalog = catalog;
+      localStorage.setItem(CUSTOM_CATALOG_KEY, JSON.stringify(this.playerCatalog));
+    } catch (e) {
+      console.error('Errore salvataggio catalogo:', e);
     }
   }
 
@@ -197,8 +220,9 @@ class Store {
   getPlayerCatalog(query = '', roleFilter = '') {
     const q = query.trim().toLowerCase();
     const currentSquadIds = new Set(this.getAllPlayers().map(p => (p.csvId || p.name).toLowerCase()));
+    const catalog = (this.playerCatalog && this.playerCatalog.length > 0) ? this.playerCatalog : CSV_PLAYER_CATALOG;
 
-    return CSV_PLAYER_CATALOG.filter(p => {
+    return catalog.filter(p => {
       // Escludi giocatori già presenti nella squadra attiva
       if (currentSquadIds.has((p.csvId || p.name).toLowerCase())) return false;
 
@@ -280,8 +304,9 @@ class Store {
     }
 
     // 3. Fallback sul catalogo completo CSV
-    if (typeof CSV_PLAYER_CATALOG !== 'undefined' && Array.isArray(CSV_PLAYER_CATALOG)) {
-      const cat = CSV_PLAYER_CATALOG.find(p => p && p.id === playerId);
+    const catalog = (this.playerCatalog && this.playerCatalog.length > 0) ? this.playerCatalog : CSV_PLAYER_CATALOG;
+    if (typeof catalog !== 'undefined' && Array.isArray(catalog)) {
+      const cat = catalog.find(p => p && p.id === playerId);
       if (cat) return cat;
     }
 
@@ -339,9 +364,10 @@ class Store {
       }
     }
 
-    // 2. Se CSV_PLAYER_CATALOG è presente, usa il catalogo completo come base
-    const baseList = (typeof CSV_PLAYER_CATALOG !== 'undefined' && Array.isArray(CSV_PLAYER_CATALOG) && CSV_PLAYER_CATALOG.length > 0)
-      ? CSV_PLAYER_CATALOG
+    // 2. Se playerCatalog è presente, usa il catalogo completo come base
+    const catalog = (this.playerCatalog && this.playerCatalog.length > 0) ? this.playerCatalog : CSV_PLAYER_CATALOG;
+    const baseList = (typeof catalog !== 'undefined' && Array.isArray(catalog) && catalog.length > 0)
+      ? catalog
       : [];
 
     const all = [];
@@ -973,7 +999,8 @@ class Store {
       }
     }
 
-    const allPlayers = CSV_PLAYER_CATALOG.map(catPlayer => {
+    const catalog = (this.playerCatalog && this.playerCatalog.length > 0) ? this.playerCatalog : CSV_PLAYER_CATALOG;
+    const allPlayers = catalog.map(catPlayer => {
       const mod = modifiedMap.get(catPlayer.id);
       const p = mod ? { ...catPlayer, ...mod } : { ...catPlayer };
 

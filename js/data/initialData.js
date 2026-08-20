@@ -57,7 +57,7 @@ export const INITIAL_TEAMS = [
         "classicRole": "P",
         "mantraRole": "Por",
         "fantaRole": "P",
-        "appetibilita": 86,
+        "appetibilita": 68,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -79,7 +79,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 52
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 97,
           "fantamedia": 5.58,
           "mediaVoto": 6.36,
           "pv": 37,
@@ -105,7 +105,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "atalanta_sportiello_4",
           "atalanta_vismara_7545"
-        ]
+        ],
+        "slotId": "pos_1"
       },
       "pos_2": {
         "id": "atalanta_scalvini_5526",
@@ -118,8 +119,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Dc",
         "fantaRole": "D",
-        "appetibilita": 49,
-        "status": "tit_sicuro",
+        "appetibilita": 36,
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -140,7 +141,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 28
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 63,
           "fantamedia": 6.44,
           "mediaVoto": 6.06,
           "pv": 24,
@@ -166,7 +167,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "atalanta_hien_6046",
           "atalanta_bernasconi_7219"
-        ]
+        ],
+        "slotId": "pos_2"
       },
       "pos_3": {
         "id": "atalanta_zappacosta_554",
@@ -175,12 +177,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Zappacosta",
         "teamName": "Atalanta",
         "teamId": "atalanta",
-        "role": "DC",
+        "role": "TD",
         "classicRole": "D",
         "mantraRole": "Dd;E",
         "fantaRole": "D",
-        "appetibilita": 41,
-        "status": "ballottaggio",
+        "appetibilita": 31,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -201,7 +203,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 24
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 92,
           "fantamedia": 6.3,
           "mediaVoto": 6.06,
           "pv": 35,
@@ -227,7 +229,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "atalanta_hien_6046",
           "atalanta_bernasconi_7219"
-        ]
+        ],
+        "slotId": "pos_3"
       },
       "pos_4": {
         "id": "atalanta_kristensen_t__6485",
@@ -240,8 +243,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Dd;Dc",
         "fantaRole": "D",
-        "appetibilita": 35,
-        "status": "ballottaggio",
+        "appetibilita": 26,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -262,7 +265,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 22
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 74,
           "fantamedia": 6.23,
           "mediaVoto": 5.98,
           "pv": 28,
@@ -288,7 +291,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "atalanta_hien_6046",
           "atalanta_bernasconi_7219"
-        ]
+        ],
+        "slotId": "pos_4"
       },
       "pos_5": {
         "id": "atalanta_ederson_d_s__5792",
@@ -297,11 +301,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Ederson D.S.",
         "teamName": "Atalanta",
         "teamId": "atalanta",
-        "role": "E",
+        "role": "M",
         "classicRole": "C",
         "mantraRole": "M;C",
         "fantaRole": "C",
-        "appetibilita": 72,
+        "appetibilita": 59,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": true,
@@ -323,7 +327,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 48
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 79,
           "fantamedia": 6.43,
           "mediaVoto": 6.25,
           "pv": 30,
@@ -348,7 +352,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "atalanta_sulemana_i__6024"
-        ]
+        ],
+        "slotId": "pos_5"
       },
       "pos_6": {
         "id": "atalanta_samardzic_5119",
@@ -357,12 +362,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Samardzic",
         "teamName": "Atalanta",
         "teamId": "atalanta",
-        "role": "CC",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C;T",
         "fantaRole": "C",
-        "appetibilita": 68,
-        "status": "tit_sicuro",
+        "appetibilita": 55,
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -383,7 +388,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 42
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 55,
           "fantamedia": 6.29,
           "mediaVoto": 5.93,
           "pv": 21,
@@ -408,7 +413,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "atalanta_sulemana_i__6024"
-        ]
+        ],
+        "slotId": "pos_6"
       },
       "pos_7": {
         "id": "atalanta_pasalic_2077",
@@ -417,11 +423,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Pasalic",
         "teamName": "Atalanta",
         "teamId": "atalanta",
-        "role": "CC",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C;T",
         "fantaRole": "C",
-        "appetibilita": 52,
+        "appetibilita": 42,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -443,7 +449,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 32
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 82,
           "fantamedia": 6.27,
           "mediaVoto": 5.94,
           "pv": 31,
@@ -468,7 +474,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "atalanta_sulemana_i__6024"
-        ]
+        ],
+        "slotId": "pos_7"
       },
       "pos_8": {
         "id": "atalanta_gaetano_4364",
@@ -477,12 +484,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Gaetano",
         "teamName": "Atalanta",
         "teamId": "atalanta",
-        "role": "E",
+        "role": "M",
         "classicRole": "C",
         "mantraRole": "M;C",
         "fantaRole": "C",
-        "appetibilita": 39,
-        "status": "ballottaggio",
+        "appetibilita": 31,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -503,7 +510,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 27
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 84,
           "fantamedia": 6.31,
           "mediaVoto": 6.06,
           "pv": 32,
@@ -528,7 +535,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "atalanta_sulemana_i__6024"
-        ]
+        ],
+        "slotId": "pos_8"
       },
       "pos_9": {
         "id": "atalanta_zalewski_5422",
@@ -537,12 +545,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Zalewski",
         "teamName": "Atalanta",
         "teamId": "atalanta",
-        "role": "COC",
+        "role": "W",
         "classicRole": "C",
         "mantraRole": "W",
         "fantaRole": "C",
-        "appetibilita": 34,
-        "status": "ballottaggio",
+        "appetibilita": 27,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -563,7 +571,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 19
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 82,
           "fantamedia": 6.4,
           "mediaVoto": 6.1,
           "pv": 31,
@@ -588,7 +596,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "atalanta_sulemana_i__6024"
-        ]
+        ],
+        "slotId": "pos_9"
       },
       "pos_10": {
         "id": "atalanta_de_roon_22",
@@ -597,12 +606,12 @@ export const INITIAL_TEAMS = [
         "displayName": "De Roon",
         "teamName": "Atalanta",
         "teamId": "atalanta",
-        "role": "COC",
+        "role": "M",
         "classicRole": "C",
         "mantraRole": "M;C",
         "fantaRole": "C",
-        "appetibilita": 20,
-        "status": "ballottaggio",
+        "appetibilita": 16,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -623,7 +632,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 14
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 89,
           "fantamedia": 6,
           "mediaVoto": 5.97,
           "pv": 34,
@@ -648,7 +657,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "atalanta_sulemana_i__6024"
-        ]
+        ],
+        "slotId": "pos_10"
       },
       "pos_11": {
         "id": "atalanta_scamacca_2137",
@@ -662,7 +672,7 @@ export const INITIAL_TEAMS = [
         "mantraRole": "Pc",
         "fantaRole": "A",
         "appetibilita": 100,
-        "status": "tit_sicuro",
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": true,
         "isFreeKickTaker": false,
@@ -683,7 +693,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 128
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 58,
           "fantamedia": 7.55,
           "mediaVoto": 6.18,
           "pv": 22,
@@ -709,7 +719,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "atalanta_de_ketelaere_5995",
           "atalanta_krstovic_6435"
-        ]
+        ],
+        "slotId": "pos_11"
       }
     },
     "bench": [
@@ -1497,8 +1508,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "P",
         "mantraRole": "Por",
         "fantaRole": "P",
-        "appetibilita": 59,
-        "status": "tit_sicuro",
+        "appetibilita": 48,
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -1519,7 +1530,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 37
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 47,
           "fantamedia": 5.28,
           "mediaVoto": 6.19,
           "pv": 18,
@@ -1545,7 +1556,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "bologna_happonen_7533",
           "bologna_pessina_mas__7172"
-        ]
+        ],
+        "slotId": "pos_1"
       },
       "pos_2": {
         "id": "bologna_miranda_j__4734",
@@ -1554,12 +1566,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Miranda J.",
         "teamName": "Bologna",
         "teamId": "bologna",
-        "role": "TD",
+        "role": "TS",
         "classicRole": "D",
         "mantraRole": "Ds;E",
         "fantaRole": "D",
-        "appetibilita": 41,
-        "status": "ballottaggio",
+        "appetibilita": 31,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -1580,7 +1592,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 24
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 82,
           "fantamedia": 6.1,
           "mediaVoto": 6,
           "pv": 31,
@@ -1606,7 +1618,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "bologna_vitik_7068",
           "bologna_casale_5498"
-        ]
+        ],
+        "slotId": "pos_2"
       },
       "pos_3": {
         "id": "bologna_zortea_4433",
@@ -1615,12 +1628,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Zortea",
         "teamName": "Bologna",
         "teamId": "bologna",
-        "role": "DC",
+        "role": "TD",
         "classicRole": "D",
         "mantraRole": "Dd;E",
         "fantaRole": "D",
-        "appetibilita": 32,
-        "status": "ballottaggio",
+        "appetibilita": 25,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -1641,7 +1654,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 19
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 74,
           "fantamedia": 5.89,
           "mediaVoto": 5.86,
           "pv": 28,
@@ -1667,7 +1680,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "bologna_vitik_7068",
           "bologna_casale_5498"
-        ]
+        ],
+        "slotId": "pos_3"
       },
       "pos_4": {
         "id": "bologna_heggem_7212",
@@ -1680,8 +1694,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Ds;Dc",
         "fantaRole": "D",
-        "appetibilita": 27,
-        "status": "ballottaggio",
+        "appetibilita": 20,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -1702,7 +1716,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 17
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 66,
           "fantamedia": 5.8,
           "mediaVoto": 5.84,
           "pv": 25,
@@ -1728,7 +1742,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "bologna_vitik_7068",
           "bologna_casale_5498"
-        ]
+        ],
+        "slotId": "pos_4"
       },
       "pos_5": {
         "id": "bologna_holm_5678",
@@ -1737,12 +1752,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Holm",
         "teamName": "Bologna",
         "teamId": "bologna",
-        "role": "TS",
+        "role": "TD",
         "classicRole": "D",
         "mantraRole": "Dd;E",
         "fantaRole": "D",
-        "appetibilita": 23,
-        "status": "ballottaggio",
+        "appetibilita": 17,
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -1763,7 +1778,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 13
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 42,
           "fantamedia": 6.44,
           "mediaVoto": 6.09,
           "pv": 16,
@@ -1789,7 +1804,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "bologna_vitik_7068",
           "bologna_casale_5498"
-        ]
+        ],
+        "slotId": "pos_5"
       },
       "pos_6": {
         "id": "bologna_orsolini_2167",
@@ -1798,7 +1814,7 @@ export const INITIAL_TEAMS = [
         "displayName": "Orsolini",
         "teamName": "Bologna",
         "teamId": "bologna",
-        "role": "CDC",
+        "role": "W",
         "classicRole": "C",
         "mantraRole": "W;A",
         "fantaRole": "C",
@@ -1824,7 +1840,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 200
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 89,
           "fantamedia": 6.76,
           "mediaVoto": 6.06,
           "pv": 34,
@@ -1850,7 +1866,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "bologna_ferguson_5858",
           "bologna_pobega_5298"
-        ]
+        ],
+        "slotId": "pos_6"
       },
       "pos_7": {
         "id": "bologna_rowe_6844",
@@ -1859,11 +1876,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Rowe",
         "teamName": "Bologna",
         "teamId": "bologna",
-        "role": "CDC",
+        "role": "T",
         "classicRole": "C",
         "mantraRole": "W;T",
         "fantaRole": "C",
-        "appetibilita": 61,
+        "appetibilita": 48,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -1885,7 +1902,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 40
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 74,
           "fantamedia": 6.59,
           "mediaVoto": 6.2,
           "pv": 28,
@@ -1911,7 +1928,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "bologna_ferguson_5858",
           "bologna_pobega_5298"
-        ]
+        ],
+        "slotId": "pos_7"
       },
       "pos_8": {
         "id": "bologna_cambiaghi_4436",
@@ -1920,12 +1938,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Cambiaghi",
         "teamName": "Bologna",
         "teamId": "bologna",
-        "role": "AD",
+        "role": "W",
         "classicRole": "C",
         "mantraRole": "W;A",
         "fantaRole": "C",
-        "appetibilita": 42,
-        "status": "tit_sicuro",
+        "appetibilita": 33,
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -1946,7 +1964,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 25
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 63,
           "fantamedia": 6.42,
           "mediaVoto": 5.98,
           "pv": 24,
@@ -1972,7 +1990,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "bologna_ferguson_5858",
           "bologna_pobega_5298"
-        ]
+        ],
+        "slotId": "pos_8"
       },
       "pos_9": {
         "id": "bologna_bernardeschi_184",
@@ -1981,12 +2000,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Bernardeschi",
         "teamName": "Bologna",
         "teamId": "bologna",
-        "role": "COC",
+        "role": "T",
         "classicRole": "C",
         "mantraRole": "W;T",
         "fantaRole": "C",
-        "appetibilita": 39,
-        "status": "ballottaggio",
+        "appetibilita": 27,
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": true,
         "isFreeKickTaker": false,
@@ -2007,7 +2026,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 21
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 63,
           "fantamedia": 6.56,
           "mediaVoto": 6.04,
           "pv": 24,
@@ -2033,7 +2052,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "bologna_ferguson_5858",
           "bologna_pobega_5298"
-        ]
+        ],
+        "slotId": "pos_9"
       },
       "pos_10": {
         "id": "bologna_odgaard_2765",
@@ -2042,12 +2062,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Odgaard",
         "teamName": "Bologna",
         "teamId": "bologna",
-        "role": "AS",
+        "role": "T",
         "classicRole": "C",
         "mantraRole": "T",
         "fantaRole": "C",
-        "appetibilita": 38,
-        "status": "ballottaggio",
+        "appetibilita": 29,
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -2068,7 +2088,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 20
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 58,
           "fantamedia": 6.61,
           "mediaVoto": 5.91,
           "pv": 22,
@@ -2094,7 +2114,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "bologna_ferguson_5858",
           "bologna_pobega_5298"
-        ]
+        ],
+        "slotId": "pos_10"
       },
       "pos_11": {
         "id": "bologna_dovbyk_6675",
@@ -2107,8 +2128,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "A",
         "mantraRole": "Pc",
         "fantaRole": "A",
-        "appetibilita": 100,
-        "status": "tit_sicuro",
+        "appetibilita": 95,
+        "status": "ballottaggio",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -2129,7 +2150,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 70
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 34,
           "fantamedia": 6.77,
           "mediaVoto": 6,
           "pv": 13,
@@ -2154,7 +2175,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "bologna_piccoli_4359"
-        ]
+        ],
+        "slotId": "pos_11"
       }
     },
     "bench": [
@@ -2942,8 +2964,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "P",
         "mantraRole": "Por",
         "fantaRole": "P",
-        "appetibilita": 46,
-        "status": "riserva",
+        "appetibilita": 35,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -2964,7 +2986,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 27
         },
         "stats": {
-          "titolarita": 40,
+          "titolarita": 100,
           "fantamedia": 4.87,
           "mediaVoto": 6.29,
           "pv": 38,
@@ -2990,7 +3012,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "cagliari_sherri_6650",
           "cagliari_radunovic_3"
-        ]
+        ],
+        "slotId": "pos_1"
       },
       "pos_2": {
         "id": "cagliari_mina_4210",
@@ -2999,12 +3022,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Mina",
         "teamName": "Cagliari",
         "teamId": "cagliari",
-        "role": "TD",
+        "role": "DC",
         "classicRole": "D",
         "mantraRole": "Dc",
         "fantaRole": "D",
-        "appetibilita": 36,
-        "status": "ballottaggio",
+        "appetibilita": 26,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -3025,7 +3048,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 20
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 68,
           "fantamedia": 6.17,
           "mediaVoto": 6,
           "pv": 26,
@@ -3051,7 +3074,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "cagliari_zappa_4461",
           "cagliari_rodriguez_ju__7268"
-        ]
+        ],
+        "slotId": "pos_2"
       },
       "pos_3": {
         "id": "cagliari_obert_5701",
@@ -3060,12 +3084,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Obert",
         "teamName": "Cagliari",
         "teamId": "cagliari",
-        "role": "DC",
+        "role": "TS",
         "classicRole": "D",
         "mantraRole": "B;Ds;E",
         "fantaRole": "D",
-        "appetibilita": 27,
-        "status": "ballottaggio",
+        "appetibilita": 18,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -3086,7 +3110,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 16
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 89,
           "fantamedia": 5.82,
           "mediaVoto": 5.88,
           "pv": 34,
@@ -3112,7 +3136,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "cagliari_zappa_4461",
           "cagliari_rodriguez_ju__7268"
-        ]
+        ],
+        "slotId": "pos_3"
       },
       "pos_4": {
         "id": "cagliari_kofler_7532",
@@ -3125,7 +3150,7 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Dc",
         "fantaRole": "D",
-        "appetibilita": 21,
+        "appetibilita": 14,
         "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -3147,7 +3172,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 11
         },
         "stats": {
-          "titolarita": 45,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -3173,7 +3198,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "cagliari_zappa_4461",
           "cagliari_rodriguez_ju__7268"
-        ]
+        ],
+        "slotId": "pos_4"
       },
       "pos_5": {
         "id": "cagliari_z__pedro_7274",
@@ -3182,12 +3208,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Zè Pedro",
         "teamName": "Cagliari",
         "teamId": "cagliari",
-        "role": "TS",
+        "role": "DC",
         "classicRole": "D",
         "mantraRole": "Dd;Dc",
         "fantaRole": "D",
-        "appetibilita": 21,
-        "status": "riserva",
+        "appetibilita": 14,
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -3208,7 +3234,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 13
         },
         "stats": {
-          "titolarita": 45,
+          "titolarita": 58,
           "fantamedia": 5.68,
           "mediaVoto": 5.77,
           "pv": 22,
@@ -3234,7 +3260,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "cagliari_zappa_4461",
           "cagliari_rodriguez_ju__7268"
-        ]
+        ],
+        "slotId": "pos_5"
       },
       "pos_6": {
         "id": "cagliari_fazzini_6010",
@@ -3243,11 +3270,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Fazzini",
         "teamName": "Cagliari",
         "teamId": "cagliari",
-        "role": "CDC",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C;T",
         "fantaRole": "C",
-        "appetibilita": 33,
+        "appetibilita": 25,
         "status": "ballottaggio",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -3269,7 +3296,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 21
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 32,
           "fantamedia": 5.83,
           "mediaVoto": 5.88,
           "pv": 12,
@@ -3295,7 +3322,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "cagliari_prati_6424",
           "cagliari_deiola_1871"
-        ]
+        ],
+        "slotId": "pos_6"
       },
       "pos_7": {
         "id": "cagliari_winks_4260",
@@ -3304,12 +3332,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Winks",
         "teamName": "Cagliari",
         "teamId": "cagliari",
-        "role": "CDC",
+        "role": "M",
         "classicRole": "C",
         "mantraRole": "M;C",
         "fantaRole": "C",
-        "appetibilita": 26,
-        "status": "ballottaggio",
+        "appetibilita": 18,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -3330,7 +3358,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 17
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -3356,7 +3384,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "cagliari_prati_6424",
           "cagliari_deiola_1871"
-        ]
+        ],
+        "slotId": "pos_7"
       },
       "pos_8": {
         "id": "cagliari_adopo_4870",
@@ -3365,12 +3394,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Adopo",
         "teamName": "Cagliari",
         "teamId": "cagliari",
-        "role": "AD",
+        "role": "M",
         "classicRole": "C",
         "mantraRole": "M;C",
         "fantaRole": "C",
-        "appetibilita": 25,
-        "status": "ballottaggio",
+        "appetibilita": 17,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -3391,7 +3420,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 16
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 100,
           "fantamedia": 5.88,
           "mediaVoto": 5.83,
           "pv": 38,
@@ -3417,7 +3446,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "cagliari_prati_6424",
           "cagliari_deiola_1871"
-        ]
+        ],
+        "slotId": "pos_8"
       },
       "pos_9": {
         "id": "cagliari_romano_7311",
@@ -3426,12 +3456,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Romano",
         "teamName": "Cagliari",
         "teamId": "cagliari",
-        "role": "COC",
+        "role": "M",
         "classicRole": "C",
         "mantraRole": "M;C",
         "fantaRole": "C",
-        "appetibilita": 22,
-        "status": "ballottaggio",
+        "appetibilita": 16,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -3452,7 +3482,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 15
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -3478,7 +3508,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "cagliari_prati_6424",
           "cagliari_deiola_1871"
-        ]
+        ],
+        "slotId": "pos_9"
       },
       "pos_10": {
         "id": "cagliari_felici_6640",
@@ -3487,12 +3518,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Felici",
         "teamName": "Cagliari",
         "teamId": "cagliari",
-        "role": "AS",
+        "role": "W",
         "classicRole": "C",
         "mantraRole": "W",
         "fantaRole": "C",
-        "appetibilita": 20,
-        "status": "riserva",
+        "appetibilita": 13,
+        "status": "ballottaggio",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -3513,7 +3544,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 8
         },
         "stats": {
-          "titolarita": 45,
+          "titolarita": 29,
           "fantamedia": 6.55,
           "mediaVoto": 6.05,
           "pv": 11,
@@ -3539,7 +3570,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "cagliari_prati_6424",
           "cagliari_deiola_1871"
-        ]
+        ],
+        "slotId": "pos_10"
       },
       "pos_11": {
         "id": "cagliari_kevin_carlos_7547",
@@ -3552,8 +3584,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "A",
         "mantraRole": "Pc",
         "fantaRole": "A",
-        "appetibilita": 76,
-        "status": "tit_sicuro",
+        "appetibilita": 61,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -3574,7 +3606,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 44
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -3600,7 +3632,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "cagliari_esposito_se__4463",
           "cagliari_maldini_4896"
-        ]
+        ],
+        "slotId": "pos_11"
       }
     },
     "bench": [
@@ -4558,7 +4591,7 @@ export const INITIAL_TEAMS = [
         "classicRole": "P",
         "mantraRole": "Por",
         "fantaRole": "P",
-        "appetibilita": 91,
+        "appetibilita": 73,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -4580,7 +4613,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 56
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 100,
           "fantamedia": 5.37,
           "mediaVoto": 6.07,
           "pv": 38,
@@ -4606,7 +4639,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "como_tornqvist_7301",
           "como_vigorito_2809"
-        ]
+        ],
+        "slotId": "pos_1"
       },
       "pos_2": {
         "id": "como_ramon_6869",
@@ -4615,11 +4649,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Ramon",
         "teamName": "Como",
         "teamId": "como",
-        "role": "TD",
+        "role": "DC",
         "classicRole": "D",
         "mantraRole": "Dc",
         "fantaRole": "D",
-        "appetibilita": 53,
+        "appetibilita": 42,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -4641,7 +4675,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 32
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 84,
           "fantamedia": 6.14,
           "mediaVoto": 6.16,
           "pv": 32,
@@ -4667,7 +4701,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "como_valle_6867",
           "como_kempf_6893"
-        ]
+        ],
+        "slotId": "pos_2"
       },
       "pos_3": {
         "id": "como_chalobah_t__5641",
@@ -4680,8 +4715,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Dd;Dc",
         "fantaRole": "D",
-        "appetibilita": 45,
-        "status": "tit_sicuro",
+        "appetibilita": 34,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -4702,7 +4737,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 28
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -4728,7 +4763,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "como_valle_6867",
           "como_kempf_6893"
-        ]
+        ],
+        "slotId": "pos_3"
       },
       "pos_4": {
         "id": "como_couto_6727",
@@ -4737,12 +4773,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Couto",
         "teamName": "Como",
         "teamId": "como",
-        "role": "DC",
+        "role": "TD",
         "classicRole": "D",
         "mantraRole": "Dd;E",
         "fantaRole": "D",
-        "appetibilita": 44,
-        "status": "tit_sicuro",
+        "appetibilita": 35,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -4763,7 +4799,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 27
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -4789,7 +4825,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "como_valle_6867",
           "como_kempf_6893"
-        ]
+        ],
+        "slotId": "pos_4"
       },
       "pos_5": {
         "id": "como_kaiki_7414",
@@ -4802,8 +4839,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Ds;E",
         "fantaRole": "D",
-        "appetibilita": 38,
-        "status": "ballottaggio",
+        "appetibilita": 30,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -4824,7 +4861,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 23
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -4850,7 +4887,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "como_valle_6867",
           "como_kempf_6893"
-        ]
+        ],
+        "slotId": "pos_5"
       },
       "pos_6": {
         "id": "como_paz_n__6875",
@@ -4859,7 +4897,7 @@ export const INITIAL_TEAMS = [
         "displayName": "Paz N.",
         "teamName": "Como",
         "teamId": "como",
-        "role": "CDC",
+        "role": "T",
         "classicRole": "C",
         "mantraRole": "T;A",
         "fantaRole": "C",
@@ -4885,7 +4923,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 250
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 92,
           "fantamedia": 7.3,
           "mediaVoto": 6.37,
           "pv": 35,
@@ -4911,7 +4949,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "como_liberali_6678",
           "como_caqueret_5036"
-        ]
+        ],
+        "slotId": "pos_6"
       },
       "pos_7": {
         "id": "como_baturina_7126",
@@ -4920,7 +4959,7 @@ export const INITIAL_TEAMS = [
         "displayName": "Baturina",
         "teamName": "Como",
         "teamId": "como",
-        "role": "CDC",
+        "role": "T",
         "classicRole": "C",
         "mantraRole": "T",
         "fantaRole": "C",
@@ -4946,7 +4985,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 100
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 66,
           "fantamedia": 7.14,
           "mediaVoto": 6.3,
           "pv": 25,
@@ -4972,7 +5011,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "como_liberali_6678",
           "como_caqueret_5036"
-        ]
+        ],
+        "slotId": "pos_7"
       },
       "pos_8": {
         "id": "como_da_cunha_5559",
@@ -4981,7 +5021,7 @@ export const INITIAL_TEAMS = [
         "displayName": "Da Cunha",
         "teamName": "Como",
         "teamId": "como",
-        "role": "AD",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C;T",
         "fantaRole": "C",
@@ -5007,7 +5047,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 90
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 92,
           "fantamedia": 6.91,
           "mediaVoto": 6.34,
           "pv": 35,
@@ -5033,7 +5073,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "como_liberali_6678",
           "como_caqueret_5036"
-        ]
+        ],
+        "slotId": "pos_8"
       },
       "pos_9": {
         "id": "como_perrone_6151",
@@ -5042,11 +5083,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Perrone",
         "teamName": "Como",
         "teamId": "como",
-        "role": "COC",
+        "role": "M",
         "classicRole": "C",
         "mantraRole": "M;C",
         "fantaRole": "C",
-        "appetibilita": 61,
+        "appetibilita": 49,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -5068,7 +5109,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 41
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 95,
           "fantamedia": 6.47,
           "mediaVoto": 6.22,
           "pv": 36,
@@ -5094,7 +5135,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "como_liberali_6678",
           "como_caqueret_5036"
-        ]
+        ],
+        "slotId": "pos_9"
       },
       "pos_10": {
         "id": "como_rodriguez_je__7129",
@@ -5103,11 +5145,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Rodriguez Je.",
         "teamName": "Como",
         "teamId": "como",
-        "role": "AS",
+        "role": "W",
         "classicRole": "C",
         "mantraRole": "W;A",
         "fantaRole": "C",
-        "appetibilita": 56,
+        "appetibilita": 42,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -5129,7 +5171,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 31
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 74,
           "fantamedia": 6.66,
           "mediaVoto": 6.25,
           "pv": 28,
@@ -5155,7 +5197,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "como_liberali_6678",
           "como_caqueret_5036"
-        ]
+        ],
+        "slotId": "pos_10"
       },
       "pos_11": {
         "id": "como_douvikas_7017",
@@ -5190,7 +5233,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 154
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 95,
           "fantamedia": 7.38,
           "mediaVoto": 6.18,
           "pv": 36,
@@ -5216,7 +5259,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "como_diao_6967",
           "como_morata_313"
-        ]
+        ],
+        "slotId": "pos_11"
       }
     },
     "bench": [
@@ -6233,7 +6277,7 @@ export const INITIAL_TEAMS = [
         "classicRole": "P",
         "mantraRole": "Por",
         "fantaRole": "P",
-        "appetibilita": 74,
+        "appetibilita": 59,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -6255,7 +6299,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 45
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 97,
           "fantamedia": 5,
           "mediaVoto": 6.24,
           "pv": 37,
@@ -6281,7 +6325,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "fiorentina_christensen_o__6403",
           "fiorentina_lezzerini_158"
-        ]
+        ],
+        "slotId": "pos_1"
       },
       "pos_2": {
         "id": "fiorentina_dod__5885",
@@ -6294,7 +6339,7 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Dd;E",
         "fantaRole": "D",
-        "appetibilita": 51,
+        "appetibilita": 39,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -6316,7 +6361,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 30
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 95,
           "fantamedia": 6.03,
           "mediaVoto": 5.99,
           "pv": 36,
@@ -6342,7 +6387,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "fiorentina_valdepenas_7294",
           "fiorentina_parisi_5449"
-        ]
+        ],
+        "slotId": "pos_2"
       },
       "pos_3": {
         "id": "fiorentina_dragusin_5365",
@@ -6355,8 +6401,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Dc",
         "fantaRole": "D",
-        "appetibilita": 44,
-        "status": "tit_sicuro",
+        "appetibilita": 35,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -6377,7 +6423,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 27
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -6403,7 +6449,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "fiorentina_valdepenas_7294",
           "fiorentina_parisi_5449"
-        ]
+        ],
+        "slotId": "pos_3"
       },
       "pos_4": {
         "id": "fiorentina_jimenez_a__6531",
@@ -6412,12 +6459,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Jimenez A.",
         "teamName": "Fiorentina",
         "teamId": "fiorentina",
-        "role": "DC",
+        "role": "TD",
         "classicRole": "D",
         "mantraRole": "Dd;Ds;E",
         "fantaRole": "D",
-        "appetibilita": 40,
-        "status": "ballottaggio",
+        "appetibilita": 30,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -6438,7 +6485,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 25
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 3,
           "fantamedia": 5,
           "mediaVoto": 5.5,
           "pv": 1,
@@ -6464,7 +6511,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "fiorentina_valdepenas_7294",
           "fiorentina_parisi_5449"
-        ]
+        ],
+        "slotId": "pos_4"
       },
       "pos_5": {
         "id": "fiorentina_viery_7410",
@@ -6473,12 +6521,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Viery",
         "teamName": "Fiorentina",
         "teamId": "fiorentina",
-        "role": "TS",
+        "role": "DC",
         "classicRole": "D",
         "mantraRole": "Ds;Dc",
         "fantaRole": "D",
-        "appetibilita": 32,
-        "status": "ballottaggio",
+        "appetibilita": 25,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -6499,7 +6547,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 21
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -6525,7 +6573,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "fiorentina_valdepenas_7294",
           "fiorentina_parisi_5449"
-        ]
+        ],
+        "slotId": "pos_5"
       },
       "pos_6": {
         "id": "fiorentina_atta_6908",
@@ -6534,7 +6583,7 @@ export const INITIAL_TEAMS = [
         "displayName": "Atta",
         "teamName": "Fiorentina",
         "teamId": "fiorentina",
-        "role": "CDC",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C;T",
         "fantaRole": "C",
@@ -6560,7 +6609,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 87
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 84,
           "fantamedia": 6.88,
           "mediaVoto": 6.36,
           "pv": 32,
@@ -6586,7 +6635,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "fiorentina_fagioli_4465",
           "fiorentina_oulai_7464"
-        ]
+        ],
+        "slotId": "pos_6"
       },
       "pos_7": {
         "id": "fiorentina_gudmundsson_a__5800",
@@ -6595,11 +6645,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Gudmundsson A.",
         "teamName": "Fiorentina",
         "teamId": "fiorentina",
-        "role": "CDC",
+        "role": "T",
         "classicRole": "C",
         "mantraRole": "T;A",
         "fantaRole": "C",
-        "appetibilita": 93,
+        "appetibilita": 79,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": true,
@@ -6621,7 +6671,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 58
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 84,
           "fantamedia": 6.34,
           "mediaVoto": 5.88,
           "pv": 32,
@@ -6647,7 +6697,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "fiorentina_fagioli_4465",
           "fiorentina_oulai_7464"
-        ]
+        ],
+        "slotId": "pos_7"
       },
       "pos_8": {
         "id": "fiorentina_mastantuono_7078",
@@ -6656,12 +6707,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Mastantuono",
         "teamName": "Fiorentina",
         "teamId": "fiorentina",
-        "role": "AD",
+        "role": "T",
         "classicRole": "C",
         "mantraRole": "W;T",
         "fantaRole": "C",
-        "appetibilita": 88,
-        "status": "tit_sicuro",
+        "appetibilita": 75,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -6682,7 +6733,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 58
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -6708,7 +6759,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "fiorentina_fagioli_4465",
           "fiorentina_oulai_7464"
-        ]
+        ],
+        "slotId": "pos_8"
       },
       "pos_9": {
         "id": "fiorentina_mandragora_1933",
@@ -6717,11 +6769,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Mandragora",
         "teamName": "Fiorentina",
         "teamId": "fiorentina",
-        "role": "COC",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C",
         "fantaRole": "C",
-        "appetibilita": 47,
+        "appetibilita": 36,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": true,
@@ -6743,7 +6795,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 28
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 89,
           "fantamedia": 6.62,
           "mediaVoto": 6.04,
           "pv": 34,
@@ -6769,7 +6821,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "fiorentina_fagioli_4465",
           "fiorentina_oulai_7464"
-        ]
+        ],
+        "slotId": "pos_9"
       },
       "pos_10": {
         "id": "fiorentina_ndour_6294",
@@ -6778,11 +6831,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Ndour",
         "teamName": "Fiorentina",
         "teamId": "fiorentina",
-        "role": "AS",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C",
         "fantaRole": "C",
-        "appetibilita": 42,
+        "appetibilita": 33,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -6804,7 +6857,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 25
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 79,
           "fantamedia": 6.07,
           "mediaVoto": 5.8,
           "pv": 30,
@@ -6830,7 +6883,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "fiorentina_fagioli_4465",
           "fiorentina_oulai_7464"
-        ]
+        ],
+        "slotId": "pos_10"
       },
       "pos_11": {
         "id": "fiorentina_kean_2097",
@@ -6865,7 +6919,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 197
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 68,
           "fantamedia": 6.77,
           "mediaVoto": 5.88,
           "pv": 26,
@@ -6890,7 +6944,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "fiorentina_pellegrino_m__7023"
-        ]
+        ],
+        "slotId": "pos_11"
       }
     },
     "bench": [
@@ -7622,7 +7677,7 @@ export const INITIAL_TEAMS = [
         "classicRole": "P",
         "mantraRole": "Por",
         "fantaRole": "P",
-        "appetibilita": 16,
+        "appetibilita": 10,
         "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -7644,8 +7699,8 @@ export const INITIAL_TEAMS = [
           "fvmM": 8
         },
         "stats": {
-          "titolarita": 10,
-          "fantamedia": 5,
+          "titolarita": 50,
+          "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
           "presenze": 0,
@@ -7670,7 +7725,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "frosinone_desplanches_7463",
           "frosinone_lolic_7466"
-        ]
+        ],
+        "slotId": "pos_1"
       },
       "pos_2": {
         "id": "frosinone_monterisi_4952",
@@ -7679,12 +7735,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Monterisi",
         "teamName": "Frosinone",
         "teamId": "frosinone",
-        "role": "TD",
+        "role": "DC",
         "classicRole": "D",
         "mantraRole": "Dc",
         "fantaRole": "D",
-        "appetibilita": 26,
-        "status": "ballottaggio",
+        "appetibilita": 18,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -7705,7 +7761,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 14
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -7731,7 +7787,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "frosinone_calvani_7467",
           "frosinone_cittadini_5757"
-        ]
+        ],
+        "slotId": "pos_2"
       },
       "pos_3": {
         "id": "frosinone_oyono_a__6238",
@@ -7740,12 +7797,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Oyono A.",
         "teamName": "Frosinone",
         "teamId": "frosinone",
-        "role": "DC",
+        "role": "TD",
         "classicRole": "D",
         "mantraRole": "Dd;E",
         "fantaRole": "D",
-        "appetibilita": 22,
-        "status": "ballottaggio",
+        "appetibilita": 16,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -7766,7 +7823,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 12
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -7792,7 +7849,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "frosinone_calvani_7467",
           "frosinone_cittadini_5757"
-        ]
+        ],
+        "slotId": "pos_3"
       },
       "pos_4": {
         "id": "frosinone_bracaglia_7469",
@@ -7805,7 +7863,7 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Ds;Dc",
         "fantaRole": "D",
-        "appetibilita": 21,
+        "appetibilita": 14,
         "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -7827,7 +7885,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 13
         },
         "stats": {
-          "titolarita": 45,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -7853,7 +7911,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "frosinone_calvani_7467",
           "frosinone_cittadini_5757"
-        ]
+        ],
+        "slotId": "pos_4"
       },
       "pos_5": {
         "id": "frosinone_terzic_4375",
@@ -7866,7 +7925,7 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Ds;E",
         "fantaRole": "D",
-        "appetibilita": 19,
+        "appetibilita": 14,
         "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -7888,7 +7947,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 11
         },
         "stats": {
-          "titolarita": 45,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -7914,7 +7973,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "frosinone_calvani_7467",
           "frosinone_cittadini_5757"
-        ]
+        ],
+        "slotId": "pos_5"
       },
       "pos_6": {
         "id": "frosinone_schmid_7551",
@@ -7923,12 +7983,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Schmid",
         "teamName": "Frosinone",
         "teamId": "frosinone",
-        "role": "M",
+        "role": "T",
         "classicRole": "C",
         "mantraRole": "W;T",
         "fantaRole": "C",
-        "appetibilita": 48,
-        "status": "tit_sicuro",
+        "appetibilita": 39,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -7949,7 +8009,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 30
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -7975,7 +8035,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "frosinone_zerbin_5998",
           "frosinone_koutsoupias_7474"
-        ]
+        ],
+        "slotId": "pos_6"
       },
       "pos_7": {
         "id": "frosinone_cal__7472",
@@ -7984,12 +8045,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Calò",
         "teamName": "Frosinone",
         "teamId": "frosinone",
-        "role": "CC",
+        "role": "M",
         "classicRole": "C",
         "mantraRole": "M;C",
         "fantaRole": "C",
-        "appetibilita": 41,
-        "status": "tit_sicuro",
+        "appetibilita": 33,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -8010,7 +8071,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 28
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -8036,7 +8097,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "frosinone_zerbin_5998",
           "frosinone_koutsoupias_7474"
-        ]
+        ],
+        "slotId": "pos_7"
       },
       "pos_8": {
         "id": "frosinone_grillitsch_7550",
@@ -8045,12 +8107,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Grillitsch",
         "teamName": "Frosinone",
         "teamId": "frosinone",
-        "role": "CC",
+        "role": "M",
         "classicRole": "C",
         "mantraRole": "M;C",
         "fantaRole": "C",
-        "appetibilita": 24,
-        "status": "ballottaggio",
+        "appetibilita": 18,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -8071,7 +8133,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 14
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -8097,7 +8159,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "frosinone_zerbin_5998",
           "frosinone_koutsoupias_7474"
-        ]
+        ],
+        "slotId": "pos_8"
       },
       "pos_9": {
         "id": "frosinone_ghedjemis_6530",
@@ -8106,12 +8169,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Ghedjemis",
         "teamName": "Frosinone",
         "teamId": "frosinone",
-        "role": "AD",
+        "role": "W",
         "classicRole": "A",
         "mantraRole": "W;A",
         "fantaRole": "A",
-        "appetibilita": 50,
-        "status": "tit_sicuro",
+        "appetibilita": 39,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -8132,7 +8195,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 32
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -8155,7 +8218,8 @@ export const INITIAL_TEAMS = [
           "esp": 0,
           "au": 0
         },
-        "substitutes": []
+        "substitutes": [],
+        "slotId": "pos_9"
       },
       "pos_10": {
         "id": "frosinone_raimondo_5436",
@@ -8168,8 +8232,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "A",
         "mantraRole": "Pc",
         "fantaRole": "A",
-        "appetibilita": 39,
-        "status": "ballottaggio",
+        "appetibilita": 31,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -8190,7 +8254,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 21
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -8213,7 +8277,8 @@ export const INITIAL_TEAMS = [
           "esp": 0,
           "au": 0
         },
-        "substitutes": []
+        "substitutes": [],
+        "slotId": "pos_10"
       },
       "pos_11": {
         "id": "frosinone_kvernadze_6204",
@@ -8222,12 +8287,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Kvernadze",
         "teamName": "Frosinone",
         "teamId": "frosinone",
-        "role": "AS",
+        "role": "W",
         "classicRole": "A",
         "mantraRole": "W;A",
         "fantaRole": "A",
-        "appetibilita": 24,
-        "status": "ballottaggio",
+        "appetibilita": 20,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -8248,7 +8313,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 16
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -8271,7 +8336,8 @@ export const INITIAL_TEAMS = [
           "esp": 0,
           "au": 0
         },
-        "substitutes": []
+        "substitutes": [],
+        "slotId": "pos_11"
       }
     },
     "bench": [
@@ -9357,6 +9423,63 @@ export const INITIAL_TEAMS = [
           "esp": 0,
           "au": 0
         }
+      },
+      {
+        "id": "frosinone_omar_fayed_7553",
+        "csvId": "7553",
+        "name": "Omar Fayed",
+        "displayName": "Omar Fayed",
+        "teamName": "Frosinone",
+        "teamId": "frosinone",
+        "role": "DC",
+        "classicRole": "D",
+        "mantraRole": "Dc",
+        "fantaRole": "D",
+        "appetibilita": 1,
+        "status": "riserva",
+        "isAvailable": true,
+        "isPenaltyTaker": false,
+        "isFreeKickTaker": false,
+        "isCornerTaker": false,
+        "rigorista": false,
+        "punizioni": false,
+        "corner": false,
+        "positionNotes": "",
+        "fantaComment": "",
+        "quotazioni": {
+          "qtA": 1,
+          "qtI": 1,
+          "diff": 0,
+          "qtAM": 1,
+          "qtIM": 1,
+          "diffM": 0,
+          "fvm": 1,
+          "fvmM": 1
+        },
+        "stats": {
+          "titolarita": 50,
+          "fantamedia": 6,
+          "mediaVoto": 6,
+          "pv": 0,
+          "presenze": 0,
+          "gol": 0,
+          "gf": 0,
+          "gs": 0,
+          "golSubiti": 0,
+          "rp": 0,
+          "rc": 0,
+          "rPlus": 0,
+          "rMinus": 0,
+          "rigoriSegnati": 0,
+          "rigoriSbagliati": 0,
+          "assist": 0,
+          "ass": 0,
+          "ammonizioni": 0,
+          "amm": 0,
+          "espulsioni": 0,
+          "esp": 0,
+          "au": 0
+        }
       }
     ],
     "ballottaggi": [],
@@ -9400,8 +9523,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "P",
         "mantraRole": "Por",
         "fantaRole": "P",
-        "appetibilita": 34,
-        "status": "riserva",
+        "appetibilita": 23,
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -9422,7 +9545,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 18
         },
         "stats": {
-          "titolarita": 40,
+          "titolarita": 42,
           "fantamedia": 4.78,
           "mediaVoto": 6.06,
           "pv": 16,
@@ -9448,7 +9571,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "genoa_sommariva_219",
           "genoa_stolz_6569"
-        ]
+        ],
+        "slotId": "pos_1"
       },
       "pos_2": {
         "id": "genoa_ostigard_5750",
@@ -9461,7 +9585,7 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Dc",
         "fantaRole": "D",
-        "appetibilita": 65,
+        "appetibilita": 52,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -9483,7 +9607,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 40
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 79,
           "fantamedia": 6.52,
           "mediaVoto": 6.13,
           "pv": 30,
@@ -9509,7 +9633,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "genoa_marcandalli_6660",
           "genoa_martin_2593"
-        ]
+        ],
+        "slotId": "pos_2"
       },
       "pos_3": {
         "id": "genoa_vasquez_5514",
@@ -9522,7 +9647,7 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Ds;Dc",
         "fantaRole": "D",
-        "appetibilita": 53,
+        "appetibilita": 43,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -9544,7 +9669,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 35
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 95,
           "fantamedia": 6.14,
           "mediaVoto": 6.08,
           "pv": 36,
@@ -9570,7 +9695,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "genoa_marcandalli_6660",
           "genoa_martin_2593"
-        ]
+        ],
+        "slotId": "pos_3"
       },
       "pos_4": {
         "id": "genoa_norton_cuffy_6814",
@@ -9579,12 +9705,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Norton-Cuffy",
         "teamName": "Genoa",
         "teamId": "genoa",
-        "role": "DC",
+        "role": "TD",
         "classicRole": "D",
         "mantraRole": "Dd;E",
         "fantaRole": "D",
-        "appetibilita": 38,
-        "status": "ballottaggio",
+        "appetibilita": 29,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -9605,7 +9731,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 22
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 71,
           "fantamedia": 6.09,
           "mediaVoto": 5.93,
           "pv": 27,
@@ -9631,7 +9757,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "genoa_marcandalli_6660",
           "genoa_martin_2593"
-        ]
+        ],
+        "slotId": "pos_4"
       },
       "pos_5": {
         "id": "genoa_baldanzi_5823",
@@ -9640,12 +9767,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Baldanzi",
         "teamName": "Genoa",
         "teamId": "genoa",
-        "role": "E",
+        "role": "T",
         "classicRole": "C",
         "mantraRole": "T",
         "fantaRole": "C",
-        "appetibilita": 53,
-        "status": "tit_sicuro",
+        "appetibilita": 39,
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -9666,7 +9793,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 27
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 45,
           "fantamedia": 6.38,
           "mediaVoto": 6.15,
           "pv": 17,
@@ -9692,7 +9819,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "genoa_traor__hj__2857",
           "genoa_amorim_7341"
-        ]
+        ],
+        "slotId": "pos_5"
       },
       "pos_6": {
         "id": "genoa_frendrup_5791",
@@ -9701,12 +9829,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Frendrup",
         "teamName": "Genoa",
         "teamId": "genoa",
-        "role": "CC",
+        "role": "M",
         "classicRole": "C",
         "mantraRole": "M;C",
         "fantaRole": "C",
-        "appetibilita": 33,
-        "status": "ballottaggio",
+        "appetibilita": 25,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -9727,7 +9855,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 21
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 95,
           "fantamedia": 5.97,
           "mediaVoto": 5.96,
           "pv": 36,
@@ -9753,7 +9881,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "genoa_traor__hj__2857",
           "genoa_amorim_7341"
-        ]
+        ],
+        "slotId": "pos_6"
       },
       "pos_7": {
         "id": "genoa_ellertsson_6020",
@@ -9762,12 +9891,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Ellertsson",
         "teamName": "Genoa",
         "teamId": "genoa",
-        "role": "M",
+        "role": "E",
         "classicRole": "C",
         "mantraRole": "E;C",
         "fantaRole": "C",
-        "appetibilita": 31,
-        "status": "ballottaggio",
+        "appetibilita": 23,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -9788,7 +9917,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 21
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 92,
           "fantamedia": 5.91,
           "mediaVoto": 5.84,
           "pv": 35,
@@ -9814,7 +9943,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "genoa_traor__hj__2857",
           "genoa_amorim_7341"
-        ]
+        ],
+        "slotId": "pos_7"
       },
       "pos_8": {
         "id": "genoa_sow_5946",
@@ -9823,12 +9953,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Sow",
         "teamName": "Genoa",
         "teamId": "genoa",
-        "role": "CC",
+        "role": "M",
         "classicRole": "C",
         "mantraRole": "M;C",
         "fantaRole": "C",
-        "appetibilita": 27,
-        "status": "ballottaggio",
+        "appetibilita": 18,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -9849,7 +9979,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 17
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -9875,7 +10005,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "genoa_traor__hj__2857",
           "genoa_amorim_7341"
-        ]
+        ],
+        "slotId": "pos_8"
       },
       "pos_9": {
         "id": "genoa_meichtry_7409",
@@ -9884,12 +10015,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Meichtry",
         "teamName": "Genoa",
         "teamId": "genoa",
-        "role": "E",
+        "role": "T",
         "classicRole": "C",
         "mantraRole": "W;T",
         "fantaRole": "C",
-        "appetibilita": 24,
-        "status": "ballottaggio",
+        "appetibilita": 18,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -9910,7 +10041,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 14
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -9936,7 +10067,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "genoa_traor__hj__2857",
           "genoa_amorim_7341"
-        ]
+        ],
+        "slotId": "pos_9"
       },
       "pos_10": {
         "id": "genoa_colombo_4923",
@@ -9949,7 +10081,7 @@ export const INITIAL_TEAMS = [
         "classicRole": "A",
         "mantraRole": "Pc",
         "fantaRole": "A",
-        "appetibilita": 92,
+        "appetibilita": 82,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": true,
@@ -9971,7 +10103,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 60
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 97,
           "fantamedia": 6.41,
           "mediaVoto": 5.92,
           "pv": 37,
@@ -9996,7 +10128,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "genoa_havel_7453"
-        ]
+        ],
+        "slotId": "pos_10"
       },
       "pos_11": {
         "id": "genoa_vitinha_o__6164",
@@ -10009,8 +10142,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "A",
         "mantraRole": "A",
         "fantaRole": "A",
-        "appetibilita": 36,
-        "status": "ballottaggio",
+        "appetibilita": 26,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -10031,7 +10164,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 21
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 82,
           "fantamedia": 6.39,
           "mediaVoto": 5.95,
           "pv": 31,
@@ -10056,7 +10189,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "genoa_havel_7453"
-        ]
+        ],
+        "slotId": "pos_11"
       }
     },
     "bench": [
@@ -10902,8 +11036,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "P",
         "mantraRole": "Por",
         "fantaRole": "P",
-        "appetibilita": 100,
-        "status": "tit_sicuro",
+        "appetibilita": 82,
+        "status": "ballottaggio",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -10924,7 +11058,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 63
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 13,
           "fantamedia": 5.2,
           "mediaVoto": 6,
           "pv": 5,
@@ -10950,7 +11084,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "inter_provedel_2814",
           "inter_di_gennaro_1926"
-        ]
+        ],
+        "slotId": "pos_1"
       },
       "pos_2": {
         "id": "inter_dimarco_254",
@@ -10959,7 +11094,7 @@ export const INITIAL_TEAMS = [
         "displayName": "Dimarco",
         "teamName": "Inter",
         "teamId": "inter",
-        "role": "DC",
+        "role": "E",
         "classicRole": "D",
         "mantraRole": "E;W",
         "fantaRole": "D",
@@ -10985,7 +11120,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 265
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 92,
           "fantamedia": 7.64,
           "mediaVoto": 6.6,
           "pv": 35,
@@ -11011,7 +11146,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "inter_spence_5982",
           "inter_stones_2514"
-        ]
+        ],
+        "slotId": "pos_2"
       },
       "pos_3": {
         "id": "inter_akanji_4159",
@@ -11024,7 +11160,7 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Dc",
         "fantaRole": "D",
-        "appetibilita": 90,
+        "appetibilita": 72,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -11046,7 +11182,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 55
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 84,
           "fantamedia": 6.41,
           "mediaVoto": 6.28,
           "pv": 32,
@@ -11072,7 +11208,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "inter_spence_5982",
           "inter_stones_2514"
-        ]
+        ],
+        "slotId": "pos_3"
       },
       "pos_4": {
         "id": "inter_bastoni_2120",
@@ -11085,7 +11222,7 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Dc",
         "fantaRole": "D",
-        "appetibilita": 74,
+        "appetibilita": 57,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -11107,7 +11244,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 44
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 74,
           "fantamedia": 6.34,
           "mediaVoto": 6.2,
           "pv": 28,
@@ -11133,7 +11270,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "inter_spence_5982",
           "inter_stones_2514"
-        ]
+        ],
+        "slotId": "pos_4"
       },
       "pos_5": {
         "id": "inter_calhanoglu_2194",
@@ -11142,12 +11280,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Calhanoglu",
         "teamName": "Inter",
         "teamId": "inter",
-        "role": "E",
+        "role": "M",
         "classicRole": "C",
         "mantraRole": "M;C",
         "fantaRole": "C",
         "appetibilita": 100,
-        "status": "tit_sicuro",
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": true,
         "isFreeKickTaker": false,
@@ -11168,7 +11306,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 260
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 58,
           "fantamedia": 7.64,
           "mediaVoto": 6.52,
           "pv": 22,
@@ -11194,7 +11332,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "inter_mkhitaryan_2529",
           "inter_luis_henrique_5301"
-        ]
+        ],
+        "slotId": "pos_5"
       },
       "pos_6": {
         "id": "inter_barella_1870",
@@ -11203,7 +11342,7 @@ export const INITIAL_TEAMS = [
         "displayName": "Barella",
         "teamName": "Inter",
         "teamId": "inter",
-        "role": "CC",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C",
         "fantaRole": "C",
@@ -11229,7 +11368,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 80
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 89,
           "fantamedia": 6.71,
           "mediaVoto": 6.28,
           "pv": 34,
@@ -11255,7 +11394,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "inter_mkhitaryan_2529",
           "inter_luis_henrique_5301"
-        ]
+        ],
+        "slotId": "pos_6"
       },
       "pos_7": {
         "id": "inter_zielinski_152",
@@ -11264,11 +11404,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Zielinski",
         "teamName": "Inter",
         "teamId": "inter",
-        "role": "M",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C",
         "fantaRole": "C",
-        "appetibilita": 64,
+        "appetibilita": 53,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": true,
@@ -11290,7 +11430,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 41
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 79,
           "fantamedia": 6.8,
           "mediaVoto": 6.25,
           "pv": 30,
@@ -11311,12 +11451,13 @@ export const INITIAL_TEAMS = [
           "amm": 3,
           "espulsioni": 0,
           "esp": 0,
-          "au": 1
+          "au": 0
         },
         "substitutes": [
           "inter_mkhitaryan_2529",
           "inter_luis_henrique_5301"
-        ]
+        ],
+        "slotId": "pos_7"
       },
       "pos_8": {
         "id": "inter_diouf_6274",
@@ -11325,12 +11466,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Diouf",
         "teamName": "Inter",
         "teamId": "inter",
-        "role": "CC",
+        "role": "E",
         "classicRole": "C",
         "mantraRole": "E;C",
         "fantaRole": "C",
-        "appetibilita": 56,
-        "status": "tit_sicuro",
+        "appetibilita": 48,
+        "status": "ballottaggio",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -11351,7 +11492,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 40
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 26,
           "fantamedia": 6.45,
           "mediaVoto": 6.15,
           "pv": 10,
@@ -11377,7 +11518,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "inter_mkhitaryan_2529",
           "inter_luis_henrique_5301"
-        ]
+        ],
+        "slotId": "pos_8"
       },
       "pos_9": {
         "id": "inter_sucic_p__7070",
@@ -11386,11 +11528,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Sucic P.",
         "teamName": "Inter",
         "teamId": "inter",
-        "role": "E",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C",
         "fantaRole": "C",
-        "appetibilita": 43,
+        "appetibilita": 34,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -11412,7 +11554,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 26
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 74,
           "fantamedia": 6.27,
           "mediaVoto": 6.07,
           "pv": 28,
@@ -11438,7 +11580,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "inter_mkhitaryan_2529",
           "inter_luis_henrique_5301"
-        ]
+        ],
+        "slotId": "pos_9"
       },
       "pos_10": {
         "id": "inter_martinez_l__2764",
@@ -11473,7 +11616,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 370
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 79,
           "fantamedia": 8.25,
           "mediaVoto": 6.42,
           "pv": 30,
@@ -11499,7 +11642,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "inter_esposito_f_p__7071",
           "inter_bonny_6669"
-        ]
+        ],
+        "slotId": "pos_10"
       },
       "pos_11": {
         "id": "inter_thuram_4871",
@@ -11508,7 +11652,7 @@ export const INITIAL_TEAMS = [
         "displayName": "Thuram",
         "teamName": "Inter",
         "teamId": "inter",
-        "role": "A",
+        "role": "PC",
         "classicRole": "A",
         "mantraRole": "Pc",
         "fantaRole": "A",
@@ -11534,7 +11678,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 280
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 76,
           "fantamedia": 7.95,
           "mediaVoto": 6.43,
           "pv": 29,
@@ -11560,7 +11704,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "inter_esposito_f_p__7071",
           "inter_bonny_6669"
-        ]
+        ],
+        "slotId": "pos_11"
       }
     },
     "bench": [
@@ -12291,8 +12436,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "P",
         "mantraRole": "Por",
         "fantaRole": "P",
-        "appetibilita": 90,
-        "status": "tit_sicuro",
+        "appetibilita": 72,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -12313,8 +12458,8 @@ export const INITIAL_TEAMS = [
           "fvmM": 55
         },
         "stats": {
-          "titolarita": 90,
-          "fantamedia": 5,
+          "titolarita": 50,
+          "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
           "presenze": 0,
@@ -12339,7 +12484,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "juventus_di_gregorio_5876",
           "juventus_perin_218"
-        ]
+        ],
+        "slotId": "pos_1"
       },
       "pos_2": {
         "id": "juventus_bremer_2788",
@@ -12348,11 +12494,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Bremer",
         "teamName": "Juventus",
         "teamId": "juventus",
-        "role": "TD",
+        "role": "DC",
         "classicRole": "D",
         "mantraRole": "Dc",
         "fantaRole": "D",
-        "appetibilita": 83,
+        "appetibilita": 65,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -12374,7 +12520,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 50
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 68,
           "fantamedia": 6.81,
           "mediaVoto": 6.33,
           "pv": 26,
@@ -12400,7 +12546,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "juventus_celik_4657",
           "juventus_kelly_l__6766"
-        ]
+        ],
+        "slotId": "pos_2"
       },
       "pos_3": {
         "id": "juventus_kalulu_4976",
@@ -12413,7 +12560,7 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Dd;Dc",
         "fantaRole": "D",
-        "appetibilita": 75,
+        "appetibilita": 60,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -12435,7 +12582,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 48
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 97,
           "fantamedia": 6.35,
           "mediaVoto": 6.14,
           "pv": 37,
@@ -12461,7 +12608,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "juventus_celik_4657",
           "juventus_kelly_l__6766"
-        ]
+        ],
+        "slotId": "pos_3"
       },
       "pos_4": {
         "id": "juventus_cambiaso_5520",
@@ -12470,11 +12618,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Cambiaso",
         "teamName": "Juventus",
         "teamId": "juventus",
-        "role": "DC",
+        "role": "TD",
         "classicRole": "D",
         "mantraRole": "Dd;Ds;E",
         "fantaRole": "D",
-        "appetibilita": 46,
+        "appetibilita": 35,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -12496,7 +12644,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 30
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 95,
           "fantamedia": 5.99,
           "mediaVoto": 5.81,
           "pv": 36,
@@ -12517,12 +12665,13 @@ export const INITIAL_TEAMS = [
           "amm": 3,
           "espulsioni": 1,
           "esp": 1,
-          "au": 2
+          "au": 0
         },
         "substitutes": [
           "juventus_celik_4657",
           "juventus_kelly_l__6766"
-        ]
+        ],
+        "slotId": "pos_4"
       },
       "pos_5": {
         "id": "juventus_lucum__6042",
@@ -12531,12 +12680,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Lucumì",
         "teamName": "Juventus",
         "teamId": "juventus",
-        "role": "TS",
+        "role": "DC",
         "classicRole": "D",
         "mantraRole": "Dc",
         "fantaRole": "D",
-        "appetibilita": 34,
-        "status": "ballottaggio",
+        "appetibilita": 23,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -12557,7 +12706,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 18
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 74,
           "fantamedia": 5.89,
           "mediaVoto": 5.88,
           "pv": 28,
@@ -12583,7 +12732,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "juventus_celik_4657",
           "juventus_kelly_l__6766"
-        ]
+        ],
+        "slotId": "pos_5"
       },
       "pos_6": {
         "id": "juventus_mckennie_4973",
@@ -12592,11 +12742,11 @@ export const INITIAL_TEAMS = [
         "displayName": "McKennie",
         "teamName": "Juventus",
         "teamId": "juventus",
-        "role": "CDC",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C",
         "fantaRole": "C",
-        "appetibilita": 100,
+        "appetibilita": 88,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -12618,7 +12768,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 68
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 89,
           "fantamedia": 6.68,
           "mediaVoto": 6.13,
           "pv": 34,
@@ -12644,7 +12794,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "juventus_zhegrova_5761",
           "juventus_koopmeiners_5685"
-        ]
+        ],
+        "slotId": "pos_6"
       },
       "pos_7": {
         "id": "juventus_conceicao_6884",
@@ -12653,11 +12804,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Conceicao",
         "teamName": "Juventus",
         "teamId": "juventus",
-        "role": "CDC",
+        "role": "W",
         "classicRole": "C",
         "mantraRole": "W;A",
         "fantaRole": "C",
-        "appetibilita": 90,
+        "appetibilita": 78,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -12679,7 +12830,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 60
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 79,
           "fantamedia": 6.7,
           "mediaVoto": 6.28,
           "pv": 30,
@@ -12705,7 +12856,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "juventus_zhegrova_5761",
           "juventus_koopmeiners_5685"
-        ]
+        ],
+        "slotId": "pos_7"
       },
       "pos_8": {
         "id": "juventus_alajbegovic_7436",
@@ -12714,12 +12866,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Alajbegovic",
         "teamName": "Juventus",
         "teamId": "juventus",
-        "role": "AD",
+        "role": "T",
         "classicRole": "C",
         "mantraRole": "W;T",
         "fantaRole": "C",
-        "appetibilita": 85,
-        "status": "tit_sicuro",
+        "appetibilita": 73,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -12740,7 +12892,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 56
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -12766,7 +12918,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "juventus_zhegrova_5761",
           "juventus_koopmeiners_5685"
-        ]
+        ],
+        "slotId": "pos_8"
       },
       "pos_9": {
         "id": "juventus_thuram_k__5562",
@@ -12775,11 +12928,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Thuram K.",
         "teamName": "Juventus",
         "teamId": "juventus",
-        "role": "COC",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C",
         "fantaRole": "C",
-        "appetibilita": 64,
+        "appetibilita": 53,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -12801,7 +12954,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 41
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 89,
           "fantamedia": 6.4,
           "mediaVoto": 6.1,
           "pv": 34,
@@ -12827,7 +12980,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "juventus_zhegrova_5761",
           "juventus_koopmeiners_5685"
-        ]
+        ],
+        "slotId": "pos_9"
       },
       "pos_10": {
         "id": "juventus_locatelli_827",
@@ -12836,11 +12990,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Locatelli",
         "teamName": "Juventus",
         "teamId": "juventus",
-        "role": "AS",
+        "role": "M",
         "classicRole": "C",
         "mantraRole": "M;C",
         "fantaRole": "C",
-        "appetibilita": 50,
+        "appetibilita": 42,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": true,
@@ -12862,7 +13016,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 35
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 95,
           "fantamedia": 6.19,
           "mediaVoto": 6.26,
           "pv": 36,
@@ -12888,7 +13042,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "juventus_zhegrova_5761",
           "juventus_koopmeiners_5685"
-        ]
+        ],
+        "slotId": "pos_10"
       },
       "pos_11": {
         "id": "juventus_kolo_muani_5951",
@@ -12902,7 +13057,7 @@ export const INITIAL_TEAMS = [
         "mantraRole": "Pc",
         "fantaRole": "A",
         "appetibilita": 100,
-        "status": "tit_sicuro",
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -12923,7 +13078,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 225
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -12949,7 +13104,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "juventus_yildiz_6434",
           "juventus_david_5544"
-        ]
+        ],
+        "slotId": "pos_11"
       }
     },
     "bench": [
@@ -13966,7 +14122,7 @@ export const INITIAL_TEAMS = [
         "classicRole": "P",
         "mantraRole": "Por",
         "fantaRole": "P",
-        "appetibilita": 50,
+        "appetibilita": 39,
         "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -13988,8 +14144,8 @@ export const INITIAL_TEAMS = [
           "fvmM": 30
         },
         "stats": {
-          "titolarita": 40,
-          "fantamedia": 5,
+          "titolarita": 50,
+          "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
           "presenze": 0,
@@ -14014,7 +14170,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "lazio_motta_7337",
           "lazio_renzetti_7534"
-        ]
+        ],
+        "slotId": "pos_1"
       },
       "pos_2": {
         "id": "lazio_romagnoli_460",
@@ -14023,12 +14180,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Romagnoli",
         "teamName": "Lazio",
         "teamId": "lazio",
-        "role": "TD",
+        "role": "DC",
         "classicRole": "D",
         "mantraRole": "Dc",
         "fantaRole": "D",
-        "appetibilita": 39,
-        "status": "ballottaggio",
+        "appetibilita": 31,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -14049,7 +14206,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 24
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 84,
           "fantamedia": 5.92,
           "mediaVoto": 6.03,
           "pv": 32,
@@ -14075,7 +14232,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "lazio_pedraza_4817",
           "lazio_floriani_mussolini_7131"
-        ]
+        ],
+        "slotId": "pos_2"
       },
       "pos_3": {
         "id": "lazio_doekhi_6320",
@@ -14088,8 +14246,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Dc",
         "fantaRole": "D",
-        "appetibilita": 37,
-        "status": "ballottaggio",
+        "appetibilita": 29,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -14110,7 +14268,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 22
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -14136,7 +14294,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "lazio_pedraza_4817",
           "lazio_floriani_mussolini_7131"
-        ]
+        ],
+        "slotId": "pos_3"
       },
       "pos_4": {
         "id": "lazio_marusic_2188",
@@ -14145,12 +14304,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Marusic",
         "teamName": "Lazio",
         "teamId": "lazio",
-        "role": "DC",
+        "role": "TD",
         "classicRole": "D",
         "mantraRole": "Dd;Ds;E",
         "fantaRole": "D",
-        "appetibilita": 33,
-        "status": "ballottaggio",
+        "appetibilita": 26,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -14171,7 +14330,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 23
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 87,
           "fantamedia": 5.97,
           "mediaVoto": 5.86,
           "pv": 33,
@@ -14197,7 +14356,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "lazio_pedraza_4817",
           "lazio_floriani_mussolini_7131"
-        ]
+        ],
+        "slotId": "pos_4"
       },
       "pos_5": {
         "id": "lazio_tavares_n__5620",
@@ -14210,8 +14370,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Ds;E",
         "fantaRole": "D",
-        "appetibilita": 29,
-        "status": "ballottaggio",
+        "appetibilita": 22,
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -14232,7 +14392,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 17
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 58,
           "fantamedia": 5.8,
           "mediaVoto": 5.91,
           "pv": 22,
@@ -14258,7 +14418,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "lazio_pedraza_4817",
           "lazio_floriani_mussolini_7131"
-        ]
+        ],
+        "slotId": "pos_5"
       },
       "pos_6": {
         "id": "lazio_zaccagni_632",
@@ -14267,7 +14428,7 @@ export const INITIAL_TEAMS = [
         "displayName": "Zaccagni",
         "teamName": "Lazio",
         "teamId": "lazio",
-        "role": "CDC",
+        "role": "W",
         "classicRole": "C",
         "mantraRole": "W;A",
         "fantaRole": "C",
@@ -14293,7 +14454,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 88
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 68,
           "fantamedia": 5.96,
           "mediaVoto": 5.88,
           "pv": 26,
@@ -14319,7 +14480,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "lazio_rovella_4459",
           "lazio_dele_bashiru_6629"
-        ]
+        ],
+        "slotId": "pos_6"
       },
       "pos_7": {
         "id": "lazio_taylor_k__7314",
@@ -14328,12 +14490,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Taylor K.",
         "teamName": "Lazio",
         "teamId": "lazio",
-        "role": "CDC",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C;T",
         "fantaRole": "C",
-        "appetibilita": 96,
-        "status": "tit_sicuro",
+        "appetibilita": 83,
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -14354,7 +14516,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 64
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 45,
           "fantamedia": 6.56,
           "mediaVoto": 6.06,
           "pv": 17,
@@ -14380,7 +14542,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "lazio_rovella_4459",
           "lazio_dele_bashiru_6629"
-        ]
+        ],
+        "slotId": "pos_7"
       },
       "pos_8": {
         "id": "lazio_frattesi_2848",
@@ -14389,12 +14552,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Frattesi",
         "teamName": "Lazio",
         "teamId": "lazio",
-        "role": "AD",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C;T",
         "fantaRole": "C",
-        "appetibilita": 77,
-        "status": "tit_sicuro",
+        "appetibilita": 72,
+        "status": "ballottaggio",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -14415,7 +14578,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 55
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 37,
           "fantamedia": 5.89,
           "mediaVoto": 5.89,
           "pv": 14,
@@ -14441,7 +14604,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "lazio_rovella_4459",
           "lazio_dele_bashiru_6629"
-        ]
+        ],
+        "slotId": "pos_8"
       },
       "pos_9": {
         "id": "lazio_cancellieri_5500",
@@ -14450,11 +14614,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Cancellieri",
         "teamName": "Lazio",
         "teamId": "lazio",
-        "role": "COC",
+        "role": "W",
         "classicRole": "C",
         "mantraRole": "W;A",
         "fantaRole": "C",
-        "appetibilita": 47,
+        "appetibilita": 36,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -14476,7 +14640,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 26
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 74,
           "fantamedia": 6.29,
           "mediaVoto": 5.93,
           "pv": 28,
@@ -14502,7 +14666,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "lazio_rovella_4459",
           "lazio_dele_bashiru_6629"
-        ]
+        ],
+        "slotId": "pos_9"
       },
       "pos_10": {
         "id": "lazio_isaksen_6398",
@@ -14511,11 +14676,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Isaksen",
         "teamName": "Lazio",
         "teamId": "lazio",
-        "role": "AS",
+        "role": "W",
         "classicRole": "C",
         "mantraRole": "W;A",
         "fantaRole": "C",
-        "appetibilita": 44,
+        "appetibilita": 33,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -14537,7 +14702,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 23
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 71,
           "fantamedia": 6.63,
           "mediaVoto": 6.04,
           "pv": 27,
@@ -14563,7 +14728,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "lazio_rovella_4459",
           "lazio_dele_bashiru_6629"
-        ]
+        ],
+        "slotId": "pos_10"
       },
       "pos_11": {
         "id": "lazio_ratkov_7313",
@@ -14576,8 +14742,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "A",
         "mantraRole": "Pc",
         "fantaRole": "A",
-        "appetibilita": 53,
-        "status": "tit_sicuro",
+        "appetibilita": 42,
+        "status": "ballottaggio",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -14598,7 +14764,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 29
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 18,
           "fantamedia": 5.64,
           "mediaVoto": 5.64,
           "pv": 7,
@@ -14624,7 +14790,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "lazio_dia_5672",
           "lazio_noslin_6556"
-        ]
+        ],
+        "slotId": "pos_11"
       }
     },
     "bench": [
@@ -15526,8 +15693,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "P",
         "mantraRole": "Por",
         "fantaRole": "P",
-        "appetibilita": 42,
-        "status": "riserva",
+        "appetibilita": 33,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -15548,7 +15715,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 25
         },
         "stats": {
-          "titolarita": 40,
+          "titolarita": 100,
           "fantamedia": 5.22,
           "mediaVoto": 6.41,
           "pv": 38,
@@ -15573,7 +15740,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "lecce_penev_7557"
-        ]
+        ],
+        "slotId": "pos_1"
       },
       "pos_2": {
         "id": "lecce_tiago_gabriel_6989",
@@ -15582,12 +15750,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Tiago Gabriel",
         "teamName": "Lecce",
         "teamId": "lecce",
-        "role": "TD",
+        "role": "DC",
         "classicRole": "D",
         "mantraRole": "Dc",
         "fantaRole": "D",
-        "appetibilita": 31,
-        "status": "ballottaggio",
+        "appetibilita": 22,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -15608,7 +15776,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 17
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 95,
           "fantamedia": 6.01,
           "mediaVoto": 6,
           "pv": 36,
@@ -15629,12 +15797,13 @@ export const INITIAL_TEAMS = [
           "amm": 7,
           "espulsioni": 0,
           "esp": 0,
-          "au": 1
+          "au": 0
         },
         "substitutes": [
           "lecce_siebert_7240",
           "lecce_jean_6883"
-        ]
+        ],
+        "slotId": "pos_2"
       },
       "pos_3": {
         "id": "lecce_gallo_4502",
@@ -15643,12 +15812,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Gallo",
         "teamName": "Lecce",
         "teamId": "lecce",
-        "role": "DC",
+        "role": "TS",
         "classicRole": "D",
         "mantraRole": "Ds;E",
         "fantaRole": "D",
-        "appetibilita": 25,
-        "status": "ballottaggio",
+        "appetibilita": 17,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -15669,7 +15838,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 13
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 97,
           "fantamedia": 5.99,
           "mediaVoto": 5.95,
           "pv": 37,
@@ -15695,7 +15864,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "lecce_siebert_7240",
           "lecce_jean_6883"
-        ]
+        ],
+        "slotId": "pos_3"
       },
       "pos_4": {
         "id": "lecce_gaspar_k__6632",
@@ -15708,8 +15878,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Dc",
         "fantaRole": "D",
-        "appetibilita": 22,
-        "status": "ballottaggio",
+        "appetibilita": 16,
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -15730,7 +15900,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 12
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 55,
           "fantamedia": 5.64,
           "mediaVoto": 5.83,
           "pv": 21,
@@ -15756,7 +15926,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "lecce_siebert_7240",
           "lecce_jean_6883"
-        ]
+        ],
+        "slotId": "pos_4"
       },
       "pos_5": {
         "id": "lecce_veiga_d__6990",
@@ -15765,12 +15936,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Veiga D.",
         "teamName": "Lecce",
         "teamId": "lecce",
-        "role": "TS",
+        "role": "TD",
         "classicRole": "D",
         "mantraRole": "Dd;E",
         "fantaRole": "D",
-        "appetibilita": 21,
-        "status": "riserva",
+        "appetibilita": 14,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -15791,7 +15962,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 11
         },
         "stats": {
-          "titolarita": 45,
+          "titolarita": 95,
           "fantamedia": 5.69,
           "mediaVoto": 5.82,
           "pv": 36,
@@ -15817,7 +15988,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "lecce_siebert_7240",
           "lecce_jean_6883"
-        ]
+        ],
+        "slotId": "pos_5"
       },
       "pos_6": {
         "id": "lecce_pierotti_6549",
@@ -15826,12 +15998,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Pierotti",
         "teamName": "Lecce",
         "teamId": "lecce",
-        "role": "CDC",
+        "role": "W",
         "classicRole": "C",
         "mantraRole": "W",
         "fantaRole": "C",
-        "appetibilita": 32,
-        "status": "ballottaggio",
+        "appetibilita": 25,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -15852,7 +16024,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 17
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 97,
           "fantamedia": 5.85,
           "mediaVoto": 5.8,
           "pv": 37,
@@ -15878,7 +16050,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "lecce_maleh_5457",
           "lecce_gorter_7248"
-        ]
+        ],
+        "slotId": "pos_6"
       },
       "pos_7": {
         "id": "lecce_coulibaly_l__5504",
@@ -15887,12 +16060,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Coulibaly L.",
         "teamName": "Lecce",
         "teamId": "lecce",
-        "role": "CDC",
+        "role": "M",
         "classicRole": "C",
         "mantraRole": "M;C",
         "fantaRole": "C",
-        "appetibilita": 26,
-        "status": "ballottaggio",
+        "appetibilita": 18,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -15913,7 +16086,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 16
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 87,
           "fantamedia": 6.29,
           "mediaVoto": 6.05,
           "pv": 33,
@@ -15939,7 +16112,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "lecce_maleh_5457",
           "lecce_gorter_7248"
-        ]
+        ],
+        "slotId": "pos_7"
       },
       "pos_8": {
         "id": "lecce_berisha_m__6015",
@@ -15948,11 +16122,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Berisha M.",
         "teamName": "Lecce",
         "teamId": "lecce",
-        "role": "AD",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C;T",
         "fantaRole": "C",
-        "appetibilita": 27,
+        "appetibilita": 21,
         "status": "ballottaggio",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -15974,7 +16148,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 16
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 32,
           "fantamedia": 6.92,
           "mediaVoto": 6.17,
           "pv": 12,
@@ -16000,7 +16174,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "lecce_maleh_5457",
           "lecce_gorter_7248"
-        ]
+        ],
+        "slotId": "pos_8"
       },
       "pos_9": {
         "id": "lecce_gandelman_7318",
@@ -16009,12 +16184,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Gandelman",
         "teamName": "Lecce",
         "teamId": "lecce",
-        "role": "COC",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C;T",
         "fantaRole": "C",
-        "appetibilita": 24,
-        "status": "ballottaggio",
+        "appetibilita": 18,
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -16035,7 +16210,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 14
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 42,
           "fantamedia": 6.41,
           "mediaVoto": 5.97,
           "pv": 16,
@@ -16061,7 +16236,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "lecce_maleh_5457",
           "lecce_gorter_7248"
-        ]
+        ],
+        "slotId": "pos_9"
       },
       "pos_10": {
         "id": "lecce_ngom_7322",
@@ -16070,12 +16246,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Ngom",
         "teamName": "Lecce",
         "teamId": "lecce",
-        "role": "AS",
+        "role": "M",
         "classicRole": "C",
         "mantraRole": "M;C",
         "fantaRole": "C",
-        "appetibilita": 19,
-        "status": "riserva",
+        "appetibilita": 14,
+        "status": "ballottaggio",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -16096,7 +16272,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 13
         },
         "stats": {
-          "titolarita": 45,
+          "titolarita": 34,
           "fantamedia": 5.65,
           "mediaVoto": 5.69,
           "pv": 13,
@@ -16122,7 +16298,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "lecce_maleh_5457",
           "lecce_gorter_7248"
-        ]
+        ],
+        "slotId": "pos_10"
       },
       "pos_11": {
         "id": "lecce_geubbels_5029",
@@ -16135,8 +16312,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "A",
         "mantraRole": "Pc",
         "fantaRole": "A",
-        "appetibilita": 44,
-        "status": "tit_sicuro",
+        "appetibilita": 33,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -16157,7 +16334,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 23
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -16183,7 +16360,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "lecce_stulic_7252",
           "lecce_n_dri_7001"
-        ]
+        ],
+        "slotId": "pos_11"
       }
     },
     "bench": [
@@ -16756,6 +16934,63 @@ export const INITIAL_TEAMS = [
           "esp": 0,
           "au": 0
         }
+      },
+      {
+        "id": "lecce_bleve_4468",
+        "csvId": "4468",
+        "name": "Bleve",
+        "displayName": "Bleve",
+        "teamName": "Lecce",
+        "teamId": "lecce",
+        "role": "POR",
+        "classicRole": "P",
+        "mantraRole": "Por",
+        "fantaRole": "P",
+        "appetibilita": 1,
+        "status": "riserva",
+        "isAvailable": true,
+        "isPenaltyTaker": false,
+        "isFreeKickTaker": false,
+        "isCornerTaker": false,
+        "rigorista": false,
+        "punizioni": false,
+        "corner": false,
+        "positionNotes": "",
+        "fantaComment": "",
+        "quotazioni": {
+          "qtA": 1,
+          "qtI": 1,
+          "diff": 0,
+          "qtAM": 1,
+          "qtIM": 1,
+          "diffM": 0,
+          "fvm": 1,
+          "fvmM": 1
+        },
+        "stats": {
+          "titolarita": 50,
+          "fantamedia": 6,
+          "mediaVoto": 6,
+          "pv": 0,
+          "presenze": 0,
+          "gol": 0,
+          "gf": 0,
+          "gs": 0,
+          "golSubiti": 0,
+          "rp": 0,
+          "rc": 0,
+          "rPlus": 0,
+          "rMinus": 0,
+          "rigoriSegnati": 0,
+          "rigoriSbagliati": 0,
+          "assist": 0,
+          "ass": 0,
+          "ammonizioni": 0,
+          "amm": 0,
+          "espulsioni": 0,
+          "esp": 0,
+          "au": 0
+        }
       }
     ],
     "ballottaggi": [],
@@ -16799,7 +17034,7 @@ export const INITIAL_TEAMS = [
         "classicRole": "P",
         "mantraRole": "Por",
         "fantaRole": "P",
-        "appetibilita": 83,
+        "appetibilita": 65,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -16821,7 +17056,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 50
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 97,
           "fantamedia": 5.42,
           "mediaVoto": 6.26,
           "pv": 37,
@@ -16847,7 +17082,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "milan_terracciano_2815",
           "milan_torriani_6813"
-        ]
+        ],
+        "slotId": "pos_1"
       },
       "pos_2": {
         "id": "milan_pavlovic_5022",
@@ -16856,11 +17092,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Pavlovic",
         "teamName": "Milan",
         "teamId": "milan",
-        "role": "TD",
+        "role": "DC",
         "classicRole": "D",
         "mantraRole": "Dc",
         "fantaRole": "D",
-        "appetibilita": 79,
+        "appetibilita": 62,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -16882,7 +17118,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 48
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 89,
           "fantamedia": 6.62,
           "mediaVoto": 6.24,
           "pv": 34,
@@ -16908,7 +17144,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "milan_tomori_4751",
           "milan_de_winter_5739"
-        ]
+        ],
+        "slotId": "pos_2"
       },
       "pos_3": {
         "id": "milan_gila_5833",
@@ -16921,7 +17158,7 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Dc",
         "fantaRole": "D",
-        "appetibilita": 55,
+        "appetibilita": 40,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -16943,7 +17180,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 31
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 82,
           "fantamedia": 5.95,
           "mediaVoto": 6.03,
           "pv": 31,
@@ -16969,7 +17206,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "milan_tomori_4751",
           "milan_de_winter_5739"
-        ]
+        ],
+        "slotId": "pos_3"
       },
       "pos_4": {
         "id": "milan_bartesaghi_6496",
@@ -16978,11 +17216,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Bartesaghi",
         "teamName": "Milan",
         "teamId": "milan",
-        "role": "DC",
+        "role": "TS",
         "classicRole": "D",
         "mantraRole": "Ds;E",
         "fantaRole": "D",
-        "appetibilita": 42,
+        "appetibilita": 33,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -17004,7 +17242,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 25
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 82,
           "fantamedia": 6.05,
           "mediaVoto": 5.97,
           "pv": 31,
@@ -17025,12 +17263,13 @@ export const INITIAL_TEAMS = [
           "amm": 3,
           "espulsioni": 0,
           "esp": 0,
-          "au": 1
+          "au": 0
         },
         "substitutes": [
           "milan_tomori_4751",
           "milan_de_winter_5739"
-        ]
+        ],
+        "slotId": "pos_4"
       },
       "pos_5": {
         "id": "milan_gabbia_4401",
@@ -17039,11 +17278,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Gabbia",
         "teamName": "Milan",
         "teamId": "milan",
-        "role": "TS",
+        "role": "DC",
         "classicRole": "D",
         "mantraRole": "Dc",
         "fantaRole": "D",
-        "appetibilita": 41,
+        "appetibilita": 33,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -17065,7 +17304,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 25
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 76,
           "fantamedia": 5.84,
           "mediaVoto": 5.91,
           "pv": 29,
@@ -17091,7 +17330,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "milan_tomori_4751",
           "milan_de_winter_5739"
-        ]
+        ],
+        "slotId": "pos_5"
       },
       "pos_6": {
         "id": "milan_pulisic_2423",
@@ -17100,7 +17340,7 @@ export const INITIAL_TEAMS = [
         "displayName": "Pulisic",
         "teamName": "Milan",
         "teamId": "milan",
-        "role": "CDC",
+        "role": "T",
         "classicRole": "C",
         "mantraRole": "T;A",
         "fantaRole": "C",
@@ -17126,7 +17366,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 180
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 71,
           "fantamedia": 7.07,
           "mediaVoto": 6.15,
           "pv": 27,
@@ -17152,7 +17392,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "milan_chukwueze_4856",
           "milan_ricci_s__5453"
-        ]
+        ],
+        "slotId": "pos_6"
       },
       "pos_7": {
         "id": "milan_rabiot_2379",
@@ -17161,7 +17402,7 @@ export const INITIAL_TEAMS = [
         "displayName": "Rabiot",
         "teamName": "Milan",
         "teamId": "milan",
-        "role": "CDC",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C;T",
         "fantaRole": "C",
@@ -17187,7 +17428,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 128
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 76,
           "fantamedia": 6.98,
           "mediaVoto": 6.33,
           "pv": 29,
@@ -17213,7 +17454,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "milan_chukwueze_4856",
           "milan_ricci_s__5453"
-        ]
+        ],
+        "slotId": "pos_7"
       },
       "pos_8": {
         "id": "milan_modric_2606",
@@ -17222,11 +17464,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Modric",
         "teamName": "Milan",
         "teamId": "milan",
-        "role": "AD",
+        "role": "M",
         "classicRole": "C",
         "mantraRole": "M;C",
         "fantaRole": "C",
-        "appetibilita": 78,
+        "appetibilita": 65,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -17248,7 +17490,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 60
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 87,
           "fantamedia": 6.67,
           "mediaVoto": 6.45,
           "pv": 33,
@@ -17274,7 +17516,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "milan_chukwueze_4856",
           "milan_ricci_s__5453"
-        ]
+        ],
+        "slotId": "pos_8"
       },
       "pos_9": {
         "id": "milan_saelemaekers_4892",
@@ -17283,11 +17526,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Saelemaekers",
         "teamName": "Milan",
         "teamId": "milan",
-        "role": "COC",
+        "role": "E",
         "classicRole": "C",
         "mantraRole": "E;W",
         "fantaRole": "C",
-        "appetibilita": 67,
+        "appetibilita": 56,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -17309,7 +17552,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 45
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 92,
           "fantamedia": 6.41,
           "mediaVoto": 6.14,
           "pv": 35,
@@ -17335,7 +17578,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "milan_chukwueze_4856",
           "milan_ricci_s__5453"
-        ]
+        ],
+        "slotId": "pos_9"
       },
       "pos_10": {
         "id": "milan_fofana_y__4686",
@@ -17344,12 +17588,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Fofana Y.",
         "teamName": "Milan",
         "teamId": "milan",
-        "role": "AS",
+        "role": "M",
         "classicRole": "C",
         "mantraRole": "M;C",
         "fantaRole": "C",
-        "appetibilita": 35,
-        "status": "ballottaggio",
+        "appetibilita": 30,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -17370,7 +17614,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 26
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 87,
           "fantamedia": 6.06,
           "mediaVoto": 5.85,
           "pv": 33,
@@ -17396,7 +17640,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "milan_chukwueze_4856",
           "milan_ricci_s__5453"
-        ]
+        ],
+        "slotId": "pos_10"
       },
       "pos_11": {
         "id": "milan_ramos_g__6397",
@@ -17410,7 +17655,7 @@ export const INITIAL_TEAMS = [
         "mantraRole": "Pc",
         "fantaRole": "A",
         "appetibilita": 100,
-        "status": "tit_sicuro",
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -17431,7 +17676,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 232
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -17457,7 +17702,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "milan_leao_4510",
           "milan_nkunku_4728"
-        ]
+        ],
+        "slotId": "pos_11"
       }
     },
     "bench": [
@@ -18372,6 +18618,63 @@ export const INITIAL_TEAMS = [
           "esp": 0,
           "au": 0
         }
+      },
+      {
+        "id": "milan_moreira_6372",
+        "csvId": "6372",
+        "name": "Moreira",
+        "displayName": "Moreira",
+        "teamName": "Milan",
+        "teamId": "milan",
+        "role": "W",
+        "classicRole": "C",
+        "mantraRole": "W",
+        "fantaRole": "C",
+        "appetibilita": 68,
+        "status": "riserva",
+        "isAvailable": true,
+        "isPenaltyTaker": false,
+        "isFreeKickTaker": false,
+        "isCornerTaker": false,
+        "rigorista": false,
+        "punizioni": false,
+        "corner": false,
+        "positionNotes": "",
+        "fantaComment": "",
+        "quotazioni": {
+          "qtA": 12,
+          "qtI": 12,
+          "diff": 0,
+          "qtAM": 12,
+          "qtIM": 12,
+          "diffM": 0,
+          "fvm": 52,
+          "fvmM": 48
+        },
+        "stats": {
+          "titolarita": 50,
+          "fantamedia": 6,
+          "mediaVoto": 6,
+          "pv": 0,
+          "presenze": 0,
+          "gol": 0,
+          "gf": 0,
+          "gs": 0,
+          "golSubiti": 0,
+          "rp": 0,
+          "rc": 0,
+          "rPlus": 0,
+          "rMinus": 0,
+          "rigoriSegnati": 0,
+          "rigoriSbagliati": 0,
+          "assist": 0,
+          "ass": 0,
+          "ammonizioni": 0,
+          "amm": 0,
+          "espulsioni": 0,
+          "esp": 0,
+          "au": 0
+        }
       }
     ],
     "ballottaggi": [],
@@ -18417,7 +18720,7 @@ export const INITIAL_TEAMS = [
         "classicRole": "P",
         "mantraRole": "Por",
         "fantaRole": "P",
-        "appetibilita": 22,
+        "appetibilita": 16,
         "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -18439,8 +18742,8 @@ export const INITIAL_TEAMS = [
           "fvmM": 12
         },
         "stats": {
-          "titolarita": 40,
-          "fantamedia": 5,
+          "titolarita": 50,
+          "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
           "presenze": 0,
@@ -18465,7 +18768,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "monza_pizzignacco_6682",
           "monza_strajnar_7475"
-        ]
+        ],
+        "slotId": "pos_1"
       },
       "pos_2": {
         "id": "monza_mangas_7485",
@@ -18474,12 +18778,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Mangas",
         "teamName": "Monza",
         "teamId": "monza",
-        "role": "DC",
+        "role": "TS",
         "classicRole": "D",
         "mantraRole": "Ds;E",
         "fantaRole": "D",
-        "appetibilita": 27,
-        "status": "ballottaggio",
+        "appetibilita": 20,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -18500,7 +18804,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 15
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -18526,7 +18830,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "monza_delli_carri_2115",
           "monza_kouadio_7238"
-        ]
+        ],
+        "slotId": "pos_2"
       },
       "pos_3": {
         "id": "monza_lucchesi_6659",
@@ -18539,8 +18844,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Dc",
         "fantaRole": "D",
-        "appetibilita": 20,
-        "status": "ballottaggio",
+        "appetibilita": 16,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -18561,7 +18866,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 12
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -18587,7 +18892,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "monza_delli_carri_2115",
           "monza_kouadio_7238"
-        ]
+        ],
+        "slotId": "pos_3"
       },
       "pos_4": {
         "id": "monza_birindelli_5838",
@@ -18596,12 +18902,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Birindelli",
         "teamName": "Monza",
         "teamId": "monza",
-        "role": "DC",
+        "role": "TD",
         "classicRole": "D",
         "mantraRole": "Dd;Ds;E",
         "fantaRole": "D",
-        "appetibilita": 20,
-        "status": "ballottaggio",
+        "appetibilita": 16,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -18622,7 +18928,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 14
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -18648,7 +18954,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "monza_delli_carri_2115",
           "monza_kouadio_7238"
-        ]
+        ],
+        "slotId": "pos_4"
       },
       "pos_5": {
         "id": "monza_colpani_5878",
@@ -18657,12 +18964,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Colpani",
         "teamName": "Monza",
         "teamId": "monza",
-        "role": "E",
+        "role": "T",
         "classicRole": "C",
         "mantraRole": "T",
         "fantaRole": "C",
-        "appetibilita": 42,
-        "status": "tit_sicuro",
+        "appetibilita": 33,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -18683,7 +18990,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 22
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -18706,7 +19013,8 @@ export const INITIAL_TEAMS = [
           "esp": 0,
           "au": 0
         },
-        "substitutes": []
+        "substitutes": [],
+        "slotId": "pos_5"
       },
       "pos_6": {
         "id": "monza_pessina_2741",
@@ -18715,12 +19023,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Pessina",
         "teamName": "Monza",
         "teamId": "monza",
-        "role": "CC",
+        "role": "M",
         "classicRole": "C",
         "mantraRole": "M;C",
         "fantaRole": "C",
-        "appetibilita": 29,
-        "status": "ballottaggio",
+        "appetibilita": 20,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -18741,7 +19049,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 20
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -18764,7 +19072,8 @@ export const INITIAL_TEAMS = [
           "esp": 0,
           "au": 0
         },
-        "substitutes": []
+        "substitutes": [],
+        "slotId": "pos_6"
       },
       "pos_7": {
         "id": "monza_akinsanmiro_6593",
@@ -18773,12 +19082,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Akinsanmiro",
         "teamName": "Monza",
         "teamId": "monza",
-        "role": "CC",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C",
         "fantaRole": "C",
-        "appetibilita": 28,
-        "status": "ballottaggio",
+        "appetibilita": 21,
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -18799,7 +19108,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 16
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 61,
           "fantamedia": 5.8,
           "mediaVoto": 5.8,
           "pv": 23,
@@ -18822,7 +19131,8 @@ export const INITIAL_TEAMS = [
           "esp": 0,
           "au": 0
         },
-        "substitutes": []
+        "substitutes": [],
+        "slotId": "pos_7"
       },
       "pos_8": {
         "id": "monza_colombo_l__7477",
@@ -18831,11 +19141,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Colombo L.",
         "teamName": "Monza",
         "teamId": "monza",
-        "role": "E",
+        "role": "M",
         "classicRole": "C",
         "mantraRole": "M;C",
         "fantaRole": "C",
-        "appetibilita": 13,
+        "appetibilita": 9,
         "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -18857,7 +19167,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 8
         },
         "stats": {
-          "titolarita": 25,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -18880,7 +19190,8 @@ export const INITIAL_TEAMS = [
           "esp": 0,
           "au": 0
         },
-        "substitutes": []
+        "substitutes": [],
+        "slotId": "pos_8"
       },
       "pos_9": {
         "id": "monza_ciurria_5880",
@@ -18889,11 +19200,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Ciurria",
         "teamName": "Monza",
         "teamId": "monza",
-        "role": "COC",
+        "role": "E",
         "classicRole": "C",
         "mantraRole": "E;W",
         "fantaRole": "C",
-        "appetibilita": 10,
+        "appetibilita": 8,
         "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -18915,7 +19226,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 6
         },
         "stats": {
-          "titolarita": 25,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -18938,7 +19249,8 @@ export const INITIAL_TEAMS = [
           "esp": 0,
           "au": 0
         },
-        "substitutes": []
+        "substitutes": [],
+        "slotId": "pos_9"
       },
       "pos_10": {
         "id": "monza_forson_o__6592",
@@ -18947,11 +19259,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Forson O.",
         "teamName": "Monza",
         "teamId": "monza",
-        "role": "COC",
+        "role": "T",
         "classicRole": "C",
         "mantraRole": "W;T",
         "fantaRole": "C",
-        "appetibilita": 10,
+        "appetibilita": 1,
         "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -18973,7 +19285,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 1
         },
         "stats": {
-          "titolarita": 25,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -18996,7 +19308,8 @@ export const INITIAL_TEAMS = [
           "esp": 0,
           "au": 0
         },
-        "substitutes": []
+        "substitutes": [],
+        "slotId": "pos_10"
       },
       "pos_11": {
         "id": "monza_cutrone_2155",
@@ -19009,8 +19322,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "A",
         "mantraRole": "Pc",
         "fantaRole": "A",
-        "appetibilita": 53,
-        "status": "tit_sicuro",
+        "appetibilita": 43,
+        "status": "ballottaggio",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -19031,7 +19344,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 30
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 37,
           "fantamedia": 5.93,
           "mediaVoto": 5.71,
           "pv": 14,
@@ -19057,7 +19370,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "monza_mota_5882",
           "monza_robinson_j__7546"
-        ]
+        ],
+        "slotId": "pos_11"
       }
     },
     "bench": [
@@ -19687,6 +20001,63 @@ export const INITIAL_TEAMS = [
           "esp": 0,
           "au": 0
         }
+      },
+      {
+        "id": "monza_tour__i__7146",
+        "csvId": "7146",
+        "name": "Tourè I.",
+        "displayName": "Tourè I.",
+        "teamName": "Monza",
+        "teamId": "monza",
+        "role": "E",
+        "classicRole": "C",
+        "mantraRole": "E;M",
+        "fantaRole": "C",
+        "appetibilita": 20,
+        "status": "tit_sicuro",
+        "isAvailable": true,
+        "isPenaltyTaker": false,
+        "isFreeKickTaker": false,
+        "isCornerTaker": false,
+        "rigorista": false,
+        "punizioni": false,
+        "corner": false,
+        "positionNotes": "",
+        "fantaComment": "",
+        "quotazioni": {
+          "qtA": 6,
+          "qtI": 6,
+          "diff": 0,
+          "qtAM": 8,
+          "qtIM": 8,
+          "diffM": 0,
+          "fvm": 15,
+          "fvmM": 19
+        },
+        "stats": {
+          "titolarita": 79,
+          "fantamedia": 5.82,
+          "mediaVoto": 5.82,
+          "pv": 30,
+          "presenze": 30,
+          "gol": 1,
+          "gf": 1,
+          "gs": 0,
+          "golSubiti": 0,
+          "rp": 0,
+          "rc": 0,
+          "rPlus": 0,
+          "rMinus": 0,
+          "rigoriSegnati": 0,
+          "rigoriSbagliati": 0,
+          "assist": 0,
+          "ass": 0,
+          "ammonizioni": 4,
+          "amm": 4,
+          "espulsioni": 1,
+          "esp": 1,
+          "au": 0
+        }
       }
     ],
     "ballottaggi": [],
@@ -19730,8 +20101,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "P",
         "mantraRole": "Por",
         "fantaRole": "P",
-        "appetibilita": 71,
-        "status": "tit_sicuro",
+        "appetibilita": 59,
+        "status": "ballottaggio",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -19752,7 +20123,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 45
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 29,
           "fantamedia": 5.18,
           "mediaVoto": 6.23,
           "pv": 11,
@@ -19778,7 +20149,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "napoli_milinkovic_savic_v__2170",
           "napoli_contini_2845"
-        ]
+        ],
+        "slotId": "pos_1"
       },
       "pos_2": {
         "id": "napoli_rrahmani_4409",
@@ -19791,8 +20163,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Dc",
         "fantaRole": "D",
-        "appetibilita": 77,
-        "status": "tit_sicuro",
+        "appetibilita": 61,
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -19813,7 +20185,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 47
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 55,
           "fantamedia": 6.45,
           "mediaVoto": 6.24,
           "pv": 21,
@@ -19839,7 +20211,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "napoli_buongiorno_2724",
           "napoli_beukema_6202"
-        ]
+        ],
+        "slotId": "pos_2"
       },
       "pos_3": {
         "id": "napoli_di_lorenzo_2816",
@@ -19848,11 +20221,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Di Lorenzo",
         "teamName": "Napoli",
         "teamId": "napoli",
-        "role": "DC",
+        "role": "TD",
         "classicRole": "D",
         "mantraRole": "Dd;E",
         "fantaRole": "D",
-        "appetibilita": 66,
+        "appetibilita": 52,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -19874,7 +20247,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 40
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 68,
           "fantamedia": 6.33,
           "mediaVoto": 6.08,
           "pv": 26,
@@ -19900,7 +20273,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "napoli_buongiorno_2724",
           "napoli_beukema_6202"
-        ]
+        ],
+        "slotId": "pos_3"
       },
       "pos_4": {
         "id": "napoli_spinazzola_1852",
@@ -19909,12 +20283,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Spinazzola",
         "teamName": "Napoli",
         "teamId": "napoli",
-        "role": "DC",
+        "role": "TS",
         "classicRole": "D",
         "mantraRole": "Ds;E",
         "fantaRole": "D",
-        "appetibilita": 41,
-        "status": "ballottaggio",
+        "appetibilita": 31,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -19935,7 +20309,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 24
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 79,
           "fantamedia": 6.55,
           "mediaVoto": 6.17,
           "pv": 30,
@@ -19961,7 +20335,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "napoli_buongiorno_2724",
           "napoli_beukema_6202"
-        ]
+        ],
+        "slotId": "pos_4"
       },
       "pos_5": {
         "id": "napoli_mctominay_4777",
@@ -19970,7 +20345,7 @@ export const INITIAL_TEAMS = [
         "displayName": "McTominay",
         "teamName": "Napoli",
         "teamId": "napoli",
-        "role": "E",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C;T",
         "fantaRole": "C",
@@ -19996,7 +20371,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 240
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 87,
           "fantamedia": 7.26,
           "mediaVoto": 6.39,
           "pv": 33,
@@ -20022,7 +20397,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "napoli_folorunsho_6252",
           "napoli_gilmour_5131"
-        ]
+        ],
+        "slotId": "pos_5"
       },
       "pos_6": {
         "id": "napoli_de_bruyne_2517",
@@ -20031,12 +20407,12 @@ export const INITIAL_TEAMS = [
         "displayName": "De Bruyne",
         "teamName": "Napoli",
         "teamId": "napoli",
-        "role": "CC",
+        "role": "T",
         "classicRole": "C",
         "mantraRole": "T",
         "fantaRole": "C",
         "appetibilita": 100,
-        "status": "tit_sicuro",
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": true,
         "isFreeKickTaker": false,
@@ -20057,7 +20433,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 95
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 45,
           "fantamedia": 7.24,
           "mediaVoto": 6.26,
           "pv": 17,
@@ -20083,7 +20459,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "napoli_folorunsho_6252",
           "napoli_gilmour_5131"
-        ]
+        ],
+        "slotId": "pos_6"
       },
       "pos_7": {
         "id": "napoli_zambo_anguissa_4220",
@@ -20092,12 +20469,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Zambo Anguissa",
         "teamName": "Napoli",
         "teamId": "napoli",
-        "role": "CC",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C",
         "fantaRole": "C",
-        "appetibilita": 81,
-        "status": "tit_sicuro",
+        "appetibilita": 70,
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -20118,7 +20495,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 54
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 47,
           "fantamedia": 6.86,
           "mediaVoto": 6.17,
           "pv": 18,
@@ -20144,7 +20521,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "napoli_folorunsho_6252",
           "napoli_gilmour_5131"
-        ]
+        ],
+        "slotId": "pos_7"
       },
       "pos_8": {
         "id": "napoli_politano_536",
@@ -20153,11 +20531,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Politano",
         "teamName": "Napoli",
         "teamId": "napoli",
-        "role": "E",
+        "role": "W",
         "classicRole": "C",
         "mantraRole": "W",
         "fantaRole": "C",
-        "appetibilita": 71,
+        "appetibilita": 61,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -20179,7 +20557,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 43
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 87,
           "fantamedia": 6.36,
           "mediaVoto": 6.09,
           "pv": 33,
@@ -20205,7 +20583,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "napoli_folorunsho_6252",
           "napoli_gilmour_5131"
-        ]
+        ],
+        "slotId": "pos_8"
       },
       "pos_9": {
         "id": "napoli_vergara_7223",
@@ -20214,12 +20593,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Vergara",
         "teamName": "Napoli",
         "teamId": "napoli",
-        "role": "COC",
+        "role": "T",
         "classicRole": "C",
         "mantraRole": "W;T",
         "fantaRole": "C",
-        "appetibilita": 53,
-        "status": "tit_sicuro",
+        "appetibilita": 44,
+        "status": "ballottaggio",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -20240,7 +20619,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 34
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 21,
           "fantamedia": 6.5,
           "mediaVoto": 6.25,
           "pv": 8,
@@ -20266,7 +20645,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "napoli_folorunsho_6252",
           "napoli_gilmour_5131"
-        ]
+        ],
+        "slotId": "pos_9"
       },
       "pos_10": {
         "id": "napoli_lobotka_4287",
@@ -20275,12 +20655,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Lobotka",
         "teamName": "Napoli",
         "teamId": "napoli",
-        "role": "COC",
+        "role": "M",
         "classicRole": "C",
         "mantraRole": "M;C",
         "fantaRole": "C",
-        "appetibilita": 35,
-        "status": "ballottaggio",
+        "appetibilita": 26,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -20301,7 +20681,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 22
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 82,
           "fantamedia": 6.1,
           "mediaVoto": 6.05,
           "pv": 31,
@@ -20327,7 +20707,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "napoli_folorunsho_6252",
           "napoli_gilmour_5131"
-        ]
+        ],
+        "slotId": "pos_10"
       },
       "pos_11": {
         "id": "napoli_hojlund_6052",
@@ -20362,7 +20743,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 271
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 87,
           "fantamedia": 7.44,
           "mediaVoto": 6.21,
           "pv": 33,
@@ -20388,7 +20769,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "napoli_santos_a__7351",
           "napoli_neres_6831"
-        ]
+        ],
+        "slotId": "pos_11"
       }
     },
     "bench": [
@@ -21348,7 +21730,7 @@ export const INITIAL_TEAMS = [
         "classicRole": "P",
         "mantraRole": "Por",
         "fantaRole": "P",
-        "appetibilita": 17,
+        "appetibilita": 7,
         "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -21370,8 +21752,8 @@ export const INITIAL_TEAMS = [
           "fvmM": 5
         },
         "stats": {
-          "titolarita": 40,
-          "fantamedia": 5,
+          "titolarita": 50,
+          "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
           "presenze": 0,
@@ -21395,7 +21777,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "parma_corvi_6662"
-        ]
+        ],
+        "slotId": "pos_1"
       },
       "pos_2": {
         "id": "parma_valeri_5862",
@@ -21404,12 +21787,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Valeri",
         "teamName": "Parma",
         "teamId": "parma",
-        "role": "TD",
+        "role": "TS",
         "classicRole": "D",
         "mantraRole": "Ds;E",
         "fantaRole": "D",
-        "appetibilita": 41,
-        "status": "ballottaggio",
+        "appetibilita": 31,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -21430,7 +21813,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 24
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 89,
           "fantamedia": 6.09,
           "mediaVoto": 6.06,
           "pv": 34,
@@ -21456,7 +21839,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "parma_britschgi_7255",
           "parma_troilo_7235"
-        ]
+        ],
+        "slotId": "pos_2"
       },
       "pos_3": {
         "id": "parma_delprato_6664",
@@ -21465,12 +21849,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Delprato",
         "teamName": "Parma",
         "teamId": "parma",
-        "role": "DC",
+        "role": "TD",
         "classicRole": "D",
         "mantraRole": "B;Dd;E",
         "fantaRole": "D",
-        "appetibilita": 37,
-        "status": "ballottaggio",
+        "appetibilita": 27,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -21491,7 +21875,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 24
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 92,
           "fantamedia": 6.01,
           "mediaVoto": 5.91,
           "pv": 35,
@@ -21517,7 +21901,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "parma_britschgi_7255",
           "parma_troilo_7235"
-        ]
+        ],
+        "slotId": "pos_3"
       },
       "pos_4": {
         "id": "parma_circati_6663",
@@ -21587,12 +21972,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Valenti",
         "teamName": "Parma",
         "teamId": "parma",
-        "role": "TS",
+        "role": "DC",
         "classicRole": "D",
         "mantraRole": "Dc",
         "fantaRole": "D",
-        "appetibilita": 18,
-        "status": "riserva",
+        "appetibilita": 13,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -21613,7 +21998,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 10
         },
         "stats": {
-          "titolarita": 45,
+          "titolarita": 71,
           "fantamedia": 5.83,
           "mediaVoto": 5.96,
           "pv": 27,
@@ -21639,7 +22024,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "parma_britschgi_7255",
           "parma_troilo_7235"
-        ]
+        ],
+        "slotId": "pos_5"
       },
       "pos_6": {
         "id": "parma_bernab__6666",
@@ -21648,11 +22034,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Bernabè",
         "teamName": "Parma",
         "teamId": "parma",
-        "role": "CDC",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C",
         "fantaRole": "C",
-        "appetibilita": 54,
+        "appetibilita": 47,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -21674,7 +22060,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 36
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 84,
           "fantamedia": 6.48,
           "mediaVoto": 6.17,
           "pv": 32,
@@ -21700,7 +22086,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "parma_diallo_o__7536",
           "parma_ordonez_c__7138"
-        ]
+        ],
+        "slotId": "pos_6"
       },
       "pos_7": {
         "id": "parma_nicolussi_caviglia_4349",
@@ -21709,12 +22096,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Nicolussi Caviglia",
         "teamName": "Parma",
         "teamId": "parma",
-        "role": "CDC",
+        "role": "M",
         "classicRole": "C",
         "mantraRole": "M;C",
         "fantaRole": "C",
-        "appetibilita": 31,
-        "status": "ballottaggio",
+        "appetibilita": 23,
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -21735,7 +22122,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 20
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 61,
           "fantamedia": 6.02,
           "mediaVoto": 5.89,
           "pv": 23,
@@ -21761,7 +22148,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "parma_diallo_o__7536",
           "parma_ordonez_c__7138"
-        ]
+        ],
+        "slotId": "pos_7"
       },
       "pos_8": {
         "id": "parma_keita_m__6898",
@@ -21770,12 +22158,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Keita M.",
         "teamName": "Parma",
         "teamId": "parma",
-        "role": "AD",
+        "role": "M",
         "classicRole": "C",
         "mantraRole": "M;C",
         "fantaRole": "C",
-        "appetibilita": 26,
-        "status": "ballottaggio",
+        "appetibilita": 20,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -21796,7 +22184,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 17
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 95,
           "fantamedia": 6.06,
           "mediaVoto": 6.01,
           "pv": 36,
@@ -21817,12 +22205,13 @@ export const INITIAL_TEAMS = [
           "amm": 1,
           "espulsioni": 0,
           "esp": 0,
-          "au": 1
+          "au": 0
         },
         "substitutes": [
           "parma_diallo_o__7536",
           "parma_ordonez_c__7138"
-        ]
+        ],
+        "slotId": "pos_8"
       },
       "pos_9": {
         "id": "parma_almqvist_6207",
@@ -21831,11 +22220,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Almqvist",
         "teamName": "Parma",
         "teamId": "parma",
-        "role": "COC",
+        "role": "W",
         "classicRole": "C",
         "mantraRole": "W;A",
         "fantaRole": "C",
-        "appetibilita": 23,
+        "appetibilita": 18,
         "status": "ballottaggio",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -21857,7 +22246,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 12
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 24,
           "fantamedia": 6.06,
           "mediaVoto": 5.94,
           "pv": 9,
@@ -21883,7 +22272,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "parma_diallo_o__7536",
           "parma_ordonez_c__7138"
-        ]
+        ],
+        "slotId": "pos_9"
       },
       "pos_10": {
         "id": "parma_sorensen_o__7209",
@@ -21892,12 +22282,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Sorensen O.",
         "teamName": "Parma",
         "teamId": "parma",
-        "role": "AS",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C",
         "fantaRole": "C",
-        "appetibilita": 19,
-        "status": "ballottaggio",
+        "appetibilita": 16,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -21918,7 +22308,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 12
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 79,
           "fantamedia": 5.95,
           "mediaVoto": 5.85,
           "pv": 30,
@@ -21944,7 +22334,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "parma_diallo_o__7536",
           "parma_ordonez_c__7138"
-        ]
+        ],
+        "slotId": "pos_10"
       },
       "pos_11": {
         "id": "parma_tour__e__6229",
@@ -21957,8 +22348,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "A",
         "mantraRole": "Pc",
         "fantaRole": "A",
-        "appetibilita": 68,
-        "status": "tit_sicuro",
+        "appetibilita": 56,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -21979,7 +22370,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 43
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -22005,7 +22396,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "parma_romero_d__7554",
           "parma_frigan_7213"
-        ]
+        ],
+        "slotId": "pos_11"
       }
     },
     "bench": [
@@ -22792,7 +23184,7 @@ export const INITIAL_TEAMS = [
         "classicRole": "P",
         "mantraRole": "Por",
         "fantaRole": "P",
-        "appetibilita": 100,
+        "appetibilita": 85,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -22814,7 +23206,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 65
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 100,
           "fantamedia": 5.45,
           "mediaVoto": 6.26,
           "pv": 38,
@@ -22840,7 +23232,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "roma_de_marzi_7048",
           "roma_gollini_610"
-        ]
+        ],
+        "slotId": "pos_1"
       },
       "pos_2": {
         "id": "roma_molina_n__4998",
@@ -22849,12 +23242,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Molina N.",
         "teamName": "Roma",
         "teamId": "roma",
-        "role": "TD",
+        "role": "E",
         "classicRole": "D",
         "mantraRole": "E",
         "fantaRole": "D",
         "appetibilita": 100,
-        "status": "tit_sicuro",
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -22875,7 +23268,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 87
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -22901,7 +23294,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "roma_hermoso_4807",
           "roma_koulierakis_7529"
-        ]
+        ],
+        "slotId": "pos_2"
       },
       "pos_3": {
         "id": "roma_wesley_7181",
@@ -22910,7 +23304,7 @@ export const INITIAL_TEAMS = [
         "displayName": "Wesley",
         "teamName": "Roma",
         "teamId": "roma",
-        "role": "DC",
+        "role": "E",
         "classicRole": "D",
         "mantraRole": "E",
         "fantaRole": "D",
@@ -22936,7 +23330,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 80
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 79,
           "fantamedia": 6.47,
           "mediaVoto": 6.12,
           "pv": 30,
@@ -22962,7 +23356,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "roma_hermoso_4807",
           "roma_koulierakis_7529"
-        ]
+        ],
+        "slotId": "pos_3"
       },
       "pos_4": {
         "id": "roma_mancini_2296",
@@ -22975,7 +23370,7 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Dc",
         "fantaRole": "D",
-        "appetibilita": 81,
+        "appetibilita": 64,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -22997,7 +23392,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 49
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 95,
           "fantamedia": 6.51,
           "mediaVoto": 6.25,
           "pv": 36,
@@ -23023,7 +23418,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "roma_hermoso_4807",
           "roma_koulierakis_7529"
-        ]
+        ],
+        "slotId": "pos_4"
       },
       "pos_5": {
         "id": "roma_n_dicka_4317",
@@ -23032,11 +23428,11 @@ export const INITIAL_TEAMS = [
         "displayName": "N'Dicka",
         "teamName": "Roma",
         "teamId": "roma",
-        "role": "TS",
+        "role": "DC",
         "classicRole": "D",
         "mantraRole": "Dc",
         "fantaRole": "D",
-        "appetibilita": 72,
+        "appetibilita": 57,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -23058,7 +23454,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 44
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 82,
           "fantamedia": 6.32,
           "mediaVoto": 6.08,
           "pv": 31,
@@ -23084,7 +23480,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "roma_hermoso_4807",
           "roma_koulierakis_7529"
-        ]
+        ],
+        "slotId": "pos_5"
       },
       "pos_6": {
         "id": "roma_mora_7556",
@@ -23093,12 +23490,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Mora",
         "teamName": "Roma",
         "teamId": "roma",
-        "role": "M",
+        "role": "T",
         "classicRole": "C",
         "mantraRole": "T",
         "fantaRole": "C",
         "appetibilita": 100,
-        "status": "tit_sicuro",
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -23119,7 +23516,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 99
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -23145,7 +23542,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "roma_cristante_779",
           "roma_pisilli_6190"
-        ]
+        ],
+        "slotId": "pos_6"
       },
       "pos_7": {
         "id": "roma_kon__m__5589",
@@ -23154,11 +23552,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Konè M.",
         "teamName": "Roma",
         "teamId": "roma",
-        "role": "CC",
+        "role": "M",
         "classicRole": "C",
         "mantraRole": "M;C",
         "fantaRole": "C",
-        "appetibilita": 65,
+        "appetibilita": 55,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -23180,7 +23578,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 45
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 76,
           "fantamedia": 6.53,
           "mediaVoto": 6.26,
           "pv": 29,
@@ -23206,7 +23604,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "roma_cristante_779",
           "roma_pisilli_6190"
-        ]
+        ],
+        "slotId": "pos_7"
       },
       "pos_8": {
         "id": "roma_pellegrini_lo__530",
@@ -23215,12 +23614,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Pellegrini Lo.",
         "teamName": "Roma",
         "teamId": "roma",
-        "role": "CC",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C;T",
         "fantaRole": "C",
-        "appetibilita": 49,
-        "status": "tit_sicuro",
+        "appetibilita": 36,
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": true,
         "isFreeKickTaker": false,
@@ -23241,7 +23640,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 28
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 63,
           "fantamedia": 6.58,
           "mediaVoto": 6.04,
           "pv": 24,
@@ -23267,7 +23666,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "roma_cristante_779",
           "roma_pisilli_6190"
-        ]
+        ],
+        "slotId": "pos_8"
       },
       "pos_9": {
         "id": "roma_malen_5585",
@@ -23276,12 +23676,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Malen",
         "teamName": "Roma",
         "teamId": "roma",
-        "role": "AD",
+        "role": "PC",
         "classicRole": "A",
         "mantraRole": "Pc",
         "fantaRole": "A",
         "appetibilita": 100,
-        "status": "tit_sicuro",
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": true,
         "isFreeKickTaker": false,
@@ -23302,7 +23702,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 365
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 47,
           "fantamedia": 8.97,
           "mediaVoto": 6.72,
           "pv": 18,
@@ -23328,7 +23728,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "roma_soul__5734",
           "roma_vaz_6981"
-        ]
+        ],
+        "slotId": "pos_9"
       },
       "pos_10": {
         "id": "roma_castro_s__6572",
@@ -23363,7 +23764,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 78
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 92,
           "fantamedia": 6.51,
           "mediaVoto": 5.93,
           "pv": 35,
@@ -23389,7 +23790,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "roma_soul__5734",
           "roma_vaz_6981"
-        ]
+        ],
+        "slotId": "pos_10"
       },
       "pos_11": {
         "id": "roma_dybala_309",
@@ -23398,12 +23800,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Dybala",
         "teamName": "Roma",
         "teamId": "roma",
-        "role": "AS",
+        "role": "A",
         "classicRole": "A",
         "mantraRole": "A",
         "fantaRole": "A",
-        "appetibilita": 100,
-        "status": "tit_sicuro",
+        "appetibilita": 87,
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": true,
         "isFreeKickTaker": false,
@@ -23424,7 +23826,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 67
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 55,
           "fantamedia": 6.74,
           "mediaVoto": 6.26,
           "pv": 21,
@@ -23450,7 +23852,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "roma_soul__5734",
           "roma_vaz_6981"
-        ]
+        ],
+        "slotId": "pos_11"
       }
     },
     "bench": [
@@ -24182,8 +24585,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "P",
         "mantraRole": "Por",
         "fantaRole": "P",
-        "appetibilita": 29,
-        "status": "riserva",
+        "appetibilita": 20,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -24204,7 +24607,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 15
         },
         "stats": {
-          "titolarita": 40,
+          "titolarita": 84,
           "fantamedia": 4.77,
           "mediaVoto": 6.08,
           "pv": 32,
@@ -24230,7 +24633,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "sassuolo_turati_4867",
           "sassuolo_russo_a__4518"
-        ]
+        ],
+        "slotId": "pos_1"
       },
       "pos_2": {
         "id": "sassuolo_idzes_6672",
@@ -24239,12 +24643,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Idzes",
         "teamName": "Sassuolo",
         "teamId": "sassuolo",
-        "role": "TD",
+        "role": "DC",
         "classicRole": "D",
         "mantraRole": "Dc",
         "fantaRole": "D",
-        "appetibilita": 33,
-        "status": "ballottaggio",
+        "appetibilita": 25,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -24265,7 +24669,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 19
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 92,
           "fantamedia": 5.9,
           "mediaVoto": 5.94,
           "pv": 35,
@@ -24291,7 +24695,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "sassuolo_cand__6985",
           "sassuolo_missori_6189"
-        ]
+        ],
+        "slotId": "pos_2"
       },
       "pos_3": {
         "id": "sassuolo_obrador_7329",
@@ -24300,12 +24705,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Obrador",
         "teamName": "Sassuolo",
         "teamId": "sassuolo",
-        "role": "DC",
+        "role": "TS",
         "classicRole": "D",
         "mantraRole": "Ds;E",
         "fantaRole": "D",
-        "appetibilita": 27,
-        "status": "ballottaggio",
+        "appetibilita": 20,
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -24326,7 +24731,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 15
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 42,
           "fantamedia": 6.41,
           "mediaVoto": 6.06,
           "pv": 16,
@@ -24352,7 +24757,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "sassuolo_cand__6985",
           "sassuolo_missori_6189"
-        ]
+        ],
+        "slotId": "pos_3"
       },
       "pos_4": {
         "id": "sassuolo_walukiewicz_4374",
@@ -24365,8 +24771,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Dd;Dc",
         "fantaRole": "D",
-        "appetibilita": 18,
-        "status": "riserva",
+        "appetibilita": 13,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -24387,7 +24793,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 12
         },
         "stats": {
-          "titolarita": 45,
+          "titolarita": 89,
           "fantamedia": 5.74,
           "mediaVoto": 5.81,
           "pv": 34,
@@ -24413,7 +24819,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "sassuolo_cand__6985",
           "sassuolo_missori_6189"
-        ]
+        ],
+        "slotId": "pos_4"
       },
       "pos_5": {
         "id": "sassuolo_doig_5851",
@@ -24426,8 +24833,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Ds;E",
         "fantaRole": "D",
-        "appetibilita": 18,
-        "status": "riserva",
+        "appetibilita": 13,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -24448,7 +24855,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 10
         },
         "stats": {
-          "titolarita": 45,
+          "titolarita": 71,
           "fantamedia": 5.76,
           "mediaVoto": 5.85,
           "pv": 27,
@@ -24474,7 +24881,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "sassuolo_cand__6985",
           "sassuolo_missori_6189"
-        ]
+        ],
+        "slotId": "pos_5"
       },
       "pos_6": {
         "id": "sassuolo_thorstvedt_5844",
@@ -24483,11 +24891,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Thorstvedt",
         "teamName": "Sassuolo",
         "teamId": "sassuolo",
-        "role": "M",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C;T",
         "fantaRole": "C",
-        "appetibilita": 64,
+        "appetibilita": 53,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -24509,7 +24917,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 41
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 82,
           "fantamedia": 6.48,
           "mediaVoto": 6.15,
           "pv": 31,
@@ -24535,7 +24943,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "sassuolo_adzic_6677",
           "sassuolo_matic_2528"
-        ]
+        ],
+        "slotId": "pos_6"
       },
       "pos_7": {
         "id": "sassuolo_kon__i__6717",
@@ -24544,12 +24953,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Konè I.",
         "teamName": "Sassuolo",
         "teamId": "sassuolo",
-        "role": "CC",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C",
         "fantaRole": "C",
-        "appetibilita": 38,
-        "status": "ballottaggio",
+        "appetibilita": 26,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -24570,7 +24979,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 20
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 92,
           "fantamedia": 6.63,
           "mediaVoto": 6.19,
           "pv": 35,
@@ -24596,7 +25005,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "sassuolo_adzic_6677",
           "sassuolo_matic_2528"
-        ]
+        ],
+        "slotId": "pos_7"
       },
       "pos_8": {
         "id": "sassuolo_volpato_5735",
@@ -24605,12 +25015,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Volpato",
         "teamName": "Sassuolo",
         "teamId": "sassuolo",
-        "role": "CC",
+        "role": "T",
         "classicRole": "C",
         "mantraRole": "W;T",
         "fantaRole": "C",
-        "appetibilita": 38,
-        "status": "ballottaggio",
+        "appetibilita": 30,
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -24631,7 +25041,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 23
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 55,
           "fantamedia": 6.52,
           "mediaVoto": 6.14,
           "pv": 21,
@@ -24657,7 +25067,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "sassuolo_adzic_6677",
           "sassuolo_matic_2528"
-        ]
+        ],
+        "slotId": "pos_8"
       },
       "pos_9": {
         "id": "sassuolo_berardi_531",
@@ -24666,7 +25077,7 @@ export const INITIAL_TEAMS = [
         "displayName": "Berardi",
         "teamName": "Sassuolo",
         "teamId": "sassuolo",
-        "role": "AD",
+        "role": "A",
         "classicRole": "A",
         "mantraRole": "A",
         "fantaRole": "A",
@@ -24692,7 +25103,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 118
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 68,
           "fantamedia": 7.19,
           "mediaVoto": 6.31,
           "pv": 26,
@@ -24718,7 +25129,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "sassuolo_bowie_7347",
           "sassuolo_moro_l__7158"
-        ]
+        ],
+        "slotId": "pos_9"
       },
       "pos_10": {
         "id": "sassuolo_laurient__6060",
@@ -24727,7 +25139,7 @@ export const INITIAL_TEAMS = [
         "displayName": "Laurientè",
         "teamName": "Sassuolo",
         "teamId": "sassuolo",
-        "role": "PC",
+        "role": "A",
         "classicRole": "A",
         "mantraRole": "A",
         "fantaRole": "A",
@@ -24753,7 +25165,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 91
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 97,
           "fantamedia": 6.99,
           "mediaVoto": 6.23,
           "pv": 37,
@@ -24779,7 +25191,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "sassuolo_bowie_7347",
           "sassuolo_moro_l__7158"
-        ]
+        ],
+        "slotId": "pos_10"
       },
       "pos_11": {
         "id": "sassuolo_pinamonti_2038",
@@ -24788,11 +25201,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Pinamonti",
         "teamName": "Sassuolo",
         "teamId": "sassuolo",
-        "role": "AS",
+        "role": "PC",
         "classicRole": "A",
         "mantraRole": "Pc",
         "fantaRole": "A",
-        "appetibilita": 86,
+        "appetibilita": 72,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": true,
@@ -24814,7 +25227,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 52
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 89,
           "fantamedia": 6.62,
           "mediaVoto": 5.88,
           "pv": 34,
@@ -24840,7 +25253,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "sassuolo_bowie_7347",
           "sassuolo_moro_l__7158"
-        ]
+        ],
+        "slotId": "pos_11"
       }
     },
     "bench": [
@@ -25742,7 +26156,7 @@ export const INITIAL_TEAMS = [
         "classicRole": "P",
         "mantraRole": "Por",
         "fantaRole": "P",
-        "appetibilita": 10,
+        "appetibilita": 1,
         "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -25764,8 +26178,8 @@ export const INITIAL_TEAMS = [
           "fvmM": 1
         },
         "stats": {
-          "titolarita": 10,
-          "fantamedia": 5,
+          "titolarita": 50,
+          "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
           "presenze": 0,
@@ -25790,7 +26204,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "torino_paleari_5320",
           "torino_siviero_7363"
-        ]
+        ],
+        "slotId": "pos_1"
       },
       "pos_2": {
         "id": "torino_coco_6642",
@@ -25803,8 +26218,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Dc",
         "fantaRole": "D",
-        "appetibilita": 32,
-        "status": "ballottaggio",
+        "appetibilita": 23,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -25825,7 +26240,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 18
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 92,
           "fantamedia": 5.91,
           "mediaVoto": 5.84,
           "pv": 35,
@@ -25851,7 +26266,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "torino_pedersen_6426",
           "torino_comert_7526"
-        ]
+        ],
+        "slotId": "pos_2"
       },
       "pos_3": {
         "id": "torino_ismajli_5010",
@@ -25864,8 +26280,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Dc",
         "fantaRole": "D",
-        "appetibilita": 32,
-        "status": "ballottaggio",
+        "appetibilita": 23,
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -25886,7 +26302,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 18
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 63,
           "fantamedia": 5.9,
           "mediaVoto": 5.92,
           "pv": 24,
@@ -25912,7 +26328,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "torino_pedersen_6426",
           "torino_comert_7526"
-        ]
+        ],
+        "slotId": "pos_3"
       },
       "pos_4": {
         "id": "torino_comuzzo_6495",
@@ -25925,8 +26342,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Dc",
         "fantaRole": "D",
-        "appetibilita": 22,
-        "status": "riserva",
+        "appetibilita": 14,
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -25947,7 +26364,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 11
         },
         "stats": {
-          "titolarita": 45,
+          "titolarita": 63,
           "fantamedia": 5.75,
           "mediaVoto": 5.75,
           "pv": 24,
@@ -25968,12 +26385,13 @@ export const INITIAL_TEAMS = [
           "amm": 2,
           "espulsioni": 0,
           "esp": 0,
-          "au": 1
+          "au": 0
         },
         "substitutes": [
           "torino_pedersen_6426",
           "torino_comert_7526"
-        ]
+        ],
+        "slotId": "pos_4"
       },
       "pos_5": {
         "id": "torino_vlasic_5687",
@@ -25982,7 +26400,7 @@ export const INITIAL_TEAMS = [
         "displayName": "Vlasic",
         "teamName": "Torino",
         "teamId": "torino",
-        "role": "E",
+        "role": "T",
         "classicRole": "C",
         "mantraRole": "T",
         "fantaRole": "C",
@@ -26008,7 +26426,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 77
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 97,
           "fantamedia": 6.66,
           "mediaVoto": 6.03,
           "pv": 37,
@@ -26034,7 +26452,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "torino_fitz_jim_7535",
           "torino_njie_6827"
-        ]
+        ],
+        "slotId": "pos_5"
       },
       "pos_6": {
         "id": "torino_casadei_5888",
@@ -26043,11 +26462,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Casadei",
         "teamName": "Torino",
         "teamId": "torino",
-        "role": "CC",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C;T",
         "fantaRole": "C",
-        "appetibilita": 59,
+        "appetibilita": 48,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -26069,7 +26488,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 37
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 84,
           "fantamedia": 6.45,
           "mediaVoto": 5.97,
           "pv": 32,
@@ -26095,7 +26514,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "torino_fitz_jim_7535",
           "torino_njie_6827"
-        ]
+        ],
+        "slotId": "pos_6"
       },
       "pos_7": {
         "id": "torino_oristanio_6218",
@@ -26104,12 +26524,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Oristanio",
         "teamName": "Torino",
         "teamId": "torino",
-        "role": "M",
+        "role": "T",
         "classicRole": "C",
         "mantraRole": "W;T",
         "fantaRole": "C",
-        "appetibilita": 43,
-        "status": "tit_sicuro",
+        "appetibilita": 35,
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -26130,7 +26550,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 27
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 47,
           "fantamedia": 5.92,
           "mediaVoto": 5.78,
           "pv": 18,
@@ -26156,7 +26576,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "torino_fitz_jim_7535",
           "torino_njie_6827"
-        ]
+        ],
+        "slotId": "pos_7"
       },
       "pos_8": {
         "id": "torino_cacciamani_7060",
@@ -26165,12 +26586,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Cacciamani",
         "teamName": "Torino",
         "teamId": "torino",
-        "role": "CC",
+        "role": "E",
         "classicRole": "C",
         "mantraRole": "E;W",
         "fantaRole": "C",
-        "appetibilita": 29,
-        "status": "ballottaggio",
+        "appetibilita": 23,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -26191,7 +26612,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 20
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -26217,7 +26638,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "torino_fitz_jim_7535",
           "torino_njie_6827"
-        ]
+        ],
+        "slotId": "pos_8"
       },
       "pos_9": {
         "id": "torino_gineitis_6170",
@@ -26226,12 +26648,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Gineitis",
         "teamName": "Torino",
         "teamId": "torino",
-        "role": "E",
+        "role": "M",
         "classicRole": "C",
         "mantraRole": "M;C",
         "fantaRole": "C",
-        "appetibilita": 23,
-        "status": "ballottaggio",
+        "appetibilita": 17,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -26252,7 +26674,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 15
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 71,
           "fantamedia": 5.81,
           "mediaVoto": 5.87,
           "pv": 27,
@@ -26278,7 +26700,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "torino_fitz_jim_7535",
           "torino_njie_6827"
-        ]
+        ],
+        "slotId": "pos_9"
       },
       "pos_10": {
         "id": "torino_simeone_2061",
@@ -26313,7 +26736,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 79
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 84,
           "fantamedia": 7.09,
           "mediaVoto": 6.08,
           "pv": 32,
@@ -26339,7 +26762,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "torino_zapata_d__608",
           "torino_kulenovic_7349"
-        ]
+        ],
+        "slotId": "pos_10"
       },
       "pos_11": {
         "id": "torino_adams_c__6646",
@@ -26352,7 +26776,7 @@ export const INITIAL_TEAMS = [
         "classicRole": "A",
         "mantraRole": "A",
         "fantaRole": "A",
-        "appetibilita": 52,
+        "appetibilita": 42,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -26374,7 +26798,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 34
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 84,
           "fantamedia": 6.64,
           "mediaVoto": 5.98,
           "pv": 32,
@@ -26400,7 +26824,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "torino_zapata_d__608",
           "torino_kulenovic_7349"
-        ]
+        ],
+        "slotId": "pos_11"
       }
     },
     "bench": [
@@ -27188,8 +27613,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "P",
         "mantraRole": "Por",
         "fantaRole": "P",
-        "appetibilita": 48,
-        "status": "riserva",
+        "appetibilita": 38,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -27210,7 +27635,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 29
         },
         "stats": {
-          "titolarita": 40,
+          "titolarita": 79,
           "fantamedia": 5.08,
           "mediaVoto": 6.07,
           "pv": 30,
@@ -27236,7 +27661,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "udinese_padelli_543",
           "udinese_piana_5707"
-        ]
+        ],
+        "slotId": "pos_1"
       },
       "pos_2": {
         "id": "udinese_solet_6956",
@@ -27249,7 +27675,7 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Dc",
         "fantaRole": "D",
-        "appetibilita": 75,
+        "appetibilita": 60,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": true,
@@ -27271,7 +27697,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 46
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 89,
           "fantamedia": 6.4,
           "mediaVoto": 6.18,
           "pv": 34,
@@ -27292,12 +27718,13 @@ export const INITIAL_TEAMS = [
           "amm": 1,
           "espulsioni": 0,
           "esp": 0,
-          "au": 1
+          "au": 0
         },
         "substitutes": [
           "udinese_bertola_5820",
           "udinese_zanoli_5527"
-        ]
+        ],
+        "slotId": "pos_2"
       },
       "pos_3": {
         "id": "udinese_vojvoda_4994",
@@ -27306,12 +27733,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Vojvoda",
         "teamName": "Udinese",
         "teamId": "udinese",
-        "role": "DC",
+        "role": "TD",
         "classicRole": "D",
         "mantraRole": "Dd;E",
         "fantaRole": "D",
-        "appetibilita": 35,
-        "status": "ballottaggio",
+        "appetibilita": 25,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -27332,7 +27759,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 19
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 71,
           "fantamedia": 6.24,
           "mediaVoto": 6.02,
           "pv": 27,
@@ -27358,7 +27785,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "udinese_bertola_5820",
           "udinese_zanoli_5527"
-        ]
+        ],
+        "slotId": "pos_3"
       },
       "pos_4": {
         "id": "udinese_kamara_h__5555",
@@ -27367,12 +27795,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Kamara H.",
         "teamName": "Udinese",
         "teamId": "udinese",
-        "role": "DC",
+        "role": "TS",
         "classicRole": "D",
         "mantraRole": "Ds;E",
         "fantaRole": "D",
-        "appetibilita": 23,
-        "status": "ballottaggio",
+        "appetibilita": 16,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -27393,7 +27821,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 12
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 68,
           "fantamedia": 5.87,
           "mediaVoto": 5.88,
           "pv": 26,
@@ -27419,7 +27847,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "udinese_bertola_5820",
           "udinese_zanoli_5527"
-        ]
+        ],
+        "slotId": "pos_4"
       },
       "pos_5": {
         "id": "udinese_zaniolo_2766",
@@ -27428,7 +27857,7 @@ export const INITIAL_TEAMS = [
         "displayName": "Zaniolo",
         "teamName": "Udinese",
         "teamId": "udinese",
-        "role": "E",
+        "role": "T",
         "classicRole": "C",
         "mantraRole": "T;A",
         "fantaRole": "C",
@@ -27454,7 +27883,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 100
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 82,
           "fantamedia": 6.77,
           "mediaVoto": 6.26,
           "pv": 31,
@@ -27480,7 +27909,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "udinese_miller_l__7208",
           "udinese_chakvetadze_7418"
-        ]
+        ],
+        "slotId": "pos_5"
       },
       "pos_6": {
         "id": "udinese_ekkelenkamp_6684",
@@ -27489,11 +27919,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Ekkelenkamp",
         "teamName": "Udinese",
         "teamId": "udinese",
-        "role": "CC",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C;T",
         "fantaRole": "C",
-        "appetibilita": 64,
+        "appetibilita": 53,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -27515,7 +27945,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 41
         },
         "stats": {
-          "titolarita": 80,
+          "titolarita": 82,
           "fantamedia": 6.61,
           "mediaVoto": 6.05,
           "pv": 31,
@@ -27541,7 +27971,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "udinese_miller_l__7208",
           "udinese_chakvetadze_7418"
-        ]
+        ],
+        "slotId": "pos_6"
       },
       "pos_7": {
         "id": "udinese_unai_gomez_6783",
@@ -27550,12 +27981,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Unai Gomez",
         "teamName": "Udinese",
         "teamId": "udinese",
-        "role": "M",
+        "role": "T",
         "classicRole": "C",
         "mantraRole": "T",
         "fantaRole": "C",
-        "appetibilita": 38,
-        "status": "ballottaggio",
+        "appetibilita": 30,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -27576,7 +28007,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 20
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -27602,7 +28033,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "udinese_miller_l__7208",
           "udinese_chakvetadze_7418"
-        ]
+        ],
+        "slotId": "pos_7"
       },
       "pos_8": {
         "id": "udinese_karlstrom_6680",
@@ -27611,12 +28043,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Karlstrom",
         "teamName": "Udinese",
         "teamId": "udinese",
-        "role": "CC",
+        "role": "M",
         "classicRole": "C",
         "mantraRole": "M;C",
         "fantaRole": "C",
-        "appetibilita": 33,
-        "status": "ballottaggio",
+        "appetibilita": 26,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -27637,7 +28069,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 23
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 95,
           "fantamedia": 5.96,
           "mediaVoto": 5.96,
           "pv": 36,
@@ -27663,7 +28095,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "udinese_miller_l__7208",
           "udinese_chakvetadze_7418"
-        ]
+        ],
+        "slotId": "pos_8"
       },
       "pos_9": {
         "id": "udinese_piotrowski_7198",
@@ -27672,12 +28105,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Piotrowski",
         "teamName": "Udinese",
         "teamId": "udinese",
-        "role": "E",
+        "role": "M",
         "classicRole": "C",
         "mantraRole": "M;C",
         "fantaRole": "C",
-        "appetibilita": 26,
-        "status": "ballottaggio",
+        "appetibilita": 20,
+        "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -27698,7 +28131,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 17
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 79,
           "fantamedia": 5.95,
           "mediaVoto": 5.88,
           "pv": 30,
@@ -27724,7 +28157,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "udinese_miller_l__7208",
           "udinese_chakvetadze_7418"
-        ]
+        ],
+        "slotId": "pos_9"
       },
       "pos_10": {
         "id": "udinese_davis_k__5637",
@@ -27759,7 +28193,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 119
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 79,
           "fantamedia": 7.37,
           "mediaVoto": 6.32,
           "pv": 30,
@@ -27785,7 +28219,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "udinese_buksa_7249",
           "udinese_bayo_v__7161"
-        ]
+        ],
+        "slotId": "pos_10"
       },
       "pos_11": {
         "id": "udinese_gueye_7272",
@@ -27794,12 +28229,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Gueye",
         "teamName": "Udinese",
         "teamId": "udinese",
-        "role": "A",
+        "role": "PC",
         "classicRole": "A",
         "mantraRole": "Pc",
         "fantaRole": "A",
-        "appetibilita": 14,
-        "status": "riserva",
+        "appetibilita": 9,
+        "status": "ballottaggio",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -27820,7 +28255,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 6
         },
         "stats": {
-          "titolarita": 45,
+          "titolarita": 34,
           "fantamedia": 5.92,
           "mediaVoto": 5.77,
           "pv": 13,
@@ -27846,7 +28281,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "udinese_buksa_7249",
           "udinese_bayo_v__7161"
-        ]
+        ],
+        "slotId": "pos_11"
       }
     },
     "bench": [
@@ -28805,7 +29241,7 @@ export const INITIAL_TEAMS = [
         "classicRole": "P",
         "mantraRole": "Por",
         "fantaRole": "P",
-        "appetibilita": 26,
+        "appetibilita": 18,
         "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -28827,8 +29263,8 @@ export const INITIAL_TEAMS = [
           "fvmM": 14
         },
         "stats": {
-          "titolarita": 40,
-          "fantamedia": 5,
+          "titolarita": 50,
+          "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
           "presenze": 0,
@@ -28853,7 +29289,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "venezia_grandi_6671",
           "venezia_pozzi_7531"
-        ]
+        ],
+        "slotId": "pos_1"
       },
       "pos_2": {
         "id": "venezia_bella_kotchap_7253",
@@ -28866,8 +29303,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Dc",
         "fantaRole": "D",
-        "appetibilita": 25,
-        "status": "ballottaggio",
+        "appetibilita": 17,
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -28888,7 +29325,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 13
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 47,
           "fantamedia": 5.75,
           "mediaVoto": 5.83,
           "pv": 18,
@@ -28914,7 +29351,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "venezia_correia_t__4845",
           "venezia_halhal_7538"
-        ]
+        ],
+        "slotId": "pos_2"
       },
       "pos_3": {
         "id": "venezia_moreno_m__6890",
@@ -28927,7 +29365,7 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Dc",
         "fantaRole": "D",
-        "appetibilita": 21,
+        "appetibilita": 14,
         "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -28949,7 +29387,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 11
         },
         "stats": {
-          "titolarita": 45,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -28975,7 +29413,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "venezia_correia_t__4845",
           "venezia_halhal_7538"
-        ]
+        ],
+        "slotId": "pos_3"
       },
       "pos_4": {
         "id": "venezia_haps_5695",
@@ -28984,11 +29423,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Haps",
         "teamName": "Venezia",
         "teamId": "venezia",
-        "role": "DC",
+        "role": "TS",
         "classicRole": "D",
         "mantraRole": "Ds;E",
         "fantaRole": "D",
-        "appetibilita": 21,
+        "appetibilita": 14,
         "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -29010,7 +29449,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 11
         },
         "stats": {
-          "titolarita": 45,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -29036,7 +29475,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "venezia_correia_t__4845",
           "venezia_halhal_7538"
-        ]
+        ],
+        "slotId": "pos_4"
       },
       "pos_5": {
         "id": "venezia_basic_5674",
@@ -29045,12 +29485,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Basic",
         "teamName": "Venezia",
         "teamId": "venezia",
-        "role": "E",
+        "role": "M",
         "classicRole": "C",
         "mantraRole": "M;C",
         "fantaRole": "C",
-        "appetibilita": 32,
-        "status": "ballottaggio",
+        "appetibilita": 25,
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -29071,7 +29511,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 20
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 61,
           "fantamedia": 6.43,
           "mediaVoto": 6.09,
           "pv": 23,
@@ -29096,7 +29536,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "venezia_dagasso_7481"
-        ]
+        ],
+        "slotId": "pos_5"
       },
       "pos_6": {
         "id": "venezia_busio_5507",
@@ -29105,12 +29546,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Busio",
         "teamName": "Venezia",
         "teamId": "venezia",
-        "role": "CC",
+        "role": "M",
         "classicRole": "C",
         "mantraRole": "M;C",
         "fantaRole": "C",
-        "appetibilita": 24,
-        "status": "ballottaggio",
+        "appetibilita": 18,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -29131,7 +29572,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 17
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -29156,7 +29597,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "venezia_dagasso_7481"
-        ]
+        ],
+        "slotId": "pos_6"
       },
       "pos_7": {
         "id": "venezia_sohm_5319",
@@ -29165,12 +29607,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Sohm",
         "teamName": "Venezia",
         "teamId": "venezia",
-        "role": "CC",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C",
         "fantaRole": "C",
-        "appetibilita": 24,
-        "status": "ballottaggio",
+        "appetibilita": 18,
+        "status": "probabile",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -29191,7 +29633,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 14
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 63,
           "fantamedia": 5.62,
           "mediaVoto": 5.65,
           "pv": 24,
@@ -29216,7 +29658,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "venezia_dagasso_7481"
-        ]
+        ],
+        "slotId": "pos_7"
       },
       "pos_8": {
         "id": "venezia_perez_k__6994",
@@ -29225,12 +29668,12 @@ export const INITIAL_TEAMS = [
         "displayName": "Perez K.",
         "teamName": "Venezia",
         "teamId": "venezia",
-        "role": "E",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C;T",
         "fantaRole": "C",
-        "appetibilita": 24,
-        "status": "ballottaggio",
+        "appetibilita": 18,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -29251,7 +29694,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 14
         },
         "stats": {
-          "titolarita": 65,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -29276,7 +29719,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "venezia_dagasso_7481"
-        ]
+        ],
+        "slotId": "pos_8"
       },
       "pos_9": {
         "id": "venezia_helgason_5872",
@@ -29285,11 +29729,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Helgason",
         "teamName": "Venezia",
         "teamId": "venezia",
-        "role": "COC",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C;T",
         "fantaRole": "C",
-        "appetibilita": 13,
+        "appetibilita": 9,
         "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -29311,7 +29755,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 7
         },
         "stats": {
-          "titolarita": 25,
+          "titolarita": 11,
           "fantamedia": 5.62,
           "mediaVoto": 5.62,
           "pv": 4,
@@ -29336,7 +29780,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "venezia_dagasso_7481"
-        ]
+        ],
+        "slotId": "pos_9"
       },
       "pos_10": {
         "id": "venezia_duncan_526",
@@ -29345,11 +29790,11 @@ export const INITIAL_TEAMS = [
         "displayName": "Duncan",
         "teamName": "Venezia",
         "teamId": "venezia",
-        "role": "COC",
+        "role": "C",
         "classicRole": "C",
         "mantraRole": "C",
         "fantaRole": "C",
-        "appetibilita": 10,
+        "appetibilita": 5,
         "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -29371,7 +29816,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 4
         },
         "stats": {
-          "titolarita": 25,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -29396,7 +29841,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "venezia_dagasso_7481"
-        ]
+        ],
+        "slotId": "pos_10"
       },
       "pos_11": {
         "id": "venezia_adams_a__7484",
@@ -29409,8 +29855,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "A",
         "mantraRole": "Pc",
         "fantaRole": "A",
-        "appetibilita": 79,
-        "status": "tit_sicuro",
+        "appetibilita": 66,
+        "status": "riserva",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -29431,7 +29877,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 48
         },
         "stats": {
-          "titolarita": 90,
+          "titolarita": 50,
           "fantamedia": 6,
           "mediaVoto": 6,
           "pv": 0,
@@ -29457,7 +29903,8 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "venezia_yeboah_j__6904",
           "venezia_rrahmani_al__7449"
-        ]
+        ],
+        "slotId": "pos_11"
       }
     },
     "bench": [
@@ -30463,7 +30910,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 100,
+    "appetibilita": 85,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -30485,7 +30932,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 65
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 100,
       "fantamedia": 5.45,
       "mediaVoto": 6.26,
       "pv": 38,
@@ -30520,8 +30967,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 100,
-    "status": "tit_sicuro",
+    "appetibilita": 82,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -30542,7 +30989,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 63
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 13,
       "fantamedia": 5.2,
       "mediaVoto": 6,
       "pv": 5,
@@ -30577,7 +31024,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 86,
+    "appetibilita": 68,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -30599,7 +31046,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 52
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 97,
       "fantamedia": 5.58,
       "mediaVoto": 6.36,
       "pv": 37,
@@ -30634,7 +31081,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 91,
+    "appetibilita": 73,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -30656,7 +31103,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 56
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 100,
       "fantamedia": 5.37,
       "mediaVoto": 6.07,
       "pv": 38,
@@ -30691,8 +31138,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 90,
-    "status": "tit_sicuro",
+    "appetibilita": 72,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -30713,8 +31160,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 55
     },
     "stats": {
-      "titolarita": 90,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -30748,7 +31195,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 83,
+    "appetibilita": 65,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -30770,7 +31217,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 50
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 97,
       "fantamedia": 5.42,
       "mediaVoto": 6.26,
       "pv": 37,
@@ -30805,7 +31252,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 74,
+    "appetibilita": 59,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -30827,7 +31274,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 45
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 97,
       "fantamedia": 5,
       "mediaVoto": 6.24,
       "pv": 37,
@@ -30862,8 +31309,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 71,
-    "status": "tit_sicuro",
+    "appetibilita": 59,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -30884,7 +31331,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 45
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 29,
       "fantamedia": 5.18,
       "mediaVoto": 6.23,
       "pv": 11,
@@ -30919,8 +31366,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 59,
-    "status": "tit_sicuro",
+    "appetibilita": 48,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -30941,7 +31388,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 37
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 47,
       "fantamedia": 5.28,
       "mediaVoto": 6.19,
       "pv": 18,
@@ -30976,8 +31423,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 46,
-    "status": "riserva",
+    "appetibilita": 35,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -30998,7 +31445,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 27
     },
     "stats": {
-      "titolarita": 40,
+      "titolarita": 100,
       "fantamedia": 4.87,
       "mediaVoto": 6.29,
       "pv": 38,
@@ -31033,8 +31480,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 26,
-    "status": "riserva",
+    "appetibilita": 13,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -31055,7 +31502,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 10
     },
     "stats": {
-      "titolarita": 40,
+      "titolarita": 79,
       "fantamedia": 5.33,
       "mediaVoto": 6.08,
       "pv": 30,
@@ -31090,7 +31537,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 50,
+    "appetibilita": 39,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -31112,8 +31559,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 30
     },
     "stats": {
-      "titolarita": 40,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -31147,8 +31594,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 48,
-    "status": "riserva",
+    "appetibilita": 38,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -31169,7 +31616,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 29
     },
     "stats": {
-      "titolarita": 40,
+      "titolarita": 79,
       "fantamedia": 5.08,
       "mediaVoto": 6.07,
       "pv": 30,
@@ -31204,8 +31651,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 34,
-    "status": "riserva",
+    "appetibilita": 23,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -31226,7 +31673,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 18
     },
     "stats": {
-      "titolarita": 40,
+      "titolarita": 42,
       "fantamedia": 4.78,
       "mediaVoto": 6.06,
       "pv": 16,
@@ -31261,8 +31708,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 42,
-    "status": "riserva",
+    "appetibilita": 33,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -31283,7 +31730,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 25
     },
     "stats": {
-      "titolarita": 40,
+      "titolarita": 100,
       "fantamedia": 5.22,
       "mediaVoto": 6.41,
       "pv": 38,
@@ -31318,7 +31765,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 17,
+    "appetibilita": 7,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -31340,8 +31787,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 5
     },
     "stats": {
-      "titolarita": 40,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -31375,8 +31822,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 29,
-    "status": "riserva",
+    "appetibilita": 20,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -31397,7 +31844,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 15
     },
     "stats": {
-      "titolarita": 40,
+      "titolarita": 84,
       "fantamedia": 4.77,
       "mediaVoto": 6.08,
       "pv": 32,
@@ -31432,8 +31879,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 15,
-    "status": "riserva",
+    "appetibilita": 7,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -31454,7 +31901,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 5
     },
     "stats": {
-      "titolarita": 40,
+      "titolarita": 24,
       "fantamedia": 5.11,
       "mediaVoto": 6.11,
       "pv": 9,
@@ -31489,7 +31936,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 26,
+    "appetibilita": 18,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -31511,8 +31958,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 14
     },
     "stats": {
-      "titolarita": 40,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -31546,7 +31993,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 22,
+    "appetibilita": 16,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -31568,8 +32015,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 12
     },
     "stats": {
-      "titolarita": 40,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -31603,8 +32050,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 20,
-    "status": "riserva",
+    "appetibilita": 13,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -31625,7 +32072,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 10
     },
     "stats": {
-      "titolarita": 40,
+      "titolarita": 71,
       "fantamedia": 5.65,
       "mediaVoto": 6.2,
       "pv": 27,
@@ -31660,7 +32107,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 16,
+    "appetibilita": 10,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -31682,8 +32129,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 8
     },
     "stats": {
-      "titolarita": 10,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -31717,7 +32164,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 13,
+    "appetibilita": 10,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -31739,8 +32186,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 8
     },
     "stats": {
-      "titolarita": 10,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -31774,8 +32221,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 7,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -31796,7 +32243,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 5
     },
     "stats": {
-      "titolarita": 10,
+      "titolarita": 71,
       "fantamedia": 5.35,
       "mediaVoto": 6.26,
       "pv": 27,
@@ -31831,7 +32278,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -31853,7 +32300,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
+      "titolarita": 3,
       "fantamedia": 4.5,
       "mediaVoto": 5.5,
       "pv": 1,
@@ -31888,7 +32335,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -31910,8 +32357,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -31945,7 +32392,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -31967,7 +32414,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
+      "titolarita": 11,
       "fantamedia": 5.62,
       "mediaVoto": 6.12,
       "pv": 4,
@@ -32002,7 +32449,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -32024,8 +32471,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -32059,7 +32506,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -32081,8 +32528,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -32116,7 +32563,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -32138,8 +32585,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -32173,7 +32620,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -32195,7 +32642,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
+      "titolarita": 3,
       "fantamedia": 6.5,
       "mediaVoto": 7.5,
       "pv": 1,
@@ -32230,7 +32677,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -32252,8 +32699,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -32287,7 +32734,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -32309,8 +32756,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -32344,7 +32791,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -32366,7 +32813,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
+      "titolarita": 5,
       "fantamedia": 3.75,
       "mediaVoto": 5.75,
       "pv": 2,
@@ -32401,7 +32848,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -32423,8 +32870,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -32458,7 +32905,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -32480,7 +32927,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
+      "titolarita": 3,
       "fantamedia": 5,
       "mediaVoto": 6,
       "pv": 1,
@@ -32515,7 +32962,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -32537,8 +32984,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -32572,8 +33019,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 1,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -32594,7 +33041,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
+      "titolarita": 24,
       "fantamedia": 5.17,
       "mediaVoto": 6,
       "pv": 9,
@@ -32629,7 +33076,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -32651,8 +33098,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -32686,7 +33133,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -32708,7 +33155,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
+      "titolarita": 5,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 2,
@@ -32743,7 +33190,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -32765,8 +33212,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -32800,7 +33247,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -32822,8 +33269,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -32857,7 +33304,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -32879,8 +33326,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -32914,7 +33361,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -32936,8 +33383,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -32971,8 +33418,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 1,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -32993,7 +33440,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
+      "titolarita": 45,
       "fantamedia": 5.09,
       "mediaVoto": 6.18,
       "pv": 17,
@@ -33028,7 +33475,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -33050,8 +33497,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -33085,7 +33532,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -33107,8 +33554,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -33142,7 +33589,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -33164,8 +33611,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -33199,8 +33646,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 4,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -33221,7 +33668,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 3
     },
     "stats": {
-      "titolarita": 10,
+      "titolarita": 16,
       "fantamedia": 5,
       "mediaVoto": 6.17,
       "pv": 6,
@@ -33256,7 +33703,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -33278,8 +33725,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -33313,8 +33760,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 1,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -33335,7 +33782,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
+      "titolarita": 76,
       "fantamedia": 4.52,
       "mediaVoto": 6.09,
       "pv": 29,
@@ -33370,7 +33817,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -33392,8 +33839,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -33427,7 +33874,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -33449,7 +33896,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
+      "titolarita": 5,
       "fantamedia": 5.25,
       "mediaVoto": 6.25,
       "pv": 2,
@@ -33484,7 +33931,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -33506,8 +33953,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -33541,7 +33988,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -33563,8 +34010,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -33598,7 +34045,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -33620,8 +34067,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -33655,7 +34102,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -33677,8 +34124,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -33712,7 +34159,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -33734,8 +34181,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -33769,7 +34216,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -33791,8 +34238,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -33826,7 +34273,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -33848,8 +34295,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -33883,7 +34330,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -33905,8 +34352,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
-      "fantamedia": 5,
+      "titolarita": 50,
+      "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
       "presenze": 0,
@@ -33940,8 +34387,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 1,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -33962,7 +34409,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 10,
+      "titolarita": 92,
       "fantamedia": 4.94,
       "mediaVoto": 6.2,
       "pv": 35,
@@ -33987,13 +34434,70 @@ export const CSV_PLAYER_CATALOG = [
     }
   },
   {
+    "id": "lecce_bleve_4468",
+    "csvId": "4468",
+    "name": "Bleve",
+    "displayName": "Bleve",
+    "teamName": "Lecce",
+    "teamId": "lecce",
+    "role": "POR",
+    "classicRole": "P",
+    "mantraRole": "Por",
+    "fantaRole": "P",
+    "appetibilita": 1,
+    "status": "riserva",
+    "isAvailable": true,
+    "isPenaltyTaker": false,
+    "isFreeKickTaker": false,
+    "isCornerTaker": false,
+    "rigorista": false,
+    "punizioni": false,
+    "corner": false,
+    "positionNotes": "",
+    "fantaComment": "",
+    "quotazioni": {
+      "qtA": 1,
+      "qtI": 1,
+      "diff": 0,
+      "qtAM": 1,
+      "qtIM": 1,
+      "diffM": 0,
+      "fvm": 1,
+      "fvmM": 1
+    },
+    "stats": {
+      "titolarita": 50,
+      "fantamedia": 6,
+      "mediaVoto": 6,
+      "pv": 0,
+      "presenze": 0,
+      "gol": 0,
+      "gf": 0,
+      "gs": 0,
+      "golSubiti": 0,
+      "rp": 0,
+      "rc": 0,
+      "rPlus": 0,
+      "rMinus": 0,
+      "rigoriSegnati": 0,
+      "rigoriSbagliati": 0,
+      "assist": 0,
+      "ass": 0,
+      "ammonizioni": 0,
+      "amm": 0,
+      "espulsioni": 0,
+      "esp": 0,
+      "au": 0
+    }
+  },
+  {
     "id": "inter_dimarco_254",
     "csvId": "254",
     "name": "Dimarco",
     "displayName": "Dimarco",
     "teamName": "Inter",
     "teamId": "inter",
-    "role": "AD",
+    "role": "E",
     "classicRole": "D",
     "mantraRole": "E;W",
     "fantaRole": "D",
@@ -34019,7 +34523,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 265
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 92,
       "fantamedia": 7.64,
       "mediaVoto": 6.6,
       "pv": 35,
@@ -34050,12 +34554,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Molina N.",
     "teamName": "Roma",
     "teamId": "roma",
-    "role": "ED",
+    "role": "E",
     "classicRole": "D",
     "mantraRole": "E",
     "fantaRole": "D",
     "appetibilita": 100,
-    "status": "tit_sicuro",
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -34076,7 +34580,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 87
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -34107,7 +34611,7 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Wesley",
     "teamName": "Roma",
     "teamId": "roma",
-    "role": "ED",
+    "role": "E",
     "classicRole": "D",
     "mantraRole": "E",
     "fantaRole": "D",
@@ -34133,7 +34637,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 80
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 79,
       "fantamedia": 6.47,
       "mediaVoto": 6.12,
       "pv": 30,
@@ -34164,11 +34668,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Akanji",
     "teamName": "Inter",
     "teamId": "inter",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 90,
+    "appetibilita": 72,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -34190,7 +34694,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 55
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 84,
       "fantamedia": 6.41,
       "mediaVoto": 6.28,
       "pv": 32,
@@ -34221,11 +34725,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Bremer",
     "teamName": "Juventus",
     "teamId": "juventus",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 83,
+    "appetibilita": 65,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -34247,7 +34751,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 50
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 68,
       "fantamedia": 6.81,
       "mediaVoto": 6.33,
       "pv": 26,
@@ -34278,11 +34782,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Mancini",
     "teamName": "Roma",
     "teamId": "roma",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 81,
+    "appetibilita": 64,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -34304,7 +34808,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 49
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 95,
       "fantamedia": 6.51,
       "mediaVoto": 6.25,
       "pv": 36,
@@ -34335,11 +34839,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Bastoni",
     "teamName": "Inter",
     "teamId": "inter",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 74,
+    "appetibilita": 57,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -34361,7 +34865,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 44
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 74,
       "fantamedia": 6.34,
       "mediaVoto": 6.2,
       "pv": 28,
@@ -34392,11 +34896,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Pavlovic",
     "teamName": "Milan",
     "teamId": "milan",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 79,
+    "appetibilita": 62,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -34418,7 +34922,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 48
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 89,
       "fantamedia": 6.62,
       "mediaVoto": 6.24,
       "pv": 34,
@@ -34449,12 +34953,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Rrahmani",
     "teamName": "Napoli",
     "teamId": "napoli",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 77,
-    "status": "tit_sicuro",
+    "appetibilita": 61,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -34475,7 +34979,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 47
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 55,
       "fantamedia": 6.45,
       "mediaVoto": 6.24,
       "pv": 21,
@@ -34506,11 +35010,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Kalulu",
     "teamName": "Juventus",
     "teamId": "juventus",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dd;Dc",
     "fantaRole": "D",
-    "appetibilita": 75,
+    "appetibilita": 60,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -34532,7 +35036,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 48
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 97,
       "fantamedia": 6.35,
       "mediaVoto": 6.14,
       "pv": 37,
@@ -34563,11 +35067,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "N'Dicka",
     "teamName": "Roma",
     "teamId": "roma",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 72,
+    "appetibilita": 57,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -34589,7 +35093,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 44
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 82,
       "fantamedia": 6.32,
       "mediaVoto": 6.08,
       "pv": 31,
@@ -34620,11 +35124,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Solet",
     "teamName": "Udinese",
     "teamId": "udinese",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 75,
+    "appetibilita": 60,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": true,
@@ -34646,7 +35150,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 46
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 89,
       "fantamedia": 6.4,
       "mediaVoto": 6.18,
       "pv": 34,
@@ -34667,7 +35171,7 @@ export const CSV_PLAYER_CATALOG = [
       "amm": 1,
       "espulsioni": 0,
       "esp": 0,
-      "au": 1
+      "au": 0
     }
   },
   {
@@ -34677,12 +35181,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Stones",
     "teamName": "Inter",
     "teamId": "inter",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 64,
-    "status": "tit_sicuro",
+    "appetibilita": 49,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -34703,7 +35207,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 38
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -34734,11 +35238,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Gila",
     "teamName": "Milan",
     "teamId": "milan",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 55,
+    "appetibilita": 40,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -34760,7 +35264,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 31
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 82,
       "fantamedia": 5.95,
       "mediaVoto": 6.03,
       "pv": 31,
@@ -34791,11 +35295,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Di Lorenzo",
     "teamName": "Napoli",
     "teamId": "napoli",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;E",
     "fantaRole": "D",
-    "appetibilita": 66,
+    "appetibilita": 52,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -34817,7 +35321,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 40
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 68,
       "fantamedia": 6.33,
       "mediaVoto": 6.08,
       "pv": 26,
@@ -34848,12 +35352,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Spence",
     "teamName": "Inter",
     "teamId": "inter",
-    "role": "ED",
+    "role": "E",
     "classicRole": "D",
     "mantraRole": "E",
     "fantaRole": "D",
-    "appetibilita": 67,
-    "status": "tit_sicuro",
+    "appetibilita": 53,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -34874,7 +35378,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 39
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -34905,11 +35409,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Ostigard",
     "teamName": "Genoa",
     "teamId": "genoa",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 65,
+    "appetibilita": 52,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -34931,7 +35435,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 40
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 79,
       "fantamedia": 6.52,
       "mediaVoto": 6.13,
       "pv": 30,
@@ -34962,12 +35466,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Bisseck",
     "teamName": "Inter",
     "teamId": "inter",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 56,
-    "status": "tit_sicuro",
+    "appetibilita": 43,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -34988,7 +35492,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 33
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 61,
       "fantamedia": 6.65,
       "mediaVoto": 6.22,
       "pv": 23,
@@ -35019,12 +35523,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Scalvini",
     "teamName": "Atalanta",
     "teamId": "atalanta",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 49,
-    "status": "tit_sicuro",
+    "appetibilita": 36,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -35045,7 +35549,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 28
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 63,
       "fantamedia": 6.44,
       "mediaVoto": 6.06,
       "pv": 24,
@@ -35076,11 +35580,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Ramon",
     "teamName": "Como",
     "teamId": "como",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 53,
+    "appetibilita": 42,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -35102,7 +35606,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 32
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 84,
       "fantamedia": 6.14,
       "mediaVoto": 6.16,
       "pv": 32,
@@ -35133,11 +35637,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Dodò",
     "teamName": "Fiorentina",
     "teamId": "fiorentina",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;E",
     "fantaRole": "D",
-    "appetibilita": 51,
+    "appetibilita": 39,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -35159,7 +35663,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 30
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 95,
       "fantamedia": 6.03,
       "mediaVoto": 5.99,
       "pv": 36,
@@ -35190,11 +35694,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Hermoso",
     "teamName": "Roma",
     "teamId": "roma",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 46,
+    "appetibilita": 34,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -35216,7 +35720,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 26
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 71,
       "fantamedia": 6.41,
       "mediaVoto": 6.17,
       "pv": 27,
@@ -35247,11 +35751,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Vasquez",
     "teamName": "Genoa",
     "teamId": "genoa",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Ds;Dc",
     "fantaRole": "D",
-    "appetibilita": 53,
+    "appetibilita": 43,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -35273,7 +35777,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 35
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 95,
       "fantamedia": 6.14,
       "mediaVoto": 6.08,
       "pv": 36,
@@ -35304,11 +35808,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Cambiaso",
     "teamName": "Juventus",
     "teamId": "juventus",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;Ds;E",
     "fantaRole": "D",
-    "appetibilita": 46,
+    "appetibilita": 35,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -35330,7 +35834,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 30
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 95,
       "fantamedia": 5.99,
       "mediaVoto": 5.81,
       "pv": 36,
@@ -35351,7 +35855,7 @@ export const CSV_PLAYER_CATALOG = [
       "amm": 3,
       "espulsioni": 1,
       "esp": 1,
-      "au": 2
+      "au": 0
     }
   },
   {
@@ -35361,12 +35865,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Chalobah T.",
     "teamName": "Como",
     "teamId": "como",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dd;Dc",
     "fantaRole": "D",
-    "appetibilita": 45,
-    "status": "tit_sicuro",
+    "appetibilita": 34,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -35387,7 +35891,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 28
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -35418,12 +35922,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Hien",
     "teamName": "Atalanta",
     "teamId": "atalanta",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 31,
-    "status": "ballottaggio",
+    "appetibilita": 21,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -35444,7 +35948,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 16
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 74,
       "fantamedia": 5.86,
       "mediaVoto": 5.91,
       "pv": 28,
@@ -35465,7 +35969,7 @@ export const CSV_PLAYER_CATALOG = [
       "amm": 5,
       "espulsioni": 0,
       "esp": 0,
-      "au": 1
+      "au": 0
     }
   },
   {
@@ -35475,12 +35979,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Zappacosta",
     "teamName": "Atalanta",
     "teamId": "atalanta",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;E",
     "fantaRole": "D",
-    "appetibilita": 41,
-    "status": "ballottaggio",
+    "appetibilita": 31,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -35501,7 +36005,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 24
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 92,
       "fantamedia": 6.3,
       "mediaVoto": 6.06,
       "pv": 35,
@@ -35532,12 +36036,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Lucumì",
     "teamName": "Juventus",
     "teamId": "juventus",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 34,
-    "status": "ballottaggio",
+    "appetibilita": 23,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -35558,7 +36062,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 18
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 74,
       "fantamedia": 5.89,
       "mediaVoto": 5.88,
       "pv": 28,
@@ -35589,12 +36093,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Miranda J.",
     "teamName": "Bologna",
     "teamId": "bologna",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "Ds;E",
     "fantaRole": "D",
-    "appetibilita": 41,
-    "status": "ballottaggio",
+    "appetibilita": 31,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -35615,7 +36119,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 24
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 82,
       "fantamedia": 6.1,
       "mediaVoto": 6,
       "pv": 31,
@@ -35646,12 +36150,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Mina",
     "teamName": "Cagliari",
     "teamId": "cagliari",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 36,
-    "status": "ballottaggio",
+    "appetibilita": 26,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -35672,7 +36176,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 20
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 68,
       "fantamedia": 6.17,
       "mediaVoto": 6,
       "pv": 26,
@@ -35703,12 +36207,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Dragusin",
     "teamName": "Fiorentina",
     "teamId": "fiorentina",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 44,
-    "status": "tit_sicuro",
+    "appetibilita": 35,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -35729,7 +36233,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 27
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -35760,12 +36264,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Jimenez A.",
     "teamName": "Fiorentina",
     "teamId": "fiorentina",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;Ds;E",
     "fantaRole": "D",
-    "appetibilita": 40,
-    "status": "ballottaggio",
+    "appetibilita": 30,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -35786,7 +36290,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 25
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 3,
       "fantamedia": 5,
       "mediaVoto": 5.5,
       "pv": 1,
@@ -35817,12 +36321,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Norton-Cuffy",
     "teamName": "Genoa",
     "teamId": "genoa",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;E",
     "fantaRole": "D",
-    "appetibilita": 38,
-    "status": "ballottaggio",
+    "appetibilita": 29,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -35843,7 +36347,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 22
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 71,
       "fantamedia": 6.09,
       "mediaVoto": 5.93,
       "pv": 27,
@@ -35874,12 +36378,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Celik",
     "teamName": "Juventus",
     "teamId": "juventus",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "B;Dd;E",
     "fantaRole": "D",
-    "appetibilita": 28,
-    "status": "ballottaggio",
+    "appetibilita": 17,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -35900,7 +36404,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 15
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 84,
       "fantamedia": 6.27,
       "mediaVoto": 6.17,
       "pv": 32,
@@ -35931,11 +36435,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Bartesaghi",
     "teamName": "Milan",
     "teamId": "milan",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "Ds;E",
     "fantaRole": "D",
-    "appetibilita": 42,
+    "appetibilita": 33,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -35957,7 +36461,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 25
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 82,
       "fantamedia": 6.05,
       "mediaVoto": 5.97,
       "pv": 31,
@@ -35978,7 +36482,7 @@ export const CSV_PLAYER_CATALOG = [
       "amm": 3,
       "espulsioni": 0,
       "esp": 0,
-      "au": 1
+      "au": 0
     }
   },
   {
@@ -35988,12 +36492,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Spinazzola",
     "teamName": "Napoli",
     "teamId": "napoli",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "Ds;E",
     "fantaRole": "D",
-    "appetibilita": 41,
-    "status": "ballottaggio",
+    "appetibilita": 31,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -36014,7 +36518,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 24
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 79,
       "fantamedia": 6.55,
       "mediaVoto": 6.17,
       "pv": 30,
@@ -36045,12 +36549,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Delprato",
     "teamName": "Parma",
     "teamId": "parma",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "B;Dd;E",
     "fantaRole": "D",
-    "appetibilita": 37,
-    "status": "ballottaggio",
+    "appetibilita": 27,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -36071,7 +36575,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 24
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 92,
       "fantamedia": 6.01,
       "mediaVoto": 5.91,
       "pv": 35,
@@ -36102,12 +36606,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Valeri",
     "teamName": "Parma",
     "teamId": "parma",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "Ds;E",
     "fantaRole": "D",
-    "appetibilita": 41,
-    "status": "ballottaggio",
+    "appetibilita": 31,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -36128,7 +36632,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 24
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 89,
       "fantamedia": 6.09,
       "mediaVoto": 6.06,
       "pv": 34,
@@ -36159,12 +36663,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Koulierakis",
     "teamName": "Roma",
     "teamId": "roma",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 36,
-    "status": "ballottaggio",
+    "appetibilita": 26,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -36185,7 +36689,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 20
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -36216,12 +36720,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Vojvoda",
     "teamName": "Udinese",
     "teamId": "udinese",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;E",
     "fantaRole": "D",
-    "appetibilita": 35,
-    "status": "ballottaggio",
+    "appetibilita": 25,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -36242,7 +36746,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 19
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 71,
       "fantamedia": 6.24,
       "mediaVoto": 6.02,
       "pv": 27,
@@ -36273,12 +36777,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Couto",
     "teamName": "Como",
     "teamId": "como",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;E",
     "fantaRole": "D",
-    "appetibilita": 44,
-    "status": "tit_sicuro",
+    "appetibilita": 35,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -36299,7 +36803,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 27
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -36330,12 +36834,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Obert",
     "teamName": "Cagliari",
     "teamId": "cagliari",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "B;Ds;E",
     "fantaRole": "D",
-    "appetibilita": 27,
-    "status": "ballottaggio",
+    "appetibilita": 18,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -36356,7 +36860,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 16
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 89,
       "fantamedia": 5.82,
       "mediaVoto": 5.88,
       "pv": 34,
@@ -36387,12 +36891,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Kaiki",
     "teamName": "Como",
     "teamId": "como",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "Ds;E",
     "fantaRole": "D",
-    "appetibilita": 38,
-    "status": "ballottaggio",
+    "appetibilita": 30,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -36413,7 +36917,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 23
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -36444,11 +36948,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Carlos Augusto",
     "teamName": "Inter",
     "teamId": "inter",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "B;Ds;E",
     "fantaRole": "D",
-    "appetibilita": 43,
+    "appetibilita": 35,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -36470,7 +36974,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 30
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 74,
       "fantamedia": 6.16,
       "mediaVoto": 6.12,
       "pv": 28,
@@ -36501,12 +37005,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Doekhi",
     "teamName": "Lazio",
     "teamId": "lazio",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 37,
-    "status": "ballottaggio",
+    "appetibilita": 29,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -36527,7 +37031,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 22
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -36558,12 +37062,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Romagnoli",
     "teamName": "Lazio",
     "teamId": "lazio",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 39,
-    "status": "ballottaggio",
+    "appetibilita": 31,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -36584,7 +37088,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 24
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 84,
       "fantamedia": 5.92,
       "mediaVoto": 6.03,
       "pv": 32,
@@ -36615,12 +37119,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Tiago Gabriel",
     "teamName": "Lecce",
     "teamId": "lecce",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 31,
-    "status": "ballottaggio",
+    "appetibilita": 22,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -36641,7 +37145,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 17
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 95,
       "fantamedia": 6.01,
       "mediaVoto": 6,
       "pv": 36,
@@ -36662,7 +37166,7 @@ export const CSV_PLAYER_CATALOG = [
       "amm": 7,
       "espulsioni": 0,
       "esp": 0,
-      "au": 1
+      "au": 0
     }
   },
   {
@@ -36672,11 +37176,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Gabbia",
     "teamName": "Milan",
     "teamId": "milan",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 41,
+    "appetibilita": 33,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -36698,7 +37202,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 25
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 76,
       "fantamedia": 5.84,
       "mediaVoto": 5.91,
       "pv": 29,
@@ -36729,12 +37233,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Tomori",
     "teamName": "Milan",
     "teamId": "milan",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 24,
-    "status": "riserva",
+    "appetibilita": 14,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -36755,7 +37259,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 11
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 84,
       "fantamedia": 5.88,
       "mediaVoto": 5.97,
       "pv": 32,
@@ -36786,12 +37290,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Buongiorno",
     "teamName": "Napoli",
     "teamId": "napoli",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 29,
-    "status": "ballottaggio",
+    "appetibilita": 20,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -36812,7 +37316,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 15
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 84,
       "fantamedia": 5.88,
       "mediaVoto": 5.89,
       "pv": 32,
@@ -36843,12 +37347,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Idzes",
     "teamName": "Sassuolo",
     "teamId": "sassuolo",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 33,
-    "status": "ballottaggio",
+    "appetibilita": 25,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -36869,7 +37373,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 19
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 92,
       "fantamedia": 5.9,
       "mediaVoto": 5.94,
       "pv": 35,
@@ -36900,12 +37404,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Coco",
     "teamName": "Torino",
     "teamId": "torino",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 32,
-    "status": "ballottaggio",
+    "appetibilita": 23,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -36926,7 +37430,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 18
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 92,
       "fantamedia": 5.91,
       "mediaVoto": 5.84,
       "pv": 35,
@@ -36957,12 +37461,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Ismajli",
     "teamName": "Torino",
     "teamId": "torino",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 32,
-    "status": "ballottaggio",
+    "appetibilita": 23,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -36983,7 +37487,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 18
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 63,
       "fantamedia": 5.9,
       "mediaVoto": 5.92,
       "pv": 24,
@@ -37014,12 +37518,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Kristensen T.",
     "teamName": "Atalanta",
     "teamId": "atalanta",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dd;Dc",
     "fantaRole": "D",
-    "appetibilita": 35,
-    "status": "ballottaggio",
+    "appetibilita": 26,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -37040,7 +37544,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 22
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 74,
       "fantamedia": 6.23,
       "mediaVoto": 5.98,
       "pv": 28,
@@ -37071,12 +37575,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Ahanor",
     "teamName": "Atalanta",
     "teamId": "atalanta",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "B;Ds;E",
     "fantaRole": "D",
-    "appetibilita": 28,
-    "status": "ballottaggio",
+    "appetibilita": 21,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -37097,7 +37601,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 18
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 55,
       "fantamedia": 5.69,
       "mediaVoto": 5.79,
       "pv": 21,
@@ -37128,12 +37632,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Bellanova",
     "teamName": "Atalanta",
     "teamId": "atalanta",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;E",
     "fantaRole": "D",
-    "appetibilita": 27,
-    "status": "ballottaggio",
+    "appetibilita": 20,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -37154,7 +37658,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 15
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 58,
       "fantamedia": 5.82,
       "mediaVoto": 5.82,
       "pv": 22,
@@ -37185,12 +37689,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Bernasconi",
     "teamName": "Atalanta",
     "teamId": "atalanta",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "Ds;E",
     "fantaRole": "D",
-    "appetibilita": 29,
-    "status": "ballottaggio",
+    "appetibilita": 22,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -37211,7 +37715,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 17
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 58,
       "fantamedia": 6.16,
       "mediaVoto": 6.09,
       "pv": 22,
@@ -37242,12 +37746,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Heggem",
     "teamName": "Bologna",
     "teamId": "bologna",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Ds;Dc",
     "fantaRole": "D",
-    "appetibilita": 27,
-    "status": "ballottaggio",
+    "appetibilita": 20,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -37268,7 +37772,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 17
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 66,
       "fantamedia": 5.8,
       "mediaVoto": 5.84,
       "pv": 25,
@@ -37299,12 +37803,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Zortea",
     "teamName": "Bologna",
     "teamId": "bologna",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;E",
     "fantaRole": "D",
-    "appetibilita": 32,
-    "status": "ballottaggio",
+    "appetibilita": 25,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -37325,7 +37829,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 19
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 74,
       "fantamedia": 5.89,
       "mediaVoto": 5.86,
       "pv": 28,
@@ -37356,12 +37860,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Valle",
     "teamName": "Como",
     "teamId": "como",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "Ds;E",
     "fantaRole": "D",
-    "appetibilita": 31,
-    "status": "ballottaggio",
+    "appetibilita": 23,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -37382,7 +37886,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 18
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 68,
       "fantamedia": 6.23,
       "mediaVoto": 6.06,
       "pv": 26,
@@ -37413,12 +37917,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Valdepenas",
     "teamName": "Fiorentina",
     "teamId": "fiorentina",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Ds;Dc",
     "fantaRole": "D",
-    "appetibilita": 31,
-    "status": "ballottaggio",
+    "appetibilita": 23,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -37439,7 +37943,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 20
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -37470,12 +37974,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Viery",
     "teamName": "Fiorentina",
     "teamId": "fiorentina",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Ds;Dc",
     "fantaRole": "D",
-    "appetibilita": 32,
-    "status": "ballottaggio",
+    "appetibilita": 25,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -37496,7 +38000,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 21
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -37527,12 +38031,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Monterisi",
     "teamName": "Frosinone",
     "teamId": "frosinone",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 26,
-    "status": "ballottaggio",
+    "appetibilita": 18,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -37553,7 +38057,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 14
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -37584,12 +38088,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Marcandalli",
     "teamName": "Genoa",
     "teamId": "genoa",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 25,
-    "status": "ballottaggio",
+    "appetibilita": 17,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -37610,7 +38114,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 13
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 82,
       "fantamedia": 5.84,
       "mediaVoto": 5.87,
       "pv": 31,
@@ -37641,12 +38145,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Pavard",
     "teamName": "Inter",
     "teamId": "inter",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dd;Dc",
     "fantaRole": "D",
-    "appetibilita": 31,
-    "status": "ballottaggio",
+    "appetibilita": 23,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -37667,7 +38171,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 20
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 3,
       "fantamedia": 6.5,
       "mediaVoto": 6.5,
       "pv": 1,
@@ -37698,12 +38202,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Tavares N.",
     "teamName": "Lazio",
     "teamId": "lazio",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "Ds;E",
     "fantaRole": "D",
-    "appetibilita": 29,
-    "status": "ballottaggio",
+    "appetibilita": 22,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -37724,7 +38228,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 17
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 58,
       "fantamedia": 5.8,
       "mediaVoto": 5.91,
       "pv": 22,
@@ -37755,12 +38259,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Marusic",
     "teamName": "Lazio",
     "teamId": "lazio",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;Ds;E",
     "fantaRole": "D",
-    "appetibilita": 33,
-    "status": "ballottaggio",
+    "appetibilita": 26,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -37781,7 +38285,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 23
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 87,
       "fantamedia": 5.97,
       "mediaVoto": 5.86,
       "pv": 33,
@@ -37812,12 +38316,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Gallo",
     "teamName": "Lecce",
     "teamId": "lecce",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "Ds;E",
     "fantaRole": "D",
-    "appetibilita": 25,
-    "status": "ballottaggio",
+    "appetibilita": 17,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -37838,7 +38342,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 13
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 97,
       "fantamedia": 5.99,
       "mediaVoto": 5.95,
       "pv": 37,
@@ -37869,12 +38373,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Mangas",
     "teamName": "Monza",
     "teamId": "monza",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "Ds;E",
     "fantaRole": "D",
-    "appetibilita": 27,
-    "status": "ballottaggio",
+    "appetibilita": 20,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -37895,7 +38399,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 15
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -37926,12 +38430,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Beukema",
     "teamName": "Napoli",
     "teamId": "napoli",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 25,
-    "status": "ballottaggio",
+    "appetibilita": 17,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -37952,7 +38456,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 13
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 58,
       "fantamedia": 6.16,
       "mediaVoto": 5.93,
       "pv": 22,
@@ -37977,75 +38481,18 @@ export const CSV_PLAYER_CATALOG = [
     }
   },
   {
-    "id": "parma_circati_6663",
-    "csvId": "6663",
-    "name": "Circati",
-    "displayName": "Circati",
-    "teamName": "Parma",
-    "teamId": "parma",
-    "role": "CC",
-    "classicRole": "D",
-    "mantraRole": "Dc",
-    "fantaRole": "D",
-    "appetibilita": 31,
-    "status": "ballottaggio",
-    "isAvailable": true,
-    "isPenaltyTaker": false,
-    "isFreeKickTaker": false,
-    "isCornerTaker": false,
-    "rigorista": false,
-    "punizioni": false,
-    "corner": false,
-    "positionNotes": "",
-    "fantaComment": "",
-    "quotazioni": {
-      "qtA": 6,
-      "qtI": 6,
-      "diff": 0,
-      "qtAM": 6,
-      "qtIM": 6,
-      "diffM": 0,
-      "fvm": 18,
-      "fvmM": 18
-    },
-    "stats": {
-      "titolarita": 65,
-      "fantamedia": 5.92,
-      "mediaVoto": 5.92,
-      "pv": 31,
-      "presenze": 31,
-      "gol": 1,
-      "gf": 1,
-      "gs": 0,
-      "golSubiti": 0,
-      "rp": 0,
-      "rc": 0,
-      "rPlus": 0,
-      "rMinus": 0,
-      "rigoriSegnati": 0,
-      "rigoriSbagliati": 0,
-      "assist": 0,
-      "ass": 0,
-      "ammonizioni": 6,
-      "amm": 6,
-      "espulsioni": 0,
-      "esp": 0,
-      "au": 0
-    }
-  },
-  {
     "id": "torino_comuzzo_6495",
     "csvId": "6495",
     "name": "Comuzzo",
     "displayName": "Comuzzo",
     "teamName": "Torino",
     "teamId": "torino",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 22,
-    "status": "riserva",
+    "appetibilita": 14,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -38066,7 +38513,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 11
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 63,
       "fantamedia": 5.75,
       "mediaVoto": 5.75,
       "pv": 24,
@@ -38087,7 +38534,7 @@ export const CSV_PLAYER_CATALOG = [
       "amm": 2,
       "espulsioni": 0,
       "esp": 0,
-      "au": 1
+      "au": 0
     }
   },
   {
@@ -38097,12 +38544,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Kamara H.",
     "teamName": "Udinese",
     "teamId": "udinese",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "Ds;E",
     "fantaRole": "D",
-    "appetibilita": 23,
-    "status": "ballottaggio",
+    "appetibilita": 16,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -38123,7 +38570,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 12
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 68,
       "fantamedia": 5.87,
       "mediaVoto": 5.88,
       "pv": 26,
@@ -38154,12 +38601,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Bella-Kotchap",
     "teamName": "Venezia",
     "teamId": "venezia",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 25,
-    "status": "ballottaggio",
+    "appetibilita": 17,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -38180,7 +38627,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 13
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 47,
       "fantamedia": 5.75,
       "mediaVoto": 5.83,
       "pv": 18,
@@ -38211,12 +38658,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Obrador",
     "teamName": "Sassuolo",
     "teamId": "sassuolo",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "Ds;E",
     "fantaRole": "D",
-    "appetibilita": 27,
-    "status": "ballottaggio",
+    "appetibilita": 20,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -38237,7 +38684,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 15
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 42,
       "fantamedia": 6.41,
       "mediaVoto": 6.06,
       "pv": 16,
@@ -38268,12 +38715,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Kolasinac",
     "teamName": "Atalanta",
     "teamId": "atalanta",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Ds;Dc",
     "fantaRole": "D",
-    "appetibilita": 22,
-    "status": "ballottaggio",
+    "appetibilita": 16,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -38294,7 +38741,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 14
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 45,
       "fantamedia": 5.94,
       "mediaVoto": 6.03,
       "pv": 17,
@@ -38325,12 +38772,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Vitik",
     "teamName": "Bologna",
     "teamId": "bologna",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 21,
-    "status": "riserva",
+    "appetibilita": 14,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -38351,7 +38798,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 11
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 47,
       "fantamedia": 5.86,
       "mediaVoto": 5.94,
       "pv": 18,
@@ -38382,12 +38829,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Holm",
     "teamName": "Bologna",
     "teamId": "bologna",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;E",
     "fantaRole": "D",
-    "appetibilita": 23,
-    "status": "ballottaggio",
+    "appetibilita": 17,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -38408,7 +38855,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 13
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 42,
       "fantamedia": 6.44,
       "mediaVoto": 6.09,
       "pv": 16,
@@ -38439,11 +38886,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Kofler",
     "teamName": "Cagliari",
     "teamId": "cagliari",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 21,
+    "appetibilita": 14,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -38465,7 +38912,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 11
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -38496,12 +38943,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Zè Pedro",
     "teamName": "Cagliari",
     "teamId": "cagliari",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dd;Dc",
     "fantaRole": "D",
-    "appetibilita": 21,
-    "status": "riserva",
+    "appetibilita": 14,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -38522,7 +38969,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 13
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 58,
       "fantamedia": 5.68,
       "mediaVoto": 5.77,
       "pv": 22,
@@ -38553,12 +39000,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Kempf",
     "teamName": "Como",
     "teamId": "como",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 23,
-    "status": "ballottaggio",
+    "appetibilita": 17,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -38579,7 +39026,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 13
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 76,
       "fantamedia": 6.52,
       "mediaVoto": 6.12,
       "pv": 29,
@@ -38610,12 +39057,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Parisi",
     "teamName": "Fiorentina",
     "teamId": "fiorentina",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "Ds;E",
     "fantaRole": "D",
-    "appetibilita": 22,
-    "status": "ballottaggio",
+    "appetibilita": 16,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -38636,7 +39083,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 12
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 61,
       "fantamedia": 5.98,
       "mediaVoto": 6.02,
       "pv": 23,
@@ -38657,7 +39104,7 @@ export const CSV_PLAYER_CATALOG = [
       "amm": 6,
       "espulsioni": 0,
       "esp": 0,
-      "au": 1
+      "au": 0
     }
   },
   {
@@ -38667,11 +39114,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Bracaglia",
     "teamName": "Frosinone",
     "teamId": "frosinone",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Ds;Dc",
     "fantaRole": "D",
-    "appetibilita": 21,
+    "appetibilita": 14,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -38693,7 +39140,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 13
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -38724,12 +39171,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Oyono A.",
     "teamName": "Frosinone",
     "teamId": "frosinone",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;E",
     "fantaRole": "D",
-    "appetibilita": 22,
-    "status": "ballottaggio",
+    "appetibilita": 16,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -38750,7 +39197,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 12
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -38781,12 +39228,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Martin",
     "teamName": "Genoa",
     "teamId": "genoa",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "Ds;E",
     "fantaRole": "D",
-    "appetibilita": 26,
-    "status": "ballottaggio",
+    "appetibilita": 20,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": true,
     "isFreeKickTaker": false,
@@ -38807,7 +39254,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 15
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 76,
       "fantamedia": 6.1,
       "mediaVoto": 5.97,
       "pv": 29,
@@ -38838,12 +39285,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Kelly L.",
     "teamName": "Juventus",
     "teamId": "juventus",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Ds;Dc",
     "fantaRole": "D",
-    "appetibilita": 20,
-    "status": "riserva",
+    "appetibilita": 13,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -38864,7 +39311,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 12
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 92,
       "fantamedia": 6.07,
       "mediaVoto": 6.01,
       "pv": 35,
@@ -38895,12 +39342,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Pedraza",
     "teamName": "Lazio",
     "teamId": "lazio",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "Ds;E",
     "fantaRole": "D",
-    "appetibilita": 26,
-    "status": "ballottaggio",
+    "appetibilita": 20,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -38921,7 +39368,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 15
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -38952,12 +39399,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Gaspar K.",
     "teamName": "Lecce",
     "teamId": "lecce",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 22,
-    "status": "ballottaggio",
+    "appetibilita": 16,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -38978,7 +39425,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 12
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 55,
       "fantamedia": 5.64,
       "mediaVoto": 5.83,
       "pv": 21,
@@ -39009,12 +39456,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Veiga D.",
     "teamName": "Lecce",
     "teamId": "lecce",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;E",
     "fantaRole": "D",
-    "appetibilita": 21,
-    "status": "riserva",
+    "appetibilita": 14,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -39035,7 +39482,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 11
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 95,
       "fantamedia": 5.69,
       "mediaVoto": 5.82,
       "pv": 36,
@@ -39066,12 +39513,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Olivera",
     "teamName": "Napoli",
     "teamId": "napoli",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "B;Ds;E",
     "fantaRole": "D",
-    "appetibilita": 23,
-    "status": "ballottaggio",
+    "appetibilita": 17,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -39092,7 +39539,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 15
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 58,
       "fantamedia": 5.68,
       "mediaVoto": 5.75,
       "pv": 22,
@@ -39123,12 +39570,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Rensch",
     "teamName": "Roma",
     "teamId": "roma",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "B;Dd;E",
     "fantaRole": "D",
-    "appetibilita": 27,
-    "status": "ballottaggio",
+    "appetibilita": 21,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -39149,7 +39596,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 18
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6.5,
       "mediaVoto": 6.16,
       "pv": 19,
@@ -39180,12 +39627,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Pedersen",
     "teamName": "Torino",
     "teamId": "torino",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;E",
     "fantaRole": "D",
-    "appetibilita": 23,
-    "status": "ballottaggio",
+    "appetibilita": 17,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -39206,7 +39653,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 13
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 74,
       "fantamedia": 5.96,
       "mediaVoto": 5.84,
       "pv": 28,
@@ -39237,11 +39684,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Moreno M.",
     "teamName": "Venezia",
     "teamId": "venezia",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 21,
+    "appetibilita": 14,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -39263,7 +39710,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 11
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -39294,11 +39741,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Haps",
     "teamName": "Venezia",
     "teamId": "venezia",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "Ds;E",
     "fantaRole": "D",
-    "appetibilita": 21,
+    "appetibilita": 14,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -39320,7 +39767,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 11
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -39351,12 +39798,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Zappa",
     "teamName": "Cagliari",
     "teamId": "cagliari",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "B;Dd;E",
     "fantaRole": "D",
-    "appetibilita": 17,
-    "status": "riserva",
+    "appetibilita": 12,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -39377,7 +39824,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 11
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 66,
       "fantamedia": 5.98,
       "mediaVoto": 5.9,
       "pv": 25,
@@ -39408,12 +39855,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Smolcic I.",
     "teamName": "Como",
     "teamId": "como",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;E",
     "fantaRole": "D",
-    "appetibilita": 18,
-    "status": "riserva",
+    "appetibilita": 13,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -39434,7 +39881,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 10
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 66,
       "fantamedia": 5.84,
       "mediaVoto": 5.96,
       "pv": 25,
@@ -39465,12 +39912,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Pongracic",
     "teamName": "Fiorentina",
     "teamId": "fiorentina",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 16,
-    "status": "riserva",
+    "appetibilita": 10,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -39491,7 +39938,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 8
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 92,
       "fantamedia": 5.67,
       "mediaVoto": 5.84,
       "pv": 35,
@@ -39522,11 +39969,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Calvani",
     "teamName": "Frosinone",
     "teamId": "frosinone",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 18,
+    "appetibilita": 13,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -39548,7 +39995,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 10
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -39579,11 +40026,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Mitaj",
     "teamName": "Genoa",
     "teamId": "genoa",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "Ds;E",
     "fantaRole": "D",
-    "appetibilita": 17,
+    "appetibilita": 12,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -39605,7 +40052,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 9
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -39636,12 +40083,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Gatti",
     "teamName": "Juventus",
     "teamId": "juventus",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 18,
-    "status": "riserva",
+    "appetibilita": 13,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -39662,7 +40109,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 10
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 42,
       "fantamedia": 6.22,
       "mediaVoto": 5.94,
       "pv": 16,
@@ -39693,12 +40140,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Siebert",
     "teamName": "Lecce",
     "teamId": "lecce",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 20,
-    "status": "ballottaggio",
+    "appetibilita": 16,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -39719,7 +40166,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 12
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 5.76,
       "mediaVoto": 5.68,
       "pv": 19,
@@ -39750,11 +40197,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Delli Carri",
     "teamName": "Monza",
     "teamId": "monza",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 19,
+    "appetibilita": 14,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -39776,7 +40223,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 11
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -39807,12 +40254,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Lucchesi",
     "teamName": "Monza",
     "teamId": "monza",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 20,
-    "status": "ballottaggio",
+    "appetibilita": 16,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -39833,7 +40280,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 12
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -39864,12 +40311,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Birindelli",
     "teamName": "Monza",
     "teamId": "monza",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;Ds;E",
     "fantaRole": "D",
-    "appetibilita": 20,
-    "status": "ballottaggio",
+    "appetibilita": 16,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -39890,7 +40337,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 14
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -39921,12 +40368,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Valenti",
     "teamName": "Parma",
     "teamId": "parma",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 18,
-    "status": "riserva",
+    "appetibilita": 13,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -39947,7 +40394,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 10
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 71,
       "fantamedia": 5.83,
       "mediaVoto": 5.96,
       "pv": 27,
@@ -39978,12 +40425,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Ghilardi",
     "teamName": "Roma",
     "teamId": "roma",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 18,
-    "status": "riserva",
+    "appetibilita": 13,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -40004,7 +40451,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 10
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 55,
       "fantamedia": 5.95,
       "mediaVoto": 5.98,
       "pv": 21,
@@ -40035,12 +40482,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Walukiewicz",
     "teamName": "Sassuolo",
     "teamId": "sassuolo",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dd;Dc",
     "fantaRole": "D",
-    "appetibilita": 18,
-    "status": "riserva",
+    "appetibilita": 13,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -40061,7 +40508,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 12
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 89,
       "fantamedia": 5.74,
       "mediaVoto": 5.81,
       "pv": 34,
@@ -40092,12 +40539,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Doig",
     "teamName": "Sassuolo",
     "teamId": "sassuolo",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "Ds;E",
     "fantaRole": "D",
-    "appetibilita": 18,
-    "status": "riserva",
+    "appetibilita": 13,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -40118,7 +40565,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 10
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 71,
       "fantamedia": 5.76,
       "mediaVoto": 5.85,
       "pv": 27,
@@ -40149,11 +40596,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Comert",
     "teamName": "Torino",
     "teamId": "torino",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 18,
+    "appetibilita": 13,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -40175,7 +40622,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 10
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -40206,12 +40653,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Kabasele",
     "teamName": "Udinese",
     "teamId": "udinese",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 17,
-    "status": "riserva",
+    "appetibilita": 12,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -40232,7 +40679,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 9
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 74,
       "fantamedia": 6.18,
       "mediaVoto": 5.98,
       "pv": 28,
@@ -40263,12 +40710,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Bertola",
     "teamName": "Udinese",
     "teamId": "udinese",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dd;Ds;Dc",
     "fantaRole": "D",
-    "appetibilita": 18,
-    "status": "riserva",
+    "appetibilita": 13,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -40289,7 +40736,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 14
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 66,
       "fantamedia": 5.84,
       "mediaVoto": 5.86,
       "pv": 25,
@@ -40320,12 +40767,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Zanoli",
     "teamName": "Udinese",
     "teamId": "udinese",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;E",
     "fantaRole": "D",
-    "appetibilita": 18,
-    "status": "riserva",
+    "appetibilita": 13,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -40346,7 +40793,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 10
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 50,
       "fantamedia": 6.29,
       "mediaVoto": 6.05,
       "pv": 19,
@@ -40377,12 +40824,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Arizala",
     "teamName": "Udinese",
     "teamId": "udinese",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "Ds;E",
     "fantaRole": "D",
-    "appetibilita": 16,
-    "status": "riserva",
+    "appetibilita": 10,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -40403,7 +40850,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 8
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 13,
       "fantamedia": 5.8,
       "mediaVoto": 5.8,
       "pv": 5,
@@ -40434,11 +40881,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Halhal",
     "teamName": "Venezia",
     "teamId": "venezia",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 18,
+    "appetibilita": 13,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -40460,7 +40907,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 10
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -40491,12 +40938,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Correia T.",
     "teamName": "Venezia",
     "teamId": "venezia",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;E",
     "fantaRole": "D",
-    "appetibilita": 20,
-    "status": "ballottaggio",
+    "appetibilita": 16,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -40517,7 +40964,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 12
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -40548,11 +40995,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Terzic",
     "teamName": "Frosinone",
     "teamId": "frosinone",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "Ds;E",
     "fantaRole": "D",
-    "appetibilita": 19,
+    "appetibilita": 14,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -40574,7 +41021,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 11
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -40605,11 +41052,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Favasuli",
     "teamName": "Napoli",
     "teamId": "napoli",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;Ds;E",
     "fantaRole": "D",
-    "appetibilita": 19,
+    "appetibilita": 14,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -40631,7 +41078,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 13
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -40662,12 +41109,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Kossounou",
     "teamName": "Atalanta",
     "teamId": "atalanta",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dd;Dc",
     "fantaRole": "D",
-    "appetibilita": 13,
-    "status": "riserva",
+    "appetibilita": 9,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -40688,7 +41135,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 8
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 42,
       "fantamedia": 6.09,
       "mediaVoto": 5.94,
       "pv": 16,
@@ -40719,12 +41166,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Casale",
     "teamName": "Bologna",
     "teamId": "bologna",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 12,
-    "status": "riserva",
+    "appetibilita": 8,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -40745,7 +41192,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 6
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 26,
       "fantamedia": 5.65,
       "mediaVoto": 5.65,
       "pv": 10,
@@ -40776,12 +41223,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Rodriguez Ju.",
     "teamName": "Cagliari",
     "teamId": "cagliari",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Ds;Dc",
     "fantaRole": "D",
-    "appetibilita": 17,
-    "status": "riserva",
+    "appetibilita": 13,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -40802,7 +41249,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 12
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 42,
       "fantamedia": 5.72,
       "mediaVoto": 5.62,
       "pv": 16,
@@ -40833,12 +41280,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Idrissi R.",
     "teamName": "Cagliari",
     "teamId": "cagliari",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "Ds;E",
     "fantaRole": "D",
-    "appetibilita": 13,
-    "status": "riserva",
+    "appetibilita": 9,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -40859,7 +41306,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 7
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 45,
       "fantamedia": 6.09,
       "mediaVoto": 5.82,
       "pv": 17,
@@ -40890,12 +41337,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Ranieri L.",
     "teamName": "Fiorentina",
     "teamId": "fiorentina",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Ds;Dc",
     "fantaRole": "D",
-    "appetibilita": 13,
-    "status": "riserva",
+    "appetibilita": 9,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -40916,7 +41363,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 7
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 82,
       "fantamedia": 5.79,
       "mediaVoto": 5.85,
       "pv": 31,
@@ -40947,12 +41394,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Joao Mario",
     "teamName": "Fiorentina",
     "teamId": "fiorentina",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;E",
     "fantaRole": "D",
-    "appetibilita": 13,
-    "status": "riserva",
+    "appetibilita": 9,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -40973,7 +41420,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 7
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 37,
       "fantamedia": 6,
       "mediaVoto": 5.79,
       "pv": 14,
@@ -41004,11 +41451,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Akpoguma",
     "teamName": "Frosinone",
     "teamId": "frosinone",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 13,
+    "appetibilita": 9,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -41030,7 +41477,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 7
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -41061,11 +41508,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Cittadini",
     "teamName": "Frosinone",
     "teamId": "frosinone",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 14,
+    "appetibilita": 10,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -41087,7 +41534,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 8
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -41118,12 +41565,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Provstgaard",
     "teamName": "Lazio",
     "teamId": "lazio",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 17,
-    "status": "riserva",
+    "appetibilita": 13,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -41144,7 +41591,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 10
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 61,
       "fantamedia": 5.85,
       "mediaVoto": 5.91,
       "pv": 23,
@@ -41175,12 +41622,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Floriani Mussolini",
     "teamName": "Lazio",
     "teamId": "lazio",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;E",
     "fantaRole": "D",
-    "appetibilita": 19,
-    "status": "ballottaggio",
+    "appetibilita": 16,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -41201,7 +41648,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 12
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 61,
       "fantamedia": 5.72,
       "mediaVoto": 5.72,
       "pv": 23,
@@ -41232,12 +41679,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "De Winter",
     "teamName": "Milan",
     "teamId": "milan",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dd;Dc",
     "fantaRole": "D",
-    "appetibilita": 19,
-    "status": "ballottaggio",
+    "appetibilita": 16,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -41258,7 +41705,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 14
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 63,
       "fantamedia": 5.9,
       "mediaVoto": 5.75,
       "pv": 24,
@@ -41289,12 +41736,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Estupinan",
     "teamName": "Milan",
     "teamId": "milan",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "Ds;E",
     "fantaRole": "D",
-    "appetibilita": 15,
-    "status": "riserva",
+    "appetibilita": 12,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -41315,7 +41762,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 9
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 37,
       "fantamedia": 5.71,
       "mediaVoto": 5.64,
       "pv": 14,
@@ -41346,11 +41793,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Kouadio",
     "teamName": "Monza",
     "teamId": "monza",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dd;Dc",
     "fantaRole": "D",
-    "appetibilita": 15,
+    "appetibilita": 12,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -41372,7 +41819,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 10
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 3,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 1,
@@ -41403,11 +41850,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Carboni A.",
     "teamName": "Monza",
     "teamId": "monza",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Ds;Dc",
     "fantaRole": "D",
-    "appetibilita": 15,
+    "appetibilita": 12,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -41429,7 +41876,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 11
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -41460,12 +41907,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Troilo",
     "teamName": "Parma",
     "teamId": "parma",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 14,
-    "status": "riserva",
+    "appetibilita": 10,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -41486,7 +41933,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 8
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 55,
       "fantamedia": 5.71,
       "mediaVoto": 5.79,
       "pv": 21,
@@ -41517,12 +41964,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Britschgi",
     "teamName": "Parma",
     "teamId": "parma",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;Ds;E",
     "fantaRole": "D",
-    "appetibilita": 17,
-    "status": "riserva",
+    "appetibilita": 13,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -41543,7 +41990,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 12
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 74,
       "fantamedia": 5.7,
       "mediaVoto": 5.75,
       "pv": 28,
@@ -41574,11 +42021,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Candè",
     "teamName": "Sassuolo",
     "teamId": "sassuolo",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Ds;Dc",
     "fantaRole": "D",
-    "appetibilita": 19,
+    "appetibilita": 16,
     "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -41600,7 +42047,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 14
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 21,
       "fantamedia": 5.56,
       "mediaVoto": 5.69,
       "pv": 8,
@@ -41631,11 +42078,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Schingtienne",
     "teamName": "Venezia",
     "teamId": "venezia",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 13,
+    "appetibilita": 9,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -41657,7 +42104,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 7
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -41688,11 +42135,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Sverko",
     "teamName": "Venezia",
     "teamId": "venezia",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Ds;Dc",
     "fantaRole": "D",
-    "appetibilita": 13,
+    "appetibilita": 9,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -41714,7 +42161,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 7
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -41745,11 +42192,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Hainaut",
     "teamName": "Venezia",
     "teamId": "venezia",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;E",
     "fantaRole": "D",
-    "appetibilita": 13,
+    "appetibilita": 9,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -41771,7 +42218,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 7
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -41802,12 +42249,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Helland",
     "teamName": "Bologna",
     "teamId": "bologna",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dd;Dc",
     "fantaRole": "D",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 7,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -41828,7 +42275,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 5
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 16,
       "fantamedia": 5.33,
       "mediaVoto": 5.5,
       "pv": 6,
@@ -41859,11 +42306,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Alhassane",
     "teamName": "Bologna",
     "teamId": "bologna",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "Ds;E",
     "fantaRole": "D",
-    "appetibilita": 10,
+    "appetibilita": 8,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -41885,7 +42332,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 6
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -41916,12 +42363,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Van Der Brempt",
     "teamName": "Como",
     "teamId": "como",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;E",
     "fantaRole": "D",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 7,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -41942,7 +42389,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 5
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 37,
       "fantamedia": 5.96,
       "mediaVoto": 5.96,
       "pv": 14,
@@ -41973,12 +42420,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Otoa",
     "teamName": "Genoa",
     "teamId": "genoa",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 7,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -41999,7 +42446,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 5
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 26,
       "fantamedia": 5.35,
       "mediaVoto": 5.6,
       "pv": 10,
@@ -42020,7 +42467,7 @@ export const CSV_PLAYER_CATALOG = [
       "amm": 1,
       "espulsioni": 0,
       "esp": 0,
-      "au": 1
+      "au": 0
     }
   },
   {
@@ -42030,11 +42477,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Puczka",
     "teamName": "Genoa",
     "teamId": "genoa",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "Ds;E",
     "fantaRole": "D",
-    "appetibilita": 11,
+    "appetibilita": 9,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -42056,7 +42503,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 7
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -42087,12 +42534,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Sabelli",
     "teamName": "Genoa",
     "teamId": "genoa",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;Ds;E",
     "fantaRole": "D",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 7,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -42113,7 +42560,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 5
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 34,
       "fantamedia": 5.65,
       "mediaVoto": 5.81,
       "pv": 13,
@@ -42134,7 +42581,7 @@ export const CSV_PLAYER_CATALOG = [
       "amm": 0,
       "espulsioni": 0,
       "esp": 0,
-      "au": 1
+      "au": 0
     }
   },
   {
@@ -42144,12 +42591,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Lazzari",
     "teamName": "Lazio",
     "teamId": "lazio",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;E",
     "fantaRole": "D",
-    "appetibilita": 13,
-    "status": "riserva",
+    "appetibilita": 10,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -42170,7 +42617,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 8
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 45,
       "fantamedia": 5.74,
       "mediaVoto": 5.79,
       "pv": 17,
@@ -42201,12 +42648,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Pellegrini Lu.",
     "teamName": "Lazio",
     "teamId": "lazio",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "Ds;E",
     "fantaRole": "D",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 7,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -42227,7 +42674,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 5
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 63,
       "fantamedia": 5.81,
       "mediaVoto": 5.85,
       "pv": 24,
@@ -42258,12 +42705,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Jean",
     "teamName": "Lecce",
     "teamId": "lecce",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 5,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -42284,7 +42731,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 4
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 13,
       "fantamedia": 5.7,
       "mediaVoto": 5.8,
       "pv": 5,
@@ -42315,11 +42762,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Diawara S.",
     "teamName": "Milan",
     "teamId": "milan",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Ds;Dc",
     "fantaRole": "D",
-    "appetibilita": 10,
+    "appetibilita": 5,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -42341,7 +42788,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 4
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -42372,11 +42819,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Marin R.",
     "teamName": "Napoli",
     "teamId": "napoli",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 10,
+    "appetibilita": 8,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -42398,7 +42845,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 6
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -42429,12 +42876,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Biraghi",
     "teamName": "Torino",
     "teamId": "torino",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "B;Ds;E",
     "fantaRole": "D",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 7,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -42455,7 +42902,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 6
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 29,
       "fantamedia": 5.59,
       "mediaVoto": 5.59,
       "pv": 11,
@@ -42486,11 +42933,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Palma",
     "teamName": "Udinese",
     "teamId": "udinese",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 10,
+    "appetibilita": 7,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -42512,7 +42959,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 5
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 11,
       "fantamedia": 5.5,
       "mediaVoto": 5.5,
       "pv": 4,
@@ -42543,12 +42990,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Ebosse",
     "teamName": "Udinese",
     "teamId": "udinese",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Ds;Dc",
     "fantaRole": "D",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 5,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -42569,7 +43016,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 4
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 42,
       "fantamedia": 5.72,
       "mediaVoto": 5.75,
       "pv": 16,
@@ -42600,11 +43047,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Franjic",
     "teamName": "Venezia",
     "teamId": "venezia",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "B;Ds;E",
     "fantaRole": "D",
-    "appetibilita": 10,
+    "appetibilita": 5,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -42626,7 +43073,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 4
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -42657,11 +43104,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Sagrado",
     "teamName": "Venezia",
     "teamId": "venezia",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;E",
     "fantaRole": "D",
-    "appetibilita": 10,
+    "appetibilita": 5,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -42683,7 +43130,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 4
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -42714,11 +43161,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Aurelio",
     "teamName": "Cagliari",
     "teamId": "cagliari",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "Ds;E",
     "fantaRole": "D",
-    "appetibilita": 10,
+    "appetibilita": 7,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -42740,7 +43187,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 5
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -42771,12 +43218,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "De Silvestri",
     "teamName": "Bologna",
     "teamId": "bologna",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;E",
     "fantaRole": "D",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 5,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -42797,7 +43244,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 4
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 26,
       "fantamedia": 5.95,
       "mediaVoto": 6.05,
       "pv": 10,
@@ -42828,11 +43275,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Goldaniga",
     "teamName": "Como",
     "teamId": "como",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -42854,7 +43301,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -42885,11 +43332,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Amey",
     "teamName": "Frosinone",
     "teamId": "frosinone",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -42911,7 +43358,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -42942,11 +43389,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Gelli J.",
     "teamName": "Frosinone",
     "teamId": "frosinone",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -42968,7 +43415,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -42999,11 +43446,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Oyono J.",
     "teamName": "Frosinone",
     "teamId": "frosinone",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;E",
     "fantaRole": "D",
-    "appetibilita": 10,
+    "appetibilita": 4,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -43025,7 +43472,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 3
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -43056,11 +43503,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Corrado",
     "teamName": "Frosinone",
     "teamId": "frosinone",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "Ds;E",
     "fantaRole": "D",
-    "appetibilita": 10,
+    "appetibilita": 4,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -43082,7 +43529,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 3
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -43113,11 +43560,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Matturro",
     "teamName": "Genoa",
     "teamId": "genoa",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Ds;Dc",
     "fantaRole": "D",
-    "appetibilita": 10,
+    "appetibilita": 3,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -43139,7 +43586,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 2
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -43170,12 +43617,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Rugani",
     "teamName": "Juventus",
     "teamId": "juventus",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 4,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -43196,7 +43643,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 3
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 21,
       "fantamedia": 5.56,
       "mediaVoto": 5.69,
       "pv": 8,
@@ -43227,12 +43674,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Cabal",
     "teamName": "Juventus",
     "teamId": "juventus",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "B;Ds;E",
     "fantaRole": "D",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 5,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -43253,7 +43700,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 4
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 24,
       "fantamedia": 6.56,
       "mediaVoto": 5.94,
       "pv": 9,
@@ -43284,12 +43731,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Patric",
     "teamName": "Lazio",
     "teamId": "lazio",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dd;Dc",
     "fantaRole": "D",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 5,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -43310,7 +43757,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 4
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 26,
       "fantamedia": 5.75,
       "mediaVoto": 5.85,
       "pv": 10,
@@ -43341,12 +43788,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Ndaba",
     "teamName": "Lecce",
     "teamId": "lecce",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "Ds;E",
     "fantaRole": "D",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 5,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -43367,7 +43814,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 4
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 24,
       "fantamedia": 5.5,
       "mediaVoto": 5.5,
       "pv": 9,
@@ -43398,11 +43845,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Antov",
     "teamName": "Monza",
     "teamId": "monza",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 10,
+    "appetibilita": 3,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -43424,7 +43871,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 2
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -43455,11 +43902,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Bakoune",
     "teamName": "Monza",
     "teamId": "monza",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;E",
     "fantaRole": "D",
-    "appetibilita": 10,
+    "appetibilita": 5,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -43481,7 +43928,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 4
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -43512,12 +43959,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Marianucci",
     "teamName": "Napoli",
     "teamId": "napoli",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 4,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -43538,7 +43985,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 3
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 29,
       "fantamedia": 5.73,
       "mediaVoto": 5.73,
       "pv": 11,
@@ -43569,12 +44016,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Mazzocchi",
     "teamName": "Napoli",
     "teamId": "napoli",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;Ds;E",
     "fantaRole": "D",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 4,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -43595,7 +44042,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 3
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 24,
       "fantamedia": 5.94,
       "mediaVoto": 5.94,
       "pv": 9,
@@ -43626,12 +44073,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Ndiaye",
     "teamName": "Parma",
     "teamId": "parma",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 5,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -43652,7 +44099,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 4
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 29,
       "fantamedia": 5.36,
       "mediaVoto": 5.59,
       "pv": 11,
@@ -43683,11 +44130,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Carboni F.",
     "teamName": "Parma",
     "teamId": "parma",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "Ds;E",
     "fantaRole": "D",
-    "appetibilita": 10,
+    "appetibilita": 4,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -43709,7 +44156,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 3
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 5,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 2,
@@ -43740,12 +44187,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Ziolkowski",
     "teamName": "Roma",
     "teamId": "roma",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 3,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -43766,7 +44213,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 2
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 24,
       "fantamedia": 5.78,
       "mediaVoto": 5.94,
       "pv": 9,
@@ -43797,11 +44244,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Missori",
     "teamName": "Sassuolo",
     "teamId": "sassuolo",
-    "role": "ED",
+    "role": "TD",
     "classicRole": "D",
     "mantraRole": "Dd;E",
     "fantaRole": "D",
-    "appetibilita": 10,
+    "appetibilita": 3,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -43823,7 +44270,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 2
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -43854,11 +44301,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Pieragnolo",
     "teamName": "Sassuolo",
     "teamId": "sassuolo",
-    "role": "ED",
+    "role": "TS",
     "classicRole": "D",
     "mantraRole": "Ds;E",
     "fantaRole": "D",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -43880,7 +44327,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -43911,11 +44358,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Mlacic",
     "teamName": "Udinese",
     "teamId": "udinese",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dc",
     "fantaRole": "D",
-    "appetibilita": 10,
+    "appetibilita": 4,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -43937,7 +44384,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 3
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 8,
       "fantamedia": 5.67,
       "mediaVoto": 5.83,
       "pv": 3,
@@ -43968,11 +44415,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Abankwah",
     "teamName": "Udinese",
     "teamId": "udinese",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Dd;Dc",
     "fantaRole": "D",
-    "appetibilita": 10,
+    "appetibilita": 4,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -43994,7 +44441,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 3
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -44025,11 +44472,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Gomes",
     "teamName": "Venezia",
     "teamId": "venezia",
-    "role": "CC",
+    "role": "DC",
     "classicRole": "D",
     "mantraRole": "Ds;Dc",
     "fantaRole": "D",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -44051,7 +44498,64 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
+      "fantamedia": 6,
+      "mediaVoto": 6,
+      "pv": 0,
+      "presenze": 0,
+      "gol": 0,
+      "gf": 0,
+      "gs": 0,
+      "golSubiti": 0,
+      "rp": 0,
+      "rc": 0,
+      "rPlus": 0,
+      "rMinus": 0,
+      "rigoriSegnati": 0,
+      "rigoriSbagliati": 0,
+      "assist": 0,
+      "ass": 0,
+      "ammonizioni": 0,
+      "amm": 0,
+      "espulsioni": 0,
+      "esp": 0,
+      "au": 0
+    }
+  },
+  {
+    "id": "frosinone_omar_fayed_7553",
+    "csvId": "7553",
+    "name": "Omar Fayed",
+    "displayName": "Omar Fayed",
+    "teamName": "Frosinone",
+    "teamId": "frosinone",
+    "role": "DC",
+    "classicRole": "D",
+    "mantraRole": "Dc",
+    "fantaRole": "D",
+    "appetibilita": 1,
+    "status": "riserva",
+    "isAvailable": true,
+    "isPenaltyTaker": false,
+    "isFreeKickTaker": false,
+    "isCornerTaker": false,
+    "rigorista": false,
+    "punizioni": false,
+    "corner": false,
+    "positionNotes": "",
+    "fantaComment": "",
+    "quotazioni": {
+      "qtA": 1,
+      "qtI": 1,
+      "diff": 0,
+      "qtAM": 1,
+      "qtIM": 1,
+      "diffM": 0,
+      "fvm": 1,
+      "fvmM": 1
+    },
+    "stats": {
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -44082,7 +44586,7 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Paz N.",
     "teamName": "Como",
     "teamId": "como",
-    "role": "A",
+    "role": "T",
     "classicRole": "C",
     "mantraRole": "T;A",
     "fantaRole": "C",
@@ -44108,7 +44612,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 250
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 92,
       "fantamedia": 7.3,
       "mediaVoto": 6.37,
       "pv": 35,
@@ -44139,7 +44643,7 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "McTominay",
     "teamName": "Napoli",
     "teamId": "napoli",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
@@ -44165,7 +44669,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 240
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 87,
       "fantamedia": 7.26,
       "mediaVoto": 6.39,
       "pv": 33,
@@ -44196,12 +44700,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Calhanoglu",
     "teamName": "Inter",
     "teamId": "inter",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
     "appetibilita": 100,
-    "status": "tit_sicuro",
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": true,
     "isFreeKickTaker": false,
@@ -44222,7 +44726,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 260
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 58,
       "fantamedia": 7.64,
       "mediaVoto": 6.52,
       "pv": 22,
@@ -44253,7 +44757,7 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Orsolini",
     "teamName": "Bologna",
     "teamId": "bologna",
-    "role": "A",
+    "role": "W",
     "classicRole": "C",
     "mantraRole": "W;A",
     "fantaRole": "C",
@@ -44279,7 +44783,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 200
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 89,
       "fantamedia": 6.76,
       "mediaVoto": 6.06,
       "pv": 34,
@@ -44310,7 +44814,7 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Pulisic",
     "teamName": "Milan",
     "teamId": "milan",
-    "role": "A",
+    "role": "T",
     "classicRole": "C",
     "mantraRole": "T;A",
     "fantaRole": "C",
@@ -44336,7 +44840,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 180
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 71,
       "fantamedia": 7.07,
       "mediaVoto": 6.15,
       "pv": 27,
@@ -44367,7 +44871,7 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Rabiot",
     "teamName": "Milan",
     "teamId": "milan",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
@@ -44393,7 +44897,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 128
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 76,
       "fantamedia": 6.98,
       "mediaVoto": 6.33,
       "pv": 29,
@@ -44424,7 +44928,7 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Baturina",
     "teamName": "Como",
     "teamId": "como",
-    "role": "COC",
+    "role": "T",
     "classicRole": "C",
     "mantraRole": "T",
     "fantaRole": "C",
@@ -44450,7 +44954,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 100
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 66,
       "fantamedia": 7.14,
       "mediaVoto": 6.3,
       "pv": 25,
@@ -44481,12 +44985,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Mora",
     "teamName": "Roma",
     "teamId": "roma",
-    "role": "COC",
+    "role": "T",
     "classicRole": "C",
     "mantraRole": "T",
     "fantaRole": "C",
     "appetibilita": 100,
-    "status": "tit_sicuro",
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -44507,7 +45011,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 99
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -44538,7 +45042,7 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Da Cunha",
     "teamName": "Como",
     "teamId": "como",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
@@ -44564,7 +45068,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 90
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 92,
       "fantamedia": 6.91,
       "mediaVoto": 6.34,
       "pv": 35,
@@ -44595,7 +45099,7 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Zaniolo",
     "teamName": "Udinese",
     "teamId": "udinese",
-    "role": "A",
+    "role": "T",
     "classicRole": "C",
     "mantraRole": "T;A",
     "fantaRole": "C",
@@ -44621,7 +45125,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 100
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 82,
       "fantamedia": 6.77,
       "mediaVoto": 6.26,
       "pv": 31,
@@ -44652,7 +45156,7 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Atta",
     "teamName": "Fiorentina",
     "teamId": "fiorentina",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
@@ -44678,7 +45182,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 87
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 84,
       "fantamedia": 6.88,
       "mediaVoto": 6.36,
       "pv": 32,
@@ -44709,7 +45213,7 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Barella",
     "teamName": "Inter",
     "teamId": "inter",
-    "role": "CC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C",
     "fantaRole": "C",
@@ -44735,7 +45239,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 80
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 89,
       "fantamedia": 6.71,
       "mediaVoto": 6.28,
       "pv": 34,
@@ -44766,11 +45270,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "McKennie",
     "teamName": "Juventus",
     "teamId": "juventus",
-    "role": "CC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C",
     "fantaRole": "C",
-    "appetibilita": 100,
+    "appetibilita": 88,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -44792,7 +45296,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 68
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 89,
       "fantamedia": 6.68,
       "mediaVoto": 6.13,
       "pv": 34,
@@ -44823,7 +45327,7 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Zaccagni",
     "teamName": "Lazio",
     "teamId": "lazio",
-    "role": "A",
+    "role": "W",
     "classicRole": "C",
     "mantraRole": "W;A",
     "fantaRole": "C",
@@ -44849,7 +45353,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 88
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 68,
       "fantamedia": 5.96,
       "mediaVoto": 5.88,
       "pv": 26,
@@ -44880,12 +45384,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "De Bruyne",
     "teamName": "Napoli",
     "teamId": "napoli",
-    "role": "COC",
+    "role": "T",
     "classicRole": "C",
     "mantraRole": "T",
     "fantaRole": "C",
     "appetibilita": 100,
-    "status": "tit_sicuro",
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": true,
     "isFreeKickTaker": false,
@@ -44906,7 +45410,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 95
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 45,
       "fantamedia": 7.24,
       "mediaVoto": 6.26,
       "pv": 17,
@@ -44937,7 +45441,7 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Vlasic",
     "teamName": "Torino",
     "teamId": "torino",
-    "role": "COC",
+    "role": "T",
     "classicRole": "C",
     "mantraRole": "T",
     "fantaRole": "C",
@@ -44963,7 +45467,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 77
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 97,
       "fantamedia": 6.66,
       "mediaVoto": 6.03,
       "pv": 37,
@@ -44994,11 +45498,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Gudmundsson A.",
     "teamName": "Fiorentina",
     "teamId": "fiorentina",
-    "role": "A",
+    "role": "T",
     "classicRole": "C",
     "mantraRole": "T;A",
     "fantaRole": "C",
-    "appetibilita": 93,
+    "appetibilita": 79,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": true,
@@ -45020,7 +45524,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 58
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 84,
       "fantamedia": 6.34,
       "mediaVoto": 5.88,
       "pv": 32,
@@ -45051,12 +45555,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Taylor K.",
     "teamName": "Lazio",
     "teamId": "lazio",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
-    "appetibilita": 96,
-    "status": "tit_sicuro",
+    "appetibilita": 83,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -45077,7 +45581,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 64
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 45,
       "fantamedia": 6.56,
       "mediaVoto": 6.06,
       "pv": 17,
@@ -45108,11 +45612,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Ederson D.S.",
     "teamName": "Atalanta",
     "teamId": "atalanta",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 72,
+    "appetibilita": 59,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": true,
@@ -45134,7 +45638,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 48
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 79,
       "fantamedia": 6.43,
       "mediaVoto": 6.25,
       "pv": 30,
@@ -45165,12 +45669,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Samardzic",
     "teamName": "Atalanta",
     "teamId": "atalanta",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
-    "appetibilita": 68,
-    "status": "tit_sicuro",
+    "appetibilita": 55,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -45191,7 +45695,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 42
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 55,
       "fantamedia": 6.29,
       "mediaVoto": 5.93,
       "pv": 21,
@@ -45222,11 +45726,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Rodriguez Je.",
     "teamName": "Como",
     "teamId": "como",
-    "role": "A",
+    "role": "W",
     "classicRole": "C",
     "mantraRole": "W;A",
     "fantaRole": "C",
-    "appetibilita": 56,
+    "appetibilita": 42,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -45248,7 +45752,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 31
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 74,
       "fantamedia": 6.66,
       "mediaVoto": 6.25,
       "pv": 28,
@@ -45279,12 +45783,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Alajbegovic",
     "teamName": "Juventus",
     "teamId": "juventus",
-    "role": "AD",
+    "role": "T",
     "classicRole": "C",
     "mantraRole": "W;T",
     "fantaRole": "C",
-    "appetibilita": 85,
-    "status": "tit_sicuro",
+    "appetibilita": 73,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -45305,7 +45809,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 56
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -45336,11 +45840,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Conceicao",
     "teamName": "Juventus",
     "teamId": "juventus",
-    "role": "A",
+    "role": "W",
     "classicRole": "C",
     "mantraRole": "W;A",
     "fantaRole": "C",
-    "appetibilita": 90,
+    "appetibilita": 78,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -45362,7 +45866,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 60
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 79,
       "fantamedia": 6.7,
       "mediaVoto": 6.28,
       "pv": 30,
@@ -45393,11 +45897,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Modric",
     "teamName": "Milan",
     "teamId": "milan",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 78,
+    "appetibilita": 65,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -45419,7 +45923,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 60
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 87,
       "fantamedia": 6.67,
       "mediaVoto": 6.45,
       "pv": 33,
@@ -45450,12 +45954,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Mastantuono",
     "teamName": "Fiorentina",
     "teamId": "fiorentina",
-    "role": "AD",
+    "role": "T",
     "classicRole": "C",
     "mantraRole": "W;T",
     "fantaRole": "C",
-    "appetibilita": 88,
-    "status": "tit_sicuro",
+    "appetibilita": 75,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -45476,7 +45980,64 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 58
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 50,
+      "fantamedia": 6,
+      "mediaVoto": 6,
+      "pv": 0,
+      "presenze": 0,
+      "gol": 0,
+      "gf": 0,
+      "gs": 0,
+      "golSubiti": 0,
+      "rp": 0,
+      "rc": 0,
+      "rPlus": 0,
+      "rMinus": 0,
+      "rigoriSegnati": 0,
+      "rigoriSbagliati": 0,
+      "assist": 0,
+      "ass": 0,
+      "ammonizioni": 0,
+      "amm": 0,
+      "espulsioni": 0,
+      "esp": 0,
+      "au": 0
+    }
+  },
+  {
+    "id": "milan_moreira_6372",
+    "csvId": "6372",
+    "name": "Moreira",
+    "displayName": "Moreira",
+    "teamName": "Milan",
+    "teamId": "milan",
+    "role": "W",
+    "classicRole": "C",
+    "mantraRole": "W",
+    "fantaRole": "C",
+    "appetibilita": 68,
+    "status": "riserva",
+    "isAvailable": true,
+    "isPenaltyTaker": false,
+    "isFreeKickTaker": false,
+    "isCornerTaker": false,
+    "rigorista": false,
+    "punizioni": false,
+    "corner": false,
+    "positionNotes": "",
+    "fantaComment": "",
+    "quotazioni": {
+      "qtA": 12,
+      "qtI": 12,
+      "diff": 0,
+      "qtAM": 12,
+      "qtIM": 12,
+      "diffM": 0,
+      "fvm": 52,
+      "fvmM": 48
+    },
+    "stats": {
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -45507,11 +46068,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Rowe",
     "teamName": "Bologna",
     "teamId": "bologna",
-    "role": "AD",
+    "role": "T",
     "classicRole": "C",
     "mantraRole": "W;T",
     "fantaRole": "C",
-    "appetibilita": 61,
+    "appetibilita": 48,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -45533,7 +46094,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 40
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 74,
       "fantamedia": 6.59,
       "mediaVoto": 6.2,
       "pv": 28,
@@ -45564,12 +46125,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Baldanzi",
     "teamName": "Genoa",
     "teamId": "genoa",
-    "role": "COC",
+    "role": "T",
     "classicRole": "C",
     "mantraRole": "T",
     "fantaRole": "C",
-    "appetibilita": 53,
-    "status": "tit_sicuro",
+    "appetibilita": 39,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -45590,7 +46151,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 27
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 45,
       "fantamedia": 6.38,
       "mediaVoto": 6.15,
       "pv": 17,
@@ -45621,12 +46182,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Zambo Anguissa",
     "teamName": "Napoli",
     "teamId": "napoli",
-    "role": "CC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C",
     "fantaRole": "C",
-    "appetibilita": 81,
-    "status": "tit_sicuro",
+    "appetibilita": 70,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -45647,7 +46208,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 54
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 47,
       "fantamedia": 6.86,
       "mediaVoto": 6.17,
       "pv": 18,
@@ -45678,11 +46239,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Perrone",
     "teamName": "Como",
     "teamId": "como",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 61,
+    "appetibilita": 49,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -45704,7 +46265,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 41
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 95,
       "fantamedia": 6.47,
       "mediaVoto": 6.22,
       "pv": 36,
@@ -45735,11 +46296,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Zielinski",
     "teamName": "Inter",
     "teamId": "inter",
-    "role": "CC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C",
     "fantaRole": "C",
-    "appetibilita": 64,
+    "appetibilita": 53,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": true,
@@ -45761,7 +46322,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 41
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 79,
       "fantamedia": 6.8,
       "mediaVoto": 6.25,
       "pv": 30,
@@ -45782,7 +46343,7 @@ export const CSV_PLAYER_CATALOG = [
       "amm": 3,
       "espulsioni": 0,
       "esp": 0,
-      "au": 1
+      "au": 0
     }
   },
   {
@@ -45792,11 +46353,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Thuram K.",
     "teamName": "Juventus",
     "teamId": "juventus",
-    "role": "CC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C",
     "fantaRole": "C",
-    "appetibilita": 64,
+    "appetibilita": 53,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -45818,7 +46379,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 41
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 89,
       "fantamedia": 6.4,
       "mediaVoto": 6.1,
       "pv": 34,
@@ -45849,11 +46410,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Saelemaekers",
     "teamName": "Milan",
     "teamId": "milan",
-    "role": "AD",
+    "role": "E",
     "classicRole": "C",
     "mantraRole": "E;W",
     "fantaRole": "C",
-    "appetibilita": 67,
+    "appetibilita": 56,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -45875,7 +46436,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 45
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 92,
       "fantamedia": 6.41,
       "mediaVoto": 6.14,
       "pv": 35,
@@ -45906,11 +46467,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Politano",
     "teamName": "Napoli",
     "teamId": "napoli",
-    "role": "AD",
+    "role": "W",
     "classicRole": "C",
     "mantraRole": "W",
     "fantaRole": "C",
-    "appetibilita": 71,
+    "appetibilita": 61,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -45932,7 +46493,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 43
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 87,
       "fantamedia": 6.36,
       "mediaVoto": 6.09,
       "pv": 33,
@@ -45963,11 +46524,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Konè M.",
     "teamName": "Roma",
     "teamId": "roma",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 65,
+    "appetibilita": 55,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -45989,7 +46550,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 45
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 76,
       "fantamedia": 6.53,
       "mediaVoto": 6.26,
       "pv": 29,
@@ -46020,11 +46581,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Thorstvedt",
     "teamName": "Sassuolo",
     "teamId": "sassuolo",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
-    "appetibilita": 64,
+    "appetibilita": 53,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -46046,7 +46607,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 41
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 82,
       "fantamedia": 6.48,
       "mediaVoto": 6.15,
       "pv": 31,
@@ -46077,11 +46638,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Casadei",
     "teamName": "Torino",
     "teamId": "torino",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
-    "appetibilita": 59,
+    "appetibilita": 48,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -46103,7 +46664,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 37
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 84,
       "fantamedia": 6.45,
       "mediaVoto": 5.97,
       "pv": 32,
@@ -46134,11 +46695,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Ekkelenkamp",
     "teamName": "Udinese",
     "teamId": "udinese",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
-    "appetibilita": 64,
+    "appetibilita": 53,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -46160,7 +46721,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 41
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 82,
       "fantamedia": 6.61,
       "mediaVoto": 6.05,
       "pv": 31,
@@ -46191,12 +46752,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Pellegrini Lo.",
     "teamName": "Roma",
     "teamId": "roma",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
-    "appetibilita": 49,
-    "status": "tit_sicuro",
+    "appetibilita": 36,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": true,
     "isFreeKickTaker": false,
@@ -46217,7 +46778,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 28
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 63,
       "fantamedia": 6.58,
       "mediaVoto": 6.04,
       "pv": 24,
@@ -46248,11 +46809,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Pasalic",
     "teamName": "Atalanta",
     "teamId": "atalanta",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
-    "appetibilita": 52,
+    "appetibilita": 42,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -46274,7 +46835,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 32
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 82,
       "fantamedia": 6.27,
       "mediaVoto": 5.94,
       "pv": 31,
@@ -46305,12 +46866,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Bernardeschi",
     "teamName": "Bologna",
     "teamId": "bologna",
-    "role": "AD",
+    "role": "T",
     "classicRole": "C",
     "mantraRole": "W;T",
     "fantaRole": "C",
-    "appetibilita": 39,
-    "status": "ballottaggio",
+    "appetibilita": 27,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": true,
     "isFreeKickTaker": false,
@@ -46331,7 +46892,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 21
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 63,
       "fantamedia": 6.56,
       "mediaVoto": 6.04,
       "pv": 24,
@@ -46362,11 +46923,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Mandragora",
     "teamName": "Fiorentina",
     "teamId": "fiorentina",
-    "role": "CC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C",
     "fantaRole": "C",
-    "appetibilita": 47,
+    "appetibilita": 36,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": true,
@@ -46388,7 +46949,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 28
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 89,
       "fantamedia": 6.62,
       "mediaVoto": 6.04,
       "pv": 34,
@@ -46419,11 +46980,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Cancellieri",
     "teamName": "Lazio",
     "teamId": "lazio",
-    "role": "A",
+    "role": "W",
     "classicRole": "C",
     "mantraRole": "W;A",
     "fantaRole": "C",
-    "appetibilita": 47,
+    "appetibilita": 36,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -46445,7 +47006,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 26
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 74,
       "fantamedia": 6.29,
       "mediaVoto": 5.93,
       "pv": 28,
@@ -46476,11 +47037,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Isaksen",
     "teamName": "Lazio",
     "teamId": "lazio",
-    "role": "A",
+    "role": "W",
     "classicRole": "C",
     "mantraRole": "W;A",
     "fantaRole": "C",
-    "appetibilita": 44,
+    "appetibilita": 33,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -46502,7 +47063,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 23
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 71,
       "fantamedia": 6.63,
       "mediaVoto": 6.04,
       "pv": 27,
@@ -46533,12 +47094,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Konè I.",
     "teamName": "Sassuolo",
     "teamId": "sassuolo",
-    "role": "CC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C",
     "fantaRole": "C",
-    "appetibilita": 38,
-    "status": "ballottaggio",
+    "appetibilita": 26,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -46559,7 +47120,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 20
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 92,
       "fantamedia": 6.63,
       "mediaVoto": 6.19,
       "pv": 35,
@@ -46590,12 +47151,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Odgaard",
     "teamName": "Bologna",
     "teamId": "bologna",
-    "role": "COC",
+    "role": "T",
     "classicRole": "C",
     "mantraRole": "T",
     "fantaRole": "C",
-    "appetibilita": 38,
-    "status": "ballottaggio",
+    "appetibilita": 29,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -46616,7 +47177,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 20
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 58,
       "fantamedia": 6.61,
       "mediaVoto": 5.91,
       "pv": 22,
@@ -46647,12 +47208,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Cambiaghi",
     "teamName": "Bologna",
     "teamId": "bologna",
-    "role": "A",
+    "role": "W",
     "classicRole": "C",
     "mantraRole": "W;A",
     "fantaRole": "C",
-    "appetibilita": 42,
-    "status": "tit_sicuro",
+    "appetibilita": 33,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -46673,7 +47234,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 25
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 63,
       "fantamedia": 6.42,
       "mediaVoto": 5.98,
       "pv": 24,
@@ -46704,12 +47265,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Fagioli",
     "teamName": "Fiorentina",
     "teamId": "fiorentina",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 40,
-    "status": "ballottaggio",
+    "appetibilita": 30,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -46730,7 +47291,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 25
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 87,
       "fantamedia": 6.23,
       "mediaVoto": 6.03,
       "pv": 33,
@@ -46761,11 +47322,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Ndour",
     "teamName": "Fiorentina",
     "teamId": "fiorentina",
-    "role": "CC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C",
     "fantaRole": "C",
-    "appetibilita": 42,
+    "appetibilita": 33,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -46787,7 +47348,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 25
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 79,
       "fantamedia": 6.07,
       "mediaVoto": 5.8,
       "pv": 30,
@@ -46818,12 +47379,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Diouf",
     "teamName": "Inter",
     "teamId": "inter",
-    "role": "CC",
+    "role": "E",
     "classicRole": "C",
     "mantraRole": "E;C",
     "fantaRole": "C",
-    "appetibilita": 56,
-    "status": "tit_sicuro",
+    "appetibilita": 48,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -46844,7 +47405,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 40
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 26,
       "fantamedia": 6.45,
       "mediaVoto": 6.15,
       "pv": 10,
@@ -46875,11 +47436,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Sucic P.",
     "teamName": "Inter",
     "teamId": "inter",
-    "role": "CC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C",
     "fantaRole": "C",
-    "appetibilita": 43,
+    "appetibilita": 34,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -46901,7 +47462,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 26
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 74,
       "fantamedia": 6.27,
       "mediaVoto": 6.07,
       "pv": 28,
@@ -46932,11 +47493,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Locatelli",
     "teamName": "Juventus",
     "teamId": "juventus",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 50,
+    "appetibilita": 42,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": true,
@@ -46958,7 +47519,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 35
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 95,
       "fantamedia": 6.19,
       "mediaVoto": 6.26,
       "pv": 36,
@@ -46989,12 +47550,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Colpani",
     "teamName": "Monza",
     "teamId": "monza",
-    "role": "COC",
+    "role": "T",
     "classicRole": "C",
     "mantraRole": "T",
     "fantaRole": "C",
-    "appetibilita": 42,
-    "status": "tit_sicuro",
+    "appetibilita": 33,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -47015,7 +47576,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 22
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -47046,12 +47607,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Vergara",
     "teamName": "Napoli",
     "teamId": "napoli",
-    "role": "AD",
+    "role": "T",
     "classicRole": "C",
     "mantraRole": "W;T",
     "fantaRole": "C",
-    "appetibilita": 53,
-    "status": "tit_sicuro",
+    "appetibilita": 44,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -47072,7 +47633,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 34
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 21,
       "fantamedia": 6.5,
       "mediaVoto": 6.25,
       "pv": 8,
@@ -47103,11 +47664,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Cristante",
     "teamName": "Roma",
     "teamId": "roma",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 47,
+    "appetibilita": 38,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -47129,7 +47690,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 32
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 97,
       "fantamedia": 6.22,
       "mediaVoto": 6.11,
       "pv": 37,
@@ -47160,12 +47721,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Schmid",
     "teamName": "Frosinone",
     "teamId": "frosinone",
-    "role": "AD",
+    "role": "T",
     "classicRole": "C",
     "mantraRole": "W;T",
     "fantaRole": "C",
-    "appetibilita": 48,
-    "status": "tit_sicuro",
+    "appetibilita": 39,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -47186,7 +47747,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 30
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -47217,12 +47778,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Gaetano",
     "teamName": "Atalanta",
     "teamId": "atalanta",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 39,
-    "status": "ballottaggio",
+    "appetibilita": 31,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -47243,7 +47804,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 27
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 84,
       "fantamedia": 6.31,
       "mediaVoto": 6.06,
       "pv": 32,
@@ -47274,12 +47835,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Ferguson",
     "teamName": "Bologna",
     "teamId": "bologna",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 32,
-    "status": "ballottaggio",
+    "appetibilita": 23,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -47300,7 +47861,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 21
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 61,
       "fantamedia": 5.78,
       "mediaVoto": 5.8,
       "pv": 23,
@@ -47331,11 +47892,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Fazzini",
     "teamName": "Cagliari",
     "teamId": "cagliari",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
-    "appetibilita": 33,
+    "appetibilita": 25,
     "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -47357,7 +47918,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 21
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 32,
       "fantamedia": 5.83,
       "mediaVoto": 5.88,
       "pv": 12,
@@ -47388,12 +47949,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Calò",
     "teamName": "Frosinone",
     "teamId": "frosinone",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 41,
-    "status": "tit_sicuro",
+    "appetibilita": 33,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -47414,7 +47975,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 28
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -47445,12 +48006,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Frendrup",
     "teamName": "Genoa",
     "teamId": "genoa",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 33,
-    "status": "ballottaggio",
+    "appetibilita": 25,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -47471,7 +48032,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 21
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 95,
       "fantamedia": 5.97,
       "mediaVoto": 5.96,
       "pv": 36,
@@ -47502,12 +48063,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Frattesi",
     "teamName": "Lazio",
     "teamId": "lazio",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
-    "appetibilita": 77,
-    "status": "tit_sicuro",
+    "appetibilita": 72,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -47528,7 +48089,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 55
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 37,
       "fantamedia": 5.89,
       "mediaVoto": 5.89,
       "pv": 14,
@@ -47559,12 +48120,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Pessina",
     "teamName": "Monza",
     "teamId": "monza",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 29,
-    "status": "ballottaggio",
+    "appetibilita": 20,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -47585,7 +48146,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 20
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -47616,12 +48177,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Lobotka",
     "teamName": "Napoli",
     "teamId": "napoli",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 35,
-    "status": "ballottaggio",
+    "appetibilita": 26,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -47642,7 +48203,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 22
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 82,
       "fantamedia": 6.1,
       "mediaVoto": 6.05,
       "pv": 31,
@@ -47673,11 +48234,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Bernabè",
     "teamName": "Parma",
     "teamId": "parma",
-    "role": "CC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C",
     "fantaRole": "C",
-    "appetibilita": 54,
+    "appetibilita": 47,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -47699,7 +48260,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 36
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 84,
       "fantamedia": 6.48,
       "mediaVoto": 6.17,
       "pv": 32,
@@ -47730,12 +48291,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Volpato",
     "teamName": "Sassuolo",
     "teamId": "sassuolo",
-    "role": "AD",
+    "role": "T",
     "classicRole": "C",
     "mantraRole": "W;T",
     "fantaRole": "C",
-    "appetibilita": 38,
-    "status": "ballottaggio",
+    "appetibilita": 30,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -47756,7 +48317,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 23
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 55,
       "fantamedia": 6.52,
       "mediaVoto": 6.14,
       "pv": 21,
@@ -47787,12 +48348,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Oristanio",
     "teamName": "Torino",
     "teamId": "torino",
-    "role": "AD",
+    "role": "T",
     "classicRole": "C",
     "mantraRole": "W;T",
     "fantaRole": "C",
-    "appetibilita": 43,
-    "status": "tit_sicuro",
+    "appetibilita": 35,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -47813,7 +48374,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 27
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 47,
       "fantamedia": 5.92,
       "mediaVoto": 5.78,
       "pv": 18,
@@ -47844,12 +48405,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Unai Gomez",
     "teamName": "Udinese",
     "teamId": "udinese",
-    "role": "COC",
+    "role": "T",
     "classicRole": "C",
     "mantraRole": "T",
     "fantaRole": "C",
-    "appetibilita": 38,
-    "status": "ballottaggio",
+    "appetibilita": 30,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -47870,7 +48431,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 20
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -47901,12 +48462,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Sow",
     "teamName": "Genoa",
     "teamId": "genoa",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 27,
-    "status": "ballottaggio",
+    "appetibilita": 18,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -47927,7 +48488,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 17
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -47958,12 +48519,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Zalewski",
     "teamName": "Atalanta",
     "teamId": "atalanta",
-    "role": "AD",
+    "role": "W",
     "classicRole": "C",
     "mantraRole": "W",
     "fantaRole": "C",
-    "appetibilita": 34,
-    "status": "ballottaggio",
+    "appetibilita": 27,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -47984,7 +48545,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 19
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 82,
       "fantamedia": 6.4,
       "mediaVoto": 6.1,
       "pv": 31,
@@ -48015,12 +48576,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Pobega",
     "teamName": "Bologna",
     "teamId": "bologna",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 26,
-    "status": "ballottaggio",
+    "appetibilita": 18,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -48041,7 +48602,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 17
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 61,
       "fantamedia": 6.17,
       "mediaVoto": 5.83,
       "pv": 23,
@@ -48072,12 +48633,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Adopo",
     "teamName": "Cagliari",
     "teamId": "cagliari",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 25,
-    "status": "ballottaggio",
+    "appetibilita": 17,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -48098,7 +48659,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 16
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 100,
       "fantamedia": 5.88,
       "mediaVoto": 5.83,
       "pv": 38,
@@ -48129,12 +48690,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Winks",
     "teamName": "Cagliari",
     "teamId": "cagliari",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 26,
-    "status": "ballottaggio",
+    "appetibilita": 18,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -48155,7 +48716,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 17
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -48186,12 +48747,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Caqueret",
     "teamName": "Como",
     "teamId": "como",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
-    "appetibilita": 33,
-    "status": "ballottaggio",
+    "appetibilita": 26,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -48212,7 +48773,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 20
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 74,
       "fantamedia": 6.41,
       "mediaVoto": 6.11,
       "pv": 28,
@@ -48243,12 +48804,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Liberali",
     "teamName": "Como",
     "teamId": "como",
-    "role": "COC",
+    "role": "T",
     "classicRole": "C",
     "mantraRole": "T",
     "fantaRole": "C",
-    "appetibilita": 35,
-    "status": "ballottaggio",
+    "appetibilita": 29,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -48269,7 +48830,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 20
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -48300,12 +48861,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Oulai",
     "teamName": "Fiorentina",
     "teamId": "fiorentina",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 33,
-    "status": "ballottaggio",
+    "appetibilita": 26,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -48326,7 +48887,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 22
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -48357,12 +48918,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Ellertsson",
     "teamName": "Genoa",
     "teamId": "genoa",
-    "role": "CC",
+    "role": "E",
     "classicRole": "C",
     "mantraRole": "E;C",
     "fantaRole": "C",
-    "appetibilita": 31,
-    "status": "ballottaggio",
+    "appetibilita": 23,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -48383,7 +48944,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 21
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 92,
       "fantamedia": 5.91,
       "mediaVoto": 5.84,
       "pv": 35,
@@ -48414,11 +48975,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Zhegrova",
     "teamName": "Juventus",
     "teamId": "juventus",
-    "role": "AD",
+    "role": "W",
     "classicRole": "C",
     "mantraRole": "W",
     "fantaRole": "C",
-    "appetibilita": 31,
+    "appetibilita": 23,
     "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -48440,7 +49001,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 16
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 32,
       "fantamedia": 5.96,
       "mediaVoto": 5.96,
       "pv": 12,
@@ -48471,11 +49032,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Rovella",
     "teamName": "Lazio",
     "teamId": "lazio",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 28,
+    "appetibilita": 21,
     "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -48497,7 +49058,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 19
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 29,
       "fantamedia": 5.64,
       "mediaVoto": 5.73,
       "pv": 11,
@@ -48528,12 +49089,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Coulibaly L.",
     "teamName": "Lecce",
     "teamId": "lecce",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 26,
-    "status": "ballottaggio",
+    "appetibilita": 18,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -48554,7 +49115,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 16
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 87,
       "fantamedia": 6.29,
       "mediaVoto": 6.05,
       "pv": 33,
@@ -48585,12 +49146,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Pierotti",
     "teamName": "Lecce",
     "teamId": "lecce",
-    "role": "AD",
+    "role": "W",
     "classicRole": "C",
     "mantraRole": "W",
     "fantaRole": "C",
-    "appetibilita": 32,
-    "status": "ballottaggio",
+    "appetibilita": 25,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -48611,7 +49172,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 17
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 97,
       "fantamedia": 5.85,
       "mediaVoto": 5.8,
       "pv": 37,
@@ -48642,11 +49203,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Chukwueze",
     "teamName": "Milan",
     "teamId": "milan",
-    "role": "AD",
+    "role": "W",
     "classicRole": "C",
     "mantraRole": "W",
     "fantaRole": "C",
-    "appetibilita": 22,
+    "appetibilita": 14,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -48668,7 +49229,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 9
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 3,
       "fantamedia": 5.5,
       "mediaVoto": 5.5,
       "pv": 1,
@@ -48699,12 +49260,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Akinsanmiro",
     "teamName": "Monza",
     "teamId": "monza",
-    "role": "CC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C",
     "fantaRole": "C",
-    "appetibilita": 28,
-    "status": "ballottaggio",
+    "appetibilita": 21,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -48725,7 +49286,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 16
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 61,
       "fantamedia": 5.8,
       "mediaVoto": 5.8,
       "pv": 23,
@@ -48756,12 +49317,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Nicolussi Caviglia",
     "teamName": "Parma",
     "teamId": "parma",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 31,
-    "status": "ballottaggio",
+    "appetibilita": 23,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -48782,7 +49343,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 20
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 61,
       "fantamedia": 6.02,
       "mediaVoto": 5.89,
       "pv": 23,
@@ -48813,12 +49374,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Karlstrom",
     "teamName": "Udinese",
     "teamId": "udinese",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 33,
-    "status": "ballottaggio",
+    "appetibilita": 26,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -48839,7 +49400,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 23
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 95,
       "fantamedia": 5.96,
       "mediaVoto": 5.96,
       "pv": 36,
@@ -48870,12 +49431,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Basic",
     "teamName": "Venezia",
     "teamId": "venezia",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 32,
-    "status": "ballottaggio",
+    "appetibilita": 25,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -48896,7 +49457,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 20
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 61,
       "fantamedia": 6.43,
       "mediaVoto": 6.09,
       "pv": 23,
@@ -48921,18 +49482,75 @@ export const CSV_PLAYER_CATALOG = [
     }
   },
   {
+    "id": "monza_tour__i__7146",
+    "csvId": "7146",
+    "name": "Tourè I.",
+    "displayName": "Tourè I.",
+    "teamName": "Monza",
+    "teamId": "monza",
+    "role": "E",
+    "classicRole": "C",
+    "mantraRole": "E;M",
+    "fantaRole": "C",
+    "appetibilita": 20,
+    "status": "tit_sicuro",
+    "isAvailable": true,
+    "isPenaltyTaker": false,
+    "isFreeKickTaker": false,
+    "isCornerTaker": false,
+    "rigorista": false,
+    "punizioni": false,
+    "corner": false,
+    "positionNotes": "",
+    "fantaComment": "",
+    "quotazioni": {
+      "qtA": 6,
+      "qtI": 6,
+      "diff": 0,
+      "qtAM": 8,
+      "qtIM": 8,
+      "diffM": 0,
+      "fvm": 15,
+      "fvmM": 19
+    },
+    "stats": {
+      "titolarita": 79,
+      "fantamedia": 5.82,
+      "mediaVoto": 5.82,
+      "pv": 30,
+      "presenze": 30,
+      "gol": 1,
+      "gf": 1,
+      "gs": 0,
+      "golSubiti": 0,
+      "rp": 0,
+      "rc": 0,
+      "rPlus": 0,
+      "rMinus": 0,
+      "rigoriSegnati": 0,
+      "rigoriSbagliati": 0,
+      "assist": 0,
+      "ass": 0,
+      "ammonizioni": 4,
+      "amm": 4,
+      "espulsioni": 1,
+      "esp": 1,
+      "au": 0
+    }
+  },
+  {
     "id": "bologna_amondarain_7528",
     "csvId": "7528",
     "name": "Amondarain",
     "displayName": "Amondarain",
     "teamName": "Bologna",
     "teamId": "bologna",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 22,
-    "status": "ballottaggio",
+    "appetibilita": 16,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -48953,7 +49571,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 14
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -48984,12 +49602,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Romano",
     "teamName": "Cagliari",
     "teamId": "cagliari",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 22,
-    "status": "ballottaggio",
+    "appetibilita": 16,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -49010,7 +49628,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 15
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -49041,12 +49659,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Felici",
     "teamName": "Cagliari",
     "teamId": "cagliari",
-    "role": "AD",
+    "role": "W",
     "classicRole": "C",
     "mantraRole": "W",
     "fantaRole": "C",
-    "appetibilita": 20,
-    "status": "riserva",
+    "appetibilita": 13,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -49067,7 +49685,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 8
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 29,
       "fantamedia": 6.55,
       "mediaVoto": 6.05,
       "pv": 11,
@@ -49098,12 +49716,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Milla",
     "teamName": "Como",
     "teamId": "como",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 24,
-    "status": "ballottaggio",
+    "appetibilita": 18,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -49124,7 +49742,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 16
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -49155,12 +49773,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Addai",
     "teamName": "Como",
     "teamId": "como",
-    "role": "A",
+    "role": "W",
     "classicRole": "C",
     "mantraRole": "W;A",
     "fantaRole": "C",
-    "appetibilita": 20,
-    "status": "riserva",
+    "appetibilita": 13,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -49181,7 +49799,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 8
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 32,
       "fantamedia": 6.54,
       "mediaVoto": 5.96,
       "pv": 12,
@@ -49212,12 +49830,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Zerbin",
     "teamName": "Frosinone",
     "teamId": "frosinone",
-    "role": "AD",
+    "role": "W",
     "classicRole": "C",
     "mantraRole": "W",
     "fantaRole": "C",
-    "appetibilita": 23,
-    "status": "ballottaggio",
+    "appetibilita": 17,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -49238,7 +49856,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 11
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 76,
       "fantamedia": 5.79,
       "mediaVoto": 5.76,
       "pv": 29,
@@ -49269,12 +49887,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Meichtry",
     "teamName": "Genoa",
     "teamId": "genoa",
-    "role": "AD",
+    "role": "T",
     "classicRole": "C",
     "mantraRole": "W;T",
     "fantaRole": "C",
-    "appetibilita": 24,
-    "status": "ballottaggio",
+    "appetibilita": 18,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -49295,7 +49913,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 14
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -49326,11 +49944,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Traorè Hj.",
     "teamName": "Genoa",
     "teamId": "genoa",
-    "role": "AD",
+    "role": "T",
     "classicRole": "C",
     "mantraRole": "W;T",
     "fantaRole": "C",
-    "appetibilita": 21,
+    "appetibilita": 14,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -49352,7 +49970,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 11
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -49383,12 +50001,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Mkhitaryan",
     "teamName": "Inter",
     "teamId": "inter",
-    "role": "CC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C",
     "fantaRole": "C",
-    "appetibilita": 30,
-    "status": "ballottaggio",
+    "appetibilita": 25,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -49409,7 +50027,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 19
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 74,
       "fantamedia": 6.59,
       "mediaVoto": 6.21,
       "pv": 28,
@@ -49440,12 +50058,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Koopmeiners",
     "teamName": "Juventus",
     "teamId": "juventus",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
-    "appetibilita": 24,
-    "status": "ballottaggio",
+    "appetibilita": 18,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -49466,7 +50084,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 14
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 76,
       "fantamedia": 5.55,
       "mediaVoto": 5.64,
       "pv": 29,
@@ -49497,12 +50115,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Dele-Bashiru",
     "teamName": "Lazio",
     "teamId": "lazio",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
-    "appetibilita": 23,
-    "status": "ballottaggio",
+    "appetibilita": 17,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -49523,7 +50141,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 13
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 55,
       "fantamedia": 5.83,
       "mediaVoto": 5.69,
       "pv": 21,
@@ -49554,11 +50172,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Berisha M.",
     "teamName": "Lecce",
     "teamId": "lecce",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
-    "appetibilita": 27,
+    "appetibilita": 21,
     "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -49580,7 +50198,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 16
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 32,
       "fantamedia": 6.92,
       "mediaVoto": 6.17,
       "pv": 12,
@@ -49611,12 +50229,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Gandelman",
     "teamName": "Lecce",
     "teamId": "lecce",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
-    "appetibilita": 24,
-    "status": "ballottaggio",
+    "appetibilita": 18,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -49637,7 +50255,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 14
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 42,
       "fantamedia": 6.41,
       "mediaVoto": 5.97,
       "pv": 16,
@@ -49668,12 +50286,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Fofana Y.",
     "teamName": "Milan",
     "teamId": "milan",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 35,
-    "status": "ballottaggio",
+    "appetibilita": 30,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -49694,7 +50312,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 26
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 87,
       "fantamedia": 6.06,
       "mediaVoto": 5.85,
       "pv": 33,
@@ -49725,12 +50343,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Keita M.",
     "teamName": "Parma",
     "teamId": "parma",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 26,
-    "status": "ballottaggio",
+    "appetibilita": 20,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -49751,7 +50369,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 17
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 95,
       "fantamedia": 6.06,
       "mediaVoto": 6.01,
       "pv": 36,
@@ -49772,7 +50390,7 @@ export const CSV_PLAYER_CATALOG = [
       "amm": 1,
       "espulsioni": 0,
       "esp": 0,
-      "au": 1
+      "au": 0
     }
   },
   {
@@ -49782,12 +50400,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Pisilli",
     "teamName": "Roma",
     "teamId": "roma",
-    "role": "CC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C",
     "fantaRole": "C",
-    "appetibilita": 28,
-    "status": "ballottaggio",
+    "appetibilita": 22,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -49808,7 +50426,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 17
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 58,
       "fantamedia": 6.48,
       "mediaVoto": 6.09,
       "pv": 22,
@@ -49839,12 +50457,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Matic",
     "teamName": "Sassuolo",
     "teamId": "sassuolo",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 26,
-    "status": "ballottaggio",
+    "appetibilita": 20,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -49865,7 +50483,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 17
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 89,
       "fantamedia": 5.96,
       "mediaVoto": 5.96,
       "pv": 34,
@@ -49896,12 +50514,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Adzic",
     "teamName": "Sassuolo",
     "teamId": "sassuolo",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
-    "appetibilita": 27,
-    "status": "ballottaggio",
+    "appetibilita": 21,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -49922,7 +50540,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 16
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 11,
       "fantamedia": 6.88,
       "mediaVoto": 6.12,
       "pv": 4,
@@ -49953,12 +50571,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Bakola",
     "teamName": "Sassuolo",
     "teamId": "sassuolo",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
-    "appetibilita": 24,
-    "status": "ballottaggio",
+    "appetibilita": 18,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -49979,7 +50597,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 14
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 8,
       "fantamedia": 6.17,
       "mediaVoto": 6.17,
       "pv": 3,
@@ -50010,12 +50628,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Cacciamani",
     "teamName": "Torino",
     "teamId": "torino",
-    "role": "AD",
+    "role": "E",
     "classicRole": "C",
     "mantraRole": "E;W",
     "fantaRole": "C",
-    "appetibilita": 29,
-    "status": "ballottaggio",
+    "appetibilita": 23,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -50036,7 +50654,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 20
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -50067,12 +50685,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Gineitis",
     "teamName": "Torino",
     "teamId": "torino",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 23,
-    "status": "ballottaggio",
+    "appetibilita": 17,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -50093,7 +50711,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 15
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 71,
       "fantamedia": 5.81,
       "mediaVoto": 5.87,
       "pv": 27,
@@ -50124,12 +50742,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Piotrowski",
     "teamName": "Udinese",
     "teamId": "udinese",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 26,
-    "status": "ballottaggio",
+    "appetibilita": 20,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -50150,7 +50768,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 17
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 79,
       "fantamedia": 5.95,
       "mediaVoto": 5.88,
       "pv": 30,
@@ -50181,12 +50799,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Busio",
     "teamName": "Venezia",
     "teamId": "venezia",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 24,
-    "status": "ballottaggio",
+    "appetibilita": 18,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -50207,7 +50825,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 17
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -50238,12 +50856,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Sohm",
     "teamName": "Venezia",
     "teamId": "venezia",
-    "role": "CC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C",
     "fantaRole": "C",
-    "appetibilita": 24,
-    "status": "ballottaggio",
+    "appetibilita": 18,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -50264,7 +50882,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 14
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 63,
       "fantamedia": 5.62,
       "mediaVoto": 5.65,
       "pv": 24,
@@ -50295,12 +50913,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Perez K.",
     "teamName": "Venezia",
     "teamId": "venezia",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
-    "appetibilita": 24,
-    "status": "ballottaggio",
+    "appetibilita": 18,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -50321,7 +50939,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 14
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -50352,12 +50970,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Grillitsch",
     "teamName": "Frosinone",
     "teamId": "frosinone",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 24,
-    "status": "ballottaggio",
+    "appetibilita": 18,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -50378,7 +50996,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 14
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -50409,12 +51027,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "De Roon",
     "teamName": "Atalanta",
     "teamId": "atalanta",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 20,
-    "status": "ballottaggio",
+    "appetibilita": 16,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -50435,7 +51053,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 14
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 89,
       "fantamedia": 6,
       "mediaVoto": 5.97,
       "pv": 34,
@@ -50466,12 +51084,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Moro N.",
     "teamName": "Bologna",
     "teamId": "bologna",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 18,
-    "status": "riserva",
+    "appetibilita": 13,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -50492,7 +51110,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 12
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 74,
       "fantamedia": 6.12,
       "mediaVoto": 5.93,
       "pv": 28,
@@ -50523,12 +51141,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Prati",
     "teamName": "Cagliari",
     "teamId": "cagliari",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 14,
-    "status": "riserva",
+    "appetibilita": 9,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -50549,7 +51167,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 7
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 84,
       "fantamedia": 5.88,
       "mediaVoto": 5.88,
       "pv": 32,
@@ -50580,12 +51198,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Fabbian",
     "teamName": "Fiorentina",
     "teamId": "fiorentina",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
-    "appetibilita": 16,
-    "status": "riserva",
+    "appetibilita": 10,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -50606,7 +51224,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 8
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 58,
       "fantamedia": 6.05,
       "mediaVoto": 5.8,
       "pv": 22,
@@ -50637,11 +51255,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Cichella",
     "teamName": "Frosinone",
     "teamId": "frosinone",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 19,
+    "appetibilita": 14,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -50663,7 +51281,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 13
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -50694,12 +51312,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Koutsoupias",
     "teamName": "Frosinone",
     "teamId": "frosinone",
-    "role": "CC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C",
     "fantaRole": "C",
-    "appetibilita": 20,
-    "status": "ballottaggio",
+    "appetibilita": 16,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -50720,7 +51338,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 12
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -50751,12 +51369,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Amorim",
     "teamName": "Genoa",
     "teamId": "genoa",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 19,
-    "status": "riserva",
+    "appetibilita": 14,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -50777,7 +51395,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 13
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 24,
       "fantamedia": 5.67,
       "mediaVoto": 5.72,
       "pv": 9,
@@ -50808,12 +51426,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Luis Henrique",
     "teamName": "Inter",
     "teamId": "inter",
-    "role": "AD",
+    "role": "E",
     "classicRole": "C",
     "mantraRole": "E;W",
     "fantaRole": "C",
-    "appetibilita": 22,
-    "status": "ballottaggio",
+    "appetibilita": 17,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -50834,7 +51452,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 15
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 71,
       "fantamedia": 6.06,
       "mediaVoto": 5.89,
       "pv": 27,
@@ -50865,12 +51483,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Douglas Luiz",
     "teamName": "Juventus",
     "teamId": "juventus",
-    "role": "CC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C",
     "fantaRole": "C",
-    "appetibilita": 20,
-    "status": "ballottaggio",
+    "appetibilita": 16,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -50891,7 +51509,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 12
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -50922,12 +51540,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Cataldi",
     "teamName": "Lazio",
     "teamId": "lazio",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 20,
-    "status": "ballottaggio",
+    "appetibilita": 16,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": true,
     "isFreeKickTaker": false,
@@ -50948,7 +51566,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 15
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 71,
       "fantamedia": 6.41,
       "mediaVoto": 6.07,
       "pv": 27,
@@ -50979,12 +51597,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Ngom",
     "teamName": "Lecce",
     "teamId": "lecce",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 19,
-    "status": "riserva",
+    "appetibilita": 14,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -51005,7 +51623,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 13
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 34,
       "fantamedia": 5.65,
       "mediaVoto": 5.69,
       "pv": 13,
@@ -51036,12 +51654,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Ricci S.",
     "teamName": "Milan",
     "teamId": "milan",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 19,
-    "status": "riserva",
+    "appetibilita": 14,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -51062,7 +51680,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 13
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 74,
       "fantamedia": 6.18,
       "mediaVoto": 6,
       "pv": 28,
@@ -51093,12 +51711,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Jashari",
     "teamName": "Milan",
     "teamId": "milan",
-    "role": "CC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C",
     "fantaRole": "C",
-    "appetibilita": 19,
-    "status": "riserva",
+    "appetibilita": 14,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -51119,7 +51737,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 11
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 32,
       "fantamedia": 5.79,
       "mediaVoto": 5.71,
       "pv": 12,
@@ -51150,12 +51768,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Loftus-Cheek",
     "teamName": "Milan",
     "teamId": "milan",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
-    "appetibilita": 19,
-    "status": "riserva",
+    "appetibilita": 14,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -51176,7 +51794,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 11
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 55,
       "fantamedia": 6.52,
       "mediaVoto": 6.1,
       "pv": 21,
@@ -51207,12 +51825,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Folorunsho",
     "teamName": "Napoli",
     "teamId": "napoli",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
-    "appetibilita": 18,
-    "status": "riserva",
+    "appetibilita": 13,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -51233,7 +51851,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 10
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 68,
       "fantamedia": 6.21,
       "mediaVoto": 6.04,
       "pv": 26,
@@ -51264,11 +51882,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Almqvist",
     "teamName": "Parma",
     "teamId": "parma",
-    "role": "A",
+    "role": "W",
     "classicRole": "C",
     "mantraRole": "W;A",
     "fantaRole": "C",
-    "appetibilita": 23,
+    "appetibilita": 18,
     "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -51290,7 +51908,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 12
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 24,
       "fantamedia": 6.06,
       "mediaVoto": 5.94,
       "pv": 9,
@@ -51321,12 +51939,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "El Aynaoui",
     "teamName": "Roma",
     "teamId": "roma",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 28,
-    "status": "ballottaggio",
+    "appetibilita": 23,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -51347,7 +51965,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 20
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 55,
       "fantamedia": 6.1,
       "mediaVoto": 5.98,
       "pv": 21,
@@ -51378,12 +51996,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Fitz-Jim",
     "teamName": "Torino",
     "teamId": "torino",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 22,
-    "status": "ballottaggio",
+    "appetibilita": 17,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -51404,7 +52022,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 15
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -51435,12 +52053,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Ilkhan",
     "teamName": "Torino",
     "teamId": "torino",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 18,
-    "status": "riserva",
+    "appetibilita": 13,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -51492,11 +52110,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Njie",
     "teamName": "Torino",
     "teamId": "torino",
-    "role": "A",
+    "role": "W",
     "classicRole": "C",
     "mantraRole": "W;A",
     "fantaRole": "C",
-    "appetibilita": 20,
+    "appetibilita": 16,
     "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -51518,7 +52136,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 19
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 26,
       "fantamedia": 6.15,
       "mediaVoto": 5.8,
       "pv": 10,
@@ -51549,12 +52167,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Sulemana I.",
     "teamName": "Atalanta",
     "teamId": "atalanta",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 13,
-    "status": "riserva",
+    "appetibilita": 9,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -51575,7 +52193,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 8
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 47,
       "fantamedia": 5.78,
       "mediaVoto": 5.69,
       "pv": 18,
@@ -51606,11 +52224,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Dominguez B.",
     "teamName": "Sassuolo",
     "teamId": "sassuolo",
-    "role": "A",
+    "role": "W",
     "classicRole": "C",
     "mantraRole": "W;A",
     "fantaRole": "C",
-    "appetibilita": 19,
+    "appetibilita": 16,
     "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -51632,7 +52250,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 12
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 32,
       "fantamedia": 6.04,
       "mediaVoto": 5.83,
       "pv": 12,
@@ -51663,12 +52281,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Deiola",
     "teamName": "Cagliari",
     "teamId": "cagliari",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 14,
-    "status": "riserva",
+    "appetibilita": 10,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -51689,7 +52307,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 8
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 53,
       "fantamedia": 5.95,
       "mediaVoto": 5.98,
       "pv": 20,
@@ -51720,12 +52338,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Brescianini",
     "teamName": "Fiorentina",
     "teamId": "fiorentina",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
-    "appetibilita": 13,
-    "status": "riserva",
+    "appetibilita": 9,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -51746,7 +52364,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 7
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 47,
       "fantamedia": 6.31,
       "mediaVoto": 5.97,
       "pv": 18,
@@ -51777,11 +52395,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Gelli F.",
     "teamName": "Frosinone",
     "teamId": "frosinone",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
-    "appetibilita": 14,
+    "appetibilita": 10,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -51803,7 +52421,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 8
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -51834,11 +52452,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Fini",
     "teamName": "Frosinone",
     "teamId": "frosinone",
-    "role": "AD",
+    "role": "W",
     "classicRole": "C",
     "mantraRole": "W",
     "fantaRole": "C",
-    "appetibilita": 15,
+    "appetibilita": 12,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -51860,7 +52478,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 8
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 3,
       "fantamedia": 5.5,
       "mediaVoto": 5.5,
       "pv": 1,
@@ -51891,12 +52509,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Messias",
     "teamName": "Genoa",
     "teamId": "genoa",
-    "role": "AD",
+    "role": "T",
     "classicRole": "C",
     "mantraRole": "W;T",
     "fantaRole": "C",
-    "appetibilita": 14,
-    "status": "riserva",
+    "appetibilita": 10,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": true,
     "isFreeKickTaker": false,
@@ -51917,7 +52535,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 8
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6.68,
       "mediaVoto": 6.18,
       "pv": 19,
@@ -51948,11 +52566,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Stankovic A.",
     "teamName": "Inter",
     "teamId": "inter",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 17,
+    "appetibilita": 13,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -51974,7 +52592,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 11
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -52005,12 +52623,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Miretti",
     "teamName": "Juventus",
     "teamId": "juventus",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
-    "appetibilita": 18,
-    "status": "riserva",
+    "appetibilita": 14,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -52031,7 +52649,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 11
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 39,
       "fantamedia": 6.2,
       "mediaVoto": 5.97,
       "pv": 15,
@@ -52062,11 +52680,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Colombo L.",
     "teamName": "Monza",
     "teamId": "monza",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 13,
+    "appetibilita": 9,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -52088,7 +52706,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 8
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -52119,12 +52737,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Gilmour",
     "teamName": "Napoli",
     "teamId": "napoli",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 15,
-    "status": "riserva",
+    "appetibilita": 12,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -52145,7 +52763,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 9
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 34,
       "fantamedia": 6.27,
       "mediaVoto": 6.08,
       "pv": 13,
@@ -52176,12 +52794,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Sorensen O.",
     "teamName": "Parma",
     "teamId": "parma",
-    "role": "CC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C",
     "fantaRole": "C",
-    "appetibilita": 19,
-    "status": "ballottaggio",
+    "appetibilita": 16,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -52202,7 +52820,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 12
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 79,
       "fantamedia": 5.95,
       "mediaVoto": 5.85,
       "pv": 30,
@@ -52233,12 +52851,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Diallo O.",
     "teamName": "Parma",
     "teamId": "parma",
-    "role": "A",
+    "role": "W",
     "classicRole": "C",
     "mantraRole": "W;A",
     "fantaRole": "C",
-    "appetibilita": 19,
-    "status": "ballottaggio",
+    "appetibilita": 16,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -52259,7 +52877,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 10
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -52290,12 +52908,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Aboukhlal",
     "teamName": "Torino",
     "teamId": "torino",
-    "role": "A",
+    "role": "W",
     "classicRole": "C",
     "mantraRole": "W;A",
     "fantaRole": "C",
-    "appetibilita": 11,
-    "status": "riserva",
+    "appetibilita": 7,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -52316,7 +52934,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 4
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 29,
       "fantamedia": 5.64,
       "mediaVoto": 5.77,
       "pv": 11,
@@ -52347,12 +52965,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Miller L.",
     "teamName": "Udinese",
     "teamId": "udinese",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 19,
-    "status": "ballottaggio",
+    "appetibilita": 16,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -52373,7 +52991,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 15
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 5.95,
       "mediaVoto": 5.92,
       "pv": 19,
@@ -52404,11 +53022,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Helgason",
     "teamName": "Venezia",
     "teamId": "venezia",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
-    "appetibilita": 13,
+    "appetibilita": 9,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -52430,7 +53048,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 7
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 11,
       "fantamedia": 5.62,
       "mediaVoto": 5.62,
       "pv": 4,
@@ -52461,11 +53079,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Cissè A.",
     "teamName": "Milan",
     "teamId": "milan",
-    "role": "AD",
+    "role": "T",
     "classicRole": "C",
     "mantraRole": "W;T",
     "fantaRole": "C",
-    "appetibilita": 14,
+    "appetibilita": 10,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -52487,7 +53105,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 8
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -52518,11 +53136,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "El Azzouzi O.",
     "teamName": "Bologna",
     "teamId": "bologna",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 10,
+    "appetibilita": 5,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -52544,7 +53162,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 4
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -52575,12 +53193,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Fadera",
     "teamName": "Como",
     "teamId": "como",
-    "role": "AD",
+    "role": "W",
     "classicRole": "C",
     "mantraRole": "W",
     "fantaRole": "C",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 4,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -52601,7 +53219,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 3
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 63,
       "fantamedia": 6.15,
       "mediaVoto": 5.92,
       "pv": 24,
@@ -52632,11 +53250,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Hasa",
     "teamName": "Frosinone",
     "teamId": "frosinone",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
-    "appetibilita": 10,
+    "appetibilita": 7,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -52658,7 +53276,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 5
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -52689,12 +53307,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Masini",
     "teamName": "Frosinone",
     "teamId": "frosinone",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 5,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -52715,7 +53333,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 4
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 55,
       "fantamedia": 5.9,
       "mediaVoto": 5.98,
       "pv": 21,
@@ -52746,12 +53364,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Venturino",
     "teamName": "Genoa",
     "teamId": "genoa",
-    "role": "AD",
+    "role": "W",
     "classicRole": "C",
     "mantraRole": "W",
     "fantaRole": "C",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 8,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -52772,7 +53390,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 5
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 18,
       "fantamedia": 5.86,
       "mediaVoto": 5.86,
       "pv": 7,
@@ -52803,12 +53421,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Maleh",
     "teamName": "Lecce",
     "teamId": "lecce",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 7,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -52829,7 +53447,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 5
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 55,
       "fantamedia": 5.71,
       "mediaVoto": 5.69,
       "pv": 21,
@@ -52860,12 +53478,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Musah",
     "teamName": "Milan",
     "teamId": "milan",
-    "role": "AD",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;W",
     "fantaRole": "C",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 8,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -52886,7 +53504,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 6
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 42,
       "fantamedia": 6.09,
       "mediaVoto": 5.94,
       "pv": 16,
@@ -52917,11 +53535,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Ciurria",
     "teamName": "Monza",
     "teamId": "monza",
-    "role": "AD",
+    "role": "E",
     "classicRole": "C",
     "mantraRole": "E;W",
     "fantaRole": "C",
-    "appetibilita": 10,
+    "appetibilita": 8,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -52943,7 +53561,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 6
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -52974,12 +53592,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Ordonez C.",
     "teamName": "Parma",
     "teamId": "parma",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 7,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -53000,7 +53618,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 6
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 55,
       "fantamedia": 5.81,
       "mediaVoto": 5.79,
       "pv": 21,
@@ -53031,11 +53649,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Boloca",
     "teamName": "Sassuolo",
     "teamId": "sassuolo",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 10,
+    "appetibilita": 7,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -53057,7 +53675,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 5
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 5,
       "fantamedia": 5.75,
       "mediaVoto": 5.75,
       "pv": 2,
@@ -53088,12 +53706,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Lipani",
     "teamName": "Sassuolo",
     "teamId": "sassuolo",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 7,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -53114,7 +53732,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 5
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 55,
       "fantamedia": 5.9,
       "mediaVoto": 5.93,
       "pv": 21,
@@ -53145,11 +53763,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Chakvetadze",
     "teamName": "Udinese",
     "teamId": "udinese",
-    "role": "AD",
+    "role": "T",
     "classicRole": "C",
     "mantraRole": "W;T",
     "fantaRole": "C",
-    "appetibilita": 10,
+    "appetibilita": 8,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -53171,7 +53789,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 6
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -53202,11 +53820,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Duncan",
     "teamName": "Venezia",
     "teamId": "venezia",
-    "role": "CC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C",
     "fantaRole": "C",
-    "appetibilita": 10,
+    "appetibilita": 5,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -53228,7 +53846,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 4
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -53259,11 +53877,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Liteta",
     "teamName": "Cagliari",
     "teamId": "cagliari",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -53285,7 +53903,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 11,
       "fantamedia": 5.75,
       "mediaVoto": 5.75,
       "pv": 4,
@@ -53316,11 +53934,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Lahdo",
     "teamName": "Como",
     "teamId": "como",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -53342,7 +53960,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -53373,11 +53991,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "El Azzouzi A.",
     "teamName": "Frosinone",
     "teamId": "frosinone",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 10,
+    "appetibilita": 4,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -53399,7 +54017,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 3
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -53430,11 +54048,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Kone B.",
     "teamName": "Frosinone",
     "teamId": "frosinone",
-    "role": "CC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C",
     "fantaRole": "C",
-    "appetibilita": 10,
+    "appetibilita": 4,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -53456,7 +54074,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 3
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -53487,12 +54105,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Belahyane",
     "teamName": "Lazio",
     "teamId": "lazio",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 7,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -53513,7 +54131,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 5
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 29,
       "fantamedia": 5.82,
       "mediaVoto": 5.77,
       "pv": 11,
@@ -53544,11 +54162,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Przyborek",
     "teamName": "Lazio",
     "teamId": "lazio",
-    "role": "AD",
+    "role": "T",
     "classicRole": "C",
     "mantraRole": "W;T",
     "fantaRole": "C",
-    "appetibilita": 10,
+    "appetibilita": 7,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -53570,7 +54188,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 5
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -53601,11 +54219,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Gorter",
     "teamName": "Lecce",
     "teamId": "lecce",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 10,
+    "appetibilita": 4,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -53627,7 +54245,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 3
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 3,
       "fantamedia": 5.5,
       "mediaVoto": 5.5,
       "pv": 1,
@@ -53658,12 +54276,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Kaba",
     "teamName": "Lecce",
     "teamId": "lecce",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 3,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -53684,7 +54302,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 2
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 29,
       "fantamedia": 5.73,
       "mediaVoto": 5.77,
       "pv": 11,
@@ -53715,11 +54333,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Fofana Sa.",
     "teamName": "Lecce",
     "teamId": "lecce",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -53741,7 +54359,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 5,
       "fantamedia": 5.5,
       "mediaVoto": 5.5,
       "pv": 2,
@@ -53772,11 +54390,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Cremaschi",
     "teamName": "Parma",
     "teamId": "parma",
-    "role": "CC",
+    "role": "E",
     "classicRole": "C",
     "mantraRole": "E;C",
     "fantaRole": "C",
-    "appetibilita": 10,
+    "appetibilita": 4,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -53798,7 +54416,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 3
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 3,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 1,
@@ -53829,12 +54447,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Iannoni",
     "teamName": "Sassuolo",
     "teamId": "sassuolo",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 1,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -53855,7 +54473,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 13,
       "fantamedia": 6.5,
       "mediaVoto": 6,
       "pv": 5,
@@ -53886,12 +54504,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Ilic",
     "teamName": "Torino",
     "teamId": "torino",
-    "role": "CC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C",
     "fantaRole": "C",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 5,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -53912,7 +54530,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 4
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 21,
       "fantamedia": 5.88,
       "mediaVoto": 6,
       "pv": 8,
@@ -53943,12 +54561,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Anjorin",
     "teamName": "Torino",
     "teamId": "torino",
-    "role": "COC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C;T",
     "fantaRole": "C",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 5,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -53969,7 +54587,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 4
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 24,
       "fantamedia": 5.72,
       "mediaVoto": 5.78,
       "pv": 9,
@@ -54000,11 +54618,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Camara A.",
     "teamName": "Udinese",
     "teamId": "udinese",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 10,
+    "appetibilita": 4,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -54026,7 +54644,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 3
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -54057,12 +54675,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Zarraga",
     "teamName": "Udinese",
     "teamId": "udinese",
-    "role": "CC",
+    "role": "M",
     "classicRole": "C",
     "mantraRole": "M;C",
     "fantaRole": "C",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 5,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -54083,7 +54701,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 4
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 26,
       "fantamedia": 5.7,
       "mediaVoto": 5.75,
       "pv": 10,
@@ -54114,11 +54732,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Dagasso",
     "teamName": "Venezia",
     "teamId": "venezia",
-    "role": "CC",
+    "role": "C",
     "classicRole": "C",
     "mantraRole": "C",
     "fantaRole": "C",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -54140,7 +54758,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -54171,11 +54789,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Forson O.",
     "teamName": "Monza",
     "teamId": "monza",
-    "role": "AD",
+    "role": "T",
     "classicRole": "C",
     "mantraRole": "W;T",
     "fantaRole": "C",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -54197,7 +54815,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -54254,7 +54872,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 370
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 79,
       "fantamedia": 8.25,
       "mediaVoto": 6.42,
       "pv": 30,
@@ -54290,7 +54908,7 @@ export const CSV_PLAYER_CATALOG = [
     "mantraRole": "Pc",
     "fantaRole": "A",
     "appetibilita": 100,
-    "status": "tit_sicuro",
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": true,
     "isFreeKickTaker": false,
@@ -54311,7 +54929,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 365
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 47,
       "fantamedia": 8.97,
       "mediaVoto": 6.72,
       "pv": 18,
@@ -54368,7 +54986,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 280
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 76,
       "fantamedia": 7.95,
       "mediaVoto": 6.43,
       "pv": 29,
@@ -54425,7 +55043,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 271
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 87,
       "fantamedia": 7.44,
       "mediaVoto": 6.21,
       "pv": 33,
@@ -54461,7 +55079,7 @@ export const CSV_PLAYER_CATALOG = [
     "mantraRole": "Pc",
     "fantaRole": "A",
     "appetibilita": 100,
-    "status": "tit_sicuro",
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -54482,7 +55100,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 232
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -54518,7 +55136,7 @@ export const CSV_PLAYER_CATALOG = [
     "mantraRole": "Pc",
     "fantaRole": "A",
     "appetibilita": 100,
-    "status": "tit_sicuro",
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -54539,7 +55157,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 225
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -54596,7 +55214,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 197
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 68,
       "fantamedia": 6.77,
       "mediaVoto": 5.88,
       "pv": 26,
@@ -54653,7 +55271,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 190
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 92,
       "fantamedia": 7.3,
       "mediaVoto": 6.39,
       "pv": 35,
@@ -54710,7 +55328,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 154
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 95,
       "fantamedia": 7.38,
       "mediaVoto": 6.18,
       "pv": 36,
@@ -54746,7 +55364,7 @@ export const CSV_PLAYER_CATALOG = [
     "mantraRole": "Pc",
     "fantaRole": "A",
     "appetibilita": 100,
-    "status": "tit_sicuro",
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": true,
     "isFreeKickTaker": false,
@@ -54767,7 +55385,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 128
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 58,
       "fantamedia": 7.55,
       "mediaVoto": 6.18,
       "pv": 22,
@@ -54824,7 +55442,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 119
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 79,
       "fantamedia": 7.37,
       "mediaVoto": 6.32,
       "pv": 30,
@@ -54881,7 +55499,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 92
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 84,
       "fantamedia": 7.19,
       "mediaVoto": 6.16,
       "pv": 32,
@@ -54938,7 +55556,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 123
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 74,
       "fantamedia": 6.86,
       "mediaVoto": 5.88,
       "pv": 28,
@@ -54995,7 +55613,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 118
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 68,
       "fantamedia": 7.19,
       "mediaVoto": 6.31,
       "pv": 26,
@@ -55052,7 +55670,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 108
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 82,
       "fantamedia": 6.6,
       "mediaVoto": 6.21,
       "pv": 31,
@@ -55087,8 +55705,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 100,
-    "status": "tit_sicuro",
+    "appetibilita": 95,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -55109,7 +55727,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 70
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 34,
       "fantamedia": 6.77,
       "mediaVoto": 6,
       "pv": 13,
@@ -55166,7 +55784,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 90
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 82,
       "fantamedia": 7.02,
       "mediaVoto": 6.26,
       "pv": 31,
@@ -55201,7 +55819,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 95,
+    "appetibilita": 78,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": true,
@@ -55223,7 +55841,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 57
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 97,
       "fantamedia": 6.65,
       "mediaVoto": 5.99,
       "pv": 37,
@@ -55280,7 +55898,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 91
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 97,
       "fantamedia": 6.99,
       "mediaVoto": 6.23,
       "pv": 37,
@@ -55337,7 +55955,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 79
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 84,
       "fantamedia": 7.09,
       "mediaVoto": 6.08,
       "pv": 32,
@@ -55368,12 +55986,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Santos A.",
     "teamName": "Napoli",
     "teamId": "napoli",
-    "role": "A",
+    "role": "W",
     "classicRole": "A",
     "mantraRole": "W;A",
     "fantaRole": "A",
-    "appetibilita": 89,
-    "status": "tit_sicuro",
+    "appetibilita": 74,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -55394,7 +56012,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 57
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 34,
       "fantamedia": 7.23,
       "mediaVoto": 6.35,
       "pv": 13,
@@ -55429,8 +56047,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "A",
     "fantaRole": "A",
-    "appetibilita": 100,
-    "status": "tit_sicuro",
+    "appetibilita": 87,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": true,
     "isFreeKickTaker": false,
@@ -55451,7 +56069,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 67
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 55,
       "fantamedia": 6.74,
       "mediaVoto": 6.26,
       "pv": 21,
@@ -55508,7 +56126,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 78
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 92,
       "fantamedia": 6.51,
       "mediaVoto": 5.93,
       "pv": 35,
@@ -55543,8 +56161,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "A",
     "fantaRole": "A",
-    "appetibilita": 94,
-    "status": "tit_sicuro",
+    "appetibilita": 81,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -55565,7 +56183,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 64
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 34,
       "fantamedia": 6.88,
       "mediaVoto": 6.12,
       "pv": 13,
@@ -55600,7 +56218,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "A",
     "fantaRole": "A",
-    "appetibilita": 68,
+    "appetibilita": 52,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": true,
@@ -55622,7 +56240,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 40
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 95,
       "fantamedia": 6.88,
       "mediaVoto": 6.26,
       "pv": 36,
@@ -55657,7 +56275,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "A",
     "fantaRole": "A",
-    "appetibilita": 50,
+    "appetibilita": 33,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": true,
@@ -55679,7 +56297,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 25
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 68,
       "fantamedia": 6.87,
       "mediaVoto": 5.94,
       "pv": 26,
@@ -55714,7 +56332,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 86,
+    "appetibilita": 72,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": true,
@@ -55736,7 +56354,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 52
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 89,
       "fantamedia": 6.62,
       "mediaVoto": 5.88,
       "pv": 34,
@@ -55771,8 +56389,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 76,
-    "status": "tit_sicuro",
+    "appetibilita": 61,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -55793,7 +56411,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 44
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -55828,7 +56446,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "A",
     "fantaRole": "A",
-    "appetibilita": 82,
+    "appetibilita": 69,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -55850,7 +56468,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 53
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 84,
       "fantamedia": 6.83,
       "mediaVoto": 6.12,
       "pv": 32,
@@ -55885,8 +56503,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 79,
-    "status": "tit_sicuro",
+    "appetibilita": 66,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -55907,7 +56525,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 48
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -55938,12 +56556,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Diao",
     "teamName": "Como",
     "teamId": "como",
-    "role": "A",
+    "role": "W",
     "classicRole": "A",
     "mantraRole": "W;A",
     "fantaRole": "A",
-    "appetibilita": 77,
-    "status": "tit_sicuro",
+    "appetibilita": 65,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -55964,7 +56582,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 52
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 42,
       "fantamedia": 6.38,
       "mediaVoto": 6,
       "pv": 16,
@@ -55999,7 +56617,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 92,
+    "appetibilita": 82,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": true,
@@ -56021,7 +56639,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 60
     },
     "stats": {
-      "titolarita": 90,
+      "titolarita": 97,
       "fantamedia": 6.41,
       "mediaVoto": 5.92,
       "pv": 37,
@@ -56056,8 +56674,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 68,
-    "status": "tit_sicuro",
+    "appetibilita": 56,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -56078,7 +56696,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 43
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -56113,7 +56731,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "A",
     "fantaRole": "A",
-    "appetibilita": 52,
+    "appetibilita": 40,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -56135,7 +56753,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 33
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 66,
       "fantamedia": 5.86,
       "mediaVoto": 5.68,
       "pv": 25,
@@ -56170,8 +56788,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 53,
-    "status": "tit_sicuro",
+    "appetibilita": 42,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -56192,7 +56810,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 29
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 18,
       "fantamedia": 5.64,
       "mediaVoto": 5.64,
       "pv": 7,
@@ -56227,8 +56845,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 62,
-    "status": "tit_sicuro",
+    "appetibilita": 51,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -56249,7 +56867,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 36
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 37,
       "fantamedia": 6.79,
       "mediaVoto": 5.96,
       "pv": 14,
@@ -56284,8 +56902,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 61,
-    "status": "tit_sicuro",
+    "appetibilita": 49,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -56306,7 +56924,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 38
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -56337,12 +56955,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Ghedjemis",
     "teamName": "Frosinone",
     "teamId": "frosinone",
-    "role": "A",
+    "role": "W",
     "classicRole": "A",
     "mantraRole": "W;A",
     "fantaRole": "A",
-    "appetibilita": 50,
-    "status": "tit_sicuro",
+    "appetibilita": 39,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -56363,7 +56981,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 32
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -56398,7 +57016,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 62,
+    "appetibilita": 52,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": true,
@@ -56420,7 +57038,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 37
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 79,
       "fantamedia": 6.33,
       "mediaVoto": 5.77,
       "pv": 30,
@@ -56455,8 +57073,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 44,
-    "status": "tit_sicuro",
+    "appetibilita": 33,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -56477,7 +57095,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 23
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -56512,8 +57130,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 53,
-    "status": "tit_sicuro",
+    "appetibilita": 43,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -56534,7 +57152,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 30
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 37,
       "fantamedia": 5.93,
       "mediaVoto": 5.71,
       "pv": 14,
@@ -56569,7 +57187,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "A",
     "fantaRole": "A",
-    "appetibilita": 52,
+    "appetibilita": 42,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -56591,7 +57209,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 34
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 84,
       "fantamedia": 6.64,
       "mediaVoto": 5.98,
       "pv": 32,
@@ -56626,7 +57244,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 49,
+    "appetibilita": 40,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -56648,7 +57266,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 28
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 71,
       "fantamedia": 6.24,
       "mediaVoto": 5.78,
       "pv": 27,
@@ -56683,8 +57301,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "A",
     "fantaRole": "A",
-    "appetibilita": 36,
-    "status": "ballottaggio",
+    "appetibilita": 26,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -56705,7 +57323,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 21
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 82,
       "fantamedia": 6.39,
       "mediaVoto": 5.95,
       "pv": 31,
@@ -56740,8 +57358,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "A",
     "fantaRole": "A",
-    "appetibilita": 46,
-    "status": "tit_sicuro",
+    "appetibilita": 36,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -56762,7 +57380,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 29
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -56797,8 +57415,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 36,
-    "status": "ballottaggio",
+    "appetibilita": 26,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -56819,7 +57437,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 17
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -56854,8 +57472,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 39,
-    "status": "ballottaggio",
+    "appetibilita": 31,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -56876,7 +57494,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 21
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -56911,8 +57529,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 36,
-    "status": "ballottaggio",
+    "appetibilita": 27,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -56933,7 +57551,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 18
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 71,
       "fantamedia": 6.83,
       "mediaVoto": 6.15,
       "pv": 27,
@@ -56968,8 +57586,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 32,
-    "status": "ballottaggio",
+    "appetibilita": 23,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": true,
     "isFreeKickTaker": false,
@@ -56990,7 +57608,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 16
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 79,
       "fantamedia": 6.12,
       "mediaVoto": 5.73,
       "pv": 30,
@@ -57025,8 +57643,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 32,
-    "status": "ballottaggio",
+    "appetibilita": 23,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": true,
     "isFreeKickTaker": false,
@@ -57047,7 +57665,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 16
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 61,
       "fantamedia": 6.13,
       "mediaVoto": 5.83,
       "pv": 23,
@@ -57082,8 +57700,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "A",
     "fantaRole": "A",
-    "appetibilita": 28,
-    "status": "ballottaggio",
+    "appetibilita": 21,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -57104,7 +57722,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 17
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 55,
       "fantamedia": 6.24,
       "mediaVoto": 6,
       "pv": 21,
@@ -57139,8 +57757,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 27,
-    "status": "ballottaggio",
+    "appetibilita": 20,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -57161,7 +57779,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 12
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -57192,12 +57810,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Boga",
     "teamName": "Juventus",
     "teamId": "juventus",
-    "role": "A",
+    "role": "W",
     "classicRole": "A",
     "mantraRole": "W;A",
     "fantaRole": "A",
-    "appetibilita": 39,
-    "status": "tit_sicuro",
+    "appetibilita": 33,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -57218,7 +57836,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 28
     },
     "stats": {
-      "titolarita": 80,
+      "titolarita": 34,
       "fantamedia": 7.15,
       "mediaVoto": 6.19,
       "pv": 13,
@@ -57253,8 +57871,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "A",
     "fantaRole": "A",
-    "appetibilita": 29,
-    "status": "ballottaggio",
+    "appetibilita": 22,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -57275,7 +57893,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 17
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 61,
       "fantamedia": 6.5,
       "mediaVoto": 6.02,
       "pv": 23,
@@ -57310,8 +57928,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 26,
-    "status": "ballottaggio",
+    "appetibilita": 18,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -57332,7 +57950,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 13
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 39,
       "fantamedia": 5.53,
       "mediaVoto": 5.5,
       "pv": 15,
@@ -57363,12 +57981,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Neres",
     "teamName": "Napoli",
     "teamId": "napoli",
-    "role": "A",
+    "role": "W",
     "classicRole": "A",
     "mantraRole": "W;A",
     "fantaRole": "A",
-    "appetibilita": 35,
-    "status": "ballottaggio",
+    "appetibilita": 29,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -57389,7 +58007,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 25
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 42,
       "fantamedia": 6.84,
       "mediaVoto": 6.19,
       "pv": 16,
@@ -57420,12 +58038,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Maldini",
     "teamName": "Cagliari",
     "teamId": "cagliari",
-    "role": "A",
+    "role": "T",
     "classicRole": "A",
     "mantraRole": "T;A",
     "fantaRole": "A",
-    "appetibilita": 34,
-    "status": "ballottaggio",
+    "appetibilita": 29,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -57446,7 +58064,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 22
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 47,
       "fantamedia": 6.31,
       "mediaVoto": 5.94,
       "pv": 18,
@@ -57481,8 +58099,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 32,
-    "status": "ballottaggio",
+    "appetibilita": 26,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": true,
     "isFreeKickTaker": false,
@@ -57503,7 +58121,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 17
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 47,
       "fantamedia": 5.64,
       "mediaVoto": 5.67,
       "pv": 18,
@@ -57538,8 +58156,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "A",
     "fantaRole": "A",
-    "appetibilita": 29,
-    "status": "ballottaggio",
+    "appetibilita": 23,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -57560,7 +58178,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 18
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -57595,8 +58213,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "A",
     "fantaRole": "A",
-    "appetibilita": 23,
-    "status": "ballottaggio",
+    "appetibilita": 17,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -57617,7 +58235,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 13
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -57652,8 +58270,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 24,
-    "status": "ballottaggio",
+    "appetibilita": 18,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -57674,7 +58292,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 12
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -57709,8 +58327,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 23,
-    "status": "ballottaggio",
+    "appetibilita": 17,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -57731,7 +58349,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 11
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 5,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 2,
@@ -57766,8 +58384,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 17,
-    "status": "riserva",
+    "appetibilita": 12,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -57788,7 +58406,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 7
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 68,
       "fantamedia": 6.46,
       "mediaVoto": 5.92,
       "pv": 26,
@@ -57823,8 +58441,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 17,
-    "status": "riserva",
+    "appetibilita": 12,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -57845,7 +58463,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 7
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 21,
       "fantamedia": 6.62,
       "mediaVoto": 5.94,
       "pv": 8,
@@ -57880,8 +58498,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 18,
-    "status": "riserva",
+    "appetibilita": 13,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": true,
     "isFreeKickTaker": false,
@@ -57933,12 +58551,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Kvernadze",
     "teamName": "Frosinone",
     "teamId": "frosinone",
-    "role": "A",
+    "role": "W",
     "classicRole": "A",
     "mantraRole": "W;A",
     "fantaRole": "A",
-    "appetibilita": 24,
-    "status": "ballottaggio",
+    "appetibilita": 20,
+    "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -57959,7 +58577,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 16
     },
     "stats": {
-      "titolarita": 65,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -57994,7 +58612,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 17,
+    "appetibilita": 12,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -58016,7 +58634,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 7
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -58051,8 +58669,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "A",
     "fantaRole": "A",
-    "appetibilita": 18,
-    "status": "riserva",
+    "appetibilita": 13,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -58073,7 +58691,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 10
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 82,
       "fantamedia": 6.45,
       "mediaVoto": 6,
       "pv": 31,
@@ -58108,8 +58726,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 17,
-    "status": "riserva",
+    "appetibilita": 12,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -58130,7 +58748,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 7
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 18,
       "fantamedia": 5.79,
       "mediaVoto": 5.71,
       "pv": 7,
@@ -58165,8 +58783,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 14,
-    "status": "riserva",
+    "appetibilita": 9,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -58187,7 +58805,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 6
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 34,
       "fantamedia": 5.92,
       "mediaVoto": 5.77,
       "pv": 13,
@@ -58222,7 +58840,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "A",
     "fantaRole": "A",
-    "appetibilita": 18,
+    "appetibilita": 13,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -58244,7 +58862,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 10
     },
     "stats": {
-      "titolarita": 45,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -58275,12 +58893,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Kuhn",
     "teamName": "Como",
     "teamId": "como",
-    "role": "A",
+    "role": "W",
     "classicRole": "A",
     "mantraRole": "W;A",
     "fantaRole": "A",
-    "appetibilita": 11,
-    "status": "riserva",
+    "appetibilita": 7,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -58301,7 +58919,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 7
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 37,
       "fantamedia": 6.25,
       "mediaVoto": 5.96,
       "pv": 14,
@@ -58336,8 +58954,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "A",
     "fantaRole": "A",
-    "appetibilita": 17,
-    "status": "riserva",
+    "appetibilita": 13,
+    "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -58358,7 +58976,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 10
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 66,
       "fantamedia": 6.28,
       "mediaVoto": 5.96,
       "pv": 25,
@@ -58389,12 +59007,12 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "N'Dri",
     "teamName": "Lecce",
     "teamId": "lecce",
-    "role": "A",
+    "role": "W",
     "classicRole": "A",
     "mantraRole": "W;A",
     "fantaRole": "A",
-    "appetibilita": 15,
-    "status": "riserva",
+    "appetibilita": 12,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -58415,7 +59033,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 11
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 45,
       "fantamedia": 6.09,
       "mediaVoto": 5.82,
       "pv": 17,
@@ -58450,7 +59068,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 13,
+    "appetibilita": 9,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -58472,7 +59090,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 6
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -58507,8 +59125,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "A",
     "fantaRole": "A",
-    "appetibilita": 17,
-    "status": "riserva",
+    "appetibilita": 13,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -58529,7 +59147,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 10
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 37,
       "fantamedia": 6.32,
       "mediaVoto": 6.04,
       "pv": 14,
@@ -58564,8 +59182,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 17,
-    "status": "riserva",
+    "appetibilita": 13,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -58586,7 +59204,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 9
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 24,
       "fantamedia": 6,
       "mediaVoto": 5.72,
       "pv": 9,
@@ -58621,8 +59239,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 18,
-    "status": "riserva",
+    "appetibilita": 14,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -58643,7 +59261,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 10
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 21,
       "fantamedia": 6.88,
       "mediaVoto": 6,
       "pv": 8,
@@ -58668,63 +59286,6 @@ export const CSV_PLAYER_CATALOG = [
     }
   },
   {
-    "id": "monza_petagna_383",
-    "csvId": "383",
-    "name": "Petagna",
-    "displayName": "Petagna",
-    "teamName": "Monza",
-    "teamId": "monza",
-    "role": "PC",
-    "classicRole": "A",
-    "mantraRole": "Pc",
-    "fantaRole": "A",
-    "appetibilita": 10,
-    "status": "riserva",
-    "isAvailable": true,
-    "isPenaltyTaker": false,
-    "isFreeKickTaker": false,
-    "isCornerTaker": false,
-    "rigorista": false,
-    "punizioni": false,
-    "corner": false,
-    "positionNotes": "",
-    "fantaComment": "",
-    "quotazioni": {
-      "qtA": 2,
-      "qtI": 2,
-      "diff": 0,
-      "qtAM": 2,
-      "qtIM": 2,
-      "diffM": 0,
-      "fvm": 5,
-      "fvmM": 5
-    },
-    "stats": {
-      "titolarita": 25,
-      "fantamedia": 6,
-      "mediaVoto": 6,
-      "pv": 0,
-      "presenze": 0,
-      "gol": 0,
-      "gf": 0,
-      "gs": 0,
-      "golSubiti": 0,
-      "rp": 0,
-      "rc": 0,
-      "rPlus": 0,
-      "rMinus": 0,
-      "rigoriSegnati": 0,
-      "rigoriSbagliati": 0,
-      "assist": 0,
-      "ass": 0,
-      "ammonizioni": 0,
-      "amm": 0,
-      "espulsioni": 0,
-      "esp": 0,
-      "au": 0
-    }
-  },
-  {
     "id": "udinese_buksa_7249",
     "csvId": "7249",
     "name": "Buksa",
@@ -58735,8 +59296,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 5,
+    "status": "probabile",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -58757,7 +59318,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 4
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 55,
       "fantamedia": 6.24,
       "mediaVoto": 5.88,
       "pv": 21,
@@ -58792,7 +59353,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "A",
     "fantaRole": "A",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -58814,7 +59375,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 5,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 2,
@@ -58849,7 +59410,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 10,
+    "appetibilita": 3,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -58871,7 +59432,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 2
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 8,
       "fantamedia": 5.67,
       "mediaVoto": 5.67,
       "pv": 3,
@@ -58906,7 +59467,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -58928,7 +59489,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -58963,8 +59524,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 5,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -58985,7 +59546,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 3
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 18,
       "fantamedia": 6.36,
       "mediaVoto": 5.93,
       "pv": 7,
@@ -59020,8 +59581,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 1,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -59042,7 +59603,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 16,
       "fantamedia": 5.5,
       "mediaVoto": 5.58,
       "pv": 6,
@@ -59077,8 +59638,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 10,
-    "status": "riserva",
+    "appetibilita": 4,
+    "status": "ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -59099,7 +59660,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 3
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 32,
       "fantamedia": 5.83,
       "mediaVoto": 5.75,
       "pv": 12,
@@ -59130,11 +59691,11 @@ export const CSV_PLAYER_CATALOG = [
     "displayName": "Lisman",
     "teamName": "Venezia",
     "teamId": "venezia",
-    "role": "A",
+    "role": "W",
     "classicRole": "A",
     "mantraRole": "W;A",
     "fantaRole": "A",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -59156,7 +59717,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -59191,7 +59752,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -59213,7 +59774,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -59248,7 +59809,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "A",
     "fantaRole": "A",
-    "appetibilita": 10,
+    "appetibilita": 4,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -59270,7 +59831,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 3
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,
@@ -59305,7 +59866,7 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "appetibilita": 10,
+    "appetibilita": 1,
     "status": "riserva",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -59327,7 +59888,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1
     },
     "stats": {
-      "titolarita": 25,
+      "titolarita": 50,
       "fantamedia": 6,
       "mediaVoto": 6,
       "pv": 0,

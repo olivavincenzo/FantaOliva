@@ -480,8 +480,10 @@ class App {
     // Tab buttons
     const tabCsvBtn = document.querySelector('#tab-csv-catalog-btn');
     const tabCustomBtn = document.querySelector('#tab-custom-player-btn');
+    const tabImportCsvBtn = document.querySelector('#tab-import-csv-tab-btn');
     const catalogSection = document.querySelector('#catalog-section');
     const catalogFooter = document.querySelector('#catalog-footer');
+    const catalogImportSection = document.querySelector('#catalog-import-section');
 
     // Search and filters
     const searchInput = document.querySelector('#catalog-search-input');
@@ -493,25 +495,37 @@ class App {
     let searchQuery = '';
 
     function switchTab(tab) {
+      tabCsvBtn?.classList.remove('is-active');
+      tabCustomBtn?.classList.remove('is-active');
+      tabImportCsvBtn?.classList.remove('is-active');
+      catalogSection?.classList.add('hidden');
+      catalogFooter?.classList.add('hidden');
+      form?.classList.add('hidden');
+      catalogImportSection?.classList.add('hidden');
+
       if (tab === 'csv') {
         tabCsvBtn?.classList.add('is-active');
-        tabCustomBtn?.classList.remove('is-active');
         catalogSection?.classList.remove('hidden');
         catalogFooter?.classList.remove('hidden');
-        form?.classList.add('hidden');
         renderCatalog();
         setTimeout(() => searchInput?.focus(), 50);
-      } else {
-        tabCsvBtn?.classList.remove('is-active');
+      } else if (tab === 'custom') {
         tabCustomBtn?.classList.add('is-active');
-        catalogSection?.classList.add('hidden');
-        catalogFooter?.classList.add('hidden');
         form?.classList.remove('hidden');
+      } else if (tab === 'import') {
+        tabImportCsvBtn?.classList.add('is-active');
+        catalogImportSection?.classList.remove('hidden');
+        catalogFooter?.classList.remove('hidden');
       }
     }
 
     tabCsvBtn?.addEventListener('click', () => switchTab('csv'));
     tabCustomBtn?.addEventListener('click', () => switchTab('custom'));
+    tabImportCsvBtn?.addEventListener('click', () => switchTab('import'));
+
+    store.subscribe('catalog:updated', () => {
+      renderCatalog();
+    });
 
     function renderCatalog() {
       if (!resultsContainer) return;
