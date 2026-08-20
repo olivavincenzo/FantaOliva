@@ -239,14 +239,26 @@ export function createPlayerCard(player, options = {}) {
   }, { passive: true });
 
   const triggerOpenInspector = () => {
+    // 1. Se il giocatore appartiene a una squadra, seleziona quella squadra nello store
+    const targetTeamId = player.teamId || (player.teamName ? store.teams.find(t => t.name.toLowerCase() === player.teamName.toLowerCase())?.id : null);
+    if (targetTeamId && targetTeamId !== store.currentTeamId) {
+      store.setTeam(targetTeamId);
+    }
+
+    // 2. Se ci troviamo in Slot Asta o Listone, torna alla visualizzazione Lavagna Tattica
+    if (store.activeView !== 'tactical') {
+      store.setView('tactical');
+    }
+
+    // 3. Seleziona il giocatore
     store.selectPlayer(player.id, slotId);
 
-    // Desktop: apri sidebar destra se collassata
+    // 4. Desktop: apri sidebar destra se collassata
     if (document.body.classList.contains('right-sidebar-collapsed')) {
       document.body.classList.remove('right-sidebar-collapsed');
     }
 
-    // Mobile: apri drawer sidebar destra
+    // 5. Mobile: apri drawer sidebar destra
     const sidebarInspector = document.querySelector('#sidebar-inspector');
     const sidebarTeams = document.querySelector('#sidebar-teams');
     const backdrop = document.querySelector('#mobile-drawer-backdrop');
