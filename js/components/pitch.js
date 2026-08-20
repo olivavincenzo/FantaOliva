@@ -17,6 +17,7 @@ export class PitchComponent {
     this.verticalListEl = null;
     this.activeRoleFilter = 'ALL';
     this.searchQuery = '';
+    this.gridColumns = Number((typeof localStorage !== 'undefined' ? localStorage.getItem('fantaoliva_pitch_list_cols') : null) || 1);
 
     this.init();
   }
@@ -326,37 +327,58 @@ export class PitchComponent {
 
     let hasAnyPlayer = false;
 
+    // Barra Superiore Lista con Selettore Colonne 1 2 3 4
+    const team = store.getCurrentTeam();
+    const teamTitle = team ? team.name : 'Rosa';
+    const topBarEl = document.createElement('div');
+    topBarEl.className = 'list-view-header-bar';
+    topBarEl.innerHTML = `
+      <div class="section-head-title">
+        <h2>Rosa ${sanitizeHtml(teamTitle)}</h2>
+        <span class="head-count">${allSquadItems.length} calciatori</span>
+      </div>
+      <div class="section-columns-switcher" title="Disposizione colonne lista">
+        <span class="cols-label">Colonne</span>
+        <div class="cols-button-group">
+          <button type="button" class="col-btn ${this.gridColumns === 1 ? 'is-active' : ''}" data-cols="1">1</button>
+          <button type="button" class="col-btn ${this.gridColumns === 2 ? 'is-active' : ''}" data-cols="2">2</button>
+          <button type="button" class="col-btn ${this.gridColumns === 3 ? 'is-active' : ''}" data-cols="3">3</button>
+          <button type="button" class="col-btn ${this.gridColumns === 4 ? 'is-active' : ''}" data-cols="4">4</button>
+        </div>
+      </div>
+    `;
+
+    topBarEl.querySelectorAll('.col-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const cols = Number(btn.dataset.cols) || 1;
+        this.gridColumns = cols;
+        if (typeof localStorage !== 'undefined') {
+          localStorage.setItem('fantaoliva_pitch_list_cols', cols);
+        }
+        this.renderVerticalList();
+      });
+    });
+
+    this.verticalListEl.appendChild(topBarEl);
+
     departments.forEach(dept => {
       if (dept.items.length === 0) return;
       hasAnyPlayer = true;
 
-      const formationOptions = FORMATION_LIST.map(f => {
-        const isSel = currentFormation?.id === f.id ? 'selected' : '';
-        return `<option value="${f.id}" ${isSel}>${f.id}</option>`;
-      }).join('');
-
-      // Section Header con Selettore Modulo a destra
+      // Section Header Reparto
       const headerEl = document.createElement('div');
       headerEl.className = 'section-header';
       headerEl.innerHTML = `
         <h2>${sanitizeHtml(dept.name)}</h2>
-        <div class="section-formation-wrap" title="Cambia Modulo Tattico">
-          <select class="section-formation-select" aria-label="Seleziona Modulo Tattico">
-            ${formationOptions}
-          </select>
-          <span class="formation-arrow">▾</span>
-        </div>
+        <span>${dept.items.length} giocatori</span>
       `;
-
-      headerEl.querySelector('.section-formation-select')?.addEventListener('change', (e) => {
-        store.setFormation(e.target.value);
-      });
 
       this.verticalListEl.appendChild(headerEl);
 
-      // Section List
+      // Section List con classe di colonne
       const listSection = document.createElement('section');
-      listSection.className = 'player-list';
+      listSection.className = `player-list cols-${this.gridColumns}`;
       listSection.setAttribute('aria-label', `Elenco ${dept.name}`);
 
       dept.items.forEach(item => {

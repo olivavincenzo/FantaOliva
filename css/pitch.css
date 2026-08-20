@@ -332,13 +332,43 @@
 /* ==========================================================================
    INTESTAZIONI DI SEZIONE & LISTA CALCIATORI
    ========================================================================== */
+.list-view-header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 2px 14px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+  width: 100%;
+}
+
+.section-head-title {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.section-head-title h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 780;
+  letter-spacing: -0.04em;
+  color: var(--ink);
+}
+
+.section-head-title .head-count {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 600;
+}
+
 .section-header {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  padding: 0 3px;
+  padding: 0 2px;
   margin-bottom: 10px;
-  margin-top: 14px;
+  margin-top: 18px;
   width: 100%;
 }
 
@@ -348,79 +378,110 @@
 
 .section-header h2 {
   margin: 0;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 760;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.03em;
   color: var(--ink);
-}
-
-.section-formation-wrap {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  gap: 2px;
-  cursor: pointer;
-}
-
-.section-formation-select {
-  appearance: none;
-  -webkit-appearance: none;
-  background: transparent;
-  border: none;
-  color: var(--muted);
-  font-family: var(--font-main);
-  font-size: 10px;
-  font-weight: 580;
-  cursor: pointer;
-  padding: 0 11px 0 0;
-  margin: 0;
-  outline: none;
-  transition: color var(--transition-fast);
-}
-
-.section-formation-select:hover,
-.section-formation-select:focus {
-  color: var(--ink);
-}
-
-.section-formation-select option {
-  background: var(--paper);
-  color: var(--ink);
-  font-weight: 670;
-}
-
-.section-formation-wrap .formation-arrow {
-  position: absolute;
-  right: 0;
-  pointer-events: none;
-  font-size: 8px;
-  color: var(--muted);
-  line-height: 1;
 }
 
 .section-header span {
   color: var(--muted);
   font-size: 10px;
-  font-weight: 560;
+  font-weight: 600;
+}
+
+.section-columns-switcher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-columns-switcher .cols-label {
+  font-size: 10px;
+  font-weight: 650;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.cols-button-group {
+  display: flex;
+  background: var(--paper);
+  padding: 3px;
+  border-radius: var(--radius-pill);
+  gap: 3px;
+  border: 1px solid var(--line);
+  box-shadow: 0 1px 4px rgba(20, 20, 28, 0.04);
+}
+
+.col-btn {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  font-family: var(--font-main);
+  font-size: 11px;
+  font-weight: 750;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+  line-height: 1;
+}
+
+.col-btn:hover {
+  color: var(--ink);
+  background: var(--soft);
+}
+
+.col-btn.is-active {
+  background: var(--ink);
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
 }
 
 .pitch-vertical-list-container {
   display: flex;
   flex-direction: column;
-  gap: 6px;
   width: 100%;
 }
 
 .player-list {
   display: grid;
-  gap: 11px;
+  gap: 12px;
   width: 100%;
 }
 
-@media (min-width: 901px) {
-  .player-list {
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 14px;
+.player-list.cols-1 {
+  grid-template-columns: 1fr;
+}
+
+.player-list.cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.player-list.cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.player-list.cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (max-width: 900px) {
+  .player-list.cols-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .player-list.cols-2,
+  .player-list.cols-3,
+  .player-list.cols-4 {
+    grid-template-columns: 1fr;
   }
 }
 
