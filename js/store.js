@@ -49,6 +49,50 @@ class Store {
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved) {
         this.teams = JSON.parse(saved);
+
+        // Sincronizza automaticamente eventuali nuovi giocatori di INITIAL_TEAMS nella panchina
+        INITIAL_TEAMS.forEach(initTeam => {
+          const t = this.teams.find(team => team.id === initTeam.id);
+          if (t) {
+            t.bench = t.bench || [];
+            const existingIds = new Set();
+            Object.values(t.lineup || {}).forEach(p => {
+              if (p) {
+                if (p.id) existingIds.add(p.id);
+                if (p.csvId) existingIds.add(p.csvId.toString());
+                if (p.name) existingIds.add(p.name.toLowerCase());
+              }
+            });
+            t.bench.forEach(p => {
+              if (p) {
+                if (p.id) existingIds.add(p.id);
+                if (p.csvId) existingIds.add(p.csvId.toString());
+                if (p.name) existingIds.add(p.name.toLowerCase());
+              }
+            });
+
+            const allInitPlayers = [
+              ...Object.values(initTeam.lineup || {}),
+              ...(initTeam.bench || [])
+            ].filter(Boolean);
+
+            let addedCount = 0;
+            allInitPlayers.forEach(p => {
+              const hasId = p.id && existingIds.has(p.id);
+              const hasCsv = p.csvId && existingIds.has(p.csvId.toString());
+              const hasName = p.name && existingIds.has(p.name.toLowerCase());
+
+              if (!hasId && !hasCsv && !hasName) {
+                t.bench.push(deepClone(p));
+                if (p.id) existingIds.add(p.id);
+                if (p.csvId) existingIds.add(p.csvId.toString());
+                if (p.name) existingIds.add(p.name.toLowerCase());
+                addedCount++;
+              }
+            });
+          }
+        });
+        this.saveToStorage();
       } else {
         this.teams = deepClone(INITIAL_TEAMS);
         this.saveToStorage();
