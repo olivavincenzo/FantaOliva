@@ -226,12 +226,16 @@ export class PlayerInspectorComponent {
     const ballottaggio = store.getBallottaggioForPlayer(player.id);
     let ballottaggioText = '';
     if (ballottaggio) {
-      const isPlayerA = ballottaggio.playerAId === player.id;
-      const perc = isPlayerA ? (ballottaggio.percentageA || ballottaggio.percA || 50) : (ballottaggio.percentageB || ballottaggio.percB || 50);
-      const opponentId = isPlayerA ? ballottaggio.playerBId : ballottaggio.playerAId;
-      const opponent = store.getPlayer(opponentId);
-      const oppName = opponent ? (opponent.displayName || opponent.name) : 'Altro';
-      ballottaggioText = `${perc}% vs ${sanitizeHtml(oppName)}`;
+      if (ballottaggio.duelLabel) {
+        ballottaggioText = sanitizeHtml(ballottaggio.duelLabel);
+      } else {
+        const isPlayerA = ballottaggio.playerAId === player.id;
+        const perc = isPlayerA ? (ballottaggio.percentageA || ballottaggio.percA || 50) : (ballottaggio.percentageB || ballottaggio.percB || 50);
+        const opponentId = isPlayerA ? ballottaggio.playerBId : ballottaggio.playerAId;
+        const opponent = store.getPlayer(opponentId);
+        const oppName = opponent ? (opponent.displayName || opponent.name) : (ballottaggio.opponentName || 'Altro');
+        ballottaggioText = `${perc}% vs ${sanitizeHtml(oppName)}`;
+      }
     }
 
     // Quotazioni & Rendimento

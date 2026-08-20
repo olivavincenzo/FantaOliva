@@ -287,6 +287,7 @@
   justify-content: flex-end;
   margin-bottom: 12px;
   gap: 8px;
+  display: none !important;
 }
 
 .filter-pitch-formation-wrap {
@@ -478,6 +479,7 @@
 }
 
 @media (max-width: 600px) {
+
   .player-list.cols-2,
   .player-list.cols-3,
   .player-list.cols-4 {
@@ -491,7 +493,7 @@
 .soccer-pitch {
   position: relative;
   width: 100%;
-  min-height: 520px;
+  height: 100%;
   background: #f0f3f0;
   border-radius: var(--radius-xl);
   border: 1px solid var(--line);

@@ -704,14 +704,70 @@ class Store {
 
   getBallottaggioForSlot(slotId) {
     const team = this.getCurrentTeam();
-    if (!team || !team.ballottaggi) return null;
-    return team.ballottaggi.find(b => b.slotId === slotId) || null;
+    if (!team) return null;
+    if (team.ballottaggi && team.ballottaggi.length > 0) {
+      const found = team.ballottaggi.find(b => b.slotId === slotId);
+      if (found) return found;
+    }
+    if (team.lineup && team.lineup[slotId]) {
+      return this.getBallottaggioForPlayer(team.lineup[slotId].id);
+    }
+    return null;
   }
 
   getBallottaggioForPlayer(playerId) {
+    if (!playerId) return null;
     const team = this.getCurrentTeam();
-    if (!team || !team.ballottaggi) return null;
-    return team.ballottaggi.find(b => b.playerAId === playerId || b.playerBId === playerId) || null;
+    if (!team) return null;
+
+    // 1. Cerca nei ballottaggi espliciti salvati della squadra
+    if (team.ballottaggi && Array.isArray(team.ballottaggi) && team.ballottaggi.length > 0) {
+      const found = team.ballottaggi.find(b => b.playerAId === playerId || b.playerBId === playerId);
+      if (found) return found;
+    }
+
+    // 2. Cerca nel giocatore stesso
+    const player = this.getPlayer(playerId);
+    if (!player) return null;
+
+    if (player.ballottaggio && typeof player.ballottaggio === 'object') {
+      const pA = player.ballottaggio.perc || player.ballottaggio.percentage || 60;
+      return {
+        playerAId: player.id,
+        playerBId: player.ballottaggio.opponentId || null,
+        opponentName: player.ballottaggio.vs || player.ballottaggio.opponent || 'Compagno',
+        percentageA: pA,
+        percA: pA,
+        percentageB: 100 - pA,
+        percB: 100 - pA
+      };
+    }
+
+    // 3. Risoluzione intelligente per status 'ballottaggio' o sostituti diretti (1ª, 2ª, 3ª scelta)
+    if (player.status === 'ballottaggio' || (Array.isArray(player.substitutes) && player.substitutes.length > 0)) {
+      const subs = Array.isArray(player.substitutes) ? player.substitutes : [];
+      const subPlayers = subs.map(id => this.getPlayer(id) || this.getAllPlayers().find(p => p.id === id)).filter(Boolean);
+
+      if (subPlayers.length > 0) {
+        const sub1 = subPlayers[0];
+        const parts = subPlayers.map((s, idx) => `${idx + 1}ª scelta ${s.displayName || s.name}`);
+        const duelLabel = parts.join(' · ');
+
+        return {
+          playerAId: player.id,
+          playerBId: sub1.id,
+          opponentName: sub1.displayName || sub1.name,
+          substitutes: subPlayers,
+          duelLabel,
+          percentageA: 60,
+          percA: 60,
+          percentageB: 40,
+          percB: 40
+        };
+      }
+    }
+
+    return null;
   }
 
   saveBallottaggio(ballottaggioData) {

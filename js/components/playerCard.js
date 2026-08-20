@@ -66,7 +66,7 @@ export function createPlayerCard(player, options = {}) {
 
   const roleInfo = ROLES[player.role] || ROLES.C;
   const statusInfo = PLAYER_STATUSES[player.status] || PLAYER_STATUSES.tit_sicuro;
-  const ballottaggio = store.getBallottaggioForPlayer(player.id);
+  const ballottaggio = store.getBallottaggioForPlayer(player.id) || (slotId ? store.getBallottaggioForSlot(slotId) : null);
   const isAvailable = player.isAvailable !== false;
 
   const card = document.createElement('article');
@@ -104,20 +104,41 @@ export function createPlayerCard(player, options = {}) {
   const qtA = player.quotazioni?.qtA ?? '-';
   const fvm = player.quotazioni?.fvm ?? '-';
 
-  // Ballottaggio badge
+  // Ballottaggio badge (pillole separate per ciascuna scelta)
   let ballottaggioHtml = '';
-  if (ballottaggio && isLineup) {
-    const isPlayerA = ballottaggio.playerAId === player.id;
-    const perc = isPlayerA ? (ballottaggio.percentageA || ballottaggio.percA || 50) : (ballottaggio.percentageB || ballottaggio.percB || 50);
-    const opponentId = isPlayerA ? ballottaggio.playerBId : ballottaggio.playerAId;
-    const opponent = store.getPlayer(opponentId);
-    const opponentName = opponent ? (opponent.displayName || opponent.name) : 'Altro';
+  if (ballottaggio) {
+    if (ballottaggio.substitutes && ballottaggio.substitutes.length > 0) {
+      const fullTooltip = ballottaggio.substitutes.map((s, idx) => `${idx + 1}ª scelta ${s.displayName || s.name}`).join(' · ');
+      const badges = ballottaggio.substitutes.map((s, idx) => {
+        return `<span class="duel" title="${sanitizeHtml(fullTooltip)}">${idx + 1}ª ${sanitizeHtml(s.displayName || s.name)}</span>`;
+      }).join(' ');
 
+      ballottaggioHtml = `<div class="duels-list">${badges}</div>`;
+    } else {
+      const opponentName = ballottaggio.opponentName || 'Altro';
+      const isPlayerA = ballottaggio.playerAId === player.id;
+      const perc = isPlayerA 
+        ? (ballottaggio.percA ?? ballottaggio.percentageA ?? 50) 
+        : (ballottaggio.percB ?? ballottaggio.percentageB ?? 50);
+      ballottaggioHtml = `
+        <div class="duels-list">
+          <span class="duel" title="Ballottaggio con ${sanitizeHtml(opponentName)} (${perc}%)">1ª ${sanitizeHtml(opponentName)}</span>
+        </div>
+      `;
+    }
+  } else if (player.ballottaggio && typeof player.ballottaggio === 'object') {
+    const opp = player.ballottaggio.vs || player.ballottaggio.opponent || 'Altro';
+    const perc = player.ballottaggio.perc || player.ballottaggio.percentage || 50;
     ballottaggioHtml = `
-      <span class="duel" title="In ballottaggio con ${sanitizeHtml(opponentName)} (${perc}%)">
-        <svg viewBox="0 0 24 24"><path d="M12 3v18M6 6h12M5 6l-3 7h7L6 6Zm13 0-3 7h7l-3-7Z" /></svg>
-        Ballottaggio · ${perc}% vs ${sanitizeHtml(opponentName)}
-      </span>
+      <div class="duels-list">
+        <span class="duel" title="In ballottaggio con ${sanitizeHtml(opp)} (${perc}%)">1ª ${sanitizeHtml(opp)}</span>
+      </div>
+    `;
+  } else if (player.status === 'ballottaggio' && player.ballottaggioWith) {
+    ballottaggioHtml = `
+      <div class="duels-list">
+        <span class="duel" title="In ballottaggio con ${sanitizeHtml(player.ballottaggioWith)}">1ª ${sanitizeHtml(player.ballottaggioWith)}</span>
+      </div>
     `;
   }
 
