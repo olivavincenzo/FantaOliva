@@ -228,6 +228,13 @@ class App {
       closeSettings();
     });
 
+    // Pulsante rapido Aggiungi Giocatore (+) dalla barra mobile
+    const quickAddBtn = document.querySelector('#mobile-quick-add-btn');
+    quickAddBtn?.addEventListener('click', () => {
+      const addModal = document.querySelector('#add-player-modal');
+      addModal?.classList.remove('hidden');
+    });
+
     settingsMenu?.querySelectorAll('.mobile-drawer-close-btn').forEach((btn) => {
       btn.addEventListener('click', (e) => {
         e.stopPropagation();

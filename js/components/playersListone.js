@@ -1,12 +1,12 @@
 /**
- * Componente Listone Completo Calciatori Serie A
- * Permette la consultazione, ricerca, filtraggio per ruolo/squadra/asta e
- * ordinamento multi-colonna di tutti i giocatori del campionato.
+ * Componente Listone Completo Calciatori Serie A (Editorial Minimal Design)
+ * Permette la consultazione, ricerca, filtraggio per ruolo/squadra/disponibilità e
+ * ordinamento multi-criterio di tutti i giocatori del campionato tramite le card Editorial Minimal.
  */
 
 import { store } from '../store.js';
-import { sanitizeHtml, getTitolaritaClass } from '../utils/helpers.js';
-import { notify } from '../utils/notifications.js';
+import { createPlayerCard } from './playerCard.js';
+import { sanitizeHtml } from '../utils/helpers.js';
 
 export class PlayersListoneComponent {
   constructor(containerId) {
@@ -16,9 +16,11 @@ export class PlayersListoneComponent {
     this.selectedTeam = 'ALL';
     this.availabilityFilter = 'ALL'; // 'ALL' | 'AVAILABLE' | 'TAKEN' | 'FAVORITES'
     this.onlyFavorites = false;
-    this.sortBy = 'appetibilita'; // 'appetibilita' | 'fantamedia' | 'mediaVoto' | 'qtA' | 'fvm' | 'gol' | 'assist' | 'presenze' | 'titolarita' | 'name' | 'teamName'
+    this.sortBy = 'appetibilita'; // 'appetibilita' | 'fantamedia' | 'mediaVoto' | 'qtA' | 'fvm' | 'gol' | 'assist' | 'presenze' | 'name' | 'teamName'
     this.sortOrder = 'desc'; // 'asc' | 'desc'
     this._searchTimer = null;
+    this.renderLimit = 40; // Progressive loading batch size
+    this._scrollListenerBound = false;
   }
 
   init() {
@@ -56,16 +58,32 @@ export class PlayersListoneComponent {
         this.render();
       }
     });
+
+    store.subscribe('player:selected', () => {
+      if (store.activeView === 'listone') {
+        this.updateSelectionHighlight();
+      }
+    });
   }
 
   getFilteredAndSortedPlayers() {
     const all = store.getAllPlayersFlat();
 
+    // Helper per categoria ruolo
+    const getRoleCategory = (p) => {
+      const r = (p.role || '').toUpperCase();
+      const f = (p.classicRole || p.fantaRole || '').toUpperCase();
+      if (['A', 'PC', 'W'].includes(r) || f === 'A') return 'A';
+      if (['C', 'M', 'T', 'E'].includes(r) || f === 'C') return 'C';
+      if (['D', 'DC', 'TD', 'TS'].includes(r) || f === 'D') return 'D';
+      if (['P', 'POR'].includes(r) || f === 'P') return 'P';
+      return 'C';
+    };
+
     // 1. Filtro Ruolo
     let filtered = all.filter(p => {
       if (this.activeRole === 'ALL') return true;
-      const r = (p.classicRole || p.role || '').toUpperCase();
-      return r === this.activeRole;
+      return getRoleCategory(p) === this.activeRole;
     });
 
     // 2. Filtro Squadra
@@ -78,15 +96,11 @@ export class PlayersListoneComponent {
       filtered = filtered.filter(p => p.isAvailable !== false);
     } else if (this.availabilityFilter === 'TAKEN') {
       filtered = filtered.filter(p => p.isAvailable === false);
-    } else if (this.availabilityFilter === 'FAVORITES') {
+    } else if (this.availabilityFilter === 'FAVORITES' || this.onlyFavorites) {
       filtered = filtered.filter(p => p.isFavorite || store.isPlayerFavorite(p.id));
     }
 
-    if (this.onlyFavorites) {
-      filtered = filtered.filter(p => p.isFavorite || store.isPlayerFavorite(p.id));
-    }
-
-    // 4. Ricerca Testuale (Nome o Squadra)
+    // 4. Ricerca Testuale
     if (this.searchQuery.trim()) {
       const q = this.searchQuery.trim().toLowerCase();
       filtered = filtered.filter(p => {
@@ -97,7 +111,7 @@ export class PlayersListoneComponent {
       });
     }
 
-    // 5. Ordinamento Multi-Colonna
+    // 5. Ordinamento Multi-Criterio
     filtered.sort((a, b) => {
       let valA, valB;
 
@@ -162,38 +176,13 @@ export class PlayersListoneComponent {
           valB = Number(b.appetibilita ?? 50);
       }
 
-      if (this.sortOrder === 'asc') {
-        return valA > valB ? 1 : valA < valB ? -1 : 0;
-      } else {
-        return valA < valB ? 1 : valA > valB ? -1 : 0;
+      if (this.sortOrder === 'desc') {
+        return valB - valA;
       }
+      return valA - valB;
     });
 
     return { filtered, total: all.length };
-  }
-
-  getRoleBadge(role, mantraRole) {
-    const r = (role || 'C').toUpperCase();
-    let badgeClass = 'role-badge-c';
-    if (r === 'P' || r.includes('P')) badgeClass = 'role-badge-p';
-    else if (r === 'D' || r.includes('D')) badgeClass = 'role-badge-d';
-    else if (r === 'A' || r.includes('A')) badgeClass = 'role-badge-a';
-
-    return `
-      <div class="listone-role-box">
-        <span class="role-badge ${badgeClass}">${r}</span>
-        ${mantraRole ? `<span class="listone-mantra-role" title="Ruolo Mantra: ${sanitizeHtml(mantraRole)}">${sanitizeHtml(mantraRole)}</span>` : ''}
-      </div>
-    `;
-  }
-
-  getSortArrow(columnKey) {
-    if (this.sortBy !== columnKey) {
-      return '<i class="fa-solid fa-sort sort-icon-inactive"></i>';
-    }
-    return this.sortOrder === 'desc' 
-      ? '<i class="fa-solid fa-sort-down sort-icon-active"></i>' 
-      : '<i class="fa-solid fa-sort-up sort-icon-active"></i>';
   }
 
   render() {
@@ -201,259 +190,181 @@ export class PlayersListoneComponent {
 
     const { filtered, total } = this.getFilteredAndSortedPlayers();
     const teams = Object.values(store.teams || {});
+    const isOnlyAvail = this.availabilityFilter === 'AVAILABLE';
+
+    const sortOptions = [
+      { key: 'appetibilita', label: '🔥 Appetibilità' },
+      { key: 'qtA', label: 'QtA Quotazione' },
+      { key: 'fvm', label: 'FVM Valore Mercato' },
+      { key: 'fantamedia', label: 'FM Fantamedia' },
+      { key: 'mediaVoto', label: 'MV Media Voto' },
+      { key: 'gol', label: '⚽ Gol Segnati' },
+      { key: 'assist', label: '🅰 Assist' },
+      { key: 'titolarita', label: '% Titolarità' },
+      { key: 'name', label: 'Nome Calciatore' }
+    ];
 
     this.container.innerHTML = `
       <div class="listone-page-container">
 
-        <!-- BARRA STRUMENTI & FILTRI LISTONE -->
-        <div class="listone-toolbar-card">
-          <div class="listone-toolbar-row primary-filters-row">
-            
-            <!-- Ricerca Testuale -->
-            <div class="listone-search-box">
-              <i class="fa-solid fa-magnifying-glass search-icon"></i>
-              <input 
-                type="text" 
-                class="listone-search-input" 
-                placeholder="Cerca calciatore o club..." 
-                value="${sanitizeHtml(this.searchQuery)}"
-              />
-              ${this.searchQuery ? `<button class="listone-search-clear" title="Pulisci ricerca"><i class="fa-solid fa-xmark"></i></button>` : ''}
-            </div>
-
-            <!-- Pulsante Filtri Mobile -->
-            <button id="open-listone-filters-btn" class="listone-mobile-filters-btn" title="Apri filtri avanzati">
-              <i class="fa-solid fa-sliders"></i>
-              <span>Filtri</span>
-              ${this.activeRole !== 'ALL' || this.selectedTeam !== 'ALL' || this.availabilityFilter !== 'ALL' ? '<span class="filter-active-dot"></span>' : ''}
-            </button>
-
-            <!-- Filtro Ruolo Rapido (Desktop) -->
-            <div class="listone-role-filters" aria-label="Filtro per Ruolo">
-              <button class="listone-filter-pill ${this.activeRole === 'ALL' ? 'is-active' : ''}" data-role="ALL">Tutti</button>
-              <button class="listone-filter-pill role-pill-p ${this.activeRole === 'P' ? 'is-active' : ''}" data-role="P">P</button>
-              <button class="listone-filter-pill role-pill-d ${this.activeRole === 'D' ? 'is-active' : ''}" data-role="D">D</button>
-              <button class="listone-filter-pill role-pill-c ${this.activeRole === 'C' ? 'is-active' : ''}" data-role="C">C</button>
-              <button class="listone-filter-pill role-pill-a ${this.activeRole === 'A' ? 'is-active' : ''}" data-role="A">A</button>
-            </div>
-
-            <!-- Filtro Squadra Dropdown (Desktop) -->
-            <div class="listone-team-filter-wrapper">
-              <i class="fa-solid fa-shield-halved team-filter-icon"></i>
-              <select class="listone-team-select" id="listone-team-select" aria-label="Filtro Squadra">
-                <option value="ALL" ${this.selectedTeam === 'ALL' ? 'selected' : ''}>Tutte le Squadre (${teams.length})</option>
-                ${teams.map(t => `<option value="${t.id}" ${this.selectedTeam === t.id ? 'selected' : ''}>${sanitizeHtml(t.name)}</option>`).join('')}
-              </select>
-            </div>
-
-            <!-- Filtro Stato Asta (Desktop) -->
-            <div class="listone-avail-filter-group">
-              <button class="listone-avail-btn ${this.availabilityFilter === 'ALL' ? 'is-active' : ''}" data-avail="ALL" title="Mostra tutti i calciatori">Tutti</button>
-              <button class="listone-avail-btn fav-btn ${this.availabilityFilter === 'FAVORITES' ? 'is-active' : ''}" data-avail="FAVORITES" title="Solo calciatori preferiti"><i class="fa-solid fa-star"></i> Preferiti</button>
-              <button class="listone-avail-btn avail-green ${this.availabilityFilter === 'AVAILABLE' ? 'is-active' : ''}" data-avail="AVAILABLE" title="Solo calciatori disponibili"><i class="fa-solid fa-circle-check"></i> Disponibili</button>
-              <button class="listone-avail-btn avail-red ${this.availabilityFilter === 'TAKEN' ? 'is-active' : ''}" data-avail="TAKEN" title="Solo calciatori già presi"><i class="fa-solid fa-circle-xmark"></i> Presi</button>
-            </div>
-
-            <!-- Contatore Risultati -->
-            <div class="listone-count-badge" title="Calciatori visualizzati / Totale">
-              <i class="fa-solid fa-users"></i>
-              <span><strong>${filtered.length}</strong> / ${total}</span>
-            </div>
-
+        <!-- HEADER LISTONE EDITORIAL MINIMAL -->
+        <header class="topbar listone-header">
+          <div>
+            <p class="context">Asta 2026/27 · Serie A</p>
+            <h1 class="team-title-heading">LISTONE COMPLETO</h1>
           </div>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <span class="listone-total-badge" title="Calciatori visualizzati / Totale">
+              <strong>${filtered.length}</strong>/${total}
+            </span>
+          </div>
+        </header>
+
+        <!-- BARRA DI RICERCA EDITORIALE -->
+        <div class="search" role="search" aria-label="Cerca nel listone">
+          <svg class="search-icon" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="6.5" />
+            <path d="m16 16 4 4" />
+          </svg>
+          <input 
+            type="text" 
+            class="listone-search-input search-input" 
+            placeholder="Cerca calciatore o squadra nel listone" 
+            value="${sanitizeHtml(this.searchQuery)}"
+            autocomplete="off"
+          />
+          ${this.searchQuery ? `<button class="listone-search-clear search-clear" aria-label="Pulisci ricerca">&times;</button>` : ''}
         </div>
 
-        <!-- TABELLA INTERATTIVA CALCIATORI -->
-        <div class="listone-table-card">
-          <div class="listone-table-responsive-wrapper">
-            <table class="listone-table">
-              <thead>
-                <tr>
-                  <th class="col-center col-action">Asta</th>
-                  <th class="col-center col-role">Ruolo</th>
-                  <th class="col-left col-name sortable-th" data-sort="name">
-                    <span>Calciatore</span> ${this.getSortArrow('name')}
-                  </th>
-                  <th class="col-left col-team sortable-th" data-sort="teamName">
-                    <span>Squadra</span> ${this.getSortArrow('teamName')}
-                  </th>
-                  <th class="col-center col-appetibilita sortable-th" data-sort="appetibilita" title="Indice Appetibilità Fantacalcio (0-100)">
-                    <span>🔥 App</span> ${this.getSortArrow('appetibilita')}
-                  </th>
-                  <th class="col-center col-tit sortable-th" data-sort="titolarita" title="% Titolarità stimata">
-                    <span>% Tit</span> ${this.getSortArrow('titolarita')}
-                  </th>
-                  <th class="col-center col-qta sortable-th" data-sort="qtA" title="Quotazione Attuale Classic">
-                    <span>QtA</span> ${this.getSortArrow('qtA')}
-                  </th>
-                  <th class="col-center col-fvm sortable-th" data-sort="fvm" title="FantaValore Mercato (base 1000)">
-                    <span>FVM</span> ${this.getSortArrow('fvm')}
-                  </th>
-                  <th class="col-center col-fm sortable-th" data-sort="fantamedia" title="Fantamedia Stagionale">
-                    <span>FM</span> ${this.getSortArrow('fantamedia')}
-                  </th>
-                  <th class="col-center col-mv sortable-th" data-sort="mediaVoto" title="Media Voto Pura">
-                    <span>MV</span> ${this.getSortArrow('mediaVoto')}
-                  </th>
-                  <th class="col-center col-gol sortable-th" data-sort="gol" title="Gol Segnati">
-                    <span>⚽ Gol</span> ${this.getSortArrow('gol')}
-                  </th>
-                  <th class="col-center col-ass sortable-th" data-sort="assist" title="Assist Vincenti">
-                    <span>🅰 Ass</span> ${this.getSortArrow('assist')}
-                  </th>
-                  <th class="col-center col-pres sortable-th" data-sort="presenze" title="Partite a Voto / Presenze">
-                    <span>📅 PV</span> ${this.getSortArrow('presenze')}
-                  </th>
-                  <th class="col-center col-specialisti">Specialisti</th>
-                </tr>
-              </thead>
-              <tbody>
-                ${filtered.length === 0 ? `
-                  <tr>
-                    <td colspan="14" class="listone-empty-state">
-                      <div class="empty-state-box">
-                        <i class="fa-solid fa-user-slash"></i>
-                        <p>Nessun calciatore trovato con i filtri selezionati.</p>
-                      </div>
-                    </td>
-                  </tr>
-                ` : filtered.map((p, idx) => {
-                  const fm = p.stats?.fantamedia ? Number(p.stats.fantamedia).toFixed(2) : '-';
-                  const mv = p.stats?.mediaVoto ? Number(p.stats.mediaVoto).toFixed(2) : '-';
-                  const gol = p.stats?.gol || 0;
-                  const ass = p.stats?.assist || 0;
-                  const pres = p.stats?.presenze || p.stats?.pv || 0;
-                  const appVal = p.appetibilita !== undefined ? Number(p.appetibilita) : 50;
-                  const titolarita = p.stats?.titolarita ?? p.titolaritaPerc ?? 50;
-                  const titClass = getTitolaritaClass(titolarita);
-                  const isAvailable = p.isAvailable !== false;
-                  const qtA = p.quotazioni?.qtA ?? '-';
-                  const fvm = p.quotazioni?.fvm ?? '-';
-                  const mantraRole = p.mantraRole || '';
-                  const classicRole = p.classicRole || p.role || 'C';
+        <!-- FILTRI RUOLI, SQUADRE & ORDINAMENTO A SCORRIMENTO ORIZZONTALE -->
+        <nav class="filters" aria-label="Filtri Listone">
+          <button class="filter ${this.activeRole === 'ALL' ? 'active' : ''}" data-role="ALL" type="button">Tutti · ${filtered.length}</button>
+          <button class="filter ${this.activeRole === 'A' ? 'active' : ''}" data-role="A" type="button">ATT</button>
+          <button class="filter ${this.activeRole === 'C' ? 'active' : ''}" data-role="C" type="button">CEN</button>
+          <button class="filter ${this.activeRole === 'D' ? 'active' : ''}" data-role="D" type="button">DIF</button>
+          <button class="filter ${this.activeRole === 'P' ? 'active' : ''}" data-role="P" type="button">POR</button>
 
-                  // Flags specialisti
-                  const isPenalty = p.isPenaltyTaker || p.rigorista;
-                  const isFreeKick = p.isFreeKickTaker || p.punizioni;
-                  const isCorner = p.isCornerTaker || p.corner;
-
-                  const isFavorite = store.isPlayerFavorite(p.id) || p.isFavorite;
-
-                  return `
-                    <tr class="listone-row ${!isAvailable ? 'is-taken' : ''}" data-player-id="${p.id}" data-team-id="${p.teamId || ''}" title="${sanitizeHtml(p.name)} - Doppio click per aprire la scheda tecnica">
-                      
-                      <!-- 1. Stato Asta & Preferiti Toggle -->
-                      <td class="col-center col-action">
-                        <button class="listone-fav-btn ${isFavorite ? 'is-fav' : ''}" data-player-id="${p.id}" title="${isFavorite ? 'Rimuovi dai Preferiti' : 'Aggiungi ai Preferiti'}">
-                          <i class="fa-${isFavorite ? 'solid' : 'regular'} fa-star"></i>
-                        </button>
-                        <button class="listone-availability-btn ${isAvailable ? 'is-available' : 'is-taken'}" data-player-id="${p.id}" title="${isAvailable ? 'Disponibile all\'asta (clicca per segnare PRESO)' : 'PRESO (clicca per segnare DISPONIBILE)'}">
-                          <i class="fa-solid ${isAvailable ? 'fa-circle-check' : 'fa-circle-xmark'}"></i>
-                        </button>
-                      </td>
-
-                      <!-- 2. Ruolo -->
-                      <td class="col-center col-role">
-                        ${this.getRoleBadge(classicRole, mantraRole)}
-                      </td>
-
-                      <!-- 3. Nome Calciatore -->
-                      <td class="col-left col-name">
-                        <div class="listone-player-info">
-                          <span class="player-main-name">${sanitizeHtml(p.name || p.displayName)}</span>
-                          ${!isAvailable ? `<span class="listone-taken-stamp">PRESO</span>` : ''}
-                        </div>
-                      </td>
-
-                      <!-- 4. Squadra -->
-                      <td class="col-left col-team">
-                        <span class="listone-team-pill">${sanitizeHtml(p.teamName || 'Serie A')}</span>
-                      </td>
-
-                      <!-- 5. Appetibilità Editabile -->
-                      <td class="col-center col-appetibilita">
-                        <div class="listone-app-input-wrap">
-                          <i class="fa-solid fa-fire" style="color: ${appVal >= 75 ? '#ff4d4d' : appVal >= 50 ? '#ffb703' : '#6c757d'}; font-size: 0.8rem;"></i>
-                          <input 
-                            type="number" 
-                            class="listone-app-input" 
-                            data-player-id="${p.id}" 
-                            min="0" 
-                            max="100" 
-                            value="${appVal}"
-                            title="Modifica Indice Appetibilità"
-                          />
-                        </div>
-                      </td>
-
-                      <!-- 6. Titolarità -->
-                      <td class="col-center col-tit">
-                        <span class="listone-tit-badge ${titClass}">${titolarita}%</span>
-                      </td>
-
-                      <!-- 7. Quotazione Attuale Classic -->
-                      <td class="col-center col-qta">
-                        <span class="stat-chip">${qtA}</span>
-                      </td>
-
-                      <!-- 8. FVM -->
-                      <td class="col-center col-fvm">
-                        <span class="stat-chip highlight-fvm">${fvm}</span>
-                      </td>
-
-                      <!-- 9. Fantamedia -->
-                      <td class="col-center col-fm">
-                        <span class="stat-num-val ${fm >= 7.0 ? 'highlight-top-fm' : ''}">${fm}</span>
-                      </td>
-
-                      <!-- 10. Media Voto -->
-                      <td class="col-center col-mv">
-                        <span class="stat-num-val">${mv}</span>
-                      </td>
-
-                      <!-- 11. Gol -->
-                      <td class="col-center col-gol">
-                        <span class="stat-gol-pill ${gol > 0 ? 'has-gol' : ''}">${gol}</span>
-                      </td>
-
-                      <!-- 12. Assist -->
-                      <td class="col-center col-ass">
-                        <span class="stat-ass-pill ${ass > 0 ? 'has-ass' : ''}">${ass}</span>
-                      </td>
-
-                      <!-- 13. Presenze -->
-                      <td class="col-center col-pres">
-                        <span class="stat-pres-pill">${pres}</span>
-                      </td>
-
-                      <!-- 14. Specialisti Piazzati -->
-                      <td class="col-center col-specialisti">
-                        <div class="listone-specialists-box">
-                          ${isPenalty ? '<span class="specialist-dot pen" title="1° Rigorista">🎯</span>' : ''}
-                          ${isFreeKick ? '<span class="specialist-dot fk" title="Punizioni">📐</span>' : ''}
-                          ${isCorner ? '<span class="specialist-dot crn" title="Corner">🚩</span>' : ''}
-                        </div>
-                      </td>
-
-                    </tr>
-                  `;
-                }).join('')}
-              </tbody>
-            </table>
+          <!-- Dropdown Squadre -->
+          <div class="listone-select-pill-wrap" title="Filtra per Club">
+            <select class="listone-team-select filter filter-select" id="listone-team-select" aria-label="Filtro Squadra">
+              <option value="ALL" ${this.selectedTeam === 'ALL' ? 'selected' : ''}>Tutti i Club (${teams.length})</option>
+              ${teams.map(t => `<option value="${t.id}" ${this.selectedTeam === t.id ? 'selected' : ''}>${sanitizeHtml(t.name)}</option>`).join('')}
+            </select>
+            <span class="select-arrow">▾</span>
           </div>
+
+          <!-- Dropdown Ordinamento -->
+          <div class="listone-select-pill-wrap" title="Ordina Calciatori">
+            <select class="listone-sort-select filter filter-select" id="listone-sort-select" aria-label="Ordina Calciatori">
+              ${sortOptions.map(s => `<option value="${s.key}" ${this.sortBy === s.key ? 'selected' : ''}>${s.label}</option>`).join('')}
+            </select>
+            <span class="select-arrow">▾</span>
+          </div>
+
+          <!-- Toggle Solo Disponibili -->
+          <button id="toggle-listone-available-btn" class="filter ${isOnlyAvail ? 'active' : ''}" type="button" title="Mostra solo i giocatori disponibili per l'asta">
+            <i class="fa-solid ${isOnlyAvail ? 'fa-circle-check' : 'fa-filter'}"></i> ${isOnlyAvail ? 'Solo Disponibili' : 'Disponibili'}
+          </button>
+
+          <!-- Toggle Preferiti -->
+          <button id="toggle-listone-fav-btn" class="filter ${this.onlyFavorites ? 'active' : ''}" type="button" title="Mostra solo preferiti">
+            <i class="fa-${this.onlyFavorites ? 'solid' : 'regular'} fa-star"></i> Preferiti
+          </button>
+        </nav>
+
+        <!-- LISTA CARDS CALCIATORI EDITORIAL MINIMAL -->
+        <div class="listone-cards-container" id="listone-cards-container">
+          <div class="listone-cards-grid" id="listone-cards-grid"></div>
+
+          ${filtered.length > this.renderLimit ? `
+            <div class="listone-load-more-box" style="text-align: center; padding: 14px 0 20px;">
+              <button id="listone-load-more-btn" class="filter" type="button" style="height: 36px; padding: 0 20px; font-size: 11px; margin: 0 auto;">
+                <i class="fa-solid fa-plus"></i> Mostra altri calciatori (${filtered.length - this.renderLimit} rimanenti)
+              </button>
+            </div>
+          ` : ''}
         </div>
 
       </div>
     `;
 
+    // Renderizza le card fino al renderLimit
+    const gridEl = this.container.querySelector('#listone-cards-grid');
+    const selectedPlayer = store.getSelectedPlayer();
+
+    if (gridEl) {
+      if (filtered.length === 0) {
+        gridEl.innerHTML = `
+          <div style="text-align: center; padding: 36px 14px; color: var(--muted); width: 100%;">
+            <i class="fa-solid fa-user-slash" style="font-size: 24px; margin-bottom: 8px; opacity: 0.5;"></i>
+            <p style="font-size: 13px; font-weight: 580;">Nessun calciatore trovato per i filtri selezionati</p>
+          </div>
+        `;
+      } else {
+        const visiblePlayers = filtered.slice(0, this.renderLimit);
+        visiblePlayers.forEach((p, idx) => {
+          const isSelected = selectedPlayer && selectedPlayer.id === p.id;
+          const card = createPlayerCard(p, {
+            rank: idx + 1,
+            isSelected,
+            isLineup: false
+          });
+          gridEl.appendChild(card);
+        });
+      }
+    }
+
     this.bindEvents();
   }
 
   bindEvents() {
-    // 1. Ricerca Live con debounce
+    // Ruolo Tabs
+    this.container.querySelectorAll('.filters .filter[data-role]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        this.activeRole = btn.dataset.role;
+        this.renderLimit = 40;
+        this.render();
+      });
+    });
+
+    // Selettore Squadra
+    const teamSelect = this.container.querySelector('#listone-team-select');
+    teamSelect?.addEventListener('change', (e) => {
+      this.selectedTeam = e.target.value;
+      this.renderLimit = 40;
+      this.render();
+    });
+
+    // Selettore Ordinamento
+    const sortSelect = this.container.querySelector('#listone-sort-select');
+    sortSelect?.addEventListener('change', (e) => {
+      this.sortBy = e.target.value;
+      this.sortOrder = (e.target.value === 'name' || e.target.value === 'teamName') ? 'asc' : 'desc';
+      this.renderLimit = 40;
+      this.render();
+    });
+
+    // Toggle Disponibili
+    const availBtn = this.container.querySelector('#toggle-listone-available-btn');
+    availBtn?.addEventListener('click', () => {
+      this.availabilityFilter = this.availabilityFilter === 'AVAILABLE' ? 'ALL' : 'AVAILABLE';
+      this.renderLimit = 40;
+      this.render();
+    });
+
+    // Toggle Preferiti
+    const favBtn = this.container.querySelector('#toggle-listone-fav-btn');
+    favBtn?.addEventListener('click', () => {
+      this.onlyFavorites = !this.onlyFavorites;
+      this.renderLimit = 40;
+      this.render();
+    });
+
+    // Ricerca Testuale Debounced
     const searchInput = this.container.querySelector('.listone-search-input');
     searchInput?.addEventListener('input', (e) => {
       this.searchQuery = e.target.value;
+      this.renderLimit = 40;
       clearTimeout(this._searchTimer);
       this._searchTimer = setTimeout(() => {
         this.render();
@@ -462,301 +373,45 @@ export class PlayersListoneComponent {
           input.focus();
           input.setSelectionRange(input.value.length, input.value.length);
         }
-      }, 200);
+      }, 250);
     });
 
-    const clearSearchBtn = this.container.querySelector('.listone-search-clear');
-    clearSearchBtn?.addEventListener('click', () => {
+    const clearBtn = this.container.querySelector('.listone-search-clear');
+    clearBtn?.addEventListener('click', () => {
       this.searchQuery = '';
+      this.renderLimit = 40;
       this.render();
     });
 
-    // 2. Filtro Ruolo
-    this.container.querySelectorAll('.listone-filter-pill').forEach(btn => {
-      btn.addEventListener('click', () => {
-        this.activeRole = btn.dataset.role;
-        this.render();
-      });
-    });
-
-    // 3. Filtro Squadra
-    const teamSelect = this.container.querySelector('#listone-team-select');
-    teamSelect?.addEventListener('change', (e) => {
-      this.selectedTeam = e.target.value;
+    // Pulsante Carica Altri
+    const loadMoreBtn = this.container.querySelector('#listone-load-more-btn');
+    loadMoreBtn?.addEventListener('click', () => {
+      this.renderLimit += 40;
       this.render();
     });
 
-    // 4. Filtro Disponibilità Asta
-    this.container.querySelectorAll('.listone-avail-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        this.availabilityFilter = btn.dataset.avail;
-        this.render();
-      });
-    });
-
-    // 5. Ordinamento cliccando sulle colonne dell'header
-    this.container.querySelectorAll('.sortable-th').forEach(th => {
-      th.addEventListener('click', () => {
-        const sortField = th.dataset.sort;
-        if (this.sortBy === sortField) {
-          this.sortOrder = this.sortOrder === 'desc' ? 'asc' : 'desc';
-        } else {
-          this.sortBy = sortField;
-          this.sortOrder = (sortField === 'name' || sortField === 'teamName') ? 'asc' : 'desc';
-        }
-        this.render();
-      });
-    });
-
-    // 6. Live Appetibilità Input
-    this.container.querySelectorAll('.listone-app-input').forEach(input => {
-      const updateApp = () => {
-        const playerId = input.dataset.playerId;
-        const val = Math.min(100, Math.max(0, Number(input.value) || 0));
-        store.updatePlayer(playerId, { appetibilita: val });
-        notify.success(`Appetibilità aggiornata a ${val}/100!`);
-      };
-
-      input.addEventListener('change', (e) => {
-        e.stopPropagation();
-        updateApp();
-      });
-
-      input.addEventListener('click', (e) => e.stopPropagation());
-    });
-
-    // 7. Toggle Preferiti
-    this.container.querySelectorAll('.listone-fav-btn').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const playerId = btn.dataset.playerId;
-        const newState = store.togglePlayerFavorite(playerId);
-        notify.success(newState ? '⭐ Aggiunto ai Preferiti!' : '⭐ Rimosso dai Preferiti');
-      });
-    });
-
-    // 8. Toggle Disponibilità Asta
-    this.container.querySelectorAll('.listone-availability-btn').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const playerId = btn.dataset.playerId;
-        const newState = store.togglePlayerAvailability(playerId);
-        notify.info(newState ? 'Calciatore segnato come DISPONIBILE' : 'Calciatore segnato come PRESO');
-      });
-    });
-
-    // 8. Click e Doppio Click / Doppio Tocco sulle righe
-    this.container.querySelectorAll('.listone-row').forEach(row => {
-      let lastTap = 0;
-
-      const handleGoToTacticalWithInspector = () => {
-        const playerId = row.dataset.playerId;
-        const teamId = row.dataset.teamId;
-
-        // 1. Imposta la squadra
-        if (teamId && teamId !== store.currentTeamId) {
-          store.setTeam(teamId);
-        }
-
-        // 2. Seleziona il giocatore
-        store.selectPlayer(playerId);
-
-        // 3. Passa alla vista 'tactical'
-        store.setView('tactical');
-
-        // 4. Desktop: apri sidebar destra se collassata
-        if (document.body.classList.contains('right-sidebar-collapsed')) {
-          document.body.classList.remove('right-sidebar-collapsed');
-        }
-
-        // 5. Mobile: apri il drawer della scheda laterale
-        const sidebarInspector = document.querySelector('#sidebar-inspector');
-        const sidebarTeams = document.querySelector('#sidebar-teams');
-        const backdrop = document.querySelector('#mobile-drawer-backdrop');
-        const toggleInspectorBtn = document.querySelector('#mobile-inspector-btn');
-        const toggleFieldBtn = document.querySelector('#mobile-field-btn');
-
-        if (window.innerWidth <= 900) {
-          sidebarInspector?.classList.add('mobile-open');
-          sidebarTeams?.classList.remove('mobile-open');
-          backdrop?.classList.remove('hidden');
-          if (toggleInspectorBtn) toggleInspectorBtn.classList.add('active');
-          if (toggleFieldBtn) toggleFieldBtn.classList.remove('active');
-        }
-
-        const player = store.getPlayer(playerId);
-        const team = store.getTeam(teamId);
-        notify.info(`Aperta lavagna tattica (${team ? team.name : ''}) con la scheda di ${player ? player.name : ''}`);
-      };
-
-      // Native dblclick per Desktop
-      row.addEventListener('dblclick', (e) => {
-        if (e.target.closest('.listone-availability-btn') || e.target.closest('.listone-app-input')) {
-          return;
-        }
-        e.preventDefault();
-        e.stopPropagation();
-        handleGoToTacticalWithInspector();
-      });
-
-      // Click e doppio tap per Mobile
-      row.addEventListener('click', (e) => {
-        if (e.target.closest('.listone-availability-btn') || e.target.closest('.listone-app-input')) {
-          return;
-        }
-        const now = Date.now();
-        const timesince = now - lastTap;
-
-        if (timesince < 350 && timesince > 0) {
-          e.stopPropagation();
-          handleGoToTacticalWithInspector();
-          lastTap = 0;
-        } else {
-          lastTap = now;
-          const playerId = row.dataset.playerId;
-          const teamId = row.dataset.teamId;
-          if (teamId && teamId !== store.currentTeamId) {
-            store.setTeam(teamId);
+    // Infinite scroll automatico all'avvicinamento del fondo
+    const scrollContainer = this.container.querySelector('.listone-page-container');
+    if (scrollContainer && !this._scrollListenerBound) {
+      this._scrollListenerBound = true;
+      scrollContainer.addEventListener('scroll', () => {
+        if (scrollContainer.scrollTop + scrollContainer.clientHeight >= scrollContainer.scrollHeight - 300) {
+          const { filtered } = this.getFilteredAndSortedPlayers();
+          if (this.renderLimit < filtered.length) {
+            this.renderLimit += 40;
+            this.render();
           }
-          store.selectPlayer(playerId);
         }
       });
-    });
-
-    // Listener Pulsante Filtri Mobile
-    const openFiltersBtn = this.container.querySelector('#open-listone-filters-btn');
-    openFiltersBtn?.addEventListener('click', () => {
-      this.openFiltersModal();
-    });
+    }
   }
 
-  openFiltersModal() {
-    const modal = document.getElementById('listone-filters-modal');
-    const modalBody = document.getElementById('listone-filters-modal-body');
-    if (!modal || !modalBody) return;
-
-    const teams = Object.values(store.teams || {});
-    let tempRole = this.activeRole;
-    let tempTeam = this.selectedTeam;
-    let tempAvail = this.availabilityFilter;
-    let tempSort = this.sortBy;
-    let tempOrder = this.sortOrder;
-
-    modalBody.innerHTML = `
-      <!-- Ruolo -->
-      <div class="modal-filter-section">
-        <label class="modal-filter-label"><i class="fa-solid fa-users"></i> Filtra per Ruolo:</label>
-        <div class="modal-filter-pills-grid" id="modal-listone-roles">
-          <button type="button" class="modal-role-pill ${tempRole === 'ALL' ? 'is-active' : ''}" data-role="ALL">Tutti</button>
-          <button type="button" class="modal-role-pill role-pill-p ${tempRole === 'P' ? 'is-active' : ''}" data-role="P">Portieri (P)</button>
-          <button type="button" class="modal-role-pill role-pill-d ${tempRole === 'D' ? 'is-active' : ''}" data-role="D">Difensori (D)</button>
-          <button type="button" class="modal-role-pill role-pill-c ${tempRole === 'C' ? 'is-active' : ''}" data-role="C">Centrocampisti (C)</button>
-          <button type="button" class="modal-role-pill role-pill-a ${tempRole === 'A' ? 'is-active' : ''}" data-role="A">Attaccanti (A)</button>
-        </div>
-      </div>
-
-      <!-- Squadra -->
-      <div class="modal-filter-section" style="margin-top: 12px;">
-        <label class="modal-filter-label"><i class="fa-solid fa-shield-halved"></i> Filtra per Squadra Serie A:</label>
-        <select class="fanta-input modal-select-input" id="modal-listone-team-select" style="width: 100%; height: 38px; font-size: 0.90rem; font-weight: 700;">
-          <option value="ALL" ${tempTeam === 'ALL' ? 'selected' : ''}>Tutte le Squadre (${teams.length})</option>
-          ${teams.map(t => `<option value="${t.id}" ${tempTeam === t.id ? 'selected' : ''}>${sanitizeHtml(t.name)}</option>`).join('')}
-        </select>
-      </div>
-
-      <!-- Disponibilità Asta & Preferiti -->
-      <div class="modal-filter-section" style="margin-top: 12px;">
-        <label class="modal-filter-label"><i class="fa-solid fa-filter"></i> Stato Asta & Preferiti:</label>
-        <div class="modal-filter-pills-grid">
-          <button type="button" class="modal-avail-pill ${tempAvail === 'ALL' ? 'is-active' : ''}" data-avail="ALL">Tutti</button>
-          <button type="button" class="modal-avail-pill fav-pill ${tempAvail === 'FAVORITES' ? 'is-active' : ''}" data-avail="FAVORITES"><i class="fa-solid fa-star"></i> Solo Preferiti</button>
-          <button type="button" class="modal-avail-pill avail-green ${tempAvail === 'AVAILABLE' ? 'is-active' : ''}" data-avail="AVAILABLE"><i class="fa-solid fa-circle-check"></i> Solo Disponibili</button>
-          <button type="button" class="modal-avail-pill avail-red ${tempAvail === 'TAKEN' ? 'is-active' : ''}" data-avail="TAKEN"><i class="fa-solid fa-circle-xmark"></i> Solo Presi</button>
-        </div>
-      </div>
-
-      <!-- Ordinamento -->
-      <div class="modal-filter-section" style="margin-top: 12px;">
-        <label class="modal-filter-label"><i class="fa-solid fa-arrow-down-wide-short"></i> Ordina Lista per:</label>
-        <div class="form-grid-2">
-          <select class="fanta-input modal-select-input" id="modal-listone-sort-select" style="height: 38px; font-size: 0.88rem; font-weight: 700;">
-            <option value="appetibilita" ${tempSort === 'appetibilita' ? 'selected' : ''}>Appetibilità</option>
-            <option value="fvm" ${tempSort === 'fvm' ? 'selected' : ''}>FantaValore (FVM)</option>
-            <option value="qtA" ${tempSort === 'qtA' ? 'selected' : ''}>Quotazione (QtA)</option>
-            <option value="fantamedia" ${tempSort === 'fantamedia' ? 'selected' : ''}>Fantamedia</option>
-            <option value="mediaVoto" ${tempSort === 'mediaVoto' ? 'selected' : ''}>Media Voto</option>
-            <option value="titolarita" ${tempSort === 'titolarita' ? 'selected' : ''}>% Titolarità</option>
-            <option value="gol" ${tempSort === 'gol' ? 'selected' : ''}>Gol Segnati</option>
-            <option value="assist" ${tempSort === 'assist' ? 'selected' : ''}>Assist</option>
-            <option value="name" ${tempSort === 'name' ? 'selected' : ''}>Nome Calciatore</option>
-          </select>
-          <select class="fanta-input modal-select-input" id="modal-listone-order-select" style="height: 38px; font-size: 0.88rem; font-weight: 700;">
-            <option value="desc" ${tempOrder === 'desc' ? 'selected' : ''}>Decrescente (Alto -> Basso)</option>
-            <option value="asc" ${tempOrder === 'asc' ? 'selected' : ''}>Crescente (Basso -> Alto)</option>
-          </select>
-        </div>
-      </div>
-    `;
-
-    // Ruolo clicks
-    modalBody.querySelectorAll('#modal-listone-roles .modal-role-pill').forEach(btn => {
-      btn.addEventListener('click', () => {
-        modalBody.querySelectorAll('#modal-listone-roles .modal-role-pill').forEach(b => b.classList.remove('is-active'));
-        btn.classList.add('is-active');
-        tempRole = btn.dataset.role;
-      });
+  updateSelectionHighlight() {
+    const selectedPlayer = store.getSelectedPlayer();
+    this.container.querySelectorAll('.player-card').forEach(card => {
+      const pId = card.dataset.playerId;
+      const isSelected = selectedPlayer && pId === selectedPlayer.id;
+      card.classList.toggle('is-selected', Boolean(isSelected));
     });
-
-    // Avail clicks
-    modalBody.querySelectorAll('.modal-avail-pill').forEach(btn => {
-      btn.addEventListener('click', () => {
-        modalBody.querySelectorAll('.modal-avail-pill').forEach(b => b.classList.remove('is-active'));
-        btn.classList.add('is-active');
-        tempAvail = btn.dataset.avail;
-      });
-    });
-
-    // Close
-    const closeBtn = document.getElementById('close-listone-filters-btn');
-    const closeHandler = () => {
-      modal.classList.add('hidden');
-      closeBtn?.removeEventListener('click', closeHandler);
-    };
-    closeBtn?.addEventListener('click', closeHandler);
-
-    // Reset button
-    const resetBtn = document.getElementById('reset-modal-listone-btn');
-    const resetHandler = () => {
-      this.activeRole = 'ALL';
-      this.selectedTeam = 'ALL';
-      this.availabilityFilter = 'ALL';
-      this.sortBy = 'appetibilita';
-      this.sortOrder = 'desc';
-      modal.classList.add('hidden');
-      this.render();
-      notify.info('Filtri ripristinati.');
-    };
-    resetBtn?.addEventListener('click', resetHandler);
-
-    // Apply button
-    const applyBtn = document.getElementById('apply-listone-filters-btn');
-    const applyHandler = () => {
-      const teamEl = document.getElementById('modal-listone-team-select');
-      const sortEl = document.getElementById('modal-listone-sort-select');
-      const orderEl = document.getElementById('modal-listone-order-select');
-
-      this.activeRole = tempRole;
-      this.availabilityFilter = tempAvail;
-      this.selectedTeam = teamEl ? teamEl.value : 'ALL';
-      this.sortBy = sortEl ? sortEl.value : 'appetibilita';
-      this.sortOrder = orderEl ? orderEl.value : 'desc';
-
-      modal.classList.add('hidden');
-      this.render();
-      applyBtn?.removeEventListener('click', applyHandler);
-    };
-    applyBtn?.addEventListener('click', applyHandler);
-
-    modal.classList.remove('hidden');
   }
 }

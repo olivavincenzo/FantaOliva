@@ -1,389 +1,347 @@
 /**
- * FantaOliva - Stili Card Giocatore (Football Management & Sports Analytics Premium SaaS)
+ * FantaOliva - Stili Card Giocatore (Editorial Minimal SaaS)
  */
 
 .player-card {
   position: relative;
-  width: 124px;
-  height: auto;
-  min-height: 48px;
-  background: var(--bg-surface);
+  width: 100%;
+  padding: 14px;
+  background: var(--paper);
   border-radius: var(--radius-xl);
-  padding: 4px 6px;
+  box-shadow: var(--card-shadow);
+  border: 1px solid var(--line);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 2px;
-  box-shadow: var(--shadow-sm);
-  cursor: grab;
-  touch-action: none;
-  transition: border-color var(--transition-fast), background-color var(--transition-fast);
+  box-sizing: border-box;
+  cursor: pointer;
   user-select: none;
-  border: 1px solid var(--border-color);
-}
-
-.player-card:active {
-  cursor: grabbing;
+  -webkit-user-select: none;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
 }
 
 .player-card:hover {
-  border-color: rgba(255, 255, 255, 0.25);
-  background: var(--bg-surface-elevated);
-  z-index: 30;
+  box-shadow: 0 4px 16px rgba(18, 18, 25, 0.06);
+  border-color: #d6d6dc;
 }
 
-/* Card Selezionata: sottile linea di evidenziazione rossa */
+.player-card:active {
+  transform: scale(0.995);
+}
+
+/* Card Selezionata */
 .player-card.is-selected {
-  border-color: var(--accent-red) !important;
-  background: var(--bg-surface-elevated);
-  box-shadow: 0 0 0 1px var(--accent-red) !important;
+  border-color: var(--ink) !important;
+  box-shadow: 0 0 0 1.5px var(--ink), var(--card-shadow) !important;
 }
 
-/* Card in fase di trascinamento */
-.player-card.is-being-dragged {
-  opacity: 0.3;
-  transform: scale(0.96);
-}
-
-/* Evidenziazione Drop Target */
-.player-card.drop-target-hover,
-.pitch-slot-card.drop-target-hover {
-  border-color: var(--accent-red) !important;
-  box-shadow: 0 0 8px rgba(229, 57, 53, 0.4) !important;
-}
-
-/* Riga Header Card: Ruolo + Nome + Stato Asta */
-.card-header-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  gap: 4px;
-  min-width: 0;
-}
-
-.player-name {
-  flex: 1;
-  font-family: var(--font-main);
-  font-weight: 700;
-  font-size: 0.78rem;
-  color: #ffffff;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-  text-align: left;
-}
-
-.card-top-bar {
-  display: flex;
-  align-items: center;
-  gap: 3px;
-  flex-shrink: 0;
-}
-
-.role-badge {
-  font-family: var(--font-main);
-  font-size: 0.60rem;
-  font-weight: 800;
-  padding: 1px 3px;
-  border-radius: 2px;
-  text-transform: uppercase;
-}
-
-.slot-role-tag-sub {
-  font-family: var(--font-main);
-  font-size: 0.58rem;
-  font-weight: 800;
-  padding: 0 2px;
-  border-radius: 2px;
-  text-transform: uppercase;
-  line-height: 1.1;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-/* Metriche Essenziali (FM, Titolarità, Appetibilità) */
-.card-stats-rows {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-  width: 100%;
-}
-
-.card-stats-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 4px;
-  white-space: nowrap;
-  width: 100%;
-}
-
-.stat-chip {
-  font-family: var(--font-main);
-  font-size: 0.62rem;
-  font-weight: 700;
-  color: var(--text-secondary);
-  background: transparent;
-  border: none;
-  line-height: 1.2;
-}
-
-.stat-chip.stat-fm {
-  color: #ffffff;
-  font-weight: 800;
-}
-
-.player-appetibilita {
-  font-family: var(--font-main);
-  font-size: 0.60rem;
-  font-weight: 700;
-  color: #f59e0b;
-  display: inline-flex;
-  align-items: center;
-  gap: 2px;
-}
-
-.player-appetibilita i {
-  font-size: 0.50rem;
-}
-
-.player-appetibilita.app-high {
-  color: var(--accent-red);
-}
-
-.player-appetibilita.app-mid {
-  color: #f59e0b;
-}
-
-.player-appetibilita.app-low {
-  color: var(--text-dim);
-}
-
-.tit-badge {
-  font-family: var(--font-main);
-  font-size: 0.60rem;
-  font-weight: 700;
-  line-height: 1.1;
-}
-
-.tit-badge.tit-high {
-  color: var(--accent-success);
-}
-
-.tit-badge.tit-mid-high {
-  color: #3b82f6;
-}
-
-.tit-badge.tit-mid {
-  color: #f59e0b;
-}
-
-.tit-badge.tit-low {
-  color: var(--accent-red);
-}
-
-.fanta-badge {
-  font-size: 0.58rem;
-  line-height: 1;
-}
-
-.ballottaggio-pill {
-  color: #f59e0b;
-  font-size: 0.58rem;
-  font-weight: 700;
-  display: inline-flex;
-  align-items: center;
-  gap: 2px;
-}
-
-/* Variante Compatta per Panchina (Riga Tabulare Pulita) */
-.player-card.is-compact {
-  width: 100%;
-  flex: 1;
-  min-width: 0;
-  height: 48px;
-  min-height: 48px;
-  flex-direction: row;
-  align-items: center;
-  padding: 4px 8px;
-  gap: 8px;
-  border-radius: var(--radius-xs);
-  background: var(--bg-surface);
-  border: 1px solid var(--border-color);
-}
-
-.player-card.is-compact:hover {
-  background: var(--bg-surface-elevated);
-}
-
-.player-card.is-compact .card-top-bar {
-  flex-direction: column;
-  gap: 2px;
-}
-
-.player-card.is-compact .card-info {
-  text-align: left;
-  flex: 1;
-  min-width: 0;
-  overflow: hidden;
-}
-
-.player-card.is-compact .card-avatar-container {
-  margin: 0;
-  flex-shrink: 0;
-}
-
-.player-card.is-compact .card-avatar-initials {
-  width: 26px;
-  height: 26px;
-  font-size: 0.76rem;
-  background: var(--bg-primary);
-  border: 1px solid var(--border-color);
-  border-radius: 50%;
-  color: var(--text-primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-}
-
-.player-card.is-compact .player-name {
-  font-size: 0.82rem;
-  font-weight: 700;
-  max-width: none !important;
-  width: 100%;
-  margin: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-align: left;
-}
-
-.player-card.is-compact .player-submeta {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  font-size: 0.65rem;
-  gap: 6px;
-  color: var(--text-secondary);
-}
-
-.player-card.is-compact .card-bottom-badges {
-  flex-direction: column;
-  align-items: flex-end;
-  flex-shrink: 0;
-}
-
-/* Stato Asta Calciatore */
+/* Card Giocatore Non Disponibile / Preso */
+.player-card.is-taken,
 .player-card.is-unavailable {
-  opacity: 0.5;
-  filter: grayscale(0.6);
+  opacity: 0.58;
 }
 
+.player-card.is-taken:hover,
 .player-card.is-unavailable:hover {
   opacity: 0.85;
 }
 
-.card-taken-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(15, 17, 21, 0.55);
-  border-radius: inherit;
+/* Header della Card */
+.player-top {
   display: flex;
   align-items: center;
-  justify-content: center;
-  z-index: 5;
-  pointer-events: none;
+  gap: 10px;
+  width: 100%;
 }
 
-.taken-stamp {
-  font-family: var(--font-main);
-  font-weight: 800;
-  font-size: 0.65rem;
-  letter-spacing: 0.04em;
-  color: var(--accent-red);
-  border: 1px solid var(--accent-red);
-  background: var(--accent-red-subtle);
-  padding: 1px 4px;
-  border-radius: 2px;
+.avatar {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  place-items: center;
+  color: var(--body);
+  background: var(--soft);
+  border-radius: var(--radius-md);
+  font-size: 11px;
+  font-weight: 830;
+  letter-spacing: -0.04em;
 }
 
-.asta-availability-dot {
-  font-size: 0.68rem;
+.identity {
+  min-width: 0;
+  flex: 1;
+}
+
+.player-name {
+  overflow: hidden;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 780;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--ink);
+}
+
+.player-meta {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  overflow: hidden;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 540;
+  line-height: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rank-badge {
+  font-weight: 780;
+  color: var(--ink);
+  background: var(--soft);
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 9.5px;
+}
+
+.separator {
+  color: #c0c0c7;
+}
+
+/* Bottone Disponibilità / Preso */
+.availability {
+  display: grid;
+  width: 26px;
+  height: 26px;
+  flex: 0 0 26px;
+  place-items: center;
+  border-radius: 50%;
+  border: none;
   cursor: pointer;
+  padding: 0;
+  transition: transform var(--transition-fast);
+}
+
+.availability svg {
+  width: 14px;
+  height: 14px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.2;
+}
+
+.availability.available {
+  color: var(--green);
+  background: var(--green-bg);
+}
+
+.availability.taken {
+  color: var(--red);
+  background: var(--red-bg);
+}
+
+.availability:hover {
+  transform: scale(1.1);
+}
+
+.availability:active {
+  transform: scale(0.92);
+}
+
+/* Griglia Metriche Principali */
+.core-metrics {
+  display: grid;
+  grid-template-columns: 1.1fr 1.05fr .66fr 1.15fr;
+  gap: 4px;
+  padding: 12px 0 11px;
+  margin-top: 12px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  width: 100%;
+}
+
+.metric {
+  min-width: 0;
+}
+
+.metric-value {
+  display: flex;
+  align-items: center;
+  min-height: 18px;
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 790;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.metric-value.elite {
+  color: var(--green);
+}
+
+.metric-label {
+  display: block;
+  overflow: hidden;
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 8.5px;
+  font-weight: 620;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.role {
+  display: grid;
+  width: 23px;
+  height: 19px;
+  place-items: center;
+  color: var(--body);
+  background: var(--role-bg);
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 860;
+}
+
+.set-pieces {
+  display: flex;
+  align-items: center;
+  min-height: 18px;
+  color: var(--body);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+/* Fascia Valori Mercato & Statistiche Stagionali */
+.data-rail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 11px;
+  width: 100%;
+}
+
+.market-list {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 5px;
+}
+
+.market {
+  display: flex;
+  align-items: baseline;
+  gap: 3px;
+  padding: 4px 7px;
+  background: var(--soft);
+  border-radius: 7px;
+  line-height: 1;
+}
+
+.market label {
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 620;
+}
+
+.market strong {
+  color: var(--ink);
+  font-size: 11px;
+  font-weight: 810;
+}
+
+.season {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.season span {
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.season strong {
+  color: var(--ink);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+/* Badge Ballottaggio / Duello */
+.duel {
   display: inline-flex;
   align-items: center;
+  gap: 5px;
+  padding: 5px 8px;
+  margin-top: 10px;
+  color: var(--violet);
+  background: var(--violet-bg);
+  border-radius: var(--radius-pill);
+  font-size: 9px;
+  font-weight: 680;
+  line-height: 1;
+  width: fit-content;
+}
+
+.duel svg {
+  width: 11px;
+  height: 11px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+/* Slot Vuoto */
+.player-card.empty-slot {
+  border: 1.5px dashed var(--line);
+  background: transparent;
+  box-shadow: none;
+  min-height: 68px;
   justify-content: center;
-  transition: var(--transition-fast);
-  padding: 1px;
+  align-items: center;
 }
 
-.asta-availability-dot.is-available {
-  color: var(--accent-success);
-}
-
-.asta-availability-dot.is-taken {
-  color: var(--accent-red);
-}
-
-.asta-availability-dot:hover {
-  transform: scale(1.15);
-}
-
-/* Drag Ghost */
-.tactical-drag-ghost {
-  position: fixed;
-  pointer-events: none;
-  z-index: 10000;
-  transform: translate(-50%, -50%);
-  background: var(--bg-surface);
-  border: 1px solid var(--accent-red);
-  box-shadow: var(--shadow-md);
-  border-radius: var(--radius-xs);
-  padding: 5px 10px;
+.empty-slot-content {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
-  color: #ffffff;
-}
-
-.ghost-badge {
-  background: var(--accent-red);
-  color: #ffffff;
-  font-family: var(--font-main);
-  font-weight: 800;
-  font-size: 0.75rem;
-  width: 18px;
-  height: 18px;
-  border-radius: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.ghost-name {
-  font-family: var(--font-main);
-  font-weight: 700;
+  color: var(--muted);
   font-size: 0.80rem;
+  font-weight: 670;
 }
 
-.ghost-role {
-  font-size: 0.68rem;
-  color: var(--text-secondary);
-  font-weight: 700;
-  margin-left: 4px;
+.empty-icon {
+  font-size: 1rem;
 }
 
-/* Slot Card Tattica */
-.pitch-slot-card {
-  cursor: grab;
+/* Variante Compatta per Panchina e Liste Strette */
+.player-card.is-compact {
+  padding: 10px 12px;
 }
 
-.pitch-slot-card:active {
-  cursor: grabbing;
+.player-card.is-compact .core-metrics {
+  padding: 8px 0;
+  margin-top: 8px;
+}
+
+.player-card.is-compact .data-rail {
+  padding-top: 8px;
 }

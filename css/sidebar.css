@@ -36,7 +36,7 @@
   width: 100%;
   background: none;
   border: none;
-  color: #ffffff;
+  color: var(--ink);
   padding: 5px 24px 5px 24px;
   font-family: var(--font-body);
   font-size: 0.78rem;
@@ -66,7 +66,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 7px 12px;
+  padding: 8px 12px;
   border-bottom: 1px solid var(--border-subtle);
   cursor: pointer;
   transition: var(--transition-fast);
@@ -74,12 +74,12 @@
 }
 
 .team-list-item:hover {
-  background: var(--bg-surface-elevated);
+  background: var(--soft);
 }
 
 .team-list-item.is-active {
-  background: var(--bg-surface-elevated);
-  border-left: 2px solid var(--accent-red);
+  background: var(--soft);
+  border-left: 3px solid var(--ink);
 }
 
 .team-meta {
@@ -99,10 +99,10 @@
 
 .team-title {
   font-family: var(--font-main);
-  font-weight: 700;
+  font-weight: 780;
   font-size: 0.85rem;
-  color: #ffffff;
-  letter-spacing: -0.01em;
+  color: var(--ink);
+  letter-spacing: -0.02em;
   text-transform: uppercase;
   line-height: 1.2;
 }
@@ -122,7 +122,7 @@
 }
 
 .team-list-item.is-active .team-active-indicator {
-  color: var(--accent-red);
+  color: var(--ink);
 }
 
 /* Maniglia Resizer */
@@ -147,18 +147,18 @@
   content: '';
   width: 2px;
   height: 28px;
-  background: rgba(255, 255, 255, 0.10);
+  background: var(--line);
   border-radius: 1px;
 }
 
 .sidebar-resizer:hover,
 .sidebar-resizer.is-dragging {
-  background: var(--accent-red-subtle);
+  background: var(--soft);
 }
 
 .sidebar-resizer:hover::after,
 .sidebar-resizer.is-dragging::after {
-  background: var(--accent-red);
+  background: var(--ink);
   height: 40px;
 }
 
@@ -186,7 +186,7 @@ body.is-resizing-sidebar .sidebar-resizer {
 }
 
 .inspector-player-summary {
-  padding: 8px 12px;
+  padding: 10px 14px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -195,13 +195,13 @@ body.is-resizing-sidebar .sidebar-resizer {
 }
 
 .inspector-name {
-  font-size: 0.95rem;
-  font-weight: 800;
-  color: #ffffff;
+  font-size: 0.98rem;
+  font-weight: 780;
+  color: var(--ink);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   flex: 1;
   min-width: 0;
   text-align: left;
@@ -218,12 +218,12 @@ body.is-resizing-sidebar .sidebar-resizer {
 .status-pill {
   font-size: 0.65rem;
   font-weight: 700;
-  padding: 1px 4px;
-  border-radius: 2px;
+  padding: 2px 6px;
+  border-radius: var(--radius-pill);
 }
 
 .team-tag {
-  font-size: 0.65rem;
+  font-size: 0.68rem;
   font-weight: 600;
   color: var(--text-secondary);
 }
@@ -232,12 +232,12 @@ body.is-resizing-sidebar .sidebar-resizer {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 26px;
-  height: 24px;
-  background: var(--bg-surface-elevated);
+  width: 28px;
+  height: 26px;
+  background: var(--soft);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-xs);
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--text-dim);
   font-size: 0.85rem;
   cursor: pointer;
   transition: all var(--transition-fast);
@@ -262,8 +262,8 @@ body.is-resizing-sidebar .sidebar-resizer {
   font-family: var(--font-main);
   font-size: 0.68rem;
   font-weight: 700;
-  padding: 2px 6px;
-  border-radius: var(--radius-xs);
+  padding: 3px 8px;
+  border-radius: var(--radius-pill);
   cursor: pointer;
   border: 1px solid transparent;
   transition: var(--transition-fast);
@@ -271,59 +271,55 @@ body.is-resizing-sidebar .sidebar-resizer {
 }
 
 .inspector-auction-toggle.is-available {
-  background: rgba(34, 197, 94, 0.12);
-  border-color: var(--accent-success);
-  color: var(--accent-success);
+  background: var(--green-bg);
+  border-color: var(--green);
+  color: var(--green);
 }
 
 .inspector-auction-toggle.is-taken {
-  background: var(--accent-red-subtle);
-  border-color: var(--accent-red);
-  color: var(--accent-red);
+  background: var(--red-bg);
+  border-color: var(--red);
+  color: var(--red);
 }
 
-/* Tab Navigation (Senza sfondo, senza bordi, con divisori verticali) */
+/* Tab Navigation (Pillole o divisori puliti) */
 .inspector-tabs-nav {
   display: flex;
   border-top: 1px solid var(--border-color);
-  background: transparent;
-  padding: 0;
-  gap: 0;
+  background: var(--soft);
+  padding: 3px;
+  gap: 3px;
 }
 
 .inspector-tab-btn {
   flex: 1;
   background: transparent;
   border: none;
-  padding: 8px 4px;
+  padding: 6px 4px;
   font-family: var(--font-main);
   font-size: 0.72rem;
   font-weight: 600;
-  color: var(--text-secondary);
+  color: var(--muted);
   cursor: pointer;
-  transition: color var(--transition-fast);
+  transition: all var(--transition-fast);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 4px;
   outline: none;
-  border-radius: 0;
+  border-radius: var(--radius-xs);
   position: relative;
 }
 
-.inspector-tab-btn+.inspector-tab-btn {
-  border-left: 1px solid rgba(255, 255, 255, 0.15);
-}
-
 .inspector-tab-btn:hover {
-  color: #ffffff;
-  background: transparent;
+  color: var(--ink);
 }
 
 .inspector-tab-btn.is-active {
-  color: #ffffff;
-  background: #ffffff0d;
-  font-weight: 700;
+  color: var(--ink);
+  background: var(--paper);
+  font-weight: 780;
+  box-shadow: var(--card-shadow);
 }
 
 

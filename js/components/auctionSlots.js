@@ -1,28 +1,22 @@
 /**
- * Componente per la visualizzazione della Guida Asta per Slot
+ * Componente per la visualizzazione della Guida Asta per Slot (Editorial Minimal Design)
  * Organizza i calciatori per ciascun ruolo (P, D, C, A) in 4 Slot da 10 giocatori ciascuno,
  * ordinati in modo decrescente in base all'Indice di Appetibilità.
- * Include gestione in tempo reale dello stato asta (Disponibile / Preso).
+ * Disposizione in colonna singola a sviluppo verticale su mobile con card a larghezza intera.
  */
 
 import { store } from '../store.js';
-import { sanitizeHtml, getTitolaritaClass } from '../utils/helpers.js';
+import { createPlayerCard } from './playerCard.js';
+import { sanitizeHtml } from '../utils/helpers.js';
 import { notify } from '../utils/notifications.js';
 
 export class AuctionSlotsComponent {
   constructor(containerId) {
     this.container = document.getElementById(containerId);
-    this.activeRole = 'A'; // 'P' | 'D' | 'C' | 'A' | 'ALL'
+    this.activeRole = 'A'; // 'P' | 'D' | 'C' | 'A'
     this.searchQuery = '';
     this.onlyAvailable = false;
     this.onlyFavorites = false;
-    // Su mobile: Slot 1 aperto di default, gli altri collassati (apribili al click)
-    this.collapsedSlots = {
-      slot1: false,
-      slot2: true,
-      slot3: true,
-      slot4: true
-    };
   }
 
   init() {
@@ -37,9 +31,21 @@ export class AuctionSlotsComponent {
       }
     });
 
+    store.subscribe('auction:availabilityChanged', () => {
+      if (store.activeView === 'auction_slots') {
+        this.render();
+      }
+    });
+
     store.subscribe('favorite:toggled', () => {
       if (store.activeView === 'auction_slots') {
         this.render();
+      }
+    });
+
+    store.subscribe('player:selected', () => {
+      if (store.activeView === 'auction_slots') {
+        this.updateSelectionHighlight();
       }
     });
 
@@ -58,12 +64,6 @@ export class AuctionSlotsComponent {
 
   setRole(role) {
     this.activeRole = role;
-    this.collapsedSlots = {
-      slot1: false,
-      slot2: true,
-      slot3: true,
-      slot4: true
-    };
     this.render();
   }
 
@@ -88,217 +88,161 @@ export class AuctionSlotsComponent {
     const data = store.getAuctionSlotsData(this.activeRole, this.searchQuery, this.onlyAvailable, this.onlyFavorites);
 
     const rolesMeta = [
-      { key: 'A', label: 'Attaccanti', shortLabel: 'A', icon: 'fa-bolt', pillClass: 'role-pill-a' },
-      { key: 'C', label: 'Centrocampisti', shortLabel: 'C', icon: 'fa-gears', pillClass: 'role-pill-c' },
-      { key: 'D', label: 'Difensori', shortLabel: 'D', icon: 'fa-shield', pillClass: 'role-pill-d' },
-      { key: 'P', label: 'Portieri', shortLabel: 'P', icon: 'fa-hands', pillClass: 'role-pill-p' }
+      { key: 'A', label: 'Attaccanti', shortLabel: 'ATT' },
+      { key: 'C', label: 'Centrocampisti', shortLabel: 'CEN' },
+      { key: 'D', label: 'Difensori', shortLabel: 'DIF' },
+      { key: 'P', label: 'Portieri', shortLabel: 'POR' }
     ];
 
     const slotTiersMeta = [
       {
         tier: 1,
         slotKey: 'slot1',
-        title: '1º Slot - Top Assoluti',
+        title: '1º Slot · Top Assoluti',
         subtitle: 'Titolari inamovibili, rigoristi e top player',
         headerClass: 'slot-1-header',
-        icon: 'fa-crown',
         color: '#f59e0b'
       },
       {
         tier: 2,
         slotKey: 'slot2',
-        title: '2º Slot - Ottimi Titolari',
+        title: '2º Slot · Ottimi Titolari',
         subtitle: 'Rendimento costante e bonus frequenti',
         headerClass: 'slot-2-header',
-        icon: 'fa-star',
         color: '#38bdf8'
       },
       {
         tier: 3,
         slotKey: 'slot3',
-        title: '3º Slot - Titolari / Low Cost',
+        title: '3º Slot · Titolari / Low Cost',
         subtitle: 'Buoni titolari per completare i reparti',
         headerClass: 'slot-3-header',
-        icon: 'fa-shield-halved',
         color: '#4ade80'
       },
       {
         tier: 4,
         slotKey: 'slot4',
-        title: '4º Slot - Scommesse / Ballottaggi',
-        subtitle: 'Jolly, giovani talenti e potenziali sorprese',
+        title: '4º Slot · Scommesse & Jolly',
+        subtitle: 'Giovani talenti, jolly e potenziali sorprese',
         headerClass: 'slot-4-header',
-        icon: 'fa-dice',
         color: '#c084fc'
       }
     ];
 
     const currentRoleData = data[this.activeRole] || { slot1: [], slot2: [], slot3: [], slot4: [] };
+    const selectedPlayer = store.getSelectedPlayer();
 
     this.container.innerHTML = `
       <div class="auction-slots-page">
 
-        <!-- BARRA STRUMENTI & FILTRI SLOT ASTA (Fluida e Responsive) -->
-        <div class="auction-toolbar-card">
-          <div class="auction-toolbar-row">
-
-            <!-- Ricerca Testuale Ampia -->
-            <div class="auction-search-box">
-              <i class="fa-solid fa-magnifying-glass search-icon"></i>
-              <input 
-                type="text" 
-                class="auction-search-input" 
-                placeholder="Cerca calciatore o club..." 
-                value="${sanitizeHtml(this.searchQuery)}"
-              />
-              ${this.searchQuery ? `<button class="auction-search-clear" title="Pulisci ricerca"><i class="fa-solid fa-xmark"></i></button>` : ''}
-            </div>
-
-            <!-- Pulsante Filtri Mobile -->
-            <button id="open-auction-filters-btn" class="auction-mobile-filters-btn" title="Apri filtri avanzati">
-              <i class="fa-solid fa-sliders"></i>
-              <span>Filtri</span>
-              ${this.onlyAvailable || this.onlyFavorites || this.activeRole !== 'A' ? '<span class="filter-active-dot"></span>' : ''}
-            </button>
-
-            <!-- Tabs Ruolo Rapido (Desktop) -->
-            <div class="auction-role-tabs" aria-label="Filtro per Ruolo Asta">
-              ${rolesMeta.map(r => `
-                <button class="auction-role-btn ${r.pillClass} ${this.activeRole === r.key ? 'is-active' : ''}" data-role="${r.key}" title="${r.label}">
-                  <i class="fa-solid ${r.icon}"></i>
-                  <span class="role-label-desktop">${r.label}</span>
-                  <span class="role-label-mobile">${r.shortLabel}</span>
-                </button>
-              `).join('')}
-            </div>
-
-            <!-- Filtro Preferiti (Desktop) -->
-            <button id="toggle-filter-favorites-btn" class="auction-filter-btn fav-filter-btn ${this.onlyFavorites ? 'is-active' : ''}" title="Mostra solo i giocatori contrassegnati come preferiti">
-              <i class="fa-solid fa-star"></i>
-              <span>Preferiti</span>
-            </button>
-
-            <!-- Filtro Disponibili (Desktop) -->
-            <button id="toggle-filter-available-btn" class="auction-filter-btn ${this.onlyAvailable ? 'is-active' : ''}" title="Mostra solo i giocatori ancora disponibili per l'asta">
-              <i class="fa-solid ${this.onlyAvailable ? 'fa-eye' : 'fa-filter'}"></i>
-              <span>${this.onlyAvailable ? 'Solo Disponibili' : 'Tutti'}</span>
-            </button>
-
-            <!-- Reset Stato Asta (Desktop) -->
-            <button id="reset-auction-status-btn" class="auction-filter-btn reset-btn" title="Ripristina tutti i giocatori come disponibili per una nuova asta">
-              <i class="fa-solid fa-rotate-left"></i>
-              <span>Reset Asta</span>
-            </button>
-
+        <!-- HEADER EDITORIAL MINIMAL -->
+        <header class="topbar auction-header">
+          <div>
+            <p class="context">Asta 2026/27 · Guida per Slot</p>
+            <h1 class="team-title-heading">SLOT ASTA</h1>
           </div>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <button class="circle-button" id="reset-auction-status-btn" type="button" aria-label="Reset Asta" title="Ripristina tutti i giocatori come Disponibili">
+              ↺
+            </button>
+          </div>
+        </header>
+
+        <!-- BARRA DI RICERCA EDITORIALE -->
+        <div class="search" role="search" aria-label="Cerca calciatori per l'asta">
+          <svg class="search-icon" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="6.5" />
+            <path d="m16 16 4 4" />
+          </svg>
+          <input 
+            type="text" 
+            class="auction-search-input search-input" 
+            placeholder="Cerca calciatore o squadra per l'asta" 
+            value="${sanitizeHtml(this.searchQuery)}"
+            autocomplete="off"
+          />
+          ${this.searchQuery ? `<button class="auction-search-clear search-clear" aria-label="Pulisci ricerca">&times;</button>` : ''}
         </div>
 
-        <!-- Griglia dei 4 Slot da 10 Giocatori (con supporto Accordion su mobile) -->
-        <div class="auction-slots-grid">
-          ${slotTiersMeta.map((tier, tierIdx) => {
-      const players = currentRoleData[tier.slotKey] || [];
-      const offset = tierIdx * 10;
-      const availableCount = players.filter(p => p.isAvailable !== false).length;
-      const isCollapsed = Boolean(this.collapsedSlots?.[tier.slotKey]);
+        <!-- FILTRI RUOLI & OPZIONI ASTA -->
+        <nav class="filters" aria-label="Filtri Ruolo Asta">
+          ${rolesMeta.map(r => `
+            <button class="filter ${this.activeRole === r.key ? 'active' : ''}" data-role="${r.key}" type="button">
+              ${r.shortLabel}
+            </button>
+          `).join('')}
 
-      return `
-              <div class="slot-tier-column ${isCollapsed ? 'is-collapsed' : ''}" data-slot="${tier.slotKey}">
+          <button id="toggle-filter-available-btn" class="filter ${this.onlyAvailable ? 'active' : ''}" type="button" title="Mostra solo i giocatori ancora disponibili per l'asta">
+            <i class="fa-solid ${this.onlyAvailable ? 'fa-circle-check' : 'fa-filter'}"></i> ${this.onlyAvailable ? 'Solo Disponibili' : 'Disponibili'}
+          </button>
+
+          <button id="toggle-filter-favorites-btn" class="filter ${this.onlyFavorites ? 'active' : ''}" type="button" title="Mostra solo i giocatori preferiti">
+            <i class="fa-${this.onlyFavorites ? 'solid' : 'regular'} fa-star"></i> Preferiti
+          </button>
+        </nav>
+
+        <!-- DISPOSIZIONE VERTICALE DEGLI SLOT -->
+        <div class="auction-slots-grid">
+          ${slotTiersMeta.map((tier) => {
+            const players = currentRoleData[tier.slotKey] || [];
+            const availableCount = players.filter(p => p.isAvailable !== false).length;
+
+            return `
+              <section class="slot-tier-column" data-slot="${tier.slotKey}">
                 <div class="slot-tier-header ${tier.headerClass}">
                   <div class="slot-tier-title-box">
-                    <h3><i class="fa-solid ${tier.icon}"></i> ${tier.title}</h3>
+                    <h3>${tier.title}</h3>
                     <div class="slot-tier-desc">${tier.subtitle}</div>
                   </div>
                   <div class="slot-header-right-meta">
                     <span class="slot-count-badge" title="Disponibili / Totale nello Slot">
-                      <span style="color: var(--accent-neon-green);">${availableCount}</span>/${players.length}
+                      <strong>${availableCount}</strong>/${players.length}
                     </span>
-                    <i class="fa-solid fa-chevron-down slot-accordion-arrow"></i>
                   </div>
                 </div>
 
-                <div class="slot-players-list">
+                <div class="slot-players-list" id="slot-list-${tier.slotKey}">
                   ${players.length === 0 ? `
-                    <div class="slot-empty-state">
-                      <i class="fa-solid fa-user-slash"></i>
-                      <p>Nessun giocatore corrisponde ai filtri attivi.</p>
+                    <div class="slot-empty-state" style="text-align: center; padding: 24px 12px; color: var(--muted); background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius-lg);">
+                      <p style="font-size: 12px; font-weight: 580;">Nessun calciatore trovato in questo slot</p>
                     </div>
-                  ` : players.map((p, idx) => {
-        const rankNum = offset + idx + 1;
-        const fm = p.stats?.fantamedia ? Number(p.stats.fantamedia).toFixed(2) : '-';
-        const mv = p.stats?.mediaVoto ? Number(p.stats.mediaVoto).toFixed(2) : '-';
-        const gol = p.stats?.gol || 0;
-        const ass = p.stats?.assist || 0;
-        const appVal = p.appetibilita !== undefined ? Number(p.appetibilita) : 50;
-        const titolarita = p.stats?.titolarita ?? p.titolaritaPerc ?? 50;
-        const titClass = getTitolaritaClass(titolarita);
-        const isAvailable = p.isAvailable !== false;
-        const qtA = p.quotazioni?.qtA ?? '-';
-        const fvm = p.quotazioni?.fvm ?? '-';
-        const mantraRole = p.mantraRole || '';
-
-        return `
-                      <div class="slot-player-card ${!isAvailable ? 'is-taken' : ''}" data-player-id="${p.id}" data-team-id="${p.teamId || ''}" title="${sanitizeHtml(p.name)} (${sanitizeHtml(p.teamName || 'Serie A')}) - Doppio click per aprire la Lavagna Tattica">
-                        
-                        <span class="slot-player-rank">#${rankNum}</span>
-                        <span class="slot-role-tag-mini" title="${mantraRole ? `Ruolo Mantra: ${mantraRole}` : ''}">${p.role || p.classicRole}${mantraRole ? ` · ${mantraRole}` : ''}</span>
-                        <span class="slot-player-name" title="${sanitizeHtml(p.name)}">${sanitizeHtml(p.name)}</span>
-                        <span class="slot-team-tag">${sanitizeHtml(p.teamName || 'Serie A')}</span>
-                        
-                        <div class="slot-role-and-actions">
-                          ${!isAvailable ? `<span class="slot-taken-badge">PRESO</span>` : ''}
-                          <button class="slot-fav-star-btn ${p.isFavorite ? 'is-fav' : ''}" data-player-id="${p.id}" title="${p.isFavorite ? 'Rimuovi dai Preferiti' : 'Aggiungi ai Preferiti'}">
-                            <i class="fa-${p.isFavorite ? 'solid' : 'regular'} fa-star"></i>
-                          </button>
-                          <button class="slot-availability-dot-btn ${isAvailable ? 'is-available' : 'is-taken'}" data-player-id="${p.id}" title="${isAvailable ? 'Disponibile all\'asta (clicca per segnare PRESO)' : 'PRESO (clicca per segnare DISPONIBILE)'}">
-                            <i class="fa-solid ${isAvailable ? 'fa-circle-check' : 'fa-circle-xmark'}"></i>
-                          </button>
-                        </div>
-
-                        <div class="slot-appetibilita-box" title="Modifica Indice Appetibilità (0-100)">
-                          <i class="fa-solid fa-fire" style="color: #ff4d4d; font-size: 0.85rem;"></i>
-                          <input 
-                            type="number" 
-                            class="slot-appetibilita-input" 
-                            data-player-id="${p.id}" 
-                            min="0" 
-                            max="100" 
-                            value="${appVal}"
-                          />
-                          <span class="index-suffix">/100</span>
-                        </div>
-
-                        <div class="slot-titolarita-box">
-                          <span class="slot-tit-badge ${titClass}" title="Probabilità di Titolarità in Serie A">${titolarita}% Tit</span>
-                        </div>
-
-                        ${qtA !== '-' ? `<span class="slot-stat-pill" title="Quotazione Attuale 2026/27">Qt: <strong>${qtA}</strong></span>` : ''}
-                        ${fvm !== '-' ? `<span class="slot-stat-pill" title="FantaValore di Mercato">FVM: <strong>${fvm}</strong></span>` : ''}
-                        <span class="slot-stat-pill" title="Fantamedia">FM: <strong>${fm}</strong></span>
-                        <span class="slot-stat-pill" title="Media Voto">MV: <strong>${mv}</strong></span>
-                        ${gol > 0 ? `<span class="slot-stat-pill stat-gol" title="Gol segnati">⚽ ${gol}</span>` : ''}
-                        ${ass > 0 ? `<span class="slot-stat-pill stat-ass" title="Assist forniti">🅰️ ${ass}</span>` : ''}
-                        ${p.isPenaltyTaker ? `<span class="slot-specialist-chip" title="1º Rigorista">🎯 Rigori</span>` : ''}
-                        ${p.isFreeKickTaker ? `<span class="slot-specialist-chip" title="Tiratore Punizioni">📐 Punizioni</span>` : ''}
-                        ${p.isCornerTaker ? `<span class="slot-specialist-chip" title="Tiratore Corner">🚩 Corner</span>` : ''}
-
-                      </div>
-                    `;
-      }).join('')}
+                  ` : ''}
                 </div>
-              </div>
+              </section>
             `;
-    }).join('')}
+          }).join('')}
         </div>
 
       </div>
     `;
+
+    // Popola le card giocatori Editorial Minimal per ciascun tier
+    slotTiersMeta.forEach((tier, tierIdx) => {
+      const players = currentRoleData[tier.slotKey] || [];
+      const listEl = this.container.querySelector(`#slot-list-${tier.slotKey}`);
+      if (!listEl || players.length === 0) return;
+
+      const offset = tierIdx * 10;
+      players.forEach((p, idx) => {
+        const rankNum = offset + idx + 1;
+        const isSelected = selectedPlayer && selectedPlayer.id === p.id;
+
+        const card = createPlayerCard(p, {
+          rank: rankNum,
+          isSelected,
+          isLineup: false
+        });
+
+        listEl.appendChild(card);
+      });
+    });
 
     this.bindEvents();
   }
 
   bindEvents() {
     // Ruolo Tabs
-    this.container.querySelectorAll('.auction-role-btn').forEach(btn => {
+    this.container.querySelectorAll('.filters .filter[data-role]').forEach(btn => {
       btn.addEventListener('click', () => {
         this.setRole(btn.dataset.role);
       });
@@ -345,231 +289,14 @@ export class AuctionSlotsComponent {
       this.searchQuery = '';
       this.render();
     });
-
-    // Live Appetibilità Input Editing
-    this.container.querySelectorAll('.slot-appetibilita-input').forEach(input => {
-      const updateApp = () => {
-        const playerId = input.dataset.playerId;
-        const val = Math.min(100, Math.max(0, Number(input.value) || 0));
-        store.updatePlayer(playerId, { appetibilita: val });
-        notify.success(`Appetibilità aggiornata a ${val}/100!`);
-      };
-
-      input.addEventListener('change', (e) => {
-        e.stopPropagation();
-        updateApp();
-      });
-
-      input.addEventListener('click', (e) => e.stopPropagation());
-    });
-
-    // Toggle Rapido Preferiti nel singolo Slot
-    this.container.querySelectorAll('.slot-fav-star-btn').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const playerId = btn.dataset.playerId;
-        const newState = store.togglePlayerFavorite(playerId);
-        notify.success(newState ? '⭐ Aggiunto ai Preferiti!' : '⭐ Rimosso dai Preferiti');
-      });
-    });
-
-    // Toggle Rapido Disponibilità Asta nel singolo Slot (Icona accanto al ruolo)
-    this.container.querySelectorAll('.slot-availability-dot-btn').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const playerId = btn.dataset.playerId;
-        const newState = store.togglePlayerAvailability(playerId);
-        notify.info(newState ? 'Giocatore segnato come DISPONIBILE' : 'Giocatore segnato come PRESO');
-      });
-    });
-
-    // Accordion Toggle: Cliccando sull'header dello slot espandi/collassi la lista su mobile
-    this.container.querySelectorAll('.slot-tier-header').forEach(header => {
-      header.addEventListener('click', (e) => {
-        if (e.target.closest('button') || e.target.closest('input')) return;
-        const column = header.closest('.slot-tier-column');
-        if (column) {
-          const isNowCollapsed = column.classList.toggle('is-collapsed');
-          const slotKey = column.dataset.slot;
-          if (slotKey) {
-            this.collapsedSlots[slotKey] = isNowCollapsed;
-          }
-        }
-      });
-    });
-
-    // Click e Doppio Click / Doppio Tocco su card giocatore nello slot asta
-    this.container.querySelectorAll('.slot-player-card').forEach(card => {
-      let lastTap = 0;
-
-      const handleGoToTacticalWithInspector = () => {
-        const playerId = card.dataset.playerId;
-        const teamId = card.dataset.teamId;
-
-        // 1. Imposta la squadra del calciatore
-        if (teamId && teamId !== store.currentTeamId) {
-          store.setTeam(teamId);
-        }
-
-        // 2. Seleziona il calciatore (apre la scheda)
-        store.selectPlayer(playerId);
-
-        // 3. Passa alla vista 'tactical' (Campo)
-        store.setView('tactical');
-
-        // 4. Desktop: apri sidebar se collassata
-        if (document.body.classList.contains('right-sidebar-collapsed')) {
-          document.body.classList.remove('right-sidebar-collapsed');
-        }
-
-        // 5. Mobile: apri il drawer della scheda laterale e attiva il backdrop
-        const sidebarInspector = document.querySelector('#sidebar-inspector');
-        const sidebarTeams = document.querySelector('#sidebar-teams');
-        const backdrop = document.querySelector('#mobile-drawer-backdrop');
-        const toggleInspectorBtn = document.querySelector('#mobile-inspector-btn');
-        const toggleFieldBtn = document.querySelector('#mobile-field-btn');
-
-        if (window.innerWidth <= 900) {
-          sidebarInspector?.classList.add('mobile-open');
-          sidebarTeams?.classList.remove('mobile-open');
-          backdrop?.classList.remove('hidden');
-          if (toggleInspectorBtn) toggleInspectorBtn.classList.add('active');
-          if (toggleFieldBtn) toggleFieldBtn.classList.remove('active');
-        }
-
-        const player = store.getPlayer(playerId);
-        const team = store.getTeam(teamId);
-        notify.info(`Aperta lavagna tattica (${team ? team.name : ''}) con la scheda di ${player ? player.name : ''}`);
-      };
-
-      // Native dblclick per mouse Desktop
-      card.addEventListener('dblclick', (e) => {
-        if (e.target.closest('.slot-availability-dot-btn') || e.target.closest('.slot-appetibilita-input')) {
-          return;
-        }
-        e.preventDefault();
-        e.stopPropagation();
-        handleGoToTacticalWithInspector();
-      });
-
-      // Click e doppio tocco per Mobile & Desktop
-      card.addEventListener('click', (e) => {
-        if (e.target.closest('.slot-availability-dot-btn') || e.target.closest('.slot-appetibilita-input')) {
-          return;
-        }
-        const now = Date.now();
-        const timesince = now - lastTap;
-
-        if (timesince < 350 && timesince > 0) {
-          // Doppio click / tocco rapido -> Porta al campo con la scheda aperta
-          e.stopPropagation();
-          handleGoToTacticalWithInspector();
-          lastTap = 0;
-        } else {
-          // Singolo click / tocco -> Seleziona giocatore e squadra
-          lastTap = now;
-          const playerId = card.dataset.playerId;
-          const teamId = card.dataset.teamId;
-          if (teamId && teamId !== store.currentTeamId) {
-            store.setTeam(teamId);
-          }
-          store.selectPlayer(playerId);
-        }
-      });
-    });
-
-    // Listener Pulsante Filtri Mobile
-    const openFiltersBtn = this.container.querySelector('#open-auction-filters-btn');
-    openFiltersBtn?.addEventListener('click', () => {
-      this.openFiltersModal();
-    });
   }
 
-  openFiltersModal() {
-    const modal = document.getElementById('auction-filters-modal');
-    const modalBody = document.getElementById('auction-filters-modal-body');
-    if (!modal || !modalBody) return;
-
-    const rolesMeta = [
-      { key: 'A', label: 'Attaccanti', icon: 'fa-bolt' },
-      { key: 'C', label: 'Centrocampisti', icon: 'fa-gears' },
-      { key: 'D', label: 'Difensori', icon: 'fa-shield' },
-      { key: 'P', label: 'Portieri', icon: 'fa-hands' }
-    ];
-
-    let tempRole = this.activeRole;
-    let tempOnlyAvailable = this.onlyAvailable;
-    let tempOnlyFavorites = this.onlyFavorites;
-
-    modalBody.innerHTML = `
-      <div class="modal-filter-section">
-        <label class="modal-filter-label"><i class="fa-solid fa-users"></i> Seleziona Ruolo Asta:</label>
-        <div class="modal-filter-pills-grid" id="modal-auction-roles">
-          ${rolesMeta.map(r => `
-            <button type="button" class="modal-role-pill ${tempRole === r.key ? 'is-active' : ''}" data-role="${r.key}">
-              <i class="fa-solid ${r.icon}"></i> ${r.label}
-            </button>
-          `).join('')}
-        </div>
-      </div>
-
-      <div class="modal-filter-section" style="margin-top: 14px;">
-        <label class="modal-filter-label"><i class="fa-solid fa-filter"></i> Filtri Avanzati Asta:</label>
-        <div class="modal-filter-toggle-row" style="display: flex; flex-direction: column; gap: 8px;">
-          <label class="modal-checkbox-label">
-            <input type="checkbox" id="modal-only-favorites-check" ${tempOnlyFavorites ? 'checked' : ''} />
-            <span>⭐ Mostra solo <strong>Preferiti</strong></span>
-          </label>
-          <label class="modal-checkbox-label">
-            <input type="checkbox" id="modal-only-available-check" ${tempOnlyAvailable ? 'checked' : ''} />
-            <span>Mostra solo calciatori <strong>Disponibili</strong></span>
-          </label>
-        </div>
-      </div>
-    `;
-
-    // Selezione ruolo dentro il modale
-    modalBody.querySelectorAll('.modal-role-pill').forEach(btn => {
-      btn.addEventListener('click', () => {
-        modalBody.querySelectorAll('.modal-role-pill').forEach(b => b.classList.remove('is-active'));
-        btn.classList.add('is-active');
-        tempRole = btn.dataset.role;
-      });
+  updateSelectionHighlight() {
+    const selectedPlayer = store.getSelectedPlayer();
+    this.container.querySelectorAll('.player-card').forEach(card => {
+      const pId = card.dataset.playerId;
+      const isSelected = selectedPlayer && pId === selectedPlayer.id;
+      card.classList.toggle('is-selected', Boolean(isSelected));
     });
-
-    // Chiusura
-    const closeBtn = document.getElementById('close-auction-filters-btn');
-    const closeHandler = () => {
-      modal.classList.add('hidden');
-      closeBtn?.removeEventListener('click', closeHandler);
-    };
-    closeBtn?.addEventListener('click', closeHandler);
-
-    // Reset Asta
-    const resetBtn = document.getElementById('reset-modal-auction-btn');
-    const resetHandler = () => {
-      if (confirm('Vuoi ripristinare tutti i calciatori come DISPONIBILI per una nuova asta?')) {
-        store.resetAllAuctionAvailability();
-        notify.success('Tutti i giocatori sono ora DISPONIBILI all\'asta!');
-        modal.classList.add('hidden');
-        this.render();
-      }
-    };
-    resetBtn?.addEventListener('click', resetHandler);
-
-    // Applica Filtri
-    const applyBtn = document.getElementById('apply-auction-filters-btn');
-    const applyHandler = () => {
-      const availEl = document.getElementById('modal-only-available-check');
-      const favEl = document.getElementById('modal-only-favorites-check');
-      this.onlyAvailable = availEl ? availEl.checked : false;
-      this.onlyFavorites = favEl ? favEl.checked : false;
-      this.setRole(tempRole);
-      modal.classList.add('hidden');
-      applyBtn?.removeEventListener('click', applyHandler);
-    };
-    applyBtn?.addEventListener('click', applyHandler);
-
-    modal.classList.remove('hidden');
   }
 }

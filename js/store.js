@@ -18,7 +18,7 @@ class Store {
     this.selectedSlotId = null;
     this.showTacticalLines = true;
     this.isFreeDragMode = true;
-    this.pitchLayoutMode = localStorage.getItem('fantaoliva_pitch_layout_mode') || 'pitch'; // 'pitch' | 'list'
+    this.pitchLayoutMode = (typeof localStorage !== 'undefined' ? localStorage.getItem('fantaoliva_pitch_layout_mode') : null) || 'pitch'; // 'pitch' | 'list'
     this.activeBenchFilter = 'ALL';
     this.snapshots = [];
     this.favoritePlayerIds = new Set();
@@ -119,6 +119,26 @@ class Store {
 
   getTeam(teamId) {
     return this.teams.find(t => t.id === teamId) || null;
+  }
+
+  getTeamForPlayer(playerId) {
+    if (!playerId) return null;
+    for (const team of this.teams) {
+      if (team.lineup) {
+        for (const slotId of Object.keys(team.lineup)) {
+          if (team.lineup[slotId] && team.lineup[slotId].id === playerId) {
+            return team;
+          }
+        }
+      }
+      if (team.bench && team.bench.some(p => p && p.id === playerId)) {
+        return team;
+      }
+      if (team.players && team.players.some(p => p && p.id === playerId)) {
+        return team;
+      }
+    }
+    return this.getCurrentTeam();
   }
 
   getCurrentTeam() {

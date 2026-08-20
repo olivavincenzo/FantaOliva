@@ -1,10 +1,43 @@
 /**
- * Componente per la generazione della card del giocatore (stile EA Sports FC Tactical Hub).
+ * Componente per la generazione della card del giocatore (Design System Editorial Minimal).
  */
 
 import { ROLES, PLAYER_STATUSES } from '../data/roles.js';
 import { store } from '../store.js';
 import { sanitizeHtml, getTitolaritaClass } from '../utils/helpers.js';
+
+function getPlayerInitials(name) {
+  if (!name) return '??';
+  const parts = name.trim().split(/\s+/);
+  if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
+  return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+}
+
+function getPiazzatiLabel(player) {
+  const isRigorista = Boolean(player.isPenaltyTaker ?? player.rigorista ?? false);
+  const isPunizioni = Boolean(player.isFreeKickTaker ?? player.punizioni ?? false);
+  const isCorner = Boolean(player.isCornerTaker ?? player.corner ?? false);
+
+  const list = [];
+  if (isRigorista) list.push('Rig.');
+  if (isPunizioni) list.push('Pun.');
+  if (isCorner) list.push('Cor.');
+
+  return list.length > 0 ? list.join(' · ') : '—';
+}
+
+function getStatusLabel(status) {
+  const map = {
+    tit_sicuro: 'Titolarissimo',
+    titolare: 'Titolare',
+    ballottaggio: 'In Ballottaggio',
+    alternativa: 'Alternativa',
+    giovane: 'Giovane',
+    fuori_rosa: 'Fuori Rosa',
+    infortunato: 'Infortunato'
+  };
+  return map[status] || 'Titolare';
+}
 
 export function createPlayerCard(player, options = {}) {
   const {
@@ -12,7 +45,8 @@ export function createPlayerCard(player, options = {}) {
     slotRole = null,
     isLineup = false,
     isSelected = false,
-    compact = false
+    compact = false,
+    rank = null
   } = options;
 
   if (!player) {
@@ -33,34 +67,45 @@ export function createPlayerCard(player, options = {}) {
   const roleInfo = ROLES[player.role] || ROLES.C;
   const statusInfo = PLAYER_STATUSES[player.status] || PLAYER_STATUSES.tit_sicuro;
   const ballottaggio = store.getBallottaggioForPlayer(player.id);
-
   const isAvailable = player.isAvailable !== false;
 
-  const card = document.createElement('div');
+  const card = document.createElement('article');
   card.className = [
     'player-card',
     isLineup ? 'pitch-slot-card' : 'bench-player-card',
     isSelected ? 'is-selected' : '',
     compact ? 'is-compact' : '',
-    !isAvailable ? 'is-unavailable' : '',
+    !isAvailable ? 'is-unavailable is-taken' : '',
     `status-${player.status}`
   ].filter(Boolean).join(' ');
 
   if (slotId) card.dataset.slotId = slotId;
   card.dataset.playerId = player.id;
 
-  const isRigorista = player.isPenaltyTaker ?? player.rigorista ?? false;
-  const isPunizioni = player.isFreeKickTaker ?? player.punizioni ?? false;
-  const isCorner = player.isCornerTaker ?? player.corner ?? false;
+  const displayName = player.displayName || player.name || 'Giocatore';
+  const initials = getPlayerInitials(player.name || displayName);
+  const classicRole = player.classicRole || player.fantaRole || 'C';
+  const fmVal = player.stats?.fantamedia ?? player.fantamedia ?? '-';
+  const mvVal = player.stats?.mediaVoto ?? '-';
+  const presenze = player.stats?.presenze ?? 0;
+  const gol = player.stats?.gol ?? 0;
+  const assist = player.stats?.assist ?? 0;
+  const titolarita = player.stats?.titolarita ?? player.titolaritaPerc;
+  const titClass = getTitolaritaClass(titolarita ?? 50);
 
-  // Icone fantacalcio veloci
-  const fantaBadges = [];
-  if (isRigorista) fantaBadges.push('<span class="fanta-badge fanta-rigori" title="1º Rigorista">🎯</span>');
-  if (isPunizioni) fantaBadges.push('<span class="fanta-badge fanta-puniz" title="Tiratore Punizioni">📐</span>');
-  if (isCorner)    fantaBadges.push('<span class="fanta-badge fanta-corner" title="Tiratore Corner">🚩</span>');
+  const appetibilitaVal = player.appetibilita !== undefined ? Number(player.appetibilita) : (player.stats?.titolarita ?? 50);
+  const isElite = appetibilitaVal >= 75;
 
-  // Ballottaggio badge se presente
-  let ballottaggioBadge = '';
+  const currentTeam = store.getCurrentTeam();
+  const teamName = player.teamName || (player.teamId ? store.getTeam(player.teamId)?.name : null) || currentTeam?.name || 'Serie A';
+  const statusText = getStatusLabel(player.status);
+  const piazzatiText = getPiazzatiLabel(player);
+
+  const qtA = player.quotazioni?.qtA ?? '-';
+  const fvm = player.quotazioni?.fvm ?? '-';
+
+  // Ballottaggio badge
+  let ballottaggioHtml = '';
   if (ballottaggio && isLineup) {
     const isPlayerA = ballottaggio.playerAId === player.id;
     const perc = isPlayerA ? (ballottaggio.percentageA || ballottaggio.percA || 50) : (ballottaggio.percentageB || ballottaggio.percB || 50);
@@ -68,130 +113,71 @@ export function createPlayerCard(player, options = {}) {
     const opponent = store.getPlayer(opponentId);
     const opponentName = opponent ? (opponent.displayName || opponent.name) : 'Altro';
 
-    ballottaggioBadge = `
-      <div class="ballottaggio-pill" title="In ballottaggio con ${sanitizeHtml(opponentName)} (${perc}%)">
-        <i class="fa-solid fa-scale-balanced"></i> ${perc}%
-      </div>
+    ballottaggioHtml = `
+      <span class="duel" title="In ballottaggio con ${sanitizeHtml(opponentName)} (${perc}%)">
+        <svg viewBox="0 0 24 24"><path d="M12 3v18M6 6h12M5 6l-3 7h7L6 6Zm13 0-3 7h7l-3-7Z" /></svg>
+        Ballottaggio · ${perc}% vs ${sanitizeHtml(opponentName)}
+      </span>
     `;
   }
 
-  const displayName = player.displayName || player.name || 'Giocatore';
-  const classicRole = player.classicRole || player.fantaRole || 'C';
-  const fm = player.stats?.fantamedia ?? player.fantamedia;
-  const titolarita = player.stats?.titolarita ?? player.titolaritaPerc;
-  const titClass = getTitolaritaClass(titolarita ?? 50);
-
-  const appetibilitaVal = player.appetibilita !== undefined ? Number(player.appetibilita) : (player.stats?.titolarita ?? 50);
-  let appetibilitaClass = 'app-mid';
-  if (appetibilitaVal >= 75) appetibilitaClass = 'app-high';
-  else if (appetibilitaVal <= 40) appetibilitaClass = 'app-low';
-
-  const positionNotes = player.positionNotes || player.comment || '';
-  const fantaComment = player.fantaComment || '';
-  const hasNotes = Boolean(positionNotes.trim() || fantaComment.trim());
-
-  if (isLineup) {
-    const qtA = player.quotazioni?.qtA ?? '-';
-    const fvm = player.quotazioni?.fvm ?? '-';
-    const fmVal = player.stats?.fantamedia ?? player.fantamedia ?? '-';
-    const mvVal = player.stats?.mediaVoto ?? '-';
-    const presenze = player.stats?.presenze ?? 0;
-    const gol = player.stats?.gol ?? 0;
-    const assist = player.stats?.assist ?? 0;
-
-    // Card Tattica sul Campo (Visualizzazione Diretta con tutte le statistiche)
-    card.innerHTML = `
-      <div class="card-glow-border" style="--role-color: ${roleInfo.color}; --status-color: ${statusInfo.color}"></div>
-
-      ${!isAvailable ? `
-        <div class="card-taken-overlay" title="Giocatore già acquistato / non disponibile all'asta">
-          <span class="taken-stamp">PRESO</span>
-        </div>
-      ` : ''}
-
-      <!-- NOME CALCIATORE & STATO ASTA -->
-      <div class="card-header-row">
-        <div class="player-name" title="${sanitizeHtml(player.name)}">
-          ${sanitizeHtml(displayName)}
-        </div>
-        <div class="card-top-bar">
-          <span class="asta-availability-dot ${isAvailable ? 'is-available' : 'is-taken'}" title="Stato Asta: ${isAvailable ? 'Disponibile (clicca per segnare PRESO)' : 'PRESO (clicca per segnare DISPONIBILE)'}">
-            <i class="fa-solid ${isAvailable ? 'fa-circle-check' : 'fa-circle-xmark'}"></i>
-          </span>
+  // Template Strutturale Editorial Minimal
+  card.innerHTML = `
+    <header class="player-top">
+      <div class="avatar">${initials}</div>
+      <div class="identity">
+        <h3 class="player-name" title="${sanitizeHtml(player.name)}">${sanitizeHtml(displayName)}</h3>
+        <div class="player-meta">
+          ${rank ? `<span class="rank-badge">#${rank}</span><span class="separator">·</span>` : ''}
+          <span>${sanitizeHtml(teamName)}</span>
+          <span class="separator">·</span>
+          <span>${sanitizeHtml(statusText)}</span>
         </div>
       </div>
+      <button class="availability ${isAvailable ? 'available' : 'taken'}" type="button" title="Stato Asta: ${isAvailable ? 'Disponibile (clicca per segnare PRESO)' : 'PRESO (clicca per segnare DISPONIBILE)'}" aria-label="Cambia stato asta">
+        <svg viewBox="0 0 24 24">
+          ${isAvailable 
+            ? '<path d="m5 12 4 4L19 6" />' 
+            : '<path d="m7 7 10 10M17 7 7 17" />'}
+        </svg>
+      </button>
+    </header>
 
-      <!-- RIGHE STATISTICHE COMPLETE FANTACALCIO -->
-      <div class="card-stats-rows">
-        <!-- Riga 1: Appetibilità, Titolarità, Ruolo + Flags -->
-        <div class="card-stats-row">
-          <span class="player-appetibilita ${appetibilitaClass}" title="Indice Appetibilità Fantacalcio: ${appetibilitaVal}/100">
-            <i class="fa-solid fa-fire"></i>${appetibilitaVal}
-          </span>
-          ${titolarita !== undefined ? `<span class="tit-badge ${titClass}" title="% Titolarità">${titolarita}%</span>` : ''}
-          <span class="slot-role-tag-sub" style="background: ${roleInfo.bgColor}; color: ${roleInfo.color}; border: 1px solid ${roleInfo.borderColor};" title="Posizione: ${player.role}${player.mantraRole ? ` (Mantra: ${player.mantraRole})` : ''}">${player.role || classicRole}</span>
-          ${fantaBadges.join('')}
-        </div>
-
-        <!-- Riga 2: Quotazione Iniziale & FantaValore Mercato -->
-        <div class="card-stats-row stat-row-nums">
-          <span class="stat-chip" title="Quotazione Attuale (Classic)">QtA ${qtA}</span>
-          <span class="stat-chip" title="FantaValore Mercato (base 1000)">FVM ${fvm}</span>
-        </div>
-
-        <!-- Riga 3: Fantamedia, Media Voto, Presenze, Gol, Assist -->
-        <div class="card-stats-row stat-row-nums">
-          <span class="stat-chip" title="Fantamedia">FM ${fmVal}</span>
-          <span class="stat-chip" title="Media Voto">MV ${mvVal}</span>
-          <span class="stat-chip" title="Presenze"><i class="fa-solid fa-calendar"></i> ${presenze}</span>
-          <span class="stat-chip" title="Gol Segnati">⚽ ${gol}</span>
-          <span class="stat-chip" title="Assist">🅰 ${assist}</span>
-        </div>
+    <div class="core-metrics">
+      <div class="metric">
+        <div class="metric-value ${isElite ? 'elite' : ''}">${appetibilitaVal}</div>
+        <span class="metric-label">Appetibilità</span>
       </div>
-
-      <!-- BADGES INFERIORI (Ballottaggio) -->
-      ${ballottaggioBadge ? `
-        <div class="card-bottom-badges">
-          ${ballottaggioBadge}
-        </div>
-      ` : ''}
-    `;
-  } else {
-    // Card standard per Panchina (compatta)
-    card.innerHTML = `
-      <div class="card-glow-border" style="--role-color: ${roleInfo.color}; --status-color: ${statusInfo.color}"></div>
-
-      ${!isAvailable ? `
-        <div class="card-taken-overlay" title="Giocatore già acquistato / non disponibile all'asta">
-          <span class="taken-stamp">PRESO</span>
-        </div>
-      ` : ''}
-
-      <div class="card-top-bar" style="justify-content: flex-end;">
-        <span class="asta-availability-dot ${isAvailable ? 'is-available' : 'is-taken'}" title="Stato Asta: ${isAvailable ? 'Disponibile (clicca per segnare PRESO)' : 'PRESO (clicca per segnare DISPONIBILE)'}">
-          <i class="fa-solid ${isAvailable ? 'fa-circle-check' : 'fa-circle-xmark'}"></i>
-        </span>
+      <div class="metric">
+        <div class="metric-value">${titolarita !== undefined ? `${titolarita}%` : '—'}</div>
+        <span class="metric-label">Titolarità</span>
       </div>
-
-      <div class="card-info">
-        <div class="player-name" title="${sanitizeHtml(player.name)}">
-          ${sanitizeHtml(displayName)}
-        </div>
-        <div class="player-submeta">
-          <span class="player-appetibilita ${appetibilitaClass}" title="Indice Appetibilità Fantacalcio: ${appetibilitaVal}/100">
-            <i class="fa-solid fa-fire"></i>${appetibilitaVal}
-          </span>
-          ${titolarita !== undefined ? `<span class="tit-badge ${titClass}" title="% Titolarità">${titolarita}% Tit</span>` : ''}
-          <span class="slot-role-tag-sub" style="background: ${roleInfo.bgColor}; color: ${roleInfo.color}; border: 1px solid ${roleInfo.borderColor};" title="Ruolo: ${player.role} (${classicRole})">${player.role}</span>
-        </div>
+      <div class="metric">
+        <span class="role">${player.role || classicRole}</span>
+        <span class="metric-label">Ruolo</span>
       </div>
-
-      <div class="card-bottom-badges">
-        ${fantaBadges.join('')}
-        ${ballottaggioBadge}
+      <div class="metric">
+        <div class="set-pieces">${piazzatiText}</div>
+        <span class="metric-label">Piazzati</span>
       </div>
-    `;
-  }
+    </div>
+
+    <div class="data-rail">
+      <div class="market-list">
+        <div class="market"><label>QtA</label><strong>${qtA}</strong></div>
+        <div class="market"><label>FVM</label><strong>${fvm}</strong></div>
+      </div>
+      <div class="season">
+        <span>FM <strong>${fmVal}</strong></span>
+        <span>MV <strong>${mvVal}</strong></span>
+        <span>PG <strong>${presenze}</strong></span>
+        <span>G <strong>${gol}</strong></span>
+        <span>A <strong>${assist}</strong></span>
+      </div>
+    </div>
+
+    ${ballottaggioHtml}
+  `;
 
   // Gestione Universale Click (selezione) e Doppio Click / Doppio Tocco (apertura scheda)
   let lastTapTime = 0;
@@ -226,21 +212,17 @@ export function createPlayerCard(player, options = {}) {
     const sidebarInspector = document.querySelector('#sidebar-inspector');
     const sidebarTeams = document.querySelector('#sidebar-teams');
     const backdrop = document.querySelector('#mobile-drawer-backdrop');
-    const toggleInspectorBtn = document.querySelector('#mobile-inspector-btn');
-    const toggleFieldBtn = document.querySelector('#mobile-field-btn');
 
     if (window.innerWidth <= 900) {
       sidebarInspector?.classList.add('mobile-open');
       sidebarTeams?.classList.remove('mobile-open');
       backdrop?.classList.remove('hidden');
-      if (toggleInspectorBtn) toggleInspectorBtn.classList.add('active');
-      if (toggleFieldBtn) toggleFieldBtn.classList.remove('active');
     }
   };
 
   // 1. Native dblclick per mouse Desktop
   card.addEventListener('dblclick', (e) => {
-    if (e.target.closest('.asta-availability-dot')) return;
+    if (e.target.closest('.availability')) return;
     e.stopPropagation();
     e.preventDefault();
     triggerOpenInspector();
@@ -248,9 +230,8 @@ export function createPlayerCard(player, options = {}) {
 
   // 2. Click / Touch handler per singolo click (selezione) e doppio tocco mobile (<350ms)
   card.addEventListener('click', (e) => {
-    if (e.target.closest('.asta-availability-dot')) return;
+    if (e.target.closest('.availability')) return;
     if (hasMoved) {
-      // È stato uno scorrimento (scroll), non selezionare il calciatore
       hasMoved = false;
       return;
     }
@@ -260,18 +241,16 @@ export function createPlayerCard(player, options = {}) {
     const tapLength = currentTime - lastTapTime;
 
     if (tapLength < 350 && tapLength > 0) {
-      // Doppio tocco / click rapido -> Apre la scheda
       triggerOpenInspector();
       lastTapTime = 0;
     } else {
-      // Singolo tocco / click -> Seleziona il giocatore
       lastTapTime = currentTime;
       store.selectPlayer(player.id, slotId);
     }
   });
 
   // Listener per toggle rapido disponibilità asta
-  const astaToggleBtn = card.querySelector('.asta-availability-dot');
+  const astaToggleBtn = card.querySelector('.availability');
   astaToggleBtn?.addEventListener('click', (e) => {
     e.stopPropagation();
     store.togglePlayerAvailability(player.id);
