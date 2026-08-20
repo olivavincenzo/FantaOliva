@@ -180,20 +180,8 @@ export function createPlayerCard(player, options = {}) {
     </div>
   `;
 
-  // Data rail: compatto o completo
-  const railHtml = compact ? `
-    <div class="data-rail compact-rail">
-      <div class="market-list">
-        <div class="market"><label>QtA</label><strong>${qtA}</strong></div>
-        <div class="market"><label>FVM</label><strong>${fvm}</strong></div>
-      </div>
-      <div class="season">
-        <span>FM <strong>${fmVal}</strong></span>
-        <span>G <strong>${gol}</strong></span>
-        <span>A <strong>${assist}</strong></span>
-      </div>
-    </div>
-  ` : `
+  // Data rail: compatto escluso in modalità campo, completo in modalità lista/slot
+  const railHtml = compact ? '' : `
     <div class="data-rail">
       <div class="market-list">
         <div class="market"><label>QtA</label><strong>${qtA}</strong></div>

@@ -17,7 +17,7 @@
   width: min(100%, 430px);
   height: 100%;
   margin: 0 auto;
-  padding: max(16px, env(safe-area-inset-top)) 14px calc(80px + env(safe-area-inset-bottom));
+  padding: max(8px, env(safe-area-inset-top)) 10px calc(72px + env(safe-area-inset-bottom));
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -30,8 +30,8 @@
 @media (min-width: 901px) {
   .pitch-outer-wrapper {
     width: 100%;
-    max-width: 960px;
-    padding: 16px 24px calc(24px + env(safe-area-inset-bottom));
+    max-width: 1080px;
+    padding: 8px 18px calc(14px + env(safe-area-inset-bottom));
   }
 }
 
@@ -42,7 +42,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 6px 2px 18px;
+  padding: 2px 2px 8px;
   width: 100%;
 }
 
@@ -317,16 +317,35 @@
   color: var(--body);
 }
 
+.pitch-outer-wrapper.is-pitch-mode {
+  padding: 4px 10px 10px;
+}
+
+@media (max-width: 900px) {
+  .pitch-outer-wrapper.is-pitch-mode .soccer-pitch {
+    min-height: calc(100vh - var(--header-height) - 120px);
+    height: calc(100vh - var(--header-height) - 120px);
+    flex: 1;
+  }
+}
+
 @media (min-width: 901px) {
   .pitch-outer-wrapper.is-pitch-mode {
     width: 100%;
-    max-width: 980px;
+    max-width: 100%;
     height: 100%;
+    padding: 6px 14px 10px;
+  }
+
+  .pitch-outer-wrapper.is-pitch-mode .topbar {
+    padding: 0 0 6px;
+    margin-bottom: 2px;
   }
 
   .pitch-outer-wrapper.is-pitch-mode .soccer-pitch {
-    min-height: calc(100vh - 165px);
-    height: calc(100vh - 165px);
+    min-height: calc(100vh - var(--header-height) - 52px);
+    height: calc(100vh - var(--header-height) - 52px);
+    flex: 1;
   }
 }
 
@@ -603,7 +622,7 @@
 .pitch-slot-wrapper {
   position: absolute;
   transform: translate(-50%, -50%);
-  width: 135px;
+  width: 145px;
   cursor: grab;
 }
 

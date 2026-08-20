@@ -398,11 +398,11 @@
 .player-card.is-compact .core-metrics.compact-metrics {
   display: grid;
   grid-template-columns: 1fr 1fr 0.8fr;
-  padding: 6px 0 5px;
+  padding: 5px 0 2px;
   margin-top: 5px;
   gap: 3px;
   border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
+  border-bottom: none;
 }
 
 .player-card.is-compact .role {
@@ -422,44 +422,17 @@
   margin-top: 1px;
 }
 
-.player-card.is-compact .data-rail {
-  padding-top: 5px;
-  gap: 4px;
-}
-
-.player-card.is-compact .market {
-  padding: 2px 4px;
-  border-radius: 5px;
-  gap: 2px;
-}
-
-.player-card.is-compact .market label {
-  font-size: 7.5px;
-}
-
-.player-card.is-compact .market strong {
-  font-size: 9.5px;
-}
-
-.player-card.is-compact .season {
-  gap: 4px;
-}
-
-.player-card.is-compact .season span {
-  font-size: 8px;
-}
-
-.player-card.is-compact .season strong {
-  font-size: 8.5px;
+.player-card.is-compact .duels-list {
+  margin-top: 4px;
+  gap: 3px;
 }
 
 .player-card.is-compact .duel {
-  padding: 3px 6px;
-  font-size: 8px;
-  margin-top: 4px;
+  padding: 2px 5px;
+  font-size: 7.5px;
 }
 
 .player-card.is-compact .duel svg {
-  width: 9px;
-  height: 9px;
+  width: 8px;
+  height: 8px;
 }
