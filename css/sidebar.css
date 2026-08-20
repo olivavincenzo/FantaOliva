@@ -587,6 +587,54 @@ body.is-resizing-sidebar .sidebar-resizer {
   color: var(--ink);
 }
 
+.info-row-piazzati {
+  padding: 6px 0;
+}
+
+.specialists-checkbox-row.inline-specialists {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 0;
+  width: auto;
+}
+
+.inline-specialists .checkbox-chip {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  padding: 2px 7px;
+  border-radius: var(--radius-pill);
+  font-size: 9.5px;
+  font-weight: 650;
+  color: var(--body);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  user-select: none;
+}
+
+.inline-specialists .checkbox-chip:hover {
+  background: var(--paper);
+  border-color: #c8c8d0;
+  color: var(--ink);
+}
+
+.inline-specialists .checkbox-chip input {
+  display: none;
+}
+
+.inline-specialists .checkbox-chip.is-checked {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #ffffff;
+  font-weight: 780;
+}
+
+.inline-specialists .chip-icon {
+  font-size: 10px;
+}
+
 .note-card {
   padding: 13px;
   background: var(--paper);

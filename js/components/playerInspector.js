@@ -276,7 +276,7 @@ export class PlayerInspectorComponent {
         </div>
       </section>
 
-      <!-- SEZIONE RENDIMENTO STAGIONE -->
+      <!-- SEZIONE RENDIMENTO STAGIONE CON SPECIALISTI INTEGRATI -->
       <section class="detail-section">
         <h2>Rendimento stagione</h2>
         <div class="info-card">
@@ -284,27 +284,24 @@ export class PlayerInspectorComponent {
           <div class="info-row"><span>Media voto</span><strong>${mv ? Number(mv).toFixed(2) : '-'}</strong></div>
           <div class="info-row"><span>Presenze</span><strong>${presenze}</strong></div>
           <div class="info-row"><span>Gol / Assist</span><strong>${gol} / ${assist}</strong></div>
-          <div class="info-row"><span>Calci piazzati</span><strong>${piazzatiText}</strong></div>
+          <div class="info-row info-row-piazzati">
+            <span>Calci piazzati</span>
+            <div class="specialists-checkbox-row inline-specialists">
+              <label class="checkbox-chip ${isRigorista ? 'is-checked' : ''}" title="Primo Rigorista">
+                <input type="checkbox" id="edit-rigorista" ${isRigorista ? 'checked' : ''} />
+                <span class="chip-icon">🎯</span> Rig.
+              </label>
+              <label class="checkbox-chip ${isPunizioni ? 'is-checked' : ''}" title="Tiratore Punizioni">
+                <input type="checkbox" id="edit-punizioni" ${isPunizioni ? 'checked' : ''} />
+                <span class="chip-icon">📐</span> Pun.
+              </label>
+              <label class="checkbox-chip ${isCorner ? 'is-checked' : ''}" title="Tiratore Calci d'angolo">
+                <input type="checkbox" id="edit-corner" ${isCorner ? 'checked' : ''} />
+                <span class="chip-icon">🚩</span> Cor.
+              </label>
+            </div>
+          </div>
           ${ballottaggioText ? `<div class="info-row"><span>Ballottaggio</span><strong>${ballottaggioText}</strong></div>` : ''}
-        </div>
-      </section>
-
-      <!-- SEZIONE SPECIALISTI CALCI PIAZZATI -->
-      <section class="detail-section">
-        <h2>Specialisti calci piazzati</h2>
-        <div class="specialists-checkbox-row">
-          <label class="checkbox-chip ${isRigorista ? 'is-checked' : ''}">
-            <input type="checkbox" id="edit-rigorista" ${isRigorista ? 'checked' : ''} />
-            <span class="chip-icon">🎯</span> 1º Rig.
-          </label>
-          <label class="checkbox-chip ${isPunizioni ? 'is-checked' : ''}">
-            <input type="checkbox" id="edit-punizioni" ${isPunizioni ? 'checked' : ''} />
-            <span class="chip-icon">📐</span> Pun.
-          </label>
-          <label class="checkbox-chip ${isCorner ? 'is-checked' : ''}">
-            <input type="checkbox" id="edit-corner" ${isCorner ? 'checked' : ''} />
-            <span class="chip-icon">🚩</span> Cor.
-          </label>
         </div>
       </section>
 
