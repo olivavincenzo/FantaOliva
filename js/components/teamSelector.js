@@ -31,7 +31,6 @@ export class TeamSelectorComponent {
           <div class="brand-mark">FO</div>
           <div style="flex: 1; min-width: 0;">
             <div class="brand-name">FantaOliva</div>
-            <p class="season">Asta · Serie A 2026/27</p>
           </div>
           <button class="sidebar-close-btn" id="close-teams-sidebar-btn" title="Comprimi barra squadre" aria-label="Chiudi barra">
             <i class="fa-solid fa-xmark"></i>
@@ -78,8 +77,8 @@ export class TeamSelectorComponent {
     const filtered = teams.filter(t => {
       if (!query) return true;
       return (t.name || '').toLowerCase().includes(query) ||
-             (t.city || '').toLowerCase().includes(query) ||
-             (t.shortName || '').toLowerCase().includes(query);
+        (t.city || '').toLowerCase().includes(query) ||
+        (t.shortName || '').toLowerCase().includes(query);
     });
 
     if (filtered.length === 0) {
@@ -107,17 +106,17 @@ export class TeamSelectorComponent {
           <div class="letter">${letter}</div>
           <div class="team-list">
             ${list.map(t => {
-              const isActive = currentTeam && currentTeam.id === t.id;
-              const squadCount = Object.values(t.lineup || {}).filter(Boolean).length + (t.bench?.length || 0);
-              const countDisplay = squadCount > 0 ? squadCount : (t.players?.length || 25);
+        const isActive = currentTeam && currentTeam.id === t.id;
+        const squadCount = Object.values(t.lineup || {}).filter(Boolean).length + (t.bench?.length || 0);
+        const countDisplay = squadCount > 0 ? squadCount : (t.players?.length || 25);
 
-              return `
+        return `
                 <button class="team ${isActive ? 'active' : ''}" data-team-id="${t.id}" type="button">
                   <span>${sanitizeHtml(t.name)}</span>
                   <span class="team-count">${countDisplay}</span>
                 </button>
               `;
-            }).join('')}
+      }).join('')}
           </div>
         </div>
       `;
