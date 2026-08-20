@@ -127,15 +127,23 @@ export class PitchComponent {
   bindTopControls() {
     // Selettore Squadre Trigger
     const teamsBtn = this.container.querySelector('#pitch-hud-teams-btn');
-    teamsBtn?.addEventListener('click', () => {
+    teamsBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      e.preventDefault();
       const sidebarTeams = document.querySelector('#sidebar-teams');
       const sidebarInspector = document.querySelector('#sidebar-inspector');
       const backdrop = document.querySelector('#mobile-drawer-backdrop');
 
       if (window.innerWidth <= 900) {
-        sidebarTeams?.classList.toggle('mobile-open');
-        sidebarInspector?.classList.remove('mobile-open');
-        backdrop?.classList.toggle('hidden', !sidebarTeams?.classList.contains('mobile-open'));
+        const isAlreadyOpen = sidebarTeams?.classList.contains('mobile-open');
+        if (isAlreadyOpen) {
+          sidebarTeams?.classList.remove('mobile-open');
+          backdrop?.classList.add('hidden');
+        } else {
+          sidebarTeams?.classList.add('mobile-open');
+          sidebarInspector?.classList.remove('mobile-open');
+          backdrop?.classList.remove('hidden');
+        }
       } else {
         document.body.classList.toggle('left-sidebar-collapsed');
       }

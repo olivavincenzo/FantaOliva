@@ -359,13 +359,15 @@ class App {
       }
 
       // Quando si seleziona una squadra dal drawer su mobile, passa alla vista Campo e chiudi il drawer
-      if (e.target.closest('.team-list-item') && window.innerWidth <= 900) {
-        this.switchView('tactical');
-        closeDrawers();
-        return;
+      if (e.target.closest('.team') || e.target.closest('.team-list-item')) {
+        if (window.innerWidth <= 900) {
+          this.switchView('tactical');
+          closeDrawers();
+          return;
+        }
       }
 
-      if (e.target.closest('.mobile-drawer-close-btn')) {
+      if (e.target.closest('.mobile-drawer-close-btn') || e.target.closest('#close-teams-sidebar-btn')) {
         closeDrawers();
         return;
       }
@@ -375,7 +377,7 @@ class App {
         const isLeftOpen = sidebarTeams?.classList.contains('mobile-open');
         const isRightOpen = sidebarInspector?.classList.contains('mobile-open');
 
-        if (isLeftOpen && !sidebarTeams.contains(e.target) && !e.target.closest('.pitch-hud-btn') && !e.target.closest('.mobile-action-bar')) {
+        if (isLeftOpen && !sidebarTeams.contains(e.target) && !e.target.closest('#pitch-hud-teams-btn') && !e.target.closest('.circle-button') && !e.target.closest('.pitch-hud-btn') && !e.target.closest('.mobile-action-bar')) {
           closeDrawers();
         } else if (isRightOpen && !sidebarInspector.contains(e.target) && !e.target.closest('.player-card') && !e.target.closest('.slot-player-card') && !e.target.closest('.listone-player-row') && !e.target.closest('.mobile-action-bar')) {
           closeDrawers();
