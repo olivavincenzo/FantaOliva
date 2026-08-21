@@ -37,6 +37,36 @@ export class PitchComponent {
 
     const team = store.getCurrentTeam();
     const teamName = team ? team.name.toUpperCase() : 'INTER';
+    const sosData = store.getTeamSosData(team);
+
+    const coachName = sosData?.coach || team?.coach || 'Mister';
+    const currentModule = sosData?.module || team?.module || team?.defaultFormation || '4-3-3';
+    const attackRating = Number(sosData?.attackRating ?? team?.attackRating ?? 3.5).toFixed(1);
+    const defenseRating = Number(sosData?.defenseRating ?? team?.defenseRating ?? 3.5).toFixed(1);
+
+    const rigList = (sosData?.rig || team?.rig || []).map(r => r.name || r.displayName || r).filter(Boolean);
+    const punList = (sosData?.pun || team?.pun || []).map(r => r.name || r.displayName || r).filter(Boolean);
+    const corList = (sosData?.corner || team?.corner || []).map(r => r.name || r.displayName || r).filter(Boolean);
+
+    const rigText = rigList.length > 0 ? rigList.join(' · ') : '—';
+    const punText = punList.length > 0 ? punList.join(' · ') : '—';
+    const corText = corList.length > 0 ? corList.join(' · ') : '—';
+
+    const keyPoints = (sosData?.keyPoints || team?.keyPoints || []);
+    const keyPointsHtml = keyPoints.map(kp => {
+      const toneClass = kp.tone === 'good' ? 'tone-good' : (kp.tone === 'bad' ? 'tone-bad' : 'tone-neutral');
+      const icon = kp.tone === 'good' ? '✓' : (kp.tone === 'bad' ? '⚠' : 'ℹ');
+      return `<span class="team-keypoint-chip ${toneClass}" title="Punto Chiave Tattico"><span class="kp-icon">${icon}</span> ${sanitizeHtml(kp.text)}</span>`;
+    }).join('');
+
+    const ballottaggiList = (sosData?.ballottaggi || team?.ballottaggi || []);
+    const ballottaggiHtml = ballottaggiList.map(duel => {
+      if (!Array.isArray(duel) || duel.length < 2) return '';
+      const items = duel.map((p, idx) => `
+        <span class="duel-player ${idx === 0 ? 'leader' : ''}">${sanitizeHtml(p.name)} <strong class="perc-val">${p.perc}%</strong></span>
+      `).join('<span class="vs-divider">⚔️</span>');
+      return `<span class="team-ballottaggio-chip" title="Ballottaggio Ufficiale">${items}</span>`;
+    }).filter(Boolean).join('');
 
     this.container.innerHTML = `
       <div class="pitch-outer-wrapper">
@@ -45,7 +75,15 @@ export class PitchComponent {
         <header class="topbar">
           <div>
             <p class="context">Asta 2026/27 · Serie A</p>
-            <h1 class="team-title-heading" id="pitch-watermark-club">${sanitizeHtml(teamName)}</h1>
+            <div class="team-heading-row">
+              <h1 class="team-title-heading" id="pitch-watermark-club">${sanitizeHtml(teamName)}</h1>
+              <span class="team-formation-badge" id="pitch-formation-badge">${sanitizeHtml(currentModule)}</span>
+            </div>
+            <div class="team-coach-ratings-row" id="pitch-coach-ratings-row">
+              <span class="team-coach-text" title="Allenatore"><i class="fa-solid fa-user-tie"></i> All. <strong>${sanitizeHtml(coachName)}</strong></span>
+              <span class="tactical-rating-pill" title="Indice Attacco SOS Fanta (1-5)">⚔️ Att: <strong>${attackRating}/5</strong></span>
+              <span class="tactical-rating-pill" title="Indice Difesa SOS Fanta (1-5)">🛡️ Dif: <strong>${defenseRating}/5</strong></span>
+            </div>
           </div>
           <div class="topbar-actions">
             <button class="circle-button" id="pitch-hud-teams-btn" type="button" aria-label="Cambia Squadra" title="Cambia Squadra Serie A">
@@ -62,6 +100,34 @@ export class PitchComponent {
             </div>
           </div>
         </header>
+
+        <!-- BANNER TATTICO SQUADRA (Specialisti & Punti Chiave) -->
+        <div class="team-tactical-banner" id="pitch-tactical-banner">
+          <div class="team-specialists-group">
+            <div class="tactical-spec-item" title="Gerarchia Rigoristi: ${sanitizeHtml(rigText)}">
+              <span class="spec-icon">🎯</span> <span class="spec-label">Rig:</span> <strong class="spec-names">${sanitizeHtml(rigText)}</strong>
+            </div>
+            <div class="tactical-spec-item" title="Gerarchia Tiratori Punizioni: ${sanitizeHtml(punText)}">
+              <span class="spec-icon">📐</span> <span class="spec-label">Pun:</span> <strong class="spec-names">${sanitizeHtml(punText)}</strong>
+            </div>
+            <div class="tactical-spec-item" title="Gerarchia Calci d'Angolo: ${sanitizeHtml(corText)}">
+              <span class="spec-icon">🚩</span> <span class="spec-label">Cor:</span> <strong class="spec-names">${sanitizeHtml(corText)}</strong>
+            </div>
+          </div>
+          ${keyPointsHtml ? `
+            <div class="team-keypoints-wrap">
+              ${keyPointsHtml}
+            </div>
+          ` : ''}
+          ${ballottaggiHtml ? `
+            <div class="team-ballottaggi-group">
+              <span class="spec-label"><i class="fa-solid fa-scale-unbalanced"></i> Ballottaggi:</span>
+              <div class="ballottaggi-chips-wrap">
+                ${ballottaggiHtml}
+              </div>
+            </div>
+          ` : ''}
+        </div>
 
         <!-- BARRA DI RICERCA EDITORIALE -->
         <div class="search" role="search" aria-label="Cerca giocatori">
@@ -239,9 +305,89 @@ export class PitchComponent {
       topbarFormationSelect.value = formation.id;
     }
 
+    this.updateTacticalBanner();
     this.renderVerticalList();
     this.updateSlotsPositions();
     this.renderTacticalLines();
+  }
+
+  updateTacticalBanner() {
+    const team = store.getCurrentTeam();
+    if (!team) return;
+    const sosData = store.getTeamSosData(team);
+
+    const coachName = sosData?.coach || team.coach || 'Mister';
+    const currentModule = sosData?.module || team.module || team.defaultFormation || '4-3-3';
+    const attackRating = Number(sosData?.attackRating ?? team.attackRating ?? 3.5).toFixed(1);
+    const defenseRating = Number(sosData?.defenseRating ?? team.defenseRating ?? 3.5).toFixed(1);
+
+    const moduleBadgeEl = this.container.querySelector('#pitch-formation-badge');
+    if (moduleBadgeEl) {
+      moduleBadgeEl.textContent = currentModule;
+    }
+
+    const coachRowEl = this.container.querySelector('#pitch-coach-ratings-row');
+    if (coachRowEl) {
+      coachRowEl.innerHTML = `
+        <span class="team-coach-text" title="Allenatore"><i class="fa-solid fa-user-tie"></i> All. <strong>${sanitizeHtml(coachName)}</strong></span>
+        <span class="tactical-rating-pill" title="Indice Attacco SOS Fanta (1-5)">⚔️ Att: <strong>${attackRating}/5</strong></span>
+        <span class="tactical-rating-pill" title="Indice Difesa SOS Fanta (1-5)">🛡️ Dif: <strong>${defenseRating}/5</strong></span>
+      `;
+    }
+
+    const rigList = (sosData?.rig || team.rig || []).map(r => r.name || r.displayName || r).filter(Boolean);
+    const punList = (sosData?.pun || team.pun || []).map(r => r.name || r.displayName || r).filter(Boolean);
+    const corList = (sosData?.corner || team.corner || []).map(r => r.name || r.displayName || r).filter(Boolean);
+
+    const rigText = rigList.length > 0 ? rigList.join(' · ') : '—';
+    const punText = punList.length > 0 ? punList.join(' · ') : '—';
+    const corText = corList.length > 0 ? corList.join(' · ') : '—';
+
+    const keyPoints = (sosData?.keyPoints || team.keyPoints || []);
+    const keyPointsHtml = keyPoints.map(kp => {
+      const toneClass = kp.tone === 'good' ? 'tone-good' : (kp.tone === 'bad' ? 'tone-bad' : 'tone-neutral');
+      const icon = kp.tone === 'good' ? '✓' : (kp.tone === 'bad' ? '⚠' : 'ℹ');
+      return `<span class="team-keypoint-chip ${toneClass}" title="Punto Chiave Tattico"><span class="kp-icon">${icon}</span> ${sanitizeHtml(kp.text)}</span>`;
+    }).join('');
+
+    const ballottaggiList = (sosData?.ballottaggi || team.ballottaggi || []);
+    const ballottaggiHtml = ballottaggiList.map(duel => {
+      if (!Array.isArray(duel) || duel.length < 2) return '';
+      const items = duel.map((p, idx) => `
+        <span class="duel-player ${idx === 0 ? 'leader' : ''}">${sanitizeHtml(p.name)} <strong class="perc-val">${p.perc}%</strong></span>
+      `).join('<span class="vs-divider">⚔️</span>');
+      return `<span class="team-ballottaggio-chip" title="Ballottaggio Ufficiale">${items}</span>`;
+    }).filter(Boolean).join('');
+
+    const bannerEl = this.container.querySelector('#pitch-tactical-banner');
+    if (bannerEl) {
+      bannerEl.innerHTML = `
+        <div class="team-specialists-group">
+          <div class="tactical-spec-item" title="Gerarchia Rigoristi: ${sanitizeHtml(rigText)}">
+            <span class="spec-icon">🎯</span> <span class="spec-label">Rig:</span> <strong class="spec-names">${sanitizeHtml(rigText)}</strong>
+          </div>
+          <div class="tactical-spec-item" title="Gerarchia Tiratori Punizioni: ${sanitizeHtml(punText)}">
+            <span class="spec-icon">📐</span> <span class="spec-label">Pun:</span> <strong class="spec-names">${sanitizeHtml(punText)}</strong>
+          </div>
+          <div class="tactical-spec-item" title="Gerarchia Calci d'Angolo: ${sanitizeHtml(corText)}">
+            <span class="spec-icon">🚩</span> <span class="spec-label">Cor:</span> <strong class="spec-names">${sanitizeHtml(corText)}</strong>
+          </div>
+        </div>
+        ${keyPointsHtml ? `
+          <div class="team-keypoints-wrap">
+            ${keyPointsHtml}
+          </div>
+        ` : ''}
+        ${ballottaggiHtml ? `
+          <div class="team-ballottaggi-group">
+            <span class="spec-label"><i class="fa-solid fa-scale-unbalanced"></i> Ballottaggi:</span>
+            <div class="ballottaggi-chips-wrap">
+              ${ballottaggiHtml}
+            </div>
+          </div>
+        ` : ''}
+      `;
+    }
   }
 
   renderVerticalList() {
@@ -256,13 +402,11 @@ export class PitchComponent {
 
     // Funzione helper per ottenere la categoria del ruolo (ATT, CEN, DIF, POR)
     const getRoleCategory = (player) => {
-      if (!player) return 'CEN';
-      const r = (player.role || '').toUpperCase();
-      const f = (player.classicRole || player.fantaRole || '').toUpperCase();
-      if (['A', 'PC', 'W'].includes(r) || f === 'A') return 'ATT';
-      if (['C', 'M', 'T', 'E'].includes(r) || f === 'C') return 'CEN';
-      if (['D', 'DC', 'TD', 'TS'].includes(r) || f === 'D') return 'DIF';
-      if (['P', 'POR'].includes(r) || f === 'P') return 'POR';
+      const cat = store.getRoleCategory(player);
+      if (cat === 'P') return 'POR';
+      if (cat === 'D') return 'DIF';
+      if (cat === 'C') return 'CEN';
+      if (cat === 'A') return 'ATT';
       return 'CEN';
     };
 

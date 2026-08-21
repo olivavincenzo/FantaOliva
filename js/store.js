@@ -6,6 +6,7 @@
 import { INITIAL_TEAMS, CSV_PLAYER_CATALOG } from './data/initialData.js';
 import { FORMATIONS } from './data/formations.js';
 import { SOS_STRATEGY_1 } from './data/sosStrategy1.js';
+import { SOS_TEAMS_DATA } from './data/sosTeamsData.js';
 import { getPlayerIndices, TITOLARITA_LABELS, AFFIDABILITA_LABELS, INTEGRITA_LABELS } from './data/playerIndices.js';
 import { deepClone, generateId } from './utils/helpers.js';
 
@@ -107,6 +108,32 @@ class Store {
         this.teams = deepClone(INITIAL_TEAMS);
         this.saveToStorage();
       }
+
+      // Arricchimento dati ufficiali squadre SOS Fanta (Coach, Modulo, Attacco/Difesa, KeyPoints, Specialisti)
+      this.teams.forEach(t => {
+        const sos = this.getTeamSosData(t);
+        if (sos) {
+          t.coach = sos.coach || t.coach;
+          t.module = sos.module || t.defaultFormation;
+          t.defaultFormation = sos.module || t.defaultFormation;
+          t.attackRating = sos.attackRating;
+          t.defenseRating = sos.defenseRating;
+          t.coachImage = sos.coachImage;
+          t.keyPoints = sos.keyPoints || [];
+          t.keyRoles = sos.keyRoles || [];
+          t.rig = sos.rig || [];
+          t.pun = sos.pun || [];
+          t.corner = sos.corner || [];
+          t.comment = sos.sosFantaComment || sos.comment || t.comment;
+          t.sosFantaComment = sos.sosFantaComment || '';
+        }
+      });
+
+      // Sincronizzazione formazioni e titolari ufficiali negli slot tattici corretti
+      this.syncOfficialLineups();
+
+      // Reset e sincronizzazione ballottaggi ufficiali su ciascuna scheda giocatore
+      this.syncOfficialBallottaggi();
 
       const savedSnapshots = localStorage.getItem(SNAPSHOTS_KEY);
       if (savedSnapshots) {
@@ -251,6 +278,10 @@ class Store {
     return this.teams;
   }
 
+  getTeams() {
+    return this.teams;
+  }
+
   getTeam(teamId) {
     return this.teams.find(t => t.id === teamId) || null;
   }
@@ -277,6 +308,14 @@ class Store {
 
   getCurrentTeam() {
     return this.getTeam(this.currentTeamId) || this.teams[0] || null;
+  }
+
+  getTeamSosData(teamOrCode) {
+    if (!teamOrCode) return null;
+    const code = typeof teamOrCode === 'string' ? teamOrCode.toUpperCase() : (teamOrCode.shortName || teamOrCode.code || teamOrCode.id || '').toUpperCase();
+    const name = typeof teamOrCode === 'string' ? teamOrCode.toLowerCase() : (teamOrCode.name || '').toLowerCase();
+    const id = typeof teamOrCode === 'object' ? (teamOrCode.id || '').toLowerCase() : '';
+    return SOS_TEAMS_DATA[code] || SOS_TEAMS_DATA[name] || (id && SOS_TEAMS_DATA[id]) || null;
   }
 
   setTeam(teamId) {
@@ -314,6 +353,7 @@ class Store {
     const index = this.teams.findIndex(t => t.id === this.currentTeamId);
     if (index !== -1) {
       this.teams[index] = deepClone(original);
+      this.syncOfficialBallottaggi();
       this.saveToStorage();
       this.emit('team:reset', this.getCurrentTeam());
       this.emit('team:changed', this.getCurrentTeam());
@@ -923,6 +963,47 @@ class Store {
     const player = this.getPlayer(playerId);
     if (!player) return null;
 
+    // Controllo nei ballottaggi ufficiali SOS Fanta della squadra
+    const sosData = this.getTeamSosData(team);
+    const officialBallottaggi = sosData?.ballottaggi || team.ballottaggi || [];
+    if (Array.isArray(officialBallottaggi) && officialBallottaggi.length > 0) {
+      const normName = (player.name || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+      const normDisp = (player.displayName || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+
+      for (const duel of officialBallottaggi) {
+        if (Array.isArray(duel)) {
+          const myEntry = duel.find(d => {
+            const dPid = d.playerId || '';
+            const dNorm = (d.name || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+            return dPid === playerId || (player.id && dPid === player.id) ||
+                   (dNorm && (dNorm === normName || dNorm === normDisp || (normName.length > 3 && dNorm.includes(normName)) || (dNorm.length > 3 && normName.includes(dNorm))));
+          });
+
+          if (myEntry) {
+            const opponents = duel.filter(d => d !== myEntry);
+            const primaryOpp = opponents[0];
+            const substitutes = opponents.map(op => ({
+              displayName: `${op.name} (${op.perc}%)`,
+              name: `${op.name} (${op.perc}%)`,
+              perc: op.perc,
+              playerId: op.playerId
+            }));
+
+            return {
+              playerAId: player.id,
+              percentageA: myEntry.perc ?? 50,
+              percA: myEntry.perc ?? 50,
+              playerBId: primaryOpp ? primaryOpp.playerId : null,
+              opponentName: primaryOpp ? `${primaryOpp.name} (${primaryOpp.perc}%)` : 'Compagno',
+              percentageB: primaryOpp ? (primaryOpp.perc ?? 50) : 50,
+              percB: primaryOpp ? (primaryOpp.perc ?? 50) : 50,
+              substitutes
+            };
+          }
+        }
+      }
+    }
+
     if (player.ballottaggio && typeof player.ballottaggio === 'object') {
       const pA = player.ballottaggio.perc || player.ballottaggio.percentage || 60;
       return {
@@ -991,6 +1072,114 @@ class Store {
     team.ballottaggi = team.ballottaggi.filter(b => b.id !== ballottaggioId);
     this.saveToStorage();
     this.emit('ballottaggio:updated', team.ballottaggi);
+  }
+
+  syncOfficialLineups() {
+    if (!this.teams || !Array.isArray(this.teams)) return;
+    
+    this.teams.forEach(team => {
+      const initialTeam = INITIAL_TEAMS.find(t => t.id === team.id || (t.shortName && t.shortName.toUpperCase() === (team.shortName || team.id || '').toUpperCase()));
+      if (initialTeam && initialTeam.lineup) {
+        team.defaultFormation = initialTeam.defaultFormation;
+        team.module = initialTeam.module || initialTeam.defaultFormation;
+        team.lineup = deepClone(initialTeam.lineup);
+        team.bench = deepClone(initialTeam.bench || []);
+      }
+    });
+  }
+
+  syncOfficialBallottaggi() {
+    if (!this.teams || !Array.isArray(this.teams)) return;
+
+    const normalize = (str) => (str || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+
+    this.teams.forEach(team => {
+      const sosData = this.getTeamSosData(team);
+      const allPlayers = [
+        ...Object.values(team.lineup || {}),
+        ...(team.bench || [])
+      ].filter(Boolean);
+
+      // 1. Reset ballottaggio data for all players in this team
+      allPlayers.forEach(p => {
+        p.ballottaggio = null;
+        p.ballottaggioWith = null;
+        p.substitutes = [];
+        if (p.status === 'ballottaggio') {
+          p.status = 'disponibile';
+        }
+      });
+
+      team.ballottaggi = [];
+
+      if (!sosData || !Array.isArray(sosData.ballottaggi)) return;
+
+      // Helper per trovare il giocatore della rosa
+      const findSquadPlayer = (entry) => {
+        if (!entry) return null;
+        const eId = entry.playerId || '';
+        const eCsv = entry.csvId ? entry.csvId.toString() : '';
+        const eNorm = normalize(entry.name);
+
+        return allPlayers.find(p => {
+          if (eId && p.id === eId) return true;
+          if (eCsv && p.csvId && p.csvId.toString() === eCsv) return true;
+          const pNorm = normalize(p.name);
+          const dNorm = normalize(p.displayName);
+          if (eNorm && (pNorm === eNorm || dNorm === eNorm)) return true;
+          if (eNorm.length > 3 && (pNorm.includes(eNorm) || dNorm.includes(eNorm) || eNorm.includes(pNorm))) return true;
+          return false;
+        }) || null;
+      };
+
+      // 2. Assegna i ballottaggi ufficiali ai giocatori trovati
+      sosData.ballottaggi.forEach((duel, duelIdx) => {
+        if (!Array.isArray(duel) || duel.length < 2) return;
+
+        const matchedItems = duel.map(entry => ({
+          entry,
+          player: findSquadPlayer(entry)
+        }));
+
+        const firstEntry = duel[0];
+        const secondEntry = duel[1];
+        const playerA = matchedItems[0].player;
+        const playerB = matchedItems[1].player;
+
+        const duelRecord = {
+          id: `ball_${team.id || team.shortName}_${duelIdx + 1}`,
+          playerAId: playerA ? playerA.id : firstEntry.playerId,
+          playerAName: firstEntry.name,
+          percA: firstEntry.perc,
+          playerBId: playerB ? playerB.id : secondEntry.playerId,
+          playerBName: secondEntry.name,
+          percB: secondEntry.perc,
+          duel: duel
+        };
+        team.ballottaggi.push(duelRecord);
+
+        // Aggiorna ciascun oggetto giocatore nella scheda
+        matchedItems.forEach((m, idx) => {
+          if (!m.player) return;
+          const opponents = duel.filter((_, oIdx) => oIdx !== idx);
+          const primaryOpp = opponents[0];
+
+          m.player.status = 'ballottaggio';
+          m.player.ballottaggio = {
+            vs: primaryOpp ? primaryOpp.name : 'Compagno',
+            perc: m.entry.perc,
+            opponentPerc: primaryOpp ? primaryOpp.perc : 50,
+            duel: duel
+          };
+          m.player.substitutes = opponents.map(op => ({
+            id: op.playerId,
+            name: op.name,
+            displayName: op.name,
+            perc: op.perc
+          }));
+        });
+      });
+    });
   }
 
   // --- STORICO & SNAPSHOTS ---
@@ -1235,20 +1424,23 @@ class Store {
   getRoleCategory(roleOrPlayer) {
     if (!roleOrPlayer) return 'C';
     if (typeof roleOrPlayer === 'object') {
-      const r = (roleOrPlayer.role || '').toUpperCase();
       const f = (roleOrPlayer.classicRole || roleOrPlayer.fantaRole || '').toUpperCase();
-      if (['A', 'PC', 'W'].includes(r) || f === 'A') return 'A';
-      if (['C', 'M', 'T', 'E'].includes(r) || f === 'C') return 'C';
-      if (['D', 'DC', 'TD', 'TS'].includes(r) || f === 'D') return 'D';
-      if (['P', 'POR'].includes(r) || f === 'P') return 'P';
+      if (['P', 'D', 'C', 'A'].includes(f)) return f;
+
+      const r = (roleOrPlayer.role || '').toUpperCase();
+      if (['P', 'POR'].includes(r)) return 'P';
+      if (['D', 'DC', 'DD', 'DS', 'TD', 'TS'].includes(r)) return 'D';
+      if (['C', 'M', 'CC', 'T', 'E'].includes(r)) return 'C';
+      if (['A', 'PC', 'W'].includes(r)) return 'A';
       return 'C';
     }
     const str = String(roleOrPlayer).toUpperCase();
-    if (['A', 'PC', 'W'].includes(str)) return 'A';
-    if (['C', 'M', 'T', 'E'].includes(str)) return 'C';
-    if (['D', 'DC', 'TD', 'TS'].includes(str)) return 'D';
-    if (['P', 'POR'].includes(str)) return 'P';
-    return ['P', 'D', 'C', 'A'].includes(str) ? str : 'C';
+    if (['P', 'D', 'C', 'A'].includes(str)) return str;
+    if (['POR'].includes(str)) return 'P';
+    if (['DC', 'DD', 'DS', 'TD', 'TS'].includes(str)) return 'D';
+    if (['M', 'CC', 'T', 'E'].includes(str)) return 'C';
+    if (['PC', 'W'].includes(str)) return 'A';
+    return 'C';
   }
 
   getStrategies() {

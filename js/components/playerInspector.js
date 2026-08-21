@@ -322,14 +322,10 @@ export class PlayerInspectorComponent {
         <div class="mini-grid">
           <div class="mini-stat">
             <span>Ruolo Classic</span>
-            <div class="mini-stat-edit-wrap">
-              <select id="edit-player-role" class="mini-stat-input" style="padding: 2px 4px; font-size: 11px; font-weight: 700; cursor: pointer;">
-                <option value="P" ${classicRole === 'P' ? 'selected' : ''}>P (Portiere)</option>
-                <option value="D" ${classicRole === 'D' ? 'selected' : ''}>D (Difensore)</option>
-                <option value="C" ${classicRole === 'C' ? 'selected' : ''}>C (Centrocampista)</option>
-                <option value="A" ${classicRole === 'A' ? 'selected' : ''}>A (Attaccante)</option>
-              </select>
-            </div>
+            <strong style="display: inline-flex; align-items: center; gap: 4px; margin-top: 2px;">
+              <span class="role role-${classicRole.toLowerCase()}" style="font-size: 11px; padding: 1px 6px;">${classicRole}</span>
+              ${player.role && player.role !== classicRole ? `<span style="font-size: 11px; color: var(--muted); font-weight: 600;">(${player.role})</span>` : ''}
+            </strong>
           </div>
           <div class="mini-stat">
             <span>QtA Classic</span>
@@ -455,7 +451,6 @@ export class PlayerInspectorComponent {
 
     // Helper unificato per estrarre e salvare tutti i dati del form
     const saveCurrentForm = (notifyUser = false) => {
-      const selectedRole = container.querySelector('#edit-player-role')?.value || classicRole || 'C';
       const isRigoristaVal = Boolean(container.querySelector('#edit-rigorista')?.checked);
       const isPunizioniVal = Boolean(container.querySelector('#edit-punizioni')?.checked);
       const isCornerVal = Boolean(container.querySelector('#edit-corner')?.checked);
@@ -468,9 +463,9 @@ export class PlayerInspectorComponent {
         name: player.name,
         displayName: player.displayName || player.name,
         strategyTierId: player.strategyTierId || store.getPlayerTierId(player) || null,
-        role: selectedRole,
-        classicRole: selectedRole,
-        fantaRole: selectedRole,
+        role: player.role || classicRole,
+        classicRole: player.classicRole || classicRole,
+        fantaRole: player.fantaRole || classicRole,
         mantraRole: player.mantraRole || '',
         status: player.status || 'tit_sicuro',
         titIndex: newTitIndex,

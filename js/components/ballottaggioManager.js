@@ -19,7 +19,7 @@ export function renderBallottaggioSection(container, player, currentSlotId) {
   }
 
   const existingBallottaggio = store.getBallottaggioForPlayer(player.id) || (currentSlotId ? store.getBallottaggioForSlot(currentSlotId) : null);
-  const squad = team.players.filter(p => p.id !== player.id);
+  const squad = store.getAllPlayers().filter(p => p && p.id !== player.id);
 
   if (!existingBallottaggio) {
     container.innerHTML = `
@@ -28,14 +28,14 @@ export function renderBallottaggioSection(container, player, currentSlotId) {
           <i class="fa-solid fa-scale-balanced"></i>
         </div>
         <h4>Nessun Ballottaggio Attivo</h4>
-        <p>Configura un duello per la maglia da titolare tra <strong>${sanitizeHtml(player.displayName)}</strong> e un compagno di reparto.</p>
+        <p>Configura un duello per la maglia da titolare tra <strong>${sanitizeHtml(player.displayName || player.name)}</strong> e un compagno di reparto.</p>
         
         <div class="create-ballottaggio-form">
           <label for="opponent-select">Seleziona contendente:</label>
           <select id="opponent-select" class="fanta-select">
             <option value="">-- Seleziona giocatore --</option>
             ${squad.map(p => `
-              <option value="${p.id}">${sanitizeHtml(p.displayName)} (${p.role} - ${p.fantaRole})</option>
+              <option value="${p.id}">${sanitizeHtml(p.displayName || p.name)} (${p.classicRole || p.role || ''})</option>
             `).join('')}
           </select>
           <button id="create-ballottaggio-btn" class="fanta-btn primary-btn btn-full">
@@ -76,9 +76,10 @@ export function renderBallottaggioSection(container, player, currentSlotId) {
   // Se esiste un ballottaggio attivo
   const isPlayerA = existingBallottaggio.playerAId === player.id;
   const playerA = store.getPlayer(existingBallottaggio.playerAId) || player;
-  const playerB = store.getPlayer(existingBallottaggio.playerBId);
-  const percA = existingBallottaggio.percA || 50;
-  const percB = existingBallottaggio.percB || 50;
+  const playerB = store.getPlayer(existingBallottaggio.playerBId) || { displayName: existingBallottaggio.opponentName || 'Avversario' };
+  const percA = existingBallottaggio.percA ?? existingBallottaggio.percentageA ?? 50;
+  const percB = existingBallottaggio.percB ?? existingBallottaggio.percentageB ?? (100 - percA);
+  const substitutes = existingBallottaggio.substitutes || [];
 
   container.innerHTML = `
     <div class="ballottaggio-card-view">
@@ -92,14 +93,14 @@ export function renderBallottaggioSection(container, player, currentSlotId) {
       <!-- Duel Comparison Graphic -->
       <div class="duel-graphic-container">
         <div class="duel-player player-a ${isPlayerA ? 'is-current' : ''}">
-          <span class="duel-name">${sanitizeHtml(playerA?.displayName || 'Giocatore 1')}</span>
+          <span class="duel-name">${sanitizeHtml(playerA?.displayName || playerA?.name || 'Giocatore 1')}</span>
           <span class="duel-perc perc-a">${percA}%</span>
         </div>
 
         <div class="duel-vs-circle">VS</div>
 
         <div class="duel-player player-b ${!isPlayerA ? 'is-current' : ''}">
-          <span class="duel-name">${sanitizeHtml(playerB?.displayName || 'Giocatore 2')}</span>
+          <span class="duel-name">${sanitizeHtml(playerB?.displayName || playerB?.name || 'Giocatore 2')}</span>
           <span class="duel-perc perc-b">${percB}%</span>
         </div>
       </div>
