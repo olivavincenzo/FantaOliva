@@ -131,7 +131,9 @@ export function createPlayerCard(player, options = {}) {
       const badges = ballottaggio.substitutes.map((s, idx) => {
         const rawName = s.displayName || s.name || '';
         const nameClean = rawName.includes('(') ? rawName : `${rawName}${s.perc ? ` (${s.perc}%)` : ''}`;
-        return `<span class="duel" title="In ballottaggio con ${sanitizeHtml(nameClean)}"><i class="fa-solid fa-scale-unbalanced" style="font-size: 7.5px;"></i> ${idx + 1}ª ${sanitizeHtml(nameClean)}</span>`;
+        const subId = s.id || s.playerId || '';
+        const subName = (s.name || s.displayName || '').replace(/\s*\(\d+%\)$/, '').trim();
+        return `<span class="duel" data-duel-id="${subId}" data-duel-name="${sanitizeHtml(subName)}" title="In ballottaggio con ${sanitizeHtml(nameClean)} (Doppio click per aprire scheda)"><i class="fa-solid fa-scale-unbalanced" style="font-size: 7.5px;"></i> ${idx + 1}ª ${sanitizeHtml(nameClean)}</span>`;
       }).join(' ');
 
       ballottaggioHtml = `<div class="duels-list">${badges}</div>`;
@@ -139,9 +141,10 @@ export function createPlayerCard(player, options = {}) {
       const opp = ballottaggio.opponentName;
       const perc = ballottaggio.percA ?? ballottaggio.percentageA ?? 50;
       const oppClean = opp.includes('(') ? opp : `${opp} (${ballottaggio.percB ?? (100 - perc)}%)`;
+      const oppName = opp.replace(/\s*\(\d+%\)$/, '').trim();
       ballottaggioHtml = `
         <div class="duels-list">
-          <span class="duel" title="Ballottaggio con ${sanitizeHtml(oppClean)}"><i class="fa-solid fa-scale-unbalanced" style="font-size: 7.5px;"></i> 1ª ${sanitizeHtml(oppClean)}</span>
+          <span class="duel" data-duel-name="${sanitizeHtml(oppName)}" title="Ballottaggio con ${sanitizeHtml(oppClean)} (Doppio click per aprire scheda)"><i class="fa-solid fa-scale-unbalanced" style="font-size: 7.5px;"></i> 1ª ${sanitizeHtml(oppClean)}</span>
         </div>
       `;
     }
@@ -370,6 +373,37 @@ export function createPlayerCard(player, options = {}) {
   astaToggleBtn?.addEventListener('click', (e) => {
     e.stopPropagation();
     store.togglePlayerAvailability(player.id);
+  });
+
+  // Listener per badge ballottaggio (apre la scheda del giocatore in ballottaggio al doppio click o click)
+  card.querySelectorAll('.duel').forEach(duelEl => {
+    const openDuelPlayer = (e) => {
+      e.stopPropagation();
+      e.preventDefault();
+      const duelId = duelEl.dataset.duelId;
+      const duelName = duelEl.dataset.duelName;
+      const foundPlayer = (duelId ? store.getPlayer(duelId) : null) || (duelName ? store.getPlayer(duelName) : null);
+      if (foundPlayer) {
+        store.selectPlayer(foundPlayer.id);
+
+        if (document.body.classList.contains('right-sidebar-collapsed')) {
+          document.body.classList.remove('right-sidebar-collapsed');
+        }
+
+        const sidebarInspector = document.querySelector('#sidebar-inspector');
+        const sidebarTeams = document.querySelector('#sidebar-teams');
+        const backdrop = document.querySelector('#mobile-drawer-backdrop');
+
+        if (window.innerWidth <= 900) {
+          sidebarInspector?.classList.add('mobile-open');
+          sidebarTeams?.classList.remove('mobile-open');
+          backdrop?.classList.remove('hidden');
+        }
+      }
+    };
+
+    duelEl.addEventListener('dblclick', openDuelPlayer);
+    duelEl.addEventListener('click', openDuelPlayer);
   });
 
   return card;

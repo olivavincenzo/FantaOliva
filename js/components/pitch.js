@@ -66,7 +66,7 @@ export class PitchComponent {
     const ballottaggiHtml = ballottaggiList.map(duel => {
       if (!Array.isArray(duel) || duel.length < 2) return '';
       const items = duel.map((p, idx) => `
-        <span class="duel-player ${idx === 0 ? 'leader' : ''}">${sanitizeHtml(p.name)} <strong class="perc-val">${p.perc}%</strong></span>
+        <span class="duel-player ${idx === 0 ? 'leader' : ''}" data-duel-name="${sanitizeHtml(p.name)}" title="${sanitizeHtml(p.name)} (${p.perc}%) - Doppio click per aprire scheda">${sanitizeHtml(p.name)} <strong class="perc-val">${p.perc}%</strong></span>
       `).join('<span class="vs-divider">⚔️</span>');
       return `<span class="team-ballottaggio-chip" title="Ballottaggio Ufficiale">${items}</span>`;
     }).filter(Boolean).join('');
@@ -376,7 +376,7 @@ export class PitchComponent {
     const ballottaggiHtml = ballottaggiList.map(duel => {
       if (!Array.isArray(duel) || duel.length < 2) return '';
       const items = duel.map((p, idx) => `
-        <span class="duel-player ${idx === 0 ? 'leader' : ''}">${sanitizeHtml(p.name)} <strong class="perc-val">${p.perc}%</strong></span>
+        <span class="duel-player ${idx === 0 ? 'leader' : ''}" data-duel-name="${sanitizeHtml(p.name)}" title="${sanitizeHtml(p.name)} (${p.perc}%) - Doppio click per aprire scheda">${sanitizeHtml(p.name)} <strong class="perc-val">${p.perc}%</strong></span>
       `).join('<span class="vs-divider">⚔️</span>');
       return `<span class="team-ballottaggio-chip" title="Ballottaggio Ufficiale">${items}</span>`;
     }).filter(Boolean).join('');
@@ -470,6 +470,36 @@ export class PitchComponent {
         notify.success(`Nota salvata per ${team.name}`);
       });
     }
+
+    // Listener per i giocatori nei ballottaggi del banner tattico
+    bannerEl.querySelectorAll('.duel-player').forEach(el => {
+      const openBannerDuelPlayer = (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        const pName = el.dataset.duelName || el.textContent.replace(/\d+%/g, '').replace(/[⚔️ℹ️]/g, '').trim();
+        const found = store.getPlayer(pName);
+        if (found) {
+          store.selectPlayer(found.id);
+
+          if (document.body.classList.contains('right-sidebar-collapsed')) {
+            document.body.classList.remove('right-sidebar-collapsed');
+          }
+
+          const sidebarInspector = document.querySelector('#sidebar-inspector');
+          const sidebarTeams = document.querySelector('#sidebar-teams');
+          const backdrop = document.querySelector('#mobile-drawer-backdrop');
+
+          if (window.innerWidth <= 900) {
+            sidebarInspector?.classList.add('mobile-open');
+            sidebarTeams?.classList.remove('mobile-open');
+            backdrop?.classList.remove('hidden');
+          }
+        }
+      };
+
+      el.addEventListener('dblclick', openBannerDuelPlayer);
+      el.addEventListener('click', openBannerDuelPlayer);
+    });
   }
 
   renderVerticalList() {

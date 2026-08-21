@@ -237,6 +237,17 @@
 .team-ballottaggio-chip .duel-player {
   font-weight: 600;
   color: var(--body);
+  cursor: pointer;
+  user-select: none;
+  border-radius: 4px;
+  padding: 1px 3px;
+  transition: background var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
+}
+
+.team-ballottaggio-chip .duel-player:hover {
+  background: rgba(124, 58, 237, 0.12);
+  color: #7c3aed;
+  transform: scale(1.05);
 }
 
 .team-ballottaggio-chip .duel-player strong.perc-val {
