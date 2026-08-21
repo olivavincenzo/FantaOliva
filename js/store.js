@@ -187,15 +187,9 @@ class Store {
         this.activeStrategyId = this.strategies[0].id;
       }
 
-      // Seleziona il primo titolare della squadra di partenza
-      const currentTeam = this.getCurrentTeam();
-      if (currentTeam) {
-        const firstSlot = Object.keys(currentTeam.lineup || {}).find(k => currentTeam.lineup[k]);
-        if (firstSlot) {
-          this.selectedSlotId = firstSlot;
-          this.selectedPlayerId = currentTeam.lineup[firstSlot].id;
-        }
-      }
+      // All'avvio nessun giocatore è selezionato di default
+      this.selectedSlotId = null;
+      this.selectedPlayerId = null;
     } catch (e) {
       console.warn('Errore nel parsing del localStorage, ripristino dati demo:', e);
       this.teams = deepClone(INITIAL_TEAMS);
@@ -334,17 +328,6 @@ class Store {
     } else {
       this.selectedPlayerId = null;
       this.selectedSlotId = null;
-
-      if (team.lineup) {
-        const firstSlot = Object.keys(team.lineup).find(k => team.lineup[k]);
-        if (firstSlot) {
-          this.selectedSlotId = firstSlot;
-          this.selectedPlayerId = team.lineup[firstSlot].id;
-        }
-      }
-      if (!this.selectedPlayerId && team.bench && team.bench.length > 0) {
-        this.selectedPlayerId = team.bench[0].id;
-      }
     }
 
     this.emit('team:changed', this.getCurrentTeam());
@@ -364,16 +347,16 @@ class Store {
       this.teams[index] = deepClone(original);
       this.syncOfficialBallottaggi();
       this.syncSpecialistsData();
+      this.selectedPlayerId = null;
+      this.selectedSlotId = null;
       this.saveToStorage();
       this.emit('team:reset', this.getCurrentTeam());
       this.emit('team:changed', this.getCurrentTeam());
       this.emit('formation:changed', this.getCurrentFormation());
-
-      const team = this.getCurrentTeam();
-      const firstSlot = Object.keys(team.lineup || {}).find(k => team.lineup[k]);
-      if (firstSlot) {
-        this.selectPlayer(team.lineup[firstSlot].id, firstSlot);
-      }
+      this.emit('player:selected', {
+        player: null,
+        slotId: null
+      });
     }
   }
 

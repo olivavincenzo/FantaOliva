@@ -293,21 +293,21 @@ export class PitchComponent {
   }
 
   subscribeEvents() {
-    store.subscribe('formation:changed', () => this.updatePitch());
-    store.subscribe('team:changed', () => this.updatePitch());
-    store.subscribe('team:reset', () => this.updatePitch());
+    store.subscribe('formation:changed', () => this.updatePitch(false));
+    store.subscribe('team:changed', () => this.updatePitch(true));
+    store.subscribe('team:reset', () => this.updatePitch(true));
     store.subscribe('player:selected', () => this.updateSelectionHighlight({ scroll: false }));
-    store.subscribe('player:updated', () => this.updatePitch());
-    store.subscribe('favorite:toggled', () => this.updatePitch());
-    store.subscribe('ballottaggio:updated', () => this.updatePitch());
-    store.subscribe('pitch:layoutChanged', () => this.updatePitch());
+    store.subscribe('player:updated', () => this.updatePitch(false));
+    store.subscribe('favorite:toggled', () => this.updatePitch(false));
+    store.subscribe('ballottaggio:updated', () => this.updatePitch(false));
+    store.subscribe('pitch:layoutChanged', () => this.updatePitch(false));
     store.subscribe('position:customized', () => {
       this.updateSlotsPositions();
       this.renderTacticalLines();
     });
   }
 
-  updatePitch() {
+  updatePitch(resetScroll = false) {
     const team = store.getCurrentTeam();
     const clubEl = this.container.querySelector('#pitch-watermark-club');
     if (team && clubEl) {
@@ -324,6 +324,13 @@ export class PitchComponent {
     this.renderVerticalList();
     this.updateSlotsPositions();
     this.renderTacticalLines();
+
+    if (resetScroll) {
+      const outerWrapper = this.container.querySelector('.pitch-outer-wrapper');
+      if (outerWrapper) {
+        outerWrapper.scrollTop = 0;
+      }
+    }
   }
 
   updateTacticalBanner() {
