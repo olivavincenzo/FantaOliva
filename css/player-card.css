@@ -723,6 +723,22 @@
   font-size: 9.5px;
 }
 
+.player-card.is-compact .player-set-pieces-row {
+  display: none;
+}
+
+.player-card.is-compact .player-set-pieces-row.has-active-set-pieces,
+.player-card.is-compact .player-set-pieces-row:has(.has-set-pieces) {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-top: 1px;
+}
+
+.player-card.is-compact .player-set-pieces-row .set-pieces-badge:not(.has-set-pieces) {
+  display: none;
+}
+
 .player-card.is-compact .player-meta {
   font-size: 8.5px;
   margin-top: 2px;
