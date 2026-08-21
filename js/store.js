@@ -953,67 +953,169 @@ class Store {
     const team = this.getCurrentTeam();
     if (!team) return null;
 
+    const player = this.getPlayer(playerId) || (team.lineup && Object.values(team.lineup).find(p => p && (p.id === playerId || p.csvId === playerId))) || null;
+    const normName = (player?.name || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+    const normDisp = (player?.displayName || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+    const csvIdStr = player?.csvId ? player.csvId.toString() : '';
+
     // 1. Cerca nei ballottaggi espliciti salvati della squadra
     if (team.ballottaggi && Array.isArray(team.ballottaggi) && team.ballottaggi.length > 0) {
-      const found = team.ballottaggi.find(b => b.playerAId === playerId || b.playerBId === playerId);
-      if (found) return found;
+      const found = team.ballottaggi.find(b => {
+        if (b.playerAId === playerId || b.playerBId === playerId) return true;
+        if (player && (b.playerAId === player.id || b.playerBId === player.id)) return true;
+        if (Array.isArray(b.duel) && b.duel.some(d => {
+          const dPid = d.playerId || '';
+          const dCsv = d.csvId ? d.csvId.toString() : '';
+          const dNorm = (d.name || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+          return dPid === playerId || (player && dPid === player.id) ||
+                 (csvIdStr && dCsv === csvIdStr) ||
+                 (dNorm && (dNorm === normName || dNorm === normDisp || (normName.length > 3 && dNorm.includes(normName)) || (dNorm.length > 3 && normName.includes(dNorm))));
+        })) return true;
+        return false;
+      });
+
+      if (found) {
+        if (Array.isArray(found.duel) && found.duel.length > 0) {
+          const myIdx = found.duel.findIndex(d => {
+            const dPid = d.playerId || '';
+            const dCsv = d.csvId ? d.csvId.toString() : '';
+            const dNorm = (d.name || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+            return dPid === playerId || (player && dPid === player.id) ||
+                   (csvIdStr && dCsv === csvIdStr) ||
+                   (dNorm && (dNorm === normName || dNorm === normDisp || (normName.length > 3 && dNorm.includes(normName)) || (dNorm.length > 3 && normName.includes(dNorm))));
+          });
+          const myEntry = myIdx !== -1 ? found.duel[myIdx] : found.duel[0];
+          const opponents = myIdx !== -1 ? found.duel.filter((_, idx) => idx !== myIdx) : found.duel.slice(1);
+          const primaryOpp = opponents[0] || {};
+          const substitutes = opponents.map(op => {
+            const rawName = op.name || op.displayName || '';
+            const nameClean = rawName.includes('(') ? rawName : `${rawName}${op.perc ? ` (${op.perc}%)` : ''}`;
+            return {
+              displayName: nameClean,
+              name: nameClean,
+              perc: op.perc,
+              playerId: op.playerId
+            };
+          });
+
+          return {
+            id: found.id,
+            playerAId: player?.id || playerId,
+            percentageA: myEntry?.perc ?? found.percA ?? 50,
+            percA: myEntry?.perc ?? found.percA ?? 50,
+            playerBId: primaryOpp.playerId || found.playerBId,
+            opponentName: primaryOpp.name ? (primaryOpp.name.includes('(') ? primaryOpp.name : `${primaryOpp.name} (${primaryOpp.perc}%)`) : (found.playerAId === playerId ? `${found.playerBName} (${found.percB}%)` : `${found.playerAName} (${found.percA}%)`),
+            percentageB: primaryOpp.perc ?? found.percB ?? 50,
+            percB: primaryOpp.perc ?? found.percB ?? 50,
+            substitutes,
+            duel: found.duel
+          };
+        }
+
+        const isPlayerA = found.playerAId === playerId || (player && found.playerAId === player.id);
+        const oppName = isPlayerA ? found.playerBName : found.playerAName;
+        const oppPerc = isPlayerA ? (found.percB ?? 50) : (found.percA ?? 50);
+        const myPerc = isPlayerA ? (found.percA ?? 50) : (found.percB ?? 50);
+        const oppFormatted = oppName.includes('(') ? oppName : `${oppName} (${oppPerc}%)`;
+
+        return {
+          id: found.id,
+          playerAId: playerId,
+          percentageA: myPerc,
+          percA: myPerc,
+          playerBId: isPlayerA ? found.playerBId : found.playerAId,
+          opponentName: oppFormatted,
+          percentageB: oppPerc,
+          percB: oppPerc,
+          substitutes: [{
+            name: oppFormatted,
+            displayName: oppFormatted,
+            perc: oppPerc,
+            playerId: isPlayerA ? found.playerBId : found.playerAId
+          }],
+          duel: found.duel || []
+        };
+      }
     }
 
-    // 2. Cerca nel giocatore stesso
-    const player = this.getPlayer(playerId);
-    if (!player) return null;
-
-    // Controllo nei ballottaggi ufficiali SOS Fanta della squadra
+    // 2. Controllo nei ballottaggi ufficiali SOS Fanta della squadra
     const sosData = this.getTeamSosData(team);
-    const officialBallottaggi = sosData?.ballottaggi || team.ballottaggi || [];
+    const officialBallottaggi = sosData?.ballottaggi || [];
     if (Array.isArray(officialBallottaggi) && officialBallottaggi.length > 0) {
-      const normName = (player.name || '').toLowerCase().replace(/[^a-z0-9]/g, '');
-      const normDisp = (player.displayName || '').toLowerCase().replace(/[^a-z0-9]/g, '');
-
       for (const duel of officialBallottaggi) {
         if (Array.isArray(duel)) {
-          const myEntry = duel.find(d => {
+          const myIdx = duel.findIndex(d => {
             const dPid = d.playerId || '';
+            const dCsv = d.csvId ? d.csvId.toString() : '';
             const dNorm = (d.name || '').toLowerCase().replace(/[^a-z0-9]/g, '');
-            return dPid === playerId || (player.id && dPid === player.id) ||
+            return dPid === playerId || (player && dPid === player.id) ||
+                   (csvIdStr && dCsv === csvIdStr) ||
                    (dNorm && (dNorm === normName || dNorm === normDisp || (normName.length > 3 && dNorm.includes(normName)) || (dNorm.length > 3 && normName.includes(dNorm))));
           });
 
-          if (myEntry) {
-            const opponents = duel.filter(d => d !== myEntry);
-            const primaryOpp = opponents[0];
-            const substitutes = opponents.map(op => ({
-              displayName: `${op.name} (${op.perc}%)`,
-              name: `${op.name} (${op.perc}%)`,
-              perc: op.perc,
-              playerId: op.playerId
-            }));
+          if (myIdx !== -1) {
+            const myEntry = duel[myIdx];
+            const opponents = duel.filter((_, idx) => idx !== myIdx);
+            const primaryOpp = opponents[0] || {};
+            const substitutes = opponents.map(op => {
+              const rawName = op.name || op.displayName || '';
+              const nameClean = rawName.includes('(') ? rawName : `${rawName}${op.perc ? ` (${op.perc}%)` : ''}`;
+              return {
+                displayName: nameClean,
+                name: nameClean,
+                perc: op.perc,
+                playerId: op.playerId
+              };
+            });
+
+            const oppFormatted = primaryOpp.name ? (primaryOpp.name.includes('(') ? primaryOpp.name : `${primaryOpp.name} (${primaryOpp.perc}%)`) : 'Compagno';
 
             return {
-              playerAId: player.id,
+              playerAId: player?.id || playerId,
               percentageA: myEntry.perc ?? 50,
               percA: myEntry.perc ?? 50,
               playerBId: primaryOpp ? primaryOpp.playerId : null,
-              opponentName: primaryOpp ? `${primaryOpp.name} (${primaryOpp.perc}%)` : 'Compagno',
-              percentageB: primaryOpp ? (primaryOpp.perc ?? 50) : 50,
-              percB: primaryOpp ? (primaryOpp.perc ?? 50) : 50,
-              substitutes
+              opponentName: oppFormatted,
+              percentageB: primaryOpp.perc ?? 50,
+              percB: primaryOpp.perc ?? 50,
+              substitutes,
+              duel
             };
           }
         }
       }
     }
 
-    if (player.ballottaggio && typeof player.ballottaggio === 'object') {
+    if (player?.ballottaggio && typeof player.ballottaggio === 'object') {
       const pA = player.ballottaggio.perc || player.ballottaggio.percentage || 60;
+      const vsName = player.ballottaggio.vs || player.ballottaggio.opponent || 'Compagno';
+      const pB = player.ballottaggio.opponentPerc || (100 - pA);
+      const vsFormatted = vsName.includes('(') ? vsName : `${vsName} (${pB}%)`;
+      const subs = Array.isArray(player.substitutes) && player.substitutes.length > 0
+        ? player.substitutes.map(s => {
+            const raw = s.displayName || s.name || '';
+            return {
+              ...s,
+              name: raw.includes('(') ? raw : `${raw}${s.perc ? ` (${s.perc}%)` : ''}`,
+              displayName: raw.includes('(') ? raw : `${raw}${s.perc ? ` (${s.perc}%)` : ''}`
+            };
+          })
+        : [{
+            name: vsFormatted,
+            displayName: vsFormatted,
+            perc: pB
+          }];
+
       return {
         playerAId: player.id,
         playerBId: player.ballottaggio.opponentId || null,
-        opponentName: player.ballottaggio.vs || player.ballottaggio.opponent || 'Compagno',
+        opponentName: vsFormatted,
         percentageA: pA,
         percA: pA,
-        percentageB: 100 - pA,
-        percB: 100 - pA
+        percentageB: pB,
+        percB: pB,
+        substitutes: subs,
+        duel: player.ballottaggio.duel || []
       };
     }
 

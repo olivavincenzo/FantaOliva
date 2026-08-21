@@ -514,6 +514,20 @@ export class PlayerInspectorComponent {
       }
     });
 
+    // Auto-Resize dinamico per il container Note Personali (nessuno scrolling)
+    const notesTextarea = container.querySelector('#player-notes-textarea');
+    if (notesTextarea) {
+      const resizeNotes = () => {
+        notesTextarea.style.height = 'auto';
+        notesTextarea.style.height = `${Math.max(60, notesTextarea.scrollHeight)}px`;
+      };
+      resizeNotes();
+      requestAnimationFrame(resizeNotes);
+      setTimeout(resizeNotes, 60);
+
+      notesTextarea.addEventListener('input', resizeNotes);
+    }
+
     // Pulsante Salva Nota
     container.querySelector('#save-player-note-btn')?.addEventListener('click', () => {
       saveCurrentForm(true);
