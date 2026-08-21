@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  container-type: inline-size;
   cursor: pointer;
   user-select: none;
   -webkit-user-select: none;
@@ -200,13 +201,35 @@
 /* Griglia Metriche Principali (5 Colonne: Titol, Affid, Integr, Consigliati, Ruolo) */
 .core-metrics {
   display: grid;
-  grid-template-columns: repeat(3, 1fr) 1.15fr 0.9fr;
-  gap: 3px;
+  grid-template-columns: repeat(3, minmax(46px, 1fr)) minmax(60px, 1.15fr) minmax(48px, 0.9fr);
+  gap: 6px 4px;
   padding: 8px 0 7px;
   margin-top: 8px;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   width: 100%;
+  box-sizing: border-box;
+}
+
+@container (max-width: 360px) {
+  .core-metrics {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 6px 8px;
+  }
+
+  .core-metrics .metric {
+    flex: 1 1 auto;
+    min-width: 46px;
+  }
+}
+
+@container (max-width: 250px) {
+  .core-metrics .metric {
+    flex: 1 1 42%;
+  }
 }
 
 .metric {
@@ -362,13 +385,15 @@
   padding-top: 10px;
   width: 100%;
   box-sizing: border-box;
+  flex-wrap: wrap;
+  row-gap: 6px;
 }
 
 .market-list {
   display: flex;
   align-items: center;
   gap: 5px;
-  flex-shrink: 0;
+  flex-wrap: wrap;
 }
 
 .market {
@@ -412,8 +437,23 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  flex-shrink: 0;
-  white-space: nowrap;
+  flex-wrap: wrap;
+}
+
+@container (max-width: 440px) {
+  .data-rail {
+    flex-wrap: wrap;
+    gap: 6px 10px;
+    justify-content: flex-start;
+  }
+
+  .market-list,
+  .season {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 4px 6px;
+  }
 }
 
 .stat-item {
