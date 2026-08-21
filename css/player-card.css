@@ -113,15 +113,13 @@
 .player-meta {
   display: flex;
   align-items: center;
-  gap: 5px;
-  overflow: hidden;
+  gap: 4px 6px;
+  flex-wrap: wrap;
   margin-top: 3px;
   color: var(--muted);
   font-size: 10px;
   font-weight: 550;
-  line-height: 1;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  line-height: 1.2;
 }
 
 .set-pieces-badge {
@@ -198,11 +196,13 @@
   transform: scale(0.92);
 }
 
-/* Griglia Metriche Principali (5 Colonne: Titol, Affid, Integr, Consigliati, Ruolo) */
+/* Griglia Metriche Principali (Titol, Affid, Integr, Consigliati, Ruolo con auto-wrap fluido) */
 .core-metrics {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(46px, 1fr)) minmax(60px, 1.15fr) minmax(48px, 0.9fr);
-  gap: 6px 4px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 6px 10px;
   padding: 8px 0 7px;
   margin-top: 8px;
   border-top: 1px solid var(--line);
@@ -211,29 +211,9 @@
   box-sizing: border-box;
 }
 
-@container (max-width: 360px) {
-  .core-metrics {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 6px 8px;
-  }
-
-  .core-metrics .metric {
-    flex: 1 1 auto;
-    min-width: 46px;
-  }
-}
-
-@container (max-width: 250px) {
-  .core-metrics .metric {
-    flex: 1 1 42%;
-  }
-}
-
-.metric {
-  min-width: 0;
+.core-metrics .metric {
+  min-width: fit-content;
+  flex: 0 0 auto;
 }
 
 .metric-index-wrap {
@@ -574,6 +554,106 @@
 
 .player-card.is-scroll-target {
   animation: targetCardFlash 1.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ==========================================================================
+   LAYOUT ORIZZONTALE AD AMPIO SPAZIO (1 Colonna su Desktop con wrap dinamico)
+   ========================================================================== */
+@media (min-width: 768px) {
+  .player-list.cols-1 .player-card,
+  .listone-cards-grid.cols-1 .player-card,
+  .pitch-vertical-list-container .player-list.cols-1 .player-card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px 14px;
+    padding: 10px 16px;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  }
+
+  .player-list.cols-1 .player-card .player-top,
+  .listone-cards-grid.cols-1 .player-card .player-top {
+    flex: 0 1 240px;
+    width: auto;
+    max-width: 280px;
+    min-width: 180px;
+    margin-bottom: 0;
+  }
+
+  .player-list.cols-1 .player-card .player-card-strategy-strip,
+  .listone-cards-grid.cols-1 .player-card .player-card-strategy-strip {
+    flex: 0 0 auto;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .player-list.cols-1 .player-card .core-metrics,
+  .listone-cards-grid.cols-1 .player-card .core-metrics {
+    flex: 0 1 auto;
+    width: auto;
+    margin-top: 0;
+    padding: 0 12px;
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid var(--line);
+    border-right: 1px solid var(--line);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px 12px;
+    flex-wrap: wrap;
+  }
+
+  .player-list.cols-1 .player-card .core-metrics .metric,
+  .listone-cards-grid.cols-1 .player-card .core-metrics .metric {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    min-width: fit-content;
+  }
+
+  .player-list.cols-1 .player-card .data-rail,
+  .listone-cards-grid.cols-1 .player-card .data-rail {
+    flex: 1 1 260px;
+    min-width: 200px;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px 12px;
+    flex-wrap: wrap;
+  }
+
+  .player-list.cols-1 .player-card .market-list,
+  .listone-cards-grid.cols-1 .player-card .market-list {
+    display: flex;
+    gap: 5px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+  }
+
+  .player-list.cols-1 .player-card .season,
+  .listone-cards-grid.cols-1 .player-card .season {
+    display: flex;
+    gap: 6px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .player-list.cols-1 .player-card .duels-list,
+  .listone-cards-grid.cols-1 .player-card .duels-list {
+    flex: 0 1 auto;
+    width: auto;
+    margin-top: 0;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 
 /* Slot Vuoto */
