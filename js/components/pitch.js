@@ -284,6 +284,7 @@ export class PitchComponent {
     store.subscribe('team:reset', () => this.updatePitch());
     store.subscribe('player:selected', () => this.updateSelectionHighlight());
     store.subscribe('player:updated', () => this.updatePitch());
+    store.subscribe('favorite:toggled', () => this.updatePitch());
     store.subscribe('ballottaggio:updated', () => this.updatePitch());
     store.subscribe('pitch:layoutChanged', () => this.updatePitch());
     store.subscribe('position:customized', () => {

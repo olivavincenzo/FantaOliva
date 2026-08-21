@@ -1405,43 +1405,78 @@ class Store {
 
   // --- PREFERITI CALCIATORI ---
   isPlayerFavorite(playerId) {
-    return this.favoritePlayerIds.has(playerId);
+    if (!playerId) return false;
+    if (this.favoritePlayerIds.has(playerId)) return true;
+    const str = String(playerId).trim();
+    if (this.favoritePlayerIds.has(str)) return true;
+    const player = this.getPlayer(playerId);
+    if (player) {
+      if (player.id && this.favoritePlayerIds.has(player.id)) return true;
+      if (player.csvId && this.favoritePlayerIds.has(player.csvId.toString())) return true;
+    }
+    return false;
   }
 
   togglePlayerFavorite(playerId) {
     if (!playerId) return false;
-    const isFav = this.favoritePlayerIds.has(playerId);
-    if (isFav) {
-      this.favoritePlayerIds.delete(playerId);
-    } else {
-      this.favoritePlayerIds.add(playerId);
+    const strId = String(playerId).trim();
+    const player = this.getPlayer(playerId);
+    const isFav = this.isPlayerFavorite(playerId);
+
+    const idsToToggle = new Set([playerId, strId]);
+    if (player) {
+      if (player.id) idsToToggle.add(player.id);
+      if (player.csvId) idsToToggle.add(player.csvId.toString());
     }
+
+    idsToToggle.forEach(id => {
+      if (isFav) {
+        this.favoritePlayerIds.delete(id);
+      } else {
+        this.favoritePlayerIds.add(id);
+      }
+    });
+
     try {
       localStorage.setItem('fantaoliva_favorites', JSON.stringify(Array.from(this.favoritePlayerIds)));
     } catch (e) {
       console.warn('Errore salvataggio preferiti:', e);
     }
 
-    // Aggiorna stato in memoria
+    const matchesThisPlayer = (p) => {
+      if (!p) return false;
+      if (idsToToggle.has(p.id)) return true;
+      if (p.csvId && idsToToggle.has(p.csvId.toString())) return true;
+      if (player && p.name && player.name && p.name.toLowerCase() === player.name.toLowerCase()) return true;
+      return false;
+    };
+
+    // Aggiorna stato in memoria in tutte le squadre
     for (const team of this.teams) {
       if (team.lineup) {
         for (const p of Object.values(team.lineup)) {
-          if (p && p.id === playerId) p.isFavorite = !isFav;
+          if (matchesThisPlayer(p)) p.isFavorite = !isFav;
           if (p && p.substitutes) {
             for (const s of p.substitutes) {
-              if (s && s.id === playerId) s.isFavorite = !isFav;
+              if (matchesThisPlayer(s)) s.isFavorite = !isFav;
             }
           }
         }
       }
       if (team.bench) {
         for (const p of team.bench) {
-          if (p && p.id === playerId) p.isFavorite = !isFav;
+          if (matchesThisPlayer(p)) p.isFavorite = !isFav;
         }
       }
     }
+
+    if (this.playerCatalog && Array.isArray(this.playerCatalog)) {
+      const catP = this.playerCatalog.find(p => matchesThisPlayer(p));
+      if (catP) catP.isFavorite = !isFav;
+    }
+
     this.saveToStorage();
-    this.emit('player:updated', null);
+    this.emit('player:updated', player);
     this.emit('favorite:toggled', { playerId, isFavorite: !isFav });
     return !isFav;
   }

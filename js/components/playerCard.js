@@ -78,12 +78,15 @@ export function createPlayerCard(player, options = {}) {
   const statusInfo = PLAYER_STATUSES[player.status] || PLAYER_STATUSES.tit_sicuro;
   const isAvailable = player.isAvailable !== false;
 
+  const isFavorite = Boolean(player.isFavorite || store.isPlayerFavorite(player.id) || (player.csvId && store.isPlayerFavorite(player.csvId.toString())));
+
   const card = document.createElement('article');
   card.className = [
     'player-card',
     isLineup ? 'pitch-slot-card' : 'bench-player-card',
     isSelected ? 'is-selected' : '',
     compact ? 'is-compact' : '',
+    isFavorite ? 'is-favorite' : '',
     !isAvailable ? 'is-unavailable is-taken' : '',
     `status-${player.status}`
   ].filter(Boolean).join(' ');
@@ -144,11 +147,14 @@ export function createPlayerCard(player, options = {}) {
     }
   }
 
-  // Header player top con info piazzati
+  // Header player top con info piazzati e preferiti
   const headerHtml = `
     <header class="player-top">
       <div class="identity">
-        <h3 class="player-name" title="${sanitizeHtml(player.name)}">${sanitizeHtml(displayName)}</h3>
+        <div class="player-name-row">
+          <h3 class="player-name" title="${sanitizeHtml(player.name)}">${sanitizeHtml(displayName)}</h3>
+          ${isFavorite ? `<span class="card-fav-star" title="Calciatore nei Preferiti"><i class="fa-solid fa-star"></i></span>` : ''}
+        </div>
         <div class="player-set-pieces-row">
           ${rank ? `<span class="rank-badge">#${rank}</span>` : ''}
           ${showTeam && teamName ? `<span class="team-badge" title="Squadra: ${sanitizeHtml(teamName)}">${sanitizeHtml(teamName)}</span><span class="separator">·</span>` : ''}
