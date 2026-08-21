@@ -8,7 +8,6 @@ import { FORMATION_LIST } from './data/formations.js';
 import { TeamSelectorComponent } from './components/teamSelector.js';
 import { PitchComponent } from './components/pitch.js';
 import { PlayerInspectorComponent } from './components/playerInspector.js';
-import { AuctionSlotsComponent } from './components/auctionSlots.js';
 import { PlayersListoneComponent } from './components/playersListone.js';
 import { StrategyManagerComponent } from './components/strategyManager.js';
 import { initHistoryModal } from './components/historyManager.js';
@@ -22,7 +21,6 @@ class App {
     this.teamSelector = null;
     this.pitch = null;
     this.inspector = null;
-    this.auctionSlots = null;
     this.listone = null;
     this.strategyManager = null;
     this.csvImporter = null;
@@ -38,8 +36,6 @@ class App {
     this.teamSelector = new TeamSelectorComponent(document.querySelector('#sidebar-teams'));
     this.pitch = new PitchComponent(document.querySelector('#pitch-container'));
     this.inspector = new PlayerInspectorComponent(document.querySelector('#sidebar-inspector'));
-    this.auctionSlots = new AuctionSlotsComponent('auction-view-wrapper');
-    this.auctionSlots.init();
     this.listone = new PlayersListoneComponent('listone-view-wrapper');
     this.listone.init();
     this.strategyManager = new StrategyManagerComponent('strategy-modal');
@@ -67,56 +63,30 @@ class App {
   switchView(viewName) {
     store.setView(viewName);
     const tacticalTab = document.querySelector('#view-tab-tactical');
-    const auctionTab = document.querySelector('#view-tab-auction');
     const listoneTab = document.querySelector('#view-tab-listone');
     const tacticalView = document.querySelector('#tactical-view-wrapper');
-    const auctionView = document.querySelector('#auction-view-wrapper');
     const listoneView = document.querySelector('#listone-view-wrapper');
     const tacticalToolbar = document.querySelector('#pitch-tactical-toolbar');
-    const auctionControls = document.querySelector('#auction-controls-row');
     const mobileFieldBtn = document.querySelector('#mobile-field-btn');
-    const mobileAuctionBtn = document.querySelector('#mobile-auction-btn');
     const mobileListoneBtn = document.querySelector('#mobile-listone-btn');
     const activeTeam = document.querySelector('#header-active-team');
 
     if (viewName === 'tactical') {
       tacticalTab?.classList.add('is-active');
-      auctionTab?.classList.remove('is-active');
       listoneTab?.classList.remove('is-active');
       tacticalView?.classList.remove('hidden');
-      auctionView?.classList.add('hidden');
       listoneView?.classList.add('hidden');
       tacticalToolbar?.classList.remove('hidden');
-      auctionControls?.classList.add('hidden');
       mobileFieldBtn?.classList.add('active');
-      mobileAuctionBtn?.classList.remove('active');
       mobileListoneBtn?.classList.remove('active');
       activeTeam?.classList.remove('hidden');
-    } else if (viewName === 'auction_slots') {
-      tacticalTab?.classList.remove('is-active');
-      auctionTab?.classList.add('is-active');
-      listoneTab?.classList.remove('is-active');
-      tacticalView?.classList.add('hidden');
-      auctionView?.classList.remove('hidden');
-      listoneView?.classList.add('hidden');
-      tacticalToolbar?.classList.add('hidden');
-      auctionControls?.classList.remove('hidden');
-      mobileFieldBtn?.classList.remove('active');
-      mobileAuctionBtn?.classList.add('active');
-      mobileListoneBtn?.classList.remove('active');
-      activeTeam?.classList.add('hidden');
-      this.auctionSlots?.render();
     } else if (viewName === 'listone') {
       tacticalTab?.classList.remove('is-active');
-      auctionTab?.classList.remove('is-active');
       listoneTab?.classList.add('is-active');
       tacticalView?.classList.add('hidden');
-      auctionView?.classList.add('hidden');
       listoneView?.classList.remove('hidden');
       tacticalToolbar?.classList.add('hidden');
-      auctionControls?.classList.add('hidden');
       mobileFieldBtn?.classList.remove('active');
-      mobileAuctionBtn?.classList.remove('active');
       mobileListoneBtn?.classList.add('active');
       activeTeam?.classList.add('hidden');
       this.listone?.render();
@@ -125,17 +95,13 @@ class App {
 
   bindViewSwitcher() {
     const tacticalTab = document.querySelector('#view-tab-tactical');
-    const auctionTab = document.querySelector('#view-tab-auction');
     const listoneTab = document.querySelector('#view-tab-listone');
     const mobileFieldBtn = document.querySelector('#mobile-field-btn');
-    const mobileAuctionBtn = document.querySelector('#mobile-auction-btn');
     const mobileListoneBtn = document.querySelector('#mobile-listone-btn');
 
     tacticalTab?.addEventListener('click', () => this.switchView('tactical'));
-    auctionTab?.addEventListener('click', () => this.switchView('auction_slots'));
     listoneTab?.addEventListener('click', () => this.switchView('listone'));
     mobileFieldBtn?.addEventListener('click', () => this.switchView('tactical'));
-    mobileAuctionBtn?.addEventListener('click', () => this.switchView('auction_slots'));
     mobileListoneBtn?.addEventListener('click', () => this.switchView('listone'));
   }
 
@@ -298,9 +264,8 @@ class App {
   }
 
   bindResponsiveToggles() {
-    // Tasti navigazione mobile inferiore (4 sezioni principali)
+    // Tasti navigazione mobile inferiore
     const toggleFieldBtn = document.querySelector('#mobile-field-btn');
-    const toggleAuctionBtn = document.querySelector('#mobile-auction-btn');
     const toggleListoneBtn = document.querySelector('#mobile-listone-btn');
     const sidebarTeams = document.querySelector('#sidebar-teams');
     const sidebarInspector = document.querySelector('#sidebar-inspector');
@@ -309,7 +274,7 @@ class App {
     const headerActiveTeam = document.querySelector('#header-active-team');
 
     const updateMobileNav = (activeId) => {
-      [toggleFieldBtn, toggleAuctionBtn, toggleListoneBtn].forEach(btn => {
+      [toggleFieldBtn, toggleListoneBtn].forEach(btn => {
         if (btn) {
           btn.classList.toggle('active', btn.id === activeId);
         }
@@ -320,9 +285,7 @@ class App {
       sidebarTeams?.classList.remove('mobile-open');
       sidebarInspector?.classList.remove('mobile-open');
       backdrop?.classList.add('hidden');
-      if (store.activeView === 'auction_slots') {
-        updateMobileNav('mobile-auction-btn');
-      } else if (store.activeView === 'listone') {
+      if (store.activeView === 'listone') {
         updateMobileNav('mobile-listone-btn');
       } else {
         updateMobileNav('mobile-field-btn');
@@ -394,11 +357,6 @@ class App {
     toggleFieldBtn?.addEventListener('click', () => {
       closeDrawers();
       this.switchView('tactical');
-    });
-
-    toggleAuctionBtn?.addEventListener('click', () => {
-      closeDrawers();
-      this.switchView('auction_slots');
     });
 
     toggleListoneBtn?.addEventListener('click', () => {

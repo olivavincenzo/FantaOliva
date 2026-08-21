@@ -25,7 +25,6 @@
   <link rel="stylesheet" href="css/player-card.css?v=2">
   <link rel="stylesheet" href="css/sidebar.css">
   <link rel="stylesheet" href="css/modals.css">
-  <link rel="stylesheet" href="css/auction-slots.css">
   <link rel="stylesheet" href="css/listone.css?v=4">
   <link rel="stylesheet" href="css/strategy-manager.css">
   <link rel="stylesheet" href="css/responsive.css?v=2">
@@ -38,15 +37,11 @@
     <!-- HEADER TATTICO SUPERIORE -->
     <header class="app-header">
 
-      <!-- Sezione Sinistra: Switcher Viste (Lavagna Tattica / Guida Slot Asta / Svincolati) -->
+      <!-- Sezione Sinistra: Switcher Viste (Lavagna Tattica / Listone) -->
       <div class="header-left-section">
         <div class="view-switch-nav">
           <button id="view-tab-tactical" class="view-switch-btn is-active" title="Visualizza Campo e Lavagna Tattica">
             <i class="fa-solid fa-futbol"></i> <span>Lavagna</span>
-          </button>
-          <button id="view-tab-auction" class="view-switch-btn"
-            title="Visualizza Guida Asta con i 4 Slot da 10 Giocatori">
-            <i class="fa-solid fa-layer-group"></i> <span>Slot Asta</span>
           </button>
           <button id="view-tab-listone" class="view-switch-btn"
             title="Visualizza Listone Completo Calciatori Serie A">
@@ -55,12 +50,8 @@
         </div>
       </div>
 
-      <!-- Sezione Centrale: Controlli Contestuali Asta (Guida Slot Asta) -->
+      <!-- Sezione Centrale -->
       <div class="header-center-section">
-        <!-- Controlli Guida Slot Asta (Attivi in Vista Guida Slot Asta) -->
-        <div class="auction-controls-row hidden" id="auction-controls-row">
-          <!-- Rendered by AuctionSlotsComponent -->
-        </div>
       </div>
 
       <!-- Sezione Destra: Pulsante Impostazioni Desktop -->
@@ -179,12 +170,7 @@
       </aside>
     </div>
 
-    <!-- VISTA 2: GUIDA ASTA PER SLOT (4 SLOT DA 10 GIOCATORI PER RUOLO) -->
-    <div class="auction-view-wrapper hidden" id="auction-view-wrapper">
-      <!-- Rendered by AuctionSlotsComponent -->
-    </div>
-
-    <!-- VISTA 3: LISTONE COMPLETO CALCIATORI SERIE A -->
+    <!-- VISTA 2: LISTONE COMPLETO CALCIATORI SERIE A -->
     <div class="listone-view-wrapper hidden" id="listone-view-wrapper">
       <!-- Rendered by PlayersListoneComponent -->
     </div>
@@ -197,9 +183,6 @@
       <nav class="bottom-nav" aria-label="Navigazione principale">
         <button id="mobile-field-btn" class="nav-item active" aria-label="Lavagna" title="Lavagna">
           <svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="3"/><path d="M5 21c.8-4.2 3.1-6 7-6s6.2 1.8 7 6"/></svg>
-        </button>
-        <button id="mobile-auction-btn" class="nav-item" aria-label="Slot Asta" title="Slot Asta">
-          <svg viewBox="0 0 24 24"><path d="M5 7h14M5 12h14M5 17h14"/></svg>
         </button>
         <button id="mobile-listone-btn" class="nav-item" aria-label="Listone Svincolati" title="Listone">
           <svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10H3z"/><path d="M9 20v-6h6v6"/></svg>
