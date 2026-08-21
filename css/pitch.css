@@ -623,7 +623,7 @@
   }
 
   .pitch-outer-wrapper.is-pitch-mode .soccer-pitch {
-    min-height: calc(100vh - var(--header-height) - 70px);
+    min-height: calc(100vh - var(--header-height) - 90px);
     height: auto;
     flex: 1;
     margin-bottom: 0px;

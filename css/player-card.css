@@ -817,6 +817,30 @@
     display: none !important;
   }
 
+  .player-card.is-compact .player-set-pieces-row.has-active-set-pieces,
+  .player-card.is-compact .player-set-pieces-row:has(.has-set-pieces) {
+    display: flex !important;
+    align-items: center;
+    gap: 2px;
+    margin: 1px 0 0;
+  }
+
+  .player-card.is-compact .player-set-pieces-row .rank-badge,
+  .player-card.is-compact .player-set-pieces-row .team-badge,
+  .player-card.is-compact .player-set-pieces-row .separator,
+  .player-card.is-compact .player-set-pieces-row .set-pieces-badge:not(.has-set-pieces) {
+    display: none !important;
+  }
+
+  .player-card.is-compact .player-set-pieces-row .set-pieces-badge.has-set-pieces {
+    font-size: 5.5px;
+    font-weight: 750;
+    line-height: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
   .player-card.is-compact .player-card-strategy-strip {
     display: flex !important;
     width: 100%;
