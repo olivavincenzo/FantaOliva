@@ -72,34 +72,33 @@ export class PitchComponent {
     }).filter(Boolean).join('');
 
     this.container.innerHTML = `
-      <div class="pitch-outer-wrapper">
-        
-        <!-- HEADER EDITORIAL MINIMAL -->
-        <header class="topbar">
-          <div>
-            <p class="context">Asta 2026/27 · Serie A</p>
-            <div class="team-heading-row">
-              <h1 class="team-title-heading" id="pitch-watermark-club">${sanitizeHtml(teamName)}</h1>
-              <span class="team-formation-badge" id="pitch-formation-badge">${sanitizeHtml(currentModule)}</span>
-            </div>
-            <div class="team-coach-ratings-row" id="pitch-coach-ratings-row">
-              <span class="team-coach-text" title="Allenatore"><i class="fa-solid fa-user-tie"></i> All. <strong>${sanitizeHtml(coachName)}</strong></span>
-              <span class="tactical-rating-pill" title="Indice Attacco SOS Fanta (1-5)">⚔️ Att: <strong>${attackRating}/5</strong></span>
-              <span class="tactical-rating-pill" title="Indice Difesa SOS Fanta (1-5)">🛡️ Dif: <strong>${defenseRating}/5</strong></span>
-            </div>
+      <!-- HEADER EDITORIAL MINIMAL (FISSO IN CIMA) -->
+      <header class="topbar">
+        <div>
+          <p class="context">Asta 2026/27 · Serie A</p>
+          <div class="team-heading-row">
+            <h1 class="team-title-heading" id="pitch-watermark-club">${sanitizeHtml(teamName)}</h1>
+            <span class="team-formation-badge" id="pitch-formation-badge">${sanitizeHtml(currentModule)}</span>
           </div>
-          <div class="topbar-actions">
-            <button class="circle-button" id="pitch-hud-teams-btn" type="button" aria-label="Cambia Squadra" title="Cambia Squadra Serie A">
-              ⇄
-            </button>
-            <button class="circle-button" id="toggle-pitch-layout-btn" type="button" aria-label="Alterna Campo Grafico / Lista Giocatori" title="Mostra Campo Grafico">
-              <i class="fa-solid fa-futbol" style="font-size: 14px;"></i>
-            </button>
-          </div>
-        </header>
+        </div>
+        <div class="topbar-actions">
+          <button class="circle-button" id="pitch-hud-teams-btn" type="button" aria-label="Cambia Squadra" title="Cambia Squadra Serie A">
+            ⇄
+          </button>
+          <button class="circle-button" id="toggle-pitch-layout-btn" type="button" aria-label="Alterna Campo Grafico / Lista Giocatori" title="Mostra Campo Grafico">
+            <i class="fa-solid fa-futbol" style="font-size: 14px;"></i>
+          </button>
+        </div>
+      </header>
 
-        <!-- BANNER TATTICO SQUADRA (Specialisti & Punti Chiave) -->
+      <div class="pitch-outer-wrapper">
+        <!-- BANNER TATTICO SQUADRA (Coach & Ratings + Specialisti & Punti Chiave) -->
         <div class="team-tactical-banner" id="pitch-tactical-banner">
+          <div class="team-coach-ratings-row" id="pitch-coach-ratings-row">
+            <span class="team-coach-text" title="Allenatore"><i class="fa-solid fa-user-tie"></i> All. <strong>${sanitizeHtml(coachName)}</strong></span>
+            <span class="tactical-rating-pill" title="Indice Attacco SOS Fanta (1-5)">⚔️ Att: <strong>${attackRating}/5</strong></span>
+            <span class="tactical-rating-pill" title="Indice Difesa SOS Fanta (1-5)">🛡️ Dif: <strong>${defenseRating}/5</strong></span>
+          </div>
           <div class="team-specialists-group">
             <div class="tactical-spec-item" title="Gerarchia Rigoristi: ${sanitizeHtml(rigText)}">
               <span class="spec-icon">🎯</span> <span class="spec-label">Rig:</span> <strong class="spec-names">${sanitizeHtml(rigText)}</strong>
@@ -342,15 +341,6 @@ export class PitchComponent {
       moduleBadgeEl.textContent = currentModule;
     }
 
-    const coachRowEl = this.container.querySelector('#pitch-coach-ratings-row');
-    if (coachRowEl) {
-      coachRowEl.innerHTML = `
-        <span class="team-coach-text" title="Allenatore"><i class="fa-solid fa-user-tie"></i> All. <strong>${sanitizeHtml(coachName)}</strong></span>
-        <span class="tactical-rating-pill" title="Indice Attacco SOS Fanta (1-5)">⚔️ Att: <strong>${attackRating}/5</strong></span>
-        <span class="tactical-rating-pill" title="Indice Difesa SOS Fanta (1-5)">🛡️ Dif: <strong>${defenseRating}/5</strong></span>
-      `;
-    }
-
     const rigList = (sosData?.rig || team.rig || []).map(r => r.name || r.displayName || r).filter(Boolean);
     const punList = (sosData?.pun || team.pun || []).map(r => r.name || r.displayName || r).filter(Boolean);
     const corList = (sosData?.corner || team.corner || []).map(r => r.name || r.displayName || r).filter(Boolean);
@@ -379,6 +369,11 @@ export class PitchComponent {
     const bannerEl = this.container.querySelector('#pitch-tactical-banner');
     if (bannerEl) {
       bannerEl.innerHTML = `
+        <div class="team-coach-ratings-row" id="pitch-coach-ratings-row">
+          <span class="team-coach-text" title="Allenatore"><i class="fa-solid fa-user-tie"></i> All. <strong>${sanitizeHtml(coachName)}</strong></span>
+          <span class="tactical-rating-pill" title="Indice Attacco SOS Fanta (1-5)">⚔️ Att: <strong>${attackRating}/5</strong></span>
+          <span class="tactical-rating-pill" title="Indice Difesa SOS Fanta (1-5)">🛡️ Dif: <strong>${defenseRating}/5</strong></span>
+        </div>
         <div class="team-specialists-group">
           <div class="tactical-spec-item" title="Gerarchia Rigoristi: ${sanitizeHtml(rigText)}">
             <span class="spec-icon">🎯</span> <span class="spec-label">Rig:</span> <strong class="spec-names">${sanitizeHtml(rigText)}</strong>

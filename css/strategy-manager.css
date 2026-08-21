@@ -10,8 +10,7 @@
 .player-card-strategy-strip {
   display: flex;
   align-items: center;
-  margin-top: 6px;
-  margin-bottom: 3px;
+  margin: 0;
   min-height: 24px;
 }
 
@@ -198,10 +197,21 @@
   color: #fff;
 }
 
-.role-badge-pill.pill-P { background: var(--role-p); }
-.role-badge-pill.pill-D { background: var(--role-d); }
-.role-badge-pill.pill-C { background: var(--role-c); }
-.role-badge-pill.pill-A { background: var(--role-a); }
+.role-badge-pill.pill-P {
+  background: var(--role-p);
+}
+
+.role-badge-pill.pill-D {
+  background: var(--role-d);
+}
+
+.role-badge-pill.pill-C {
+  background: var(--role-c);
+}
+
+.role-badge-pill.pill-A {
+  background: var(--role-a);
+}
 
 /* Corpo del Modale: Lista Gerarchia */
 .strategy-hierarchy-container {

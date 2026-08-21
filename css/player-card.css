@@ -701,7 +701,7 @@
 .player-card.is-compact {
   padding: 8px 10px;
   border-radius: var(--radius-lg);
-  gap: 0;
+  gap: 4px;
 }
 
 .player-card.is-compact .avatar {
@@ -744,10 +744,10 @@
 .player-card.is-compact .core-metrics.compact-metrics {
   display: grid;
   grid-template-columns: 1fr 1fr 0.8fr;
-  padding: 5px 0 2px;
-  margin-top: 5px;
+  padding: 0px;
+  margin-top: 0px;
   gap: 3px;
-  border-top: 1px solid var(--line);
+  border-top: none;
   border-bottom: none;
 }
 
