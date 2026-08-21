@@ -518,7 +518,7 @@
   gap: 7px;
   overflow-x: auto;
   padding: 1px 1px 6px;
-  margin: 0 0 24px;
+  /* margin: 0 0 24px; */
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
   width: 100%;
@@ -650,7 +650,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 4px 2px 14px;
-  margin-bottom: 12px;
   border-bottom: 1px solid var(--line);
   width: 100%;
 }
@@ -694,6 +693,7 @@
   font-size: 13px;
   font-weight: 760;
   letter-spacing: -0.03em;
+  text-transform: uppercase;
   color: var(--ink);
 }
 
