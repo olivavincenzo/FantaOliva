@@ -668,6 +668,8 @@ export class PitchComponent {
           <p style="font-size: 13px; font-weight: 580;">Nessun calciatore trovato per i filtri selezionati</p>
         </div>
       `;
+    } else {
+      this.scrollToSelectedPlayer(false);
     }
   }
 
@@ -700,13 +702,37 @@ export class PitchComponent {
     });
   }
 
-  updateSelectionHighlight() {
+  updateSelectionHighlight(options = { scroll: true, smooth: true }) {
     const selectedPlayer = store.getSelectedPlayer();
     this.container.querySelectorAll('.player-card').forEach(card => {
       const pId = card.dataset.playerId;
       const isSelected = selectedPlayer && pId === selectedPlayer.id;
       card.classList.toggle('is-selected', Boolean(isSelected));
     });
+
+    if (options && options.scroll) {
+      this.scrollToSelectedPlayer(options.smooth !== false);
+    }
+  }
+
+  scrollToSelectedPlayer(smooth = true) {
+    const selectedPlayer = store.getSelectedPlayer();
+    if (!selectedPlayer) return;
+
+    setTimeout(() => {
+      const selectedCard = this.verticalListEl?.querySelector(`.player-card[data-player-id="${selectedPlayer.id}"]`);
+      if (selectedCard) {
+        selectedCard.scrollIntoView({
+          behavior: smooth ? 'smooth' : 'auto',
+          block: 'center',
+          inline: 'nearest'
+        });
+
+        selectedCard.classList.remove('is-scroll-target');
+        void selectedCard.offsetWidth; // trigger reflow
+        selectedCard.classList.add('is-scroll-target');
+      }
+    }, 60);
   }
 
   renderTacticalLines() {

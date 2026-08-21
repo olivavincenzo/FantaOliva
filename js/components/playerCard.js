@@ -298,12 +298,17 @@ export function createPlayerCard(player, options = {}) {
       store.selectPlayer(player.id, slotId);
     }
 
-    // 3. Desktop: apri sidebar destra se collassata
+    // 3. Scrolla direttamente alla player card del giocatore nella lista della lavagna
+    setTimeout(() => {
+      window.app?.pitch?.scrollToSelectedPlayer(true);
+    }, 80);
+
+    // 4. Desktop: apri sidebar destra se collassata
     if (document.body.classList.contains('right-sidebar-collapsed')) {
       document.body.classList.remove('right-sidebar-collapsed');
     }
 
-    // 4. Mobile: apri drawer sidebar destra
+    // 5. Mobile: apri drawer sidebar destra
     const sidebarInspector = document.querySelector('#sidebar-inspector');
     const sidebarTeams = document.querySelector('#sidebar-teams');
     const backdrop = document.querySelector('#mobile-drawer-backdrop');
