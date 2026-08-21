@@ -95,12 +95,6 @@ export class PitchComponent {
             <button class="circle-button" id="toggle-pitch-layout-btn" type="button" aria-label="Alterna Campo Grafico / Lista Giocatori" title="Mostra Campo Grafico">
               <i class="fa-solid fa-futbol" style="font-size: 14px;"></i>
             </button>
-            <div class="topbar-formation-wrap" title="Cambia Modulo Tattico">
-              <select id="topbar-formation-select" class="topbar-formation-select" aria-label="Seleziona Modulo Tattico">
-                ${formationOptions}
-              </select>
-              <span class="formation-arrow">▾</span>
-            </div>
           </div>
         </header>
 
@@ -567,9 +561,9 @@ export class PitchComponent {
       // Filtro ricerca
       if (this.searchQuery) {
         const matchName = (p.name || '').toLowerCase().includes(this.searchQuery) ||
-                          (p.displayName || '').toLowerCase().includes(this.searchQuery);
+          (p.displayName || '').toLowerCase().includes(this.searchQuery);
         const matchRole = (p.role || '').toLowerCase().includes(this.searchQuery) ||
-                          (p.classicRole || '').toLowerCase().includes(this.searchQuery);
+          (p.classicRole || '').toLowerCase().includes(this.searchQuery);
         if (!matchName && !matchRole) return;
       }
 
