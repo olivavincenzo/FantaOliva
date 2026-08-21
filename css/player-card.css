@@ -121,6 +121,13 @@
   font-size: 9.5px;
 }
 
+.team-badge {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--body);
+  letter-spacing: -0.01em;
+}
+
 .separator {
   color: #c0c0c7;
 }

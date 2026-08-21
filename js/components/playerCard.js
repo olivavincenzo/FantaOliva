@@ -46,7 +46,8 @@ export function createPlayerCard(player, options = {}) {
     isLineup = false,
     isSelected = false,
     compact = false,
-    rank = null
+    rank = null,
+    showTeam = false
   } = options;
 
   if (!player) {
@@ -149,6 +150,7 @@ export function createPlayerCard(player, options = {}) {
         <h3 class="player-name" title="${sanitizeHtml(player.name)}">${sanitizeHtml(displayName)}</h3>
         <div class="player-set-pieces-row">
           ${rank ? `<span class="rank-badge">#${rank}</span>` : ''}
+          ${showTeam && teamName ? `<span class="team-badge" title="Squadra: ${sanitizeHtml(teamName)}">${sanitizeHtml(teamName)}</span><span class="separator">·</span>` : ''}
           <span class="set-pieces-badge ${piazzatiText !== '—' ? 'has-set-pieces' : ''}">${piazzatiText}</span>
         </div>
       </div>

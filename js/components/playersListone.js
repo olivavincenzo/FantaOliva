@@ -317,7 +317,8 @@ export class PlayersListoneComponent {
           const card = createPlayerCard(p, {
             rank: idx + 1,
             isSelected,
-            isLineup: false
+            isLineup: false,
+            showTeam: true
           });
           gridEl.appendChild(card);
         });
