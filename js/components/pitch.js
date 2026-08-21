@@ -303,7 +303,7 @@ export class PitchComponent {
     store.subscribe('formation:changed', () => this.updatePitch());
     store.subscribe('team:changed', () => this.updatePitch());
     store.subscribe('team:reset', () => this.updatePitch());
-    store.subscribe('player:selected', () => this.updateSelectionHighlight());
+    store.subscribe('player:selected', () => this.updateSelectionHighlight({ scroll: false }));
     store.subscribe('player:updated', () => this.updatePitch());
     store.subscribe('favorite:toggled', () => this.updatePitch());
     store.subscribe('ballottaggio:updated', () => this.updatePitch());
@@ -721,11 +721,15 @@ export class PitchComponent {
 
     setTimeout(() => {
       const selectedCard = this.verticalListEl?.querySelector(`.player-card[data-player-id="${selectedPlayer.id}"]`);
-      if (selectedCard) {
-        selectedCard.scrollIntoView({
-          behavior: smooth ? 'smooth' : 'auto',
-          block: 'center',
-          inline: 'nearest'
+      const outerWrapper = this.container?.querySelector('.pitch-outer-wrapper');
+      if (selectedCard && outerWrapper) {
+        const cardRect = selectedCard.getBoundingClientRect();
+        const wrapperRect = outerWrapper.getBoundingClientRect();
+        const targetScrollTop = outerWrapper.scrollTop + (cardRect.top - wrapperRect.top) - (wrapperRect.height / 2) + (cardRect.height / 2);
+
+        outerWrapper.scrollTo({
+          top: Math.max(0, targetScrollTop),
+          behavior: smooth ? 'smooth' : 'auto'
         });
 
         selectedCard.classList.remove('is-scroll-target');
