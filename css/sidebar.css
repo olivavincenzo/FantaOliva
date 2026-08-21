@@ -286,23 +286,31 @@ body.is-resizing-sidebar .sidebar-resizer {
 }
 
 .detail-close {
-  display: grid;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 28px;
   height: 28px;
-  place-items: center;
-  color: var(--muted);
-  background: transparent;
-  border: 0;
+  background: var(--soft);
+  border: 1px solid var(--line);
   border-radius: 50%;
-  font-size: 18px;
+  color: var(--muted);
+  font-size: 11px;
   cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
   transition: all var(--transition-fast);
-  line-height: 1;
 }
 
 .detail-close:hover {
-  background: var(--soft);
+  background: var(--paper);
   color: var(--ink);
+  border-color: #d0d0d6;
+  box-shadow: var(--card-shadow);
+}
+
+.detail-close:active {
+  transform: scale(0.92);
 }
 
 /* Scheda Profilo Giocatore */

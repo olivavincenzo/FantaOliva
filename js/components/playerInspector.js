@@ -140,7 +140,9 @@ export class PlayerInspectorComponent {
     this.container.innerHTML = `
       <div class="detail-top">
         <span class="detail-title">Scheda giocatore</span>
-        <button class="detail-close sidebar-close-btn" id="close-inspector-btn" aria-label="Chiudi dettaglio">×</button>
+        <button class="detail-close sidebar-close-btn" id="close-inspector-btn" title="Comprimi scheda" aria-label="Chiudi dettaglio">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
       </div>
 
       <!-- Scheda Profilo Giocatore -->

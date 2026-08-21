@@ -346,15 +346,19 @@ export function createPlayerCard(player, options = {}) {
     }
   };
 
-  // 1. Native dblclick per mouse Desktop -> Porta alla Lavagna Tattica della squadra
+  // 1. Native dblclick per mouse -> Su mobile apre scheda giocatore, su desktop naviga alla lavagna
   card.addEventListener('dblclick', (e) => {
     if (e.target.closest('.availability')) return;
     e.stopPropagation();
     e.preventDefault();
-    navigateToPlayerTactical();
+    if (window.innerWidth <= 900) {
+      selectPlayerAndOpenInspector();
+    } else {
+      navigateToPlayerTactical();
+    }
   });
 
-  // 2. Click / Touch handler (singolo click = ispezione, doppio tocco mobile <350ms = naviga in lavagna)
+  // 2. Click / Touch handler (mobile: 1 click seleziona, 2 click apre scheda; desktop: 1 click seleziona+ispettore, 2 click naviga lavagna)
   card.addEventListener('click', (e) => {
     if (e.target.closest('.availability')) return;
     if (hasMoved) {
@@ -363,13 +367,32 @@ export function createPlayerCard(player, options = {}) {
     }
     e.stopPropagation();
 
+    const isMobile = window.innerWidth <= 900;
     const now = Date.now();
+
     if (now - lastTapTime < 350) {
+      // Doppio click / doppio tocco
       lastTapTime = 0;
-      navigateToPlayerTactical();
+      if (isMobile) {
+        // In modalità mobile (sia vista lista che vista campo): apre la scheda giocatore (drawer ispezione)
+        selectPlayerAndOpenInspector();
+      } else {
+        navigateToPlayerTactical();
+      }
     } else {
+      // Singolo click
       lastTapTime = now;
-      selectPlayerAndOpenInspector();
+      if (isMobile) {
+        // In mobile il singolo click seleziona il giocatore
+        const targetTeamId = player.teamId || (player.teamName ? store.teams.find(t => t.name.toLowerCase() === player.teamName.toLowerCase())?.id : null);
+        if (store.activeView === 'tactical' && targetTeamId && targetTeamId !== store.currentTeamId) {
+          store.setTeam(targetTeamId, player.id, slotId);
+        } else {
+          store.selectPlayer(player.id, slotId);
+        }
+      } else {
+        selectPlayerAndOpenInspector();
+      }
     }
   });
 
