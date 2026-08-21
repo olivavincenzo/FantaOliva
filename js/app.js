@@ -10,6 +10,7 @@ import { PitchComponent } from './components/pitch.js';
 import { PlayerInspectorComponent } from './components/playerInspector.js';
 import { AuctionSlotsComponent } from './components/auctionSlots.js';
 import { PlayersListoneComponent } from './components/playersListone.js';
+import { StrategyManagerComponent } from './components/strategyManager.js';
 import { initHistoryModal } from './components/historyManager.js';
 import { initExportModal } from './components/exporter.js';
 import { initSidebarResizer } from './utils/resizer.js';
@@ -23,10 +24,13 @@ class App {
     this.inspector = null;
     this.auctionSlots = null;
     this.listone = null;
+    this.strategyManager = null;
     this.csvImporter = null;
   }
 
   init() {
+    window.app = this;
+
     // 1. Inizializzazione State Store
     store.init();
 
@@ -38,6 +42,8 @@ class App {
     this.auctionSlots.init();
     this.listone = new PlayersListoneComponent('listone-view-wrapper');
     this.listone.init();
+    this.strategyManager = new StrategyManagerComponent('strategy-modal');
+    this.strategyManager.init();
 
     // 3. Inizializzazione Modali, Resizer e Utility
     initHistoryModal();
@@ -657,7 +663,6 @@ class App {
       const newPlayer = {
         name: nameVal,
         displayName: nameVal,
-        appetibilita: Math.min(100, Math.max(0, Number(document.querySelector('#new-player-appetibilita')?.value) || 50)),
         role: document.querySelector('#new-player-role')?.value || 'C',
         classicRole: document.querySelector('#new-player-fantaRole')?.value || 'C',
         fantaRole: document.querySelector('#new-player-fantaRole')?.value || 'C',

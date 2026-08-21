@@ -5,16 +5,26 @@
 
 import { INITIAL_TEAMS, CSV_PLAYER_CATALOG } from './data/initialData.js';
 import { FORMATIONS } from './data/formations.js';
+import { SOS_STRATEGY_1 } from './data/sosStrategy1.js';
+import { getPlayerIndices, TITOLARITA_LABELS, AFFIDABILITA_LABELS, INTEGRITA_LABELS } from './data/playerIndices.js';
 import { deepClone, generateId } from './utils/helpers.js';
 
 const STORAGE_KEY = 'fantaoliva_app_data_v2026_27_master';
 const SNAPSHOTS_KEY = 'fantaoliva_snapshots_v2026_27_master';
 const CUSTOM_CATALOG_KEY = 'fantaoliva_custom_catalog_v2026_27';
+const STRATEGIES_KEY = 'fantaoliva_custom_strategies_v1';
+const ACTIVE_STRATEGY_KEY = 'fantaoliva_active_strategy_id_v1';
+
+const DEFAULT_STRATEGIES = [
+  SOS_STRATEGY_1
+];
 
 class Store {
   constructor() {
     this.teams = [];
     this.playerCatalog = [];
+    this.strategies = [];
+    this.activeStrategyId = 'strat_1';
     this.currentTeamId = 'inter';
     this.selectedPlayerId = null;
     this.selectedSlotId = null;
@@ -103,6 +113,50 @@ class Store {
         this.snapshots = JSON.parse(savedSnapshots);
       }
 
+      // Caricamento Strategie Custom
+      const savedStrategies = localStorage.getItem(STRATEGIES_KEY);
+      if (savedStrategies) {
+        try {
+          this.strategies = JSON.parse(savedStrategies);
+          if (!Array.isArray(this.strategies) || this.strategies.length === 0) {
+            this.strategies = deepClone(DEFAULT_STRATEGIES);
+          } else {
+            // Aggiorna/integra la Strategia 1 (Guida all'Asta SOS Fanta) con tutti i 472 giocatori e le 20 fasce
+            const strat1Index = this.strategies.findIndex(s => s.id === 'strat_1');
+            const defaultStrat1 = DEFAULT_STRATEGIES[0];
+            if (defaultStrat1) {
+              if (strat1Index !== -1) {
+                this.strategies[strat1Index] = deepClone(defaultStrat1);
+              } else {
+                this.strategies.unshift(deepClone(defaultStrat1));
+              }
+            }
+          }
+        } catch (e) {
+          this.strategies = deepClone(DEFAULT_STRATEGIES);
+        }
+      } else {
+        this.strategies = deepClone(DEFAULT_STRATEGIES);
+        this.saveStrategies();
+      }
+
+      // Garanzia che ogni strategia abbia tiersByRole e assignments
+      this.strategies.forEach(s => {
+        if (!s.tiersByRole) s.tiersByRole = { P: [], D: [], C: [], A: [] };
+        if (!s.assignments) s.assignments = {};
+        ['P', 'D', 'C', 'A'].forEach(r => {
+          if (!Array.isArray(s.tiersByRole[r])) s.tiersByRole[r] = [];
+        });
+      });
+      this.saveStrategies();
+
+      const savedActiveStrat = localStorage.getItem(ACTIVE_STRATEGY_KEY);
+      if (savedActiveStrat && this.strategies.some(s => s.id === savedActiveStrat)) {
+        this.activeStrategyId = savedActiveStrat;
+      } else if (this.strategies.length > 0) {
+        this.activeStrategyId = this.strategies[0].id;
+      }
+
       // Seleziona il primo titolare della squadra di partenza
       const currentTeam = this.getCurrentTeam();
       if (currentTeam) {
@@ -116,7 +170,10 @@ class Store {
       console.warn('Errore nel parsing del localStorage, ripristino dati demo:', e);
       this.teams = deepClone(INITIAL_TEAMS);
       this.playerCatalog = deepClone(CSV_PLAYER_CATALOG);
+      this.strategies = deepClone(DEFAULT_STRATEGIES);
+      this.activeStrategyId = 'strat_1';
       this.saveToStorage();
+      this.saveStrategies();
     }
   }
 
@@ -129,10 +186,20 @@ class Store {
     }
   }
 
+  saveStrategies() {
+    try {
+      localStorage.setItem(STRATEGIES_KEY, JSON.stringify(this.strategies));
+      localStorage.setItem(ACTIVE_STRATEGY_KEY, this.activeStrategyId);
+    } catch (e) {
+      console.error('Errore salvataggio strategie:', e);
+    }
+  }
+
   saveToStorage() {
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(this.teams));
       localStorage.setItem(SNAPSHOTS_KEY, JSON.stringify(this.snapshots));
+      this.saveStrategies();
     } catch (e) {
       console.error('Errore salvataggio localStorage:', e);
     }
@@ -307,23 +374,36 @@ class Store {
   // --- GIOCATORI ---
   getPlayer(playerId) {
     if (!playerId) return null;
+    const strId = String(playerId).trim();
+    const strLower = strId.toLowerCase();
+
+    const matchPlayer = (p) => {
+      if (!p) return false;
+      if (p.id && String(p.id).trim() === strId) return true;
+      if (p.csvId && String(p.csvId).trim() === strId) return true;
+      if (p.id && String(p.id).toLowerCase() === strLower) return true;
+      if (p.name && p.name.toLowerCase().trim() === strLower) return true;
+      if (p.displayName && p.displayName.toLowerCase().trim() === strLower) return true;
+      return false;
+    };
+
     const currentTeam = this.getCurrentTeam();
 
     // 1. Cerca prima nella squadra attiva (lineup o panchina)
     if (currentTeam) {
       if (currentTeam.lineup) {
         for (const slotId of Object.keys(currentTeam.lineup)) {
-          if (currentTeam.lineup[slotId] && currentTeam.lineup[slotId].id === playerId) {
+          if (matchPlayer(currentTeam.lineup[slotId])) {
             return currentTeam.lineup[slotId];
           }
         }
       }
       if (currentTeam.bench) {
-        const found = currentTeam.bench.find(p => p && p.id === playerId);
+        const found = currentTeam.bench.find(p => matchPlayer(p));
         if (found) return found;
       }
       if (currentTeam.players) {
-        const found = currentTeam.players.find(p => p && p.id === playerId);
+        const found = currentTeam.players.find(p => matchPlayer(p));
         if (found) return found;
       }
     }
@@ -332,17 +412,17 @@ class Store {
     for (const team of this.teams) {
       if (team.lineup) {
         for (const slotId of Object.keys(team.lineup)) {
-          if (team.lineup[slotId] && team.lineup[slotId].id === playerId) {
+          if (matchPlayer(team.lineup[slotId])) {
             return team.lineup[slotId];
           }
         }
       }
       if (team.bench) {
-        const found = team.bench.find(p => p && p.id === playerId);
+        const found = team.bench.find(p => matchPlayer(p));
         if (found) return found;
       }
       if (team.players) {
-        const found = team.players.find(p => p && p.id === playerId);
+        const found = team.players.find(p => matchPlayer(p));
         if (found) return found;
       }
     }
@@ -350,10 +430,56 @@ class Store {
     // 3. Fallback sul catalogo completo CSV
     const catalog = (this.playerCatalog && this.playerCatalog.length > 0) ? this.playerCatalog : CSV_PLAYER_CATALOG;
     if (typeof catalog !== 'undefined' && Array.isArray(catalog)) {
-      const cat = catalog.find(p => p && p.id === playerId);
+      const cat = catalog.find(p => matchPlayer(p));
       if (cat) return cat;
     }
 
+    return null;
+  }
+
+  getPlayerIndices(player) {
+    if (!player) return getPlayerIndices(null);
+    // Se il player ha già indici salvati su di sé
+    if (player.titIndex !== undefined || player.affIndex !== undefined || player.infIndex !== undefined) {
+      const tit = player.titIndex ?? 3;
+      const aff = player.affIndex ?? 3;
+      const inf = player.infIndex ?? 3;
+      return {
+        titIndex: tit,
+        titDesc: TITOLARITA_LABELS[tit] || 'Nelle rotazioni',
+        affIndex: aff,
+        affDesc: AFFIDABILITA_LABELS[aff] || 'Alterna buone prestazioni',
+        infIndex: inf,
+        infDesc: INTEGRITA_LABELS[inf] || 'Pochissimi infortuni',
+        xfmv: player.xfmv
+      };
+    }
+    return getPlayerIndices(player);
+  }
+
+  getPlayerSuggestedPrice(player) {
+    if (!player) return null;
+    if (player.suggestedPrice !== undefined && player.suggestedPrice !== null) {
+      return Number(player.suggestedPrice);
+    }
+    const strat = this.getActiveStrategy();
+    const id = player.id || '';
+    const csvId = player.csvId ? player.csvId.toString() : '';
+    const normName = (player.name || '').toLowerCase().replace(/[^a-z0-9]/g, '').trim();
+    const normDisp = (player.displayName || '').toLowerCase().replace(/[^a-z0-9]/g, '').trim();
+
+    if (strat?.playerPrices) {
+      const price = strat.playerPrices[id] ?? 
+                    (csvId && strat.playerPrices[csvId]) ?? 
+                    strat.playerPrices[normName] ?? 
+                    strat.playerPrices[normDisp];
+      if (price !== undefined && price !== null) return Number(price);
+    }
+
+    if (player.price !== undefined && player.price !== null) return Number(player.price);
+    if (player.quotazioni?.fvm !== undefined && player.quotazioni.fvm !== null && player.quotazioni.fvm !== '-') {
+      return Number(player.quotazioni.fvm);
+    }
     return null;
   }
 
@@ -434,15 +560,6 @@ class Store {
         p.isAvailable = true;
       }
 
-      if (p.appetibilita === undefined) {
-        const fm = p.stats?.fantamedia || 6.0;
-        const tit = p.stats?.titolarita || 50;
-        const gol = p.stats?.gol || 0;
-        const ass = p.stats?.assist || 0;
-        let baseApp = Math.round((tit * 0.45) + ((fm - 5.5) * 14) + (gol * 1.8) + (ass * 0.8));
-        p.appetibilita = Math.min(100, Math.max(10, baseApp));
-      }
-
       all.push(p);
     });
 
@@ -456,8 +573,7 @@ class Store {
           teamId: modPlayer.teamId || teamInfo?.teamId || '',
           teamName: modPlayer.teamName || teamInfo?.teamName || 'Serie A',
           isAvailable: modPlayer.isAvailable !== false,
-          isFavorite: this.favoritePlayerIds.has(id),
-          appetibilita: modPlayer.appetibilita ?? 50
+          isFavorite: this.favoritePlayerIds.has(id)
         });
       }
     });
@@ -493,16 +609,22 @@ class Store {
   }
 
   updatePlayer(playerId, updateData) {
-    const team = this.getCurrentTeam();
-    if (!team) return;
-
     const player = this.getPlayer(playerId);
     if (!player) return;
 
     Object.assign(player, updateData);
 
-    // Sincronizza specialisti piazzati nella scheda squadra
-    if (team.setPieces) {
+    // Se il giocatore è presente anche nel catalogo custom, aggiorna e salva il catalogo
+    if (this.playerCatalog && Array.isArray(this.playerCatalog)) {
+      const catPlayer = this.playerCatalog.find(p => p && (p.id === playerId || (p.name && player.name && p.name.toLowerCase() === player.name.toLowerCase())));
+      if (catPlayer) {
+        Object.assign(catPlayer, updateData);
+        this.saveCatalog();
+      }
+    }
+
+    const team = this.getCurrentTeam();
+    if (team && team.setPieces) {
       if (updateData.isPenaltyTaker || updateData.rigorista) {
         if (!team.setPieces.rigoristi.includes(player.name)) {
           team.setPieces.rigoristi.unshift(player.name);
@@ -530,8 +652,10 @@ class Store {
 
     this.saveToStorage();
     this.emit('player:updated', player);
-    this.emit('formation:changed', this.getCurrentFormation());
-    this.emit('team:changed', team);
+    if (team) {
+      this.emit('formation:changed', this.getCurrentFormation());
+      this.emit('team:changed', team);
+    }
   }
 
   addNewPlayer(newPlayerData) {
@@ -583,7 +707,6 @@ class Store {
       displayName: name,
       teamName: team.name,
       teamId: team.id,
-      appetibilita: newPlayerData.appetibilita !== undefined ? Math.min(100, Math.max(0, Number(newPlayerData.appetibilita))) : (stats.titolarita ?? 50),
       role: newPlayerData.role || 'C',
       classicRole: newPlayerData.classicRole || newPlayerData.fantaRole || 'C',
       mantraRole: newPlayerData.mantraRole || newPlayerData.role || 'C',
@@ -1053,16 +1176,6 @@ class Store {
       if (p.isAvailable === undefined) {
         p.isAvailable = true;
       }
-
-      // Se non ancora impostata manualmente, calcola appetibilità coerente basata su fantamedia e titolarità
-      if (p.appetibilita === undefined) {
-        const fm = p.stats?.fantamedia || 6.0;
-        const tit = p.stats?.titolarita || 50;
-        const gol = p.stats?.gol || 0;
-        const ass = p.stats?.assist || 0;
-        let baseApp = Math.round((tit * 0.45) + ((fm - 5.5) * 14) + (gol * 1.8) + (ass * 0.8));
-        p.appetibilita = Math.min(100, Math.max(10, baseApp));
-      }
       return p;
     });
 
@@ -1089,13 +1202,16 @@ class Store {
         );
       }
 
-      // Ordinamento decrescente per Appetibilità, poi Fantamedia, poi Presenze
+      // Ordinamento primario per Gerarchia Fascia Strategia, poi Fantamedia, poi Presenze
       list.sort((a, b) => {
-        const appA = a.appetibilita !== undefined ? Number(a.appetibilita) : 50;
-        const appB = b.appetibilita !== undefined ? Number(b.appetibilita) : 50;
-        if (appB !== appA) return appB - appA;
-        const fmA = a.stats?.fantamedia || 6.0;
-        const fmB = b.stats?.fantamedia || 6.0;
+        const tierA = this.getPlayerTier(a);
+        const tierB = this.getPlayerTier(b);
+        const rankA = tierA ? tierA.order : 9999;
+        const rankB = tierB ? tierB.order : 9999;
+        if (rankA !== rankB) return rankA - rankB;
+
+        const fmA = Number(a.stats?.fantamedia || a.fantamedia || 0);
+        const fmB = Number(b.stats?.fantamedia || b.fantamedia || 0);
         if (fmB !== fmA) return fmB - fmA;
         return (b.stats?.presenze || 0) - (a.stats?.presenze || 0);
       });
@@ -1114,6 +1230,365 @@ class Store {
     return result;
   }
 
+  // --- GESTIONE STRATEGIE CUSTOM ---
+
+  getRoleCategory(roleOrPlayer) {
+    if (!roleOrPlayer) return 'C';
+    if (typeof roleOrPlayer === 'object') {
+      const r = (roleOrPlayer.role || '').toUpperCase();
+      const f = (roleOrPlayer.classicRole || roleOrPlayer.fantaRole || '').toUpperCase();
+      if (['A', 'PC', 'W'].includes(r) || f === 'A') return 'A';
+      if (['C', 'M', 'T', 'E'].includes(r) || f === 'C') return 'C';
+      if (['D', 'DC', 'TD', 'TS'].includes(r) || f === 'D') return 'D';
+      if (['P', 'POR'].includes(r) || f === 'P') return 'P';
+      return 'C';
+    }
+    const str = String(roleOrPlayer).toUpperCase();
+    if (['A', 'PC', 'W'].includes(str)) return 'A';
+    if (['C', 'M', 'T', 'E'].includes(str)) return 'C';
+    if (['D', 'DC', 'TD', 'TS'].includes(str)) return 'D';
+    if (['P', 'POR'].includes(str)) return 'P';
+    return ['P', 'D', 'C', 'A'].includes(str) ? str : 'C';
+  }
+
+  getStrategies() {
+    return this.strategies || [];
+  }
+
+  getActiveStrategyId() {
+    return this.activeStrategyId || (this.strategies[0]?.id ?? 'strat_1');
+  }
+
+  getActiveStrategy() {
+    const activeId = this.getActiveStrategyId();
+    let strat = this.strategies.find(s => s.id === activeId);
+    if (!strat && this.strategies.length > 0) {
+      strat = this.strategies[0];
+      this.activeStrategyId = strat.id;
+    }
+    return strat || null;
+  }
+
+  setActiveStrategy(strategyId) {
+    if (this.activeStrategyId === strategyId) return;
+    const strat = this.strategies.find(s => s.id === strategyId);
+    if (!strat) return;
+    this.activeStrategyId = strategyId;
+    this.saveStrategies();
+    this.emit('strategy:changed', strat);
+  }
+
+  createStrategy(name) {
+    const cleanName = (name || '').trim() || `Nuova Strategia ${this.strategies.length + 1}`;
+    const newStrat = {
+      id: `strat_${Date.now()}_${Math.random().toString(36).substr(2, 4)}`,
+      name: cleanName,
+      createdAt: Date.now(),
+      tiersByRole: {
+        P: [
+          { id: `tier_p_${Date.now()}_1`, name: 'Super-Top', color: '#f59e0b' },
+          { id: `tier_p_${Date.now()}_2`, name: 'Top', color: '#38bdf8' },
+          { id: `tier_p_${Date.now()}_3`, name: 'Fascia Alta', color: '#4ade80' }
+        ],
+        D: [
+          { id: `tier_d_${Date.now()}_1`, name: 'Super-Top', color: '#f59e0b' },
+          { id: `tier_d_${Date.now()}_2`, name: 'Sotto i Super', color: '#fb923c' },
+          { id: `tier_d_${Date.now()}_3`, name: 'Top', color: '#38bdf8' },
+          { id: `tier_d_${Date.now()}_4`, name: 'Fascia Alta', color: '#4ade80' }
+        ],
+        C: [
+          { id: `tier_c_${Date.now()}_1`, name: 'Super-Top', color: '#f59e0b' },
+          { id: `tier_c_${Date.now()}_2`, name: 'Top / Rigoristi', color: '#fb923c' },
+          { id: `tier_c_${Date.now()}_3`, name: 'Semi-Top', color: '#38bdf8' },
+          { id: `tier_c_${Date.now()}_4`, name: 'Titolari Costanti', color: '#4ade80' }
+        ],
+        A: [
+          { id: `tier_a_${Date.now()}_1`, name: 'Super-Top', color: '#f59e0b' },
+          { id: `tier_a_${Date.now()}_2`, name: 'Top', color: '#fb923c' },
+          { id: `tier_a_${Date.now()}_3`, name: 'Semi-Top', color: '#38bdf8' },
+          { id: `tier_a_${Date.now()}_4`, name: 'Titolari', color: '#4ade80' }
+        ]
+      },
+      assignments: {}
+    };
+
+    this.strategies.push(newStrat);
+    this.activeStrategyId = newStrat.id;
+    this.saveStrategies();
+    this.emit('strategy:created', newStrat);
+    this.emit('strategy:changed', newStrat);
+    return newStrat;
+  }
+
+  duplicateStrategy(strategyId) {
+    const src = this.strategies.find(s => s.id === strategyId) || this.getActiveStrategy();
+    if (!src) return null;
+
+    const copy = deepClone(src);
+    copy.id = `strat_${Date.now()}_${Math.random().toString(36).substr(2, 4)}`;
+    copy.name = `${src.name} (Copia)`;
+    copy.createdAt = Date.now();
+
+    this.strategies.push(copy);
+    this.activeStrategyId = copy.id;
+    this.saveStrategies();
+    this.emit('strategy:created', copy);
+    this.emit('strategy:changed', copy);
+    return copy;
+  }
+
+  renameStrategy(strategyId, newName) {
+    const strat = this.strategies.find(s => s.id === strategyId);
+    if (!strat) return false;
+    strat.name = (newName || '').trim() || strat.name;
+    this.saveStrategies();
+    this.emit('strategy:updated', strat);
+    return true;
+  }
+
+  deleteStrategy(strategyId) {
+    if (this.strategies.length <= 1) {
+      console.warn('Impossibile eliminare l\'unica strategia rimasta.');
+      return false;
+    }
+    const idx = this.strategies.findIndex(s => s.id === strategyId);
+    if (idx === -1) return false;
+
+    this.strategies.splice(idx, 1);
+    if (this.activeStrategyId === strategyId) {
+      this.activeStrategyId = this.strategies[0].id;
+    }
+    this.saveStrategies();
+    this.emit('strategy:deleted', strategyId);
+    this.emit('strategy:changed', this.getActiveStrategy());
+    return true;
+  }
+
+  getTiersForRole(roleKey, strategyId = null) {
+    const strat = strategyId ? this.strategies.find(s => s.id === strategyId) : this.getActiveStrategy();
+    if (!strat || !strat.tiersByRole) return [];
+    const r = this.getRoleCategory(roleKey);
+    return strat.tiersByRole[r] || [];
+  }
+
+  addTier(roleKey, name, color = '#38bdf8', strategyId = null) {
+    const strat = strategyId ? this.strategies.find(s => s.id === strategyId) : this.getActiveStrategy();
+    if (!strat) return null;
+    const r = this.getRoleCategory(roleKey);
+    if (!strat.tiersByRole[r]) strat.tiersByRole[r] = [];
+
+    const cleanName = (name || '').trim() || `Nuova Fascia ${strat.tiersByRole[r].length + 1}`;
+    const newTier = {
+      id: `tier_${r.toLowerCase()}_${Date.now()}_${Math.random().toString(36).substr(2, 3)}`,
+      name: cleanName,
+      color: color || '#38bdf8'
+    };
+
+    strat.tiersByRole[r].push(newTier);
+    this.saveStrategies();
+    this.emit('strategy:updated', strat);
+    return newTier;
+  }
+
+  updateTier(roleKey, tierId, name, color, strategyId = null) {
+    const strat = strategyId ? this.strategies.find(s => s.id === strategyId) : this.getActiveStrategy();
+    if (!strat) return false;
+    const r = this.getRoleCategory(roleKey);
+    const list = strat.tiersByRole[r] || [];
+    const tier = list.find(t => t.id === tierId);
+    if (!tier) return false;
+
+    if (name !== undefined) tier.name = (name || '').trim() || tier.name;
+    if (color !== undefined) tier.color = color;
+
+    this.saveStrategies();
+    this.emit('strategy:updated', strat);
+    return true;
+  }
+
+  removeTier(roleKey, tierId, strategyId = null) {
+    const strat = strategyId ? this.strategies.find(s => s.id === strategyId) : this.getActiveStrategy();
+    if (!strat) return false;
+    const r = this.getRoleCategory(roleKey);
+    const list = strat.tiersByRole[r] || [];
+    const idx = list.findIndex(t => t.id === tierId);
+    if (idx === -1) return false;
+
+    list.splice(idx, 1);
+
+    // Rimuovi assegnazioni per i giocatori assegnati a questo tier
+    if (strat.assignments) {
+      Object.keys(strat.assignments).forEach(playerId => {
+        if (strat.assignments[playerId] === tierId) {
+          delete strat.assignments[playerId];
+        }
+      });
+    }
+
+    this.saveStrategies();
+    this.emit('strategy:updated', strat);
+    return true;
+  }
+
+  moveTier(roleKey, tierId, direction, strategyId = null) {
+    const strat = strategyId ? this.strategies.find(s => s.id === strategyId) : this.getActiveStrategy();
+    if (!strat) return false;
+    const r = this.getRoleCategory(roleKey);
+    const list = strat.tiersByRole[r] || [];
+    const idx = list.findIndex(t => t.id === tierId);
+    if (idx === -1) return false;
+
+    const targetIdx = direction === 'up' ? idx - 1 : idx + 1;
+    if (targetIdx < 0 || targetIdx >= list.length) return false;
+
+    const [item] = list.splice(idx, 1);
+    list.splice(targetIdx, 0, item);
+
+    this.saveStrategies();
+    this.emit('strategy:updated', strat);
+    return true;
+  }
+
+  reorderTiers(roleKey, orderedTierIds, strategyId = null) {
+    const strat = strategyId ? this.strategies.find(s => s.id === strategyId) : this.getActiveStrategy();
+    if (!strat) return false;
+    const r = this.getRoleCategory(roleKey);
+    const list = strat.tiersByRole[r] || [];
+    
+    const reordered = [];
+    orderedTierIds.forEach(id => {
+      const found = list.find(t => t.id === id);
+      if (found) reordered.push(found);
+    });
+
+    list.forEach(t => {
+      if (!reordered.some(x => x.id === t.id)) {
+        reordered.push(t);
+      }
+    });
+
+    strat.tiersByRole[r] = reordered;
+    this.saveStrategies();
+    this.emit('strategy:updated', strat);
+    return true;
+  }
+
+  assignPlayerTier(playerOrId, tierId, strategyId = null) {
+    const strat = strategyId ? this.strategies.find(s => s.id === strategyId) : this.getActiveStrategy();
+    if (!strat) return false;
+    if (!strat.assignments) strat.assignments = {};
+
+    const p = typeof playerOrId === 'object' ? playerOrId : this.getPlayer(playerOrId);
+    const playerId = typeof playerOrId === 'object' ? playerOrId.id : playerOrId;
+
+    if (!tierId || tierId === 'none') {
+      if (playerId) delete strat.assignments[playerId];
+      if (p?.id) delete strat.assignments[p.id];
+      if (p?.csvId) delete strat.assignments[p.csvId.toString()];
+      if (p?.name) delete strat.assignments[p.name.toLowerCase().trim()];
+      if (p) p.strategyTierId = null;
+    } else {
+      if (playerId) strat.assignments[playerId] = tierId;
+      if (p?.id) strat.assignments[p.id] = tierId;
+      if (p?.csvId) strat.assignments[p.csvId.toString()] = tierId;
+      if (p?.name) strat.assignments[p.name.toLowerCase().trim()] = tierId;
+      if (p) p.strategyTierId = tierId;
+    }
+
+    if (p && (p.id || playerId)) {
+      this.updatePlayer(p.id || playerId, { strategyTierId: (!tierId || tierId === 'none') ? null : tierId });
+    } else {
+      this.saveStrategies();
+      this.saveToStorage();
+    }
+
+    this.emit('strategy:playerAssigned', { playerId: p?.id || playerId, tierId, strategyId: strat.id });
+    this.emit('player:updated', { id: p?.id || playerId });
+    return true;
+  }
+
+  getPlayerTierId(playerOrId, strategyId = null) {
+    if (!playerOrId) return null;
+    const strat = strategyId ? this.strategies.find(s => s.id === strategyId) : this.getActiveStrategy();
+
+    const p = typeof playerOrId === 'object' ? playerOrId : this.getPlayer(playerOrId);
+    const pId = typeof playerOrId === 'object' ? playerOrId.id : String(playerOrId).trim();
+
+    if (strat && strat.assignments) {
+      if (pId && strat.assignments[pId]) return strat.assignments[pId];
+      if (pId && strat.assignments[pId.toLowerCase()]) return strat.assignments[pId.toLowerCase()];
+      if (p?.id && strat.assignments[p.id]) return strat.assignments[p.id];
+      if (p?.csvId && strat.assignments[p.csvId.toString()]) return strat.assignments[p.csvId.toString()];
+      if (p?.name && strat.assignments[p.name.toLowerCase().trim()]) return strat.assignments[p.name.toLowerCase().trim()];
+      if (p?.displayName && strat.assignments[p.displayName.toLowerCase().trim()]) return strat.assignments[p.displayName.toLowerCase().trim()];
+    }
+
+    if (p && p.strategyTierId) {
+      return p.strategyTierId;
+    }
+
+    return null;
+  }
+
+  getPlayerTier(playerOrId, strategyId = null) {
+    if (!playerOrId) return null;
+    const strat = strategyId ? this.strategies.find(s => s.id === strategyId) : this.getActiveStrategy();
+    if (!strat || !strat.tiersByRole || !strat.assignments) return null;
+
+    const tierId = this.getPlayerTierId(playerOrId, strategyId);
+    if (!tierId) return null;
+
+    const role = this.getRoleCategory(playerOrId);
+    const tiers = strat.tiersByRole[role] || [];
+    const idx = tiers.findIndex(t => t.id === tierId);
+    if (idx !== -1) {
+      return {
+        ...tiers[idx],
+        order: idx + 1,
+        totalInRole: tiers.length
+      };
+    }
+
+    // Ricerca globale su tutti i ruoli della strategia se non trovato nel ruolo atteso
+    for (const rKey of ['P', 'D', 'C', 'A']) {
+      const tList = strat.tiersByRole[rKey] || [];
+      const fIdx = tList.findIndex(t => t.id === tierId);
+      if (fIdx !== -1) {
+        return {
+          ...tList[fIdx],
+          order: fIdx + 1,
+          totalInRole: tList.length
+        };
+      }
+    }
+    return null;
+  }
+
+  getPlayersCountByTier(roleKey, strategyId = null) {
+    const strat = strategyId ? this.strategies.find(s => s.id === strategyId) : this.getActiveStrategy();
+    const counts = {};
+    if (!strat) return counts;
+
+    const r = this.getRoleCategory(roleKey);
+    const tiers = strat.tiersByRole[r] || [];
+    tiers.forEach(t => { counts[t.id] = 0; });
+    counts['none'] = 0;
+
+    const allPlayers = this.getAllPlayersFlat();
+    const rolePlayers = allPlayers.filter(p => this.getRoleCategory(p) === r);
+
+    rolePlayers.forEach(p => {
+      const tId = strat.assignments ? strat.assignments[p.id] : null;
+      if (tId && counts[tId] !== undefined) {
+        counts[tId]++;
+      } else {
+        counts['none']++;
+      }
+    });
+
+    return counts;
+  }
+
   // --- EXPORT / IMPORT JSON COMPLETO (tutte le squadre) ---
 
   exportStateJson() {
@@ -1122,6 +1597,8 @@ class Store {
       exportDate: new Date().toISOString(),
       teams: this.teams,
       snapshots: this.snapshots,
+      strategies: this.strategies,
+      activeStrategyId: this.activeStrategyId,
       currentTeamId: this.currentTeamId,
       currentFormationId: this.currentFormationId
     };
@@ -1146,6 +1623,16 @@ class Store {
         this.snapshots = data.snapshots;
       }
 
+      // Importa strategie se presenti
+      if (Array.isArray(data.strategies) && data.strategies.length > 0) {
+        this.strategies = data.strategies;
+        if (data.activeStrategyId && this.strategies.some(s => s.id === data.activeStrategyId)) {
+          this.activeStrategyId = data.activeStrategyId;
+        } else {
+          this.activeStrategyId = this.strategies[0].id;
+        }
+      }
+
       // Ripristina squadra e modulo se presenti
       if (data.currentTeamId && this.teams[data.currentTeamId]) {
         this.currentTeamId = data.currentTeamId;
@@ -1157,6 +1644,7 @@ class Store {
       this.saveToStorage();
       this.emit('team:changed', this.currentTeamId);
       this.emit('formation:changed', this.currentFormationId);
+      this.emit('strategy:changed', this.getActiveStrategy());
       return true;
     } catch (e) {
       console.error('Errore importazione JSON:', e);

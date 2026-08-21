@@ -174,13 +174,13 @@
   transform: scale(0.92);
 }
 
-/* Griglia Metriche Principali (3 Colonne: Appetibilità, Titolarità, Ruolo) */
+/* Griglia Metriche Principali (5 Colonne: Titol, Affid, Integr, Consigliati, Ruolo) */
 .core-metrics {
   display: grid;
-  grid-template-columns: 1fr 1fr 0.8fr;
-  gap: 6px;
-  padding: 11px 0 10px;
-  margin-top: 10px;
+  grid-template-columns: repeat(3, 1fr) 1.15fr 0.9fr;
+  gap: 3px;
+  padding: 8px 0 7px;
+  margin-top: 8px;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   width: 100%;
@@ -188,6 +188,67 @@
 
 .metric {
   min-width: 0;
+}
+
+.metric-index-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.index-segments-bar {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5px;
+  padding: 1px 2px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+  height: 9px;
+  width: fit-content;
+}
+
+.index-segments-bar .segment-bar {
+  width: 3.5px;
+  height: 6px;
+  border-radius: 1px;
+  background: rgba(255, 255, 255, 0.15);
+  transition: all 0.2s ease;
+}
+
+.index-segments-bar .segment-bar.is-filled {
+  background: linear-gradient(113deg, #a3e635, #22c55e);
+  box-shadow: 0 0 3px rgba(163, 230, 53, 0.6);
+}
+
+.metric-index-val {
+  font-size: 11px;
+  font-weight: 790;
+  color: var(--ink);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.metric-credits-val {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  min-height: 15px;
+}
+
+.credits-number {
+  font-size: 13.5px;
+  font-weight: 800;
+  color: #f59e0b;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.credits-unit {
+  font-size: 8px;
+  font-weight: 750;
+  color: #d97706;
+  text-transform: uppercase;
 }
 
 .metric-value {
@@ -202,16 +263,12 @@
   white-space: nowrap;
 }
 
-.metric-value.elite {
-  color: var(--green);
-}
-
 .metric-label {
   display: block;
   overflow: hidden;
-  margin-top: 5px;
+  margin-top: 4px;
   color: var(--muted);
-  font-size: 8.5px;
+  font-size: 8px;
   font-weight: 620;
   letter-spacing: 0.01em;
   line-height: 1;
@@ -219,16 +276,47 @@
   white-space: nowrap;
 }
 
+.player-card-strategy-strip {
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+  margin-bottom: -2px;
+}
+
+.roles-badges-wrap {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  min-height: 18px;
+}
+
 .role {
-  display: grid;
-  width: 23px;
+  display: inline-flex;
+  min-width: 21px;
   height: 19px;
-  place-items: center;
+  padding: 0 4px;
+  align-items: center;
+  justify-content: center;
   color: var(--body);
   background: var(--role-bg);
-  border-radius: 6px;
+  border-radius: 5px;
   font-size: 10px;
   font-weight: 860;
+  text-transform: uppercase;
+}
+
+.role.role-p { background: #fef3c7; color: #b45309; }
+.role.role-d { background: #dbeafe; color: #1d4ed8; }
+.role.role-c { background: #d1fae5; color: #047857; }
+.role.role-a { background: #fee2e2; color: #b91c1c; }
+
+.role.role-tactical {
+  background: var(--soft);
+  color: var(--body);
+  border: 1px solid var(--line);
+  font-size: 8.5px;
+  font-weight: 700;
+  min-width: 19px;
 }
 
 .set-pieces {
@@ -242,64 +330,116 @@
   white-space: nowrap;
 }
 
-/* Fascia Valori Mercato & Statistiche Stagionali */
+/* Fascia Valori Mercato & Statistiche Stagionali Orizzontale Classica Allineata */
 .data-rail {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  padding-top: 11px;
+  padding-top: 10px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .market-list {
   display: flex;
-  flex: 0 0 auto;
+  align-items: center;
   gap: 5px;
+  flex-shrink: 0;
 }
 
 .market {
-  display: flex;
+  display: inline-flex;
   align-items: baseline;
-  gap: 3px;
-  padding: 4px 7px;
+  justify-content: space-between;
+  padding: 4px 6px;
   background: var(--soft);
-  border-radius: 7px;
+  border-radius: 6px;
   line-height: 1;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.market.market-qta {
+  width: 48px;
+  min-width: 48px;
+}
+
+.market.market-fvm {
+  width: 58px;
+  min-width: 58px;
 }
 
 .market label {
   color: var(--muted);
-  font-size: 9px;
+  font-size: 8.5px;
   font-weight: 620;
+  margin-right: 3px;
 }
 
 .market strong {
   color: var(--ink);
-  font-size: 11px;
+  font-size: 10.5px;
   font-weight: 810;
+  text-align: right;
+  margin-left: auto;
 }
 
 .season {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
   gap: 6px;
-  min-width: 0;
-  overflow: hidden;
-}
-
-.season span {
-  color: var(--muted);
-  font-size: 9px;
-  font-weight: 600;
-  line-height: 1;
+  flex-shrink: 0;
   white-space: nowrap;
 }
 
-.season strong {
+.stat-item {
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: space-between;
+  line-height: 1;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.stat-item.stat-fm {
+  width: 50px;
+  min-width: 50px;
+}
+
+.stat-item.stat-mv {
+  width: 46px;
+  min-width: 46px;
+}
+
+.stat-item.stat-pg {
+  width: 36px;
+  min-width: 36px;
+}
+
+.stat-item.stat-g {
+  width: 30px;
+  min-width: 30px;
+}
+
+.stat-item.stat-a {
+  width: 30px;
+  min-width: 30px;
+}
+
+.stat-item .stat-lbl {
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 600;
+  margin-right: 3px;
+}
+
+.stat-item .stat-val {
   color: var(--ink);
   font-size: 10px;
   font-weight: 800;
+  text-align: right;
+  margin-left: auto;
 }
 
 /* Badge Ballottaggi / Scelte Multiple */

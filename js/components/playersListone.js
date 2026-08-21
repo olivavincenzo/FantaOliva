@@ -16,7 +16,7 @@ export class PlayersListoneComponent {
     this.selectedTeam = 'ALL';
     this.availabilityFilter = 'ALL'; // 'ALL' | 'AVAILABLE' | 'TAKEN' | 'FAVORITES'
     this.onlyFavorites = false;
-    this.sortBy = 'appetibilita'; // 'appetibilita' | 'fantamedia' | 'mediaVoto' | 'qtA' | 'fvm' | 'gol' | 'assist' | 'presenze' | 'name' | 'teamName'
+    this.sortBy = 'strategy_tier'; // 'strategy_tier' | 'fantamedia' | 'mediaVoto' | 'qtA' | 'fvm' | 'gol' | 'assist' | 'presenze' | 'name' | 'teamName'
     this.sortOrder = 'desc'; // 'asc' | 'desc'
     this.gridColumns = Number((typeof localStorage !== 'undefined' ? localStorage.getItem('fantaoliva_listone_cols') : null) || 2);
     this._searchTimer = null;
@@ -60,6 +60,24 @@ export class PlayersListoneComponent {
       }
     });
 
+    store.subscribe('strategy:changed', () => {
+      if (store.activeView === 'listone') {
+        this.render();
+      }
+    });
+
+    store.subscribe('strategy:updated', () => {
+      if (store.activeView === 'listone') {
+        this.render();
+      }
+    });
+
+    store.subscribe('strategy:playerAssigned', () => {
+      if (store.activeView === 'listone') {
+        this.render();
+      }
+    });
+
     store.subscribe('player:selected', () => {
       if (store.activeView === 'listone') {
         this.updateSelectionHighlight();
@@ -71,15 +89,7 @@ export class PlayersListoneComponent {
     const all = store.getAllPlayersFlat();
 
     // Helper per categoria ruolo
-    const getRoleCategory = (p) => {
-      const r = (p.role || '').toUpperCase();
-      const f = (p.classicRole || p.fantaRole || '').toUpperCase();
-      if (['A', 'PC', 'W'].includes(r) || f === 'A') return 'A';
-      if (['C', 'M', 'T', 'E'].includes(r) || f === 'C') return 'C';
-      if (['D', 'DC', 'TD', 'TS'].includes(r) || f === 'D') return 'D';
-      if (['P', 'POR'].includes(r) || f === 'P') return 'P';
-      return 'C';
-    };
+    const getRoleCategory = (p) => store.getRoleCategory(p);
 
     // 1. Filtro Ruolo
     let filtered = all.filter(p => {
@@ -116,6 +126,30 @@ export class PlayersListoneComponent {
     filtered.sort((a, b) => {
       let valA, valB;
 
+      if (this.sortBy === 'strategy_tier') {
+        const tierA = store.getPlayerTier(a);
+        const tierB = store.getPlayerTier(b);
+        const rankA = tierA ? tierA.order : 9999;
+        const rankB = tierB ? tierB.order : 9999;
+
+        if (rankA !== rankB) {
+          return this.sortOrder === 'asc' ? rankB - rankA : rankA - rankB;
+        }
+
+        // Secondary tiebreaker: fantamedia decrescente, poi fvm, poi presenze
+        const fmA = Number(a.stats?.fantamedia || a.fantamedia || 0);
+        const fmB = Number(b.stats?.fantamedia || b.fantamedia || 0);
+        if (fmB !== fmA) return fmB - fmA;
+
+        const fvmA = Number(a.quotazioni?.fvm || 0);
+        const fvmB = Number(b.quotazioni?.fvm || 0);
+        if (fvmB !== fvmA) return fvmB - fvmA;
+
+        const presA = Number(a.stats?.presenze || 0);
+        const presB = Number(b.stats?.presenze || 0);
+        return presB - presA;
+      }
+
       switch (this.sortBy) {
         case 'name':
           valA = (a.name || a.displayName || '').toLowerCase();
@@ -126,11 +160,6 @@ export class PlayersListoneComponent {
           valA = (a.teamName || '').toLowerCase();
           valB = (b.teamName || '').toLowerCase();
           return this.sortOrder === 'asc' ? valA.localeCompare(valB) : valB.localeCompare(valA);
-
-        case 'appetibilita':
-          valA = Number(a.appetibilita ?? 50);
-          valB = Number(b.appetibilita ?? 50);
-          break;
 
         case 'fantamedia':
           valA = Number(a.stats?.fantamedia || a.fantamedia || 0);
@@ -167,41 +196,71 @@ export class PlayersListoneComponent {
           valB = Number(b.stats?.presenze || b.stats?.pv || 0);
           break;
 
+        case 'titolarita_index': {
+          const indA = store.getPlayerIndices(a);
+          const indB = store.getPlayerIndices(b);
+          valA = Number(indA.titIndex || 3);
+          valB = Number(indB.titIndex || 3);
+          break;
+        }
+
+        case 'affidabilita_index': {
+          const indA = store.getPlayerIndices(a);
+          const indB = store.getPlayerIndices(b);
+          valA = Number(indA.affIndex || 3);
+          valB = Number(indB.affIndex || 3);
+          break;
+        }
+
+        case 'integrita_index': {
+          const indA = store.getPlayerIndices(a);
+          const indB = store.getPlayerIndices(b);
+          valA = Number(indA.infIndex || 3);
+          valB = Number(indB.infIndex || 3);
+          break;
+        }
+
         case 'titolarita':
           valA = Number(a.stats?.titolarita ?? a.titolaritaPerc ?? 50);
           valB = Number(b.stats?.titolarita ?? b.titolaritaPerc ?? 50);
           break;
 
         default:
-          valA = Number(a.appetibilita ?? 50);
-          valB = Number(b.appetibilita ?? 50);
+          valA = Number(a.stats?.fantamedia || a.fantamedia || 0);
+          valB = Number(b.stats?.fantamedia || b.fantamedia || 0);
       }
 
-      if (this.sortOrder === 'desc') {
-        return valB - valA;
+      if (valB !== valA) {
+        return this.sortOrder === 'asc' ? valA - valB : valB - valA;
       }
-      return valA - valB;
+
+      // Tiebreaker alfabetico
+      return (a.name || '').localeCompare(b.name || '');
     });
 
-    return { filtered, total: all.length };
+    return filtered;
   }
 
   render() {
     if (!this.container) return;
 
-    const { filtered, total } = this.getFilteredAndSortedPlayers();
-    const teams = Object.values(store.teams || {});
+    const filtered = this.getFilteredAndSortedPlayers();
+    const total = store.getAllPlayersFlat().length;
+    const teams = store.getAllTeams();
     const isOnlyAvail = this.availabilityFilter === 'AVAILABLE';
+    const activeStrat = store.getActiveStrategy();
 
     const sortOptions = [
-      { key: 'appetibilita', label: '🔥 Appetibilità' },
-      { key: 'qtA', label: 'QtA Quotazione' },
-      { key: 'fvm', label: 'FVM Valore Mercato' },
+      { key: 'strategy_tier', label: `👑 Gerarchia (${activeStrat?.name || 'Strategia'})` },
+      { key: 'titolarita_index', label: '🟢 Titolarità (1-5)' },
+      { key: 'affidabilita_index', label: '🛡️ Affidabilità (1-5)' },
+      { key: 'integrita_index', label: '🩺 Integrità (1-5)' },
+      { key: 'qtA', label: 'Quotazione Classic (QtA)' },
+      { key: 'fvm', label: 'FVM (Fantavoto di Mercato)' },
       { key: 'fantamedia', label: 'FM Fantamedia' },
       { key: 'mediaVoto', label: 'MV Media Voto' },
       { key: 'gol', label: '⚽ Gol Segnati' },
       { key: 'assist', label: '🅰 Assist' },
-      { key: 'titolarita', label: '% Titolarità' },
       { key: 'name', label: 'Nome Calciatore' }
     ];
 
@@ -270,6 +329,11 @@ export class PlayersListoneComponent {
             </select>
             <span class="select-arrow">▾</span>
           </div>
+
+          <!-- Pulsante Strategia Attiva -->
+          <button class="filter" type="button" data-action="open-strategy-modal" title="Configura gerarchia e fasce della strategia attiva">
+            <i class="fa-solid fa-chess-knight"></i> ${sanitizeHtml(activeStrat?.name || 'Strategia')}
+          </button>
 
           <!-- Toggle Solo Disponibili -->
           <button id="toggle-listone-available-btn" class="filter ${isOnlyAvail ? 'active' : ''}" type="button" title="Mostra solo i giocatori disponibili per l'asta">
@@ -382,6 +446,13 @@ export class PlayersListoneComponent {
       this.onlyFavorites = !this.onlyFavorites;
       this.renderLimit = 40;
       this.render();
+    });
+
+    // Pulsante Apri Modale Strategie
+    this.container.querySelectorAll('[data-action="open-strategy-modal"]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        window.app?.strategyManager?.open(this.activeRole !== 'ALL' ? this.activeRole : 'A');
+      });
     });
 
     // Ricerca Testuale Debounced

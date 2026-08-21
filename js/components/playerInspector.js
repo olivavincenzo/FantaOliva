@@ -34,6 +34,9 @@ export class PlayerInspectorComponent {
     store.subscribe('team:changed', () => this.render());
     store.subscribe('formation:changed', () => this.render());
     store.subscribe('auction:availabilityChanged', () => this.render());
+    store.subscribe('strategy:changed', () => this.render());
+    store.subscribe('strategy:updated', () => this.render());
+    store.subscribe('strategy:playerAssigned', () => this.render());
   }
 
   setTab(tabId) {
@@ -42,6 +45,9 @@ export class PlayerInspectorComponent {
   }
 
   render() {
+    this.container = this.container || document.getElementById(this.containerId);
+    if (!this.container) return;
+
     const player = store.getSelectedPlayer();
     const currentTeam = store.getCurrentTeam();
     const selectedSlotId = store.selectedSlotId;
@@ -129,6 +135,7 @@ export class PlayerInspectorComponent {
 
     const isAvailable = player.isAvailable !== false;
     const isFavorite = store.isPlayerFavorite(player.id);
+    const playerTier = store.getPlayerTier(player);
 
     this.container.innerHTML = `
       <div class="detail-top">
@@ -209,64 +216,119 @@ export class PlayerInspectorComponent {
   }
 
   renderDetailsTab(container, player) {
-    const appetibilitaVal = player.appetibilita !== undefined ? Number(player.appetibilita) : (player.stats?.titolarita ?? 50);
-    const isElite = appetibilitaVal >= 75;
+    if (!container || !player) return;
 
-    const isRigorista = Boolean(player.isPenaltyTaker ?? player.rigorista ?? false);
-    const isPunizioni = Boolean(player.isFreeKickTaker ?? player.punizioni ?? false);
-    const isCorner = Boolean(player.isCornerTaker ?? player.corner ?? false);
+    try {
+      const classicRole = store.getRoleCategory(player) || player.classicRole || player.fantaRole || 'C';
+      const indices = store.getPlayerIndices(player);
 
-    const list = [];
-    if (isRigorista) list.push('Rig.');
-    if (isPunizioni) list.push('Pun.');
-    if (isCorner) list.push('Cor.');
-    const piazzatiText = list.length > 0 ? list.join(' · ') : '—';
+      const isRigorista = Boolean(player.isPenaltyTaker ?? player.rigorista ?? false);
+      const isPunizioni = Boolean(player.isFreeKickTaker ?? player.punizioni ?? false);
+      const isCorner = Boolean(player.isCornerTaker ?? player.corner ?? false);
 
-    // Ballottaggio info
-    const ballottaggio = store.getBallottaggioForPlayer(player.id);
-    let ballottaggioText = '';
-    if (ballottaggio) {
-      if (ballottaggio.duelLabel) {
-        ballottaggioText = sanitizeHtml(ballottaggio.duelLabel);
-      } else {
-        const isPlayerA = ballottaggio.playerAId === player.id;
-        const perc = isPlayerA ? (ballottaggio.percentageA || ballottaggio.percA || 50) : (ballottaggio.percentageB || ballottaggio.percB || 50);
-        const opponentId = isPlayerA ? ballottaggio.playerBId : ballottaggio.playerAId;
-        const opponent = store.getPlayer(opponentId);
-        const oppName = opponent ? (opponent.displayName || opponent.name) : (ballottaggio.opponentName || 'Altro');
-        ballottaggioText = `${perc}% vs ${sanitizeHtml(oppName)}`;
+      const list = [];
+      if (isRigorista) list.push('Rig.');
+      if (isPunizioni) list.push('Pun.');
+      if (isCorner) list.push('Cor.');
+      const piazzatiText = list.length > 0 ? list.join(' · ') : '—';
+
+      // Ballottaggio info
+      const ballottaggio = store.getBallottaggioForPlayer(player.id);
+      let ballottaggioText = '';
+      if (ballottaggio) {
+        if (ballottaggio.duelLabel) {
+          ballottaggioText = sanitizeHtml(ballottaggio.duelLabel);
+        } else {
+          const isPlayerA = ballottaggio.playerAId === player.id;
+          const perc = isPlayerA ? (ballottaggio.percentageA || ballottaggio.percA || 50) : (ballottaggio.percentageB || ballottaggio.percB || 50);
+          const opponentId = isPlayerA ? ballottaggio.playerBId : ballottaggio.playerAId;
+          const opponent = store.getPlayer(opponentId);
+          const oppName = opponent ? (opponent.displayName || opponent.name) : (ballottaggio.opponentName || 'Altro');
+          ballottaggioText = `${perc}% vs ${sanitizeHtml(oppName)}`;
+        }
       }
-    }
 
-    // Quotazioni & Rendimento
-    const qtA = player.quotazioni?.qtA ?? '-';
-    const fvm = player.quotazioni?.fvm ?? '-';
-    const titolarita = player.stats?.titolarita ?? player.titolaritaPerc ?? 50;
-    const fm = player.stats?.fantamedia ?? player.fantamedia;
-    const mv = player.stats?.mediaVoto ?? player.mediaVoto;
-    const presenze = player.stats?.presenze ?? player.stats?.pv ?? 0;
-    const gol = player.stats?.gol ?? player.stats?.gf ?? player.gol ?? 0;
-    const assist = player.stats?.assist ?? player.stats?.ass ?? player.assist ?? 0;
+      // Quotazioni & Rendimento
+      const qtA = player.quotazioni?.qtA ?? '-';
+      const fvm = player.quotazioni?.fvm ?? '-';
+      const titolarita = player.stats?.titolarita ?? player.titolaritaPerc ?? 50;
+      const fm = player.stats?.fantamedia ?? player.fantamedia;
+      const mv = player.stats?.mediaVoto ?? player.mediaVoto;
+      const fmtFm = (fm !== undefined && fm !== null && fm !== '-' && !isNaN(Number(fm))) ? Number(fm).toFixed(2) : (fm || '-');
+      const fmtMv = (mv !== undefined && mv !== null && mv !== '-' && !isNaN(Number(mv))) ? Number(mv).toFixed(2) : (mv || '-');
+      const presenze = player.stats?.presenze ?? player.stats?.pv ?? 0;
+      const gol = player.stats?.gol ?? player.stats?.gf ?? player.gol ?? 0;
+      const assist = player.stats?.assist ?? player.stats?.ass ?? player.assist ?? 0;
 
-    const notes = player.comment || player.positionNotes || player.notes || '';
+      // Strategia e Ruolo
+      const activeStrategy = store.getActiveStrategy();
+      const roleKey = store.getRoleCategory(player);
+      const roleTiers = Array.isArray(store.getTiersForRole(roleKey)) ? store.getTiersForRole(roleKey) : [];
+      const currentTierId = store.getPlayerTierId(player);
+
+      const normName = (player.name || '').toLowerCase().replace(/[^a-z0-9]/g, '').trim();
+      const normDisp = (player.displayName || '').toLowerCase().replace(/[^a-z0-9]/g, '').trim();
+      const sosComment = activeStrategy?.playerComments?.[normName] || activeStrategy?.playerComments?.[normDisp] || '';
+      const sosPrice = activeStrategy?.playerPrices?.[normName] || activeStrategy?.playerPrices?.[normDisp] || null;
+
+      const notes = player.comment || player.positionNotes || player.notes || sosComment || '';
 
     container.innerHTML = `
-      <!-- SEZIONE INDICATORI (MODIFICABILI APPETIBILITÀ E TITOLARITÀ) -->
+      <!-- SEZIONE STRATEGIA & FASCIA CUSTOM -->
       <section class="detail-section">
-        <h2>Indicatori</h2>
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+          <h2>Fascia Strategia (${roleKey})</h2>
+          <div style="display: flex; align-items: center; gap: 6px;">
+            ${sosPrice ? `<span class="badge" style="background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.4); font-size: 0.72rem; font-weight: 700; padding: 2px 6px; border-radius: var(--radius-sm);" title="Prezzo consigliato asta (base 500)"><i class="fa-solid fa-coins"></i> ${sosPrice} cr</span>` : ''}
+            <span class="inspector-strategy-name-tag" title="Strategia Attiva"><i class="fa-solid fa-chess-knight"></i> ${sanitizeHtml(activeStrategy?.name || 'Strategia')}</span>
+          </div>
+        </div>
+        <div class="inspector-strategy-tiers-grid">
+          ${roleTiers.map(t => {
+            const isAssigned = currentTierId === t.id;
+            return `
+              <button 
+                type="button" 
+                class="strategy-tier-pill-btn ${isAssigned ? 'is-active' : ''}" 
+                data-tier-id="${t.id}"
+                title="Assegna a ${sanitizeHtml(t.name)}"
+              >
+                <span class="tier-circle" style="background: ${t.color};"></span>
+                <span>${sanitizeHtml(t.name)}</span>
+              </button>
+            `;
+          }).join('')}
+          ${currentTierId ? `
+            <button 
+              type="button" 
+              class="strategy-tier-pill-btn btn-remove-tier" 
+              data-tier-id="none"
+              title="Rimuovi fascia da questo giocatore"
+            >
+              <i class="fa-solid fa-xmark"></i> Rimuovi
+            </button>
+          ` : ''}
+        </div>
+        <div style="margin-top: 8px; text-align: right;">
+          <button type="button" class="fanta-btn secondary-btn" id="open-strat-manager-from-inspector" style="padding: 4px 10px; font-size: 0.72rem; border-radius: var(--radius-sm);">
+            <i class="fa-solid fa-sliders"></i> Gestisci Fasce ${roleKey}
+          </button>
+        </div>
+      </section>
+
+      <!-- SEZIONE RUOLO & QUOTAZIONI -->
+      <section class="detail-section">
+        <h2>Ruolo & Quotazioni</h2>
         <div class="mini-grid">
           <div class="mini-stat">
-            <span>Appetibilità</span>
+            <span>Ruolo Classic</span>
             <div class="mini-stat-edit-wrap">
-              <input type="number" id="edit-appetibilita" class="mini-stat-input ${isElite ? 'green' : ''}" min="0" max="100" value="${appetibilitaVal}" title="Modifica Appetibilità (0-100)" />
-              <span class="mini-stat-suffix">/100</span>
-            </div>
-          </div>
-          <div class="mini-stat">
-            <span>Titolarità</span>
-            <div class="mini-stat-edit-wrap">
-              <input type="number" id="edit-titolaritaPerc" class="mini-stat-input" min="0" max="100" value="${titolarita}" title="Modifica % Titolarità (0-100)" />
-              <span class="mini-stat-suffix">%</span>
+              <select id="edit-player-role" class="mini-stat-input" style="padding: 2px 4px; font-size: 11px; font-weight: 700; cursor: pointer;">
+                <option value="P" ${classicRole === 'P' ? 'selected' : ''}>P (Portiere)</option>
+                <option value="D" ${classicRole === 'D' ? 'selected' : ''}>D (Difensore)</option>
+                <option value="C" ${classicRole === 'C' ? 'selected' : ''}>C (Centrocampista)</option>
+                <option value="A" ${classicRole === 'A' ? 'selected' : ''}>A (Attaccante)</option>
+              </select>
             </div>
           </div>
           <div class="mini-stat">
@@ -280,12 +342,60 @@ export class PlayerInspectorComponent {
         </div>
       </section>
 
+      <!-- SEZIONE INDICI GUIDA ASTA (TITOLARITÀ, AFFIDABILITÀ, INTEGRITÀ) -->
+      <section class="detail-section">
+        <h2>Indici Guida Asta (1-5)</h2>
+        <div class="indices-selector-list">
+          <div class="index-select-group">
+            <div class="index-select-header">
+              <span class="index-select-title">Titolarità:</span>
+              <strong class="index-select-rating">${indices.titIndex}/5</strong>
+            </div>
+            <select id="edit-tit-index" class="fanta-select index-edit-dropdown">
+              <option value="1" ${indices.titIndex === 1 ? 'selected' : ''}>1 · Non gioca mai</option>
+              <option value="2" ${indices.titIndex === 2 ? 'selected' : ''}>2 · Subentra raramente</option>
+              <option value="3" ${indices.titIndex === 3 ? 'selected' : ''}>3 · Nelle rotazioni</option>
+              <option value="4" ${indices.titIndex === 4 ? 'selected' : ''}>4 · Titolare con concorrenza</option>
+              <option value="5" ${indices.titIndex === 5 ? 'selected' : ''}>5 · Titolare inamovibile</option>
+            </select>
+          </div>
+
+          <div class="index-select-group">
+            <div class="index-select-header">
+              <span class="index-select-title">Affidabilità:</span>
+              <strong class="index-select-rating">${indices.affIndex}/5</strong>
+            </div>
+            <select id="edit-aff-index" class="fanta-select index-edit-dropdown">
+              <option value="1" ${indices.affIndex === 1 ? 'selected' : ''}>1 · Del tutto inaffidabile a livello di voti</option>
+              <option value="2" ${indices.affIndex === 2 ? 'selected' : ''}>2 · Profilo altamente incostante</option>
+              <option value="3" ${indices.affIndex === 3 ? 'selected' : ''}>3 · Alterna buone prestazioni ad altre deludenti</option>
+              <option value="4" ${indices.affIndex === 4 ? 'selected' : ''}>4 · Quasi sempre sufficiente</option>
+              <option value="5" ${indices.affIndex === 5 ? 'selected' : ''}>5 · Rendimento super costante</option>
+            </select>
+          </div>
+
+          <div class="index-select-group">
+            <div class="index-select-header">
+              <span class="index-select-title">Integrità:</span>
+              <strong class="index-select-rating">${indices.infIndex}/5</strong>
+            </div>
+            <select id="edit-inf-index" class="fanta-select index-edit-dropdown">
+              <option value="1" ${indices.infIndex === 1 ? 'selected' : ''}>1 · Molto fragile</option>
+              <option value="2" ${indices.infIndex === 2 ? 'selected' : ''}>2 · Ha avuto diversi infortuni</option>
+              <option value="3" ${indices.infIndex === 3 ? 'selected' : ''}>3 · Ogni tanto salta qualche partita</option>
+              <option value="4" ${indices.infIndex === 4 ? 'selected' : ''}>4 · Pochissimi infortuni</option>
+              <option value="5" ${indices.infIndex === 5 ? 'selected' : ''}>5 · È sempre integro</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
       <!-- SEZIONE RENDIMENTO STAGIONE CON SPECIALISTI INTEGRATI -->
       <section class="detail-section">
         <h2>Rendimento stagione</h2>
         <div class="info-card">
-          <div class="info-row"><span>Fantamedia</span><strong>${fm ? Number(fm).toFixed(2) : '-'}</strong></div>
-          <div class="info-row"><span>Media voto</span><strong>${mv ? Number(mv).toFixed(2) : '-'}</strong></div>
+          <div class="info-row"><span>Fantamedia</span><strong>${fmtFm}</strong></div>
+          <div class="info-row"><span>Media voto</span><strong>${fmtMv}</strong></div>
           <div class="info-row"><span>Presenze</span><strong>${presenze}</strong></div>
           <div class="info-row"><span>Gol / Assist</span><strong>${gol} / ${assist}</strong></div>
           <div class="info-row info-row-piazzati">
@@ -322,22 +432,50 @@ export class PlayerInspectorComponent {
       </section>
     `;
 
+    // Bind Assegnazione Fascia Strategia
+    container.querySelectorAll('.strategy-tier-pill-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const tierId = btn.dataset.tierId;
+        store.assignPlayerTier(player, tierId);
+        if (tierId && tierId !== 'none') {
+          const tier = roleTiers.find(t => t.id === tierId);
+          notify.success(`Assegnato a "${tier?.name || 'Fascia'}"`);
+        } else {
+          notify.info(`Fascia rimossa per ${player.displayName || player.name}`);
+        }
+        this.render();
+      });
+    });
+
+    // Bind Apertura Gestione Fasce
+    container.querySelector('#open-strat-manager-from-inspector')?.addEventListener('click', () => {
+      window.app?.strategyManager?.open(roleKey);
+    });
+
     // Helper unificato per estrarre e salvare tutti i dati del form
     const saveCurrentForm = (notifyUser = false) => {
+      const selectedRole = container.querySelector('#edit-player-role')?.value || classicRole || 'C';
       const isRigoristaVal = Boolean(container.querySelector('#edit-rigorista')?.checked);
       const isPunizioniVal = Boolean(container.querySelector('#edit-punizioni')?.checked);
       const isCornerVal = Boolean(container.querySelector('#edit-corner')?.checked);
       const noteVal = container.querySelector('#player-notes-textarea')?.value.trim() ?? '';
+      const newTitIndex = Number(container.querySelector('#edit-tit-index')?.value) || indices.titIndex;
+      const newAffIndex = Number(container.querySelector('#edit-aff-index')?.value) || indices.affIndex;
+      const newInfIndex = Number(container.querySelector('#edit-inf-index')?.value) || indices.infIndex;
 
       const updatedData = {
         name: player.name,
         displayName: player.displayName || player.name,
-        role: player.role || 'C',
-        classicRole: player.classicRole || player.fantaRole || 'C',
+        strategyTierId: player.strategyTierId || store.getPlayerTierId(player) || null,
+        role: selectedRole,
+        classicRole: selectedRole,
+        fantaRole: selectedRole,
         mantraRole: player.mantraRole || '',
-        fantaRole: player.fantaRole || player.classicRole || 'C',
-        appetibilita: Math.min(100, Math.max(0, Number(container.querySelector('#edit-appetibilita')?.value) || 0)),
         status: player.status || 'tit_sicuro',
+        titIndex: newTitIndex,
+        affIndex: newAffIndex,
+        infIndex: newInfIndex,
         isPenaltyTaker: isRigoristaVal,
         rigorista: isRigoristaVal,
         isFreeKickTaker: isPunizioniVal,
@@ -349,14 +487,13 @@ export class PlayerInspectorComponent {
         positionNotes: noteVal,
         quotazioni: player.quotazioni || {},
         stats: {
-          ...(player.stats || {}),
-          titolarita: Number(container.querySelector('#edit-titolaritaPerc')?.value) ?? (player.stats?.titolarita ?? 50)
+          ...(player.stats || {})
         }
       };
 
       store.updatePlayer(player.id, updatedData);
       if (notifyUser) {
-        notify.success(`Dati e note di ${player.displayName || player.name} salvati!`);
+        notify.success(`Dati e indici di ${player.displayName || player.name} salvati!`);
       }
     };
 
@@ -364,6 +501,13 @@ export class PlayerInspectorComponent {
     container.querySelectorAll('.checkbox-chip input').forEach(input => {
       input.addEventListener('change', () => {
         input.closest('.checkbox-chip').classList.toggle('is-checked', input.checked);
+        saveCurrentForm(false);
+      });
+    });
+
+    // Live Auto-Save su Modifica Select Indici (Titolarità, Affidabilità, Integrità, Ruolo)
+    container.querySelectorAll('select').forEach(sel => {
+      sel.addEventListener('change', () => {
         saveCurrentForm(false);
       });
     });
@@ -379,6 +523,11 @@ export class PlayerInspectorComponent {
     container.querySelector('#save-player-note-btn')?.addEventListener('click', () => {
       saveCurrentForm(true);
     });
+
+    } catch (err) {
+      console.error('Errore nel rendering scheda dettagli giocatore:', err);
+      container.innerHTML = `<div class="inspector-empty-state"><p>Errore nel caricamento dei dati: ${err.message}</p></div>`;
+    }
   }
 
   renderSubstitutesTab(container, player, selectedSlotId) {

@@ -1,0 +1,525 @@
+/**
+ * FantaOliva - Stili Gestione Strategie Custom & Gerarchia Ruoli
+ * Design System: Editorial Minimal
+ */
+
+/* ==========================================================================
+   BADGE FASCIA STRATEGIA SU PLAYER CARD & RIGHE
+   ========================================================================== */
+
+.player-card-strategy-strip {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+  margin-bottom: 3px;
+  min-height: 24px;
+}
+
+.player-strategy-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: 125px;
+  min-width: 125px;
+  max-width: 125px;
+  min-height: 22px;
+  height: auto;
+  padding: 3px 8px;
+  border-radius: 8px;
+  font-size: 0.66rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+  transition: all 0.15s ease;
+}
+
+.player-strategy-badge .tier-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.player-strategy-badge .tier-label-text {
+  flex: 1;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.15;
+}
+
+.player-strategy-badge.badge-unassigned {
+  background: var(--soft);
+  color: var(--muted);
+  border: 1px dashed var(--line);
+  font-weight: 600;
+  opacity: 0.85;
+}
+
+.player-strategy-badge .tier-dot.unassigned-dot {
+  background: #9ca3af;
+  opacity: 0.5;
+}
+
+/* ==========================================================================
+   MODALE GESTIONE STRATEGIE
+   ========================================================================== */
+
+.strategy-modal-dialog {
+  max-width: 680px;
+  width: 100%;
+}
+
+.strategy-toolbar-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 18px;
+  background: var(--soft);
+  border-bottom: 1px solid var(--line);
+  flex-wrap: wrap;
+}
+
+.strategy-select-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 240px;
+}
+
+.strategy-select-group label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.strategy-dropdown-select {
+  flex: 1;
+  padding: 7px 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 0.88rem;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+
+.strategy-dropdown-select:focus {
+  border-color: var(--ink);
+}
+
+.strategy-actions-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.strategy-btn-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--body);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.82rem;
+  transition: all 0.15s ease;
+}
+
+.strategy-btn-icon:hover {
+  background: var(--soft);
+  color: var(--ink);
+  border-color: var(--border-focus);
+}
+
+.strategy-btn-icon.btn-danger:hover {
+  background: var(--red-bg);
+  color: var(--red);
+  border-color: var(--red);
+}
+
+/* Tab Ruoli (P, D, C, A) nel Modale */
+.strategy-roles-nav {
+  display: flex;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+  padding: 0 16px;
+  gap: 8px;
+}
+
+.strategy-role-tab {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--muted);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.strategy-role-tab:hover {
+  color: var(--ink);
+}
+
+.strategy-role-tab.is-active {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
+}
+
+.strategy-role-tab .role-badge-pill {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.68rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.role-badge-pill.pill-P { background: var(--role-p); }
+.role-badge-pill.pill-D { background: var(--role-d); }
+.role-badge-pill.pill-C { background: var(--role-c); }
+.role-badge-pill.pill-A { background: var(--role-a); }
+
+/* Corpo del Modale: Lista Gerarchia */
+.strategy-hierarchy-container {
+  padding: 16px 18px;
+  max-height: 420px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hierarchy-header-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.strategy-tiers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tier-item-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 12px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  transition: all 0.15s ease;
+}
+
+.tier-item-row:hover {
+  border-color: #d1d5db;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.tier-order-rank {
+  font-size: 0.75rem;
+  font-weight: 800;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--soft);
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.tier-color-indicator {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.tier-name-input {
+  flex: 1;
+  border: 1px solid transparent;
+  background: transparent;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ink);
+  padding: 4px 8px;
+  border-radius: 4px;
+  outline: none;
+  transition: all 0.15s ease;
+}
+
+.tier-name-input:focus {
+  background: var(--soft);
+  border-color: var(--line);
+}
+
+.tier-count-pill {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--muted);
+  background: var(--soft);
+  padding: 2px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.tier-reorder-btns {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.tier-order-btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.72rem;
+  transition: all 0.12s ease;
+}
+
+.tier-order-btn:hover:not(:disabled) {
+  background: var(--soft);
+  color: var(--ink);
+  border-color: var(--line);
+}
+
+.tier-order-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.tier-delete-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.75rem;
+  transition: all 0.12s ease;
+}
+
+.tier-delete-btn:hover {
+  background: var(--red-bg);
+  color: var(--red);
+}
+
+/* Form Aggiungi Nuova Fascia */
+.add-tier-form-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  background: var(--soft);
+  border: 1px dashed var(--line);
+  border-radius: var(--radius-md);
+  margin-top: 6px;
+}
+
+.add-tier-input {
+  flex: 1;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  background: var(--paper);
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--ink);
+  outline: none;
+}
+
+.add-tier-input:focus {
+  border-color: var(--ink);
+}
+
+.tier-color-picker-select {
+  padding: 6px 8px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  background: var(--paper);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-tier-submit-btn {
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: var(--ink);
+  color: var(--text-inverse);
+  font-size: 0.78rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.add-tier-submit-btn:hover {
+  opacity: 0.9;
+}
+
+/* ==========================================================================
+   SELETTORE FASCIA STRATEGIA NELL'ISPETTORE GIOCATORE (SIDEBAR DESTRA)
+   ========================================================================== */
+
+.inspector-strategy-box {
+  margin: 14px 0;
+  padding: 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  background: var(--paper);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.inspector-strategy-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.inspector-strategy-title {
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.inspector-strategy-name-tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--ink);
+  background: var(--soft);
+  padding: 2px 7px;
+  border-radius: 999px;
+}
+
+.inspector-strategy-tiers-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.strategy-tier-pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  background: var(--soft);
+  color: var(--body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.strategy-tier-pill-btn:hover {
+  background: #e9e9ed;
+  border-color: #d1d5db;
+  color: var(--ink);
+}
+
+.strategy-tier-pill-btn.is-active {
+  background: var(--ink);
+  color: #ffffff;
+  border-color: var(--ink);
+}
+
+.strategy-tier-pill-btn .tier-circle {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.strategy-tier-pill-btn.is-active .tier-circle {
+  box-shadow: 0 0 0 1.5px #fff;
+}
+
+.strategy-tier-pill-btn.btn-remove-tier {
+  color: var(--muted);
+  font-weight: 500;
+  background: transparent;
+  border-style: dashed;
+}
+
+.strategy-tier-pill-btn.btn-remove-tier:hover {
+  color: var(--red);
+  border-color: var(--red);
+  background: var(--red-bg);
+}
+
+/* ==========================================================================
+   DROPDOWN & HEADER BUTTON STRATEGIA
+   ========================================================================== */
+
+.strategy-header-pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.strategy-header-pill-btn:hover {
+  background: var(--soft);
+  border-color: var(--border-focus);
+}

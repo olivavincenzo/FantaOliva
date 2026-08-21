@@ -27,6 +27,7 @@
   <link rel="stylesheet" href="css/modals.css">
   <link rel="stylesheet" href="css/auction-slots.css">
   <link rel="stylesheet" href="css/listone.css?v=4">
+  <link rel="stylesheet" href="css/strategy-manager.css">
   <link rel="stylesheet" href="css/responsive.css?v=2">
 </head>
 
@@ -93,6 +94,15 @@
         </button>
 
         <div class="dropdown-divider"></div>
+
+        <button id="open-strategy-modal-btn" class="dropdown-menu-item"
+          title="Gestisci strategie custom, fasce e gerarchie per ruolo">
+          <div class="dropdown-item-icon" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b;"><i class="fa-solid fa-chess-knight"></i></div>
+          <div class="dropdown-item-text">
+            <span class="item-title">Strategie Custom</span>
+            <span class="item-desc">Gerarchia fasce e label per ruolo</span>
+          </div>
+        </button>
 
         <button id="open-import-csv-btn" class="dropdown-menu-item"
           title="Importa file CSV Statistiche Fantacalcio">
@@ -297,15 +307,9 @@
 
         <!-- SEZIONE 2: CREAZIONE MANUALE (HIDDEN BY DEFAULT) -->
         <form id="add-player-form" class="hidden">
-          <div class="form-grid-2">
-            <div class="form-group">
-              <label>Nome Completo Giocatore:</label>
-              <input type="text" id="new-player-name" class="fanta-input" placeholder="Es. Mario Rossi" required />
-            </div>
-            <div class="form-group">
-              <label><i class="fa-solid fa-fire" style="color: #ff4d4d;"></i> Appetibilità (0-100):</label>
-              <input type="number" id="new-player-appetibilita" class="fanta-input" min="0" max="100" value="50" />
-            </div>
+          <div class="form-group" style="margin-bottom: 14px;">
+            <label>Nome Completo Giocatore:</label>
+            <input type="text" id="new-player-name" class="fanta-input" placeholder="Es. Mario Rossi" required />
           </div>
 
           <div class="form-grid-2">
@@ -524,6 +528,9 @@
       </div>
     </div>
   </div>
+
+  <!-- MODALE STRATEGIE CUSTOM & GERARCHIE RUOLI -->
+  <div class="hidden" id="strategy-modal"></div>
 
   <!-- Toast Notifications Container -->
   <div class="toast-container" id="toast-container"></div>

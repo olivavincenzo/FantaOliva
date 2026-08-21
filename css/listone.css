@@ -159,24 +159,55 @@
     box-sizing: border-box !important;
   }
 
-  /* Colonna 2: Metriche Core (Appetibilità, Titolarità, Ruolo) - Larghezza Fissa Rigida */
+  /* Fascia Strategia Strip nel Listone */
+  .listone-view-wrapper .player-card .player-card-strategy-strip,
+  #listone-view-wrapper .player-card .player-card-strategy-strip,
+  .listone-cards-container .player-card .player-card-strategy-strip {
+    flex: 0 0 auto !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  /* Colonna 2: Metriche Core (Titolarità, Affidabilità, Integrità, Consigliati, Ruolo) - Disposizione Orizzontale su 1 Riga */
   .listone-view-wrapper .player-card .core-metrics,
   #listone-view-wrapper .player-card .core-metrics,
   .listone-cards-container .player-card .core-metrics {
-    flex: 0 0 190px !important;
-    width: 190px !important;
-    max-width: 190px !important;
-    min-width: 190px !important;
+    flex: 0 0 auto !important;
+    width: auto !important;
+    max-width: none !important;
+    min-width: auto !important;
     margin-top: 0 !important;
-    padding: 0 16px !important;
+    padding: 0 14px !important;
     border-top: none !important;
     border-bottom: none !important;
     border-left: 1px solid var(--line) !important;
     border-right: 1px solid var(--line) !important;
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 8px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    flex-wrap: nowrap !important;
+    gap: 12px !important;
     box-sizing: border-box !important;
+  }
+
+  .listone-view-wrapper .player-card .core-metrics .metric,
+  #listone-view-wrapper .player-card .core-metrics .metric,
+  .listone-cards-container .player-card .core-metrics .metric {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    flex-shrink: 0 !important;
+    min-width: fit-content !important;
+  }
+
+  .listone-view-wrapper .player-card .core-metrics .metric-label,
+  #listone-view-wrapper .player-card .core-metrics .metric-label,
+  .listone-cards-container .player-card .core-metrics .metric-label {
+    margin-top: 3px !important;
+    font-size: 8px !important;
+    white-space: nowrap !important;
   }
 
   /* Colonna 3: Valori di Mercato & Statistiche Stagionali */

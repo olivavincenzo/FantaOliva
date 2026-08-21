@@ -39,6 +39,15 @@ function getStatusLabel(status) {
   return map[status] || 'Titolare';
 }
 
+function renderIndexSegments(score) {
+  const s = Math.max(1, Math.min(5, Number(score) || 3));
+  let segs = '';
+  for (let i = 1; i <= 5; i++) {
+    segs += `<span class="segment-bar ${i <= s ? 'is-filled' : ''}"></span>`;
+  }
+  return `<div class="index-segments-bar" role="img" aria-label="${s}/5">${segs}</div>`;
+}
+
 export function createPlayerCard(player, options = {}) {
   const {
     slotId = null,
@@ -85,7 +94,7 @@ export function createPlayerCard(player, options = {}) {
 
   const displayName = player.displayName || player.name || 'Giocatore';
   const initials = getPlayerInitials(player.name || displayName);
-  const classicRole = player.classicRole || player.fantaRole || 'C';
+  const classicRole = store.getRoleCategory(player) || player.classicRole || player.fantaRole || 'C';
   const fmVal = player.stats?.fantamedia ?? player.fantamedia ?? '-';
   const mvVal = player.stats?.mediaVoto ?? '-';
   const presenze = player.stats?.presenze ?? 0;
@@ -94,8 +103,8 @@ export function createPlayerCard(player, options = {}) {
   const titolarita = player.stats?.titolarita ?? player.titolaritaPerc;
   const titClass = getTitolaritaClass(titolarita ?? 50);
 
-  const appetibilitaVal = player.appetibilita !== undefined ? Number(player.appetibilita) : (player.stats?.titolarita ?? 50);
-  const isElite = appetibilitaVal >= 75;
+  const indices = store.getPlayerIndices(player);
+  const suggestedPrice = store.getPlayerSuggestedPrice(player);
 
   const currentTeam = store.getCurrentTeam();
   const teamName = player.teamName || (player.teamId ? store.getTeam(player.teamId)?.name : null) || currentTeam?.name || 'Serie A';
@@ -104,6 +113,7 @@ export function createPlayerCard(player, options = {}) {
 
   const qtA = player.quotazioni?.qtA ?? '-';
   const fvm = player.quotazioni?.fvm ?? '-';
+  const tier = store.getPlayerTier(player);
 
   // Ballottaggio badge (pillole separate per ciascuna scelta)
   let ballottaggioHtml = '';
@@ -143,7 +153,7 @@ export function createPlayerCard(player, options = {}) {
     `;
   }
 
-  // Header player top con info piazzati (rigorista, punizioni, corner)
+  // Header player top con info piazzati
   const headerHtml = `
     <header class="player-top">
       <div class="identity">
@@ -164,37 +174,79 @@ export function createPlayerCard(player, options = {}) {
     </header>
   `;
 
-  // Metriche Core: 3 colonne (Appetibilità, Titolarità, Ruolo)
+  // Strip Fascia Strategia (dimensione fissa e stato di default "Non impostato")
+  const strategyStripHtml = `
+    <div class="player-card-strategy-strip">
+      ${tier ? `
+        <span class="player-strategy-badge" style="background: ${tier.color}1c; color: ${tier.color}; border: 1px solid ${tier.color}45;" title="Fascia Strategia: ${sanitizeHtml(tier.name)}">
+          <span class="tier-dot" style="background: ${tier.color};"></span>
+          <span class="tier-label-text">${sanitizeHtml(tier.name)}</span>
+        </span>
+      ` : `
+        <span class="player-strategy-badge badge-unassigned" title="Fascia non impostata per questa strategia">
+          <span class="tier-dot unassigned-dot"></span>
+          <span class="tier-label-text">Non impostato</span>
+        </span>
+      `}
+    </div>
+  `;
+
+  const specificRole = (player.role && player.role !== classicRole) ? player.role : (player.mantraRole && player.mantraRole !== classicRole ? player.mantraRole : (player.role || ''));
+
+  // Metriche Core: Titolarità, Affidabilità, Integrità, Crediti Consigliati e Ruolo
   const metricsHtml = `
     <div class="core-metrics ${compact ? 'compact-metrics' : ''}">
-      <div class="metric">
-        <div class="metric-value ${isElite ? 'elite' : ''}">${appetibilitaVal}</div>
-        <span class="metric-label">Appetibilità</span>
+      <div class="metric metric-index" title="Titolarità: ${indices.titIndex}/5 (${sanitizeHtml(indices.titDesc)})">
+        <div class="metric-index-wrap">
+          ${renderIndexSegments(indices.titIndex)}
+          <span class="metric-index-val">${indices.titIndex}/5</span>
+        </div>
+        <span class="metric-label">Titol.</span>
       </div>
-      <div class="metric">
-        <div class="metric-value">${titolarita !== undefined ? `${titolarita}%` : '—'}</div>
-        <span class="metric-label">Titolarità</span>
+      <div class="metric metric-index" title="Affidabilità: ${indices.affIndex}/5 (${sanitizeHtml(indices.affDesc)})">
+        <div class="metric-index-wrap">
+          ${renderIndexSegments(indices.affIndex)}
+          <span class="metric-index-val">${indices.affIndex}/5</span>
+        </div>
+        <span class="metric-label">Affid.</span>
       </div>
-      <div class="metric">
-        <span class="role">${player.role || classicRole}</span>
+      <div class="metric metric-index" title="Integrità: ${indices.infIndex}/5 (${sanitizeHtml(indices.infDesc)})">
+        <div class="metric-index-wrap">
+          ${renderIndexSegments(indices.infIndex)}
+          <span class="metric-index-val">${indices.infIndex}/5</span>
+        </div>
+        <span class="metric-label">Integr.</span>
+      </div>
+      <div class="metric metric-credits" title="Crediti consigliati asta: ${suggestedPrice !== null ? `${suggestedPrice} cr` : '—'}">
+        <div class="metric-credits-val">
+          <strong class="credits-number">${suggestedPrice !== null ? `${suggestedPrice}` : '—'}</strong>
+          ${suggestedPrice !== null ? `<span class="credits-unit">cr</span>` : ''}
+        </div>
+        <span class="metric-label">Consigliati</span>
+      </div>
+      <div class="metric metric-role">
+        <div class="roles-badges-wrap">
+          <span class="role role-${classicRole.toLowerCase()}" title="Ruolo Classic: ${classicRole}">${classicRole}</span>
+          ${specificRole ? `<span class="role role-tactical" title="Ruolo Specifico: ${specificRole}">${specificRole}</span>` : ''}
+        </div>
         <span class="metric-label">Ruolo</span>
       </div>
     </div>
   `;
 
-  // Data rail: compatto escluso in modalità campo, completo in modalità lista/slot
+  // Data rail: compatto escluso in modalità campo, orizzontale classico con colonne fisse allineate
   const railHtml = compact ? '' : `
     <div class="data-rail">
       <div class="market-list">
-        <div class="market"><label>QtA</label><strong>${qtA}</strong></div>
-        <div class="market"><label>FVM</label><strong>${fvm}</strong></div>
+        <div class="market market-qta" title="Quotazione Attuale Classic"><label>QtA</label><strong>${qtA}</strong></div>
+        <div class="market market-fvm" title="Fantavoto di Mercato (base 1000)"><label>FVM</label><strong>${fvm}</strong></div>
       </div>
       <div class="season">
-        <span>FM <strong>${fmVal}</strong></span>
-        <span>MV <strong>${mvVal}</strong></span>
-        <span>PG <strong>${presenze}</strong></span>
-        <span>G <strong>${gol}</strong></span>
-        <span>A <strong>${assist}</strong></span>
+        <span class="stat-item stat-fm" title="Fantamedia Stagionale"><span class="stat-lbl">FM</span><strong class="stat-val">${fmVal}</strong></span>
+        <span class="stat-item stat-mv" title="Media Voto"><span class="stat-lbl">MV</span><strong class="stat-val">${mvVal}</strong></span>
+        <span class="stat-item stat-pg" title="Partite Giocate / Presenze"><span class="stat-lbl">PG</span><strong class="stat-val">${presenze}</strong></span>
+        <span class="stat-item stat-g" title="Gol Segnati"><span class="stat-lbl">G</span><strong class="stat-val">${gol}</strong></span>
+        <span class="stat-item stat-a" title="Assist Realizzati"><span class="stat-lbl">A</span><strong class="stat-val">${assist}</strong></span>
       </div>
     </div>
   `;
@@ -202,6 +254,7 @@ export function createPlayerCard(player, options = {}) {
   // Template Strutturale Editorial Minimal
   card.innerHTML = `
     ${headerHtml}
+    ${strategyStripHtml}
     ${metricsHtml}
     ${railHtml}
     ${ballottaggioHtml}
@@ -268,7 +321,7 @@ export function createPlayerCard(player, options = {}) {
     triggerOpenInspector();
   });
 
-  // 2. Click / Touch handler per singolo click (selezione) e doppio tocco mobile (<350ms)
+  // 2. Click / Touch handler immediato
   card.addEventListener('click', (e) => {
     if (e.target.closest('.availability')) return;
     if (hasMoved) {
@@ -276,17 +329,7 @@ export function createPlayerCard(player, options = {}) {
       return;
     }
     e.stopPropagation();
-
-    const currentTime = Date.now();
-    const tapLength = currentTime - lastTapTime;
-
-    if (tapLength < 350 && tapLength > 0) {
-      triggerOpenInspector();
-      lastTapTime = 0;
-    } else {
-      lastTapTime = currentTime;
-      store.selectPlayer(player.id, slotId);
-    }
+    triggerOpenInspector();
   });
 
   // Listener per toggle rapido disponibilità asta

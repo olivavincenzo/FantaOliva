@@ -60,6 +60,24 @@ export class AuctionSlotsComponent {
         this.render();
       }
     });
+
+    store.subscribe('strategy:changed', () => {
+      if (store.activeView === 'auction_slots') {
+        this.render();
+      }
+    });
+
+    store.subscribe('strategy:updated', () => {
+      if (store.activeView === 'auction_slots') {
+        this.render();
+      }
+    });
+
+    store.subscribe('strategy:playerAssigned', () => {
+      if (store.activeView === 'auction_slots') {
+        this.render();
+      }
+    });
   }
 
   setRole(role) {
@@ -179,6 +197,10 @@ export class AuctionSlotsComponent {
           <button id="toggle-filter-favorites-btn" class="filter ${this.onlyFavorites ? 'active' : ''}" type="button" title="Mostra solo i giocatori preferiti">
             <i class="fa-${this.onlyFavorites ? 'solid' : 'regular'} fa-star"></i> Preferiti
           </button>
+
+          <button class="filter" type="button" data-action="open-strategy-modal" title="Configura gerarchia e fasce per ${rolesMeta.find(r => r.key === this.activeRole)?.label}">
+            <i class="fa-solid fa-chess-knight"></i> Strategia: ${sanitizeHtml(store.getActiveStrategy()?.name || 'Asta')}
+          </button>
         </nav>
 
         <!-- DISPOSIZIONE VERTICALE DEGLI SLOT -->
@@ -267,6 +289,13 @@ export class AuctionSlotsComponent {
         store.resetAllAuctionAvailability();
         notify.success('Tutti i giocatori sono ora DISPONIBILI all\'asta!');
       }
+    });
+
+    // Modale Strategie
+    this.container.querySelectorAll('[data-action="open-strategy-modal"]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        window.app?.strategyManager?.open(this.activeRole);
+      });
     });
 
     // Ricerca Testuale Debounced
