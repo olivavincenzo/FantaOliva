@@ -318,24 +318,30 @@ class Store {
     return SOS_TEAMS_DATA[code] || SOS_TEAMS_DATA[name] || (id && SOS_TEAMS_DATA[id]) || null;
   }
 
-  setTeam(teamId) {
-    if (this.currentTeamId === teamId) return;
+  setTeam(teamId, selectedPlayerId = null, selectedSlotId = null) {
+    if (this.currentTeamId === teamId && !selectedPlayerId) return;
     const team = this.getTeam(teamId);
     if (!team) return;
 
     this.currentTeamId = teamId;
-    this.selectedPlayerId = null;
-    this.selectedSlotId = null;
 
-    if (team.lineup) {
-      const firstSlot = Object.keys(team.lineup).find(k => team.lineup[k]);
-      if (firstSlot) {
-        this.selectedSlotId = firstSlot;
-        this.selectedPlayerId = team.lineup[firstSlot].id;
+    if (selectedPlayerId) {
+      this.selectedPlayerId = selectedPlayerId;
+      this.selectedSlotId = selectedSlotId;
+    } else {
+      this.selectedPlayerId = null;
+      this.selectedSlotId = null;
+
+      if (team.lineup) {
+        const firstSlot = Object.keys(team.lineup).find(k => team.lineup[k]);
+        if (firstSlot) {
+          this.selectedSlotId = firstSlot;
+          this.selectedPlayerId = team.lineup[firstSlot].id;
+        }
       }
-    }
-    if (!this.selectedPlayerId && team.bench && team.bench.length > 0) {
-      this.selectedPlayerId = team.bench[0].id;
+      if (!this.selectedPlayerId && team.bench && team.bench.length > 0) {
+        this.selectedPlayerId = team.bench[0].id;
+      }
     }
 
     this.emit('team:changed', this.getCurrentTeam());

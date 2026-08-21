@@ -43,7 +43,7 @@ export class PlayersListoneComponent {
     });
 
     store.subscribe('team:changed', () => {
-      if (store.activeView === 'listone') {
+      if (store.activeView === 'listone' && this.selectedTeam !== 'ALL') {
         this.render();
       }
     });

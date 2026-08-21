@@ -272,27 +272,29 @@ export function createPlayerCard(player, options = {}) {
     }
   }, { passive: true });
 
-  const triggerOpenInspector = () => {
-    // 1. Se il giocatore appartiene a una squadra, seleziona quella squadra nello store
+  const navigateToPlayerTactical = () => {
     const targetTeamId = player.teamId || (player.teamName ? store.teams.find(t => t.name.toLowerCase() === player.teamName.toLowerCase())?.id : null);
-    if (targetTeamId && targetTeamId !== store.currentTeamId) {
-      store.setTeam(targetTeamId);
-    }
-
-    // 2. Se ci troviamo in Slot Asta o Listone, torna alla visualizzazione Lavagna Tattica
-    if (store.activeView !== 'tactical') {
+    
+    // 1. Commuta la vista alla Lavagna Tattica
+    if (window.app?.switchView) {
+      window.app.switchView('tactical');
+    } else {
       store.setView('tactical');
     }
 
-    // 3. Seleziona il giocatore
-    store.selectPlayer(player.id, slotId);
+    // 2. Seleziona la squadra del giocatore impostando contestualmente il giocatore come selezionato
+    if (targetTeamId) {
+      store.setTeam(targetTeamId, player.id, slotId);
+    } else {
+      store.selectPlayer(player.id, slotId);
+    }
 
-    // 4. Desktop: apri sidebar destra se collassata
+    // 3. Desktop: apri sidebar destra se collassata
     if (document.body.classList.contains('right-sidebar-collapsed')) {
       document.body.classList.remove('right-sidebar-collapsed');
     }
 
-    // 5. Mobile: apri drawer sidebar destra
+    // 4. Mobile: apri drawer sidebar destra
     const sidebarInspector = document.querySelector('#sidebar-inspector');
     const sidebarTeams = document.querySelector('#sidebar-teams');
     const backdrop = document.querySelector('#mobile-drawer-backdrop');
@@ -304,15 +306,41 @@ export function createPlayerCard(player, options = {}) {
     }
   };
 
-  // 1. Native dblclick per mouse Desktop
+  const selectPlayerAndOpenInspector = () => {
+    const targetTeamId = player.teamId || (player.teamName ? store.teams.find(t => t.name.toLowerCase() === player.teamName.toLowerCase())?.id : null);
+    
+    if (store.activeView === 'tactical' && targetTeamId && targetTeamId !== store.currentTeamId) {
+      store.setTeam(targetTeamId, player.id, slotId);
+    } else {
+      store.selectPlayer(player.id, slotId);
+    }
+
+    // Desktop: apri sidebar destra se collassata
+    if (document.body.classList.contains('right-sidebar-collapsed')) {
+      document.body.classList.remove('right-sidebar-collapsed');
+    }
+
+    // Mobile: apri drawer sidebar destra
+    const sidebarInspector = document.querySelector('#sidebar-inspector');
+    const sidebarTeams = document.querySelector('#sidebar-teams');
+    const backdrop = document.querySelector('#mobile-drawer-backdrop');
+
+    if (window.innerWidth <= 900) {
+      sidebarInspector?.classList.add('mobile-open');
+      sidebarTeams?.classList.remove('mobile-open');
+      backdrop?.classList.remove('hidden');
+    }
+  };
+
+  // 1. Native dblclick per mouse Desktop -> Porta alla Lavagna Tattica della squadra
   card.addEventListener('dblclick', (e) => {
     if (e.target.closest('.availability')) return;
     e.stopPropagation();
     e.preventDefault();
-    triggerOpenInspector();
+    navigateToPlayerTactical();
   });
 
-  // 2. Click / Touch handler immediato
+  // 2. Click / Touch handler (singolo click = ispezione, doppio tocco mobile <350ms = naviga in lavagna)
   card.addEventListener('click', (e) => {
     if (e.target.closest('.availability')) return;
     if (hasMoved) {
@@ -320,7 +348,15 @@ export function createPlayerCard(player, options = {}) {
       return;
     }
     e.stopPropagation();
-    triggerOpenInspector();
+
+    const now = Date.now();
+    if (now - lastTapTime < 350) {
+      lastTapTime = 0;
+      navigateToPlayerTactical();
+    } else {
+      lastTapTime = now;
+      selectPlayerAndOpenInspector();
+    }
   });
 
   // Listener per toggle rapido disponibilità asta
