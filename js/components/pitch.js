@@ -688,6 +688,9 @@ export class PitchComponent {
       slotEl.style.top = `${item.y}%`;
 
       const isSelected = selectedPlayer && item.player && selectedPlayer.id === item.player.id;
+      if (isSelected) {
+        slotEl.classList.add('is-selected');
+      }
 
       const card = createPlayerCard(item.player, {
         slotId: item.slot.id,
@@ -708,6 +711,11 @@ export class PitchComponent {
       const pId = card.dataset.playerId;
       const isSelected = selectedPlayer && pId === selectedPlayer.id;
       card.classList.toggle('is-selected', Boolean(isSelected));
+    });
+
+    this.slotsLayer?.querySelectorAll('.pitch-slot-wrapper').forEach(slotEl => {
+      const isSlotSelected = slotEl.querySelector('.player-card.is-selected');
+      slotEl.classList.toggle('is-selected', Boolean(isSlotSelected));
     });
 
     if (options && options.scroll) {

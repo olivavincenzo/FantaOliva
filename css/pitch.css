@@ -619,8 +619,8 @@
 
 @media (max-width: 900px) {
   .pitch-outer-wrapper.is-pitch-mode .soccer-pitch {
-    min-height: calc(100vh - var(--header-height) - 130px);
-    height: calc(100vh - var(--header-height) - 130px);
+    min-height: calc(100vh - var(--header-height) - 24px);
+    height: calc(100vh - var(--header-height) - 24px);
     flex: 1;
   }
 }
@@ -639,8 +639,8 @@
   }
 
   .pitch-outer-wrapper.is-pitch-mode .soccer-pitch {
-    min-height: calc(100vh - var(--header-height) - 72px);
-    height: calc(100vh - var(--header-height) - 72px);
+    min-height: calc(100vh - var(--header-height) - 24px);
+    height: calc(100vh - var(--header-height) - 24px);
     flex: 1;
   }
 }
@@ -920,6 +920,22 @@
   transform: translate(-50%, -50%);
   width: 145px;
   cursor: grab;
+  z-index: 10;
+  transition: z-index var(--transition-fast), transform var(--transition-fast);
+}
+
+.pitch-slot-wrapper:hover {
+  z-index: 45;
+}
+
+.pitch-slot-wrapper:has(.player-card.is-selected),
+.pitch-slot-wrapper.is-selected {
+  z-index: 60 !important;
+}
+
+.pitch-slot-wrapper.is-selected .player-card {
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28), 0 0 0 2px var(--ink) !important;
+  transform: scale(1.05);
 }
 
 @media (max-width: 900px) {
@@ -930,4 +946,5 @@
 
 .pitch-slot-wrapper:active {
   cursor: grabbing;
+  z-index: 70 !important;
 }
