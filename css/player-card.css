@@ -823,6 +823,7 @@
     align-items: center;
     gap: 2px;
     margin: 1px 0 0;
+    padding-bottom: 2px;
   }
 
   .player-card.is-compact .player-set-pieces-row .rank-badge,
