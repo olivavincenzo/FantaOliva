@@ -940,7 +940,22 @@
 
 @media (max-width: 900px) {
   .pitch-slot-wrapper {
-    width: 108px;
+    width: 82px;
+    max-width: calc(25vw - 8px);
+  }
+}
+
+@media (max-width: 480px) {
+  .pitch-slot-wrapper {
+    width: 72px;
+    max-width: calc(25vw - 6px);
+  }
+}
+
+@media (max-width: 360px) {
+  .pitch-slot-wrapper {
+    width: 66px;
+    max-width: calc(25vw - 4px);
   }
 }
 

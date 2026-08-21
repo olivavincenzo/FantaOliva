@@ -313,7 +313,6 @@
   display: flex;
   align-items: center;
   gap: 3px;
-  min-height: 18px;
 }
 
 .role {
@@ -331,10 +330,25 @@
   text-transform: uppercase;
 }
 
-.role.role-p { background: #fef3c7; color: #b45309; }
-.role.role-d { background: #dbeafe; color: #1d4ed8; }
-.role.role-c { background: #d1fae5; color: #047857; }
-.role.role-a { background: #fee2e2; color: #b91c1c; }
+.role.role-p {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.role.role-d {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.role.role-c {
+  background: #d1fae5;
+  color: #047857;
+}
+
+.role.role-a {
+  background: #fee2e2;
+  color: #b91c1c;
+}
 
 .role.role-tactical {
   background: var(--soft);
@@ -544,9 +558,11 @@
     box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.7), 0 8px 24px rgba(34, 197, 94, 0.25);
     transform: scale(1.025);
   }
+
   60% {
     box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.4), 0 4px 14px rgba(34, 197, 94, 0.15);
   }
+
   100% {
     transform: scale(1);
   }
@@ -560,6 +576,7 @@
    LAYOUT ORIZZONTALE AD AMPIO SPAZIO (1 Colonna su Desktop con wrap dinamico)
    ========================================================================== */
 @media (min-width: 768px) {
+
   .player-list.cols-1 .player-card,
   .listone-cards-grid.cols-1 .player-card,
   .pitch-vertical-list-container .player-list.cols-1 .player-card {
@@ -776,4 +793,214 @@
 .player-card.is-compact .duel svg {
   width: 7px;
   height: 7px;
+}
+
+/* Ottimizzazione Specifica Solo per Mobile / Tablet (<= 900px) */
+@media (max-width: 900px) {
+  .player-card.is-compact {
+    padding: 4px 6px;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+  }
+
+  .player-card.is-compact .player-top {
+    gap: 3px;
+    min-width: 0;
+  }
+
+  .player-card.is-compact .player-name {
+    font-size: 9.5px;
+    min-width: 0;
+  }
+
+  .player-card.is-compact .player-set-pieces-row {
+    display: none !important;
+  }
+
+  .player-card.is-compact .player-card-strategy-strip {
+    display: flex !important;
+    width: 100%;
+    margin: 0px;
+    min-height: 0;
+  }
+
+  .player-card.is-compact .player-strategy-badge {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    min-height: 13px;
+    height: auto;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 6.5px;
+    font-weight: 750;
+    gap: 3px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .player-card.is-compact .player-strategy-badge .tier-dot {
+    width: 3.5px;
+    height: 3.5px;
+  }
+
+  .player-card.is-compact .player-strategy-badge .tier-label-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1;
+  }
+
+  .player-card.is-compact .availability {
+    width: 14px;
+    height: 14px;
+    flex: 0 0 14px;
+  }
+
+  .player-card.is-compact .availability svg {
+    width: 8px;
+    height: 8px;
+  }
+
+  .player-card.is-compact .core-metrics.compact-metrics {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    margin-top: 2px;
+    gap: 2px;
+    border: none;
+  }
+
+  .player-card.is-compact .core-metrics.compact-metrics .metric {
+    flex: 1 1 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Su mobile nascondi Affidabilità e Integrità per far respirare la card */
+  .player-card.is-compact .core-metrics.compact-metrics .metric:nth-child(2),
+  .player-card.is-compact .core-metrics.compact-metrics .metric:nth-child(3) {
+    display: none !important;
+  }
+
+  /* Su mobile nascondi completamente le barre a segmenti per non sprecare spazio */
+  .index-segments-bar {
+    display: none !important;
+  }
+
+  /* Su mobile allinea le dimensioni di metric-index e metric-credits */
+  .metric-index-val,
+  .credits-number {
+    font-size: 11px !important;
+    font-weight: 790 !important;
+    line-height: 1 !important;
+  }
+
+  .metric-credits-val {
+    min-height: 11px;
+    align-items: baseline;
+    gap: 1.5px;
+  }
+
+  .credits-unit {
+    font-size: 7px;
+  }
+
+  .player-card.is-compact .metric-index-val,
+  .player-card.is-compact .credits-number {
+    font-size: 9px !important;
+    font-weight: 800 !important;
+    line-height: 1 !important;
+  }
+
+  .player-card.is-compact .metric-credits-val {
+    min-height: 9px;
+    gap: 1px;
+  }
+
+  .player-card.is-compact .credits-unit {
+    font-size: 5.5px;
+  }
+
+  .player-card.is-compact .role {
+    width: 15px;
+    height: 13px;
+    font-size: 7.5px;
+  }
+
+  /* Su mobile nascondi l'etichetta del ruolo */
+  .metric-role .metric-label {
+    display: none !important;
+  }
+
+  .player-card.is-compact .metric-label {
+    font-size: 6px;
+    text-align: center;
+    line-height: 1;
+  }
+
+  .player-card.is-compact .duels-list {
+    flex-direction: column;
+    margin-top: 2px;
+    gap: 1.5px;
+  }
+
+  .player-card.is-compact .duel {
+    padding: 1px 3px;
+    font-size: 6.5px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    box-sizing: border-box;
+  }
+
+  /* Su mobile nascondi l'iconcina del ballottaggio */
+  .duel i,
+  .duel svg,
+  .duel .fa-scale-unbalanced {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .metric-index-val,
+  .credits-number {
+    font-size: 10px !important;
+  }
+
+  .player-card.is-compact {
+    padding: 3px 5px;
+    border-radius: 6px;
+  }
+
+  .player-card.is-compact .player-name {
+    font-size: 8px;
+  }
+
+  .player-card.is-compact .metric-index-val,
+  .player-card.is-compact .credits-number {
+    font-size: 8px !important;
+  }
+
+  .player-card.is-compact .metric-label {
+    font-size: 5.5px;
+  }
+
+  .player-card.is-compact .role {
+    width: 13px;
+    height: 11px;
+    font-size: 6.5px;
+  }
+
+  .player-card.is-compact .availability {
+    width: 12px;
+    height: 12px;
+    flex: 0 0 12px;
+  }
 }
