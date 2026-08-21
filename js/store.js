@@ -373,6 +373,21 @@ class Store {
     }
   }
 
+  setTeamPersonalNotes(teamId, notes) {
+    const team = this.getTeam(teamId);
+    if (!team) return;
+    team.personalNotes = notes || '';
+    team.notes = notes || '';
+    this.saveToStorage();
+    this.emit('team:notesUpdated', { teamId, notes: team.personalNotes });
+  }
+
+  getTeamPersonalNotes(teamId) {
+    const team = this.getTeam(teamId);
+    if (!team) return '';
+    return team.personalNotes ?? team.notes ?? '';
+  }
+
   // --- CATALOGO GENERALE CSV ---
   getPlayerCatalog(query = '', roleFilter = '') {
     const q = query.trim().toLowerCase();

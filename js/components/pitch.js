@@ -7,6 +7,7 @@ import { FORMATION_LIST } from '../data/formations.js';
 import { createPlayerCard } from './playerCard.js';
 import { dragDrop } from '../utils/dragDrop.js';
 import { sanitizeHtml, getTitolaritaClass } from '../utils/helpers.js';
+import { notify } from '../utils/notifications.js';
 
 export class PitchComponent {
   constructor(container) {
@@ -25,6 +26,7 @@ export class PitchComponent {
   init() {
     this.renderBasePitch();
     this.bindTopControls();
+    this.bindTacticalBannerEvents();
     this.subscribeEvents();
     this.updatePitch();
   }
@@ -38,6 +40,7 @@ export class PitchComponent {
     const team = store.getCurrentTeam();
     const teamName = team ? team.name.toUpperCase() : 'INTER';
     const sosData = store.getTeamSosData(team);
+    const teamNotes = team ? store.getTeamPersonalNotes(team.id) : '';
 
     const coachName = sosData?.coach || team?.coach || 'Mister';
     const currentModule = sosData?.module || team?.module || team?.defaultFormation || '4-3-3';
@@ -127,6 +130,24 @@ export class PitchComponent {
               </div>
             </div>
           ` : ''}
+          <div class="team-personal-notes-group">
+            <div class="team-notes-header">
+              <span class="spec-label"><i class="fa-regular fa-note-sticky"></i> Note personali squadra:</span>
+            </div>
+            <div class="team-notes-card">
+              <textarea 
+                id="team-personal-notes-textarea" 
+                class="team-notes-textarea" 
+                placeholder="Scrivi una nota personale su ${sanitizeHtml(teamName)}…"
+              >${sanitizeHtml(teamNotes)}</textarea>
+              <div class="team-notes-footer">
+                <span class="team-notes-hint"><i class="fa-solid fa-lock" style="font-size: 8px;"></i> Personale · salvata in locale</span>
+                <button type="button" id="save-team-notes-btn" class="save-team-notes-btn">
+                  <i class="fa-solid fa-floppy-disk"></i> Salva nota
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- BARRA DI RICERCA EDITORIALE -->
@@ -360,6 +381,7 @@ export class PitchComponent {
       return `<span class="team-ballottaggio-chip" title="Ballottaggio Ufficiale">${items}</span>`;
     }).filter(Boolean).join('');
 
+    const teamNotes = store.getTeamPersonalNotes(team.id);
     const bannerEl = this.container.querySelector('#pitch-tactical-banner');
     if (bannerEl) {
       bannerEl.innerHTML = `
@@ -387,7 +409,66 @@ export class PitchComponent {
             </div>
           </div>
         ` : ''}
+        <div class="team-personal-notes-group">
+          <div class="team-notes-header">
+            <span class="spec-label"><i class="fa-regular fa-note-sticky"></i> Note personali squadra:</span>
+          </div>
+          <div class="team-notes-card">
+            <textarea 
+              id="team-personal-notes-textarea" 
+              class="team-notes-textarea" 
+              placeholder="Scrivi una nota personale su ${sanitizeHtml(team.name)}…"
+            >${sanitizeHtml(teamNotes)}</textarea>
+            <div class="team-notes-footer">
+              <span class="team-notes-hint"><i class="fa-solid fa-lock" style="font-size: 8px;"></i> Personale · salvata in locale</span>
+              <button type="button" id="save-team-notes-btn" class="save-team-notes-btn">
+                <i class="fa-solid fa-floppy-disk"></i> Salva nota
+              </button>
+            </div>
+          </div>
+        </div>
       `;
+
+      this.bindTacticalBannerEvents();
+    }
+  }
+
+  bindTacticalBannerEvents() {
+    const bannerEl = this.container?.querySelector('#pitch-tactical-banner');
+    if (!bannerEl) return;
+
+    const team = store.getCurrentTeam();
+    if (!team) return;
+
+    const textarea = bannerEl.querySelector('#team-personal-notes-textarea');
+    const saveBtn = bannerEl.querySelector('#save-team-notes-btn');
+
+    if (textarea) {
+      const resize = () => {
+        textarea.style.height = 'auto';
+        textarea.style.height = `${Math.max(48, textarea.scrollHeight)}px`;
+      };
+      resize();
+      setTimeout(resize, 40);
+
+      textarea.addEventListener('input', () => {
+        resize();
+        store.setTeamPersonalNotes(team.id, textarea.value);
+      });
+
+      textarea.addEventListener('blur', () => {
+        store.setTeamPersonalNotes(team.id, textarea.value);
+      });
+    }
+
+    if (saveBtn) {
+      saveBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const noteVal = textarea ? textarea.value : '';
+        store.setTeamPersonalNotes(team.id, noteVal);
+        notify.success(`Nota salvata per ${team.name}`);
+      });
     }
   }
 
