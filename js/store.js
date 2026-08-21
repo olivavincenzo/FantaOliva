@@ -827,7 +827,7 @@ class Store {
         slot,
         player,
         x: customPos ? customPos.x : slot.x,
-        y: customPos ? customPos.y : slot.y,
+        y: (slot.id === 'pos_1' && (customPos ? customPos.y : slot.y) > 87) ? 86.5 : (customPos ? customPos.y : slot.y),
         isCustom: Boolean(customPos)
       };
     });

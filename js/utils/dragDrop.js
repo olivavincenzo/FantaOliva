@@ -183,7 +183,7 @@ class DragDropManager {
       const relativeY = ((y - pitchRect.top) / pitchRect.height) * 100;
 
       const clampedX = clamp(relativeX, 8, 92);
-      const clampedY = clamp(relativeY, 8, 92);
+      const clampedY = clamp(relativeY, 8, 87);
 
       store.updateCustomPosition(source.slotId, clampedX, clampedY);
       notify.info(`Posizione tattica personalizzata`);

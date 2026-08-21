@@ -10,7 +10,7 @@ export const FORMATIONS = {
     category: '4 Difensori',
     description: 'Tridente offensivo largo con regia centrale e mezzali d\'inserimento.',
     slots: [
-      { id: 'pos_1',  role: 'POR', label: 'POR', x: 50, y: 91, defaultRole: 'POR' },
+      { id: 'pos_1',  role: 'POR', label: 'POR', x: 50, y: 86.5, defaultRole: 'POR' },
       { id: 'pos_2',  role: 'TD',  label: 'TD',  x: 86, y: 73, defaultRole: 'TD' },
       { id: 'pos_3',  role: 'DC',  label: 'DCD', x: 62, y: 75, defaultRole: 'DC' },
       { id: 'pos_4',  role: 'DC',  label: 'DCS', x: 38, y: 75, defaultRole: 'DC' },
@@ -39,7 +39,7 @@ export const FORMATIONS = {
     category: '4 Difensori',
     description: 'Assetto bilanciato e compatto con due linee da 4 e tandem offensivo.',
     slots: [
-      { id: 'pos_1',  role: 'POR', label: 'POR', x: 50, y: 91, defaultRole: 'POR' },
+      { id: 'pos_1',  role: 'POR', label: 'POR', x: 50, y: 86.5, defaultRole: 'POR' },
       { id: 'pos_2',  role: 'TD',  label: 'TD',  x: 86, y: 73, defaultRole: 'TD' },
       { id: 'pos_3',  role: 'DC',  label: 'DCD', x: 62, y: 75, defaultRole: 'DC' },
       { id: 'pos_4',  role: 'DC',  label: 'DCS', x: 38, y: 75, defaultRole: 'DC' },
@@ -67,7 +67,7 @@ export const FORMATIONS = {
     category: '4 Difensori',
     description: 'Doppio perno di centrocampo e tre trequartisti dietro l\'unica punta.',
     slots: [
-      { id: 'pos_1',  role: 'POR', label: 'POR', x: 50, y: 91, defaultRole: 'POR' },
+      { id: 'pos_1',  role: 'POR', label: 'POR', x: 50, y: 86.5, defaultRole: 'POR' },
       { id: 'pos_2',  role: 'TD',  label: 'TD',  x: 86, y: 73, defaultRole: 'TD' },
       { id: 'pos_3',  role: 'DC',  label: 'DCD', x: 62, y: 75, defaultRole: 'DC' },
       { id: 'pos_4',  role: 'DC',  label: 'DCS', x: 38, y: 75, defaultRole: 'DC' },
@@ -96,7 +96,7 @@ export const FORMATIONS = {
     category: '3 Difensori',
     description: 'Difesa a 3 con esterni a tutta fascia, 3 centrocampisti centrali e due punte.',
     slots: [
-      { id: 'pos_1',  role: 'POR', label: 'POR', x: 50, y: 91, defaultRole: 'POR' },
+      { id: 'pos_1',  role: 'POR', label: 'POR', x: 50, y: 86.5, defaultRole: 'POR' },
       { id: 'pos_2',  role: 'DC',  label: 'BR-D', x: 74, y: 74, defaultRole: 'DC' },
       { id: 'pos_3',  role: 'DC',  label: 'LIB',  x: 50, y: 76, defaultRole: 'DC' },
       { id: 'pos_4',  role: 'DC',  label: 'BR-S', x: 26, y: 74, defaultRole: 'DC' },
@@ -123,7 +123,7 @@ export const FORMATIONS = {
     category: '3 Difensori',
     description: 'Difesa a 3, mediana a 2 con esterni alti e due sottopunta dietro l\'attaccante.',
     slots: [
-      { id: 'pos_1',  role: 'POR', label: 'POR', x: 50, y: 91, defaultRole: 'POR' },
+      { id: 'pos_1',  role: 'POR', label: 'POR', x: 50, y: 86.5, defaultRole: 'POR' },
       { id: 'pos_2',  role: 'DC',  label: 'BR-D', x: 74, y: 74, defaultRole: 'DC' },
       { id: 'pos_3',  role: 'DC',  label: 'LIB',  x: 50, y: 76, defaultRole: 'DC' },
       { id: 'pos_4',  role: 'DC',  label: 'BR-S', x: 26, y: 74, defaultRole: 'DC' },
@@ -150,7 +150,7 @@ export const FORMATIONS = {
     category: '3 Difensori',
     description: 'Modulo ad alta intensità con 3 difensori, 4 centrocampisti e tridente largo.',
     slots: [
-      { id: 'pos_1',  role: 'POR', label: 'POR', x: 50, y: 91, defaultRole: 'POR' },
+      { id: 'pos_1',  role: 'POR', label: 'POR', x: 50, y: 86.5, defaultRole: 'POR' },
       { id: 'pos_2',  role: 'DC',  label: 'BR-D', x: 74, y: 74, defaultRole: 'DC' },
       { id: 'pos_3',  role: 'DC',  label: 'LIB',  x: 50, y: 76, defaultRole: 'DC' },
       { id: 'pos_4',  role: 'DC',  label: 'BR-S', x: 26, y: 74, defaultRole: 'DC' },
@@ -177,7 +177,7 @@ export const FORMATIONS = {
     category: '4 Difensori',
     description: 'Centrocampo a rombo con vertice basso, due mezzali, trequartista e due attaccanti.',
     slots: [
-      { id: 'pos_1',  role: 'POR', label: 'POR', x: 50, y: 91, defaultRole: 'POR' },
+      { id: 'pos_1',  role: 'POR', label: 'POR', x: 50, y: 86.5, defaultRole: 'POR' },
       { id: 'pos_2',  role: 'TD',  label: 'TD',  x: 86, y: 73, defaultRole: 'TD' },
       { id: 'pos_3',  role: 'DC',  label: 'DCD', x: 62, y: 75, defaultRole: 'DC' },
       { id: 'pos_4',  role: 'DC',  label: 'DCS', x: 38, y: 75, defaultRole: 'DC' },
@@ -204,7 +204,7 @@ export const FORMATIONS = {
     category: '4 Difensori',
     description: 'Quattro difensori, quattro centrocampisti, una seconda punta/trequartista e una punta.',
     slots: [
-      { id: 'pos_1',  role: 'POR', label: 'POR', x: 50, y: 91, defaultRole: 'POR' },
+      { id: 'pos_1',  role: 'POR', label: 'POR', x: 50, y: 86.5, defaultRole: 'POR' },
       { id: 'pos_2',  role: 'TD',  label: 'TD',  x: 86, y: 73, defaultRole: 'TD' },
       { id: 'pos_3',  role: 'DC',  label: 'DCD', x: 62, y: 75, defaultRole: 'DC' },
       { id: 'pos_4',  role: 'DC',  label: 'DCS', x: 38, y: 75, defaultRole: 'DC' },
@@ -232,7 +232,7 @@ export const FORMATIONS = {
     category: '5 Difensori',
     description: 'Catenaccio moderno con linea a 5, 3 interni di centrocampo e due contropiedisti.',
     slots: [
-      { id: 'pos_1',  role: 'POR', label: 'POR', x: 50, y: 91, defaultRole: 'POR' },
+      { id: 'pos_1',  role: 'POR', label: 'POR', x: 50, y: 86.5, defaultRole: 'POR' },
       { id: 'pos_2',  role: 'TD',  label: 'TD',  x: 88, y: 70, defaultRole: 'TD' },
       { id: 'pos_3',  role: 'DC',  label: 'DCD', x: 68, y: 76, defaultRole: 'DC' },
       { id: 'pos_4',  role: 'DC',  label: 'LIB', x: 50, y: 78, defaultRole: 'DC' },
@@ -259,7 +259,7 @@ export const FORMATIONS = {
     category: '5 Difensori',
     description: 'Assetto ermetico con linea a 5, mediana a 4 e unica punta solitaria.',
     slots: [
-      { id: 'pos_1',  role: 'POR', label: 'POR', x: 50, y: 91, defaultRole: 'POR' },
+      { id: 'pos_1',  role: 'POR', label: 'POR', x: 50, y: 86.5, defaultRole: 'POR' },
       { id: 'pos_2',  role: 'TD',  label: 'TD',  x: 88, y: 70, defaultRole: 'TD' },
       { id: 'pos_3',  role: 'DC',  label: 'DCD', x: 68, y: 76, defaultRole: 'DC' },
       { id: 'pos_4',  role: 'DC',  label: 'LIB', x: 50, y: 78, defaultRole: 'DC' },
