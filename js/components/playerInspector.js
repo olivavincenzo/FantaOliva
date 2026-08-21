@@ -224,15 +224,11 @@ export class PlayerInspectorComponent {
       const classicRole = store.getRoleCategory(player) || player.classicRole || player.fantaRole || 'C';
       const indices = store.getPlayerIndices(player);
 
-      const isRigorista = Boolean(player.isPenaltyTaker ?? player.rigorista ?? false);
-      const isPunizioni = Boolean(player.isFreeKickTaker ?? player.punizioni ?? false);
-      const isCorner = Boolean(player.isCornerTaker ?? player.corner ?? false);
-
-      const list = [];
-      if (isRigorista) list.push('Rig.');
-      if (isPunizioni) list.push('Pun.');
-      if (isCorner) list.push('Cor.');
-      const piazzatiText = list.length > 0 ? list.join(' · ') : '—';
+      const spec = store.getPlayerSpecialists ? store.getPlayerSpecialists(player) : null;
+      const isRigorista = spec ? spec.isRigorista : Boolean(player.isPenaltyTaker ?? player.rigorista ?? false);
+      const isPunizioni = spec ? spec.isPunizioni : Boolean(player.isFreeKickTaker ?? player.punizioni ?? false);
+      const isCorner = spec ? spec.isCorner : Boolean(player.isCornerTaker ?? player.corner ?? false);
+      const piazzatiText = spec ? spec.detailedText : (isRigorista || isPunizioni || isCorner ? 'Sì' : '—');
 
       // Ballottaggio info
       const ballottaggio = store.getBallottaggioForPlayer(player.id);
@@ -399,17 +395,17 @@ export class PlayerInspectorComponent {
           <div class="info-row info-row-piazzati">
             <span>Calci piazzati</span>
             <div class="specialists-checkbox-row inline-specialists">
-              <label class="checkbox-chip ${isRigorista ? 'is-checked' : ''}" title="Primo Rigorista">
+              <label class="checkbox-chip ${isRigorista ? 'is-checked' : ''}" title="Rigorista${spec?.rigOrder ? ` (${spec.rigOrder}ª scelta)` : ''}">
                 <input type="checkbox" id="edit-rigorista" ${isRigorista ? 'checked' : ''} />
-                <span class="chip-icon">🎯</span> Rig.
+                <span class="chip-icon">🎯</span> Rig.${spec?.rigOrder ? ` (${spec.rigOrder}ª)` : ''}
               </label>
-              <label class="checkbox-chip ${isPunizioni ? 'is-checked' : ''}" title="Tiratore Punizioni">
+              <label class="checkbox-chip ${isPunizioni ? 'is-checked' : ''}" title="Tiratore Punizioni${spec?.punOrder ? ` (${spec.punOrder}ª scelta)` : ''}">
                 <input type="checkbox" id="edit-punizioni" ${isPunizioni ? 'checked' : ''} />
-                <span class="chip-icon">📐</span> Pun.
+                <span class="chip-icon">📐</span> Pun.${spec?.punOrder ? ` (${spec.punOrder}ª)` : ''}
               </label>
-              <label class="checkbox-chip ${isCorner ? 'is-checked' : ''}" title="Tiratore Calci d'angolo">
+              <label class="checkbox-chip ${isCorner ? 'is-checked' : ''}" title="Tiratore Calci d'angolo${spec?.cornerOrder ? ` (${spec.cornerOrder}ª scelta)` : ''}">
                 <input type="checkbox" id="edit-corner" ${isCorner ? 'checked' : ''} />
-                <span class="chip-icon">🚩</span> Cor.
+                <span class="chip-icon">🚩</span> Cor.${spec?.cornerOrder ? ` (${spec.cornerOrder}ª)` : ''}
               </label>
             </div>
           </div>

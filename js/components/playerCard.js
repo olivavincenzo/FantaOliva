@@ -14,6 +14,11 @@ function getPlayerInitials(name) {
 }
 
 function getPiazzatiLabel(player) {
+  if (!player) return '—';
+  if (store.getPlayerSpecialists) {
+    const spec = store.getPlayerSpecialists(player);
+    return spec.detailedText || spec.labelText || '—';
+  }
   const isRigorista = Boolean(player.isPenaltyTaker ?? player.rigorista ?? false);
   const isPunizioni = Boolean(player.isFreeKickTaker ?? player.punizioni ?? false);
   const isCorner = Boolean(player.isCornerTaker ?? player.corner ?? false);

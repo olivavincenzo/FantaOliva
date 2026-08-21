@@ -135,6 +135,9 @@ class Store {
       // Reset e sincronizzazione ballottaggi ufficiali su ciascuna scheda giocatore
       this.syncOfficialBallottaggi();
 
+      // Sincronizzazione gerarchie calciatori specialisti (Rigori, Punizioni, Corner)
+      this.syncSpecialistsData();
+
       const savedSnapshots = localStorage.getItem(SNAPSHOTS_KEY);
       if (savedSnapshots) {
         this.snapshots = JSON.parse(savedSnapshots);
@@ -360,6 +363,7 @@ class Store {
     if (index !== -1) {
       this.teams[index] = deepClone(original);
       this.syncOfficialBallottaggi();
+      this.syncSpecialistsData();
       this.saveToStorage();
       this.emit('team:reset', this.getCurrentTeam());
       this.emit('team:changed', this.getCurrentTeam());
@@ -1303,6 +1307,142 @@ class Store {
         });
       });
     });
+  }
+
+  /**
+   * Restituisce le informazioni sugli specialisti (Rigorista, Punizioni, Corner)
+   * per un giocatore, calcolate dinamicamente confrontando le gerarchie ufficiali della squadra (SOS Fanta)
+   * e i flag personalizzati del giocatore.
+   */
+  getPlayerSpecialists(player) {
+    if (!player) {
+      return {
+        isRigorista: false,
+        isPunizioni: false,
+        isCorner: false,
+        rigOrder: null,
+        punOrder: null,
+        cornerOrder: null,
+        items: [],
+        labelText: '—',
+        detailedText: '—'
+      };
+    }
+
+    const team = this.teams.find(t => t.id === player.teamId || t.name?.toLowerCase() === player.teamName?.toLowerCase())
+      || (player.teamId ? this.getTeam(player.teamId) : this.getCurrentTeam());
+
+    const sosData = team ? this.getTeamSosData(team) : null;
+
+    const rigList = (sosData?.rig || team?.rig || []).map(r => typeof r === 'string' ? { name: r } : r);
+    const punList = (sosData?.pun || team?.pun || []).map(p => typeof p === 'string' ? { name: p } : p);
+    const corList = (sosData?.corner || team?.corner || []).map(c => typeof c === 'string' ? { name: c } : c);
+
+    const normalize = (str) => (str || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+    const pId = player.id || '';
+    const pCsv = player.csvId ? player.csvId.toString() : '';
+    const pNorm = normalize(player.name);
+    const dNorm = normalize(player.displayName);
+    const sNorm = normalize(player.surname);
+
+    const isMatch = (item) => {
+      if (!item) return false;
+      if (item.playerId && pId && item.playerId === pId) return true;
+      if (item.csvId && pCsv && item.csvId.toString() === pCsv) return true;
+      const iNorm = normalize(item.name || item.displayName);
+      if (iNorm && (iNorm === pNorm || iNorm === dNorm || (sNorm && iNorm === sNorm))) return true;
+      if (iNorm && iNorm.length > 3 && (pNorm.includes(iNorm) || dNorm.includes(iNorm) || iNorm.includes(pNorm))) return true;
+      return false;
+    };
+
+    const rigIndex = rigList.findIndex(isMatch);
+    const punIndex = punList.findIndex(isMatch);
+    const cornerIndex = corList.findIndex(isMatch);
+
+    const isRigorista = rigIndex !== -1 || Boolean(player.isPenaltyTaker ?? player.rigorista);
+    const isPunizioni = punIndex !== -1 || Boolean(player.isFreeKickTaker ?? player.punizioni);
+    const isCorner = cornerIndex !== -1 || Boolean(player.isCornerTaker ?? player.corner);
+
+    const items = [];
+    if (isRigorista) {
+      items.push({
+        type: 'rig',
+        order: rigIndex !== -1 ? rigIndex + 1 : null,
+        label: 'Rig.',
+        shortLabel: rigIndex !== -1 ? `${rigIndex + 1}ª Rig.` : 'Rig.'
+      });
+    }
+    if (isPunizioni) {
+      items.push({
+        type: 'pun',
+        order: punIndex !== -1 ? punIndex + 1 : null,
+        label: 'Pun.',
+        shortLabel: punIndex !== -1 ? `${punIndex + 1}ª Pun.` : 'Pun.'
+      });
+    }
+    if (isCorner) {
+      items.push({
+        type: 'corner',
+        order: cornerIndex !== -1 ? cornerIndex + 1 : null,
+        label: 'Cor.',
+        shortLabel: cornerIndex !== -1 ? `${cornerIndex + 1}ª Cor.` : 'Cor.'
+      });
+    }
+
+    const labelText = items.length > 0 ? items.map(i => i.label).join(' · ') : '—';
+    const detailedText = items.length > 0 ? items.map(i => i.shortLabel).join(' · ') : '—';
+
+    return {
+      isRigorista,
+      isPunizioni,
+      isCorner,
+      rigOrder: rigIndex !== -1 ? rigIndex + 1 : null,
+      punOrder: punIndex !== -1 ? punIndex + 1 : null,
+      cornerOrder: cornerIndex !== -1 ? cornerIndex + 1 : null,
+      items,
+      labelText,
+      detailedText
+    };
+  }
+
+  syncSpecialistsData() {
+    if (!this.teams || !Array.isArray(this.teams)) return;
+
+    this.teams.forEach(team => {
+      const allPlayers = [
+        ...Object.values(team.lineup || {}),
+        ...(team.bench || [])
+      ].filter(Boolean);
+
+      allPlayers.forEach(p => {
+        const spec = this.getPlayerSpecialists(p);
+        p.isPenaltyTaker = spec.isRigorista;
+        p.rigorista = spec.isRigorista;
+        p.isFreeKickTaker = spec.isPunizioni;
+        p.punizioni = spec.isPunizioni;
+        p.isCornerTaker = spec.isCorner;
+        p.corner = spec.isCorner;
+        p.rigOrder = spec.rigOrder;
+        p.punOrder = spec.punOrder;
+        p.cornerOrder = spec.cornerOrder;
+      });
+    });
+
+    if (this.playerCatalog && Array.isArray(this.playerCatalog)) {
+      this.playerCatalog.forEach(p => {
+        if (!p) return;
+        const spec = this.getPlayerSpecialists(p);
+        p.isPenaltyTaker = spec.isRigorista;
+        p.rigorista = spec.isRigorista;
+        p.isFreeKickTaker = spec.isPunizioni;
+        p.punizioni = spec.isPunizioni;
+        p.isCornerTaker = spec.isCorner;
+        p.corner = spec.isCorner;
+        p.rigOrder = spec.rigOrder;
+        p.punOrder = spec.punOrder;
+        p.cornerOrder = spec.cornerOrder;
+      });
+    }
   }
 
   // --- STORICO & SNAPSHOTS ---
