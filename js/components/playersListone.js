@@ -351,9 +351,12 @@ export class PlayersListoneComponent {
           <div class="listone-cards-grid cols-${this.gridColumns}" id="listone-cards-grid"></div>
 
           ${filtered.length > this.renderLimit ? `
-            <div class="listone-load-more-box" style="text-align: center; padding: 14px 0 20px;">
-              <button id="listone-load-more-btn" class="filter" type="button" style="height: 36px; padding: 0 20px; font-size: 11px; margin: 0 auto;">
+            <div class="listone-load-more-box" style="display: flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 0 20px; flex-wrap: wrap;">
+              <button id="listone-load-more-btn" class="filter" type="button" style="height: 36px; padding: 0 18px; font-size: 11px;">
                 <i class="fa-solid fa-plus"></i> Mostra altri calciatori (${filtered.length - this.renderLimit} rimanenti)
+              </button>
+              <button id="listone-show-all-btn" class="filter active" type="button" style="height: 36px; padding: 0 18px; font-size: 11px;" title="Mostra tutti i ${filtered.length} calciatori">
+                <i class="fa-solid fa-list-check"></i> Mostra tutti (${filtered.length})
               </button>
             </div>
           ` : ''}
@@ -485,13 +488,21 @@ export class PlayersListoneComponent {
       this.render();
     });
 
+    // Pulsante Mostra Tutti
+    const showAllBtn = this.container.querySelector('#listone-show-all-btn');
+    showAllBtn?.addEventListener('click', () => {
+      const filtered = this.getFilteredAndSortedPlayers();
+      this.renderLimit = filtered.length;
+      this.render();
+    });
+
     // Infinite scroll automatico all'avvicinamento del fondo
     const scrollContainer = this.container.querySelector('.listone-page-container');
     if (scrollContainer && !this._scrollListenerBound) {
       this._scrollListenerBound = true;
       scrollContainer.addEventListener('scroll', () => {
         if (scrollContainer.scrollTop + scrollContainer.clientHeight >= scrollContainer.scrollHeight - 300) {
-          const { filtered } = this.getFilteredAndSortedPlayers();
+          const filtered = this.getFilteredAndSortedPlayers();
           if (this.renderLimit < filtered.length) {
             this.renderLimit += 40;
             this.render();
