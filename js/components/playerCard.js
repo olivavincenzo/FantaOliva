@@ -158,9 +158,9 @@ export function createPlayerCard(player, options = {}) {
   const photoUrl = player.photoUrl || player.playerImage || '';
   const avatarHtml = `
     <div class="avatar ${photoUrl ? 'has-photo' : ''}">
-      ${photoUrl 
-        ? `<img src="${photoUrl}" alt="" loading="lazy" class="card-thumb-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" /><span class="avatar-fallback-initials" style="display: none;">${initials}</span>` 
-        : `${initials}`}
+      ${photoUrl
+      ? `<img src="${photoUrl}" alt="" loading="lazy" class="card-thumb-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" /><span class="avatar-fallback-initials" style="display: none;">${initials}</span>`
+      : `${initials}`}
     </div>
   `;
 
@@ -173,9 +173,7 @@ export function createPlayerCard(player, options = {}) {
       ${avatarHtml}
       <div class="identity">
         <div class="player-name-row">
-          <h3 class="player-name" title="${sanitizeHtml(player.name)}">${sanitizeHtml(displayName)}</h3>
-          ${isInMyTeam ? `<span class="badge-my-team" title="Presente nella tua rosa personalizzata"><i class="fa-solid fa-shield-halved"></i> MIA ROSA</span>` : ''}
-          ${myTeamInfo && myTeamInfo.purchasePrice ? `<span class="card-price-paid-tag" title="Prezzo d'acquisto pagato">${myTeamInfo.purchasePrice} cr</span>` : ''}
+          <h3 class="player-name" title="${sanitizeHtml(player.name)}">${sanitizeHtml(displayName)}</h3>          
           ${isFavorite ? `<span class="card-fav-star" title="Calciatore nei Preferiti"><i class="fa-solid fa-star"></i></span>` : ''}
         </div>
         <div class="player-set-pieces-row ${piazzatiText !== '—' ? 'has-active-set-pieces' : ''}">
@@ -186,9 +184,9 @@ export function createPlayerCard(player, options = {}) {
       </div>
       <button class="availability ${isAvailable ? 'available' : 'taken'}" type="button" title="Stato Asta: ${isAvailable ? 'Disponibile (clicca per segnare PRESO)' : 'PRESO (clicca per segnare DISPONIBILE)'}" aria-label="Cambia stato asta">
         <svg viewBox="0 0 24 24">
-          ${isAvailable 
-            ? '<path d="m5 12 4 4L19 6" />' 
-            : '<path d="m7 7 10 10M17 7 7 17" />'}
+          ${isAvailable
+      ? '<path d="m5 12 4 4L19 6" />'
+      : '<path d="m7 7 10 10M17 7 7 17" />'}
         </svg>
       </button>
     </header>
@@ -303,7 +301,7 @@ export function createPlayerCard(player, options = {}) {
 
   const navigateToPlayerTactical = () => {
     const targetTeamId = player.teamId || (player.teamName ? store.teams.find(t => t.name.toLowerCase() === player.teamName.toLowerCase())?.id : null);
-    
+
     // 1. Commuta la vista alla Lavagna Tattica
     if (window.app?.switchView) {
       window.app.switchView('tactical');
@@ -342,7 +340,7 @@ export function createPlayerCard(player, options = {}) {
 
   const selectPlayerAndOpenInspector = () => {
     const targetTeamId = player.teamId || (player.teamName ? store.teams.find(t => t.name.toLowerCase() === player.teamName.toLowerCase())?.id : null);
-    
+
     if (store.activeView === 'tactical' && targetTeamId && targetTeamId !== store.currentTeamId) {
       store.setTeam(targetTeamId, player.id, slotId);
     } else {
