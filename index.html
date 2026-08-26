@@ -86,6 +86,15 @@
 
         <div class="dropdown-divider"></div>
 
+        <button id="open-sync-modal-btn" class="dropdown-menu-item"
+          title="Sincronizza dati ufficiali e statistiche live da Fantalab / SOS Fanta">
+          <div class="dropdown-item-icon" style="background: rgba(168, 85, 247, 0.15); color: #a855f7;"><i class="fa-solid fa-cloud-arrow-down"></i></div>
+          <div class="dropdown-item-text">
+            <span class="item-title">Sincronizzazione Dati</span>
+            <span class="item-desc">Aggiorna da Fantalab / GitHub Actions</span>
+          </div>
+        </button>
+
         <button id="open-strategy-modal-btn" class="dropdown-menu-item"
           title="Gestisci strategie custom, fasce e gerarchie per ruolo">
           <div class="dropdown-item-icon" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b;"><i class="fa-solid fa-chess-knight"></i></div>
@@ -519,6 +528,79 @@
 
   <!-- MODALE STRATEGIE CUSTOM & GERARCHIE RUOLI -->
   <div class="hidden" id="strategy-modal"></div>
+
+  <!-- MODALE SINCRONIZZAZIONE DATI & GITHUB ACTIONS -->
+  <div class="modal-backdrop hidden" id="sync-data-modal" role="dialog" aria-modal="true" aria-labelledby="sync-modal-title">
+    <div class="fanta-modal modal-md">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <i class="fa-solid fa-cloud-arrow-down modal-title-icon" style="color: #a855f7;"></i>
+          <h3 id="sync-modal-title">Sincronizzazione Dati Fantalab & SOS Fanta</h3>
+        </div>
+        <button class="modal-close-btn" id="close-sync-modal-btn" aria-label="Chiudi modale">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="sync-modal-intro">
+          <p style="font-size: 0.88rem; color: var(--body); margin-bottom: 14px;">
+            Aggiorna in automatico tutti i <strong>520+ calciatori, foto HD, quote, statistiche, titolari, ballottaggi e fasce SOS Fanta</strong> direttamente tramite <strong>GitHub Actions</strong>.
+          </p>
+        </div>
+
+        <div class="sync-card-section" style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 14px; margin-bottom: 14px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+            <strong style="font-size: 0.9rem; color: var(--ink);"><i class="fa-brands fa-github" style="color: var(--accent-neon-green);"></i> Esegui Sincronizzazione Online</strong>
+            <span class="badge" style="background: rgba(34, 197, 94, 0.15); color: #22c55e; border: 1px solid rgba(34, 197, 94, 0.3); font-size: 0.72rem; padding: 2px 6px; border-radius: var(--radius-sm);">GitHub Pages</span>
+          </div>
+
+          <div class="fanta-form-group" style="margin-bottom: 10px;">
+            <label for="github-pat-input" style="font-size: 0.78rem; font-weight: 700; color: var(--muted); display: flex; justify-content: space-between;">
+              <span>GitHub Personal Access Token (PAT):</span>
+              <a href="https://github.com/settings/tokens/new?scopes=repo,workflow&description=FantaOliva-Sync" target="_blank" rel="noopener" style="color: var(--accent-neon-blue); text-decoration: none; font-size: 0.75rem;">
+                <i class="fa-solid fa-plus-circle"></i> Crea Token su GitHub
+              </a>
+            </label>
+            <div style="display: flex; gap: 8px; margin-top: 4px;">
+              <input type="password" id="github-pat-input" class="fanta-input" placeholder="ghp_..." style="font-family: monospace; font-size: 0.82rem; flex: 1;" />
+              <button type="button" id="save-github-pat-btn" class="fanta-btn secondary-btn" style="padding: 0 12px; font-size: 0.8rem;" title="Salva token nel browser">
+                <i class="fa-solid fa-floppy-disk"></i> Salva
+              </button>
+            </div>
+            <span style="font-size: 0.72rem; color: var(--muted); margin-top: 4px; display: block;">
+              Il token viene salvato esclusivamente nella memoria locale del tuo browser (localStorage).
+            </span>
+          </div>
+
+          <button id="trigger-github-sync-btn" class="fanta-btn primary-btn" style="width: 100%; justify-content: center; padding: 10px; font-size: 0.88rem;">
+            <i class="fa-solid fa-cloud-arrow-down"></i> Sincronizza Ora su GitHub Actions
+          </button>
+
+          <div id="sync-status-message" style="display: none; margin-top: 12px;"></div>
+        </div>
+
+        <div class="sync-schedule-info" style="background: rgba(168, 85, 247, 0.08); border: 1px dashed rgba(168, 85, 247, 0.35); border-radius: var(--radius-md); padding: 12px;">
+          <div style="display: flex; gap: 10px; align-items: flex-start;">
+            <i class="fa-solid fa-clock" style="color: #a855f7; font-size: 1.1rem; margin-top: 2px;"></i>
+            <div style="font-size: 0.8rem; color: var(--body); line-height: 1.4;">
+              <strong style="color: var(--ink); display: block; margin-bottom: 2px;">Aggiornamento Automatico Giornaliero</strong>
+              Il workflow di GitHub Actions è programmato per girare automaticamente <strong>ogni mattina alle 07:00</strong>. Tutti i dati del sito su GitHub Pages vengono aggiornati senza nessun intervento manuale.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://github.com/olivavincenzo/FantaOliva/actions" target="_blank" rel="noopener" class="fanta-btn secondary-btn">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Apri GitHub Actions
+        </a>
+        <button class="fanta-btn secondary-btn" id="close-sync-modal-footer-btn" onclick="document.querySelector('#sync-data-modal').classList.add('hidden')">
+          Chiudi
+        </button>
+      </div>
+    </div>
+  </div>
 
   <!-- Toast Notifications Container -->
   <div class="toast-container" id="toast-container"></div>

@@ -1,0 +1,45 @@
+name: Sync Fantalab & SOS Fanta Data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 5 * * *' # Ogni giorno alle 07:00 italiane (05:00 UTC)
+
+permissions:
+  contents: write
+
+jobs:
+  sync-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Fantalab & SOS Fanta Data Sync
+        env:
+          FANTALAB_TOKEN: ${{ secrets.FANTALAB_TOKEN }}
+        run: |
+          python3 scripts/sync_sos_data.py
+
+      - name: Commit and Push Updated Data
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add js/data/ sos-fanta/ scripts/
+          if git diff --staged --quiet; then
+            echo "Nessun dato modificato, nessun commit necessario."
+          else
+            git commit -m "chore(data): auto-sync dati Fantalab e SOS Fanta [skip ci]"
+            git push
+          fi

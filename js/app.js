@@ -12,6 +12,7 @@ import { PlayersListoneComponent } from './components/playersListone.js';
 import { StrategyManagerComponent } from './components/strategyManager.js';
 import { initHistoryModal } from './components/historyManager.js';
 import { initExportModal } from './components/exporter.js';
+import { initSyncModal } from './components/syncManager.js';
 import { initSidebarResizer } from './utils/resizer.js';
 import { CsvImporter } from './utils/csvImporter.js';
 import { notify } from './utils/notifications.js';
@@ -44,6 +45,7 @@ class App {
     // 3. Inizializzazione Modali, Resizer e Utility
     initHistoryModal();
     initExportModal();
+    initSyncModal();
     initSidebarResizer();
     this.initAddPlayerModal();
     this.csvImporter = new CsvImporter();

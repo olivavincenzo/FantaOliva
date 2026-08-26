@@ -22,11 +22,26 @@ def log(msg, symbol="ℹ️"):
     print(f"[{symbol}] {msg}")
 
 def load_config():
-    if not os.path.exists(CONFIG_FILE):
-        log(f"Config file non trovato in {CONFIG_FILE}", "❌")
+    config = {}
+    if os.path.exists(CONFIG_FILE):
+        try:
+            with open(CONFIG_FILE, "r", encoding="utf-8") as f:
+                config = json.load(f)
+        except Exception:
+            pass
+    env_token = os.environ.get("FANTALAB_TOKEN")
+    if env_token:
+        config["token"] = env_token
+    env_season = os.environ.get("FANTALAB_SEASON")
+    if env_season:
+        config["season"] = env_season
+    env_strat = os.environ.get("FANTALAB_STRATEGY_ID")
+    if env_strat:
+        config["strategy_id"] = env_strat
+    if not config.get("token"):
+        log(f"Token non trovato né in {CONFIG_FILE} né nella variabile d'ambiente FANTALAB_TOKEN", "❌")
         sys.exit(1)
-    with open(CONFIG_FILE, "r", encoding="utf-8") as f:
-        return json.load(f)
+    return config
 
 def make_request(url, method="GET", payload=None, token=None):
     headers = {
