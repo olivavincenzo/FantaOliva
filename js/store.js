@@ -10,9 +10,9 @@ import { SOS_TEAMS_DATA } from './data/sosTeamsData.js';
 import { getPlayerIndices, TITOLARITA_LABELS, AFFIDABILITA_LABELS, INTEGRITA_LABELS } from './data/playerIndices.js';
 import { deepClone, generateId } from './utils/helpers.js';
 
-const STORAGE_KEY = 'fantaoliva_app_data_v2026_27_master';
-const SNAPSHOTS_KEY = 'fantaoliva_snapshots_v2026_27_master';
-const CUSTOM_CATALOG_KEY = 'fantaoliva_custom_catalog_v2026_27';
+const STORAGE_KEY = 'fantaoliva_app_data_v2026_27_fantalab_v1';
+const SNAPSHOTS_KEY = 'fantaoliva_snapshots_v2026_27_fantalab_v1';
+const CUSTOM_CATALOG_KEY = 'fantaoliva_custom_catalog_v2026_27_fantalab_v1';
 const STRATEGIES_KEY = 'fantaoliva_custom_strategies_v1';
 const ACTIVE_STRATEGY_KEY = 'fantaoliva_active_strategy_id_v1';
 
@@ -590,11 +590,24 @@ class Store {
 
     const all = [];
     const seenIds = new Set();
+    const seenKeys = new Set();
+
+    const getPlayerKey = (p) => {
+      if (!p) return null;
+      if (p.fantalabId) return `fl_${p.fantalabId}`;
+      if (p.csvId) return `csv_${p.csvId}`;
+      const t = (p.teamId || p.teamName || p.club || '').toLowerCase().trim();
+      const n = (p.name || p.displayName || p.fullName || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+      return `${t}_${n}`;
+    };
 
     // 3. Processa i calciatori del catalogo completo
     baseList.forEach(catPlayer => {
       if (!catPlayer || !catPlayer.id) return;
+      const key = getPlayerKey(catPlayer);
+      if (seenIds.has(catPlayer.id) || (key && seenKeys.has(key))) return;
       seenIds.add(catPlayer.id);
+      if (key) seenKeys.add(key);
 
       const mod = modifiedMap.get(catPlayer.id);
       const teamInfo = playerTeamMap.get(catPlayer.id);
@@ -611,10 +624,12 @@ class Store {
       all.push(p);
     });
 
-    // 4. Aggiungi eventuali altri giocatori presenti nelle squadre ma non nel catalogo
+    // 4. Aggiungi eventuali altri giocatori (es. creati manualmente dall'utente) presenti nelle squadre ma non nel catalogo
     modifiedMap.forEach((modPlayer, id) => {
-      if (!seenIds.has(id)) {
+      const key = getPlayerKey(modPlayer);
+      if (!seenIds.has(id) && (!key || !seenKeys.has(key))) {
         seenIds.add(id);
+        if (key) seenKeys.add(key);
         const teamInfo = playerTeamMap.get(id);
         all.push({
           ...modPlayer,

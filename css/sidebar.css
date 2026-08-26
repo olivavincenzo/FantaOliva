@@ -631,6 +631,58 @@ body.is-resizing-sidebar .sidebar-resizer {
 }
 
 /* Sezione Indici Guida Asta (Titolarità, Affidabilità, Integrità) */
+.indices-display-card {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  background: var(--paper);
+  border-radius: 12px;
+  padding: 10px 12px;
+  box-shadow: 0 3px 12px rgba(20, 20, 28, 0.04);
+}
+
+.index-display-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--line);
+}
+
+.index-display-row:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.index-display-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.index-display-value {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-align: right;
+}
+
+.index-rating-pill {
+  font-size: 11px;
+  font-weight: 800;
+  padding: 1px 6px;
+  border-radius: 6px;
+  background: rgba(34, 197, 94, 0.12);
+  color: var(--green);
+}
+
+.index-desc-text {
+  font-size: 10.5px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
 .indices-selector-list {
   display: flex;
   flex-direction: column;

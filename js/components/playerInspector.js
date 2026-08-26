@@ -10,6 +10,7 @@
 import { store } from '../store.js';
 import { ROLES, PLAYER_STATUSES } from '../data/roles.js';
 import { renderBallottaggioSection } from './ballottaggioManager.js';
+import { TITOLARITA_LABELS, AFFIDABILITA_LABELS, INTEGRITA_LABELS } from '../data/playerIndices.js';
 import { sanitizeHtml, getTitolaritaClass, getPlayerInitials } from '../utils/helpers.js';
 import { notify } from '../utils/notifications.js';
 
@@ -17,6 +18,8 @@ export class PlayerInspectorComponent {
   constructor(container) {
     this.container = container;
     this.activeTab = 'tab-details'; // 'tab-details' | 'tab-subs'
+    this.isEditingTier = false;
+    this.isEditingIndices = false;
 
     this.init();
   }
@@ -27,7 +30,11 @@ export class PlayerInspectorComponent {
   }
 
   subscribeEvents() {
-    store.subscribe('player:selected', () => this.render());
+    store.subscribe('player:selected', () => {
+      this.isEditingTier = false;
+      this.isEditingIndices = false;
+      this.render();
+    });
     store.subscribe('player:updated', () => this.render());
     store.subscribe('player:added', () => this.render());
     store.subscribe('team:changed', () => this.render());
@@ -259,6 +266,7 @@ export class PlayerInspectorComponent {
       const roleKey = store.getRoleCategory(player);
       const roleTiers = Array.isArray(store.getTiersForRole(roleKey)) ? store.getTiersForRole(roleKey) : [];
       const currentTierId = store.getPlayerTierId(player);
+      const currentTier = roleTiers.find(t => t.id === currentTierId);
 
       const normName = (player.name || '').toLowerCase().replace(/[^a-z0-9]/g, '').trim();
       const normDisp = (player.displayName || '').toLowerCase().replace(/[^a-z0-9]/g, '').trim();
@@ -274,40 +282,62 @@ export class PlayerInspectorComponent {
           <h2>Fascia Strategia (${roleKey})</h2>
           <div style="display: flex; align-items: center; gap: 6px;">
             ${sosPrice ? `<span class="badge" style="background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.4); font-size: 0.72rem; font-weight: 700; padding: 2px 6px; border-radius: var(--radius-sm);" title="Prezzo consigliato asta (base 500)"><i class="fa-solid fa-coins"></i> ${sosPrice} cr</span>` : ''}
-            <span class="inspector-strategy-name-tag" title="Strategia Attiva"><i class="fa-solid fa-chess-knight"></i> ${sanitizeHtml(activeStrategy?.name || 'Strategia')}</span>
+            <button type="button" class="fanta-btn secondary-btn" id="open-strat-manager-from-inspector" style="padding: 3px 8px; font-size: 0.72rem; border-radius: var(--radius-sm);" title="Gestisci fasce e gerarchie per ruolo">
+              <i class="fa-solid fa-sliders"></i> Gestisci Fasce
+            </button>
           </div>
         </div>
-        <div class="inspector-strategy-tiers-grid">
-          ${roleTiers.map(t => {
-            const isAssigned = currentTierId === t.id;
-            return `
+
+        ${!this.isEditingTier ? `
+          <!-- Visualizzazione compatta con tasto Matita -->
+          <div class="tier-display-card">
+            <div class="tier-active-pill">
+              ${currentTier ? `
+                <span class="tier-circle" style="background: ${currentTier.color};"></span>
+                <span>${sanitizeHtml(currentTier.name)}</span>
+              ` : `
+                <span class="tier-none-text"><i class="fa-regular fa-circle-question"></i> Nessuna fascia assegnata</span>
+              `}
+            </div>
+            <button type="button" class="btn-edit-tier" id="toggle-tier-edit-btn" title="Modifica manualmente la fascia del giocatore">
+              <i class="fa-solid fa-pencil"></i> Modifica
+            </button>
+          </div>
+        ` : `
+          <!-- Griglia di Modifica Manuale -->
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
+            <span style="font-size: 0.72rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.03em;">Seleziona fascia:</span>
+            <button type="button" class="btn-edit-tier is-closing" id="toggle-tier-edit-btn" title="Chiudi modalità modifica">
+              <i class="fa-solid fa-xmark"></i> Chiudi
+            </button>
+          </div>
+          <div class="inspector-strategy-tiers-grid">
+            ${roleTiers.map(t => {
+              const isAssigned = currentTierId === t.id;
+              return `
+                <button 
+                  type="button" 
+                  class="strategy-tier-pill-btn ${isAssigned ? 'is-active' : ''}" 
+                  data-tier-id="${t.id}"
+                  title="Assegna a ${sanitizeHtml(t.name)}"
+                >
+                  <span class="tier-circle" style="background: ${t.color};"></span>
+                  <span>${sanitizeHtml(t.name)}</span>
+                </button>
+              `;
+            }).join('')}
+            ${currentTierId ? `
               <button 
                 type="button" 
-                class="strategy-tier-pill-btn ${isAssigned ? 'is-active' : ''}" 
-                data-tier-id="${t.id}"
-                title="Assegna a ${sanitizeHtml(t.name)}"
+                class="strategy-tier-pill-btn btn-remove-tier" 
+                data-tier-id="none"
+                title="Rimuovi fascia da questo giocatore"
               >
-                <span class="tier-circle" style="background: ${t.color};"></span>
-                <span>${sanitizeHtml(t.name)}</span>
+                <i class="fa-solid fa-xmark"></i> Rimuovi
               </button>
-            `;
-          }).join('')}
-          ${currentTierId ? `
-            <button 
-              type="button" 
-              class="strategy-tier-pill-btn btn-remove-tier" 
-              data-tier-id="none"
-              title="Rimuovi fascia da questo giocatore"
-            >
-              <i class="fa-solid fa-xmark"></i> Rimuovi
-            </button>
-          ` : ''}
-        </div>
-        <div style="margin-top: 8px; text-align: right;">
-          <button type="button" class="fanta-btn secondary-btn" id="open-strat-manager-from-inspector" style="padding: 4px 10px; font-size: 0.72rem; border-radius: var(--radius-sm);">
-            <i class="fa-solid fa-sliders"></i> Gestisci Fasce ${roleKey}
-          </button>
-        </div>
+            ` : ''}
+          </div>
+        `}
       </section>
 
       <!-- SEZIONE RUOLO & QUOTAZIONI -->
@@ -334,50 +364,84 @@ export class PlayerInspectorComponent {
 
       <!-- SEZIONE INDICI GUIDA ASTA (TITOLARITÀ, AFFIDABILITÀ, INTEGRITÀ) -->
       <section class="detail-section">
-        <h2>Indici Guida Asta (1-5)</h2>
-        <div class="indices-selector-list">
-          <div class="index-select-group">
-            <div class="index-select-header">
-              <span class="index-select-title">Titolarità:</span>
-              <strong class="index-select-rating">${indices.titIndex}/5</strong>
-            </div>
-            <select id="edit-tit-index" class="fanta-select index-edit-dropdown">
-              <option value="1" ${indices.titIndex === 1 ? 'selected' : ''}>1 · Non gioca mai</option>
-              <option value="2" ${indices.titIndex === 2 ? 'selected' : ''}>2 · Subentra raramente</option>
-              <option value="3" ${indices.titIndex === 3 ? 'selected' : ''}>3 · Nelle rotazioni</option>
-              <option value="4" ${indices.titIndex === 4 ? 'selected' : ''}>4 · Titolare con concorrenza</option>
-              <option value="5" ${indices.titIndex === 5 ? 'selected' : ''}>5 · Titolare inamovibile</option>
-            </select>
-          </div>
-
-          <div class="index-select-group">
-            <div class="index-select-header">
-              <span class="index-select-title">Affidabilità:</span>
-              <strong class="index-select-rating">${indices.affIndex}/5</strong>
-            </div>
-            <select id="edit-aff-index" class="fanta-select index-edit-dropdown">
-              <option value="1" ${indices.affIndex === 1 ? 'selected' : ''}>1 · Del tutto inaffidabile a livello di voti</option>
-              <option value="2" ${indices.affIndex === 2 ? 'selected' : ''}>2 · Profilo altamente incostante</option>
-              <option value="3" ${indices.affIndex === 3 ? 'selected' : ''}>3 · Alterna buone prestazioni ad altre deludenti</option>
-              <option value="4" ${indices.affIndex === 4 ? 'selected' : ''}>4 · Quasi sempre sufficiente</option>
-              <option value="5" ${indices.affIndex === 5 ? 'selected' : ''}>5 · Rendimento super costante</option>
-            </select>
-          </div>
-
-          <div class="index-select-group">
-            <div class="index-select-header">
-              <span class="index-select-title">Integrità:</span>
-              <strong class="index-select-rating">${indices.infIndex}/5</strong>
-            </div>
-            <select id="edit-inf-index" class="fanta-select index-edit-dropdown">
-              <option value="1" ${indices.infIndex === 1 ? 'selected' : ''}>1 · Molto fragile</option>
-              <option value="2" ${indices.infIndex === 2 ? 'selected' : ''}>2 · Ha avuto diversi infortuni</option>
-              <option value="3" ${indices.infIndex === 3 ? 'selected' : ''}>3 · Ogni tanto salta qualche partita</option>
-              <option value="4" ${indices.infIndex === 4 ? 'selected' : ''}>4 · Pochissimi infortuni</option>
-              <option value="5" ${indices.infIndex === 5 ? 'selected' : ''}>5 · È sempre integro</option>
-            </select>
-          </div>
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+          <h2>Indici Guida Asta (1-5)</h2>
+          <button type="button" class="btn-edit-tier ${this.isEditingIndices ? 'is-closing' : ''}" id="toggle-indices-edit-btn" title="${this.isEditingIndices ? 'Chiudi modifica indici' : 'Modifica manualmente gli indici asta'}">
+            <i class="fa-solid ${this.isEditingIndices ? 'fa-xmark' : 'fa-pencil'}"></i> ${this.isEditingIndices ? 'Chiudi' : 'Modifica'}
+          </button>
         </div>
+
+        ${!this.isEditingIndices ? `
+          <!-- Visualizzazione compatta Indici Asta -->
+          <div class="indices-display-card">
+            <div class="index-display-row">
+              <div class="index-display-label">Titolarità</div>
+              <div class="index-display-value">
+                <span class="index-rating-pill">${indices.titIndex}/5</span>
+                <span class="index-desc-text">${sanitizeHtml(indices.titDesc || TITOLARITA_LABELS[indices.titIndex] || '')}</span>
+              </div>
+            </div>
+            <div class="index-display-row">
+              <div class="index-display-label">Affidabilità</div>
+              <div class="index-display-value">
+                <span class="index-rating-pill">${indices.affIndex}/5</span>
+                <span class="index-desc-text">${sanitizeHtml(indices.affDesc || AFFIDABILITA_LABELS[indices.affIndex] || '')}</span>
+              </div>
+            </div>
+            <div class="index-display-row">
+              <div class="index-display-label">Integrità</div>
+              <div class="index-display-value">
+                <span class="index-rating-pill">${indices.infIndex}/5</span>
+                <span class="index-desc-text">${sanitizeHtml(indices.infDesc || INTEGRITA_LABELS[indices.infIndex] || '')}</span>
+              </div>
+            </div>
+          </div>
+        ` : `
+          <!-- Selettori di Modifica Indici -->
+          <div class="indices-selector-list">
+            <div class="index-select-group">
+              <div class="index-select-header">
+                <span class="index-select-title">Titolarità:</span>
+                <strong class="index-select-rating">${indices.titIndex}/5</strong>
+              </div>
+              <select id="edit-tit-index" class="fanta-select index-edit-dropdown">
+                <option value="1" ${indices.titIndex === 1 ? 'selected' : ''}>1 · Non gioca mai</option>
+                <option value="2" ${indices.titIndex === 2 ? 'selected' : ''}>2 · Subentra raramente</option>
+                <option value="3" ${indices.titIndex === 3 ? 'selected' : ''}>3 · Nelle rotazioni</option>
+                <option value="4" ${indices.titIndex === 4 ? 'selected' : ''}>4 · Titolare con concorrenza</option>
+                <option value="5" ${indices.titIndex === 5 ? 'selected' : ''}>5 · Titolare inamovibile</option>
+              </select>
+            </div>
+
+            <div class="index-select-group">
+              <div class="index-select-header">
+                <span class="index-select-title">Affidabilità:</span>
+                <strong class="index-select-rating">${indices.affIndex}/5</strong>
+              </div>
+              <select id="edit-aff-index" class="fanta-select index-edit-dropdown">
+                <option value="1" ${indices.affIndex === 1 ? 'selected' : ''}>1 · Del tutto inaffidabile a livello di voti</option>
+                <option value="2" ${indices.affIndex === 2 ? 'selected' : ''}>2 · Profilo altamente incostante</option>
+                <option value="3" ${indices.affIndex === 3 ? 'selected' : ''}>3 · Alterna buone prestazioni ad altre deludenti</option>
+                <option value="4" ${indices.affIndex === 4 ? 'selected' : ''}>4 · Quasi sempre sufficiente</option>
+                <option value="5" ${indices.affIndex === 5 ? 'selected' : ''}>5 · Rendimento super costante</option>
+              </select>
+            </div>
+
+            <div class="index-select-group">
+              <div class="index-select-header">
+                <span class="index-select-title">Integrità:</span>
+                <strong class="index-select-rating">${indices.infIndex}/5</strong>
+              </div>
+              <select id="edit-inf-index" class="fanta-select index-edit-dropdown">
+                <option value="1" ${indices.infIndex === 1 ? 'selected' : ''}>1 · Molto fragile</option>
+                <option value="2" ${indices.infIndex === 2 ? 'selected' : ''}>2 · Ha avuto diversi infortuni</option>
+                <option value="3" ${indices.infIndex === 3 ? 'selected' : ''}>3 · Ogni tanto salta qualche partita</option>
+                <option value="4" ${indices.infIndex === 4 ? 'selected' : ''}>4 · Pochissimi infortuni</option>
+                <option value="5" ${indices.infIndex === 5 ? 'selected' : ''}>5 · È sempre integro</option>
+              </select>
+            </div>
+          </div>
+        `}
       </section>
 
       <!-- SEZIONE RENDIMENTO STAGIONE CON SPECIALISTI INTEGRATI -->
@@ -422,12 +486,20 @@ export class PlayerInspectorComponent {
       </section>
     `;
 
+    // Bind Toggle Modifica Fascia (Tasto Matita / Chiudi)
+    container.querySelector('#toggle-tier-edit-btn')?.addEventListener('click', (e) => {
+      e.preventDefault();
+      this.isEditingTier = !this.isEditingTier;
+      this.render();
+    });
+
     // Bind Assegnazione Fascia Strategia
     container.querySelectorAll('.strategy-tier-pill-btn').forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.preventDefault();
         const tierId = btn.dataset.tierId;
         store.assignPlayerTier(player, tierId);
+        this.isEditingTier = false;
         if (tierId && tierId !== 'none') {
           const tier = roleTiers.find(t => t.id === tierId);
           notify.success(`Assegnato a "${tier?.name || 'Fascia'}"`);
@@ -441,6 +513,13 @@ export class PlayerInspectorComponent {
     // Bind Apertura Gestione Fasce
     container.querySelector('#open-strat-manager-from-inspector')?.addEventListener('click', () => {
       window.app?.strategyManager?.open(roleKey);
+    });
+
+    // Bind Toggle Modifica Indici (Tasto Matita / Chiudi)
+    container.querySelector('#toggle-indices-edit-btn')?.addEventListener('click', (e) => {
+      e.preventDefault();
+      this.isEditingIndices = !this.isEditingIndices;
+      this.render();
     });
 
     // Helper unificato per estrarre e salvare tutti i dati del form
