@@ -104,15 +104,6 @@
           </div>
         </button>
 
-        <button id="open-import-csv-btn" class="dropdown-menu-item"
-          title="Importa file CSV Statistiche Fantacalcio">
-          <div class="dropdown-item-icon icon-cyan"><i class="fa-solid fa-file-csv"></i></div>
-          <div class="dropdown-item-text">
-            <span class="item-title">Importa CSV</span>
-            <span class="item-desc">Quotazioni 2026/27 e statistiche</span>
-          </div>
-        </button>
-
         <button id="open-history-btn" class="dropdown-menu-item" title="Storico versioni e formazioni">
           <div class="dropdown-item-icon icon-blue"><i class="fa-solid fa-clock-rotate-left"></i></div>
           <div class="dropdown-item-text">
@@ -261,16 +252,13 @@
         </button>
       </div>
 
-      <!-- Tab Switcher: Catalogo CSV vs Personalizzato vs Importa Listone -->
+      <!-- Tab Switcher: Cerca nel Database vs Crea Manuale -->
       <div class="modal-tabs-header">
         <button type="button" class="modal-tab-btn is-active" id="tab-csv-catalog-btn">
           <i class="fa-solid fa-database"></i> Cerca nel Database
         </button>
         <button type="button" class="modal-tab-btn" id="tab-custom-player-btn">
           <i class="fa-solid fa-pen-to-square"></i> Crea Manuale
-        </button>
-        <button type="button" class="modal-tab-btn" id="tab-import-csv-tab-btn">
-          <i class="fa-solid fa-file-csv"></i> Carica Listone CSV
         </button>
       </div>
 
@@ -388,96 +376,10 @@
               Aggiungi</button>
           </div>
         </form>
-
-        <!-- SEZIONE 3: IMPORTA LISTONE / STATISTICHE CSV -->
-        <div id="catalog-import-section" class="hidden">
-          <p class="modal-description" style="margin-bottom: 1rem;">
-            Carica il file ufficiale <strong>Quotazioni</strong> o <strong>Statistiche</strong> di Fantacalcio (formato <code>.csv</code>) per sincronizzare istantaneamente l'intero listone calciatori, i ruoli Classic/Mantra, i prezzi FVM e le rose.
-          </p>
-          <div class="csv-dropzone" id="catalog-csv-dropzone">
-            <i class="fa-solid fa-cloud-arrow-up dropzone-icon"></i>
-            <span class="dropzone-text">Trascina qui il file <strong>.csv</strong> oppure</span>
-            <label class="fanta-btn primary-btn btn-sm dropzone-btn">
-              <i class="fa-solid fa-folder-open"></i> Seleziona File CSV
-              <input type="file" id="catalog-csv-file-input" accept=".csv" class="hidden" />
-            </label>
-          </div>
-          <!-- Preview del caricamento nel tab -->
-          <div class="csv-preview-container hidden" id="catalog-csv-preview-container">
-            <div class="csv-file-info">
-              <i class="fa-solid fa-file-lines"></i>
-              <span class="csv-file-name" id="catalog-csv-file-name">quotazioni.csv</span>
-              <span class="csv-file-size" id="catalog-csv-file-size">0 KB</span>
-            </div>
-            <div class="csv-stats-summary" id="catalog-csv-stats-summary">
-              <span class="csv-badge"><i class="fa-solid fa-shield-halved"></i> <strong id="catalog-csv-teams-count">0</strong> Squadre</span>
-              <span class="csv-badge"><i class="fa-solid fa-users"></i> <strong id="catalog-csv-players-count">0</strong> Giocatori</span>
-              <span class="csv-badge" id="catalog-csv-type-badge"><i class="fa-solid fa-tag"></i> Listone Quotazioni</span>
-            </div>
-            <div style="margin-top: 1rem; display: flex; justify-content: flex-end; gap: 8px;">
-              <button type="button" class="fanta-btn success-btn" id="catalog-apply-csv-btn">
-                <i class="fa-solid fa-bolt"></i> Applica e Aggiorna Listone
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
 
       <div class="modal-footer" id="catalog-footer">
         <button type="button" class="fanta-btn secondary-btn" id="close-catalog-btn">Chiudi</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- MODALE IMPORTAZIONE CSV STATISTICHE & QUOTAZIONI -->
-  <div class="modal-backdrop hidden" id="import-csv-modal" role="dialog" aria-modal="true"
-    aria-labelledby="import-csv-title">
-    <div class="fanta-modal modal-md">
-      <div class="modal-header">
-        <div class="modal-title-group">
-          <i class="fa-solid fa-file-csv modal-title-icon" style="color: var(--accent-neon-green);"></i>
-          <h3 id="import-csv-title">Importa Listone & Statistiche CSV</h3>
-        </div>
-        <button class="modal-close-btn" id="close-import-csv-btn" aria-label="Chiudi modale">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p class="modal-description">
-          Carica il file ufficiale Fantacalcio (formato <code>.csv</code> di <strong>Quotazioni</strong> o <strong>Statistiche</strong>) per aggiornare automaticamente quotazioni, FVM, ruoli Classic/Mantra e medie voto di tutti i calciatori di Serie A.
-        </p>
-
-        <!-- Dropzone per il file CSV -->
-        <div class="csv-dropzone" id="csv-dropzone">
-          <i class="fa-solid fa-cloud-arrow-up dropzone-icon"></i>
-          <span class="dropzone-text">Trascina qui il file <strong>.csv</strong> oppure</span>
-          <label class="fanta-btn primary-btn btn-sm dropzone-btn">
-            <i class="fa-solid fa-folder-open"></i> Seleziona File CSV
-            <input type="file" id="csv-file-input" accept=".csv" class="hidden" />
-          </label>
-        </div>
-
-        <!-- Preview del caricamento -->
-        <div class="csv-preview-container hidden" id="csv-preview-container">
-          <div class="csv-file-info">
-            <i class="fa-solid fa-file-lines"></i>
-            <span class="csv-file-name" id="csv-file-name">file.csv</span>
-            <span class="csv-file-size" id="csv-file-size">0 KB</span>
-          </div>
-          <div class="csv-stats-summary" id="csv-stats-summary">
-            <span class="csv-badge"><i class="fa-solid fa-shield-halved"></i> <strong id="csv-teams-count">0</strong>
-              Squadre</span>
-            <span class="csv-badge"><i class="fa-solid fa-users"></i> <strong id="csv-players-count">0</strong>
-              Giocatori</span>
-            <span class="csv-badge" id="csv-type-badge"><i class="fa-solid fa-tag"></i> Listone</span>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button class="fanta-btn secondary-btn" id="cancel-import-csv-btn">Annulla</button>
-        <button class="fanta-btn success-btn hidden" id="apply-csv-btn">
-          <i class="fa-solid fa-bolt"></i> Applica Dati CSV
-        </button>
       </div>
     </div>
   </div>

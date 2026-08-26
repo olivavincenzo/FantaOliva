@@ -17,6 +17,7 @@ export class PitchComponent {
     this.linesSvgLayer = null;
     this.verticalListEl = null;
     this.activeRoleFilter = 'ALL';
+    this.squadScope = 'STARTERS'; // 'STARTERS' | 'BENCH' | 'ALL'
     this.searchQuery = '';
     this.gridColumns = Number((typeof localStorage !== 'undefined' ? localStorage.getItem('fantaoliva_pitch_list_cols') : null) || 1);
 
@@ -556,7 +557,14 @@ export class PitchComponent {
       }
     });
 
-    allSquadItems.forEach(item => {
+    let targetItems = allSquadItems;
+    if (this.squadScope === 'STARTERS') {
+      targetItems = starters;
+    } else if (this.squadScope === 'BENCH') {
+      targetItems = bench;
+    }
+
+    targetItems.forEach(item => {
       const p = item.player;
       if (!p) return;
 
@@ -582,20 +590,33 @@ export class PitchComponent {
 
     const totalCountEl = this.container.querySelector('#filter-total-count');
     if (totalCountEl) {
-      totalCountEl.textContent = allSquadItems.length;
+      totalCountEl.textContent = targetItems.length;
     }
 
     let hasAnyPlayer = false;
 
-    // Barra Superiore Lista con Selettore Colonne 1 2 3 4
+    // Barra Superiore Lista con Selettore Colonne 1 2 3 4 e Filtro Titolari/Panchina
     const team = store.getCurrentTeam();
     const teamTitle = team ? team.name : 'Rosa';
     const topBarEl = document.createElement('div');
     topBarEl.className = 'list-view-header-bar';
     topBarEl.innerHTML = `
       <div class="section-head-title">
-        <h2>Rosa ${sanitizeHtml(teamTitle)}</h2>
-        <span class="head-count">${allSquadItems.length} calciatori</span>
+        <div class="section-title-wrap">
+          <h2>${this.squadScope === 'BENCH' ? 'Panchina' : (this.squadScope === 'STARTERS' ? 'Titolari' : 'Rosa')} ${sanitizeHtml(teamTitle)}</h2>
+          <span class="head-count">${targetItems.length} calciatori</span>
+        </div>
+        <div class="squad-scope-selector" role="group" aria-label="Filtro titolari o panchina">
+          <button type="button" class="squad-scope-btn ${this.squadScope === 'STARTERS' ? 'is-active' : ''}" data-scope="STARTERS" title="Mostra solo la formazione titolare">
+            Titolari <span class="scope-count">${starters.length}</span>
+          </button>
+          <button type="button" class="squad-scope-btn ${this.squadScope === 'BENCH' ? 'is-active' : ''}" data-scope="BENCH" title="Mostra i giocatori in panchina divisi per ruolo">
+            <i class="fa-solid fa-chair" style="font-size: 10px;"></i> Panchina <span class="scope-count">${bench.length}</span>
+          </button>
+          <button type="button" class="squad-scope-btn ${this.squadScope === 'ALL' ? 'is-active' : ''}" data-scope="ALL" title="Mostra tutti i calciatori della rosa (Titolari + Panchina)">
+            Tutti <span class="scope-count">${allSquadItems.length}</span>
+          </button>
+        </div>
       </div>
       <div class="section-columns-switcher" title="Disposizione colonne lista">
         <span class="cols-label">Colonne</span>
@@ -607,6 +628,14 @@ export class PitchComponent {
         </div>
       </div>
     `;
+
+    topBarEl.querySelectorAll('.squad-scope-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        this.squadScope = btn.dataset.scope || 'ALL';
+        this.renderVerticalList();
+      });
+    });
 
     topBarEl.querySelectorAll('.col-btn').forEach(btn => {
       btn.addEventListener('click', (e) => {
@@ -629,9 +658,10 @@ export class PitchComponent {
       // Section Header Reparto
       const headerEl = document.createElement('div');
       headerEl.className = 'section-header';
+      const deptSuffix = this.squadScope === 'BENCH' ? 'in Panchina' : (this.squadScope === 'STARTERS' ? 'Titolari' : '');
       headerEl.innerHTML = `
-        <h2>${sanitizeHtml(dept.name)}</h2>
-        <span>${dept.items.length} giocatori</span>
+        <h2>${sanitizeHtml(dept.name)} ${deptSuffix ? `<span style="font-size: 11px; opacity: 0.7; font-weight: normal; margin-left: 4px;">(${deptSuffix})</span>` : ''}</h2>
+        <span>${dept.items.length} ${this.squadScope === 'BENCH' ? 'riserve' : 'calciatori'}</span>
       `;
 
       this.verticalListEl.appendChild(headerEl);

@@ -14,7 +14,6 @@ import { initHistoryModal } from './components/historyManager.js';
 import { initExportModal } from './components/exporter.js';
 import { initSyncModal } from './components/syncManager.js';
 import { initSidebarResizer } from './utils/resizer.js';
-import { CsvImporter } from './utils/csvImporter.js';
 import { notify } from './utils/notifications.js';
 
 class App {
@@ -24,7 +23,6 @@ class App {
     this.inspector = null;
     this.listone = null;
     this.strategyManager = null;
-    this.csvImporter = null;
   }
 
   init() {
@@ -48,8 +46,6 @@ class App {
     initSyncModal();
     initSidebarResizer();
     this.initAddPlayerModal();
-    this.csvImporter = new CsvImporter();
-    this.csvImporter.init();
 
     // 4. Bind Controlli Header, Toolbar e Switcher Viste
     this.populateFormationSelect();
@@ -446,10 +442,8 @@ class App {
     // Tab buttons
     const tabCsvBtn = document.querySelector('#tab-csv-catalog-btn');
     const tabCustomBtn = document.querySelector('#tab-custom-player-btn');
-    const tabImportCsvBtn = document.querySelector('#tab-import-csv-tab-btn');
     const catalogSection = document.querySelector('#catalog-section');
     const catalogFooter = document.querySelector('#catalog-footer');
-    const catalogImportSection = document.querySelector('#catalog-import-section');
 
     // Search and filters
     const searchInput = document.querySelector('#catalog-search-input');
@@ -463,11 +457,9 @@ class App {
     function switchTab(tab) {
       tabCsvBtn?.classList.remove('is-active');
       tabCustomBtn?.classList.remove('is-active');
-      tabImportCsvBtn?.classList.remove('is-active');
       catalogSection?.classList.add('hidden');
       catalogFooter?.classList.add('hidden');
       form?.classList.add('hidden');
-      catalogImportSection?.classList.add('hidden');
 
       if (tab === 'csv') {
         tabCsvBtn?.classList.add('is-active');
@@ -478,16 +470,11 @@ class App {
       } else if (tab === 'custom') {
         tabCustomBtn?.classList.add('is-active');
         form?.classList.remove('hidden');
-      } else if (tab === 'import') {
-        tabImportCsvBtn?.classList.add('is-active');
-        catalogImportSection?.classList.remove('hidden');
-        catalogFooter?.classList.remove('hidden');
       }
     }
 
     tabCsvBtn?.addEventListener('click', () => switchTab('csv'));
     tabCustomBtn?.addEventListener('click', () => switchTab('custom'));
-    tabImportCsvBtn?.addEventListener('click', () => switchTab('import'));
 
     store.subscribe('catalog:updated', () => {
       renderCatalog();

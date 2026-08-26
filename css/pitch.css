@@ -680,6 +680,13 @@
 
 .section-head-title {
   display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.section-head-title .section-title-wrap {
+  display: flex;
   align-items: baseline;
   gap: 8px;
 }
@@ -696,6 +703,58 @@
   color: var(--muted);
   font-size: 11px;
   font-weight: 600;
+}
+
+.squad-scope-selector {
+  display: inline-flex;
+  align-items: center;
+  background: var(--soft);
+  padding: 2px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  gap: 2px;
+}
+
+.squad-scope-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: calc(var(--radius-sm) - 2px);
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  font-family: var(--font-main);
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.squad-scope-btn:hover {
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.squad-scope-btn.is-active {
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.squad-scope-btn .scope-count {
+  font-size: 10px;
+  padding: 1px 5px;
+  border-radius: 999px;
+  background: var(--line);
+  color: var(--muted);
+}
+
+.squad-scope-btn.is-active .scope-count {
+  background: var(--accent-neon-green);
+  color: #052e16;
+  font-weight: 800;
 }
 
 .section-header {

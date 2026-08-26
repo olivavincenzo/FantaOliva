@@ -10,14 +10,13 @@
 import { store } from '../store.js';
 import { ROLES, PLAYER_STATUSES } from '../data/roles.js';
 import { renderBallottaggioSection } from './ballottaggioManager.js';
-import { renderBenchPanel } from './benchManager.js';
 import { sanitizeHtml, getTitolaritaClass, getPlayerInitials } from '../utils/helpers.js';
 import { notify } from '../utils/notifications.js';
 
 export class PlayerInspectorComponent {
   constructor(container) {
     this.container = container;
-    this.activeTab = 'tab-details'; // 'tab-details' | 'tab-subs' | 'tab-bench'
+    this.activeTab = 'tab-details'; // 'tab-details' | 'tab-subs'
 
     this.init();
   }
@@ -51,7 +50,6 @@ export class PlayerInspectorComponent {
     const player = store.getSelectedPlayer();
     const currentTeam = store.getCurrentTeam();
     const selectedSlotId = store.selectedSlotId;
-    const benchCount = store.getBenchPlayers().length;
 
     if (!player) {
       this.container.innerHTML = `
@@ -65,7 +63,7 @@ export class PlayerInspectorComponent {
             </div>
             <div class="inspector-tags-row">
               <span class="team-tag">${sanitizeHtml(currentTeam?.shortName || '')}</span>
-              <span class="team-tag">${benchCount} in Panchina</span>
+              <span class="team-tag">${sanitizeHtml(currentTeam?.coach || 'Allenatore')}</span>
             </div>
           </div>
 
@@ -76,9 +74,6 @@ export class PlayerInspectorComponent {
             </button>
             <button class="inspector-tab-btn ${this.activeTab === 'tab-subs' ? 'is-active' : ''}" data-tab="tab-subs">
               <i class="fa-solid fa-arrows-split-up-and-left"></i> Ballottaggi
-            </button>
-            <button class="inspector-tab-btn ${this.activeTab === 'tab-bench' ? 'is-active' : ''}" data-tab="tab-bench">
-              <i class="fa-solid fa-users-viewfinder"></i> Panchina (${benchCount})
             </button>
           </div>
         </div>
@@ -98,9 +93,7 @@ export class PlayerInspectorComponent {
 
       const tabContainer = this.container.querySelector('#inspector-tab-container');
 
-      if (this.activeTab === 'tab-bench') {
-        renderBenchPanel(tabContainer);
-      } else if (this.activeTab === 'tab-subs') {
+      if (this.activeTab === 'tab-subs') {
         renderBallottaggioSection(tabContainer, null);
       } else {
         tabContainer.innerHTML = `
@@ -179,9 +172,6 @@ export class PlayerInspectorComponent {
         <button class="inspector-tab-btn ${this.activeTab === 'tab-subs' ? 'is-active' : ''}" data-tab="tab-subs">
           <i class="fa-solid fa-arrows-split-up-and-left"></i> Ballottaggi
         </button>
-        <button class="inspector-tab-btn ${this.activeTab === 'tab-bench' ? 'is-active' : ''}" data-tab="tab-bench">
-          <i class="fa-solid fa-users-viewfinder"></i> Panchina (${benchCount})
-        </button>
       </div>
 
       <div class="inspector-body">
@@ -220,8 +210,6 @@ export class PlayerInspectorComponent {
       this.renderDetailsTab(tabContainer, player);
     } else if (this.activeTab === 'tab-subs') {
       this.renderSubstitutesTab(tabContainer, player, selectedSlotId);
-    } else if (this.activeTab === 'tab-bench') {
-      renderBenchPanel(tabContainer);
     }
   }
 
