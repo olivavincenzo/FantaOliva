@@ -15,6 +15,7 @@ const SNAPSHOTS_KEY = 'fantaoliva_snapshots_v2026_27_fantalab_v1';
 const CUSTOM_CATALOG_KEY = 'fantaoliva_custom_catalog_v2026_27_fantalab_v1';
 const STRATEGIES_KEY = 'fantaoliva_custom_strategies_v1';
 const ACTIVE_STRATEGY_KEY = 'fantaoliva_active_strategy_id_v1';
+const MY_TEAM_STORAGE_KEY = 'fantaoliva_my_team_v2026_27_v1';
 
 const DEFAULT_STRATEGIES = [
   SOS_STRATEGY_1
@@ -35,6 +36,7 @@ class Store {
     this.activeBenchFilter = 'ALL';
     this.snapshots = [];
     this.favoritePlayerIds = new Set();
+    this.myTeam = this.getDefaultMyTeam();
     this.subscribers = new Map();
   }
 
@@ -44,6 +46,17 @@ class Store {
       const savedFavs = localStorage.getItem('fantaoliva_favorites');
       if (savedFavs) {
         this.favoritePlayerIds = new Set(JSON.parse(savedFavs));
+      }
+
+      const savedMyTeam = localStorage.getItem(MY_TEAM_STORAGE_KEY);
+      if (savedMyTeam) {
+        try {
+          this.myTeam = { ...this.getDefaultMyTeam(), ...JSON.parse(savedMyTeam) };
+        } catch (e) {
+          this.myTeam = this.getDefaultMyTeam();
+        }
+      } else {
+        this.myTeam = this.getDefaultMyTeam();
       }
 
       const savedCatalog = localStorage.getItem(CUSTOM_CATALOG_KEY);
@@ -375,28 +388,54 @@ class Store {
     return team.personalNotes ?? team.notes ?? '';
   }
 
-  // --- CATALOGO GENERALE CSV ---
+  // --- CATALOGO GENERALE CALCIATORI SERIE A ---
   getPlayerCatalog(query = '', roleFilter = '') {
     const q = query.trim().toLowerCase();
-    const currentSquadIds = new Set(this.getAllPlayers().map(p => (p.csvId || p.name).toLowerCase()));
-    const catalog = (this.playerCatalog && this.playerCatalog.length > 0) ? this.playerCatalog : CSV_PLAYER_CATALOG;
 
-    return catalog.filter(p => {
-      // Escludi giocatori già presenti nella squadra attiva
-      if (currentSquadIds.has((p.csvId || p.name).toLowerCase())) return false;
+    // Se siamo nella vista "La Mia Rosa", escludi solo i giocatori già presenti nella Mia Rosa
+    // Se siamo nella vista di una squadra Serie A, escludi i giocatori già presenti in quella squadra
+    const excludedIds = new Set();
+    if (this.activeView === 'myteam') {
+      const mt = this.getMyTeam();
+      Object.values(mt.lineup || {}).forEach(p => {
+        if (p?.id) excludedIds.add(String(p.id).toLowerCase());
+        if (p?.csvId) excludedIds.add(String(p.csvId).toLowerCase());
+      });
+      (mt.bench || []).forEach(p => {
+        if (p?.id) excludedIds.add(String(p.id).toLowerCase());
+        if (p?.csvId) excludedIds.add(String(p.csvId).toLowerCase());
+      });
+    } else {
+      this.getAllPlayers().forEach(p => {
+        if (p?.id) excludedIds.add(String(p.id).toLowerCase());
+        if (p?.csvId) excludedIds.add(String(p.csvId).toLowerCase());
+        if (p?.name) excludedIds.add(p.name.toLowerCase());
+      });
+    }
+
+    // Usa il catalogo completo di tutti i calciatori della Serie A
+    const allPlayers = this.getAllPlayersFlat();
+
+    return allPlayers.filter(p => {
+      if (!p) return false;
+      const pId = String(p.id || '').toLowerCase();
+      const pCsvId = String(p.csvId || '').toLowerCase();
+      if (excludedIds.has(pId) || (pCsvId && excludedIds.has(pCsvId))) return false;
 
       if (roleFilter && roleFilter !== 'ALL') {
-        if (roleFilter === 'P' && p.classicRole !== 'P') return false;
-        if (roleFilter === 'D' && p.classicRole !== 'D') return false;
-        if (roleFilter === 'C' && p.classicRole !== 'C') return false;
-        if (roleFilter === 'A' && p.classicRole !== 'A') return false;
+        const cat = this.getRoleCategory(p);
+        const filterCat = this.getRoleCategory(roleFilter);
+        if (cat !== filterCat) return false;
       }
 
       if (!q) return true;
-      return p.name.toLowerCase().includes(q) ||
-             (p.teamName && p.teamName.toLowerCase().includes(q)) ||
-             (p.mantraRole && p.mantraRole.toLowerCase().includes(q)) ||
-             p.role.toLowerCase().includes(q);
+      const name = (p.displayName || p.name || '').toLowerCase();
+      const rawName = (p.name || '').toLowerCase();
+      const teamName = (p.teamName || '').toLowerCase();
+      const mantra = (p.mantraRole || '').toLowerCase();
+      const role = (p.role || '').toLowerCase();
+
+      return name.includes(q) || rawName.includes(q) || teamName.includes(q) || mantra.includes(q) || role.includes(q);
     });
   }
 
@@ -1503,6 +1542,287 @@ class Store {
     if (this.activeView === view) return;
     this.activeView = view;
     this.emit('view:changed', view);
+  }
+
+  // =========================================================================
+  // --- GESTIONE "LA MIA ROSA" (MY TEAM) ---
+  // =========================================================================
+
+  getDefaultMyTeam() {
+    return {
+      id: 'my_team',
+      name: 'La Mia Rosa',
+      budget: 500,
+      formationId: '3-4-3',
+      lineup: {}, // slotId -> player
+      bench: [],  // array of players
+      notes: ''
+    };
+  }
+
+  getMyTeam() {
+    if (!this.myTeam) {
+      this.myTeam = this.getDefaultMyTeam();
+    }
+    return this.myTeam;
+  }
+
+  saveMyTeamToStorage() {
+    try {
+      if (typeof localStorage !== 'undefined') {
+        localStorage.setItem(MY_TEAM_STORAGE_KEY, JSON.stringify(this.myTeam));
+      }
+    } catch (e) {
+      console.warn('Errore nel salvataggio di MyTeam:', e);
+    }
+  }
+
+  setMyTeamFormation(formationId) {
+    this.getMyTeam();
+    if (this.myTeam.formationId === formationId) return;
+    this.myTeam.formationId = formationId;
+    this.saveMyTeamToStorage();
+    this.emit('myteam:updated', this.myTeam);
+  }
+
+  setMyTeamBudget(budget) {
+    this.getMyTeam();
+    this.myTeam.budget = Number(budget) || 500;
+    this.saveMyTeamToStorage();
+    this.emit('myteam:updated', this.myTeam);
+  }
+
+  setMyTeamName(name) {
+    this.getMyTeam();
+    this.myTeam.name = name || 'La Mia Rosa';
+    this.saveMyTeamToStorage();
+    this.emit('myteam:updated', this.myTeam);
+  }
+
+  setMyTeamNotes(notes) {
+    this.getMyTeam();
+    this.myTeam.notes = notes || '';
+    this.saveMyTeamToStorage();
+    this.emit('myteam:updated', this.myTeam);
+  }
+
+  isPlayerInMyTeam(playerId) {
+    if (!playerId) return false;
+    const mt = this.getMyTeam();
+    const isStarter = Object.values(mt.lineup || {}).some(p => p && p.id === playerId);
+    if (isStarter) return true;
+    return (mt.bench || []).some(p => p && p.id === playerId);
+  }
+
+  getMyTeamPlayerInfo(playerId) {
+    if (!playerId) return null;
+    const mt = this.getMyTeam();
+    for (const [slotId, p] of Object.entries(mt.lineup || {})) {
+      if (p && p.id === playerId) {
+        return {
+          player: p,
+          isStarter: true,
+          slotId,
+          purchasePrice: p.purchasePrice !== undefined ? p.purchasePrice : (p.pricePaid || 0)
+        };
+      }
+    }
+    const benchPlayer = (mt.bench || []).find(p => p && p.id === playerId);
+    if (benchPlayer) {
+      return {
+        player: benchPlayer,
+        isStarter: false,
+        slotId: null,
+        purchasePrice: benchPlayer.purchasePrice !== undefined ? benchPlayer.purchasePrice : (benchPlayer.pricePaid || 0)
+      };
+    }
+    return null;
+  }
+
+  addPlayerToMyTeam(player, { isStarter = false, slotId = null, purchasePrice = 0 } = {}) {
+    if (!player || !player.id) return false;
+    const mt = this.getMyTeam();
+
+    // Rimuovi se già presente altrove nella rosa
+    this.removePlayerFromMyTeam(player.id, false);
+
+    const fullPlayer = deepClone(this.getPlayer(player.id) || player);
+    fullPlayer.purchasePrice = Number(purchasePrice) || 0;
+    fullPlayer.pricePaid = fullPlayer.purchasePrice;
+
+    if (isStarter && slotId) {
+      fullPlayer.slotId = slotId;
+      mt.lineup[slotId] = fullPlayer;
+    } else {
+      mt.bench.push(fullPlayer);
+    }
+
+    this.saveMyTeamToStorage();
+    this.emit('myteam:updated', mt);
+    this.emit('player:updated', fullPlayer);
+    return true;
+  }
+
+  assignPlayerToMyTeamSlot(slotId, playerId) {
+    if (!slotId) return false;
+    const mt = this.getMyTeam();
+
+    if (!playerId) {
+      const occupant = mt.lineup[slotId];
+      if (occupant) {
+        delete mt.lineup[slotId];
+        occupant.slotId = null;
+        mt.bench.push(occupant);
+        this.saveMyTeamToStorage();
+        this.emit('myteam:updated', mt);
+      }
+      return true;
+    }
+
+    const info = this.getMyTeamPlayerInfo(playerId);
+    if (!info) return false;
+
+    const targetPlayer = info.player;
+    const previousOccupant = mt.lineup[slotId];
+
+    if (info.isStarter && info.slotId) {
+      delete mt.lineup[info.slotId];
+    } else {
+      mt.bench = (mt.bench || []).filter(p => p.id !== playerId);
+    }
+
+    if (previousOccupant && previousOccupant.id !== playerId) {
+      previousOccupant.slotId = null;
+      mt.bench.push(previousOccupant);
+    }
+
+    targetPlayer.slotId = slotId;
+    mt.lineup[slotId] = targetPlayer;
+
+    this.saveMyTeamToStorage();
+    this.emit('myteam:updated', mt);
+    return true;
+  }
+
+  removePlayerFromMyTeam(playerId, emitUpdate = true) {
+    if (!playerId) return false;
+    const mt = this.getMyTeam();
+
+    // Rimuovi da lineup
+    for (const [slotId, p] of Object.entries(mt.lineup || {})) {
+      if (p && p.id === playerId) {
+        delete mt.lineup[slotId];
+      }
+    }
+
+    // Rimuovi da bench
+    mt.bench = (mt.bench || []).filter(p => p && p.id !== playerId);
+
+    if (emitUpdate) {
+      this.saveMyTeamToStorage();
+      this.emit('myteam:updated', mt);
+      const player = this.getPlayer(playerId);
+      if (player) this.emit('player:updated', player);
+    }
+    return true;
+  }
+
+  setMyTeamPlayerPrice(playerId, price) {
+    const numPrice = Math.max(0, Number(price) || 0);
+    const mt = this.getMyTeam();
+
+    let found = false;
+    for (const p of Object.values(mt.lineup || {})) {
+      if (p && p.id === playerId) {
+        p.purchasePrice = numPrice;
+        p.pricePaid = numPrice;
+        found = true;
+      }
+    }
+    for (const p of (mt.bench || [])) {
+      if (p && p.id === playerId) {
+        p.purchasePrice = numPrice;
+        p.pricePaid = numPrice;
+        found = true;
+      }
+    }
+
+    if (found) {
+      this.saveMyTeamToStorage();
+      this.emit('myteam:updated', mt);
+    }
+    return found;
+  }
+
+  toggleMyTeamPlayerStarter(playerId, targetSlotId = null) {
+    const info = this.getMyTeamPlayerInfo(playerId);
+    if (!info) return false;
+
+    const mt = this.getMyTeam();
+    if (info.isStarter) {
+      // Sposta in panchina
+      delete mt.lineup[info.slotId];
+      const p = info.player;
+      p.slotId = null;
+      mt.bench.push(p);
+    } else {
+      // Sposta nei titolari (se slot disponibile o targetSlotId specificato)
+      mt.bench = mt.bench.filter(p => p.id !== playerId);
+      const p = info.player;
+      if (targetSlotId) {
+        mt.lineup[targetSlotId] = p;
+        p.slotId = targetSlotId;
+      } else {
+        // Cerca primo slot vuoto compatibile o generico
+        const form = FORMATIONS[mt.formationId] || FORMATIONS['3-4-3'];
+        const occupiedSlots = new Set(Object.keys(mt.lineup));
+        const freeSlot = form.slots.find(s => !occupiedSlots.has(s.id));
+        if (freeSlot) {
+          mt.lineup[freeSlot.id] = p;
+          p.slotId = freeSlot.id;
+        } else {
+          mt.bench.push(p);
+          return false;
+        }
+      }
+    }
+
+    this.saveMyTeamToStorage();
+    this.emit('myteam:updated', mt);
+    return true;
+  }
+
+  getMyTeamStats() {
+    const mt = this.getMyTeam();
+    const starters = Object.values(mt.lineup || {}).filter(Boolean);
+    const bench = (mt.bench || []).filter(Boolean);
+    const all = [...starters, ...bench];
+
+    let spent = 0;
+    const counts = { P: 0, D: 0, C: 0, A: 0 };
+
+    all.forEach(p => {
+      spent += Number(p.purchasePrice || p.pricePaid || 0);
+      const cat = this.getRoleCategory(p);
+      if (counts[cat] !== undefined) {
+        counts[cat]++;
+      }
+    });
+
+    const budget = Number(mt.budget) || 500;
+    const remaining = budget - spent;
+    const avgPrice = all.length > 0 ? (spent / all.length).toFixed(1) : '0';
+
+    return {
+      totalPlayers: all.length,
+      startersCount: starters.length,
+      benchCount: bench.length,
+      spent,
+      remaining,
+      budget,
+      avgPrice,
+      counts
+    };
   }
 
   setPitchLayoutMode(mode) {

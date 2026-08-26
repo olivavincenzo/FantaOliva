@@ -1,0 +1,427 @@
+/**
+ * Stili per la vista "La Mia Rosa" (My Team Tactical Board & Roster)
+ */
+
+.my-team-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  padding: 16px 20px;
+  background: var(--bg);
+}
+
+/* --- DASHBOARD SUMMARY BUDGET & STATS --- */
+.my-team-dashboard-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px 18px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  margin-bottom: 16px;
+}
+
+.my-team-header-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.my-team-shield-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(16, 185, 129, 0.1));
+  border: 1px solid rgba(34, 197, 94, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: #16a34a;
+}
+
+.my-team-title-wrap h1 {
+  margin: 0;
+  font-size: 1.18rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.my-team-title-wrap p {
+  margin: 2px 0 0;
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.my-team-budget-stats-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.my-team-stat-pill {
+  display: flex;
+  flex-direction: column;
+  padding: 6px 12px;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  min-width: 90px;
+}
+
+.my-team-stat-pill .stat-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.my-team-stat-pill .stat-value {
+  font-size: 1.05rem;
+  font-weight: 850;
+  color: var(--ink);
+  letter-spacing: -0.03em;
+  margin-top: 1px;
+}
+
+.my-team-stat-pill.is-remaining .stat-value {
+  color: #16a34a;
+}
+
+.my-team-stat-pill.is-spent .stat-value {
+  color: #ea580c;
+}
+
+.my-team-quotas-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+}
+
+.quota-item {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+}
+
+.quota-item.quota-p { background: rgba(234, 179, 8, 0.15); color: #ca8a04; }
+.quota-item.quota-d { background: rgba(59, 130, 246, 0.15); color: #2563eb; }
+.quota-item.quota-c { background: rgba(34, 197, 94, 0.15); color: #16a34a; }
+.quota-item.quota-a { background: rgba(239, 68, 68, 0.15); color: #dc2626; }
+
+/* --- CONTROLS TOOLBAR --- */
+.my-team-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.my-team-toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.my-team-toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* --- 3D PERSPECTIVE SOCCER PITCH --- */
+.soccer-pitch.is-3d-pitch {
+  perspective: 1100px;
+  background: linear-gradient(180deg, #15803d 0%, #166534 100%) !important;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.22), inset 0 0 80px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.soccer-pitch.is-3d-pitch .pitch-lines {
+  transform: rotateX(26deg) scale(0.92);
+  transform-origin: 50% 60%;
+  border-color: rgba(255, 255, 255, 0.35);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.soccer-pitch.is-3d-pitch .pitch-boundary,
+.soccer-pitch.is-3d-pitch .halfway-line,
+.soccer-pitch.is-3d-pitch .center-circle,
+.soccer-pitch.is-3d-pitch .penalty-box,
+.soccer-pitch.is-3d-pitch .goal-box {
+  border-color: rgba(255, 255, 255, 0.35) !important;
+}
+
+.soccer-pitch.is-3d-pitch .center-spot,
+.soccer-pitch.is-3d-pitch .penalty-spot {
+  background: rgba(255, 255, 255, 0.4) !important;
+}
+
+.soccer-pitch.is-3d-pitch .tactical-lines-svg {
+  transform: rotateX(26deg) scale(0.92);
+  transform-origin: 50% 60%;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.soccer-pitch.is-3d-pitch .tactical-lines-svg line {
+  stroke: rgba(255, 255, 255, 0.45) !important;
+}
+
+.soccer-pitch.is-3d-pitch .pitch-slots-layer {
+  transform: rotateX(26deg) scale(0.92);
+  transform-origin: 50% 60%;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.soccer-pitch.is-3d-pitch .pitch-slot-wrapper {
+  transform: translate(-50%, -50%) rotateX(-26deg);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease;
+}
+
+.soccer-pitch.is-3d-pitch .pitch-slot-wrapper:hover {
+  transform: translate(-50%, -55%) rotateX(-26deg) scale(1.05);
+}
+
+/* --- EMPTY PITCH SLOT CARD --- */
+.my-team-empty-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 90px;
+  padding: 8px;
+  border: 2px dashed rgba(255, 255, 255, 0.4);
+  border-radius: var(--radius-md);
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+  color: #ffffff;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-align: center;
+}
+
+.my-team-empty-slot:hover {
+  background: rgba(34, 197, 94, 0.25);
+  border-color: #22c55e;
+  transform: translateY(-2px);
+}
+
+.my-team-empty-slot .empty-slot-role {
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  margin-bottom: 4px;
+}
+
+.my-team-empty-slot .empty-slot-label {
+  font-size: 0.76rem;
+  font-weight: 600;
+  opacity: 0.85;
+}
+
+/* --- BADGE "MIA ROSA" --- */
+.badge-my-team {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 7px;
+  font-size: 0.70rem;
+  font-weight: 800;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #22c55e, #10b981);
+  color: #052e16;
+  box-shadow: 0 2px 6px rgba(34, 197, 94, 0.35);
+  letter-spacing: 0.02em;
+}
+
+/* Prezzo pagato chip su player card */
+.card-price-paid-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.70rem;
+  font-weight: 800;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: rgba(234, 88, 12, 0.15);
+  color: #ea580c;
+  border: 1px solid rgba(234, 88, 12, 0.3);
+}
+
+/* Card Gestione Asta & Mia Rosa nell'Inspector */
+.my-team-inspector-card {
+  padding: 10px 12px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(20, 20, 28, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.my-team-inspector-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.my-team-price-input {
+  width: 75px;
+  padding: 4px 8px;
+  font-size: 0.82rem;
+  font-weight: 750;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--soft);
+  color: var(--ink);
+  text-align: right;
+}
+
+/* --- MODALE / DIALOG SELETTORE TITOLARI DALLA PROPRIA ROSA --- */
+.myteam-roster-selector-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 15, 0.65);
+  backdrop-filter: blur(4px);
+  z-index: 1050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.myteam-roster-selector-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 520px;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: modalFadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.myteam-roster-header {
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--soft);
+}
+
+.myteam-roster-title h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.myteam-roster-title p {
+  margin: 2px 0 0;
+  font-size: 0.76rem;
+  color: var(--muted);
+}
+
+.myteam-roster-body {
+  padding: 14px 18px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.roster-picker-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 14px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.roster-picker-item:hover {
+  background: rgba(34, 197, 94, 0.08);
+  border-color: #22c55e;
+  transform: translateX(3px);
+}
+
+.roster-picker-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.roster-picker-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: var(--soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--ink);
+  overflow: hidden;
+}
+
+.roster-picker-info .picker-player-name {
+  font-size: 0.88rem;
+  font-weight: 750;
+  color: var(--ink);
+  display: block;
+}
+
+.roster-picker-info .picker-player-meta {
+  font-size: 0.72rem;
+  color: var(--muted);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.roster-picker-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

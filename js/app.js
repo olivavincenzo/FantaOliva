@@ -10,6 +10,7 @@ import { PitchComponent } from './components/pitch.js';
 import { PlayerInspectorComponent } from './components/playerInspector.js';
 import { PlayersListoneComponent } from './components/playersListone.js';
 import { StrategyManagerComponent } from './components/strategyManager.js';
+import { MyTeamComponent } from './components/myTeam.js';
 import { initHistoryModal } from './components/historyManager.js';
 import { initExportModal } from './components/exporter.js';
 import { initSyncModal } from './components/syncManager.js';
@@ -22,6 +23,7 @@ class App {
     this.pitch = null;
     this.inspector = null;
     this.listone = null;
+    this.myTeam = null;
     this.strategyManager = null;
   }
 
@@ -37,6 +39,8 @@ class App {
     this.inspector = new PlayerInspectorComponent(document.querySelector('#sidebar-inspector'));
     this.listone = new PlayersListoneComponent('listone-view-wrapper');
     this.listone.init();
+    this.myTeam = new MyTeamComponent('my-team-view-wrapper');
+    this.myTeam.init();
     this.strategyManager = new StrategyManagerComponent('strategy-modal');
     this.strategyManager.init();
 
@@ -61,30 +65,53 @@ class App {
   switchView(viewName) {
     store.setView(viewName);
     const tacticalTab = document.querySelector('#view-tab-tactical');
+    const myteamTab = document.querySelector('#view-tab-myteam');
     const listoneTab = document.querySelector('#view-tab-listone');
+
     const tacticalView = document.querySelector('#tactical-view-wrapper');
+    const myteamView = document.querySelector('#my-team-view-wrapper');
     const listoneView = document.querySelector('#listone-view-wrapper');
+    const pitchContainer = document.querySelector('#pitch-container');
     const tacticalToolbar = document.querySelector('#pitch-tactical-toolbar');
-    const mobileFieldBtn = document.querySelector('#mobile-field-btn');
-    const mobileListoneBtn = document.querySelector('#mobile-listone-btn');
     const activeTeam = document.querySelector('#header-active-team');
+
+    const mobileFieldBtn = document.querySelector('#mobile-field-btn');
+    const mobileMyTeamBtn = document.querySelector('#mobile-myteam-btn');
+    const mobileListoneBtn = document.querySelector('#mobile-listone-btn');
+
+    // Reset All Active classes
+    [tacticalTab, myteamTab, listoneTab].forEach(t => t?.classList.remove('is-active'));
+    [mobileFieldBtn, mobileMyTeamBtn, mobileListoneBtn].forEach(b => b?.classList.remove('active'));
+
+    document.body.classList.remove('view-myteam-mode');
 
     if (viewName === 'tactical') {
       tacticalTab?.classList.add('is-active');
-      listoneTab?.classList.remove('is-active');
       tacticalView?.classList.remove('hidden');
+      pitchContainer?.classList.remove('hidden');
+      myteamView?.classList.add('hidden');
       listoneView?.classList.add('hidden');
       tacticalToolbar?.classList.remove('hidden');
       mobileFieldBtn?.classList.add('active');
-      mobileListoneBtn?.classList.remove('active');
       activeTeam?.classList.remove('hidden');
+    } else if (viewName === 'myteam') {
+      myteamTab?.classList.add('is-active');
+      tacticalView?.classList.remove('hidden');
+      pitchContainer?.classList.add('hidden');
+      myteamView?.classList.remove('hidden');
+      listoneView?.classList.add('hidden');
+      tacticalToolbar?.classList.add('hidden');
+      mobileMyTeamBtn?.classList.add('active');
+      activeTeam?.classList.add('hidden');
+      document.body.classList.add('view-myteam-mode');
+      this.myTeam?.render();
     } else if (viewName === 'listone') {
-      tacticalTab?.classList.remove('is-active');
       listoneTab?.classList.add('is-active');
       tacticalView?.classList.add('hidden');
+      pitchContainer?.classList.add('hidden');
+      myteamView?.classList.add('hidden');
       listoneView?.classList.remove('hidden');
       tacticalToolbar?.classList.add('hidden');
-      mobileFieldBtn?.classList.remove('active');
       mobileListoneBtn?.classList.add('active');
       activeTeam?.classList.add('hidden');
       this.listone?.render();
@@ -93,13 +120,19 @@ class App {
 
   bindViewSwitcher() {
     const tacticalTab = document.querySelector('#view-tab-tactical');
+    const myteamTab = document.querySelector('#view-tab-myteam');
     const listoneTab = document.querySelector('#view-tab-listone');
+
     const mobileFieldBtn = document.querySelector('#mobile-field-btn');
+    const mobileMyTeamBtn = document.querySelector('#mobile-myteam-btn');
     const mobileListoneBtn = document.querySelector('#mobile-listone-btn');
 
     tacticalTab?.addEventListener('click', () => this.switchView('tactical'));
+    myteamTab?.addEventListener('click', () => this.switchView('myteam'));
     listoneTab?.addEventListener('click', () => this.switchView('listone'));
+
     mobileFieldBtn?.addEventListener('click', () => this.switchView('tactical'));
+    mobileMyTeamBtn?.addEventListener('click', () => this.switchView('myteam'));
     mobileListoneBtn?.addEventListener('click', () => this.switchView('listone'));
   }
 
@@ -536,6 +569,29 @@ class App {
           const playerId = btn.dataset.playerId;
           const found = players.find(p => p.id === playerId);
           if (found) {
+            // Feedback visivo immediato sul pulsante
+            const origHtml = btn.innerHTML;
+            btn.innerHTML = '<i class="fa-solid fa-check"></i> Inserito';
+            btn.style.backgroundColor = '#15803d';
+            setTimeout(() => {
+              btn.innerHTML = origHtml;
+              btn.style.backgroundColor = '';
+            }, 1200);
+
+            if (store.activeView === 'myteam') {
+              const isStarter = Boolean(store.selectedSlotId);
+              const slotId = store.selectedSlotId || null;
+              const pricePaid = found.quotazioni?.fvm || 1;
+              store.addPlayerToMyTeam(found, {
+                isStarter,
+                slotId,
+                purchasePrice: pricePaid
+              });
+              store.selectedSlotId = null;
+              notify.success(`⭐ ${found.displayName || found.name} aggiunto a "La Mia Rosa" (${isStarter ? 'Titolare' : 'Panchina'})!`);
+              return;
+            }
+
             const added = store.addNewPlayer(found);
             if (store.selectedSlotId) {
               store.assignPlayerToSlot(store.selectedSlotId, added.id);
@@ -543,7 +599,6 @@ class App {
             } else {
               notify.success(`${found.name} aggiunto alla rosa!`);
             }
-            closeModal();
           }
         });
       });
@@ -633,6 +688,20 @@ class App {
         }
       };
 
+      if (store.activeView === 'myteam') {
+        const isStarter = Boolean(store.selectedSlotId);
+        const slotId = store.selectedSlotId || null;
+        store.addPlayerToMyTeam(newPlayer, {
+          isStarter,
+          slotId,
+          purchasePrice: 1
+        });
+        store.selectedSlotId = null;
+        notify.success(`⭐ ${newPlayer.displayName || newPlayer.name} aggiunto a "La Mia Rosa"!`);
+        form?.reset();
+        return;
+      }
+
       const added = store.addNewPlayer(newPlayer);
       if (added) {
         if (store.selectedSlotId) {
@@ -641,7 +710,7 @@ class App {
         } else {
           notify.success(`Giocatore ${added.name} aggiunto alla squadra!`);
         }
-        closeModal();
+        form?.reset();
       }
     });
   }

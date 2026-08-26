@@ -176,8 +176,11 @@ h6 {
   z-index: 30;
 }
 
-body.left-sidebar-collapsed .app-sidebar-left {
-  display: none;
+body.left-sidebar-collapsed .app-sidebar-left,
+body.view-myteam-mode .app-sidebar-left,
+body.view-myteam-mode #sidebar-teams-resizer,
+body.view-myteam-mode #reopen-left-sidebar-btn {
+  display: none !important;
 }
 
 .app-sidebar-right {

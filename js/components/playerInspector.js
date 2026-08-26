@@ -37,6 +37,7 @@ export class PlayerInspectorComponent {
     });
     store.subscribe('player:updated', () => this.render());
     store.subscribe('player:added', () => this.render());
+    store.subscribe('myteam:updated', () => this.render());
     store.subscribe('team:changed', () => this.render());
     store.subscribe('formation:changed', () => this.render());
     store.subscribe('auction:availabilityChanged', () => this.render());
@@ -275,7 +276,54 @@ export class PlayerInspectorComponent {
 
       const notes = player.comment || player.positionNotes || player.notes || sosComment || '';
 
+      const isInMyTeam = store.isPlayerInMyTeam(player.id);
+      const myTeamInfo = isInMyTeam ? store.getMyTeamPlayerInfo(player.id) : null;
+
     container.innerHTML = `
+      <!-- SEZIONE LA MIA ROSA / GESTIONE ASTA PERSONALE -->
+      <section class="detail-section">
+        <div class="my-team-inspector-card">
+          <div class="my-team-inspector-row">
+            ${isInMyTeam ? `
+              <span class="badge-my-team"><i class="fa-solid fa-shield-halved"></i> NELLA MIA ROSA</span>
+              <span style="font-size: 0.74rem; font-weight: 750; color: ${myTeamInfo?.isStarter ? '#16a34a' : 'var(--muted)'};">
+                ${myTeamInfo?.isStarter ? '🟢 Titolare' : '⚪ In Panchina'}
+              </span>
+            ` : `
+              <span style="font-size: 0.78rem; font-weight: 750; color: var(--muted);"><i class="fa-solid fa-shield-halved"></i> La Mia Rosa</span>
+              <span style="font-size: 0.72rem; color: var(--muted);">Non ancora acquistato</span>
+            `}
+          </div>
+
+          <div class="my-team-inspector-row" style="margin-top: 4px;">
+            ${isInMyTeam ? `
+              <div style="display: flex; align-items: center; gap: 5px;">
+                <span style="font-size: 0.72rem; color: var(--muted); font-weight: 600;">Prezzo pagato:</span>
+                <input type="number" id="myteam-player-price-input" class="my-team-price-input" min="0" value="${myTeamInfo?.purchasePrice || 0}" title="Modifica crediti spesi per l'acquisto" />
+                <span style="font-size: 0.74rem; font-weight: 750; color: var(--ink);">cr</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 5px;">
+                <button type="button" class="fanta-btn secondary-btn" id="myteam-toggle-starter-btn" style="padding: 3px 8px; font-size: 0.72rem;" title="Sposta tra titolari e panchina">
+                  ${myTeamInfo?.isStarter ? 'In Panchina' : 'Titolare'}
+                </button>
+                <button type="button" class="fanta-btn secondary-btn" id="myteam-remove-player-btn" style="padding: 3px 8px; font-size: 0.72rem; color: #dc2626;" title="Rimuovi da La Mia Rosa">
+                  <i class="fa-solid fa-trash-can"></i>
+                </button>
+              </div>
+            ` : `
+              <div style="display: flex; align-items: center; gap: 5px;">
+                <span style="font-size: 0.72rem; color: var(--muted); font-weight: 600;">Prezzo asta:</span>
+                <input type="number" id="myteam-new-price-input" class="my-team-price-input" min="0" placeholder="1" value="${player.quotazioni?.fvm || 1}" />
+                <span style="font-size: 0.74rem; font-weight: 750; color: var(--ink);">cr</span>
+              </div>
+              <button type="button" class="fanta-btn primary-btn" id="myteam-add-current-player-btn" style="padding: 4px 10px; font-size: 0.76rem;">
+                <i class="fa-solid fa-plus-circle"></i> Aggiungi alla Mia Rosa
+              </button>
+            `}
+          </div>
+        </div>
+      </section>
+
       <!-- SEZIONE STRATEGIA & FASCIA CUSTOM -->
       <section class="detail-section">
         <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
@@ -485,6 +533,33 @@ export class PlayerInspectorComponent {
         </div>
       </section>
     `;
+
+    // Bind Azioni "La Mia Rosa"
+    container.querySelector('#myteam-add-current-player-btn')?.addEventListener('click', () => {
+      const priceVal = Number(container.querySelector('#myteam-new-price-input')?.value) || 1;
+      store.addPlayerToMyTeam(player, { purchasePrice: priceVal });
+      notify.success(`⭐ ${player.displayName || player.name} aggiunto a "La Mia Rosa" (${priceVal} cr)!`);
+    });
+
+    container.querySelector('#myteam-remove-player-btn')?.addEventListener('click', () => {
+      store.removePlayerFromMyTeam(player.id);
+      notify.info(`${player.displayName || player.name} rimosso da "La Mia Rosa"`);
+    });
+
+    container.querySelector('#myteam-player-price-input')?.addEventListener('change', (e) => {
+      const p = Math.max(0, Number(e.target.value) || 0);
+      store.setMyTeamPlayerPrice(player.id, p);
+      notify.success(`Prezzo pagato aggiornato a ${p} cr!`);
+    });
+
+    container.querySelector('#myteam-toggle-starter-btn')?.addEventListener('click', () => {
+      const res = store.toggleMyTeamPlayerStarter(player.id);
+      if (res) {
+        notify.info(`Status titolare/panchina aggiornato per ${player.displayName || player.name}`);
+      } else {
+        notify.warning('Nessuno slot titolare libero trovato per questo ruolo nel modulo corrente.');
+      }
+    });
 
     // Bind Toggle Modifica Fascia (Tasto Matita / Chiudi)
     container.querySelector('#toggle-tier-edit-btn')?.addEventListener('click', (e) => {

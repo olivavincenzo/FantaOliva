@@ -27,6 +27,7 @@
   <link rel="stylesheet" href="css/modals.css">
   <link rel="stylesheet" href="css/listone.css?v=4">
   <link rel="stylesheet" href="css/strategy-manager.css">
+  <link rel="stylesheet" href="css/my-team.css">
   <link rel="stylesheet" href="css/responsive.css?v=2">
 </head>
 
@@ -37,11 +38,14 @@
     <!-- HEADER TATTICO SUPERIORE -->
     <header class="app-header">
 
-      <!-- Sezione Sinistra: Switcher Viste (Lavagna Tattica / Listone) -->
+      <!-- Sezione Sinistra: Switcher Viste (Lavagna Tattica / La Mia Rosa / Listone) -->
       <div class="header-left-section">
         <div class="view-switch-nav">
-          <button id="view-tab-tactical" class="view-switch-btn is-active" title="Visualizza Campo e Lavagna Tattica">
+          <button id="view-tab-tactical" class="view-switch-btn is-active" title="Visualizza Campo e Lavagna Tattica Serie A">
             <i class="fa-solid fa-futbol"></i> <span>Lavagna</span>
+          </button>
+          <button id="view-tab-myteam" class="view-switch-btn" title="Visualizza La Mia Rosa Personalizzata">
+            <i class="fa-solid fa-shield-halved"></i> <span>La Mia Rosa</span>
           </button>
           <button id="view-tab-listone" class="view-switch-btn"
             title="Visualizza Listone Completo Calciatori Serie A">
@@ -158,6 +162,9 @@
         <div class="pitch-container" id="pitch-container">
           <!-- Rendered by PitchComponent -->
         </div>
+        <div class="pitch-container hidden" id="my-team-view-wrapper">
+          <!-- Rendered by MyTeamComponent -->
+        </div>
       </main>
 
       <!-- SEPARATORE DI RIDIMENSIONAMENTO SCHEDA GIOCATORE -->
@@ -184,6 +191,10 @@
         <button id="mobile-field-btn" class="nav-item active" aria-label="Lavagna Tattica" title="Lavagna Tattica">
           <i class="fa-solid fa-chalkboard-user"></i>
           <span class="nav-label">Lavagna</span>
+        </button>
+        <button id="mobile-myteam-btn" class="nav-item" aria-label="La Mia Rosa" title="La Mia Rosa">
+          <i class="fa-solid fa-shield-halved"></i>
+          <span class="nav-label">Mia Rosa</span>
         </button>
         <button id="mobile-listone-btn" class="nav-item" aria-label="Listone Calciatori" title="Listone">
           <i class="fa-solid fa-table-list"></i>

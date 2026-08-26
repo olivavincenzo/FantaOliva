@@ -16,6 +16,7 @@ export class PlayersListoneComponent {
     this.selectedTeam = 'ALL';
     this.availabilityFilter = 'ALL'; // 'ALL' | 'AVAILABLE' | 'TAKEN' | 'FAVORITES'
     this.onlyFavorites = false;
+    this.onlyMyTeam = false;
     this.sortBy = 'strategy_tier'; // 'strategy_tier' | 'fantamedia' | 'mediaVoto' | 'qtA' | 'fvm' | 'gol' | 'assist' | 'presenze' | 'name' | 'teamName'
     this.sortOrder = 'desc'; // 'asc' | 'desc'
     this.gridColumns = Number((typeof localStorage !== 'undefined' ? localStorage.getItem('fantaoliva_listone_cols') : null) || 2);
@@ -78,6 +79,12 @@ export class PlayersListoneComponent {
       }
     });
 
+    store.subscribe('myteam:updated', () => {
+      if (store.activeView === 'listone') {
+        this.render();
+      }
+    });
+
     store.subscribe('player:selected', () => {
       if (store.activeView === 'listone') {
         this.updateSelectionHighlight();
@@ -109,6 +116,11 @@ export class PlayersListoneComponent {
       filtered = filtered.filter(p => p.isAvailable === false);
     } else if (this.availabilityFilter === 'FAVORITES' || this.onlyFavorites) {
       filtered = filtered.filter(p => p.isFavorite || store.isPlayerFavorite(p.id));
+    }
+
+    // Filtro La Mia Rosa
+    if (this.onlyMyTeam) {
+      filtered = filtered.filter(p => store.isPlayerInMyTeam(p.id));
     }
 
     // 4. Ricerca Testuale
@@ -344,6 +356,11 @@ export class PlayersListoneComponent {
           <button id="toggle-listone-fav-btn" class="filter ${this.onlyFavorites ? 'active' : ''}" type="button" title="Mostra solo preferiti">
             <i class="fa-${this.onlyFavorites ? 'solid' : 'regular'} fa-star"></i> Preferiti
           </button>
+
+          <!-- Toggle La Mia Rosa -->
+          <button id="toggle-listone-myteam-btn" class="filter ${this.onlyMyTeam ? 'active' : ''}" type="button" title="Mostra solo i calciatori presenti nella Mia Rosa">
+            <i class="fa-solid fa-shield-halved"></i> Mia Rosa (${store.getMyTeamStats().totalPlayers})
+          </button>
         </nav>
 
         <!-- LISTA CARDS CALCIATORI EDITORIAL MINIMAL -->
@@ -447,6 +464,14 @@ export class PlayersListoneComponent {
     const favBtn = this.container.querySelector('#toggle-listone-fav-btn');
     favBtn?.addEventListener('click', () => {
       this.onlyFavorites = !this.onlyFavorites;
+      this.renderLimit = 40;
+      this.render();
+    });
+
+    // Toggle La Mia Rosa
+    const myTeamBtn = this.container.querySelector('#toggle-listone-myteam-btn');
+    myTeamBtn?.addEventListener('click', () => {
+      this.onlyMyTeam = !this.onlyMyTeam;
       this.renderLimit = 40;
       this.render();
     });

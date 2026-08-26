@@ -164,6 +164,9 @@ export function createPlayerCard(player, options = {}) {
     </div>
   `;
 
+  const isInMyTeam = store.isPlayerInMyTeam(player.id);
+  const myTeamInfo = isInMyTeam ? store.getMyTeamPlayerInfo(player.id) : null;
+
   // Header player top con foto, info piazzati e preferiti
   const headerHtml = `
     <header class="player-top">
@@ -171,6 +174,8 @@ export function createPlayerCard(player, options = {}) {
       <div class="identity">
         <div class="player-name-row">
           <h3 class="player-name" title="${sanitizeHtml(player.name)}">${sanitizeHtml(displayName)}</h3>
+          ${isInMyTeam ? `<span class="badge-my-team" title="Presente nella tua rosa personalizzata"><i class="fa-solid fa-shield-halved"></i> MIA ROSA</span>` : ''}
+          ${myTeamInfo && myTeamInfo.purchasePrice ? `<span class="card-price-paid-tag" title="Prezzo d'acquisto pagato">${myTeamInfo.purchasePrice} cr</span>` : ''}
           ${isFavorite ? `<span class="card-fav-star" title="Calciatore nei Preferiti"><i class="fa-solid fa-star"></i></span>` : ''}
         </div>
         <div class="player-set-pieces-row ${piazzatiText !== '—' ? 'has-active-set-pieces' : ''}">
@@ -397,7 +402,7 @@ export function createPlayerCard(player, options = {}) {
     } else {
       // Singolo click
       lastTapTime = now;
-      if (isMobile) {
+      if (isMobile && store.activeView !== 'myteam') {
         // In mobile il singolo click seleziona il giocatore
         const targetTeamId = player.teamId || (player.teamName ? store.teams.find(t => t.name.toLowerCase() === player.teamName.toLowerCase())?.id : null);
         if (store.activeView === 'tactical' && targetTeamId && targetTeamId !== store.currentTeamId) {
