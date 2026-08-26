@@ -1,0 +1,2667 @@
+[
+  {
+    "player_id": "0053b230-688b-4fef-90f5-b823c64ea378",
+    "price": 15,
+    "in_listone": true
+  },
+  {
+    "player_id": "00dce0c7-d5a8-4d18-b22c-3c83c47670a3",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "03943eb7-aa1e-4daf-b816-f2722e9e46ce",
+    "price": 9,
+    "in_listone": true
+  },
+  {
+    "player_id": "03abf7ae-63a5-4f70-a892-d0f6b57b243b",
+    "price": 5,
+    "in_listone": true
+  },
+  {
+    "player_id": "040011b1-3428-45a7-abc1-1646f88eef74",
+    "price": 1,
+    "in_listone": false
+  },
+  {
+    "player_id": "0442eaa9-c6ac-4a7b-9135-8fd7ee6b2312",
+    "price": 30,
+    "in_listone": true
+  },
+  {
+    "player_id": "04926b8a-8079-4e32-a538-8e08c8898540",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "04f390f1-2846-46f0-bc52-8ab0fbf3bcc1",
+    "price": 7,
+    "in_listone": true
+  },
+  {
+    "player_id": "05a6d08b-b086-46f1-82ee-bdd2ca64ae31",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "05ed0add-6a0f-4ae8-aa97-eba61ba71d30",
+    "price": 44,
+    "in_listone": true
+  },
+  {
+    "player_id": "06e40e5b-de3e-410d-8540-4775224cb363",
+    "price": 26,
+    "in_listone": true
+  },
+  {
+    "player_id": "07ff1a4e-49ff-4334-be9d-082f0415a289",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "08623cd0-42e5-4a5b-8fe0-edff5096472c",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "088bb69b-e23f-402f-bc6e-3ad4bb311560",
+    "price": 16,
+    "in_listone": true
+  },
+  {
+    "player_id": "089aed7d-e2c7-4bfa-bbc0-d7780d6bdecc",
+    "price": 5,
+    "in_listone": true
+  },
+  {
+    "player_id": "0a11fe1e-7041-4409-9752-cbbd637f6aca",
+    "price": 19,
+    "in_listone": true
+  },
+  {
+    "player_id": "0a3e9174-68bc-430c-845e-e04c95bcbc5a",
+    "price": 12,
+    "in_listone": false
+  },
+  {
+    "player_id": "0a63d021-85fa-49ab-82af-fb94cdc997a1",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "0a725064-8cc6-49c6-9033-56e3a00adc3a",
+    "price": 6,
+    "in_listone": true
+  },
+  {
+    "player_id": "0ae5f68a-c8e6-4a82-8269-b1207b182df4",
+    "price": 18,
+    "in_listone": true
+  },
+  {
+    "player_id": "0d58faf5-1ed1-4610-8a3b-caddd2c688a8",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "0e05ec77-0d73-452e-8d72-7ddf162ced52",
+    "price": 42,
+    "in_listone": true
+  },
+  {
+    "player_id": "0e4a800a-f8df-4bc4-8ddc-fe32b660a537",
+    "price": 30,
+    "in_listone": true
+  },
+  {
+    "player_id": "0e555a7f-5113-49d2-9bbd-0a138250968f",
+    "price": 44,
+    "in_listone": true
+  },
+  {
+    "player_id": "0e7b8055-8ec6-45bd-86b0-c2ecf8d3ae0c",
+    "price": 2,
+    "in_listone": false
+  },
+  {
+    "player_id": "0ea3b547-311e-4fa7-a58a-26f37efb05f5",
+    "price": 6,
+    "in_listone": true
+  },
+  {
+    "player_id": "0ead74a2-af7c-4184-8046-79f67903505e",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "0ecc1bd6-1dba-4b1c-9dc9-579838907f33",
+    "price": 6,
+    "in_listone": true
+  },
+  {
+    "player_id": "0ed792c8-0d5a-4e48-8a59-009d9590b1b8",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "112396a1-211a-480d-b759-f1913e6fbe82",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "113049e9-ebba-4127-9763-fbf23dfb000b",
+    "price": 50,
+    "in_listone": false
+  },
+  {
+    "player_id": "1137037e-c927-401f-b891-43a2965753a2",
+    "price": 51,
+    "in_listone": true
+  },
+  {
+    "player_id": "116aea13-90b1-4369-8288-1dbc4af34e3f",
+    "price": 1,
+    "in_listone": false
+  },
+  {
+    "player_id": "1209dc7a-a7e3-4bf8-a10a-0cd5f3dd9f77",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "13034c80-e0fe-41b2-afdf-fcd19188d226",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "1392a871-45c8-4782-8b9e-583c324b8eec",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "145d21dc-5021-44b4-a937-6f56c831a835",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "151f0326-3652-496f-ac7a-9311564e8f59",
+    "price": 2,
+    "in_listone": false
+  },
+  {
+    "player_id": "15bbd20e-80e0-4db3-9d17-48f4cb24d340",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "1608c14a-caaa-4907-9b7f-57aa2dc2b47b",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "16bd57cd-1af6-42ea-abfd-23a1051c73c1",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "16d2f113-676b-4106-a457-67da034246c5",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "180c9fdc-84bd-45a0-8cee-0dabd9a321c3",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "18a51ba4-0193-458c-be47-c733b4d9dfd8",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "18de2da7-0388-4860-a39b-81d2fc5d3472",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "18e725c3-54bb-40f6-95e2-96d2d058fb12",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "19139ae2-8ceb-4f21-9980-134c64d95c92",
+    "price": 7,
+    "in_listone": true
+  },
+  {
+    "player_id": "19a2efc3-c0a3-4931-ac50-e091bbe19836",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "19f016b0-bb68-41d7-91e9-4d8c1690deb9",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "1a1929ec-ccd7-474f-8616-3d1fbeb54fd5",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "1a26b98e-29c0-4ead-9dc9-8851a25a3f27",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "1a34b9f5-bd27-4a6b-a2e5-3961be3bd835",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "1a7bc3d2-0876-4d9f-89a9-79659e236430",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "1a88a4d7-81a0-42c2-911f-33ffef2551c6",
+    "price": 10,
+    "in_listone": true
+  },
+  {
+    "player_id": "1b0d7ac9-3030-4864-96a8-20aa778d0c8a",
+    "price": 174,
+    "in_listone": true
+  },
+  {
+    "player_id": "1bef666d-d305-4795-af71-2e946eb6ab0e",
+    "price": 48,
+    "in_listone": true
+  },
+  {
+    "player_id": "1d24cd78-760a-415a-96d0-075251eb2c71",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "1d26239a-02e3-4ee4-9c63-17d5dcb9b5be",
+    "price": 21,
+    "in_listone": true
+  },
+  {
+    "player_id": "1d2a470a-c2dd-4e85-9269-2432dab4989e",
+    "price": 19,
+    "in_listone": true
+  },
+  {
+    "player_id": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
+    "price": 57,
+    "in_listone": true
+  },
+  {
+    "player_id": "1da941e1-9f25-4af2-9903-6d3004e1765c",
+    "price": 48,
+    "in_listone": true
+  },
+  {
+    "player_id": "1db44169-c0c7-424c-8a05-3e15e764b782",
+    "price": 6,
+    "in_listone": true
+  },
+  {
+    "player_id": "1eceb250-521e-4a1c-beff-c21eccc15af6",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "1f696a0b-f9cd-44bd-a2b0-a1eefa4fa15c",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea",
+    "price": 39,
+    "in_listone": true
+  },
+  {
+    "player_id": "1fe04853-522d-4f26-91ac-256aa3256a46",
+    "price": 7,
+    "in_listone": true
+  },
+  {
+    "player_id": "2142c7e8-d27c-4c26-a133-363d0f634812",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "21898bcb-7bbf-46c7-9892-8e05475fcb53",
+    "price": 33,
+    "in_listone": true
+  },
+  {
+    "player_id": "21aae13c-0a10-4bf2-aa9a-0a44c6cec6b2",
+    "price": 125,
+    "in_listone": true
+  },
+  {
+    "player_id": "22363a5f-0f79-4599-8866-33c2e4d63857",
+    "price": 15,
+    "in_listone": true
+  },
+  {
+    "player_id": "225f68c2-4f99-4f0e-98dd-d8900423bec4",
+    "price": 6,
+    "in_listone": true
+  },
+  {
+    "player_id": "23393734-3e5a-473f-a4c0-20eba7e3f08a",
+    "price": 38,
+    "in_listone": true
+  },
+  {
+    "player_id": "23591c67-0ce7-4ea7-9a8e-90692f978cf4",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "244e0389-9c58-4c30-a0c2-dc221e3bb4ee",
+    "price": 10,
+    "in_listone": true
+  },
+  {
+    "player_id": "248504d8-fd98-41ce-8f6b-db46784043a5",
+    "price": 21,
+    "in_listone": true
+  },
+  {
+    "player_id": "248ae665-ab73-4e64-8e95-f19c50c469de",
+    "price": 5,
+    "in_listone": true
+  },
+  {
+    "player_id": "25f782b5-3764-4a4e-8e32-6e950a038870",
+    "price": 30,
+    "in_listone": true
+  },
+  {
+    "player_id": "2748f5d9-1b7e-4731-8ff7-d89ba1c26bc3",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "27551bf1-46ae-44f8-bac1-825be51116f8",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "279970ec-46fe-4c48-9c84-2cd2193b512c",
+    "price": 10,
+    "in_listone": true
+  },
+  {
+    "player_id": "27bb1a55-8a26-44d5-a22b-b6ec43cab10c",
+    "price": 1,
+    "in_listone": false
+  },
+  {
+    "player_id": "280d15dc-3cf6-47ec-ad41-19b983b09d20",
+    "price": 16,
+    "in_listone": true
+  },
+  {
+    "player_id": "287aea48-e990-419a-8744-9753b369dd13",
+    "price": 23,
+    "in_listone": true
+  },
+  {
+    "player_id": "290059c5-ba66-4548-ace0-2fc138dd4c28",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "29fa9ceb-ec2e-4b95-96ad-e2f8ad666f74",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "2a411338-4370-4a88-8d00-f47f2167b09f",
+    "price": 6,
+    "in_listone": true
+  },
+  {
+    "player_id": "2ade4141-3042-437f-a00b-ff8b17438a0f",
+    "price": 11,
+    "in_listone": true
+  },
+  {
+    "player_id": "2ae97ae9-6de8-47be-a015-6421fa448f61",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "2b362169-cf19-4a08-a822-d99382ed5e0e",
+    "price": 20,
+    "in_listone": true
+  },
+  {
+    "player_id": "2c6908dc-d5c4-4446-a2af-9e0c0e2f981c",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "2cfcc521-bd1e-46a5-98f3-e900c436061d",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "2d18f8b5-9c3a-4878-ad3f-9765c8d0e1b6",
+    "price": 10,
+    "in_listone": true
+  },
+  {
+    "player_id": "2d677888-6808-453b-976b-a9bde9d6c7e4",
+    "price": 5,
+    "in_listone": true
+  },
+  {
+    "player_id": "2d943164-e3df-4a78-a795-93d26f2623e7",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "2d9b4c39-4108-459f-8932-faa1b495f64b",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "2e331f32-cc88-4a67-b471-f05a2db80063",
+    "price": 7,
+    "in_listone": true
+  },
+  {
+    "player_id": "2e3fad35-5759-49b0-98ec-e53c93dd10a6",
+    "price": 17,
+    "in_listone": true
+  },
+  {
+    "player_id": "2edd4901-5632-4cc8-b8b8-981150639745",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "2ff8597a-cb95-42c1-a147-46ea883068c3",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "30398049-741d-4880-8a0b-0c650671236f",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "307a60c0-42d3-4540-845e-461bdb360a9a",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "307bd1b7-8698-4247-be19-95a1b2d3a58c",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "30e4cb57-632d-4f52-b027-97d390efaf3f",
+    "price": 34,
+    "in_listone": true
+  },
+  {
+    "player_id": "30e7f451-834b-48ac-b1c0-749c1674d5c5",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "31786ff3-11ce-42f4-b5e3-a5ced40ae0b6",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "3280f1a1-e0be-4c7b-83ba-b254858b4426",
+    "price": 18,
+    "in_listone": true
+  },
+  {
+    "player_id": "33371cb1-ba8e-4e51-9f61-8307d8aa2e14",
+    "price": 14,
+    "in_listone": true
+  },
+  {
+    "player_id": "349b1554-cf28-42c6-bc65-6582f28a0f5b",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "34e0b815-2a6c-409f-8c65-0ff73605d649",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "352e6596-1e54-4044-8873-6f7310c2bd66",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "355f295d-4904-459a-b863-49aff62de841",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "35745a73-7a77-4d8e-9216-e8b4c2036a27",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "35df14f3-13ca-4e70-b340-ff8bcb204a69",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "35f76419-21c6-4f06-b68c-fa14f67717e2",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "36014808-99ee-486d-a681-26d3d5fbe551",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "361b37bf-01e0-4fee-b4e7-36e258c94ed4",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "36aefe1e-18af-4824-9091-ef98f30c9778",
+    "price": 42,
+    "in_listone": true
+  },
+  {
+    "player_id": "371edc7e-8557-4af7-ac46-3481c7601c38",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "38215a52-f2bd-4088-964f-fec353964b85",
+    "price": 10,
+    "in_listone": true
+  },
+  {
+    "player_id": "387c9a81-4702-47ce-a0d6-1791bed95221",
+    "price": 47,
+    "in_listone": true
+  },
+  {
+    "player_id": "38941855-dc42-4bba-923a-ff9515a68f2a",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "38edda0f-f801-4946-b49b-cd87541fa645",
+    "price": 26,
+    "in_listone": true
+  },
+  {
+    "player_id": "3b5b8e3f-ce26-4764-80bd-334b9a5aef7f",
+    "price": 32,
+    "in_listone": true
+  },
+  {
+    "player_id": "3ba8d8de-4fd3-47ed-90b2-00ec9789f80c",
+    "price": 23,
+    "in_listone": true
+  },
+  {
+    "player_id": "3bd054af-2392-4003-8dd6-a5694c458f55",
+    "price": 33,
+    "in_listone": true
+  },
+  {
+    "player_id": "3bd6183c-6649-49f7-883f-17ff1646b2da",
+    "price": 17,
+    "in_listone": true
+  },
+  {
+    "player_id": "3be96eac-0e83-4c3c-95db-1703ee2061a9",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "3c9e0f53-c87f-4aaf-a277-dc29f8a49b6d",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "3cbf391b-c091-4b2f-a391-23c8fa6b4eb3",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "3cd2885e-8e25-4e3f-8c86-8af871b76421",
+    "price": 37,
+    "in_listone": true
+  },
+  {
+    "player_id": "3d49b936-1e2d-4daa-9b4c-5da87824531d",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "3ea15d31-a7de-40ae-af2e-702157929bb2",
+    "price": 76,
+    "in_listone": true
+  },
+  {
+    "player_id": "40a63839-7178-4c07-a693-34397b15f3f9",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "40b7cab1-faa3-4b57-a7ae-a775c8b35c97",
+    "price": 5,
+    "in_listone": true
+  },
+  {
+    "player_id": "413e773b-e7f1-4149-9f20-475e3cd1d957",
+    "price": 97,
+    "in_listone": true
+  },
+  {
+    "player_id": "4233bc51-6269-438c-8e85-5a77b7c17562",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "42c5eae5-f919-49c9-8a2f-5725fd1c07a5",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "434b9241-f825-4e71-b4a1-9ec6208bb5d5",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "43b435e3-9c76-4049-8efb-b4543bb16a79",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "43ee7850-9ecc-4539-aef0-e38d7627642a",
+    "price": 9,
+    "in_listone": true
+  },
+  {
+    "player_id": "446b046a-9ede-4c52-a3c6-b4bb37c50491",
+    "price": 1,
+    "in_listone": false
+  },
+  {
+    "player_id": "4505706f-e4f1-483b-995c-6c12460a2fe7",
+    "price": 13,
+    "in_listone": true
+  },
+  {
+    "player_id": "46cb2e9f-1fe6-459b-87b0-af6cb7f17417",
+    "price": 5,
+    "in_listone": true
+  },
+  {
+    "player_id": "46cdde29-6808-4c58-aee5-4bcfffce0c2f",
+    "price": 80,
+    "in_listone": true
+  },
+  {
+    "player_id": "477d1d7c-8070-4188-87b0-04c710f57123",
+    "price": 12,
+    "in_listone": true
+  },
+  {
+    "player_id": "478637a0-1f89-4ed5-9b39-e138e6d39235",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "47b98f36-e016-472c-b964-68dacaa07147",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "484337f8-bd3c-4565-9573-242728f35aa7",
+    "price": 7,
+    "in_listone": true
+  },
+  {
+    "player_id": "48d89ba5-1f9e-4485-a008-780980a3aabd",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "491914f6-841c-478f-a8d8-8710dd039a27",
+    "price": 15,
+    "in_listone": true
+  },
+  {
+    "player_id": "49a10190-2039-49b4-a915-9e38f7774f29",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "4a7b3303-8034-4780-9253-42e14d253000",
+    "price": 6,
+    "in_listone": true
+  },
+  {
+    "player_id": "4a7ed4dd-66d1-4837-9557-1e8148c21322",
+    "price": 22,
+    "in_listone": true
+  },
+  {
+    "player_id": "4ad9120d-c9ab-43fc-90e1-8365d2ab22d1",
+    "price": 200,
+    "in_listone": true
+  },
+  {
+    "player_id": "4ba6345f-376a-4c30-b44e-0a633e63724b",
+    "price": 3,
+    "in_listone": false
+  },
+  {
+    "player_id": "4bf60a8e-e3c7-4373-b5d5-80f893e7948b",
+    "price": 13,
+    "in_listone": true
+  },
+  {
+    "player_id": "4c0a9b1a-5827-48ac-814d-ed4b602d3c8c",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "4c0cefbf-1439-4815-9004-9bfdb5c41023",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "4c4bab94-7d6d-479c-b33f-d1032b0dee44",
+    "price": 6,
+    "in_listone": true
+  },
+  {
+    "player_id": "4c72a8d4-8416-4a9b-b70f-810f16af86ff",
+    "price": 134,
+    "in_listone": true
+  },
+  {
+    "player_id": "4cc6309e-aacf-4bb2-b5a8-e425bfdafcb0",
+    "price": 11,
+    "in_listone": true
+  },
+  {
+    "player_id": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
+    "price": 8,
+    "in_listone": true
+  },
+  {
+    "player_id": "4ceab25b-2c26-4a1c-a1e1-f4d857df9ade",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "4d65afcd-dc9b-4804-ac3e-1fd5d688c48c",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "4e6addce-b231-4f62-a054-3979cf1f4563",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "4e863a5b-d6ea-4aa0-8915-ecd6686bfa7b",
+    "price": 5,
+    "in_listone": true
+  },
+  {
+    "player_id": "4e91a6b6-006e-4c1f-a969-4e88bfa2fc42",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "4efcf99d-6dc0-4baf-a715-8e0e3bedacaf",
+    "price": 60,
+    "in_listone": false
+  },
+  {
+    "player_id": "4efd1869-7483-4b32-9db3-bbeb1641fac7",
+    "price": 9,
+    "in_listone": true
+  },
+  {
+    "player_id": "4f21f16a-dafc-43da-b1d5-789a1a4be6f7",
+    "price": 23,
+    "in_listone": true
+  },
+  {
+    "player_id": "4f4aa73b-ba5e-400e-a7e0-4f4cff87cfab",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "4f6ef454-f435-4d41-a431-dfe72c24d749",
+    "price": 2,
+    "in_listone": false
+  },
+  {
+    "player_id": "4f923ea1-81ed-468d-84e7-bc8adf85055f",
+    "price": 8,
+    "in_listone": true
+  },
+  {
+    "player_id": "4fad1100-f7d5-4245-aa2f-ea5075b48e51",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "503cf24d-dbdc-410e-8ce0-f58133032085",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "515cb6cb-fae1-428c-89cc-a97f5ccbc6c8",
+    "price": 10,
+    "in_listone": true
+  },
+  {
+    "player_id": "51f0abe3-4fe5-42fb-9994-34fbddcb56d5",
+    "price": 18,
+    "in_listone": true
+  },
+  {
+    "player_id": "5232e236-cf75-4f0c-baf3-47c6c2e2887a",
+    "price": 10,
+    "in_listone": true
+  },
+  {
+    "player_id": "52bad1f3-96f7-40d7-a473-fada24de2f93",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "53e42c7e-ea10-414b-a19f-ce1880b59641",
+    "price": 7,
+    "in_listone": true
+  },
+  {
+    "player_id": "54398484-ccc0-43e1-b9a1-716b35d836d1",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "56047277-ecee-44df-a949-782ccdb20a4b",
+    "price": 24,
+    "in_listone": true
+  },
+  {
+    "player_id": "56ee78ba-2510-4d61-9f05-0756220a9156",
+    "price": 5,
+    "in_listone": true
+  },
+  {
+    "player_id": "56f6449f-dda3-48cd-b535-9016b9ac7e65",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "570ee83d-8f44-4206-875c-10dd0430c4f3",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "577b9976-8b98-455e-8f3a-9b9a56192c20",
+    "price": 2,
+    "in_listone": false
+  },
+  {
+    "player_id": "5812c91b-36cc-413d-bc47-84de4f6e758a",
+    "price": 12,
+    "in_listone": true
+  },
+  {
+    "player_id": "5962a9f4-ed65-4dcd-9fee-75cc293bc475",
+    "price": 40,
+    "in_listone": false
+  },
+  {
+    "player_id": "5a25ffbb-db05-482f-91f8-24e76380f7c8",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "5a4cd663-45d1-4860-a750-c36684a2399b",
+    "price": 131,
+    "in_listone": true
+  },
+  {
+    "player_id": "5ac26525-5d7e-4464-b38e-fc37784e6ab4",
+    "price": 13,
+    "in_listone": true
+  },
+  {
+    "player_id": "5b821b6a-1de9-4678-8dda-2cca3ddfda02",
+    "price": 45,
+    "in_listone": true
+  },
+  {
+    "player_id": "5bca84cb-b411-4807-b588-7cbc2d7dc3f8",
+    "price": 73,
+    "in_listone": true
+  },
+  {
+    "player_id": "5bcf0569-1900-4392-bdd9-9154fc5d1fba",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "5bf283e4-3083-4042-a308-8656ff975e91",
+    "price": 1,
+    "in_listone": false
+  },
+  {
+    "player_id": "5cadee4f-90f3-4c1d-81aa-81037d286dbf",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "5d4bd759-1210-413a-8cd0-5b7ba268c802",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "5dc700e9-cd9d-493b-a143-94fbad6152b7",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "5e30ad05-c817-4f96-b015-8e6c5c46e9eb",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "5e421a0d-6a2a-4d1c-9767-174ee24c9631",
+    "price": 9,
+    "in_listone": true
+  },
+  {
+    "player_id": "5e559083-6456-4918-8130-ba0af7bab6dc",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "5f28f5f6-550d-4329-ae56-01f2db6e9e28",
+    "price": 29,
+    "in_listone": true
+  },
+  {
+    "player_id": "60a8a763-dcd9-42f3-b6db-875bca54ae39",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "61d44ce1-9cee-4bda-8ce5-8fd377f797ba",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "6332fc72-c508-4e04-bca1-db35ddda3e94",
+    "price": 5,
+    "in_listone": true
+  },
+  {
+    "player_id": "63942496-8801-49de-a546-1936651b99d5",
+    "price": 88,
+    "in_listone": true
+  },
+  {
+    "player_id": "645514e5-6f69-4e32-ae5e-57bb6bca13b7",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "659ce549-30d0-49f8-9880-ec47debabb4f",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "65b01da4-d962-42ce-bc23-e7bcc306a61b",
+    "price": 23,
+    "in_listone": true
+  },
+  {
+    "player_id": "66d27e91-681e-469d-a0f6-107f3fe04dbb",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "671bde75-248a-4a1c-9c28-e307fc924fd8",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "67c692f0-c0e9-4124-bcb1-db52e1c6022f",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "68414967-258d-4367-9c73-63f80de7b78f",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "6a2d0ee2-6bae-42d1-9cfd-06994a361b3d",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "6a4053f5-483f-4064-8e7b-0edadbbfa824",
+    "price": 16,
+    "in_listone": true
+  },
+  {
+    "player_id": "6ada201e-02d6-4da0-b333-4b3149daaab4",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "6b1677bc-b9b5-4546-8183-98f46bd039ab",
+    "price": 6,
+    "in_listone": true
+  },
+  {
+    "player_id": "6b5429b6-38fc-4a22-bdb6-8d1e62cfa1c4",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "6b73ffab-1bf1-40c1-9a8c-35dbc1d0ed1d",
+    "price": 62,
+    "in_listone": true
+  },
+  {
+    "player_id": "6bff9424-1ae3-4bba-b1d5-0ccfbafb3afa",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "6d146e3a-93ac-4fda-9c2b-8a65c94ab79d",
+    "price": 6,
+    "in_listone": true
+  },
+  {
+    "player_id": "6d1c5858-770c-4814-b9ca-3fd83a3337c9",
+    "price": 49,
+    "in_listone": true
+  },
+  {
+    "player_id": "6d40d5f0-2b47-4c3f-b828-982dc4241386",
+    "price": 1,
+    "in_listone": false
+  },
+  {
+    "player_id": "6d4a0ee8-65fd-4c18-aacf-a4312ec995ff",
+    "price": 17,
+    "in_listone": true
+  },
+  {
+    "player_id": "6d52d426-d54a-44b0-a83d-170404ac1049",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "6e6cb392-a2c4-4f16-bca7-f7e025f4c4fd",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "6f0efc62-d6a5-4540-a67b-cac636d8bdf0",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "6f1fa3c2-5ce5-4273-97e3-0fcb5c647657",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "7070624c-93f7-47d9-8a5d-e91e25328462",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "71a719be-e4c4-4b55-abe6-2a33135d4d18",
+    "price": 37,
+    "in_listone": true
+  },
+  {
+    "player_id": "720f5bed-4429-4b81-9117-7cd3b297a085",
+    "price": 25,
+    "in_listone": true
+  },
+  {
+    "player_id": "72b2eb13-c625-4fd5-b0e1-349d05f9e2e6",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "72dbbe00-ef42-4579-ba5e-74ac1cc06c8c",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "732b19cf-3340-4588-ba8a-85459261b4c1",
+    "price": 5,
+    "in_listone": true
+  },
+  {
+    "player_id": "73f10bed-3c22-4d9c-937b-e5dd70eaaf12",
+    "price": 5,
+    "in_listone": true
+  },
+  {
+    "player_id": "74386d11-89c5-443b-a5c5-bb9737ca2717",
+    "price": 13,
+    "in_listone": true
+  },
+  {
+    "player_id": "749247cd-79ed-44d6-a376-50afab6e25a0",
+    "price": 66,
+    "in_listone": true
+  },
+  {
+    "player_id": "74d5c13f-53e3-430b-b745-9043e34f51af",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "75bc7479-533c-4eb6-94dd-6f7194d1e114",
+    "price": 78,
+    "in_listone": true
+  },
+  {
+    "player_id": "7615a481-1f3d-4179-9e9d-a4f148bb1b82",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "76cabc00-f29e-402b-aa35-b88bacfd8aae",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "76ccd152-fe9d-440b-a890-6c9adef778ec",
+    "price": 5,
+    "in_listone": true
+  },
+  {
+    "player_id": "776c5c30-c674-4570-b9d6-03d0004fd4f2",
+    "price": 32,
+    "in_listone": true
+  },
+  {
+    "player_id": "7820f6cd-0527-4520-86d2-88bdb0515fd2",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "78344e2f-3ab0-44e0-9b4f-9322f65e4bed",
+    "price": 88,
+    "in_listone": true
+  },
+  {
+    "player_id": "78591c1c-9e6f-4f91-81e7-4b4db1a48fed",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "791c7987-68bd-402f-9206-2cf71a15e628",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "79706ce4-6a0e-4a57-bced-75dfcf9a9107",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "79b8b749-2cf5-4559-950a-448041c0a581",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "79e0486c-5861-4fb0-ba5c-f35bc19df8c3",
+    "price": 142,
+    "in_listone": true
+  },
+  {
+    "player_id": "7a3f1e53-1d23-427d-94ef-b4de00ca3edc",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "7a6908eb-f092-4f48-95af-b03ba52381dd",
+    "price": 52,
+    "in_listone": true
+  },
+  {
+    "player_id": "7b207af5-acdb-4021-9633-5b6fd9e29fa6",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
+    "price": 19,
+    "in_listone": true
+  },
+  {
+    "player_id": "7c69e511-41b6-4b38-b274-6b075e97d1de",
+    "price": 10,
+    "in_listone": true
+  },
+  {
+    "player_id": "7d117aaa-3a1c-4eb2-b76a-e4b784e21e06",
+    "price": 19,
+    "in_listone": true
+  },
+  {
+    "player_id": "7d6c8859-3dff-4bee-9d5a-1d2b436791a5",
+    "price": 5,
+    "in_listone": true
+  },
+  {
+    "player_id": "7daaf35b-39c8-455e-b938-5da6e218f4ff",
+    "price": 7,
+    "in_listone": true
+  },
+  {
+    "player_id": "7de498c5-1da2-468c-accb-1eb43170d5f4",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "7e004e1c-1d3a-4b48-bf93-e3a912b7b7f3",
+    "price": 9,
+    "in_listone": true
+  },
+  {
+    "player_id": "7e2553ec-4a22-486e-91a5-8702e666dc0d",
+    "price": 1,
+    "in_listone": false
+  },
+  {
+    "player_id": "7ec99bbb-0588-4713-b50d-b47aee32f814",
+    "price": 7,
+    "in_listone": true
+  },
+  {
+    "player_id": "7f1897b4-80fd-479c-9c47-e760d97a4a4b",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "7fa392f2-d52e-4a8f-8f57-8f80d1cb3985",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "7fe15059-21a8-41b8-9b03-2c4bd1513ff1",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "8062eeb3-ae6f-47db-b242-e8177da7652a",
+    "price": 14,
+    "in_listone": true
+  },
+  {
+    "player_id": "806328ab-7895-4972-a29d-b73f77580592",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "80ce5ddd-aff9-41f7-90d7-2f39513370bd",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "81dda297-825d-419f-bdc1-dadd2d326b6c",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "822eef68-617a-489d-acd7-806538ab99d2",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "835dda8c-fd31-4841-bcbf-9c86118b1424",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "83c096d2-f229-4069-8edc-bda786e34a7a",
+    "price": 16,
+    "in_listone": true
+  },
+  {
+    "player_id": "841ead71-8c30-4357-a513-9fbef459f3bb",
+    "price": 5,
+    "in_listone": true
+  },
+  {
+    "player_id": "84253356-eeb5-4faa-89ed-1c0f4949f38a",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "8479a96e-18ca-4c21-9813-ec0cc992dcf6",
+    "price": 80,
+    "in_listone": true
+  },
+  {
+    "player_id": "851bcc07-f340-45a4-b4ba-01cd9c57b5d6",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "85575d07-92d4-4504-962b-b60be45e68a6",
+    "price": 43,
+    "in_listone": true
+  },
+  {
+    "player_id": "85fe85c2-887d-490b-804b-8b0ff085e63f",
+    "price": 12,
+    "in_listone": true
+  },
+  {
+    "player_id": "866cbbd2-aa03-4161-af69-b95d337460f4",
+    "price": 5,
+    "in_listone": true
+  },
+  {
+    "player_id": "870b7bce-aea5-49b8-8e82-7bd7d4f247f9",
+    "price": 5,
+    "in_listone": true
+  },
+  {
+    "player_id": "883a53f2-3f11-4cc7-bbcc-ec7d21a99f74",
+    "price": 46,
+    "in_listone": true
+  },
+  {
+    "player_id": "884e3f60-294a-4eaf-8731-a0aef4daf2e5",
+    "price": 2,
+    "in_listone": false
+  },
+  {
+    "player_id": "88893e63-f3f6-4224-838b-8e189ef9f312",
+    "price": 9,
+    "in_listone": true
+  },
+  {
+    "player_id": "8952b9a9-20a7-430e-86c8-5a1eae9250fe",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "89b6b9f9-a5d9-4f2c-9752-60e85cd8be37",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "8a42bb83-261c-4d0b-aa2a-ecf87a361d96",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "8affb773-1a39-4adf-8cc1-dcb3e5f3d780",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "8b03e85a-ae9b-4274-9eaf-008d8d2c95b7",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "8b699eea-12c5-4d43-a509-994492ae66c0",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "8bf7a1fa-038d-4086-9c0b-1f0cd8342690",
+    "price": 19,
+    "in_listone": true
+  },
+  {
+    "player_id": "8c008468-48e2-47f3-be8e-017ec6cdec35",
+    "price": 6,
+    "in_listone": true
+  },
+  {
+    "player_id": "8c21288d-a991-4672-8d81-cc527060831c",
+    "price": 6,
+    "in_listone": true
+  },
+  {
+    "player_id": "8c5e6cdc-1d2c-4af5-94de-5cc63d79ca50",
+    "price": 8,
+    "in_listone": true
+  },
+  {
+    "player_id": "8ec42d80-ac4b-427d-83c1-9bfd15526f0d",
+    "price": 13,
+    "in_listone": true
+  },
+  {
+    "player_id": "8f888400-a95b-41f9-8dec-d65060204690",
+    "price": 26,
+    "in_listone": true
+  },
+  {
+    "player_id": "8f8eb4c3-9f0b-429e-9f76-69a46cc09c98",
+    "price": 9,
+    "in_listone": true
+  },
+  {
+    "player_id": "909ba55e-54d3-40d3-acc4-9cc0113a8ed5",
+    "price": 50,
+    "in_listone": true
+  },
+  {
+    "player_id": "910fbb96-6768-40c7-95cc-2fdeb9351f0c",
+    "price": 6,
+    "in_listone": true
+  },
+  {
+    "player_id": "912f7b0d-01d8-45e0-b7c3-62ba2037a649",
+    "price": 48,
+    "in_listone": true
+  },
+  {
+    "player_id": "91398549-f981-4cf1-85fd-ddf3b2d5bdab",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "917b4ad5-2521-4728-96a1-e5df0346dcf3",
+    "price": 7,
+    "in_listone": true
+  },
+  {
+    "player_id": "917c1aba-2196-4fc2-ae55-3ef820962f47",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "91989231-9213-435b-81c5-a7c7a7d85104",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "91b6ce45-5fd3-4f81-bdcf-771427e7205d",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "92945028-4965-4223-88ee-fc33bebac1cd",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "92bcdaf9-6420-4fb2-b3f5-ab7faca6f35f",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "92d60563-17a8-45d1-a6c1-3b8d5e676e1d",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "931356db-0d1a-43a6-b927-59da3782b7a7",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "94142a98-c364-47a6-9a08-f922cb8b3e1f",
+    "price": 40,
+    "in_listone": true
+  },
+  {
+    "player_id": "9451216d-7d3a-453a-a899-626710d2e572",
+    "price": 5,
+    "in_listone": true
+  },
+  {
+    "player_id": "95a465a2-502b-433b-8e10-67310cb1cb95",
+    "price": 5,
+    "in_listone": true
+  },
+  {
+    "player_id": "95aaa469-351a-4ce1-a71f-97dce55d47de",
+    "price": 5,
+    "in_listone": true
+  },
+  {
+    "player_id": "95d8739c-8b5e-44a3-9378-73a33aab1a00",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "964669d9-5d54-4176-9ce4-ffe5c802a0df",
+    "price": 1,
+    "in_listone": false
+  },
+  {
+    "player_id": "965c9759-e219-4f4d-a30c-18a8db5cc2b8",
+    "price": 5,
+    "in_listone": true
+  },
+  {
+    "player_id": "975f7429-8320-4cf5-92a9-093eb9ce4c82",
+    "price": 44,
+    "in_listone": true
+  },
+  {
+    "player_id": "9768530a-cba2-4c92-89bb-2390e70459cc",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "97d6767e-9030-4c03-bb3b-80d0b33b4b82",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "98549edb-5890-4d13-9027-43d228b85ca8",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "9869f556-9216-4950-b014-3dc6055d0167",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "98d71181-5ff4-4e27-8603-a8d8c4ccfb49",
+    "price": 23,
+    "in_listone": true
+  },
+  {
+    "player_id": "9974d5bb-0599-421d-8ee6-2aebf34143f8",
+    "price": 16,
+    "in_listone": true
+  },
+  {
+    "player_id": "99766bd9-0c92-4c84-961c-8c25bfa81488",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "999b1464-a7a0-45db-b466-8a24817b5a8c",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "9b9115fc-6b78-47ec-9924-c974e8b83378",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "9c1fb348-62af-4a63-9dfc-de159549767c",
+    "price": 9,
+    "in_listone": true
+  },
+  {
+    "player_id": "9c483384-d40d-4152-aa37-d7fd00624646",
+    "price": 7,
+    "in_listone": true
+  },
+  {
+    "player_id": "9ce7c50c-4dc1-427e-ab59-516c891e2ffb",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "9dd220ed-42e4-491f-8351-ff0bc7ab9e05",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "9dd42375-c5af-4221-9c1e-a2ad275b049d",
+    "price": 39,
+    "in_listone": true
+  },
+  {
+    "player_id": "9ecf743b-95b3-46f4-b3b8-777f6ed9262f",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "9f507758-5805-4ea3-9f4b-6158c66feefd",
+    "price": 5,
+    "in_listone": true
+  },
+  {
+    "player_id": "9f7a6ad7-d230-41f0-aa72-12933ab90027",
+    "price": 50,
+    "in_listone": true
+  },
+  {
+    "player_id": "9fa1a4e4-e867-49fd-a887-6a29ae0ee4be",
+    "price": 43,
+    "in_listone": true
+  },
+  {
+    "player_id": "9fa87205-24eb-47a7-8e79-689915992c32",
+    "price": 30,
+    "in_listone": true
+  },
+  {
+    "player_id": "a22c4fed-ed14-4567-bb53-c672d5bf5a5a",
+    "price": 26,
+    "in_listone": true
+  },
+  {
+    "player_id": "a27f6745-190b-4ca1-9274-bfc2933b074e",
+    "price": 18,
+    "in_listone": true
+  },
+  {
+    "player_id": "a2a9196a-3c70-4680-8e40-951ee6a10a22",
+    "price": 82,
+    "in_listone": true
+  },
+  {
+    "player_id": "a3420003-4392-4db8-ae31-712523234361",
+    "price": 42,
+    "in_listone": true
+  },
+  {
+    "player_id": "a34e2242-a8a2-479d-af45-90a3b6646223",
+    "price": 13,
+    "in_listone": true
+  },
+  {
+    "player_id": "a3a3adaf-0fee-415a-8962-f92c07772797",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "a3a9c8fe-19e5-4bd3-86f2-dc1959163ada",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "a411c282-00be-4e2f-8599-e0a2e5da85bf",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "a42a0043-f7e9-42fb-b6a1-e9045138b7b2",
+    "price": 7,
+    "in_listone": true
+  },
+  {
+    "player_id": "a42dcf25-e2b6-444a-91de-de30af32d121",
+    "price": 5,
+    "in_listone": true
+  },
+  {
+    "player_id": "a438f78d-7f8e-420f-ba4c-69246794d767",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "a4f95743-a2f0-4fb5-b7c4-c2b41c585cdf",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "a5ccb009-6b25-4d64-b16f-169784fd8920",
+    "price": 8,
+    "in_listone": true
+  },
+  {
+    "player_id": "a631380f-8283-444f-948c-bc772ffcc1bc",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "a694ffa3-522e-4fb2-bbb0-074554dcec12",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "a778e4d5-7591-4341-93cc-3fedebf36602",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "a780281a-3e2a-4faa-9f08-602ebd935a61",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "a896fcfb-1628-4043-a396-9f5b05cf90c2",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "a8aacd23-8bc2-4f2d-9e2a-93534e4a1641",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "aa07f5bd-dd03-463d-b95b-8aa8f3f2e3f1",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "aa67fd77-201f-45e6-b64a-8f88f380ef1e",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "aab3ee14-90d4-4eec-af47-33514cb8a009",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "aafed9d1-94e6-46a4-b6a6-9747f82b9576",
+    "price": 29,
+    "in_listone": true
+  },
+  {
+    "player_id": "ab0c501a-2374-4942-8133-781cf2c60a8e",
+    "price": 20,
+    "in_listone": true
+  },
+  {
+    "player_id": "ab2a5fb7-6ee0-4efe-92d2-adafe3bb3d3d",
+    "price": 26,
+    "in_listone": true
+  },
+  {
+    "player_id": "ab9e8244-7145-4065-a831-eadbe98d33a7",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "ace2a71a-be65-4788-aa2b-21036dfac576",
+    "price": 52,
+    "in_listone": true
+  },
+  {
+    "player_id": "ad44d41f-b385-401f-a5d3-6e8212c5b63b",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "ae4ddedd-7c30-471d-be3a-e3adb7dc765e",
+    "price": 25,
+    "in_listone": true
+  },
+  {
+    "player_id": "aeed69d5-c370-4108-929d-ba03ac11e1ae",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "af9f364b-0c1d-47fa-aa9a-c74fc9d5e06b",
+    "price": 17,
+    "in_listone": true
+  },
+  {
+    "player_id": "b04a4c83-2ea5-461c-8fec-832d413b553c",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "b073922c-058b-49b2-9d3f-c84fd1d25f4c",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "b0909a8f-766a-4a8c-86e6-d4295d761421",
+    "price": 39,
+    "in_listone": true
+  },
+  {
+    "player_id": "b0a5adbc-a222-48c2-9a8e-ccf200c42084",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "b13f6c95-3e12-4745-85eb-c646483bea89",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "b179e9e8-54a1-40bc-92b3-e2d1c1627e4e",
+    "price": 34,
+    "in_listone": true
+  },
+  {
+    "player_id": "b2912366-c560-4739-94a4-758de3f8a7fa",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "b2ce362c-91f3-408b-a84c-f3b6e49d2f88",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "b36b42d9-ec5e-4332-aec9-9259f65e45c9",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "b4537b2c-643d-4182-9c88-5669bb11e7f6",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
+    "price": 11,
+    "in_listone": true
+  },
+  {
+    "player_id": "b5bd1c96-73a5-4302-afd4-84f4139f1f2b",
+    "price": 17,
+    "in_listone": true
+  },
+  {
+    "player_id": "b610c091-be19-455b-9407-3e900cd50db2",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "b6596869-9189-4e7e-910b-d56d056ee034",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "b6e4d803-fb64-4bf4-9771-3673e4c4dc9a",
+    "price": 86,
+    "in_listone": true
+  },
+  {
+    "player_id": "b71cb6d6-95ef-45c1-af79-1871010c0466",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "b7ea8289-af1f-4f8d-8722-329bd42eca4b",
+    "price": 6,
+    "in_listone": true
+  },
+  {
+    "player_id": "b802051e-a34a-49ab-a8e4-7bf11ded728e",
+    "price": 8,
+    "in_listone": true
+  },
+  {
+    "player_id": "b82add03-f6f8-4788-94a2-4d9165698df5",
+    "price": 10,
+    "in_listone": true
+  },
+  {
+    "player_id": "b832c4ec-72cf-4c4b-8c6a-203912e87e4d",
+    "price": 56,
+    "in_listone": true
+  },
+  {
+    "player_id": "b86d1013-2a20-417e-b5a9-1bd4b97427df",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "b894b38e-67c8-42fb-946f-36b8a7b60349",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "b99d0657-4f2a-4b37-90ba-9a43926e55be",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "bb0e0e1e-c1f8-4676-94d1-ec1358aff228",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "bd30d79a-7c55-4012-b561-490cb8c2c69d",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "bd8db1bf-e321-4a41-8c85-d8c992036168",
+    "price": 5,
+    "in_listone": true
+  },
+  {
+    "player_id": "bde8b7a8-9307-4d1e-a3cc-430c5bee432b",
+    "price": 8,
+    "in_listone": true
+  },
+  {
+    "player_id": "bebe162a-502e-4833-9871-d6ec85ae07b1",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "beda60e5-18b9-479d-bb70-2f5f94520db2",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "beeb810b-47f6-4017-9337-21edb30796a6",
+    "price": 30,
+    "in_listone": true
+  },
+  {
+    "player_id": "bfba87ce-190b-4eab-a120-44416eb074c5",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "c005a40e-c9d9-4673-94b5-1c85551c4460",
+    "price": 31,
+    "in_listone": true
+  },
+  {
+    "player_id": "c07a5ed0-b1db-429b-9291-2998365fffc3",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "c155dc9b-bfb9-4a7d-8809-3ff0635ae290",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "c1ccf92c-b87c-4abd-9e4a-9c38375c920d",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "c294c6f4-b7d2-4657-a072-6d5cb3b65869",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "c3558909-e706-42a9-942e-a625546d591d",
+    "price": 25,
+    "in_listone": false
+  },
+  {
+    "player_id": "c35852ca-fb1c-4449-b6a1-026f9628d99e",
+    "price": 70,
+    "in_listone": true
+  },
+  {
+    "player_id": "c370e19c-ead2-4e80-a89c-b650631c1136",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "c3763cc2-a3d9-403f-8f5a-856896a47c5d",
+    "price": 21,
+    "in_listone": true
+  },
+  {
+    "player_id": "c4bdc06b-f44b-4a38-bcbd-f12ed77a0595",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "c4edceaa-6bb6-4fde-a3a1-beb70d100933",
+    "price": 13,
+    "in_listone": false
+  },
+  {
+    "player_id": "c54397de-b393-4e6c-8db3-ff1835fb14a5",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "c54ad644-51bc-4d7c-a8d1-300c3adc9324",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "c56c787c-4c3c-40e6-873f-596cffcd773e",
+    "price": 23,
+    "in_listone": true
+  },
+  {
+    "player_id": "c571ffe8-70c1-40b4-8175-6752f18eae5f",
+    "price": 7,
+    "in_listone": true
+  },
+  {
+    "player_id": "c64e2aa4-98c4-4867-8f32-7b2fdb0df61d",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "c824abfd-1f86-4d6f-a395-b9ed4661dc73",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "c8b9f9b9-95dd-4526-bc4a-07dd9255a253",
+    "price": 46,
+    "in_listone": true
+  },
+  {
+    "player_id": "c8bad906-4705-460c-88d4-708b73446b1b",
+    "price": 71,
+    "in_listone": true
+  },
+  {
+    "player_id": "c904108e-6a70-494d-9732-b39d2fc8264a",
+    "price": 15,
+    "in_listone": true
+  },
+  {
+    "player_id": "c91e4367-d0cc-42c8-a727-74afdb44f593",
+    "price": 24,
+    "in_listone": true
+  },
+  {
+    "player_id": "c936ac6a-f383-43a3-8568-182189db11a8",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "c9566c48-86e0-42ff-8820-d01b0d55efd7",
+    "price": 5,
+    "in_listone": true
+  },
+  {
+    "player_id": "c9db8149-35c2-4640-9b87-0ac4efe8d1b9",
+    "price": 6,
+    "in_listone": true
+  },
+  {
+    "player_id": "ca1d5381-2b54-4f76-8a2b-c52cda474dc8",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "ca464bbb-fe09-461d-a32f-8e235178752f",
+    "price": 11,
+    "in_listone": true
+  },
+  {
+    "player_id": "cab0cbf8-0bce-4186-8194-ec42337a82da",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "cbe2156e-f2a7-4e4d-9d46-472bf9c4a258",
+    "price": 16,
+    "in_listone": true
+  },
+  {
+    "player_id": "cbf2eb75-d38b-44dc-9709-c3280b88a57d",
+    "price": 29,
+    "in_listone": true
+  },
+  {
+    "player_id": "cc2e1884-6d93-4f28-bc2a-1bf671bbaf0f",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "cc2fad0a-cba6-4e46-9cba-d7d28ae5f195",
+    "price": 7,
+    "in_listone": true
+  },
+  {
+    "player_id": "cc4992f6-2313-4dfb-bd05-fde2ab22e067",
+    "price": 136,
+    "in_listone": true
+  },
+  {
+    "player_id": "cc800e08-9593-424a-a9d9-eb4da06257cc",
+    "price": 9,
+    "in_listone": true
+  },
+  {
+    "player_id": "ccaa3ad6-fe10-4ac8-b1c0-51d7b0f902aa",
+    "price": 25,
+    "in_listone": true
+  },
+  {
+    "player_id": "cce0d460-c7fb-42dc-b785-e9269a17f582",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "ce1cb519-9ff1-4394-a2b4-370d4cb27895",
+    "price": 5,
+    "in_listone": true
+  },
+  {
+    "player_id": "ce2387e6-839b-4f79-8e00-c2dd93f6ed8a",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "ce5b19a3-93bc-4d98-b799-c466274df41a",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "ced01d22-1684-45d0-bcde-9898ff26ae86",
+    "price": 37,
+    "in_listone": true
+  },
+  {
+    "player_id": "cfea3674-619d-4349-8165-5e5935a4e5a3",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "d063038f-c807-450b-a1a0-4ef17966dddc",
+    "price": 7,
+    "in_listone": true
+  },
+  {
+    "player_id": "d0d30a5a-3355-45a8-ad09-a29513473dae",
+    "price": 11,
+    "in_listone": true
+  },
+  {
+    "player_id": "d11d503a-b278-4e14-b201-b7862e1f955d",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "d190b87f-14d2-4a26-b57d-a8b2803d175e",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "d24218a4-0bbc-4dd6-b01d-cf9d0a9a90d5",
+    "price": 72,
+    "in_listone": true
+  },
+  {
+    "player_id": "d34d0df3-4b44-4cdd-8bfb-fdd5fcdfa14f",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "d47bf2f7-f320-4340-9845-33ef2f94d175",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "d4d1f7e7-31e5-40ec-ab01-11fa47ee49de",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "d5269f57-2928-4d3d-855c-fa0be565d03a",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "d5c0c1d2-f0d1-4e02-88f4-ba6d59dfc8f7",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "d627e1c5-e7e3-462e-8c4c-2f9aff0215f4",
+    "price": 8,
+    "in_listone": true
+  },
+  {
+    "player_id": "d739968a-b64a-4934-b1a7-695255f63af0",
+    "price": 8,
+    "in_listone": true
+  },
+  {
+    "player_id": "d796b194-efcc-4186-9291-2a8afcbf35ae",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "d850d49a-7b84-4f80-a7f3-f83b61df60a5",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "d8b66d33-4dcc-4cc8-9f3e-f5add19e00c5",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "d979e1ba-febc-4944-809a-90b3759e75c0",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "daf219f9-e5fb-4f2a-a7bf-808a15402abe",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "dbad7fbe-2421-4646-9b4f-6f065ae9a076",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "dbd256fc-4861-493d-8fc6-8abc4503c061",
+    "price": 26,
+    "in_listone": true
+  },
+  {
+    "player_id": "dbf4d6b8-9064-432c-afe6-57cea9ebf228",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "dbfc35e4-c44e-4082-921e-cacfec2de8a0",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "dc1712b1-57f3-433e-991a-2174387b8d39",
+    "price": 43,
+    "in_listone": true
+  },
+  {
+    "player_id": "dc221c49-a187-478c-b460-b8daab6631e2",
+    "price": 13,
+    "in_listone": true
+  },
+  {
+    "player_id": "dc34fb87-9d8a-472f-b9a3-5a7e07849659",
+    "price": 1,
+    "in_listone": false
+  },
+  {
+    "player_id": "dc3c7e4f-66dd-4d40-ac05-4c222aa0e770",
+    "price": 16,
+    "in_listone": true
+  },
+  {
+    "player_id": "dcd02213-98f7-48f7-9fe1-0825be166801",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "dd49cb6b-4769-4e5f-ab8c-a90ad7e100a8",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "df794a25-46b5-4bec-be5f-396198bb9d99",
+    "price": 26,
+    "in_listone": true
+  },
+  {
+    "player_id": "dfbe607e-c761-4f14-9791-98c4a0a02a75",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "e01c03d6-37a1-44be-bcf2-76cfa7fd0df3",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "e0a55f90-4742-4082-9921-d9ab29b25e18",
+    "price": 8,
+    "in_listone": true
+  },
+  {
+    "player_id": "e0b15df5-ed66-4e9d-b661-fe2043de1245",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "e0da5b59-193d-4063-8b09-f6a556e70afd",
+    "price": 8,
+    "in_listone": true
+  },
+  {
+    "player_id": "e12cb1ac-c451-4b75-bbe1-94bb602aa355",
+    "price": 8,
+    "in_listone": true
+  },
+  {
+    "player_id": "e1c87272-b4c8-47e7-a8b8-ffe2f7f1ec80",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "e1cd55ab-bde2-4d15-914d-d6795e905ac0",
+    "price": 7,
+    "in_listone": false
+  },
+  {
+    "player_id": "e259c4a6-1385-479b-b970-730c08be498f",
+    "price": 19,
+    "in_listone": true
+  },
+  {
+    "player_id": "e2613024-bb41-4d9a-8c1d-24f6e2c63838",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "e2f65951-61bc-4469-bd01-9340d6a556b2",
+    "price": 99,
+    "in_listone": true
+  },
+  {
+    "player_id": "e329f340-4dcb-450b-a014-f13b7177b16d",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "e3ca6a3a-4c39-4307-ab09-0520b0f066db",
+    "price": 15,
+    "in_listone": true
+  },
+  {
+    "player_id": "e4c3fc46-6e55-44db-82ed-b94636d768b4",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
+    "price": 8,
+    "in_listone": true
+  },
+  {
+    "player_id": "e61e195b-f44a-4d8c-8eff-8cab676bcc94",
+    "price": 14,
+    "in_listone": true
+  },
+  {
+    "player_id": "e64cb10e-8e0f-439a-8eb1-0ef08eb5fcf7",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "e750e65a-2285-401b-b7ad-a0fea8d2c498",
+    "price": 5,
+    "in_listone": true
+  },
+  {
+    "player_id": "e776d386-f107-4da9-8341-55a10fdf6c44",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "e8093c47-4f1a-4bcb-83b1-0c64385cddbe",
+    "price": 8,
+    "in_listone": true
+  },
+  {
+    "player_id": "e81593ae-46a8-4fe1-9624-44dd35e63ee9",
+    "price": 13,
+    "in_listone": true
+  },
+  {
+    "player_id": "e8e7494e-aa9d-4469-9026-8615bbb45f32",
+    "price": 22,
+    "in_listone": true
+  },
+  {
+    "player_id": "e8f602c5-a7bc-4d3a-a98b-a317bc211efa",
+    "price": 10,
+    "in_listone": true
+  },
+  {
+    "player_id": "e962868a-c447-43cd-8306-5378a88ee2d3",
+    "price": 47,
+    "in_listone": true
+  },
+  {
+    "player_id": "ea45629e-3083-496f-a75a-f75b06a132d8",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "eac8b0ac-13f0-4df2-b79a-3cdd43e9d242",
+    "price": 12,
+    "in_listone": true
+  },
+  {
+    "player_id": "eb01cf4b-a689-4016-8c30-0e7b058d0210",
+    "price": 19,
+    "in_listone": true
+  },
+  {
+    "player_id": "eb1e8211-468b-4db8-b9be-1a15afa2339d",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "eb46d3ff-e668-421c-8274-0716cdb571b2",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "ec99ae79-a018-4cd8-a4b1-1fe2f703553b",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "ec9e54b7-272b-48b0-acb4-841704350150",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "ecefd2d9-6777-459a-8683-2f95a1210f1e",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "ee4c44df-f6e9-464f-bb0d-89d675152de3",
+    "price": 12,
+    "in_listone": true
+  },
+  {
+    "player_id": "ee914aac-eaf9-4010-ae4a-b1872d7a35dd",
+    "price": 5,
+    "in_listone": true
+  },
+  {
+    "player_id": "eeb84dbb-797e-48bc-835f-f521fa337d89",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "eedbf897-636b-42dc-9a40-fefd10c30051",
+    "price": 6,
+    "in_listone": true
+  },
+  {
+    "player_id": "f06f2f39-13e2-4cda-8319-dffd25ec0cbd",
+    "price": 60,
+    "in_listone": true
+  },
+  {
+    "player_id": "f0931765-6826-46da-88a4-f6946b0a493b",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "f0cc9638-e365-41ec-a8d0-d55c37c876df",
+    "price": 19,
+    "in_listone": true
+  },
+  {
+    "player_id": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
+    "price": 13,
+    "in_listone": true
+  },
+  {
+    "player_id": "f1b43bc5-eda4-471e-a4cc-8cc46f3f704d",
+    "price": 5,
+    "in_listone": true
+  },
+  {
+    "player_id": "f1c0e033-83ec-4745-b8c7-cc6a43d6cb21",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "f2ec00b6-5b60-4145-bee2-011bfc7b995c",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "f2ef0efb-6a37-403e-ad92-1aec21604fb7",
+    "price": 25,
+    "in_listone": true
+  },
+  {
+    "player_id": "f2f6c58f-a728-4126-a053-12812c775ed4",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "f33242f6-3341-4541-a2f8-bb241f018742",
+    "price": 5,
+    "in_listone": true
+  },
+  {
+    "player_id": "f4f8e1e3-4b76-446f-b395-f7c2eeb90176",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "f5b1b43f-45be-4ebb-bed8-811434235418",
+    "price": 6,
+    "in_listone": true
+  },
+  {
+    "player_id": "f5c4b009-851b-4901-b6b4-0f66ec783639",
+    "price": 39,
+    "in_listone": true
+  },
+  {
+    "player_id": "f61d5ce5-111a-4f71-b6f7-dfe4393621d3",
+    "price": 30,
+    "in_listone": true
+  },
+  {
+    "player_id": "f729e4bf-bf18-4e1d-827a-20ef37865b8a",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "f74767ab-b1d1-4341-852a-5ba85a0326c5",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "f7f26f50-bd89-4d0f-ac5c-b196fe61f03c",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "f7f99d6a-c8e0-4ec8-a434-1ffba0253b41",
+    "price": 72,
+    "in_listone": true
+  },
+  {
+    "player_id": "f82a40fe-a7b2-4874-990e-7316edfcdcc5",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "f8e96ed3-8033-4167-b28c-ded154e83848",
+    "price": 35,
+    "in_listone": true
+  },
+  {
+    "player_id": "fa7e40ff-f212-423d-82ba-14887a232b9c",
+    "price": 11,
+    "in_listone": true
+  },
+  {
+    "player_id": "faff68a8-6487-469e-add5-36912ee075a1",
+    "price": 9,
+    "in_listone": true
+  },
+  {
+    "player_id": "fbbfed22-f662-4c6c-b22a-0778746038c2",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "fc066d51-ae78-42c1-b910-6a315514861c",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "fd290189-76d7-40bb-9a66-614f6b595b53",
+    "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "fd3cb6f4-d912-43b1-81f5-eedbd88a7390",
+    "price": 6,
+    "in_listone": true
+  },
+  {
+    "player_id": "fd7ae364-1f16-4f37-b54e-4f8453fe9de1",
+    "price": 43,
+    "in_listone": true
+  },
+  {
+    "player_id": "fd980a09-99b1-4174-81e5-60cbcd1fbb49",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "fed6d3d3-72d2-46f8-b556-77a12cc4dd0d",
+    "price": 4,
+    "in_listone": true
+  },
+  {
+    "player_id": "ff6d2747-657b-40dd-ba8e-ce66d83e2925",
+    "price": 9,
+    "in_listone": true
+  },
+  {
+    "player_id": "ff782703-864f-4bd4-bf85-b904f8816c2d",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "ffc0d828-4c6d-497f-b1c3-206e4ee92cae",
+    "price": 32,
+    "in_listone": true
+  }
+]

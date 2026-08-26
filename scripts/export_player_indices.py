@@ -1,10 +1,10 @@
 import json
 import re
 
-raw_info = open("sos-fanta/info.html", "r", encoding="utf-8").read().strip()
+raw_info = open("sos-fanta/info.json", "r", encoding="utf-8").read().strip()
 info = json.loads(raw_info, strict=False)
 
-raw_giocatori = open("sos-fanta/giocatori.html", "r", encoding="utf-8").read().strip()
+raw_giocatori = open("sos-fanta/giocatori.json", "r", encoding="utf-8").read().strip()
 giocatori = json.loads(raw_giocatori, strict=False)
 
 info_data = info.get("data", [])

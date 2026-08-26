@@ -2,10 +2,10 @@ import json
 import re
 
 # 1. Load sos-fanta files
-giocatori_raw = open("sos-fanta/giocatori.html", "r", encoding="utf-8").read().strip()
+giocatori_raw = open("sos-fanta/giocatori.json", "r", encoding="utf-8").read().strip()
 giocatori = json.loads(giocatori_raw, strict=False)
 
-player_strat_raw = open("sos-fanta/player-strategia.html", "r", encoding="utf-8").read().strip()
+player_strat_raw = open("sos-fanta/player-strategia.json", "r", encoding="utf-8").read().strip()
 player_strat = json.loads(player_strat_raw, strict=False)
 
 target_strat_id = "16f4475f-bec4-463a-9ce2-0ad554345a1a"

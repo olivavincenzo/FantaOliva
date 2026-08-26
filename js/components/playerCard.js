@@ -155,9 +155,19 @@ export function createPlayerCard(player, options = {}) {
     }
   }
 
-  // Header player top con info piazzati e preferiti
+  const photoUrl = player.photoUrl || player.playerImage || '';
+  const avatarHtml = `
+    <div class="avatar ${photoUrl ? 'has-photo' : ''}">
+      ${photoUrl 
+        ? `<img src="${photoUrl}" alt="" loading="lazy" class="card-thumb-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" /><span class="avatar-fallback-initials" style="display: none;">${initials}</span>` 
+        : `${initials}`}
+    </div>
+  `;
+
+  // Header player top con foto, info piazzati e preferiti
   const headerHtml = `
     <header class="player-top">
+      ${avatarHtml}
       <div class="identity">
         <div class="player-name-row">
           <h3 class="player-name" title="${sanitizeHtml(player.name)}">${sanitizeHtml(displayName)}</h3>

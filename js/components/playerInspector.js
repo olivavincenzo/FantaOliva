@@ -137,6 +137,14 @@ export class PlayerInspectorComponent {
     const isFavorite = store.isPlayerFavorite(player.id);
     const playerTier = store.getPlayerTier(player);
 
+    const photoUrl = player.photoUrl || player.playerImage || '';
+    const avatarHtml = photoUrl
+      ? `<div class="large-avatar has-photo">
+          <img src="${photoUrl}" alt="${sanitizeHtml(fullName)}" class="player-profile-img" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+          <span class="avatar-fallback-initials" style="display: none;">${initials}</span>
+        </div>`
+      : `<div class="large-avatar">${initials}</div>`;
+
     this.container.innerHTML = `
       <div class="detail-top">
         <span class="detail-title">Scheda giocatore</span>
@@ -148,7 +156,7 @@ export class PlayerInspectorComponent {
       <!-- Scheda Profilo Giocatore -->
       <section class="profile">
         <div class="profile-head">
-          <div class="large-avatar">${initials}</div>
+          ${avatarHtml}
           <div style="flex: 1; min-width: 0;">
             <h2 class="profile-name" title="${sanitizeHtml(fullName)}">${sanitizeHtml(fullName)}</h2>
             <p class="profile-meta">${sanitizeHtml(teamName)} · ${sanitizeHtml(roleLabel)} · ${classicRole}${mantraRole ? ` · ${mantraRole}` : ''}</p>

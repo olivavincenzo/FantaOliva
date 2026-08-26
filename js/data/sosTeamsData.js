@@ -17,8 +17,8 @@ export const SOS_TEAMS_DATA = {
     "module": "4-2-3-1",
     "attackRating": 4.5,
     "defenseRating": 4.5,
-    "comment": "Luciano Spalletti sostituisce in panchina l'ex tecnico Igor Tudor dopo un difficile inizio di stagione della\nJuventus. Inizialmente utilizzerà il modulo con la difesa a 3 per dare continuità alla precedente gestione ma con il\ntempo si passerà al 4-3-3 mantra del tecnico ex Napoli con la possibilià di virare al 4-3-1-2 con l'utilizzo del doppio\ncentravanti. La base tattica di Luciano Spalletti è la difesa a 4 e il centrocampo a3 che permette maggior equilibrio e\nmaggior copertura per il reparto offensivo.",
-    "sosFantaComment": "Luciano Spalletti è rimasto alla guida della Juventus, avanti col 4-2-3-1. Il nuovo portiere\ntitolare è Vicario, arrivato dal mercato. Alla fine è tornato Kolo Muani: sarà lui il centravanti titolare, David è il\nvice. Il club ha fatto un investimento importantissimo per Alajbegovic: si gioca un posto con Conceicao in fascia,\nYildiz sicuramente è intoccabile. McKennie può giocare sia da trequartista che in mediana. In difesa Lucumi è arrivato\nper giocare: è in pole su Kelly accanto a Bremer.",
+    "comment": "Luciano Spalletti sostituisce in panchina l'ex tecnico Igor Tudor dopo un difficile inizio di stagione della Juventus. Inizialmente utilizzerà il modulo con la difesa a 3 per dare continuità alla precedente gestione ma con il tempo si passerà al 4-3-3 mantra del tecnico ex Napoli con la possibilià di virare al 4-3-1-2 con l'utilizzo del doppio centravanti. La base tattica di Luciano Spalletti è la difesa a 4 e il centrocampo a3 che permette maggior equilibrio e maggior copertura per il reparto offensivo.",
+    "sosFantaComment": "Luciano Spalletti è rimasto alla guida della Juventus, avanti col 4-2-3-1. Il nuovo portiere titolare è Vicario, arrivato dal mercato. Alla fine è tornato Kolo Muani: sarà lui il centravanti titolare, David è il vice. Il club ha fatto un investimento importantissimo per Alajbegovic: si gioca un posto con Conceicao in fascia, Yildiz sicuramente è intoccabile. McKennie può giocare sia da trequartista che in mediana.  In difesa Lucumi è arrivato per giocare: è in pole su Kelly accanto a Bremer.",
     "keyPoints": [
       {
         "text": "Valorizzazione esterni offesivi",
@@ -87,9 +87,9 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
-        "playerId": "ace2a71a-be65-4788-aa2b-21036dfac576",
-        "csvId": null,
-        "name": "Alajbegovic",
+        "playerId": "9fa1a4e4-e867-49fd-a887-6a29ae0ee4be",
+        "csvId": 6884,
+        "name": "Conceicao",
         "role": "C"
       },
       {
@@ -160,14 +160,14 @@ export const SOS_TEAMS_DATA = {
     "ballottaggi": [
       [
         {
-          "playerId": "ace2a71a-be65-4788-aa2b-21036dfac576",
-          "name": "Alajbegovic",
+          "playerId": "9fa1a4e4-e867-49fd-a887-6a29ae0ee4be",
+          "name": "Conceicao",
           "role": "C",
           "perc": 51
         },
         {
-          "playerId": "9fa1a4e4-e867-49fd-a887-6a29ae0ee4be",
-          "name": "Conceicao",
+          "playerId": "ace2a71a-be65-4788-aa2b-21036dfac576",
+          "name": "Alajbegovic",
           "role": "C",
           "perc": 49
         }
@@ -254,8 +254,8 @@ export const SOS_TEAMS_DATA = {
     "module": "4-2-3-1",
     "attackRating": 4.5,
     "defenseRating": 4.5,
-    "comment": "Luciano Spalletti sostituisce in panchina l'ex tecnico Igor Tudor dopo un difficile inizio di stagione della\nJuventus. Inizialmente utilizzerà il modulo con la difesa a 3 per dare continuità alla precedente gestione ma con il\ntempo si passerà al 4-3-3 mantra del tecnico ex Napoli con la possibilià di virare al 4-3-1-2 con l'utilizzo del doppio\ncentravanti. La base tattica di Luciano Spalletti è la difesa a 4 e il centrocampo a3 che permette maggior equilibrio e\nmaggior copertura per il reparto offensivo.",
-    "sosFantaComment": "Luciano Spalletti è rimasto alla guida della Juventus, avanti col 4-2-3-1. Il nuovo portiere\ntitolare è Vicario, arrivato dal mercato. Alla fine è tornato Kolo Muani: sarà lui il centravanti titolare, David è il\nvice. Il club ha fatto un investimento importantissimo per Alajbegovic: si gioca un posto con Conceicao in fascia,\nYildiz sicuramente è intoccabile. McKennie può giocare sia da trequartista che in mediana. In difesa Lucumi è arrivato\nper giocare: è in pole su Kelly accanto a Bremer.",
+    "comment": "Luciano Spalletti sostituisce in panchina l'ex tecnico Igor Tudor dopo un difficile inizio di stagione della Juventus. Inizialmente utilizzerà il modulo con la difesa a 3 per dare continuità alla precedente gestione ma con il tempo si passerà al 4-3-3 mantra del tecnico ex Napoli con la possibilià di virare al 4-3-1-2 con l'utilizzo del doppio centravanti. La base tattica di Luciano Spalletti è la difesa a 4 e il centrocampo a3 che permette maggior equilibrio e maggior copertura per il reparto offensivo.",
+    "sosFantaComment": "Luciano Spalletti è rimasto alla guida della Juventus, avanti col 4-2-3-1. Il nuovo portiere titolare è Vicario, arrivato dal mercato. Alla fine è tornato Kolo Muani: sarà lui il centravanti titolare, David è il vice. Il club ha fatto un investimento importantissimo per Alajbegovic: si gioca un posto con Conceicao in fascia, Yildiz sicuramente è intoccabile. McKennie può giocare sia da trequartista che in mediana.  In difesa Lucumi è arrivato per giocare: è in pole su Kelly accanto a Bremer.",
     "keyPoints": [
       {
         "text": "Valorizzazione esterni offesivi",
@@ -324,9 +324,9 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
-        "playerId": "ace2a71a-be65-4788-aa2b-21036dfac576",
-        "csvId": null,
-        "name": "Alajbegovic",
+        "playerId": "9fa1a4e4-e867-49fd-a887-6a29ae0ee4be",
+        "csvId": 6884,
+        "name": "Conceicao",
         "role": "C"
       },
       {
@@ -397,14 +397,14 @@ export const SOS_TEAMS_DATA = {
     "ballottaggi": [
       [
         {
-          "playerId": "ace2a71a-be65-4788-aa2b-21036dfac576",
-          "name": "Alajbegovic",
+          "playerId": "9fa1a4e4-e867-49fd-a887-6a29ae0ee4be",
+          "name": "Conceicao",
           "role": "C",
           "perc": 51
         },
         {
-          "playerId": "9fa1a4e4-e867-49fd-a887-6a29ae0ee4be",
-          "name": "Conceicao",
+          "playerId": "ace2a71a-be65-4788-aa2b-21036dfac576",
+          "name": "Alajbegovic",
           "role": "C",
           "perc": 49
         }
@@ -491,8 +491,8 @@ export const SOS_TEAMS_DATA = {
     "module": "4-3-3",
     "attackRating": 3.5,
     "defenseRating": 4.0,
-    "comment": "Torna alla Lazio dopo il biennio 2022-2024 con idee chiare e un gioco che conosciamo fin troppo bene. Il suo\n4-3-3 si fonda su possesso palla, costruzione ragionata e movimenti codificati. Predilige giocatori tecnici e\nintelligenti: chi sta in mezzo deve saper palleggiare e inserirsi, mentre chi gioca largo ha il compito di dare ampiezza\ne saltare l’uomo. Il centravanti, invece, non può limitarsi a finalizzare: deve partecipare attivamente alla manovra.\nChi ha già lavorato con lui parte favorito in chiave fantacalcio, mentre i nuovi potrebbero aver bisogno di tempo per\nassimilare i meccanismi.",
-    "sosFantaComment": "È arrivato Rino Gattuso in panchina, ma la Lazio giocherà ancora col 4-3-3 come nella passata\nstagione. Provedel è partito, Mandas è tornato: si candida a essere lui il titolare in porta, è in vantaggio su Motta.\nNovità Doekhi al centro della difesa, Romagnoli per ora è rimasto ma occhio al mercato; a sinistra Pedraza si gioca il\nposto con Pellegrini visto che Tavares sembra destinato a partire. Rovella o Cataldi, testa a testa in cabina di regia.\nA destra nel tridente Isaksen (quando torna dall'infortunio, per inizio settembre circa) in pole su Cancellieri, mentre\nuna prima punta titolare arriverà: al momento ci sono Noslin, Dia e Ratkov.",
+    "comment": "Torna alla Lazio dopo il biennio 2022-2024 con idee chiare e un gioco che conosciamo fin troppo bene. Il suo 4-3-3 si fonda su possesso palla, costruzione ragionata e movimenti codificati. Predilige giocatori tecnici e intelligenti: chi sta in mezzo deve saper palleggiare e inserirsi, mentre chi gioca largo ha il compito di dare ampiezza e saltare l’uomo. Il centravanti, invece, non può limitarsi a finalizzare: deve partecipare attivamente alla manovra. Chi ha già lavorato con lui parte favorito in chiave fantacalcio, mentre i nuovi potrebbero aver bisogno di tempo per assimilare i meccanismi.",
+    "sosFantaComment": "È arrivato Rino Gattuso in panchina, ma la Lazio giocherà ancora col 4-3-3 come nella passata stagione. Provedel è partito, Mandas è tornato: si candida a essere lui il titolare in porta, è in vantaggio su Motta. Novità Sutalo e Doekhi al centro della difesa (ha più chance di essere titolare il primo), Romagnoli per ora è rimasto ma occhio al mercato; a sinistra Pedraza si gioca il posto con Pellegrini visto che Tavares sembra destinato a partire. Rovella o Cataldi, testa a testa in cabina di regia. A destra nel tridente Isaksen una volta al 100% è in pole su Cancellieri, mentre una prima punta titolare arriverà: al momento ci sono Noslin, Dia e Ratkov.",
     "keyPoints": [
       {
         "text": "Punta centrale riferimento principale ",
@@ -535,9 +535,9 @@ export const SOS_TEAMS_DATA = {
         "role": "D"
       },
       {
-        "playerId": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
-        "csvId": null,
-        "name": "Doekhi",
+        "playerId": "c571ffe8-70c1-40b4-8175-6752f18eae5f",
+        "csvId": 7580,
+        "name": "Sutalo J.",
         "role": "D"
       },
       {
@@ -704,6 +704,20 @@ export const SOS_TEAMS_DATA = {
           "name": "Dia",
           "role": "A",
           "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "c571ffe8-70c1-40b4-8175-6752f18eae5f",
+          "name": "Sutalo J.",
+          "role": "D",
+          "perc": 60
+        },
+        {
+          "playerId": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
+          "name": "Doekhi",
+          "role": "D",
+          "perc": 40
         }
       ]
     ],
@@ -767,8 +781,8 @@ export const SOS_TEAMS_DATA = {
     "module": "4-3-3",
     "attackRating": 3.5,
     "defenseRating": 4.0,
-    "comment": "Torna alla Lazio dopo il biennio 2022-2024 con idee chiare e un gioco che conosciamo fin troppo bene. Il suo\n4-3-3 si fonda su possesso palla, costruzione ragionata e movimenti codificati. Predilige giocatori tecnici e\nintelligenti: chi sta in mezzo deve saper palleggiare e inserirsi, mentre chi gioca largo ha il compito di dare ampiezza\ne saltare l’uomo. Il centravanti, invece, non può limitarsi a finalizzare: deve partecipare attivamente alla manovra.\nChi ha già lavorato con lui parte favorito in chiave fantacalcio, mentre i nuovi potrebbero aver bisogno di tempo per\nassimilare i meccanismi.",
-    "sosFantaComment": "È arrivato Rino Gattuso in panchina, ma la Lazio giocherà ancora col 4-3-3 come nella passata\nstagione. Provedel è partito, Mandas è tornato: si candida a essere lui il titolare in porta, è in vantaggio su Motta.\nNovità Doekhi al centro della difesa, Romagnoli per ora è rimasto ma occhio al mercato; a sinistra Pedraza si gioca il\nposto con Pellegrini visto che Tavares sembra destinato a partire. Rovella o Cataldi, testa a testa in cabina di regia.\nA destra nel tridente Isaksen (quando torna dall'infortunio, per inizio settembre circa) in pole su Cancellieri, mentre\nuna prima punta titolare arriverà: al momento ci sono Noslin, Dia e Ratkov.",
+    "comment": "Torna alla Lazio dopo il biennio 2022-2024 con idee chiare e un gioco che conosciamo fin troppo bene. Il suo 4-3-3 si fonda su possesso palla, costruzione ragionata e movimenti codificati. Predilige giocatori tecnici e intelligenti: chi sta in mezzo deve saper palleggiare e inserirsi, mentre chi gioca largo ha il compito di dare ampiezza e saltare l’uomo. Il centravanti, invece, non può limitarsi a finalizzare: deve partecipare attivamente alla manovra. Chi ha già lavorato con lui parte favorito in chiave fantacalcio, mentre i nuovi potrebbero aver bisogno di tempo per assimilare i meccanismi.",
+    "sosFantaComment": "È arrivato Rino Gattuso in panchina, ma la Lazio giocherà ancora col 4-3-3 come nella passata stagione. Provedel è partito, Mandas è tornato: si candida a essere lui il titolare in porta, è in vantaggio su Motta. Novità Sutalo e Doekhi al centro della difesa (ha più chance di essere titolare il primo), Romagnoli per ora è rimasto ma occhio al mercato; a sinistra Pedraza si gioca il posto con Pellegrini visto che Tavares sembra destinato a partire. Rovella o Cataldi, testa a testa in cabina di regia. A destra nel tridente Isaksen una volta al 100% è in pole su Cancellieri, mentre una prima punta titolare arriverà: al momento ci sono Noslin, Dia e Ratkov.",
     "keyPoints": [
       {
         "text": "Punta centrale riferimento principale ",
@@ -811,9 +825,9 @@ export const SOS_TEAMS_DATA = {
         "role": "D"
       },
       {
-        "playerId": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
-        "csvId": null,
-        "name": "Doekhi",
+        "playerId": "c571ffe8-70c1-40b4-8175-6752f18eae5f",
+        "csvId": 7580,
+        "name": "Sutalo J.",
         "role": "D"
       },
       {
@@ -981,6 +995,20 @@ export const SOS_TEAMS_DATA = {
           "role": "A",
           "perc": 49
         }
+      ],
+      [
+        {
+          "playerId": "c571ffe8-70c1-40b4-8175-6752f18eae5f",
+          "name": "Sutalo J.",
+          "role": "D",
+          "perc": 60
+        },
+        {
+          "playerId": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
+          "name": "Doekhi",
+          "role": "D",
+          "perc": 40
+        }
       ]
     ],
     "up": [
@@ -1043,8 +1071,8 @@ export const SOS_TEAMS_DATA = {
     "module": "4-3-3",
     "attackRating": 4.0,
     "defenseRating": 3.5,
-    "comment": "Il Bologna si caratterizza per un gioco molto dinamico, con i giocatori che spesso si scambiano le posizioni\nper creare confusione nella difesa avversaria. Il ruolo degli esterni d’attacco è fondamentale: sono loro a garantire\nampiezza, velocità e spesso i gol e gli assist più importanti. La difesa è molto alta, in linea con il pressing\naggressivo che la squadra mette in campo, ma questo comporta qualche rischio in ripartenza. Attenzione anche al turn\nover elevato, che può influenzare la continuità di rendimento di alcuni giocatori, specialmente in ottica fantacalcio.",
-    "sosFantaComment": "Da Italiano a Domenico Tedesco, cambio in panchina nel Bologna ma a livello tattico è confermato il\n4-3-3 di partenza. Dovbyk è arrivato per giocare, se starà bene sarà il centravanti titolare con Piccoli come vice.\nL'allenatore vuole far coesistere Orsolini e Bernardeschi, con quest'ultimo da mezzala destra (provato in questo ruolo\nanche Odgaard). Pobega o Moro, si giocano una maglia e c'è anche il nuovo arrivato Amondarain. Zortea parte in pole su\nHolm per il ruolo di terzino destro.",
+    "comment": "Il Bologna si caratterizza per un gioco molto dinamico, con i giocatori che spesso si scambiano le posizioni per creare confusione nella difesa avversaria. Il ruolo degli esterni d’attacco è fondamentale: sono loro a garantire ampiezza, velocità e spesso i gol e gli assist più importanti. La difesa è molto alta, in linea con il pressing aggressivo che la squadra mette in campo, ma questo comporta qualche rischio in ripartenza. Attenzione anche al turn over elevato, che può influenzare la continuità di rendimento di alcuni giocatori, specialmente in ottica fantacalcio.",
+    "sosFantaComment": "Da Italiano a Domenico Tedesco, cambio in panchina nel Bologna ma a livello tattico è confermato il 4-3-3 di partenza. Dovbyk è arrivato per giocare, se starà bene sarà il centravanti titolare con Piccoli come vice. L'allenatore vuole far coesistere Orsolini e Bernardeschi, con quest'ultimo da mezzala destra (provato in questo ruolo anche Odgaard). Pobega o Moro, si giocano una maglia e c'è anche il nuovo arrivato Amondarain. Zortea parte in pole su Holm per il ruolo di terzino destro; o Vitik o Helland al centro per sostituire Lucumì.",
     "keyPoints": [
       {
         "text": "Valorizzazione esterni d'attacco",
@@ -1234,6 +1262,20 @@ export const SOS_TEAMS_DATA = {
           "name": "Piccoli",
           "role": "A",
           "perc": 45
+        }
+      ],
+      [
+        {
+          "playerId": "c54397de-b393-4e6c-8db3-ff1835fb14a5",
+          "name": "Vitik",
+          "role": "D",
+          "perc": 51
+        },
+        {
+          "playerId": "4233bc51-6269-438c-8e85-5a77b7c17562",
+          "name": "Helland",
+          "role": "D",
+          "perc": 49
         }
       ]
     ],
@@ -1297,8 +1339,8 @@ export const SOS_TEAMS_DATA = {
     "module": "4-3-3",
     "attackRating": 4.0,
     "defenseRating": 3.5,
-    "comment": "Il Bologna si caratterizza per un gioco molto dinamico, con i giocatori che spesso si scambiano le posizioni\nper creare confusione nella difesa avversaria. Il ruolo degli esterni d’attacco è fondamentale: sono loro a garantire\nampiezza, velocità e spesso i gol e gli assist più importanti. La difesa è molto alta, in linea con il pressing\naggressivo che la squadra mette in campo, ma questo comporta qualche rischio in ripartenza. Attenzione anche al turn\nover elevato, che può influenzare la continuità di rendimento di alcuni giocatori, specialmente in ottica fantacalcio.",
-    "sosFantaComment": "Da Italiano a Domenico Tedesco, cambio in panchina nel Bologna ma a livello tattico è confermato il\n4-3-3 di partenza. Dovbyk è arrivato per giocare, se starà bene sarà il centravanti titolare con Piccoli come vice.\nL'allenatore vuole far coesistere Orsolini e Bernardeschi, con quest'ultimo da mezzala destra (provato in questo ruolo\nanche Odgaard). Pobega o Moro, si giocano una maglia e c'è anche il nuovo arrivato Amondarain. Zortea parte in pole su\nHolm per il ruolo di terzino destro.",
+    "comment": "Il Bologna si caratterizza per un gioco molto dinamico, con i giocatori che spesso si scambiano le posizioni per creare confusione nella difesa avversaria. Il ruolo degli esterni d’attacco è fondamentale: sono loro a garantire ampiezza, velocità e spesso i gol e gli assist più importanti. La difesa è molto alta, in linea con il pressing aggressivo che la squadra mette in campo, ma questo comporta qualche rischio in ripartenza. Attenzione anche al turn over elevato, che può influenzare la continuità di rendimento di alcuni giocatori, specialmente in ottica fantacalcio.",
+    "sosFantaComment": "Da Italiano a Domenico Tedesco, cambio in panchina nel Bologna ma a livello tattico è confermato il 4-3-3 di partenza. Dovbyk è arrivato per giocare, se starà bene sarà il centravanti titolare con Piccoli come vice. L'allenatore vuole far coesistere Orsolini e Bernardeschi, con quest'ultimo da mezzala destra (provato in questo ruolo anche Odgaard). Pobega o Moro, si giocano una maglia e c'è anche il nuovo arrivato Amondarain. Zortea parte in pole su Holm per il ruolo di terzino destro; o Vitik o Helland al centro per sostituire Lucumì.",
     "keyPoints": [
       {
         "text": "Valorizzazione esterni d'attacco",
@@ -1488,6 +1530,20 @@ export const SOS_TEAMS_DATA = {
           "name": "Piccoli",
           "role": "A",
           "perc": 45
+        }
+      ],
+      [
+        {
+          "playerId": "c54397de-b393-4e6c-8db3-ff1835fb14a5",
+          "name": "Vitik",
+          "role": "D",
+          "perc": 51
+        },
+        {
+          "playerId": "4233bc51-6269-438c-8e85-5a77b7c17562",
+          "name": "Helland",
+          "role": "D",
+          "perc": 49
         }
       ]
     ],
@@ -1552,7 +1608,7 @@ export const SOS_TEAMS_DATA = {
     "attackRating": 2.5,
     "defenseRating": 2.0,
     "comment": "",
-    "sosFantaComment": "Giovanni Stroppa confermato sulla panchina del neopromosso Venezia, avanti con il 3-5-2 ma con\ngrandi novità soprattutto in attacco. Akor Adams e Yeboah sono in pole, occhio all'altro nuovo arrivato Rrahmani alle\nloro spalle. Basic e Sohm si candidano a giocare con Busio, Kike Perez prima alternativa. Correia a destra favorito su\nHainaut, in difesa o Moreno o Halhal mentre Bella-Kotchap giocherà.",
+    "sosFantaComment": "Giovanni Stroppa confermato sulla panchina del neopromosso Venezia, avanti con il 3-5-2 ma con grandi novità soprattutto in attacco. Akor Adams e Yeboah sono in pole, occhio all'altro nuovo arrivato Rrahmani alle loro spalle. Basic e Sohm si candidano a giocare con Busio, Kike Perez prima alternativa. Correia a destra favorito su Hainaut, in difesa o Moreno o Halhal mentre Bella-Kotchap giocherà.",
     "keyPoints": [
       {
         "text": "Gioco costante sugli esterni",
@@ -1651,6 +1707,11 @@ export const SOS_TEAMS_DATA = {
     ],
     "rig": [
       {
+        "playerId": "910fbb96-6768-40c7-95cc-2fdeb9351f0c",
+        "name": "Busio",
+        "role": "C"
+      },
+      {
         "playerId": "cbf2eb75-d38b-44dc-9709-c3280b88a57d",
         "name": "Adams A.",
         "role": "A"
@@ -1658,11 +1719,6 @@ export const SOS_TEAMS_DATA = {
       {
         "playerId": "841ead71-8c30-4357-a513-9fbef459f3bb",
         "name": "Rrahmani A.",
-        "role": "A"
-      },
-      {
-        "playerId": "248504d8-fd98-41ce-8f6b-db46784043a5",
-        "name": "Yeboah J.",
         "role": "A"
       }
     ],
@@ -1801,7 +1857,7 @@ export const SOS_TEAMS_DATA = {
     "attackRating": 2.5,
     "defenseRating": 2.0,
     "comment": "",
-    "sosFantaComment": "Giovanni Stroppa confermato sulla panchina del neopromosso Venezia, avanti con il 3-5-2 ma con\ngrandi novità soprattutto in attacco. Akor Adams e Yeboah sono in pole, occhio all'altro nuovo arrivato Rrahmani alle\nloro spalle. Basic e Sohm si candidano a giocare con Busio, Kike Perez prima alternativa. Correia a destra favorito su\nHainaut, in difesa o Moreno o Halhal mentre Bella-Kotchap giocherà.",
+    "sosFantaComment": "Giovanni Stroppa confermato sulla panchina del neopromosso Venezia, avanti con il 3-5-2 ma con grandi novità soprattutto in attacco. Akor Adams e Yeboah sono in pole, occhio all'altro nuovo arrivato Rrahmani alle loro spalle. Basic e Sohm si candidano a giocare con Busio, Kike Perez prima alternativa. Correia a destra favorito su Hainaut, in difesa o Moreno o Halhal mentre Bella-Kotchap giocherà.",
     "keyPoints": [
       {
         "text": "Gioco costante sugli esterni",
@@ -1900,6 +1956,11 @@ export const SOS_TEAMS_DATA = {
     ],
     "rig": [
       {
+        "playerId": "910fbb96-6768-40c7-95cc-2fdeb9351f0c",
+        "name": "Busio",
+        "role": "C"
+      },
+      {
         "playerId": "cbf2eb75-d38b-44dc-9709-c3280b88a57d",
         "name": "Adams A.",
         "role": "A"
@@ -1907,11 +1968,6 @@ export const SOS_TEAMS_DATA = {
       {
         "playerId": "841ead71-8c30-4357-a513-9fbef459f3bb",
         "name": "Rrahmani A.",
-        "role": "A"
-      },
-      {
-        "playerId": "248504d8-fd98-41ce-8f6b-db46784043a5",
-        "name": "Yeboah J.",
         "role": "A"
       }
     ],
@@ -2049,8 +2105,8 @@ export const SOS_TEAMS_DATA = {
     "module": "4-2-3-1",
     "attackRating": 5.0,
     "defenseRating": 4.5,
-    "comment": "Ha costruito il suo Como su un’identità chiara e ambiziosa, ispirata al calcio di posizione. Il suo sistema\npredilige un 4-2-3-1 con interscambi tra i trequartisti, ricerca costante della superiorità posizionale e una gestione\npaziente del ritmo. Gli esterni alti sono fondamentali nel fissare l'ampiezza e liberare spazio tra le linee, mentre la\nsquadra cerca sempre di mantenere il controllo del pallone anche sotto pressione. Questo approccio, coraggioso e ben\ncodificato, ha portato il Como a uno storico decimo posto in Serie A, sorprendendo per maturità e qualità. In ottica\nfantacalcio, attenzione ai profili tecnici: chi sa muoversi tra le linee e leggere il gioco può emergere come\nprotagonista.",
-    "sosFantaComment": "Rimane Fabregas in panchina per un Como da Champions, con la conferma dell'ormai consolidato\n4-2-3-1. A destra è arrivato Yan Couto e parte in pole su Smolcic mentre a sinistra il ballottaggio è tra Valle e il\nnuovo arrivato Kaiki (qui è un testa a testa vero). Chalobah arriva per giocare in difesa, o Ramon o Kempf al suo\nfianco. Gerarchie meno rigide e più rotazioni con la Champions. In mediana Milla prova a insidiare Perrone, che resta\ncomunque il favorito. Baturina e Diao in pole sulle fasce, ma c'è anche Rodriguez.",
+    "comment": "Ha costruito il suo Como su un’identità chiara e ambiziosa, ispirata al calcio di posizione. Il suo sistema predilige un 4-2-3-1 con interscambi tra i trequartisti, ricerca costante della superiorità posizionale e una gestione paziente del ritmo. Gli esterni alti sono fondamentali nel fissare l'ampiezza e liberare spazio tra le linee, mentre la squadra cerca sempre di mantenere il controllo del pallone anche sotto pressione. Questo approccio, coraggioso e ben codificato, ha portato il Como a uno storico decimo posto in Serie A, sorprendendo per maturità e qualità. In ottica fantacalcio, attenzione ai profili tecnici: chi sa muoversi tra le linee e leggere il gioco può emergere come protagonista.",
+    "sosFantaComment": "Rimane Fabregas in panchina per un Como da Champions, con la conferma dell'ormai consolidato 4-2-3-1. A destra è arrivato Yan Couto e parte in pole su Smolcic mentre a sinistra il ballottaggio è tra Valle e il nuovo arrivato Kaiki (qui è un testa a testa vero). Chalobah arriva per giocare in difesa, o Ramon o Kempf al suo fianco. Gerarchie meno rigide e più rotazioni con la Champions. In mediana Milla insidia Perrone e Da Cunha, che restano comunque i due favoriti. Baturina e Diao in pole sulle fasce, ma c'è anche Rodriguez che avrà grande spazio.",
     "keyPoints": [
       {
         "text": "Valorizzazione giovani",
@@ -2335,8 +2391,8 @@ export const SOS_TEAMS_DATA = {
     "module": "4-2-3-1",
     "attackRating": 5.0,
     "defenseRating": 4.5,
-    "comment": "Ha costruito il suo Como su un’identità chiara e ambiziosa, ispirata al calcio di posizione. Il suo sistema\npredilige un 4-2-3-1 con interscambi tra i trequartisti, ricerca costante della superiorità posizionale e una gestione\npaziente del ritmo. Gli esterni alti sono fondamentali nel fissare l'ampiezza e liberare spazio tra le linee, mentre la\nsquadra cerca sempre di mantenere il controllo del pallone anche sotto pressione. Questo approccio, coraggioso e ben\ncodificato, ha portato il Como a uno storico decimo posto in Serie A, sorprendendo per maturità e qualità. In ottica\nfantacalcio, attenzione ai profili tecnici: chi sa muoversi tra le linee e leggere il gioco può emergere come\nprotagonista.",
-    "sosFantaComment": "Rimane Fabregas in panchina per un Como da Champions, con la conferma dell'ormai consolidato\n4-2-3-1. A destra è arrivato Yan Couto e parte in pole su Smolcic mentre a sinistra il ballottaggio è tra Valle e il\nnuovo arrivato Kaiki (qui è un testa a testa vero). Chalobah arriva per giocare in difesa, o Ramon o Kempf al suo\nfianco. Gerarchie meno rigide e più rotazioni con la Champions. In mediana Milla prova a insidiare Perrone, che resta\ncomunque il favorito. Baturina e Diao in pole sulle fasce, ma c'è anche Rodriguez.",
+    "comment": "Ha costruito il suo Como su un’identità chiara e ambiziosa, ispirata al calcio di posizione. Il suo sistema predilige un 4-2-3-1 con interscambi tra i trequartisti, ricerca costante della superiorità posizionale e una gestione paziente del ritmo. Gli esterni alti sono fondamentali nel fissare l'ampiezza e liberare spazio tra le linee, mentre la squadra cerca sempre di mantenere il controllo del pallone anche sotto pressione. Questo approccio, coraggioso e ben codificato, ha portato il Como a uno storico decimo posto in Serie A, sorprendendo per maturità e qualità. In ottica fantacalcio, attenzione ai profili tecnici: chi sa muoversi tra le linee e leggere il gioco può emergere come protagonista.",
+    "sosFantaComment": "Rimane Fabregas in panchina per un Como da Champions, con la conferma dell'ormai consolidato 4-2-3-1. A destra è arrivato Yan Couto e parte in pole su Smolcic mentre a sinistra il ballottaggio è tra Valle e il nuovo arrivato Kaiki (qui è un testa a testa vero). Chalobah arriva per giocare in difesa, o Ramon o Kempf al suo fianco. Gerarchie meno rigide e più rotazioni con la Champions. In mediana Milla insidia Perrone e Da Cunha, che restano comunque i due favoriti. Baturina e Diao in pole sulle fasce, ma c'è anche Rodriguez che avrà grande spazio.",
     "keyPoints": [
       {
         "text": "Valorizzazione giovani",
@@ -2621,8 +2677,8 @@ export const SOS_TEAMS_DATA = {
     "module": "3-4-2-1",
     "attackRating": 4.5,
     "defenseRating": 5.0,
-    "comment": "Porta alla Roma il suo collaudato 3-4-2-1, con possibile variante 3-4-3, mantenendo invariata la difesa a\ntre, suo marchio di fabbrica fin dai tempi del Genoa. Il suo calcio è offensivo, aggressivo e ad alta intensità, con\npressing alto e marcature a uomo a tutto campo. I duelli individuali saranno centrali, così come la capacità dei singoli\ndi interpretare più ruoli. Attenzione agli esterni: fondamentali per ampiezza e inserimenti. I tre davanti saranno\nspesso intercambiabili. Anche i difensori e i centrocampisti dinamici: potrebbero portare bonus e diventare sorprese al\nfantacalcio.",
-    "sosFantaComment": "Confermatissimo Gasperini dopo l'approdo della Roma in Champions, sul modulo non c'è alcun dubbio.\nIn difesa Koulierakis arriva per giocare, a fargli spazio probabilmente sarà soprattutto Hermoso. A destra è arrivato\nMolina, che parte come titolare, con Rensch come principale alternativa; sull’altra fascia resta Wesley. Dybala se sta\nbene è intoccabile, verrà gestito da Gasperini visto che c'è anche la Champions. Investimento importante per Mora: ha\ntutto per essere il titolare accanto a Dybala, si gioca una maglia con Soulé a oggi (da capire se rimane). Pisilli e\nPellegrini jolly tra trequarti e centrocampo. Castro arriva come vice Malen, ma a volte potranno anche giocare\ninsieme.",
+    "comment": "Porta alla Roma il suo collaudato 3-4-2-1, con possibile variante 3-4-3, mantenendo invariata la difesa a tre, suo marchio di fabbrica fin dai tempi del Genoa. Il suo calcio è offensivo, aggressivo e ad alta intensità, con pressing alto e marcature a uomo a tutto campo. I duelli individuali saranno centrali, così come la capacità dei singoli di interpretare più ruoli. Attenzione agli esterni: fondamentali per ampiezza e inserimenti. I tre davanti saranno spesso intercambiabili. Anche i difensori e i centrocampisti dinamici: potrebbero portare bonus e diventare sorprese al fantacalcio.",
+    "sosFantaComment": "Confermatissimo Gasperini dopo l'approdo della Roma in Champions, sul modulo non c'è alcun dubbio. In difesa Koulierakis arriva per giocare, a fargli spazio probabilmente sarà soprattutto Hermoso. A destra è arrivato Molina, che parte come titolare, con Rensch come principale alternativa; sull’altra fascia resta Wesley. Dybala se sta bene è intoccabile, verrà gestito da Gasperini visto che c'è anche la Champions. Investimento importante per Mora: ha tutto per essere il titolare accanto a Dybala, si gioca una maglia con Soulé a oggi (da capire se rimane). Pisilli e Pellegrini jolly tra trequarti e centrocampo. Castro arriva come vice Malen, ma a volte potranno anche giocare insieme.",
     "keyPoints": [
       {
         "text": "Esterni molto offensivi",
@@ -2869,8 +2925,8 @@ export const SOS_TEAMS_DATA = {
     "module": "3-4-2-1",
     "attackRating": 4.5,
     "defenseRating": 5.0,
-    "comment": "Porta alla Roma il suo collaudato 3-4-2-1, con possibile variante 3-4-3, mantenendo invariata la difesa a\ntre, suo marchio di fabbrica fin dai tempi del Genoa. Il suo calcio è offensivo, aggressivo e ad alta intensità, con\npressing alto e marcature a uomo a tutto campo. I duelli individuali saranno centrali, così come la capacità dei singoli\ndi interpretare più ruoli. Attenzione agli esterni: fondamentali per ampiezza e inserimenti. I tre davanti saranno\nspesso intercambiabili. Anche i difensori e i centrocampisti dinamici: potrebbero portare bonus e diventare sorprese al\nfantacalcio.",
-    "sosFantaComment": "Confermatissimo Gasperini dopo l'approdo della Roma in Champions, sul modulo non c'è alcun dubbio.\nIn difesa Koulierakis arriva per giocare, a fargli spazio probabilmente sarà soprattutto Hermoso. A destra è arrivato\nMolina, che parte come titolare, con Rensch come principale alternativa; sull’altra fascia resta Wesley. Dybala se sta\nbene è intoccabile, verrà gestito da Gasperini visto che c'è anche la Champions. Investimento importante per Mora: ha\ntutto per essere il titolare accanto a Dybala, si gioca una maglia con Soulé a oggi (da capire se rimane). Pisilli e\nPellegrini jolly tra trequarti e centrocampo. Castro arriva come vice Malen, ma a volte potranno anche giocare\ninsieme.",
+    "comment": "Porta alla Roma il suo collaudato 3-4-2-1, con possibile variante 3-4-3, mantenendo invariata la difesa a tre, suo marchio di fabbrica fin dai tempi del Genoa. Il suo calcio è offensivo, aggressivo e ad alta intensità, con pressing alto e marcature a uomo a tutto campo. I duelli individuali saranno centrali, così come la capacità dei singoli di interpretare più ruoli. Attenzione agli esterni: fondamentali per ampiezza e inserimenti. I tre davanti saranno spesso intercambiabili. Anche i difensori e i centrocampisti dinamici: potrebbero portare bonus e diventare sorprese al fantacalcio.",
+    "sosFantaComment": "Confermatissimo Gasperini dopo l'approdo della Roma in Champions, sul modulo non c'è alcun dubbio. In difesa Koulierakis arriva per giocare, a fargli spazio probabilmente sarà soprattutto Hermoso. A destra è arrivato Molina, che parte come titolare, con Rensch come principale alternativa; sull’altra fascia resta Wesley. Dybala se sta bene è intoccabile, verrà gestito da Gasperini visto che c'è anche la Champions. Investimento importante per Mora: ha tutto per essere il titolare accanto a Dybala, si gioca una maglia con Soulé a oggi (da capire se rimane). Pisilli e Pellegrini jolly tra trequarti e centrocampo. Castro arriva come vice Malen, ma a volte potranno anche giocare insieme.",
     "keyPoints": [
       {
         "text": "Esterni molto offensivi",
@@ -3117,11 +3173,11 @@ export const SOS_TEAMS_DATA = {
     "module": "4-3-3",
     "attackRating": 2.0,
     "defenseRating": 2.5,
-    "comment": "Guiderà il Lecce con il suo classico 4-3-3, confermato anche in conferenza stampa. Rilevanti saranno le\ncorsie esterne, con enfasi su velocità e dribbling degli esterni offensivi. Fondamentali le sovrapposizioni dei terzini\ne i passaggi filtranti per liberare gli 1vs1 sulle fasce. Cross dal fondo e inserimenti dei centrocampisti saranno una\nchiave tattica ricorrente. Gli attaccanti esterni e la punta centrale avranno grande spazio per incidere in zona bonus.\nAttenzione anche ai terzini propositivi, potenziali portatori di assist.",
-    "sosFantaComment": "È rimasto Di Francesco sulla panchina del Lecce, ma c'è stato il passaggio dal 4-2-3-1 al 4-3-3.\nPartiamo dall'attacco: il nuovo arrivato Geubbels si candida, è ballottaggio apertissimo con Stulic. Occhio alla\npossibile alternanza tra i due anche. C'è Ngom al momento in pole su Berisha a centrocampo accanto a Coulibaly, ma\nocchio al mercato. Il caso Banda è noto: N'Dri e Pierotti sono così le prime scelte sulle fasce. Quest'ultimo è stato\nprovato anche da mezzala. Maleh prova a insidiare Gandelman, che può essere 'penalizzato' dal cambio modulo visto che è\nun trequartista puro.",
+    "comment": "Guiderà il Lecce con il suo classico 4-3-3, confermato anche in conferenza stampa. Rilevanti saranno le corsie esterne, con enfasi su velocità e dribbling degli esterni offensivi. Fondamentali le sovrapposizioni dei terzini e i passaggi filtranti per liberare gli 1vs1 sulle fasce. Cross dal fondo e inserimenti dei centrocampisti saranno una chiave tattica ricorrente. Gli attaccanti esterni e la punta centrale avranno grande spazio per incidere in zona bonus. Attenzione anche ai terzini propositivi, potenziali portatori di assist.",
+    "sosFantaComment": "È rimasto Di Francesco sulla panchina del Lecce, ma c'è stato il passaggio dal 4-2-3-1 al 4-3-3. Partiamo dall'attacco: il nuovo arrivato Geubbels si candida, è ballottaggio apertissimo con Stulic. Occhio alla possibile alternanza tra i due anche. C'è Ngom al momento in pole su Berisha a centrocampo accanto a Coulibaly, ma occhio al mercato. Il caso Banda è noto: N'Dri e Pierotti sono così le prime scelte sulle fasce. Quest'ultimo è stato provato anche da mezzala. Maleh prova a insidiare Gandelman, che può essere 'penalizzato' dal cambio modulo visto che è un trequartista puro; e c'è anche Gorter che ha segnato all'esordio in Serie A.",
     "keyPoints": [
       {
-        "text": "Valorizzazione esterni d'attacco",
+        "text": "Valorizzazione esterni  d'attacco",
         "tone": "good"
       },
       {
@@ -3361,11 +3417,11 @@ export const SOS_TEAMS_DATA = {
     "module": "4-3-3",
     "attackRating": 2.0,
     "defenseRating": 2.5,
-    "comment": "Guiderà il Lecce con il suo classico 4-3-3, confermato anche in conferenza stampa. Rilevanti saranno le\ncorsie esterne, con enfasi su velocità e dribbling degli esterni offensivi. Fondamentali le sovrapposizioni dei terzini\ne i passaggi filtranti per liberare gli 1vs1 sulle fasce. Cross dal fondo e inserimenti dei centrocampisti saranno una\nchiave tattica ricorrente. Gli attaccanti esterni e la punta centrale avranno grande spazio per incidere in zona bonus.\nAttenzione anche ai terzini propositivi, potenziali portatori di assist.",
-    "sosFantaComment": "È rimasto Di Francesco sulla panchina del Lecce, ma c'è stato il passaggio dal 4-2-3-1 al 4-3-3.\nPartiamo dall'attacco: il nuovo arrivato Geubbels si candida, è ballottaggio apertissimo con Stulic. Occhio alla\npossibile alternanza tra i due anche. C'è Ngom al momento in pole su Berisha a centrocampo accanto a Coulibaly, ma\nocchio al mercato. Il caso Banda è noto: N'Dri e Pierotti sono così le prime scelte sulle fasce. Quest'ultimo è stato\nprovato anche da mezzala. Maleh prova a insidiare Gandelman, che può essere 'penalizzato' dal cambio modulo visto che è\nun trequartista puro.",
+    "comment": "Guiderà il Lecce con il suo classico 4-3-3, confermato anche in conferenza stampa. Rilevanti saranno le corsie esterne, con enfasi su velocità e dribbling degli esterni offensivi. Fondamentali le sovrapposizioni dei terzini e i passaggi filtranti per liberare gli 1vs1 sulle fasce. Cross dal fondo e inserimenti dei centrocampisti saranno una chiave tattica ricorrente. Gli attaccanti esterni e la punta centrale avranno grande spazio per incidere in zona bonus. Attenzione anche ai terzini propositivi, potenziali portatori di assist.",
+    "sosFantaComment": "È rimasto Di Francesco sulla panchina del Lecce, ma c'è stato il passaggio dal 4-2-3-1 al 4-3-3. Partiamo dall'attacco: il nuovo arrivato Geubbels si candida, è ballottaggio apertissimo con Stulic. Occhio alla possibile alternanza tra i due anche. C'è Ngom al momento in pole su Berisha a centrocampo accanto a Coulibaly, ma occhio al mercato. Il caso Banda è noto: N'Dri e Pierotti sono così le prime scelte sulle fasce. Quest'ultimo è stato provato anche da mezzala. Maleh prova a insidiare Gandelman, che può essere 'penalizzato' dal cambio modulo visto che è un trequartista puro; e c'è anche Gorter che ha segnato all'esordio in Serie A.",
     "keyPoints": [
       {
-        "text": "Valorizzazione esterni d'attacco",
+        "text": "Valorizzazione esterni  d'attacco",
         "tone": "good"
       },
       {
@@ -3605,8 +3661,8 @@ export const SOS_TEAMS_DATA = {
     "module": "4-3-3",
     "attackRating": 2.5,
     "defenseRating": 2.5,
-    "comment": "Promosso dopo l’ottimo lavoro svolto con la Primavera del Cagliari. La società ha scelto di puntare su un\ntecnico che conosce bene l’ambiente e che ha dimostrato di saper valorizzare i giovani, in linea con la nuova filosofia\ndel club. Pisacane predilige un modulo con la difesa a 4 con grande attenzione all’organizzazione difensiva. Non è\nescluso, però, che in alcune partite possa optare per una linea a 3. Gli esterni difensivi avranno un ruolo chiave:\ndovranno garantire equilibrio tra copertura e spinta, supportando sia i centrali che il reparto offensivo. ",
-    "sosFantaComment": "Confermato Pisacane sulla panchina del Cagliari, che continuerà ad alternare la difesa a quattro e\nquella a tre come nella passata stagione, con pochi cambiamenti a livello di uomini. Zé Pedro o Zappa a destra nel ruolo\ndi terzino, ha convinto Deiola da difensore: prova a insidiare Mina. Winks e Romano sono arrivati per giocare in\nmediana, ma anche Fazzini: o mezzala o anche più avanzato, da trequartista/ala. Maldini arriva per giocare, Kevin Carlos\nsi gioca una maglia con Mendy e Borrelli. E c'è il caso Seba Esposito da sciogliere.",
+    "comment": "Promosso dopo l’ottimo lavoro svolto con la Primavera del Cagliari. La società ha scelto di puntare su un tecnico che conosce bene l’ambiente e che ha dimostrato di saper valorizzare i giovani, in linea con la nuova filosofia del club. Pisacane predilige un modulo con la difesa a 4  con grande attenzione all’organizzazione difensiva. Non è escluso, però, che in alcune partite possa optare per una linea a 3. Gli esterni difensivi avranno un ruolo chiave: dovranno garantire equilibrio tra copertura e spinta, supportando sia i centrali che il reparto offensivo. ",
+    "sosFantaComment": "Confermato Pisacane sulla panchina del Cagliari, che continuerà ad alternare la difesa a quattro e quella a tre come nella passata stagione, con pochi cambiamenti a livello di uomini. Zé Pedro o Zappa a destra nel ruolo di terzino, ha convinto Deiola da difensore: prova a insidiare Mina e si giocano il posto. Winks e Romano sono arrivati per giocare in mediana, ma anche Fazzini: o mezzala o anche più avanzato, da trequartista/ala. Maldini arriva per giocare, Kevin Carlos si gioca una maglia con Mendy e Borrelli. E c'è il caso Seba Esposito da sciogliere.",
     "keyPoints": [
       {
         "text": "Valorizzazione giovani",
@@ -3856,8 +3912,8 @@ export const SOS_TEAMS_DATA = {
     "module": "4-3-3",
     "attackRating": 2.5,
     "defenseRating": 2.5,
-    "comment": "Promosso dopo l’ottimo lavoro svolto con la Primavera del Cagliari. La società ha scelto di puntare su un\ntecnico che conosce bene l’ambiente e che ha dimostrato di saper valorizzare i giovani, in linea con la nuova filosofia\ndel club. Pisacane predilige un modulo con la difesa a 4 con grande attenzione all’organizzazione difensiva. Non è\nescluso, però, che in alcune partite possa optare per una linea a 3. Gli esterni difensivi avranno un ruolo chiave:\ndovranno garantire equilibrio tra copertura e spinta, supportando sia i centrali che il reparto offensivo. ",
-    "sosFantaComment": "Confermato Pisacane sulla panchina del Cagliari, che continuerà ad alternare la difesa a quattro e\nquella a tre come nella passata stagione, con pochi cambiamenti a livello di uomini. Zé Pedro o Zappa a destra nel ruolo\ndi terzino, ha convinto Deiola da difensore: prova a insidiare Mina. Winks e Romano sono arrivati per giocare in\nmediana, ma anche Fazzini: o mezzala o anche più avanzato, da trequartista/ala. Maldini arriva per giocare, Kevin Carlos\nsi gioca una maglia con Mendy e Borrelli. E c'è il caso Seba Esposito da sciogliere.",
+    "comment": "Promosso dopo l’ottimo lavoro svolto con la Primavera del Cagliari. La società ha scelto di puntare su un tecnico che conosce bene l’ambiente e che ha dimostrato di saper valorizzare i giovani, in linea con la nuova filosofia del club. Pisacane predilige un modulo con la difesa a 4  con grande attenzione all’organizzazione difensiva. Non è escluso, però, che in alcune partite possa optare per una linea a 3. Gli esterni difensivi avranno un ruolo chiave: dovranno garantire equilibrio tra copertura e spinta, supportando sia i centrali che il reparto offensivo. ",
+    "sosFantaComment": "Confermato Pisacane sulla panchina del Cagliari, che continuerà ad alternare la difesa a quattro e quella a tre come nella passata stagione, con pochi cambiamenti a livello di uomini. Zé Pedro o Zappa a destra nel ruolo di terzino, ha convinto Deiola da difensore: prova a insidiare Mina e si giocano il posto. Winks e Romano sono arrivati per giocare in mediana, ma anche Fazzini: o mezzala o anche più avanzato, da trequartista/ala. Maldini arriva per giocare, Kevin Carlos si gioca una maglia con Mendy e Borrelli. E c'è il caso Seba Esposito da sciogliere.",
     "keyPoints": [
       {
         "text": "Valorizzazione giovani",
@@ -4107,8 +4163,8 @@ export const SOS_TEAMS_DATA = {
     "module": "3-4-2-1",
     "attackRating": 3.0,
     "defenseRating": 3.0,
-    "comment": "De Rossi è chiamato a far risalire il Genoa dopo l'esonero di Patrick Viera a causa del rendimento dei\ngrifoni in piena zona retrocessione. Il tecnico ex Roma propone un calcio propositivo, fondato su costruzione dal basso,\nintensità e compattezza. Tra i principi chiave spiccano una pressione alta coordinata, fluidità tra reparti e cura dei\ndettagli tecnici e tattici. De Rossi potrebbe sviluppare, almeno inizialmente, il proprio progetto al Genoa optando per\nil sistema di gioco del 3-5-2, ma non è escluso il passaggio al 4-3-3 opzione tanto cara al tecnico romano e che rimane\nquella più utilizzata nel corso delle sue esperienze precedenti.",
-    "sosFantaComment": "È rimasto De Rossi alla guida del Genoa, avanti con il 3-4-2-1 che in alcune occasioni può essere\nanche 3-4-1-2 o 3-5-2 puro. A centrocampo è arrivato Djibril Sow dal Siviglia, destinato a essere uno dei punti fermi di\nDe Rossi. Occhio al nuovo arrivato Traoré: può fare sia la mezzala che il trequartista, a oggi prova a insidiare\nBaldanzi. Ma a volte potrebbero anche giocare insieme. L'altro nuovo arrivato Meichtry insegue, c'è Vitinha avanti.\nMitaj arriva per giocare a sinistra, è favorito su Ellertsson (vero e proprio jolly, è stato provato anche a\ncentrocampo).",
+    "comment": "De Rossi è chiamato a far risalire il Genoa dopo l'esonero di Patrick Viera a causa del rendimento dei grifoni in piena zona retrocessione. Il tecnico ex Roma propone un calcio propositivo, fondato su costruzione dal basso, intensità e compattezza. Tra i principi chiave spiccano una pressione alta coordinata, fluidità tra reparti e cura dei dettagli tecnici e tattici. De Rossi potrebbe sviluppare, almeno inizialmente, il proprio progetto al Genoa optando per il sistema di gioco del 3-5-2, ma non è escluso il passaggio al 4-3-3 opzione tanto cara al tecnico romano e che rimane quella più utilizzata nel corso delle sue esperienze precedenti.",
+    "sosFantaComment": "È rimasto De Rossi alla guida del Genoa, avanti con il 3-4-2-1 che in alcune occasioni può essere anche 3-4-1-2 o 3-5-2 puro. A centrocampo è arrivato Djibril Sow dal Siviglia, destinato a essere uno dei punti fermi di De Rossi. Occhio al nuovo arrivato Traoré: può fare sia la mezzala che il trequartista, a oggi prova a insidiare Baldanzi. Ma a volte potrebbero anche giocare insieme. L'altro nuovo arrivato Meichtry insegue, c'è Vitinha avanti. Mitaj arriva per giocare a sinistra, è favorito su Ellertsson (vero e proprio jolly, è stato provato anche a centrocampo).",
     "keyPoints": [
       {
         "text": "Compattezza difensiva",
@@ -4355,8 +4411,8 @@ export const SOS_TEAMS_DATA = {
     "module": "3-4-2-1",
     "attackRating": 3.0,
     "defenseRating": 3.0,
-    "comment": "De Rossi è chiamato a far risalire il Genoa dopo l'esonero di Patrick Viera a causa del rendimento dei\ngrifoni in piena zona retrocessione. Il tecnico ex Roma propone un calcio propositivo, fondato su costruzione dal basso,\nintensità e compattezza. Tra i principi chiave spiccano una pressione alta coordinata, fluidità tra reparti e cura dei\ndettagli tecnici e tattici. De Rossi potrebbe sviluppare, almeno inizialmente, il proprio progetto al Genoa optando per\nil sistema di gioco del 3-5-2, ma non è escluso il passaggio al 4-3-3 opzione tanto cara al tecnico romano e che rimane\nquella più utilizzata nel corso delle sue esperienze precedenti.",
-    "sosFantaComment": "È rimasto De Rossi alla guida del Genoa, avanti con il 3-4-2-1 che in alcune occasioni può essere\nanche 3-4-1-2 o 3-5-2 puro. A centrocampo è arrivato Djibril Sow dal Siviglia, destinato a essere uno dei punti fermi di\nDe Rossi. Occhio al nuovo arrivato Traoré: può fare sia la mezzala che il trequartista, a oggi prova a insidiare\nBaldanzi. Ma a volte potrebbero anche giocare insieme. L'altro nuovo arrivato Meichtry insegue, c'è Vitinha avanti.\nMitaj arriva per giocare a sinistra, è favorito su Ellertsson (vero e proprio jolly, è stato provato anche a\ncentrocampo).",
+    "comment": "De Rossi è chiamato a far risalire il Genoa dopo l'esonero di Patrick Viera a causa del rendimento dei grifoni in piena zona retrocessione. Il tecnico ex Roma propone un calcio propositivo, fondato su costruzione dal basso, intensità e compattezza. Tra i principi chiave spiccano una pressione alta coordinata, fluidità tra reparti e cura dei dettagli tecnici e tattici. De Rossi potrebbe sviluppare, almeno inizialmente, il proprio progetto al Genoa optando per il sistema di gioco del 3-5-2, ma non è escluso il passaggio al 4-3-3 opzione tanto cara al tecnico romano e che rimane quella più utilizzata nel corso delle sue esperienze precedenti.",
+    "sosFantaComment": "È rimasto De Rossi alla guida del Genoa, avanti con il 3-4-2-1 che in alcune occasioni può essere anche 3-4-1-2 o 3-5-2 puro. A centrocampo è arrivato Djibril Sow dal Siviglia, destinato a essere uno dei punti fermi di De Rossi. Occhio al nuovo arrivato Traoré: può fare sia la mezzala che il trequartista, a oggi prova a insidiare Baldanzi. Ma a volte potrebbero anche giocare insieme. L'altro nuovo arrivato Meichtry insegue, c'è Vitinha avanti. Mitaj arriva per giocare a sinistra, è favorito su Ellertsson (vero e proprio jolly, è stato provato anche a centrocampo).",
     "keyPoints": [
       {
         "text": "Compattezza difensiva",
@@ -4589,572 +4645,6 @@ export const SOS_TEAMS_DATA = {
       }
     ]
   },
-  "SAS": {
-    "code": "SAS",
-    "name": "Sassuolo",
-    "city": "Sassuolo",
-    "stadium": "Mapei Stadium",
-    "primaryColor": "#00a859",
-    "secondaryColor": "#000000",
-    "accentColor": "#ffffff",
-    "coach": "Alberto Aquilani",
-    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Aquilani.webp",
-    "defaultFormation": "4-2-3-1",
-    "module": "4-2-3-1",
-    "attackRating": 3.0,
-    "defenseRating": 2.5,
-    "comment": "Il 4-3-3 di Grosso punta su verticalità e ripartenze rapide, con un gioco diretto che privilegia il lancio\nlungo rispetto alla costruzione dal basso. I due esterni offensivi sono centrali nel sistema: liberati da compiti\ndifensivi, hanno licenza di colpire. Il centravanti è un punto di riferimento costante, cercato con palloni in\nprofondità per sfruttare spazi e fisicità. A centrocampo servono corsa e intensità, più che palleggio. La difesa a\nquattro è solida ma può soffrire se attaccata in velocità. In chiave fantacalcio, occhio agli esterni offensivi: possono\nportare bonus importanti. Meno appetibili, invece, i difensori e i mediani.",
-    "sosFantaComment": "È arrivato Alberto Aquilani in panchina al posto di Grosso. Il modulo di riferimento sembra essere\nil 4-2-3-1, ma il Sassuolo può schierarsi anche con il 4-3-3, già provato durante la preparazione. Muric a sorpresa è\nstato riscattato e rimane il favorito in porta. A destra si giocano una maglia Missori e Walukiewicz, con il polacco che\npuò agire anche da centrale. A sinistra è arrivato Obrador e si candida ad essere il titolare, con Doig che resta\nun'alternativa affidabile. A centrocampo Koné resterà fuori ancora per diversi mesi e, in attesa del suo rientro, spazio\na Lipani o Bakola. Pinamonti e Thorstvedt hanno chiesto la cessione, il loro futuro è tutto da scrivere. Dal mercato\nsono arrivati Bowie e Adzic che si candidano come alternative ai due. E c'è anche Dominguez.",
-    "keyPoints": [
-      {
-        "text": "Costruzione dal basso",
-        "tone": "neutral"
-      },
-      {
-        "text": "Fluidità Tattica tra i moduli",
-        "tone": "neutral"
-      },
-      {
-        "text": "Buona organizzazione del fraseggio in mezzo al campo",
-        "tone": "good"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "att-wings",
-        "tone": "good"
-      },
-      {
-        "role": "def-center",
-        "tone": "bad"
-      },
-      {
-        "role": "gk",
-        "tone": "bad"
-      }
-    ],
-    "starters": [
-      {
-        "playerId": "9c483384-d40d-4152-aa37-d7fd00624646",
-        "csvId": "4236",
-        "name": "Muric",
-        "role": "P"
-      },
-      {
-        "playerId": "7de498c5-1da2-468c-accb-1eb43170d5f4",
-        "csvId": 6189,
-        "name": "Missori",
-        "role": "D"
-      },
-      {
-        "playerId": "78591c1c-9e6f-4f91-81e7-4b4db1a48fed",
-        "csvId": 4374,
-        "name": "Walukiewicz",
-        "role": "D"
-      },
-      {
-        "playerId": "1a34b9f5-bd27-4a6b-a2e5-3961be3bd835",
-        "csvId": 6672,
-        "name": "Idzes",
-        "role": "D"
-      },
-      {
-        "playerId": "95aaa469-351a-4ce1-a71f-97dce55d47de",
-        "csvId": 7329,
-        "name": "Obrador",
-        "role": "D"
-      },
-      {
-        "playerId": "9ecf743b-95b3-46f4-b3b8-777f6ed9262f",
-        "csvId": 2528,
-        "name": "Matic",
-        "role": "C"
-      },
-      {
-        "playerId": "dbad7fbe-2421-4646-9b4f-6f065ae9a076",
-        "csvId": 6246,
-        "name": "Lipani",
-        "role": "C"
-      },
-      {
-        "playerId": "749247cd-79ed-44d6-a376-50afab6e25a0",
-        "csvId": 531,
-        "name": "Berardi",
-        "role": "A"
-      },
-      {
-        "playerId": "dc221c49-a187-478c-b460-b8daab6631e2",
-        "csvId": 5844,
-        "name": "Thorstvedt",
-        "role": "C"
-      },
-      {
-        "playerId": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
-        "csvId": "6060",
-        "name": "Laurientè",
-        "role": "A"
-      },
-      {
-        "playerId": "ced01d22-1684-45d0-bcde-9898ff26ae86",
-        "csvId": "2038",
-        "name": "Pinamonti",
-        "role": "A"
-      }
-    ],
-    "rig": [
-      {
-        "playerId": "749247cd-79ed-44d6-a376-50afab6e25a0",
-        "name": "Berardi",
-        "role": "A"
-      },
-      {
-        "playerId": "ced01d22-1684-45d0-bcde-9898ff26ae86",
-        "name": "Pinamonti",
-        "role": "A"
-      },
-      {
-        "playerId": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
-        "name": "Laurientè",
-        "role": "A"
-      }
-    ],
-    "pun": [
-      {
-        "playerId": "749247cd-79ed-44d6-a376-50afab6e25a0",
-        "name": "Berardi",
-        "role": "A"
-      },
-      {
-        "playerId": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
-        "name": "Laurientè",
-        "role": "A"
-      }
-    ],
-    "corner": [
-      {
-        "playerId": "749247cd-79ed-44d6-a376-50afab6e25a0",
-        "name": "Berardi",
-        "role": "A"
-      },
-      {
-        "playerId": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
-        "name": "Laurientè",
-        "role": "A"
-      },
-      {
-        "playerId": "371edc7e-8557-4af7-ac46-3481c7601c38",
-        "name": "Doig",
-        "role": "D"
-      }
-    ],
-    "ballottaggi": [
-      [
-        {
-          "playerId": "78591c1c-9e6f-4f91-81e7-4b4db1a48fed",
-          "name": "Walukiewicz",
-          "role": "D",
-          "perc": 51
-        },
-        {
-          "playerId": "e64cb10e-8e0f-439a-8eb1-0ef08eb5fcf7",
-          "name": "Candè",
-          "role": "D",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "9c483384-d40d-4152-aa37-d7fd00624646",
-          "name": "Muric",
-          "role": "P",
-          "perc": 51
-        },
-        {
-          "playerId": "c824abfd-1f86-4d6f-a395-b9ed4661dc73",
-          "name": "Turati",
-          "role": "P",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "dbad7fbe-2421-4646-9b4f-6f065ae9a076",
-          "name": "Lipani",
-          "role": "C",
-          "perc": 51
-        },
-        {
-          "playerId": "225f68c2-4f99-4f0e-98dd-d8900423bec4",
-          "name": "Konè I.",
-          "role": "C",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "ced01d22-1684-45d0-bcde-9898ff26ae86",
-          "name": "Pinamonti",
-          "role": "A",
-          "perc": 51
-        },
-        {
-          "playerId": "3b5b8e3f-ce26-4764-80bd-334b9a5aef7f",
-          "name": "Bowie",
-          "role": "A",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "dc221c49-a187-478c-b460-b8daab6631e2",
-          "name": "Thorstvedt",
-          "role": "C",
-          "perc": 51
-        },
-        {
-          "playerId": "c9db8149-35c2-4640-9b87-0ac4efe8d1b9",
-          "name": "Adzic",
-          "role": "C",
-          "perc": 49
-        }
-      ]
-    ],
-    "up": [
-      {
-        "playerId": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
-        "name": "Laurientè",
-        "points": [
-          "Abile in ripartenza",
-          "Buon attacco della profondità"
-        ]
-      },
-      {
-        "playerId": "749247cd-79ed-44d6-a376-50afab6e25a0",
-        "name": "Berardi",
-        "points": [
-          "Riferimento della manovra offensiva",
-          "Prolifico in fase realizzativa"
-        ]
-      }
-    ],
-    "down": [
-      {
-        "playerId": "9c483384-d40d-4152-aa37-d7fd00624646",
-        "name": "Muric",
-        "points": [
-          "Può soffrire la costruzione dal basso"
-        ]
-      },
-      {
-        "playerId": "78591c1c-9e6f-4f91-81e7-4b4db1a48fed",
-        "name": "Walukiewicz",
-        "points": [
-          "Può soffrire la costruzione dal basso"
-        ]
-      }
-    ],
-    "young": [
-      {
-        "playerId": "dbad7fbe-2421-4646-9b4f-6f065ae9a076",
-        "name": "Lipani",
-        "points": [
-          "Utilizzato spesso nelle rotazioni"
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "playerId": "9ecf743b-95b3-46f4-b3b8-777f6ed9262f",
-        "name": "Matic",
-        "points": [
-          "Costanza nelle rotazioni e nel rendimento"
-        ]
-      }
-    ]
-  },
-  "sassuolo": {
-    "code": "SAS",
-    "name": "Sassuolo",
-    "city": "Sassuolo",
-    "stadium": "Mapei Stadium",
-    "primaryColor": "#00a859",
-    "secondaryColor": "#000000",
-    "accentColor": "#ffffff",
-    "coach": "Alberto Aquilani",
-    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Aquilani.webp",
-    "defaultFormation": "4-2-3-1",
-    "module": "4-2-3-1",
-    "attackRating": 3.0,
-    "defenseRating": 2.5,
-    "comment": "Il 4-3-3 di Grosso punta su verticalità e ripartenze rapide, con un gioco diretto che privilegia il lancio\nlungo rispetto alla costruzione dal basso. I due esterni offensivi sono centrali nel sistema: liberati da compiti\ndifensivi, hanno licenza di colpire. Il centravanti è un punto di riferimento costante, cercato con palloni in\nprofondità per sfruttare spazi e fisicità. A centrocampo servono corsa e intensità, più che palleggio. La difesa a\nquattro è solida ma può soffrire se attaccata in velocità. In chiave fantacalcio, occhio agli esterni offensivi: possono\nportare bonus importanti. Meno appetibili, invece, i difensori e i mediani.",
-    "sosFantaComment": "È arrivato Alberto Aquilani in panchina al posto di Grosso. Il modulo di riferimento sembra essere\nil 4-2-3-1, ma il Sassuolo può schierarsi anche con il 4-3-3, già provato durante la preparazione. Muric a sorpresa è\nstato riscattato e rimane il favorito in porta. A destra si giocano una maglia Missori e Walukiewicz, con il polacco che\npuò agire anche da centrale. A sinistra è arrivato Obrador e si candida ad essere il titolare, con Doig che resta\nun'alternativa affidabile. A centrocampo Koné resterà fuori ancora per diversi mesi e, in attesa del suo rientro, spazio\na Lipani o Bakola. Pinamonti e Thorstvedt hanno chiesto la cessione, il loro futuro è tutto da scrivere. Dal mercato\nsono arrivati Bowie e Adzic che si candidano come alternative ai due. E c'è anche Dominguez.",
-    "keyPoints": [
-      {
-        "text": "Costruzione dal basso",
-        "tone": "neutral"
-      },
-      {
-        "text": "Fluidità Tattica tra i moduli",
-        "tone": "neutral"
-      },
-      {
-        "text": "Buona organizzazione del fraseggio in mezzo al campo",
-        "tone": "good"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "att-wings",
-        "tone": "good"
-      },
-      {
-        "role": "def-center",
-        "tone": "bad"
-      },
-      {
-        "role": "gk",
-        "tone": "bad"
-      }
-    ],
-    "starters": [
-      {
-        "playerId": "9c483384-d40d-4152-aa37-d7fd00624646",
-        "csvId": "4236",
-        "name": "Muric",
-        "role": "P"
-      },
-      {
-        "playerId": "7de498c5-1da2-468c-accb-1eb43170d5f4",
-        "csvId": 6189,
-        "name": "Missori",
-        "role": "D"
-      },
-      {
-        "playerId": "78591c1c-9e6f-4f91-81e7-4b4db1a48fed",
-        "csvId": 4374,
-        "name": "Walukiewicz",
-        "role": "D"
-      },
-      {
-        "playerId": "1a34b9f5-bd27-4a6b-a2e5-3961be3bd835",
-        "csvId": 6672,
-        "name": "Idzes",
-        "role": "D"
-      },
-      {
-        "playerId": "95aaa469-351a-4ce1-a71f-97dce55d47de",
-        "csvId": 7329,
-        "name": "Obrador",
-        "role": "D"
-      },
-      {
-        "playerId": "9ecf743b-95b3-46f4-b3b8-777f6ed9262f",
-        "csvId": 2528,
-        "name": "Matic",
-        "role": "C"
-      },
-      {
-        "playerId": "dbad7fbe-2421-4646-9b4f-6f065ae9a076",
-        "csvId": 6246,
-        "name": "Lipani",
-        "role": "C"
-      },
-      {
-        "playerId": "749247cd-79ed-44d6-a376-50afab6e25a0",
-        "csvId": 531,
-        "name": "Berardi",
-        "role": "A"
-      },
-      {
-        "playerId": "dc221c49-a187-478c-b460-b8daab6631e2",
-        "csvId": 5844,
-        "name": "Thorstvedt",
-        "role": "C"
-      },
-      {
-        "playerId": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
-        "csvId": "6060",
-        "name": "Laurientè",
-        "role": "A"
-      },
-      {
-        "playerId": "ced01d22-1684-45d0-bcde-9898ff26ae86",
-        "csvId": "2038",
-        "name": "Pinamonti",
-        "role": "A"
-      }
-    ],
-    "rig": [
-      {
-        "playerId": "749247cd-79ed-44d6-a376-50afab6e25a0",
-        "name": "Berardi",
-        "role": "A"
-      },
-      {
-        "playerId": "ced01d22-1684-45d0-bcde-9898ff26ae86",
-        "name": "Pinamonti",
-        "role": "A"
-      },
-      {
-        "playerId": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
-        "name": "Laurientè",
-        "role": "A"
-      }
-    ],
-    "pun": [
-      {
-        "playerId": "749247cd-79ed-44d6-a376-50afab6e25a0",
-        "name": "Berardi",
-        "role": "A"
-      },
-      {
-        "playerId": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
-        "name": "Laurientè",
-        "role": "A"
-      }
-    ],
-    "corner": [
-      {
-        "playerId": "749247cd-79ed-44d6-a376-50afab6e25a0",
-        "name": "Berardi",
-        "role": "A"
-      },
-      {
-        "playerId": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
-        "name": "Laurientè",
-        "role": "A"
-      },
-      {
-        "playerId": "371edc7e-8557-4af7-ac46-3481c7601c38",
-        "name": "Doig",
-        "role": "D"
-      }
-    ],
-    "ballottaggi": [
-      [
-        {
-          "playerId": "78591c1c-9e6f-4f91-81e7-4b4db1a48fed",
-          "name": "Walukiewicz",
-          "role": "D",
-          "perc": 51
-        },
-        {
-          "playerId": "e64cb10e-8e0f-439a-8eb1-0ef08eb5fcf7",
-          "name": "Candè",
-          "role": "D",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "9c483384-d40d-4152-aa37-d7fd00624646",
-          "name": "Muric",
-          "role": "P",
-          "perc": 51
-        },
-        {
-          "playerId": "c824abfd-1f86-4d6f-a395-b9ed4661dc73",
-          "name": "Turati",
-          "role": "P",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "dbad7fbe-2421-4646-9b4f-6f065ae9a076",
-          "name": "Lipani",
-          "role": "C",
-          "perc": 51
-        },
-        {
-          "playerId": "225f68c2-4f99-4f0e-98dd-d8900423bec4",
-          "name": "Konè I.",
-          "role": "C",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "ced01d22-1684-45d0-bcde-9898ff26ae86",
-          "name": "Pinamonti",
-          "role": "A",
-          "perc": 51
-        },
-        {
-          "playerId": "3b5b8e3f-ce26-4764-80bd-334b9a5aef7f",
-          "name": "Bowie",
-          "role": "A",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "dc221c49-a187-478c-b460-b8daab6631e2",
-          "name": "Thorstvedt",
-          "role": "C",
-          "perc": 51
-        },
-        {
-          "playerId": "c9db8149-35c2-4640-9b87-0ac4efe8d1b9",
-          "name": "Adzic",
-          "role": "C",
-          "perc": 49
-        }
-      ]
-    ],
-    "up": [
-      {
-        "playerId": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
-        "name": "Laurientè",
-        "points": [
-          "Abile in ripartenza",
-          "Buon attacco della profondità"
-        ]
-      },
-      {
-        "playerId": "749247cd-79ed-44d6-a376-50afab6e25a0",
-        "name": "Berardi",
-        "points": [
-          "Riferimento della manovra offensiva",
-          "Prolifico in fase realizzativa"
-        ]
-      }
-    ],
-    "down": [
-      {
-        "playerId": "9c483384-d40d-4152-aa37-d7fd00624646",
-        "name": "Muric",
-        "points": [
-          "Può soffrire la costruzione dal basso"
-        ]
-      },
-      {
-        "playerId": "78591c1c-9e6f-4f91-81e7-4b4db1a48fed",
-        "name": "Walukiewicz",
-        "points": [
-          "Può soffrire la costruzione dal basso"
-        ]
-      }
-    ],
-    "young": [
-      {
-        "playerId": "dbad7fbe-2421-4646-9b4f-6f065ae9a076",
-        "name": "Lipani",
-        "points": [
-          "Utilizzato spesso nelle rotazioni"
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "playerId": "9ecf743b-95b3-46f4-b3b8-777f6ed9262f",
-        "name": "Matic",
-        "points": [
-          "Costanza nelle rotazioni e nel rendimento"
-        ]
-      }
-    ]
-  },
   "INT": {
     "code": "INT",
     "name": "Inter",
@@ -5169,8 +4659,8 @@ export const SOS_TEAMS_DATA = {
     "module": "3-5-2",
     "attackRating": 5.0,
     "defenseRating": 5.0,
-    "comment": "Dopo anni alla guida della Primavera e un’esperienza intensa al Parma, Chivu approda all’Inter con idee\nchiare e una spiccata flessibilità tattica. Il modulo base resta il 3-5-2, in continuità con l’era Inzaghi. Chivu\nricerca equilibrio e solidità: le sue squadre sanno abbassarsi con ordine e ripartire sfruttando sia l’ampiezza sia gli\ninserimenti centrali. In fase difensiva punta su linee compatte e movimenti coordinati, mentre in attacco predilige\nfluidità e rotazioni intelligenti. La sua gestione al Parma ha evidenziato la capacità di rafforzare la tenuta\ndifensiva, valorizzare giovani con personalità e compiere scelte nette su chi non rientra nei suoi piani. All’Inter\nporterà un’impostazione tattica coerente con il recente passato, ma con un’impronta più verticale, dinamica e orientata\nal rinnovamento della rosa.",
-    "sosFantaComment": "L'Inter ha confermato l'impianto della scorsa stagione, ma ci sono alcuni ballottaggi a partire\ndalla porta dove c'è la novità Provedel: parte avanti Martinez ma l'ex Lazio è più di una semplice riserva. In difesa è\narrivato Stones e avrà grande spazio: Chivu alternerà soprattutto lui e Bisseck. Carlos Augusto può fare sia il\nbraccetto che l'esterno sinistro. A destra è arrivato Spence ed è in pole su Diouf. Abbondanza a centrocampo dove il\nballottaggio è soprattutto tra Zielinski e Sucic.",
+    "comment": "Dopo anni alla guida della Primavera e un’esperienza intensa al Parma, Chivu approda all’Inter con idee chiare e una spiccata flessibilità tattica. Il modulo base resta il 3-5-2, in continuità con l’era Inzaghi. Chivu ricerca equilibrio e solidità: le sue squadre sanno abbassarsi con ordine e ripartire sfruttando sia l’ampiezza sia gli inserimenti centrali. In fase difensiva punta su linee compatte e movimenti coordinati, mentre in attacco predilige fluidità e rotazioni intelligenti. La sua gestione al Parma ha evidenziato la capacità di rafforzare la tenuta difensiva, valorizzare giovani con personalità e compiere scelte nette su chi non rientra nei suoi piani. All’Inter porterà un’impostazione tattica coerente con il recente passato, ma con un’impronta più verticale, dinamica e orientata al rinnovamento della rosa.",
+    "sosFantaComment": "L'Inter ha confermato l'impianto della scorsa stagione, ma ci sono alcuni ballottaggi a partire dalla porta dove c'è la novità Provedel: parte avanti Martinez ma l'ex Lazio è più di una semplice riserva. In difesa è arrivato Stones e avrà grande spazio: Chivu alternerà soprattutto lui e Bisseck. Carlos Augusto può fare sia il braccetto che l'esterno sinistro. A destra è arrivato Spence ed è in pole su Diouf. Grande abbondanza a centrocampo: Jones arriva per fare la mezzala titolare, è in pole su Zielinski (anche vice Calha) e Sucic.",
     "keyPoints": [
       {
         "text": "Valorizzazione esterni",
@@ -5245,9 +4735,9 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
-        "playerId": "23393734-3e5a-473f-a4c0-20eba7e3f08a",
-        "csvId": "152",
-        "name": "Zielinski",
+        "playerId": "f8e96ed3-8033-4167-b28c-ded154e83848",
+        "csvId": 5172,
+        "name": "Jones C.",
         "role": "C"
       },
       {
@@ -5310,20 +4800,6 @@ export const SOS_TEAMS_DATA = {
       }
     ],
     "ballottaggi": [
-      [
-        {
-          "playerId": "23393734-3e5a-473f-a4c0-20eba7e3f08a",
-          "name": "Zielinski",
-          "role": "C",
-          "perc": 55
-        },
-        {
-          "playerId": "ca464bbb-fe09-461d-a32f-8e235178752f",
-          "name": "Sucic P.",
-          "role": "C",
-          "perc": 45
-        }
-      ],
       [
         {
           "playerId": "ae4ddedd-7c30-471d-be3a-e3adb7dc765e",
@@ -5428,8 +4904,8 @@ export const SOS_TEAMS_DATA = {
     "module": "3-5-2",
     "attackRating": 5.0,
     "defenseRating": 5.0,
-    "comment": "Dopo anni alla guida della Primavera e un’esperienza intensa al Parma, Chivu approda all’Inter con idee\nchiare e una spiccata flessibilità tattica. Il modulo base resta il 3-5-2, in continuità con l’era Inzaghi. Chivu\nricerca equilibrio e solidità: le sue squadre sanno abbassarsi con ordine e ripartire sfruttando sia l’ampiezza sia gli\ninserimenti centrali. In fase difensiva punta su linee compatte e movimenti coordinati, mentre in attacco predilige\nfluidità e rotazioni intelligenti. La sua gestione al Parma ha evidenziato la capacità di rafforzare la tenuta\ndifensiva, valorizzare giovani con personalità e compiere scelte nette su chi non rientra nei suoi piani. All’Inter\nporterà un’impostazione tattica coerente con il recente passato, ma con un’impronta più verticale, dinamica e orientata\nal rinnovamento della rosa.",
-    "sosFantaComment": "L'Inter ha confermato l'impianto della scorsa stagione, ma ci sono alcuni ballottaggi a partire\ndalla porta dove c'è la novità Provedel: parte avanti Martinez ma l'ex Lazio è più di una semplice riserva. In difesa è\narrivato Stones e avrà grande spazio: Chivu alternerà soprattutto lui e Bisseck. Carlos Augusto può fare sia il\nbraccetto che l'esterno sinistro. A destra è arrivato Spence ed è in pole su Diouf. Abbondanza a centrocampo dove il\nballottaggio è soprattutto tra Zielinski e Sucic.",
+    "comment": "Dopo anni alla guida della Primavera e un’esperienza intensa al Parma, Chivu approda all’Inter con idee chiare e una spiccata flessibilità tattica. Il modulo base resta il 3-5-2, in continuità con l’era Inzaghi. Chivu ricerca equilibrio e solidità: le sue squadre sanno abbassarsi con ordine e ripartire sfruttando sia l’ampiezza sia gli inserimenti centrali. In fase difensiva punta su linee compatte e movimenti coordinati, mentre in attacco predilige fluidità e rotazioni intelligenti. La sua gestione al Parma ha evidenziato la capacità di rafforzare la tenuta difensiva, valorizzare giovani con personalità e compiere scelte nette su chi non rientra nei suoi piani. All’Inter porterà un’impostazione tattica coerente con il recente passato, ma con un’impronta più verticale, dinamica e orientata al rinnovamento della rosa.",
+    "sosFantaComment": "L'Inter ha confermato l'impianto della scorsa stagione, ma ci sono alcuni ballottaggi a partire dalla porta dove c'è la novità Provedel: parte avanti Martinez ma l'ex Lazio è più di una semplice riserva. In difesa è arrivato Stones e avrà grande spazio: Chivu alternerà soprattutto lui e Bisseck. Carlos Augusto può fare sia il braccetto che l'esterno sinistro. A destra è arrivato Spence ed è in pole su Diouf. Grande abbondanza a centrocampo: Jones arriva per fare la mezzala titolare, è in pole su Zielinski (anche vice Calha) e Sucic.",
     "keyPoints": [
       {
         "text": "Valorizzazione esterni",
@@ -5504,9 +4980,9 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
-        "playerId": "23393734-3e5a-473f-a4c0-20eba7e3f08a",
-        "csvId": "152",
-        "name": "Zielinski",
+        "playerId": "f8e96ed3-8033-4167-b28c-ded154e83848",
+        "csvId": 5172,
+        "name": "Jones C.",
         "role": "C"
       },
       {
@@ -5569,20 +5045,6 @@ export const SOS_TEAMS_DATA = {
       }
     ],
     "ballottaggi": [
-      [
-        {
-          "playerId": "23393734-3e5a-473f-a4c0-20eba7e3f08a",
-          "name": "Zielinski",
-          "role": "C",
-          "perc": 55
-        },
-        {
-          "playerId": "ca464bbb-fe09-461d-a32f-8e235178752f",
-          "name": "Sucic P.",
-          "role": "C",
-          "perc": 45
-        }
-      ],
       [
         {
           "playerId": "ae4ddedd-7c30-471d-be3a-e3adb7dc765e",
@@ -5687,8 +5149,8 @@ export const SOS_TEAMS_DATA = {
     "module": "3-4-2-1",
     "attackRating": 4.5,
     "defenseRating": 4.5,
-    "comment": "Dopo anni di cambiamenti tattici, il ritorno di Allegri al Milan segnerebbe un ritorno al pragmatismo e alla\nsolidità. Il tecnico livornese incarna una filosofia votata all’equilibrio: linee strette, difesa ordinata, gestione dei\nritmi e adattamento costante all’avversario. Non ama il pressing alto sistematico, ma preferisce tempi di pressione\nmirati e ripartenze rapide dopo il recupero. In fase offensiva punta sulla lettura dei momenti: verticalizzazioni\nimprovvise, inserimenti intelligenti e massima attenzione all’efficacia. Il risultato viene prima della prestazione, e\nla valorizzazione dei profili più duttili e intelligenti tatticamente è una costante.",
-    "sosFantaComment": "È arrivato Ruben Amorim in panchina, il suo Milan giocherà col 3-4-2-1. La grandissima novità è il\ncentravanti Goncalo Ramos, che sarà il titolare. Alle sue spalle una maglia di Pulisic e per l'altra dipende tutto da\nLeao visto che per il portoghese non ci sono trattative in corso: per ora è in rosa, se resta si candida lui. Modric\nalla fine ha rinnovato, lui e Rabiot i titolari a centrocampo ma occhio alle rotazioni con l'Europa League. Saelemaekers\nprovato sia a tutta fascia che più avanzato, occhio al grande pre-campionato di Chukwueze a tutta fascia a destra. A\nsinistra il nuovo arrivato Moreira diventa il primo candidato per il posto: Bartesaghi salvo sorprese sarà il suo\nvice.",
+    "comment": "Dopo anni di cambiamenti tattici, il ritorno di Allegri al Milan segnerebbe un ritorno al pragmatismo e alla solidità. Il tecnico livornese incarna una filosofia votata all’equilibrio: linee strette, difesa ordinata, gestione dei ritmi e adattamento costante all’avversario. Non ama il pressing alto sistematico, ma preferisce tempi di pressione mirati e ripartenze rapide dopo il recupero. In fase offensiva punta sulla lettura dei momenti: verticalizzazioni improvvise, inserimenti intelligenti e massima attenzione all’efficacia. Il risultato viene prima della prestazione, e la valorizzazione dei profili più duttili e intelligenti tatticamente è una costante.",
+    "sosFantaComment": "È arrivato Ruben Amorim in panchina, il suo Milan giocherà col 3-4-2-1. La grandissima novità è il centravanti Goncalo Ramos, che sarà il titolare. Alle sue spalle una maglia di Pulisic e per l'altra dipende tutto da Leao visto che per il portoghese non ci sono trattative in corso: per ora è in rosa, se resta si candida lui. Modric alla fine ha rinnovato, lui e Rabiot i titolari a centrocampo ma occhio alle rotazioni con l'Europa League. Saelemaekers provato sia a tutta fascia che più avanzato, occhio al grande pre-campionato di Chukwueze a tutta fascia a destra. A sinistra il nuovo arrivato Moreira diventa il primo candidato per il posto: Bartesaghi salvo sorprese sarà il suo vice.",
     "keyPoints": [
       {
         "text": "Trequartisti ed esterni mobili in fase offensiva",
@@ -5914,8 +5376,8 @@ export const SOS_TEAMS_DATA = {
     "module": "3-4-2-1",
     "attackRating": 4.5,
     "defenseRating": 4.5,
-    "comment": "Dopo anni di cambiamenti tattici, il ritorno di Allegri al Milan segnerebbe un ritorno al pragmatismo e alla\nsolidità. Il tecnico livornese incarna una filosofia votata all’equilibrio: linee strette, difesa ordinata, gestione dei\nritmi e adattamento costante all’avversario. Non ama il pressing alto sistematico, ma preferisce tempi di pressione\nmirati e ripartenze rapide dopo il recupero. In fase offensiva punta sulla lettura dei momenti: verticalizzazioni\nimprovvise, inserimenti intelligenti e massima attenzione all’efficacia. Il risultato viene prima della prestazione, e\nla valorizzazione dei profili più duttili e intelligenti tatticamente è una costante.",
-    "sosFantaComment": "È arrivato Ruben Amorim in panchina, il suo Milan giocherà col 3-4-2-1. La grandissima novità è il\ncentravanti Goncalo Ramos, che sarà il titolare. Alle sue spalle una maglia di Pulisic e per l'altra dipende tutto da\nLeao visto che per il portoghese non ci sono trattative in corso: per ora è in rosa, se resta si candida lui. Modric\nalla fine ha rinnovato, lui e Rabiot i titolari a centrocampo ma occhio alle rotazioni con l'Europa League. Saelemaekers\nprovato sia a tutta fascia che più avanzato, occhio al grande pre-campionato di Chukwueze a tutta fascia a destra. A\nsinistra il nuovo arrivato Moreira diventa il primo candidato per il posto: Bartesaghi salvo sorprese sarà il suo\nvice.",
+    "comment": "Dopo anni di cambiamenti tattici, il ritorno di Allegri al Milan segnerebbe un ritorno al pragmatismo e alla solidità. Il tecnico livornese incarna una filosofia votata all’equilibrio: linee strette, difesa ordinata, gestione dei ritmi e adattamento costante all’avversario. Non ama il pressing alto sistematico, ma preferisce tempi di pressione mirati e ripartenze rapide dopo il recupero. In fase offensiva punta sulla lettura dei momenti: verticalizzazioni improvvise, inserimenti intelligenti e massima attenzione all’efficacia. Il risultato viene prima della prestazione, e la valorizzazione dei profili più duttili e intelligenti tatticamente è una costante.",
+    "sosFantaComment": "È arrivato Ruben Amorim in panchina, il suo Milan giocherà col 3-4-2-1. La grandissima novità è il centravanti Goncalo Ramos, che sarà il titolare. Alle sue spalle una maglia di Pulisic e per l'altra dipende tutto da Leao visto che per il portoghese non ci sono trattative in corso: per ora è in rosa, se resta si candida lui. Modric alla fine ha rinnovato, lui e Rabiot i titolari a centrocampo ma occhio alle rotazioni con l'Europa League. Saelemaekers provato sia a tutta fascia che più avanzato, occhio al grande pre-campionato di Chukwueze a tutta fascia a destra. A sinistra il nuovo arrivato Moreira diventa il primo candidato per il posto: Bartesaghi salvo sorprese sarà il suo vice.",
     "keyPoints": [
       {
         "text": "Trequartisti ed esterni mobili in fase offensiva",
@@ -6127,956 +5589,6 @@ export const SOS_TEAMS_DATA = {
       }
     ]
   },
-  "NAP": {
-    "code": "NAP",
-    "name": "Napoli",
-    "city": "Napoli",
-    "stadium": "Diego Armando Maradona",
-    "primaryColor": "#0080ff",
-    "secondaryColor": "#ffffff",
-    "accentColor": "#002d62",
-    "coach": "Massimiliano Allegri",
-    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Allegri.webp",
-    "defaultFormation": "4-3-3",
-    "module": "4-3-3",
-    "attackRating": 4.5,
-    "defenseRating": 4.5,
-    "comment": "Reduce dalla conquista dello scudetto, Conte ha portato a Napoli mentalità vincente, rigore tattico e una\nforte identità di squadra. Pur avendo nel 3-5-2 il suo marchio di fabbrica, ha dimostrato grande intelligenza\nadattandosi al contesto partenopeo, riuscendo a trovare equilibrio anche con il 4-3-3, modulo che meglio valorizza le\ncaratteristiche tecniche e offensive della rosa azzurra. Le sue squadre si distinguono per organizzazione, intensità e\nspirito di sacrificio, con un’attenzione maniacale alla fase difensiva. Difensori centrali affidabili ed esterni\ndinamici restano fondamentali nel suo sistema, così come i centrocampisti con capacità di inserimento e gli attaccanti\ndi movimento. ",
-    "sosFantaComment": "Da Antonio Conte a Massimiliano Allegri, dalla difesa a 3 al 4-3-3 provato finora (a volte potrà\nessere anche un 4-2-3-1). Meret più di Milinkovic, il pre-campionato dice questo sulla gerarchia in porta. Inizia ai box\nla stagione di Buongiorno e lo stop non sarà breve (tornerà verso novembre): Marin o Olivera per sostituirlo, aspettando\nl'ufficialità di Badiashile che poi diventerà il primo candidato. Anguissa parte da prima alternativa di McTominay e/o\nDe Bruyne. Nel tridente più Alisson Santos e Politano di Neres in partenza.",
-    "keyPoints": [
-      {
-        "text": "Solidità difensiva",
-        "tone": "good"
-      },
-      {
-        "text": "Palle inattive decisive",
-        "tone": "good"
-      },
-      {
-        "text": "Baricentro squadra basso",
-        "tone": "bad"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "gk",
-        "tone": "good"
-      },
-      {
-        "role": "def-center",
-        "tone": "good"
-      }
-    ],
-    "starters": [
-      {
-        "playerId": "1bef666d-d305-4795-af71-2e946eb6ab0e",
-        "csvId": 572,
-        "name": "Meret",
-        "role": "P"
-      },
-      {
-        "playerId": "dbd256fc-4861-493d-8fc6-8abc4503c061",
-        "csvId": 2816,
-        "name": "Di Lorenzo",
-        "role": "D"
-      },
-      {
-        "playerId": "f61d5ce5-111a-4f71-b6f7-dfe4393621d3",
-        "csvId": 4409,
-        "name": "Rrahmani",
-        "role": "D"
-      },
-      {
-        "playerId": "3cbf391b-c091-4b2f-a391-23c8fa6b4eb3",
-        "csvId": 6638,
-        "name": "Marin R.",
-        "role": "D"
-      },
-      {
-        "playerId": "65b01da4-d962-42ce-bc23-e7bcc306a61b",
-        "csvId": 1852,
-        "name": "Spinazzola",
-        "role": "D"
-      },
-      {
-        "playerId": "f06f2f39-13e2-4cda-8319-dffd25ec0cbd",
-        "csvId": 2517,
-        "name": "De Bruyne",
-        "role": "C"
-      },
-      {
-        "playerId": "a411c282-00be-4e2f-8599-e0a2e5da85bf",
-        "csvId": 4287,
-        "name": "Lobotka",
-        "role": "C"
-      },
-      {
-        "playerId": "f7f99d6a-c8e0-4ec8-a434-1ffba0253b41",
-        "csvId": 4777,
-        "name": "McTominay",
-        "role": "C"
-      },
-      {
-        "playerId": "e3ca6a3a-4c39-4307-ab09-0520b0f066db",
-        "csvId": 536,
-        "name": "Politano",
-        "role": "C"
-      },
-      {
-        "playerId": "1da941e1-9f25-4af2-9903-6d3004e1765c",
-        "csvId": 7351,
-        "name": "Santos A.",
-        "role": "A"
-      },
-      {
-        "playerId": "4c72a8d4-8416-4a9b-b70f-810f16af86ff",
-        "csvId": "6052",
-        "name": "Hojlund",
-        "role": "A"
-      }
-    ],
-    "rig": [
-      {
-        "playerId": "f06f2f39-13e2-4cda-8319-dffd25ec0cbd",
-        "name": "De Bruyne",
-        "role": "C"
-      },
-      {
-        "playerId": "4c72a8d4-8416-4a9b-b70f-810f16af86ff",
-        "name": "Hojlund",
-        "role": "A"
-      },
-      {
-        "playerId": "e3ca6a3a-4c39-4307-ab09-0520b0f066db",
-        "name": "Politano",
-        "role": "C"
-      }
-    ],
-    "pun": [
-      {
-        "playerId": "f06f2f39-13e2-4cda-8319-dffd25ec0cbd",
-        "name": "De Bruyne",
-        "role": "C"
-      },
-      {
-        "playerId": "e3ca6a3a-4c39-4307-ab09-0520b0f066db",
-        "name": "Politano",
-        "role": "C"
-      }
-    ],
-    "corner": [
-      {
-        "playerId": "f06f2f39-13e2-4cda-8319-dffd25ec0cbd",
-        "name": "De Bruyne",
-        "role": "C"
-      },
-      {
-        "playerId": "e3ca6a3a-4c39-4307-ab09-0520b0f066db",
-        "name": "Politano",
-        "role": "C"
-      },
-      {
-        "playerId": "3cd2885e-8e25-4e3f-8c86-8af871b76421",
-        "name": "Neres",
-        "role": "A"
-      }
-    ],
-    "ballottaggi": [
-      [
-        {
-          "playerId": "e3ca6a3a-4c39-4307-ab09-0520b0f066db",
-          "name": "Politano",
-          "role": "C",
-          "perc": 60
-        },
-        {
-          "playerId": "3cd2885e-8e25-4e3f-8c86-8af871b76421",
-          "name": "Neres",
-          "role": "A",
-          "perc": 40
-        }
-      ]
-    ],
-    "up": [
-      {
-        "playerId": "1da941e1-9f25-4af2-9903-6d3004e1765c",
-        "name": "Santos A.",
-        "points": [
-          "Prolifico nei contropiedi",
-          "Bravo a sfruttare gli spazi aperti dalla difesa bassa"
-        ]
-      },
-      {
-        "playerId": "f7f99d6a-c8e0-4ec8-a434-1ffba0253b41",
-        "name": "McTominay",
-        "points": [
-          "Prolifico nei piazzati",
-          "Inserimenti in area avversaria"
-        ]
-      }
-    ],
-    "down": [
-      {
-        "playerId": "d850d49a-7b84-4f80-a7f3-f83b61df60a5",
-        "name": "Gilmour",
-        "points": [
-          "Indietro nelle gerarchie"
-        ]
-      }
-    ],
-    "young": [
-      {
-        "playerId": "06e40e5b-de3e-410d-8540-4775224cb363",
-        "name": "Vergara",
-        "points": [
-          "Utile nelle rotazioni"
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "playerId": "732b19cf-3340-4588-ba8a-85459261b4c1",
-        "name": "Olivera",
-        "points": [
-          "Jolly difensivo"
-        ]
-      }
-    ]
-  },
-  "napoli": {
-    "code": "NAP",
-    "name": "Napoli",
-    "city": "Napoli",
-    "stadium": "Diego Armando Maradona",
-    "primaryColor": "#0080ff",
-    "secondaryColor": "#ffffff",
-    "accentColor": "#002d62",
-    "coach": "Massimiliano Allegri",
-    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Allegri.webp",
-    "defaultFormation": "4-3-3",
-    "module": "4-3-3",
-    "attackRating": 4.5,
-    "defenseRating": 4.5,
-    "comment": "Reduce dalla conquista dello scudetto, Conte ha portato a Napoli mentalità vincente, rigore tattico e una\nforte identità di squadra. Pur avendo nel 3-5-2 il suo marchio di fabbrica, ha dimostrato grande intelligenza\nadattandosi al contesto partenopeo, riuscendo a trovare equilibrio anche con il 4-3-3, modulo che meglio valorizza le\ncaratteristiche tecniche e offensive della rosa azzurra. Le sue squadre si distinguono per organizzazione, intensità e\nspirito di sacrificio, con un’attenzione maniacale alla fase difensiva. Difensori centrali affidabili ed esterni\ndinamici restano fondamentali nel suo sistema, così come i centrocampisti con capacità di inserimento e gli attaccanti\ndi movimento. ",
-    "sosFantaComment": "Da Antonio Conte a Massimiliano Allegri, dalla difesa a 3 al 4-3-3 provato finora (a volte potrà\nessere anche un 4-2-3-1). Meret più di Milinkovic, il pre-campionato dice questo sulla gerarchia in porta. Inizia ai box\nla stagione di Buongiorno e lo stop non sarà breve (tornerà verso novembre): Marin o Olivera per sostituirlo, aspettando\nl'ufficialità di Badiashile che poi diventerà il primo candidato. Anguissa parte da prima alternativa di McTominay e/o\nDe Bruyne. Nel tridente più Alisson Santos e Politano di Neres in partenza.",
-    "keyPoints": [
-      {
-        "text": "Solidità difensiva",
-        "tone": "good"
-      },
-      {
-        "text": "Palle inattive decisive",
-        "tone": "good"
-      },
-      {
-        "text": "Baricentro squadra basso",
-        "tone": "bad"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "gk",
-        "tone": "good"
-      },
-      {
-        "role": "def-center",
-        "tone": "good"
-      }
-    ],
-    "starters": [
-      {
-        "playerId": "1bef666d-d305-4795-af71-2e946eb6ab0e",
-        "csvId": 572,
-        "name": "Meret",
-        "role": "P"
-      },
-      {
-        "playerId": "dbd256fc-4861-493d-8fc6-8abc4503c061",
-        "csvId": 2816,
-        "name": "Di Lorenzo",
-        "role": "D"
-      },
-      {
-        "playerId": "f61d5ce5-111a-4f71-b6f7-dfe4393621d3",
-        "csvId": 4409,
-        "name": "Rrahmani",
-        "role": "D"
-      },
-      {
-        "playerId": "3cbf391b-c091-4b2f-a391-23c8fa6b4eb3",
-        "csvId": 6638,
-        "name": "Marin R.",
-        "role": "D"
-      },
-      {
-        "playerId": "65b01da4-d962-42ce-bc23-e7bcc306a61b",
-        "csvId": 1852,
-        "name": "Spinazzola",
-        "role": "D"
-      },
-      {
-        "playerId": "f06f2f39-13e2-4cda-8319-dffd25ec0cbd",
-        "csvId": 2517,
-        "name": "De Bruyne",
-        "role": "C"
-      },
-      {
-        "playerId": "a411c282-00be-4e2f-8599-e0a2e5da85bf",
-        "csvId": 4287,
-        "name": "Lobotka",
-        "role": "C"
-      },
-      {
-        "playerId": "f7f99d6a-c8e0-4ec8-a434-1ffba0253b41",
-        "csvId": 4777,
-        "name": "McTominay",
-        "role": "C"
-      },
-      {
-        "playerId": "e3ca6a3a-4c39-4307-ab09-0520b0f066db",
-        "csvId": 536,
-        "name": "Politano",
-        "role": "C"
-      },
-      {
-        "playerId": "1da941e1-9f25-4af2-9903-6d3004e1765c",
-        "csvId": 7351,
-        "name": "Santos A.",
-        "role": "A"
-      },
-      {
-        "playerId": "4c72a8d4-8416-4a9b-b70f-810f16af86ff",
-        "csvId": "6052",
-        "name": "Hojlund",
-        "role": "A"
-      }
-    ],
-    "rig": [
-      {
-        "playerId": "f06f2f39-13e2-4cda-8319-dffd25ec0cbd",
-        "name": "De Bruyne",
-        "role": "C"
-      },
-      {
-        "playerId": "4c72a8d4-8416-4a9b-b70f-810f16af86ff",
-        "name": "Hojlund",
-        "role": "A"
-      },
-      {
-        "playerId": "e3ca6a3a-4c39-4307-ab09-0520b0f066db",
-        "name": "Politano",
-        "role": "C"
-      }
-    ],
-    "pun": [
-      {
-        "playerId": "f06f2f39-13e2-4cda-8319-dffd25ec0cbd",
-        "name": "De Bruyne",
-        "role": "C"
-      },
-      {
-        "playerId": "e3ca6a3a-4c39-4307-ab09-0520b0f066db",
-        "name": "Politano",
-        "role": "C"
-      }
-    ],
-    "corner": [
-      {
-        "playerId": "f06f2f39-13e2-4cda-8319-dffd25ec0cbd",
-        "name": "De Bruyne",
-        "role": "C"
-      },
-      {
-        "playerId": "e3ca6a3a-4c39-4307-ab09-0520b0f066db",
-        "name": "Politano",
-        "role": "C"
-      },
-      {
-        "playerId": "3cd2885e-8e25-4e3f-8c86-8af871b76421",
-        "name": "Neres",
-        "role": "A"
-      }
-    ],
-    "ballottaggi": [
-      [
-        {
-          "playerId": "e3ca6a3a-4c39-4307-ab09-0520b0f066db",
-          "name": "Politano",
-          "role": "C",
-          "perc": 60
-        },
-        {
-          "playerId": "3cd2885e-8e25-4e3f-8c86-8af871b76421",
-          "name": "Neres",
-          "role": "A",
-          "perc": 40
-        }
-      ]
-    ],
-    "up": [
-      {
-        "playerId": "1da941e1-9f25-4af2-9903-6d3004e1765c",
-        "name": "Santos A.",
-        "points": [
-          "Prolifico nei contropiedi",
-          "Bravo a sfruttare gli spazi aperti dalla difesa bassa"
-        ]
-      },
-      {
-        "playerId": "f7f99d6a-c8e0-4ec8-a434-1ffba0253b41",
-        "name": "McTominay",
-        "points": [
-          "Prolifico nei piazzati",
-          "Inserimenti in area avversaria"
-        ]
-      }
-    ],
-    "down": [
-      {
-        "playerId": "d850d49a-7b84-4f80-a7f3-f83b61df60a5",
-        "name": "Gilmour",
-        "points": [
-          "Indietro nelle gerarchie"
-        ]
-      }
-    ],
-    "young": [
-      {
-        "playerId": "06e40e5b-de3e-410d-8540-4775224cb363",
-        "name": "Vergara",
-        "points": [
-          "Utile nelle rotazioni"
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "playerId": "732b19cf-3340-4588-ba8a-85459261b4c1",
-        "name": "Olivera",
-        "points": [
-          "Jolly difensivo"
-        ]
-      }
-    ]
-  },
-  "MON": {
-    "code": "MON",
-    "name": "Monza",
-    "city": "Monza",
-    "stadium": "U-Power Stadium",
-    "primaryColor": "#dc143c",
-    "secondaryColor": "#ffffff",
-    "accentColor": "#8b0000",
-    "coach": "Ivan Jurić",
-    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Juric.webp",
-    "defaultFormation": "3-4-2-1",
-    "module": "3-4-2-1",
-    "attackRating": 2.0,
-    "defenseRating": 2.0,
-    "comment": "",
-    "sosFantaComment": "È arrivato Ivan Juric sulla panchina del neopromosso Monza, sarà difesa a 3: provato il 3-4-2-1. A\ncentrocampo il nuovo arrivato Akinsanmiro si gioca una maglia con Colombo, ma salvo sorprese giocheranno entrambi finché\nè infortunato Pessina (starà fuori 2 mesi circa da metà agosto, poi tornerà e sarà lui il titolare). Cutrone o il nuovo\narrivato Varela a guidare l'attacco, dipenderà anche dal momento dei due. Poi Colpani, Mota e Ciurria a oggi si giocano\ni due posti a supporto del centravanti, ma Varela può contendersi una maglia anche qui e lo ha dimostrato nel\npre-campionato.",
-    "keyPoints": [
-      {
-        "text": "Importanza esterni",
-        "tone": "good"
-      },
-      {
-        "text": "Marcatura a tutto campo",
-        "tone": "neutral"
-      },
-      {
-        "text": "Gioco molto aggressivo",
-        "tone": "neutral"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "mid-wide",
-        "tone": "good"
-      },
-      {
-        "role": "mid-center",
-        "tone": "bad"
-      }
-    ],
-    "starters": [
-      {
-        "playerId": "8a42bb83-261c-4d0b-aa2a-ecf87a361d96",
-        "csvId": 4485,
-        "name": "Thiam",
-        "role": "P"
-      },
-      {
-        "playerId": "9b9115fc-6b78-47ec-9924-c974e8b83378",
-        "csvId": 7238,
-        "name": "Kouadio",
-        "role": "D"
-      },
-      {
-        "playerId": "1a26b98e-29c0-4ead-9dc9-8851a25a3f27",
-        "csvId": 2115,
-        "name": "Delli Carri",
-        "role": "D"
-      },
-      {
-        "playerId": "f729e4bf-bf18-4e1d-827a-20ef37865b8a",
-        "csvId": 4925,
-        "name": "Carboni A.",
-        "role": "D"
-      },
-      {
-        "playerId": "76ccd152-fe9d-440b-a890-6c9adef778ec",
-        "csvId": 5838,
-        "name": "Birindelli",
-        "role": "D"
-      },
-      {
-        "playerId": "d47bf2f7-f320-4340-9845-33ef2f94d175",
-        "csvId": null,
-        "name": "Mangas",
-        "role": "D"
-      },
-      {
-        "playerId": "fd980a09-99b1-4174-81e5-60cbcd1fbb49",
-        "csvId": 6593,
-        "name": "Akinsanmiro",
-        "role": "C"
-      },
-      {
-        "playerId": "c294c6f4-b7d2-4657-a072-6d5cb3b65869",
-        "csvId": 2741,
-        "name": "Pessina",
-        "role": "C"
-      },
-      {
-        "playerId": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
-        "csvId": 5878,
-        "name": "Colpani",
-        "role": "C"
-      },
-      {
-        "playerId": "88893e63-f3f6-4224-838b-8e189ef9f312",
-        "csvId": 5882,
-        "name": "Mota",
-        "role": "A"
-      },
-      {
-        "playerId": "4cc6309e-aacf-4bb2-b5a8-e425bfdafcb0",
-        "csvId": 2155,
-        "name": "Cutrone",
-        "role": "A"
-      }
-    ],
-    "rig": [
-      {
-        "playerId": "c294c6f4-b7d2-4657-a072-6d5cb3b65869",
-        "name": "Pessina",
-        "role": "C"
-      },
-      {
-        "playerId": "4cc6309e-aacf-4bb2-b5a8-e425bfdafcb0",
-        "name": "Cutrone",
-        "role": "A"
-      },
-      {
-        "playerId": "0a3e9174-68bc-430c-845e-e04c95bcbc5a",
-        "name": "",
-        "role": ""
-      }
-    ],
-    "pun": [
-      {
-        "playerId": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
-        "name": "Colpani",
-        "role": "C"
-      },
-      {
-        "playerId": "c294c6f4-b7d2-4657-a072-6d5cb3b65869",
-        "name": "Pessina",
-        "role": "C"
-      }
-    ],
-    "corner": [
-      {
-        "playerId": "c294c6f4-b7d2-4657-a072-6d5cb3b65869",
-        "name": "Pessina",
-        "role": "C"
-      },
-      {
-        "playerId": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
-        "name": "Colpani",
-        "role": "C"
-      },
-      {
-        "playerId": "f4f8e1e3-4b76-446f-b395-f7c2eeb90176",
-        "name": "Ciurria",
-        "role": "C"
-      }
-    ],
-    "ballottaggi": [
-      [
-        {
-          "playerId": "4cc6309e-aacf-4bb2-b5a8-e425bfdafcb0",
-          "name": "Cutrone",
-          "role": "A",
-          "perc": 55
-        },
-        {
-          "playerId": "0053b230-688b-4fef-90f5-b823c64ea378",
-          "name": "Varela G.",
-          "role": "A",
-          "perc": 45
-        }
-      ],
-      [
-        {
-          "playerId": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
-          "name": "Colpani",
-          "role": "C",
-          "perc": 55
-        },
-        {
-          "playerId": "f4f8e1e3-4b76-446f-b395-f7c2eeb90176",
-          "name": "Ciurria",
-          "role": "C",
-          "perc": 45
-        }
-      ],
-      [
-        {
-          "playerId": "88893e63-f3f6-4224-838b-8e189ef9f312",
-          "name": "Mota",
-          "role": "A",
-          "perc": 55
-        },
-        {
-          "playerId": "f4f8e1e3-4b76-446f-b395-f7c2eeb90176",
-          "name": "Ciurria",
-          "role": "C",
-          "perc": 45
-        }
-      ],
-      [
-        {
-          "playerId": "fd980a09-99b1-4174-81e5-60cbcd1fbb49",
-          "name": "Akinsanmiro",
-          "role": "C",
-          "perc": 51
-        },
-        {
-          "playerId": "d8b66d33-4dcc-4cc8-9f3e-f5add19e00c5",
-          "name": "Colombo L.",
-          "role": "C",
-          "perc": 49
-        }
-      ]
-    ],
-    "up": [
-      {
-        "playerId": "88893e63-f3f6-4224-838b-8e189ef9f312",
-        "name": "Mota",
-        "points": [
-          "Leader della squadra",
-          "Svaria su tutto il fronte d'attacco",
-          "Qualche dubbio sull'integrità fisica"
-        ]
-      },
-      {
-        "playerId": "76ccd152-fe9d-440b-a890-6c9adef778ec",
-        "name": "Birindelli",
-        "points": [
-          "Gioca su entrambe le fasce",
-          "Partecipa alla manovra offensiva"
-        ]
-      }
-    ],
-    "down": [
-      {
-        "playerId": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
-        "name": "Colpani",
-        "points": [
-          "Giocatore discontinuo"
-        ]
-      }
-    ],
-    "young": [
-      {
-        "playerId": "2d943164-e3df-4a78-a795-93d26f2623e7",
-        "name": "Bakoune",
-        "points": [
-          "Ha doti per scalare le gerarchie"
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "playerId": "8a42bb83-261c-4d0b-aa2a-ecf87a361d96",
-        "name": "Thiam",
-        "points": [
-          "Buon rapporto parate-tiri"
-        ]
-      }
-    ]
-  },
-  "monza": {
-    "code": "MON",
-    "name": "Monza",
-    "city": "Monza",
-    "stadium": "U-Power Stadium",
-    "primaryColor": "#dc143c",
-    "secondaryColor": "#ffffff",
-    "accentColor": "#8b0000",
-    "coach": "Ivan Jurić",
-    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Juric.webp",
-    "defaultFormation": "3-4-2-1",
-    "module": "3-4-2-1",
-    "attackRating": 2.0,
-    "defenseRating": 2.0,
-    "comment": "",
-    "sosFantaComment": "È arrivato Ivan Juric sulla panchina del neopromosso Monza, sarà difesa a 3: provato il 3-4-2-1. A\ncentrocampo il nuovo arrivato Akinsanmiro si gioca una maglia con Colombo, ma salvo sorprese giocheranno entrambi finché\nè infortunato Pessina (starà fuori 2 mesi circa da metà agosto, poi tornerà e sarà lui il titolare). Cutrone o il nuovo\narrivato Varela a guidare l'attacco, dipenderà anche dal momento dei due. Poi Colpani, Mota e Ciurria a oggi si giocano\ni due posti a supporto del centravanti, ma Varela può contendersi una maglia anche qui e lo ha dimostrato nel\npre-campionato.",
-    "keyPoints": [
-      {
-        "text": "Importanza esterni",
-        "tone": "good"
-      },
-      {
-        "text": "Marcatura a tutto campo",
-        "tone": "neutral"
-      },
-      {
-        "text": "Gioco molto aggressivo",
-        "tone": "neutral"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "mid-wide",
-        "tone": "good"
-      },
-      {
-        "role": "mid-center",
-        "tone": "bad"
-      }
-    ],
-    "starters": [
-      {
-        "playerId": "8a42bb83-261c-4d0b-aa2a-ecf87a361d96",
-        "csvId": 4485,
-        "name": "Thiam",
-        "role": "P"
-      },
-      {
-        "playerId": "9b9115fc-6b78-47ec-9924-c974e8b83378",
-        "csvId": 7238,
-        "name": "Kouadio",
-        "role": "D"
-      },
-      {
-        "playerId": "1a26b98e-29c0-4ead-9dc9-8851a25a3f27",
-        "csvId": 2115,
-        "name": "Delli Carri",
-        "role": "D"
-      },
-      {
-        "playerId": "f729e4bf-bf18-4e1d-827a-20ef37865b8a",
-        "csvId": 4925,
-        "name": "Carboni A.",
-        "role": "D"
-      },
-      {
-        "playerId": "76ccd152-fe9d-440b-a890-6c9adef778ec",
-        "csvId": 5838,
-        "name": "Birindelli",
-        "role": "D"
-      },
-      {
-        "playerId": "d47bf2f7-f320-4340-9845-33ef2f94d175",
-        "csvId": null,
-        "name": "Mangas",
-        "role": "D"
-      },
-      {
-        "playerId": "fd980a09-99b1-4174-81e5-60cbcd1fbb49",
-        "csvId": 6593,
-        "name": "Akinsanmiro",
-        "role": "C"
-      },
-      {
-        "playerId": "c294c6f4-b7d2-4657-a072-6d5cb3b65869",
-        "csvId": 2741,
-        "name": "Pessina",
-        "role": "C"
-      },
-      {
-        "playerId": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
-        "csvId": 5878,
-        "name": "Colpani",
-        "role": "C"
-      },
-      {
-        "playerId": "88893e63-f3f6-4224-838b-8e189ef9f312",
-        "csvId": 5882,
-        "name": "Mota",
-        "role": "A"
-      },
-      {
-        "playerId": "4cc6309e-aacf-4bb2-b5a8-e425bfdafcb0",
-        "csvId": 2155,
-        "name": "Cutrone",
-        "role": "A"
-      }
-    ],
-    "rig": [
-      {
-        "playerId": "c294c6f4-b7d2-4657-a072-6d5cb3b65869",
-        "name": "Pessina",
-        "role": "C"
-      },
-      {
-        "playerId": "4cc6309e-aacf-4bb2-b5a8-e425bfdafcb0",
-        "name": "Cutrone",
-        "role": "A"
-      },
-      {
-        "playerId": "0a3e9174-68bc-430c-845e-e04c95bcbc5a",
-        "name": "",
-        "role": ""
-      }
-    ],
-    "pun": [
-      {
-        "playerId": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
-        "name": "Colpani",
-        "role": "C"
-      },
-      {
-        "playerId": "c294c6f4-b7d2-4657-a072-6d5cb3b65869",
-        "name": "Pessina",
-        "role": "C"
-      }
-    ],
-    "corner": [
-      {
-        "playerId": "c294c6f4-b7d2-4657-a072-6d5cb3b65869",
-        "name": "Pessina",
-        "role": "C"
-      },
-      {
-        "playerId": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
-        "name": "Colpani",
-        "role": "C"
-      },
-      {
-        "playerId": "f4f8e1e3-4b76-446f-b395-f7c2eeb90176",
-        "name": "Ciurria",
-        "role": "C"
-      }
-    ],
-    "ballottaggi": [
-      [
-        {
-          "playerId": "4cc6309e-aacf-4bb2-b5a8-e425bfdafcb0",
-          "name": "Cutrone",
-          "role": "A",
-          "perc": 55
-        },
-        {
-          "playerId": "0053b230-688b-4fef-90f5-b823c64ea378",
-          "name": "Varela G.",
-          "role": "A",
-          "perc": 45
-        }
-      ],
-      [
-        {
-          "playerId": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
-          "name": "Colpani",
-          "role": "C",
-          "perc": 55
-        },
-        {
-          "playerId": "f4f8e1e3-4b76-446f-b395-f7c2eeb90176",
-          "name": "Ciurria",
-          "role": "C",
-          "perc": 45
-        }
-      ],
-      [
-        {
-          "playerId": "88893e63-f3f6-4224-838b-8e189ef9f312",
-          "name": "Mota",
-          "role": "A",
-          "perc": 55
-        },
-        {
-          "playerId": "f4f8e1e3-4b76-446f-b395-f7c2eeb90176",
-          "name": "Ciurria",
-          "role": "C",
-          "perc": 45
-        }
-      ],
-      [
-        {
-          "playerId": "fd980a09-99b1-4174-81e5-60cbcd1fbb49",
-          "name": "Akinsanmiro",
-          "role": "C",
-          "perc": 51
-        },
-        {
-          "playerId": "d8b66d33-4dcc-4cc8-9f3e-f5add19e00c5",
-          "name": "Colombo L.",
-          "role": "C",
-          "perc": 49
-        }
-      ]
-    ],
-    "up": [
-      {
-        "playerId": "88893e63-f3f6-4224-838b-8e189ef9f312",
-        "name": "Mota",
-        "points": [
-          "Leader della squadra",
-          "Svaria su tutto il fronte d'attacco",
-          "Qualche dubbio sull'integrità fisica"
-        ]
-      },
-      {
-        "playerId": "76ccd152-fe9d-440b-a890-6c9adef778ec",
-        "name": "Birindelli",
-        "points": [
-          "Gioca su entrambe le fasce",
-          "Partecipa alla manovra offensiva"
-        ]
-      }
-    ],
-    "down": [
-      {
-        "playerId": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
-        "name": "Colpani",
-        "points": [
-          "Giocatore discontinuo"
-        ]
-      }
-    ],
-    "young": [
-      {
-        "playerId": "2d943164-e3df-4a78-a795-93d26f2623e7",
-        "name": "Bakoune",
-        "points": [
-          "Ha doti per scalare le gerarchie"
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "playerId": "8a42bb83-261c-4d0b-aa2a-ecf87a361d96",
-        "name": "Thiam",
-        "points": [
-          "Buon rapporto parate-tiri"
-        ]
-      }
-    ]
-  },
   "TOR": {
     "code": "TOR",
     "name": "Torino",
@@ -7091,8 +5603,8 @@ export const SOS_TEAMS_DATA = {
     "module": "3-4-2-1",
     "attackRating": 2.5,
     "defenseRating": 2.0,
-    "comment": "Il Torino cambia guida tecnica dopo la 26ª giornata con l'arrivo di Roberto D'Aversa al posto di Marco\nBaroni. L'obiettivo è salvare la stagione granata ed evitare la retrocessione in Serie B. D'aversa è un tecnico\nspecializzato in salvezze. Di base non dovrebbe cambiare il modulo tattico della squadra granata, con la difesa a 3 un\ncentrocampo muscolare e Vlasic come supporto alle due punte. Ciò che cambierà è l'attenzione alla fase difensiva, vero\ntallone d'Achille della stagione granata. D'Aversa richiede una pressione costante sul portatore di palla avversario e\nun'organizzazione difensiva solida, cercando di ridurre al minimo gli spazi tra le linee. Le sue squadre cercano spesso\nla verticalizzazione immediata. In fase di costruzione può utilizzare una struttura 4+2, dove i difensori e i mediani\ncollaborano per uscire dalla pressione, cercando poi il lancio lungo per le punte se pressati intensamente. L'ago della\nbilancia sarà Vlasic, collante tra centrocampo e attacco.",
-    "sosFantaComment": "È arrivato Ignazio Abate sulla panchina del Torino: più 3-4-2-1 che difesa a 4, provato solo una\nvolta nel precampionato. Cacciamani si candida a giocare a sinistra, promettente e già pronto. Occhio a Oristanio: si\ngioca una maglia con Adams e Njie di fatto. Il tridente sarebbe con lui e Vlasic a supporto di Simeone; Zapata è di\nfatto il vice Cholito. Ma può diventare anche un 3-4-1-2. In difesa sono arrivati Comuzzo e Comert, a oggi loro due e\nCoco sono avanti su Ismajli. A centrocampo il nuovo arrivato Fitz-Jim si candida a giocare, il ballottaggio è più tra\nCasadei e Gineitis.",
+    "comment": "Il Torino cambia guida tecnica dopo la 26ª giornata con l'arrivo di Roberto D'Aversa al posto di Marco Baroni. L'obiettivo è salvare la stagione granata ed evitare la retrocessione in Serie B. D'aversa è un tecnico specializzato in salvezze. Di base non  dovrebbe cambiare il modulo tattico della squadra granata, con la difesa a 3 un centrocampo muscolare e Vlasic come supporto alle due punte. Ciò che cambierà è l'attenzione alla fase difensiva, vero tallone d'Achille della stagione granata. D'Aversa richiede una pressione costante sul portatore di palla avversario e un'organizzazione difensiva solida, cercando di ridurre al minimo gli spazi tra le linee. Le sue squadre cercano spesso la verticalizzazione immediata. In fase di costruzione può utilizzare una struttura 4+2, dove i difensori e i mediani collaborano per uscire dalla pressione, cercando poi il lancio lungo per le punte se pressati intensamente. L'ago della bilancia sarà Vlasic, collante tra centrocampo e attacco.",
+    "sosFantaComment": "È arrivato Ignazio Abate sulla panchina del Torino: più 3-4-2-1 che difesa a 4, provato solo una volta nel precampionato. Cacciamani si candida a giocare a sinistra, promettente e già pronto. Occhio a Casadei: è stato provato praticamente sulla trequarti. Il tridente sarebbe con lui e Vlasic a supporto di Simeone; Zapata è di fatto il vice Cholito. Ma può diventare anche un 3-4-1-2. In difesa sono arrivati Comuzzo e Comert, a oggi loro due e Coco sono avanti su Ismajli. A centrocampo il nuovo arrivato Fitz-Jim si candida a giocare titolare.",
     "keyPoints": [
       {
         "text": "Trequartisti mobili",
@@ -7119,9 +5631,9 @@ export const SOS_TEAMS_DATA = {
     ],
     "starters": [
       {
-        "playerId": "36014808-99ee-486d-a681-26d3d5fbe551",
-        "csvId": "5320",
-        "name": "Paleari",
+        "playerId": "9f507758-5805-4ea3-9f4b-6158c66feefd",
+        "csvId": 7457,
+        "name": "Mascardi",
         "role": "P"
       },
       {
@@ -7155,9 +5667,9 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
-        "playerId": "2d18f8b5-9c3a-4878-ad3f-9765c8d0e1b6",
-        "csvId": "5888",
-        "name": "Casadei",
+        "playerId": "6f0efc62-d6a5-4540-a67b-cac636d8bdf0",
+        "csvId": 6170,
+        "name": "Gineitis",
         "role": "C"
       },
       {
@@ -7167,9 +5679,9 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
-        "playerId": "645514e5-6f69-4e32-ae5e-57bb6bca13b7",
-        "csvId": 6218,
-        "name": "Oristanio",
+        "playerId": "2d18f8b5-9c3a-4878-ad3f-9765c8d0e1b6",
+        "csvId": 5888,
+        "name": "Casadei",
         "role": "C"
       },
       {
@@ -7234,20 +5746,6 @@ export const SOS_TEAMS_DATA = {
     "ballottaggi": [
       [
         {
-          "playerId": "645514e5-6f69-4e32-ae5e-57bb6bca13b7",
-          "name": "Oristanio",
-          "role": "C",
-          "perc": 51
-        },
-        {
-          "playerId": "491914f6-841c-478f-a8d8-8710dd039a27",
-          "name": "Adams C.",
-          "role": "A",
-          "perc": 49
-        }
-      ],
-      [
-        {
           "playerId": "2ae97ae9-6de8-47be-a015-6421fa448f61",
           "name": "Coco",
           "role": "D",
@@ -7257,20 +5755,6 @@ export const SOS_TEAMS_DATA = {
           "playerId": "eedbf897-636b-42dc-9a40-fefd10c30051",
           "name": "Ismajli",
           "role": "D",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "2d18f8b5-9c3a-4878-ad3f-9765c8d0e1b6",
-          "name": "Casadei",
-          "role": "C",
-          "perc": 51
-        },
-        {
-          "playerId": "6f0efc62-d6a5-4540-a67b-cac636d8bdf0",
-          "name": "Gineitis",
-          "role": "C",
           "perc": 49
         }
       ]
@@ -7304,19 +5788,19 @@ export const SOS_TEAMS_DATA = {
     ],
     "young": [
       {
-        "playerId": "81dda297-825d-419f-bdc1-dadd2d326b6c",
-        "name": "Njie",
+        "playerId": "53e42c7e-ea10-414b-a19f-ce1880b59641",
+        "name": "Cacciamani",
         "points": [
-          "Buone doti aerobiche e nel dribbling"
+          "Ottima velocità e caparbietà"
         ]
       }
     ],
     "hidden": [
       {
-        "playerId": "645514e5-6f69-4e32-ae5e-57bb6bca13b7",
-        "name": "Oristanio",
+        "playerId": "d739968a-b64a-4934-b1a7-695255f63af0",
+        "name": "Pedersen",
         "points": [
-          "Adatto al sistema di Abate"
+          "Utilizzato molto nelle transizioni offensive"
         ]
       }
     ]
@@ -7335,8 +5819,8 @@ export const SOS_TEAMS_DATA = {
     "module": "3-4-2-1",
     "attackRating": 2.5,
     "defenseRating": 2.0,
-    "comment": "Il Torino cambia guida tecnica dopo la 26ª giornata con l'arrivo di Roberto D'Aversa al posto di Marco\nBaroni. L'obiettivo è salvare la stagione granata ed evitare la retrocessione in Serie B. D'aversa è un tecnico\nspecializzato in salvezze. Di base non dovrebbe cambiare il modulo tattico della squadra granata, con la difesa a 3 un\ncentrocampo muscolare e Vlasic come supporto alle due punte. Ciò che cambierà è l'attenzione alla fase difensiva, vero\ntallone d'Achille della stagione granata. D'Aversa richiede una pressione costante sul portatore di palla avversario e\nun'organizzazione difensiva solida, cercando di ridurre al minimo gli spazi tra le linee. Le sue squadre cercano spesso\nla verticalizzazione immediata. In fase di costruzione può utilizzare una struttura 4+2, dove i difensori e i mediani\ncollaborano per uscire dalla pressione, cercando poi il lancio lungo per le punte se pressati intensamente. L'ago della\nbilancia sarà Vlasic, collante tra centrocampo e attacco.",
-    "sosFantaComment": "È arrivato Ignazio Abate sulla panchina del Torino: più 3-4-2-1 che difesa a 4, provato solo una\nvolta nel precampionato. Cacciamani si candida a giocare a sinistra, promettente e già pronto. Occhio a Oristanio: si\ngioca una maglia con Adams e Njie di fatto. Il tridente sarebbe con lui e Vlasic a supporto di Simeone; Zapata è di\nfatto il vice Cholito. Ma può diventare anche un 3-4-1-2. In difesa sono arrivati Comuzzo e Comert, a oggi loro due e\nCoco sono avanti su Ismajli. A centrocampo il nuovo arrivato Fitz-Jim si candida a giocare, il ballottaggio è più tra\nCasadei e Gineitis.",
+    "comment": "Il Torino cambia guida tecnica dopo la 26ª giornata con l'arrivo di Roberto D'Aversa al posto di Marco Baroni. L'obiettivo è salvare la stagione granata ed evitare la retrocessione in Serie B. D'aversa è un tecnico specializzato in salvezze. Di base non  dovrebbe cambiare il modulo tattico della squadra granata, con la difesa a 3 un centrocampo muscolare e Vlasic come supporto alle due punte. Ciò che cambierà è l'attenzione alla fase difensiva, vero tallone d'Achille della stagione granata. D'Aversa richiede una pressione costante sul portatore di palla avversario e un'organizzazione difensiva solida, cercando di ridurre al minimo gli spazi tra le linee. Le sue squadre cercano spesso la verticalizzazione immediata. In fase di costruzione può utilizzare una struttura 4+2, dove i difensori e i mediani collaborano per uscire dalla pressione, cercando poi il lancio lungo per le punte se pressati intensamente. L'ago della bilancia sarà Vlasic, collante tra centrocampo e attacco.",
+    "sosFantaComment": "È arrivato Ignazio Abate sulla panchina del Torino: più 3-4-2-1 che difesa a 4, provato solo una volta nel precampionato. Cacciamani si candida a giocare a sinistra, promettente e già pronto. Occhio a Casadei: è stato provato praticamente sulla trequarti. Il tridente sarebbe con lui e Vlasic a supporto di Simeone; Zapata è di fatto il vice Cholito. Ma può diventare anche un 3-4-1-2. In difesa sono arrivati Comuzzo e Comert, a oggi loro due e Coco sono avanti su Ismajli. A centrocampo il nuovo arrivato Fitz-Jim si candida a giocare titolare.",
     "keyPoints": [
       {
         "text": "Trequartisti mobili",
@@ -7363,9 +5847,9 @@ export const SOS_TEAMS_DATA = {
     ],
     "starters": [
       {
-        "playerId": "36014808-99ee-486d-a681-26d3d5fbe551",
-        "csvId": "5320",
-        "name": "Paleari",
+        "playerId": "9f507758-5805-4ea3-9f4b-6158c66feefd",
+        "csvId": 7457,
+        "name": "Mascardi",
         "role": "P"
       },
       {
@@ -7399,9 +5883,9 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
-        "playerId": "2d18f8b5-9c3a-4878-ad3f-9765c8d0e1b6",
-        "csvId": "5888",
-        "name": "Casadei",
+        "playerId": "6f0efc62-d6a5-4540-a67b-cac636d8bdf0",
+        "csvId": 6170,
+        "name": "Gineitis",
         "role": "C"
       },
       {
@@ -7411,9 +5895,9 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
-        "playerId": "645514e5-6f69-4e32-ae5e-57bb6bca13b7",
-        "csvId": 6218,
-        "name": "Oristanio",
+        "playerId": "2d18f8b5-9c3a-4878-ad3f-9765c8d0e1b6",
+        "csvId": 5888,
+        "name": "Casadei",
         "role": "C"
       },
       {
@@ -7478,20 +5962,6 @@ export const SOS_TEAMS_DATA = {
     "ballottaggi": [
       [
         {
-          "playerId": "645514e5-6f69-4e32-ae5e-57bb6bca13b7",
-          "name": "Oristanio",
-          "role": "C",
-          "perc": 51
-        },
-        {
-          "playerId": "491914f6-841c-478f-a8d8-8710dd039a27",
-          "name": "Adams C.",
-          "role": "A",
-          "perc": 49
-        }
-      ],
-      [
-        {
           "playerId": "2ae97ae9-6de8-47be-a015-6421fa448f61",
           "name": "Coco",
           "role": "D",
@@ -7501,20 +5971,6 @@ export const SOS_TEAMS_DATA = {
           "playerId": "eedbf897-636b-42dc-9a40-fefd10c30051",
           "name": "Ismajli",
           "role": "D",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "2d18f8b5-9c3a-4878-ad3f-9765c8d0e1b6",
-          "name": "Casadei",
-          "role": "C",
-          "perc": 51
-        },
-        {
-          "playerId": "6f0efc62-d6a5-4540-a67b-cac636d8bdf0",
-          "name": "Gineitis",
-          "role": "C",
           "perc": 49
         }
       ]
@@ -7548,621 +6004,19 @@ export const SOS_TEAMS_DATA = {
     ],
     "young": [
       {
-        "playerId": "81dda297-825d-419f-bdc1-dadd2d326b6c",
-        "name": "Njie",
+        "playerId": "53e42c7e-ea10-414b-a19f-ce1880b59641",
+        "name": "Cacciamani",
         "points": [
-          "Buone doti aerobiche e nel dribbling"
+          "Ottima velocità e caparbietà"
         ]
       }
     ],
     "hidden": [
       {
-        "playerId": "645514e5-6f69-4e32-ae5e-57bb6bca13b7",
-        "name": "Oristanio",
+        "playerId": "d739968a-b64a-4934-b1a7-695255f63af0",
+        "name": "Pedersen",
         "points": [
-          "Adatto al sistema di Abate"
-        ]
-      }
-    ]
-  },
-  "ATA": {
-    "code": "ATA",
-    "name": "Atalanta",
-    "city": "Bergamo",
-    "stadium": "Gewiss Stadium",
-    "primaryColor": "#1e3d7a",
-    "secondaryColor": "#0d1b34",
-    "accentColor": "#00d2ff",
-    "coach": "Maurizio Sarri",
-    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Sarri.webp",
-    "defaultFormation": "4-3-3",
-    "module": "4-3-3",
-    "attackRating": 4.0,
-    "defenseRating": 4.0,
-    "comment": "Raffaele Palladino sostituisce Juric alla vigilia della 12^ giornata. Come i predecessori Gasperini e Juric,\nPalladino dovrebbe schierarsi con la difesa a 3 e con il doppio trequartista a supporto della prima punta. Il punto di\nforza sono gli esterni, i cosiddetti quinti di centrocampo, chiamati a fare la doppia fase. Palladino dovrà lavorare\nsoprattutto a livello mentsle, una squadra che \"prende\" al tredicesimo, peggior risultato degli ultimi 11 anni. Tanti\nballottaggi, soprattutto dalla trequarti in su. ",
-    "sosFantaComment": "Rivoluzione totale in casa Atalanta: dopo anni col 3-5-2, si passa al 4-3-3 con l'arrivo di Maurizio\nSarri in panchina. Meccanismi da oliare, soprattutto nel reparto difensivo. Kristensen arriva per giocare, lui e\nScalvini sono i favoriti in partenza. Tutto apertissimo sulle fasce: Zappacosta e Bernasconi partono in pole su\nBellanova e Ahanor. Non più certa la titolarità di De Roon dopo anni: c'è Gaetano in vantaggio in cabina di regia e\nSarri sta plasmando Samardzic da mezzala, ora è lui favorito su Pasalic. De Ketelaere e Raspadori provati sulle due\nfasce, da ali pure. Scamacca o Krstovic centravanti, con l'italiano in pole.",
-    "keyPoints": [
-      {
-        "text": "Valorizzazione esterni d'attacco ",
-        "tone": "good"
-      },
-      {
-        "text": "Solidità difensiva",
-        "tone": "good"
-      },
-      {
-        "text": "Scarso impiego del turnover",
-        "tone": "neutral"
-      },
-      {
-        "text": "Scarsa libertà ai terzini",
-        "tone": "bad"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "att-wings",
-        "tone": "good"
-      },
-      {
-        "role": "def-center",
-        "tone": "good"
-      },
-      {
-        "role": "def-fullbacks",
-        "tone": "bad"
-      }
-    ],
-    "starters": [
-      {
-        "playerId": "0e05ec77-0d73-452e-8d72-7ddf162ced52",
-        "csvId": "4431",
-        "name": "Carnesecchi",
-        "role": "P"
-      },
-      {
-        "playerId": "088bb69b-e23f-402f-bc6e-3ad4bb311560",
-        "csvId": 554,
-        "name": "Zappacosta",
-        "role": "D"
-      },
-      {
-        "playerId": "e259c4a6-1385-479b-b970-730c08be498f",
-        "csvId": 5526,
-        "name": "Scalvini",
-        "role": "D"
-      },
-      {
-        "playerId": "e8093c47-4f1a-4bcb-83b1-0c64385cddbe",
-        "csvId": 6485,
-        "name": "Kristensen T.",
-        "role": "D"
-      },
-      {
-        "playerId": "e12cb1ac-c451-4b75-bbe1-94bb602aa355",
-        "csvId": 7219,
-        "name": "Bernasconi",
-        "role": "D"
-      },
-      {
-        "playerId": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
-        "csvId": 5119,
-        "name": "Samardzic",
-        "role": "C"
-      },
-      {
-        "playerId": "4f923ea1-81ed-468d-84e7-bc8adf85055f",
-        "csvId": 4364,
-        "name": "Gaetano",
-        "role": "C"
-      },
-      {
-        "playerId": "c56c787c-4c3c-40e6-873f-596cffcd773e",
-        "csvId": 5792,
-        "name": "Ederson D.S.",
-        "role": "C"
-      },
-      {
-        "playerId": "387c9a81-4702-47ce-a0d6-1791bed95221",
-        "csvId": "5995",
-        "name": "De Ketelaere",
-        "role": "A"
-      },
-      {
-        "playerId": "6b73ffab-1bf1-40c1-9a8c-35dbc1d0ed1d",
-        "csvId": "4371",
-        "name": "Raspadori",
-        "role": "A"
-      },
-      {
-        "playerId": "413e773b-e7f1-4149-9f20-475e3cd1d957",
-        "csvId": 2137,
-        "name": "Scamacca",
-        "role": "A"
-      }
-    ],
-    "rig": [
-      {
-        "playerId": "413e773b-e7f1-4149-9f20-475e3cd1d957",
-        "name": "Scamacca",
-        "role": "A"
-      },
-      {
-        "playerId": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
-        "name": "Samardzic",
-        "role": "C"
-      },
-      {
-        "playerId": "c56c787c-4c3c-40e6-873f-596cffcd773e",
-        "name": "Ederson D.S.",
-        "role": "C"
-      }
-    ],
-    "pun": [
-      {
-        "playerId": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
-        "name": "Samardzic",
-        "role": "C"
-      },
-      {
-        "playerId": "4f923ea1-81ed-468d-84e7-bc8adf85055f",
-        "name": "Gaetano",
-        "role": "C"
-      }
-    ],
-    "corner": [
-      {
-        "playerId": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
-        "name": "Samardzic",
-        "role": "C"
-      },
-      {
-        "playerId": "4f923ea1-81ed-468d-84e7-bc8adf85055f",
-        "name": "Gaetano",
-        "role": "C"
-      },
-      {
-        "playerId": "e12cb1ac-c451-4b75-bbe1-94bb602aa355",
-        "name": "Bernasconi",
-        "role": "D"
-      }
-    ],
-    "ballottaggi": [
-      [
-        {
-          "playerId": "413e773b-e7f1-4149-9f20-475e3cd1d957",
-          "name": "Scamacca",
-          "role": "A",
-          "perc": 51
-        },
-        {
-          "playerId": "a2a9196a-3c70-4680-8e40-951ee6a10a22",
-          "name": "Krstovic",
-          "role": "A",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "4f923ea1-81ed-468d-84e7-bc8adf85055f",
-          "name": "Gaetano",
-          "role": "C",
-          "perc": 51
-        },
-        {
-          "playerId": "570ee83d-8f44-4206-875c-10dd0430c4f3",
-          "name": "De Roon",
-          "role": "C",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "088bb69b-e23f-402f-bc6e-3ad4bb311560",
-          "name": "Zappacosta",
-          "role": "D",
-          "perc": 55
-        },
-        {
-          "playerId": "bde8b7a8-9307-4d1e-a3cc-430c5bee432b",
-          "name": "Bellanova",
-          "role": "D",
-          "perc": 45
-        }
-      ],
-      [
-        {
-          "playerId": "e8093c47-4f1a-4bcb-83b1-0c64385cddbe",
-          "name": "Kristensen T.",
-          "role": "D",
-          "perc": 55
-        },
-        {
-          "playerId": "4e863a5b-d6ea-4aa0-8915-ecd6686bfa7b",
-          "name": "Kolasinac",
-          "role": "D",
-          "perc": 45
-        }
-      ],
-      [
-        {
-          "playerId": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
-          "name": "Samardzic",
-          "role": "C",
-          "perc": 51
-        },
-        {
-          "playerId": "515cb6cb-fae1-428c-89cc-a97f5ccbc6c8",
-          "name": "Pasalic",
-          "role": "C",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "e12cb1ac-c451-4b75-bbe1-94bb602aa355",
-          "name": "Bernasconi",
-          "role": "D",
-          "perc": 51
-        },
-        {
-          "playerId": "c54ad644-51bc-4d7c-a8d1-300c3adc9324",
-          "name": "Ahanor",
-          "role": "D",
-          "perc": 49
-        }
-      ]
-    ],
-    "up": [
-      {
-        "playerId": "e259c4a6-1385-479b-b970-730c08be498f",
-        "name": "Scalvini",
-        "points": [
-          "Difesa di Sarri solida"
-        ]
-      },
-      {
-        "playerId": "6b73ffab-1bf1-40c1-9a8c-35dbc1d0ed1d",
-        "name": "Raspadori",
-        "points": [
-          "Adattabile anche al centro ",
-          "Esterni di Sarri prolifici",
-          "Rotazioni elevate nel suo ruolo"
-        ]
-      }
-    ],
-    "down": [
-      {
-        "playerId": "570ee83d-8f44-4206-875c-10dd0430c4f3",
-        "name": "De Roon",
-        "points": [
-          "Con Sarri posizionamento più arretrato"
-        ]
-      },
-      {
-        "playerId": "60a8a763-dcd9-42f3-b6db-875bca54ae39",
-        "name": "Kossounou",
-        "points": [
-          "Parte indietro nelle gerarchie del mister"
-        ]
-      }
-    ],
-    "young": [
-      {
-        "playerId": "e12cb1ac-c451-4b75-bbe1-94bb602aa355",
-        "name": "Bernasconi",
-        "points": [
-          "Esterno equilibrato in entrambe le fasi"
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "playerId": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
-        "name": "Samardzic",
-        "points": [
-          "Sarri può rigenerarlo"
-        ]
-      }
-    ]
-  },
-  "atalanta": {
-    "code": "ATA",
-    "name": "Atalanta",
-    "city": "Bergamo",
-    "stadium": "Gewiss Stadium",
-    "primaryColor": "#1e3d7a",
-    "secondaryColor": "#0d1b34",
-    "accentColor": "#00d2ff",
-    "coach": "Maurizio Sarri",
-    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Sarri.webp",
-    "defaultFormation": "4-3-3",
-    "module": "4-3-3",
-    "attackRating": 4.0,
-    "defenseRating": 4.0,
-    "comment": "Raffaele Palladino sostituisce Juric alla vigilia della 12^ giornata. Come i predecessori Gasperini e Juric,\nPalladino dovrebbe schierarsi con la difesa a 3 e con il doppio trequartista a supporto della prima punta. Il punto di\nforza sono gli esterni, i cosiddetti quinti di centrocampo, chiamati a fare la doppia fase. Palladino dovrà lavorare\nsoprattutto a livello mentsle, una squadra che \"prende\" al tredicesimo, peggior risultato degli ultimi 11 anni. Tanti\nballottaggi, soprattutto dalla trequarti in su. ",
-    "sosFantaComment": "Rivoluzione totale in casa Atalanta: dopo anni col 3-5-2, si passa al 4-3-3 con l'arrivo di Maurizio\nSarri in panchina. Meccanismi da oliare, soprattutto nel reparto difensivo. Kristensen arriva per giocare, lui e\nScalvini sono i favoriti in partenza. Tutto apertissimo sulle fasce: Zappacosta e Bernasconi partono in pole su\nBellanova e Ahanor. Non più certa la titolarità di De Roon dopo anni: c'è Gaetano in vantaggio in cabina di regia e\nSarri sta plasmando Samardzic da mezzala, ora è lui favorito su Pasalic. De Ketelaere e Raspadori provati sulle due\nfasce, da ali pure. Scamacca o Krstovic centravanti, con l'italiano in pole.",
-    "keyPoints": [
-      {
-        "text": "Valorizzazione esterni d'attacco ",
-        "tone": "good"
-      },
-      {
-        "text": "Solidità difensiva",
-        "tone": "good"
-      },
-      {
-        "text": "Scarso impiego del turnover",
-        "tone": "neutral"
-      },
-      {
-        "text": "Scarsa libertà ai terzini",
-        "tone": "bad"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "att-wings",
-        "tone": "good"
-      },
-      {
-        "role": "def-center",
-        "tone": "good"
-      },
-      {
-        "role": "def-fullbacks",
-        "tone": "bad"
-      }
-    ],
-    "starters": [
-      {
-        "playerId": "0e05ec77-0d73-452e-8d72-7ddf162ced52",
-        "csvId": "4431",
-        "name": "Carnesecchi",
-        "role": "P"
-      },
-      {
-        "playerId": "088bb69b-e23f-402f-bc6e-3ad4bb311560",
-        "csvId": 554,
-        "name": "Zappacosta",
-        "role": "D"
-      },
-      {
-        "playerId": "e259c4a6-1385-479b-b970-730c08be498f",
-        "csvId": 5526,
-        "name": "Scalvini",
-        "role": "D"
-      },
-      {
-        "playerId": "e8093c47-4f1a-4bcb-83b1-0c64385cddbe",
-        "csvId": 6485,
-        "name": "Kristensen T.",
-        "role": "D"
-      },
-      {
-        "playerId": "e12cb1ac-c451-4b75-bbe1-94bb602aa355",
-        "csvId": 7219,
-        "name": "Bernasconi",
-        "role": "D"
-      },
-      {
-        "playerId": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
-        "csvId": 5119,
-        "name": "Samardzic",
-        "role": "C"
-      },
-      {
-        "playerId": "4f923ea1-81ed-468d-84e7-bc8adf85055f",
-        "csvId": 4364,
-        "name": "Gaetano",
-        "role": "C"
-      },
-      {
-        "playerId": "c56c787c-4c3c-40e6-873f-596cffcd773e",
-        "csvId": 5792,
-        "name": "Ederson D.S.",
-        "role": "C"
-      },
-      {
-        "playerId": "387c9a81-4702-47ce-a0d6-1791bed95221",
-        "csvId": "5995",
-        "name": "De Ketelaere",
-        "role": "A"
-      },
-      {
-        "playerId": "6b73ffab-1bf1-40c1-9a8c-35dbc1d0ed1d",
-        "csvId": "4371",
-        "name": "Raspadori",
-        "role": "A"
-      },
-      {
-        "playerId": "413e773b-e7f1-4149-9f20-475e3cd1d957",
-        "csvId": 2137,
-        "name": "Scamacca",
-        "role": "A"
-      }
-    ],
-    "rig": [
-      {
-        "playerId": "413e773b-e7f1-4149-9f20-475e3cd1d957",
-        "name": "Scamacca",
-        "role": "A"
-      },
-      {
-        "playerId": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
-        "name": "Samardzic",
-        "role": "C"
-      },
-      {
-        "playerId": "c56c787c-4c3c-40e6-873f-596cffcd773e",
-        "name": "Ederson D.S.",
-        "role": "C"
-      }
-    ],
-    "pun": [
-      {
-        "playerId": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
-        "name": "Samardzic",
-        "role": "C"
-      },
-      {
-        "playerId": "4f923ea1-81ed-468d-84e7-bc8adf85055f",
-        "name": "Gaetano",
-        "role": "C"
-      }
-    ],
-    "corner": [
-      {
-        "playerId": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
-        "name": "Samardzic",
-        "role": "C"
-      },
-      {
-        "playerId": "4f923ea1-81ed-468d-84e7-bc8adf85055f",
-        "name": "Gaetano",
-        "role": "C"
-      },
-      {
-        "playerId": "e12cb1ac-c451-4b75-bbe1-94bb602aa355",
-        "name": "Bernasconi",
-        "role": "D"
-      }
-    ],
-    "ballottaggi": [
-      [
-        {
-          "playerId": "413e773b-e7f1-4149-9f20-475e3cd1d957",
-          "name": "Scamacca",
-          "role": "A",
-          "perc": 51
-        },
-        {
-          "playerId": "a2a9196a-3c70-4680-8e40-951ee6a10a22",
-          "name": "Krstovic",
-          "role": "A",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "4f923ea1-81ed-468d-84e7-bc8adf85055f",
-          "name": "Gaetano",
-          "role": "C",
-          "perc": 51
-        },
-        {
-          "playerId": "570ee83d-8f44-4206-875c-10dd0430c4f3",
-          "name": "De Roon",
-          "role": "C",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "088bb69b-e23f-402f-bc6e-3ad4bb311560",
-          "name": "Zappacosta",
-          "role": "D",
-          "perc": 55
-        },
-        {
-          "playerId": "bde8b7a8-9307-4d1e-a3cc-430c5bee432b",
-          "name": "Bellanova",
-          "role": "D",
-          "perc": 45
-        }
-      ],
-      [
-        {
-          "playerId": "e8093c47-4f1a-4bcb-83b1-0c64385cddbe",
-          "name": "Kristensen T.",
-          "role": "D",
-          "perc": 55
-        },
-        {
-          "playerId": "4e863a5b-d6ea-4aa0-8915-ecd6686bfa7b",
-          "name": "Kolasinac",
-          "role": "D",
-          "perc": 45
-        }
-      ],
-      [
-        {
-          "playerId": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
-          "name": "Samardzic",
-          "role": "C",
-          "perc": 51
-        },
-        {
-          "playerId": "515cb6cb-fae1-428c-89cc-a97f5ccbc6c8",
-          "name": "Pasalic",
-          "role": "C",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "e12cb1ac-c451-4b75-bbe1-94bb602aa355",
-          "name": "Bernasconi",
-          "role": "D",
-          "perc": 51
-        },
-        {
-          "playerId": "c54ad644-51bc-4d7c-a8d1-300c3adc9324",
-          "name": "Ahanor",
-          "role": "D",
-          "perc": 49
-        }
-      ]
-    ],
-    "up": [
-      {
-        "playerId": "e259c4a6-1385-479b-b970-730c08be498f",
-        "name": "Scalvini",
-        "points": [
-          "Difesa di Sarri solida"
-        ]
-      },
-      {
-        "playerId": "6b73ffab-1bf1-40c1-9a8c-35dbc1d0ed1d",
-        "name": "Raspadori",
-        "points": [
-          "Adattabile anche al centro ",
-          "Esterni di Sarri prolifici",
-          "Rotazioni elevate nel suo ruolo"
-        ]
-      }
-    ],
-    "down": [
-      {
-        "playerId": "570ee83d-8f44-4206-875c-10dd0430c4f3",
-        "name": "De Roon",
-        "points": [
-          "Con Sarri posizionamento più arretrato"
-        ]
-      },
-      {
-        "playerId": "60a8a763-dcd9-42f3-b6db-875bca54ae39",
-        "name": "Kossounou",
-        "points": [
-          "Parte indietro nelle gerarchie del mister"
-        ]
-      }
-    ],
-    "young": [
-      {
-        "playerId": "e12cb1ac-c451-4b75-bbe1-94bb602aa355",
-        "name": "Bernasconi",
-        "points": [
-          "Esterno equilibrato in entrambe le fasi"
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "playerId": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
-        "name": "Samardzic",
-        "points": [
-          "Sarri può rigenerarlo"
+          "Utilizzato molto nelle transizioni offensive"
         ]
       }
     ]
@@ -8181,8 +6035,8 @@ export const SOS_TEAMS_DATA = {
     "module": "4-3-2-1",
     "attackRating": 3.5,
     "defenseRating": 3.0,
-    "comment": "Paolo Vanoli è chiamato a far risalire la squadra viola costretta a esonerare Pioli dopo l'ulitmo posto in\nclassifica. Vanoli gioca con il 3-5-2 anche se lo scorsa stagione con il Torino ha utilizzato anche il 4-2-3-1 e il\n4-3-3. Importante il ruolo degli esterni che sono chiamati ad accompagnare le azioni offensive con le mezzali che\nattaccano gli spazi per dare maggiore densità in attacco. Nel sistema del tecnico ex Torino, gli esterni hanno anche il\ncompito di inserirsi con tempismo nell’area di rigore sul cross proveniente dal lato opposto, diventando di fatto un\nterzo attaccante. Vanoli infatti, fa della difesa a tre la sua base di partenza, e a Firenze troverà le condizioni\nideali per confermare il proprio credo calcistico. Resta però da capire quali saranno gli interpreti del reparto, visto\nche finora le prestazioni della retroguardia sono state altalenanti con la sola eccezione di De Gea, spesso decisivo nel\nlimitare i danni. ",
-    "sosFantaComment": "È arrivato Fabio Grosso al posto di Vanoli in panchina, la Fiorentina giocherà col 4-3-3 e Paratici\nsi è letteralmente scatenato sul mercato. Jimenez o Joao Mario a destra, Viery o Ranieri al centro mentre Valdepenas\nparte come titolare a sinistra. Oulai può fare sia la mezzala che il regista, si gioca un posto più con Mandragora che\ncon Fagioli. Ndour in grande spolvero, fa la mezzala pura visto che Atta è stato provato più avanzato: sarà un\ntitolarissimo. Mastantuono arriva dal Real Madrid per giocare. Gudmundsson insegue inizialmente, ma proverà a farsi\ntrovare pronto. Occhio infine a Kean: per ora è rimasto ma sarà da monitorare fino all'ultimo ed è arrivato Pellegrino\ndal mercato. L'italiano parte in pole, ma l'argentino è più di una semplice alternativa.",
+    "comment": "Paolo Vanoli è chiamato a far risalire la squadra viola costretta a esonerare Pioli dopo l'ulitmo posto in classifica. Vanoli gioca con il 3-5-2 anche se lo scorsa stagione con il Torino ha utilizzato anche il 4-2-3-1 e il 4-3-3. Importante il ruolo degli esterni che sono chiamati ad accompagnare le azioni offensive con le mezzali che attaccano gli spazi per dare maggiore densità in attacco. Nel sistema del tecnico ex Torino, gli esterni hanno anche il compito di inserirsi con tempismo nell’area di rigore sul cross proveniente dal lato opposto, diventando di fatto un terzo attaccante. Vanoli infatti, fa della difesa a tre la sua base di partenza, e a Firenze troverà le condizioni ideali per confermare il proprio credo calcistico. Resta però da capire quali saranno gli interpreti del reparto, visto che finora le prestazioni della retroguardia sono state altalenanti con la sola eccezione di De Gea, spesso decisivo nel limitare i danni. ",
+    "sosFantaComment": "È arrivato Fabio Grosso al posto di Vanoli in panchina, la Fiorentina giocherà col 4-3-3 e Paratici si è letteralmente scatenato sul mercato. Jimenez o Joao Mario a destra, Viery o Ranieri al centro mentre Valdepenas parte come titolare a sinistra. Oulai può fare sia la mezzala che il regista, si gioca un posto più con Mandragora che con Fagioli. Ndour in grande spolvero, fa la mezzala pura visto che Atta è stato provato più avanzato: sarà un titolarissimo. Mastantuono arriva dal Real Madrid per giocare. Gudmundsson insegue inizialmente, ma proverà a farsi trovare pronto. Occhio infine a Kean: per ora è rimasto ma sarà da monitorare fino all'ultimo ed è arrivato Pellegrino dal mercato. L'italiano parte in pole, ma l'argentino è più di una semplice alternativa.",
     "keyPoints": [
       {
         "text": "Valorizzazione esterni d'attacco ",
@@ -8465,8 +6319,8 @@ export const SOS_TEAMS_DATA = {
     "module": "4-3-2-1",
     "attackRating": 3.5,
     "defenseRating": 3.0,
-    "comment": "Paolo Vanoli è chiamato a far risalire la squadra viola costretta a esonerare Pioli dopo l'ulitmo posto in\nclassifica. Vanoli gioca con il 3-5-2 anche se lo scorsa stagione con il Torino ha utilizzato anche il 4-2-3-1 e il\n4-3-3. Importante il ruolo degli esterni che sono chiamati ad accompagnare le azioni offensive con le mezzali che\nattaccano gli spazi per dare maggiore densità in attacco. Nel sistema del tecnico ex Torino, gli esterni hanno anche il\ncompito di inserirsi con tempismo nell’area di rigore sul cross proveniente dal lato opposto, diventando di fatto un\nterzo attaccante. Vanoli infatti, fa della difesa a tre la sua base di partenza, e a Firenze troverà le condizioni\nideali per confermare il proprio credo calcistico. Resta però da capire quali saranno gli interpreti del reparto, visto\nche finora le prestazioni della retroguardia sono state altalenanti con la sola eccezione di De Gea, spesso decisivo nel\nlimitare i danni. ",
-    "sosFantaComment": "È arrivato Fabio Grosso al posto di Vanoli in panchina, la Fiorentina giocherà col 4-3-3 e Paratici\nsi è letteralmente scatenato sul mercato. Jimenez o Joao Mario a destra, Viery o Ranieri al centro mentre Valdepenas\nparte come titolare a sinistra. Oulai può fare sia la mezzala che il regista, si gioca un posto più con Mandragora che\ncon Fagioli. Ndour in grande spolvero, fa la mezzala pura visto che Atta è stato provato più avanzato: sarà un\ntitolarissimo. Mastantuono arriva dal Real Madrid per giocare. Gudmundsson insegue inizialmente, ma proverà a farsi\ntrovare pronto. Occhio infine a Kean: per ora è rimasto ma sarà da monitorare fino all'ultimo ed è arrivato Pellegrino\ndal mercato. L'italiano parte in pole, ma l'argentino è più di una semplice alternativa.",
+    "comment": "Paolo Vanoli è chiamato a far risalire la squadra viola costretta a esonerare Pioli dopo l'ulitmo posto in classifica. Vanoli gioca con il 3-5-2 anche se lo scorsa stagione con il Torino ha utilizzato anche il 4-2-3-1 e il 4-3-3. Importante il ruolo degli esterni che sono chiamati ad accompagnare le azioni offensive con le mezzali che attaccano gli spazi per dare maggiore densità in attacco. Nel sistema del tecnico ex Torino, gli esterni hanno anche il compito di inserirsi con tempismo nell’area di rigore sul cross proveniente dal lato opposto, diventando di fatto un terzo attaccante. Vanoli infatti, fa della difesa a tre la sua base di partenza, e a Firenze troverà le condizioni ideali per confermare il proprio credo calcistico. Resta però da capire quali saranno gli interpreti del reparto, visto che finora le prestazioni della retroguardia sono state altalenanti con la sola eccezione di De Gea, spesso decisivo nel limitare i danni. ",
+    "sosFantaComment": "È arrivato Fabio Grosso al posto di Vanoli in panchina, la Fiorentina giocherà col 4-3-3 e Paratici si è letteralmente scatenato sul mercato. Jimenez o Joao Mario a destra, Viery o Ranieri al centro mentre Valdepenas parte come titolare a sinistra. Oulai può fare sia la mezzala che il regista, si gioca un posto più con Mandragora che con Fagioli. Ndour in grande spolvero, fa la mezzala pura visto che Atta è stato provato più avanzato: sarà un titolarissimo. Mastantuono arriva dal Real Madrid per giocare. Gudmundsson insegue inizialmente, ma proverà a farsi trovare pronto. Occhio infine a Kean: per ora è rimasto ma sarà da monitorare fino all'ultimo ed è arrivato Pellegrino dal mercato. L'italiano parte in pole, ma l'argentino è più di una semplice alternativa.",
     "keyPoints": [
       {
         "text": "Valorizzazione esterni d'attacco ",
@@ -8750,7 +6604,7 @@ export const SOS_TEAMS_DATA = {
     "attackRating": 2.5,
     "defenseRating": 2.0,
     "comment": "",
-    "sosFantaComment": "È rimasto Massimiliano Alvini alla guida del Frosinone anche dopo la promozione in Serie A, con il\ntecnico orientato a ripartire dal 4-3-3. In porta resta aperto il ballottaggio tra Palmisani e il nuovo arrivato\nDesplanches, con il primo al momento leggermente favorito. In difesa Akpoguma è arrivato per giocare e parte avanti\nnelle gerarchie, mentre al suo fianco si giocano una maglia Monterisi e Calvani. Calò è stato un fattore in B e vuole\nesserlo anche in A, se resta: più lui di Masini accanto ai nuovi arrivati Grillitsch e Schmid, che avranno grande\nspazio. Kvernadze più di Zerbin in fascia in partenza, a oggi c'è Raimondo a guidare l'attacco ma occhio al mercato.",
+    "sosFantaComment": "È rimasto Massimiliano Alvini alla guida del Frosinone anche dopo la promozione in Serie A, con il tecnico orientato a ripartire dal 4-3-3. In porta resta aperto il ballottaggio tra Palmisani e il nuovo arrivato Desplanches, con il primo al momento leggermente favorito. In difesa Akpoguma è arrivato per giocare e parte avanti nelle gerarchie, mentre al suo fianco si giocano una maglia Monterisi e Calvani. Calò è stato un fattore in B e vuole esserlo anche in A, se resta: più lui di Masini accanto ai nuovi arrivati Grillitsch e Schmid, che avranno grande spazio. Kvernadze più di Zerbin in fascia in partenza, a oggi c'è Raimondo a guidare l'attacco ma occhio al mercato.",
     "keyPoints": [
       {
         "text": "Importanza esterni d'attacco ",
@@ -9014,7 +6868,7 @@ export const SOS_TEAMS_DATA = {
     "attackRating": 2.5,
     "defenseRating": 2.0,
     "comment": "",
-    "sosFantaComment": "È rimasto Massimiliano Alvini alla guida del Frosinone anche dopo la promozione in Serie A, con il\ntecnico orientato a ripartire dal 4-3-3. In porta resta aperto il ballottaggio tra Palmisani e il nuovo arrivato\nDesplanches, con il primo al momento leggermente favorito. In difesa Akpoguma è arrivato per giocare e parte avanti\nnelle gerarchie, mentre al suo fianco si giocano una maglia Monterisi e Calvani. Calò è stato un fattore in B e vuole\nesserlo anche in A, se resta: più lui di Masini accanto ai nuovi arrivati Grillitsch e Schmid, che avranno grande\nspazio. Kvernadze più di Zerbin in fascia in partenza, a oggi c'è Raimondo a guidare l'attacco ma occhio al mercato.",
+    "sosFantaComment": "È rimasto Massimiliano Alvini alla guida del Frosinone anche dopo la promozione in Serie A, con il tecnico orientato a ripartire dal 4-3-3. In porta resta aperto il ballottaggio tra Palmisani e il nuovo arrivato Desplanches, con il primo al momento leggermente favorito. In difesa Akpoguma è arrivato per giocare e parte avanti nelle gerarchie, mentre al suo fianco si giocano una maglia Monterisi e Calvani. Calò è stato un fattore in B e vuole esserlo anche in A, se resta: più lui di Masini accanto ai nuovi arrivati Grillitsch e Schmid, che avranno grande spazio. Kvernadze più di Zerbin in fascia in partenza, a oggi c'è Raimondo a guidare l'attacco ma occhio al mercato.",
     "keyPoints": [
       {
         "text": "Importanza esterni d'attacco ",
@@ -9277,8 +7131,8 @@ export const SOS_TEAMS_DATA = {
     "module": "4-3-3",
     "attackRating": 2.0,
     "defenseRating": 2.5,
-    "comment": "ll nuovo Parma abbraccia un calcio moderno e ambizioso: pressing alto, scambi di posizione e ricerca\ncostante della superiorità numerica. Un’impronta propositiva che può tradursi in bonus preziosi per i fantallenatori. Il\nmantra sarà il coraggio nelle giocate e la fluidità tra i reparti. Per rendere efficace il sistema serviranno interpreti\nduttili, tecnici e dinamici: il mercato estivo sarà quindi decisivo. Nel precampionato è stata testata la difesa a tre,\ncon Delprato e Valeri schierati da quinti per garantire ampiezza e spinta. Le due punte saranno supportate da\ncentrocampisti offensivi e inserimenti continui.",
-    "sosFantaComment": "Confermato Cuesta in panchina nel Parma e sta provando molto il 4-3-3 nel pre campionato. Si\ngiocheranno il posto Corvi e Daffara in porta, con il primo che parte avanti. Testa a testa tra Nicolussi Caviglia e\nSorensen per una maglia da mezzala. In attacco c’è il nuovo arrivato El Bilal Touré che si candida subito una maglia da\ntitolare. È arrivato anche David Romero e troverà molto spazio, scommessa interessante: più lui di Elphege. A destra per\nora c'è Frigan, ma occhio al mercato.",
+    "comment": "ll nuovo Parma abbraccia un calcio moderno e ambizioso: pressing alto, scambi di posizione e ricerca costante della superiorità numerica. Un’impronta propositiva che può tradursi in bonus preziosi per i fantallenatori. Il mantra sarà il coraggio nelle giocate e la fluidità tra i reparti. Per rendere efficace il sistema serviranno interpreti duttili, tecnici e dinamici: il mercato estivo sarà quindi decisivo. Nel precampionato è stata testata la difesa a tre, con Delprato e Valeri schierati da quinti per garantire ampiezza e spinta. Le due punte saranno supportate da centrocampisti offensivi e inserimenti continui.",
+    "sosFantaComment": "Confermato Cuesta in panchina nel Parma e sta provando molto il 4-3-3 nel pre campionato. Si giocheranno il posto Corvi e Daffara in porta, con il primo che parte avanti. Testa a testa tra Nicolussi Caviglia e Sorensen per una maglia da mezzala. In attacco c’è il nuovo arrivato El Bilal Touré che si candida subito una maglia da titolare. È arrivato anche David Romero e troverà molto spazio, scommessa interessante: più lui di Elphege. In fascia per ora il baby Lontani ha rubato l'occhio, ma occhio al mercato.",
     "keyPoints": [
       {
         "text": "Solidità difensiva",
@@ -9353,10 +7207,10 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
-        "playerId": "1a7bc3d2-0876-4d9f-89a9-79659e236430",
-        "csvId": 7213,
-        "name": "Frigan",
-        "role": "A"
+        "playerId": "2e331f32-cc88-4a67-b471-f05a2db80063",
+        "csvId": 7561,
+        "name": "",
+        "role": ""
       },
       {
         "playerId": "280d15dc-3cf6-47ec-ad41-19b983b09d20",
@@ -9521,8 +7375,8 @@ export const SOS_TEAMS_DATA = {
     "module": "4-3-3",
     "attackRating": 2.0,
     "defenseRating": 2.5,
-    "comment": "ll nuovo Parma abbraccia un calcio moderno e ambizioso: pressing alto, scambi di posizione e ricerca\ncostante della superiorità numerica. Un’impronta propositiva che può tradursi in bonus preziosi per i fantallenatori. Il\nmantra sarà il coraggio nelle giocate e la fluidità tra i reparti. Per rendere efficace il sistema serviranno interpreti\nduttili, tecnici e dinamici: il mercato estivo sarà quindi decisivo. Nel precampionato è stata testata la difesa a tre,\ncon Delprato e Valeri schierati da quinti per garantire ampiezza e spinta. Le due punte saranno supportate da\ncentrocampisti offensivi e inserimenti continui.",
-    "sosFantaComment": "Confermato Cuesta in panchina nel Parma e sta provando molto il 4-3-3 nel pre campionato. Si\ngiocheranno il posto Corvi e Daffara in porta, con il primo che parte avanti. Testa a testa tra Nicolussi Caviglia e\nSorensen per una maglia da mezzala. In attacco c’è il nuovo arrivato El Bilal Touré che si candida subito una maglia da\ntitolare. È arrivato anche David Romero e troverà molto spazio, scommessa interessante: più lui di Elphege. A destra per\nora c'è Frigan, ma occhio al mercato.",
+    "comment": "ll nuovo Parma abbraccia un calcio moderno e ambizioso: pressing alto, scambi di posizione e ricerca costante della superiorità numerica. Un’impronta propositiva che può tradursi in bonus preziosi per i fantallenatori. Il mantra sarà il coraggio nelle giocate e la fluidità tra i reparti. Per rendere efficace il sistema serviranno interpreti duttili, tecnici e dinamici: il mercato estivo sarà quindi decisivo. Nel precampionato è stata testata la difesa a tre, con Delprato e Valeri schierati da quinti per garantire ampiezza e spinta. Le due punte saranno supportate da centrocampisti offensivi e inserimenti continui.",
+    "sosFantaComment": "Confermato Cuesta in panchina nel Parma e sta provando molto il 4-3-3 nel pre campionato. Si giocheranno il posto Corvi e Daffara in porta, con il primo che parte avanti. Testa a testa tra Nicolussi Caviglia e Sorensen per una maglia da mezzala. In attacco c’è il nuovo arrivato El Bilal Touré che si candida subito una maglia da titolare. È arrivato anche David Romero e troverà molto spazio, scommessa interessante: più lui di Elphege. In fascia per ora il baby Lontani ha rubato l'occhio, ma occhio al mercato.",
     "keyPoints": [
       {
         "text": "Solidità difensiva",
@@ -9597,10 +7451,10 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
-        "playerId": "1a7bc3d2-0876-4d9f-89a9-79659e236430",
-        "csvId": 7213,
-        "name": "Frigan",
-        "role": "A"
+        "playerId": "2e331f32-cc88-4a67-b471-f05a2db80063",
+        "csvId": 7561,
+        "name": "",
+        "role": ""
       },
       {
         "playerId": "280d15dc-3cf6-47ec-ad41-19b983b09d20",
@@ -9765,8 +7619,8 @@ export const SOS_TEAMS_DATA = {
     "module": "3-4-2-1",
     "attackRating": 3.0,
     "defenseRating": 3.0,
-    "comment": "Il sistema del tecnico dei friulani si basa su una struttura ordinata e aggressiva, con grande attenzione\nalla riconquista del pallone e rapide transizioni offensive. Tatticamente, la squadra tende a mantenere una difesa\nposizionata piuttosto bassa, privilegiando la compattezza e la copertura degli spazi piuttosto che una linea alta che\nesponga ai contropiedi avversari. Questo approccio permette all’Udinese di limitare le occasioni avversarie, ma può\nriduce anche le occasione da goal da parte degli attaccanti.",
-    "sosFantaComment": "È rimasto Kosta Runjaic in panchina nell'Udinese, ha provato più il 3-4-2-1 del 3-5-2 finora. Palma\nsi gioca un posto con Bertola in difesa dopo l'addio di Kristensen. A destra la novità è Vojvoda aspettando il pieno\nrecupero di Zanoli (poi si giocheranno una maglia). Partito Atta, a centrocampo Piotrowski parte avanti su Miller e sul\nnuovo arrivato Unai Gomez. Ekkelenkamp provato più avanzato accanto a Zaniolo, alle spalle di Davis.",
+    "comment": "Il sistema del tecnico dei friulani si basa su una struttura ordinata e aggressiva, con grande attenzione alla riconquista del pallone e rapide transizioni offensive. Tatticamente, la squadra tende a mantenere una difesa posizionata piuttosto bassa, privilegiando la compattezza e la copertura degli spazi piuttosto che una linea alta che esponga ai contropiedi avversari. Questo approccio permette all’Udinese di limitare le occasioni avversarie, ma può riduce anche le occasione da goal da parte degli attaccanti.",
+    "sosFantaComment": "È rimasto Kosta Runjaic in panchina nell'Udinese, ha provato più il 3-4-2-1 del 3-5-2 finora. Palma si gioca un posto con Bertola in difesa dopo l'addio di Kristensen. A destra la novità è Vojvoda aspettando il pieno recupero di Zanoli (poi si giocheranno una maglia). Partito Atta, a centrocampo Piotrowski parte avanti su Miller e sul nuovo arrivato Unai Gomez. Ekkelenkamp provato più avanzato accanto a Zaniolo, alle spalle di Davis.",
     "keyPoints": [
       {
         "text": "Contropiedi efficaci",
@@ -9995,8 +7849,8 @@ export const SOS_TEAMS_DATA = {
     "module": "3-4-2-1",
     "attackRating": 3.0,
     "defenseRating": 3.0,
-    "comment": "Il sistema del tecnico dei friulani si basa su una struttura ordinata e aggressiva, con grande attenzione\nalla riconquista del pallone e rapide transizioni offensive. Tatticamente, la squadra tende a mantenere una difesa\nposizionata piuttosto bassa, privilegiando la compattezza e la copertura degli spazi piuttosto che una linea alta che\nesponga ai contropiedi avversari. Questo approccio permette all’Udinese di limitare le occasioni avversarie, ma può\nriduce anche le occasione da goal da parte degli attaccanti.",
-    "sosFantaComment": "È rimasto Kosta Runjaic in panchina nell'Udinese, ha provato più il 3-4-2-1 del 3-5-2 finora. Palma\nsi gioca un posto con Bertola in difesa dopo l'addio di Kristensen. A destra la novità è Vojvoda aspettando il pieno\nrecupero di Zanoli (poi si giocheranno una maglia). Partito Atta, a centrocampo Piotrowski parte avanti su Miller e sul\nnuovo arrivato Unai Gomez. Ekkelenkamp provato più avanzato accanto a Zaniolo, alle spalle di Davis.",
+    "comment": "Il sistema del tecnico dei friulani si basa su una struttura ordinata e aggressiva, con grande attenzione alla riconquista del pallone e rapide transizioni offensive. Tatticamente, la squadra tende a mantenere una difesa posizionata piuttosto bassa, privilegiando la compattezza e la copertura degli spazi piuttosto che una linea alta che esponga ai contropiedi avversari. Questo approccio permette all’Udinese di limitare le occasioni avversarie, ma può riduce anche le occasione da goal da parte degli attaccanti.",
+    "sosFantaComment": "È rimasto Kosta Runjaic in panchina nell'Udinese, ha provato più il 3-4-2-1 del 3-5-2 finora. Palma si gioca un posto con Bertola in difesa dopo l'addio di Kristensen. A destra la novità è Vojvoda aspettando il pieno recupero di Zanoli (poi si giocheranno una maglia). Partito Atta, a centrocampo Piotrowski parte avanti su Miller e sul nuovo arrivato Unai Gomez. Ekkelenkamp provato più avanzato accanto a Zaniolo, alle spalle di Davis.",
     "keyPoints": [
       {
         "text": "Contropiedi efficaci",
@@ -10207,6 +8061,2114 @@ export const SOS_TEAMS_DATA = {
         "name": "Kabasele",
         "points": [
           "Forte sulle palle inattive"
+        ]
+      }
+    ]
+  },
+  "ATA": {
+    "code": "ATA",
+    "name": "Atalanta",
+    "city": "Bergamo",
+    "stadium": "Gewiss Stadium",
+    "primaryColor": "#1e3d7a",
+    "secondaryColor": "#0d1b34",
+    "accentColor": "#00d2ff",
+    "coach": "Maurizio Sarri",
+    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Sarri.webp",
+    "defaultFormation": "4-3-3",
+    "module": "4-3-3",
+    "attackRating": 4.0,
+    "defenseRating": 4.0,
+    "comment": "Raffaele Palladino sostituisce Juric alla vigilia della 12^ giornata. Come i predecessori Gasperini e Juric, Palladino dovrebbe schierarsi con la difesa a 3 e con il doppio trequartista a supporto della prima punta. Il punto di forza sono gli esterni, i cosiddetti quinti di centrocampo, chiamati a fare la doppia fase. Palladino dovrà lavorare soprattutto a livello mentsle, una squadra che \"prende\" al tredicesimo, peggior risultato degli ultimi 11 anni. Tanti ballottaggi, soprattutto dalla trequarti in su. ",
+    "sosFantaComment": "Rivoluzione totale in casa Atalanta: dopo anni col 3-5-2, si passa al 4-3-3 con l'arrivo di Maurizio Sarri in panchina. Meccanismi da oliare, soprattutto nel reparto difensivo. Kristensen arriva per giocare, lui e Scalvini sono i favoriti in partenza. Tutto apertissimo sulle fasce: Zappacosta e Bernasconi partono in pole su Bellanova e Ahanor. Non più certa la titolarità di De Roon dopo anni: c'è Gaetano in vantaggio in cabina di regia e Sarri sta plasmando Samardzic da mezzala, ora è lui favorito su Pasalic. De Ketelaere e Raspadori provati sulle due fasce, da ali pure. Scamacca o Krstovic centravanti, con l'italiano in pole. Elmas è arrivato e sarà il classico jolly: mezzala o anche esterno alto, avrà spazio nelle rotazioni.",
+    "keyPoints": [
+      {
+        "text": "Valorizzazione esterni d'attacco ",
+        "tone": "good"
+      },
+      {
+        "text": "Solidità difensiva",
+        "tone": "good"
+      },
+      {
+        "text": "Scarso impiego del turnover",
+        "tone": "neutral"
+      },
+      {
+        "text": "Scarsa libertà ai terzini",
+        "tone": "bad"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "att-wings",
+        "tone": "good"
+      },
+      {
+        "role": "def-center",
+        "tone": "good"
+      },
+      {
+        "role": "def-fullbacks",
+        "tone": "bad"
+      }
+    ],
+    "starters": [
+      {
+        "playerId": "0e05ec77-0d73-452e-8d72-7ddf162ced52",
+        "csvId": "4431",
+        "name": "Carnesecchi",
+        "role": "P"
+      },
+      {
+        "playerId": "088bb69b-e23f-402f-bc6e-3ad4bb311560",
+        "csvId": 554,
+        "name": "Zappacosta",
+        "role": "D"
+      },
+      {
+        "playerId": "e259c4a6-1385-479b-b970-730c08be498f",
+        "csvId": 5526,
+        "name": "Scalvini",
+        "role": "D"
+      },
+      {
+        "playerId": "e8093c47-4f1a-4bcb-83b1-0c64385cddbe",
+        "csvId": 6485,
+        "name": "Kristensen T.",
+        "role": "D"
+      },
+      {
+        "playerId": "e12cb1ac-c451-4b75-bbe1-94bb602aa355",
+        "csvId": 7219,
+        "name": "Bernasconi",
+        "role": "D"
+      },
+      {
+        "playerId": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
+        "csvId": 5119,
+        "name": "Samardzic",
+        "role": "C"
+      },
+      {
+        "playerId": "4f923ea1-81ed-468d-84e7-bc8adf85055f",
+        "csvId": 4364,
+        "name": "Gaetano",
+        "role": "C"
+      },
+      {
+        "playerId": "c56c787c-4c3c-40e6-873f-596cffcd773e",
+        "csvId": 5792,
+        "name": "Ederson D.S.",
+        "role": "C"
+      },
+      {
+        "playerId": "387c9a81-4702-47ce-a0d6-1791bed95221",
+        "csvId": "5995",
+        "name": "De Ketelaere",
+        "role": "A"
+      },
+      {
+        "playerId": "6b73ffab-1bf1-40c1-9a8c-35dbc1d0ed1d",
+        "csvId": "4371",
+        "name": "Raspadori",
+        "role": "A"
+      },
+      {
+        "playerId": "413e773b-e7f1-4149-9f20-475e3cd1d957",
+        "csvId": 2137,
+        "name": "Scamacca",
+        "role": "A"
+      }
+    ],
+    "rig": [
+      {
+        "playerId": "413e773b-e7f1-4149-9f20-475e3cd1d957",
+        "name": "Scamacca",
+        "role": "A"
+      },
+      {
+        "playerId": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
+        "name": "Samardzic",
+        "role": "C"
+      },
+      {
+        "playerId": "c56c787c-4c3c-40e6-873f-596cffcd773e",
+        "name": "Ederson D.S.",
+        "role": "C"
+      }
+    ],
+    "pun": [
+      {
+        "playerId": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
+        "name": "Samardzic",
+        "role": "C"
+      },
+      {
+        "playerId": "4f923ea1-81ed-468d-84e7-bc8adf85055f",
+        "name": "Gaetano",
+        "role": "C"
+      }
+    ],
+    "corner": [
+      {
+        "playerId": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
+        "name": "Samardzic",
+        "role": "C"
+      },
+      {
+        "playerId": "4f923ea1-81ed-468d-84e7-bc8adf85055f",
+        "name": "Gaetano",
+        "role": "C"
+      },
+      {
+        "playerId": "e12cb1ac-c451-4b75-bbe1-94bb602aa355",
+        "name": "Bernasconi",
+        "role": "D"
+      }
+    ],
+    "ballottaggi": [
+      [
+        {
+          "playerId": "413e773b-e7f1-4149-9f20-475e3cd1d957",
+          "name": "Scamacca",
+          "role": "A",
+          "perc": 51
+        },
+        {
+          "playerId": "a2a9196a-3c70-4680-8e40-951ee6a10a22",
+          "name": "Krstovic",
+          "role": "A",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "4f923ea1-81ed-468d-84e7-bc8adf85055f",
+          "name": "Gaetano",
+          "role": "C",
+          "perc": 60
+        },
+        {
+          "playerId": "570ee83d-8f44-4206-875c-10dd0430c4f3",
+          "name": "De Roon",
+          "role": "C",
+          "perc": 40
+        }
+      ],
+      [
+        {
+          "playerId": "088bb69b-e23f-402f-bc6e-3ad4bb311560",
+          "name": "Zappacosta",
+          "role": "D",
+          "perc": 55
+        },
+        {
+          "playerId": "bde8b7a8-9307-4d1e-a3cc-430c5bee432b",
+          "name": "Bellanova",
+          "role": "D",
+          "perc": 45
+        }
+      ],
+      [
+        {
+          "playerId": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
+          "name": "Samardzic",
+          "role": "C",
+          "perc": 51
+        },
+        {
+          "playerId": "515cb6cb-fae1-428c-89cc-a97f5ccbc6c8",
+          "name": "Pasalic",
+          "role": "C",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "e12cb1ac-c451-4b75-bbe1-94bb602aa355",
+          "name": "Bernasconi",
+          "role": "D",
+          "perc": 51
+        },
+        {
+          "playerId": "c54ad644-51bc-4d7c-a8d1-300c3adc9324",
+          "name": "Ahanor",
+          "role": "D",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "6b73ffab-1bf1-40c1-9a8c-35dbc1d0ed1d",
+          "name": "Raspadori",
+          "role": "A",
+          "perc": 55
+        },
+        {
+          "playerId": "cc800e08-9593-424a-a9d9-eb4da06257cc",
+          "name": "Elmas",
+          "role": "C",
+          "perc": 45
+        }
+      ]
+    ],
+    "up": [
+      {
+        "playerId": "e259c4a6-1385-479b-b970-730c08be498f",
+        "name": "Scalvini",
+        "points": [
+          "Difesa di Sarri solida"
+        ]
+      },
+      {
+        "playerId": "6b73ffab-1bf1-40c1-9a8c-35dbc1d0ed1d",
+        "name": "Raspadori",
+        "points": [
+          "Adattabile anche al centro ",
+          "Esterni di Sarri prolifici",
+          "Rotazioni elevate nel suo ruolo"
+        ]
+      }
+    ],
+    "down": [
+      {
+        "playerId": "570ee83d-8f44-4206-875c-10dd0430c4f3",
+        "name": "De Roon",
+        "points": [
+          "Con Sarri posizionamento più arretrato"
+        ]
+      },
+      {
+        "playerId": "60a8a763-dcd9-42f3-b6db-875bca54ae39",
+        "name": "Kossounou",
+        "points": [
+          "Parte indietro nelle gerarchie del mister"
+        ]
+      }
+    ],
+    "young": [
+      {
+        "playerId": "e12cb1ac-c451-4b75-bbe1-94bb602aa355",
+        "name": "Bernasconi",
+        "points": [
+          "Esterno equilibrato in entrambe le fasi"
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "playerId": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
+        "name": "Samardzic",
+        "points": [
+          "Sarri può rigenerarlo"
+        ]
+      }
+    ]
+  },
+  "atalanta": {
+    "code": "ATA",
+    "name": "Atalanta",
+    "city": "Bergamo",
+    "stadium": "Gewiss Stadium",
+    "primaryColor": "#1e3d7a",
+    "secondaryColor": "#0d1b34",
+    "accentColor": "#00d2ff",
+    "coach": "Maurizio Sarri",
+    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Sarri.webp",
+    "defaultFormation": "4-3-3",
+    "module": "4-3-3",
+    "attackRating": 4.0,
+    "defenseRating": 4.0,
+    "comment": "Raffaele Palladino sostituisce Juric alla vigilia della 12^ giornata. Come i predecessori Gasperini e Juric, Palladino dovrebbe schierarsi con la difesa a 3 e con il doppio trequartista a supporto della prima punta. Il punto di forza sono gli esterni, i cosiddetti quinti di centrocampo, chiamati a fare la doppia fase. Palladino dovrà lavorare soprattutto a livello mentsle, una squadra che \"prende\" al tredicesimo, peggior risultato degli ultimi 11 anni. Tanti ballottaggi, soprattutto dalla trequarti in su. ",
+    "sosFantaComment": "Rivoluzione totale in casa Atalanta: dopo anni col 3-5-2, si passa al 4-3-3 con l'arrivo di Maurizio Sarri in panchina. Meccanismi da oliare, soprattutto nel reparto difensivo. Kristensen arriva per giocare, lui e Scalvini sono i favoriti in partenza. Tutto apertissimo sulle fasce: Zappacosta e Bernasconi partono in pole su Bellanova e Ahanor. Non più certa la titolarità di De Roon dopo anni: c'è Gaetano in vantaggio in cabina di regia e Sarri sta plasmando Samardzic da mezzala, ora è lui favorito su Pasalic. De Ketelaere e Raspadori provati sulle due fasce, da ali pure. Scamacca o Krstovic centravanti, con l'italiano in pole. Elmas è arrivato e sarà il classico jolly: mezzala o anche esterno alto, avrà spazio nelle rotazioni.",
+    "keyPoints": [
+      {
+        "text": "Valorizzazione esterni d'attacco ",
+        "tone": "good"
+      },
+      {
+        "text": "Solidità difensiva",
+        "tone": "good"
+      },
+      {
+        "text": "Scarso impiego del turnover",
+        "tone": "neutral"
+      },
+      {
+        "text": "Scarsa libertà ai terzini",
+        "tone": "bad"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "att-wings",
+        "tone": "good"
+      },
+      {
+        "role": "def-center",
+        "tone": "good"
+      },
+      {
+        "role": "def-fullbacks",
+        "tone": "bad"
+      }
+    ],
+    "starters": [
+      {
+        "playerId": "0e05ec77-0d73-452e-8d72-7ddf162ced52",
+        "csvId": "4431",
+        "name": "Carnesecchi",
+        "role": "P"
+      },
+      {
+        "playerId": "088bb69b-e23f-402f-bc6e-3ad4bb311560",
+        "csvId": 554,
+        "name": "Zappacosta",
+        "role": "D"
+      },
+      {
+        "playerId": "e259c4a6-1385-479b-b970-730c08be498f",
+        "csvId": 5526,
+        "name": "Scalvini",
+        "role": "D"
+      },
+      {
+        "playerId": "e8093c47-4f1a-4bcb-83b1-0c64385cddbe",
+        "csvId": 6485,
+        "name": "Kristensen T.",
+        "role": "D"
+      },
+      {
+        "playerId": "e12cb1ac-c451-4b75-bbe1-94bb602aa355",
+        "csvId": 7219,
+        "name": "Bernasconi",
+        "role": "D"
+      },
+      {
+        "playerId": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
+        "csvId": 5119,
+        "name": "Samardzic",
+        "role": "C"
+      },
+      {
+        "playerId": "4f923ea1-81ed-468d-84e7-bc8adf85055f",
+        "csvId": 4364,
+        "name": "Gaetano",
+        "role": "C"
+      },
+      {
+        "playerId": "c56c787c-4c3c-40e6-873f-596cffcd773e",
+        "csvId": 5792,
+        "name": "Ederson D.S.",
+        "role": "C"
+      },
+      {
+        "playerId": "387c9a81-4702-47ce-a0d6-1791bed95221",
+        "csvId": "5995",
+        "name": "De Ketelaere",
+        "role": "A"
+      },
+      {
+        "playerId": "6b73ffab-1bf1-40c1-9a8c-35dbc1d0ed1d",
+        "csvId": "4371",
+        "name": "Raspadori",
+        "role": "A"
+      },
+      {
+        "playerId": "413e773b-e7f1-4149-9f20-475e3cd1d957",
+        "csvId": 2137,
+        "name": "Scamacca",
+        "role": "A"
+      }
+    ],
+    "rig": [
+      {
+        "playerId": "413e773b-e7f1-4149-9f20-475e3cd1d957",
+        "name": "Scamacca",
+        "role": "A"
+      },
+      {
+        "playerId": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
+        "name": "Samardzic",
+        "role": "C"
+      },
+      {
+        "playerId": "c56c787c-4c3c-40e6-873f-596cffcd773e",
+        "name": "Ederson D.S.",
+        "role": "C"
+      }
+    ],
+    "pun": [
+      {
+        "playerId": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
+        "name": "Samardzic",
+        "role": "C"
+      },
+      {
+        "playerId": "4f923ea1-81ed-468d-84e7-bc8adf85055f",
+        "name": "Gaetano",
+        "role": "C"
+      }
+    ],
+    "corner": [
+      {
+        "playerId": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
+        "name": "Samardzic",
+        "role": "C"
+      },
+      {
+        "playerId": "4f923ea1-81ed-468d-84e7-bc8adf85055f",
+        "name": "Gaetano",
+        "role": "C"
+      },
+      {
+        "playerId": "e12cb1ac-c451-4b75-bbe1-94bb602aa355",
+        "name": "Bernasconi",
+        "role": "D"
+      }
+    ],
+    "ballottaggi": [
+      [
+        {
+          "playerId": "413e773b-e7f1-4149-9f20-475e3cd1d957",
+          "name": "Scamacca",
+          "role": "A",
+          "perc": 51
+        },
+        {
+          "playerId": "a2a9196a-3c70-4680-8e40-951ee6a10a22",
+          "name": "Krstovic",
+          "role": "A",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "4f923ea1-81ed-468d-84e7-bc8adf85055f",
+          "name": "Gaetano",
+          "role": "C",
+          "perc": 60
+        },
+        {
+          "playerId": "570ee83d-8f44-4206-875c-10dd0430c4f3",
+          "name": "De Roon",
+          "role": "C",
+          "perc": 40
+        }
+      ],
+      [
+        {
+          "playerId": "088bb69b-e23f-402f-bc6e-3ad4bb311560",
+          "name": "Zappacosta",
+          "role": "D",
+          "perc": 55
+        },
+        {
+          "playerId": "bde8b7a8-9307-4d1e-a3cc-430c5bee432b",
+          "name": "Bellanova",
+          "role": "D",
+          "perc": 45
+        }
+      ],
+      [
+        {
+          "playerId": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
+          "name": "Samardzic",
+          "role": "C",
+          "perc": 51
+        },
+        {
+          "playerId": "515cb6cb-fae1-428c-89cc-a97f5ccbc6c8",
+          "name": "Pasalic",
+          "role": "C",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "e12cb1ac-c451-4b75-bbe1-94bb602aa355",
+          "name": "Bernasconi",
+          "role": "D",
+          "perc": 51
+        },
+        {
+          "playerId": "c54ad644-51bc-4d7c-a8d1-300c3adc9324",
+          "name": "Ahanor",
+          "role": "D",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "6b73ffab-1bf1-40c1-9a8c-35dbc1d0ed1d",
+          "name": "Raspadori",
+          "role": "A",
+          "perc": 55
+        },
+        {
+          "playerId": "cc800e08-9593-424a-a9d9-eb4da06257cc",
+          "name": "Elmas",
+          "role": "C",
+          "perc": 45
+        }
+      ]
+    ],
+    "up": [
+      {
+        "playerId": "e259c4a6-1385-479b-b970-730c08be498f",
+        "name": "Scalvini",
+        "points": [
+          "Difesa di Sarri solida"
+        ]
+      },
+      {
+        "playerId": "6b73ffab-1bf1-40c1-9a8c-35dbc1d0ed1d",
+        "name": "Raspadori",
+        "points": [
+          "Adattabile anche al centro ",
+          "Esterni di Sarri prolifici",
+          "Rotazioni elevate nel suo ruolo"
+        ]
+      }
+    ],
+    "down": [
+      {
+        "playerId": "570ee83d-8f44-4206-875c-10dd0430c4f3",
+        "name": "De Roon",
+        "points": [
+          "Con Sarri posizionamento più arretrato"
+        ]
+      },
+      {
+        "playerId": "60a8a763-dcd9-42f3-b6db-875bca54ae39",
+        "name": "Kossounou",
+        "points": [
+          "Parte indietro nelle gerarchie del mister"
+        ]
+      }
+    ],
+    "young": [
+      {
+        "playerId": "e12cb1ac-c451-4b75-bbe1-94bb602aa355",
+        "name": "Bernasconi",
+        "points": [
+          "Esterno equilibrato in entrambe le fasi"
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "playerId": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
+        "name": "Samardzic",
+        "points": [
+          "Sarri può rigenerarlo"
+        ]
+      }
+    ]
+  },
+  "NAP": {
+    "code": "NAP",
+    "name": "Napoli",
+    "city": "Napoli",
+    "stadium": "Diego Armando Maradona",
+    "primaryColor": "#0080ff",
+    "secondaryColor": "#ffffff",
+    "accentColor": "#002d62",
+    "coach": "Massimiliano Allegri",
+    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Allegri.webp",
+    "defaultFormation": "4-3-3",
+    "module": "4-3-3",
+    "attackRating": 4.5,
+    "defenseRating": 4.5,
+    "comment": "Reduce dalla conquista dello scudetto, Conte ha portato a Napoli mentalità vincente, rigore tattico e una forte identità di squadra. Pur avendo nel 3-5-2 il suo marchio di fabbrica, ha dimostrato grande intelligenza adattandosi al contesto partenopeo, riuscendo a trovare equilibrio anche con il 4-3-3, modulo che meglio valorizza le caratteristiche tecniche e offensive della rosa azzurra. Le sue squadre si distinguono per organizzazione, intensità e spirito di sacrificio, con un’attenzione maniacale alla fase difensiva. Difensori centrali affidabili ed esterni dinamici restano fondamentali nel suo sistema, così come i centrocampisti con capacità di inserimento e gli attaccanti di movimento. ",
+    "sosFantaComment": "Da Antonio Conte a Massimiliano Allegri, dalla difesa a 3 al 4-3-3 provato finora (a volte potrà essere anche un 4-2-3-1). Meret più di Milinkovic, il pre-campionato dice questo sulla gerarchia in porta. Inizia ai box la stagione di Buongiorno e lo stop non sarà breve (tornerà verso novembre): o il nuovo arrivato Badiashile o Marin fino a quel momento, con il nuovo arrivato sicuramente in pole. Anguissa parte da prima alternativa di McTominay e/o De Bruyne. Nel tridente più Alisson Santos e Politano di Neres in partenza, ma c'è anche Vergara che Allegri utilizza sia nel tridente che da mezzala.",
+    "keyPoints": [
+      {
+        "text": "Solidità difensiva",
+        "tone": "good"
+      },
+      {
+        "text": "Palle inattive decisive",
+        "tone": "good"
+      },
+      {
+        "text": "Baricentro squadra basso",
+        "tone": "bad"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "gk",
+        "tone": "good"
+      },
+      {
+        "role": "def-center",
+        "tone": "good"
+      }
+    ],
+    "starters": [
+      {
+        "playerId": "1bef666d-d305-4795-af71-2e946eb6ab0e",
+        "csvId": 572,
+        "name": "Meret",
+        "role": "P"
+      },
+      {
+        "playerId": "dbd256fc-4861-493d-8fc6-8abc4503c061",
+        "csvId": 2816,
+        "name": "Di Lorenzo",
+        "role": "D"
+      },
+      {
+        "playerId": "f61d5ce5-111a-4f71-b6f7-dfe4393621d3",
+        "csvId": 4409,
+        "name": "Rrahmani",
+        "role": "D"
+      },
+      {
+        "playerId": "9974d5bb-0599-421d-8ee6-2aebf34143f8",
+        "csvId": 4664,
+        "name": "Badiashile",
+        "role": "D"
+      },
+      {
+        "playerId": "65b01da4-d962-42ce-bc23-e7bcc306a61b",
+        "csvId": 1852,
+        "name": "Spinazzola",
+        "role": "D"
+      },
+      {
+        "playerId": "f06f2f39-13e2-4cda-8319-dffd25ec0cbd",
+        "csvId": 2517,
+        "name": "De Bruyne",
+        "role": "C"
+      },
+      {
+        "playerId": "a411c282-00be-4e2f-8599-e0a2e5da85bf",
+        "csvId": 4287,
+        "name": "Lobotka",
+        "role": "C"
+      },
+      {
+        "playerId": "f7f99d6a-c8e0-4ec8-a434-1ffba0253b41",
+        "csvId": 4777,
+        "name": "McTominay",
+        "role": "C"
+      },
+      {
+        "playerId": "e3ca6a3a-4c39-4307-ab09-0520b0f066db",
+        "csvId": 536,
+        "name": "Politano",
+        "role": "C"
+      },
+      {
+        "playerId": "1da941e1-9f25-4af2-9903-6d3004e1765c",
+        "csvId": 7351,
+        "name": "Santos A.",
+        "role": "A"
+      },
+      {
+        "playerId": "4c72a8d4-8416-4a9b-b70f-810f16af86ff",
+        "csvId": "6052",
+        "name": "Hojlund",
+        "role": "A"
+      }
+    ],
+    "rig": [
+      {
+        "playerId": "f06f2f39-13e2-4cda-8319-dffd25ec0cbd",
+        "name": "De Bruyne",
+        "role": "C"
+      },
+      {
+        "playerId": "4c72a8d4-8416-4a9b-b70f-810f16af86ff",
+        "name": "Hojlund",
+        "role": "A"
+      },
+      {
+        "playerId": "e3ca6a3a-4c39-4307-ab09-0520b0f066db",
+        "name": "Politano",
+        "role": "C"
+      }
+    ],
+    "pun": [
+      {
+        "playerId": "f06f2f39-13e2-4cda-8319-dffd25ec0cbd",
+        "name": "De Bruyne",
+        "role": "C"
+      },
+      {
+        "playerId": "e3ca6a3a-4c39-4307-ab09-0520b0f066db",
+        "name": "Politano",
+        "role": "C"
+      }
+    ],
+    "corner": [
+      {
+        "playerId": "f06f2f39-13e2-4cda-8319-dffd25ec0cbd",
+        "name": "De Bruyne",
+        "role": "C"
+      },
+      {
+        "playerId": "e3ca6a3a-4c39-4307-ab09-0520b0f066db",
+        "name": "Politano",
+        "role": "C"
+      },
+      {
+        "playerId": "3cd2885e-8e25-4e3f-8c86-8af871b76421",
+        "name": "Neres",
+        "role": "A"
+      }
+    ],
+    "ballottaggi": [
+      [
+        {
+          "playerId": "e3ca6a3a-4c39-4307-ab09-0520b0f066db",
+          "name": "Politano",
+          "role": "C",
+          "perc": 40
+        },
+        {
+          "playerId": "06e40e5b-de3e-410d-8540-4775224cb363",
+          "name": "Vergara",
+          "role": "C",
+          "perc": 30
+        },
+        {
+          "playerId": "3cd2885e-8e25-4e3f-8c86-8af871b76421",
+          "name": "Neres",
+          "role": "A",
+          "perc": 30
+        }
+      ],
+      [
+        {
+          "playerId": "9974d5bb-0599-421d-8ee6-2aebf34143f8",
+          "name": "Badiashile",
+          "role": "D",
+          "perc": 60
+        },
+        {
+          "playerId": "3cbf391b-c091-4b2f-a391-23c8fa6b4eb3",
+          "name": "Marin R.",
+          "role": "D",
+          "perc": 40
+        }
+      ]
+    ],
+    "up": [
+      {
+        "playerId": "1da941e1-9f25-4af2-9903-6d3004e1765c",
+        "name": "Santos A.",
+        "points": [
+          "Prolifico nei contropiedi",
+          "Bravo a sfruttare gli spazi aperti dalla difesa bassa"
+        ]
+      },
+      {
+        "playerId": "f7f99d6a-c8e0-4ec8-a434-1ffba0253b41",
+        "name": "McTominay",
+        "points": [
+          "Prolifico nei piazzati",
+          "Inserimenti in area avversaria"
+        ]
+      }
+    ],
+    "down": [
+      {
+        "playerId": "d850d49a-7b84-4f80-a7f3-f83b61df60a5",
+        "name": "Gilmour",
+        "points": [
+          "Indietro nelle gerarchie"
+        ]
+      }
+    ],
+    "young": [
+      {
+        "playerId": "06e40e5b-de3e-410d-8540-4775224cb363",
+        "name": "Vergara",
+        "points": [
+          "Utile nelle rotazioni"
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "playerId": "732b19cf-3340-4588-ba8a-85459261b4c1",
+        "name": "Olivera",
+        "points": [
+          "Jolly difensivo"
+        ]
+      }
+    ]
+  },
+  "napoli": {
+    "code": "NAP",
+    "name": "Napoli",
+    "city": "Napoli",
+    "stadium": "Diego Armando Maradona",
+    "primaryColor": "#0080ff",
+    "secondaryColor": "#ffffff",
+    "accentColor": "#002d62",
+    "coach": "Massimiliano Allegri",
+    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Allegri.webp",
+    "defaultFormation": "4-3-3",
+    "module": "4-3-3",
+    "attackRating": 4.5,
+    "defenseRating": 4.5,
+    "comment": "Reduce dalla conquista dello scudetto, Conte ha portato a Napoli mentalità vincente, rigore tattico e una forte identità di squadra. Pur avendo nel 3-5-2 il suo marchio di fabbrica, ha dimostrato grande intelligenza adattandosi al contesto partenopeo, riuscendo a trovare equilibrio anche con il 4-3-3, modulo che meglio valorizza le caratteristiche tecniche e offensive della rosa azzurra. Le sue squadre si distinguono per organizzazione, intensità e spirito di sacrificio, con un’attenzione maniacale alla fase difensiva. Difensori centrali affidabili ed esterni dinamici restano fondamentali nel suo sistema, così come i centrocampisti con capacità di inserimento e gli attaccanti di movimento. ",
+    "sosFantaComment": "Da Antonio Conte a Massimiliano Allegri, dalla difesa a 3 al 4-3-3 provato finora (a volte potrà essere anche un 4-2-3-1). Meret più di Milinkovic, il pre-campionato dice questo sulla gerarchia in porta. Inizia ai box la stagione di Buongiorno e lo stop non sarà breve (tornerà verso novembre): o il nuovo arrivato Badiashile o Marin fino a quel momento, con il nuovo arrivato sicuramente in pole. Anguissa parte da prima alternativa di McTominay e/o De Bruyne. Nel tridente più Alisson Santos e Politano di Neres in partenza, ma c'è anche Vergara che Allegri utilizza sia nel tridente che da mezzala.",
+    "keyPoints": [
+      {
+        "text": "Solidità difensiva",
+        "tone": "good"
+      },
+      {
+        "text": "Palle inattive decisive",
+        "tone": "good"
+      },
+      {
+        "text": "Baricentro squadra basso",
+        "tone": "bad"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "gk",
+        "tone": "good"
+      },
+      {
+        "role": "def-center",
+        "tone": "good"
+      }
+    ],
+    "starters": [
+      {
+        "playerId": "1bef666d-d305-4795-af71-2e946eb6ab0e",
+        "csvId": 572,
+        "name": "Meret",
+        "role": "P"
+      },
+      {
+        "playerId": "dbd256fc-4861-493d-8fc6-8abc4503c061",
+        "csvId": 2816,
+        "name": "Di Lorenzo",
+        "role": "D"
+      },
+      {
+        "playerId": "f61d5ce5-111a-4f71-b6f7-dfe4393621d3",
+        "csvId": 4409,
+        "name": "Rrahmani",
+        "role": "D"
+      },
+      {
+        "playerId": "9974d5bb-0599-421d-8ee6-2aebf34143f8",
+        "csvId": 4664,
+        "name": "Badiashile",
+        "role": "D"
+      },
+      {
+        "playerId": "65b01da4-d962-42ce-bc23-e7bcc306a61b",
+        "csvId": 1852,
+        "name": "Spinazzola",
+        "role": "D"
+      },
+      {
+        "playerId": "f06f2f39-13e2-4cda-8319-dffd25ec0cbd",
+        "csvId": 2517,
+        "name": "De Bruyne",
+        "role": "C"
+      },
+      {
+        "playerId": "a411c282-00be-4e2f-8599-e0a2e5da85bf",
+        "csvId": 4287,
+        "name": "Lobotka",
+        "role": "C"
+      },
+      {
+        "playerId": "f7f99d6a-c8e0-4ec8-a434-1ffba0253b41",
+        "csvId": 4777,
+        "name": "McTominay",
+        "role": "C"
+      },
+      {
+        "playerId": "e3ca6a3a-4c39-4307-ab09-0520b0f066db",
+        "csvId": 536,
+        "name": "Politano",
+        "role": "C"
+      },
+      {
+        "playerId": "1da941e1-9f25-4af2-9903-6d3004e1765c",
+        "csvId": 7351,
+        "name": "Santos A.",
+        "role": "A"
+      },
+      {
+        "playerId": "4c72a8d4-8416-4a9b-b70f-810f16af86ff",
+        "csvId": "6052",
+        "name": "Hojlund",
+        "role": "A"
+      }
+    ],
+    "rig": [
+      {
+        "playerId": "f06f2f39-13e2-4cda-8319-dffd25ec0cbd",
+        "name": "De Bruyne",
+        "role": "C"
+      },
+      {
+        "playerId": "4c72a8d4-8416-4a9b-b70f-810f16af86ff",
+        "name": "Hojlund",
+        "role": "A"
+      },
+      {
+        "playerId": "e3ca6a3a-4c39-4307-ab09-0520b0f066db",
+        "name": "Politano",
+        "role": "C"
+      }
+    ],
+    "pun": [
+      {
+        "playerId": "f06f2f39-13e2-4cda-8319-dffd25ec0cbd",
+        "name": "De Bruyne",
+        "role": "C"
+      },
+      {
+        "playerId": "e3ca6a3a-4c39-4307-ab09-0520b0f066db",
+        "name": "Politano",
+        "role": "C"
+      }
+    ],
+    "corner": [
+      {
+        "playerId": "f06f2f39-13e2-4cda-8319-dffd25ec0cbd",
+        "name": "De Bruyne",
+        "role": "C"
+      },
+      {
+        "playerId": "e3ca6a3a-4c39-4307-ab09-0520b0f066db",
+        "name": "Politano",
+        "role": "C"
+      },
+      {
+        "playerId": "3cd2885e-8e25-4e3f-8c86-8af871b76421",
+        "name": "Neres",
+        "role": "A"
+      }
+    ],
+    "ballottaggi": [
+      [
+        {
+          "playerId": "e3ca6a3a-4c39-4307-ab09-0520b0f066db",
+          "name": "Politano",
+          "role": "C",
+          "perc": 40
+        },
+        {
+          "playerId": "06e40e5b-de3e-410d-8540-4775224cb363",
+          "name": "Vergara",
+          "role": "C",
+          "perc": 30
+        },
+        {
+          "playerId": "3cd2885e-8e25-4e3f-8c86-8af871b76421",
+          "name": "Neres",
+          "role": "A",
+          "perc": 30
+        }
+      ],
+      [
+        {
+          "playerId": "9974d5bb-0599-421d-8ee6-2aebf34143f8",
+          "name": "Badiashile",
+          "role": "D",
+          "perc": 60
+        },
+        {
+          "playerId": "3cbf391b-c091-4b2f-a391-23c8fa6b4eb3",
+          "name": "Marin R.",
+          "role": "D",
+          "perc": 40
+        }
+      ]
+    ],
+    "up": [
+      {
+        "playerId": "1da941e1-9f25-4af2-9903-6d3004e1765c",
+        "name": "Santos A.",
+        "points": [
+          "Prolifico nei contropiedi",
+          "Bravo a sfruttare gli spazi aperti dalla difesa bassa"
+        ]
+      },
+      {
+        "playerId": "f7f99d6a-c8e0-4ec8-a434-1ffba0253b41",
+        "name": "McTominay",
+        "points": [
+          "Prolifico nei piazzati",
+          "Inserimenti in area avversaria"
+        ]
+      }
+    ],
+    "down": [
+      {
+        "playerId": "d850d49a-7b84-4f80-a7f3-f83b61df60a5",
+        "name": "Gilmour",
+        "points": [
+          "Indietro nelle gerarchie"
+        ]
+      }
+    ],
+    "young": [
+      {
+        "playerId": "06e40e5b-de3e-410d-8540-4775224cb363",
+        "name": "Vergara",
+        "points": [
+          "Utile nelle rotazioni"
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "playerId": "732b19cf-3340-4588-ba8a-85459261b4c1",
+        "name": "Olivera",
+        "points": [
+          "Jolly difensivo"
+        ]
+      }
+    ]
+  },
+  "SAS": {
+    "code": "SAS",
+    "name": "Sassuolo",
+    "city": "Sassuolo",
+    "stadium": "Mapei Stadium",
+    "primaryColor": "#00a859",
+    "secondaryColor": "#000000",
+    "accentColor": "#ffffff",
+    "coach": "Alberto Aquilani",
+    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Aquilani.webp",
+    "defaultFormation": "4-2-3-1",
+    "module": "4-2-3-1",
+    "attackRating": 3.0,
+    "defenseRating": 2.5,
+    "comment": "Il 4-3-3 di Grosso punta su verticalità e ripartenze rapide, con un gioco diretto che privilegia il lancio lungo rispetto alla costruzione dal basso. I due esterni offensivi sono centrali nel sistema: liberati da compiti difensivi, hanno licenza di colpire. Il centravanti è un punto di riferimento costante, cercato con palloni in profondità per sfruttare spazi e fisicità. A centrocampo servono corsa e intensità, più che palleggio. La difesa a quattro è solida ma può soffrire se attaccata in velocità. In chiave fantacalcio, occhio agli esterni offensivi: possono portare bonus importanti. Meno appetibili, invece, i difensori e i mediani.",
+    "sosFantaComment": "È arrivato Alberto Aquilani in panchina al posto di Grosso. Il modulo di riferimento sembra essere il 4-2-3-1, ma il Sassuolo può schierarsi anche con il 4-3-3, già provato durante la preparazione. Muric a sorpresa è stato riscattato e rimane il favorito in porta. A destra si giocano una maglia Missori e Walukiewicz, con il polacco che può agire anche da centrale. A sinistra è arrivato Obrador e si candida ad essere il titolare, con Doig che resta un'alternativa affidabile. A centrocampo Koné resterà fuori ancora per diversi mesi e, in attesa del suo rientro, spazio a Lipani o Bakola. Pinamonti e Thorstvedt hanno chiesto la cessione, il loro futuro è tutto da scrivere. Dal mercato sono arrivati Bowie e Adzic che si candidano come alternative ai due. E c'è anche Dominguez.",
+    "keyPoints": [
+      {
+        "text": "Costruzione dal basso",
+        "tone": "neutral"
+      },
+      {
+        "text": "Fluidità Tattica tra i moduli",
+        "tone": "neutral"
+      },
+      {
+        "text": "Buona organizzazione del fraseggio in mezzo al campo",
+        "tone": "good"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "att-wings",
+        "tone": "good"
+      },
+      {
+        "role": "def-center",
+        "tone": "bad"
+      },
+      {
+        "role": "gk",
+        "tone": "bad"
+      }
+    ],
+    "starters": [
+      {
+        "playerId": "9c483384-d40d-4152-aa37-d7fd00624646",
+        "csvId": "4236",
+        "name": "Muric",
+        "role": "P"
+      },
+      {
+        "playerId": "76cabc00-f29e-402b-aa35-b88bacfd8aae",
+        "csvId": 7573,
+        "name": "",
+        "role": ""
+      },
+      {
+        "playerId": "1a34b9f5-bd27-4a6b-a2e5-3961be3bd835",
+        "csvId": 6672,
+        "name": "Idzes",
+        "role": "D"
+      },
+      {
+        "playerId": "0d58faf5-1ed1-4610-8a3b-caddd2c688a8",
+        "csvId": 7564,
+        "name": "Leysen F.",
+        "role": "D"
+      },
+      {
+        "playerId": "95aaa469-351a-4ce1-a71f-97dce55d47de",
+        "csvId": 7329,
+        "name": "Obrador",
+        "role": "D"
+      },
+      {
+        "playerId": "9ecf743b-95b3-46f4-b3b8-777f6ed9262f",
+        "csvId": 2528,
+        "name": "Matic",
+        "role": "C"
+      },
+      {
+        "playerId": "18a51ba4-0193-458c-be47-c733b4d9dfd8",
+        "csvId": 7036,
+        "name": "Bakola",
+        "role": "C"
+      },
+      {
+        "playerId": "749247cd-79ed-44d6-a376-50afab6e25a0",
+        "csvId": 531,
+        "name": "Berardi",
+        "role": "A"
+      },
+      {
+        "playerId": "dc221c49-a187-478c-b460-b8daab6631e2",
+        "csvId": 5844,
+        "name": "Thorstvedt",
+        "role": "C"
+      },
+      {
+        "playerId": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
+        "csvId": "6060",
+        "name": "Laurientè",
+        "role": "A"
+      },
+      {
+        "playerId": "3b5b8e3f-ce26-4764-80bd-334b9a5aef7f",
+        "csvId": 7347,
+        "name": "Bowie",
+        "role": "A"
+      }
+    ],
+    "rig": [
+      {
+        "playerId": "749247cd-79ed-44d6-a376-50afab6e25a0",
+        "name": "Berardi",
+        "role": "A"
+      },
+      {
+        "playerId": "ced01d22-1684-45d0-bcde-9898ff26ae86",
+        "name": "Pinamonti",
+        "role": "A"
+      },
+      {
+        "playerId": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
+        "name": "Laurientè",
+        "role": "A"
+      }
+    ],
+    "pun": [
+      {
+        "playerId": "749247cd-79ed-44d6-a376-50afab6e25a0",
+        "name": "Berardi",
+        "role": "A"
+      },
+      {
+        "playerId": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
+        "name": "Laurientè",
+        "role": "A"
+      }
+    ],
+    "corner": [
+      {
+        "playerId": "749247cd-79ed-44d6-a376-50afab6e25a0",
+        "name": "Berardi",
+        "role": "A"
+      },
+      {
+        "playerId": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
+        "name": "Laurientè",
+        "role": "A"
+      },
+      {
+        "playerId": "371edc7e-8557-4af7-ac46-3481c7601c38",
+        "name": "Doig",
+        "role": "D"
+      }
+    ],
+    "ballottaggi": [
+      [
+        {
+          "playerId": "0d58faf5-1ed1-4610-8a3b-caddd2c688a8",
+          "name": "Leysen F.",
+          "role": "D",
+          "perc": 51
+        },
+        {
+          "playerId": "78591c1c-9e6f-4f91-81e7-4b4db1a48fed",
+          "name": "Walukiewicz",
+          "role": "D",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "9c483384-d40d-4152-aa37-d7fd00624646",
+          "name": "Muric",
+          "role": "P",
+          "perc": 51
+        },
+        {
+          "playerId": "c824abfd-1f86-4d6f-a395-b9ed4661dc73",
+          "name": "Turati",
+          "role": "P",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "dbad7fbe-2421-4646-9b4f-6f065ae9a076",
+          "name": "Lipani",
+          "role": "C",
+          "perc": 51
+        },
+        {
+          "playerId": "225f68c2-4f99-4f0e-98dd-d8900423bec4",
+          "name": "Konè I.",
+          "role": "C",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "dc221c49-a187-478c-b460-b8daab6631e2",
+          "name": "Thorstvedt",
+          "role": "C",
+          "perc": 51
+        },
+        {
+          "playerId": "c9db8149-35c2-4640-9b87-0ac4efe8d1b9",
+          "name": "Adzic",
+          "role": "C",
+          "perc": 49
+        }
+      ]
+    ],
+    "up": [
+      {
+        "playerId": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
+        "name": "Laurientè",
+        "points": [
+          "Abile in ripartenza",
+          "Buon attacco della profondità"
+        ]
+      },
+      {
+        "playerId": "749247cd-79ed-44d6-a376-50afab6e25a0",
+        "name": "Berardi",
+        "points": [
+          "Riferimento della manovra offensiva",
+          "Prolifico in fase realizzativa"
+        ]
+      }
+    ],
+    "down": [
+      {
+        "playerId": "9c483384-d40d-4152-aa37-d7fd00624646",
+        "name": "Muric",
+        "points": [
+          "Può soffrire la costruzione dal basso"
+        ]
+      },
+      {
+        "playerId": "78591c1c-9e6f-4f91-81e7-4b4db1a48fed",
+        "name": "Walukiewicz",
+        "points": [
+          "Può soffrire la costruzione dal basso",
+          "Concorrenza per il posto"
+        ]
+      }
+    ],
+    "young": [
+      {
+        "playerId": "18a51ba4-0193-458c-be47-c733b4d9dfd8",
+        "name": "Bakola",
+        "points": [
+          "Dinamico nel posizionamento",
+          "Buona tecnica e personalità"
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "playerId": "c9db8149-35c2-4640-9b87-0ac4efe8d1b9",
+        "name": "Adzic",
+        "points": [
+          "Posizionamento avanzato",
+          "Buona visione della porta"
+        ]
+      }
+    ]
+  },
+  "sassuolo": {
+    "code": "SAS",
+    "name": "Sassuolo",
+    "city": "Sassuolo",
+    "stadium": "Mapei Stadium",
+    "primaryColor": "#00a859",
+    "secondaryColor": "#000000",
+    "accentColor": "#ffffff",
+    "coach": "Alberto Aquilani",
+    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Aquilani.webp",
+    "defaultFormation": "4-2-3-1",
+    "module": "4-2-3-1",
+    "attackRating": 3.0,
+    "defenseRating": 2.5,
+    "comment": "Il 4-3-3 di Grosso punta su verticalità e ripartenze rapide, con un gioco diretto che privilegia il lancio lungo rispetto alla costruzione dal basso. I due esterni offensivi sono centrali nel sistema: liberati da compiti difensivi, hanno licenza di colpire. Il centravanti è un punto di riferimento costante, cercato con palloni in profondità per sfruttare spazi e fisicità. A centrocampo servono corsa e intensità, più che palleggio. La difesa a quattro è solida ma può soffrire se attaccata in velocità. In chiave fantacalcio, occhio agli esterni offensivi: possono portare bonus importanti. Meno appetibili, invece, i difensori e i mediani.",
+    "sosFantaComment": "È arrivato Alberto Aquilani in panchina al posto di Grosso. Il modulo di riferimento sembra essere il 4-2-3-1, ma il Sassuolo può schierarsi anche con il 4-3-3, già provato durante la preparazione. Muric a sorpresa è stato riscattato e rimane il favorito in porta. A destra si giocano una maglia Missori e Walukiewicz, con il polacco che può agire anche da centrale. A sinistra è arrivato Obrador e si candida ad essere il titolare, con Doig che resta un'alternativa affidabile. A centrocampo Koné resterà fuori ancora per diversi mesi e, in attesa del suo rientro, spazio a Lipani o Bakola. Pinamonti e Thorstvedt hanno chiesto la cessione, il loro futuro è tutto da scrivere. Dal mercato sono arrivati Bowie e Adzic che si candidano come alternative ai due. E c'è anche Dominguez.",
+    "keyPoints": [
+      {
+        "text": "Costruzione dal basso",
+        "tone": "neutral"
+      },
+      {
+        "text": "Fluidità Tattica tra i moduli",
+        "tone": "neutral"
+      },
+      {
+        "text": "Buona organizzazione del fraseggio in mezzo al campo",
+        "tone": "good"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "att-wings",
+        "tone": "good"
+      },
+      {
+        "role": "def-center",
+        "tone": "bad"
+      },
+      {
+        "role": "gk",
+        "tone": "bad"
+      }
+    ],
+    "starters": [
+      {
+        "playerId": "9c483384-d40d-4152-aa37-d7fd00624646",
+        "csvId": "4236",
+        "name": "Muric",
+        "role": "P"
+      },
+      {
+        "playerId": "76cabc00-f29e-402b-aa35-b88bacfd8aae",
+        "csvId": 7573,
+        "name": "",
+        "role": ""
+      },
+      {
+        "playerId": "1a34b9f5-bd27-4a6b-a2e5-3961be3bd835",
+        "csvId": 6672,
+        "name": "Idzes",
+        "role": "D"
+      },
+      {
+        "playerId": "0d58faf5-1ed1-4610-8a3b-caddd2c688a8",
+        "csvId": 7564,
+        "name": "Leysen F.",
+        "role": "D"
+      },
+      {
+        "playerId": "95aaa469-351a-4ce1-a71f-97dce55d47de",
+        "csvId": 7329,
+        "name": "Obrador",
+        "role": "D"
+      },
+      {
+        "playerId": "9ecf743b-95b3-46f4-b3b8-777f6ed9262f",
+        "csvId": 2528,
+        "name": "Matic",
+        "role": "C"
+      },
+      {
+        "playerId": "18a51ba4-0193-458c-be47-c733b4d9dfd8",
+        "csvId": 7036,
+        "name": "Bakola",
+        "role": "C"
+      },
+      {
+        "playerId": "749247cd-79ed-44d6-a376-50afab6e25a0",
+        "csvId": 531,
+        "name": "Berardi",
+        "role": "A"
+      },
+      {
+        "playerId": "dc221c49-a187-478c-b460-b8daab6631e2",
+        "csvId": 5844,
+        "name": "Thorstvedt",
+        "role": "C"
+      },
+      {
+        "playerId": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
+        "csvId": "6060",
+        "name": "Laurientè",
+        "role": "A"
+      },
+      {
+        "playerId": "3b5b8e3f-ce26-4764-80bd-334b9a5aef7f",
+        "csvId": 7347,
+        "name": "Bowie",
+        "role": "A"
+      }
+    ],
+    "rig": [
+      {
+        "playerId": "749247cd-79ed-44d6-a376-50afab6e25a0",
+        "name": "Berardi",
+        "role": "A"
+      },
+      {
+        "playerId": "ced01d22-1684-45d0-bcde-9898ff26ae86",
+        "name": "Pinamonti",
+        "role": "A"
+      },
+      {
+        "playerId": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
+        "name": "Laurientè",
+        "role": "A"
+      }
+    ],
+    "pun": [
+      {
+        "playerId": "749247cd-79ed-44d6-a376-50afab6e25a0",
+        "name": "Berardi",
+        "role": "A"
+      },
+      {
+        "playerId": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
+        "name": "Laurientè",
+        "role": "A"
+      }
+    ],
+    "corner": [
+      {
+        "playerId": "749247cd-79ed-44d6-a376-50afab6e25a0",
+        "name": "Berardi",
+        "role": "A"
+      },
+      {
+        "playerId": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
+        "name": "Laurientè",
+        "role": "A"
+      },
+      {
+        "playerId": "371edc7e-8557-4af7-ac46-3481c7601c38",
+        "name": "Doig",
+        "role": "D"
+      }
+    ],
+    "ballottaggi": [
+      [
+        {
+          "playerId": "0d58faf5-1ed1-4610-8a3b-caddd2c688a8",
+          "name": "Leysen F.",
+          "role": "D",
+          "perc": 51
+        },
+        {
+          "playerId": "78591c1c-9e6f-4f91-81e7-4b4db1a48fed",
+          "name": "Walukiewicz",
+          "role": "D",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "9c483384-d40d-4152-aa37-d7fd00624646",
+          "name": "Muric",
+          "role": "P",
+          "perc": 51
+        },
+        {
+          "playerId": "c824abfd-1f86-4d6f-a395-b9ed4661dc73",
+          "name": "Turati",
+          "role": "P",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "dbad7fbe-2421-4646-9b4f-6f065ae9a076",
+          "name": "Lipani",
+          "role": "C",
+          "perc": 51
+        },
+        {
+          "playerId": "225f68c2-4f99-4f0e-98dd-d8900423bec4",
+          "name": "Konè I.",
+          "role": "C",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "dc221c49-a187-478c-b460-b8daab6631e2",
+          "name": "Thorstvedt",
+          "role": "C",
+          "perc": 51
+        },
+        {
+          "playerId": "c9db8149-35c2-4640-9b87-0ac4efe8d1b9",
+          "name": "Adzic",
+          "role": "C",
+          "perc": 49
+        }
+      ]
+    ],
+    "up": [
+      {
+        "playerId": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
+        "name": "Laurientè",
+        "points": [
+          "Abile in ripartenza",
+          "Buon attacco della profondità"
+        ]
+      },
+      {
+        "playerId": "749247cd-79ed-44d6-a376-50afab6e25a0",
+        "name": "Berardi",
+        "points": [
+          "Riferimento della manovra offensiva",
+          "Prolifico in fase realizzativa"
+        ]
+      }
+    ],
+    "down": [
+      {
+        "playerId": "9c483384-d40d-4152-aa37-d7fd00624646",
+        "name": "Muric",
+        "points": [
+          "Può soffrire la costruzione dal basso"
+        ]
+      },
+      {
+        "playerId": "78591c1c-9e6f-4f91-81e7-4b4db1a48fed",
+        "name": "Walukiewicz",
+        "points": [
+          "Può soffrire la costruzione dal basso",
+          "Concorrenza per il posto"
+        ]
+      }
+    ],
+    "young": [
+      {
+        "playerId": "18a51ba4-0193-458c-be47-c733b4d9dfd8",
+        "name": "Bakola",
+        "points": [
+          "Dinamico nel posizionamento",
+          "Buona tecnica e personalità"
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "playerId": "c9db8149-35c2-4640-9b87-0ac4efe8d1b9",
+        "name": "Adzic",
+        "points": [
+          "Posizionamento avanzato",
+          "Buona visione della porta"
+        ]
+      }
+    ]
+  },
+  "MON": {
+    "code": "MON",
+    "name": "Monza",
+    "city": "Monza",
+    "stadium": "U-Power Stadium",
+    "primaryColor": "#dc143c",
+    "secondaryColor": "#ffffff",
+    "accentColor": "#8b0000",
+    "coach": "Ivan Jurić",
+    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Juric.webp",
+    "defaultFormation": "3-4-2-1",
+    "module": "3-4-2-1",
+    "attackRating": 2.0,
+    "defenseRating": 2.0,
+    "comment": "",
+    "sosFantaComment": "È arrivato Ivan Juric sulla panchina del neopromosso Monza, sarà difesa a 3: provato il 3-4-2-1. A centrocampo il nuovo arrivato Akinsanmiro si gioca una maglia con Mout e Colombo, giocheranno due dei tre finché è infortunato Pessina (starà fuori 2 mesi circa da metà agosto, poi tornerà e sarà lui il titolare). Cutrone o il nuovo arrivato Varela a guidare l'attacco, dipenderà anche dal momento dei due. Poi Colpani, Mota e Ciurria a oggi si giocano i due posti a supporto del centravanti, ma Varela può contendersi una maglia anche qui e lo ha dimostrato nel pre-campionato e con l'Inter.",
+    "keyPoints": [
+      {
+        "text": "Importanza esterni",
+        "tone": "good"
+      },
+      {
+        "text": "Marcatura a tutto campo",
+        "tone": "neutral"
+      },
+      {
+        "text": "Gioco molto aggressivo",
+        "tone": "neutral"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "mid-wide",
+        "tone": "good"
+      },
+      {
+        "role": "mid-center",
+        "tone": "bad"
+      }
+    ],
+    "starters": [
+      {
+        "playerId": "8a42bb83-261c-4d0b-aa2a-ecf87a361d96",
+        "csvId": 4485,
+        "name": "Thiam",
+        "role": "P"
+      },
+      {
+        "playerId": "9b9115fc-6b78-47ec-9924-c974e8b83378",
+        "csvId": 7238,
+        "name": "Kouadio",
+        "role": "D"
+      },
+      {
+        "playerId": "1a26b98e-29c0-4ead-9dc9-8851a25a3f27",
+        "csvId": 2115,
+        "name": "Delli Carri",
+        "role": "D"
+      },
+      {
+        "playerId": "f729e4bf-bf18-4e1d-827a-20ef37865b8a",
+        "csvId": 4925,
+        "name": "Carboni A.",
+        "role": "D"
+      },
+      {
+        "playerId": "76ccd152-fe9d-440b-a890-6c9adef778ec",
+        "csvId": 5838,
+        "name": "Birindelli",
+        "role": "D"
+      },
+      {
+        "playerId": "d47bf2f7-f320-4340-9845-33ef2f94d175",
+        "csvId": null,
+        "name": "Mangas",
+        "role": "D"
+      },
+      {
+        "playerId": "fd980a09-99b1-4174-81e5-60cbcd1fbb49",
+        "csvId": 6593,
+        "name": "Akinsanmiro",
+        "role": "C"
+      },
+      {
+        "playerId": "c294c6f4-b7d2-4657-a072-6d5cb3b65869",
+        "csvId": 2741,
+        "name": "Pessina",
+        "role": "C"
+      },
+      {
+        "playerId": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
+        "csvId": 5878,
+        "name": "Colpani",
+        "role": "C"
+      },
+      {
+        "playerId": "4cc6309e-aacf-4bb2-b5a8-e425bfdafcb0",
+        "csvId": 2155,
+        "name": "Cutrone",
+        "role": "A"
+      },
+      {
+        "playerId": "0053b230-688b-4fef-90f5-b823c64ea378",
+        "csvId": 7523,
+        "name": "Varela G.",
+        "role": "A"
+      }
+    ],
+    "rig": [
+      {
+        "playerId": "c294c6f4-b7d2-4657-a072-6d5cb3b65869",
+        "name": "Pessina",
+        "role": "C"
+      },
+      {
+        "playerId": "4cc6309e-aacf-4bb2-b5a8-e425bfdafcb0",
+        "name": "Cutrone",
+        "role": "A"
+      },
+      {
+        "playerId": "0a3e9174-68bc-430c-845e-e04c95bcbc5a",
+        "name": "",
+        "role": ""
+      }
+    ],
+    "pun": [
+      {
+        "playerId": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
+        "name": "Colpani",
+        "role": "C"
+      },
+      {
+        "playerId": "c294c6f4-b7d2-4657-a072-6d5cb3b65869",
+        "name": "Pessina",
+        "role": "C"
+      }
+    ],
+    "corner": [
+      {
+        "playerId": "c294c6f4-b7d2-4657-a072-6d5cb3b65869",
+        "name": "Pessina",
+        "role": "C"
+      },
+      {
+        "playerId": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
+        "name": "Colpani",
+        "role": "C"
+      },
+      {
+        "playerId": "f4f8e1e3-4b76-446f-b395-f7c2eeb90176",
+        "name": "Ciurria",
+        "role": "C"
+      }
+    ],
+    "ballottaggi": [
+      [
+        {
+          "playerId": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
+          "name": "Colpani",
+          "role": "C",
+          "perc": 55
+        },
+        {
+          "playerId": "f4f8e1e3-4b76-446f-b395-f7c2eeb90176",
+          "name": "Ciurria",
+          "role": "C",
+          "perc": 45
+        }
+      ],
+      [
+        {
+          "playerId": "4cc6309e-aacf-4bb2-b5a8-e425bfdafcb0",
+          "name": "Cutrone",
+          "role": "A",
+          "perc": 55
+        },
+        {
+          "playerId": "88893e63-f3f6-4224-838b-8e189ef9f312",
+          "name": "Mota",
+          "role": "A",
+          "perc": 45
+        }
+      ],
+      [
+        {
+          "playerId": "fd980a09-99b1-4174-81e5-60cbcd1fbb49",
+          "name": "Akinsanmiro",
+          "role": "C",
+          "perc": 51
+        },
+        {
+          "playerId": "92d60563-17a8-45d1-a6c1-3b8d5e676e1d",
+          "name": "Mout",
+          "role": "C",
+          "perc": 49
+        }
+      ]
+    ],
+    "up": [
+      {
+        "playerId": "88893e63-f3f6-4224-838b-8e189ef9f312",
+        "name": "Mota",
+        "points": [
+          "Leader della squadra",
+          "Svaria su tutto il fronte d'attacco",
+          "Qualche dubbio sull'integrità fisica"
+        ]
+      },
+      {
+        "playerId": "76ccd152-fe9d-440b-a890-6c9adef778ec",
+        "name": "Birindelli",
+        "points": [
+          "Gioca su entrambe le fasce",
+          "Partecipa alla manovra offensiva"
+        ]
+      }
+    ],
+    "down": [
+      {
+        "playerId": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
+        "name": "Colpani",
+        "points": [
+          "Giocatore discontinuo"
+        ]
+      }
+    ],
+    "young": [
+      {
+        "playerId": "2d943164-e3df-4a78-a795-93d26f2623e7",
+        "name": "Bakoune",
+        "points": [
+          "Ha doti per scalare le gerarchie"
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "playerId": "8a42bb83-261c-4d0b-aa2a-ecf87a361d96",
+        "name": "Thiam",
+        "points": [
+          "Buon rapporto parate-tiri"
+        ]
+      }
+    ]
+  },
+  "monza": {
+    "code": "MON",
+    "name": "Monza",
+    "city": "Monza",
+    "stadium": "U-Power Stadium",
+    "primaryColor": "#dc143c",
+    "secondaryColor": "#ffffff",
+    "accentColor": "#8b0000",
+    "coach": "Ivan Jurić",
+    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Juric.webp",
+    "defaultFormation": "3-4-2-1",
+    "module": "3-4-2-1",
+    "attackRating": 2.0,
+    "defenseRating": 2.0,
+    "comment": "",
+    "sosFantaComment": "È arrivato Ivan Juric sulla panchina del neopromosso Monza, sarà difesa a 3: provato il 3-4-2-1. A centrocampo il nuovo arrivato Akinsanmiro si gioca una maglia con Mout e Colombo, giocheranno due dei tre finché è infortunato Pessina (starà fuori 2 mesi circa da metà agosto, poi tornerà e sarà lui il titolare). Cutrone o il nuovo arrivato Varela a guidare l'attacco, dipenderà anche dal momento dei due. Poi Colpani, Mota e Ciurria a oggi si giocano i due posti a supporto del centravanti, ma Varela può contendersi una maglia anche qui e lo ha dimostrato nel pre-campionato e con l'Inter.",
+    "keyPoints": [
+      {
+        "text": "Importanza esterni",
+        "tone": "good"
+      },
+      {
+        "text": "Marcatura a tutto campo",
+        "tone": "neutral"
+      },
+      {
+        "text": "Gioco molto aggressivo",
+        "tone": "neutral"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "mid-wide",
+        "tone": "good"
+      },
+      {
+        "role": "mid-center",
+        "tone": "bad"
+      }
+    ],
+    "starters": [
+      {
+        "playerId": "8a42bb83-261c-4d0b-aa2a-ecf87a361d96",
+        "csvId": 4485,
+        "name": "Thiam",
+        "role": "P"
+      },
+      {
+        "playerId": "9b9115fc-6b78-47ec-9924-c974e8b83378",
+        "csvId": 7238,
+        "name": "Kouadio",
+        "role": "D"
+      },
+      {
+        "playerId": "1a26b98e-29c0-4ead-9dc9-8851a25a3f27",
+        "csvId": 2115,
+        "name": "Delli Carri",
+        "role": "D"
+      },
+      {
+        "playerId": "f729e4bf-bf18-4e1d-827a-20ef37865b8a",
+        "csvId": 4925,
+        "name": "Carboni A.",
+        "role": "D"
+      },
+      {
+        "playerId": "76ccd152-fe9d-440b-a890-6c9adef778ec",
+        "csvId": 5838,
+        "name": "Birindelli",
+        "role": "D"
+      },
+      {
+        "playerId": "d47bf2f7-f320-4340-9845-33ef2f94d175",
+        "csvId": null,
+        "name": "Mangas",
+        "role": "D"
+      },
+      {
+        "playerId": "fd980a09-99b1-4174-81e5-60cbcd1fbb49",
+        "csvId": 6593,
+        "name": "Akinsanmiro",
+        "role": "C"
+      },
+      {
+        "playerId": "c294c6f4-b7d2-4657-a072-6d5cb3b65869",
+        "csvId": 2741,
+        "name": "Pessina",
+        "role": "C"
+      },
+      {
+        "playerId": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
+        "csvId": 5878,
+        "name": "Colpani",
+        "role": "C"
+      },
+      {
+        "playerId": "4cc6309e-aacf-4bb2-b5a8-e425bfdafcb0",
+        "csvId": 2155,
+        "name": "Cutrone",
+        "role": "A"
+      },
+      {
+        "playerId": "0053b230-688b-4fef-90f5-b823c64ea378",
+        "csvId": 7523,
+        "name": "Varela G.",
+        "role": "A"
+      }
+    ],
+    "rig": [
+      {
+        "playerId": "c294c6f4-b7d2-4657-a072-6d5cb3b65869",
+        "name": "Pessina",
+        "role": "C"
+      },
+      {
+        "playerId": "4cc6309e-aacf-4bb2-b5a8-e425bfdafcb0",
+        "name": "Cutrone",
+        "role": "A"
+      },
+      {
+        "playerId": "0a3e9174-68bc-430c-845e-e04c95bcbc5a",
+        "name": "",
+        "role": ""
+      }
+    ],
+    "pun": [
+      {
+        "playerId": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
+        "name": "Colpani",
+        "role": "C"
+      },
+      {
+        "playerId": "c294c6f4-b7d2-4657-a072-6d5cb3b65869",
+        "name": "Pessina",
+        "role": "C"
+      }
+    ],
+    "corner": [
+      {
+        "playerId": "c294c6f4-b7d2-4657-a072-6d5cb3b65869",
+        "name": "Pessina",
+        "role": "C"
+      },
+      {
+        "playerId": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
+        "name": "Colpani",
+        "role": "C"
+      },
+      {
+        "playerId": "f4f8e1e3-4b76-446f-b395-f7c2eeb90176",
+        "name": "Ciurria",
+        "role": "C"
+      }
+    ],
+    "ballottaggi": [
+      [
+        {
+          "playerId": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
+          "name": "Colpani",
+          "role": "C",
+          "perc": 55
+        },
+        {
+          "playerId": "f4f8e1e3-4b76-446f-b395-f7c2eeb90176",
+          "name": "Ciurria",
+          "role": "C",
+          "perc": 45
+        }
+      ],
+      [
+        {
+          "playerId": "4cc6309e-aacf-4bb2-b5a8-e425bfdafcb0",
+          "name": "Cutrone",
+          "role": "A",
+          "perc": 55
+        },
+        {
+          "playerId": "88893e63-f3f6-4224-838b-8e189ef9f312",
+          "name": "Mota",
+          "role": "A",
+          "perc": 45
+        }
+      ],
+      [
+        {
+          "playerId": "fd980a09-99b1-4174-81e5-60cbcd1fbb49",
+          "name": "Akinsanmiro",
+          "role": "C",
+          "perc": 51
+        },
+        {
+          "playerId": "92d60563-17a8-45d1-a6c1-3b8d5e676e1d",
+          "name": "Mout",
+          "role": "C",
+          "perc": 49
+        }
+      ]
+    ],
+    "up": [
+      {
+        "playerId": "88893e63-f3f6-4224-838b-8e189ef9f312",
+        "name": "Mota",
+        "points": [
+          "Leader della squadra",
+          "Svaria su tutto il fronte d'attacco",
+          "Qualche dubbio sull'integrità fisica"
+        ]
+      },
+      {
+        "playerId": "76ccd152-fe9d-440b-a890-6c9adef778ec",
+        "name": "Birindelli",
+        "points": [
+          "Gioca su entrambe le fasce",
+          "Partecipa alla manovra offensiva"
+        ]
+      }
+    ],
+    "down": [
+      {
+        "playerId": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
+        "name": "Colpani",
+        "points": [
+          "Giocatore discontinuo"
+        ]
+      }
+    ],
+    "young": [
+      {
+        "playerId": "2d943164-e3df-4a78-a795-93d26f2623e7",
+        "name": "Bakoune",
+        "points": [
+          "Ha doti per scalare le gerarchie"
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "playerId": "8a42bb83-261c-4d0b-aa2a-ecf87a361d96",
+        "name": "Thiam",
+        "points": [
+          "Buon rapporto parate-tiri"
         ]
       }
     ]

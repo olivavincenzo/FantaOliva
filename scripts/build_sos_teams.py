@@ -1,10 +1,10 @@
 import json
 import re
 
-raw_squadre = open("sos-fanta/squadre.html", "r", encoding="utf-8").read().strip()
+raw_squadre = open("sos-fanta/squadre.json", "r", encoding="utf-8").read().strip()
 squadre = json.loads(raw_squadre, strict=False)
 
-raw_giocatori = open("sos-fanta/giocatori.html", "r", encoding="utf-8").read().strip()
+raw_giocatori = open("sos-fanta/giocatori.json", "r", encoding="utf-8").read().strip()
 giocatori = json.loads(raw_giocatori, strict=False)
 
 fallback_names = {

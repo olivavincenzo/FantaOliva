@@ -1,0 +1,92 @@
+{
+  "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+  "season": "s_26_27",
+  "strategy_name": "Guida all'Asta 2026/27",
+  "mod": "mod_classic",
+  "participants": "8",
+  "custom_fasce": {
+    "1": {
+      "name": "SUPER TOP"
+    },
+    "2": {
+      "name": "TOP"
+    },
+    "3": {
+      "name": "SEMITOP"
+    },
+    "4": {
+      "name": "SOTTO AI SEMITOP"
+    },
+    "5": {
+      "name": "FASCIA ALTA"
+    },
+    "6": {
+      "name": "JOLLY 1ª FASCIA"
+    },
+    "7": {
+      "name": "POSSIBILI SORPRESE"
+    },
+    "8": {
+      "name": "FASCIA MEDIA"
+    },
+    "9": {
+      "name": "INFORTUNATI"
+    },
+    "10": {
+      "name": "SCOMMESSE"
+    },
+    "11": {
+      "name": "SOPRA AI LOW COST"
+    },
+    "12": {
+      "name": "JOLLY 2ª FASCIA"
+    },
+    "13": {
+      "name": "LOW COST 1ª FASCIA"
+    },
+    "14": {
+      "name": "LOW COST 2ª FASCIA"
+    },
+    "15": {
+      "name": "LEGHE NUMEROSE"
+    },
+    "16": {
+      "name": "JOLLY 3ª FASCIA"
+    },
+    "17": {
+      "name": "JOLLY 4ª FASCIA"
+    },
+    "18": {
+      "name": "A RISCHIO"
+    },
+    "19": {
+      "name": "DA EVITARE"
+    },
+    "20": {
+      "name": "MERCATO"
+    }
+  },
+  "created_at": "2026-07-22T18:13:35.774Z",
+  "last_update": "2026-08-26T00:10:55.703Z",
+  "updated_at": "2026-08-26T00:10:55.703Z",
+  "credits": 500,
+  "is_public": 1,
+  "cloned_from_expert": null,
+  "cloned": null,
+  "budget": {
+    "P": 9,
+    "D": 11,
+    "C": 21,
+    "A": 59
+  },
+  "strategy_type": "classic",
+  "period": "post",
+  "players_list": "serie-a",
+  "createdAt": "2026-07-22T18:13:35.774Z",
+  "updatedAt": "2026-08-26T00:10:55.703Z",
+  "app_user": {
+    "profile_image": "https://cdn.falsesoftware.com/creators_images/sos_fanta.webp",
+    "username": "SOS Fanta",
+    "creator_id": "3c70472a-cdce-473b-ade5-2ee4e00686c9"
+  }
+}
