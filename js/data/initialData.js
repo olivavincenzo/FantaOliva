@@ -142,7 +142,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Pierre Kalulu finora è stato un vero e proprio jolly per Spalletti che lo ha utilizzato all'occorrenza come centrale, terzino ma soprattutto come esterno di centrocampo a destra. Il francese è sempre stato presenze: 37 le presenze condite da 2 gol e 4 assist e una fanta-media del 6,36. Ordinato nelle diagonali difensive, bravo nel reggere l'uno contro in velocità e, dall'ultima stagione, migliorato nella spinta in fase offensiva. A tutto questo si aggiunge un discreto senso del gol sugli sviluppi di corner. Al fantacalcio, soprattutto da terzino, può essere un'ottima soluzione per assicurarsi un titolarissimo a qualche credito in meno rispetto ad un top ma con la speranza di trovare lo stesso ammontare di bonus.",
+        "fantaComment": "Pierre Kalulu finora è stato un vero e proprio jolly per Spalletti che lo ha utilizzato all'occorrenza come centrale ma soprattutto come terzino destro. Il francese è sempre stato presente l'anno scorso: 37 le partite condite da 2 gol e 4 assist e una fanta-media del 6,36. Ordinato nelle diagonali difensive, bravo nel reggere l'uno contro in velocità e, dall'ultima stagione, migliorato nella spinta in fase offensiva. A tutto questo si aggiunge un discreto senso del gol sugli sviluppi di corner. Al fantacalcio, soprattutto da terzino, può essere un'ottima soluzione per assicurarsi un titolarissimo a qualche credito in meno rispetto ad un top ma con la speranza di trovare lo stesso ammontare di bonus.",
         "quotazioni": {
           "qtA": 30,
           "qtI": 30,
@@ -224,7 +224,7 @@ export const INITIAL_TEAMS = [
           "fvm": 134,
           "fvmM": 134,
           "classic_8_mod_median": 5.8,
-          "classic_10_mod_median": 6.2,
+          "classic_10_mod_median": 6.3,
           "classic_12_mod_median": 7
         },
         "stats": {
@@ -284,7 +284,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Jhon Lucumi passa alla Juventus ed è pronto a diventare il compagno di reparto di Bremer per una coppia tutta sudamericana. Difensore roccioso che non lascia respirare il diretto avversario, il colombiano sa essere incisivo sugli sviluppi di calcio piazzato con la specialità della casa, il colpo di testa. Un gol in 28 presenze nell'ultima stagione in rossoblù e un 5,9 di fanta-media (con 5 ammonizioni) che non rispecchia quanto visto di buono l'anno ancora precedente. Con Spalletti parte davanti a Kelly nelle gerarchie e al fantacalcio si può continuare a prenderlo come 3-4° slot.",
+        "fantaComment": "Jhon Lucumi passa alla Juventus ed è pronto a diventare il compagno di reparto di Bremer per una coppia tutta sudamericana. Difensore roccioso che non lascia respirare il diretto avversario, il colombiano sa essere incisivo sugli sviluppi di calcio piazzato con la specialità della casa, il colpo di testa. Un gol in 28 presenze nell'ultima stagione in rossoblù e un 5,9 di fanta-media (con 5 ammonizioni) che non rispecchia quanto visto di buono l'anno ancora precedente. Con Spalletti parte davanti a Kelly nelle gerarchie e al fantacalcio si può continuare a prenderlo come 3° slot.",
         "quotazioni": {
           "qtA": 12,
           "qtI": 4,
@@ -355,7 +355,7 @@ export const INITIAL_TEAMS = [
         "punizioni": true,
         "corner": true,
         "positionNotes": "",
-        "fantaComment": "Andrea Cambiaso non viene da un'annata semplice, soprattutto al fantacalcio, perchè nonostante i numeri dicano 3 gol e 4 assist, le aspettative erano altre soprattutto a livello di prestazione. Titolarissimo nella Juventus di Spalletti a sinistra, sia nella difesa a 4 che da esterno sinistro a centrocampo, in 36 presenze ha chiuso il suo campionato con una fanta-media del 5.99, segnata, oltre che da tre ammonizioni, in primis da due autogol. Il suo apporto è mancato in entrambe le fasi. Nonostante ciò, il classe 2000 rimane un profilo interessante da 2-3° slot e tra i terzini più prolifici in A. Le sue accelerazioni sulla fascia, sovrapposizioni e i cross dalla trequarti possono alla lunga portare assist e non solo. In più è in grado di giocare sia a sinistra che a destra. Anche quest'anno è lui la freccia della Juventus sulla fascia.",
+        "fantaComment": "Andrea Cambiaso non viene da un'annata semplice, soprattutto al fantacalcio, perché nonostante i numeri dicano 3 gol e 4 assist, le aspettative erano altre soprattutto a livello di prestazioni. Titolare nella Juventus di Spalletti a sinistra, sia nella difesa a 4 che da esterno a centrocampo, in 36 presenze ha chiuso il suo campionato con una fanta-media del 5,99, segnata, oltre che da tre ammonizioni, in primis da due autogol. Il suo apporto è mancato in entrambe le fasi. Nonostante ciò, il classe 2000 rimane un profilo interessante da 2-3° slot e tra i terzini potenzialmente più prolifici in A. Le sue accelerazioni sulla fascia, sovrapposizioni e i cross dalla trequarti possono alla lunga portare assist e non solo. In più è in grado di giocare sia a sinistra che a destra.",
         "quotazioni": {
           "qtA": 13,
           "qtI": 14,
@@ -367,7 +367,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 42,
           "classic_8_mod_median": 2.8,
           "classic_10_mod_median": 3.6,
-          "classic_12_mod_median": 4.4
+          "classic_12_mod_median": 4.3
         },
         "stats": {
           "titolarita": 92,
@@ -426,7 +426,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Khephren Thuram è intoccabile nel centrocampo della Juventus: lui e Locatelli sono i titolari nella mediana a due di Luciano Spalletti. 34 partite a voto, 3 gol e 2 assist: questi i suoi numeri nella passata stagione, ha avuto qualche acciacco nel finale di campionato e anche in questo pre-campionato. Da capire se sarà al 100% subito a inizio stagione o se avrà bisogno di qualche giorno in più. Classico giocatore più da rendimento che da bonus, non ci aspettiamo una grossa crescita da questo punto di vista: siamo sul 4° slot per l'asta, non ci sono dubbi su questo.",
+        "fantaComment": "Khephren Thuram è titolare nel centrocampo della Juventus. 34 partite a voto, 3 gol e 2 assist: questi i suoi numeri nella passata stagione, ha avuto qualche acciacco nel finale di campionato e anche nel pre-campionato. Classico giocatore più da rendimento che da bonus, non ci aspettiamo una grossa crescita da questo punto di vista: siamo sul 4° slot per l'asta, non ci sono dubbi su questo.",
         "quotazioni": {
           "qtA": 16,
           "qtI": 16,
@@ -497,7 +497,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": true,
         "positionNotes": "",
-        "fantaComment": "1 gol e 2 assist in 36 partite a voto per Manuel Locatelli, titolarissimo a centrocampo nella Juventus. Gioca praticamente sempre se sta bene, porta voti tra il 6 e il 6,5, classico giocatore da rendimento più che da bonus. Il suo lo fa, non aspettatevi exploit dal punto di vista di gol o assist. Un neo per il fantacalcio: i 9 cartellini gialli, non pochi in termini di malus. ",
+        "fantaComment": "1 gol e 2 assist in 36 partite a voto per Manuel Locatelli, un titolare a centrocampo nella Juventus. Gioca praticamente sempre se sta bene, porta voti tra il 6 e il 6,5, classico giocatore da rendimento più che da bonus (al massimo con qualche rigore). Il suo lo fa, non aspettatevi exploit dal punto di vista di gol o assist. Un neo per il fantacalcio: i 9 cartellini gialli, non pochi in termini di malus. ",
         "quotazioni": {
           "qtA": 6,
           "qtI": 7,
@@ -568,7 +568,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "3 gol e 5 assist in 30 partite nella passata stagione per Chico Conceicao, ma soprattutto la sensazione che possa fare ancora di più. E la Juve plasmata da Spalletti sembra fatta su misura per il portoghese, con questo posto a destra nel 4-2-3-1, la mattonella preferita da cui partire per creare scompiglio nelle difese avversarie. La doppia cifra tra gol e assist può essere l'obiettivo minimo, chissà che non possa essere la stagione della vera e propria esplosione di Conceicao alla Juve e al fantacalcio. Finora si è visto solo a sprazzi il suo grande talento, adesso è alla ricerca di continuità (anche fisicamente, visto che qualche acciacco lo ha avuto anche l'anno scorso, seppur nulla di serio). Se lo augurano anche i fantallenatori, siamo indicativamente tra 2° e 3° slot all'asta, a seconda di chi prendete prima di lui nel vostro centrocampo. ",
+        "fantaComment": "3 gol e 5 assist in 30 partite nella passata stagione per Chico Conceicao, ma soprattutto la sensazione che possa fare ancora di più. E la Juve plasmata da Spalletti sembra fatta su misura per il portoghese, con questo posto a destra nel 4-2-3-1, la mattonella preferita da cui partire per creare scompiglio nelle difese avversarie. La doppia cifra tra gol e assist può essere l'obiettivo minimo, chissà che non possa essere la stagione della vera e propria esplosione di Conceicao alla Juve e al fantacalcio. Finora si è visto solo a sprazzi il suo grande talento, adesso è alla ricerca di continuità (anche fisicamente, visto che qualche acciacco lo ha avuto anche l'anno scorso, seppur nulla di serio).",
         "quotazioni": {
           "qtA": 43,
           "qtI": 41,
@@ -720,9 +720,9 @@ export const INITIAL_TEAMS = [
           "diffM": -12,
           "fvm": 282,
           "fvmM": 282,
-          "classic_8_mod_median": 17,
-          "classic_10_mod_median": 19.1,
-          "classic_12_mod_median": 20
+          "classic_8_mod_median": 16.6,
+          "classic_10_mod_median": 19,
+          "classic_12_mod_median": 19.9
         },
         "stats": {
           "titolarita": 87,
@@ -791,8 +791,8 @@ export const INITIAL_TEAMS = [
           "diffM": 26,
           "fvm": 419,
           "fvmM": 419,
-          "classic_8_mod_median": 22.8,
-          "classic_10_mod_median": 26.2,
+          "classic_8_mod_median": 22.6,
+          "classic_10_mod_median": 26.1,
           "classic_12_mod_median": 26.4
         },
         "stats": {
@@ -998,7 +998,7 @@ export const INITIAL_TEAMS = [
           "diffM": -26,
           "fvm": 157,
           "fvmM": 157,
-          "classic_8_mod_median": 0.3,
+          "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.5,
           "classic_12_mod_median": 1
         },
@@ -1132,7 +1132,7 @@ export const INITIAL_TEAMS = [
           "diffM": 0,
           "fvm": 16,
           "fvmM": 16,
-          "classic_8_mod_median": 0.3,
+          "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0.3
         },
@@ -1323,7 +1323,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "0 gol e 0 assist in 12 partite a voto per Edon Zhegrova, che non ha minimamente lasciato il segno nella sua prima stagione alla Juventus. È arrivato anche con diversi problemi fisici e bisogna tenerne conto: si prende a cifre basse all'asta, non è un titolare e ha davanti giocatori importanti come Yildiz e Conceicao. Classico jolly a centrocampo, bisogna poterselo permettere perché per ora non sono arrivati segnali di ripresa.",
+        "fantaComment": "0 gol e 0 assist in 12 partite a voto per Edon Zhegrova, che non ha minimamente lasciato il segno nella sua prima stagione alla Juventus. È arrivato anche con diversi problemi fisici e bisogna tenerne conto: si prende a cifre basse all'asta, non è un titolare e ha davanti giocatori importanti. Classico jolly a centrocampo, bisogna poterselo permettere perché per ora non sono arrivati segnali di ripresa.",
         "quotazioni": {
           "qtA": 7,
           "qtI": 9,
@@ -1333,7 +1333,7 @@ export const INITIAL_TEAMS = [
           "diffM": -2,
           "fvm": 22,
           "fvmM": 22,
-          "classic_8_mod_median": 0.2,
+          "classic_8_mod_median": 0.3,
           "classic_10_mod_median": 0.3,
           "classic_12_mod_median": 0.4
         },
@@ -1658,7 +1658,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": null,
+        "fantaComment": "Douglas Luiz è rimasto alla Juve e vuole convincere Spalletti a dargli fiducia. Un buon inizio di stagione per il brasiliano, che in bianconero non ha mai brillato. Ora può essere diverso, al fantacalcio diventa una scommessa/jolly ma comunque a pochi crediti.",
         "quotazioni": {
           "qtA": 7,
           "qtI": 5,
@@ -1668,9 +1668,9 @@ export const INITIAL_TEAMS = [
           "diffM": 2,
           "fvm": 22,
           "fvmM": 22,
-          "classic_8_mod_median": 0.4,
+          "classic_8_mod_median": 0.5,
           "classic_10_mod_median": 0.6,
-          "classic_12_mod_median": 1
+          "classic_12_mod_median": 0.9
         },
         "stats": {
           "titolarita": 32,
@@ -1803,7 +1803,7 @@ export const INITIAL_TEAMS = [
           "fvm": 166,
           "fvmM": 166,
           "classic_8_mod_median": 6.6,
-          "classic_10_mod_median": 8.1,
+          "classic_10_mod_median": 8,
           "classic_12_mod_median": 8.8
         },
         "stats": {
@@ -1847,8 +1847,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "P",
         "mantraRole": "Por",
         "fantaRole": "P",
-        "photoUrl": "",
-        "playerImage": "",
+        "photoUrl": "https://cdn.falsesoftware.com/players/1494392/v1.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/1494392/v1.webp",
         "appetibilita": 82,
         "status": "panchina",
         "isAvailable": true,
@@ -1869,8 +1869,8 @@ export const INITIAL_TEAMS = [
           "diffM": 4,
           "fvm": 16,
           "fvmM": 16,
-          "classic_8_mod_median": 0,
-          "classic_10_mod_median": 0,
+          "classic_8_mod_median": 0.2,
+          "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0
         },
         "stats": {
@@ -1950,9 +1950,9 @@ export const INITIAL_TEAMS = [
           "diffM": 3,
           "fvm": 99,
           "fvmM": 99,
-          "classic_8_mod_median": 1,
+          "classic_8_mod_median": 1.2,
           "classic_10_mod_median": 2.4,
-          "classic_12_mod_median": 4.4
+          "classic_12_mod_median": 4.5
         },
         "stats": {
           "titolarita": 50,
@@ -2093,7 +2093,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 22,
           "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
-          "classic_12_mod_median": 0.8
+          "classic_12_mod_median": 0.6
         },
         "stats": {
           "titolarita": 50,
@@ -2163,7 +2163,7 @@ export const INITIAL_TEAMS = [
           "fvm": 29,
           "fvmM": 29,
           "classic_8_mod_median": 0.2,
-          "classic_10_mod_median": 0.3,
+          "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0.5
         },
         "stats": {
@@ -2446,8 +2446,8 @@ export const INITIAL_TEAMS = [
           "diffM": 14,
           "fvm": 58,
           "fvmM": 58,
-          "classic_8_mod_median": 2.6,
-          "classic_10_mod_median": 3.8,
+          "classic_8_mod_median": 2.8,
+          "classic_10_mod_median": 4,
           "classic_12_mod_median": 5
         },
         "stats": {
@@ -2507,7 +2507,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Gustav Isaksen ha chiuso lo scorso campionato con 5 gol e 1 assist in 27 partite a voto, ne ha saltate più di 10 praticamente per i vari stop per infortunio. Per risolvere definitivamente il problema di ernia bilaterale, è stato operato a inizio luglio con tempi di recupero di circa 45/60 giorni: da capire se riuscirà a recuperare per inizio campionato o se tornerà a settembre. Una volta al 100%, potrà riprendersi il posto a destra nel tridente d'attacco. Gli manca continuità, chissà che non possa trovarla con Gattuso. Il fatto che inizi la stagione ai box incide chiaramente sul prezzo al fantacalcio: si paga meno, può essere un'occasione interessante. Con la consapevolezza che magari avrà bisogno di qualche settimana per tornare al top e titolare, ma lo sapete nel momento in cui lo prendete da infortunato. ",
+        "fantaComment": "Gustav Isaksen ha chiuso lo scorso campionato con 5 gol e 1 assist in 27 partite a voto, ne ha saltate più di 10 praticamente per i vari stop per infortunio. Per risolvere definitivamente il problema di ernia bilaterale, è stato operato a inizio luglio ma è già tornato. Una volta al 100%, potrà riprendersi il posto a destra nel tridente d'attacco, sfidando Cancellieri. Gli manca continuità, chissà che non possa trovarla con Gattuso. Ora si paga meno, può essere un'occasione interessante. Con la consapevolezza che magari avrà bisogno di qualche settimana per tornare al top e titolare, ma lo sapete nel momento in cui lo prendete da infortunato.",
         "quotazioni": {
           "qtA": 21,
           "qtI": 29,
@@ -2624,22 +2624,22 @@ export const INITIAL_TEAMS = [
         "slotId": "pos_11"
       },
       "pos_10": {
-        "id": "lazio_noslin_6556",
-        "csvId": "6556",
-        "fantalabId": "b802051e-a34a-49ab-a8e4-7bf11ded728e",
-        "name": "Noslin",
-        "displayName": "Noslin",
-        "fullName": "Tijjani Noslin",
+        "id": "lazio_pinamonti_2038",
+        "csvId": "2038",
+        "fantalabId": "ced01d22-1684-45d0-bcde-9898ff26ae86",
+        "name": "Pinamonti",
+        "displayName": "Pinamonti",
+        "fullName": "Andrea Pinamonti",
         "teamName": "Lazio",
         "teamId": "lazio",
         "teamShort": "LAZ",
-        "role": "ATT",
+        "role": "PC",
         "classicRole": "A",
-        "mantraRole": "A",
+        "mantraRole": "Pc",
         "fantaRole": "A",
-        "photoUrl": "https://cdn.falsesoftware.com/players/37286823/v1.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/37286823/v1.webp",
-        "appetibilita": 91,
+        "photoUrl": "https://cdn.falsesoftware.com/players/134034/v1.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/134034/v1.webp",
+        "appetibilita": 93,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -2649,46 +2649,47 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": null,
+        "fantaComment": "Andrea Pinamonti può diventare anche un secondo slot dopo il suo passaggio alla Lazio. Dalla sua ha ancora la titolarità, anche se magari avrà più concorrenza rispetto al Sassuolo. Come lato negativo ci sono sempre le insufficienze quando non segna, infatti arriva da una media-voto negativa del 5,88. Compensa però con 9 gol e 3 assist, la doppia cifra la raggiunge o ci va molto vicino, ci proverà pure alla Lazio come obiettivo minimo. Potrebbe avere anche i rigori, se li giocherà con Zaccagni e Taylor. In carriera 20 su 24 per lui.",
         "quotazioni": {
-          "qtA": 8,
-          "qtI": 28,
-          "diff": -20,
-          "qtAM": 8,
-          "qtIM": 28,
-          "diffM": -20,
-          "fvm": 26,
-          "fvmM": 26,
-          "classic_8_mod_median": 0.2,
-          "classic_10_mod_median": 0.2,
-          "classic_12_mod_median": 0.5
+          "qtA": 37,
+          "qtI": 39,
+          "diff": -2,
+          "qtAM": 37,
+          "qtIM": 39,
+          "diffM": -2,
+          "fvm": 118,
+          "fvmM": 118,
+          "classic_8_mod_median": 2.8,
+          "classic_10_mod_median": 4.8,
+          "classic_12_mod_median": 6.2
         },
         "stats": {
-          "titolarita": 24,
-          "fantamedia": 6.5,
-          "mediaVoto": 6.02,
-          "pv": 29,
-          "presenze": 29,
-          "gol": 4,
-          "gf": 4,
+          "titolarita": 84,
+          "fantamedia": 6.62,
+          "mediaVoto": 5.88,
+          "pv": 36,
+          "presenze": 36,
+          "gol": 9,
+          "gf": 9,
           "gs": 0,
           "golSubiti": 0,
           "rp": 0,
           "rc": 0,
           "rPlus": 0,
-          "rMinus": 0,
+          "rMinus": 1,
           "rigoriSegnati": 0,
-          "rigoriSbagliati": 0,
-          "assist": 2,
-          "ass": 2,
-          "ammonizioni": 4,
-          "amm": 4,
+          "rigoriSbagliati": 1,
+          "assist": 3,
+          "ass": 3,
+          "ammonizioni": 2,
+          "amm": 2,
           "espulsioni": 1,
           "esp": 1,
           "au": 0
         },
         "substitutes": [
           "lazio_dia_5672",
+          "lazio_noslin_6556",
           "lazio_ratkov_7313"
         ],
         "slotId": "pos_10"
@@ -2824,6 +2825,73 @@ export const INITIAL_TEAMS = [
           "amm": 4,
           "espulsioni": 0,
           "esp": 0,
+          "au": 0
+        },
+        "substitutes": [],
+        "slotId": null
+      },
+      {
+        "id": "lazio_noslin_6556",
+        "csvId": "6556",
+        "fantalabId": "b802051e-a34a-49ab-a8e4-7bf11ded728e",
+        "name": "Noslin",
+        "displayName": "Noslin",
+        "fullName": "Tijjani Noslin",
+        "teamName": "Lazio",
+        "teamId": "lazio",
+        "teamShort": "LAZ",
+        "role": "ATT",
+        "classicRole": "A",
+        "mantraRole": "A",
+        "fantaRole": "A",
+        "photoUrl": "https://cdn.falsesoftware.com/players/37286823/v1.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/37286823/v1.webp",
+        "appetibilita": 91,
+        "status": "panchina",
+        "isAvailable": true,
+        "isPenaltyTaker": false,
+        "isFreeKickTaker": false,
+        "isCornerTaker": false,
+        "rigorista": false,
+        "punizioni": false,
+        "corner": false,
+        "positionNotes": "",
+        "fantaComment": null,
+        "quotazioni": {
+          "qtA": 8,
+          "qtI": 28,
+          "diff": -20,
+          "qtAM": 8,
+          "qtIM": 28,
+          "diffM": -20,
+          "fvm": 26,
+          "fvmM": 26,
+          "classic_8_mod_median": 0.2,
+          "classic_10_mod_median": 0.2,
+          "classic_12_mod_median": 0.5
+        },
+        "stats": {
+          "titolarita": 24,
+          "fantamedia": 6.5,
+          "mediaVoto": 6.02,
+          "pv": 29,
+          "presenze": 29,
+          "gol": 4,
+          "gf": 4,
+          "gs": 0,
+          "golSubiti": 0,
+          "rp": 0,
+          "rc": 0,
+          "rPlus": 0,
+          "rMinus": 0,
+          "rigoriSegnati": 0,
+          "rigoriSbagliati": 0,
+          "assist": 2,
+          "ass": 2,
+          "ammonizioni": 4,
+          "amm": 4,
+          "espulsioni": 1,
+          "esp": 1,
           "au": 0
         },
         "substitutes": [],
@@ -3819,7 +3887,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 64,
           "classic_8_mod_median": 1.6,
           "classic_10_mod_median": 2.9,
-          "classic_12_mod_median": 4.9
+          "classic_12_mod_median": 4.8
         },
         "stats": {
           "titolarita": 50,
@@ -3960,7 +4028,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 6,
           "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
-          "classic_12_mod_median": 0.3
+          "classic_12_mod_median": 0.2
         },
         "stats": {
           "titolarita": 37,
@@ -4101,7 +4169,7 @@ export const INITIAL_TEAMS = [
           "fvm": 48,
           "fvmM": 48,
           "classic_8_mod_median": 1.6,
-          "classic_10_mod_median": 2.4,
+          "classic_10_mod_median": 2.3,
           "classic_12_mod_median": 3
         },
         "stats": {
@@ -4161,7 +4229,7 @@ export const INITIAL_TEAMS = [
         "punizioni": true,
         "corner": true,
         "positionNotes": "",
-        "fantaComment": "Sprazzi del vero Federico Bernardeschi nella passata stagione, al Bologna ha fatto vedere cose importanti. 4 gol e 2 assist in 24 partite a voto, ha saltato quasi 10 partite per infortunio di fatto. Quando c'è stato, è praticamente sempre andato a voto. Per Italiano era il vice Orsolini, Tedesco invece li sta provando a far coesistere: Bernardeschi sulla trequarti al centro o da mezzala addirittura, con Orsolini da ala destra. Una soluzione che può portare benefici a entrambi e anche ai fantallenatori. Per Berna all'asta siamo sul 4° slot pieno, è un giocatore che senza coppe può portare anche 10 tra gol e assist. Sempre se sta bene, questo è un punto cruciale. ",
+        "fantaComment": "Sprazzi del vero Federico Bernardeschi nella passata stagione, al Bologna ha fatto vedere cose importanti. 4 gol e 2 assist in 24 partite a voto, ha saltato quasi 10 partite per infortunio di fatto. Quando c'è stato, è praticamente sempre andato a voto. Per Italiano era principalmente il vice Orsolini, Tedesco invece li sta provando a far coesistere. Per Bernardeschi all'asta siamo sul 4° slot, è un giocatore che senza coppe può portare anche 7-8 tra gol e assist. Sempre se sta bene, questo è un punto cruciale. ",
         "quotazioni": {
           "qtA": 21,
           "qtI": 21,
@@ -4171,7 +4239,7 @@ export const INITIAL_TEAMS = [
           "diffM": 0,
           "fvm": 67,
           "fvmM": 67,
-          "classic_8_mod_median": 1.6,
+          "classic_8_mod_median": 1.5,
           "classic_10_mod_median": 2.6,
           "classic_12_mod_median": 3.5
         },
@@ -4201,7 +4269,7 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "bologna_moron_6054",
-          "bologna_cambiaghi_4436",
+          "bologna_rowe_6844",
           "bologna_odgaard_2765"
         ],
         "slotId": "pos_7"
@@ -4272,7 +4340,7 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "bologna_moron_6054",
-          "bologna_cambiaghi_4436",
+          "bologna_rowe_6844",
           "bologna_odgaard_2765"
         ],
         "slotId": "pos_6"
@@ -4303,7 +4371,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Lewis Ferguson nella passata stagione ha deluso le aspettative: solo 1 gol in 23 partite a voto. Italiano per un periodo lo schierava solo in Europa e i numeri lo dimostrano. Si riparte da zero con Tedesco e senza coppe: potrà avere maggior spazio e continuità, magari trovare anche qualche bonus in più. Rimane un giocatore da rendimento, gioca nei 2 davanti alla difesa: è diventato un colpo low cost con il passare degli anni.",
+        "fantaComment": "Lewis Ferguson nella passata stagione ha deluso le aspettative: solo 1 gol in 23 partite a voto. Italiano per un periodo lo schierava solo in Europa e i numeri lo dimostrano. Si riparte da zero con Tedesco e senza coppe: potrà avere maggior spazio e continuità, magari trovare anche qualche bonus in più. Rimane un giocatore da rendimento, ma low cost.",
         "quotazioni": {
           "qtA": 3,
           "qtI": 2,
@@ -4343,7 +4411,7 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "bologna_moron_6054",
-          "bologna_cambiaghi_4436",
+          "bologna_rowe_6844",
           "bologna_odgaard_2765"
         ],
         "slotId": "pos_8"
@@ -4384,7 +4452,7 @@ export const INITIAL_TEAMS = [
           "diffM": -1,
           "fvm": 227,
           "fvmM": 227,
-          "classic_8_mod_median": 12.2,
+          "classic_8_mod_median": 12,
           "classic_10_mod_median": 14,
           "classic_12_mod_median": 15
         },
@@ -4414,28 +4482,28 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "bologna_moron_6054",
-          "bologna_cambiaghi_4436",
+          "bologna_rowe_6844",
           "bologna_odgaard_2765"
         ],
         "slotId": "pos_9"
       },
       "pos_11": {
-        "id": "bologna_rowe_6844",
-        "csvId": "6844",
-        "fantalabId": "5f28f5f6-550d-4329-ae56-01f2db6e9e28",
-        "name": "Rowe",
-        "displayName": "Rowe",
-        "fullName": "Jonathan Rowe",
+        "id": "bologna_cambiaghi_4436",
+        "csvId": "4436",
+        "fantalabId": "5232e236-cf75-4f0c-baf3-47c6c2e2887a",
+        "name": "Cambiaghi",
+        "displayName": "Cambiaghi",
+        "fullName": "Nicolò Cambiaghi",
         "teamName": "Bologna",
         "teamId": "bologna",
         "teamShort": "BOL",
-        "role": "TRQ",
+        "role": "ALA",
         "classicRole": "C",
-        "mantraRole": "W;T",
+        "mantraRole": "W;A",
         "fantaRole": "C",
-        "photoUrl": "https://cdn.falsesoftware.com/players/34455209/v1.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/34455209/v1.webp",
-        "appetibilita": 92,
+        "photoUrl": "https://cdn.falsesoftware.com/players/34443308/v1.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/34443308/v1.webp",
+        "appetibilita": 90,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -4445,24 +4513,24 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Attenzione a Jonathan Rowe, ha tutto per esplodere e diventare un vero e proprio 'crack' al fantacalcio. 3 gol e 3 assist in 28 partite nella scorsa stagione, ma di fatto li ha realizzati tutti tra la 21a e la 38a di campionato. Se trova continuità, può provare a puntare la doppia cifra tra gol e assist.",
+        "fantaComment": "Nicolò Cambiaghi è una delle novità del listone, da quest’anno è centrocampista. Resta comunque un jolly di seconda fascia, non una primissima scelta per l’asta, anche se guadagna un po’ di valore. Arriva da una stagione con 3 gol e 4 assist, anche con Tedesco dovrà giocarsi il posto e non parte come titolare, c’è concorrenza nel ruolo.",
         "quotazioni": {
-          "qtA": 29,
-          "qtI": 31,
-          "diff": -2,
-          "qtAM": 29,
-          "qtIM": 31,
-          "diffM": -2,
-          "fvm": 93,
-          "fvmM": 93,
-          "classic_8_mod_median": 4.1,
-          "classic_10_mod_median": 6,
-          "classic_12_mod_median": 7
+          "qtA": 10,
+          "qtI": 7,
+          "diff": 3,
+          "qtAM": 10,
+          "qtIM": 7,
+          "diffM": 3,
+          "fvm": 32,
+          "fvmM": 32,
+          "classic_8_mod_median": 0.2,
+          "classic_10_mod_median": 0.2,
+          "classic_12_mod_median": 0.4
         },
         "stats": {
           "titolarita": 45,
-          "fantamedia": 6.59,
-          "mediaVoto": 6.2,
+          "fantamedia": 6.42,
+          "mediaVoto": 5.98,
           "pv": 28,
           "presenze": 28,
           "gol": 3,
@@ -4475,17 +4543,17 @@ export const INITIAL_TEAMS = [
           "rMinus": 0,
           "rigoriSegnati": 0,
           "rigoriSbagliati": 0,
-          "assist": 3,
-          "ass": 3,
-          "ammonizioni": 2,
-          "amm": 2,
-          "espulsioni": 0,
-          "esp": 0,
+          "assist": 4,
+          "ass": 4,
+          "ammonizioni": 3,
+          "amm": 3,
+          "espulsioni": 1,
+          "esp": 1,
           "au": 0
         },
         "substitutes": [
           "bologna_moron_6054",
-          "bologna_cambiaghi_4436",
+          "bologna_rowe_6844",
           "bologna_odgaard_2765"
         ],
         "slotId": "pos_11"
@@ -4526,8 +4594,8 @@ export const INITIAL_TEAMS = [
           "diffM": -8,
           "fvm": 166,
           "fvmM": 166,
-          "classic_8_mod_median": 6.8,
-          "classic_10_mod_median": 9.6,
+          "classic_8_mod_median": 6.7,
+          "classic_10_mod_median": 9.4,
           "classic_12_mod_median": 11.2
         },
         "stats": {
@@ -5031,22 +5099,22 @@ export const INITIAL_TEAMS = [
         "slotId": null
       },
       {
-        "id": "bologna_cambiaghi_4436",
-        "csvId": "4436",
-        "fantalabId": "5232e236-cf75-4f0c-baf3-47c6c2e2887a",
-        "name": "Cambiaghi",
-        "displayName": "Cambiaghi",
-        "fullName": "Nicolò Cambiaghi",
+        "id": "bologna_rowe_6844",
+        "csvId": "6844",
+        "fantalabId": "5f28f5f6-550d-4329-ae56-01f2db6e9e28",
+        "name": "Rowe",
+        "displayName": "Rowe",
+        "fullName": "Jonathan Rowe",
         "teamName": "Bologna",
         "teamId": "bologna",
         "teamShort": "BOL",
-        "role": "ALA",
+        "role": "TRQ",
         "classicRole": "C",
-        "mantraRole": "W;A",
+        "mantraRole": "W;T",
         "fantaRole": "C",
-        "photoUrl": "https://cdn.falsesoftware.com/players/34443308/v1.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/34443308/v1.webp",
-        "appetibilita": 90,
+        "photoUrl": "https://cdn.falsesoftware.com/players/34455209/v1.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/34455209/v1.webp",
+        "appetibilita": 92,
         "status": "panchina",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -5056,24 +5124,24 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Nicolò Cambiaghi è una delle novità del listone, da quest’anno è centrocampista. Resta comunque un jolly di seconda fascia, non una primissima scelta per l’asta, anche se guadagna un po’ di valore. Arriva da una stagione con 3 gol e 4 assist, anche con Tedesco dovrà giocarsi il posto e non parte come titolare, c’è concorrenza nel ruolo.",
+        "fantaComment": "Attenzione a Jonathan Rowe, ha tutto per esplodere e diventare un vero e proprio 'crack' al fantacalcio. 3 gol e 3 assist in 28 partite nella scorsa stagione, ma di fatto li ha realizzati tutti tra la 21a e la 38a di campionato. Se trova continuità, può provare a puntare la doppia cifra tra gol e assist. Ora vedremo se sarà ancora al Bologna o all'Atalanta.",
         "quotazioni": {
-          "qtA": 10,
-          "qtI": 7,
-          "diff": 3,
-          "qtAM": 10,
-          "qtIM": 7,
-          "diffM": 3,
-          "fvm": 32,
-          "fvmM": 32,
-          "classic_8_mod_median": 0.2,
-          "classic_10_mod_median": 0.2,
-          "classic_12_mod_median": 0.4
+          "qtA": 29,
+          "qtI": 31,
+          "diff": -2,
+          "qtAM": 29,
+          "qtIM": 31,
+          "diffM": -2,
+          "fvm": 93,
+          "fvmM": 93,
+          "classic_8_mod_median": 4,
+          "classic_10_mod_median": 6,
+          "classic_12_mod_median": 7
         },
         "stats": {
           "titolarita": 45,
-          "fantamedia": 6.42,
-          "mediaVoto": 5.98,
+          "fantamedia": 6.59,
+          "mediaVoto": 6.2,
           "pv": 28,
           "presenze": 28,
           "gol": 3,
@@ -5086,12 +5154,12 @@ export const INITIAL_TEAMS = [
           "rMinus": 0,
           "rigoriSegnati": 0,
           "rigoriSbagliati": 0,
-          "assist": 4,
-          "ass": 4,
-          "ammonizioni": 3,
-          "amm": 3,
-          "espulsioni": 1,
-          "esp": 1,
+          "assist": 3,
+          "ass": 3,
+          "ammonizioni": 2,
+          "amm": 2,
+          "espulsioni": 0,
+          "esp": 0,
           "au": 0
         },
         "substitutes": [],
@@ -5123,7 +5191,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Jens Odgaard in cerca di spazio in casa Bologna, dopo la scorsa stagione con più ombre che luci. Alla fine 5 gol e 1 assist in 22 partite a voto, ha giocato decisamente meno del previsto per le scelte di Italiano. Ora è arrivato Tedesco, che sta provando il 4-3-3 nel pre-campionato e Odgaard è stato provato soprattutto da mezzala, come Bernardeschi. Sulla carta non è un titolare in partenza, ma un jolly, più da gara in corso che dall'inizio. Il Bologna non avrà più le coppe e allora ecco che al fantacalcio va preso alle giuste condizioni: con titolari certi, consapevoli che a volte andrà a voto e altre no. Non sarebbe una sorpresa se replicasse i numeri della passata stagione o giù di lì.",
+        "fantaComment": "Jens Odgaard in cerca di spazio in casa Bologna, dopo la scorsa stagione con più ombre che luci. Alla fine 5 gol e 1 assist in 22 partite a voto, ha giocato decisamente meno del previsto per le scelte di Italiano. Ora è arrivato Tedesco, che sta provando il 4-3-3 e Odgaard è stato provato soprattutto da mezzala. Sulla carta non è un titolare fisso in partenza, ma un jolly, più da gara in corso che dall'inizio. Il Bologna non avrà più le coppe e allora ecco che al fantacalcio va preso alle giuste condizioni: con titolari certi, consapevoli che a volte andrà a voto e altre no. Non sarebbe una sorpresa se replicasse i numeri della passata stagione o giù di lì.",
         "quotazioni": {
           "qtA": 19,
           "qtI": 25,
@@ -5898,7 +5966,7 @@ export const INITIAL_TEAMS = [
         "punizioni": true,
         "corner": true,
         "positionNotes": "",
-        "fantaComment": "Toma Basic è da montagne russe: da fuori rosa a protagonista nella seconda parte di stagione con la Lazio per poi essere di nuovo svincolato. Adesso, il centrocampista croato, a sorpresa, si rimette in gioco con il Venezia e ne sarà il punto fermo del centrocampo. Due gol e tre assist nella passata stagione per un calciatore dotato di un buon tiro dalla distanza e che spesso si inserisce in zona gol, con e senza palla. Il 29enne all'asta del fantacalcio potrebbe essere appetibile come 5-6° slot low-cost, garantendo titolarità e buoni voti, e perché no qualche bonus.",
+        "fantaComment": "Toma Basic è da montagne russe: da fuori rosa a protagonista nella seconda parte di stagione con la Lazio per poi essere di nuovo svincolato. Adesso, il centrocampista croato si rimette in gioco con il Venezia e ne sarà il punto fermo del centrocampo. Due gol e tre assist nella passata stagione per un calciatore dotato di un buon tiro dalla distanza e che spesso si inserisce in zona gol, con e senza palla. Il 29enne all'asta del fantacalcio potrebbe essere appetibile come 5-6° slot low-cost, garantendo titolarità e buoni voti, e perché no qualche bonus.",
         "quotazioni": {
           "qtA": 6,
           "qtI": 7,
@@ -6193,7 +6261,7 @@ export const INITIAL_TEAMS = [
           "fvm": 67,
           "fvmM": 67,
           "classic_8_mod_median": 0.6,
-          "classic_10_mod_median": 1.6,
+          "classic_10_mod_median": 1.5,
           "classic_12_mod_median": 2.6
         },
         "stats": {
@@ -7271,7 +7339,7 @@ export const INITIAL_TEAMS = [
           "fvm": 1,
           "fvmM": 1,
           "classic_8_mod_median": 0,
-          "classic_10_mod_median": 0,
+          "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0
         },
         "stats": {
@@ -7418,7 +7486,7 @@ export const INITIAL_TEAMS = [
           "diffM": -2,
           "fvm": 141,
           "fvmM": 141,
-          "classic_8_mod_median": 7.3,
+          "classic_8_mod_median": 7.2,
           "classic_10_mod_median": 8.8,
           "classic_12_mod_median": 10.3
         },
@@ -7762,7 +7830,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Maximo Perrone ha chiuso la stagione con 3 gol e 4 assist in 36 partite a voto, numeri importante per il play del Como. Classico giocatore che detta i tempi della manovra, Fabregas lo stima molto e gli ha affidato le redini della mediana. Dal mercato è arrivato Milla e possono arrivare anche altri rinforzi, che proveranno a insidiare la titolarità di Perrone. Ma al momento rimane una prima scelta in mediana: fanta-media del 6,47 nella passata stagione, riparte da questi numeri ed è il classico voto sicuro nella vostra mediana. Oltretutto di una squadra che ormai è da considerare una big come il Como, che farà la Champions. Unico neo le ammonizioni: 8, un aspetto su cui proverà a migliorare.",
+        "fantaComment": "Maximo Perrone ha chiuso la stagione con 3 gol e 4 assist in 36 partite a voto, numeri importanti per il play del Como. Classico giocatore che detta i tempi della manovra, Fabregas lo stima molto e gli ha affidato le redini della mediana. Rimane una prima scelta a centrocampo: fanta-media del 6,47 nella passata stagione, riparte da questi numeri ed è il classico voto sicuro nella vostra mediana. Oltretutto di una squadra che ormai è da considerare una big come il Como, che farà la Champions. Unico neo le ammonizioni: 8, un aspetto su cui proverà a migliorare.",
         "quotazioni": {
           "qtA": 12,
           "qtI": 15,
@@ -7773,7 +7841,7 @@ export const INITIAL_TEAMS = [
           "fvm": 38,
           "fvmM": 38,
           "classic_8_mod_median": 1.2,
-          "classic_10_mod_median": 1.9,
+          "classic_10_mod_median": 1.8,
           "classic_12_mod_median": 2.6
         },
         "stats": {
@@ -7843,9 +7911,9 @@ export const INITIAL_TEAMS = [
           "diffM": -1,
           "fvm": 141,
           "fvmM": 141,
-          "classic_8_mod_median": 7,
+          "classic_8_mod_median": 6.9,
           "classic_10_mod_median": 8,
-          "classic_12_mod_median": 9
+          "classic_12_mod_median": 8.8
         },
         "stats": {
           "titolarita": 82,
@@ -7916,7 +7984,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 141,
           "classic_8_mod_median": 2.2,
           "classic_10_mod_median": 3.8,
-          "classic_12_mod_median": 5
+          "classic_12_mod_median": 4.8
         },
         "stats": {
           "titolarita": 34,
@@ -8056,7 +8124,7 @@ export const INITIAL_TEAMS = [
           "diffM": -1,
           "fvm": 147,
           "fvmM": 147,
-          "classic_8_mod_median": 9.2,
+          "classic_8_mod_median": 9.1,
           "classic_10_mod_median": 10.6,
           "classic_12_mod_median": 12
         },
@@ -8127,7 +8195,7 @@ export const INITIAL_TEAMS = [
           "diffM": 0,
           "fvm": 400,
           "fvmM": 400,
-          "classic_8_mod_median": 13.5,
+          "classic_8_mod_median": 13.4,
           "classic_10_mod_median": 16,
           "classic_12_mod_median": 16.8
         },
@@ -8268,7 +8336,7 @@ export const INITIAL_TEAMS = [
           "fvm": 38,
           "fvmM": 38,
           "classic_8_mod_median": 0.6,
-          "classic_10_mod_median": 0.9,
+          "classic_10_mod_median": 0.8,
           "classic_12_mod_median": 1
         },
         "stats": {
@@ -8324,7 +8392,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Luis Milla, 31enne spagnolo, è un centrocampista centrale di grande esperienza. Una vita passata in Liga tra Granada e Getafe, promette equilibrio ed eccellenti doti nel palleggio. Nell'ultima stagione l'exploit con 10 assist ed un gol in 37 partite nel massimo campionato spagnolo. Al fantacalcio può portare buoni voti e appunto qualche +1 (specialista nei calci di punizione) ma occhio alla concorrenza nei due posti in mediana tra l'insostituibile Da Cunha e i vari Perrone e Caqueret. Qualche giallo di troppo e una posizione da play lo penalizzano ma rimane un jolly per il vostro centrocampo.",
+        "fantaComment": "Luis Milla, 31enne spagnolo, è un centrocampista centrale di grande esperienza. Una vita passata in Liga tra Granada e Getafe, promette equilibrio ed eccellenti doti nel palleggio. Nell'ultima stagione l'exploit con 10 assist e un gol in 37 partite nel massimo campionato spagnolo. Al fantacalcio può portare buoni voti e appunto qualche +1 (specialista nei calci di punizione) ma occhio alla concorrenza nei due posti in mediana tra Da Cunha e Perrone. Qualche giallo di troppo e una posizione da play lo potrebbero penalizzare un po' ma rimane un profilo che può portare anche dei bonus e avere più spazio del previsto.",
         "quotazioni": {
           "qtA": 4,
           "qtI": 1,
@@ -8535,7 +8603,7 @@ export const INITIAL_TEAMS = [
           "diffM": 0,
           "fvm": 38,
           "fvmM": 38,
-          "classic_8_mod_median": 0.6,
+          "classic_8_mod_median": 0.5,
           "classic_10_mod_median": 1,
           "classic_12_mod_median": 1.5
         },
@@ -8804,7 +8872,7 @@ export const INITIAL_TEAMS = [
           "fvm": 93,
           "fvmM": 93,
           "classic_8_mod_median": 1.3,
-          "classic_10_mod_median": 2.4,
+          "classic_10_mod_median": 2.3,
           "classic_12_mod_median": 3.1
         },
         "stats": {
@@ -8896,6 +8964,73 @@ export const INITIAL_TEAMS = [
           "amm": 2,
           "espulsioni": 1,
           "esp": 1,
+          "au": 0
+        },
+        "substitutes": [],
+        "slotId": null
+      },
+      {
+        "id": "como_kambwala_6601",
+        "csvId": "6601",
+        "fantalabId": "0750e0ff-54fd-4282-bd09-d1194918f5e4",
+        "name": "Kambwala",
+        "displayName": "Kambwala",
+        "fullName": "Willy Kambwala",
+        "teamName": "Como",
+        "teamId": "como",
+        "teamShort": "COM",
+        "role": "TD",
+        "classicRole": "D",
+        "mantraRole": "Dd;Dc",
+        "fantaRole": "D",
+        "photoUrl": "https://cdn.falsesoftware.com/players/37544311/v3.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/37544311/v3.webp",
+        "appetibilita": 72,
+        "status": "panchina",
+        "isAvailable": true,
+        "isPenaltyTaker": false,
+        "isFreeKickTaker": false,
+        "isCornerTaker": false,
+        "rigorista": false,
+        "punizioni": false,
+        "corner": false,
+        "positionNotes": "",
+        "fantaComment": null,
+        "quotazioni": {
+          "qtA": 1,
+          "qtI": 1,
+          "diff": 0,
+          "qtAM": 1,
+          "qtIM": 1,
+          "diffM": 0,
+          "fvm": 1,
+          "fvmM": 1,
+          "classic_8_mod_median": 0,
+          "classic_10_mod_median": 0,
+          "classic_12_mod_median": 0
+        },
+        "stats": {
+          "titolarita": 3,
+          "fantamedia": 5.0,
+          "mediaVoto": 5.0,
+          "pv": 2,
+          "presenze": 2,
+          "gol": 0,
+          "gf": 0,
+          "gs": 0,
+          "golSubiti": 0,
+          "rp": 0,
+          "rc": 0,
+          "rPlus": 0,
+          "rMinus": 0,
+          "rigoriSegnati": 0,
+          "rigoriSbagliati": 0,
+          "assist": 0,
+          "ass": 0,
+          "ammonizioni": 0,
+          "amm": 0,
+          "espulsioni": 0,
+          "esp": 0,
           "au": 0
         },
         "substitutes": [],
@@ -9358,7 +9493,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 96,
           "classic_8_mod_median": 4.6,
           "classic_10_mod_median": 5.4,
-          "classic_12_mod_median": 6.1
+          "classic_12_mod_median": 6.2
         },
         "stats": {
           "titolarita": 95,
@@ -9417,7 +9552,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Evan Ndicka è rimasto nonostante i tanti estimatori ed è la colonna portante della difesa della Roma (insieme a Mancini). Meno falloso dei compagni di reparto con appena 5 ammonizioni in 31 presenze stagionali, il 26enne ivoriano ha chiuso con un 6,32 di fanta-media. Al fantacalcio , tra i difensori delle big, è uno dei più affidabili per titolarità e non solo. Solido nella marcatura a uomo, è bravo a svettare sui diretti avversari e, allo stesso tempo, a insaccare la palla in porta nell'area opposta: i 3 gol messi a segno ne sono la testimonianza. La Roma ha segnato molto su palla inattiva.",
+        "fantaComment": "Evan Ndicka è rimasto nonostante i tanti estimatori ed è la colonna portante della difesa della Roma (insieme a Mancini). Meno falloso dei compagni di reparto con appena 5 ammonizioni in 31 presenze stagionali, il 26enne ivoriano ha chiuso con un 6,32 di fanta-media. Al fantacalcio, tra i difensori delle big, è uno dei più affidabili per titolarità e non solo. Solido nella marcatura a uomo, è bravo a svettare sui diretti avversari e, allo stesso tempo, a insaccare la palla in porta nell'area opposta: i 3 gol messi a segno ne sono la testimonianza. La Roma ha segnato molto su palla inattiva con Gasperini.",
         "quotazioni": {
           "qtA": 24,
           "qtI": 24,
@@ -9427,7 +9562,7 @@ export const INITIAL_TEAMS = [
           "diffM": 0,
           "fvm": 77,
           "fvmM": 77,
-          "classic_8_mod_median": 3.4,
+          "classic_8_mod_median": 3.5,
           "classic_10_mod_median": 4,
           "classic_12_mod_median": 4.8
         },
@@ -9500,7 +9635,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 35,
           "classic_8_mod_median": 1,
           "classic_10_mod_median": 1.8,
-          "classic_12_mod_median": 2.4
+          "classic_12_mod_median": 2.3
         },
         "stats": {
           "titolarita": 71,
@@ -9559,7 +9694,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "La Roma riporta in Serie A Nahuel Molina, esterno argentino classe 1998 arrivato a titolo definitivo dall’Atletico Madrid. Campione del Mondo con l’Argentina nel 2022, è un destro naturale dotato di grande corsa, intensità e propensione offensiva. Con la Nazionale argentina viene utilizzato principalmente da terzino destro, ruolo nel quale abbina attenzione difensiva a una grande capacità di accompagnare l’azione; con l’Atletico Madrid, invece, ha giocato spesso più avanzato da esterno di centrocampo a tutta fascia, sfruttando le sue qualità nelle sovrapposizioni, negli inserimenti e nell’attacco degli spazi. Nell’ultima Liga ha collezionato 26 presenze, realizzando 2 gol e 2 assist, pur alternandosi spesso nelle scelte di Simeone. Porta alla Roma un bagaglio internazionale importante: conta 65 presenze con l’Argentina, ha disputato due Mondiali vincendo quello del 2022 e ha conquistato anche due Copa América, nel 2021 e nel 2024. Nel sistema di Gasperini si candida a essere il titolare sulla corsia destra, dove potrà essere impiegato da esterno a tutta fascia, un ruolo particolarmente adatto alle sue caratteristiche e alla sua capacità di incidere anche nella metà campo avversaria. Al fantacalcio è un profilo molto interessante, che si posiziona tra i semitop: parte con prospettive di titolarità e può garantire una buona continuità di voto, aggiungendo assist e qualche gol grazie alla sua spiccata vocazione offensiva.",
+        "fantaComment": "La Roma riporta in Serie A Nahuel Molina, esterno argentino classe 1998 arrivato a titolo definitivo dall’Atletico Madrid. Campione del Mondo con l’Argentina nel 2022, è un destro naturale dotato di grande corsa, intensità e propensione offensiva. Con la Nazionale argentina viene utilizzato principalmente da terzino destro, ruolo nel quale abbina attenzione difensiva a una grande capacità di accompagnare l’azione; con l’Atletico Madrid, invece, ha giocato spesso più avanzato da esterno di centrocampo a tutta fascia, sfruttando le sue qualità nelle sovrapposizioni, negli inserimenti e nell’attacco degli spazi. Nell’ultima Liga ha collezionato 26 presenze, realizzando 2 gol e 2 assist, pur alternandosi spesso nelle scelte di Simeone. Porta alla Roma un bagaglio internazionale importante: conta 65 presenze con l’Argentina, ha disputato due Mondiali vincendo quello del 2022 e ha conquistato anche due Copa América, nel 2021 e nel 2024. Nel sistema di Gasperini si candida a essere il titolare sulla corsia destra, dove potrà essere impiegato da esterno a tutta fascia, un ruolo particolarmente adatto alle sue caratteristiche e alla sua capacità di incidere anche nella metà campo avversaria. Al fantacalcio è un profilo molto interessante, che si posiziona tra i top: parte con prospettive di titolarità e può garantire una buona continuità di voto, aggiungendo assist e qualche gol grazie alla sua spiccata vocazione offensiva.",
         "quotazioni": {
           "qtA": 30,
           "qtI": 1,
@@ -9569,7 +9704,7 @@ export const INITIAL_TEAMS = [
           "diffM": 29,
           "fvm": 96,
           "fvmM": 96,
-          "classic_8_mod_median": 7.2,
+          "classic_8_mod_median": 7.1,
           "classic_10_mod_median": 7.8,
           "classic_12_mod_median": 8.4
         },
@@ -9630,7 +9765,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": true,
         "positionNotes": "",
-        "fantaComment": "Wesley è stata una delle rivelazioni dell'ultima Serie A in difesa, forse solo dietro a Palestra. Gasperini se lo coccola dopo averlo plasmato a vero e proprio esterno, marchio di fabbrica del suo 3-4-2-1. Esterno di spinta ma, allo stesso tempo, sempre più solido anche in fase di ripiegamento, il brasiliano ha realizzato 5 gol in 30 presenze: una fanta-media del 6,47 rappresenta il biglietto da visita del terzino al fantacalcio. Dotato di un buon tiro e bravo nell'inserirsi sul secondo palo sui cross che arrivano dal lato opposto, il 22enne è una spina nel fianco per le difese avversarie. Vuole ripetersi, via libera per essere il vostro top di reparto arretrato, dopo essersi messo subito alle spalle l'infortunio muscolare subito al Mondiale. Con l'arrivo di Molina a destra, Wesley rimarrà il titolare della corsia mancina in partenza, proprio dove è stato impiegato prevalentemente nella passata stagione. Si attende il primo assist in Serie A.",
+        "fantaComment": "Wesley è stato una delle rivelazioni dell'ultima Serie A in difesa, forse solo dietro a Palestra. Gasperini se lo coccola dopo averlo plasmato a vero e proprio esterno, marchio di fabbrica del suo 3-4-2-1. Esterno di spinta ma, allo stesso tempo, sempre più solido anche in fase di ripiegamento, il brasiliano ha realizzato 5 gol in 30 presenze: una fanta-media del 6,47 rappresenta il biglietto da visita del terzino al fantacalcio. Dotato di un buon tiro e bravo nell'inserirsi sul secondo palo sui cross che arrivano dal lato opposto, il 22enne è una spina nel fianco per le difese avversarie. Vuole ripetersi, via libera per essere il vostro top di reparto arretrato, dopo essersi messo subito alle spalle l'infortunio muscolare subito al Mondiale. Con l'arrivo di Molina a destra, Wesley rimarrà il titolare della corsia mancina in partenza, proprio dove è stato impiegato prevalentemente nella passata stagione. Si attende il primo assist in Serie A.",
         "quotazioni": {
           "qtA": 43,
           "qtI": 45,
@@ -9640,7 +9775,7 @@ export const INITIAL_TEAMS = [
           "diffM": -2,
           "fvm": 138,
           "fvmM": 138,
-          "classic_8_mod_median": 8.2,
+          "classic_8_mod_median": 8.3,
           "classic_10_mod_median": 8.8,
           "classic_12_mod_median": 9.5
         },
@@ -9772,7 +9907,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Manu Koné nella passata stagione ha portato voto in 29 partite, con 2 gol e 3 assist. Ha avuto qualche acciacco in più rispetto alle stagioni precedenti, Gasperini si augura di averlo al 100% fin dall'inizio di questo campionato. Per caratteristiche non è un giocatore da cui aspettarsi più bonus di quelli che ha realizzato nella scorsa stagione, al massimo qualcuno in più. Siamo sul 4° slot pieno all'asta, è comunque un titolare nella Roma e difficilmente prende meno di 6/6,5. La fanta-media del 6,53 lo dimostra.",
+        "fantaComment": "Manu Koné nella passata stagione ha portato voto in 29 partite, con 2 gol e 3 assist. Ha avuto qualche acciacco in più rispetto alle stagioni precedenti, Gasperini si augura di averlo al 100% fin dall'inizio di questo campionato. Per caratteristiche non è un giocatore da cui aspettarsi più bonus di quelli che ha realizzato nella scorsa stagione, al massimo qualcuno in più. Siamo sul 3/4° slot all'asta, è un titolare nella Roma e difficilmente prende meno di 6/6,5. La fanta-media del 6,53 lo dimostra.",
         "quotazioni": {
           "qtA": 18,
           "qtI": 20,
@@ -9833,7 +9968,7 @@ export const INITIAL_TEAMS = [
         "fantaRole": "A",
         "photoUrl": "https://cdn.falsesoftware.com/players/129261/v1.webp",
         "playerImage": "https://cdn.falsesoftware.com/players/129261/v1.webp",
-        "appetibilita": 95,
+        "appetibilita": 96,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": true,
@@ -9853,8 +9988,8 @@ export const INITIAL_TEAMS = [
           "diffM": 12,
           "fvm": 282,
           "fvmM": 282,
-          "classic_8_mod_median": 6.6,
-          "classic_10_mod_median": 8.4,
+          "classic_8_mod_median": 6.8,
+          "classic_10_mod_median": 8.6,
           "classic_12_mod_median": 9.6
         },
         "stats": {
@@ -9925,8 +10060,8 @@ export const INITIAL_TEAMS = [
           "fvm": 128,
           "fvmM": 128,
           "classic_8_mod_median": 6,
-          "classic_10_mod_median": 7.3,
-          "classic_12_mod_median": 8.3
+          "classic_10_mod_median": 7.4,
+          "classic_12_mod_median": 8.4
         },
         "stats": {
           "titolarita": 37,
@@ -9995,9 +10130,9 @@ export const INITIAL_TEAMS = [
           "diffM": 20,
           "fvm": 640,
           "fvmM": 640,
-          "classic_8_mod_median": 32,
-          "classic_10_mod_median": 33.4,
-          "classic_12_mod_median": 32.8
+          "classic_8_mod_median": 32.2,
+          "classic_10_mod_median": 33.6,
+          "classic_12_mod_median": 33
         },
         "stats": {
           "titolarita": 47,
@@ -10058,7 +10193,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Si è preso la scena nella seconda parte di stagione Nicolò Pisilli, con 2 gol e 4 assist in 22 partite con la maglia della Roma. Sia centrocampista nei due in mediana che trequartista, Gasperini lo ha impiegato in entrambe le posizioni ma più spesso avanzato. A oggi si gioca una maglia proprio sulla trequarti con Soulé, ma arriveranno rinforzi importanti dal mercato. E Pisilli per questo è una possibile sorpresa: ha un feeling importante con la zona bonus, Gasp lo ha di fatto blindato a Roma e di spazio ne troverà visto che la squadra giallorossa sarà impegnata anche in Champions League. Interessante, classico giocatore da 4° slot, basta avere coperture sicure in rosa e si schiera praticamente sempre. Così da essere tranquilli anche quelle volte in cui non andrà a voto.",
+        "fantaComment": "Si è preso la scena nella seconda parte di stagione Nicolò Pisilli, con 2 gol e 4 assist in 22 partite con la maglia della Roma. Sia centrocampista nei due in mediana che trequartista, Gasperini lo ha impiegato in entrambe le posizioni ma più spesso avanzato. E Pisilli per questo è una possibile sorpresa: ha un feeling importante con la zona bonus, Gasp lo ha di fatto blindato a Roma e di spazio ne troverà visto che la squadra giallorossa sarà impegnata anche in Champions League. Interessante, classico giocatore da 4° slot, basta avere coperture sicure in rosa e si schiera praticamente sempre. Così da essere tranquilli anche quelle volte in cui non andrà a voto.",
         "quotazioni": {
           "qtA": 11,
           "qtI": 13,
@@ -10192,7 +10327,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "",
+        "fantaComment": "Emanuele Lulli ha stupito tutti al debutto nella prima di campionato contro la Fiorentina, ha giocato titolare e ha fatto una buonissima prestazione. Ha solo 19 anni, appena compiuti, ma è sembrato già pronto per la Serie A. A destra il titolare è Molina, ma Lulli si farà trovare pronto se Gasperini punterà ancora su di lui. Al fantacalcio però è solo una scommessa.",
         "quotazioni": {
           "qtA": 7,
           "qtI": 1,
@@ -10537,8 +10672,8 @@ export const INITIAL_TEAMS = [
           "diffM": -1,
           "fvm": 61,
           "fvmM": 61,
-          "classic_8_mod_median": 1,
-          "classic_10_mod_median": 1.6,
+          "classic_8_mod_median": 1.1,
+          "classic_10_mod_median": 1.7,
           "classic_12_mod_median": 2.2
         },
         "stats": {
@@ -10606,7 +10741,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 125,
           "classic_8_mod_median": 2,
           "classic_10_mod_median": 3.2,
-          "classic_12_mod_median": 4.2
+          "classic_12_mod_median": 4
         },
         "stats": {
           "titolarita": 74,
@@ -10954,8 +11089,8 @@ export const INITIAL_TEAMS = [
           "fvm": 54,
           "fvmM": 54,
           "classic_8_mod_median": 1.2,
-          "classic_10_mod_median": 1.9,
-          "classic_12_mod_median": 3
+          "classic_10_mod_median": 2,
+          "classic_12_mod_median": 3.1
         },
         "stats": {
           "titolarita": 100,
@@ -11336,29 +11471,29 @@ export const INITIAL_TEAMS = [
           "au": 0
         },
         "substitutes": [
-          "lecce_gorter_7248",
           "lecce_berisham_6015",
-          "lecce_maleh_5457"
+          "lecce_maleh_5457",
+          "lecce_gandelman_7318"
         ],
         "slotId": "pos_7"
       },
       "pos_6": {
-        "id": "lecce_ngom_7322",
-        "csvId": "7322",
-        "fantalabId": "e01c03d6-37a1-44be-bcf2-76cfa7fd0df3",
-        "name": "Ngom",
-        "displayName": "Ngom",
-        "fullName": "Oumar Ngom",
+        "id": "lecce_ilic_5007",
+        "csvId": "5007",
+        "fantalabId": "b2ce362c-91f3-408b-a84c-f3b6e49d2f88",
+        "name": "Ilic",
+        "displayName": "Ilic",
+        "fullName": "Ivan Ilić",
         "teamName": "Lecce",
         "teamId": "lecce",
         "teamShort": "LEC",
         "role": "CC",
         "classicRole": "C",
-        "mantraRole": "M;C",
+        "mantraRole": "C",
         "fantaRole": "C",
-        "photoUrl": "https://cdn.falsesoftware.com/players/37592644/v1.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/37592644/v1.webp",
-        "appetibilita": 79,
+        "photoUrl": "https://cdn.falsesoftware.com/players/1359363/v1.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/1359363/v1.webp",
+        "appetibilita": 83,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -11368,26 +11503,26 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": null,
+        "fantaComment": "Ivan Ilic rinforza il centrocampo del Lecce e arriva per essere titolare. Il serbo cerca il rilancio dopo una stagione difficile, con alti e bassi. Al Lecce ritrova minutaggio e non vanno sottovalutati anche i calci piazzati, torna a essere un low cost da ultimi slot.",
         "quotazioni": {
-          "qtA": 2,
-          "qtI": 2,
-          "diff": 0,
-          "qtAM": 2,
-          "qtIM": 2,
-          "diffM": 0,
-          "fvm": 6,
-          "fvmM": 6,
-          "classic_8_mod_median": 0.4,
+          "qtA": 3,
+          "qtI": 1,
+          "diff": 2,
+          "qtAM": 3,
+          "qtIM": 1,
+          "diffM": 2,
+          "fvm": 10,
+          "fvmM": 10,
+          "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
-          "classic_12_mod_median": 0.2
+          "classic_12_mod_median": 0
         },
         "stats": {
-          "titolarita": 26,
-          "fantamedia": 5.65,
-          "mediaVoto": 5.69,
-          "pv": 15,
-          "presenze": 15,
+          "titolarita": 13,
+          "fantamedia": 5.88,
+          "mediaVoto": 6.0,
+          "pv": 8,
+          "presenze": 8,
           "gol": 0,
           "gf": 0,
           "gs": 0,
@@ -11400,36 +11535,36 @@ export const INITIAL_TEAMS = [
           "rigoriSbagliati": 0,
           "assist": 0,
           "ass": 0,
-          "ammonizioni": 1,
-          "amm": 1,
+          "ammonizioni": 2,
+          "amm": 2,
           "espulsioni": 0,
           "esp": 0,
           "au": 0
         },
         "substitutes": [
-          "lecce_gorter_7248",
           "lecce_berisham_6015",
-          "lecce_maleh_5457"
+          "lecce_maleh_5457",
+          "lecce_gandelman_7318"
         ],
         "slotId": "pos_6"
       },
       "pos_8": {
-        "id": "lecce_gandelman_7318",
-        "csvId": "7318",
-        "fantalabId": "cce0d460-c7fb-42dc-b785-e9269a17f582",
-        "name": "Gandelman",
-        "displayName": "Gandelman",
-        "fullName": "Omri Gandelman",
+        "id": "lecce_gorter_7248",
+        "csvId": "7248",
+        "fantalabId": "ad44d41f-b385-401f-a5d3-6e8212c5b63b",
+        "name": "Gorter",
+        "displayName": "Gorter",
+        "fullName": "Olaf Gorter",
         "teamName": "Lecce",
         "teamId": "lecce",
         "teamShort": "LEC",
         "role": "CC",
         "classicRole": "C",
-        "mantraRole": "C;T",
+        "mantraRole": "M;C",
         "fantaRole": "C",
-        "photoUrl": "https://cdn.falsesoftware.com/players/37260189/v1.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/37260189/v1.webp",
-        "appetibilita": 84,
+        "photoUrl": "https://cdn.falsesoftware.com/players/37611782/v1.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/37611782/v1.webp",
+        "appetibilita": 78,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -11439,28 +11574,28 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "2 gol e 1 assist in 16 partite per Omri Gandelman, arrivato a gennaio e comunque importante per la conquista della salvezza da parte del Lecce. Di Francesco lo ha provato sia da trequartista puro alle spalle della punta (suo ruolo ideale e preferito) che da mezzala, ha le caratteristiche per ricoprire entrambe le posizioni, anche in base al modulo scelto dal tecnico. Si inserisce bene senza palla, l'unico neo è il problema al ginocchio che lo ha tormentato praticamente da quando è arrivato. La speranza è che si sia ripreso al 100% durante l'estate e che possa trovare continuità. A volte titolare, altre arma a gara in corso, ma comunque di spazio dovrebbe averne. Classico colpo low cost in provincia per completare il vostro centrocampo. ",
+        "fantaComment": "Olaf Gorter è una delle sorprese dell’inizio di campionato. Si tratta di un centrocampista olandese del 2005 che giocava già nella Primavera del Lecce, che lo aveva preso dall’Ajax. Dopo il gol al debutto contro il Venezia può avere più spazio ed essere una scelta low cost per il fantacalcio.",
         "quotazioni": {
-          "qtA": 3,
-          "qtI": 5,
-          "diff": -2,
-          "qtAM": 3,
-          "qtIM": 5,
-          "diffM": -2,
-          "fvm": 10,
-          "fvmM": 10,
+          "qtA": 4,
+          "qtI": 1,
+          "diff": 3,
+          "qtAM": 4,
+          "qtIM": 1,
+          "diffM": 3,
+          "fvm": 13,
+          "fvmM": 13,
           "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
-          "classic_12_mod_median": 0.2
+          "classic_12_mod_median": 0
         },
         "stats": {
-          "titolarita": 42,
-          "fantamedia": 6.0,
-          "mediaVoto": 6.0,
-          "pv": 18,
-          "presenze": 18,
-          "gol": 7,
-          "gf": 7,
+          "titolarita": 5,
+          "fantamedia": 5.5,
+          "mediaVoto": 5.5,
+          "pv": 2,
+          "presenze": 2,
+          "gol": 0,
+          "gf": 0,
           "gs": 0,
           "golSubiti": 0,
           "rp": 0,
@@ -11469,18 +11604,18 @@ export const INITIAL_TEAMS = [
           "rMinus": 0,
           "rigoriSegnati": 0,
           "rigoriSbagliati": 0,
-          "assist": 1,
-          "ass": 1,
-          "ammonizioni": 1,
-          "amm": 1,
+          "assist": 0,
+          "ass": 0,
+          "ammonizioni": 0,
+          "amm": 0,
           "espulsioni": 0,
           "esp": 0,
           "au": 0
         },
         "substitutes": [
-          "lecce_gorter_7248",
           "lecce_berisham_6015",
-          "lecce_maleh_5457"
+          "lecce_maleh_5457",
+          "lecce_gandelman_7318"
         ],
         "slotId": "pos_8"
       },
@@ -11549,19 +11684,19 @@ export const INITIAL_TEAMS = [
           "au": 0
         },
         "substitutes": [
-          "lecce_gorter_7248",
           "lecce_berisham_6015",
-          "lecce_maleh_5457"
+          "lecce_maleh_5457",
+          "lecce_gandelman_7318"
         ],
         "slotId": "pos_9"
       },
       "pos_11": {
-        "id": "lecce_ndri_7001",
-        "csvId": "7001",
-        "fantalabId": "1d24cd78-760a-415a-96d0-075251eb2c71",
-        "name": "N'Dri",
-        "displayName": "N'Dri",
-        "fullName": "Konan N’Dri",
+        "id": "lecce_fatah_7602",
+        "csvId": "7602",
+        "fantalabId": "fe4dd59e-c29f-4618-9ae7-8df11a3bfbbc",
+        "name": "Fatah",
+        "displayName": "Fatah",
+        "fullName": "Amar Fatah",
         "teamName": "Lecce",
         "teamId": "lecce",
         "teamShort": "LEC",
@@ -11569,9 +11704,9 @@ export const INITIAL_TEAMS = [
         "classicRole": "A",
         "mantraRole": "W;A",
         "fantaRole": "A",
-        "photoUrl": "https://cdn.falsesoftware.com/players/30841465/v1.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/30841465/v1.webp",
-        "appetibilita": 86,
+        "photoUrl": "https://cdn.falsesoftware.com/players/37603838/v1.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/37603838/v1.webp",
+        "appetibilita": 84,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -11581,45 +11716,46 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": null,
+        "fantaComment": "Amar Fatah è un nuovo esterno del Lecce. Si tratta di un’ala offensiva, è un 2004 ed è in rampa di lancio. L’anno scorso ha fatto 8 gol e 3 assist nel campionato scozzese con il Dundee United FC. Svedese e nel giro dell’Under 21, è un’ala sinistra di piede destro che si accentra e cerca anche il tiro a giro. Potrebbe essere titolare ed è dunque un low cost da ultimissimi slot all’asta.",
         "quotazioni": {
-          "qtA": 4,
-          "qtI": 4,
-          "diff": 0,
-          "qtAM": 4,
-          "qtIM": 4,
-          "diffM": 0,
-          "fvm": 13,
-          "fvmM": 13,
-          "classic_8_mod_median": 0.2,
-          "classic_10_mod_median": 0.2,
-          "classic_12_mod_median": 0.4
+          "qtA": 2,
+          "qtI": 1,
+          "diff": 1,
+          "qtAM": 2,
+          "qtIM": 1,
+          "diffM": 1,
+          "fvm": 6,
+          "fvmM": 6,
+          "classic_8_mod_median": 0,
+          "classic_10_mod_median": 0,
+          "classic_12_mod_median": 0
         },
         "stats": {
-          "titolarita": 3,
-          "fantamedia": 6.08,
-          "mediaVoto": 5.82,
-          "pv": 27,
-          "presenze": 27,
-          "gol": 2,
-          "gf": 2,
+          "titolarita": 58,
+          "fantamedia": 6.0,
+          "mediaVoto": 6.0,
+          "pv": 30,
+          "presenze": 30,
+          "gol": 5,
+          "gf": 5,
           "gs": 0,
           "golSubiti": 0,
           "rp": 0,
           "rc": 0,
-          "rPlus": 0,
-          "rMinus": 0,
-          "rigoriSegnati": 0,
-          "rigoriSbagliati": 0,
-          "assist": 0,
-          "ass": 0,
+          "rPlus": 3,
+          "rMinus": 1,
+          "rigoriSegnati": 3,
+          "rigoriSbagliati": 1,
+          "assist": 3,
+          "ass": 3,
           "ammonizioni": 3,
           "amm": 3,
-          "espulsioni": 0,
-          "esp": 0,
+          "espulsioni": 1,
+          "esp": 1,
           "au": 0
         },
         "substitutes": [
+          "lecce_ndri_7001",
           "lecce_stulic_7252"
         ],
         "slotId": "pos_11"
@@ -11662,7 +11798,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 51,
           "classic_8_mod_median": 0.4,
           "classic_10_mod_median": 1.2,
-          "classic_12_mod_median": 2.4
+          "classic_12_mod_median": 2.3
         },
         "stats": {
           "titolarita": 32,
@@ -11689,79 +11825,13 @@ export const INITIAL_TEAMS = [
           "au": 0
         },
         "substitutes": [
+          "lecce_ndri_7001",
           "lecce_stulic_7252"
         ],
         "slotId": "pos_10"
       }
     },
     "bench": [
-      {
-        "id": "lecce_gorter_7248",
-        "csvId": "7248",
-        "fantalabId": "ad44d41f-b385-401f-a5d3-6e8212c5b63b",
-        "name": "Gorter",
-        "displayName": "Gorter",
-        "fullName": "Olaf Gorter",
-        "teamName": "Lecce",
-        "teamId": "lecce",
-        "teamShort": "LEC",
-        "role": "CC",
-        "classicRole": "C",
-        "mantraRole": "M;C",
-        "fantaRole": "C",
-        "photoUrl": "https://cdn.falsesoftware.com/players/37611782/v1.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/37611782/v1.webp",
-        "appetibilita": 78,
-        "status": "panchina",
-        "isAvailable": true,
-        "isPenaltyTaker": false,
-        "isFreeKickTaker": false,
-        "isCornerTaker": false,
-        "rigorista": false,
-        "punizioni": false,
-        "corner": false,
-        "positionNotes": "",
-        "fantaComment": null,
-        "quotazioni": {
-          "qtA": 4,
-          "qtI": 1,
-          "diff": 3,
-          "qtAM": 4,
-          "qtIM": 1,
-          "diffM": 3,
-          "fvm": 13,
-          "fvmM": 13,
-          "classic_8_mod_median": 0,
-          "classic_10_mod_median": 0.2,
-          "classic_12_mod_median": 0
-        },
-        "stats": {
-          "titolarita": 5,
-          "fantamedia": 5.5,
-          "mediaVoto": 5.5,
-          "pv": 2,
-          "presenze": 2,
-          "gol": 0,
-          "gf": 0,
-          "gs": 0,
-          "golSubiti": 0,
-          "rp": 0,
-          "rc": 0,
-          "rPlus": 0,
-          "rMinus": 0,
-          "rigoriSegnati": 0,
-          "rigoriSbagliati": 0,
-          "assist": 0,
-          "ass": 0,
-          "ammonizioni": 0,
-          "amm": 0,
-          "espulsioni": 0,
-          "esp": 0,
-          "au": 0
-        },
-        "substitutes": [],
-        "slotId": null
-      },
       {
         "id": "lecce_berisham_6015",
         "csvId": "6015",
@@ -11964,6 +12034,73 @@ export const INITIAL_TEAMS = [
         "slotId": null
       },
       {
+        "id": "lecce_gandelman_7318",
+        "csvId": "7318",
+        "fantalabId": "cce0d460-c7fb-42dc-b785-e9269a17f582",
+        "name": "Gandelman",
+        "displayName": "Gandelman",
+        "fullName": "Omri Gandelman",
+        "teamName": "Lecce",
+        "teamId": "lecce",
+        "teamShort": "LEC",
+        "role": "CC",
+        "classicRole": "C",
+        "mantraRole": "C;T",
+        "fantaRole": "C",
+        "photoUrl": "https://cdn.falsesoftware.com/players/37260189/v1.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/37260189/v1.webp",
+        "appetibilita": 84,
+        "status": "panchina",
+        "isAvailable": true,
+        "isPenaltyTaker": false,
+        "isFreeKickTaker": false,
+        "isCornerTaker": false,
+        "rigorista": false,
+        "punizioni": false,
+        "corner": false,
+        "positionNotes": "",
+        "fantaComment": "2 gol e 1 assist in 16 partite per Omri Gandelman, arrivato a gennaio e comunque importante per la conquista della salvezza da parte del Lecce. Di Francesco lo ha provato sia da trequartista puro alle spalle della punta (suo ruolo ideale e preferito) che da mezzala, ha le caratteristiche per ricoprire entrambe le posizioni, anche in base al modulo scelto dal tecnico. Si inserisce bene senza palla, l'unico neo è il problema al ginocchio che lo ha tormentato praticamente da quando è arrivato. La speranza è che si sia ripreso al 100% durante l'estate e che possa trovare continuità. A volte titolare, altre arma a gara in corso, ma comunque di spazio dovrebbe averne. Classico acquisto low cost in provincia per completare il vostro centrocampo. ",
+        "quotazioni": {
+          "qtA": 3,
+          "qtI": 5,
+          "diff": -2,
+          "qtAM": 3,
+          "qtIM": 5,
+          "diffM": -2,
+          "fvm": 10,
+          "fvmM": 10,
+          "classic_8_mod_median": 0.2,
+          "classic_10_mod_median": 0.2,
+          "classic_12_mod_median": 0.2
+        },
+        "stats": {
+          "titolarita": 42,
+          "fantamedia": 6.0,
+          "mediaVoto": 6.0,
+          "pv": 18,
+          "presenze": 18,
+          "gol": 7,
+          "gf": 7,
+          "gs": 0,
+          "golSubiti": 0,
+          "rp": 0,
+          "rc": 0,
+          "rPlus": 0,
+          "rMinus": 0,
+          "rigoriSegnati": 0,
+          "rigoriSbagliati": 0,
+          "assist": 1,
+          "ass": 1,
+          "ammonizioni": 1,
+          "amm": 1,
+          "espulsioni": 0,
+          "esp": 0,
+          "au": 0
+        },
+        "substitutes": [],
+        "slotId": null
+      },
+      {
         "id": "lecce_ndaba_7182",
         "csvId": "7182",
         "fantalabId": "5bcf0569-1900-4392-bdd9-9154fc5d1fba",
@@ -12143,6 +12280,140 @@ export const INITIAL_TEAMS = [
           "mediaVoto": 5.8,
           "pv": 7,
           "presenze": 7,
+          "gol": 0,
+          "gf": 0,
+          "gs": 0,
+          "golSubiti": 0,
+          "rp": 0,
+          "rc": 0,
+          "rPlus": 0,
+          "rMinus": 0,
+          "rigoriSegnati": 0,
+          "rigoriSbagliati": 0,
+          "assist": 0,
+          "ass": 0,
+          "ammonizioni": 1,
+          "amm": 1,
+          "espulsioni": 0,
+          "esp": 0,
+          "au": 0
+        },
+        "substitutes": [],
+        "slotId": null
+      },
+      {
+        "id": "lecce_ndri_7001",
+        "csvId": "7001",
+        "fantalabId": "1d24cd78-760a-415a-96d0-075251eb2c71",
+        "name": "N'Dri",
+        "displayName": "N'Dri",
+        "fullName": "Konan N’Dri",
+        "teamName": "Lecce",
+        "teamId": "lecce",
+        "teamShort": "LEC",
+        "role": "ATT",
+        "classicRole": "A",
+        "mantraRole": "W;A",
+        "fantaRole": "A",
+        "photoUrl": "https://cdn.falsesoftware.com/players/30841465/v1.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/30841465/v1.webp",
+        "appetibilita": 86,
+        "status": "panchina",
+        "isAvailable": true,
+        "isPenaltyTaker": false,
+        "isFreeKickTaker": false,
+        "isCornerTaker": false,
+        "rigorista": false,
+        "punizioni": false,
+        "corner": false,
+        "positionNotes": "",
+        "fantaComment": null,
+        "quotazioni": {
+          "qtA": 4,
+          "qtI": 4,
+          "diff": 0,
+          "qtAM": 4,
+          "qtIM": 4,
+          "diffM": 0,
+          "fvm": 13,
+          "fvmM": 13,
+          "classic_8_mod_median": 0.2,
+          "classic_10_mod_median": 0.2,
+          "classic_12_mod_median": 0.4
+        },
+        "stats": {
+          "titolarita": 3,
+          "fantamedia": 6.08,
+          "mediaVoto": 5.82,
+          "pv": 27,
+          "presenze": 27,
+          "gol": 2,
+          "gf": 2,
+          "gs": 0,
+          "golSubiti": 0,
+          "rp": 0,
+          "rc": 0,
+          "rPlus": 0,
+          "rMinus": 0,
+          "rigoriSegnati": 0,
+          "rigoriSbagliati": 0,
+          "assist": 0,
+          "ass": 0,
+          "ammonizioni": 3,
+          "amm": 3,
+          "espulsioni": 0,
+          "esp": 0,
+          "au": 0
+        },
+        "substitutes": [],
+        "slotId": null
+      },
+      {
+        "id": "lecce_ngom_7322",
+        "csvId": "7322",
+        "fantalabId": "e01c03d6-37a1-44be-bcf2-76cfa7fd0df3",
+        "name": "Ngom",
+        "displayName": "Ngom",
+        "fullName": "Oumar Ngom",
+        "teamName": "Lecce",
+        "teamId": "lecce",
+        "teamShort": "LEC",
+        "role": "CC",
+        "classicRole": "C",
+        "mantraRole": "M;C",
+        "fantaRole": "C",
+        "photoUrl": "https://cdn.falsesoftware.com/players/37592644/v1.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/37592644/v1.webp",
+        "appetibilita": 79,
+        "status": "panchina",
+        "isAvailable": true,
+        "isPenaltyTaker": false,
+        "isFreeKickTaker": false,
+        "isCornerTaker": false,
+        "rigorista": false,
+        "punizioni": false,
+        "corner": false,
+        "positionNotes": "",
+        "fantaComment": null,
+        "quotazioni": {
+          "qtA": 2,
+          "qtI": 2,
+          "diff": 0,
+          "qtAM": 2,
+          "qtIM": 2,
+          "diffM": 0,
+          "fvm": 6,
+          "fvmM": 6,
+          "classic_8_mod_median": 0.4,
+          "classic_10_mod_median": 0.2,
+          "classic_12_mod_median": 0.2
+        },
+        "stats": {
+          "titolarita": 26,
+          "fantamedia": 5.65,
+          "mediaVoto": 5.69,
+          "pv": 15,
+          "presenze": 15,
           "gol": 0,
           "gf": 0,
           "gs": 0,
@@ -12763,7 +13034,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 10,
           "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
-          "classic_12_mod_median": 0.2
+          "classic_12_mod_median": 0.3
         },
         "stats": {
           "titolarita": 42,
@@ -12964,7 +13235,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Harry Winks, classe 1996, arriva dal Leicester appena retrocesso in League One con l'obiettivo di aggiungere esperienza ad un gruppo giovane come quello di Pisacane. Protagonista per tanti anni al Tottenham, Winks è entrato nella fase discendente della sua carriera, spesso costellata anche da diversi infortuni. Per lui si tratta di un ritorno in Serie A dopo la breve parentesi alla Sampdoria. Mediano che detta i tempi di gioco, Winks si è sempre contraddistinto per il carisma che mette in campo ma non sicuramente per le statistiche. Nell'ultima stagione appena 1 gol e 2 assist in 34 presenze, mentre in Serie A è ancora a secco di bonus. Al fantacalcio, nonostante il nome altisonante, vanno usate le giuste precauzioni visto l'investimento da 5 milioni per Romano: i due si giocheranno il posto e occhio alla possibile alternanza.",
+        "fantaComment": "Harry Winks, classe 1996, arriva dal Leicester retrocesso in League One con l'obiettivo di aggiungere esperienza ad un gruppo giovane come quello di Pisacane. Protagonista per tanti anni al Tottenham, Winks è entrato nella fase discendente della sua carriera, spesso costellata anche da diversi infortuni. Per lui si tratta di un ritorno in Serie A dopo la breve parentesi alla Sampdoria. Mediano che detta i tempi di gioco, Winks si è sempre contraddistinto per il carisma che mette in campo ma non sicuramente per le statistiche. Nell'ultima stagione appena 1 gol e 2 assist in 34 presenze, mentre in Serie A è ancora a secco di bonus. Al fantacalcio, nonostante il nome altisonante, vanno usate le giuste precauzioni ed è solo un acquisto low cost.",
         "quotazioni": {
           "qtA": 2,
           "qtI": 1,
@@ -13035,7 +13306,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Alessandro Romano, ragazzo del 2006, per visione e caratteristiche da equilibratore ricorda il suo connazionale Remo Freuler. Dopo l'esperienza in Serie B allo Spezia per farsi le ossa, il ventenne ha convinto tutti e a spuntarla è stato il Cagliari che ha investito quasi 6 milioni. In Liguria ha giocato sempre da vertice basso in un centrocampo a cinque: non caratteristiche propriamente da fantacalcio. Nell'annata da incubo dello Spezia è stato uno dei pochi a salvarsi e per questo può garantire buoni voti e candidarsi anche a calciare i piazzati. Al fantacalcio intriga, ma occhio al dualismo con l'altro nuovo arrivato Winks per il posto da titolare. Da leghe numerose.",
+        "fantaComment": "Alessandro Romano, centrocampista del 2006, per visione e caratteristiche da equilibratore ricorda il suo connazionale Remo Freuler. Dopo l'esperienza in Serie B allo Spezia per farsi le ossa, il ventenne ha convinto tutti e a spuntarla è stato il Cagliari che ha investito quasi 6 milioni. In Liguria ha giocato sempre da vertice basso in un centrocampo a cinque: non caratteristiche propriamente da fantacalcio, anche se ha segnato da fuori al debutto. Nell'annata da incubo dello Spezia è stato uno dei pochi a salvarsi e per questo può garantire buoni voti e candidarsi anche a calciare i piazzati. Al fantacalcio intriga, crescerà molto.",
         "quotazioni": {
           "qtA": 5,
           "qtI": 2,
@@ -13189,7 +13460,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 35,
           "classic_8_mod_median": 0.6,
           "classic_10_mod_median": 1.2,
-          "classic_12_mod_median": 2.1
+          "classic_12_mod_median": 2
         },
         "stats": {
           "titolarita": 13,
@@ -13388,7 +13659,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "",
+        "fantaComment": "Sebastiano Esposito ha lasciato il Cagliari dopo un’estate turbolenta per passare al Sassuolo. Sulla carta può essere titolare, giocando da centravanti (o falso nove) tra Berardi e Laurienté. Viste le sue caratteristiche può fare anche l’ala se dovesse mancare uno dei due esterni d’attacco. Un 4-2-3-1 con Bowie centravanti sarebbe troppo offensivo, l’ex Verona potrebbe giocare come punta in un 4-3-3 e in quel caso rischierebbe Esposito, ma l’ex Cagliari è favorito e non si è spostato dal Cagliari per fare panchina. Nella scorsa stagione ha fatto 7 gol e 4 assist, numeri che lo rendono interessante come 3/4° slot da alternare. Occhio ai rigori come vice di Berardi, in carriera 22 segnati su 23. ",
         "quotazioni": {
           "qtA": 25,
           "qtI": 40,
@@ -13398,7 +13669,7 @@ export const INITIAL_TEAMS = [
           "diffM": -15,
           "fvm": 80,
           "fvmM": 80,
-          "classic_8_mod_median": 0.3,
+          "classic_8_mod_median": 0.4,
           "classic_10_mod_median": 0.6,
           "classic_12_mod_median": 1
         },
@@ -13886,73 +14157,6 @@ export const INITIAL_TEAMS = [
           "rPlus": 4,
           "rMinus": 0,
           "rigoriSegnati": 4,
-          "rigoriSbagliati": 0,
-          "assist": 3,
-          "ass": 3,
-          "ammonizioni": 6,
-          "amm": 6,
-          "espulsioni": 0,
-          "esp": 0,
-          "au": 0
-        },
-        "substitutes": [],
-        "slotId": null
-      },
-      {
-        "id": "cagliari_prati_6424",
-        "csvId": "6424",
-        "fantalabId": "8affb773-1a39-4adf-8cc1-dcb3e5f3d780",
-        "name": "Prati",
-        "displayName": "Prati",
-        "fullName": "Matteo Prati",
-        "teamName": "Cagliari",
-        "teamId": "cagliari",
-        "teamShort": "CAG",
-        "role": "CC",
-        "classicRole": "C",
-        "mantraRole": "M;C",
-        "fantaRole": "C",
-        "photoUrl": "https://cdn.falsesoftware.com/players/37565251/v2.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/37565251/v2.webp",
-        "appetibilita": 83,
-        "status": "panchina",
-        "isAvailable": true,
-        "isPenaltyTaker": false,
-        "isFreeKickTaker": false,
-        "isCornerTaker": false,
-        "rigorista": false,
-        "punizioni": false,
-        "corner": false,
-        "positionNotes": "",
-        "fantaComment": null,
-        "quotazioni": {
-          "qtA": 1,
-          "qtI": 1,
-          "diff": 0,
-          "qtAM": 1,
-          "qtIM": 1,
-          "diffM": 0,
-          "fvm": 1,
-          "fvmM": 1,
-          "classic_8_mod_median": 0,
-          "classic_10_mod_median": 0,
-          "classic_12_mod_median": 0
-        },
-        "stats": {
-          "titolarita": 58,
-          "fantamedia": 5.88,
-          "mediaVoto": 5.88,
-          "pv": 33,
-          "presenze": 33,
-          "gol": 1,
-          "gf": 1,
-          "gs": 0,
-          "golSubiti": 0,
-          "rp": 0,
-          "rc": 0,
-          "rPlus": 0,
-          "rMinus": 0,
-          "rigoriSegnati": 0,
           "rigoriSbagliati": 0,
           "assist": 3,
           "ass": 3,
@@ -14518,7 +14722,7 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "genoa_martin_2593",
           "genoa_sabelli_791",
-          "genoa_matturro_6244"
+          "genoa_otoa_6977"
         ],
         "slotId": "pos_2"
       },
@@ -14548,7 +14752,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Leo Ostigard, reduce dal mondiale con la Norvegia, sarà ancora il perno della difesa a tre di De Rossi in casa Genoa. Il centrale, che si contraddistingue da sempre per una notevole prestanza fisica in entrambe le aree di rigore è stato uno dei migliori difensori della scorsa stagione in Serie A e al fantacalcio (5 gol realizzati). La sua valutazione si è alzata e in un Genoa che punta ancora di più a migliorare la sua classifica, all'asta il norvegese potrebbe arrivare a costare molto. E' un buon difensore anche da modificatore difesa ma occhio ai cartellini gialli (7 nel 25/26). Per costruire una difesa \"in provincia\" è sicuramente il pezzo pregiato.",
+        "fantaComment": "Leo Ostigard, reduce dal Mondiale con la Norvegia, è ancora il perno della difesa a tre di De Rossi in casa Genoa. Il centrale, che si contraddistingue da sempre per una notevole prestanza fisica in entrambe le aree di rigore è stato uno dei migliori difensori della scorsa stagione in Serie A e al fantacalcio (5 gol realizzati). La sua valutazione si è alzata e in un Genoa che punta ancora di più a migliorare la sua classifica, all'asta il norvegese potrebbe arrivare a costare molto. È un buon difensore anche da modificatore difesa, occhio solo ai cartellini gialli (7 nel 2025/26). Per costruire una difesa \"in provincia\" è sicuramente il pezzo pregiato.",
         "quotazioni": {
           "qtA": 23,
           "qtI": 21,
@@ -14589,7 +14793,7 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "genoa_martin_2593",
           "genoa_sabelli_791",
-          "genoa_matturro_6244"
+          "genoa_otoa_6977"
         ],
         "slotId": "pos_3"
       },
@@ -14660,7 +14864,7 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "genoa_martin_2593",
           "genoa_sabelli_791",
-          "genoa_matturro_6244"
+          "genoa_otoa_6977"
         ],
         "slotId": "pos_4"
       },
@@ -14731,7 +14935,7 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "genoa_martin_2593",
           "genoa_sabelli_791",
-          "genoa_matturro_6244"
+          "genoa_otoa_6977"
         ],
         "slotId": "pos_5"
       },
@@ -14802,7 +15006,7 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "genoa_martin_2593",
           "genoa_sabelli_791",
-          "genoa_matturro_6244"
+          "genoa_otoa_6977"
         ],
         "slotId": "pos_8"
       },
@@ -14832,7 +15036,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Il Genoa ha preso Djibril Sow dal Siviglia. Centrocampista svizzero classe 1997, è un giocatore completo e dinamico, con qualità tecnica, corsa e capacità nei contrasti. Nella scorsa stagione ha collezionato 35 presenze e 5 gol in tutte le competizioni, vivendo la sua miglior annata dal punto di vista realizzativo. Porta anche grande esperienza internazionale e nelle coppe europee, avendo vinto l’Europa League 2021/22 con l’Eintracht Francoforte. Al Genoa si candida ad avere subito un ruolo importante e a diventare uno dei punti fermi del centrocampo di De Rossi. Al fantacalcio può essere un 4°/5° slot molto interessante, soprattutto per chi cerca un titolare di esperienza, con la possibilità di portare anche qualche bonus.",
+        "fantaComment": "Il Genoa ha preso Djibril Sow dal Siviglia. Centrocampista svizzero classe 1997, è un giocatore completo e dinamico, con qualità tecnica, corsa e capacità nei contrasti. Nella scorsa stagione ha collezionato 35 presenze e 5 gol in tutte le competizioni, vivendo la sua miglior annata dal punto di vista realizzativo. Porta anche grande esperienza internazionale e nelle coppe europee, avendo vinto l’Europa League 2021/22 con l’Eintracht Francoforte. Al Genoa si candida ad avere subito un ruolo importante e a diventare uno dei punti fermi del centrocampo di De Rossi. Al fantacalcio può essere un giocatore interessante per gli ultimi slot, soprattutto per chi cerca un titolare di esperienza, con la possibilità di portare anche qualche bonus.",
         "quotazioni": {
           "qtA": 2,
           "qtI": 1,
@@ -15564,73 +15768,6 @@ export const INITIAL_TEAMS = [
         "slotId": null
       },
       {
-        "id": "genoa_matturro_6244",
-        "csvId": "6244",
-        "fantalabId": "40a63839-7178-4c07-a693-34397b15f3f9",
-        "name": "Matturro",
-        "displayName": "Matturro",
-        "fullName": "Alan Matturro",
-        "teamName": "Genoa",
-        "teamId": "genoa",
-        "teamShort": "GEN",
-        "role": "TS",
-        "classicRole": "D",
-        "mantraRole": "Ds;Dc",
-        "fantaRole": "D",
-        "photoUrl": "https://cdn.falsesoftware.com/players/37587202/v3.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/37587202/v3.webp",
-        "appetibilita": 83,
-        "status": "panchina",
-        "isAvailable": true,
-        "isPenaltyTaker": false,
-        "isFreeKickTaker": false,
-        "isCornerTaker": false,
-        "rigorista": false,
-        "punizioni": false,
-        "corner": false,
-        "positionNotes": "",
-        "fantaComment": null,
-        "quotazioni": {
-          "qtA": 1,
-          "qtI": 1,
-          "diff": 0,
-          "qtAM": 1,
-          "qtIM": 1,
-          "diffM": 0,
-          "fvm": 1,
-          "fvmM": 1,
-          "classic_8_mod_median": 0,
-          "classic_10_mod_median": 0,
-          "classic_12_mod_median": 0
-        },
-        "stats": {
-          "titolarita": 26,
-          "fantamedia": 6.0,
-          "mediaVoto": 6.0,
-          "pv": 19,
-          "presenze": 19,
-          "gol": 1,
-          "gf": 1,
-          "gs": 0,
-          "golSubiti": 0,
-          "rp": 0,
-          "rc": 0,
-          "rPlus": 0,
-          "rMinus": 0,
-          "rigoriSegnati": 0,
-          "rigoriSbagliati": 0,
-          "assist": 1,
-          "ass": 1,
-          "ammonizioni": 0,
-          "amm": 0,
-          "espulsioni": 1,
-          "esp": 1,
-          "au": 0
-        },
-        "substitutes": [],
-        "slotId": null
-      },
-      {
         "id": "genoa_ellertsson_6020",
         "csvId": "6020",
         "fantalabId": "72dbbe00-ef42-4579-ba5e-74ac1cc06c8c",
@@ -15800,7 +15937,7 @@ export const INITIAL_TEAMS = [
           "diffM": 0,
           "fvm": 1,
           "fvmM": 1,
-          "classic_8_mod_median": 0.2,
+          "classic_8_mod_median": 0.4,
           "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0.2
         },
@@ -15979,8 +16116,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "A",
         "mantraRole": "Pc",
         "fantaRole": "A",
-        "photoUrl": "",
-        "playerImage": "",
+        "photoUrl": "https://cdn.falsesoftware.com/players/5283704/v1.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/5283704/v1.webp",
         "appetibilita": 84,
         "status": "panchina",
         "isAvailable": true,
@@ -16003,7 +16140,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 13,
           "classic_8_mod_median": 0,
           "classic_10_mod_median": 0.2,
-          "classic_12_mod_median": 0
+          "classic_12_mod_median": 0.2
         },
         "stats": {
           "titolarita": 53,
@@ -16287,7 +16424,7 @@ export const INITIAL_TEAMS = [
           "diffM": 1,
           "fvm": 6,
           "fvmM": 6,
-          "classic_8_mod_median": 0,
+          "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0
         },
@@ -16632,7 +16769,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Soltanto 3 partite a voto e nessun bonus per Darryl Bakola nella scorsa stagione al Sassuolo, ma nel pre-campionato ha trovato spazio anche a causa dell'infortunio accusato da Koné. Classe 2007, è giovanissimo ed è la più classica delle scommesse per il vostro centrocampo. Interessante per completare il reparto, anche perché è un centrocampista che può avere spazio anche da trequartista in caso di necessità.",
+        "fantaComment": "Soltanto 3 partite a voto e nessun bonus per Darryl Bakola nella scorsa stagione al Sassuolo, ma a inizio stagione ha trovato spazio anche a causa dell'infortunio accusato da Koné. Classe 2007, è giovanissimo ed è la più classica delle scommesse per il vostro centrocampo. Interessante per completare il reparto, anche perché è un centrocampista che può avere spazio anche da trequartista in caso di necessità. Ha grandi margini di miglioramento, a fine stagione potrà essere una plusvalenza.",
         "quotazioni": {
           "qtA": 2,
           "qtI": 1,
@@ -16715,7 +16852,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 211,
           "classic_8_mod_median": 6.6,
           "classic_10_mod_median": 8.8,
-          "classic_12_mod_median": 10.4
+          "classic_12_mod_median": 10.3
         },
         "stats": {
           "titolarita": 63,
@@ -16741,9 +16878,7 @@ export const INITIAL_TEAMS = [
           "esp": 1,
           "au": 0
         },
-        "substitutes": [
-          "sassuolo_pinamonti_2038"
-        ],
+        "substitutes": [],
         "slotId": "pos_8"
       },
       "pos_9": {
@@ -16772,7 +16907,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Kristian Thorstvedt riparte da 4 gol e 3 assist in 31 partite a voto, fanta-media del 6,48. Ha portato 7 bonus ma la sensazione è che possano arrivarne anche di più nel nuovo ruolo in cui lo ha provato Aquilani, ovvero da trequartista puro nel 4-2-3-1 alle spalle della prima punta. Ancora più libertà di inserimento, con e senza palla: proverà a puntare la doppia cifra. Un solo neo per il fanta: le 9 ammonizioni, tante, decisamente troppe per un giocatore con le sue caratteristiche. Siamo tra il 3° e il 4° slot a seconda del numero di partecipanti, è un titolare fisso nel Sassuolo.",
+        "fantaComment": "Kristian Thorstvedt riparte da 4 gol e 3 assist in 31 partite a voto, fanta-media del 6,48. Ha portato 7 bonus ma la sensazione è che possano arrivarne anche di più. Un solo neo per il fanta: le 9 ammonizioni, tante, decisamente troppe per un giocatore con le sue caratteristiche. Siamo tra il 3° e il 4° slot a seconda del numero di partecipanti, è un titolare fisso nel Sassuolo.",
         "quotazioni": {
           "qtA": 13,
           "qtI": 23,
@@ -16782,7 +16917,7 @@ export const INITIAL_TEAMS = [
           "diffM": -10,
           "fvm": 42,
           "fvmM": 42,
-          "classic_8_mod_median": 0.9,
+          "classic_8_mod_median": 0.8,
           "classic_10_mod_median": 1.4,
           "classic_12_mod_median": 2
         },
@@ -16881,9 +17016,7 @@ export const INITIAL_TEAMS = [
           "esp": 0,
           "au": 0
         },
-        "substitutes": [
-          "sassuolo_pinamonti_2038"
-        ],
+        "substitutes": [],
         "slotId": "pos_10"
       },
       "pos_11": {
@@ -16912,7 +17045,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Kevin Bowie prova a raccogliere l'eredità di Pinamonti nel Sassuolo. Il centravanti italiano è andato alla Lazio, lo scozzese è pronto ad avere più spazio pur non essendo sicuro al 100% del posto. Bowie, prima punta vecchio stampo del 2002, è un attaccante che diventa così interessante al fantacalcio. Ha già fatto intravedere buone cose in Serie A, segnando 4 gol (uno all’Inter e uno alla Juve) in un Verona in grande difficoltà.",
+        "fantaComment": "Kevin Bowie prova a raccogliere l'eredità di Pinamonti nel Sassuolo. Il centravanti italiano è andato alla Lazio, lo scozzese è pronto ad avere più spazio pur non essendo sicuro al 100% del posto perché è arrivato anche Sebastiano Esposito. Bowie, prima punta vecchio stampo del 2002, è un attaccante che diventa comunque più interessante al fantacalcio. Ha già fatto intravedere buone cose in Serie A, segnando 4 gol (uno all’Inter e uno alla Juve) in un Verona in grande difficoltà.",
         "quotazioni": {
           "qtA": 32,
           "qtI": 42,
@@ -16950,9 +17083,7 @@ export const INITIAL_TEAMS = [
           "esp": 0,
           "au": 0
         },
-        "substitutes": [
-          "sassuolo_pinamonti_2038"
-        ],
+        "substitutes": [],
         "slotId": "pos_11"
       }
     },
@@ -17050,7 +17181,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Si è infortunato ai Mondiali Ismael Koné, ne avrà per mesi: da capire se riuscirà a tornare verso il mese di dicembre o se direttamente a inizio 2027, si capirà in seguito. È stato operato per una doppia frattura, alla tibia e alla fibula. Una volta che sarà al 100%, sicuramente tornerà a essere titolare nella mediana del Sassuolo (6 gol in 35 partite a voto nella passata stagione). Ma al momento è ai box e al suo posto il candidato numero uno è Lipani. Per il fantacalcio si può prendere o da ultimo slot in un reparto con tutti titolari di fatto oppure se ne riparla direttamente all'asta di riparazione, quando sarà già tornato o pronto a farlo.",
+        "fantaComment": "Si è infortunato ai Mondiali Ismael Koné, ne avrà per mesi: da capire se riuscirà a tornare verso il mese di dicembre o se direttamente a inizio 2027, si capirà in seguito. È stato operato per una doppia frattura, alla tibia e alla fibula. Una volta che sarà al 100%, sicuramente tornerà a essere titolare nella mediana del Sassuolo (6 gol in 35 partite a voto nella passata stagione). Ma al momento è ai box e servirà prudenza. Per il fantacalcio si può prendere o da ultimo slot in un reparto con tutti titolari di fatto oppure se ne riparla direttamente all'asta di riparazione, quando sarà già tornato o pronto a farlo.",
         "quotazioni": {
           "qtA": 6,
           "qtI": 15,
@@ -17084,73 +17215,6 @@ export const INITIAL_TEAMS = [
           "ass": 0,
           "ammonizioni": 3,
           "amm": 3,
-          "espulsioni": 1,
-          "esp": 1,
-          "au": 0
-        },
-        "substitutes": [],
-        "slotId": null
-      },
-      {
-        "id": "sassuolo_pinamonti_2038",
-        "csvId": "2038",
-        "fantalabId": "ced01d22-1684-45d0-bcde-9898ff26ae86",
-        "name": "Pinamonti",
-        "displayName": "Pinamonti",
-        "fullName": "Andrea Pinamonti",
-        "teamName": "Sassuolo",
-        "teamId": "sassuolo",
-        "teamShort": "SAS",
-        "role": "PC",
-        "classicRole": "A",
-        "mantraRole": "Pc",
-        "fantaRole": "A",
-        "photoUrl": "https://cdn.falsesoftware.com/players/134034/v1.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/134034/v1.webp",
-        "appetibilita": 93,
-        "status": "panchina",
-        "isAvailable": true,
-        "isPenaltyTaker": true,
-        "isFreeKickTaker": false,
-        "isCornerTaker": false,
-        "rigorista": true,
-        "punizioni": false,
-        "corner": false,
-        "positionNotes": "",
-        "fantaComment": "Andrea Pinamonti può diventare anche un secondo slot dopo il suo passaggio alla Lazio. Dalla sua ha ancora la titolarità, anche se magari avrà più concorrenza rispetto al Sassuolo. Come lato negativo ci sono sempre le insufficienze quando non segna, infatti arriva da una media-voto negativa del 5,88. Compensa però con 9 gol e 3 assist, la doppia cifra la raggiunge o ci va molto vicino, ci proverà pure alla Lazio come obiettivo minimo. Potrebbe avere anche i rigori, se li giocherà con Zaccagni e Taylor. In carriera 20 su 24 per lui.",
-        "quotazioni": {
-          "qtA": 37,
-          "qtI": 39,
-          "diff": -2,
-          "qtAM": 37,
-          "qtIM": 39,
-          "diffM": -2,
-          "fvm": 118,
-          "fvmM": 118,
-          "classic_8_mod_median": 2.7,
-          "classic_10_mod_median": 4.6,
-          "classic_12_mod_median": 6.2
-        },
-        "stats": {
-          "titolarita": 84,
-          "fantamedia": 6.62,
-          "mediaVoto": 5.88,
-          "pv": 36,
-          "presenze": 36,
-          "gol": 9,
-          "gf": 9,
-          "gs": 0,
-          "golSubiti": 0,
-          "rp": 0,
-          "rc": 0,
-          "rPlus": 0,
-          "rMinus": 1,
-          "rigoriSegnati": 0,
-          "rigoriSbagliati": 1,
-          "assist": 3,
-          "ass": 3,
-          "ammonizioni": 2,
-          "amm": 2,
           "espulsioni": 1,
           "esp": 1,
           "au": 0
@@ -17330,7 +17394,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 10,
           "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
-          "classic_12_mod_median": 0.4
+          "classic_12_mod_median": 0.3
         },
         "stats": {
           "titolarita": 58,
@@ -17385,7 +17449,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Benjamin Dominguez lascia il Bologna e si accasa al Sassuolo dove sicuramente tornerà a trovare spazio. Aveva convinto nella sua prima stagione a Bologna l'argentino grazie a giocate imprevedibili sulla trequarti e rapidità di movimenti negli spazi stretti. Nell'ultima stagione appena 12 volte a voto al fantacalcio ma tre assist e 6,04 di fanta-media. Parte dietro a Laurientè, se il francese dovesse rimanere, ma può trovare spazio anche a partita in corso. Al fantacalcio è listato centrocampista nonostante la sua posizione sarà nel tridente offensivo: può portare bonus anche a partita in corso e a pochi crediti come 7-8° slot si può prendere.",
+        "fantaComment": "Benjamin Dominguez lascia il Bologna e si accasa al Sassuolo dove sicuramente tornerà a trovare spazio. Aveva convinto nella sua prima stagione a Bologna l'argentino grazie a giocate imprevedibili sulla trequarti e rapidità di movimenti negli spazi stretti. Nell'ultima stagione appena 12 volte a voto al fantacalcio ma tre assist e 6,04 di fanta-media. Parte dietro a Laurientè, ma può trovare spazio anche a partita in corso. Al fantacalcio è listato centrocampista nonostante la sua posizione sarà nel tridente offensivo: può portare bonus anche a partita in corso e a pochi crediti come 7-8° slot si può prendere.",
         "quotazioni": {
           "qtA": 5,
           "qtI": 2,
@@ -18273,7 +18337,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Manuel Akanji è sbarcato in Serie A stupendo tutti per solidità e duttilità. Al centro o a destra, il 31enne ha raccolto 32 presenze condite da 2 gol e una fanta-media del 6,41, concedendo ai vari De Vrij e Acerbi soltanto le briciole. Appena 4 ammonizioni, nessun acciacco fisico e tra i più presenti per minuti nella rosa a disposizione di Chivu che riparte da lui anche in questa stagione. Con l'arrivo di Stones dal mercato (da capire se arriverà anche un altro centrale), sempre più probabile un suo impiego frequente a destra dove comunque rimane in netto vantaggio su Bisseck. E quando Stones non sarà titolare, lo svizzero potrà slittare al centro del reparto.",
+        "fantaComment": "Manuel Akanji è sbarcato in Serie A stupendo tutti per solidità e duttilità. Al centro o a destra, il 31enne ha raccolto 32 presenze condite da 2 gol e una fanta-media del 6,41, concedendo ai vari De Vrij e Acerbi soltanto le briciole. Appena 4 ammonizioni, nessun acciacco fisico e tra i più presenti per minuti nella rosa a disposizione di Chivu che riparte da lui anche in questa stagione. Con l'arrivo di Stones dal mercato (da capire se arriverà anche un altro centrale), sempre più probabile un suo impiego frequente a destra dove comunque rimane in vantaggio su Bisseck. E quando Stones non sarà titolare, lo svizzero potrà slittare al centro del reparto.",
         "quotazioni": {
           "qtA": 32,
           "qtI": 32,
@@ -18461,22 +18525,22 @@ export const INITIAL_TEAMS = [
         "slotId": "pos_4"
       },
       "pos_5": {
-        "id": "inter_spence_5982",
-        "csvId": "5982",
-        "fantalabId": "ae4ddedd-7c30-471d-be3a-e3adb7dc765e",
-        "name": "Spence",
-        "displayName": "Spence",
-        "fullName": "Djed Spence",
+        "id": "inter_diouf_6274",
+        "csvId": "6274",
+        "fantalabId": "ccaa3ad6-fe10-4ac8-b1c0-51d7b0f902aa",
+        "name": "Diouf",
+        "displayName": "Diouf",
+        "fullName": "Andy Diouf",
         "teamName": "Inter",
         "teamId": "inter",
         "teamShort": "INT",
-        "role": "DC",
-        "classicRole": "D",
-        "mantraRole": "E",
-        "fantaRole": "D",
-        "photoUrl": "https://cdn.falsesoftware.com/players/7026573/v2.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/7026573/v2.webp",
-        "appetibilita": 80,
+        "role": "CC",
+        "classicRole": "C",
+        "mantraRole": "E;C",
+        "fantaRole": "C",
+        "photoUrl": "https://cdn.falsesoftware.com/players/37423138/v1.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/37423138/v1.webp",
+        "appetibilita": 90,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -18486,28 +18550,28 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Djed Spence arriva all'Inter e in Serie A prendendosi la fascia destra che fu in passato di Denzel Dumfries. Operazione da circa 35 milioni: sarà lui il titolare sul lato opposto di Dimarco. Mondiale, a sorpresa, da protagonista con l'Inghilterra dove ha mostrato tutte le sue caratteristiche: veloce e bravo tecnicamente, il classe 2000 è diverso da Dumfries, più terzino che esterno a tutta fascia, meno impatto offensivo e più equilibratore. Insomma, sarà dura per gli avversari saltarlo nell'uno contro uno. Per lui non sarà un impatto nuovo con la Serie A, avendo già assaggiato il nostro campionato con la maglia del Genoa. Al Tottenham pochi bonus, la stagione più prolifica dell'esterno risale alla stagione 21/22 quando in Championship con il Nottingham Forest siglò 2 gol e 5 assist. Al fantacalcio è un primo slot: buoni voti per il modificatore difesa e con un Inter molto prolifica chissà che l'inglese non scopra i bonus.",
+        "fantaComment": "Inizio di stagione da urlo per Andy Diouf. La scorsa annata l'ha chiusa con 1 gol in 10 partite a voto, ma ha lasciato la sensazione di poter diventare un giocatore importante per l'Inter. Un'impressione che ha avuto in primis Chivu, che lo ha schierato a tutta fascia a destra dopo la partenza di Dumfries. Ora è arrivato Spence, saranno loro due a giocarsi il posto. E chissà che non possa diventare più di una semplice alternativa: al momento è dunque una possibile sorpresa a centrocampo, un colpo indicativamente da 3/4° slot. Nasce come mezzala, ma vista l'abbondanza la sensazione è che ormai giocherà stabilmente da esterno. Al fantacalcio va messo sempre a prescindere.",
         "quotazioni": {
           "qtA": 25,
-          "qtI": 1,
-          "diff": 24,
+          "qtI": 5,
+          "diff": 20,
           "qtAM": 25,
-          "qtIM": 1,
-          "diffM": 24,
+          "qtIM": 5,
+          "diffM": 20,
           "fvm": 80,
           "fvmM": 80,
-          "classic_8_mod_median": 5.2,
-          "classic_10_mod_median": 5.8,
-          "classic_12_mod_median": 6.6
+          "classic_8_mod_median": 2,
+          "classic_10_mod_median": 2.5,
+          "classic_12_mod_median": 3
         },
         "stats": {
-          "titolarita": 61,
-          "fantamedia": 5.61,
-          "mediaVoto": 5.71,
-          "pv": 30,
-          "presenze": 30,
-          "gol": 0,
-          "gf": 0,
+          "titolarita": 11,
+          "fantamedia": 6.4,
+          "mediaVoto": 6.15,
+          "pv": 19,
+          "presenze": 19,
+          "gol": 1,
+          "gf": 1,
           "gs": 0,
           "golSubiti": 0,
           "rp": 0,
@@ -18518,16 +18582,16 @@ export const INITIAL_TEAMS = [
           "rigoriSbagliati": 0,
           "assist": 0,
           "ass": 0,
-          "ammonizioni": 4,
-          "amm": 4,
+          "ammonizioni": 1,
+          "amm": 1,
           "espulsioni": 0,
           "esp": 0,
           "au": 0
         },
         "substitutes": [
-          "inter_bisseck_6217",
-          "inter_carlosaugusto_5877",
-          "inter_pavard_4177"
+          "inter_zielinski_152",
+          "inter_mkhitaryan_2529",
+          "inter_sucicp_7070"
         ],
         "slotId": "pos_5"
       },
@@ -18668,8 +18732,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "inter_zielinski_152",
-          "inter_diouf_6274",
-          "inter_mkhitaryan_2529"
+          "inter_mkhitaryan_2529",
+          "inter_sucicp_7070"
         ],
         "slotId": "pos_6"
       },
@@ -18711,7 +18775,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 256,
           "classic_8_mod_median": 13.4,
           "classic_10_mod_median": 14.2,
-          "classic_12_mod_median": 14.9
+          "classic_12_mod_median": 15
         },
         "stats": {
           "titolarita": 53,
@@ -18739,8 +18803,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "inter_zielinski_152",
-          "inter_diouf_6274",
-          "inter_mkhitaryan_2529"
+          "inter_mkhitaryan_2529",
+          "inter_sucicp_7070"
         ],
         "slotId": "pos_7"
       },
@@ -18781,8 +18845,8 @@ export const INITIAL_TEAMS = [
           "fvm": 112,
           "fvmM": 112,
           "classic_8_mod_median": 2.8,
-          "classic_10_mod_median": 3.9,
-          "classic_12_mod_median": 4.4
+          "classic_10_mod_median": 3.8,
+          "classic_12_mod_median": 4.2
         },
         "stats": {
           "titolarita": 47,
@@ -18810,8 +18874,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "inter_zielinski_152",
-          "inter_diouf_6274",
-          "inter_mkhitaryan_2529"
+          "inter_mkhitaryan_2529",
+          "inter_sucicp_7070"
         ],
         "slotId": "pos_8"
       },
@@ -18851,7 +18915,7 @@ export const INITIAL_TEAMS = [
           "diffM": 4,
           "fvm": 557,
           "fvmM": 557,
-          "classic_8_mod_median": 31.3,
+          "classic_8_mod_median": 31.4,
           "classic_10_mod_median": 33,
           "classic_12_mod_median": 32.8
         },
@@ -18923,7 +18987,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 454,
           "classic_8_mod_median": 22,
           "classic_10_mod_median": 25.2,
-          "classic_12_mod_median": 25.6
+          "classic_12_mod_median": 25.4
         },
         "stats": {
           "titolarita": 63,
@@ -18993,9 +19057,9 @@ export const INITIAL_TEAMS = [
           "diffM": 21,
           "fvm": 243,
           "fvmM": 243,
-          "classic_8_mod_median": 5.4,
-          "classic_10_mod_median": 7.4,
-          "classic_12_mod_median": 9.1
+          "classic_8_mod_median": 5.5,
+          "classic_10_mod_median": 7.6,
+          "classic_12_mod_median": 9.2
         },
         "stats": {
           "titolarita": 39,
@@ -19050,7 +19114,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Yann Bisseck, da seconda linea, si è imposto sempre di più diventando oggi un vero e proprio comprimario nell'undici titolare dell'Inter. Ancora incerto quando puntato, il tedesco ha però personalità da vendere con la palla tra i piedi e partecipa alla fase offensiva seguendo l'esempio di Bastoni. Tre i gol messi a segno nell'ultimo campionato, insieme a due assist, per una fanta-media tra le più alte in difesa di 6,65. Al Fantacalcio è un'ottima soluzione da modificatore difesa, le due ammonizioni totali lo testimoniano. Appena 23 le presenze stagionali, non è titolarissimo ma tra le tre competizioni troverà spazio e bonus in un Inter molto prolifica.",
+        "fantaComment": "Yann Bisseck, da seconda linea, si è imposto sempre di più diventando oggi un vero e proprio comprimario nell'undici titolare dell'Inter. Ancora incerto quando puntato, il tedesco ha però personalità da vendere con la palla tra i piedi e partecipa alla fase offensiva seguendo l'esempio di Bastoni. Tre i gol messi a segno nell'ultimo campionato, insieme a due assist, per una fanta-media tra le più alte in difesa di 6,65. Al fantacalcio è un'ottima soluzione da modificatore difesa, ma anche da bonus. Appena 23 le presenze stagionali l'anno scorso, non è un titolarissimo ma tra le tre competizioni troverà spazio e bonus visto che l'Inter è molto prolifica.",
         "quotazioni": {
           "qtA": 26,
           "qtI": 32,
@@ -19060,9 +19124,9 @@ export const INITIAL_TEAMS = [
           "diffM": -6,
           "fvm": 83,
           "fvmM": 83,
-          "classic_8_mod_median": 2.4,
+          "classic_8_mod_median": 2.5,
           "classic_10_mod_median": 3.2,
-          "classic_12_mod_median": 3.7
+          "classic_12_mod_median": 3.8
         },
         "stats": {
           "titolarita": 55,
@@ -19117,7 +19181,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": true,
         "positionNotes": "",
-        "fantaComment": "Si è rivisto il vero Piotr Zielinski con Chivu, quello ammirato negli anni a Napoli che non si era visto con Inzaghi. 6 gol e 2 assist in 30 partite a voto per il polacco, che può agire sia da mezzala che in cabina di regia se non c'è Calhanoglu e dopo l'arrivo di Jones questa diventa l'opzione più accreditata. E, se il turco non è in campo, è anche il vice rigorista nerazzurro (1 su 1 nella passata stagione dal dischetto). Un giocatore a tutti gli effetti ritrovato, e per questo è un giocatore di fascia alta al fantacalcio: classico colpo da terzo slot per il vostro centrocampo. A volte giocherà dall'inizio, altre entrerà a gara in corso ma se starà bene a voto andrà quasi sempre. E l'anno scorso di infortuni non ne ha praticamente mai avuti. ",
+        "fantaComment": "Si è rivisto il vero Piotr Zielinski con Chivu, quello ammirato negli anni a Napoli che non si era visto con Inzaghi. 6 gol e 2 assist in 30 partite a voto per il polacco, che può agire sia da mezzala che in cabina di regia se non c'è Calhanoglu e dopo l'arrivo di Jones questa diventa l'opzione più accreditata. E, se il turco non è in campo, è anche il vice rigorista nerazzurro (1 su 1 nella passata stagione dal dischetto). Un giocatore a tutti gli effetti ritrovato, al fantacalcio non è un top ma è molto importante. A volte giocherà dall'inizio, altre entrerà a gara in corso ma se starà bene a voto andrà quasi sempre. E l'anno scorso di infortuni non ne ha praticamente mai avuti.",
         "quotazioni": {
           "qtA": 38,
           "qtI": 43,
@@ -19154,73 +19218,6 @@ export const INITIAL_TEAMS = [
           "espulsioni": 0,
           "esp": 0,
           "au": 1
-        },
-        "substitutes": [],
-        "slotId": null
-      },
-      {
-        "id": "inter_diouf_6274",
-        "csvId": "6274",
-        "fantalabId": "ccaa3ad6-fe10-4ac8-b1c0-51d7b0f902aa",
-        "name": "Diouf",
-        "displayName": "Diouf",
-        "fullName": "Andy Diouf",
-        "teamName": "Inter",
-        "teamId": "inter",
-        "teamShort": "INT",
-        "role": "CC",
-        "classicRole": "C",
-        "mantraRole": "E;C",
-        "fantaRole": "C",
-        "photoUrl": "https://cdn.falsesoftware.com/players/37423138/v1.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/37423138/v1.webp",
-        "appetibilita": 90,
-        "status": "panchina",
-        "isAvailable": true,
-        "isPenaltyTaker": false,
-        "isFreeKickTaker": false,
-        "isCornerTaker": false,
-        "rigorista": false,
-        "punizioni": false,
-        "corner": false,
-        "positionNotes": "",
-        "fantaComment": "Pre-campionato da urlo per Andy Diouf. La scorsa stagione l'ha chiusa con 1 gol in 10 partite a voto, ma ha lasciato la sensazione di poter diventare un giocatore importante per l'Inter. Un'impressione che ha avuto in primis Chivu, che lo ha schierato a tutta fascia a destra dopo la partenza di Dumfries per tutto il pre-campionato e lo ha preferito a Luis Henrique. Ora è arrivato Spence, saranno loro due a giocarsi il posto. E chissà che non possa diventare più di una semplice alternativa: al momento è dunque una possibile sorpresa a centrocampo, un colpo indicativamente da 4°/5° slot. Nasce come mezzala, ma vista l'abbondanza la sensazione è che possa trovare più spazio largo che in mediana.",
-        "quotazioni": {
-          "qtA": 25,
-          "qtI": 5,
-          "diff": 20,
-          "qtAM": 25,
-          "qtIM": 5,
-          "diffM": 20,
-          "fvm": 80,
-          "fvmM": 80,
-          "classic_8_mod_median": 1.9,
-          "classic_10_mod_median": 2.4,
-          "classic_12_mod_median": 3
-        },
-        "stats": {
-          "titolarita": 11,
-          "fantamedia": 6.4,
-          "mediaVoto": 6.15,
-          "pv": 19,
-          "presenze": 19,
-          "gol": 1,
-          "gf": 1,
-          "gs": 0,
-          "golSubiti": 0,
-          "rp": 0,
-          "rc": 0,
-          "rPlus": 0,
-          "rMinus": 0,
-          "rigoriSegnati": 0,
-          "rigoriSbagliati": 0,
-          "assist": 0,
-          "ass": 0,
-          "ammonizioni": 1,
-          "amm": 1,
-          "espulsioni": 0,
-          "esp": 0,
-          "au": 0
         },
         "substitutes": [],
         "slotId": null
@@ -19464,7 +19461,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 109,
           "classic_8_mod_median": 0.9,
           "classic_10_mod_median": 1.8,
-          "classic_12_mod_median": 2.5
+          "classic_12_mod_median": 2.6
         },
         "stats": {
           "titolarita": 26,
@@ -19598,7 +19595,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 29,
           "classic_8_mod_median": 0.3,
           "classic_10_mod_median": 0.2,
-          "classic_12_mod_median": 0.3
+          "classic_12_mod_median": 0.4
         },
         "stats": {
           "titolarita": 58,
@@ -19623,6 +19620,73 @@ export const INITIAL_TEAMS = [
           "espulsioni": 0,
           "esp": 0,
           "au": 1
+        },
+        "substitutes": [],
+        "slotId": null
+      },
+      {
+        "id": "inter_spence_5982",
+        "csvId": "5982",
+        "fantalabId": "ae4ddedd-7c30-471d-be3a-e3adb7dc765e",
+        "name": "Spence",
+        "displayName": "Spence",
+        "fullName": "Djed Spence",
+        "teamName": "Inter",
+        "teamId": "inter",
+        "teamShort": "INT",
+        "role": "DC",
+        "classicRole": "D",
+        "mantraRole": "E",
+        "fantaRole": "D",
+        "photoUrl": "https://cdn.falsesoftware.com/players/7026573/v2.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/7026573/v2.webp",
+        "appetibilita": 80,
+        "status": "panchina",
+        "isAvailable": true,
+        "isPenaltyTaker": false,
+        "isFreeKickTaker": false,
+        "isCornerTaker": false,
+        "rigorista": false,
+        "punizioni": false,
+        "corner": false,
+        "positionNotes": "",
+        "fantaComment": "Djed Spence arriva all'Inter e in Serie A prendendosi la fascia destra che fu in passato di Denzel Dumfries. Operazione da circa 35 milioni, non economica per i nerazzurri. Mondiale, a sorpresa, da protagonista con l'Inghilterra dove ha mostrato tutte le sue caratteristiche. Per lui non sarà un impatto nuovo con la Serie A, avendo già assaggiato il nostro campionato con la maglia del Genoa. Al Tottenham pochi bonus, la stagione più prolifica dell'esterno risale alla stagione 2021/22 quando in Championship con il Nottingham Forest siglò 2 gol e 5 assist. Al fantacalcio è un primo slot principalmente perché gioca nell'Inter: buoni voti per il modificatore difesa e con un Inter molto prolifica chissà che l'inglese non scopra i bonus. Il problema è la concorrenza di Diouf, che fa sul serio, quindi Spence non avrà il posto fisso. In più partirà un po' in ritardo e non potrà essere subito titolare.",
+        "quotazioni": {
+          "qtA": 25,
+          "qtI": 1,
+          "diff": 24,
+          "qtAM": 25,
+          "qtIM": 1,
+          "diffM": 24,
+          "fvm": 80,
+          "fvmM": 80,
+          "classic_8_mod_median": 5.2,
+          "classic_10_mod_median": 5.8,
+          "classic_12_mod_median": 6.6
+        },
+        "stats": {
+          "titolarita": 61,
+          "fantamedia": 5.61,
+          "mediaVoto": 5.71,
+          "pv": 30,
+          "presenze": 30,
+          "gol": 0,
+          "gf": 0,
+          "gs": 0,
+          "golSubiti": 0,
+          "rp": 0,
+          "rc": 0,
+          "rPlus": 0,
+          "rMinus": 0,
+          "rigoriSegnati": 0,
+          "rigoriSbagliati": 0,
+          "assist": 0,
+          "ass": 0,
+          "ammonizioni": 4,
+          "amm": 4,
+          "espulsioni": 0,
+          "esp": 0,
+          "au": 0
         },
         "substitutes": [],
         "slotId": null
@@ -19787,7 +19851,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Aleksandar Stankovic è di fatto il primo nuovo acquisto dell'Inter. In Belgio, il figlio di Dejan è esploso con 9 gol (di cui 2 in Champions League) e 5 assist in stagione mettendo in mostra le doti tecniche e fisiche di una mezzala moderna che si sposerebbe bene con il 3-5-2 di Chivu. Il centrocampo dell'Inter è attualmente folto ma Frattesi rimane in uscita e l'Inter potrebbe avere il suo sostituto già in casa. La palla sulla sua permanenza spetterà a Chivu: nel caso, al fantacalcio può essere un vero e proprio jolly. I tanti impegni dell'Inter potrebbero aprirgli per la prima volta le porte della Serie A. Occhio ai calci di punizione se non ci sono in campo i due specialisti Calhanoglu e Dimarco: al Bruges sono arrivati due gol direttamente dai piazzati.",
+        "fantaComment": "Aleksandar Stankovic è di fatto nuovo acquisto per l'Inter. In Belgio, il figlio di Dejan è esploso con 9 gol (di cui 2 in Champions League) e 5 assist in stagione mettendo in mostra le doti tecniche e fisiche di un centrocampista completo. Al fantacalcio può essere un vero e proprio jolly. I tanti impegni dell'Inter potrebbero aprirgli per la prima volta le porte della Serie A. Occhio ai calci di punizione se non ci sono in campo i due specialisti Calhanoglu e Dimarco: al Bruges sono arrivati due gol direttamente dai piazzati.",
         "quotazioni": {
           "qtA": 4,
           "qtI": 1,
@@ -20126,22 +20190,22 @@ export const INITIAL_TEAMS = [
         "slotId": "pos_4"
       },
       "pos_5": {
-        "id": "milan_saelemaekers_4892",
-        "csvId": "4892",
-        "fantalabId": "e8e7494e-aa9d-4469-9026-8615bbb45f32",
-        "name": "Saelemaekers",
-        "displayName": "Saelemaekers",
-        "fullName": "Alexis Saelemaekers",
+        "id": "milan_chukwueze_4856",
+        "csvId": "4856",
+        "fantalabId": "98d71181-5ff4-4e27-8603-a8d8c4ccfb49",
+        "name": "Chukwueze",
+        "displayName": "Chukwueze",
+        "fullName": "Samuel Chukwueze",
         "teamName": "Milan",
         "teamId": "milan",
         "teamShort": "MIL",
         "role": "ALA",
         "classicRole": "C",
-        "mantraRole": "E;W",
+        "mantraRole": "W",
         "fantaRole": "C",
-        "photoUrl": "https://cdn.falsesoftware.com/players/538861/v1.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/538861/v1.webp",
-        "appetibilita": 90,
+        "photoUrl": "https://cdn.falsesoftware.com/players/15434627/v2.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/15434627/v2.webp",
+        "appetibilita": 85,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -20151,26 +20215,26 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Alexis Saelemaekers era fondamentale per Allegri, ha di fatto giocato tutta la stagione come quinto di destra nel Milan. Ora è arrivato Amorim, che lo vuole provare sia a tutta fascia a destra che da vice Pulisic in posizione più avanzata, l'ultima parola al campo. E chiaramente all'occorrenza può agire anche a sinistra. Il belga ha chiuso la scorsa stagione a 3 gol e 3 assist in 35 partite a voto, come tutto il Milan è andato in calando nel corso della stagione dopo una partenza più che positiva. Sulla carta, può avere meno il posto fisso rispetto all'anno scorso ma comunque di spazio ne avrà nelle rotazioni, considerando che c'è anche l'Europa League: siamo sul 3°/4° slot per il vostro centrocampo.",
+        "fantaComment": "Samuel Chukwueze è tornato per restare. Amorim lo ha confermato nella rosa del Milan, lo ritiene un giocatore utile per il suo 3-4-2-1: inizialmente è partito come titolare dopo i buoni segnali dal precampionato, alla lunga avrà un po' di alternanza. Proverà a farsi trovare pronto quando verrà chiamato in causa e poi chissà. Vuole fare di tutto per avere uno spazio in questo Milan.",
         "quotazioni": {
-          "qtA": 22,
-          "qtI": 10,
-          "diff": 12,
-          "qtAM": 22,
-          "qtIM": 10,
-          "diffM": 12,
-          "fvm": 70,
-          "fvmM": 70,
-          "classic_8_mod_median": 2.2,
-          "classic_10_mod_median": 3.2,
-          "classic_12_mod_median": 3.8
+          "qtA": 23,
+          "qtI": 20,
+          "diff": 3,
+          "qtAM": 23,
+          "qtIM": 20,
+          "diffM": 3,
+          "fvm": 74,
+          "fvmM": 74,
+          "classic_8_mod_median": 0.8,
+          "classic_10_mod_median": 1,
+          "classic_12_mod_median": 1.6
         },
         "stats": {
-          "titolarita": 87,
-          "fantamedia": 6.41,
-          "mediaVoto": 6.14,
-          "pv": 35,
-          "presenze": 35,
+          "titolarita": 26,
+          "fantamedia": 6.0,
+          "mediaVoto": 6.0,
+          "pv": 23,
+          "presenze": 23,
           "gol": 3,
           "gf": 3,
           "gs": 0,
@@ -20181,18 +20245,18 @@ export const INITIAL_TEAMS = [
           "rMinus": 0,
           "rigoriSegnati": 0,
           "rigoriSbagliati": 0,
-          "assist": 3,
-          "ass": 3,
-          "ammonizioni": 5,
-          "amm": 5,
+          "assist": 4,
+          "ass": 4,
+          "ammonizioni": 0,
+          "amm": 0,
           "espulsioni": 0,
           "esp": 0,
           "au": 0
         },
         "substitutes": [
-          "milan_cissa_6618",
-          "milan_chukwueze_4856",
-          "milan_jashari_7203"
+          "milan_jashari_7203",
+          "milan_riccis_5453",
+          "milan_fofanay_4686"
         ],
         "slotId": "pos_5"
       },
@@ -20222,7 +20286,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Diego Moreira è un nuovo rinforzo del Milan di Ruben Amorim. Operazione importantissima per i rossoneri, arriva dallo Strasburgo per circa 50 milioni di euro più bonus. Si tratta di un esterno di nazionalità belga classe 2004 e di piede mancino, che predilige la fascia sinistra ma è stato impiegato anche a destra. Arriva per rinforzare la batteria degli esterni, anche se può giocare più avanzato all'occorrenza: grandi accelerazioni e sgroppate palla al piede, i rossoneri sperano di trovare un 'nuovo Theo Hernandez'. Nelle idee del Milan ha tutto per essere il titolare a sinistra, si giocherà il posto con Bartesaghi inizialmente ma Moreira può presto diventare la primissima scelta. 4 presenze nella nazionale maggiore belga, ha scelto il Belgio dopo aver fatto tutta la trafila con le giovanili del Portogallo (ha la doppia nazionalità). 4 gol e 7 assist in 27 partite nell'ultima Ligue 1, è il suo record tra gol e assist da quando è professionista. Nell'ultima stagione ha perso 9 partite per un problema agli adduttori tra febbraio e aprile, ma poi ha recuperato e arriva integro e pronto in rossonero. Al fantacalcio è listato centrocampista: siamo sui 15 crediti circa in partenza, può essere un 3/4° slot.",
+        "fantaComment": "Diego Moreira è un nuovo rinforzo del Milan di Ruben Amorim. Operazione molto importante per i rossoneri, arriva dallo Strasburgo per circa 50 milioni di euro più bonus. Si tratta di un esterno di nazionalità belga classe 2004 e di piede mancino, che predilige la fascia sinistra ma è stato impiegato anche a destra (ruolo in cui ha detto di volerlo provare Amorim). Arriva per rinforzare la batteria degli esterni, anche se può giocare più avanzato all'occorrenza: grandi accelerazioni e sgroppate palla al piede, i rossoneri sperano di trovare un 'nuovo Theo Hernandez'. Nelle idee del Milan ha tutto per essere il titolare a sinistra, si giocherà il posto con Bartesaghi inizialmente ma Moreira può presto diventare la primissima scelta. 4 presenze nella nazionale maggiore belga, ha scelto il Belgio dopo aver fatto tutta la trafila con le giovanili del Portogallo (ha la doppia nazionalità). 4 gol e 7 assist in 27 partite nell'ultima Ligue 1, è il suo record tra gol e assist da quando è professionista. Nell'ultima stagione ha perso 9 partite per un problema agli adduttori tra febbraio e aprile, ma poi ha recuperato e arriva integro e pronto in rossonero. Al fantacalcio è listato centrocampista: siamo sui 15 crediti circa in partenza, può essere un 3/4° slot.",
         "quotazioni": {
           "qtA": 26,
           "qtI": 1,
@@ -20232,9 +20296,9 @@ export const INITIAL_TEAMS = [
           "diffM": 25,
           "fvm": 83,
           "fvmM": 83,
-          "classic_8_mod_median": 4.2,
-          "classic_10_mod_median": 5.8,
-          "classic_12_mod_median": 6.7
+          "classic_8_mod_median": 4.1,
+          "classic_10_mod_median": 5.6,
+          "classic_12_mod_median": 6.6
         },
         "stats": {
           "titolarita": 61,
@@ -20261,9 +20325,9 @@ export const INITIAL_TEAMS = [
           "au": 0
         },
         "substitutes": [
-          "milan_cissa_6618",
-          "milan_chukwueze_4856",
-          "milan_jashari_7203"
+          "milan_jashari_7203",
+          "milan_riccis_5453",
+          "milan_fofanay_4686"
         ],
         "slotId": "pos_8"
       },
@@ -20303,9 +20367,9 @@ export const INITIAL_TEAMS = [
           "diffM": 2,
           "fvm": 154,
           "fvmM": 154,
-          "classic_8_mod_median": 6.8,
+          "classic_8_mod_median": 7,
           "classic_10_mod_median": 8,
-          "classic_12_mod_median": 8.5
+          "classic_12_mod_median": 8.6
         },
         "stats": {
           "titolarita": 74,
@@ -20332,9 +20396,9 @@ export const INITIAL_TEAMS = [
           "au": 0
         },
         "substitutes": [
-          "milan_cissa_6618",
-          "milan_chukwueze_4856",
-          "milan_jashari_7203"
+          "milan_jashari_7203",
+          "milan_riccis_5453",
+          "milan_fofanay_4686"
         ],
         "slotId": "pos_6"
       },
@@ -20374,7 +20438,7 @@ export const INITIAL_TEAMS = [
           "diffM": -2,
           "fvm": 61,
           "fvmM": 61,
-          "classic_8_mod_median": 2.5,
+          "classic_8_mod_median": 2.4,
           "classic_10_mod_median": 3,
           "classic_12_mod_median": 3.7
         },
@@ -20403,9 +20467,9 @@ export const INITIAL_TEAMS = [
           "au": 0
         },
         "substitutes": [
-          "milan_cissa_6618",
-          "milan_chukwueze_4856",
-          "milan_jashari_7203"
+          "milan_jashari_7203",
+          "milan_riccis_5453",
+          "milan_fofanay_4686"
         ],
         "slotId": "pos_7"
       },
@@ -20446,7 +20510,7 @@ export const INITIAL_TEAMS = [
           "fvm": 224,
           "fvmM": 224,
           "classic_8_mod_median": 11.4,
-          "classic_10_mod_median": 13.2,
+          "classic_10_mod_median": 13,
           "classic_12_mod_median": 14
         },
         "stats": {
@@ -20474,29 +20538,29 @@ export const INITIAL_TEAMS = [
           "au": 0
         },
         "substitutes": [
-          "milan_cissa_6618",
-          "milan_chukwueze_4856",
-          "milan_jashari_7203"
+          "milan_jashari_7203",
+          "milan_riccis_5453",
+          "milan_fofanay_4686"
         ],
         "slotId": "pos_9"
       },
       "pos_10": {
-        "id": "milan_leao_4510",
-        "csvId": "4510",
-        "fantalabId": "75bc7479-533c-4eb6-94dd-6f7194d1e114",
-        "name": "Leao",
-        "displayName": "Leao",
-        "fullName": "Rafael Leão",
+        "id": "milan_cissa_6618",
+        "csvId": "6618",
+        "fantalabId": "faff68a8-6487-469e-add5-36912ee075a1",
+        "name": "Cissè A.",
+        "displayName": "Cissè A.",
+        "fullName": "Alphadjo Cissè",
         "teamName": "Milan",
         "teamId": "milan",
         "teamShort": "MIL",
-        "role": "ATT",
-        "classicRole": "A",
-        "mantraRole": "A",
-        "fantaRole": "A",
-        "photoUrl": "https://cdn.falsesoftware.com/players/540251/v1.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/540251/v1.webp",
-        "appetibilita": 96,
+        "role": "TRQ",
+        "classicRole": "C",
+        "mantraRole": "W;T",
+        "fantaRole": "C",
+        "photoUrl": "https://cdn.falsesoftware.com/players/37622541/v2.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/37622541/v2.webp",
+        "appetibilita": 84,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -20506,47 +20570,48 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "",
+        "fantaComment": "“I love Cisse”. Ruben Amorim si è sbilanciato così in conferenza stampa su Alphadjo Cisse, classe 2006 del Milan. E il baby rossonero si è preso subito la scena a Torino: destro a giro e gol, è suo il primo gol del Milan della stagione e anche dell’era Amorim. Nella scorsa stagione era in prestito al Catanzaro (6 gol e 1 assist in 22 presenze), ha fatto tutta la trafila nelle giovanili del Verona: è un centrocampista offensivo di piede destro, dotato di tecnica e grande velocità palla al piede. Deve chiaramente ancora migliorare in alcune scelte e situazioni di gioco, ma Amorim stravede per lui. Ha bloccato una sua possibile uscita in state: lo vuole nel suo Milan. Non possiamo parlare di un titolare fisso perché c’è grande abbondanza, quindi non esagerate con la spesa per l'hype post-Torino; ma Amorim lo vuole in rosa e ne apprezza le qualità calcistiche e non solo.",
         "quotazioni": {
-          "qtA": 78,
-          "qtI": 85,
-          "diff": -7,
-          "qtAM": 78,
-          "qtIM": 85,
-          "diffM": -7,
-          "fvm": 250,
-          "fvmM": 250,
-          "classic_8_mod_median": 3.6,
-          "classic_10_mod_median": 5.2,
-          "classic_12_mod_median": 6.2
+          "qtA": 9,
+          "qtI": 1,
+          "diff": 8,
+          "qtAM": 9,
+          "qtIM": 1,
+          "diffM": 8,
+          "fvm": 29,
+          "fvmM": 29,
+          "classic_8_mod_median": 0.6,
+          "classic_10_mod_median": 0.4,
+          "classic_12_mod_median": 0.3
         },
         "stats": {
-          "titolarita": 61,
-          "fantamedia": 6.86,
-          "mediaVoto": 5.88,
-          "pv": 29,
-          "presenze": 29,
-          "gol": 7,
-          "gf": 7,
+          "titolarita": 55,
+          "fantamedia": 6.0,
+          "mediaVoto": 6.0,
+          "pv": 22,
+          "presenze": 22,
+          "gol": 6,
+          "gf": 6,
           "gs": 0,
           "golSubiti": 0,
           "rp": 0,
           "rc": 0,
-          "rPlus": 2,
+          "rPlus": 0,
           "rMinus": 0,
-          "rigoriSegnati": 2,
+          "rigoriSegnati": 0,
           "rigoriSbagliati": 0,
-          "assist": 3,
-          "ass": 3,
-          "ammonizioni": 5,
-          "amm": 5,
+          "assist": 1,
+          "ass": 1,
+          "ammonizioni": 3,
+          "amm": 3,
           "espulsioni": 0,
           "esp": 0,
           "au": 0
         },
         "substitutes": [
-          "milan_camarda_6519",
-          "milan_gimenez_7008"
+          "milan_jashari_7203",
+          "milan_riccis_5453",
+          "milan_fofanay_4686"
         ],
         "slotId": "pos_10"
       },
@@ -20586,9 +20651,9 @@ export const INITIAL_TEAMS = [
           "diffM": -1,
           "fvm": 435,
           "fvmM": 435,
-          "classic_8_mod_median": 23.8,
+          "classic_8_mod_median": 23.9,
           "classic_10_mod_median": 27,
-          "classic_12_mod_median": 27.3
+          "classic_12_mod_median": 27.4
         },
         "stats": {
           "titolarita": 34,
@@ -20615,6 +20680,7 @@ export const INITIAL_TEAMS = [
           "au": 0
         },
         "substitutes": [
+          "milan_leao_4510",
           "milan_camarda_6519",
           "milan_gimenez_7008"
         ],
@@ -20622,140 +20688,6 @@ export const INITIAL_TEAMS = [
       }
     },
     "bench": [
-      {
-        "id": "milan_cissa_6618",
-        "csvId": "6618",
-        "fantalabId": "faff68a8-6487-469e-add5-36912ee075a1",
-        "name": "Cissè A.",
-        "displayName": "Cissè A.",
-        "fullName": "Alphadjo Cissè",
-        "teamName": "Milan",
-        "teamId": "milan",
-        "teamShort": "MIL",
-        "role": "TRQ",
-        "classicRole": "C",
-        "mantraRole": "W;T",
-        "fantaRole": "C",
-        "photoUrl": "https://cdn.falsesoftware.com/players/37622541/v2.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/37622541/v2.webp",
-        "appetibilita": 84,
-        "status": "panchina",
-        "isAvailable": true,
-        "isPenaltyTaker": false,
-        "isFreeKickTaker": false,
-        "isCornerTaker": false,
-        "rigorista": false,
-        "punizioni": false,
-        "corner": false,
-        "positionNotes": "",
-        "fantaComment": "“I love Cisse”. Ruben Amorim si è sbilanciato così in conferenza stampa su Alphadjo Cisse, classe 2006 del Milan. E il baby rossonero si è preso subito la scena a Torino: destro a giro e gol, è suo il primo gol del Milan della stagione e anche dell’era Amorim. Nella scorsa stagione era in prestito al Catanzaro (6 gol e 1 assist in 22 presenze), ha fatto tutta la trafila nelle giovanili del Verona: è un centrocampista offensivo di piede destro, dotato di tecnica e grande velocità palla al piede. Deve chiaramente ancora migliorare in alcune scelte e situazioni di gioco, ma Amorim stravede per lui. Ha bloccato una sua possibile uscita in state: lo vuole nel suo Milan. Non possiamo parlare di un titolare fisso perché c’è grande abbondanza, quindi non esagerate con la spesa per l'hype post-Torino; ma Amorim lo vuole in rosa e ne apprezza le qualità calcistiche e non solo.",
-        "quotazioni": {
-          "qtA": 9,
-          "qtI": 1,
-          "diff": 8,
-          "qtAM": 9,
-          "qtIM": 1,
-          "diffM": 8,
-          "fvm": 29,
-          "fvmM": 29,
-          "classic_8_mod_median": 0.4,
-          "classic_10_mod_median": 0.3,
-          "classic_12_mod_median": 0.3
-        },
-        "stats": {
-          "titolarita": 55,
-          "fantamedia": 6.0,
-          "mediaVoto": 6.0,
-          "pv": 22,
-          "presenze": 22,
-          "gol": 6,
-          "gf": 6,
-          "gs": 0,
-          "golSubiti": 0,
-          "rp": 0,
-          "rc": 0,
-          "rPlus": 0,
-          "rMinus": 0,
-          "rigoriSegnati": 0,
-          "rigoriSbagliati": 0,
-          "assist": 1,
-          "ass": 1,
-          "ammonizioni": 3,
-          "amm": 3,
-          "espulsioni": 0,
-          "esp": 0,
-          "au": 0
-        },
-        "substitutes": [],
-        "slotId": null
-      },
-      {
-        "id": "milan_chukwueze_4856",
-        "csvId": "4856",
-        "fantalabId": "98d71181-5ff4-4e27-8603-a8d8c4ccfb49",
-        "name": "Chukwueze",
-        "displayName": "Chukwueze",
-        "fullName": "Samuel Chukwueze",
-        "teamName": "Milan",
-        "teamId": "milan",
-        "teamShort": "MIL",
-        "role": "ALA",
-        "classicRole": "C",
-        "mantraRole": "W",
-        "fantaRole": "C",
-        "photoUrl": "https://cdn.falsesoftware.com/players/15434627/v2.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/15434627/v2.webp",
-        "appetibilita": 85,
-        "status": "panchina",
-        "isAvailable": true,
-        "isPenaltyTaker": false,
-        "isFreeKickTaker": false,
-        "isCornerTaker": false,
-        "rigorista": false,
-        "punizioni": false,
-        "corner": false,
-        "positionNotes": "",
-        "fantaComment": "Samuel Chukwueze è tornato per restare. Amorim lo ha confermato nella rosa del Milan, lo ritiene un giocatore utile per il suo 3-4-2-1: inizialmente più come alternativa che come titolare, più da spezzoni nella ripresa o rotazioni per l'Europa League. Ma nel pre-campionato ha mandato diversi segnali importanti da quinto a destra, con gol e assist: proverà a farsi trovare pronto quando verrà chiamato in causa e chissà. Vuole fare di tutto per avere uno spazio in questo Milan.",
-        "quotazioni": {
-          "qtA": 23,
-          "qtI": 20,
-          "diff": 3,
-          "qtAM": 23,
-          "qtIM": 20,
-          "diffM": 3,
-          "fvm": 74,
-          "fvmM": 74,
-          "classic_8_mod_median": 0.7,
-          "classic_10_mod_median": 1,
-          "classic_12_mod_median": 1.6
-        },
-        "stats": {
-          "titolarita": 26,
-          "fantamedia": 6.0,
-          "mediaVoto": 6.0,
-          "pv": 23,
-          "presenze": 23,
-          "gol": 3,
-          "gf": 3,
-          "gs": 0,
-          "golSubiti": 0,
-          "rp": 0,
-          "rc": 0,
-          "rPlus": 0,
-          "rMinus": 0,
-          "rigoriSegnati": 0,
-          "rigoriSbagliati": 0,
-          "assist": 4,
-          "ass": 4,
-          "ammonizioni": 0,
-          "amm": 0,
-          "espulsioni": 0,
-          "esp": 0,
-          "au": 0
-        },
-        "substitutes": [],
-        "slotId": null
-      },
       {
         "id": "milan_dewinter_5739",
         "csvId": "5739",
@@ -20816,6 +20748,73 @@ export const INITIAL_TEAMS = [
           "ass": 1,
           "ammonizioni": 1,
           "amm": 1,
+          "espulsioni": 0,
+          "esp": 0,
+          "au": 0
+        },
+        "substitutes": [],
+        "slotId": null
+      },
+      {
+        "id": "milan_leao_4510",
+        "csvId": "4510",
+        "fantalabId": "75bc7479-533c-4eb6-94dd-6f7194d1e114",
+        "name": "Leao",
+        "displayName": "Leao",
+        "fullName": "Rafael Leão",
+        "teamName": "Milan",
+        "teamId": "milan",
+        "teamShort": "MIL",
+        "role": "ATT",
+        "classicRole": "A",
+        "mantraRole": "A",
+        "fantaRole": "A",
+        "photoUrl": "https://cdn.falsesoftware.com/players/540251/v1.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/540251/v1.webp",
+        "appetibilita": 96,
+        "status": "panchina",
+        "isAvailable": true,
+        "isPenaltyTaker": false,
+        "isFreeKickTaker": false,
+        "isCornerTaker": false,
+        "rigorista": false,
+        "punizioni": false,
+        "corner": false,
+        "positionNotes": "",
+        "fantaComment": "",
+        "quotazioni": {
+          "qtA": 78,
+          "qtI": 85,
+          "diff": -7,
+          "qtAM": 78,
+          "qtIM": 85,
+          "diffM": -7,
+          "fvm": 250,
+          "fvmM": 250,
+          "classic_8_mod_median": 3.5,
+          "classic_10_mod_median": 5,
+          "classic_12_mod_median": 6
+        },
+        "stats": {
+          "titolarita": 61,
+          "fantamedia": 6.86,
+          "mediaVoto": 5.88,
+          "pv": 29,
+          "presenze": 29,
+          "gol": 7,
+          "gf": 7,
+          "gs": 0,
+          "golSubiti": 0,
+          "rp": 0,
+          "rc": 0,
+          "rPlus": 2,
+          "rMinus": 0,
+          "rigoriSegnati": 2,
+          "rigoriSbagliati": 0,
+          "assist": 3,
+          "ass": 3,
+          "ammonizioni": 5,
+          "amm": 5,
           "espulsioni": 0,
           "esp": 0,
           "au": 0
@@ -21062,7 +21061,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 42,
           "classic_8_mod_median": 1.8,
           "classic_10_mod_median": 2.2,
-          "classic_12_mod_median": 2.7
+          "classic_12_mod_median": 2.6
         },
         "stats": {
           "titolarita": 71,
@@ -21117,7 +21116,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": null,
+        "fantaComment": "Pervis Estupinan è rimasto al MIlan e Amorim sta puntando su di lui. È stata una sorpresa di questo inizio di stagione, perché sembrava pronto a partire. Per ora sta giocando e può avere spazio nel corso della stagione, anche se al fantacalcio non è garanzia di buoni voti.",
         "quotazioni": {
           "qtA": 4,
           "qtI": 2,
@@ -21127,7 +21126,7 @@ export const INITIAL_TEAMS = [
           "diffM": 2,
           "fvm": 13,
           "fvmM": 13,
-          "classic_8_mod_median": 0.3,
+          "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0.2
         },
@@ -21196,7 +21195,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 13,
           "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
-          "classic_12_mod_median": 0
+          "classic_12_mod_median": 0.2
         },
         "stats": {
           "titolarita": 13,
@@ -21218,6 +21217,73 @@ export const INITIAL_TEAMS = [
           "ass": 0,
           "ammonizioni": 1,
           "amm": 1,
+          "espulsioni": 0,
+          "esp": 0,
+          "au": 0
+        },
+        "substitutes": [],
+        "slotId": null
+      },
+      {
+        "id": "milan_saelemaekers_4892",
+        "csvId": "4892",
+        "fantalabId": "e8e7494e-aa9d-4469-9026-8615bbb45f32",
+        "name": "Saelemaekers",
+        "displayName": "Saelemaekers",
+        "fullName": "Alexis Saelemaekers",
+        "teamName": "Milan",
+        "teamId": "milan",
+        "teamShort": "MIL",
+        "role": "ALA",
+        "classicRole": "C",
+        "mantraRole": "E;W",
+        "fantaRole": "C",
+        "photoUrl": "https://cdn.falsesoftware.com/players/538861/v1.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/538861/v1.webp",
+        "appetibilita": 90,
+        "status": "panchina",
+        "isAvailable": true,
+        "isPenaltyTaker": false,
+        "isFreeKickTaker": false,
+        "isCornerTaker": false,
+        "rigorista": false,
+        "punizioni": false,
+        "corner": false,
+        "positionNotes": "",
+        "fantaComment": "Alexis Saelemaekers era fondamentale per Allegri, ha di fatto giocato tutta la stagione come quinto di destra nel Milan. Ora è arrivato Amorim, che lo vuole provare sia a tutta fascia a destra che da vice Pulisic in posizione più avanzata, l'ultima parola al campo. E chiaramente all'occorrenza può agire anche a sinistra. Il belga ha chiuso la scorsa stagione a 3 gol e 3 assist in 35 partite a voto, come tutto il Milan è andato in calando nel corso della stagione dopo una partenza più che positiva. Sulla carta, può avere meno il posto fisso rispetto all'anno scorso ma comunque di spazio ne avrà nelle rotazioni, considerando che c'è anche l'Europa League: siamo sul 4° slot per il vostro centrocampo.",
+        "quotazioni": {
+          "qtA": 22,
+          "qtI": 10,
+          "diff": 12,
+          "qtAM": 22,
+          "qtIM": 10,
+          "diffM": 12,
+          "fvm": 70,
+          "fvmM": 70,
+          "classic_8_mod_median": 2.2,
+          "classic_10_mod_median": 3.2,
+          "classic_12_mod_median": 3.8
+        },
+        "stats": {
+          "titolarita": 87,
+          "fantamedia": 6.41,
+          "mediaVoto": 6.14,
+          "pv": 35,
+          "presenze": 35,
+          "gol": 3,
+          "gf": 3,
+          "gs": 0,
+          "golSubiti": 0,
+          "rp": 0,
+          "rc": 0,
+          "rPlus": 0,
+          "rMinus": 0,
+          "rigoriSegnati": 0,
+          "rigoriSbagliati": 0,
+          "assist": 3,
+          "ass": 3,
+          "ammonizioni": 5,
+          "amm": 5,
           "espulsioni": 0,
           "esp": 0,
           "au": 0
@@ -21519,7 +21585,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": null,
+        "fantaComment": "Ruben Loftus-Cheek ogni anno ci riprova, fa lo stesso in questa stagione. Un buon inizio con Amorim, che gli sta dando fiducia, ma bisogna vedere quanto durerà, soprattutto dal punto di vista fisico. Gli infortuni, infatti, sono il suo punto debole. Vedremo in questa stagione…",
         "quotazioni": {
           "qtA": 2,
           "qtI": 9,
@@ -21938,7 +22004,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Giovanni Di Lorenzo a 32 anni rimane capitano e punto fermo della difesa del Napoli sulla fascia destra. Nonostante i problemi fisici della passata stagione, il veterano rimane una certezza su tutti e due i lati del campo. Se la produzione offensiva, di spinta è calata negli anni, il suo contributo a gol e assist non è venuto meno, sia schierato in una difesa a quattro o tre, e i 2 gol e 1 assist in 26 presenze dell'ultima stagione ne sono una testimonianza. Può essere un fattore per il modificatore difesa, vista la sua continuità di rendimento (6,33 di fantamedia).",
+        "fantaComment": "Giovanni Di Lorenzo a 32 anni rimane capitano e punto fermo della difesa del Napoli sulla fascia destra. Nonostante i problemi fisici della passata stagione, il difensore rimane una certezza. Se la produzione offensiva, di spinta è calata negli anni, il suo contributo a gol e assist non è venuto meno, sia schierato in una difesa a quattro o tre, e i 2 gol e 1 assist in 26 presenze dell'ultima stagione ne sono una testimonianza. Può essere un fattore per il modificatore difesa, vista la sua continuità di rendimento (6,33 di fanta-media).",
         "quotazioni": {
           "qtA": 26,
           "qtI": 25,
@@ -22090,7 +22156,7 @@ export const INITIAL_TEAMS = [
           "diffM": 15,
           "fvm": 51,
           "fvmM": 51,
-          "classic_8_mod_median": 0.6,
+          "classic_8_mod_median": 0.7,
           "classic_10_mod_median": 1.2,
           "classic_12_mod_median": 2
         },
@@ -22151,7 +22217,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Leonardo Spinazzola sarà ancora titolare nel nuovo Napoli di Massimiliano Allegri. Il 33enne, da sempre penalizzato al fantacalcio per i suoi infortuni, ha trovato molta continuità nell'ultima stagione, conclusa con 30 presenze condite da ben 3 gol e 3 assist e appena 1 ammonizione. Certo, spesso il terzino sinistro è stato gestito a livello di minutaggio per non sovraccaricarlo (58% di partite da titolare) ma il suo contributo a livello di bonus e voti non è mai mancato. Il 6,55 di fanta-media è una prova della sua affidabilità. Gutierrez è partito, l'italiano parte davanti su Olivera grazie alla sua capacità di saltare l'uomo e abilità nel crossare dal fondo.\n",
+        "fantaComment": "Leonardo Spinazzola è titolare nel nuovo Napoli di Massimiliano Allegri. Il 33enne, da sempre penalizzato al fantacalcio per i suoi infortuni, ha trovato molta continuità nell'ultima stagione, conclusa con 30 presenze condite da ben 3 gol e 3 assist e appena una ammonizione. Certo, spesso il terzino sinistro è stato gestito a livello di minutaggio per non sovraccaricarlo (58% di partite da titolare) ma il suo contributo a livello di bonus e voti non è mai mancato. Il 6,55 di fanta-media è una prova della sua affidabilità. Gutierrez è partito, l'italiano parte davanti su Olivera grazie alla sua capacità di saltare l'uomo e abilità nel crossare dal fondo.",
         "quotazioni": {
           "qtA": 23,
           "qtI": 27,
@@ -22161,7 +22227,7 @@ export const INITIAL_TEAMS = [
           "diffM": -4,
           "fvm": 74,
           "fvmM": 74,
-          "classic_8_mod_median": 2.1,
+          "classic_8_mod_median": 2.2,
           "classic_10_mod_median": 3,
           "classic_12_mod_median": 3.6
         },
@@ -22293,7 +22359,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "La mente del centrocampo del Napoli di Conte e salvo sorprese anche di quello di Allegri. Sarà il vertice basso dei tre centrocampisti, nella passata stagione fanta-media del 6,10 e 1 gol in 31 partite a voto. Solo 3 ammonizioni, questo è un dato positivo per il ruolo che ha in campo. Classico giocatore da rendimento e non da bonus, perfetto per il 5°/6° slot nel vostro centrocampo. Magari non le giocherà proprio tutte visto che c'è la Champions, ma comunque di spazio ne avrà.",
+        "fantaComment": "La mente del centrocampo del Napoli di Conte e anche di quello di Allegri. Sarà il vertice basso dei tre centrocampisti, nella passata stagione fanta-media del 6,10 e 1 gol in 31 partite a voto. Solo 3 ammonizioni, questo è un dato positivo per il ruolo che ha in campo. Classico giocatore da rendimento e non da bonus, perfetto per il 5°/6° slot nel vostro centrocampo. Magari non le giocherà proprio tutte visto che c'è la Champions, ma comunque di spazio ne avrà.",
         "quotazioni": {
           "qtA": 4,
           "qtI": 4,
@@ -22305,7 +22371,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 13,
           "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.4,
-          "classic_12_mod_median": 1.1
+          "classic_12_mod_median": 1
         },
         "stats": {
           "titolarita": 76,
@@ -22375,7 +22441,7 @@ export const INITIAL_TEAMS = [
           "fvm": 230,
           "fvmM": 230,
           "classic_8_mod_median": 15,
-          "classic_10_mod_median": 16.1,
+          "classic_10_mod_median": 16,
           "classic_12_mod_median": 17.2
         },
         "stats": {
@@ -22435,7 +22501,7 @@ export const INITIAL_TEAMS = [
         "punizioni": true,
         "corner": true,
         "positionNotes": "",
-        "fantaComment": "2 gol e 5 assist in 33 partite a voto per Matteo Politano, che negli anni è diventato più assist-man. Ha segnato poco nelle scorse stagioni, ma manda spesso in gol i compagni e comunque garantisce grande affidabilità. Fanta-media del 6,36, con Allegri può avere ancora grande spazio e inizia la stagione da titolare a destra. Poi chiaramente ci saranno rotazioni con la Champions, ma Politano proverà a dire ancora la sua largo nel tridente. Classico colpo da 3° slot, chi lo ha in rosa lo mette praticamente sempre, anche se non parte titolare: a voto andrà con grande continuità.",
+        "fantaComment": "2 gol e 5 assist in 33 partite a voto per Matteo Politano, che negli anni è diventato più assist-man. Ha segnato poco nelle scorse stagioni, ma manda spesso in gol i compagni e comunque garantisce grande affidabilità. Fanta-media del 6,36, con Allegri può avere ancora grande spazio e inizia la stagione da titolare a destra. Poi chiaramente ci saranno rotazioni con la Champions, ma Politano proverà a dire ancora la sua largo nel tridente. Chi lo ha in rosa lo mette praticamente sempre, anche se non parte titolare: a voto andrà con grande continuità.",
         "quotazioni": {
           "qtA": 15,
           "qtI": 14,
@@ -22447,7 +22513,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 48,
           "classic_8_mod_median": 2,
           "classic_10_mod_median": 3.2,
-          "classic_12_mod_median": 4.1
+          "classic_12_mod_median": 4.2
         },
         "stats": {
           "titolarita": 68,
@@ -22518,7 +22584,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 154,
           "classic_8_mod_median": 4.2,
           "classic_10_mod_median": 6,
-          "classic_12_mod_median": 7.2
+          "classic_12_mod_median": 7.3
         },
         "stats": {
           "titolarita": 24,
@@ -22650,7 +22716,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Antonio Vergara è fresco di rinnovo col Napoli, dopo quanto fatto vedere nelle 8 presenze della scorsa stagione in Serie A, con 1 gol all'attivo. Si è poi infortunato, ha praticamente chiuso la stagione ai box e ha avuto qualche intoppo anche nel pre-campionato (nulla di grave). La società crede molto nelle sue qualità, Allegri anche: lo sta provando più da mezzala che da esterno alto nel tridente. Grande concorrenza, in partenza Vergara insegue: è una scommessa all'asta, bisogna dunque poterselo permettere. Avrà più spazio a gara in corso, ma con le rotazioni della Champions a volte potrà anche giocare da titolare. ",
+        "fantaComment": "Antonio Vergara è fresco di rinnovo col Napoli, dopo quanto fatto vedere nelle 8 presenze della scorsa stagione in Serie A, con 1 gol all'attivo. Si è poi infortunato, ha praticamente chiuso la stagione ai box. La società crede molto nelle sue qualità, Allegri anche: lo sta provando sia da mezzala che da esterno alto nel tridente. Grande concorrenza, in partenza Vergara insegue: è una scommessa/jolly all'asta, bisogna dunque poterselo permettere. Avrà più spazio a gara in corso, ma con le rotazioni della Champions potrà anche giocare da titolare in campionato.",
         "quotazioni": {
           "qtA": 26,
           "qtI": 28,
@@ -22661,7 +22727,7 @@ export const INITIAL_TEAMS = [
           "fvm": 83,
           "fvmM": 83,
           "classic_8_mod_median": 0.6,
-          "classic_10_mod_median": 0.6,
+          "classic_10_mod_median": 0.8,
           "classic_12_mod_median": 1.2
         },
         "stats": {
@@ -22727,7 +22793,7 @@ export const INITIAL_TEAMS = [
           "diffM": -15,
           "fvm": 118,
           "fvmM": 118,
-          "classic_8_mod_median": 0.6,
+          "classic_8_mod_median": 0.5,
           "classic_10_mod_median": 1,
           "classic_12_mod_median": 1.8
         },
@@ -23883,7 +23949,7 @@ export const INITIAL_TEAMS = [
           "diffM": 0,
           "fvm": 6,
           "fvmM": 6,
-          "classic_8_mod_median": 0.3,
+          "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0.2
         },
@@ -23913,8 +23979,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "monza_bakoune_7476",
-          "monza_lucchesi_6659",
-          "monza_antov_5399"
+          "monza_birindelli_5838",
+          "monza_lucchesi_6659"
         ],
         "slotId": "pos_2"
       },
@@ -23984,8 +24050,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "monza_bakoune_7476",
-          "monza_lucchesi_6659",
-          "monza_antov_5399"
+          "monza_birindelli_5838",
+          "monza_lucchesi_6659"
         ],
         "slotId": "pos_3"
       },
@@ -24025,7 +24091,7 @@ export const INITIAL_TEAMS = [
           "diffM": 0,
           "fvm": 6,
           "fvmM": 6,
-          "classic_8_mod_median": 0.3,
+          "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0.2
         },
@@ -24055,28 +24121,28 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "monza_bakoune_7476",
-          "monza_lucchesi_6659",
-          "monza_antov_5399"
+          "monza_birindelli_5838",
+          "monza_lucchesi_6659"
         ],
         "slotId": "pos_4"
       },
       "pos_5": {
-        "id": "monza_birindelli_5838",
-        "csvId": "5838",
-        "fantalabId": "76ccd152-fe9d-440b-a890-6c9adef778ec",
-        "name": "Birindelli",
-        "displayName": "Birindelli",
-        "fullName": "Samuele Birindelli",
+        "id": "monza_touri_7146",
+        "csvId": "7146",
+        "fantalabId": "e2613024-bb41-4d9a-8c1d-24f6e2c63838",
+        "name": "Tourè I.",
+        "displayName": "Tourè I.",
+        "fullName": "Idrissa Touré",
         "teamName": "Monza",
         "teamId": "monza",
         "teamShort": "MON",
-        "role": "TD",
-        "classicRole": "D",
-        "mantraRole": "Dd;Ds;E",
-        "fantaRole": "D",
-        "photoUrl": "https://cdn.falsesoftware.com/players/132862/v1.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/132862/v1.webp",
-        "appetibilita": 84,
+        "role": "CC",
+        "classicRole": "C",
+        "mantraRole": "E;M",
+        "fantaRole": "C",
+        "photoUrl": "https://cdn.falsesoftware.com/players/36565/v2.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/36565/v2.webp",
+        "appetibilita": 82,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -24086,28 +24152,28 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": null,
+        "fantaComment": "Idrissa Touré arriva al Monza per giocarsi il posto con Birindelli sulla corsia destra. 1 gol nella passata stagione in Serie A con la maglia del Pisa, ha perso il posto nella seconda parte di stagione. Sulla carta, ha le caratteristiche per diventare il titolare alla lunga. Per il fantacalcio è un colpo low cost, da 1 credito per gli ultimi slot se cercate un giocatore che vi porti quasi sempre voto in provincia. ",
         "quotazioni": {
-          "qtA": 5,
-          "qtI": 5,
-          "diff": 0,
-          "qtAM": 5,
-          "qtIM": 5,
-          "diffM": 0,
-          "fvm": 16,
-          "fvmM": 16,
+          "qtA": 3,
+          "qtI": 1,
+          "diff": 2,
+          "qtAM": 3,
+          "qtIM": 1,
+          "diffM": 2,
+          "fvm": 10,
+          "fvmM": 10,
           "classic_8_mod_median": 0.2,
-          "classic_10_mod_median": 0.4,
-          "classic_12_mod_median": 0.8
+          "classic_10_mod_median": 0.2,
+          "classic_12_mod_median": 0.2
         },
         "stats": {
-          "titolarita": 87,
-          "fantamedia": 6.0,
-          "mediaVoto": 6.0,
-          "pv": 37,
-          "presenze": 37,
-          "gol": 5,
-          "gf": 5,
+          "titolarita": 68,
+          "fantamedia": 5.82,
+          "mediaVoto": 5.82,
+          "pv": 32,
+          "presenze": 32,
+          "gol": 1,
+          "gf": 1,
           "gs": 0,
           "golSubiti": 0,
           "rp": 0,
@@ -24116,18 +24182,18 @@ export const INITIAL_TEAMS = [
           "rMinus": 0,
           "rigoriSegnati": 0,
           "rigoriSbagliati": 0,
-          "assist": 2,
-          "ass": 2,
-          "ammonizioni": 7,
-          "amm": 7,
-          "espulsioni": 0,
-          "esp": 0,
+          "assist": 0,
+          "ass": 0,
+          "ammonizioni": 4,
+          "amm": 4,
+          "espulsioni": 1,
+          "esp": 1,
           "au": 0
         },
         "substitutes": [
-          "monza_bakoune_7476",
-          "monza_lucchesi_6659",
-          "monza_antov_5399"
+          "monza_mout_7575",
+          "monza_foeondoa_7574",
+          "monza_forsono_6592"
         ],
         "slotId": "pos_5"
       },
@@ -24197,8 +24263,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "monza_bakoune_7476",
-          "monza_lucchesi_6659",
-          "monza_antov_5399"
+          "monza_birindelli_5838",
+          "monza_lucchesi_6659"
         ],
         "slotId": "pos_8"
       },
@@ -24299,7 +24365,7 @@ export const INITIAL_TEAMS = [
         "punizioni": true,
         "corner": true,
         "positionNotes": "",
-        "fantaComment": "5 gol e 1 assist in Serie B per il capitano del Monza Matteo Pessina, in 37 partite: le ha giocate praticamente tutte. È un intoccabile, lo era già in Serie A e lo sarà anche con il nuovo allenatore Ivan Juric. Negli anni è diventato un mediano puro, ma con un plus importantissimo per il fantacalcio: i rigori. Un infortunio serio al ginocchio subito in preparazione lo terrà ai box per diverso tempo e, per questo, la sua appetibilità all'asta diminuisce. Tempi ancora incerti sul suo rientro, si può prendere comunque in prospettiva per assicurarsi in futuro un titolare e soprattutto uno specialista dagli undici metri.",
+        "fantaComment": "5 gol e 1 assist in Serie B per il capitano del Monza Matteo Pessina, in 37 partite: le ha giocate praticamente tutte. È un intoccabile, lo era già in Serie A e lo sarà anche con il nuovo allenatore Ivan Juric. Negli anni è diventato un mediano puro, ma con un plus importantissimo per il fantacalcio: i rigori. Un infortunio serio al ginocchio subito in preparazione lo terrà ai box fino alla fine di ottobre o all'inizio novembre.",
         "quotazioni": {
           "qtA": 4,
           "qtI": 12,
@@ -24370,7 +24436,7 @@ export const INITIAL_TEAMS = [
         "punizioni": true,
         "corner": true,
         "positionNotes": "",
-        "fantaComment": "Torna in Serie A Andrea Colpani dopo la stagione in Serie B al Monza: il suo rendimento è calato negli ultimi anni, ora il ritorno nel massimo campionato. Ma non ha il posto fisso, proverà a guadagnarselo e a tornare il giocatore ammirato proprio al Monza. Juric ha speso parole positive per lui e gli ha dato fiducia nel pre-campionato: dovrà rispondere presente sul campo ora.",
+        "fantaComment": "Torna in Serie A Andrea Colpani dopo la stagione in Serie B al Monza: il suo rendimento è calato negli ultimi anni, ora il ritorno nel massimo campionato. Ma non ha il posto fisso, proverà a guadagnarselo e a tornare il giocatore ammirato proprio al Monza. Juric ha speso parole positive per lui e gli ha dato fiducia: dovrà rispondere presente sul campo ora.",
         "quotazioni": {
           "qtA": 8,
           "qtI": 2,
@@ -24381,7 +24447,7 @@ export const INITIAL_TEAMS = [
           "fvm": 26,
           "fvmM": 26,
           "classic_8_mod_median": 0.8,
-          "classic_10_mod_median": 1.1,
+          "classic_10_mod_median": 1,
           "classic_12_mod_median": 1.8
         },
         "stats": {
@@ -24521,9 +24587,9 @@ export const INITIAL_TEAMS = [
           "diffM": 12,
           "fvm": 48,
           "fvmM": 48,
-          "classic_8_mod_median": 0.2,
-          "classic_10_mod_median": 0.2,
-          "classic_12_mod_median": 0.5
+          "classic_8_mod_median": 0.3,
+          "classic_10_mod_median": 0.3,
+          "classic_12_mod_median": 0.6
         },
         "stats": {
           "titolarita": 39,
@@ -24893,73 +24959,6 @@ export const INITIAL_TEAMS = [
         "slotId": null
       },
       {
-        "id": "monza_touri_7146",
-        "csvId": "7146",
-        "fantalabId": "e2613024-bb41-4d9a-8c1d-24f6e2c63838",
-        "name": "Tourè I.",
-        "displayName": "Tourè I.",
-        "fullName": "Idrissa Touré",
-        "teamName": "Monza",
-        "teamId": "monza",
-        "teamShort": "MON",
-        "role": "CC",
-        "classicRole": "C",
-        "mantraRole": "E;M",
-        "fantaRole": "C",
-        "photoUrl": "https://cdn.falsesoftware.com/players/36565/v2.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/36565/v2.webp",
-        "appetibilita": 82,
-        "status": "panchina",
-        "isAvailable": true,
-        "isPenaltyTaker": false,
-        "isFreeKickTaker": false,
-        "isCornerTaker": false,
-        "rigorista": false,
-        "punizioni": false,
-        "corner": false,
-        "positionNotes": "",
-        "fantaComment": "Idrissa Touré arriva al Monza per giocarsi il posto con Birindelli sulla corsia destra. 1 gol nella passata stagione in Serie A con la maglia del Pisa, ha perso il posto nella seconda parte di stagione. Sulla carta, ha le caratteristiche per diventare il titolare alla lunga. Per il fantacalcio è un colpo low cost, da 1 credito per gli ultimi slot se cercate un giocatore che vi porti quasi sempre voto in provincia. ",
-        "quotazioni": {
-          "qtA": 3,
-          "qtI": 1,
-          "diff": 2,
-          "qtAM": 3,
-          "qtIM": 1,
-          "diffM": 2,
-          "fvm": 10,
-          "fvmM": 10,
-          "classic_8_mod_median": 0.2,
-          "classic_10_mod_median": 0.2,
-          "classic_12_mod_median": 0.2
-        },
-        "stats": {
-          "titolarita": 68,
-          "fantamedia": 5.82,
-          "mediaVoto": 5.82,
-          "pv": 32,
-          "presenze": 32,
-          "gol": 1,
-          "gf": 1,
-          "gs": 0,
-          "golSubiti": 0,
-          "rp": 0,
-          "rc": 0,
-          "rPlus": 0,
-          "rMinus": 0,
-          "rigoriSegnati": 0,
-          "rigoriSbagliati": 0,
-          "assist": 0,
-          "ass": 0,
-          "ammonizioni": 4,
-          "amm": 4,
-          "espulsioni": 1,
-          "esp": 1,
-          "au": 0
-        },
-        "substitutes": [],
-        "slotId": null
-      },
-      {
         "id": "monza_ciurria_5880",
         "csvId": "5880",
         "fantalabId": "f4f8e1e3-4b76-446f-b395-f7c2eeb90176",
@@ -25021,6 +25020,73 @@ export const INITIAL_TEAMS = [
           "amm": 4,
           "espulsioni": 1,
           "esp": 1,
+          "au": 0
+        },
+        "substitutes": [],
+        "slotId": null
+      },
+      {
+        "id": "monza_birindelli_5838",
+        "csvId": "5838",
+        "fantalabId": "76ccd152-fe9d-440b-a890-6c9adef778ec",
+        "name": "Birindelli",
+        "displayName": "Birindelli",
+        "fullName": "Samuele Birindelli",
+        "teamName": "Monza",
+        "teamId": "monza",
+        "teamShort": "MON",
+        "role": "TD",
+        "classicRole": "D",
+        "mantraRole": "Dd;Ds;E",
+        "fantaRole": "D",
+        "photoUrl": "https://cdn.falsesoftware.com/players/132862/v1.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/132862/v1.webp",
+        "appetibilita": 84,
+        "status": "panchina",
+        "isAvailable": true,
+        "isPenaltyTaker": false,
+        "isFreeKickTaker": false,
+        "isCornerTaker": false,
+        "rigorista": false,
+        "punizioni": false,
+        "corner": false,
+        "positionNotes": "",
+        "fantaComment": null,
+        "quotazioni": {
+          "qtA": 5,
+          "qtI": 5,
+          "diff": 0,
+          "qtAM": 5,
+          "qtIM": 5,
+          "diffM": 0,
+          "fvm": 16,
+          "fvmM": 16,
+          "classic_8_mod_median": 0.3,
+          "classic_10_mod_median": 0.4,
+          "classic_12_mod_median": 0.8
+        },
+        "stats": {
+          "titolarita": 87,
+          "fantamedia": 6.0,
+          "mediaVoto": 6.0,
+          "pv": 37,
+          "presenze": 37,
+          "gol": 5,
+          "gf": 5,
+          "gs": 0,
+          "golSubiti": 0,
+          "rp": 0,
+          "rc": 0,
+          "rPlus": 0,
+          "rMinus": 0,
+          "rigoriSegnati": 0,
+          "rigoriSbagliati": 0,
+          "assist": 2,
+          "ass": 2,
+          "ammonizioni": 7,
+          "amm": 7,
+          "espulsioni": 0,
+          "esp": 0,
           "au": 0
         },
         "substitutes": [],
@@ -25308,9 +25374,9 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Ds;Dc",
         "fantaRole": "D",
-        "photoUrl": "",
-        "playerImage": "",
-        "appetibilita": 84,
+        "photoUrl": "https://cdn.falsesoftware.com/players/37714431/v1.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/37714431/v1.webp",
+        "appetibilita": 83,
         "status": "panchina",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -25320,7 +25386,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "",
+        "fantaComment": null,
         "quotazioni": {
           "qtA": 1,
           "qtI": 1,
@@ -25688,7 +25754,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 10,
           "classic_8_mod_median": 0.3,
           "classic_10_mod_median": 0.4,
-          "classic_12_mod_median": 0.9
+          "classic_12_mod_median": 1
         },
         "stats": {
           "titolarita": 92,
@@ -25970,7 +26036,7 @@ export const INITIAL_TEAMS = [
           "diffM": 1,
           "fvm": 10,
           "fvmM": 10,
-          "classic_8_mod_median": 0,
+          "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0.2
         },
@@ -26102,7 +26168,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Ha un fiuto importante con il gol Cesare Casadei: 6 le reti realizzate nella passata stagione, in 32 partite a voto. Numeri di rilievo, ma c'è grande concorrenza nel nuovo Torino di Abate e dovrà dunque conquistarsi un posto: al momento è una delle opzioni, ma non un titolare fisso. Siamo sopra ai low cost per i bonus che ha saputo portare l'anno scorso, da capire se si confermerà. Molto abile per tempi d'inserimento, proverà a conquistare la piena fiducia del nuovo allenatore. Anche in chiave Nazionale.",
+        "fantaComment": "Ha un fiuto importante con il gol Cesare Casadei: 6 le reti realizzate nella passata stagione, in 32 partite a voto. Numeri di rilievo, ma c'è concorrenza nel nuovo Torino di Abate e dovrà dunque conquistarsi un posto: al momento è una delle opzioni, ma non un titolare fisso. Siamo sopra ai low cost per i bonus che ha saputo portare l'anno scorso, da capire se si confermerà. Molto abile per tempi d'inserimento, proverà a conquistare la piena fiducia del nuovo allenatore. Anche in chiave Nazionale.",
         "quotazioni": {
           "qtA": 10,
           "qtI": 11,
@@ -26113,7 +26179,7 @@ export const INITIAL_TEAMS = [
           "fvm": 32,
           "fvmM": 32,
           "classic_8_mod_median": 1,
-          "classic_10_mod_median": 2,
+          "classic_10_mod_median": 1.9,
           "classic_12_mod_median": 3
         },
         "stats": {
@@ -26183,8 +26249,8 @@ export const INITIAL_TEAMS = [
           "diffM": 3,
           "fvm": 96,
           "fvmM": 96,
-          "classic_8_mod_median": 6,
-          "classic_10_mod_median": 7.4,
+          "classic_8_mod_median": 5.8,
+          "classic_10_mod_median": 7.3,
           "classic_12_mod_median": 8.4
         },
         "stats": {
@@ -26384,7 +26450,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": null,
+        "fantaComment": "Alieu Njie ha lanciato dei segnali subentrando nel Torino contro il Milan. Al fantacalcio è listato centrocampista ma gioca nel tridente offensivo essendo un'ala. Non rientra tra i titolari al momento, ma è sicuramente un'alternativa per Abate che potrebbe schierarlo spesso a gara in corso. Per l'asta potete pensarci a poco come ultimi slot a centrocampo.",
         "quotazioni": {
           "qtA": 4,
           "qtI": 2,
@@ -26518,7 +26584,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Arrivato al Torino dalla Fiorentina in prestito con diritto di riscatto fissato a 10 milioni di euro, Niccolò Fortini è un terzino classe 2006, alto 185 centimetri, dotato di corsa, tecnica e buona capacità di accompagnare l’azione offensiva. Predilige la fascia destra, ma può essere impiegato anche a sinistra. Nell’ultima stagione ha raccolto 26 presenze complessive: 16 in Serie A, 9 in Conference League e una in Coppa Italia, mettendo a referto un assist nella competizione europea. Al fantacalcio può trovare maggiore continuità rispetto all’esperienza di Firenze e giocarsi un posto sulla corsia destra: rappresenta una giovane scommessa da ultimi slot, interessante soprattutto per la sua duttilità e per il potenziale contributo offensivo.",
+        "fantaComment": "Arrivato al Torino dalla Fiorentina in prestito con diritto di riscatto fissato a 10 milioni di euro, Niccolò Fortini è un terzino classe 2006, alto 185 centimetri, dotato di corsa, tecnica e buona capacità di accompagnare l’azione offensiva. Predilige la fascia destra, ma può essere impiegato anche a sinistra. Nell’ultima stagione ha raccolto 26 presenze complessive: 16 in Serie A, 9 in Conference League e una in Coppa Italia, mettendo a referto un assist nella competizione europea. Al fantacalcio può trovare sicuramente maggiore continuità rispetto all’esperienza di Firenze e giocarsi un posto sulla corsia destra con chance di essere titolare: rappresenta una giovane scommessa da ultimi slot, interessante soprattutto per la sua duttilità e per il potenziale contributo offensivo.",
         "quotazioni": {
           "qtA": 1,
           "qtI": 1,
@@ -26719,7 +26785,7 @@ export const INITIAL_TEAMS = [
         "punizioni": true,
         "corner": true,
         "positionNotes": "",
-        "fantaComment": "Gaetano Oristanio passa al Torino, dopo l'esperienza negativa al Parma della scorsa stagione, chiusa con 1 gol in 18 partite a voto. Decisamente più ombre che luci con Cuesta, ora il classe 2002 arriva da Abate che lo ha fortemente voluto per la sua nuova squadra. Centrocampista offensivo, può agire sia in posizione centrale che come esterno, talvolta è stato provato anche da mezzala: bisognerà capire che modulo sceglierà il nuovo allenatore granata. Ai nastri di partenza, è difficile immaginare Oristanio come un titolare fisso, ma probabilmente è più un jolly all'interno della rosa del Torino: può essere il classico colpo all'asta per completare il vostro centrocampo, da ultimi slot. E' ancora alle prese con un problema al ginocchio che ne ha limitato il rendimento nel finale della scorsa stagione.",
+        "fantaComment": "Gaetano Oristanio passa al Torino, dopo l'esperienza negativa al Parma della scorsa stagione, chiusa con 1 gol in 18 partite a voto. Decisamente più ombre che luci con Cuesta, ora il classe 2002 arriva da Abate che lo ha fortemente voluto per la sua nuova squadra. Centrocampista offensivo, può agire sia in posizione centrale che come esterno, talvolta è stato provato anche da mezzala: bisognerà capire che modulo sceglierà il nuovo allenatore granata. Ai nastri di partenza, è difficile immaginare Oristanio come un titolare fisso, ma probabilmente è più un jolly all'interno della rosa del Torino: può essere il classico acquisto all'asta per completare il vostro centrocampo, da ultimi slot.",
         "quotazioni": {
           "qtA": 4,
           "qtI": 1,
@@ -26753,73 +26819,6 @@ export const INITIAL_TEAMS = [
           "ass": 0,
           "ammonizioni": 1,
           "amm": 1,
-          "espulsioni": 0,
-          "esp": 0,
-          "au": 0
-        },
-        "substitutes": [],
-        "slotId": null
-      },
-      {
-        "id": "torino_ilic_5007",
-        "csvId": "5007",
-        "fantalabId": "b2ce362c-91f3-408b-a84c-f3b6e49d2f88",
-        "name": "Ilic",
-        "displayName": "Ilic",
-        "fullName": "Ivan Ilić",
-        "teamName": "Torino",
-        "teamId": "torino",
-        "teamShort": "TOR",
-        "role": "CC",
-        "classicRole": "C",
-        "mantraRole": "C",
-        "fantaRole": "C",
-        "photoUrl": "https://cdn.falsesoftware.com/players/1359363/v1.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/1359363/v1.webp",
-        "appetibilita": 83,
-        "status": "panchina",
-        "isAvailable": true,
-        "isPenaltyTaker": false,
-        "isFreeKickTaker": false,
-        "isCornerTaker": true,
-        "rigorista": false,
-        "punizioni": false,
-        "corner": true,
-        "positionNotes": "",
-        "fantaComment": null,
-        "quotazioni": {
-          "qtA": 1,
-          "qtI": 1,
-          "diff": 0,
-          "qtAM": 1,
-          "qtIM": 1,
-          "diffM": 0,
-          "fvm": 1,
-          "fvmM": 1,
-          "classic_8_mod_median": 0.2,
-          "classic_10_mod_median": 0.2,
-          "classic_12_mod_median": 0
-        },
-        "stats": {
-          "titolarita": 13,
-          "fantamedia": 5.88,
-          "mediaVoto": 6.0,
-          "pv": 8,
-          "presenze": 8,
-          "gol": 0,
-          "gf": 0,
-          "gs": 0,
-          "golSubiti": 0,
-          "rp": 0,
-          "rc": 0,
-          "rPlus": 0,
-          "rMinus": 0,
-          "rigoriSegnati": 0,
-          "rigoriSbagliati": 0,
-          "assist": 0,
-          "ass": 0,
-          "ammonizioni": 2,
-          "amm": 2,
           "espulsioni": 0,
           "esp": 0,
           "au": 0
@@ -27634,7 +27633,7 @@ export const INITIAL_TEAMS = [
           "fvm": 61,
           "fvmM": 61,
           "classic_8_mod_median": 3.8,
-          "classic_10_mod_median": 5.4,
+          "classic_10_mod_median": 5.3,
           "classic_12_mod_median": 6.4
         },
         "stats": {
@@ -27694,7 +27693,7 @@ export const INITIAL_TEAMS = [
         "punizioni": true,
         "corner": true,
         "positionNotes": "",
-        "fantaComment": "Gianluca Gaetano è il primo rinforzo dell'Atalanta targata Maurizio Sarri. Il classe 2000 è arrivato dal Cagliari per circa 14 milioni bonus inclusi. Pisacane lo ha 'trasformato' da trequartista a regista puro e proprio in questo ruolo lo vede Sarri, per dettare i tempi nel suo nuovo centrocampo a tre. Chiaramente, all'occorrenza potrà fare anche la mezzala, ma arriva per giocare davanti alla difesa. 2 gol e 4 assist in 32 partite a voto l'anno scorso al Cagliari, chiaramente i bonus sono diminuiti quando è stato arretrato, nella seconda parte della stagione. 4 le ammonizioni, nessun rosso: ha tutto per essere il classico giocatore da rendimento più che da bonus, da 6/6,5 senza troppe pretese. A livello di infortuni, è un giocatore integro. Bisognerà anche capire le gerarchie di Sarri, visto che la squadra passerà alla difesa a 4 dopo oltre 10 anni e al centrocampo a 3: è un cantiere aperto l'Atalanta. Al Cagliari era un titolare fisso, qui il suo status potrebbe essere leggermente 'inferiore': a volte titolare, altre no, ma comunque a voto andrà con regolarità. ",
+        "fantaComment": "Gianluca Gaetano è un rinforzo dell'Atalanta targata Maurizio Sarri. Il classe 2000 è arrivato dal Cagliari per circa 14 milioni bonus inclusi. Pisacane lo ha 'trasformato' da trequartista a regista puro e proprio in questo ruolo lo vede Sarri, per dettare i tempi nel suo nuovo centrocampo a tre. Chiaramente, all'occorrenza potrà fare anche la mezzala, ma arriva per giocare davanti alla difesa. 2 gol e 4 assist in 32 partite a voto l'anno scorso al Cagliari, chiaramente i bonus sono diminuiti quando è stato arretrato, nella seconda parte della stagione. 4 le ammonizioni, nessun rosso: ha tutto per essere il classico giocatore da rendimento più che da bonus, da 6/6,5. A livello di infortuni, è un giocatore integro.",
         "quotazioni": {
           "qtA": 8,
           "qtI": 7,
@@ -27765,7 +27764,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Alla fine Ederson è rimasto. Ha svolto le visite mediche con il Manchester United, poi il club inglese si è tirato indietro e l'Atalanta gli ha rinnovato il contratto, un gesto molto importante, di grande fiducia. Si è subito messo a disposizione di Maurizio Sarri e nei piani del nuovo allenatore è una delle due mezzali titolari nei tre di centrocampo appunto. 6,43 la fanta-media nella passata stagione, 2 gol e 1 assist in 30 partite a voto: la sensazione è che con Sarri possa portare più bonus, anche per il ruolo di mezzala e non più di mediano davanti alla difesa. Siamo tra il 3° e il 4° slot a seconda delle leghe, ha tutto per raddoppiare almeno i numeri della scorsa stagione. ",
+        "fantaComment": "Alla fine Ederson è rimasto. Aveva svolto le visite mediche con il Manchester United, poi il club inglese si è tirato indietro e l'Atalanta gli ha rinnovato il contratto, un gesto molto importante, di grande fiducia. Si è subito messo a disposizione di Maurizio Sarri e nei piani del nuovo allenatore è una delle due mezzali titolari nei tre di centrocampo appunto. 6,43 la fanta-media nella passata stagione, 2 gol e 1 assist in 30 partite a voto: la sensazione è che con Sarri possa portare più bonus, anche per il ruolo di mezzala e non più di mediano davanti alla difesa. Siamo tra il 3° e il 4° slot a seconda delle leghe, ha tutto per raddoppiare almeno i numeri della scorsa stagione. ",
         "quotazioni": {
           "qtA": 23,
           "qtI": 12,
@@ -27846,7 +27845,7 @@ export const INITIAL_TEAMS = [
           "diffM": 0,
           "fvm": 150,
           "fvmM": 150,
-          "classic_8_mod_median": 5.1,
+          "classic_8_mod_median": 5,
           "classic_10_mod_median": 7.4,
           "classic_12_mod_median": 9
         },
@@ -27916,7 +27915,7 @@ export const INITIAL_TEAMS = [
           "diffM": 0,
           "fvm": 198,
           "fvmM": 198,
-          "classic_8_mod_median": 3.2,
+          "classic_8_mod_median": 3.3,
           "classic_10_mod_median": 5.2,
           "classic_12_mod_median": 6.7
         },
@@ -28058,7 +28057,7 @@ export const INITIAL_TEAMS = [
           "diffM": 7,
           "fvm": 262,
           "fvmM": 262,
-          "classic_8_mod_median": 5.2,
+          "classic_8_mod_median": 5.4,
           "classic_10_mod_median": 8,
           "classic_12_mod_median": 9.4
         },
@@ -28249,7 +28248,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Nicola Zalewski è il classico centrocampista tuttofare che può essere molto utile a Sarri nella nuova esperienza all'Atalanta. Lo sta provando da mezzala nel pre-campionato, ma può fare anche il terzino sia a destra che a sinistra e l'esterno alto nel tridente in alcune partite (o in alcuni spezzoni). 2 gol e 5 assist in 31 partite a voto nella passata stagione, riparte da questi numeri: non stiamo parlando di un titolare fisso ma di un giocatore che comunque andrà con regolarità a voto. E difficilmente prende insufficienze: 6,40 la fanta-media, può fare al caso vostro per il 5°/6° slot se non avete bisogno di un titolarissimo ecco. ",
+        "fantaComment": "Nicola Zalewski è il classico centrocampista tuttofare che può essere molto utile a Sarri nella nuova esperienza all'Atalanta. Lo sta provando da mezzala nel pre-campionato, ma può fare anche il terzino sia a destra che a sinistra e l'esterno alto nel tridente in alcune partite (o in alcuni spezzoni). 2 gol e 5 assist in 31 partite a voto nella passata stagione, riparte da questi numeri: non stiamo parlando di un titolare fisso ma di un giocatore che comunque andrà con regolarità a voto. E difficilmente prende insufficienze: 6,40 la fanta-media, può fare al caso vostro per il 5°/6° slot se non avete bisogno di un titolarissimo. ",
         "quotazioni": {
           "qtA": 12,
           "qtI": 13,
@@ -28316,7 +28315,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Fanta-media del 6,00. Partiamo da qui per parlare di Marten De Roon, centrocampista dell'Atalanta che ha giocato per anni in una mediana a due e ora potrà ricoprire due ruoli nel centrocampo a tre di Sarri: o mediano puro o mezzala, ma al momento è più probabile questa opzione perché il nuovo allenatore davanti alla difesa vuole un giocatore più di geometrie. 1 gol e 2 assist in 34 partite a voto, con 6 ammonizioni e 1 un rosso: numeri perfettamente in linea con la categoria in cui si trova, è un low cost di prima fascia, perfetto per il 5°/6° slot. Da capire se le giocherà tutte come fatto negli anni o meno, ma comunque di spazio ne avrà.",
+        "fantaComment": "Fanta-media del 6,00. Partiamo da qui per parlare di Marten De Roon, centrocampista dell'Atalanta che ha giocato per anni in una mediana a due e ora potrà ricoprire due ruoli nel centrocampo a tre di Sarri: o mediano puro o mezzala, ma al momento è più probabile questa opzione perché il nuovo allenatore davanti alla difesa vuole un giocatore più di geometrie. 1 gol e 2 assist in 34 partite a voto, con 6 ammonizioni e 1 un rosso: numeri perfettamente in linea con la categoria in cui si trova, è un low cost di prima fascia, perfetto per gli slot secondari. Da capire se le giocherà tutte come fatto negli anni scorsi o meno, ma comunque di spazio ne avrà.",
         "quotazioni": {
           "qtA": 2,
           "qtI": 4,
@@ -28394,8 +28393,8 @@ export const INITIAL_TEAMS = [
           "fvm": 29,
           "fvmM": 29,
           "classic_8_mod_median": 0.2,
-          "classic_10_mod_median": 0.3,
-          "classic_12_mod_median": 0.7
+          "classic_10_mod_median": 0.4,
+          "classic_12_mod_median": 0.6
         },
         "stats": {
           "titolarita": 53,
@@ -28460,7 +28459,7 @@ export const INITIAL_TEAMS = [
           "diffM": -2,
           "fvm": 1,
           "fvmM": 1,
-          "classic_8_mod_median": 0.2,
+          "classic_8_mod_median": 0.3,
           "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0.4
         },
@@ -28651,7 +28650,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Tre 6.5 di fila nelle prime tre partite, Honest Ahanor si era presentato nei migliori dei modi all'Atalanta ma poi ha concluso la stagione con un non esaltante 5,69 di fanta-media, 1 cartellino rosso e nessun bonus. Adesso Sarri lo vede come terzino sinistro e si giocherà il posto in un ballottaggio serrato con Bernasconi. All'occorrenza può fare anche il centrale e anche per questo potrà trovare spazio. A pochi crediti può essere un investimento giusto, il potenziale è tanto e potrebbe sorprendere trovando i primi bonus al fantacalcio.",
+        "fantaComment": "",
         "quotazioni": {
           "qtA": 1,
           "qtI": 2,
@@ -29011,7 +29010,7 @@ export const INITIAL_TEAMS = [
           "fvm": 74,
           "fvmM": 74,
           "classic_8_mod_median": 4,
-          "classic_10_mod_median": 6.3,
+          "classic_10_mod_median": 6.2,
           "classic_12_mod_median": 8.6
         },
         "stats": {
@@ -29045,21 +29044,21 @@ export const INITIAL_TEAMS = [
         "slotId": "pos_1"
       },
       "pos_2": {
-        "id": "fiorentina_jimeneza_6531",
-        "csvId": "6531",
-        "fantalabId": "1d2a470a-c2dd-4e85-9269-2432dab4989e",
-        "name": "Jimenez A.",
-        "displayName": "Jimenez A.",
-        "fullName": "Álex Jiménez",
+        "id": "fiorentina_dod_5885",
+        "csvId": "5885",
+        "fantalabId": "74386d11-89c5-443b-a5c5-bb9737ca2717",
+        "name": "Dodò",
+        "displayName": "Dodò",
+        "fullName": "Dodô",
         "teamName": "Fiorentina",
         "teamId": "fiorentina",
         "teamShort": "FIO",
         "role": "TD",
         "classicRole": "D",
-        "mantraRole": "Dd;Ds;E",
+        "mantraRole": "Dd;E",
         "fantaRole": "D",
-        "photoUrl": "https://cdn.falsesoftware.com/players/37584705/v2.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/37584705/v2.webp",
+        "photoUrl": "https://cdn.falsesoftware.com/players/219486/v1.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/219486/v1.webp",
         "appetibilita": 85,
         "status": "tit_sicuro",
         "isAvailable": true,
@@ -29070,26 +29069,26 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Alex Jimenez è tornato in Serie A alla Fiorentina. Spagnolo ex Milan classe 2005, aveva lasciato buoni ricordi in Italia tra i tifosi rossoneri, nonostante al Fantacalcio portò appena un assist in 22 partite. Terzino destro, all'occorrenza esterno di centrocampo, in Premier League, al Bournemouth lo spagnolo si è adattato subito alla perfezione conquistandosi una maglia da titolare con le Cherries per ben 26 volte (1 gol). Ora per lui c'è la Fiorentina che investirà su di lui circa 20 milioni a salire dal prossimo giugno. A Firenze, Jimenez a destra si gioca il posto con l'altro nuovo arrivato Joao Mario visto che Dodo è in uscita. All'asta può essere una buona soluzione tra i terzini, soprattutto per la propensione offensiva dello spagnolo a cui mancano solo i bonus per diventare un protagonista in Serie A e al Fantacalcio. Forse più di una scommessa, 'magagne' fuori campo permettendo.",
+        "fantaComment": "",
         "quotazioni": {
-          "qtA": 19,
+          "qtA": 13,
           "qtI": 15,
-          "diff": 4,
-          "qtAM": 19,
+          "diff": -2,
+          "qtAM": 13,
           "qtIM": 15,
-          "diffM": 4,
-          "fvm": 61,
-          "fvmM": 61,
-          "classic_8_mod_median": 3,
-          "classic_10_mod_median": 3.8,
-          "classic_12_mod_median": 4.2
+          "diffM": -2,
+          "fvm": 42,
+          "fvmM": 42,
+          "classic_8_mod_median": 1.2,
+          "classic_10_mod_median": 1.2,
+          "classic_12_mod_median": 1.6
         },
         "stats": {
-          "titolarita": 68,
-          "fantamedia": 6.0,
-          "mediaVoto": 6.0,
-          "pv": 31,
-          "presenze": 31,
+          "titolarita": 95,
+          "fantamedia": 6.03,
+          "mediaVoto": 5.99,
+          "pv": 36,
+          "presenze": 36,
           "gol": 1,
           "gf": 1,
           "gs": 0,
@@ -29100,10 +29099,10 @@ export const INITIAL_TEAMS = [
           "rMinus": 0,
           "rigoriSegnati": 0,
           "rigoriSbagliati": 0,
-          "assist": 1,
-          "ass": 1,
-          "ammonizioni": 10,
-          "amm": 10,
+          "assist": 2,
+          "ass": 2,
+          "ammonizioni": 7,
+          "amm": 7,
           "espulsioni": 0,
           "esp": 0,
           "au": 0
@@ -29111,7 +29110,7 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "fiorentina_parisi_5449",
           "fiorentina_pongracic_5603",
-          "fiorentina_dod_5885"
+          "fiorentina_jimeneza_6531"
         ],
         "slotId": "pos_2"
       },
@@ -29153,7 +29152,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 29,
           "classic_8_mod_median": 2,
           "classic_10_mod_median": 2.8,
-          "classic_12_mod_median": 3.5
+          "classic_12_mod_median": 3.4
         },
         "stats": {
           "titolarita": 13,
@@ -29182,7 +29181,7 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "fiorentina_parisi_5449",
           "fiorentina_pongracic_5603",
-          "fiorentina_dod_5885"
+          "fiorentina_jimeneza_6531"
         ],
         "slotId": "pos_3"
       },
@@ -29253,7 +29252,7 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "fiorentina_parisi_5449",
           "fiorentina_pongracic_5603",
-          "fiorentina_dod_5885"
+          "fiorentina_jimeneza_6531"
         ],
         "slotId": "pos_4"
       },
@@ -29293,7 +29292,7 @@ export const INITIAL_TEAMS = [
           "diffM": 4,
           "fvm": 22,
           "fvmM": 22,
-          "classic_8_mod_median": 1.5,
+          "classic_8_mod_median": 1.4,
           "classic_10_mod_median": 2.2,
           "classic_12_mod_median": 3
         },
@@ -29324,7 +29323,7 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "fiorentina_parisi_5449",
           "fiorentina_pongracic_5603",
-          "fiorentina_dod_5885"
+          "fiorentina_jimeneza_6531"
         ],
         "slotId": "pos_5"
       },
@@ -29354,7 +29353,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Christ Inao Oulai è arrivato a Firenze per circa 30 milioni, dopo essere sceso in campo anche nei recenti Mondiali con la maglia della Costa d'Avorio. Centrocampista centrale classe 2006, ricorda il primo Franck Kessié: grande dinamismo e forza fisica, è molto abile nel recuperare palloni e nel ribaltare l'azione con la palla al piede. Ha margini di crescita importanti negli inserimenti e dunque anche in zona bonus: 2 gol e 4 assist in 25 partite nello scorso campionato turco. Da capire se sarà subito un titolare fisso o avrà bisogno di un periodo di ambientamento, ma comunque per il fantacalcio è il classico giocatore da rendimento più che da bonus. Nota dolente i cartellini gialli: addirittura 9 nell'ultima stagione, più di uno ogni tre partite.",
+        "fantaComment": "Christ Inao Oulai è arrivato a Firenze per circa 26 milioni, dopo essere sceso in campo anche nei recenti Mondiali con la maglia della Costa d'Avorio. Centrocampista centrale classe 2006, è dotato di un ottimo palleggio. Ha margini di crescita importanti negli inserimenti e dunque anche in zona bonus: 2 gol e 4 assist in 25 partite nello scorso campionato turco. Da capire se sarà subito un titolare o avrà bisogno di un periodo di ambientamento, ma comunque per il fantacalcio è un giocatore da rendimento. Nota dolente i cartellini gialli: addirittura 9 nell'ultima stagione, più di uno ogni tre partite.",
         "quotazioni": {
           "qtA": 3,
           "qtI": 1,
@@ -29437,7 +29436,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 19,
           "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.4,
-          "classic_12_mod_median": 0.8
+          "classic_12_mod_median": 0.7
         },
         "stats": {
           "titolarita": 79,
@@ -29579,7 +29578,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 125,
           "classic_8_mod_median": 8,
           "classic_10_mod_median": 9.2,
-          "classic_12_mod_median": 10.1
+          "classic_12_mod_median": 10
         },
         "stats": {
           "titolarita": 76,
@@ -29684,12 +29683,12 @@ export const INITIAL_TEAMS = [
         "slotId": "pos_10"
       },
       "pos_11": {
-        "id": "fiorentina_kean_2097",
-        "csvId": "2097",
-        "fantalabId": "e2f65951-61bc-4469-bd01-9340d6a556b2",
-        "name": "Kean",
-        "displayName": "Kean",
-        "fullName": "Moise Kean",
+        "id": "fiorentina_pellegrinom_7023",
+        "csvId": "7023",
+        "fantalabId": "f5c4b009-851b-4901-b6b4-0f66ec783639",
+        "name": "Pellegrino M.",
+        "displayName": "Pellegrino M.",
+        "fullName": "Mateo Pellegrino",
         "teamName": "Fiorentina",
         "teamId": "fiorentina",
         "teamShort": "FIO",
@@ -29697,58 +29696,58 @@ export const INITIAL_TEAMS = [
         "classicRole": "A",
         "mantraRole": "Pc",
         "fantaRole": "A",
-        "photoUrl": "https://cdn.falsesoftware.com/players/133769/v1.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/133769/v1.webp",
-        "appetibilita": 96,
+        "photoUrl": "https://cdn.falsesoftware.com/players/37553010/v2.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/37553010/v2.webp",
+        "appetibilita": 93,
         "status": "tit_sicuro",
         "isAvailable": true,
-        "isPenaltyTaker": true,
+        "isPenaltyTaker": false,
         "isFreeKickTaker": false,
         "isCornerTaker": false,
-        "rigorista": true,
+        "rigorista": false,
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Moise Kean ha deluso nell’ultima stagione, facendo 8 gol e 1 assist. Un crollo rispetto alla stagione precedente, è inevitabile dunque che non sia più considerato tra 2/3 i più pagati in assoluto. Inoltre ha anche voci di mercato, resta da monitorare.",
+        "fantaComment": "Mateo Pellegrino non è riuscito ad arrivare alla doppia cifra per un solo gol, si è fermato a 9 nella scorsa stagione. La Fiorentina ha creduto in lui investendo circa 20 milioni di euro e punta a fargli raggiungere la doppia cifra. Mentre al Parma era titolare inamovibile, alla Fiorentina tutto dipenderà da Kean. Al momento sostituisce Piccoli nel ruolo di back-up ma anche a gara in corso può fare male. Al fantacalcio si può anche non comporre la coppia vista la possibile partenza di Kean. Può essere un 3-4° slot per il vostro attacco.",
         "quotazioni": {
-          "qtA": 99,
-          "qtI": 80,
-          "diff": 19,
-          "qtAM": 99,
-          "qtIM": 80,
-          "diffM": 19,
-          "fvm": 317,
-          "fvmM": 317,
-          "classic_8_mod_median": 16.7,
-          "classic_10_mod_median": 20.2,
-          "classic_12_mod_median": 22
+          "qtA": 43,
+          "qtI": 44,
+          "diff": -1,
+          "qtAM": 43,
+          "qtIM": 44,
+          "diffM": -1,
+          "fvm": 138,
+          "fvmM": 138,
+          "classic_8_mod_median": 2.6,
+          "classic_10_mod_median": 4.7,
+          "classic_12_mod_median": 6.4
         },
         "stats": {
-          "titolarita": 61,
-          "fantamedia": 6.76,
-          "mediaVoto": 5.88,
-          "pv": 26,
-          "presenze": 26,
-          "gol": 6,
-          "gf": 6,
+          "titolarita": 89,
+          "fantamedia": 6.65,
+          "mediaVoto": 5.99,
+          "pv": 37,
+          "presenze": 37,
+          "gol": 8,
+          "gf": 8,
           "gs": 0,
           "golSubiti": 0,
           "rp": 0,
           "rc": 0,
-          "rPlus": 2,
+          "rPlus": 1,
           "rMinus": 0,
-          "rigoriSegnati": 2,
+          "rigoriSegnati": 1,
           "rigoriSbagliati": 0,
           "assist": 1,
           "ass": 1,
-          "ammonizioni": 4,
-          "amm": 4,
+          "ammonizioni": 5,
+          "amm": 5,
           "espulsioni": 0,
           "esp": 0,
           "au": 0
         },
         "substitutes": [
-          "fiorentina_pellegrinom_7023"
+          "fiorentina_kean_2097"
         ],
         "slotId": "pos_11"
       }
@@ -29847,7 +29846,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Sembrava che potesse partire subito e invece Albert Gudmundsson è ancora alla Fiorentina e sta provando a convincere il nuovo allenatore Fabio Grosso con le sue prestazioni sul campo nel pre-campionato. La scorsa stagione è stata al di sotto delle aspettative per lui come per tutta la viola: 5 gol e 3 assist in 32 partite a voto, considerando anche i 3 rigori su 3 segnati capite bene che su azione ha fatto soltanto 2 reti. Riparte da questi numeri, ha tutto per fare meglio: l'allenatore lo sta testando come esterno puro a sinistra nel tridente d'attacco. Un ruolo che Gudmundsson aveva ricoperto solo sporadicamente in passato, si sta ambientando e Grosso ne è soddisfatto finora. I rigori sono un tema molto caldo: se li contendono lui e Kean al momento, poi bisognerà capire se rimarranno entrambi e anche chi arriverà dal mercato. Ma al momento c'è proprio l'islandese leggermente avanti dagli undici metri e non è un fattore da poco anche in chiave asta. ",
+        "fantaComment": "Sembrava che potesse partire subito e invece Albert Gudmundsson è ancora alla Fiorentina e sta provando a convincere il nuovo allenatore Fabio Grosso. La scorsa stagione è stata al di sotto delle aspettative per lui come per tutta la viola: 5 gol e 3 assist in 32 partite a voto, considerando anche i 3 rigori su 3 segnati capite bene che su azione ha fatto soltanto 2 reti. Riparte da questi numeri, ha tutto per fare meglio: l'allenatore lo sta testando come esterno puro a sinistra nel tridente d'attacco. Un ruolo che Gudmundsson aveva ricoperto solo sporadicamente in passato, si sta ambientando e Grosso ne è soddisfatto finora. I rigori sono un tema molto caldo: se li contendono lui e Kean al momento, poi bisognerà capire se rimarranno entrambi e anche chi arriverà dal mercato. Ma al momento c'è proprio l'islandese leggermente avanti dagli undici metri e non è un fattore da poco anche in chiave asta.",
         "quotazioni": {
           "qtA": 33,
           "qtI": 37,
@@ -29858,7 +29857,7 @@ export const INITIAL_TEAMS = [
           "fvm": 106,
           "fvmM": 106,
           "classic_8_mod_median": 4,
-          "classic_10_mod_median": 5.7,
+          "classic_10_mod_median": 5.6,
           "classic_12_mod_median": 7
         },
         "stats": {
@@ -29914,7 +29913,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Giovanni Fabbian non rientra nei piani della Fiorentina, è un nome da monitorare con attenzione in chiave mercato. Vuole giocare con continuità, cerca una squadra dove poter mettere in mostra le sue caratteristiche: è una mezzala da bonus, una partenza può renderlo più appetibile anche all'asta. ",
+        "fantaComment": "",
         "quotazioni": {
           "qtA": 1,
           "qtI": 2,
@@ -29924,7 +29923,7 @@ export const INITIAL_TEAMS = [
           "diffM": -1,
           "fvm": 1,
           "fvmM": 1,
-          "classic_8_mod_median": 0.4,
+          "classic_8_mod_median": 0.3,
           "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0.2
         },
@@ -29948,6 +29947,73 @@ export const INITIAL_TEAMS = [
           "ass": 0,
           "ammonizioni": 2,
           "amm": 2,
+          "espulsioni": 0,
+          "esp": 0,
+          "au": 0
+        },
+        "substitutes": [],
+        "slotId": null
+      },
+      {
+        "id": "fiorentina_kean_2097",
+        "csvId": "2097",
+        "fantalabId": "e2f65951-61bc-4469-bd01-9340d6a556b2",
+        "name": "Kean",
+        "displayName": "Kean",
+        "fullName": "Moise Kean",
+        "teamName": "Fiorentina",
+        "teamId": "fiorentina",
+        "teamShort": "FIO",
+        "role": "PC",
+        "classicRole": "A",
+        "mantraRole": "Pc",
+        "fantaRole": "A",
+        "photoUrl": "https://cdn.falsesoftware.com/players/133769/v1.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/133769/v1.webp",
+        "appetibilita": 96,
+        "status": "panchina",
+        "isAvailable": true,
+        "isPenaltyTaker": false,
+        "isFreeKickTaker": false,
+        "isCornerTaker": false,
+        "rigorista": false,
+        "punizioni": false,
+        "corner": false,
+        "positionNotes": "",
+        "fantaComment": "Moise Kean ha deluso nell’ultima stagione, facendo 8 gol e 1 assist. Un crollo rispetto alla stagione precedente, è inevitabile dunque che non sia più considerato tra 2/3 i più pagati in assoluto. Inoltre ha anche voci di mercato, resta da monitorare.",
+        "quotazioni": {
+          "qtA": 99,
+          "qtI": 80,
+          "diff": 19,
+          "qtAM": 99,
+          "qtIM": 80,
+          "diffM": 19,
+          "fvm": 317,
+          "fvmM": 317,
+          "classic_8_mod_median": 16.6,
+          "classic_10_mod_median": 20.2,
+          "classic_12_mod_median": 21.8
+        },
+        "stats": {
+          "titolarita": 61,
+          "fantamedia": 6.76,
+          "mediaVoto": 5.88,
+          "pv": 26,
+          "presenze": 26,
+          "gol": 6,
+          "gf": 6,
+          "gs": 0,
+          "golSubiti": 0,
+          "rp": 0,
+          "rc": 0,
+          "rPlus": 2,
+          "rMinus": 0,
+          "rigoriSegnati": 2,
+          "rigoriSbagliati": 0,
+          "assist": 1,
+          "ass": 1,
+          "ammonizioni": 4,
+          "amm": 4,
           "espulsioni": 0,
           "esp": 0,
           "au": 0
@@ -30157,21 +30223,21 @@ export const INITIAL_TEAMS = [
         "slotId": null
       },
       {
-        "id": "fiorentina_dod_5885",
-        "csvId": "5885",
-        "fantalabId": "74386d11-89c5-443b-a5c5-bb9737ca2717",
-        "name": "Dodò",
-        "displayName": "Dodò",
-        "fullName": "Dodô",
+        "id": "fiorentina_jimeneza_6531",
+        "csvId": "6531",
+        "fantalabId": "1d2a470a-c2dd-4e85-9269-2432dab4989e",
+        "name": "Jimenez A.",
+        "displayName": "Jimenez A.",
+        "fullName": "Álex Jiménez",
         "teamName": "Fiorentina",
         "teamId": "fiorentina",
         "teamShort": "FIO",
         "role": "TD",
         "classicRole": "D",
-        "mantraRole": "Dd;E",
+        "mantraRole": "Dd;Ds;E",
         "fantaRole": "D",
-        "photoUrl": "https://cdn.falsesoftware.com/players/219486/v1.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/219486/v1.webp",
+        "photoUrl": "https://cdn.falsesoftware.com/players/37584705/v2.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/37584705/v2.webp",
         "appetibilita": 85,
         "status": "panchina",
         "isAvailable": true,
@@ -30182,26 +30248,26 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "",
+        "fantaComment": "Alex Jimenez è tornato in Serie A alla Fiorentina. Spagnolo ex Milan classe 2005, aveva lasciato buoni ricordi in Italia tra i tifosi rossoneri, nonostante al Fantacalcio portò appena un assist in 22 partite. Terzino destro, all'occorrenza esterno di centrocampo, in Premier League, al Bournemouth lo spagnolo si è adattato subito alla perfezione conquistandosi una maglia da titolare con le Cherries per ben 26 volte (1 gol). Ora per lui c'è la Fiorentina che investirà su di lui circa 20 milioni a salire dal prossimo giugno. A Firenze, Jimenez a destra si gioca il posto con l'altro nuovo arrivato Joao Mario visto che Dodo è in uscita. All'asta può essere una buona soluzione tra i terzini, soprattutto per la propensione offensiva dello spagnolo a cui mancano solo i bonus per diventare un protagonista in Serie A e al Fantacalcio. Forse più di una scommessa, 'magagne' fuori campo permettendo.",
         "quotazioni": {
-          "qtA": 13,
+          "qtA": 19,
           "qtI": 15,
-          "diff": -2,
-          "qtAM": 13,
+          "diff": 4,
+          "qtAM": 19,
           "qtIM": 15,
-          "diffM": -2,
-          "fvm": 42,
-          "fvmM": 42,
-          "classic_8_mod_median": 1.2,
-          "classic_10_mod_median": 1.2,
-          "classic_12_mod_median": 1.6
+          "diffM": 4,
+          "fvm": 61,
+          "fvmM": 61,
+          "classic_8_mod_median": 3,
+          "classic_10_mod_median": 3.7,
+          "classic_12_mod_median": 4.2
         },
         "stats": {
-          "titolarita": 95,
-          "fantamedia": 6.03,
-          "mediaVoto": 5.99,
-          "pv": 36,
-          "presenze": 36,
+          "titolarita": 68,
+          "fantamedia": 6.0,
+          "mediaVoto": 6.0,
+          "pv": 31,
+          "presenze": 31,
           "gol": 1,
           "gf": 1,
           "gs": 0,
@@ -30212,10 +30278,10 @@ export const INITIAL_TEAMS = [
           "rMinus": 0,
           "rigoriSegnati": 0,
           "rigoriSbagliati": 0,
-          "assist": 2,
-          "ass": 2,
-          "ammonizioni": 7,
-          "amm": 7,
+          "assist": 1,
+          "ass": 1,
+          "ammonizioni": 10,
+          "amm": 10,
           "espulsioni": 0,
           "esp": 0,
           "au": 0
@@ -30309,14 +30375,14 @@ export const INITIAL_TEAMS = [
         "appetibilita": 92,
         "status": "panchina",
         "isAvailable": true,
-        "isPenaltyTaker": false,
+        "isPenaltyTaker": true,
         "isFreeKickTaker": false,
         "isCornerTaker": true,
-        "rigorista": false,
+        "rigorista": true,
         "punizioni": false,
         "corner": true,
         "positionNotes": "",
-        "fantaComment": "Grande stagione per Rolando Mandragora la scorsa: 7 gol e 2 assist, quasi doppia cifra di bonus. Numeri importantissimi, che potevano fare di lui più di un semplice low cost ma la Fiorentina si è scatenata sul mercato a centrocampo proprio. È arrivato Atta che sarà intoccabile, ma è arrivato anche Oulai che si gioca un posto proprio con Mandragora. Non avrà dunque il posto fisso come nella passata stagione, se lo giocherà e per questo potrebbe trovare meno spazio. Anche se il condizionale è d'obbligo, le gerarchie nei viola sono tutte da scoprire. Se cercate un low cost da bonus, Mandragora può fare al caso vostro: basta avere coperture sicure in provincia così da non correre rischi.",
+        "fantaComment": "Grande stagione per Rolando Mandragora la scorsa: 7 gol e 2 assist, quasi doppia cifra di bonus. Numeri importantissimi, che potevano fare di lui più di un semplice low cost ma la Fiorentina si è scatenata sul mercato a centrocampo proprio. È arrivato Atta che sarà intoccabile, ma è arrivato anche Oulai. Non avrà dunque il posto fisso come nella passata stagione, se lo giocherà e per questo potrebbe trovare meno spazio. Anche se il condizionale è d'obbligo, le gerarchie nei viola sono tutte da scoprire. Se cercate un low cost da bonus, Mandragora può fare al caso vostro: basta avere coperture sicure in provincia così da non correre rischi.",
         "quotazioni": {
           "qtA": 9,
           "qtI": 16,
@@ -30327,7 +30393,7 @@ export const INITIAL_TEAMS = [
           "fvm": 29,
           "fvmM": 29,
           "classic_8_mod_median": 0.4,
-          "classic_10_mod_median": 0.6,
+          "classic_10_mod_median": 0.5,
           "classic_12_mod_median": 0.8
         },
         "stats": {
@@ -30419,73 +30485,6 @@ export const INITIAL_TEAMS = [
           "amm": 8,
           "espulsioni": 1,
           "esp": 1,
-          "au": 0
-        },
-        "substitutes": [],
-        "slotId": null
-      },
-      {
-        "id": "fiorentina_pellegrinom_7023",
-        "csvId": "7023",
-        "fantalabId": "f5c4b009-851b-4901-b6b4-0f66ec783639",
-        "name": "Pellegrino M.",
-        "displayName": "Pellegrino M.",
-        "fullName": "Mateo Pellegrino",
-        "teamName": "Fiorentina",
-        "teamId": "fiorentina",
-        "teamShort": "FIO",
-        "role": "PC",
-        "classicRole": "A",
-        "mantraRole": "Pc",
-        "fantaRole": "A",
-        "photoUrl": "https://cdn.falsesoftware.com/players/37553010/v2.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/37553010/v2.webp",
-        "appetibilita": 93,
-        "status": "panchina",
-        "isAvailable": true,
-        "isPenaltyTaker": false,
-        "isFreeKickTaker": false,
-        "isCornerTaker": false,
-        "rigorista": false,
-        "punizioni": false,
-        "corner": false,
-        "positionNotes": "",
-        "fantaComment": "Mateo Pellegrino non è riuscito ad arrivare alla doppia cifra per un solo gol, si è fermato a 9 nella scorsa stagione. La Fiorentina ha creduto in lui investendo circa 20 milioni di euro e punta a fargli raggiungere la doppia cifra. Mentre al Parma era titolare inamovibile, alla Fiorentina tutto dipenderà da Kean. Al momento sostituisce Piccoli nel ruolo di back-up ma anche a gara in corso può fare male. Al fantacalcio si può anche non comporre la coppia vista la possibile partenza di Kean. Può essere un 3-4° slot per il vostro attacco.",
-        "quotazioni": {
-          "qtA": 39,
-          "qtI": 44,
-          "diff": -5,
-          "qtAM": 39,
-          "qtIM": 44,
-          "diffM": -5,
-          "fvm": 125,
-          "fvmM": 125,
-          "classic_8_mod_median": 2.6,
-          "classic_10_mod_median": 4.6,
-          "classic_12_mod_median": 6.2
-        },
-        "stats": {
-          "titolarita": 89,
-          "fantamedia": 6.65,
-          "mediaVoto": 5.99,
-          "pv": 37,
-          "presenze": 37,
-          "gol": 8,
-          "gf": 8,
-          "gs": 0,
-          "golSubiti": 0,
-          "rp": 0,
-          "rc": 0,
-          "rPlus": 1,
-          "rMinus": 0,
-          "rigoriSegnati": 1,
-          "rigoriSbagliati": 0,
-          "assist": 1,
-          "ass": 1,
-          "ammonizioni": 5,
-          "amm": 5,
-          "espulsioni": 0,
-          "esp": 0,
           "au": 0
         },
         "substitutes": [],
@@ -30644,12 +30643,12 @@ export const INITIAL_TEAMS = [
         "slotId": "pos_1"
       },
       "pos_2": {
-        "id": "frosinone_oyonoa_6238",
-        "csvId": "6238",
-        "fantalabId": "16d2f113-676b-4106-a457-67da034246c5",
-        "name": "Oyono A.",
-        "displayName": "Oyono A.",
-        "fullName": "Anthony Oyono",
+        "id": "frosinone_tchato_7605",
+        "csvId": "7605",
+        "fantalabId": "7cd0ef8c-d795-43f9-bb5a-9046a729237e",
+        "name": "Tchato",
+        "displayName": "Tchato",
+        "fullName": "Enzo Tchato",
         "teamName": "Frosinone",
         "teamId": "frosinone",
         "teamShort": "FRO",
@@ -30657,8 +30656,8 @@ export const INITIAL_TEAMS = [
         "classicRole": "D",
         "mantraRole": "Dd;E",
         "fantaRole": "D",
-        "photoUrl": "https://cdn.falsesoftware.com/players/35280474/v1.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/35280474/v1.webp",
+        "photoUrl": "https://cdn.falsesoftware.com/players/37533716/v1.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/37533716/v1.webp",
         "appetibilita": 84,
         "status": "tit_sicuro",
         "isAvailable": true,
@@ -30669,28 +30668,28 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Antony Oyono è un terzino destro o, all'occorrenza esterno a tutta fascia che ha già calcato i palchi di Serie A con il Frosinone in passato. Un gol e quattro assist nella passata stagione in 34 presenze, sarà lui il titolare di Alvini da quel lato con il fratello Jeremy che insegue. Può essere un rinforzo low-cost per la vostra difesa visto il ruolo e la propensione offensiva. Possibile controindicazione le ammonizioni, ben 8 nell'ultimo campionato.",
+        "fantaComment": null,
         "quotazioni": {
-          "qtA": 2,
+          "qtA": 1,
           "qtI": 1,
-          "diff": 1,
-          "qtAM": 2,
+          "diff": 0,
+          "qtAM": 1,
           "qtIM": 1,
-          "diffM": 1,
-          "fvm": 6,
-          "fvmM": 6,
-          "classic_8_mod_median": 0.2,
-          "classic_10_mod_median": 0.2,
-          "classic_12_mod_median": 0.2
+          "diffM": 0,
+          "fvm": 1,
+          "fvmM": 1,
+          "classic_8_mod_median": 0,
+          "classic_10_mod_median": 0,
+          "classic_12_mod_median": 0
         },
         "stats": {
-          "titolarita": 87,
+          "titolarita": 3,
           "fantamedia": 6.0,
           "mediaVoto": 6.0,
-          "pv": 34,
-          "presenze": 34,
-          "gol": 1,
-          "gf": 1,
+          "pv": 1,
+          "presenze": 1,
+          "gol": 0,
+          "gf": 0,
           "gs": 0,
           "golSubiti": 0,
           "rp": 0,
@@ -30699,10 +30698,10 @@ export const INITIAL_TEAMS = [
           "rMinus": 0,
           "rigoriSegnati": 0,
           "rigoriSbagliati": 0,
-          "assist": 4,
-          "ass": 4,
-          "ammonizioni": 8,
-          "amm": 8,
+          "assist": 0,
+          "ass": 0,
+          "ammonizioni": 0,
+          "amm": 0,
           "espulsioni": 0,
           "esp": 0,
           "au": 0
@@ -30710,7 +30709,7 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "frosinone_bracaglia_7469",
           "frosinone_calvani_7467",
-          "frosinone_cittadini_5757"
+          "frosinone_oyonoa_6238"
         ],
         "slotId": "pos_2"
       },
@@ -30781,7 +30780,7 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "frosinone_bracaglia_7469",
           "frosinone_calvani_7467",
-          "frosinone_cittadini_5757"
+          "frosinone_oyonoa_6238"
         ],
         "slotId": "pos_3"
       },
@@ -30852,7 +30851,7 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "frosinone_bracaglia_7469",
           "frosinone_calvani_7467",
-          "frosinone_cittadini_5757"
+          "frosinone_oyonoa_6238"
         ],
         "slotId": "pos_4"
       },
@@ -30923,7 +30922,7 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "frosinone_bracaglia_7469",
           "frosinone_calvani_7467",
-          "frosinone_cittadini_5757"
+          "frosinone_oyonoa_6238"
         ],
         "slotId": "pos_5"
       },
@@ -31095,7 +31094,7 @@ export const INITIAL_TEAMS = [
         "punizioni": true,
         "corner": true,
         "positionNotes": "",
-        "fantaComment": "10 gol e 14 assist per Giacomo Calò nella passata stagione di Serie B con il Frosinone, quella della promozione in Serie A. Numeri davvero da urlo per il centrocampista, che chiaramente non potrà ripetersi nella massima categoria. Può comunque fare bene, anche perché calcia tutti i piazzati: punizioni, corner e dovrebbe essere il vice sui rigori dopo l'arrivo dello specialista Schmid. Da limare un solo aspetto per il fantacalcio: i 7 gialli, proverà a prenderne qualcuno in meno in Serie A. Classico colpo low cost interessante da una neopromossa.",
+        "fantaComment": "10 gol e 14 assist per Giacomo Calò nella passata stagione di Serie B con il Frosinone, quella della promozione in Serie A. Numeri davvero da urlo per il centrocampista, che chiaramente non potrà replicare nella massima categoria. Può comunque fare bene, anche perché calcia tutti i piazzati: punizioni, corner e dovrebbe essere il vice sui rigori dopo l'arrivo dello specialista Schmid. Da limare un solo aspetto per il fantacalcio: i 7 gialli, proverà a prenderne qualcuno in meno in Serie A. Classico colpo low cost interessante da una neopromossa.",
         "quotazioni": {
           "qtA": 14,
           "qtI": 14,
@@ -31105,7 +31104,7 @@ export const INITIAL_TEAMS = [
           "diffM": 0,
           "fvm": 45,
           "fvmM": 45,
-          "classic_8_mod_median": 1.4,
+          "classic_8_mod_median": 1.3,
           "classic_10_mod_median": 2,
           "classic_12_mod_median": 2.8
         },
@@ -31513,7 +31512,7 @@ export const INITIAL_TEAMS = [
           "diffM": 2,
           "fvm": 10,
           "fvmM": 10,
-          "classic_8_mod_median": 0.3,
+          "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0.2
         },
@@ -31671,6 +31670,73 @@ export const INITIAL_TEAMS = [
           "ass": 1,
           "ammonizioni": 5,
           "amm": 5,
+          "espulsioni": 0,
+          "esp": 0,
+          "au": 0
+        },
+        "substitutes": [],
+        "slotId": null
+      },
+      {
+        "id": "frosinone_oyonoa_6238",
+        "csvId": "6238",
+        "fantalabId": "16d2f113-676b-4106-a457-67da034246c5",
+        "name": "Oyono A.",
+        "displayName": "Oyono A.",
+        "fullName": "Anthony Oyono",
+        "teamName": "Frosinone",
+        "teamId": "frosinone",
+        "teamShort": "FRO",
+        "role": "TD",
+        "classicRole": "D",
+        "mantraRole": "Dd;E",
+        "fantaRole": "D",
+        "photoUrl": "https://cdn.falsesoftware.com/players/35280474/v1.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/35280474/v1.webp",
+        "appetibilita": 84,
+        "status": "panchina",
+        "isAvailable": true,
+        "isPenaltyTaker": false,
+        "isFreeKickTaker": false,
+        "isCornerTaker": false,
+        "rigorista": false,
+        "punizioni": false,
+        "corner": false,
+        "positionNotes": "",
+        "fantaComment": "Antony Oyono è un terzino destro o, all'occorrenza esterno a tutta fascia che ha già calcato i palchi di Serie A con il Frosinone in passato. Un gol e quattro assist nella passata stagione in 34 presenze, sarà lui il titolare di Alvini da quel lato con il fratello Jeremy che insegue. Può essere un rinforzo low-cost per la vostra difesa visto il ruolo e la propensione offensiva. Possibile controindicazione le ammonizioni, ben 8 nell'ultimo campionato.",
+        "quotazioni": {
+          "qtA": 2,
+          "qtI": 1,
+          "diff": 1,
+          "qtAM": 2,
+          "qtIM": 1,
+          "diffM": 1,
+          "fvm": 6,
+          "fvmM": 6,
+          "classic_8_mod_median": 0.2,
+          "classic_10_mod_median": 0.2,
+          "classic_12_mod_median": 0.2
+        },
+        "stats": {
+          "titolarita": 87,
+          "fantamedia": 6.0,
+          "mediaVoto": 6.0,
+          "pv": 34,
+          "presenze": 34,
+          "gol": 1,
+          "gf": 1,
+          "gs": 0,
+          "golSubiti": 0,
+          "rp": 0,
+          "rc": 0,
+          "rPlus": 0,
+          "rMinus": 0,
+          "rigoriSegnati": 0,
+          "rigoriSbagliati": 0,
+          "assist": 4,
+          "ass": 4,
+          "ammonizioni": 8,
+          "amm": 8,
           "espulsioni": 0,
           "esp": 0,
           "au": 0
@@ -32014,73 +32080,6 @@ export const INITIAL_TEAMS = [
         "slotId": null
       },
       {
-        "id": "frosinone_corrado_7471",
-        "csvId": "7471",
-        "fantalabId": "f2ec00b6-5b60-4145-bee2-011bfc7b995c",
-        "name": "Corrado",
-        "displayName": "Corrado",
-        "fullName": "Niccolò Corrado",
-        "teamName": "Frosinone",
-        "teamId": "frosinone",
-        "teamShort": "FRO",
-        "role": "TS",
-        "classicRole": "D",
-        "mantraRole": "Ds;E",
-        "fantaRole": "D",
-        "photoUrl": "https://cdn.falsesoftware.com/players/8417244/v1.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/8417244/v1.webp",
-        "appetibilita": 83,
-        "status": "panchina",
-        "isAvailable": true,
-        "isPenaltyTaker": false,
-        "isFreeKickTaker": false,
-        "isCornerTaker": false,
-        "rigorista": false,
-        "punizioni": false,
-        "corner": false,
-        "positionNotes": "",
-        "fantaComment": null,
-        "quotazioni": {
-          "qtA": 1,
-          "qtI": 1,
-          "diff": 0,
-          "qtAM": 1,
-          "qtIM": 1,
-          "diffM": 0,
-          "fvm": 1,
-          "fvmM": 1,
-          "classic_8_mod_median": 0,
-          "classic_10_mod_median": 0,
-          "classic_12_mod_median": 0
-        },
-        "stats": {
-          "titolarita": 13,
-          "fantamedia": 6.0,
-          "mediaVoto": 6.0,
-          "pv": 16,
-          "presenze": 16,
-          "gol": 3,
-          "gf": 3,
-          "gs": 0,
-          "golSubiti": 0,
-          "rp": 0,
-          "rc": 0,
-          "rPlus": 0,
-          "rMinus": 0,
-          "rigoriSegnati": 0,
-          "rigoriSbagliati": 0,
-          "assist": 0,
-          "ass": 0,
-          "ammonizioni": 0,
-          "amm": 0,
-          "espulsioni": 0,
-          "esp": 0,
-          "au": 0
-        },
-        "substitutes": [],
-        "slotId": null
-      },
-      {
         "id": "frosinone_desplanches_7463",
         "csvId": "7463",
         "fantalabId": "98549edb-5890-4d13-9027-43d228b85ca8",
@@ -32307,7 +32306,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Ilias Koutsoupias l'anno scorso ha realizzato 8 gol e 4 assist in 34 partite di Serie B, è stato importante nella promozione del Frosinone. Ora il livello sale nel massimo campionato, lui proverà in primis a tenersi il posto da titolare: al momento se lo gioca. Per i bonus, chiaramente è impensabile che tenga i numeri dello scorso anno.",
+        "fantaComment": "",
         "quotazioni": {
           "qtA": 1,
           "qtI": 3,
@@ -32499,73 +32498,6 @@ export const INITIAL_TEAMS = [
         "photoUrl": "https://cdn.falsesoftware.com/players/368235/v1.webp",
         "playerImage": "https://cdn.falsesoftware.com/players/368235/v1.webp",
         "appetibilita": 81,
-        "status": "panchina",
-        "isAvailable": true,
-        "isPenaltyTaker": false,
-        "isFreeKickTaker": false,
-        "isCornerTaker": false,
-        "rigorista": false,
-        "punizioni": false,
-        "corner": false,
-        "positionNotes": "",
-        "fantaComment": "",
-        "quotazioni": {
-          "qtA": 1,
-          "qtI": 1,
-          "diff": 0,
-          "qtAM": 1,
-          "qtIM": 1,
-          "diffM": 0,
-          "fvm": 1,
-          "fvmM": 1,
-          "classic_8_mod_median": 0,
-          "classic_10_mod_median": 0,
-          "classic_12_mod_median": 0
-        },
-        "stats": {
-          "titolarita": 3,
-          "fantamedia": 6.0,
-          "mediaVoto": 6.0,
-          "pv": 1,
-          "presenze": 1,
-          "gol": 0,
-          "gf": 0,
-          "gs": 0,
-          "golSubiti": 0,
-          "rp": 0,
-          "rc": 0,
-          "rPlus": 0,
-          "rMinus": 0,
-          "rigoriSegnati": 0,
-          "rigoriSbagliati": 0,
-          "assist": 0,
-          "ass": 0,
-          "ammonizioni": 0,
-          "amm": 0,
-          "espulsioni": 0,
-          "esp": 0,
-          "au": 0
-        },
-        "substitutes": [],
-        "slotId": null
-      },
-      {
-        "id": "frosinone_tchato_7605",
-        "csvId": "7605",
-        "fantalabId": "7cd0ef8c-d795-43f9-bb5a-9046a729237e",
-        "name": "Tchato",
-        "displayName": "Tchato",
-        "fullName": "Enzo Tchato",
-        "teamName": "Frosinone",
-        "teamId": "frosinone",
-        "teamShort": "FRO",
-        "role": "TD",
-        "classicRole": "D",
-        "mantraRole": "Dd;E",
-        "fantaRole": "D",
-        "photoUrl": "",
-        "playerImage": "",
-        "appetibilita": 84,
         "status": "panchina",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -33126,53 +33058,53 @@ export const INITIAL_TEAMS = [
         "slotId": "pos_6"
       },
       "pos_8": {
-        "id": "parma_nicolussicaviglia_4349",
-        "csvId": "4349",
-        "fantalabId": "97d6767e-9030-4c03-bb3b-80d0b33b4b82",
-        "name": "Nicolussi Caviglia",
-        "displayName": "Nicolussi Caviglia",
-        "fullName": "Hans Nicolussi Caviglia",
+        "id": "parma_sorenseno_7209",
+        "csvId": "7209",
+        "fantalabId": "35f76419-21c6-4f06-b68c-fa14f67717e2",
+        "name": "Sorensen O.",
+        "displayName": "Sorensen O.",
+        "fullName": "Oliver Sørensen",
         "teamName": "Parma",
         "teamId": "parma",
         "teamShort": "PAR",
         "role": "CC",
         "classicRole": "C",
-        "mantraRole": "M;C",
+        "mantraRole": "C",
         "fantaRole": "C",
-        "photoUrl": "https://cdn.falsesoftware.com/players/4536540/v1.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/4536540/v1.webp",
-        "appetibilita": 84,
+        "photoUrl": "https://cdn.falsesoftware.com/players/23698076/v1.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/23698076/v1.webp",
+        "appetibilita": 83,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
-        "isFreeKickTaker": true,
-        "isCornerTaker": true,
+        "isFreeKickTaker": false,
+        "isCornerTaker": false,
         "rigorista": false,
-        "punizioni": true,
-        "corner": true,
+        "punizioni": false,
+        "corner": false,
         "positionNotes": "",
-        "fantaComment": "4 assist in 23 partite a voto per Hans Nicolussi Caviglia nella passata stagione, nessun gol. Classico giocatore da rendimento più che da bonus, occhio al suo destro per i piazzati, sia corner che punizioni (più dalla distanza). Non ha il posto certo, si giocherà una maglia: può fare sia il regista che la mezzala nel Parma di Cuesta.",
+        "fantaComment": "Oliver Sorensen non è un titolare fisso nel centrocampo del Parma, ma Cuesta comunque lo schiera quasi sempre. A volte dall'inizio e altre a gara in corso, proverà a migliorare in zona bonus: solo 1 gol e 1 assist in 30 partite a voto. Ha le caratteristiche per fare meglio.",
         "quotazioni": {
-          "qtA": 2,
-          "qtI": 2,
+          "qtA": 1,
+          "qtI": 1,
           "diff": 0,
-          "qtAM": 2,
-          "qtIM": 2,
+          "qtAM": 1,
+          "qtIM": 1,
           "diffM": 0,
-          "fvm": 6,
-          "fvmM": 6,
-          "classic_8_mod_median": 0.2,
+          "fvm": 1,
+          "fvmM": 1,
+          "classic_8_mod_median": 0,
           "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0.2
         },
         "stats": {
-          "titolarita": 45,
-          "fantamedia": 5.98,
-          "mediaVoto": 5.89,
-          "pv": 26,
-          "presenze": 26,
-          "gol": 0,
-          "gf": 0,
+          "titolarita": 50,
+          "fantamedia": 5.95,
+          "mediaVoto": 5.85,
+          "pv": 34,
+          "presenze": 34,
+          "gol": 1,
+          "gf": 1,
           "gs": 0,
           "golSubiti": 0,
           "rp": 0,
@@ -33181,10 +33113,10 @@ export const INITIAL_TEAMS = [
           "rMinus": 0,
           "rigoriSegnati": 0,
           "rigoriSbagliati": 0,
-          "assist": 4,
-          "ass": 4,
-          "ammonizioni": 4,
-          "amm": 4,
+          "assist": 1,
+          "ass": 1,
+          "ammonizioni": 2,
+          "amm": 2,
           "espulsioni": 0,
           "esp": 0,
           "au": 0
@@ -33375,8 +33307,8 @@ export const INITIAL_TEAMS = [
           "fvm": 61,
           "fvmM": 61,
           "classic_8_mod_median": 0.4,
-          "classic_10_mod_median": 1.3,
-          "classic_12_mod_median": 2.4
+          "classic_10_mod_median": 1.2,
+          "classic_12_mod_median": 2.3
         },
         "stats": {
           "titolarita": 50,
@@ -33814,53 +33746,53 @@ export const INITIAL_TEAMS = [
         "slotId": null
       },
       {
-        "id": "parma_sorenseno_7209",
-        "csvId": "7209",
-        "fantalabId": "35f76419-21c6-4f06-b68c-fa14f67717e2",
-        "name": "Sorensen O.",
-        "displayName": "Sorensen O.",
-        "fullName": "Oliver Sørensen",
+        "id": "parma_nicolussicaviglia_4349",
+        "csvId": "4349",
+        "fantalabId": "97d6767e-9030-4c03-bb3b-80d0b33b4b82",
+        "name": "Nicolussi Caviglia",
+        "displayName": "Nicolussi Caviglia",
+        "fullName": "Hans Nicolussi Caviglia",
         "teamName": "Parma",
         "teamId": "parma",
         "teamShort": "PAR",
         "role": "CC",
         "classicRole": "C",
-        "mantraRole": "C",
+        "mantraRole": "M;C",
         "fantaRole": "C",
-        "photoUrl": "https://cdn.falsesoftware.com/players/23698076/v1.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/23698076/v1.webp",
-        "appetibilita": 83,
+        "photoUrl": "https://cdn.falsesoftware.com/players/4536540/v1.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/4536540/v1.webp",
+        "appetibilita": 84,
         "status": "panchina",
         "isAvailable": true,
         "isPenaltyTaker": false,
-        "isFreeKickTaker": false,
-        "isCornerTaker": false,
+        "isFreeKickTaker": true,
+        "isCornerTaker": true,
         "rigorista": false,
-        "punizioni": false,
-        "corner": false,
+        "punizioni": true,
+        "corner": true,
         "positionNotes": "",
-        "fantaComment": "Oliver Sorensen non è un titolare fisso nel centrocampo del Parma, ma Cuesta comunque lo schiera quasi sempre. A volte dall'inizio e altre a gara in corso, proverà a migliorare in zona bonus: solo 1 gol e 1 assist in 30 partite a voto. Ha le caratteristiche per fare meglio.",
+        "fantaComment": "",
         "quotazioni": {
-          "qtA": 1,
-          "qtI": 1,
+          "qtA": 2,
+          "qtI": 2,
           "diff": 0,
-          "qtAM": 1,
-          "qtIM": 1,
+          "qtAM": 2,
+          "qtIM": 2,
           "diffM": 0,
-          "fvm": 1,
-          "fvmM": 1,
-          "classic_8_mod_median": 0,
+          "fvm": 6,
+          "fvmM": 6,
+          "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0.2
         },
         "stats": {
-          "titolarita": 50,
-          "fantamedia": 5.95,
-          "mediaVoto": 5.85,
-          "pv": 34,
-          "presenze": 34,
-          "gol": 1,
-          "gf": 1,
+          "titolarita": 45,
+          "fantamedia": 5.98,
+          "mediaVoto": 5.89,
+          "pv": 26,
+          "presenze": 26,
+          "gol": 0,
+          "gf": 0,
           "gs": 0,
           "golSubiti": 0,
           "rp": 0,
@@ -33869,10 +33801,10 @@ export const INITIAL_TEAMS = [
           "rMinus": 0,
           "rigoriSegnati": 0,
           "rigoriSbagliati": 0,
-          "assist": 1,
-          "ass": 1,
-          "ammonizioni": 2,
-          "amm": 2,
+          "assist": 4,
+          "ass": 4,
+          "ammonizioni": 4,
+          "amm": 4,
           "espulsioni": 0,
           "esp": 0,
           "au": 0
@@ -34534,7 +34466,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Oumar Solet può rimanere a Udine un altro anno, lì dove tutti lo abbiamo scoperto e dove si è confermato nell'ultima stagione fino a diventare un top di reparto anche al fantacalcio. 1 gol e 2 assist in metà stagione nel 24/25, 3 gol e 1 assist nella scorsa Serie A, il tutto condito da appena 2 gialli e 1 rosso in 54 partite. La difesa di Runjaic è decima per gol subiti, sintomo di solidità difensiva di tutto il reparto. Il francese ne è sempre più leader e sul centro-sinistra è cresciuto anche in fase di impostazione palla al piede. Con i suoi compagni di reparto, rimane il pericolo numero uno sui calci piazzati nell'area avversaria. Appena due le partite saltate per infortunio nell'ultimo campionato.",
+        "fantaComment": "Oumar Solet è rimasto a Udine un altro anno, lì dove tutti lo abbiamo scoperto e dove si è confermato nell'ultima stagione fino a diventare un top di reparto anche al fantacalcio. 1 gol e 2 assist in metà stagione nel 24/25, 3 gol e 1 assist nella scorsa Serie A, il tutto condito da appena 2 gialli e 1 rosso in 54 partite. La difesa di Runjaic è decima per gol subiti, sintomo di solidità difensiva di tutto il reparto. Il francese ne è sempre più leader e sul centro-sinistra è cresciuto anche in fase di impostazione palla al piede. Con i suoi compagni di reparto, rimane il pericolo numero uno sui calci piazzati nell'area avversaria. Appena due le partite saltate per infortunio nell'ultimo campionato.",
         "quotazioni": {
           "qtA": 33,
           "qtI": 33,
@@ -34615,7 +34547,7 @@ export const INITIAL_TEAMS = [
           "diffM": 2,
           "fvm": 32,
           "fvmM": 32,
-          "classic_8_mod_median": 2.1,
+          "classic_8_mod_median": 2,
           "classic_10_mod_median": 2.8,
           "classic_12_mod_median": 3.4
         },
@@ -34686,7 +34618,7 @@ export const INITIAL_TEAMS = [
           "diffM": 2,
           "fvm": 16,
           "fvmM": 16,
-          "classic_8_mod_median": 0.3,
+          "classic_8_mod_median": 0.4,
           "classic_10_mod_median": 0.4,
           "classic_12_mod_median": 0.7
         },
@@ -34830,7 +34762,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 13,
           "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
-          "classic_12_mod_median": 0.3
+          "classic_12_mod_median": 0.2
         },
         "stats": {
           "titolarita": 95,
@@ -34901,7 +34833,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 163,
           "classic_8_mod_median": 7.6,
           "classic_10_mod_median": 9.2,
-          "classic_12_mod_median": 10.1
+          "classic_12_mod_median": 10
         },
         "stats": {
           "titolarita": 74,
@@ -34950,7 +34882,7 @@ export const INITIAL_TEAMS = [
         "fantaRole": "C",
         "photoUrl": "https://cdn.falsesoftware.com/players/5270451/v2.webp",
         "playerImage": "https://cdn.falsesoftware.com/players/5270451/v2.webp",
-        "appetibilita": 92,
+        "appetibilita": 93,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": true,
@@ -34960,7 +34892,7 @@ export const INITIAL_TEAMS = [
         "punizioni": true,
         "corner": true,
         "positionNotes": "",
-        "fantaComment": "Jurgen Ekkelenkamp può fare sia la mezzala che la seconda punta nell'Udinese, Runjaic anche l'anno scorso lo ha utilizzato in entrambe le posizioni. Da mezzala è sicuramente titolare, davanti le prime scelte sono invece Zaniolo e Davis. 5 gol e 3 assist in 31 partite a voto, un solo cartellino giallo: riparte da questi numeri e da una fanta-media del 6,61. Siamo sul 4° slot per il centrocampo, avrà grande spazio nell'Udinese e proverà a confermarsi in termini di bonus. Se non a migliorarsi.",
+        "fantaComment": "Jurgen Ekkelenkamp può fare sia la mezzala che la seconda punta nell'Udinese, Runjaic anche l'anno scorso lo ha utilizzato in entrambe le posizioni. Da mezzala è sicuramente titolare, davanti le prime scelte sono invece Zaniolo e Davis. 5 gol e 3 assist in 31 partite a voto, un solo cartellino giallo: riparte da questi numeri e da una fanta-media del 6,61. Avrà grande spazio nell'Udinese e proverà a confermarsi in termini di bonus. Se non a migliorarsi.",
         "quotazioni": {
           "qtA": 20,
           "qtI": 14,
@@ -35917,7 +35849,7 @@ export const INITIAL_TEAMS = [
           "diffM": 0,
           "fvm": 1,
           "fvmM": 1,
-          "classic_8_mod_median": 0,
+          "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0
         },
@@ -36056,9 +35988,9 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 20,
       "fvm": 640,
       "fvmM": 640,
-      "classic_8_mod_median": 32,
-      "classic_10_mod_median": 33.4,
-      "classic_12_mod_median": 32.8
+      "classic_8_mod_median": 32.2,
+      "classic_10_mod_median": 33.6,
+      "classic_12_mod_median": 33
     },
     "stats": {
       "titolarita": 47,
@@ -36188,9 +36120,9 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 21,
       "fvm": 243,
       "fvmM": 243,
-      "classic_8_mod_median": 5.4,
-      "classic_10_mod_median": 7.4,
-      "classic_12_mod_median": 9.1
+      "classic_8_mod_median": 5.5,
+      "classic_10_mod_median": 7.6,
+      "classic_12_mod_median": 9.2
     },
     "stats": {
       "titolarita": 39,
@@ -36254,9 +36186,9 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 2,
       "fvm": 154,
       "fvmM": 154,
-      "classic_8_mod_median": 6.8,
+      "classic_8_mod_median": 7,
       "classic_10_mod_median": 8,
-      "classic_12_mod_median": 8.5
+      "classic_12_mod_median": 8.6
     },
     "stats": {
       "titolarita": 74,
@@ -36310,7 +36242,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Antonio Vergara è fresco di rinnovo col Napoli, dopo quanto fatto vedere nelle 8 presenze della scorsa stagione in Serie A, con 1 gol all'attivo. Si è poi infortunato, ha praticamente chiuso la stagione ai box e ha avuto qualche intoppo anche nel pre-campionato (nulla di grave). La società crede molto nelle sue qualità, Allegri anche: lo sta provando più da mezzala che da esterno alto nel tridente. Grande concorrenza, in partenza Vergara insegue: è una scommessa all'asta, bisogna dunque poterselo permettere. Avrà più spazio a gara in corso, ma con le rotazioni della Champions a volte potrà anche giocare da titolare. ",
+    "fantaComment": "Antonio Vergara è fresco di rinnovo col Napoli, dopo quanto fatto vedere nelle 8 presenze della scorsa stagione in Serie A, con 1 gol all'attivo. Si è poi infortunato, ha praticamente chiuso la stagione ai box. La società crede molto nelle sue qualità, Allegri anche: lo sta provando sia da mezzala che da esterno alto nel tridente. Grande concorrenza, in partenza Vergara insegue: è una scommessa/jolly all'asta, bisogna dunque poterselo permettere. Avrà più spazio a gara in corso, ma con le rotazioni della Champions potrà anche giocare da titolare in campionato.",
     "quotazioni": {
       "qtA": 26,
       "qtI": 28,
@@ -36321,7 +36253,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 83,
       "fvmM": 83,
       "classic_8_mod_median": 0.6,
-      "classic_10_mod_median": 0.6,
+      "classic_10_mod_median": 0.8,
       "classic_12_mod_median": 1.2
     },
     "stats": {
@@ -36366,7 +36298,7 @@ export const CSV_PLAYER_CATALOG = [
     "fantaRole": "A",
     "photoUrl": "https://cdn.falsesoftware.com/players/129261/v1.webp",
     "playerImage": "https://cdn.falsesoftware.com/players/129261/v1.webp",
-    "appetibilita": 95,
+    "appetibilita": 96,
     "status": "panchina",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -36386,8 +36318,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 12,
       "fvm": 282,
       "fvmM": 282,
-      "classic_8_mod_median": 6.6,
-      "classic_10_mod_median": 8.4,
+      "classic_8_mod_median": 6.8,
+      "classic_10_mod_median": 8.6,
       "classic_12_mod_median": 9.6
     },
     "stats": {
@@ -36453,7 +36385,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 134,
       "fvmM": 134,
       "classic_8_mod_median": 5.8,
-      "classic_10_mod_median": 6.2,
+      "classic_10_mod_median": 6.3,
       "classic_12_mod_median": 7
     },
     "stats": {
@@ -36518,8 +36450,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 14,
       "fvm": 58,
       "fvmM": 58,
-      "classic_8_mod_median": 2.6,
-      "classic_10_mod_median": 3.8,
+      "classic_8_mod_median": 2.8,
+      "classic_10_mod_median": 4,
       "classic_12_mod_median": 5
     },
     "stats": {
@@ -36640,7 +36572,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Yann Bisseck, da seconda linea, si è imposto sempre di più diventando oggi un vero e proprio comprimario nell'undici titolare dell'Inter. Ancora incerto quando puntato, il tedesco ha però personalità da vendere con la palla tra i piedi e partecipa alla fase offensiva seguendo l'esempio di Bastoni. Tre i gol messi a segno nell'ultimo campionato, insieme a due assist, per una fanta-media tra le più alte in difesa di 6,65. Al Fantacalcio è un'ottima soluzione da modificatore difesa, le due ammonizioni totali lo testimoniano. Appena 23 le presenze stagionali, non è titolarissimo ma tra le tre competizioni troverà spazio e bonus in un Inter molto prolifica.",
+    "fantaComment": "Yann Bisseck, da seconda linea, si è imposto sempre di più diventando oggi un vero e proprio comprimario nell'undici titolare dell'Inter. Ancora incerto quando puntato, il tedesco ha però personalità da vendere con la palla tra i piedi e partecipa alla fase offensiva seguendo l'esempio di Bastoni. Tre i gol messi a segno nell'ultimo campionato, insieme a due assist, per una fanta-media tra le più alte in difesa di 6,65. Al fantacalcio è un'ottima soluzione da modificatore difesa, ma anche da bonus. Appena 23 le presenze stagionali l'anno scorso, non è un titolarissimo ma tra le tre competizioni troverà spazio e bonus visto che l'Inter è molto prolifica.",
     "quotazioni": {
       "qtA": 26,
       "qtI": 32,
@@ -36650,9 +36582,9 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -6,
       "fvm": 83,
       "fvmM": 83,
-      "classic_8_mod_median": 2.4,
+      "classic_8_mod_median": 2.5,
       "classic_10_mod_median": 3.2,
-      "classic_12_mod_median": 3.7
+      "classic_12_mod_median": 3.8
     },
     "stats": {
       "titolarita": 55,
@@ -36716,8 +36648,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 8,
       "fvm": 29,
       "fvmM": 29,
-      "classic_8_mod_median": 0.4,
-      "classic_10_mod_median": 0.3,
+      "classic_8_mod_median": 0.6,
+      "classic_10_mod_median": 0.4,
       "classic_12_mod_median": 0.3
     },
     "stats": {
@@ -36772,7 +36704,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": null,
+    "fantaComment": "Olaf Gorter è una delle sorprese dell’inizio di campionato. Si tratta di un centrocampista olandese del 2005 che giocava già nella Primavera del Lecce, che lo aveva preso dall’Ajax. Dopo il gol al debutto contro il Venezia può avere più spazio ed essere una scelta low cost per il fantacalcio.",
     "quotazioni": {
       "qtA": 4,
       "qtI": 1,
@@ -36782,7 +36714,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 3,
       "fvm": 13,
       "fvmM": 13,
-      "classic_8_mod_median": 0,
+      "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0
     },
@@ -36848,7 +36780,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 2,
       "fvm": 16,
       "fvmM": 16,
-      "classic_8_mod_median": 0.3,
+      "classic_8_mod_median": 0.4,
       "classic_10_mod_median": 0.4,
       "classic_12_mod_median": 0.7
     },
@@ -36914,7 +36846,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 7,
       "fvm": 262,
       "fvmM": 262,
-      "classic_8_mod_median": 5.2,
+      "classic_8_mod_median": 5.4,
       "classic_10_mod_median": 8,
       "classic_12_mod_median": 9.4
     },
@@ -37046,7 +36978,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 0,
       "fvm": 198,
       "fvmM": 198,
-      "classic_8_mod_median": 3.2,
+      "classic_8_mod_median": 3.3,
       "classic_10_mod_median": 5.2,
       "classic_12_mod_median": 6.7
     },
@@ -37102,7 +37034,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Alessandro Romano, ragazzo del 2006, per visione e caratteristiche da equilibratore ricorda il suo connazionale Remo Freuler. Dopo l'esperienza in Serie B allo Spezia per farsi le ossa, il ventenne ha convinto tutti e a spuntarla è stato il Cagliari che ha investito quasi 6 milioni. In Liguria ha giocato sempre da vertice basso in un centrocampo a cinque: non caratteristiche propriamente da fantacalcio. Nell'annata da incubo dello Spezia è stato uno dei pochi a salvarsi e per questo può garantire buoni voti e candidarsi anche a calciare i piazzati. Al fantacalcio intriga, ma occhio al dualismo con l'altro nuovo arrivato Winks per il posto da titolare. Da leghe numerose.",
+    "fantaComment": "Alessandro Romano, centrocampista del 2006, per visione e caratteristiche da equilibratore ricorda il suo connazionale Remo Freuler. Dopo l'esperienza in Serie B allo Spezia per farsi le ossa, il ventenne ha convinto tutti e a spuntarla è stato il Cagliari che ha investito quasi 6 milioni. In Liguria ha giocato sempre da vertice basso in un centrocampo a cinque: non caratteristiche propriamente da fantacalcio, anche se ha segnato da fuori al debutto. Nell'annata da incubo dello Spezia è stato uno dei pochi a salvarsi e per questo può garantire buoni voti e candidarsi anche a calciare i piazzati. Al fantacalcio intriga, crescerà molto.",
     "quotazioni": {
       "qtA": 5,
       "qtI": 2,
@@ -37244,9 +37176,9 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 12,
       "fvm": 48,
       "fvmM": 48,
-      "classic_8_mod_median": 0.2,
-      "classic_10_mod_median": 0.2,
-      "classic_12_mod_median": 0.5
+      "classic_8_mod_median": 0.3,
+      "classic_10_mod_median": 0.3,
+      "classic_12_mod_median": 0.6
     },
     "stats": {
       "titolarita": 39,
@@ -37300,7 +37232,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Si è rivisto il vero Piotr Zielinski con Chivu, quello ammirato negli anni a Napoli che non si era visto con Inzaghi. 6 gol e 2 assist in 30 partite a voto per il polacco, che può agire sia da mezzala che in cabina di regia se non c'è Calhanoglu e dopo l'arrivo di Jones questa diventa l'opzione più accreditata. E, se il turco non è in campo, è anche il vice rigorista nerazzurro (1 su 1 nella passata stagione dal dischetto). Un giocatore a tutti gli effetti ritrovato, e per questo è un giocatore di fascia alta al fantacalcio: classico colpo da terzo slot per il vostro centrocampo. A volte giocherà dall'inizio, altre entrerà a gara in corso ma se starà bene a voto andrà quasi sempre. E l'anno scorso di infortuni non ne ha praticamente mai avuti. ",
+    "fantaComment": "Si è rivisto il vero Piotr Zielinski con Chivu, quello ammirato negli anni a Napoli che non si era visto con Inzaghi. 6 gol e 2 assist in 30 partite a voto per il polacco, che può agire sia da mezzala che in cabina di regia se non c'è Calhanoglu e dopo l'arrivo di Jones questa diventa l'opzione più accreditata. E, se il turco non è in campo, è anche il vice rigorista nerazzurro (1 su 1 nella passata stagione dal dischetto). Un giocatore a tutti gli effetti ritrovato, al fantacalcio non è un top ma è molto importante. A volte giocherà dall'inizio, altre entrerà a gara in corso ma se starà bene a voto andrà quasi sempre. E l'anno scorso di infortuni non ne ha praticamente mai avuti.",
     "quotazioni": {
       "qtA": 38,
       "qtI": 43,
@@ -37378,7 +37310,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 256,
       "classic_8_mod_median": 13.4,
       "classic_10_mod_median": 14.2,
-      "classic_12_mod_median": 14.9
+      "classic_12_mod_median": 15
     },
     "stats": {
       "titolarita": 53,
@@ -37442,7 +37374,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 0,
       "fvm": 400,
       "fvmM": 400,
-      "classic_8_mod_median": 13.5,
+      "classic_8_mod_median": 13.4,
       "classic_10_mod_median": 16,
       "classic_12_mod_median": 16.8
     },
@@ -37498,7 +37430,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Si è preso la scena nella seconda parte di stagione Nicolò Pisilli, con 2 gol e 4 assist in 22 partite con la maglia della Roma. Sia centrocampista nei due in mediana che trequartista, Gasperini lo ha impiegato in entrambe le posizioni ma più spesso avanzato. A oggi si gioca una maglia proprio sulla trequarti con Soulé, ma arriveranno rinforzi importanti dal mercato. E Pisilli per questo è una possibile sorpresa: ha un feeling importante con la zona bonus, Gasp lo ha di fatto blindato a Roma e di spazio ne troverà visto che la squadra giallorossa sarà impegnata anche in Champions League. Interessante, classico giocatore da 4° slot, basta avere coperture sicure in rosa e si schiera praticamente sempre. Così da essere tranquilli anche quelle volte in cui non andrà a voto.",
+    "fantaComment": "Si è preso la scena nella seconda parte di stagione Nicolò Pisilli, con 2 gol e 4 assist in 22 partite con la maglia della Roma. Sia centrocampista nei due in mediana che trequartista, Gasperini lo ha impiegato in entrambe le posizioni ma più spesso avanzato. E Pisilli per questo è una possibile sorpresa: ha un feeling importante con la zona bonus, Gasp lo ha di fatto blindato a Roma e di spazio ne troverà visto che la squadra giallorossa sarà impegnata anche in Champions League. Interessante, classico giocatore da 4° slot, basta avere coperture sicure in rosa e si schiera praticamente sempre. Così da essere tranquilli anche quelle volte in cui non andrà a voto.",
     "quotazioni": {
       "qtA": 11,
       "qtI": 13,
@@ -37564,7 +37496,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Pre-campionato da urlo per Andy Diouf. La scorsa stagione l'ha chiusa con 1 gol in 10 partite a voto, ma ha lasciato la sensazione di poter diventare un giocatore importante per l'Inter. Un'impressione che ha avuto in primis Chivu, che lo ha schierato a tutta fascia a destra dopo la partenza di Dumfries per tutto il pre-campionato e lo ha preferito a Luis Henrique. Ora è arrivato Spence, saranno loro due a giocarsi il posto. E chissà che non possa diventare più di una semplice alternativa: al momento è dunque una possibile sorpresa a centrocampo, un colpo indicativamente da 4°/5° slot. Nasce come mezzala, ma vista l'abbondanza la sensazione è che possa trovare più spazio largo che in mediana.",
+    "fantaComment": "Inizio di stagione da urlo per Andy Diouf. La scorsa annata l'ha chiusa con 1 gol in 10 partite a voto, ma ha lasciato la sensazione di poter diventare un giocatore importante per l'Inter. Un'impressione che ha avuto in primis Chivu, che lo ha schierato a tutta fascia a destra dopo la partenza di Dumfries. Ora è arrivato Spence, saranno loro due a giocarsi il posto. E chissà che non possa diventare più di una semplice alternativa: al momento è dunque una possibile sorpresa a centrocampo, un colpo indicativamente da 3/4° slot. Nasce come mezzala, ma vista l'abbondanza la sensazione è che ormai giocherà stabilmente da esterno. Al fantacalcio va messo sempre a prescindere.",
     "quotazioni": {
       "qtA": 25,
       "qtI": 5,
@@ -37574,8 +37506,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 20,
       "fvm": 80,
       "fvmM": 80,
-      "classic_8_mod_median": 1.9,
-      "classic_10_mod_median": 2.4,
+      "classic_8_mod_median": 2,
+      "classic_10_mod_median": 2.5,
       "classic_12_mod_median": 3
     },
     "stats": {
@@ -37630,7 +37562,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Samuel Chukwueze è tornato per restare. Amorim lo ha confermato nella rosa del Milan, lo ritiene un giocatore utile per il suo 3-4-2-1: inizialmente più come alternativa che come titolare, più da spezzoni nella ripresa o rotazioni per l'Europa League. Ma nel pre-campionato ha mandato diversi segnali importanti da quinto a destra, con gol e assist: proverà a farsi trovare pronto quando verrà chiamato in causa e chissà. Vuole fare di tutto per avere uno spazio in questo Milan.",
+    "fantaComment": "Samuel Chukwueze è tornato per restare. Amorim lo ha confermato nella rosa del Milan, lo ritiene un giocatore utile per il suo 3-4-2-1: inizialmente è partito come titolare dopo i buoni segnali dal precampionato, alla lunga avrà un po' di alternanza. Proverà a farsi trovare pronto quando verrà chiamato in causa e poi chissà. Vuole fare di tutto per avere uno spazio in questo Milan.",
     "quotazioni": {
       "qtA": 23,
       "qtI": 20,
@@ -37640,7 +37572,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 3,
       "fvm": 74,
       "fvmM": 74,
-      "classic_8_mod_median": 0.7,
+      "classic_8_mod_median": 0.8,
       "classic_10_mod_median": 1,
       "classic_12_mod_median": 1.6
     },
@@ -37774,7 +37706,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 454,
       "classic_8_mod_median": 22,
       "classic_10_mod_median": 25.2,
-      "classic_12_mod_median": 25.6
+      "classic_12_mod_median": 25.4
     },
     "stats": {
       "titolarita": 63,
@@ -37894,7 +37826,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "3 gol e 5 assist in 30 partite nella passata stagione per Chico Conceicao, ma soprattutto la sensazione che possa fare ancora di più. E la Juve plasmata da Spalletti sembra fatta su misura per il portoghese, con questo posto a destra nel 4-2-3-1, la mattonella preferita da cui partire per creare scompiglio nelle difese avversarie. La doppia cifra tra gol e assist può essere l'obiettivo minimo, chissà che non possa essere la stagione della vera e propria esplosione di Conceicao alla Juve e al fantacalcio. Finora si è visto solo a sprazzi il suo grande talento, adesso è alla ricerca di continuità (anche fisicamente, visto che qualche acciacco lo ha avuto anche l'anno scorso, seppur nulla di serio). Se lo augurano anche i fantallenatori, siamo indicativamente tra 2° e 3° slot all'asta, a seconda di chi prendete prima di lui nel vostro centrocampo. ",
+    "fantaComment": "3 gol e 5 assist in 30 partite nella passata stagione per Chico Conceicao, ma soprattutto la sensazione che possa fare ancora di più. E la Juve plasmata da Spalletti sembra fatta su misura per il portoghese, con questo posto a destra nel 4-2-3-1, la mattonella preferita da cui partire per creare scompiglio nelle difese avversarie. La doppia cifra tra gol e assist può essere l'obiettivo minimo, chissà che non possa essere la stagione della vera e propria esplosione di Conceicao alla Juve e al fantacalcio. Finora si è visto solo a sprazzi il suo grande talento, adesso è alla ricerca di continuità (anche fisicamente, visto che qualche acciacco lo ha avuto anche l'anno scorso, seppur nulla di serio).",
     "quotazioni": {
       "qtA": 43,
       "qtI": 41,
@@ -37950,7 +37882,7 @@ export const CSV_PLAYER_CATALOG = [
     "fantaRole": "C",
     "photoUrl": "https://cdn.falsesoftware.com/players/5270451/v2.webp",
     "playerImage": "https://cdn.falsesoftware.com/players/5270451/v2.webp",
-    "appetibilita": 92,
+    "appetibilita": 93,
     "status": "in_ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -37960,7 +37892,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Jurgen Ekkelenkamp può fare sia la mezzala che la seconda punta nell'Udinese, Runjaic anche l'anno scorso lo ha utilizzato in entrambe le posizioni. Da mezzala è sicuramente titolare, davanti le prime scelte sono invece Zaniolo e Davis. 5 gol e 3 assist in 31 partite a voto, un solo cartellino giallo: riparte da questi numeri e da una fanta-media del 6,61. Siamo sul 4° slot per il centrocampo, avrà grande spazio nell'Udinese e proverà a confermarsi in termini di bonus. Se non a migliorarsi.",
+    "fantaComment": "Jurgen Ekkelenkamp può fare sia la mezzala che la seconda punta nell'Udinese, Runjaic anche l'anno scorso lo ha utilizzato in entrambe le posizioni. Da mezzala è sicuramente titolare, davanti le prime scelte sono invece Zaniolo e Davis. 5 gol e 3 assist in 31 partite a voto, un solo cartellino giallo: riparte da questi numeri e da una fanta-media del 6,61. Avrà grande spazio nell'Udinese e proverà a confermarsi in termini di bonus. Se non a migliorarsi.",
     "quotazioni": {
       "qtA": 20,
       "qtI": 14,
@@ -38026,7 +37958,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Gianluca Gaetano è il primo rinforzo dell'Atalanta targata Maurizio Sarri. Il classe 2000 è arrivato dal Cagliari per circa 14 milioni bonus inclusi. Pisacane lo ha 'trasformato' da trequartista a regista puro e proprio in questo ruolo lo vede Sarri, per dettare i tempi nel suo nuovo centrocampo a tre. Chiaramente, all'occorrenza potrà fare anche la mezzala, ma arriva per giocare davanti alla difesa. 2 gol e 4 assist in 32 partite a voto l'anno scorso al Cagliari, chiaramente i bonus sono diminuiti quando è stato arretrato, nella seconda parte della stagione. 4 le ammonizioni, nessun rosso: ha tutto per essere il classico giocatore da rendimento più che da bonus, da 6/6,5 senza troppe pretese. A livello di infortuni, è un giocatore integro. Bisognerà anche capire le gerarchie di Sarri, visto che la squadra passerà alla difesa a 4 dopo oltre 10 anni e al centrocampo a 3: è un cantiere aperto l'Atalanta. Al Cagliari era un titolare fisso, qui il suo status potrebbe essere leggermente 'inferiore': a volte titolare, altre no, ma comunque a voto andrà con regolarità. ",
+    "fantaComment": "Gianluca Gaetano è un rinforzo dell'Atalanta targata Maurizio Sarri. Il classe 2000 è arrivato dal Cagliari per circa 14 milioni bonus inclusi. Pisacane lo ha 'trasformato' da trequartista a regista puro e proprio in questo ruolo lo vede Sarri, per dettare i tempi nel suo nuovo centrocampo a tre. Chiaramente, all'occorrenza potrà fare anche la mezzala, ma arriva per giocare davanti alla difesa. 2 gol e 4 assist in 32 partite a voto l'anno scorso al Cagliari, chiaramente i bonus sono diminuiti quando è stato arretrato, nella seconda parte della stagione. 4 le ammonizioni, nessun rosso: ha tutto per essere il classico giocatore da rendimento più che da bonus, da 6/6,5. A livello di infortuni, è un giocatore integro.",
     "quotazioni": {
       "qtA": 8,
       "qtI": 7,
@@ -38170,7 +38102,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 211,
       "classic_8_mod_median": 6.6,
       "classic_10_mod_median": 8.8,
-      "classic_12_mod_median": 10.4
+      "classic_12_mod_median": 10.3
     },
     "stats": {
       "titolarita": 63,
@@ -38235,7 +38167,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 224,
       "fvmM": 224,
       "classic_8_mod_median": 11.4,
-      "classic_10_mod_median": 13.2,
+      "classic_10_mod_median": 13,
       "classic_12_mod_median": 14
     },
     "stats": {
@@ -38433,8 +38365,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 54,
       "fvmM": 54,
       "classic_8_mod_median": 1.2,
-      "classic_10_mod_median": 1.9,
-      "classic_12_mod_median": 3
+      "classic_10_mod_median": 2,
+      "classic_12_mod_median": 3.1
     },
     "stats": {
       "titolarita": 100,
@@ -38752,7 +38684,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "",
+    "fantaComment": "Sebastiano Esposito ha lasciato il Cagliari dopo un’estate turbolenta per passare al Sassuolo. Sulla carta può essere titolare, giocando da centravanti (o falso nove) tra Berardi e Laurienté. Viste le sue caratteristiche può fare anche l’ala se dovesse mancare uno dei due esterni d’attacco. Un 4-2-3-1 con Bowie centravanti sarebbe troppo offensivo, l’ex Verona potrebbe giocare come punta in un 4-3-3 e in quel caso rischierebbe Esposito, ma l’ex Cagliari è favorito e non si è spostato dal Cagliari per fare panchina. Nella scorsa stagione ha fatto 7 gol e 4 assist, numeri che lo rendono interessante come 3/4° slot da alternare. Occhio ai rigori come vice di Berardi, in carriera 22 segnati su 23. ",
     "quotazioni": {
       "qtA": 25,
       "qtI": 40,
@@ -38762,7 +38694,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -15,
       "fvm": 80,
       "fvmM": 80,
-      "classic_8_mod_median": 0.3,
+      "classic_8_mod_median": 0.4,
       "classic_10_mod_median": 0.6,
       "classic_12_mod_median": 1
     },
@@ -38828,9 +38760,9 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -7,
       "fvm": 250,
       "fvmM": 250,
-      "classic_8_mod_median": 3.6,
-      "classic_10_mod_median": 5.2,
-      "classic_12_mod_median": 6.2
+      "classic_8_mod_median": 3.5,
+      "classic_10_mod_median": 5,
+      "classic_12_mod_median": 6
     },
     "stats": {
       "titolarita": 61,
@@ -38894,7 +38826,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -15,
       "fvm": 118,
       "fvmM": 118,
-      "classic_8_mod_median": 0.6,
+      "classic_8_mod_median": 0.5,
       "classic_10_mod_median": 1,
       "classic_12_mod_median": 1.8
     },
@@ -38950,7 +38882,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Si è infortunato ai Mondiali Ismael Koné, ne avrà per mesi: da capire se riuscirà a tornare verso il mese di dicembre o se direttamente a inizio 2027, si capirà in seguito. È stato operato per una doppia frattura, alla tibia e alla fibula. Una volta che sarà al 100%, sicuramente tornerà a essere titolare nella mediana del Sassuolo (6 gol in 35 partite a voto nella passata stagione). Ma al momento è ai box e al suo posto il candidato numero uno è Lipani. Per il fantacalcio si può prendere o da ultimo slot in un reparto con tutti titolari di fatto oppure se ne riparla direttamente all'asta di riparazione, quando sarà già tornato o pronto a farlo.",
+    "fantaComment": "Si è infortunato ai Mondiali Ismael Koné, ne avrà per mesi: da capire se riuscirà a tornare verso il mese di dicembre o se direttamente a inizio 2027, si capirà in seguito. È stato operato per una doppia frattura, alla tibia e alla fibula. Una volta che sarà al 100%, sicuramente tornerà a essere titolare nella mediana del Sassuolo (6 gol in 35 partite a voto nella passata stagione). Ma al momento è ai box e servirà prudenza. Per il fantacalcio si può prendere o da ultimo slot in un reparto con tutti titolari di fatto oppure se ne riparla direttamente all'asta di riparazione, quando sarà già tornato o pronto a farlo.",
     "quotazioni": {
       "qtA": 6,
       "qtI": 15,
@@ -38991,15 +38923,15 @@ export const CSV_PLAYER_CATALOG = [
     "substitutes": []
   },
   {
-    "id": "sassuolo_pinamonti_2038",
+    "id": "lazio_pinamonti_2038",
     "csvId": "2038",
     "fantalabId": "ced01d22-1684-45d0-bcde-9898ff26ae86",
     "name": "Pinamonti",
     "displayName": "Pinamonti",
     "fullName": "Andrea Pinamonti",
-    "teamName": "Sassuolo",
-    "teamId": "sassuolo",
-    "teamShort": "SAS",
+    "teamName": "Lazio",
+    "teamId": "lazio",
+    "teamShort": "LAZ",
     "role": "PC",
     "classicRole": "A",
     "mantraRole": "Pc",
@@ -39026,8 +38958,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -2,
       "fvm": 118,
       "fvmM": 118,
-      "classic_8_mod_median": 2.7,
-      "classic_10_mod_median": 4.6,
+      "classic_8_mod_median": 2.8,
+      "classic_10_mod_median": 4.8,
       "classic_12_mod_median": 6.2
     },
     "stats": {
@@ -39423,7 +39355,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 38,
       "fvmM": 38,
       "classic_8_mod_median": 0.6,
-      "classic_10_mod_median": 0.9,
+      "classic_10_mod_median": 0.8,
       "classic_12_mod_median": 1
     },
     "stats": {
@@ -39544,7 +39476,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Sprazzi del vero Federico Bernardeschi nella passata stagione, al Bologna ha fatto vedere cose importanti. 4 gol e 2 assist in 24 partite a voto, ha saltato quasi 10 partite per infortunio di fatto. Quando c'è stato, è praticamente sempre andato a voto. Per Italiano era il vice Orsolini, Tedesco invece li sta provando a far coesistere: Bernardeschi sulla trequarti al centro o da mezzala addirittura, con Orsolini da ala destra. Una soluzione che può portare benefici a entrambi e anche ai fantallenatori. Per Berna all'asta siamo sul 4° slot pieno, è un giocatore che senza coppe può portare anche 10 tra gol e assist. Sempre se sta bene, questo è un punto cruciale. ",
+    "fantaComment": "Sprazzi del vero Federico Bernardeschi nella passata stagione, al Bologna ha fatto vedere cose importanti. 4 gol e 2 assist in 24 partite a voto, ha saltato quasi 10 partite per infortunio di fatto. Quando c'è stato, è praticamente sempre andato a voto. Per Italiano era principalmente il vice Orsolini, Tedesco invece li sta provando a far coesistere. Per Bernardeschi all'asta siamo sul 4° slot, è un giocatore che senza coppe può portare anche 7-8 tra gol e assist. Sempre se sta bene, questo è un punto cruciale. ",
     "quotazioni": {
       "qtA": 21,
       "qtI": 21,
@@ -39554,7 +39486,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 0,
       "fvm": 67,
       "fvmM": 67,
-      "classic_8_mod_median": 1.6,
+      "classic_8_mod_median": 1.5,
       "classic_10_mod_median": 2.6,
       "classic_12_mod_median": 3.5
     },
@@ -39874,7 +39806,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Giovanni Di Lorenzo a 32 anni rimane capitano e punto fermo della difesa del Napoli sulla fascia destra. Nonostante i problemi fisici della passata stagione, il veterano rimane una certezza su tutti e due i lati del campo. Se la produzione offensiva, di spinta è calata negli anni, il suo contributo a gol e assist non è venuto meno, sia schierato in una difesa a quattro o tre, e i 2 gol e 1 assist in 26 presenze dell'ultima stagione ne sono una testimonianza. Può essere un fattore per il modificatore difesa, vista la sua continuità di rendimento (6,33 di fantamedia).",
+    "fantaComment": "Giovanni Di Lorenzo a 32 anni rimane capitano e punto fermo della difesa del Napoli sulla fascia destra. Nonostante i problemi fisici della passata stagione, il difensore rimane una certezza. Se la produzione offensiva, di spinta è calata negli anni, il suo contributo a gol e assist non è venuto meno, sia schierato in una difesa a quattro o tre, e i 2 gol e 1 assist in 26 presenze dell'ultima stagione ne sono una testimonianza. Può essere un fattore per il modificatore difesa, vista la sua continuità di rendimento (6,33 di fanta-media).",
     "quotazioni": {
       "qtA": 26,
       "qtI": 25,
@@ -40148,7 +40080,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 1,
       "fvm": 10,
       "fvmM": 10,
-      "classic_8_mod_median": 0,
+      "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0.2
     },
@@ -40270,7 +40202,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Pierre Kalulu finora è stato un vero e proprio jolly per Spalletti che lo ha utilizzato all'occorrenza come centrale, terzino ma soprattutto come esterno di centrocampo a destra. Il francese è sempre stato presenze: 37 le presenze condite da 2 gol e 4 assist e una fanta-media del 6,36. Ordinato nelle diagonali difensive, bravo nel reggere l'uno contro in velocità e, dall'ultima stagione, migliorato nella spinta in fase offensiva. A tutto questo si aggiunge un discreto senso del gol sugli sviluppi di corner. Al fantacalcio, soprattutto da terzino, può essere un'ottima soluzione per assicurarsi un titolarissimo a qualche credito in meno rispetto ad un top ma con la speranza di trovare lo stesso ammontare di bonus.",
+    "fantaComment": "Pierre Kalulu finora è stato un vero e proprio jolly per Spalletti che lo ha utilizzato all'occorrenza come centrale ma soprattutto come terzino destro. Il francese è sempre stato presente l'anno scorso: 37 le partite condite da 2 gol e 4 assist e una fanta-media del 6,36. Ordinato nelle diagonali difensive, bravo nel reggere l'uno contro in velocità e, dall'ultima stagione, migliorato nella spinta in fase offensiva. A tutto questo si aggiunge un discreto senso del gol sugli sviluppi di corner. Al fantacalcio, soprattutto da terzino, può essere un'ottima soluzione per assicurarsi un titolarissimo a qualche credito in meno rispetto ad un top ma con la speranza di trovare lo stesso ammontare di bonus.",
     "quotazioni": {
       "qtA": 30,
       "qtI": 30,
@@ -40348,7 +40280,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 13,
       "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
-      "classic_12_mod_median": 0.3
+      "classic_12_mod_median": 0.2
     },
     "stats": {
       "titolarita": 95,
@@ -40402,7 +40334,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "La mente del centrocampo del Napoli di Conte e salvo sorprese anche di quello di Allegri. Sarà il vertice basso dei tre centrocampisti, nella passata stagione fanta-media del 6,10 e 1 gol in 31 partite a voto. Solo 3 ammonizioni, questo è un dato positivo per il ruolo che ha in campo. Classico giocatore da rendimento e non da bonus, perfetto per il 5°/6° slot nel vostro centrocampo. Magari non le giocherà proprio tutte visto che c'è la Champions, ma comunque di spazio ne avrà.",
+    "fantaComment": "La mente del centrocampo del Napoli di Conte e anche di quello di Allegri. Sarà il vertice basso dei tre centrocampisti, nella passata stagione fanta-media del 6,10 e 1 gol in 31 partite a voto. Solo 3 ammonizioni, questo è un dato positivo per il ruolo che ha in campo. Classico giocatore da rendimento e non da bonus, perfetto per il 5°/6° slot nel vostro centrocampo. Magari non le giocherà proprio tutte visto che c'è la Champions, ma comunque di spazio ne avrà.",
     "quotazioni": {
       "qtA": 4,
       "qtI": 4,
@@ -40414,7 +40346,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 13,
       "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.4,
-      "classic_12_mod_median": 1.1
+      "classic_12_mod_median": 1
     },
     "stats": {
       "titolarita": 76,
@@ -40600,7 +40532,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "",
+    "fantaComment": "Emanuele Lulli ha stupito tutti al debutto nella prima di campionato contro la Fiorentina, ha giocato titolare e ha fatto una buonissima prestazione. Ha solo 19 anni, appena compiuti, ma è sembrato già pronto per la Serie A. A destra il titolare è Molina, ma Lulli si farà trovare pronto se Gasperini punterà ancora su di lui. Al fantacalcio però è solo una scommessa.",
     "quotazioni": {
       "qtA": 7,
       "qtI": 1,
@@ -40744,7 +40676,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 96,
       "classic_8_mod_median": 4.6,
       "classic_10_mod_median": 5.4,
-      "classic_12_mod_median": 6.1
+      "classic_12_mod_median": 6.2
     },
     "stats": {
       "titolarita": 95,
@@ -40808,9 +40740,9 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 3,
       "fvm": 99,
       "fvmM": 99,
-      "classic_8_mod_median": 1,
+      "classic_8_mod_median": 1.2,
       "classic_10_mod_median": 2.4,
-      "classic_12_mod_median": 4.4
+      "classic_12_mod_median": 4.5
     },
     "stats": {
       "titolarita": 50,
@@ -40930,7 +40862,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Luis Milla, 31enne spagnolo, è un centrocampista centrale di grande esperienza. Una vita passata in Liga tra Granada e Getafe, promette equilibrio ed eccellenti doti nel palleggio. Nell'ultima stagione l'exploit con 10 assist ed un gol in 37 partite nel massimo campionato spagnolo. Al fantacalcio può portare buoni voti e appunto qualche +1 (specialista nei calci di punizione) ma occhio alla concorrenza nei due posti in mediana tra l'insostituibile Da Cunha e i vari Perrone e Caqueret. Qualche giallo di troppo e una posizione da play lo penalizzano ma rimane un jolly per il vostro centrocampo.",
+    "fantaComment": "Luis Milla, 31enne spagnolo, è un centrocampista centrale di grande esperienza. Una vita passata in Liga tra Granada e Getafe, promette equilibrio ed eccellenti doti nel palleggio. Nell'ultima stagione l'exploit con 10 assist e un gol in 37 partite nel massimo campionato spagnolo. Al fantacalcio può portare buoni voti e appunto qualche +1 (specialista nei calci di punizione) ma occhio alla concorrenza nei due posti in mediana tra Da Cunha e Perrone. Qualche giallo di troppo e una posizione da play lo potrebbero penalizzare un po' ma rimane un profilo che può portare anche dei bonus e avere più spazio del previsto.",
     "quotazioni": {
       "qtA": 4,
       "qtI": 1,
@@ -41007,8 +40939,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 128,
       "fvmM": 128,
       "classic_8_mod_median": 6,
-      "classic_10_mod_median": 7.3,
-      "classic_12_mod_median": 8.3
+      "classic_10_mod_median": 7.4,
+      "classic_12_mod_median": 8.4
     },
     "stats": {
       "titolarita": 37,
@@ -41062,7 +40994,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": null,
+    "fantaComment": "Alieu Njie ha lanciato dei segnali subentrando nel Torino contro il Milan. Al fantacalcio è listato centrocampista ma gioca nel tridente offensivo essendo un'ala. Non rientra tra i titolari al momento, ma è sicuramente un'alternativa per Abate che potrebbe schierarlo spesso a gara in corso. Per l'asta potete pensarci a poco come ultimi slot a centrocampo.",
     "quotazioni": {
       "qtA": 4,
       "qtI": 2,
@@ -41128,7 +41060,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Leo Ostigard, reduce dal mondiale con la Norvegia, sarà ancora il perno della difesa a tre di De Rossi in casa Genoa. Il centrale, che si contraddistingue da sempre per una notevole prestanza fisica in entrambe le aree di rigore è stato uno dei migliori difensori della scorsa stagione in Serie A e al fantacalcio (5 gol realizzati). La sua valutazione si è alzata e in un Genoa che punta ancora di più a migliorare la sua classifica, all'asta il norvegese potrebbe arrivare a costare molto. E' un buon difensore anche da modificatore difesa ma occhio ai cartellini gialli (7 nel 25/26). Per costruire una difesa \"in provincia\" è sicuramente il pezzo pregiato.",
+    "fantaComment": "Leo Ostigard, reduce dal Mondiale con la Norvegia, è ancora il perno della difesa a tre di De Rossi in casa Genoa. Il centrale, che si contraddistingue da sempre per una notevole prestanza fisica in entrambe le aree di rigore è stato uno dei migliori difensori della scorsa stagione in Serie A e al fantacalcio (5 gol realizzati). La sua valutazione si è alzata e in un Genoa che punta ancora di più a migliorare la sua classifica, all'asta il norvegese potrebbe arrivare a costare molto. È un buon difensore anche da modificatore difesa, occhio solo ai cartellini gialli (7 nel 2025/26). Per costruire una difesa \"in provincia\" è sicuramente il pezzo pregiato.",
     "quotazioni": {
       "qtA": 23,
       "qtI": 21,
@@ -41272,7 +41204,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 10,
       "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
-      "classic_12_mod_median": 0.2
+      "classic_12_mod_median": 0.3
     },
     "stats": {
       "titolarita": 42,
@@ -41600,7 +41532,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 2,
       "fvm": 32,
       "fvmM": 32,
-      "classic_8_mod_median": 2.1,
+      "classic_8_mod_median": 2,
       "classic_10_mod_median": 2.8,
       "classic_12_mod_median": 3.4
     },
@@ -41722,7 +41654,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Wesley è stata una delle rivelazioni dell'ultima Serie A in difesa, forse solo dietro a Palestra. Gasperini se lo coccola dopo averlo plasmato a vero e proprio esterno, marchio di fabbrica del suo 3-4-2-1. Esterno di spinta ma, allo stesso tempo, sempre più solido anche in fase di ripiegamento, il brasiliano ha realizzato 5 gol in 30 presenze: una fanta-media del 6,47 rappresenta il biglietto da visita del terzino al fantacalcio. Dotato di un buon tiro e bravo nell'inserirsi sul secondo palo sui cross che arrivano dal lato opposto, il 22enne è una spina nel fianco per le difese avversarie. Vuole ripetersi, via libera per essere il vostro top di reparto arretrato, dopo essersi messo subito alle spalle l'infortunio muscolare subito al Mondiale. Con l'arrivo di Molina a destra, Wesley rimarrà il titolare della corsia mancina in partenza, proprio dove è stato impiegato prevalentemente nella passata stagione. Si attende il primo assist in Serie A.",
+    "fantaComment": "Wesley è stato una delle rivelazioni dell'ultima Serie A in difesa, forse solo dietro a Palestra. Gasperini se lo coccola dopo averlo plasmato a vero e proprio esterno, marchio di fabbrica del suo 3-4-2-1. Esterno di spinta ma, allo stesso tempo, sempre più solido anche in fase di ripiegamento, il brasiliano ha realizzato 5 gol in 30 presenze: una fanta-media del 6,47 rappresenta il biglietto da visita del terzino al fantacalcio. Dotato di un buon tiro e bravo nell'inserirsi sul secondo palo sui cross che arrivano dal lato opposto, il 22enne è una spina nel fianco per le difese avversarie. Vuole ripetersi, via libera per essere il vostro top di reparto arretrato, dopo essersi messo subito alle spalle l'infortunio muscolare subito al Mondiale. Con l'arrivo di Molina a destra, Wesley rimarrà il titolare della corsia mancina in partenza, proprio dove è stato impiegato prevalentemente nella passata stagione. Si attende il primo assist in Serie A.",
     "quotazioni": {
       "qtA": 43,
       "qtI": 45,
@@ -41732,7 +41664,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -2,
       "fvm": 138,
       "fvmM": 138,
-      "classic_8_mod_median": 8.2,
+      "classic_8_mod_median": 8.3,
       "classic_10_mod_median": 8.8,
       "classic_12_mod_median": 9.5
     },
@@ -41800,7 +41732,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 163,
       "classic_8_mod_median": 7.6,
       "classic_10_mod_median": 9.2,
-      "classic_12_mod_median": 10.1
+      "classic_12_mod_median": 10
     },
     "stats": {
       "titolarita": 74,
@@ -42448,7 +42380,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Khephren Thuram è intoccabile nel centrocampo della Juventus: lui e Locatelli sono i titolari nella mediana a due di Luciano Spalletti. 34 partite a voto, 3 gol e 2 assist: questi i suoi numeri nella passata stagione, ha avuto qualche acciacco nel finale di campionato e anche in questo pre-campionato. Da capire se sarà al 100% subito a inizio stagione o se avrà bisogno di qualche giorno in più. Classico giocatore più da rendimento che da bonus, non ci aspettiamo una grossa crescita da questo punto di vista: siamo sul 4° slot per l'asta, non ci sono dubbi su questo.",
+    "fantaComment": "Khephren Thuram è titolare nel centrocampo della Juventus. 34 partite a voto, 3 gol e 2 assist: questi i suoi numeri nella passata stagione, ha avuto qualche acciacco nel finale di campionato e anche nel pre-campionato. Classico giocatore più da rendimento che da bonus, non ci aspettiamo una grossa crescita da questo punto di vista: siamo sul 4° slot per l'asta, non ci sono dubbi su questo.",
     "quotazioni": {
       "qtA": 16,
       "qtI": 16,
@@ -42514,7 +42446,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "2 gol e 1 assist in 16 partite per Omri Gandelman, arrivato a gennaio e comunque importante per la conquista della salvezza da parte del Lecce. Di Francesco lo ha provato sia da trequartista puro alle spalle della punta (suo ruolo ideale e preferito) che da mezzala, ha le caratteristiche per ricoprire entrambe le posizioni, anche in base al modulo scelto dal tecnico. Si inserisce bene senza palla, l'unico neo è il problema al ginocchio che lo ha tormentato praticamente da quando è arrivato. La speranza è che si sia ripreso al 100% durante l'estate e che possa trovare continuità. A volte titolare, altre arma a gara in corso, ma comunque di spazio dovrebbe averne. Classico colpo low cost in provincia per completare il vostro centrocampo. ",
+    "fantaComment": "2 gol e 1 assist in 16 partite per Omri Gandelman, arrivato a gennaio e comunque importante per la conquista della salvezza da parte del Lecce. Di Francesco lo ha provato sia da trequartista puro alle spalle della punta (suo ruolo ideale e preferito) che da mezzala, ha le caratteristiche per ricoprire entrambe le posizioni, anche in base al modulo scelto dal tecnico. Si inserisce bene senza palla, l'unico neo è il problema al ginocchio che lo ha tormentato praticamente da quando è arrivato. La speranza è che si sia ripreso al 100% durante l'estate e che possa trovare continuità. A volte titolare, altre arma a gara in corso, ma comunque di spazio dovrebbe averne. Classico acquisto low cost in provincia per completare il vostro centrocampo. ",
     "quotazioni": {
       "qtA": 3,
       "qtI": 5,
@@ -42580,7 +42512,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "La Roma riporta in Serie A Nahuel Molina, esterno argentino classe 1998 arrivato a titolo definitivo dall’Atletico Madrid. Campione del Mondo con l’Argentina nel 2022, è un destro naturale dotato di grande corsa, intensità e propensione offensiva. Con la Nazionale argentina viene utilizzato principalmente da terzino destro, ruolo nel quale abbina attenzione difensiva a una grande capacità di accompagnare l’azione; con l’Atletico Madrid, invece, ha giocato spesso più avanzato da esterno di centrocampo a tutta fascia, sfruttando le sue qualità nelle sovrapposizioni, negli inserimenti e nell’attacco degli spazi. Nell’ultima Liga ha collezionato 26 presenze, realizzando 2 gol e 2 assist, pur alternandosi spesso nelle scelte di Simeone. Porta alla Roma un bagaglio internazionale importante: conta 65 presenze con l’Argentina, ha disputato due Mondiali vincendo quello del 2022 e ha conquistato anche due Copa América, nel 2021 e nel 2024. Nel sistema di Gasperini si candida a essere il titolare sulla corsia destra, dove potrà essere impiegato da esterno a tutta fascia, un ruolo particolarmente adatto alle sue caratteristiche e alla sua capacità di incidere anche nella metà campo avversaria. Al fantacalcio è un profilo molto interessante, che si posiziona tra i semitop: parte con prospettive di titolarità e può garantire una buona continuità di voto, aggiungendo assist e qualche gol grazie alla sua spiccata vocazione offensiva.",
+    "fantaComment": "La Roma riporta in Serie A Nahuel Molina, esterno argentino classe 1998 arrivato a titolo definitivo dall’Atletico Madrid. Campione del Mondo con l’Argentina nel 2022, è un destro naturale dotato di grande corsa, intensità e propensione offensiva. Con la Nazionale argentina viene utilizzato principalmente da terzino destro, ruolo nel quale abbina attenzione difensiva a una grande capacità di accompagnare l’azione; con l’Atletico Madrid, invece, ha giocato spesso più avanzato da esterno di centrocampo a tutta fascia, sfruttando le sue qualità nelle sovrapposizioni, negli inserimenti e nell’attacco degli spazi. Nell’ultima Liga ha collezionato 26 presenze, realizzando 2 gol e 2 assist, pur alternandosi spesso nelle scelte di Simeone. Porta alla Roma un bagaglio internazionale importante: conta 65 presenze con l’Argentina, ha disputato due Mondiali vincendo quello del 2022 e ha conquistato anche due Copa América, nel 2021 e nel 2024. Nel sistema di Gasperini si candida a essere il titolare sulla corsia destra, dove potrà essere impiegato da esterno a tutta fascia, un ruolo particolarmente adatto alle sue caratteristiche e alla sua capacità di incidere anche nella metà campo avversaria. Al fantacalcio è un profilo molto interessante, che si posiziona tra i top: parte con prospettive di titolarità e può garantire una buona continuità di voto, aggiungendo assist e qualche gol grazie alla sua spiccata vocazione offensiva.",
     "quotazioni": {
       "qtA": 30,
       "qtI": 1,
@@ -42590,7 +42522,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 29,
       "fvm": 96,
       "fvmM": 96,
-      "classic_8_mod_median": 7.2,
+      "classic_8_mod_median": 7.1,
       "classic_10_mod_median": 7.8,
       "classic_12_mod_median": 8.4
     },
@@ -42712,7 +42644,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Sembrava che potesse partire subito e invece Albert Gudmundsson è ancora alla Fiorentina e sta provando a convincere il nuovo allenatore Fabio Grosso con le sue prestazioni sul campo nel pre-campionato. La scorsa stagione è stata al di sotto delle aspettative per lui come per tutta la viola: 5 gol e 3 assist in 32 partite a voto, considerando anche i 3 rigori su 3 segnati capite bene che su azione ha fatto soltanto 2 reti. Riparte da questi numeri, ha tutto per fare meglio: l'allenatore lo sta testando come esterno puro a sinistra nel tridente d'attacco. Un ruolo che Gudmundsson aveva ricoperto solo sporadicamente in passato, si sta ambientando e Grosso ne è soddisfatto finora. I rigori sono un tema molto caldo: se li contendono lui e Kean al momento, poi bisognerà capire se rimarranno entrambi e anche chi arriverà dal mercato. Ma al momento c'è proprio l'islandese leggermente avanti dagli undici metri e non è un fattore da poco anche in chiave asta. ",
+    "fantaComment": "Sembrava che potesse partire subito e invece Albert Gudmundsson è ancora alla Fiorentina e sta provando a convincere il nuovo allenatore Fabio Grosso. La scorsa stagione è stata al di sotto delle aspettative per lui come per tutta la viola: 5 gol e 3 assist in 32 partite a voto, considerando anche i 3 rigori su 3 segnati capite bene che su azione ha fatto soltanto 2 reti. Riparte da questi numeri, ha tutto per fare meglio: l'allenatore lo sta testando come esterno puro a sinistra nel tridente d'attacco. Un ruolo che Gudmundsson aveva ricoperto solo sporadicamente in passato, si sta ambientando e Grosso ne è soddisfatto finora. I rigori sono un tema molto caldo: se li contendono lui e Kean al momento, poi bisognerà capire se rimarranno entrambi e anche chi arriverà dal mercato. Ma al momento c'è proprio l'islandese leggermente avanti dagli undici metri e non è un fattore da poco anche in chiave asta.",
     "quotazioni": {
       "qtA": 33,
       "qtI": 37,
@@ -42723,7 +42655,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 106,
       "fvmM": 106,
       "classic_8_mod_median": 4,
-      "classic_10_mod_median": 5.7,
+      "classic_10_mod_median": 5.6,
       "classic_12_mod_median": 7
     },
     "stats": {
@@ -42788,7 +42720,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -26,
       "fvm": 157,
       "fvmM": 157,
-      "classic_8_mod_median": 0.3,
+      "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.5,
       "classic_12_mod_median": 1
     },
@@ -43316,7 +43248,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 0,
       "fvm": 16,
       "fvmM": 16,
-      "classic_8_mod_median": 0.3,
+      "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0.3
     },
@@ -44230,7 +44162,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "5 gol e 1 assist in Serie B per il capitano del Monza Matteo Pessina, in 37 partite: le ha giocate praticamente tutte. È un intoccabile, lo era già in Serie A e lo sarà anche con il nuovo allenatore Ivan Juric. Negli anni è diventato un mediano puro, ma con un plus importantissimo per il fantacalcio: i rigori. Un infortunio serio al ginocchio subito in preparazione lo terrà ai box per diverso tempo e, per questo, la sua appetibilità all'asta diminuisce. Tempi ancora incerti sul suo rientro, si può prendere comunque in prospettiva per assicurarsi in futuro un titolare e soprattutto uno specialista dagli undici metri.",
+    "fantaComment": "5 gol e 1 assist in Serie B per il capitano del Monza Matteo Pessina, in 37 partite: le ha giocate praticamente tutte. È un intoccabile, lo era già in Serie A e lo sarà anche con il nuovo allenatore Ivan Juric. Negli anni è diventato un mediano puro, ma con un plus importantissimo per il fantacalcio: i rigori. Un infortunio serio al ginocchio subito in preparazione lo terrà ai box fino alla fine di ottobre o all'inizio novembre.",
     "quotazioni": {
       "qtA": 4,
       "qtI": 12,
@@ -44428,7 +44360,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Giovanni Fabbian non rientra nei piani della Fiorentina, è un nome da monitorare con attenzione in chiave mercato. Vuole giocare con continuità, cerca una squadra dove poter mettere in mostra le sue caratteristiche: è una mezzala da bonus, una partenza può renderlo più appetibile anche all'asta. ",
+    "fantaComment": "",
     "quotazioni": {
       "qtA": 1,
       "qtI": 2,
@@ -44438,7 +44370,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -1,
       "fvm": 1,
       "fvmM": 1,
-      "classic_8_mod_median": 0.4,
+      "classic_8_mod_median": 0.3,
       "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0.2
     },
@@ -44560,7 +44492,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Soltanto 3 partite a voto e nessun bonus per Darryl Bakola nella scorsa stagione al Sassuolo, ma nel pre-campionato ha trovato spazio anche a causa dell'infortunio accusato da Koné. Classe 2007, è giovanissimo ed è la più classica delle scommesse per il vostro centrocampo. Interessante per completare il reparto, anche perché è un centrocampista che può avere spazio anche da trequartista in caso di necessità.",
+    "fantaComment": "Soltanto 3 partite a voto e nessun bonus per Darryl Bakola nella scorsa stagione al Sassuolo, ma a inizio stagione ha trovato spazio anche a causa dell'infortunio accusato da Koné. Classe 2007, è giovanissimo ed è la più classica delle scommesse per il vostro centrocampo. Interessante per completare il reparto, anche perché è un centrocampista che può avere spazio anche da trequartista in caso di necessità. Ha grandi margini di miglioramento, a fine stagione potrà essere una plusvalenza.",
     "quotazioni": {
       "qtA": 2,
       "qtI": 1,
@@ -44836,7 +44768,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 42,
       "classic_8_mod_median": 1.8,
       "classic_10_mod_median": 2.2,
-      "classic_12_mod_median": 2.7
+      "classic_12_mod_median": 2.6
     },
     "stats": {
       "titolarita": 71,
@@ -45100,7 +45032,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 109,
       "classic_8_mod_median": 0.9,
       "classic_10_mod_median": 1.8,
-      "classic_12_mod_median": 2.5
+      "classic_12_mod_median": 2.6
     },
     "stats": {
       "titolarita": 26,
@@ -45758,9 +45690,9 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -1,
       "fvm": 141,
       "fvmM": 141,
-      "classic_8_mod_median": 7,
+      "classic_8_mod_median": 6.9,
       "classic_10_mod_median": 8,
-      "classic_12_mod_median": 9
+      "classic_12_mod_median": 8.8
     },
     "stats": {
       "titolarita": 82,
@@ -45890,7 +45822,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 0,
       "fvm": 150,
       "fvmM": 150,
-      "classic_8_mod_median": 5.1,
+      "classic_8_mod_median": 5,
       "classic_10_mod_median": 7.4,
       "classic_12_mod_median": 9
     },
@@ -46090,7 +46022,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 141,
       "classic_8_mod_median": 2.2,
       "classic_10_mod_median": 3.8,
-      "classic_12_mod_median": 5
+      "classic_12_mod_median": 4.8
     },
     "stats": {
       "titolarita": 34,
@@ -46222,7 +46154,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 10,
       "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
-      "classic_12_mod_median": 0.4
+      "classic_12_mod_median": 0.3
     },
     "stats": {
       "titolarita": 58,
@@ -46276,7 +46208,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Benjamin Dominguez lascia il Bologna e si accasa al Sassuolo dove sicuramente tornerà a trovare spazio. Aveva convinto nella sua prima stagione a Bologna l'argentino grazie a giocate imprevedibili sulla trequarti e rapidità di movimenti negli spazi stretti. Nell'ultima stagione appena 12 volte a voto al fantacalcio ma tre assist e 6,04 di fanta-media. Parte dietro a Laurientè, se il francese dovesse rimanere, ma può trovare spazio anche a partita in corso. Al fantacalcio è listato centrocampista nonostante la sua posizione sarà nel tridente offensivo: può portare bonus anche a partita in corso e a pochi crediti come 7-8° slot si può prendere.",
+    "fantaComment": "Benjamin Dominguez lascia il Bologna e si accasa al Sassuolo dove sicuramente tornerà a trovare spazio. Aveva convinto nella sua prima stagione a Bologna l'argentino grazie a giocate imprevedibili sulla trequarti e rapidità di movimenti negli spazi stretti. Nell'ultima stagione appena 12 volte a voto al fantacalcio ma tre assist e 6,04 di fanta-media. Parte dietro a Laurientè, ma può trovare spazio anche a partita in corso. Al fantacalcio è listato centrocampista nonostante la sua posizione sarà nel tridente offensivo: può portare bonus anche a partita in corso e a pochi crediti come 7-8° slot si può prendere.",
     "quotazioni": {
       "qtA": 5,
       "qtI": 2,
@@ -46408,7 +46340,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Alla fine Ederson è rimasto. Ha svolto le visite mediche con il Manchester United, poi il club inglese si è tirato indietro e l'Atalanta gli ha rinnovato il contratto, un gesto molto importante, di grande fiducia. Si è subito messo a disposizione di Maurizio Sarri e nei piani del nuovo allenatore è una delle due mezzali titolari nei tre di centrocampo appunto. 6,43 la fanta-media nella passata stagione, 2 gol e 1 assist in 30 partite a voto: la sensazione è che con Sarri possa portare più bonus, anche per il ruolo di mezzala e non più di mediano davanti alla difesa. Siamo tra il 3° e il 4° slot a seconda delle leghe, ha tutto per raddoppiare almeno i numeri della scorsa stagione. ",
+    "fantaComment": "Alla fine Ederson è rimasto. Aveva svolto le visite mediche con il Manchester United, poi il club inglese si è tirato indietro e l'Atalanta gli ha rinnovato il contratto, un gesto molto importante, di grande fiducia. Si è subito messo a disposizione di Maurizio Sarri e nei piani del nuovo allenatore è una delle due mezzali titolari nei tre di centrocampo appunto. 6,43 la fanta-media nella passata stagione, 2 gol e 1 assist in 30 partite a voto: la sensazione è che con Sarri possa portare più bonus, anche per il ruolo di mezzala e non più di mediano davanti alla difesa. Siamo tra il 3° e il 4° slot a seconda delle leghe, ha tutto per raddoppiare almeno i numeri della scorsa stagione. ",
     "quotazioni": {
       "qtA": 23,
       "qtI": 12,
@@ -46474,7 +46406,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": null,
+    "fantaComment": "Pervis Estupinan è rimasto al MIlan e Amorim sta puntando su di lui. È stata una sorpresa di questo inizio di stagione, perché sembrava pronto a partire. Per ora sta giocando e può avere spazio nel corso della stagione, anche se al fantacalcio non è garanzia di buoni voti.",
     "quotazioni": {
       "qtA": 4,
       "qtI": 2,
@@ -46484,7 +46416,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 2,
       "fvm": 13,
       "fvmM": 13,
-      "classic_8_mod_median": 0.3,
+      "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0.2
     },
@@ -46606,7 +46538,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Lewis Ferguson nella passata stagione ha deluso le aspettative: solo 1 gol in 23 partite a voto. Italiano per un periodo lo schierava solo in Europa e i numeri lo dimostrano. Si riparte da zero con Tedesco e senza coppe: potrà avere maggior spazio e continuità, magari trovare anche qualche bonus in più. Rimane un giocatore da rendimento, gioca nei 2 davanti alla difesa: è diventato un colpo low cost con il passare degli anni.",
+    "fantaComment": "Lewis Ferguson nella passata stagione ha deluso le aspettative: solo 1 gol in 23 partite a voto. Italiano per un periodo lo schierava solo in Europa e i numeri lo dimostrano. Si riparte da zero con Tedesco e senza coppe: potrà avere maggior spazio e continuità, magari trovare anche qualche bonus in più. Rimane un giocatore da rendimento, ma low cost.",
     "quotazioni": {
       "qtA": 3,
       "qtI": 2,
@@ -46682,7 +46614,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 2,
       "fvm": 10,
       "fvmM": 10,
-      "classic_8_mod_median": 0.3,
+      "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0.2
     },
@@ -46936,7 +46868,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Arrivato al Torino dalla Fiorentina in prestito con diritto di riscatto fissato a 10 milioni di euro, Niccolò Fortini è un terzino classe 2006, alto 185 centimetri, dotato di corsa, tecnica e buona capacità di accompagnare l’azione offensiva. Predilige la fascia destra, ma può essere impiegato anche a sinistra. Nell’ultima stagione ha raccolto 26 presenze complessive: 16 in Serie A, 9 in Conference League e una in Coppa Italia, mettendo a referto un assist nella competizione europea. Al fantacalcio può trovare maggiore continuità rispetto all’esperienza di Firenze e giocarsi un posto sulla corsia destra: rappresenta una giovane scommessa da ultimi slot, interessante soprattutto per la sua duttilità e per il potenziale contributo offensivo.",
+    "fantaComment": "Arrivato al Torino dalla Fiorentina in prestito con diritto di riscatto fissato a 10 milioni di euro, Niccolò Fortini è un terzino classe 2006, alto 185 centimetri, dotato di corsa, tecnica e buona capacità di accompagnare l’azione offensiva. Predilige la fascia destra, ma può essere impiegato anche a sinistra. Nell’ultima stagione ha raccolto 26 presenze complessive: 16 in Serie A, 9 in Conference League e una in Coppa Italia, mettendo a referto un assist nella competizione europea. Al fantacalcio può trovare sicuramente maggiore continuità rispetto all’esperienza di Firenze e giocarsi un posto sulla corsia destra con chance di essere titolare: rappresenta una giovane scommessa da ultimi slot, interessante soprattutto per la sua duttilità e per il potenziale contributo offensivo.",
     "quotazioni": {
       "qtA": 1,
       "qtI": 1,
@@ -47276,8 +47208,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -1,
       "fvm": 61,
       "fvmM": 61,
-      "classic_8_mod_median": 1,
-      "classic_10_mod_median": 1.6,
+      "classic_8_mod_median": 1.1,
+      "classic_10_mod_median": 1.7,
       "classic_12_mod_median": 2.2
     },
     "stats": {
@@ -47398,7 +47330,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Gustav Isaksen ha chiuso lo scorso campionato con 5 gol e 1 assist in 27 partite a voto, ne ha saltate più di 10 praticamente per i vari stop per infortunio. Per risolvere definitivamente il problema di ernia bilaterale, è stato operato a inizio luglio con tempi di recupero di circa 45/60 giorni: da capire se riuscirà a recuperare per inizio campionato o se tornerà a settembre. Una volta al 100%, potrà riprendersi il posto a destra nel tridente d'attacco. Gli manca continuità, chissà che non possa trovarla con Gattuso. Il fatto che inizi la stagione ai box incide chiaramente sul prezzo al fantacalcio: si paga meno, può essere un'occasione interessante. Con la consapevolezza che magari avrà bisogno di qualche settimana per tornare al top e titolare, ma lo sapete nel momento in cui lo prendete da infortunato. ",
+    "fantaComment": "Gustav Isaksen ha chiuso lo scorso campionato con 5 gol e 1 assist in 27 partite a voto, ne ha saltate più di 10 praticamente per i vari stop per infortunio. Per risolvere definitivamente il problema di ernia bilaterale, è stato operato a inizio luglio ma è già tornato. Una volta al 100%, potrà riprendersi il posto a destra nel tridente d'attacco, sfidando Cancellieri. Gli manca continuità, chissà che non possa trovarla con Gattuso. Ora si paga meno, può essere un'occasione interessante. Con la consapevolezza che magari avrà bisogno di qualche settimana per tornare al top e titolare, ma lo sapete nel momento in cui lo prendete da infortunato.",
     "quotazioni": {
       "qtA": 21,
       "qtI": 29,
@@ -47540,9 +47472,9 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 19,
       "fvm": 317,
       "fvmM": 317,
-      "classic_8_mod_median": 16.7,
+      "classic_8_mod_median": 16.6,
       "classic_10_mod_median": 20.2,
-      "classic_12_mod_median": 22
+      "classic_12_mod_median": 21.8
     },
     "stats": {
       "titolarita": 61,
@@ -47740,7 +47672,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 35,
       "classic_8_mod_median": 1,
       "classic_10_mod_median": 1.8,
-      "classic_12_mod_median": 2.4
+      "classic_12_mod_median": 2.3
     },
     "stats": {
       "titolarita": 71,
@@ -48002,7 +47934,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 0,
       "fvm": 38,
       "fvmM": 38,
-      "classic_8_mod_median": 0.6,
+      "classic_8_mod_median": 0.5,
       "classic_10_mod_median": 1,
       "classic_12_mod_median": 1.5
     },
@@ -48058,7 +47990,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "1 gol e 2 assist in 36 partite a voto per Manuel Locatelli, titolarissimo a centrocampo nella Juventus. Gioca praticamente sempre se sta bene, porta voti tra il 6 e il 6,5, classico giocatore da rendimento più che da bonus. Il suo lo fa, non aspettatevi exploit dal punto di vista di gol o assist. Un neo per il fantacalcio: i 9 cartellini gialli, non pochi in termini di malus. ",
+    "fantaComment": "1 gol e 2 assist in 36 partite a voto per Manuel Locatelli, un titolare a centrocampo nella Juventus. Gioca praticamente sempre se sta bene, porta voti tra il 6 e il 6,5, classico giocatore da rendimento più che da bonus (al massimo con qualche rigore). Il suo lo fa, non aspettatevi exploit dal punto di vista di gol o assist. Un neo per il fantacalcio: i 9 cartellini gialli, non pochi in termini di malus. ",
     "quotazioni": {
       "qtA": 6,
       "qtI": 7,
@@ -48531,7 +48463,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 230,
       "fvmM": 230,
       "classic_8_mod_median": 15,
-      "classic_10_mod_median": 16.1,
+      "classic_10_mod_median": 16,
       "classic_12_mod_median": 17.2
     },
     "stats": {
@@ -48795,7 +48727,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 48,
       "fvmM": 48,
       "classic_8_mod_median": 1.6,
-      "classic_10_mod_median": 2.4,
+      "classic_10_mod_median": 2.3,
       "classic_12_mod_median": 3
     },
     "stats": {
@@ -48860,7 +48792,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -2,
       "fvm": 61,
       "fvmM": 61,
-      "classic_8_mod_median": 2.5,
+      "classic_8_mod_median": 2.4,
       "classic_10_mod_median": 3,
       "classic_12_mod_median": 3.7
     },
@@ -48928,7 +48860,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 13,
       "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
-      "classic_12_mod_median": 0
+      "classic_12_mod_median": 0.2
     },
     "stats": {
       "titolarita": 13,
@@ -49114,7 +49046,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Evan Ndicka è rimasto nonostante i tanti estimatori ed è la colonna portante della difesa della Roma (insieme a Mancini). Meno falloso dei compagni di reparto con appena 5 ammonizioni in 31 presenze stagionali, il 26enne ivoriano ha chiuso con un 6,32 di fanta-media. Al fantacalcio , tra i difensori delle big, è uno dei più affidabili per titolarità e non solo. Solido nella marcatura a uomo, è bravo a svettare sui diretti avversari e, allo stesso tempo, a insaccare la palla in porta nell'area opposta: i 3 gol messi a segno ne sono la testimonianza. La Roma ha segnato molto su palla inattiva.",
+    "fantaComment": "Evan Ndicka è rimasto nonostante i tanti estimatori ed è la colonna portante della difesa della Roma (insieme a Mancini). Meno falloso dei compagni di reparto con appena 5 ammonizioni in 31 presenze stagionali, il 26enne ivoriano ha chiuso con un 6,32 di fanta-media. Al fantacalcio, tra i difensori delle big, è uno dei più affidabili per titolarità e non solo. Solido nella marcatura a uomo, è bravo a svettare sui diretti avversari e, allo stesso tempo, a insaccare la palla in porta nell'area opposta: i 3 gol messi a segno ne sono la testimonianza. La Roma ha segnato molto su palla inattiva con Gasperini.",
     "quotazioni": {
       "qtA": 24,
       "qtI": 24,
@@ -49124,7 +49056,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 0,
       "fvm": 77,
       "fvmM": 77,
-      "classic_8_mod_median": 3.4,
+      "classic_8_mod_median": 3.5,
       "classic_10_mod_median": 4,
       "classic_12_mod_median": 4.8
     },
@@ -49378,7 +49310,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Christ Inao Oulai è arrivato a Firenze per circa 30 milioni, dopo essere sceso in campo anche nei recenti Mondiali con la maglia della Costa d'Avorio. Centrocampista centrale classe 2006, ricorda il primo Franck Kessié: grande dinamismo e forza fisica, è molto abile nel recuperare palloni e nel ribaltare l'azione con la palla al piede. Ha margini di crescita importanti negli inserimenti e dunque anche in zona bonus: 2 gol e 4 assist in 25 partite nello scorso campionato turco. Da capire se sarà subito un titolare fisso o avrà bisogno di un periodo di ambientamento, ma comunque per il fantacalcio è il classico giocatore da rendimento più che da bonus. Nota dolente i cartellini gialli: addirittura 9 nell'ultima stagione, più di uno ogni tre partite.",
+    "fantaComment": "Christ Inao Oulai è arrivato a Firenze per circa 26 milioni, dopo essere sceso in campo anche nei recenti Mondiali con la maglia della Costa d'Avorio. Centrocampista centrale classe 2006, è dotato di un ottimo palleggio. Ha margini di crescita importanti negli inserimenti e dunque anche in zona bonus: 2 gol e 4 assist in 25 partite nello scorso campionato turco. Da capire se sarà subito un titolare o avrà bisogno di un periodo di ambientamento, ma comunque per il fantacalcio è un giocatore da rendimento. Nota dolente i cartellini gialli: addirittura 9 nell'ultima stagione, più di uno ogni tre partite.",
     "quotazioni": {
       "qtA": 3,
       "qtI": 1,
@@ -49708,7 +49640,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Maximo Perrone ha chiuso la stagione con 3 gol e 4 assist in 36 partite a voto, numeri importante per il play del Como. Classico giocatore che detta i tempi della manovra, Fabregas lo stima molto e gli ha affidato le redini della mediana. Dal mercato è arrivato Milla e possono arrivare anche altri rinforzi, che proveranno a insidiare la titolarità di Perrone. Ma al momento rimane una prima scelta in mediana: fanta-media del 6,47 nella passata stagione, riparte da questi numeri ed è il classico voto sicuro nella vostra mediana. Oltretutto di una squadra che ormai è da considerare una big come il Como, che farà la Champions. Unico neo le ammonizioni: 8, un aspetto su cui proverà a migliorare.",
+    "fantaComment": "Maximo Perrone ha chiuso la stagione con 3 gol e 4 assist in 36 partite a voto, numeri importanti per il play del Como. Classico giocatore che detta i tempi della manovra, Fabregas lo stima molto e gli ha affidato le redini della mediana. Rimane una prima scelta a centrocampo: fanta-media del 6,47 nella passata stagione, riparte da questi numeri ed è il classico voto sicuro nella vostra mediana. Oltretutto di una squadra che ormai è da considerare una big come il Como, che farà la Champions. Unico neo le ammonizioni: 8, un aspetto su cui proverà a migliorare.",
     "quotazioni": {
       "qtA": 12,
       "qtI": 15,
@@ -49719,7 +49651,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 38,
       "fvmM": 38,
       "classic_8_mod_median": 1.2,
-      "classic_10_mod_median": 1.9,
+      "classic_10_mod_median": 1.8,
       "classic_12_mod_median": 2.6
     },
     "stats": {
@@ -49982,9 +49914,9 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -1,
       "fvm": 435,
       "fvmM": 435,
-      "classic_8_mod_median": 23.8,
+      "classic_8_mod_median": 23.9,
       "classic_10_mod_median": 27,
-      "classic_12_mod_median": 27.3
+      "classic_12_mod_median": 27.4
     },
     "stats": {
       "titolarita": 34,
@@ -50038,7 +49970,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Alexis Saelemaekers era fondamentale per Allegri, ha di fatto giocato tutta la stagione come quinto di destra nel Milan. Ora è arrivato Amorim, che lo vuole provare sia a tutta fascia a destra che da vice Pulisic in posizione più avanzata, l'ultima parola al campo. E chiaramente all'occorrenza può agire anche a sinistra. Il belga ha chiuso la scorsa stagione a 3 gol e 3 assist in 35 partite a voto, come tutto il Milan è andato in calando nel corso della stagione dopo una partenza più che positiva. Sulla carta, può avere meno il posto fisso rispetto all'anno scorso ma comunque di spazio ne avrà nelle rotazioni, considerando che c'è anche l'Europa League: siamo sul 3°/4° slot per il vostro centrocampo.",
+    "fantaComment": "Alexis Saelemaekers era fondamentale per Allegri, ha di fatto giocato tutta la stagione come quinto di destra nel Milan. Ora è arrivato Amorim, che lo vuole provare sia a tutta fascia a destra che da vice Pulisic in posizione più avanzata, l'ultima parola al campo. E chiaramente all'occorrenza può agire anche a sinistra. Il belga ha chiuso la scorsa stagione a 3 gol e 3 assist in 35 partite a voto, come tutto il Milan è andato in calando nel corso della stagione dopo una partenza più che positiva. Sulla carta, può avere meno il posto fisso rispetto all'anno scorso ma comunque di spazio ne avrà nelle rotazioni, considerando che c'è anche l'Europa League: siamo sul 4° slot per il vostro centrocampo.",
     "quotazioni": {
       "qtA": 22,
       "qtI": 10,
@@ -50115,7 +50047,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 61,
       "fvmM": 61,
       "classic_8_mod_median": 3.8,
-      "classic_10_mod_median": 5.4,
+      "classic_10_mod_median": 5.3,
       "classic_12_mod_median": 6.4
     },
     "stats": {
@@ -50182,7 +50114,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 154,
       "classic_8_mod_median": 4.2,
       "classic_10_mod_median": 6,
-      "classic_12_mod_median": 7.2
+      "classic_12_mod_median": 7.3
     },
     "stats": {
       "titolarita": 24,
@@ -50368,7 +50300,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Oumar Solet può rimanere a Udine un altro anno, lì dove tutti lo abbiamo scoperto e dove si è confermato nell'ultima stagione fino a diventare un top di reparto anche al fantacalcio. 1 gol e 2 assist in metà stagione nel 24/25, 3 gol e 1 assist nella scorsa Serie A, il tutto condito da appena 2 gialli e 1 rosso in 54 partite. La difesa di Runjaic è decima per gol subiti, sintomo di solidità difensiva di tutto il reparto. Il francese ne è sempre più leader e sul centro-sinistra è cresciuto anche in fase di impostazione palla al piede. Con i suoi compagni di reparto, rimane il pericolo numero uno sui calci piazzati nell'area avversaria. Appena due le partite saltate per infortunio nell'ultimo campionato.",
+    "fantaComment": "Oumar Solet è rimasto a Udine un altro anno, lì dove tutti lo abbiamo scoperto e dove si è confermato nell'ultima stagione fino a diventare un top di reparto anche al fantacalcio. 1 gol e 2 assist in metà stagione nel 24/25, 3 gol e 1 assist nella scorsa Serie A, il tutto condito da appena 2 gialli e 1 rosso in 54 partite. La difesa di Runjaic è decima per gol subiti, sintomo di solidità difensiva di tutto il reparto. Il francese ne è sempre più leader e sul centro-sinistra è cresciuto anche in fase di impostazione palla al piede. Con i suoi compagni di reparto, rimane il pericolo numero uno sui calci piazzati nell'area avversaria. Appena due le partite saltate per infortunio nell'ultimo campionato.",
     "quotazioni": {
       "qtA": 33,
       "qtI": 33,
@@ -50446,7 +50378,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 125,
       "classic_8_mod_median": 2,
       "classic_10_mod_median": 3.2,
-      "classic_12_mod_median": 4.2
+      "classic_12_mod_median": 4
     },
     "stats": {
       "titolarita": 74,
@@ -50698,7 +50630,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Kristian Thorstvedt riparte da 4 gol e 3 assist in 31 partite a voto, fanta-media del 6,48. Ha portato 7 bonus ma la sensazione è che possano arrivarne anche di più nel nuovo ruolo in cui lo ha provato Aquilani, ovvero da trequartista puro nel 4-2-3-1 alle spalle della prima punta. Ancora più libertà di inserimento, con e senza palla: proverà a puntare la doppia cifra. Un solo neo per il fanta: le 9 ammonizioni, tante, decisamente troppe per un giocatore con le sue caratteristiche. Siamo tra il 3° e il 4° slot a seconda del numero di partecipanti, è un titolare fisso nel Sassuolo.",
+    "fantaComment": "Kristian Thorstvedt riparte da 4 gol e 3 assist in 31 partite a voto, fanta-media del 6,48. Ha portato 7 bonus ma la sensazione è che possano arrivarne anche di più. Un solo neo per il fanta: le 9 ammonizioni, tante, decisamente troppe per un giocatore con le sue caratteristiche. Siamo tra il 3° e il 4° slot a seconda del numero di partecipanti, è un titolare fisso nel Sassuolo.",
     "quotazioni": {
       "qtA": 13,
       "qtI": 23,
@@ -50708,7 +50640,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -10,
       "fvm": 42,
       "fvmM": 42,
-      "classic_8_mod_median": 0.9,
+      "classic_8_mod_median": 0.8,
       "classic_10_mod_median": 1.4,
       "classic_12_mod_median": 2
     },
@@ -50962,7 +50894,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Harry Winks, classe 1996, arriva dal Leicester appena retrocesso in League One con l'obiettivo di aggiungere esperienza ad un gruppo giovane come quello di Pisacane. Protagonista per tanti anni al Tottenham, Winks è entrato nella fase discendente della sua carriera, spesso costellata anche da diversi infortuni. Per lui si tratta di un ritorno in Serie A dopo la breve parentesi alla Sampdoria. Mediano che detta i tempi di gioco, Winks si è sempre contraddistinto per il carisma che mette in campo ma non sicuramente per le statistiche. Nell'ultima stagione appena 1 gol e 2 assist in 34 presenze, mentre in Serie A è ancora a secco di bonus. Al fantacalcio, nonostante il nome altisonante, vanno usate le giuste precauzioni visto l'investimento da 5 milioni per Romano: i due si giocheranno il posto e occhio alla possibile alternanza.",
+    "fantaComment": "Harry Winks, classe 1996, arriva dal Leicester retrocesso in League One con l'obiettivo di aggiungere esperienza ad un gruppo giovane come quello di Pisacane. Protagonista per tanti anni al Tottenham, Winks è entrato nella fase discendente della sua carriera, spesso costellata anche da diversi infortuni. Per lui si tratta di un ritorno in Serie A dopo la breve parentesi alla Sampdoria. Mediano che detta i tempi di gioco, Winks si è sempre contraddistinto per il carisma che mette in campo ma non sicuramente per le statistiche. Nell'ultima stagione appena 1 gol e 2 assist in 34 presenze, mentre in Serie A è ancora a secco di bonus. Al fantacalcio, nonostante il nome altisonante, vanno usate le giuste precauzioni ed è solo un acquisto low cost.",
     "quotazioni": {
       "qtA": 2,
       "qtI": 1,
@@ -51039,7 +50971,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 67,
       "fvmM": 67,
       "classic_8_mod_median": 0.6,
-      "classic_10_mod_median": 1.6,
+      "classic_10_mod_median": 1.5,
       "classic_12_mod_median": 2.6
     },
     "stats": {
@@ -51160,7 +51092,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Nicola Zalewski è il classico centrocampista tuttofare che può essere molto utile a Sarri nella nuova esperienza all'Atalanta. Lo sta provando da mezzala nel pre-campionato, ma può fare anche il terzino sia a destra che a sinistra e l'esterno alto nel tridente in alcune partite (o in alcuni spezzoni). 2 gol e 5 assist in 31 partite a voto nella passata stagione, riparte da questi numeri: non stiamo parlando di un titolare fisso ma di un giocatore che comunque andrà con regolarità a voto. E difficilmente prende insufficienze: 6,40 la fanta-media, può fare al caso vostro per il 5°/6° slot se non avete bisogno di un titolarissimo ecco. ",
+    "fantaComment": "Nicola Zalewski è il classico centrocampista tuttofare che può essere molto utile a Sarri nella nuova esperienza all'Atalanta. Lo sta provando da mezzala nel pre-campionato, ma può fare anche il terzino sia a destra che a sinistra e l'esterno alto nel tridente in alcune partite (o in alcuni spezzoni). 2 gol e 5 assist in 31 partite a voto nella passata stagione, riparte da questi numeri: non stiamo parlando di un titolare fisso ma di un giocatore che comunque andrà con regolarità a voto. E difficilmente prende insufficienze: 6,40 la fanta-media, può fare al caso vostro per il 5°/6° slot se non avete bisogno di un titolarissimo. ",
     "quotazioni": {
       "qtA": 12,
       "qtI": 13,
@@ -51358,7 +51290,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "0 gol e 0 assist in 12 partite a voto per Edon Zhegrova, che non ha minimamente lasciato il segno nella sua prima stagione alla Juventus. È arrivato anche con diversi problemi fisici e bisogna tenerne conto: si prende a cifre basse all'asta, non è un titolare e ha davanti giocatori importanti come Yildiz e Conceicao. Classico jolly a centrocampo, bisogna poterselo permettere perché per ora non sono arrivati segnali di ripresa.",
+    "fantaComment": "0 gol e 0 assist in 12 partite a voto per Edon Zhegrova, che non ha minimamente lasciato il segno nella sua prima stagione alla Juventus. È arrivato anche con diversi problemi fisici e bisogna tenerne conto: si prende a cifre basse all'asta, non è un titolare e ha davanti giocatori importanti. Classico jolly a centrocampo, bisogna poterselo permettere perché per ora non sono arrivati segnali di ripresa.",
     "quotazioni": {
       "qtA": 7,
       "qtI": 9,
@@ -51368,7 +51300,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -2,
       "fvm": 22,
       "fvmM": 22,
-      "classic_8_mod_median": 0.2,
+      "classic_8_mod_median": 0.3,
       "classic_10_mod_median": 0.3,
       "classic_12_mod_median": 0.4
     },
@@ -51688,7 +51620,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Fanta-media del 6,00. Partiamo da qui per parlare di Marten De Roon, centrocampista dell'Atalanta che ha giocato per anni in una mediana a due e ora potrà ricoprire due ruoli nel centrocampo a tre di Sarri: o mediano puro o mezzala, ma al momento è più probabile questa opzione perché il nuovo allenatore davanti alla difesa vuole un giocatore più di geometrie. 1 gol e 2 assist in 34 partite a voto, con 6 ammonizioni e 1 un rosso: numeri perfettamente in linea con la categoria in cui si trova, è un low cost di prima fascia, perfetto per il 5°/6° slot. Da capire se le giocherà tutte come fatto negli anni o meno, ma comunque di spazio ne avrà.",
+    "fantaComment": "Fanta-media del 6,00. Partiamo da qui per parlare di Marten De Roon, centrocampista dell'Atalanta che ha giocato per anni in una mediana a due e ora potrà ricoprire due ruoli nel centrocampo a tre di Sarri: o mediano puro o mezzala, ma al momento è più probabile questa opzione perché il nuovo allenatore davanti alla difesa vuole un giocatore più di geometrie. 1 gol e 2 assist in 34 partite a voto, con 6 ammonizioni e 1 un rosso: numeri perfettamente in linea con la categoria in cui si trova, è un low cost di prima fascia, perfetto per gli slot secondari. Da capire se le giocherà tutte come fatto negli anni scorsi o meno, ma comunque di spazio ne avrà.",
     "quotazioni": {
       "qtA": 2,
       "qtI": 4,
@@ -52084,7 +52016,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "4 assist in 23 partite a voto per Hans Nicolussi Caviglia nella passata stagione, nessun gol. Classico giocatore da rendimento più che da bonus, occhio al suo destro per i piazzati, sia corner che punizioni (più dalla distanza). Non ha il posto certo, si giocherà una maglia: può fare sia il regista che la mezzala nel Parma di Cuesta.",
+    "fantaComment": "",
     "quotazioni": {
       "qtA": 2,
       "qtI": 2,
@@ -52227,8 +52159,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 29,
       "fvmM": 29,
       "classic_8_mod_median": 0.2,
-      "classic_10_mod_median": 0.3,
-      "classic_12_mod_median": 0.7
+      "classic_10_mod_median": 0.4,
+      "classic_12_mod_median": 0.6
     },
     "stats": {
       "titolarita": 53,
@@ -52360,7 +52292,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 29,
       "classic_8_mod_median": 0.3,
       "classic_10_mod_median": 0.2,
-      "classic_12_mod_median": 0.3
+      "classic_12_mod_median": 0.4
     },
     "stats": {
       "titolarita": 58,
@@ -52678,7 +52610,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Gaetano Oristanio passa al Torino, dopo l'esperienza negativa al Parma della scorsa stagione, chiusa con 1 gol in 18 partite a voto. Decisamente più ombre che luci con Cuesta, ora il classe 2002 arriva da Abate che lo ha fortemente voluto per la sua nuova squadra. Centrocampista offensivo, può agire sia in posizione centrale che come esterno, talvolta è stato provato anche da mezzala: bisognerà capire che modulo sceglierà il nuovo allenatore granata. Ai nastri di partenza, è difficile immaginare Oristanio come un titolare fisso, ma probabilmente è più un jolly all'interno della rosa del Torino: può essere il classico colpo all'asta per completare il vostro centrocampo, da ultimi slot. E' ancora alle prese con un problema al ginocchio che ne ha limitato il rendimento nel finale della scorsa stagione.",
+    "fantaComment": "Gaetano Oristanio passa al Torino, dopo l'esperienza negativa al Parma della scorsa stagione, chiusa con 1 gol in 18 partite a voto. Decisamente più ombre che luci con Cuesta, ora il classe 2002 arriva da Abate che lo ha fortemente voluto per la sua nuova squadra. Centrocampista offensivo, può agire sia in posizione centrale che come esterno, talvolta è stato provato anche da mezzala: bisognerà capire che modulo sceglierà il nuovo allenatore granata. Ai nastri di partenza, è difficile immaginare Oristanio come un titolare fisso, ma probabilmente è più un jolly all'interno della rosa del Torino: può essere il classico acquisto all'asta per completare il vostro centrocampo, da ultimi slot.",
     "quotazioni": {
       "qtA": 4,
       "qtI": 1,
@@ -52887,7 +52819,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 29,
       "fvmM": 29,
       "classic_8_mod_median": 0.2,
-      "classic_10_mod_median": 0.3,
+      "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0.5
     },
     "stats": {
@@ -52942,7 +52874,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Jhon Lucumi passa alla Juventus ed è pronto a diventare il compagno di reparto di Bremer per una coppia tutta sudamericana. Difensore roccioso che non lascia respirare il diretto avversario, il colombiano sa essere incisivo sugli sviluppi di calcio piazzato con la specialità della casa, il colpo di testa. Un gol in 28 presenze nell'ultima stagione in rossoblù e un 5,9 di fanta-media (con 5 ammonizioni) che non rispecchia quanto visto di buono l'anno ancora precedente. Con Spalletti parte davanti a Kelly nelle gerarchie e al fantacalcio si può continuare a prenderlo come 3-4° slot.",
+    "fantaComment": "Jhon Lucumi passa alla Juventus ed è pronto a diventare il compagno di reparto di Bremer per una coppia tutta sudamericana. Difensore roccioso che non lascia respirare il diretto avversario, il colombiano sa essere incisivo sugli sviluppi di calcio piazzato con la specialità della casa, il colpo di testa. Un gol in 28 presenze nell'ultima stagione in rossoblù e un 5,9 di fanta-media (con 5 ammonizioni) che non rispecchia quanto visto di buono l'anno ancora precedente. Con Spalletti parte davanti a Kelly nelle gerarchie e al fantacalcio si può continuare a prenderlo come 3° slot.",
     "quotazioni": {
       "qtA": 12,
       "qtI": 4,
@@ -53049,15 +52981,15 @@ export const CSV_PLAYER_CATALOG = [
     "substitutes": []
   },
   {
-    "id": "torino_ilic_5007",
+    "id": "lecce_ilic_5007",
     "csvId": "5007",
     "fantalabId": "b2ce362c-91f3-408b-a84c-f3b6e49d2f88",
     "name": "Ilic",
     "displayName": "Ilic",
     "fullName": "Ivan Ilić",
-    "teamName": "Torino",
-    "teamId": "torino",
-    "teamShort": "TOR",
+    "teamName": "Lecce",
+    "teamId": "lecce",
+    "teamShort": "LEC",
     "role": "CC",
     "classicRole": "C",
     "mantraRole": "C",
@@ -53074,16 +53006,16 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": null,
+    "fantaComment": "Ivan Ilic rinforza il centrocampo del Lecce e arriva per essere titolare. Il serbo cerca il rilancio dopo una stagione difficile, con alti e bassi. Al Lecce ritrova minutaggio e non vanno sottovalutati anche i calci piazzati, torna a essere un low cost da ultimi slot.",
     "quotazioni": {
-      "qtA": 1,
+      "qtA": 3,
       "qtI": 1,
-      "diff": 0,
-      "qtAM": 1,
+      "diff": 2,
+      "qtAM": 3,
       "qtIM": 1,
-      "diffM": 0,
-      "fvm": 1,
-      "fvmM": 1,
+      "diffM": 2,
+      "fvm": 10,
+      "fvmM": 10,
       "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0
@@ -53108,72 +53040,6 @@ export const CSV_PLAYER_CATALOG = [
       "ass": 0,
       "ammonizioni": 2,
       "amm": 2,
-      "espulsioni": 0,
-      "esp": 0,
-      "au": 0
-    },
-    "substitutes": []
-  },
-  {
-    "id": "cagliari_prati_6424",
-    "csvId": "6424",
-    "fantalabId": "8affb773-1a39-4adf-8cc1-dcb3e5f3d780",
-    "name": "Prati",
-    "displayName": "Prati",
-    "fullName": "Matteo Prati",
-    "teamName": "Cagliari",
-    "teamId": "cagliari",
-    "teamShort": "CAG",
-    "role": "CC",
-    "classicRole": "C",
-    "mantraRole": "M;C",
-    "fantaRole": "C",
-    "photoUrl": "https://cdn.falsesoftware.com/players/37565251/v2.webp",
-    "playerImage": "https://cdn.falsesoftware.com/players/37565251/v2.webp",
-    "appetibilita": 83,
-    "status": "in_ballottaggio",
-    "isAvailable": true,
-    "isPenaltyTaker": false,
-    "isFreeKickTaker": false,
-    "isCornerTaker": false,
-    "rigorista": false,
-    "punizioni": false,
-    "corner": false,
-    "positionNotes": "",
-    "fantaComment": null,
-    "quotazioni": {
-      "qtA": 1,
-      "qtI": 1,
-      "diff": 0,
-      "qtAM": 1,
-      "qtIM": 1,
-      "diffM": 0,
-      "fvm": 1,
-      "fvmM": 1,
-      "classic_8_mod_median": 0,
-      "classic_10_mod_median": 0,
-      "classic_12_mod_median": 0
-    },
-    "stats": {
-      "titolarita": 58,
-      "fantamedia": 5.88,
-      "mediaVoto": 5.88,
-      "pv": 33,
-      "presenze": 33,
-      "gol": 1,
-      "gf": 1,
-      "gs": 0,
-      "golSubiti": 0,
-      "rp": 0,
-      "rc": 0,
-      "rPlus": 0,
-      "rMinus": 0,
-      "rigoriSegnati": 0,
-      "rigoriSbagliati": 0,
-      "assist": 3,
-      "ass": 3,
-      "ammonizioni": 6,
-      "amm": 6,
       "espulsioni": 0,
       "esp": 0,
       "au": 0
@@ -53414,7 +53280,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -2,
       "fvm": 1,
       "fvmM": 1,
-      "classic_8_mod_median": 0.2,
+      "classic_8_mod_median": 0.3,
       "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0.4
     },
@@ -53614,7 +53480,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 6,
       "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
-      "classic_12_mod_median": 0.3
+      "classic_12_mod_median": 0.2
     },
     "stats": {
       "titolarita": 37,
@@ -54273,8 +54139,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 112,
       "fvmM": 112,
       "classic_8_mod_median": 2.8,
-      "classic_10_mod_median": 3.9,
-      "classic_12_mod_median": 4.4
+      "classic_10_mod_median": 3.8,
+      "classic_12_mod_median": 4.2
     },
     "stats": {
       "titolarita": 47,
@@ -55648,7 +55514,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Tre 6.5 di fila nelle prime tre partite, Honest Ahanor si era presentato nei migliori dei modi all'Atalanta ma poi ha concluso la stagione con un non esaltante 5,69 di fanta-media, 1 cartellino rosso e nessun bonus. Adesso Sarri lo vede come terzino sinistro e si giocherà il posto in un ballottaggio serrato con Bernasconi. All'occorrenza può fare anche il centrale e anche per questo potrà trovare spazio. A pochi crediti può essere un investimento giusto, il potenziale è tanto e potrebbe sorprendere trovando i primi bonus al fantacalcio.",
+    "fantaComment": "",
     "quotazioni": {
       "qtA": 1,
       "qtI": 2,
@@ -56349,72 +56215,6 @@ export const CSV_PLAYER_CATALOG = [
     "substitutes": []
   },
   {
-    "id": "genoa_matturro_6244",
-    "csvId": "6244",
-    "fantalabId": "40a63839-7178-4c07-a693-34397b15f3f9",
-    "name": "Matturro",
-    "displayName": "Matturro",
-    "fullName": "Alan Matturro",
-    "teamName": "Genoa",
-    "teamId": "genoa",
-    "teamShort": "GEN",
-    "role": "TS",
-    "classicRole": "D",
-    "mantraRole": "Ds;Dc",
-    "fantaRole": "D",
-    "photoUrl": "https://cdn.falsesoftware.com/players/37587202/v3.webp",
-    "playerImage": "https://cdn.falsesoftware.com/players/37587202/v3.webp",
-    "appetibilita": 83,
-    "status": "panchina",
-    "isAvailable": true,
-    "isPenaltyTaker": false,
-    "isFreeKickTaker": false,
-    "isCornerTaker": false,
-    "rigorista": false,
-    "punizioni": false,
-    "corner": false,
-    "positionNotes": "",
-    "fantaComment": null,
-    "quotazioni": {
-      "qtA": 1,
-      "qtI": 1,
-      "diff": 0,
-      "qtAM": 1,
-      "qtIM": 1,
-      "diffM": 0,
-      "fvm": 1,
-      "fvmM": 1,
-      "classic_8_mod_median": 0,
-      "classic_10_mod_median": 0,
-      "classic_12_mod_median": 0
-    },
-    "stats": {
-      "titolarita": 26,
-      "fantamedia": 6.0,
-      "mediaVoto": 6.0,
-      "pv": 19,
-      "presenze": 19,
-      "gol": 1,
-      "gf": 1,
-      "gs": 0,
-      "golSubiti": 0,
-      "rp": 0,
-      "rc": 0,
-      "rPlus": 0,
-      "rMinus": 0,
-      "rigoriSegnati": 0,
-      "rigoriSbagliati": 0,
-      "assist": 1,
-      "ass": 1,
-      "ammonizioni": 0,
-      "amm": 0,
-      "espulsioni": 1,
-      "esp": 1,
-      "au": 0
-    },
-    "substitutes": []
-  },
-  {
     "id": "bologna_pessinamas_7172",
     "csvId": "7172",
     "fantalabId": "80ce5ddd-aff9-41f7-90d7-2f39513370bd",
@@ -56572,7 +56372,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Djed Spence arriva all'Inter e in Serie A prendendosi la fascia destra che fu in passato di Denzel Dumfries. Operazione da circa 35 milioni: sarà lui il titolare sul lato opposto di Dimarco. Mondiale, a sorpresa, da protagonista con l'Inghilterra dove ha mostrato tutte le sue caratteristiche: veloce e bravo tecnicamente, il classe 2000 è diverso da Dumfries, più terzino che esterno a tutta fascia, meno impatto offensivo e più equilibratore. Insomma, sarà dura per gli avversari saltarlo nell'uno contro uno. Per lui non sarà un impatto nuovo con la Serie A, avendo già assaggiato il nostro campionato con la maglia del Genoa. Al Tottenham pochi bonus, la stagione più prolifica dell'esterno risale alla stagione 21/22 quando in Championship con il Nottingham Forest siglò 2 gol e 5 assist. Al fantacalcio è un primo slot: buoni voti per il modificatore difesa e con un Inter molto prolifica chissà che l'inglese non scopra i bonus.",
+    "fantaComment": "Djed Spence arriva all'Inter e in Serie A prendendosi la fascia destra che fu in passato di Denzel Dumfries. Operazione da circa 35 milioni, non economica per i nerazzurri. Mondiale, a sorpresa, da protagonista con l'Inghilterra dove ha mostrato tutte le sue caratteristiche. Per lui non sarà un impatto nuovo con la Serie A, avendo già assaggiato il nostro campionato con la maglia del Genoa. Al Tottenham pochi bonus, la stagione più prolifica dell'esterno risale alla stagione 2021/22 quando in Championship con il Nottingham Forest siglò 2 gol e 5 assist. Al fantacalcio è un primo slot principalmente perché gioca nell'Inter: buoni voti per il modificatore difesa e con un Inter molto prolifica chissà che l'inglese non scopra i bonus. Il problema è la concorrenza di Diouf, che fa sul serio, quindi Spence non avrà il posto fisso. In più partirà un po' in ritardo e non potrà essere subito titolare.",
     "quotazioni": {
       "qtA": 25,
       "qtI": 1,
@@ -57166,7 +56966,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Manuel Akanji è sbarcato in Serie A stupendo tutti per solidità e duttilità. Al centro o a destra, il 31enne ha raccolto 32 presenze condite da 2 gol e una fanta-media del 6,41, concedendo ai vari De Vrij e Acerbi soltanto le briciole. Appena 4 ammonizioni, nessun acciacco fisico e tra i più presenti per minuti nella rosa a disposizione di Chivu che riparte da lui anche in questa stagione. Con l'arrivo di Stones dal mercato (da capire se arriverà anche un altro centrale), sempre più probabile un suo impiego frequente a destra dove comunque rimane in netto vantaggio su Bisseck. E quando Stones non sarà titolare, lo svizzero potrà slittare al centro del reparto.",
+    "fantaComment": "Manuel Akanji è sbarcato in Serie A stupendo tutti per solidità e duttilità. Al centro o a destra, il 31enne ha raccolto 32 presenze condite da 2 gol e una fanta-media del 6,41, concedendo ai vari De Vrij e Acerbi soltanto le briciole. Appena 4 ammonizioni, nessun acciacco fisico e tra i più presenti per minuti nella rosa a disposizione di Chivu che riparte da lui anche in questa stagione. Con l'arrivo di Stones dal mercato (da capire se arriverà anche un altro centrale), sempre più probabile un suo impiego frequente a destra dove comunque rimane in vantaggio su Bisseck. E quando Stones non sarà titolare, lo svizzero potrà slittare al centro del reparto.",
     "quotazioni": {
       "qtA": 32,
       "qtI": 32,
@@ -57232,7 +57032,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Toma Basic è da montagne russe: da fuori rosa a protagonista nella seconda parte di stagione con la Lazio per poi essere di nuovo svincolato. Adesso, il centrocampista croato, a sorpresa, si rimette in gioco con il Venezia e ne sarà il punto fermo del centrocampo. Due gol e tre assist nella passata stagione per un calciatore dotato di un buon tiro dalla distanza e che spesso si inserisce in zona gol, con e senza palla. Il 29enne all'asta del fantacalcio potrebbe essere appetibile come 5-6° slot low-cost, garantendo titolarità e buoni voti, e perché no qualche bonus.",
+    "fantaComment": "Toma Basic è da montagne russe: da fuori rosa a protagonista nella seconda parte di stagione con la Lazio per poi essere di nuovo svincolato. Adesso, il centrocampista croato si rimette in gioco con il Venezia e ne sarà il punto fermo del centrocampo. Due gol e tre assist nella passata stagione per un calciatore dotato di un buon tiro dalla distanza e che spesso si inserisce in zona gol, con e senza palla. Il 29enne all'asta del fantacalcio potrebbe essere appetibile come 5-6° slot low-cost, garantendo titolarità e buoni voti, e perché no qualche bonus.",
     "quotazioni": {
       "qtA": 6,
       "qtI": 7,
@@ -57308,7 +57108,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -1,
       "fvm": 147,
       "fvmM": 147,
-      "classic_8_mod_median": 9.2,
+      "classic_8_mod_median": 9.1,
       "classic_10_mod_median": 10.6,
       "classic_12_mod_median": 12
     },
@@ -57440,7 +57240,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 0,
       "fvm": 16,
       "fvmM": 16,
-      "classic_8_mod_median": 0.2,
+      "classic_8_mod_median": 0.3,
       "classic_10_mod_median": 0.4,
       "classic_12_mod_median": 0.8
     },
@@ -57496,7 +57296,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Kevin Bowie prova a raccogliere l'eredità di Pinamonti nel Sassuolo. Il centravanti italiano è andato alla Lazio, lo scozzese è pronto ad avere più spazio pur non essendo sicuro al 100% del posto. Bowie, prima punta vecchio stampo del 2002, è un attaccante che diventa così interessante al fantacalcio. Ha già fatto intravedere buone cose in Serie A, segnando 4 gol (uno all’Inter e uno alla Juve) in un Verona in grande difficoltà.",
+    "fantaComment": "Kevin Bowie prova a raccogliere l'eredità di Pinamonti nel Sassuolo. Il centravanti italiano è andato alla Lazio, lo scozzese è pronto ad avere più spazio pur non essendo sicuro al 100% del posto perché è arrivato anche Sebastiano Esposito. Bowie, prima punta vecchio stampo del 2002, è un attaccante che diventa comunque più interessante al fantacalcio. Ha già fatto intravedere buone cose in Serie A, segnando 4 gol (uno all’Inter e uno alla Juve) in un Verona in grande difficoltà.",
     "quotazioni": {
       "qtA": 32,
       "qtI": 42,
@@ -57694,7 +57494,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "10 gol e 14 assist per Giacomo Calò nella passata stagione di Serie B con il Frosinone, quella della promozione in Serie A. Numeri davvero da urlo per il centrocampista, che chiaramente non potrà ripetersi nella massima categoria. Può comunque fare bene, anche perché calcia tutti i piazzati: punizioni, corner e dovrebbe essere il vice sui rigori dopo l'arrivo dello specialista Schmid. Da limare un solo aspetto per il fantacalcio: i 7 gialli, proverà a prenderne qualcuno in meno in Serie A. Classico colpo low cost interessante da una neopromossa.",
+    "fantaComment": "10 gol e 14 assist per Giacomo Calò nella passata stagione di Serie B con il Frosinone, quella della promozione in Serie A. Numeri davvero da urlo per il centrocampista, che chiaramente non potrà replicare nella massima categoria. Può comunque fare bene, anche perché calcia tutti i piazzati: punizioni, corner e dovrebbe essere il vice sui rigori dopo l'arrivo dello specialista Schmid. Da limare un solo aspetto per il fantacalcio: i 7 gialli, proverà a prenderne qualcuno in meno in Serie A. Classico colpo low cost interessante da una neopromossa.",
     "quotazioni": {
       "qtA": 14,
       "qtI": 14,
@@ -57704,7 +57504,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 0,
       "fvm": 45,
       "fvmM": 45,
-      "classic_8_mod_median": 1.4,
+      "classic_8_mod_median": 1.3,
       "classic_10_mod_median": 2,
       "classic_12_mod_median": 2.8
     },
@@ -57760,7 +57560,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Andrea Cambiaso non viene da un'annata semplice, soprattutto al fantacalcio, perchè nonostante i numeri dicano 3 gol e 4 assist, le aspettative erano altre soprattutto a livello di prestazione. Titolarissimo nella Juventus di Spalletti a sinistra, sia nella difesa a 4 che da esterno sinistro a centrocampo, in 36 presenze ha chiuso il suo campionato con una fanta-media del 5.99, segnata, oltre che da tre ammonizioni, in primis da due autogol. Il suo apporto è mancato in entrambe le fasi. Nonostante ciò, il classe 2000 rimane un profilo interessante da 2-3° slot e tra i terzini più prolifici in A. Le sue accelerazioni sulla fascia, sovrapposizioni e i cross dalla trequarti possono alla lunga portare assist e non solo. In più è in grado di giocare sia a sinistra che a destra. Anche quest'anno è lui la freccia della Juventus sulla fascia.",
+    "fantaComment": "Andrea Cambiaso non viene da un'annata semplice, soprattutto al fantacalcio, perché nonostante i numeri dicano 3 gol e 4 assist, le aspettative erano altre soprattutto a livello di prestazioni. Titolare nella Juventus di Spalletti a sinistra, sia nella difesa a 4 che da esterno a centrocampo, in 36 presenze ha chiuso il suo campionato con una fanta-media del 5,99, segnata, oltre che da tre ammonizioni, in primis da due autogol. Il suo apporto è mancato in entrambe le fasi. Nonostante ciò, il classe 2000 rimane un profilo interessante da 2-3° slot e tra i terzini potenzialmente più prolifici in A. Le sue accelerazioni sulla fascia, sovrapposizioni e i cross dalla trequarti possono alla lunga portare assist e non solo. In più è in grado di giocare sia a sinistra che a destra.",
     "quotazioni": {
       "qtA": 13,
       "qtI": 14,
@@ -57772,7 +57572,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 42,
       "classic_8_mod_median": 2.8,
       "classic_10_mod_median": 3.6,
-      "classic_12_mod_median": 4.4
+      "classic_12_mod_median": 4.3
     },
     "stats": {
       "titolarita": 92,
@@ -57836,7 +57636,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 0,
       "fvm": 6,
       "fvmM": 6,
-      "classic_8_mod_median": 0.3,
+      "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0.2
     },
@@ -58034,7 +57834,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 1,
       "fvm": 6,
       "fvmM": 6,
-      "classic_8_mod_median": 0,
+      "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0
     },
@@ -58168,7 +57968,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 10,
       "classic_8_mod_median": 0.3,
       "classic_10_mod_median": 0.4,
-      "classic_12_mod_median": 0.9
+      "classic_12_mod_median": 1
     },
     "stats": {
       "titolarita": 92,
@@ -58288,7 +58088,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": null,
+    "fantaComment": "Douglas Luiz è rimasto alla Juve e vuole convincere Spalletti a dargli fiducia. Un buon inizio di stagione per il brasiliano, che in bianconero non ha mai brillato. Ora può essere diverso, al fantacalcio diventa una scommessa/jolly ma comunque a pochi crediti.",
     "quotazioni": {
       "qtA": 7,
       "qtI": 5,
@@ -58298,9 +58098,9 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 2,
       "fvm": 22,
       "fvmM": 22,
-      "classic_8_mod_median": 0.4,
+      "classic_8_mod_median": 0.5,
       "classic_10_mod_median": 0.6,
-      "classic_12_mod_median": 1
+      "classic_12_mod_median": 0.9
     },
     "stats": {
       "titolarita": 32,
@@ -58696,7 +58496,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 51,
       "classic_8_mod_median": 0.4,
       "classic_10_mod_median": 1.2,
-      "classic_12_mod_median": 2.4
+      "classic_12_mod_median": 2.3
     },
     "stats": {
       "titolarita": 32,
@@ -59025,7 +58825,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 61,
       "fvmM": 61,
       "classic_8_mod_median": 3,
-      "classic_10_mod_median": 3.8,
+      "classic_10_mod_median": 3.7,
       "classic_12_mod_median": 4.2
     },
     "stats": {
@@ -59212,7 +59012,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Manu Koné nella passata stagione ha portato voto in 29 partite, con 2 gol e 3 assist. Ha avuto qualche acciacco in più rispetto alle stagioni precedenti, Gasperini si augura di averlo al 100% fin dall'inizio di questo campionato. Per caratteristiche non è un giocatore da cui aspettarsi più bonus di quelli che ha realizzato nella scorsa stagione, al massimo qualcuno in più. Siamo sul 4° slot pieno all'asta, è comunque un titolare nella Roma e difficilmente prende meno di 6/6,5. La fanta-media del 6,53 lo dimostra.",
+    "fantaComment": "Manu Koné nella passata stagione ha portato voto in 29 partite, con 2 gol e 3 assist. Ha avuto qualche acciacco in più rispetto alle stagioni precedenti, Gasperini si augura di averlo al 100% fin dall'inizio di questo campionato. Per caratteristiche non è un giocatore da cui aspettarsi più bonus di quelli che ha realizzato nella scorsa stagione, al massimo qualcuno in più. Siamo sul 3/4° slot all'asta, è un titolare nella Roma e difficilmente prende meno di 6/6,5. La fanta-media del 6,53 lo dimostra.",
     "quotazioni": {
       "qtA": 18,
       "qtI": 20,
@@ -59410,7 +59210,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": null,
+    "fantaComment": "Ruben Loftus-Cheek ogni anno ci riprova, fa lo stesso in questa stagione. Un buon inizio con Amorim, che gli sta dando fiducia, ma bisogna vedere quanto durerà, soprattutto dal punto di vista fisico. Gli infortuni, infatti, sono il suo punto debole. Vedremo in questa stagione…",
     "quotazioni": {
       "qtA": 2,
       "qtI": 9,
@@ -60080,7 +59880,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -1,
       "fvm": 227,
       "fvmM": 227,
-      "classic_8_mod_median": 12.2,
+      "classic_8_mod_median": 12,
       "classic_10_mod_median": 14,
       "classic_12_mod_median": 15
     },
@@ -60609,7 +60409,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 93,
       "fvmM": 93,
       "classic_8_mod_median": 1.3,
-      "classic_10_mod_median": 2.4,
+      "classic_10_mod_median": 2.3,
       "classic_12_mod_median": 3.1
     },
     "stats": {
@@ -60664,7 +60464,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Attenzione a Jonathan Rowe, ha tutto per esplodere e diventare un vero e proprio 'crack' al fantacalcio. 3 gol e 3 assist in 28 partite nella scorsa stagione, ma di fatto li ha realizzati tutti tra la 21a e la 38a di campionato. Se trova continuità, può provare a puntare la doppia cifra tra gol e assist.",
+    "fantaComment": "Attenzione a Jonathan Rowe, ha tutto per esplodere e diventare un vero e proprio 'crack' al fantacalcio. 3 gol e 3 assist in 28 partite nella scorsa stagione, ma di fatto li ha realizzati tutti tra la 21a e la 38a di campionato. Se trova continuità, può provare a puntare la doppia cifra tra gol e assist. Ora vedremo se sarà ancora al Bologna o all'Atalanta.",
     "quotazioni": {
       "qtA": 29,
       "qtI": 31,
@@ -60674,7 +60474,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -2,
       "fvm": 93,
       "fvmM": 93,
-      "classic_8_mod_median": 4.1,
+      "classic_8_mod_median": 4,
       "classic_10_mod_median": 6,
       "classic_12_mod_median": 7
     },
@@ -60796,7 +60596,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Il Genoa ha preso Djibril Sow dal Siviglia. Centrocampista svizzero classe 1997, è un giocatore completo e dinamico, con qualità tecnica, corsa e capacità nei contrasti. Nella scorsa stagione ha collezionato 35 presenze e 5 gol in tutte le competizioni, vivendo la sua miglior annata dal punto di vista realizzativo. Porta anche grande esperienza internazionale e nelle coppe europee, avendo vinto l’Europa League 2021/22 con l’Eintracht Francoforte. Al Genoa si candida ad avere subito un ruolo importante e a diventare uno dei punti fermi del centrocampo di De Rossi. Al fantacalcio può essere un 4°/5° slot molto interessante, soprattutto per chi cerca un titolare di esperienza, con la possibilità di portare anche qualche bonus.",
+    "fantaComment": "Il Genoa ha preso Djibril Sow dal Siviglia. Centrocampista svizzero classe 1997, è un giocatore completo e dinamico, con qualità tecnica, corsa e capacità nei contrasti. Nella scorsa stagione ha collezionato 35 presenze e 5 gol in tutte le competizioni, vivendo la sua miglior annata dal punto di vista realizzativo. Porta anche grande esperienza internazionale e nelle coppe europee, avendo vinto l’Europa League 2021/22 con l’Eintracht Francoforte. Al Genoa si candida ad avere subito un ruolo importante e a diventare uno dei punti fermi del centrocampo di De Rossi. Al fantacalcio può essere un giocatore interessante per gli ultimi slot, soprattutto per chi cerca un titolare di esperienza, con la possibilità di portare anche qualche bonus.",
     "quotazioni": {
       "qtA": 2,
       "qtI": 1,
@@ -60862,7 +60662,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Leonardo Spinazzola sarà ancora titolare nel nuovo Napoli di Massimiliano Allegri. Il 33enne, da sempre penalizzato al fantacalcio per i suoi infortuni, ha trovato molta continuità nell'ultima stagione, conclusa con 30 presenze condite da ben 3 gol e 3 assist e appena 1 ammonizione. Certo, spesso il terzino sinistro è stato gestito a livello di minutaggio per non sovraccaricarlo (58% di partite da titolare) ma il suo contributo a livello di bonus e voti non è mai mancato. Il 6,55 di fanta-media è una prova della sua affidabilità. Gutierrez è partito, l'italiano parte davanti su Olivera grazie alla sua capacità di saltare l'uomo e abilità nel crossare dal fondo.\n",
+    "fantaComment": "Leonardo Spinazzola è titolare nel nuovo Napoli di Massimiliano Allegri. Il 33enne, da sempre penalizzato al fantacalcio per i suoi infortuni, ha trovato molta continuità nell'ultima stagione, conclusa con 30 presenze condite da ben 3 gol e 3 assist e appena una ammonizione. Certo, spesso il terzino sinistro è stato gestito a livello di minutaggio per non sovraccaricarlo (58% di partite da titolare) ma il suo contributo a livello di bonus e voti non è mai mancato. Il 6,55 di fanta-media è una prova della sua affidabilità. Gutierrez è partito, l'italiano parte davanti su Olivera grazie alla sua capacità di saltare l'uomo e abilità nel crossare dal fondo.",
     "quotazioni": {
       "qtA": 23,
       "qtI": 27,
@@ -60872,7 +60672,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -4,
       "fvm": 74,
       "fvmM": 74,
-      "classic_8_mod_median": 2.1,
+      "classic_8_mod_median": 2.2,
       "classic_10_mod_median": 3,
       "classic_12_mod_median": 3.6
     },
@@ -61334,9 +61134,9 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -12,
       "fvm": 282,
       "fvmM": 282,
-      "classic_8_mod_median": 17,
-      "classic_10_mod_median": 19.1,
-      "classic_12_mod_median": 20
+      "classic_8_mod_median": 16.6,
+      "classic_10_mod_median": 19,
+      "classic_12_mod_median": 19.9
     },
     "stats": {
       "titolarita": 87,
@@ -61466,7 +61266,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 15,
       "fvm": 51,
       "fvmM": 51,
-      "classic_8_mod_median": 0.6,
+      "classic_8_mod_median": 0.7,
       "classic_10_mod_median": 1.2,
       "classic_12_mod_median": 2
     },
@@ -62062,7 +61862,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 125,
       "classic_8_mod_median": 8,
       "classic_10_mod_median": 9.2,
-      "classic_12_mod_median": 10.1
+      "classic_12_mod_median": 10
     },
     "stats": {
       "titolarita": 76,
@@ -62258,7 +62058,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -2,
       "fvm": 141,
       "fvmM": 141,
-      "classic_8_mod_median": 7.3,
+      "classic_8_mod_median": 7.2,
       "classic_10_mod_median": 8.8,
       "classic_12_mod_median": 10.3
     },
@@ -62446,7 +62246,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Ha un fiuto importante con il gol Cesare Casadei: 6 le reti realizzate nella passata stagione, in 32 partite a voto. Numeri di rilievo, ma c'è grande concorrenza nel nuovo Torino di Abate e dovrà dunque conquistarsi un posto: al momento è una delle opzioni, ma non un titolare fisso. Siamo sopra ai low cost per i bonus che ha saputo portare l'anno scorso, da capire se si confermerà. Molto abile per tempi d'inserimento, proverà a conquistare la piena fiducia del nuovo allenatore. Anche in chiave Nazionale.",
+    "fantaComment": "Ha un fiuto importante con il gol Cesare Casadei: 6 le reti realizzate nella passata stagione, in 32 partite a voto. Numeri di rilievo, ma c'è concorrenza nel nuovo Torino di Abate e dovrà dunque conquistarsi un posto: al momento è una delle opzioni, ma non un titolare fisso. Siamo sopra ai low cost per i bonus che ha saputo portare l'anno scorso, da capire se si confermerà. Molto abile per tempi d'inserimento, proverà a conquistare la piena fiducia del nuovo allenatore. Anche in chiave Nazionale.",
     "quotazioni": {
       "qtA": 10,
       "qtI": 11,
@@ -62457,7 +62257,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 32,
       "fvmM": 32,
       "classic_8_mod_median": 1,
-      "classic_10_mod_median": 2,
+      "classic_10_mod_median": 1.9,
       "classic_12_mod_median": 3
     },
     "stats": {
@@ -62512,7 +62312,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Torna in Serie A Andrea Colpani dopo la stagione in Serie B al Monza: il suo rendimento è calato negli ultimi anni, ora il ritorno nel massimo campionato. Ma non ha il posto fisso, proverà a guadagnarselo e a tornare il giocatore ammirato proprio al Monza. Juric ha speso parole positive per lui e gli ha dato fiducia nel pre-campionato: dovrà rispondere presente sul campo ora.",
+    "fantaComment": "Torna in Serie A Andrea Colpani dopo la stagione in Serie B al Monza: il suo rendimento è calato negli ultimi anni, ora il ritorno nel massimo campionato. Ma non ha il posto fisso, proverà a guadagnarselo e a tornare il giocatore ammirato proprio al Monza. Juric ha speso parole positive per lui e gli ha dato fiducia: dovrà rispondere presente sul campo ora.",
     "quotazioni": {
       "qtA": 8,
       "qtI": 2,
@@ -62523,7 +62323,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 26,
       "fvmM": 26,
       "classic_8_mod_median": 0.8,
-      "classic_10_mod_median": 1.1,
+      "classic_10_mod_median": 1,
       "classic_12_mod_median": 1.8
     },
     "stats": {
@@ -62720,8 +62520,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -8,
       "fvm": 166,
       "fvmM": 166,
-      "classic_8_mod_median": 6.8,
-      "classic_10_mod_median": 9.6,
+      "classic_8_mod_median": 6.7,
+      "classic_10_mod_median": 9.4,
       "classic_12_mod_median": 11.2
     },
     "stats": {
@@ -62788,7 +62588,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 19,
       "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.4,
-      "classic_12_mod_median": 0.8
+      "classic_12_mod_median": 0.7
     },
     "stats": {
       "titolarita": 79,
@@ -62854,7 +62654,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 35,
       "classic_8_mod_median": 0.6,
       "classic_10_mod_median": 1.2,
-      "classic_12_mod_median": 2.1
+      "classic_12_mod_median": 2
     },
     "stats": {
       "titolarita": 13,
@@ -63050,8 +62850,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 26,
       "fvm": 419,
       "fvmM": 419,
-      "classic_8_mod_median": 22.8,
-      "classic_10_mod_median": 26.2,
+      "classic_8_mod_median": 22.6,
+      "classic_10_mod_median": 26.1,
       "classic_12_mod_median": 26.4
     },
     "stats": {
@@ -63116,7 +62916,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 0,
       "fvm": 6,
       "fvmM": 6,
-      "classic_8_mod_median": 0.3,
+      "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0.2
     },
@@ -63304,7 +63104,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Grande stagione per Rolando Mandragora la scorsa: 7 gol e 2 assist, quasi doppia cifra di bonus. Numeri importantissimi, che potevano fare di lui più di un semplice low cost ma la Fiorentina si è scatenata sul mercato a centrocampo proprio. È arrivato Atta che sarà intoccabile, ma è arrivato anche Oulai che si gioca un posto proprio con Mandragora. Non avrà dunque il posto fisso come nella passata stagione, se lo giocherà e per questo potrebbe trovare meno spazio. Anche se il condizionale è d'obbligo, le gerarchie nei viola sono tutte da scoprire. Se cercate un low cost da bonus, Mandragora può fare al caso vostro: basta avere coperture sicure in provincia così da non correre rischi.",
+    "fantaComment": "Grande stagione per Rolando Mandragora la scorsa: 7 gol e 2 assist, quasi doppia cifra di bonus. Numeri importantissimi, che potevano fare di lui più di un semplice low cost ma la Fiorentina si è scatenata sul mercato a centrocampo proprio. È arrivato Atta che sarà intoccabile, ma è arrivato anche Oulai. Non avrà dunque il posto fisso come nella passata stagione, se lo giocherà e per questo potrebbe trovare meno spazio. Anche se il condizionale è d'obbligo, le gerarchie nei viola sono tutte da scoprire. Se cercate un low cost da bonus, Mandragora può fare al caso vostro: basta avere coperture sicure in provincia così da non correre rischi.",
     "quotazioni": {
       "qtA": 9,
       "qtI": 16,
@@ -63315,7 +63115,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 29,
       "fvmM": 29,
       "classic_8_mod_median": 0.4,
-      "classic_10_mod_median": 0.6,
+      "classic_10_mod_median": 0.5,
       "classic_12_mod_median": 0.8
     },
     "stats": {
@@ -63446,7 +63246,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 4,
       "fvm": 557,
       "fvmM": 557,
-      "classic_8_mod_median": 31.3,
+      "classic_8_mod_median": 31.4,
       "classic_10_mod_median": 33,
       "classic_12_mod_median": 32.8
     },
@@ -63568,7 +63368,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Jens Odgaard in cerca di spazio in casa Bologna, dopo la scorsa stagione con più ombre che luci. Alla fine 5 gol e 1 assist in 22 partite a voto, ha giocato decisamente meno del previsto per le scelte di Italiano. Ora è arrivato Tedesco, che sta provando il 4-3-3 nel pre-campionato e Odgaard è stato provato soprattutto da mezzala, come Bernardeschi. Sulla carta non è un titolare in partenza, ma un jolly, più da gara in corso che dall'inizio. Il Bologna non avrà più le coppe e allora ecco che al fantacalcio va preso alle giuste condizioni: con titolari certi, consapevoli che a volte andrà a voto e altre no. Non sarebbe una sorpresa se replicasse i numeri della passata stagione o giù di lì.",
+    "fantaComment": "Jens Odgaard in cerca di spazio in casa Bologna, dopo la scorsa stagione con più ombre che luci. Alla fine 5 gol e 1 assist in 22 partite a voto, ha giocato decisamente meno del previsto per le scelte di Italiano. Ora è arrivato Tedesco, che sta provando il 4-3-3 e Odgaard è stato provato soprattutto da mezzala. Sulla carta non è un titolare fisso in partenza, ma un jolly, più da gara in corso che dall'inizio. Il Bologna non avrà più le coppe e allora ecco che al fantacalcio va preso alle giuste condizioni: con titolari certi, consapevoli che a volte andrà a voto e altre no. Non sarebbe una sorpresa se replicasse i numeri della passata stagione o giù di lì.",
     "quotazioni": {
       "qtA": 19,
       "qtI": 25,
@@ -63634,7 +63434,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "2 gol e 5 assist in 33 partite a voto per Matteo Politano, che negli anni è diventato più assist-man. Ha segnato poco nelle scorse stagioni, ma manda spesso in gol i compagni e comunque garantisce grande affidabilità. Fanta-media del 6,36, con Allegri può avere ancora grande spazio e inizia la stagione da titolare a destra. Poi chiaramente ci saranno rotazioni con la Champions, ma Politano proverà a dire ancora la sua largo nel tridente. Classico colpo da 3° slot, chi lo ha in rosa lo mette praticamente sempre, anche se non parte titolare: a voto andrà con grande continuità.",
+    "fantaComment": "2 gol e 5 assist in 33 partite a voto per Matteo Politano, che negli anni è diventato più assist-man. Ha segnato poco nelle scorse stagioni, ma manda spesso in gol i compagni e comunque garantisce grande affidabilità. Fanta-media del 6,36, con Allegri può avere ancora grande spazio e inizia la stagione da titolare a destra. Poi chiaramente ci saranno rotazioni con la Champions, ma Politano proverà a dire ancora la sua largo nel tridente. Chi lo ha in rosa lo mette praticamente sempre, anche se non parte titolare: a voto andrà con grande continuità.",
     "quotazioni": {
       "qtA": 15,
       "qtI": 14,
@@ -63646,7 +63446,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 48,
       "classic_8_mod_median": 2,
       "classic_10_mod_median": 3.2,
-      "classic_12_mod_median": 4.1
+      "classic_12_mod_median": 4.2
     },
     "stats": {
       "titolarita": 68,
@@ -63844,7 +63644,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 64,
       "classic_8_mod_median": 1.6,
       "classic_10_mod_median": 2.9,
-      "classic_12_mod_median": 4.9
+      "classic_12_mod_median": 4.8
     },
     "stats": {
       "titolarita": 50,
@@ -63908,8 +63708,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 3,
       "fvm": 96,
       "fvmM": 96,
-      "classic_8_mod_median": 6,
-      "classic_10_mod_median": 7.4,
+      "classic_8_mod_median": 5.8,
+      "classic_10_mod_median": 7.3,
       "classic_12_mod_median": 8.4
     },
     "stats": {
@@ -64054,6 +63854,72 @@ export const CSV_PLAYER_CATALOG = [
       "gf": 0,
       "gs": 1,
       "golSubiti": 1,
+      "rp": 0,
+      "rc": 0,
+      "rPlus": 0,
+      "rMinus": 0,
+      "rigoriSegnati": 0,
+      "rigoriSbagliati": 0,
+      "assist": 0,
+      "ass": 0,
+      "ammonizioni": 0,
+      "amm": 0,
+      "espulsioni": 0,
+      "esp": 0,
+      "au": 0
+    },
+    "substitutes": []
+  },
+  {
+    "id": "como_kambwala_6601",
+    "csvId": "6601",
+    "fantalabId": "0750e0ff-54fd-4282-bd09-d1194918f5e4",
+    "name": "Kambwala",
+    "displayName": "Kambwala",
+    "fullName": "Willy Kambwala",
+    "teamName": "Como",
+    "teamId": "como",
+    "teamShort": "COM",
+    "role": "TD",
+    "classicRole": "D",
+    "mantraRole": "Dd;Dc",
+    "fantaRole": "D",
+    "photoUrl": "https://cdn.falsesoftware.com/players/37544311/v3.webp",
+    "playerImage": "https://cdn.falsesoftware.com/players/37544311/v3.webp",
+    "appetibilita": 72,
+    "status": "panchina",
+    "isAvailable": true,
+    "isPenaltyTaker": false,
+    "isFreeKickTaker": false,
+    "isCornerTaker": false,
+    "rigorista": false,
+    "punizioni": false,
+    "corner": false,
+    "positionNotes": "",
+    "fantaComment": null,
+    "quotazioni": {
+      "qtA": 1,
+      "qtI": 1,
+      "diff": 0,
+      "qtAM": 1,
+      "qtIM": 1,
+      "diffM": 0,
+      "fvm": 1,
+      "fvmM": 1,
+      "classic_8_mod_median": 0,
+      "classic_10_mod_median": 0,
+      "classic_12_mod_median": 0
+    },
+    "stats": {
+      "titolarita": 3,
+      "fantamedia": 5.0,
+      "mediaVoto": 5.0,
+      "pv": 2,
+      "presenze": 2,
+      "gol": 0,
+      "gf": 0,
+      "gs": 0,
+      "golSubiti": 0,
       "rp": 0,
       "rc": 0,
       "rPlus": 0,
@@ -64568,7 +64434,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 0,
       "fvm": 1,
       "fvmM": 1,
-      "classic_8_mod_median": 0.2,
+      "classic_8_mod_median": 0.4,
       "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0.2
     },
@@ -64626,17 +64492,17 @@ export const CSV_PLAYER_CATALOG = [
     "positionNotes": "",
     "fantaComment": "Mateo Pellegrino non è riuscito ad arrivare alla doppia cifra per un solo gol, si è fermato a 9 nella scorsa stagione. La Fiorentina ha creduto in lui investendo circa 20 milioni di euro e punta a fargli raggiungere la doppia cifra. Mentre al Parma era titolare inamovibile, alla Fiorentina tutto dipenderà da Kean. Al momento sostituisce Piccoli nel ruolo di back-up ma anche a gara in corso può fare male. Al fantacalcio si può anche non comporre la coppia vista la possibile partenza di Kean. Può essere un 3-4° slot per il vostro attacco.",
     "quotazioni": {
-      "qtA": 39,
+      "qtA": 43,
       "qtI": 44,
-      "diff": -5,
-      "qtAM": 39,
+      "diff": -1,
+      "qtAM": 43,
       "qtIM": 44,
-      "diffM": -5,
-      "fvm": 125,
-      "fvmM": 125,
+      "diffM": -1,
+      "fvm": 138,
+      "fvmM": 138,
       "classic_8_mod_median": 2.6,
-      "classic_10_mod_median": 4.6,
-      "classic_12_mod_median": 6.2
+      "classic_10_mod_median": 4.7,
+      "classic_12_mod_median": 6.4
     },
     "stats": {
       "titolarita": 89,
@@ -64900,7 +64766,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 29,
       "classic_8_mod_median": 2,
       "classic_10_mod_median": 2.8,
-      "classic_12_mod_median": 3.5
+      "classic_12_mod_median": 3.4
     },
     "stats": {
       "titolarita": 13,
@@ -65229,7 +65095,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 74,
       "fvmM": 74,
       "classic_8_mod_median": 4,
-      "classic_10_mod_median": 6.3,
+      "classic_10_mod_median": 6.2,
       "classic_12_mod_median": 8.6
     },
     "stats": {
@@ -65493,7 +65359,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 166,
       "fvmM": 166,
       "classic_8_mod_median": 6.6,
-      "classic_10_mod_median": 8.1,
+      "classic_10_mod_median": 8,
       "classic_12_mod_median": 8.8
     },
     "stats": {
@@ -66020,7 +65886,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 0,
       "fvm": 1,
       "fvmM": 1,
-      "classic_8_mod_median": 0,
+      "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0
     },
@@ -66230,72 +66096,6 @@ export const CSV_PLAYER_CATALOG = [
       "presenze": 0,
       "gol": 0,
       "gf": 0,
-      "gs": 0,
-      "golSubiti": 0,
-      "rp": 0,
-      "rc": 0,
-      "rPlus": 0,
-      "rMinus": 0,
-      "rigoriSegnati": 0,
-      "rigoriSbagliati": 0,
-      "assist": 0,
-      "ass": 0,
-      "ammonizioni": 0,
-      "amm": 0,
-      "espulsioni": 0,
-      "esp": 0,
-      "au": 0
-    },
-    "substitutes": []
-  },
-  {
-    "id": "frosinone_corrado_7471",
-    "csvId": "7471",
-    "fantalabId": "f2ec00b6-5b60-4145-bee2-011bfc7b995c",
-    "name": "Corrado",
-    "displayName": "Corrado",
-    "fullName": "Niccolò Corrado",
-    "teamName": "Frosinone",
-    "teamId": "frosinone",
-    "teamShort": "FRO",
-    "role": "TS",
-    "classicRole": "D",
-    "mantraRole": "Ds;E",
-    "fantaRole": "D",
-    "photoUrl": "https://cdn.falsesoftware.com/players/8417244/v1.webp",
-    "playerImage": "https://cdn.falsesoftware.com/players/8417244/v1.webp",
-    "appetibilita": 83,
-    "status": "panchina",
-    "isAvailable": true,
-    "isPenaltyTaker": false,
-    "isFreeKickTaker": false,
-    "isCornerTaker": false,
-    "rigorista": false,
-    "punizioni": false,
-    "corner": false,
-    "positionNotes": "",
-    "fantaComment": null,
-    "quotazioni": {
-      "qtA": 1,
-      "qtI": 1,
-      "diff": 0,
-      "qtAM": 1,
-      "qtIM": 1,
-      "diffM": 0,
-      "fvm": 1,
-      "fvmM": 1,
-      "classic_8_mod_median": 0,
-      "classic_10_mod_median": 0,
-      "classic_12_mod_median": 0
-    },
-    "stats": {
-      "titolarita": 13,
-      "fantamedia": 6.0,
-      "mediaVoto": 6.0,
-      "pv": 16,
-      "presenze": 16,
-      "gol": 3,
-      "gf": 3,
       "gs": 0,
       "golSubiti": 0,
       "rp": 0,
@@ -66777,6 +66577,72 @@ export const CSV_PLAYER_CATALOG = [
     "substitutes": []
   },
   {
+    "id": "lecce_fatah_7602",
+    "csvId": "7602",
+    "fantalabId": "fe4dd59e-c29f-4618-9ae7-8df11a3bfbbc",
+    "name": "Fatah",
+    "displayName": "Fatah",
+    "fullName": "Amar Fatah",
+    "teamName": "Lecce",
+    "teamId": "lecce",
+    "teamShort": "LEC",
+    "role": "ATT",
+    "classicRole": "A",
+    "mantraRole": "W;A",
+    "fantaRole": "A",
+    "photoUrl": "https://cdn.falsesoftware.com/players/37603838/v1.webp",
+    "playerImage": "https://cdn.falsesoftware.com/players/37603838/v1.webp",
+    "appetibilita": 84,
+    "status": "in_ballottaggio",
+    "isAvailable": true,
+    "isPenaltyTaker": false,
+    "isFreeKickTaker": false,
+    "isCornerTaker": false,
+    "rigorista": false,
+    "punizioni": false,
+    "corner": false,
+    "positionNotes": "",
+    "fantaComment": "Amar Fatah è un nuovo esterno del Lecce. Si tratta di un’ala offensiva, è un 2004 ed è in rampa di lancio. L’anno scorso ha fatto 8 gol e 3 assist nel campionato scozzese con il Dundee United FC. Svedese e nel giro dell’Under 21, è un’ala sinistra di piede destro che si accentra e cerca anche il tiro a giro. Potrebbe essere titolare ed è dunque un low cost da ultimissimi slot all’asta.",
+    "quotazioni": {
+      "qtA": 2,
+      "qtI": 1,
+      "diff": 1,
+      "qtAM": 2,
+      "qtIM": 1,
+      "diffM": 1,
+      "fvm": 6,
+      "fvmM": 6,
+      "classic_8_mod_median": 0,
+      "classic_10_mod_median": 0,
+      "classic_12_mod_median": 0
+    },
+    "stats": {
+      "titolarita": 58,
+      "fantamedia": 6.0,
+      "mediaVoto": 6.0,
+      "pv": 30,
+      "presenze": 30,
+      "gol": 5,
+      "gf": 5,
+      "gs": 0,
+      "golSubiti": 0,
+      "rp": 0,
+      "rc": 0,
+      "rPlus": 3,
+      "rMinus": 1,
+      "rigoriSegnati": 3,
+      "rigoriSbagliati": 1,
+      "assist": 3,
+      "ass": 3,
+      "ammonizioni": 3,
+      "amm": 3,
+      "espulsioni": 1,
+      "esp": 1,
+      "au": 0
+    },
+    "substitutes": []
+  },
+  {
     "id": "napoli_favasuli_7563",
     "csvId": "7563",
     "fantalabId": "fbbfed22-f662-4c6c-b22a-0778746038c2",
@@ -67120,8 +66986,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "P",
     "mantraRole": "Por",
     "fantaRole": "P",
-    "photoUrl": "",
-    "playerImage": "",
+    "photoUrl": "https://cdn.falsesoftware.com/players/1494392/v1.webp",
+    "playerImage": "https://cdn.falsesoftware.com/players/1494392/v1.webp",
     "appetibilita": 82,
     "status": "tit_sicuro",
     "isAvailable": true,
@@ -67142,8 +67008,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 4,
       "fvm": 16,
       "fvmM": 16,
-      "classic_8_mod_median": 0,
-      "classic_10_mod_median": 0,
+      "classic_8_mod_median": 0.2,
+      "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0
     },
     "stats": {
@@ -67726,7 +67592,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Ilias Koutsoupias l'anno scorso ha realizzato 8 gol e 4 assist in 34 partite di Serie B, è stato importante nella promozione del Frosinone. Ora il livello sale nel massimo campionato, lui proverà in primis a tenersi il posto da titolare: al momento se lo gioca. Per i bonus, chiaramente è impensabile che tenga i numeri dello scorso anno.",
+    "fantaComment": "",
     "quotazioni": {
       "qtA": 1,
       "qtI": 3,
@@ -68176,9 +68042,9 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "D",
     "mantraRole": "Ds;Dc",
     "fantaRole": "D",
-    "photoUrl": "",
-    "playerImage": "",
-    "appetibilita": 84,
+    "photoUrl": "https://cdn.falsesoftware.com/players/37714431/v1.webp",
+    "playerImage": "https://cdn.falsesoftware.com/players/37714431/v1.webp",
+    "appetibilita": 83,
     "status": "in_ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -68188,7 +68054,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "",
+    "fantaComment": null,
     "quotazioni": {
       "qtA": 1,
       "qtI": 1,
@@ -68386,7 +68252,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Diego Moreira è un nuovo rinforzo del Milan di Ruben Amorim. Operazione importantissima per i rossoneri, arriva dallo Strasburgo per circa 50 milioni di euro più bonus. Si tratta di un esterno di nazionalità belga classe 2004 e di piede mancino, che predilige la fascia sinistra ma è stato impiegato anche a destra. Arriva per rinforzare la batteria degli esterni, anche se può giocare più avanzato all'occorrenza: grandi accelerazioni e sgroppate palla al piede, i rossoneri sperano di trovare un 'nuovo Theo Hernandez'. Nelle idee del Milan ha tutto per essere il titolare a sinistra, si giocherà il posto con Bartesaghi inizialmente ma Moreira può presto diventare la primissima scelta. 4 presenze nella nazionale maggiore belga, ha scelto il Belgio dopo aver fatto tutta la trafila con le giovanili del Portogallo (ha la doppia nazionalità). 4 gol e 7 assist in 27 partite nell'ultima Ligue 1, è il suo record tra gol e assist da quando è professionista. Nell'ultima stagione ha perso 9 partite per un problema agli adduttori tra febbraio e aprile, ma poi ha recuperato e arriva integro e pronto in rossonero. Al fantacalcio è listato centrocampista: siamo sui 15 crediti circa in partenza, può essere un 3/4° slot.",
+    "fantaComment": "Diego Moreira è un nuovo rinforzo del Milan di Ruben Amorim. Operazione molto importante per i rossoneri, arriva dallo Strasburgo per circa 50 milioni di euro più bonus. Si tratta di un esterno di nazionalità belga classe 2004 e di piede mancino, che predilige la fascia sinistra ma è stato impiegato anche a destra (ruolo in cui ha detto di volerlo provare Amorim). Arriva per rinforzare la batteria degli esterni, anche se può giocare più avanzato all'occorrenza: grandi accelerazioni e sgroppate palla al piede, i rossoneri sperano di trovare un 'nuovo Theo Hernandez'. Nelle idee del Milan ha tutto per essere il titolare a sinistra, si giocherà il posto con Bartesaghi inizialmente ma Moreira può presto diventare la primissima scelta. 4 presenze nella nazionale maggiore belga, ha scelto il Belgio dopo aver fatto tutta la trafila con le giovanili del Portogallo (ha la doppia nazionalità). 4 gol e 7 assist in 27 partite nell'ultima Ligue 1, è il suo record tra gol e assist da quando è professionista. Nell'ultima stagione ha perso 9 partite per un problema agli adduttori tra febbraio e aprile, ma poi ha recuperato e arriva integro e pronto in rossonero. Al fantacalcio è listato centrocampista: siamo sui 15 crediti circa in partenza, può essere un 3/4° slot.",
     "quotazioni": {
       "qtA": 26,
       "qtI": 1,
@@ -68396,9 +68262,9 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 25,
       "fvm": 83,
       "fvmM": 83,
-      "classic_8_mod_median": 4.2,
-      "classic_10_mod_median": 5.8,
-      "classic_12_mod_median": 6.7
+      "classic_8_mod_median": 4.1,
+      "classic_10_mod_median": 5.6,
+      "classic_12_mod_median": 6.6
     },
     "stats": {
       "titolarita": 61,
@@ -68506,8 +68372,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "A",
     "mantraRole": "Pc",
     "fantaRole": "A",
-    "photoUrl": "",
-    "playerImage": "",
+    "photoUrl": "https://cdn.falsesoftware.com/players/5283704/v1.webp",
+    "playerImage": "https://cdn.falsesoftware.com/players/5283704/v1.webp",
     "appetibilita": 84,
     "status": "in_ballottaggio",
     "isAvailable": true,
@@ -68530,7 +68396,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 13,
       "classic_8_mod_median": 0,
       "classic_10_mod_median": 0.2,
-      "classic_12_mod_median": 0
+      "classic_12_mod_median": 0.2
     },
     "stats": {
       "titolarita": 53,
@@ -68859,7 +68725,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 1,
       "fvmM": 1,
       "classic_8_mod_median": 0,
-      "classic_10_mod_median": 0,
+      "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0
     },
     "stats": {
@@ -69255,8 +69121,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 61,
       "fvmM": 61,
       "classic_8_mod_median": 0.4,
-      "classic_10_mod_median": 1.3,
-      "classic_12_mod_median": 2.4
+      "classic_10_mod_median": 1.2,
+      "classic_12_mod_median": 2.3
     },
     "stats": {
       "titolarita": 50,
@@ -69574,7 +69440,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Aleksandar Stankovic è di fatto il primo nuovo acquisto dell'Inter. In Belgio, il figlio di Dejan è esploso con 9 gol (di cui 2 in Champions League) e 5 assist in stagione mettendo in mostra le doti tecniche e fisiche di una mezzala moderna che si sposerebbe bene con il 3-5-2 di Chivu. Il centrocampo dell'Inter è attualmente folto ma Frattesi rimane in uscita e l'Inter potrebbe avere il suo sostituto già in casa. La palla sulla sua permanenza spetterà a Chivu: nel caso, al fantacalcio può essere un vero e proprio jolly. I tanti impegni dell'Inter potrebbero aprirgli per la prima volta le porte della Serie A. Occhio ai calci di punizione se non ci sono in campo i due specialisti Calhanoglu e Dimarco: al Bruges sono arrivati due gol direttamente dai piazzati.",
+    "fantaComment": "Aleksandar Stankovic è di fatto nuovo acquisto per l'Inter. In Belgio, il figlio di Dejan è esploso con 9 gol (di cui 2 in Champions League) e 5 assist in stagione mettendo in mostra le doti tecniche e fisiche di un centrocampista completo. Al fantacalcio può essere un vero e proprio jolly. I tanti impegni dell'Inter potrebbero aprirgli per la prima volta le porte della Serie A. Occhio ai calci di punizione se non ci sono in campo i due specialisti Calhanoglu e Dimarco: al Bruges sono arrivati due gol direttamente dai piazzati.",
     "quotazioni": {
       "qtA": 4,
       "qtI": 1,
@@ -69784,7 +69650,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 22,
       "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
-      "classic_12_mod_median": 0.8
+      "classic_12_mod_median": 0.6
     },
     "stats": {
       "titolarita": 50,
@@ -69826,8 +69692,8 @@ export const CSV_PLAYER_CATALOG = [
     "classicRole": "D",
     "mantraRole": "Dd;E",
     "fantaRole": "D",
-    "photoUrl": "",
-    "playerImage": "",
+    "photoUrl": "https://cdn.falsesoftware.com/players/37533716/v1.webp",
+    "playerImage": "https://cdn.falsesoftware.com/players/37533716/v1.webp",
     "appetibilita": 84,
     "status": "panchina",
     "isAvailable": true,
@@ -69838,7 +69704,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "",
+    "fantaComment": null,
     "quotazioni": {
       "qtA": 1,
       "qtI": 1,
@@ -70112,7 +69978,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 4,
       "fvm": 22,
       "fvmM": 22,
-      "classic_8_mod_median": 1.5,
+      "classic_8_mod_median": 1.4,
       "classic_10_mod_median": 2.2,
       "classic_12_mod_median": 3
     },
