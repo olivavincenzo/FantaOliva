@@ -2231,8 +2231,8 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
-        "playerId": "883a53f2-3f11-4cc7-bbcc-ec7d21a99f74",
-        "name": "Baturina",
+        "playerId": "56f6449f-dda3-48cd-b535-9016b9ac7e65",
+        "name": "Milla",
         "role": "C"
       }
     ],
@@ -2243,8 +2243,8 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
-        "playerId": "883a53f2-3f11-4cc7-bbcc-ec7d21a99f74",
-        "name": "Baturina",
+        "playerId": "56f6449f-dda3-48cd-b535-9016b9ac7e65",
+        "name": "Milla",
         "role": "C"
       },
       {
@@ -2345,7 +2345,7 @@ export const SOS_TEAMS_DATA = {
     "down": [
       {
         "playerId": "f1b43bc5-eda4-471e-a4cc-8cc46f3f704d",
-        "name": "Morata",
+        "name": "",
         "points": [
           "Non ancora integrato al meglio nel sistema di gioco"
         ]
@@ -2517,8 +2517,8 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
-        "playerId": "883a53f2-3f11-4cc7-bbcc-ec7d21a99f74",
-        "name": "Baturina",
+        "playerId": "56f6449f-dda3-48cd-b535-9016b9ac7e65",
+        "name": "Milla",
         "role": "C"
       }
     ],
@@ -2529,8 +2529,8 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
-        "playerId": "883a53f2-3f11-4cc7-bbcc-ec7d21a99f74",
-        "name": "Baturina",
+        "playerId": "56f6449f-dda3-48cd-b535-9016b9ac7e65",
+        "name": "Milla",
         "role": "C"
       },
       {
@@ -2631,7 +2631,7 @@ export const SOS_TEAMS_DATA = {
     "down": [
       {
         "playerId": "f1b43bc5-eda4-471e-a4cc-8cc46f3f704d",
-        "name": "Morata",
+        "name": "",
         "points": [
           "Non ancora integrato al meglio nel sistema di gioco"
         ]
@@ -3309,8 +3309,8 @@ export const SOS_TEAMS_DATA = {
         },
         {
           "playerId": "48d89ba5-1f9e-4485-a008-780980a3aabd",
-          "name": "Zappa",
-          "role": "D",
+          "name": "",
+          "role": "",
           "perc": 45
         }
       ],
@@ -3357,7 +3357,7 @@ export const SOS_TEAMS_DATA = {
     "down": [
       {
         "playerId": "48d89ba5-1f9e-4485-a008-780980a3aabd",
-        "name": "Zappa",
+        "name": "",
         "points": [
           "Sistema molto difensivo potrebbe penalizzarlo"
         ]
@@ -3560,8 +3560,8 @@ export const SOS_TEAMS_DATA = {
         },
         {
           "playerId": "48d89ba5-1f9e-4485-a008-780980a3aabd",
-          "name": "Zappa",
-          "role": "D",
+          "name": "",
+          "role": "",
           "perc": 45
         }
       ],
@@ -3608,7 +3608,7 @@ export const SOS_TEAMS_DATA = {
     "down": [
       {
         "playerId": "48d89ba5-1f9e-4485-a008-780980a3aabd",
-        "name": "Zappa",
+        "name": "",
         "points": [
           "Sistema molto difensivo potrebbe penalizzarlo"
         ]
@@ -5116,7 +5116,7 @@ export const SOS_TEAMS_DATA = {
     "attackRating": 2.5,
     "defenseRating": 2.0,
     "comment": "Il Torino cambia guida tecnica dopo la 26ª giornata con l'arrivo di Roberto D'Aversa al posto di Marco Baroni. L'obiettivo è salvare la stagione granata ed evitare la retrocessione in Serie B. D'aversa è un tecnico specializzato in salvezze. Di base non  dovrebbe cambiare il modulo tattico della squadra granata, con la difesa a 3 un centrocampo muscolare e Vlasic come supporto alle due punte. Ciò che cambierà è l'attenzione alla fase difensiva, vero tallone d'Achille della stagione granata. D'Aversa richiede una pressione costante sul portatore di palla avversario e un'organizzazione difensiva solida, cercando di ridurre al minimo gli spazi tra le linee. Le sue squadre cercano spesso la verticalizzazione immediata. In fase di costruzione può utilizzare una struttura 4+2, dove i difensori e i mediani collaborano per uscire dalla pressione, cercando poi il lancio lungo per le punte se pressati intensamente. L'ago della bilancia sarà Vlasic, collante tra centrocampo e attacco.",
-    "sosFantaComment": "È arrivato Ignazio Abate sulla panchina del Torino: più 3-4-2-1 che difesa a 4, provato solo una volta nel precampionato. Cacciamani si candida a giocare a sinistra, promettente e già pronto. Occhio a Casadei: è stato provato praticamente sulla trequarti. Il tridente sarebbe con lui e Vlasic a supporto di Simeone; Zapata è di fatto il vice Cholito. Ma può diventare anche un 3-4-1-2. In difesa sono arrivati Comuzzo e Comert, a oggi loro due e Coco sono avanti su Ismajli. A centrocampo il nuovo arrivato Fitz-Jim si candida a giocare titolare.",
+    "sosFantaComment": "È arrivato Ignazio Abate sulla panchina del Torino: più 3-4-2-1 che difesa a 4, provato solo una volta nel precampionato. Cacciamani si candida a giocare a sinistra, promettente e già pronto. Occhio a Casadei: è stato provato praticamente sulla trequarti. Il tridente sarebbe con lui e Vlasic a supporto di Simeone; Zapata è di fatto il vice Cholito. Ma può diventare anche un 3-4-1-2. In difesa sono arrivati Comuzzo e Comert, a oggi loro due e Coco sono avanti su Ismajli. A centrocampo il nuovo arrivato Fitz-Jim si candida a giocare titolare. In porta per ora c'è Mascardi, ma è in arrivo Perri che sarà il titolare: si attende solo l'ufficialità.",
     "keyPoints": [
       {
         "text": "Trequartisti mobili",
@@ -5332,7 +5332,7 @@ export const SOS_TEAMS_DATA = {
     "attackRating": 2.5,
     "defenseRating": 2.0,
     "comment": "Il Torino cambia guida tecnica dopo la 26ª giornata con l'arrivo di Roberto D'Aversa al posto di Marco Baroni. L'obiettivo è salvare la stagione granata ed evitare la retrocessione in Serie B. D'aversa è un tecnico specializzato in salvezze. Di base non  dovrebbe cambiare il modulo tattico della squadra granata, con la difesa a 3 un centrocampo muscolare e Vlasic come supporto alle due punte. Ciò che cambierà è l'attenzione alla fase difensiva, vero tallone d'Achille della stagione granata. D'Aversa richiede una pressione costante sul portatore di palla avversario e un'organizzazione difensiva solida, cercando di ridurre al minimo gli spazi tra le linee. Le sue squadre cercano spesso la verticalizzazione immediata. In fase di costruzione può utilizzare una struttura 4+2, dove i difensori e i mediani collaborano per uscire dalla pressione, cercando poi il lancio lungo per le punte se pressati intensamente. L'ago della bilancia sarà Vlasic, collante tra centrocampo e attacco.",
-    "sosFantaComment": "È arrivato Ignazio Abate sulla panchina del Torino: più 3-4-2-1 che difesa a 4, provato solo una volta nel precampionato. Cacciamani si candida a giocare a sinistra, promettente e già pronto. Occhio a Casadei: è stato provato praticamente sulla trequarti. Il tridente sarebbe con lui e Vlasic a supporto di Simeone; Zapata è di fatto il vice Cholito. Ma può diventare anche un 3-4-1-2. In difesa sono arrivati Comuzzo e Comert, a oggi loro due e Coco sono avanti su Ismajli. A centrocampo il nuovo arrivato Fitz-Jim si candida a giocare titolare.",
+    "sosFantaComment": "È arrivato Ignazio Abate sulla panchina del Torino: più 3-4-2-1 che difesa a 4, provato solo una volta nel precampionato. Cacciamani si candida a giocare a sinistra, promettente e già pronto. Occhio a Casadei: è stato provato praticamente sulla trequarti. Il tridente sarebbe con lui e Vlasic a supporto di Simeone; Zapata è di fatto il vice Cholito. Ma può diventare anche un 3-4-1-2. In difesa sono arrivati Comuzzo e Comert, a oggi loro due e Coco sono avanti su Ismajli. A centrocampo il nuovo arrivato Fitz-Jim si candida a giocare titolare. In porta per ora c'è Mascardi, ma è in arrivo Perri che sarà il titolare: si attende solo l'ufficialità.",
     "keyPoints": [
       {
         "text": "Trequartisti mobili",

@@ -1001,7 +1001,7 @@
         "player_id": "b6e4d803-fb64-4bf4-9771-3673e4c4dc9a"
       },
       {
-        "player_id": "883a53f2-3f11-4cc7-bbcc-ec7d21a99f74"
+        "player_id": "56f6449f-dda3-48cd-b535-9016b9ac7e65"
       }
     ],
     "corner": [
@@ -1009,7 +1009,7 @@
         "player_id": "b6e4d803-fb64-4bf4-9771-3673e4c4dc9a"
       },
       {
-        "player_id": "883a53f2-3f11-4cc7-bbcc-ec7d21a99f74"
+        "player_id": "56f6449f-dda3-48cd-b535-9016b9ac7e65"
       },
       {
         "player_id": "975f7429-8320-4cf5-92a9-093eb9ce4c82"
@@ -1022,7 +1022,7 @@
     "comment": "Ha costruito il suo Como su un’identità chiara e ambiziosa, ispirata al calcio di posizione. Il suo sistema predilige un 4-2-3-1 con interscambi tra i trequartisti, ricerca costante della superiorità posizionale e una gestione paziente del ritmo. Gli esterni alti sono fondamentali nel fissare l'ampiezza e liberare spazio tra le linee, mentre la squadra cerca sempre di mantenere il controllo del pallone anche sotto pressione. Questo approccio, coraggioso e ben codificato, ha portato il Como a uno storico decimo posto in Serie A, sorprendendo per maturità e qualità. In ottica fantacalcio, attenzione ai profili tecnici: chi sa muoversi tra le linee e leggere il gioco può emergere come protagonista.",
     "sosFantaComment": "Rimane Fabregas in panchina per un Como da Champions, con la conferma dell'ormai consolidato 4-2-3-1. A destra è arrivato Yan Couto e parte in pole su Smolcic mentre a sinistra il ballottaggio è tra Valle e il nuovo arrivato Kaiki (qui è un testa a testa vero). Chalobah arriva per giocare in difesa, o Ramon o Kempf al suo fianco. Gerarchie meno rigide e più rotazioni con la Champions. In mediana Milla insidia Perrone e Da Cunha, che restano comunque i due favoriti. Baturina e Diao in pole sulle fasce, ma c'è anche Rodriguez che avrà grande spazio e si è già visto. ",
     "created_at": "2026-07-21T12:27:26.063Z",
-    "updated_at": "2026-08-26T16:31:56.616Z",
+    "updated_at": "2026-08-28T16:20:51.838Z",
     "up": [
       {
         "player_id": "975f7429-8320-4cf5-92a9-093eb9ce4c82",
@@ -1189,7 +1189,7 @@
       }
     ],
     "createdAt": "2026-07-21T12:27:26.063Z",
-    "updatedAt": "2026-08-26T16:31:56.616Z"
+    "updatedAt": "2026-08-28T16:20:51.838Z"
   },
   {
     "team": "ROM",
@@ -2374,9 +2374,9 @@
     "attack": 2.5,
     "defense": 2,
     "comment": "Il Torino cambia guida tecnica dopo la 26ª giornata con l'arrivo di Roberto D'Aversa al posto di Marco Baroni. L'obiettivo è salvare la stagione granata ed evitare la retrocessione in Serie B. D'aversa è un tecnico specializzato in salvezze. Di base non  dovrebbe cambiare il modulo tattico della squadra granata, con la difesa a 3 un centrocampo muscolare e Vlasic come supporto alle due punte. Ciò che cambierà è l'attenzione alla fase difensiva, vero tallone d'Achille della stagione granata. D'Aversa richiede una pressione costante sul portatore di palla avversario e un'organizzazione difensiva solida, cercando di ridurre al minimo gli spazi tra le linee. Le sue squadre cercano spesso la verticalizzazione immediata. In fase di costruzione può utilizzare una struttura 4+2, dove i difensori e i mediani collaborano per uscire dalla pressione, cercando poi il lancio lungo per le punte se pressati intensamente. L'ago della bilancia sarà Vlasic, collante tra centrocampo e attacco.",
-    "sosFantaComment": "È arrivato Ignazio Abate sulla panchina del Torino: più 3-4-2-1 che difesa a 4, provato solo una volta nel precampionato. Cacciamani si candida a giocare a sinistra, promettente e già pronto. Occhio a Casadei: è stato provato praticamente sulla trequarti. Il tridente sarebbe con lui e Vlasic a supporto di Simeone; Zapata è di fatto il vice Cholito. Ma può diventare anche un 3-4-1-2. In difesa sono arrivati Comuzzo e Comert, a oggi loro due e Coco sono avanti su Ismajli. A centrocampo il nuovo arrivato Fitz-Jim si candida a giocare titolare.",
+    "sosFantaComment": "È arrivato Ignazio Abate sulla panchina del Torino: più 3-4-2-1 che difesa a 4, provato solo una volta nel precampionato. Cacciamani si candida a giocare a sinistra, promettente e già pronto. Occhio a Casadei: è stato provato praticamente sulla trequarti. Il tridente sarebbe con lui e Vlasic a supporto di Simeone; Zapata è di fatto il vice Cholito. Ma può diventare anche un 3-4-1-2. In difesa sono arrivati Comuzzo e Comert, a oggi loro due e Coco sono avanti su Ismajli. A centrocampo il nuovo arrivato Fitz-Jim si candida a giocare titolare. In porta per ora c'è Mascardi, ma è in arrivo Perri che sarà il titolare: si attende solo l'ufficialità.",
     "created_at": "2026-07-21T13:23:02.397Z",
-    "updated_at": "2026-08-25T15:49:13.965Z",
+    "updated_at": "2026-08-27T18:31:26.917Z",
     "up": [
       {
         "player_id": "d24218a4-0bbc-4dd6-b01d-cf9d0a9a90d5",
@@ -2482,7 +2482,7 @@
       }
     ],
     "createdAt": "2026-07-21T13:23:02.397Z",
-    "updatedAt": "2026-08-25T15:49:13.965Z"
+    "updatedAt": "2026-08-27T18:31:26.917Z"
   },
   {
     "team": "PAR",
