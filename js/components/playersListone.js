@@ -118,9 +118,9 @@ export class PlayersListoneComponent {
 
     // 3. Filtro Disponibilità Asta & Preferiti
     if (this.availabilityFilter === 'AVAILABLE') {
-      filtered = filtered.filter(p => p.isAvailable !== false);
+      filtered = filtered.filter(p => store.isPlayerAvailable(p));
     } else if (this.availabilityFilter === 'TAKEN') {
-      filtered = filtered.filter(p => p.isAvailable === false);
+      filtered = filtered.filter(p => !store.isPlayerAvailable(p));
     } else if (this.availabilityFilter === 'FAVORITES' || this.onlyFavorites) {
       filtered = filtered.filter(p => p.isFavorite || store.isPlayerFavorite(p.id));
     }

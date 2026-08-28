@@ -134,7 +134,8 @@ export class PlayerInspectorComponent {
 
     const teamName = player.teamName || currentTeam?.name || 'Serie A';
 
-    const isAvailable = player.isAvailable !== false;
+    const leagueOwner = store.getPlayerLeagueOwner(player);
+    const isAvailable = store.isPlayerAvailable(player);
     const isFavorite = store.isPlayerFavorite(player.id);
     const playerTier = store.getPlayerTier(player);
 
@@ -167,7 +168,7 @@ export class PlayerInspectorComponent {
           </button>
         </div>
         <div class="status-line ${isAvailable ? 'available' : 'taken'}" id="toggle-player-auction-btn" style="cursor: pointer;" title="Clicca per cambiare disponibilità all'asta">
-          <div><span class="status-dot"></span>${isAvailable ? "Disponibile all'asta" : "Già preso / Non disponibile"}</div>
+          <div><span class="status-dot"></span>${isAvailable ? "Disponibile all'asta" : (leagueOwner ? `Preso da ${sanitizeHtml(leagueOwner.teamName)} (${leagueOwner.price} cr)` : "Già preso / Non disponibile")}</div>
           <span style="font-size: 9px; opacity: 0.6; margin-left: auto;">Cambia ⇄</span>
         </div>
       </section>

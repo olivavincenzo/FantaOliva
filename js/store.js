@@ -1948,6 +1948,14 @@ class Store {
     return Boolean(this.getPlayerLeagueOwner(playerOrId));
   }
 
+  isPlayerAvailable(playerOrId) {
+    if (!playerOrId) return false;
+    const player = typeof playerOrId === 'object' ? playerOrId : this.getPlayer(playerOrId);
+    if (!player) return false;
+    if (this.isPlayerOwnedInLeague(player)) return false;
+    return player.isAvailable !== false;
+  }
+
   importLeagueRostersFromCsv(csvText) {
     if (!csvText || typeof csvText !== 'string') return false;
     const lines = csvText.trim().split('\n');
