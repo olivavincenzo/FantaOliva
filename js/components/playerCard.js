@@ -176,7 +176,6 @@ export function createPlayerCard(player, options = {}) {
       <div class="identity">
         <div class="player-name-row">
           <h3 class="player-name" title="${sanitizeHtml(player.name)}">${sanitizeHtml(displayName)}</h3>
-          ${isFavorite ? `<span class="card-fav-star" title="Calciatore nei Preferiti"><i class="fa-solid fa-star"></i></span>` : ''}
         </div>
         <div class="player-set-pieces-row ${piazzatiText !== '—' ? 'has-active-set-pieces' : ''}">
           ${rank ? `<span class="rank-badge">#${rank}</span>` : ''}
@@ -184,13 +183,18 @@ export function createPlayerCard(player, options = {}) {
           <span class="set-pieces-badge ${piazzatiText !== '—' ? 'has-set-pieces' : ''}">${piazzatiText}</span>
         </div>
       </div>
-      <button class="availability ${effectiveAvailable ? 'available' : 'taken'}" type="button" title="Stato Asta: ${effectiveAvailable ? 'Disponibile (clicca per segnare PRESO)' : (leagueOwner ? `PRESO da ${leagueOwner.teamName} (${leagueOwner.price} cr)` : 'PRESO (clicca per segnare DISPONIBILE)')}" aria-label="Cambia stato asta">
-        <svg viewBox="0 0 24 24">
-          ${effectiveAvailable
-      ? '<path d="m5 12 4 4L19 6" />'
-      : '<path d="m7 7 10 10M17 7 7 17" />'}
-        </svg>
-      </button>
+      <div class="player-top-actions">
+        <button class="card-fav-btn ${isFavorite ? 'is-fav' : ''}" type="button" title="${isFavorite ? 'Rimuovi dai Preferiti' : 'Aggiungi ai Preferiti'}" aria-label="Preferito">
+          <i class="fa-${isFavorite ? 'solid' : 'regular'} fa-star"></i>
+        </button>
+        <button class="availability ${effectiveAvailable ? 'available' : 'taken'}" type="button" title="Stato Asta: ${effectiveAvailable ? 'Disponibile (clicca per segnare PRESO)' : (leagueOwner ? `PRESO da ${leagueOwner.teamName} (${leagueOwner.price} cr)` : 'PRESO (clicca per segnare DISPONIBILE)')}" aria-label="Cambia stato asta">
+          <svg viewBox="0 0 24 24">
+            ${effectiveAvailable
+        ? '<path d="m5 12 4 4L19 6" />'
+        : '<path d="m7 7 10 10M17 7 7 17" />'}
+          </svg>
+        </button>
+      </div>
     </header>
   `;
 
@@ -377,7 +381,7 @@ export function createPlayerCard(player, options = {}) {
 
   // 1. Native dblclick per mouse -> Su mobile apre scheda giocatore, su desktop naviga alla lavagna
   card.addEventListener('dblclick', (e) => {
-    if (e.target.closest('.availability')) return;
+    if (e.target.closest('.availability') || e.target.closest('.card-fav-btn')) return;
     e.stopPropagation();
     e.preventDefault();
     if (window.innerWidth <= 900) {
@@ -389,7 +393,7 @@ export function createPlayerCard(player, options = {}) {
 
   // 2. Click / Touch handler (mobile: 1 click seleziona, 2 click apre scheda; desktop: 1 click seleziona+ispettore, 2 click naviga lavagna)
   card.addEventListener('click', (e) => {
-    if (e.target.closest('.availability')) return;
+    if (e.target.closest('.availability') || e.target.closest('.card-fav-btn')) return;
     if (hasMoved) {
       hasMoved = false;
       return;
@@ -423,6 +427,13 @@ export function createPlayerCard(player, options = {}) {
         selectPlayerAndOpenInspector();
       }
     }
+  });
+
+  // Listener per toggle rapido preferito
+  const favToggleBtn = card.querySelector('.card-fav-btn');
+  favToggleBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    store.togglePlayerFavorite(player.id);
   });
 
   // Listener per toggle rapido disponibilità asta

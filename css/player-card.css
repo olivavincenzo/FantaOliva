@@ -224,6 +224,48 @@
   color: #c0c0c7;
 }
 
+/* Azioni Header Card (Preferito & Disponibilità Asta) */
+.player-top-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 0 0 auto;
+  margin-left: auto;
+}
+
+.card-fav-btn {
+  display: grid;
+  width: 26px;
+  height: 26px;
+  flex: 0 0 26px;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--canvas);
+  color: #9ca3af;
+  font-size: 11px;
+  cursor: pointer;
+  padding: 0;
+  transition: transform var(--transition-fast), color var(--transition-fast), background var(--transition-fast), border-color var(--transition-fast);
+}
+
+.card-fav-btn:hover {
+  transform: scale(1.1);
+  color: #f59e0b;
+  border-color: rgba(245, 158, 11, 0.4);
+  background: rgba(245, 158, 11, 0.08);
+}
+
+.card-fav-btn:active {
+  transform: scale(0.92);
+}
+
+.card-fav-btn.is-fav {
+  color: #f59e0b;
+  background: rgba(245, 158, 11, 0.14);
+  border-color: rgba(245, 158, 11, 0.35);
+}
+
 /* Bottone Disponibilità / Preso */
 .availability {
   display: grid;
