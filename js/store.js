@@ -8,6 +8,7 @@ import { FORMATIONS } from './data/formations.js';
 import { SOS_STRATEGY_1 } from './data/sosStrategy1.js';
 import { SOS_TEAMS_DATA } from './data/sosTeamsData.js';
 import { getPlayerIndices, TITOLARITA_LABELS, AFFIDABILITA_LABELS, INTEGRITA_LABELS } from './data/playerIndices.js';
+import { LEAGUE_ROSTERS_RAW, LEAGUE_TEAMS_DEFAULT } from './data/leagueRostersData.js';
 import { deepClone, generateId } from './utils/helpers.js';
 
 const STORAGE_KEY = 'fantaoliva_app_data_v2026_27_fantalab_v1';
@@ -15,7 +16,8 @@ const SNAPSHOTS_KEY = 'fantaoliva_snapshots_v2026_27_fantalab_v1';
 const CUSTOM_CATALOG_KEY = 'fantaoliva_custom_catalog_v2026_27_fantalab_v1';
 const STRATEGIES_KEY = 'fantaoliva_custom_strategies_v1';
 const ACTIVE_STRATEGY_KEY = 'fantaoliva_active_strategy_id_v1';
-const MY_TEAM_STORAGE_KEY = 'fantaoliva_my_team_v2026_27_v1';
+const MY_TEAM_STORAGE_KEY = 'fantaoliva_my_team_v2026_27_v2';
+const LEAGUE_STORAGE_KEY = 'fantaoliva_league_rosters_v2';
 
 const DEFAULT_STRATEGIES = [
   SOS_STRATEGY_1
@@ -36,6 +38,8 @@ class Store {
     this.activeBenchFilter = 'ALL';
     this.snapshots = [];
     this.favoritePlayerIds = new Set();
+    this.leagueTeams = deepClone(LEAGUE_TEAMS_DEFAULT);
+    this.activeLeagueTeamId = 'vincenzo';
     this.myTeam = this.getDefaultMyTeam();
     this.subscribers = new Map();
   }
@@ -48,6 +52,18 @@ class Store {
         this.favoritePlayerIds = new Set(JSON.parse(savedFavs));
       }
 
+      // Caricamento FantaLega
+      const savedLeague = localStorage.getItem(LEAGUE_STORAGE_KEY);
+      if (savedLeague) {
+        try {
+          this.leagueTeams = JSON.parse(savedLeague);
+        } catch (e) {
+          this.leagueTeams = deepClone(LEAGUE_TEAMS_DEFAULT);
+        }
+      } else {
+        this.leagueTeams = deepClone(LEAGUE_TEAMS_DEFAULT);
+      }
+
       const savedMyTeam = localStorage.getItem(MY_TEAM_STORAGE_KEY);
       if (savedMyTeam) {
         try {
@@ -57,6 +73,12 @@ class Store {
         }
       } else {
         this.myTeam = this.getDefaultMyTeam();
+      }
+
+      // Se La Mia Rosa è vuota, popolala automaticamente con i 25 calciatori della squadra VINCENZO
+      const hasMyTeamPlayers = Object.keys(this.myTeam.lineup || {}).length > 0 || (this.myTeam.bench || []).length > 0;
+      if (!hasMyTeamPlayers && this.leagueTeams.VINCENZO?.roster) {
+        this.syncVincenzoToMyTeam();
       }
 
       const savedCatalog = localStorage.getItem(CUSTOM_CATALOG_KEY);
@@ -1814,7 +1836,7 @@ class Store {
     const avgPrice = all.length > 0 ? (spent / all.length).toFixed(1) : '0';
 
     return {
-      totalPlayers: all.length,
+        totalPlayers: all.length,
       startersCount: starters.length,
       benchCount: bench.length,
       spent,
@@ -1823,6 +1845,169 @@ class Store {
       avgPrice,
       counts
     };
+  }
+
+  syncVincenzoToMyTeam() {
+    const vincenzoData = this.leagueTeams.VINCENZO;
+    if (!vincenzoData || !vincenzoData.roster) return;
+
+    this.myTeam = this.getDefaultMyTeam();
+    this.myTeam.name = 'La Mia Rosa (Vincenzo)';
+    this.myTeam.budget = vincenzoData.budget || 500;
+
+    vincenzoData.roster.forEach(item => {
+      const found = this.getPlayer(item.fantacalcioId) || this.getPlayer(item.name);
+      if (found) {
+        const p = deepClone(found);
+        p.purchasePrice = Number(item.price) || 0;
+        p.pricePaid = p.purchasePrice;
+        this.myTeam.bench.push(p);
+      } else {
+        // Fallback card
+        this.myTeam.bench.push({
+          id: `player_${item.fantacalcioId || generateId()}`,
+          csvId: item.fantacalcioId,
+          name: item.name,
+          displayName: item.name,
+          role: item.role,
+          classicRole: item.role,
+          fantaRole: item.role,
+          mantraRole: item.mantraRole,
+          teamName: item.club,
+          purchasePrice: item.price,
+          pricePaid: item.price,
+          status: 'titolare',
+          quotazioni: { qtA: item.qt, fvm: item.qt }
+        });
+      }
+    });
+
+    this.saveMyTeamToStorage();
+  }
+
+  // --- FANTALEGA METODI ---
+  getLeagueTeams() {
+    return Object.values(this.leagueTeams || {});
+  }
+
+  getLeagueTeam(teamIdOrName) {
+    if (!teamIdOrName) return null;
+    const upper = String(teamIdOrName).trim().toUpperCase();
+    const idKey = String(teamIdOrName).trim().toLowerCase().replace(/[^a-z0-9]/g, '_');
+    return this.leagueTeams?.[upper] || Object.values(this.leagueTeams || {}).find(t => t.id === idKey || t.name.toUpperCase() === upper) || null;
+  }
+
+  getActiveLeagueTeamId() {
+    return this.activeLeagueTeamId || 'vincenzo';
+  }
+
+  setActiveLeagueTeam(teamId) {
+    this.activeLeagueTeamId = String(teamId).toLowerCase();
+    this.emit('league:teamChanged', this.getLeagueTeam(teamId));
+  }
+
+  saveLeagueTeamsToStorage() {
+    try {
+      if (typeof localStorage !== 'undefined') {
+        localStorage.setItem(LEAGUE_STORAGE_KEY, JSON.stringify(this.leagueTeams));
+      }
+    } catch (e) {
+      console.warn('Errore nel salvataggio FantaLega:', e);
+    }
+  }
+
+  getPlayerLeagueOwner(playerOrId) {
+    if (!playerOrId) return null;
+    const pId = typeof playerOrId === 'object' ? (playerOrId.csvId || playerOrId.id) : playerOrId;
+    const pName = typeof playerOrId === 'object' ? (playerOrId.name || playerOrId.displayName || '') : String(playerOrId);
+    const pIdStr = String(pId || '').trim();
+    const pNameLower = String(pName || '').trim().toLowerCase();
+
+    for (const team of Object.values(this.leagueTeams || {})) {
+      const found = (team.roster || []).find(item => {
+        if (item.fantacalcioId && String(item.fantacalcioId) === pIdStr) return true;
+        if (item.name && item.name.toLowerCase() === pNameLower) return true;
+        return false;
+      });
+      if (found) {
+        return {
+          teamId: team.id,
+          teamName: team.name,
+          price: found.price,
+          qt: found.qt,
+          qtMantra: found.qtMantra,
+          mantraRole: found.mantraRole,
+          isMyTeam: team.name.toUpperCase() === 'VINCENZO'
+        };
+      }
+    }
+    return null;
+  }
+
+  isPlayerOwnedInLeague(playerOrId) {
+    return Boolean(this.getPlayerLeagueOwner(playerOrId));
+  }
+
+  importLeagueRostersFromCsv(csvText) {
+    if (!csvText || typeof csvText !== 'string') return false;
+    const lines = csvText.trim().split('\n');
+    if (lines.length < 2) return false;
+
+    const entries = [];
+    for (let i = 1; i < lines.length; i++) {
+      const line = lines[i].trim();
+      if (!line) continue;
+      const matches = line.match(/(?:\"([^\"]*)\"|([^,]+))/g);
+      if (!matches) continue;
+      const row = matches.map(m => m.replace(/^\"|\"$/g, '').trim());
+      if (row.length < 4) continue;
+      entries.push({
+        team: row[0],
+        name: row[1],
+        club: row[2],
+        role: row[3],
+        mantraRole: row[4] || '',
+        price: parseInt(row[5], 10) || 1,
+        qt: parseInt(row[6], 10) || 0,
+        qtMantra: parseInt(row[7], 10) || 0,
+        fantacalcioId: row[8] || ''
+      });
+    }
+
+    if (entries.length === 0) return false;
+
+    const uniqueTeams = [...new Set(entries.map(e => e.team))];
+    const teamsMap = {};
+
+    uniqueTeams.forEach(tName => {
+      const roster = entries.filter(e => e.team === tName);
+      const spent = roster.reduce((sum, p) => sum + p.price, 0);
+      const counts = { P: 0, D: 0, C: 0, A: 0 };
+      roster.forEach(p => {
+        if (counts[p.role] !== undefined) counts[p.role]++;
+      });
+      teamsMap[tName] = {
+        id: tName.toLowerCase().replace(/[^a-z0-9]/g, '_'),
+        name: tName,
+        budget: 500,
+        spent,
+        remaining: 500 - spent,
+        counts,
+        formationId: '3-4-3',
+        roster
+      };
+    });
+
+    this.leagueTeams = teamsMap;
+    this.saveLeagueTeamsToStorage();
+
+    if (teamsMap.VINCENZO) {
+      this.syncVincenzoToMyTeam();
+    }
+
+    this.emit('league:updated', this.leagueTeams);
+    this.emit('myteam:updated', this.myTeam);
+    return true;
   }
 
   setPitchLayoutMode(mode) {

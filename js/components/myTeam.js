@@ -3,38 +3,49 @@
  */
 
 import { store } from '../store.js';
-import { FORMATIONS, FORMATION_LIST } from '../data/formations.js';
 import { createPlayerCard } from './playerCard.js';
+import { FORMATIONS, FORMATION_LIST } from '../data/formations.js';
+import { LineupOptimizer } from '../utils/optimizer.js';
 import { sanitizeHtml } from '../utils/helpers.js';
 import { notify } from '../utils/notifications.js';
+import { dragDrop } from '../utils/dragDrop.js';
 
 export class MyTeamComponent {
   constructor(containerId) {
     this.containerId = containerId;
     this.container = typeof containerId === 'string' ? document.getElementById(containerId) : containerId;
-    this.layoutMode = 'pitch'; // 'pitch' | 'list'
+    this.layoutMode = (typeof localStorage !== 'undefined' ? localStorage.getItem('fantaoliva_myteam_layout_mode') : null) || 'pitch'; // 'pitch' | 'list'
     this.is3D = (typeof localStorage !== 'undefined' ? localStorage.getItem('fantaoliva_myteam_3d') === 'true' : false);
-    this.squadScope = 'STARTERS'; // 'STARTERS' | 'BENCH' | 'ALL'
-    this.activeRoleFilter = 'ALL';
     this.gridColumns = Number((typeof localStorage !== 'undefined' ? localStorage.getItem('fantaoliva_myteam_cols') : null) || 2);
-    this.searchQuery = '';
+    this.selectedDepartment = 'ALL'; // 'ALL' | 'P' | 'D' | 'C' | 'A'
+    this._pickerModalBound = false;
   }
 
   init() {
-    this.container = this.container || document.getElementById(this.containerId);
-    if (!this.container) return;
-
     this.render();
     this.subscribeEvents();
   }
 
   subscribeEvents() {
-    store.subscribe('myteam:updated', () => this.render());
-    store.subscribe('player:selected', () => this.highlightSelectedPlayer());
-    store.subscribe('view:changed', (view) => {
-      if (view === 'myteam') {
+    store.subscribe('myteam:updated', () => {
+      if (store.activeView === 'myteam') {
         this.render();
       }
+    });
+
+    store.subscribe('player:selected', () => {
+      if (store.activeView === 'myteam') {
+        this.updateSelectionHighlight();
+      }
+    });
+  }
+
+  updateSelectionHighlight() {
+    const selectedPlayer = store.getSelectedPlayer();
+    this.container?.querySelectorAll('.player-card').forEach(card => {
+      const pId = card.dataset.playerId;
+      const isSelected = selectedPlayer && pId === selectedPlayer.id;
+      card.classList.toggle('is-selected', Boolean(isSelected));
     });
   }
 
@@ -44,7 +55,8 @@ export class MyTeamComponent {
 
     const myTeam = store.getMyTeam();
     const stats = store.getMyTeamStats();
-    const formation = FORMATIONS[myTeam.formationId] || FORMATIONS['3-4-3'];
+    const formationId = myTeam.formationId || '3-4-3';
+    const formation = FORMATIONS[formationId] || FORMATIONS['3-4-3'];
 
     this.container.innerHTML = `
       <div class="pitch-container" style="height: 100%; width: 100%; display: flex; flex-direction: column;">
@@ -52,21 +64,23 @@ export class MyTeamComponent {
         <!-- HEADER EDITORIAL MINIMAL (TOPBAR) -->
         <header class="topbar">
           <div>
-            <p class="context">Asta 2026/27 · Rosa Personalizzata</p>
+            <p class="context">Asta 2026/27 · La Mia Rosa</p>
             <div class="team-heading-row">
-              <h1 class="team-title-heading" id="myteam-watermark-title">${sanitizeHtml((myTeam.name || 'LA MIA ROSA').toUpperCase())}</h1>
-              <button type="button" class="btn-edit-tier" id="edit-myteam-name-btn" title="Rinomina squadra" style="padding: 2px 7px; font-size: 0.70rem;">
-                <i class="fa-solid fa-pencil"></i>
-              </button>
-              <span class="team-formation-badge" id="myteam-formation-badge">${sanitizeHtml(myTeam.formationId || '3-4-3')}</span>
+              <h1 class="team-title-heading" id="myteam-title-heading">${sanitizeHtml(myTeam.name || 'La Mia Rosa')}</h1>
+              <span class="team-formation-badge">${sanitizeHtml(formationId)}</span>
             </div>
           </div>
           <div class="topbar-actions">
+            <!-- Pulsante Ottimizza Formazione (Schiera Miglior 11) -->
+            <button type="button" class="fanta-btn primary-btn btn-sm" id="myteam-optimize-lineup-btn" style="background: linear-gradient(135deg, #9333ea, #4f46e5); border: 1px solid rgba(255,255,255,0.25); color: #fff; padding: 4px 12px; font-size: 11px; font-weight: 750; box-shadow: 0 2px 10px rgba(147, 51, 234, 0.35);" title="Calcola e schiera automaticamente i migliori 11 titolari per la giornata in base a schierabilità, forma e assenze">
+              <i class="fa-solid fa-wand-magic-sparkles"></i> <span>Schiera Miglior 11</span>
+            </button>
+
             <!-- Selettore Modulo Topbar -->
             <div class="topbar-formation-wrap" title="Cambia Modulo Tattico">
               <select id="myteam-formation-select" class="topbar-formation-select" aria-label="Cambia Modulo">
                 ${FORMATION_LIST.map(f => `
-                  <option value="${f.id}" ${f.id === myTeam.formationId ? 'selected' : ''}>${f.id}</option>
+                  <option value="${f.id}" ${f.id === formationId ? 'selected' : ''}>${f.id}</option>
                 `).join('')}
               </select>
               <span class="formation-arrow">▾</span>
@@ -365,6 +379,29 @@ export class MyTeamComponent {
       if (newName !== null && newName.trim()) {
         store.setMyTeamName(newName.trim());
         notify.success(`Nome squadra aggiornato in "${newName.trim()}"!`);
+      }
+    });
+
+    // Ottimizza Formazione (Schiera Miglior 11)
+    this.container.querySelector('#myteam-optimize-lineup-btn')?.addEventListener('click', () => {
+      const myTeam = store.getMyTeam();
+      const allPlayers = [...Object.values(myTeam.lineup || {}), ...(myTeam.bench || [])].filter(Boolean);
+      if (allPlayers.length < 11) {
+        notify.warning('Inserisci almeno 11 calciatori nella tua rosa per calcolare la formazione ottimale.');
+        return;
+      }
+
+      const result = LineupOptimizer.optimize(allPlayers);
+      if (result) {
+        myTeam.formationId = result.formationId;
+        myTeam.lineup = result.lineup;
+        myTeam.bench = result.bench;
+        store.saveMyTeamToStorage();
+        store.emit('myteam:updated', myTeam);
+        notify.success(`⚡ Miglior 11 schierato! Modulo: ${result.formationId} (Punteggio stimato: ${result.totalScore})`);
+        this.render();
+      } else {
+        notify.error('Impossibile generare la formazione: verifica che ci siano abbastanza giocatori disponibili per ruolo.');
       }
     });
 

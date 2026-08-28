@@ -1,0 +1,201 @@
+Squadra,Nome,Squadra_Appartenenza,Ruolo,Ruoli_Mantra,Prezzo,Quotazione,Quotazione_Mantra,Fantacalcio_Id
+"VINCENZO","Skorupski","BOL","P","Por",1,10,10,133
+"DOM-RAF","Milinkovic-Savic V.","NAP","P","Por",13,5,5,2170
+"GIOVANNI","Provedel","INT","P","Por",13,2,2,2814
+"VINCENZO","Wesley","ROM","D","E",40,17,16,7181
+"VINCENZO","Bastoni","INT","D","Dc",27,14,14,2120
+"VINCENZO","Bremer","JUV","D","Dc",28,15,15,2788
+"VINCENZO","Bisseck","INT","D","Dc",12,11,11,6217
+"VINCENZO","Kelly L.","JUV","D","Dc,Ds",3,5,6,6766
+"GIOVANNI","Valle","COM","D","Ds,E",1,6,6,6867
+"DOM-RAF","Obrador","SAS","D","Ds,E",1,6,6,7329
+"DOM-RAF","Obert","CAG","D","B,Ds,E",1,7,7,5701
+"VINCENZO","Mastantuono","FIO","C","W,T",29,12,12,7078
+"VINCENZO","Vlasic","TOR","C","T",33,14,13,5687
+"VINCENZO","Zaccagni","LAZ","C","W,A",30,16,15,632
+"VINCENZO","Alajbegovic","JUV","C","W,T",35,12,12,7436
+"VINCENZO","Politano","NAP","C","W",10,10,9,536
+"VINCENZO","Mora","ROM","C","T",34,19,18,7556
+"VINCENZO","Locatelli","JUV","C","M,C",3,8,9,827
+"VINCENZO","Odgaard","BOL","C","T",1,8,7,2765
+"VINCENZO","Hojlund","NAP","A","Pc",112,28,28,6052
+"VINCENZO","Leao","MIL","A","A",8,18,19,4510
+"VINCENZO","Berardi","SAS","A","A",29,18,19,531
+"VINCENZO","Dovbyk","BOL","A","Pc",26,16,16,6675
+"VINCENZO","Piccoli","BOL","A","Pc",1,8,7,4359
+"VINCENZO","Soulè","ROM","A","A",1,12,13,5734
+"LUIGI","Carnesecchi","ATA","P","Por",28,16,16,4431
+"LUIGI","Caprile","CAG","P","Por",2,9,9,4360
+"LUIGI","Mandas","LAZ","P","Por",1,9,9,6482
+"LUIGI","Spence","INT","D","E",29,12,11,5982
+"LUIGI","Chalobah T.","COM","D","Dc,Dd",20,9,10,5641
+"LUIGI","Molina N.","ROM","D","E",34,18,18,4998
+"LUIGI","Spinazzola","NAP","D","Ds,E",10,8,8,1852
+"LUIGI","Vojvoda","UDI","D","Dd,E",10,8,8,4994
+"LUIGI","Valdepenas","FIO","D","Dc,Ds",5,6,7,7294
+"LUIGI","Romagnoli","LAZ","D","Dc",1,7,7,460
+"LUIGI","Marcandalli","GEN","D","Dc",1,6,6,6660
+"LUIGI","Orsolini","BOL","C","W,A",60,26,25,2167
+"LUIGI","Zaniolo","UDI","C","T,A",47,18,17,2766
+"LUIGI","Gaetano","ATA","C","M,C",4,7,8,4364
+"LUIGI","McKennie","JUV","C","C",29,17,17,4973
+"LUIGI","Modric","MIL","C","M,C",10,12,13,2606
+"LUIGI","Diouf","INT","C","E,C",5,8,9,6274
+"LUIGI","Thorstvedt","SAS","C","C,T",2,10,10,5844
+"LUIGI","Cacciamani","TOR","C","E,W",1,5,6,7060
+"LUIGI","Thuram","INT","A","Pc",92,29,29,4871
+"LUIGI","Davis K.","UDI","A","Pc",46,19,19,5637
+"LUIGI","Raspadori","ATA","A","A",18,13,14,4371
+"LUIGI","Esposito F.P.","INT","A","Pc",20,16,16,7071
+"LUIGI","Dybala","ROM","A","A",15,14,15,309
+"LUIGI","Yeboah J.","VEN","A","A",6,8,8,6904
+"GIOVANNI","Martinez Jo.","INT","P","Por",46,17,17,5116
+"VINCENZO","Okoye","UDI","P","Por",3,9,9,6462
+"GIOVANNI","Padelli","UDI","P","Por",1,1,1,543
+"GIOVANNI","Di Lorenzo","NAP","D","Dd,E",16,12,12,2816
+"GIOVANNI","Akanji","INT","D","Dc",29,16,16,4159
+"GIOVANNI","Celik","JUV","D","B,Dd,E",4,8,9,4657
+"GIOVANNI","Valeri","PAR","D","Ds,E",11,8,8,5862
+"VINCENZO","Koulierakis","ROM","D","Dc",10,8,8,7529
+"GIOVANNI","Idzes","SAS","D","Dc",2,7,7,6672
+"GIOVANNI","Kempf","COM","D","Dc",4,5,5,6893
+"GIOVANNI","Bellanova","ATA","D","Dd,E",1,6,6,4887
+"GIOVANNI","Calhanoglu","INT","C","M,C",87,27,28,2194
+"GIOVANNI","Baturina","COM","C","T",51,19,18,7126
+"GIOVANNI","Frattesi","LAZ","C","C,T",11,7,7,2848
+"DOM-RAF","Zambo Anguissa","NAP","C","C",10,11,11,4220
+"GIOVANNI","Colpani","MON","C","T",8,8,7,5878
+"GIOVANNI","Bernardeschi","BOL","C","W,T",3,9,9,184
+"GIOVANNI","Cristante","ROM","C","M,C",1,8,9,779
+"GIOVANNI","Schmid","FRO","C","W,T",1,8,8,7551
+"GIOVANNI","Ramos G.","MIL","A","Pc",105,27,27,6397
+"GIOVANNI","Simeone","TOR","A","Pc",44,15,15,2061
+"GIOVANNI","De Ketelaere","ATA","A","A",26,17,18,5995
+"GIOVANNI","Kevin Carlos","CAG","A","Pc",4,13,12,7547
+"DOM-RAF","Colombo","GEN","A","Pc",6,11,10,4923
+"GIOVANNI","Adams A.","VEN","A","Pc",15,12,11,7484
+"DOM-RAF","Vicario","JUV","P","Por",44,16,16,4964
+"VINCENZO","De Gea","FIO","P","Por",15,13,13,2521
+"DOM-RAF","Perin","JUV","P","Por",1,6,6,218
+"DOM-RAF","Rrahmani","NAP","D","Dc",22,14,14,4409
+"DOM-RAF","Couto","COM","D","Dd,E",16,8,8,6727
+"DOM-RAF","Gila","MIL","D","Dc",14,12,12,5833
+"DOM-RAF","Pavlovic","MIL","D","Dc",29,14,14,5022
+"VINCENZO","Carlos Augusto","INT","D","B,Ds,E",6,7,8,5877
+"VINCENZO","Hermoso","ROM","D","Dc",7,10,10,4807
+"DOM-RAF","Marin R.","NAP","D","Dc",1,2,2,6638
+"DOM-RAF","Van Der Brempt","COM","D","Dd,E",1,2,2,6896
+"DOM-RAF","Paz N.","COM","C","T,A",92,30,28,6875
+"DOM-RAF","Adopo","CAG","C","M,C",3,6,7,4870
+"DOM-RAF","Ederson D.S.","ATA","C","M,C",27,12,13,5792
+"DOM-RAF","Barella","INT","C","C",10,17,17,1870
+"GIOVANNI","Konè M.","ROM","C","M,C",10,10,11,5589
+"DOM-RAF","Saelemaekers","MIL","C","E,W",23,10,11,4892
+"DOM-RAF","Thuram K.","JUV","C","C",2,10,10,5562
+"DOM-RAF","Mkhitaryan","INT","C","C",1,5,5,2529
+"DOM-RAF","Yildiz","JUV","A","A",98,23,24,6434
+"DOM-RAF","Laurientè","SAS","A","A",39,15,16,6060
+"DOM-RAF","Esposito Se.","CAG","A","A",2,13,14,4463
+"GIOVANNI","Pellegrino M.","FIO","A","Pc",11,15,15,7023
+"DOM-RAF","Romero D.","PAR","A","Pc",7,10,10,7554
+"DOM-RAF","Vitinha O.","GEN","A","A",3,8,8,6164
+"DOMENICO","Maignan","MIL","P","Por",40,15,15,4312
+"DOMENICO","Terracciano","MIL","P","Por",1,1,1,2815
+"DOMENICO","Torriani","MIL","P","Por",1,1,1,6813
+"DOMENICO","Ostigard","GEN","D","Dc",21,11,11,5750
+"DOMENICO","Solet","UDI","D","Dc",35,13,13,6956
+"DOMENICO","Jimenez A.","FIO","D","Ds,Dd,E",17,8,9,6531
+"DOMENICO","Vasquez","GEN","D","Dc,Ds",13,9,10,5514
+"DOMENICO","Bernasconi","ATA","D","Ds,E",5,6,6,7219
+"DOMENICO","Kabasele","UDI","D","Dc",1,4,4,4263
+"DOMENICO","Ismajli","TOR","D","Dc",1,7,7,5010
+"DOMENICO","Martin","GEN","D","Ds,E",1,5,5,2593
+"DOMENICO","Pulisic","MIL","C","T,A",61,25,23,2423
+"DOMENICO","Gudmundsson A.","FIO","C","T,A",36,13,12,5800
+"DOMENICO","Rodriguez Je.","COM","C","W,A",9,12,11,7129
+"DOMENICO","Samardzic","ATA","C","C,T",14,12,12,5119
+"DOMENICO","Isaksen","LAZ","C","W,A",4,9,8,6398
+"DOMENICO","Baldanzi","GEN","C","T",6,11,10,5823
+"DOMENICO","Pasalic","ATA","C","C,T",1,9,9,2077
+"DOMENICO","Chukwueze","MIL","C","W",3,6,5,4856
+"DOMENICO","Martinez L.","INT","A","Pc",162,35,35,2764
+"DOMENICO","Krstovic","ATA","A","Pc",26,18,17,6435
+"DOMENICO","Castro S.","ROM","A","Pc",18,14,13,6572
+"DOMENICO","Adams C.","TOR","A","A",9,9,10,6646
+"DOMENICO","Noslin","LAZ","A","A",1,6,6,6556
+"DOMENICO","Tourè E.","PAR","A","Pc",1,11,11,6229
+"GIANLUIGI","Meret","NAP","P","Por",21,11,11,572
+"GIANLUIGI","Falcone","LEC","P","Por",2,8,8,2134
+"GIANLUIGI","Corvi","PAR","P","Por",1,1,1,6662
+"GIANLUIGI","Dragusin","FIO","D","Dc",14,8,8,5365
+"GIANLUIGI","N'Dicka","ROM","D","Dc",18,13,13,4317
+"GIANLUIGI","Kalulu","JUV","D","Dc,Dd",21,13,14,4976
+"GIANLUIGI","Cambiaso","JUV","D","Ds,Dd,E",16,9,10,5520
+"GIANLUIGI","Norton-Cuffy","GEN","D","Dd,E",9,8,8,6814
+"GIANLUIGI","Delprato","PAR","D","B,Dd,E",5,8,8,6664
+"GIANLUIGI","Scalvini","ATA","D","Dc",4,10,10,5526
+"GIANLUIGI","Tiago Gabriel","LEC","D","Dc",2,7,7,6989
+"GIANLUIGI","McTominay","NAP","C","C,T",93,28,28,4777
+"GIANLUIGI","Rabiot","MIL","C","C,T",43,22,22,2379
+"GIANLUIGI","Jones C.","INT","C","C",16,12,12,5172
+"GIANLUIGI","Perrone","COM","C","M,C",10,10,11,6151
+"GIANLUIGI","Bernabè","PAR","C","C",6,7,7,6666
+"GIANLUIGI","Pessina","MON","C","M,C",1,7,8,2741
+"GIANLUIGI","Sucic P.","INT","C","C",1,8,8,7070
+"GIANLUIGI","Casadei","TOR","C","C,T",5,10,10,5888
+"GIANLUIGI","Malen","ROM","A","Pc",171,34,34,5585
+"GIANLUIGI","Pinamonti","SAS","A","Pc",35,13,12,2038
+"GIANLUIGI","Diao","COM","A","W,A",3,11,12,6967
+"GIANLUIGI","Bonny","INT","A","Pc",1,7,6,6669
+"GIANLUIGI","Geubbels","LEC","A","Pc",1,9,8,5029
+"GIANLUIGI","Dia","LAZ","A","A",1,10,11,5672
+"GIANNI","Svilar","ROM","P","Por",55,18,18,5841
+"GIANNI","Gollini","ROM","P","Por",1,1,1,610
+"GIANNI","De Marzi","ROM","P","Por",1,1,1,7048
+"GIANNI","Stones","INT","D","Dc",23,12,12,2514
+"GIANNI","Mancini","ROM","D","Dc",27,15,15,2296
+"GIANNI","Zappacosta","ATA","D","Dd,E",9,8,8,554
+"GIANNI","Monterisi","FRO","D","Dc",5,6,6,4952
+"GIANNI","Bartesaghi","MIL","D","Ds,E",16,8,8,6496
+"GIANNI","Miranda J.","BOL","D","Ds,E",7,8,8,4734
+"GIANNI","Kaiki","COM","D","Ds,E",7,7,7,7414
+"GIANNI","Lucumì","JUV","D","Dc",10,8,8,6042
+"GIANNI","Rowe","BOL","C","W,T",31,11,11,6844
+"GIANNI","De Bruyne","NAP","C","T",41,15,14,2517
+"GIANNI","Calò","FRO","C","M,C",10,7,8,7472
+"GIANNI","Conceicao","JUV","C","W,A",15,12,11,6884
+"GIANNI","Moreira","MIL","C","W",23,12,12,6372
+"GIANNI","Busio","VEN","C","M,C",1,5,6,5507
+"GIANNI","Loftus-Cheek","MIL","C","C,T",1,4,4,4199
+"GIANNI","Liberali","COM","C","T",1,6,5,6678
+"GIANNI","Kean","FIO","A","Pc",101,25,25,2097
+"GIANNI","Douvikas","COM","A","Pc",70,20,20,7017
+"GIANNI","Santos A.","NAP","A","W,A",36,14,15,7351
+"GIANNI","Maldini","CAG","A","T,A",1,5,6,4896
+"GIANNI","Giovane","NAP","A","A",1,4,4,7162
+"GIANNI","Bowie","SAS","A","Pc",1,10,9,7347
+"MANUEL","Butez","COM","P","Por",41,16,16,6966
+"MANUEL","Tornqvist","COM","P","Por",1,1,1,7301
+"MANUEL","Vigorito","COM","P","Por",1,1,1,2809
+"MANUEL","Dimarco","INT","D","E,W",70,32,30,254
+"MANUEL","Zortea","BOL","D","Dd,E",5,6,6,4433
+"MANUEL","Ramon","COM","D","Dc",20,10,10,6869
+"MANUEL","Kristensen T.","ATA","D","Dc,Dd",8,7,8,6485
+"MANUEL","Mina","CAG","D","Dc",7,8,8,4210
+"MANUEL","Gabbia","MIL","D","Dc",5,7,7,4401
+"MANUEL","Mangas","MON","D","Ds,E",1,6,6,7485
+"MANUEL","Heggem","BOL","D","Dc,Ds",1,6,7,7212
+"MANUEL","Da Cunha","COM","C","C,T",41,18,18,5559
+"MANUEL","Atta","FIO","C","C,T",45,17,17,6908
+"MANUEL","Zielinski","INT","C","C",35,10,10,152
+"MANUEL","Ekkelenkamp","UDI","C","C,T",18,10,10,6684
+"MANUEL","Taylor K.","LAZ","C","C,T",16,13,13,7314
+"MANUEL","Vergara","NAP","C","W,T",10,8,8,7223
+"MANUEL","Adzic","SAS","C","C,T",3,5,5,6677
+"MANUEL","Zalewski","ATA","C","W",1,6,5,5422
+"MANUEL","Kolo Muani","JUV","A","Pc",119,26,26,5951
+"MANUEL","Scamacca","ATA","A","Pc",47,19,18,2137
+"MANUEL","Ghedjemis","FRO","A","W,A",1,9,10,6530
+"MANUEL","Neres","NAP","A","W,A",1,6,7,6831
+"MANUEL","Raimondo","FRO","A","Pc",1,7,6,5436
+"MANUEL","Cutrone","MON","A","Pc",1,9,8,2155

@@ -164,8 +164,10 @@ export function createPlayerCard(player, options = {}) {
     </div>
   `;
 
-  const isInMyTeam = store.isPlayerInMyTeam(player.id);
+  const leagueOwner = store.getPlayerLeagueOwner(player);
+  const isInMyTeam = store.isPlayerInMyTeam(player.id) || (leagueOwner && leagueOwner.isMyTeam);
   const myTeamInfo = isInMyTeam ? store.getMyTeamPlayerInfo(player.id) : null;
+  const effectiveAvailable = (leagueOwner ? false : isAvailable);
 
   // Header player top con foto, info piazzati e preferiti
   const headerHtml = `
@@ -173,7 +175,7 @@ export function createPlayerCard(player, options = {}) {
       ${avatarHtml}
       <div class="identity">
         <div class="player-name-row">
-          <h3 class="player-name" title="${sanitizeHtml(player.name)}">${sanitizeHtml(displayName)}</h3>          
+          <h3 class="player-name" title="${sanitizeHtml(player.name)}">${sanitizeHtml(displayName)}</h3>
           ${isFavorite ? `<span class="card-fav-star" title="Calciatore nei Preferiti"><i class="fa-solid fa-star"></i></span>` : ''}
         </div>
         <div class="player-set-pieces-row ${piazzatiText !== '—' ? 'has-active-set-pieces' : ''}">
@@ -182,9 +184,9 @@ export function createPlayerCard(player, options = {}) {
           <span class="set-pieces-badge ${piazzatiText !== '—' ? 'has-set-pieces' : ''}">${piazzatiText}</span>
         </div>
       </div>
-      <button class="availability ${isAvailable ? 'available' : 'taken'}" type="button" title="Stato Asta: ${isAvailable ? 'Disponibile (clicca per segnare PRESO)' : 'PRESO (clicca per segnare DISPONIBILE)'}" aria-label="Cambia stato asta">
+      <button class="availability ${effectiveAvailable ? 'available' : 'taken'}" type="button" title="Stato Asta: ${effectiveAvailable ? 'Disponibile (clicca per segnare PRESO)' : (leagueOwner ? `PRESO da ${leagueOwner.teamName} (${leagueOwner.price} cr)` : 'PRESO (clicca per segnare DISPONIBILE)')}" aria-label="Cambia stato asta">
         <svg viewBox="0 0 24 24">
-          ${isAvailable
+          ${effectiveAvailable
       ? '<path d="m5 12 4 4L19 6" />'
       : '<path d="m7 7 10 10M17 7 7 17" />'}
         </svg>
@@ -192,20 +194,29 @@ export function createPlayerCard(player, options = {}) {
     </header>
   `;
 
-  // Strip Fascia Strategia (dimensione fissa e stato di default "Non impostato")
-  const strategyStripHtml = `
-    <div class="player-card-strategy-strip">
-      ${tier ? `
-        <span class="player-strategy-badge" style="background: ${tier.color}1c; color: ${tier.color}; border: 1px solid ${tier.color}45;" title="Fascia Strategia: ${sanitizeHtml(tier.name)}">
-          <span class="tier-dot" style="background: ${tier.color};"></span>
-          <span class="tier-label-text">${sanitizeHtml(tier.name)}</span>
-        </span>
-      ` : `
-        <span class="player-strategy-badge badge-unassigned" title="Fascia non impostata per questa strategia">
-          <span class="tier-dot unassigned-dot"></span>
-          <span class="tier-label-text">Non impostato</span>
-        </span>
-      `}
+  // Strip Unificata in colonna: Fascia Strategia & Proprietario FantaLega
+  const stripsColumnHtml = `
+    <div class="player-card-strips-col">
+      <div class="player-card-strategy-strip">
+        ${tier ? `
+          <span class="player-strategy-badge" style="background: ${tier.color}1c; color: ${tier.color}; border: 1px solid ${tier.color}45;" title="Fascia Strategia: ${sanitizeHtml(tier.name)}">
+            <span class="tier-dot" style="background: ${tier.color};"></span>
+            <span class="tier-label-text">${sanitizeHtml(tier.name)}</span>
+          </span>
+        ` : `
+          <span class="player-strategy-badge badge-unassigned" title="Fascia non impostata per questa strategia">
+            <span class="tier-dot unassigned-dot"></span>
+            <span class="tier-label-text">Non impostato</span>
+          </span>
+        `}
+      </div>
+      ${leagueOwner ? `
+        <div class="player-card-league-owner-strip">
+          <span class="badge-league-owner" title="Acquistato da ${sanitizeHtml(leagueOwner.teamName)} all'asta per ${leagueOwner.price} cr">
+            <i class="fa-solid fa-users"></i> ${sanitizeHtml(leagueOwner.teamName)} (${leagueOwner.price} cr)
+          </span>
+        </div>
+      ` : ''}
     </div>
   `;
 
@@ -272,7 +283,7 @@ export function createPlayerCard(player, options = {}) {
   // Template Strutturale Editorial Minimal
   card.innerHTML = `
     ${headerHtml}
-    ${strategyStripHtml}
+    ${stripsColumnHtml}
     ${metricsHtml}
     ${railHtml}
     ${ballottaggioHtml}

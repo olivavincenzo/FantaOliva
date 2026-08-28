@@ -17,6 +17,7 @@ export class PlayersListoneComponent {
     this.availabilityFilter = 'ALL'; // 'ALL' | 'AVAILABLE' | 'TAKEN' | 'FAVORITES'
     this.onlyFavorites = false;
     this.onlyMyTeam = false;
+    this.leagueFilter = 'ALL'; // 'ALL' | 'FREE' | 'MYTEAM' | 'VINCENZO' | 'LUIGI' | ...
     this.sortBy = 'strategy_tier'; // 'strategy_tier' | 'fantamedia' | 'mediaVoto' | 'qtA' | 'fvm' | 'gol' | 'assist' | 'presenze' | 'name' | 'teamName'
     this.sortOrder = 'desc'; // 'asc' | 'desc'
     this.gridColumns = Number((typeof localStorage !== 'undefined' ? localStorage.getItem('fantaoliva_listone_cols') : null) || 2);
@@ -85,6 +86,12 @@ export class PlayersListoneComponent {
       }
     });
 
+    store.subscribe('league:updated', () => {
+      if (store.activeView === 'listone') {
+        this.render();
+      }
+    });
+
     store.subscribe('player:selected', () => {
       if (store.activeView === 'listone') {
         this.updateSelectionHighlight();
@@ -120,7 +127,19 @@ export class PlayersListoneComponent {
 
     // Filtro La Mia Rosa
     if (this.onlyMyTeam) {
-      filtered = filtered.filter(p => store.isPlayerInMyTeam(p.id));
+      filtered = filtered.filter(p => store.isPlayerInMyTeam(p.id) || store.getPlayerLeagueOwner(p)?.isMyTeam);
+    }
+
+    // Filtro FantaLega (Svincolati o Squadra Specifica)
+    if (this.leagueFilter === 'FREE') {
+      filtered = filtered.filter(p => !store.isPlayerOwnedInLeague(p));
+    } else if (this.leagueFilter === 'MYTEAM') {
+      filtered = filtered.filter(p => store.isPlayerInMyTeam(p.id) || store.getPlayerLeagueOwner(p)?.isMyTeam);
+    } else if (this.leagueFilter && this.leagueFilter !== 'ALL') {
+      filtered = filtered.filter(p => {
+        const owner = store.getPlayerLeagueOwner(p);
+        return owner && owner.teamName.toUpperCase() === this.leagueFilter.toUpperCase();
+      });
     }
 
     // 4. Ricerca Testuale
@@ -325,8 +344,21 @@ export class PlayersListoneComponent {
           <button class="filter ${this.activeRole === 'D' ? 'active' : ''}" data-role="D" type="button">DIF</button>
           <button class="filter ${this.activeRole === 'P' ? 'active' : ''}" data-role="P" type="button">POR</button>
 
-          <!-- Dropdown Squadre -->
-          <div class="listone-select-pill-wrap" title="Filtra per Club">
+          <!-- Dropdown Squadre FantaLega & Svincolati -->
+          <div class="listone-select-pill-wrap" title="Filtra per Rosa FantaLega o Svincolati">
+            <select class="listone-league-select filter filter-select" id="listone-league-select" aria-label="Filtro FantaLega">
+              <option value="ALL" ${this.leagueFilter === 'ALL' ? 'selected' : ''}>🏆 Tutte le Rose Lega</option>
+              <option value="FREE" ${this.leagueFilter === 'FREE' ? 'selected' : ''}>🟢 Solo Svincolati / Liberi</option>
+              <option value="MYTEAM" ${this.leagueFilter === 'MYTEAM' ? 'selected' : ''}>⭐ Vincenzo (Mia Rosa)</option>
+              ${store.getLeagueTeams().filter(t => t.name.toUpperCase() !== 'VINCENZO').map(t => `
+                <option value="${t.name}" ${this.leagueFilter === t.name ? 'selected' : ''}>🛡️ ${t.name} (${t.roster?.length || 0})</option>
+              `).join('')}
+            </select>
+            <span class="select-arrow">▾</span>
+          </div>
+
+          <!-- Dropdown Squadre Serie A -->
+          <div class="listone-select-pill-wrap" title="Filtra per Club Serie A">
             <select class="listone-team-select filter filter-select" id="listone-team-select" aria-label="Filtro Squadra">
               <option value="ALL" ${this.selectedTeam === 'ALL' ? 'selected' : ''}>Tutti i Club (${teams.length})</option>
               ${teams.map(t => `<option value="${t.id}" ${this.selectedTeam === t.id ? 'selected' : ''}>${sanitizeHtml(t.name)}</option>`).join('')}
@@ -355,11 +387,6 @@ export class PlayersListoneComponent {
           <!-- Toggle Preferiti -->
           <button id="toggle-listone-fav-btn" class="filter ${this.onlyFavorites ? 'active' : ''}" type="button" title="Mostra solo preferiti">
             <i class="fa-${this.onlyFavorites ? 'solid' : 'regular'} fa-star"></i> Preferiti
-          </button>
-
-          <!-- Toggle La Mia Rosa -->
-          <button id="toggle-listone-myteam-btn" class="filter ${this.onlyMyTeam ? 'active' : ''}" type="button" title="Mostra solo i calciatori presenti nella Mia Rosa">
-            <i class="fa-solid fa-shield-halved"></i> Mia Rosa (${store.getMyTeamStats().totalPlayers})
           </button>
         </nav>
 
@@ -435,10 +462,18 @@ export class PlayersListoneComponent {
       });
     });
 
-    // Selettore Squadra
+    // Filtro Dropdown Squadra Serie A
     const teamSelect = this.container.querySelector('#listone-team-select');
     teamSelect?.addEventListener('change', (e) => {
       this.selectedTeam = e.target.value;
+      this.renderLimit = 40;
+      this.render();
+    });
+
+    // Filtro Dropdown FantaLega
+    const leagueSelect = this.container.querySelector('#listone-league-select');
+    leagueSelect?.addEventListener('change', (e) => {
+      this.leagueFilter = e.target.value;
       this.renderLimit = 40;
       this.render();
     });
@@ -464,14 +499,6 @@ export class PlayersListoneComponent {
     const favBtn = this.container.querySelector('#toggle-listone-fav-btn');
     favBtn?.addEventListener('click', () => {
       this.onlyFavorites = !this.onlyFavorites;
-      this.renderLimit = 40;
-      this.render();
-    });
-
-    // Toggle La Mia Rosa
-    const myTeamBtn = this.container.querySelector('#toggle-listone-myteam-btn');
-    myTeamBtn?.addEventListener('click', () => {
-      this.onlyMyTeam = !this.onlyMyTeam;
       this.renderLimit = 40;
       this.render();
     });

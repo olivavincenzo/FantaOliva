@@ -297,6 +297,58 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  min-height: 24px;
+}
+
+.team-notes-edit-btn {
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--canvas);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--muted);
+  font-size: 10px;
+  cursor: pointer;
+  padding: 0;
+  transition: all var(--transition-fast);
+}
+
+.team-notes-edit-btn:hover {
+  background: var(--paper);
+  color: var(--ink);
+  border-color: #b0b0c0;
+}
+
+.team-notes-edit-btn.active {
+  background: rgba(220, 38, 38, 0.08);
+  color: #dc2626;
+  border-color: rgba(220, 38, 38, 0.3);
+}
+
+.team-notes-display {
+  padding: 8px 10px;
+  background: var(--canvas);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+
+.team-notes-display:hover {
+  background: var(--paper);
+  border-color: #c0c0d0;
+}
+
+.team-notes-text {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--body);
+  white-space: pre-wrap;
+  word-break: break-word;
 }
 
 .team-notes-card {

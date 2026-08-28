@@ -20,8 +20,49 @@ export class PitchComponent {
     this.squadScope = 'STARTERS'; // 'STARTERS' | 'BENCH' | 'ALL'
     this.searchQuery = '';
     this.gridColumns = Number((typeof localStorage !== 'undefined' ? localStorage.getItem('fantaoliva_pitch_list_cols') : null) || 1);
+    this.isEditingTeamNotes = false;
 
     this.init();
+  }
+
+  renderTeamNotesHtml(team) {
+    if (!team) return '';
+    const teamNotes = store.getTeamPersonalNotes(team.id) || '';
+    const hasNotes = Boolean(teamNotes && teamNotes.trim());
+    const isEditing = this.isEditingTeamNotes;
+
+    return `
+      <div class="team-personal-notes-group ${hasNotes ? 'has-notes' : 'no-notes'} ${isEditing ? 'is-editing' : ''}">
+        <div class="team-notes-header">
+          <span class="spec-label"><i class="fa-regular fa-note-sticky"></i> Note personali squadra:</span>
+          <button type="button" class="team-notes-edit-btn ${isEditing ? 'active' : ''}" id="toggle-team-notes-edit-btn" title="${isEditing ? 'Chiudi modifica' : (hasNotes ? 'Modifica nota' : 'Aggiungi nota')}">
+            <i class="fa-solid ${isEditing ? 'fa-xmark' : 'fa-pencil'}"></i>
+          </button>
+        </div>
+        ${isEditing ? `
+          <div class="team-notes-card">
+            <textarea 
+              id="team-personal-notes-textarea" 
+              class="team-notes-textarea" 
+              placeholder="Scrivi una nota personale su ${sanitizeHtml(team.name)}…"
+            >${sanitizeHtml(teamNotes)}</textarea>
+            <div class="team-notes-footer">
+              <span class="team-notes-hint"><i class="fa-solid fa-lock" style="font-size: 8px;"></i> Personale · salvata in locale</span>
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <button type="button" id="cancel-team-notes-btn" class="fanta-btn secondary-btn" style="height: 24px; padding: 0 8px; font-size: 9.5px;">Annulla</button>
+                <button type="button" id="save-team-notes-btn" class="save-team-notes-btn">
+                  <i class="fa-solid fa-floppy-disk"></i> Salva nota
+                </button>
+              </div>
+            </div>
+          </div>
+        ` : (hasNotes ? `
+          <div class="team-notes-display" id="team-notes-display-box" title="Clicca per modificare la nota">
+            <p class="team-notes-text">${sanitizeHtml(teamNotes)}</p>
+          </div>
+        ` : '')}
+      </div>
+    `;
   }
 
   init() {
@@ -124,24 +165,7 @@ export class PitchComponent {
               </div>
             </div>
           ` : ''}
-          <div class="team-personal-notes-group">
-            <div class="team-notes-header">
-              <span class="spec-label"><i class="fa-regular fa-note-sticky"></i> Note personali squadra:</span>
-            </div>
-            <div class="team-notes-card">
-              <textarea 
-                id="team-personal-notes-textarea" 
-                class="team-notes-textarea" 
-                placeholder="Scrivi una nota personale su ${sanitizeHtml(teamName)}…"
-              >${sanitizeHtml(teamNotes)}</textarea>
-              <div class="team-notes-footer">
-                <span class="team-notes-hint"><i class="fa-solid fa-lock" style="font-size: 8px;"></i> Personale · salvata in locale</span>
-                <button type="button" id="save-team-notes-btn" class="save-team-notes-btn">
-                  <i class="fa-solid fa-floppy-disk"></i> Salva nota
-                </button>
-              </div>
-            </div>
-          </div>
+          ${this.renderTeamNotesHtml(team)}
         </div>
 
         <!-- BARRA DI RICERCA EDITORIALE -->
@@ -295,8 +319,14 @@ export class PitchComponent {
 
   subscribeEvents() {
     store.subscribe('formation:changed', () => this.updatePitch(false));
-    store.subscribe('team:changed', () => this.updatePitch(true));
-    store.subscribe('team:reset', () => this.updatePitch(true));
+    store.subscribe('team:changed', () => {
+      this.isEditingTeamNotes = false;
+      this.updatePitch(true);
+    });
+    store.subscribe('team:reset', () => {
+      this.isEditingTeamNotes = false;
+      this.updatePitch(true);
+    });
     store.subscribe('player:selected', () => this.updateSelectionHighlight({ scroll: false }));
     store.subscribe('player:updated', () => this.updatePitch(false));
     store.subscribe('favorite:toggled', () => this.updatePitch(false));
@@ -373,7 +403,6 @@ export class PitchComponent {
       return `<span class="team-ballottaggio-chip" title="Ballottaggio Ufficiale">${items}</span>`;
     }).filter(Boolean).join('');
 
-    const teamNotes = store.getTeamPersonalNotes(team.id);
     const bannerEl = this.container.querySelector('#pitch-tactical-banner');
     if (bannerEl) {
       bannerEl.innerHTML = `
@@ -406,24 +435,7 @@ export class PitchComponent {
             </div>
           </div>
         ` : ''}
-        <div class="team-personal-notes-group">
-          <div class="team-notes-header">
-            <span class="spec-label"><i class="fa-regular fa-note-sticky"></i> Note personali squadra:</span>
-          </div>
-          <div class="team-notes-card">
-            <textarea 
-              id="team-personal-notes-textarea" 
-              class="team-notes-textarea" 
-              placeholder="Scrivi una nota personale su ${sanitizeHtml(team.name)}…"
-            >${sanitizeHtml(teamNotes)}</textarea>
-            <div class="team-notes-footer">
-              <span class="team-notes-hint"><i class="fa-solid fa-lock" style="font-size: 8px;"></i> Personale · salvata in locale</span>
-              <button type="button" id="save-team-notes-btn" class="save-team-notes-btn">
-                <i class="fa-solid fa-floppy-disk"></i> Salva nota
-              </button>
-            </div>
-          </div>
-        </div>
+        ${this.renderTeamNotesHtml(team)}
       `;
 
       this.bindTacticalBannerEvents();
@@ -437,8 +449,40 @@ export class PitchComponent {
     const team = store.getCurrentTeam();
     if (!team) return;
 
+    const toggleEditBtn = bannerEl.querySelector('#toggle-team-notes-edit-btn');
+    const displayBox = bannerEl.querySelector('#team-notes-display-box');
     const textarea = bannerEl.querySelector('#team-personal-notes-textarea');
     const saveBtn = bannerEl.querySelector('#save-team-notes-btn');
+    const cancelBtn = bannerEl.querySelector('#cancel-team-notes-btn');
+
+    toggleEditBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      this.isEditingTeamNotes = !this.isEditingTeamNotes;
+      this.updateTacticalBanner();
+      if (this.isEditingTeamNotes) {
+        const ta = this.container?.querySelector('#team-personal-notes-textarea');
+        if (ta) {
+          ta.focus();
+          ta.setSelectionRange(ta.value.length, ta.value.length);
+        }
+      }
+    });
+
+    displayBox?.addEventListener('click', () => {
+      this.isEditingTeamNotes = true;
+      this.updateTacticalBanner();
+      const ta = this.container?.querySelector('#team-personal-notes-textarea');
+      if (ta) {
+        ta.focus();
+        ta.setSelectionRange(ta.value.length, ta.value.length);
+      }
+    });
+
+    cancelBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      this.isEditingTeamNotes = false;
+      this.updateTacticalBanner();
+    });
 
     if (textarea) {
       const resize = () => {
@@ -450,11 +494,13 @@ export class PitchComponent {
 
       textarea.addEventListener('input', () => {
         resize();
-        store.setTeamPersonalNotes(team.id, textarea.value);
       });
 
-      textarea.addEventListener('blur', () => {
-        store.setTeamPersonalNotes(team.id, textarea.value);
+      textarea.addEventListener('keydown', (e) => {
+        if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+          e.preventDefault();
+          saveBtn?.click();
+        }
       });
     }
 
@@ -462,8 +508,10 @@ export class PitchComponent {
       saveBtn.addEventListener('click', (e) => {
         e.preventDefault();
         e.stopPropagation();
-        const noteVal = textarea ? textarea.value : '';
+        const noteVal = textarea ? textarea.value.trim() : '';
         store.setTeamPersonalNotes(team.id, noteVal);
+        this.isEditingTeamNotes = false;
+        this.updateTacticalBanner();
         notify.success(`Nota salvata per ${team.name}`);
       });
     }

@@ -274,54 +274,76 @@ export class PlayerInspectorComponent {
       const sosComment = activeStrategy?.playerComments?.[normName] || activeStrategy?.playerComments?.[normDisp] || '';
       const sosPrice = activeStrategy?.playerPrices?.[normName] || activeStrategy?.playerPrices?.[normDisp] || null;
 
-      const notes = player.comment || player.positionNotes || player.notes || sosComment || '';
+      // Recupera il commento guida asta (fantaComment da catalogo o sosComment) se note non ancora inserite
+      const fantaComment = (player.fantaComment && typeof player.fantaComment === 'string' && player.fantaComment.trim()) 
+        ? player.fantaComment.trim() 
+        : (sosComment || '');
+      const notes = player.notes || player.comment || player.positionNotes || fantaComment || '';
 
-      const isInMyTeam = store.isPlayerInMyTeam(player.id);
+      const leagueOwner = store.getPlayerLeagueOwner(player);
+      const isInMyTeam = store.isPlayerInMyTeam(player.id) || (leagueOwner && leagueOwner.isMyTeam);
       const myTeamInfo = isInMyTeam ? store.getMyTeamPlayerInfo(player.id) : null;
+      const isOtherLeagueOwner = Boolean(leagueOwner && !leagueOwner.isMyTeam);
 
     container.innerHTML = `
-      <!-- SEZIONE LA MIA ROSA / GESTIONE ASTA PERSONALE -->
+      <!-- SEZIONE LA MIA ROSA / GESTIONE ASTA PERSONALE & FANTALEGA -->
       <section class="detail-section">
-        <div class="my-team-inspector-card">
-          <div class="my-team-inspector-row">
-            ${isInMyTeam ? `
-              <span class="badge-my-team"><i class="fa-solid fa-shield-halved"></i> NELLA MIA ROSA</span>
-              <span style="font-size: 0.74rem; font-weight: 750; color: ${myTeamInfo?.isStarter ? '#16a34a' : 'var(--muted)'};">
-                ${myTeamInfo?.isStarter ? '🟢 Titolare' : '⚪ In Panchina'}
-              </span>
-            ` : `
-              <span style="font-size: 0.78rem; font-weight: 750; color: var(--muted);"><i class="fa-solid fa-shield-halved"></i> La Mia Rosa</span>
-              <span style="font-size: 0.72rem; color: var(--muted);">Non ancora acquistato</span>
-            `}
+        ${isOtherLeagueOwner ? `
+          <div class="my-team-inspector-card" style="border-left: 3px solid #6366f1;">
+            <div class="my-team-inspector-row">
+              <span class="badge-league-owner" style="font-size: 9px; padding: 2px 7px;"><i class="fa-solid fa-users"></i> ACQUISTATO DA ${sanitizeHtml(leagueOwner.teamName)}</span>
+              <span style="font-size: 0.74rem; font-weight: 750; color: #4f46e5;">FantaLega</span>
+            </div>
+            <div class="my-team-inspector-row" style="margin-top: 6px;">
+              <div style="display: flex; align-items: baseline; gap: 8px;">
+                <span style="font-size: 0.76rem; color: var(--muted); font-weight: 600;">Prezzo pagato all'asta:</span>
+                <strong style="font-size: 0.95rem; color: #ea580c; font-weight: 800;">${leagueOwner.price} cr</strong>
+              </div>
+              <span style="font-size: 0.72rem; color: var(--muted);">QtA: ${leagueOwner.qt || '-'}</span>
+            </div>
           </div>
+        ` : `
+          <div class="my-team-inspector-card">
+            <div class="my-team-inspector-row">
+              ${isInMyTeam ? `
+                <span class="badge-league-owner"><i class="fa-solid fa-shield-halved"></i> IN ROSA</span>
+                <span style="font-size: 0.74rem; font-weight: 750; color: ${myTeamInfo?.isStarter ? '#16a34a' : 'var(--muted)'};">
+                  ${myTeamInfo?.isStarter ? '🟢 Titolare' : '⚪ In Panchina'}
+                </span>
+              ` : `
+                <span style="font-size: 0.78rem; font-weight: 750; color: var(--muted);"><i class="fa-solid fa-shield-halved"></i> Rosa</span>
+                <span style="font-size: 0.72rem; color: var(--muted);">🟢 Svincolato / Libero</span>
+              `}
+            </div>
 
-          <div class="my-team-inspector-row" style="margin-top: 4px;">
-            ${isInMyTeam ? `
-              <div style="display: flex; align-items: center; gap: 5px;">
-                <span style="font-size: 0.72rem; color: var(--muted); font-weight: 600;">Prezzo pagato:</span>
-                <input type="number" id="myteam-player-price-input" class="my-team-price-input" min="0" value="${myTeamInfo?.purchasePrice || 0}" title="Modifica crediti spesi per l'acquisto" />
-                <span style="font-size: 0.74rem; font-weight: 750; color: var(--ink);">cr</span>
-              </div>
-              <div style="display: flex; align-items: center; gap: 5px;">
-                <button type="button" class="fanta-btn secondary-btn" id="myteam-toggle-starter-btn" style="padding: 3px 8px; font-size: 0.72rem;" title="Sposta tra titolari e panchina">
-                  ${myTeamInfo?.isStarter ? 'In Panchina' : 'Titolare'}
+            <div class="my-team-inspector-row" style="margin-top: 4px;">
+              ${isInMyTeam ? `
+                <div style="display: flex; align-items: center; gap: 5px;">
+                  <span style="font-size: 0.72rem; color: var(--muted); font-weight: 600;">Prezzo pagato:</span>
+                  <input type="number" id="myteam-player-price-input" class="my-team-price-input" min="0" value="${myTeamInfo?.purchasePrice || (leagueOwner?.price || 0)}" title="Modifica crediti spesi per l'acquisto" />
+                  <span style="font-size: 0.74rem; font-weight: 750; color: var(--ink);">cr</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 5px;">
+                  <button type="button" class="fanta-btn secondary-btn" id="myteam-toggle-starter-btn" style="padding: 3px 8px; font-size: 0.72rem;" title="Sposta tra titolari e panchina">
+                    ${myTeamInfo?.isStarter ? 'In Panchina' : 'Titolare'}
+                  </button>
+                  <button type="button" class="fanta-btn secondary-btn" id="myteam-remove-player-btn" style="padding: 3px 8px; font-size: 0.72rem; color: #dc2626;" title="Rimuovi dalla Rosa">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </button>
+                </div>
+              ` : `
+                <div style="display: flex; align-items: center; gap: 5px;">
+                  <span style="font-size: 0.72rem; color: var(--muted); font-weight: 600;">Prezzo asta:</span>
+                  <input type="number" id="myteam-new-price-input" class="my-team-price-input" min="0" placeholder="1" value="${player.quotazioni?.fvm || 1}" />
+                  <span style="font-size: 0.74rem; font-weight: 750; color: var(--ink);">cr</span>
+                </div>
+                <button type="button" class="fanta-btn primary-btn" id="myteam-add-current-player-btn" style="padding: 4px 10px; font-size: 0.76rem;">
+                  <i class="fa-solid fa-plus-circle"></i> Aggiungi alla Rosa
                 </button>
-                <button type="button" class="fanta-btn secondary-btn" id="myteam-remove-player-btn" style="padding: 3px 8px; font-size: 0.72rem; color: #dc2626;" title="Rimuovi da La Mia Rosa">
-                  <i class="fa-solid fa-trash-can"></i>
-                </button>
-              </div>
-            ` : `
-              <div style="display: flex; align-items: center; gap: 5px;">
-                <span style="font-size: 0.72rem; color: var(--muted); font-weight: 600;">Prezzo asta:</span>
-                <input type="number" id="myteam-new-price-input" class="my-team-price-input" min="0" placeholder="1" value="${player.quotazioni?.fvm || 1}" />
-                <span style="font-size: 0.74rem; font-weight: 750; color: var(--ink);">cr</span>
-              </div>
-              <button type="button" class="fanta-btn primary-btn" id="myteam-add-current-player-btn" style="padding: 4px 10px; font-size: 0.76rem;">
-                <i class="fa-solid fa-plus-circle"></i> Aggiungi alla Mia Rosa
-              </button>
-            `}
+              `}
+            </div>
           </div>
-        </div>
+        `}
       </section>
 
       <!-- SEZIONE STRATEGIA & FASCIA CUSTOM -->
@@ -521,13 +543,16 @@ export class PlayerInspectorComponent {
         </div>
       </section>
 
-      <!-- SEZIONE NOTA PERSONALE -->
+      <!-- SEZIONE NOTA PERSONALE & GUIDA ASTA -->
       <section class="detail-section">
-        <h2>Nota personale</h2>
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
+          <h2>Note personali & Guida Asta</h2>
+          ${fantaComment ? `<span class="note-hint" style="color: #16a34a; font-size: 10px; font-weight: 750;"><i class="fa-solid fa-sparkles"></i> Commento Guida Asta</span>` : ''}
+        </div>
         <div class="note-card">
-          <textarea id="player-notes-textarea" placeholder="Scrivi una nota su ${sanitizeHtml(player.name)}…">${sanitizeHtml(notes)}</textarea>
+          <textarea id="player-notes-textarea" placeholder="Scrivi una nota o leggi il consiglio asta su ${sanitizeHtml(player.name)}…">${sanitizeHtml(notes)}</textarea>
           <div class="note-footer">
-            <span class="note-hint">Visibile solo a te</span>
+            <span class="note-hint">Modificabile e salvata sul tuo dispositivo</span>
             <button type="button" id="save-player-note-btn" class="save-note">Salva nota</button>
           </div>
         </div>

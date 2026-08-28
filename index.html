@@ -28,6 +28,7 @@
   <link rel="stylesheet" href="css/listone.css?v=4">
   <link rel="stylesheet" href="css/strategy-manager.css">
   <link rel="stylesheet" href="css/my-team.css">
+  <link rel="stylesheet" href="css/injuries.css">
   <link rel="stylesheet" href="css/responsive.css?v=2">
 </head>
 
@@ -38,14 +39,17 @@
     <!-- HEADER TATTICO SUPERIORE -->
     <header class="app-header">
 
-      <!-- Sezione Sinistra: Switcher Viste (Lavagna Tattica / La Mia Rosa / Listone) -->
+      <!-- Sezione Sinistra: Switcher Viste (Lavagna Tattica / FantaLega / Infermeria / Listone) -->
       <div class="header-left-section">
         <div class="view-switch-nav">
           <button id="view-tab-tactical" class="view-switch-btn is-active" title="Visualizza Campo e Lavagna Tattica Serie A">
             <i class="fa-solid fa-futbol"></i> <span>Lavagna</span>
           </button>
-          <button id="view-tab-myteam" class="view-switch-btn" title="Visualizza La Mia Rosa Personalizzata">
-            <i class="fa-solid fa-shield-halved"></i> <span>La Mia Rosa</span>
+          <button id="view-tab-league" class="view-switch-btn" title="Visualizza Squadre e Rose FantaLega">
+            <i class="fa-solid fa-trophy"></i> <span>FantaLega</span>
+          </button>
+          <button id="view-tab-injuries" class="view-switch-btn" title="Visualizza Infermeria & Indisponibili Serie A">
+            <i class="fa-solid fa-notes-medical"></i> <span>Infermeria</span>
           </button>
           <button id="view-tab-listone" class="view-switch-btn"
             title="Visualizza Listone Completo Calciatori Serie A">
@@ -165,6 +169,9 @@
         <div class="pitch-container hidden" id="my-team-view-wrapper">
           <!-- Rendered by MyTeamComponent -->
         </div>
+        <div class="pitch-container hidden" id="league-view-wrapper">
+          <!-- Rendered by LeagueTeamsComponent -->
+        </div>
       </main>
 
       <!-- SEPARATORE DI RIDIMENSIONAMENTO SCHEDA GIOCATORE -->
@@ -182,6 +189,11 @@
       <!-- Rendered by PlayersListoneComponent -->
     </div>
 
+    <!-- VISTA 3: INFERMERIA & INDISPONIBILI SERIE A -->
+    <div class="listone-view-wrapper hidden" id="injuries-view-wrapper">
+      <!-- Rendered by InjuriesComponent -->
+    </div>
+
     <!-- BACKDROP OVERLAY PER DRAWER MOBILI (SQUADRE / ISPETTORE) -->
     <div class="mobile-drawer-backdrop hidden" id="mobile-drawer-backdrop"></div>
 
@@ -192,9 +204,13 @@
           <i class="fa-solid fa-chalkboard-user"></i>
           <span class="nav-label">Lavagna</span>
         </button>
-        <button id="mobile-myteam-btn" class="nav-item" aria-label="La Mia Rosa" title="La Mia Rosa">
-          <i class="fa-solid fa-shield-halved"></i>
-          <span class="nav-label">Mia Rosa</span>
+        <button id="mobile-league-btn" class="nav-item" aria-label="FantaLega" title="FantaLega">
+          <i class="fa-solid fa-trophy"></i>
+          <span class="nav-label">Lega</span>
+        </button>
+        <button id="mobile-injuries-btn" class="nav-item" aria-label="Infermeria" title="Infermeria">
+          <i class="fa-solid fa-notes-medical"></i>
+          <span class="nav-label">Infermeria</span>
         </button>
         <button id="mobile-listone-btn" class="nav-item" aria-label="Listone Calciatori" title="Listone">
           <i class="fa-solid fa-table-list"></i>
