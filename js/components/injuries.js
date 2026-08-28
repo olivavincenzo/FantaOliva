@@ -55,7 +55,9 @@ export class InjuriesComponent {
   }
 
   getFilteredList() {
-    let list = INJURIES_DATA.map(item => {
+    let list = INJURIES_DATA
+      .filter(item => item && item.name && item.name.toLowerCase() !== 'giocatore' && item.name.toLowerCase() !== 'nuovo giocatore')
+      .map(item => {
       const storePlayer = store.getPlayer(item.name) || 
                           store.getPlayer(item.displayName) || 
                           store.getAllPlayersFlat().find(p => p.name.toLowerCase() === item.name.toLowerCase());
