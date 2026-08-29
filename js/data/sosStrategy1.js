@@ -468,7 +468,6 @@ export const SOS_STRATEGY_1 = {
     "iannoni": "tier_c_18",
     "el azzouzi o.": "tier_c_17",
     "elazzouzio": "tier_c_17",
-    "miretti": "tier_c_20",
     "moro n.": "tier_c_16",
     "moron": "tier_c_16",
     "felici": "tier_c_17",

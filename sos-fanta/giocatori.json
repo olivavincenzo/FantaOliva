@@ -16420,6 +16420,32 @@
       }
     ]
   },
+  "11592cc8-5eb4-42a5-ad56-da1448b4c5e6": {
+    "player_id": "11592cc8-5eb4-42a5-ad56-da1448b4c5e6",
+    "name": "Bobcek",
+    "role": "A",
+    "stats": [
+      {
+        "player_id": "11592cc8-5eb4-42a5-ad56-da1448b4c5e6",
+        "season": "s_25_26",
+        "presenze": 30,
+        "mv": null,
+        "fmv": null,
+        "gf": 16,
+        "gs": 0,
+        "rp": 0,
+        "r_plus": 4,
+        "r_minus": 1,
+        "assist": 7,
+        "amm": 5,
+        "esp": 0,
+        "autogol": 0,
+        "injured": 0,
+        "starts_eleven": 28,
+        "min_playing_time": 2463
+      }
+    ]
+  },
   "fed6d3d3-72d2-46f8-b556-77a12cc4dd0d": {
     "player_id": "fed6d3d3-72d2-46f8-b556-77a12cc4dd0d",
     "name": "Zanoli",
@@ -22400,89 +22426,6 @@
         "injured": 0,
         "starts_eleven": 19,
         "min_playing_time": 1804
-      }
-    ]
-  },
-  "19f016b0-bb68-41d7-91e9-4d8c1690deb9": {
-    "player_id": "19f016b0-bb68-41d7-91e9-4d8c1690deb9",
-    "name": "Miretti",
-    "role": "C",
-    "stats": [
-      {
-        "player_id": "19f016b0-bb68-41d7-91e9-4d8c1690deb9",
-        "season": "s_22_23",
-        "presenze": 27,
-        "mv": 5.96,
-        "fmv": 6,
-        "gf": 0,
-        "gs": 0,
-        "rp": 0,
-        "r_plus": 0,
-        "r_minus": 0,
-        "assist": 2,
-        "amm": 2,
-        "esp": 0,
-        "autogol": 0,
-        "injured": 2,
-        "starts_eleven": 14,
-        "min_playing_time": 1232
-      },
-      {
-        "player_id": "19f016b0-bb68-41d7-91e9-4d8c1690deb9",
-        "season": "s_23_24",
-        "presenze": 25,
-        "mv": 5.78,
-        "fmv": 5.91,
-        "gf": 1,
-        "gs": 0,
-        "rp": 0,
-        "r_plus": 0,
-        "r_minus": 0,
-        "assist": 1,
-        "amm": 3,
-        "esp": 0,
-        "autogol": 0,
-        "injured": 0,
-        "starts_eleven": 16,
-        "min_playing_time": 1109
-      },
-      {
-        "player_id": "19f016b0-bb68-41d7-91e9-4d8c1690deb9",
-        "season": "s_24_25",
-        "presenze": 25,
-        "mv": 5.98,
-        "fmv": 6.2,
-        "gf": 3,
-        "gs": 0,
-        "rp": 0,
-        "r_plus": 0,
-        "r_minus": 0,
-        "assist": 3,
-        "amm": 2,
-        "esp": 0,
-        "autogol": 0,
-        "injured": 0,
-        "starts_eleven": 22,
-        "min_playing_time": 1721
-      },
-      {
-        "player_id": "19f016b0-bb68-41d7-91e9-4d8c1690deb9",
-        "season": "s_25_26",
-        "presenze": 23,
-        "mv": 5.97,
-        "fmv": 6.2,
-        "gf": 1,
-        "gs": 0,
-        "rp": 0,
-        "r_plus": 0,
-        "r_minus": 0,
-        "assist": 1,
-        "amm": 1,
-        "esp": 0,
-        "autogol": 0,
-        "injured": 0,
-        "starts_eleven": 5,
-        "min_playing_time": 604
       }
     ]
   },

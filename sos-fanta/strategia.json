@@ -2,7 +2,7 @@
   "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
   "season": "s_26_27",
   "strategy_name": "Guida all'Asta 2026/27",
-  "mod": "no_mod",
+  "mod": "mod_classic",
   "participants": "8",
   "custom_fasce": {
     "1": {
@@ -68,7 +68,7 @@
   },
   "created_at": "2026-07-22T18:13:35.774Z",
   "last_update": "2026-08-28T14:27:03.916Z",
-  "updated_at": "2026-08-28T14:27:03.916Z",
+  "updated_at": "2026-08-29T07:23:26.299Z",
   "credits": 500,
   "is_public": 1,
   "cloned_from_expert": null,
@@ -83,7 +83,7 @@
   "period": "all",
   "players_list": "serie-a",
   "createdAt": "2026-07-22T18:13:35.774Z",
-  "updatedAt": "2026-08-28T14:27:03.916Z",
+  "updatedAt": "2026-08-29T07:23:26.299Z",
   "app_user": {
     "profile_image": "https://cdn.falsesoftware.com/creators_images/sos_fanta.webp",
     "username": "SOS Fanta",
