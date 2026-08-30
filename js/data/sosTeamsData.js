@@ -5169,8 +5169,8 @@ export const SOS_TEAMS_DATA = {
       {
         "playerId": "d739968a-b64a-4934-b1a7-695255f63af0",
         "csvId": 6426,
-        "name": "Pedersen",
-        "role": "D"
+        "name": "",
+        "role": ""
       },
       {
         "playerId": "53e42c7e-ea10-414b-a19f-ce1880b59641",
@@ -5310,7 +5310,7 @@ export const SOS_TEAMS_DATA = {
     "hidden": [
       {
         "playerId": "d739968a-b64a-4934-b1a7-695255f63af0",
-        "name": "Pedersen",
+        "name": "",
         "points": [
           "Utilizzato molto nelle transizioni offensive"
         ]
@@ -5385,8 +5385,8 @@ export const SOS_TEAMS_DATA = {
       {
         "playerId": "d739968a-b64a-4934-b1a7-695255f63af0",
         "csvId": 6426,
-        "name": "Pedersen",
-        "role": "D"
+        "name": "",
+        "role": ""
       },
       {
         "playerId": "53e42c7e-ea10-414b-a19f-ce1880b59641",
@@ -5526,7 +5526,7 @@ export const SOS_TEAMS_DATA = {
     "hidden": [
       {
         "playerId": "d739968a-b64a-4934-b1a7-695255f63af0",
-        "name": "Pedersen",
+        "name": "",
         "points": [
           "Utilizzato molto nelle transizioni offensive"
         ]
@@ -6524,7 +6524,7 @@ export const SOS_TEAMS_DATA = {
     "attackRating": 4.0,
     "defenseRating": 4.0,
     "comment": "Raffaele Palladino sostituisce Juric alla vigilia della 12^ giornata. Come i predecessori Gasperini e Juric, Palladino dovrebbe schierarsi con la difesa a 3 e con il doppio trequartista a supporto della prima punta. Il punto di forza sono gli esterni, i cosiddetti quinti di centrocampo, chiamati a fare la doppia fase. Palladino dovrà lavorare soprattutto a livello mentsle, una squadra che \"prende\" al tredicesimo, peggior risultato degli ultimi 11 anni. Tanti ballottaggi, soprattutto dalla trequarti in su. ",
-    "sosFantaComment": "Rivoluzione totale in casa Atalanta: dopo anni col 3-5-2, si passa al 4-3-3 con l'arrivo di Maurizio Sarri in panchina. Meccanismi da oliare, soprattutto nel reparto difensivo. Kristensen arriva per giocare, lui e Scalvini sono i favoriti in partenza. Tutto apertissimo sulle fasce: Zappacosta e Bernasconi partono in pole su Bellanova e Ahanor. Non più certa la titolarità di De Roon dopo anni, anzi: c'è Gaetano in vantaggio in cabina di regia e Sarri sta plasmando Samardzic da mezzala, ora è lui in ballottaggio su Pasalic. De Ketelaere e Raspadori provati sulle due fasce, da ali pure. Scamacca o Krstovic centravanti, è un testa a testa e sarà un'alternanza continua. Elmas è arrivato e sarà il classico jolly: mezzala o anche esterno alto, avrà spazio nelle rotazioni.",
+    "sosFantaComment": "Rivoluzione totale in casa Atalanta: dopo anni col 3-5-2, si passa al 4-3-3 con l'arrivo di Maurizio Sarri in panchina. Meccanismi da oliare, soprattutto nel reparto difensivo. Kristensen arriva per giocare, lui e Scalvini sono i favoriti in partenza. Tutto apertissimo sulle fasce: Zappacosta e Bernasconi partono in pole, ma c'è anche Bellanova. Della mediana dell'anno scorso è rimasto solo Ederson: le novità sono Gaetano in cabina di regia e soprattutto il ritorno di Kessié, che sarà sicuramente titolare. De Ketelaere e Raspadori provati sulle due fasce, da ali pure. Scamacca o Krstovic centravanti, è un testa a testa e sarà un'alternanza continua. Elmas e Samardzic da classici jolly: mezzali o anche esterni alti, avranno comunque spazio nelle rotazioni ma da jolly.",
     "keyPoints": [
       {
         "text": "Valorizzazione esterni d'attacco ",
@@ -6589,10 +6589,10 @@ export const SOS_TEAMS_DATA = {
         "role": "D"
       },
       {
-        "playerId": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
-        "csvId": 5119,
-        "name": "Samardzic",
-        "role": "C"
+        "playerId": "c265303c-baf7-46d1-978a-195aa19673c0",
+        "csvId": 1850,
+        "name": "",
+        "role": ""
       },
       {
         "playerId": "4f923ea1-81ed-468d-84e7-bc8adf85055f",
@@ -6688,20 +6688,6 @@ export const SOS_TEAMS_DATA = {
       ],
       [
         {
-          "playerId": "4f923ea1-81ed-468d-84e7-bc8adf85055f",
-          "name": "Gaetano",
-          "role": "C",
-          "perc": 60
-        },
-        {
-          "playerId": "570ee83d-8f44-4206-875c-10dd0430c4f3",
-          "name": "De Roon",
-          "role": "C",
-          "perc": 40
-        }
-      ],
-      [
-        {
           "playerId": "088bb69b-e23f-402f-bc6e-3ad4bb311560",
           "name": "Zappacosta",
           "role": "D",
@@ -6711,48 +6697,6 @@ export const SOS_TEAMS_DATA = {
           "playerId": "bde8b7a8-9307-4d1e-a3cc-430c5bee432b",
           "name": "Bellanova",
           "role": "D",
-          "perc": 45
-        }
-      ],
-      [
-        {
-          "playerId": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
-          "name": "Samardzic",
-          "role": "C",
-          "perc": 51
-        },
-        {
-          "playerId": "515cb6cb-fae1-428c-89cc-a97f5ccbc6c8",
-          "name": "Pasalic",
-          "role": "C",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "e12cb1ac-c451-4b75-bbe1-94bb602aa355",
-          "name": "Bernasconi",
-          "role": "D",
-          "perc": 51
-        },
-        {
-          "playerId": "c54ad644-51bc-4d7c-a8d1-300c3adc9324",
-          "name": "Ahanor",
-          "role": "D",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "6b73ffab-1bf1-40c1-9a8c-35dbc1d0ed1d",
-          "name": "Raspadori",
-          "role": "A",
-          "perc": 55
-        },
-        {
-          "playerId": "cc800e08-9593-424a-a9d9-eb4da06257cc",
-          "name": "Elmas",
-          "role": "C",
           "perc": 45
         }
       ]
@@ -6825,7 +6769,7 @@ export const SOS_TEAMS_DATA = {
     "attackRating": 4.0,
     "defenseRating": 4.0,
     "comment": "Raffaele Palladino sostituisce Juric alla vigilia della 12^ giornata. Come i predecessori Gasperini e Juric, Palladino dovrebbe schierarsi con la difesa a 3 e con il doppio trequartista a supporto della prima punta. Il punto di forza sono gli esterni, i cosiddetti quinti di centrocampo, chiamati a fare la doppia fase. Palladino dovrà lavorare soprattutto a livello mentsle, una squadra che \"prende\" al tredicesimo, peggior risultato degli ultimi 11 anni. Tanti ballottaggi, soprattutto dalla trequarti in su. ",
-    "sosFantaComment": "Rivoluzione totale in casa Atalanta: dopo anni col 3-5-2, si passa al 4-3-3 con l'arrivo di Maurizio Sarri in panchina. Meccanismi da oliare, soprattutto nel reparto difensivo. Kristensen arriva per giocare, lui e Scalvini sono i favoriti in partenza. Tutto apertissimo sulle fasce: Zappacosta e Bernasconi partono in pole su Bellanova e Ahanor. Non più certa la titolarità di De Roon dopo anni, anzi: c'è Gaetano in vantaggio in cabina di regia e Sarri sta plasmando Samardzic da mezzala, ora è lui in ballottaggio su Pasalic. De Ketelaere e Raspadori provati sulle due fasce, da ali pure. Scamacca o Krstovic centravanti, è un testa a testa e sarà un'alternanza continua. Elmas è arrivato e sarà il classico jolly: mezzala o anche esterno alto, avrà spazio nelle rotazioni.",
+    "sosFantaComment": "Rivoluzione totale in casa Atalanta: dopo anni col 3-5-2, si passa al 4-3-3 con l'arrivo di Maurizio Sarri in panchina. Meccanismi da oliare, soprattutto nel reparto difensivo. Kristensen arriva per giocare, lui e Scalvini sono i favoriti in partenza. Tutto apertissimo sulle fasce: Zappacosta e Bernasconi partono in pole, ma c'è anche Bellanova. Della mediana dell'anno scorso è rimasto solo Ederson: le novità sono Gaetano in cabina di regia e soprattutto il ritorno di Kessié, che sarà sicuramente titolare. De Ketelaere e Raspadori provati sulle due fasce, da ali pure. Scamacca o Krstovic centravanti, è un testa a testa e sarà un'alternanza continua. Elmas e Samardzic da classici jolly: mezzali o anche esterni alti, avranno comunque spazio nelle rotazioni ma da jolly.",
     "keyPoints": [
       {
         "text": "Valorizzazione esterni d'attacco ",
@@ -6890,10 +6834,10 @@ export const SOS_TEAMS_DATA = {
         "role": "D"
       },
       {
-        "playerId": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
-        "csvId": 5119,
-        "name": "Samardzic",
-        "role": "C"
+        "playerId": "c265303c-baf7-46d1-978a-195aa19673c0",
+        "csvId": 1850,
+        "name": "",
+        "role": ""
       },
       {
         "playerId": "4f923ea1-81ed-468d-84e7-bc8adf85055f",
@@ -6989,20 +6933,6 @@ export const SOS_TEAMS_DATA = {
       ],
       [
         {
-          "playerId": "4f923ea1-81ed-468d-84e7-bc8adf85055f",
-          "name": "Gaetano",
-          "role": "C",
-          "perc": 60
-        },
-        {
-          "playerId": "570ee83d-8f44-4206-875c-10dd0430c4f3",
-          "name": "De Roon",
-          "role": "C",
-          "perc": 40
-        }
-      ],
-      [
-        {
           "playerId": "088bb69b-e23f-402f-bc6e-3ad4bb311560",
           "name": "Zappacosta",
           "role": "D",
@@ -7012,48 +6942,6 @@ export const SOS_TEAMS_DATA = {
           "playerId": "bde8b7a8-9307-4d1e-a3cc-430c5bee432b",
           "name": "Bellanova",
           "role": "D",
-          "perc": 45
-        }
-      ],
-      [
-        {
-          "playerId": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
-          "name": "Samardzic",
-          "role": "C",
-          "perc": 51
-        },
-        {
-          "playerId": "515cb6cb-fae1-428c-89cc-a97f5ccbc6c8",
-          "name": "Pasalic",
-          "role": "C",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "e12cb1ac-c451-4b75-bbe1-94bb602aa355",
-          "name": "Bernasconi",
-          "role": "D",
-          "perc": 51
-        },
-        {
-          "playerId": "c54ad644-51bc-4d7c-a8d1-300c3adc9324",
-          "name": "Ahanor",
-          "role": "D",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "6b73ffab-1bf1-40c1-9a8c-35dbc1d0ed1d",
-          "name": "Raspadori",
-          "role": "A",
-          "perc": 55
-        },
-        {
-          "playerId": "cc800e08-9593-424a-a9d9-eb4da06257cc",
-          "name": "Elmas",
-          "role": "C",
           "perc": 45
         }
       ]

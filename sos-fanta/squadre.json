@@ -2945,8 +2945,8 @@
         "id": 7219
       },
       {
-        "player_id": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
-        "id": 5119
+        "player_id": "c265303c-baf7-46d1-978a-195aa19673c0",
+        "id": 1850
       },
       {
         "player_id": "4f923ea1-81ed-468d-84e7-bc8adf85055f",
@@ -3004,9 +3004,9 @@
     "attack": 4,
     "defense": 4,
     "comment": "Raffaele Palladino sostituisce Juric alla vigilia della 12^ giornata. Come i predecessori Gasperini e Juric, Palladino dovrebbe schierarsi con la difesa a 3 e con il doppio trequartista a supporto della prima punta. Il punto di forza sono gli esterni, i cosiddetti quinti di centrocampo, chiamati a fare la doppia fase. Palladino dovrà lavorare soprattutto a livello mentsle, una squadra che \"prende\" al tredicesimo, peggior risultato degli ultimi 11 anni. Tanti ballottaggi, soprattutto dalla trequarti in su. ",
-    "sosFantaComment": "Rivoluzione totale in casa Atalanta: dopo anni col 3-5-2, si passa al 4-3-3 con l'arrivo di Maurizio Sarri in panchina. Meccanismi da oliare, soprattutto nel reparto difensivo. Kristensen arriva per giocare, lui e Scalvini sono i favoriti in partenza. Tutto apertissimo sulle fasce: Zappacosta e Bernasconi partono in pole su Bellanova e Ahanor. Non più certa la titolarità di De Roon dopo anni, anzi: c'è Gaetano in vantaggio in cabina di regia e Sarri sta plasmando Samardzic da mezzala, ora è lui in ballottaggio su Pasalic. De Ketelaere e Raspadori provati sulle due fasce, da ali pure. Scamacca o Krstovic centravanti, è un testa a testa e sarà un'alternanza continua. Elmas è arrivato e sarà il classico jolly: mezzala o anche esterno alto, avrà spazio nelle rotazioni.",
+    "sosFantaComment": "Rivoluzione totale in casa Atalanta: dopo anni col 3-5-2, si passa al 4-3-3 con l'arrivo di Maurizio Sarri in panchina. Meccanismi da oliare, soprattutto nel reparto difensivo. Kristensen arriva per giocare, lui e Scalvini sono i favoriti in partenza. Tutto apertissimo sulle fasce: Zappacosta e Bernasconi partono in pole, ma c'è anche Bellanova. Della mediana dell'anno scorso è rimasto solo Ederson: le novità sono Gaetano in cabina di regia e soprattutto il ritorno di Kessié, che sarà sicuramente titolare. De Ketelaere e Raspadori provati sulle due fasce, da ali pure. Scamacca o Krstovic centravanti, è un testa a testa e sarà un'alternanza continua. Elmas e Samardzic da classici jolly: mezzali o anche esterni alti, avranno comunque spazio nelle rotazioni ma da jolly.",
     "created_at": "2026-07-21T13:14:35.079Z",
-    "updated_at": "2026-08-26T16:26:53.293Z",
+    "updated_at": "2026-08-29T21:16:17.464Z",
     "up": [
       {
         "player_id": "e259c4a6-1385-479b-b970-730c08be498f",
@@ -3093,59 +3093,11 @@
       {
         "players": [
           {
-            "player_id": "4f923ea1-81ed-468d-84e7-bc8adf85055f",
-            "perc": 60
-          },
-          {
-            "player_id": "570ee83d-8f44-4206-875c-10dd0430c4f3",
-            "perc": 40
-          }
-        ]
-      },
-      {
-        "players": [
-          {
             "player_id": "088bb69b-e23f-402f-bc6e-3ad4bb311560",
             "perc": 55
           },
           {
             "player_id": "bde8b7a8-9307-4d1e-a3cc-430c5bee432b",
-            "perc": 45
-          }
-        ]
-      },
-      {
-        "players": [
-          {
-            "player_id": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
-            "perc": 51
-          },
-          {
-            "player_id": "515cb6cb-fae1-428c-89cc-a97f5ccbc6c8",
-            "perc": 49
-          }
-        ]
-      },
-      {
-        "players": [
-          {
-            "player_id": "e12cb1ac-c451-4b75-bbe1-94bb602aa355",
-            "perc": 51
-          },
-          {
-            "player_id": "c54ad644-51bc-4d7c-a8d1-300c3adc9324",
-            "perc": 49
-          }
-        ]
-      },
-      {
-        "players": [
-          {
-            "player_id": "6b73ffab-1bf1-40c1-9a8c-35dbc1d0ed1d",
-            "perc": 55
-          },
-          {
-            "player_id": "cc800e08-9593-424a-a9d9-eb4da06257cc",
             "perc": 45
           }
         ]
@@ -3189,7 +3141,7 @@
       }
     ],
     "createdAt": "2026-07-21T13:14:35.079Z",
-    "updatedAt": "2026-08-26T16:26:53.293Z"
+    "updatedAt": "2026-08-29T21:16:17.464Z"
   },
   {
     "team": "FIO",

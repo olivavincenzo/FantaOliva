@@ -10038,6 +10038,89 @@
       }
     ]
   },
+  "d7febbfe-c61b-41d3-bc27-b98784322078": {
+    "player_id": "d7febbfe-c61b-41d3-bc27-b98784322078",
+    "name": "Gonzalez N.",
+    "role": "C",
+    "stats": [
+      {
+        "player_id": "d7febbfe-c61b-41d3-bc27-b98784322078",
+        "season": "s_22_23",
+        "presenze": 24,
+        "mv": null,
+        "fmv": null,
+        "gf": 6,
+        "gs": 0,
+        "rp": 0,
+        "r_plus": 2,
+        "r_minus": 0,
+        "assist": 1,
+        "amm": 3,
+        "esp": 0,
+        "autogol": 0,
+        "injured": 1,
+        "starts_eleven": 13,
+        "min_playing_time": 1351
+      },
+      {
+        "player_id": "d7febbfe-c61b-41d3-bc27-b98784322078",
+        "season": "s_23_24",
+        "presenze": 29,
+        "mv": null,
+        "fmv": null,
+        "gf": 12,
+        "gs": 0,
+        "rp": 0,
+        "r_plus": 1,
+        "r_minus": 2,
+        "assist": 2,
+        "amm": 1,
+        "esp": 0,
+        "autogol": 0,
+        "injured": 0,
+        "starts_eleven": 21,
+        "min_playing_time": 1913
+      },
+      {
+        "player_id": "d7febbfe-c61b-41d3-bc27-b98784322078",
+        "season": "s_24_25",
+        "presenze": 26,
+        "mv": 5.96,
+        "fmv": 5.96,
+        "gf": 3,
+        "gs": 0,
+        "rp": 0,
+        "r_plus": 0,
+        "r_minus": 0,
+        "assist": 2,
+        "amm": 3,
+        "esp": 0,
+        "autogol": 0,
+        "injured": 0,
+        "starts_eleven": 23,
+        "min_playing_time": 1765
+      },
+      {
+        "player_id": "d7febbfe-c61b-41d3-bc27-b98784322078",
+        "season": "s_25_26",
+        "presenze": 24,
+        "mv": 6.28,
+        "fmv": 6.96,
+        "gf": 5,
+        "gs": 0,
+        "rp": 0,
+        "r_plus": 0,
+        "r_minus": 0,
+        "assist": 0,
+        "amm": 3,
+        "esp": 1,
+        "autogol": 0,
+        "injured": 4,
+        "starts_eleven": 18,
+        "min_playing_time": 1455
+      }
+    ]
+  },
   "74386d11-89c5-443b-a5c5-bb9737ca2717": {
     "player_id": "74386d11-89c5-443b-a5c5-bb9737ca2717",
     "name": "Dodò",
@@ -11766,6 +11849,51 @@
         "injured": 0,
         "starts_eleven": 34,
         "min_playing_time": 2993
+      }
+    ]
+  },
+  "36a9825a-5980-4cda-8103-62cc944e7a83": {
+    "player_id": "36a9825a-5980-4cda-8103-62cc944e7a83",
+    "name": "Perri",
+    "role": "P",
+    "stats": [
+      {
+        "player_id": "36a9825a-5980-4cda-8103-62cc944e7a83",
+        "season": "s_24_25",
+        "presenze": 33,
+        "mv": null,
+        "fmv": null,
+        "gf": 0,
+        "gs": 46,
+        "rp": 0,
+        "r_plus": 0,
+        "r_minus": 0,
+        "assist": 0,
+        "amm": 1,
+        "esp": 0,
+        "autogol": 0,
+        "injured": 0,
+        "starts_eleven": 33,
+        "min_playing_time": 2970
+      },
+      {
+        "player_id": "36a9825a-5980-4cda-8103-62cc944e7a83",
+        "season": "s_25_26",
+        "presenze": 16,
+        "mv": null,
+        "fmv": null,
+        "gf": 0,
+        "gs": 29,
+        "rp": 0,
+        "r_plus": 0,
+        "r_minus": 0,
+        "assist": 0,
+        "amm": 2,
+        "esp": 0,
+        "autogol": 0,
+        "injured": 0,
+        "starts_eleven": 16,
+        "min_playing_time": 1440
       }
     ]
   },
@@ -17683,70 +17811,6 @@
         "injured": 1,
         "starts_eleven": 31,
         "min_playing_time": 2768
-      }
-    ]
-  },
-  "d739968a-b64a-4934-b1a7-695255f63af0": {
-    "player_id": "d739968a-b64a-4934-b1a7-695255f63af0",
-    "name": "Pedersen",
-    "role": "D",
-    "stats": [
-      {
-        "player_id": "d739968a-b64a-4934-b1a7-695255f63af0",
-        "season": "s_23_24",
-        "presenze": 28,
-        "mv": 5.72,
-        "fmv": 5.72,
-        "gf": 0,
-        "gs": 0,
-        "rp": 0,
-        "r_plus": 0,
-        "r_minus": 0,
-        "assist": 2,
-        "amm": 4,
-        "esp": 0,
-        "autogol": 0,
-        "injured": 0,
-        "starts_eleven": 16,
-        "min_playing_time": 1605
-      },
-      {
-        "player_id": "d739968a-b64a-4934-b1a7-695255f63af0",
-        "season": "s_24_25",
-        "presenze": 29,
-        "mv": 5.61,
-        "fmv": 5.54,
-        "gf": 0,
-        "gs": 0,
-        "rp": 0,
-        "r_plus": 0,
-        "r_minus": 0,
-        "assist": 0,
-        "amm": 3,
-        "esp": 0,
-        "autogol": 0,
-        "injured": 1,
-        "starts_eleven": 15,
-        "min_playing_time": 1363
-      },
-      {
-        "player_id": "d739968a-b64a-4934-b1a7-695255f63af0",
-        "season": "s_25_26",
-        "presenze": 29,
-        "mv": 5.84,
-        "fmv": 5.97,
-        "gf": 1,
-        "gs": 0,
-        "rp": 0,
-        "r_plus": 0,
-        "r_minus": 0,
-        "assist": 2,
-        "amm": 3,
-        "esp": 0,
-        "autogol": 0,
-        "injured": 2,
-        "starts_eleven": 23,
-        "min_playing_time": 2134
       }
     ]
   },
@@ -24599,6 +24663,70 @@
         "injured": 0,
         "starts_eleven": 1,
         "min_playing_time": 248
+      }
+    ]
+  },
+  "bab1552e-5098-4681-b75c-5c9be49fcb4e": {
+    "player_id": "bab1552e-5098-4681-b75c-5c9be49fcb4e",
+    "name": "Ciervo",
+    "role": "C",
+    "stats": [
+      {
+        "player_id": "bab1552e-5098-4681-b75c-5c9be49fcb4e",
+        "season": "s_23_24",
+        "presenze": 27,
+        "mv": null,
+        "fmv": null,
+        "gf": 2,
+        "gs": 0,
+        "rp": 0,
+        "r_plus": 0,
+        "r_minus": 0,
+        "assist": 2,
+        "amm": 1,
+        "esp": 0,
+        "autogol": 0,
+        "injured": 0,
+        "starts_eleven": 14,
+        "min_playing_time": 1367
+      },
+      {
+        "player_id": "bab1552e-5098-4681-b75c-5c9be49fcb4e",
+        "season": "s_24_25",
+        "presenze": 30,
+        "mv": null,
+        "fmv": null,
+        "gf": 1,
+        "gs": 0,
+        "rp": 0,
+        "r_plus": 1,
+        "r_minus": 0,
+        "assist": 2,
+        "amm": 2,
+        "esp": 0,
+        "autogol": 0,
+        "injured": 1,
+        "starts_eleven": 17,
+        "min_playing_time": 1532
+      },
+      {
+        "player_id": "bab1552e-5098-4681-b75c-5c9be49fcb4e",
+        "season": "s_25_26",
+        "presenze": 37,
+        "mv": null,
+        "fmv": null,
+        "gf": 5,
+        "gs": 0,
+        "rp": 0,
+        "r_plus": 0,
+        "r_minus": 0,
+        "assist": 3,
+        "amm": 3,
+        "esp": 0,
+        "autogol": 0,
+        "injured": 0,
+        "starts_eleven": 34,
+        "min_playing_time": 2848
       }
     ]
   },
