@@ -133,6 +133,21 @@ export class TradesComponent {
     this.subscribeEvents();
   }
 
+  render() {
+    if (!this.container) {
+      this.container = document.getElementById('trades-view-wrapper');
+    }
+    if (!this.container) return;
+
+    if (this.mode === 'compare1v1') {
+      this.renderCompare1v1Mode();
+    } else {
+      this.renderTradeMode();
+    }
+
+    this.bindEvents();
+  }
+
   subscribeEvents() {
     store.subscribe('view:changed', (view) => {
       if (view === 'trades') {
@@ -352,6 +367,8 @@ export class TradesComponent {
         label: "EQUILIBRATO",
         headline: "Seleziona i Giocatori",
         actionBadge: "Valuta",
+        tone: "score-equal",
+        badgeClass: "badge-equal",
         comment: "Aggiungi almeno un calciatore in uscita e uno in entrata per avviare la valutazione algoritmica FantaLab.",
         factors: [],
         outgoing,

@@ -1,6 +1,17 @@
-/* ==========================================================================
-   CSS VALUTATORE SCAMBI & CONFRONTI (FANTALAB ALGORITHM DESIGN)
-   ========================================================================== */
+/* Container Vista Scambi */
+#trades-view-wrapper {
+  height: calc(100vh - var(--header-height));
+  width: 100vw;
+  overflow: hidden;
+  flex: 1;
+  background-color: var(--canvas);
+  display: flex;
+  flex-direction: column;
+}
+
+#trades-view-wrapper.hidden {
+  display: none !important;
+}
 
 .trades-page-container {
   display: flex;
