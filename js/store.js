@@ -1032,12 +1032,25 @@ class Store {
     return null;
   }
 
-  getBallottaggioForPlayer(playerId) {
-    if (!playerId) return null;
+  getBallottaggioForPlayer(playerOrId) {
+    if (!playerOrId) return null;
     const team = this.getCurrentTeam();
     if (!team) return null;
 
-    const player = this.getPlayer(playerId) || (team.lineup && Object.values(team.lineup).find(p => p && (p.id === playerId || p.csvId === playerId))) || null;
+    let player = null;
+    let playerId = null;
+
+    if (typeof playerOrId === 'object' && playerOrId !== null) {
+      player = playerOrId;
+      playerId = player.id || player.csvId;
+    } else {
+      playerId = playerOrId;
+      player = this.getPlayer(playerId) ||
+               (team.lineup && Object.values(team.lineup).find(p => p && (p.id === playerId || p.csvId === playerId))) ||
+               (this.getAllPlayersFlat ? this.getAllPlayersFlat().find(p => p && (p.id === playerId || p.csvId === playerId)) : null) ||
+               null;
+    }
+
     const normName = (player?.name || '').toLowerCase().replace(/[^a-z0-9]/g, '');
     const normDisp = (player?.displayName || '').toLowerCase().replace(/[^a-z0-9]/g, '');
     const csvIdStr = player?.csvId ? player.csvId.toString() : '';
@@ -1204,7 +1217,7 @@ class Store {
     }
 
     // 3. Risoluzione intelligente per status 'ballottaggio' o sostituti diretti (1ª, 2ª, 3ª scelta)
-    if (player.status === 'ballottaggio' || (Array.isArray(player.substitutes) && player.substitutes.length > 0)) {
+    if (player && (player.status === 'ballottaggio' || (Array.isArray(player.substitutes) && player.substitutes.length > 0))) {
       const subs = Array.isArray(player.substitutes) ? player.substitutes : [];
       const subPlayers = subs.map(id => this.getPlayer(id) || this.getAllPlayers().find(p => p.id === id)).filter(Boolean);
 
