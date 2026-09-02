@@ -772,7 +772,7 @@ export const INJURIES_DATA = [
     "isSuspended": false,
     "isDoubtful": false,
     "isUnavailable": false,
-    "injuryDescription": "",
+    "injuryDescription": "Affaticamento muscolare ai flessori, terapie e sedute personalizzate.",
     "injuryDates": null,
     "returnDay": null,
     "startingProbability": 5
@@ -967,7 +967,7 @@ export const INJURIES_DATA = [
     "isSuspended": false,
     "isDoubtful": false,
     "isUnavailable": false,
-    "injuryDescription": "",
+    "injuryDescription": "Risentimento muscolare ai flessori, monitoraggio e lavoro differenziato.",
     "injuryDates": null,
     "returnDay": null,
     "startingProbability": 5
@@ -1378,7 +1378,7 @@ export const INJURIES_DATA = [
     "isSuspended": false,
     "isDoubtful": false,
     "isUnavailable": false,
-    "injuryDescription": "",
+    "injuryDescription": "Fastidio muscolare, esami strumentali e terapie di recupero.",
     "injuryDates": null,
     "returnDay": null,
     "startingProbability": 5
@@ -1438,7 +1438,7 @@ export const INJURIES_DATA = [
     "isSuspended": false,
     "isDoubtful": false,
     "isUnavailable": false,
-    "injuryDescription": "",
+    "injuryDescription": "Problema alla caviglia, sedute atletiche personalizzate.",
     "injuryDates": null,
     "returnDay": null,
     "startingProbability": 5
@@ -1504,7 +1504,7 @@ export const INJURIES_DATA = [
     "isSuspended": false,
     "isDoubtful": false,
     "isUnavailable": false,
-    "injuryDescription": "",
+    "injuryDescription": "Sovraccarico muscolare, gestione carichi di lavoro in via precauzionale.",
     "injuryDates": null,
     "returnDay": null,
     "startingProbability": 5

@@ -715,11 +715,13 @@ class Store {
     if (!player) return null;
     if (!this._injuriesMap) {
       this._injuriesMap = new Map();
-      INJURIES_DATA.forEach(item => {
-        if (item.name) this._injuriesMap.set(item.name.toLowerCase().trim(), item);
-        if (item.displayName) this._injuriesMap.set(item.displayName.toLowerCase().trim(), item);
-        if (item.id) this._injuriesMap.set(item.id, item);
-      });
+      INJURIES_DATA
+        .filter(item => item && (item.isInjured || item.isDoubtful || item.isSuspended))
+        .forEach(item => {
+          if (item.name) this._injuriesMap.set(item.name.toLowerCase().trim(), item);
+          if (item.displayName) this._injuriesMap.set(item.displayName.toLowerCase().trim(), item);
+          if (item.id) this._injuriesMap.set(item.id, item);
+        });
     }
 
     const pId = player.id || player.fantalabId || player.csvId;
@@ -729,7 +731,6 @@ class Store {
     return this._injuriesMap.get(pId) || 
            this._injuriesMap.get(pName) || 
            this._injuriesMap.get(pDisp) || 
-           (pName ? INJURIES_DATA.find(i => (i.name || '').toLowerCase().trim() === pName) : null) || 
            null;
   }
 

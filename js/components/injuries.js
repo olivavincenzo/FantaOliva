@@ -56,7 +56,7 @@ export class InjuriesComponent {
 
   getFilteredList() {
     let list = INJURIES_DATA
-      .filter(item => item && item.name && item.name.toLowerCase() !== 'giocatore' && item.name.toLowerCase() !== 'nuovo giocatore')
+      .filter(item => item && item.name && item.name.toLowerCase() !== 'giocatore' && item.name.toLowerCase() !== 'nuovo giocatore' && (item.isInjured || item.isSuspended || item.isDoubtful))
       .map(item => {
       const storePlayer = store.getPlayer(item.name) || 
                           store.getPlayer(item.displayName) || 
@@ -100,8 +100,6 @@ export class InjuriesComponent {
       list = list.filter(p => p.isDoubtful);
     } else if (this.statusFilter === 'SUSPENDED') {
       list = list.filter(p => p.isSuspended);
-    } else if (this.statusFilter === 'UNAVAILABLE') {
-      list = list.filter(p => p.isUnavailable && !p.isInjured);
     } else if (this.statusFilter === 'MYTEAM') {
       list = list.filter(p => p.isInMyTeam);
     }
@@ -124,11 +122,11 @@ export class InjuriesComponent {
     this.container = this.container || document.getElementById(this.containerId);
     if (!this.container) return;
 
+    const baseList = INJURIES_DATA.filter(item => item && item.name && (item.isInjured || item.isSuspended || item.isDoubtful));
     const filtered = this.getFilteredList();
-    const totalInjured = INJURIES_DATA.filter(p => p.isInjured).length;
-    const totalSuspended = INJURIES_DATA.filter(p => p.isSuspended).length;
-    const totalDoubtful = INJURIES_DATA.filter(p => p.isDoubtful).length;
-    const totalUnavailable = INJURIES_DATA.filter(p => p.isUnavailable && !p.isInjured).length;
+    const totalInjured = baseList.filter(p => p.isInjured).length;
+    const totalSuspended = baseList.filter(p => p.isSuspended).length;
+    const totalDoubtful = baseList.filter(p => p.isDoubtful).length;
     const teams = store.getAllTeams();
 
     this.container.innerHTML = `
@@ -139,7 +137,7 @@ export class InjuriesComponent {
           <div>
             <p class="context">Serie A · Report Medico & Squalifiche</p>
             <div class="team-heading-row">
-              <h1 class="team-title-heading">INFERMERIA & INDISPONIBILI</h1>
+              <h1 class="team-title-heading">INFERMERIA & INFORTUNATI</h1>
             </div>
           </div>
           <div style="display: flex; align-items: center; gap: 10px;">
@@ -152,8 +150,8 @@ export class InjuriesComponent {
                 <button type="button" class="col-btn ${this.gridColumns === 4 ? 'is-active' : ''}" data-cols="4">4</button>
               </div>
             </div>
-            <span class="listone-total-badge" title="Indisponibili visualizzati">
-              <strong>${filtered.length}</strong>/${INJURIES_DATA.length}
+            <span class="listone-total-badge" title="Infortunati visualizzati">
+              <strong>${filtered.length}</strong>/${baseList.length}
             </span>
           </div>
         </header>
@@ -212,11 +210,10 @@ export class InjuriesComponent {
           <!-- Dropdown Stato Indisponibilità -->
           <div class="listone-select-pill-wrap" title="Filtra per Stato">
             <select class="injuries-status-select filter filter-select" id="injuries-status-select" aria-label="Filtro Stato">
-              <option value="ALL" ${this.statusFilter === 'ALL' ? 'selected' : ''}>Tutti gli Indisponibili (${INJURIES_DATA.length})</option>
-              <option value="INJURED" ${this.statusFilter === 'INJURED' ? 'selected' : ''}>🏥 Solo Infortunati (${totalInjured})</option>
-              <option value="SUSPENDED" ${this.statusFilter === 'SUSPENDED' ? 'selected' : ''}>🟥 Solo Squalificati (${totalSuspended})</option>
-              <option value="UNAVAILABLE" ${this.statusFilter === 'UNAVAILABLE' ? 'selected' : ''}>🚫 Fuori Rosa / Scelta Tecnica (${totalUnavailable})</option>
-              <option value="MYTEAM" ${this.statusFilter === 'MYTEAM' ? 'selected' : ''}>⭐ Solo Mia Rosa</option>
+              <option value="ALL" ${this.statusFilter === 'ALL' ? 'selected' : ''}>Tutti gli Infortunati (${baseList.length})</option>
+              <option value="INJURED" ${this.statusFilter === 'INJURED' ? 'selected' : ''}>🏥 Infortunati (${totalInjured})</option>
+              <option value="SUSPENDED" ${this.statusFilter === 'SUSPENDED' ? 'selected' : ''}>🟥 Squalificati (${totalSuspended})</option>
+              <option value="MYTEAM" ${this.statusFilter === 'MYTEAM' ? 'selected' : ''}>⭐ Mia Rosa</option>
             </select>
             <span class="select-arrow">▾</span>
           </div>
