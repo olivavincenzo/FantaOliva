@@ -100,6 +100,8 @@ export class InjuriesComponent {
       list = list.filter(p => p.isDoubtful);
     } else if (this.statusFilter === 'SUSPENDED') {
       list = list.filter(p => p.isSuspended);
+    } else if (this.statusFilter === 'UNAVAILABLE') {
+      list = list.filter(p => p.isUnavailable && !p.isInjured);
     } else if (this.statusFilter === 'MYTEAM') {
       list = list.filter(p => p.isInMyTeam);
     }
@@ -126,6 +128,7 @@ export class InjuriesComponent {
     const totalInjured = INJURIES_DATA.filter(p => p.isInjured).length;
     const totalSuspended = INJURIES_DATA.filter(p => p.isSuspended).length;
     const totalDoubtful = INJURIES_DATA.filter(p => p.isDoubtful).length;
+    const totalUnavailable = INJURIES_DATA.filter(p => p.isUnavailable && !p.isInjured).length;
     const teams = store.getAllTeams();
 
     this.container.innerHTML = `
@@ -209,9 +212,10 @@ export class InjuriesComponent {
           <!-- Dropdown Stato Indisponibilità -->
           <div class="listone-select-pill-wrap" title="Filtra per Stato">
             <select class="injuries-status-select filter filter-select" id="injuries-status-select" aria-label="Filtro Stato">
-              <option value="ALL" ${this.statusFilter === 'ALL' ? 'selected' : ''}>Tutti gli Stati</option>
+              <option value="ALL" ${this.statusFilter === 'ALL' ? 'selected' : ''}>Tutti gli Indisponibili (${INJURIES_DATA.length})</option>
               <option value="INJURED" ${this.statusFilter === 'INJURED' ? 'selected' : ''}>🏥 Solo Infortunati (${totalInjured})</option>
               <option value="SUSPENDED" ${this.statusFilter === 'SUSPENDED' ? 'selected' : ''}>🟥 Solo Squalificati (${totalSuspended})</option>
+              <option value="UNAVAILABLE" ${this.statusFilter === 'UNAVAILABLE' ? 'selected' : ''}>🚫 Fuori Rosa / Scelta Tecnica (${totalUnavailable})</option>
               <option value="MYTEAM" ${this.statusFilter === 'MYTEAM' ? 'selected' : ''}>⭐ Solo Mia Rosa</option>
             </select>
             <span class="select-arrow">▾</span>
@@ -241,11 +245,15 @@ export class InjuriesComponent {
     const selectedPlayer = store.getSelectedPlayer();
     const isSelected = selectedPlayer && (selectedPlayer.id === item.id || selectedPlayer.name?.toLowerCase() === item.name?.toLowerCase());
 
+    const isFuoriRosa = item.isUnavailable && !item.isInjured;
+
     const statusBadgeHtml = item.isSuspended 
       ? `<span class="injury-status-badge is-suspended"><i class="fa-solid fa-square"></i> Squalificato</span>`
       : (item.isDoubtful 
           ? `<span class="injury-status-badge is-doubtful"><i class="fa-solid fa-triangle-exclamation"></i> In dubbio</span>`
-          : `<span class="injury-status-badge is-injured"><i class="fa-solid fa-hospital"></i> Infortunato</span>`);
+          : (isFuoriRosa 
+              ? `<span class="injury-status-badge is-unavailable" style="background: rgba(100, 116, 139, 0.12); color: #64748b; border: 1px solid rgba(100, 116, 139, 0.28);"><i class="fa-solid fa-user-slash"></i> Fuori Rosa / Scelta Tecnica</span>`
+              : `<span class="injury-status-badge is-injured"><i class="fa-solid fa-hospital"></i> Infortunato</span>`));
 
     const returnHtml = item.returnDay 
       ? `<span class="injury-return-badge" title="Rientro stimato"><i class="fa-solid fa-clock-rotate-left"></i> Rientro: <strong>${item.returnDay}ª Giornata</strong></span>`
@@ -289,7 +297,21 @@ export class InjuriesComponent {
             </div>
             <div>${sanitizeHtml(item.injuryDescription)}</div>
           </div>
-        ` : ''}
+        ` : (isFuoriRosa ? `
+          <div class="injury-diagnosis-box" style="background: rgba(100, 116, 139, 0.05); border-color: rgba(100, 116, 139, 0.22);">
+            <div class="injury-diagnosis-title" style="color: #64748b;">
+              <i class="fa-solid fa-circle-info"></i> Motivazione Indisponibilità
+            </div>
+            <div>Calciatore attualmente fuori lista o non convocato per scelta tecnica / mercato.</div>
+          </div>
+        ` : `
+          <div class="injury-diagnosis-box">
+            <div class="injury-diagnosis-title">
+              <i class="fa-solid fa-stethoscope"></i> Diagnosi Clinica
+            </div>
+            <div>Infortunato - in attesa di comunicato ufficiale o esami strumentali dello staff medico.</div>
+          </div>
+        `)}
       </div>
     `;
   }
