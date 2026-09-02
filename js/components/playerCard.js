@@ -167,6 +167,7 @@ export function createPlayerCard(player, options = {}) {
   const leagueOwner = store.getPlayerLeagueOwner(player);
   const isInMyTeam = store.isPlayerInMyTeam(player.id) || (leagueOwner && leagueOwner.isMyTeam);
   const myTeamInfo = isInMyTeam ? store.getMyTeamPlayerInfo(player.id) : null;
+  const effectiveAvailable = (leagueOwner ? false : isAvailable);
   const injury = store.getPlayerInjury ? store.getPlayerInjury(player) : null;
   const isInjured = injury && (injury.isInjured || injury.isDoubtful || injury.status === 'injured');
   const injuryBtnHtml = isInjured ? `
