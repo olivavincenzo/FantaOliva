@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="css/strategy-manager.css">
   <link rel="stylesheet" href="css/my-team.css">
   <link rel="stylesheet" href="css/injuries.css">
+  <link rel="stylesheet" href="css/trades.css?v=2">
   <link rel="stylesheet" href="css/responsive.css?v=2">
 </head>
 
@@ -39,7 +40,7 @@
     <!-- HEADER TATTICO SUPERIORE -->
     <header class="app-header">
 
-      <!-- Sezione Sinistra: Switcher Viste (Lavagna Tattica / FantaLega / Infermeria / Listone) -->
+      <!-- Sezione Sinistra: Switcher Viste (Lavagna Tattica / FantaLega / Infermeria / Scambi / Listone) -->
       <div class="header-left-section">
         <div class="view-switch-nav">
           <button id="view-tab-tactical" class="view-switch-btn is-active" title="Visualizza Campo e Lavagna Tattica Serie A">
@@ -50,6 +51,9 @@
           </button>
           <button id="view-tab-injuries" class="view-switch-btn" title="Visualizza Infermeria & Indisponibili Serie A">
             <i class="fa-solid fa-notes-medical"></i> <span>Infermeria</span>
+          </button>
+          <button id="view-tab-trades" class="view-switch-btn" title="Valutatore Scambi & Confronti FantaLab">
+            <i class="fa-solid fa-arrows-rotate"></i> <span>Scambi</span>
           </button>
           <button id="view-tab-listone" class="view-switch-btn"
             title="Visualizza Listone Completo Calciatori Serie A">
@@ -194,6 +198,11 @@
       <!-- Rendered by InjuriesComponent -->
     </div>
 
+    <!-- VISTA 4: VALUTATORE SCAMBI & CONFRONTI -->
+    <div class="listone-view-wrapper hidden" id="trades-view-wrapper">
+      <!-- Rendered by TradesComponent -->
+    </div>
+
     <!-- BACKDROP OVERLAY PER DRAWER MOBILI (SQUADRE / ISPETTORE) -->
     <div class="mobile-drawer-backdrop hidden" id="mobile-drawer-backdrop"></div>
 
@@ -211,6 +220,10 @@
         <button id="mobile-injuries-btn" class="nav-item" aria-label="Infermeria" title="Infermeria">
           <i class="fa-solid fa-notes-medical"></i>
           <span class="nav-label">Infermeria</span>
+        </button>
+        <button id="mobile-trades-btn" class="nav-item" aria-label="Scambi & Confronti" title="Scambi">
+          <i class="fa-solid fa-arrows-rotate"></i>
+          <span class="nav-label">Scambi</span>
         </button>
         <button id="mobile-listone-btn" class="nav-item" aria-label="Listone Calciatori" title="Listone">
           <i class="fa-solid fa-table-list"></i>

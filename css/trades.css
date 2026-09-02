@@ -1,0 +1,823 @@
+/* ==========================================================================
+   CSS VALUTATORE SCAMBI & CONFRONTI (FANTALAB ALGORITHM DESIGN)
+   ========================================================================== */
+
+.trades-page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 14px 18px 28px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+/* Header & Controls Toolbar */
+.trades-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.trades-mode-selector {
+  display: flex;
+  align-items: center;
+  background: var(--soft);
+  padding: 3px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+}
+
+.trades-mode-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border: none;
+  background: transparent;
+  color: var(--body);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: calc(var(--radius-sm) - 2px);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.trades-mode-btn:hover {
+  color: var(--ink);
+}
+
+.trades-mode-btn.is-active {
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.trades-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Griglia Principale Scambi */
+.trades-main-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 16px;
+  align-items: stretch;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 960px) {
+  .trades-main-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Colonne Scambio */
+.trade-column {
+  display: flex;
+  flex-direction: column;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  box-shadow: 0 2px 10px rgba(18, 18, 25, 0.03);
+  position: relative;
+  transition: border-color 0.2s ease;
+}
+
+.trade-column.outgoing-col {
+  border-top: 4px solid var(--red);
+}
+
+.trade-column.incoming-col {
+  border-top: 4px solid var(--green);
+}
+
+.trade-column-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+.trade-col-title-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.trade-col-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+
+.outgoing-col .trade-col-icon {
+  background: rgba(207, 85, 93, 0.12);
+  color: var(--red);
+}
+
+.incoming-col .trade-col-icon {
+  background: rgba(74, 155, 88, 0.12);
+  color: var(--green);
+}
+
+.trade-col-title {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--ink);
+  letter-spacing: -0.2px;
+}
+
+.trade-col-subtitle {
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+/* Lista Giocatori Selezionati */
+.trade-players-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  min-height: 120px;
+}
+
+/* Card Giocatore nello Scambio */
+.trade-player-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.trade-player-card:hover {
+  background: #ebebee;
+  border-color: #d8d8de;
+}
+
+.trade-player-card-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.trade-player-photo {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #e2e2e8;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.trade-player-photo-fallback {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #dcdce2;
+  color: var(--body);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.trade-player-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.trade-player-name-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow: hidden;
+}
+
+.trade-player-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.trade-role-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 800;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.role-badge-P { background: var(--role-p); }
+.role-badge-D { background: var(--role-d); }
+.role-badge-C { background: var(--role-c); }
+.role-badge-A { background: var(--role-a); }
+
+.trade-player-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.trade-player-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding-left: 10px;
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.trade-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 28px;
+}
+
+.trade-stat-val {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.trade-stat-lbl {
+  font-size: 9px;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.trade-remove-btn {
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 6px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trade-remove-btn:hover {
+  background: rgba(207, 85, 93, 0.15);
+  color: var(--red);
+}
+
+/* Slot Aggiunta Giocatore */
+.trade-add-slot-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px;
+  background: transparent;
+  border: 1.5px dashed var(--line);
+  border-radius: var(--radius-md);
+  color: var(--muted);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.trade-add-slot-btn:hover {
+  background: var(--soft);
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+/* Colonna Centrale: Swap Button */
+.trade-center-divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.trade-swap-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.trade-swap-btn:hover {
+  transform: rotate(180deg) scale(1.1);
+  background: var(--soft);
+  border-color: var(--ink);
+}
+
+/* ==========================================================================
+   RISULTATO E VERDETTO DELLO SCAMBIO (FANTALAB SCORE CARD)
+   ========================================================================== */
+
+.trade-verdict-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(18, 18, 25, 0.04);
+  margin-bottom: 20px;
+}
+
+.trade-verdict-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.trade-verdict-main-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.trade-score-circle {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 850;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+  border: 4px solid transparent;
+}
+
+.trade-score-circle.score-excellent {
+  background: #edf8ed;
+  color: #2e7d32;
+  border-color: #4a9b58;
+}
+
+.trade-score-circle.score-good {
+  background: #e8f5e9;
+  color: #388e3c;
+  border-color: #81c784;
+}
+
+.trade-score-circle.score-mild-good {
+  background: #f1f8e9;
+  color: #689f38;
+  border-color: #aed581;
+}
+
+.trade-score-circle.score-equal {
+  background: #fff8e1;
+  color: #f57f17;
+  border-color: #fbc02d;
+}
+
+.trade-score-circle.score-bad {
+  background: #fbe9e7;
+  color: #d84315;
+  border-color: #ff8a65;
+}
+
+.trade-score-circle.score-very-bad {
+  background: #fcedee;
+  color: #c62828;
+  border-color: #cf555d;
+}
+
+.trade-verdict-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.trade-action-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  width: fit-content;
+}
+
+.trade-action-pill.badge-excellent,
+.trade-action-pill.badge-good,
+.trade-action-pill.badge-mild-good {
+  background: var(--green);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(74, 155, 88, 0.25);
+}
+
+.trade-action-pill.badge-equal {
+  background: #f59e0b;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.25);
+}
+
+.trade-action-pill.badge-bad,
+.trade-action-pill.badge-very-bad {
+  background: var(--red);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(207, 85, 93, 0.25);
+}
+
+.trade-verdict-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  width: fit-content;
+}
+
+.trade-verdict-badge.badge-excellent,
+.trade-verdict-badge.badge-good,
+.trade-verdict-badge.badge-mild-good {
+  background: rgba(74, 155, 88, 0.12);
+  color: var(--green);
+}
+
+.trade-verdict-badge.badge-equal {
+  background: rgba(245, 158, 11, 0.15);
+  color: #d97706;
+}
+
+.trade-verdict-badge.badge-bad,
+.trade-verdict-badge.badge-very-bad {
+  background: rgba(207, 85, 93, 0.12);
+  color: var(--red);
+}
+
+.trade-verdict-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--ink);
+  letter-spacing: -0.3px;
+}
+
+/* Commento Generato dall'Algoritmo FantaLab */
+.trade-comment-box {
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--ink);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--body);
+  margin-bottom: 16px;
+}
+
+/* Row Deltas Sintetici (Valore, MV, FMV, Titolarità) */
+.trade-deltas-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 12px;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  margin-bottom: 20px;
+}
+
+.trade-delta-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.trade-delta-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.trade-delta-value {
+  font-size: 15px;
+  font-weight: 850;
+  color: var(--ink);
+}
+
+.trade-delta-value.is-pos {
+  color: var(--green);
+}
+
+.trade-delta-value.is-neg {
+  color: var(--red);
+}
+
+/* Sezione Dettagli Analisi Parametri */
+.trade-factors-section {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.trade-factors-title {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--ink);
+  letter-spacing: -0.2px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.trade-factors-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.trade-factor-card {
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.trade-factor-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trade-factor-name {
+  font-size: 12.5px;
+  font-weight: 750;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.trade-factor-status-badge {
+  font-size: 11px;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.trade-factor-status-badge.status-gain {
+  background: rgba(74, 155, 88, 0.15);
+  color: var(--green);
+}
+
+.trade-factor-status-badge.status-loss {
+  background: rgba(207, 85, 93, 0.15);
+  color: var(--red);
+}
+
+.trade-factor-status-badge.status-neutral {
+  background: rgba(0, 0, 0, 0.06);
+  color: var(--muted);
+}
+
+.trade-factor-bars-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.trade-bar-wrapper {
+  flex: 1;
+  height: 7px;
+  background: #e2e2e8;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.trade-bar-fill-give {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: var(--red);
+  border-radius: 4px;
+  opacity: 0.85;
+}
+
+.trade-bar-fill-take {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: var(--green);
+  border-radius: 4px;
+}
+
+/* ==========================================================================
+   MODALITÀ CONFRONTO 1 VS 1 DETTAGLIATO
+   ========================================================================== */
+
+.comparison-table-wrapper {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.comparison-header-row {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  padding: 16px;
+  background: var(--soft);
+  border-bottom: 1px solid var(--line);
+  align-items: center;
+}
+
+.comparison-p1-header,
+.comparison-p2-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.comparison-p2-header {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.comparison-vs-badge {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--muted);
+  background: var(--paper);
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid var(--line);
+}
+
+.comparison-rows-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.comparison-stat-row {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--line);
+  align-items: center;
+}
+
+.comparison-stat-row:last-child {
+  border-bottom: none;
+}
+
+.comparison-val-left {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.comparison-lbl {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  text-align: center;
+  min-width: 130px;
+}
+
+.comparison-val-right {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink);
+  text-align: right;
+}
+
+.stat-win {
+  color: var(--green) !important;
+  font-weight: 850 !important;
+}
+
+.stat-lose {
+  color: var(--muted) !important;
+}
+
+/* ==========================================================================
+   MODALE SELETTORE RAPIDO CALCIATORI
+   ========================================================================== */
+
+.trade-player-modal-body {
+  padding: 16px;
+  max-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.trade-modal-search-row {
+  display: flex;
+  gap: 8px;
+}
+
+.trade-modal-filters-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.trade-modal-player-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  overflow-y: auto;
+  max-height: 420px;
+  padding-right: 4px;
+}
+
+.trade-modal-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.trade-modal-item:hover {
+  background: #ebebee;
+  border-color: var(--ink);
+}
+
+.trade-modal-item-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

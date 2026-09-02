@@ -13,6 +13,7 @@ import { StrategyManagerComponent } from './components/strategyManager.js';
 import { MyTeamComponent } from './components/myTeam.js';
 import { LeagueTeamsComponent } from './components/leagueTeams.js';
 import { InjuriesComponent } from './components/injuries.js';
+import { TradesComponent } from './components/trades.js';
 import { initHistoryModal } from './components/historyManager.js';
 import { initExportModal } from './components/exporter.js';
 import { initSyncModal } from './components/syncManager.js';
@@ -28,6 +29,7 @@ class App {
     this.myTeam = null;
     this.leagueTeams = null;
     this.injuries = null;
+    this.trades = null;
     this.strategyManager = null;
   }
 
@@ -49,6 +51,8 @@ class App {
     this.leagueTeams.init();
     this.injuries = new InjuriesComponent('injuries-view-wrapper');
     this.injuries.init();
+    this.trades = new TradesComponent('trades-view-wrapper');
+    this.trades.init();
     this.strategyManager = new StrategyManagerComponent('strategy-modal');
     this.strategyManager.init();
 
@@ -76,12 +80,14 @@ class App {
     const myteamTab = document.querySelector('#view-tab-myteam');
     const leagueTab = document.querySelector('#view-tab-league');
     const injuriesTab = document.querySelector('#view-tab-injuries');
+    const tradesTab = document.querySelector('#view-tab-trades');
     const listoneTab = document.querySelector('#view-tab-listone');
 
     const tacticalView = document.querySelector('#tactical-view-wrapper');
     const myteamView = document.querySelector('#my-team-view-wrapper');
     const leagueView = document.querySelector('#league-view-wrapper');
     const injuriesView = document.querySelector('#injuries-view-wrapper');
+    const tradesView = document.querySelector('#trades-view-wrapper');
     const listoneView = document.querySelector('#listone-view-wrapper');
     const pitchContainer = document.querySelector('#pitch-container');
     const tacticalToolbar = document.querySelector('#pitch-tactical-toolbar');
@@ -91,11 +97,12 @@ class App {
     const mobileMyTeamBtn = document.querySelector('#mobile-myteam-btn');
     const mobileLeagueBtn = document.querySelector('#mobile-league-btn');
     const mobileInjuriesBtn = document.querySelector('#mobile-injuries-btn');
+    const mobileTradesBtn = document.querySelector('#mobile-trades-btn');
     const mobileListoneBtn = document.querySelector('#mobile-listone-btn');
 
     // Reset All Active classes
-    [tacticalTab, myteamTab, leagueTab, injuriesTab, listoneTab].forEach(t => t?.classList.remove('is-active'));
-    [mobileFieldBtn, mobileMyTeamBtn, mobileLeagueBtn, mobileInjuriesBtn, mobileListoneBtn].forEach(b => b?.classList.remove('active'));
+    [tacticalTab, myteamTab, leagueTab, injuriesTab, tradesTab, listoneTab].forEach(t => t?.classList.remove('is-active'));
+    [mobileFieldBtn, mobileMyTeamBtn, mobileLeagueBtn, mobileInjuriesBtn, mobileTradesBtn, mobileListoneBtn].forEach(b => b?.classList.remove('active'));
 
     document.body.classList.remove('view-myteam-mode');
 
@@ -106,6 +113,7 @@ class App {
       myteamView?.classList.add('hidden');
       leagueView?.classList.add('hidden');
       injuriesView?.classList.add('hidden');
+      tradesView?.classList.add('hidden');
       listoneView?.classList.add('hidden');
       tacticalToolbar?.classList.remove('hidden');
       mobileFieldBtn?.classList.add('active');
@@ -117,6 +125,7 @@ class App {
       myteamView?.classList.remove('hidden');
       leagueView?.classList.add('hidden');
       injuriesView?.classList.add('hidden');
+      tradesView?.classList.add('hidden');
       listoneView?.classList.add('hidden');
       tacticalToolbar?.classList.add('hidden');
       mobileMyTeamBtn?.classList.add('active');
@@ -130,6 +139,7 @@ class App {
       myteamView?.classList.add('hidden');
       leagueView?.classList.remove('hidden');
       injuriesView?.classList.add('hidden');
+      tradesView?.classList.add('hidden');
       listoneView?.classList.add('hidden');
       tacticalToolbar?.classList.add('hidden');
       mobileLeagueBtn?.classList.add('active');
@@ -143,11 +153,25 @@ class App {
       myteamView?.classList.add('hidden');
       leagueView?.classList.add('hidden');
       injuriesView?.classList.remove('hidden');
+      tradesView?.classList.add('hidden');
       listoneView?.classList.add('hidden');
       tacticalToolbar?.classList.add('hidden');
       mobileInjuriesBtn?.classList.add('active');
       activeTeam?.classList.add('hidden');
       this.injuries?.render();
+    } else if (viewName === 'trades') {
+      tradesTab?.classList.add('is-active');
+      tacticalView?.classList.add('hidden');
+      pitchContainer?.classList.add('hidden');
+      myteamView?.classList.add('hidden');
+      leagueView?.classList.add('hidden');
+      injuriesView?.classList.add('hidden');
+      tradesView?.classList.remove('hidden');
+      listoneView?.classList.add('hidden');
+      tacticalToolbar?.classList.add('hidden');
+      mobileTradesBtn?.classList.add('active');
+      activeTeam?.classList.add('hidden');
+      this.trades?.render();
     } else if (viewName === 'listone') {
       listoneTab?.classList.add('is-active');
       tacticalView?.classList.add('hidden');
@@ -155,6 +179,7 @@ class App {
       myteamView?.classList.add('hidden');
       leagueView?.classList.add('hidden');
       injuriesView?.classList.add('hidden');
+      tradesView?.classList.add('hidden');
       listoneView?.classList.remove('hidden');
       tacticalToolbar?.classList.add('hidden');
       mobileListoneBtn?.classList.add('active');
@@ -168,24 +193,28 @@ class App {
     const myteamTab = document.querySelector('#view-tab-myteam');
     const leagueTab = document.querySelector('#view-tab-league');
     const injuriesTab = document.querySelector('#view-tab-injuries');
+    const tradesTab = document.querySelector('#view-tab-trades');
     const listoneTab = document.querySelector('#view-tab-listone');
 
     const mobileFieldBtn = document.querySelector('#mobile-field-btn');
     const mobileMyTeamBtn = document.querySelector('#mobile-myteam-btn');
     const mobileLeagueBtn = document.querySelector('#mobile-league-btn');
     const mobileInjuriesBtn = document.querySelector('#mobile-injuries-btn');
+    const mobileTradesBtn = document.querySelector('#mobile-trades-btn');
     const mobileListoneBtn = document.querySelector('#mobile-listone-btn');
 
     tacticalTab?.addEventListener('click', () => this.switchView('tactical'));
     myteamTab?.addEventListener('click', () => this.switchView('myteam'));
     leagueTab?.addEventListener('click', () => this.switchView('league'));
     injuriesTab?.addEventListener('click', () => this.switchView('injuries'));
+    tradesTab?.addEventListener('click', () => this.switchView('trades'));
     listoneTab?.addEventListener('click', () => this.switchView('listone'));
 
     mobileFieldBtn?.addEventListener('click', () => this.switchView('tactical'));
     mobileMyTeamBtn?.addEventListener('click', () => this.switchView('myteam'));
     mobileLeagueBtn?.addEventListener('click', () => this.switchView('league'));
     mobileInjuriesBtn?.addEventListener('click', () => this.switchView('injuries'));
+    mobileTradesBtn?.addEventListener('click', () => this.switchView('trades'));
     mobileListoneBtn?.addEventListener('click', () => this.switchView('listone'));
   }
 
