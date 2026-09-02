@@ -93,11 +93,11 @@
     "player_id": "0a63d021-85fa-49ab-82af-fb94cdc997a1",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 20,
+    "fascia": 12,
     "fascia_second": null,
     "fascia_third": null,
-    "price": 0,
-    "perc_price": "0.0000",
+    "price": 4,
+    "perc_price": "0.8000",
     "ex_fmv": null,
     "comment": null,
     "tit_index": null,
@@ -108,9 +108,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-07-23",
-    "updated_at": "2026-08-30",
+    "updated_at": "2026-09-01",
     "createdAt": "2026-07-23",
-    "updatedAt": "2026-08-30",
+    "updatedAt": "2026-09-01",
     "player": {
       "player_id": "0a63d021-85fa-49ab-82af-fb94cdc997a1",
       "role": "A",
@@ -151,6 +151,36 @@
     }
   },
   {
+    "player_id": "ca1a4e82-6e21-4c6d-8daa-45de90b977b0",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 14,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 2,
+    "perc_price": "0.4000",
+    "ex_fmv": null,
+    "comment": "Mbala Nzola è passato al Cagliari a pochi secondi dalla chiusura del calciomercato. L’attaccante angolano, dopo l’esperienza tutt’altro che positiva tra Pisa (3 gol) e Sassuolo (1 gol), proverà a rilanciarsi in un Cagliari dove potrà giocarsi le sue carte con Mendy e Kevin Carlos, ancora a secco di gol finora. Il classe 1996, tranne per l’exploit a Spezia dove segnò 11 e 12 gol in due stagioni, non ha mai saputo dare continuità alle sue prestazioni anche per via di comportamenti sopra le righe. Bravo nel gioco spalle alla porta e anche dentro l’area di rigore, al fantacalcio a pochi crediti si può prendere come ultimo slot.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-07-23",
+    "updated_at": "2026-09-01",
+    "createdAt": "2026-07-23",
+    "updatedAt": "2026-09-01",
+    "player": {
+      "player_id": "ca1a4e82-6e21-4c6d-8daa-45de90b977b0",
+      "role": "A",
+      "mantra_roles": [
+        "Pc"
+      ]
+    }
+  },
+  {
     "player_id": "7e004e1c-1d3a-4b48-bf93-e3a912b7b7f3",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
@@ -174,36 +204,6 @@
     "updatedAt": "2026-08-02",
     "player": {
       "player_id": "7e004e1c-1d3a-4b48-bf93-e3a912b7b7f3",
-      "role": "A",
-      "mantra_roles": [
-        "Pc"
-      ]
-    }
-  },
-  {
-    "player_id": "866cbbd2-aa03-4161-af69-b95d337460f4",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 20,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 0,
-    "perc_price": "0.0000",
-    "ex_fmv": null,
-    "comment": null,
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": null,
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-23",
-    "updated_at": "2026-08-30",
-    "createdAt": "2026-07-23",
-    "updatedAt": "2026-08-30",
-    "player": {
-      "player_id": "866cbbd2-aa03-4161-af69-b95d337460f4",
       "role": "A",
       "mantra_roles": [
         "Pc"
@@ -237,36 +237,6 @@
       "role": "A",
       "mantra_roles": [
         "A"
-      ]
-    }
-  },
-  {
-    "player_id": "a3a9c8fe-19e5-4bd3-86f2-dc1959163ada",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 20,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 0,
-    "perc_price": "0.0000",
-    "ex_fmv": null,
-    "comment": null,
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": null,
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-23",
-    "updated_at": "2026-08-30",
-    "createdAt": "2026-07-23",
-    "updatedAt": "2026-08-30",
-    "player": {
-      "player_id": "a3a9c8fe-19e5-4bd3-86f2-dc1959163ada",
-      "role": "A",
-      "mantra_roles": [
-        "Pc"
       ]
     }
   },
@@ -327,36 +297,6 @@
       "role": "A",
       "mantra_roles": [
         "W",
-        "A"
-      ]
-    }
-  },
-  {
-    "player_id": "8062eeb3-ae6f-47db-b242-e8177da7652a",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 20,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 0,
-    "perc_price": "0.0000",
-    "ex_fmv": null,
-    "comment": null,
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": null,
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-23",
-    "updated_at": "2026-08-31",
-    "createdAt": "2026-07-23",
-    "updatedAt": "2026-08-31",
-    "player": {
-      "player_id": "8062eeb3-ae6f-47db-b242-e8177da7652a",
-      "role": "A",
-      "mantra_roles": [
         "A"
       ]
     }
@@ -425,7 +365,7 @@
     "player_id": "5a25ffbb-db05-482f-91f8-24e76380f7c8",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 20,
+    "fascia": 18,
     "fascia_second": null,
     "fascia_third": null,
     "price": null,
@@ -440,9 +380,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-07-23",
-    "updated_at": "2026-08-30",
+    "updated_at": "2026-09-01",
     "createdAt": "2026-07-23",
-    "updatedAt": "2026-08-30",
+    "updatedAt": "2026-09-01",
     "player": {
       "player_id": "5a25ffbb-db05-482f-91f8-24e76380f7c8",
       "role": "A",
@@ -635,37 +575,6 @@
     }
   },
   {
-    "player_id": "79706ce4-6a0e-4a57-bced-75dfcf9a9107",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 16,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 1,
-    "perc_price": "0.2000",
-    "ex_fmv": null,
-    "comment": null,
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": null,
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-23",
-    "updated_at": "2026-08-02",
-    "createdAt": "2026-07-23",
-    "updatedAt": "2026-08-02",
-    "player": {
-      "player_id": "79706ce4-6a0e-4a57-bced-75dfcf9a9107",
-      "role": "A",
-      "mantra_roles": [
-        "W",
-        "A"
-      ]
-    }
-  },
-  {
     "player_id": "248ae665-ab73-4e64-8e95-f19c50c469de",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
@@ -726,36 +635,6 @@
     }
   },
   {
-    "player_id": "1209dc7a-a7e3-4bf8-a10a-0cd5f3dd9f77",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 18,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": null,
-    "perc_price": null,
-    "ex_fmv": null,
-    "comment": null,
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": null,
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-23",
-    "updated_at": "2026-07-23",
-    "createdAt": "2026-07-23",
-    "updatedAt": "2026-07-23",
-    "player": {
-      "player_id": "1209dc7a-a7e3-4bf8-a10a-0cd5f3dd9f77",
-      "role": "A",
-      "mantra_roles": [
-        "Pc"
-      ]
-    }
-  },
-  {
     "player_id": "18de2da7-0388-4860-a39b-81d2fc5d3472",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
@@ -790,7 +669,7 @@
     "player_id": "84253356-eeb5-4faa-89ed-1c0f4949f38a",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 20,
+    "fascia": 18,
     "fascia_second": null,
     "fascia_third": null,
     "price": 0,
@@ -805,9 +684,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-07-23",
-    "updated_at": "2026-08-31",
+    "updated_at": "2026-09-01",
     "createdAt": "2026-07-23",
-    "updatedAt": "2026-08-31",
+    "updatedAt": "2026-09-01",
     "player": {
       "player_id": "84253356-eeb5-4faa-89ed-1c0f4949f38a",
       "role": "C",
@@ -2229,37 +2108,6 @@
     }
   },
   {
-    "player_id": "5cadee4f-90f3-4c1d-81aa-81037d286dbf",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 18,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": null,
-    "perc_price": null,
-    "ex_fmv": null,
-    "comment": null,
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": null,
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-24",
-    "updated_at": "2026-07-24",
-    "createdAt": "2026-07-24",
-    "updatedAt": "2026-07-24",
-    "player": {
-      "player_id": "5cadee4f-90f3-4c1d-81aa-81037d286dbf",
-      "role": "C",
-      "mantra_roles": [
-        "M",
-        "C"
-      ]
-    }
-  },
-  {
     "player_id": "917c1aba-2196-4fc2-ae55-3ef820962f47",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
@@ -2409,36 +2257,6 @@
       "role": "C",
       "mantra_roles": [
         "M",
-        "C"
-      ]
-    }
-  },
-  {
-    "player_id": "35f76419-21c6-4f06-b68c-fa14f67717e2",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 17,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 1,
-    "perc_price": "0.2000",
-    "ex_fmv": null,
-    "comment": "",
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": [],
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-24",
-    "updated_at": "2026-08-30",
-    "createdAt": "2026-07-24",
-    "updatedAt": "2026-08-30",
-    "player": {
-      "player_id": "35f76419-21c6-4f06-b68c-fa14f67717e2",
-      "role": "C",
-      "mantra_roles": [
         "C"
       ]
     }
@@ -2692,37 +2510,6 @@
     }
   },
   {
-    "player_id": "307bd1b7-8698-4247-be19-95a1b2d3a58c",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 18,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": null,
-    "perc_price": null,
-    "ex_fmv": null,
-    "comment": null,
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": null,
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-24",
-    "updated_at": "2026-08-02",
-    "createdAt": "2026-07-24",
-    "updatedAt": "2026-08-02",
-    "player": {
-      "player_id": "307bd1b7-8698-4247-be19-95a1b2d3a58c",
-      "role": "C",
-      "mantra_roles": [
-        "M",
-        "C"
-      ]
-    }
-  },
-  {
     "player_id": "4c0a9b1a-5827-48ac-814d-ed4b602d3c8c",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
@@ -2872,6 +2659,7 @@
       "role": "D",
       "mantra_roles": [
         "Dd",
+        "Ds",
         "E"
       ]
     }
@@ -3054,36 +2842,6 @@
     "updatedAt": "2026-08-03",
     "player": {
       "player_id": "1a34b9f5-bd27-4a6b-a2e5-3961be3bd835",
-      "role": "D",
-      "mantra_roles": [
-        "Dc"
-      ]
-    }
-  },
-  {
-    "player_id": "ff6d2747-657b-40dd-ba8e-ce66d83e2925",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 20,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 0,
-    "perc_price": "0.0000",
-    "ex_fmv": null,
-    "comment": null,
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": null,
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-24",
-    "updated_at": "2026-08-30",
-    "createdAt": "2026-07-24",
-    "updatedAt": "2026-08-30",
-    "player": {
-      "player_id": "ff6d2747-657b-40dd-ba8e-ce66d83e2925",
       "role": "D",
       "mantra_roles": [
         "Dc"
@@ -3618,7 +3376,7 @@
     "player_id": "95d8739c-8b5e-44a3-9378-73a33aab1a00",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 20,
+    "fascia": 18,
     "fascia_second": null,
     "fascia_third": null,
     "price": null,
@@ -3633,9 +3391,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-07-24",
-    "updated_at": "2026-08-27",
+    "updated_at": "2026-09-01",
     "createdAt": "2026-07-24",
-    "updatedAt": "2026-08-27",
+    "updatedAt": "2026-09-01",
     "player": {
       "player_id": "95d8739c-8b5e-44a3-9378-73a33aab1a00",
       "role": "D",
@@ -3759,36 +3517,6 @@
     "updatedAt": "2026-08-27",
     "player": {
       "player_id": "4e91a6b6-006e-4c1f-a969-4e88bfa2fc42",
-      "role": "D",
-      "mantra_roles": [
-        "Dc"
-      ]
-    }
-  },
-  {
-    "player_id": "c155dc9b-bfb9-4a7d-8809-3ff0635ae290",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 17,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 0,
-    "perc_price": "0.0000",
-    "ex_fmv": null,
-    "comment": null,
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": null,
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-24",
-    "updated_at": "2026-08-27",
-    "createdAt": "2026-07-24",
-    "updatedAt": "2026-08-27",
-    "player": {
-      "player_id": "c155dc9b-bfb9-4a7d-8809-3ff0635ae290",
       "role": "D",
       "mantra_roles": [
         "Dc"
@@ -3954,7 +3682,7 @@
     "player_id": "35df14f3-13ca-4e70-b340-ff8bcb204a69",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 20,
+    "fascia": 18,
     "fascia_second": null,
     "fascia_third": null,
     "price": null,
@@ -3969,9 +3697,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-07-24",
-    "updated_at": "2026-08-27",
+    "updated_at": "2026-09-01",
     "createdAt": "2026-07-24",
-    "updatedAt": "2026-08-27",
+    "updatedAt": "2026-09-01",
     "player": {
       "player_id": "35df14f3-13ca-4e70-b340-ff8bcb204a69",
       "role": "D",
@@ -4635,7 +4363,7 @@
     "player_id": "68414967-258d-4367-9c73-63f80de7b78f",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 20,
+    "fascia": 17,
     "fascia_second": null,
     "fascia_third": null,
     "price": 0,
@@ -4650,9 +4378,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-07-24",
-    "updated_at": "2026-08-30",
+    "updated_at": "2026-09-01",
     "createdAt": "2026-07-24",
-    "updatedAt": "2026-08-30",
+    "updatedAt": "2026-09-01",
     "player": {
       "player_id": "68414967-258d-4367-9c73-63f80de7b78f",
       "role": "D",
@@ -5589,8 +5317,8 @@
     "fascia": 5,
     "fascia_second": null,
     "fascia_third": null,
-    "price": 16,
-    "perc_price": "3.2000",
+    "price": 14,
+    "perc_price": "2.8000",
     "ex_fmv": null,
     "comment": "Alla fine Luka Modric è rimasto al Milan. 2 gol e 3 assist in 33 partite a voto nella passata stagione, con l'infortunio al volto che non gli ha permesso di essere a disposizione nel finale di campionato (è tornato solo all'ultima ma a gara in corso). Ha rinnovato per un altro anno, è stato fortemente voluto da tutti nell'ambiente Milan: da Ibrahimovic al nuovo allenatore Amorim, che è pronto ad affidargli le chiavi del centrocampo. I titolari in partenza sono proprio il croato e Rabiot, non ci sono dubbi in merito. Avrà grande spazio soprattutto in campionato inizialmente, mentre potrà riposare in Europa League. Poi se il Milan farà strada in Europa, potrà cambiare leggermente la gestione ma è presto per dirlo. Ma l'anno scorso infortunio a parte le ha giocate tutte e ha dimostrato di essere ancora in gran forma. Modric non si discute: non tanto da bonus (qualcuno comunque lo porta), ma da rendimento (fanta-media del 6,67). E tutti i piazzati col destro sono suoi, non un fattore da poco (tranne i rigori). Luka è sempre una buona idea per costruire la vostra rosa.",
     "tit_index": null,
@@ -5601,9 +5329,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-07-24",
-    "updated_at": "2026-08-26",
+    "updated_at": "2026-09-01",
     "createdAt": "2026-07-24",
-    "updatedAt": "2026-08-26",
+    "updatedAt": "2026-09-01",
     "player": {
       "player_id": "f0cc9638-e365-41ec-a8d0-d55c37c876df",
       "role": "C",
@@ -5798,37 +5526,6 @@
     }
   },
   {
-    "player_id": "e1c87272-b4c8-47e7-a8b8-ffe2f7f1ec80",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 20,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": null,
-    "perc_price": null,
-    "ex_fmv": null,
-    "comment": "",
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": [],
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-24",
-    "updated_at": "2026-08-02",
-    "createdAt": "2026-07-24",
-    "updatedAt": "2026-08-02",
-    "player": {
-      "player_id": "e1c87272-b4c8-47e7-a8b8-ffe2f7f1ec80",
-      "role": "C",
-      "mantra_roles": [
-        "M",
-        "C"
-      ]
-    }
-  },
-  {
     "player_id": "0ecc1bd6-1dba-4b1c-9dc9-579838907f33",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
@@ -5893,13 +5590,13 @@
     "player_id": "9c1fb348-62af-4a63-9dfc-de159549767c",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 12,
+    "fascia": 11,
     "fascia_second": null,
     "fascia_third": null,
-    "price": 3,
-    "perc_price": "0.6000",
+    "price": 5,
+    "perc_price": "1.0000",
     "ex_fmv": null,
-    "comment": "Grande stagione per Rolando Mandragora la scorsa: 7 gol e 2 assist, quasi doppia cifra di bonus. Numeri importantissimi, che potevano fare di lui più di un semplice low cost ma la Fiorentina si è scatenata sul mercato a centrocampo proprio. È arrivato Atta che sarà intoccabile, ma è arrivato anche Oulai. Non avrà dunque il posto fisso come nella passata stagione, se lo giocherà e per questo potrebbe trovare meno spazio. Anche se il condizionale è d'obbligo, le gerarchie nei viola sono tutte da scoprire. Se cercate un low cost da bonus, Mandragora può fare al caso vostro: basta avere coperture sicure in provincia così da non correre rischi.",
+    "comment": "Rolando Mandragora è passato al Torino nell’ultimo giorno di mercato. È reduce da una grande stagione in una Fiorentina in difficoltà: 7 gol e 2 assist, quasi doppia cifra di bonus. Il centrocampista ha già giocato con la maglia granata per due stagioni: la 2020/21 e la 2021/22 segnando 3 gol nella prima annata e appena 2 assist nella seconda. Con Abate sarà titolare al fianco del nuovo arrivato Fitz-Jim. Avrà meno libertà di sganciarsi come in maglia viola ma il 29enne è dotato di un buon tiro da fuori area e anche sui corner può dire la sua: è più di un centrocampista low-cost al fantacalcio.",
     "tit_index": null,
     "aff_index": null,
     "inf_index": null,
@@ -5908,9 +5605,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-07-23",
-    "updated_at": "2026-08-26",
+    "updated_at": "2026-09-01",
     "createdAt": "2026-07-23",
-    "updatedAt": "2026-08-26",
+    "updatedAt": "2026-09-01",
     "player": {
       "player_id": "9c1fb348-62af-4a63-9dfc-de159549767c",
       "role": "C",
@@ -6129,6 +5826,7 @@
       "player_id": "4c4bab94-7d6d-479c-b33f-d1032b0dee44",
       "role": "C",
       "mantra_roles": [
+        "M",
         "C"
       ]
     }
@@ -6355,8 +6053,8 @@
     "fascia": 3,
     "fascia_second": null,
     "fascia_third": null,
-    "price": 90,
-    "perc_price": "18.0000",
+    "price": 95,
+    "perc_price": "19.0000",
     "ex_fmv": null,
     "comment": "Anastasios Douvikas si è meritato un posto tra i big in attacco dopo una stagione da 14 gol e 1 assist, segnando un solo rigore. Dopo l’exploit della scorsa stagione l’obiettivo è confermarsi in un Como che rimane una squadra che crea molto ma che avrà l’ostacolo della Champions. Il prezzo si è impennato rispetto all’asta di un anno fa, resta alto dopo il grande inizio di stagione nonostante l'arrivo di Kean che gli farà concorrenza. Ci sarà alternanza, un dualismo continuo per tutta la stagione.",
     "tit_index": null,
@@ -6367,9 +6065,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-07-23",
-    "updated_at": "2026-08-30",
+    "updated_at": "2026-09-01",
     "createdAt": "2026-07-23",
-    "updatedAt": "2026-08-30",
+    "updatedAt": "2026-09-01",
     "player": {
       "player_id": "21aae13c-0a10-4bf2-aa9a-0a44c6cec6b2",
       "role": "A",
@@ -6385,8 +6083,8 @@
     "fascia": 5,
     "fascia_second": null,
     "fascia_third": null,
-    "price": 10,
-    "perc_price": "2.0000",
+    "price": 12,
+    "perc_price": "2.4000",
     "ex_fmv": null,
     "comment": "Nuno Tavares è come le montagne russe: ci sono alti e bassi continui, ma quando è in giornata fa la differenza. Vedremo se riuscirà ad avere continuità con Gattuso (quella che è mancata con Sarri l’anno scorso) per tornare sui livelli di due stagioni fa. Intanto anche al fantacalcio è un giocatore ritrovato.",
     "tit_index": null,
@@ -6397,9 +6095,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-07-23",
-    "updated_at": "2026-08-30",
+    "updated_at": "2026-09-01",
     "createdAt": "2026-07-23",
-    "updatedAt": "2026-08-30",
+    "updatedAt": "2026-09-01",
     "player": {
       "player_id": "e0da5b59-193d-4063-8b09-f6a556e70afd",
       "role": "D",
@@ -6441,46 +6139,14 @@
     }
   },
   {
-    "player_id": "c54ad644-51bc-4d7c-a8d1-300c3adc9324",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 20,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 0,
-    "perc_price": "0.0000",
-    "ex_fmv": null,
-    "comment": "",
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": [],
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-24",
-    "updated_at": "2026-08-27",
-    "createdAt": "2026-07-24",
-    "updatedAt": "2026-08-27",
-    "player": {
-      "player_id": "c54ad644-51bc-4d7c-a8d1-300c3adc9324",
-      "role": "D",
-      "mantra_roles": [
-        "B",
-        "Ds",
-        "E"
-      ]
-    }
-  },
-  {
     "player_id": "74d5c13f-53e3-430b-b745-9043e34f51af",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 20,
+    "fascia": 12,
     "fascia_second": null,
     "fascia_third": null,
-    "price": 0,
-    "perc_price": "0.0000",
+    "price": 2,
+    "perc_price": "0.4000",
     "ex_fmv": null,
     "comment": "",
     "tit_index": null,
@@ -6491,9 +6157,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-07-24",
-    "updated_at": "2026-08-27",
+    "updated_at": "2026-09-02",
     "createdAt": "2026-07-24",
-    "updatedAt": "2026-08-27",
+    "updatedAt": "2026-09-02",
     "player": {
       "player_id": "74d5c13f-53e3-430b-b745-9043e34f51af",
       "role": "D",
@@ -6671,9 +6337,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-07-23",
-    "updated_at": "2026-08-30",
+    "updated_at": "2026-09-01",
     "createdAt": "2026-07-23",
-    "updatedAt": "2026-08-30",
+    "updatedAt": "2026-09-01",
     "player": {
       "player_id": "d24218a4-0bbc-4dd6-b01d-cf9d0a9a90d5",
       "role": "A",
@@ -6721,8 +6387,8 @@
     "fascia": 2,
     "fascia_second": null,
     "fascia_third": null,
-    "price": 38,
-    "perc_price": "7.6000",
+    "price": 35,
+    "perc_price": "7.0000",
     "ex_fmv": null,
     "comment": "Jean Butez è il portiere con più clean sheet nello scorso campionato di Serie A: 19, uno in più di Svilar. Numeri clamorosi per l'estremo difensore del Como, titolarissimo della squadra di Fabregas e assoluto protagonista nella stagione che ha portato la squadra in Champions. 29 gol subiti in 38 partite, il Como ha grandissima solidità in fase difensiva e proverà a mantenerla anche in questo campionato. 1 rigore parato in stagione e anche 1 assist: è stato un vero e proprio fattore e si è meritato sul campo lo status di top tra i portieri. È un primo slot, non ci sono più dubbi ormai. Si paga come un top di una squadra che gioca la Champions. ",
     "tit_index": null,
@@ -6733,9 +6399,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-07-24",
-    "updated_at": "2026-08-31",
+    "updated_at": "2026-09-01",
     "createdAt": "2026-07-24",
-    "updatedAt": "2026-08-31",
+    "updatedAt": "2026-09-01",
     "player": {
       "player_id": "05ed0add-6a0f-4ae8-aa97-eba61ba71d30",
       "role": "P",
@@ -6771,36 +6437,6 @@
       "role": "P",
       "mantra_roles": [
         "Por"
-      ]
-    }
-  },
-  {
-    "player_id": "6d1c5858-770c-4814-b9ca-3fd83a3337c9",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 20,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 0,
-    "perc_price": "0.0000",
-    "ex_fmv": null,
-    "comment": "",
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": [],
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-23",
-    "updated_at": "2026-08-30",
-    "createdAt": "2026-07-23",
-    "updatedAt": "2026-08-30",
-    "player": {
-      "player_id": "6d1c5858-770c-4814-b9ca-3fd83a3337c9",
-      "role": "A",
-      "mantra_roles": [
-        "Pc"
       ]
     }
   },
@@ -7313,37 +6949,6 @@
       "role": "D",
       "mantra_roles": [
         "Dc"
-      ]
-    }
-  },
-  {
-    "player_id": "d627e1c5-e7e3-462e-8c4c-2f9aff0215f4",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 8,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 8,
-    "perc_price": "1.6000",
-    "ex_fmv": null,
-    "comment": "Norton-Cuffy sarà ancora il titolare a destra nel Genoa. Dopo essersi messo in luce lungo tutto il girone d'andata ed oltre grazie a infinite sgroppate sulla fascia e una forza fisica impressionante, l'inglese ha dovuto alzare bandiera bianca per infortunio nel finale, unita a qualche prestazione sotto tono. Tanti apprezzamenti ma dovrebbe rimanere in Liguria: al fantacalcio se dovesse trovare continuità può essere più che un semplice low-cost. A prezzi non eccessivi si può prendere rientrando tra i terzini 'di provincia' più interessanti della A. Due gol nella passata stagione per un 6,10 di fanta-media.",
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": [],
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-24",
-    "updated_at": "2026-08-27",
-    "createdAt": "2026-07-24",
-    "updatedAt": "2026-08-27",
-    "player": {
-      "player_id": "d627e1c5-e7e3-462e-8c4c-2f9aff0215f4",
-      "role": "D",
-      "mantra_roles": [
-        "Dd",
-        "E"
       ]
     }
   },
@@ -8050,37 +7655,6 @@
     }
   },
   {
-    "player_id": "a42dcf25-e2b6-444a-91de-de30af32d121",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 20,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 0,
-    "perc_price": "0.0000",
-    "ex_fmv": null,
-    "comment": "",
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": [],
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-24",
-    "updated_at": "2026-08-29",
-    "createdAt": "2026-07-24",
-    "updatedAt": "2026-08-29",
-    "player": {
-      "player_id": "a42dcf25-e2b6-444a-91de-de30af32d121",
-      "role": "C",
-      "mantra_roles": [
-        "M",
-        "C"
-      ]
-    }
-  },
-  {
     "player_id": "d796b194-efcc-4186-9291-2a8afcbf35ae",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
@@ -8209,13 +7783,13 @@
     "player_id": "74386d11-89c5-443b-a5c5-bb9737ca2717",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 20,
+    "fascia": 12,
     "fascia_second": null,
     "fascia_third": null,
-    "price": 0,
-    "perc_price": "0.0000",
+    "price": 3,
+    "perc_price": "0.6000",
     "ex_fmv": null,
-    "comment": "",
+    "comment": "Dodo è rimasto alla Fiorentina, ma il suo futuro salvo sorprese non cambia. Il terzino è in scadenza nel 2027 e non dovrebbe rinnovare, andrà via a parametro zero. Al massimo può rinnovare di un anno ma comunque andando via la prossima estate. Per questo è difficile pensare che tornerà a essere titolare fisso come al solito, più facile che si possa giocare il posto e che sia un jolly. Anche perché i viola ora hanno diverse opzioni a destra. Al fanta è solo un jolly, con cautela visto che potrebbe anche andare via a gennaio. Ma ora che è rimasto potrebbe tornare utile a Grosso, anche vista la brutta partenza dei viola.",
     "tit_index": null,
     "aff_index": null,
     "inf_index": null,
@@ -8224,9 +7798,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-07-23",
-    "updated_at": "2026-08-30",
+    "updated_at": "2026-09-02",
     "createdAt": "2026-07-23",
-    "updatedAt": "2026-08-30",
+    "updatedAt": "2026-09-02",
     "player": {
       "player_id": "74386d11-89c5-443b-a5c5-bb9737ca2717",
       "role": "D",
@@ -8307,7 +7881,7 @@
     "price": 6,
     "perc_price": "1.2000",
     "ex_fmv": null,
-    "comment": "Tiago Gabriel ha avuto tanti estimatori sul mercato ma è rimasto. A Lecce è titolare inamovibile e al primo anno, in una squadra che ha lottato fino all'ultimo per non retrocedere, ha tenuto una fanta-media solida di 6,01. 36 presenze, 2 gol e 7 cartellini gialli sono stati il suo biglietto da visita, insieme ad una disinvoltura degna di nota in marcatura e con la palla tra i piedi per un ragazzo di 21 anni. A Lecce è una garanzia di buoni voti e di titolarità.",
+    "comment": "Tiago Gabriel ha avuto tanti estimatori sul mercato ma è rimasto, nonostante le voci siano continuate fino all’ultimo giorno. A Lecce è un titolare inamovibile e al primo anno, in una squadra che ha lottato fino all'ultimo per non retrocedere, ha tenuto una fanta-media di 6,01. 36 presenze, 2 gol e 7 cartellini gialli sono stati il suo biglietto da visita, mentre quest’anno ha già segnato una rete. A dimostrazione che quando gioca è una garanzia, anche per il modificatore. E tornerà a esserlo ora che è rimasto, è più di un semplice low cost.",
     "tit_index": null,
     "aff_index": null,
     "inf_index": null,
@@ -8316,9 +7890,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-07-24",
-    "updated_at": "2026-08-27",
+    "updated_at": "2026-09-02",
     "createdAt": "2026-07-24",
-    "updatedAt": "2026-08-27",
+    "updatedAt": "2026-09-02",
     "player": {
       "player_id": "7ec99bbb-0588-4713-b50d-b47aee32f814",
       "role": "D",
@@ -8693,36 +8267,6 @@
     }
   },
   {
-    "player_id": "1a26b98e-29c0-4ead-9dc9-8851a25a3f27",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 18,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": null,
-    "perc_price": null,
-    "ex_fmv": null,
-    "comment": null,
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": null,
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-08-05",
-    "updated_at": "2026-08-27",
-    "createdAt": "2026-08-05",
-    "updatedAt": "2026-08-27",
-    "player": {
-      "player_id": "1a26b98e-29c0-4ead-9dc9-8851a25a3f27",
-      "role": "D",
-      "mantra_roles": [
-        "Dc"
-      ]
-    }
-  },
-  {
     "player_id": "aeed69d5-c370-4108-929d-ba03ac11e1ae",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
@@ -8756,7 +8300,7 @@
     "player_id": "f2ef0efb-6a37-403e-ad92-1aec21604fb7",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 20,
+    "fascia": 13,
     "fascia_second": null,
     "fascia_third": null,
     "price": 0,
@@ -8771,9 +8315,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-08-05",
-    "updated_at": "2026-08-30",
+    "updated_at": "2026-09-01",
     "createdAt": "2026-08-05",
-    "updatedAt": "2026-08-30",
+    "updatedAt": "2026-09-01",
     "player": {
       "player_id": "f2ef0efb-6a37-403e-ad92-1aec21604fb7",
       "role": "A",
@@ -9035,8 +8579,8 @@
     "fascia": 5,
     "fascia_second": null,
     "fascia_third": null,
-    "price": 15,
-    "perc_price": "3.0000",
+    "price": 16,
+    "perc_price": "3.2000",
     "ex_fmv": null,
     "comment": "2 gol e 2 assist in 21 partite a voto nella passata stagione per Lazar Samardzic all'Atalanta e quella sensazione di un potenziale non ancora pienamente mostrato. Il nuovo allenatore Sarri lo voleva già alla Lazio, ora lo ha in rosa e lo sta provando da mezzala pura nel suo 4-3-3. In partenza non è un titolare fisso, ma può trovare spazio sia a gara in corso che dall'inizio viste le rotazioni per la Conference. Siamo sul 3°/4° slot per il vostro centrocampo, ma Samardzic spera di guadagnare sempre più terreno nelle gerarchie con le prestazioni sul campo. Ha bisogno di fiducia e continuità.",
     "tit_index": null,
@@ -9047,9 +8591,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-07-24",
-    "updated_at": "2026-08-26",
+    "updated_at": "2026-09-01",
     "createdAt": "2026-07-24",
-    "updatedAt": "2026-08-26",
+    "updatedAt": "2026-09-01",
     "player": {
       "player_id": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
       "role": "C",
@@ -9207,6 +8751,7 @@
       "player_id": "98d71181-5ff4-4e27-8603-a8d8c4ccfb49",
       "role": "C",
       "mantra_roles": [
+        "E",
         "W"
       ]
     }
@@ -10528,7 +10073,7 @@
     "perc_price": "9.2000",
     "ex_fmv": null,
     "comment": "Andrea Pinamonti può diventare anche un secondo slot dopo il suo passaggio alla Lazio. Dalla sua ha ancora la titolarità, anche se magari avrà più concorrenza rispetto al Sassuolo. Come lato negativo ci sono sempre le insufficienze quando non segna, infatti arriva da una media-voto negativa del 5,88. Compensa però con 9 gol e 3 assist, la doppia cifra la raggiunge o ci va molto vicino, ci proverà pure alla Lazio come obiettivo minimo. Potrebbe avere anche i rigori, se li giocherà con Zaccagni e Taylor. In carriera 20 su 24 per lui.",
-    "tit_index": null,
+    "tit_index": 4,
     "aff_index": null,
     "inf_index": null,
     "notes": [],
@@ -10536,9 +10081,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-07-23",
-    "updated_at": "2026-08-30",
+    "updated_at": "2026-09-01",
     "createdAt": "2026-07-23",
-    "updatedAt": "2026-08-30",
+    "updatedAt": "2026-09-01",
     "player": {
       "player_id": "ced01d22-1684-45d0-bcde-9898ff26ae86",
       "role": "A",
@@ -10608,44 +10153,14 @@
     }
   },
   {
-    "player_id": "7a6908eb-f092-4f48-95af-b03ba52381dd",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 5,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 34,
-    "perc_price": "6.8000",
-    "ex_fmv": null,
-    "comment": "Artem Dovbyk è passato dalla Roma al Bologna, restando così al fantacalcio. L’anno scorso ha deluso con 3 gol e 1 assist in 13 partite, arriva anche da un infortunio che gli ha fatto perdere la seconda parte di stagione. In Italia non ha brillato come aveva fatto in Spagna, ora c’è anche da capire come si adatterà al Bologna e se entrerà subito in forma (gli infortuni sono un punto debole). Ma intanto per il fanta ci sono buone notizie, al Bologna sarà probabilmente titolare e prenderà il posto di Castro. Quando non segna qualche insufficienza arriverà, considerando le sue caratteristiche, però può avere più continuità e fare quindi più gol, aspirando alla doppia cifra. Può prendersi anche qualche rigore (27 su 32 calciati), alle spalle dello specialista Orsolini e forse anche di Bernardeschi, ma se la giocheranno. Siamo intorno al terzo slot, in chiave asta cerca il rilancio. Occhio al dualismo con Piccoli, ma l'ucraino parte davanti all'ex Fiorentina.",
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": 2,
-    "notes": [],
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-23",
-    "updated_at": "2026-08-25",
-    "createdAt": "2026-07-23",
-    "updatedAt": "2026-08-25",
-    "player": {
-      "player_id": "7a6908eb-f092-4f48-95af-b03ba52381dd",
-      "role": "A",
-      "mantra_roles": [
-        "Pc"
-      ]
-    }
-  },
-  {
     "player_id": "1da941e1-9f25-4af2-9903-6d3004e1765c",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 5,
+    "fascia": 8,
     "fascia_second": null,
     "fascia_third": null,
-    "price": 38,
-    "perc_price": "7.6000",
+    "price": 33,
+    "perc_price": "6.6000",
     "ex_fmv": null,
     "comment": "4 gol in 13 partite a voto per Alisson Santos, nessun assist ed è un dato curioso per le caratteristiche del giocatore. Grandissima tecnica e dribbling, garantisce imprevedibilità alla manovra del Napoli e Allegri è pronto a utilizzarlo da esterno alto. Il club ha fortemente voluto il suo riscatto e Alisson ha tutto per essere il titolare della fascia. Grande potenziale anche per il fantacalcio, anche se passa da centrocampista ad attaccante e questo lo penalizza un po’. Resta comunque un giocatore su cui si può puntare e che può fare bene, da centrocampista siamo sul terzo slot. Sarà una stagione molto importante per lui e il fatto che Allegri sia ripartito dal 4-3-3 non può che essere un punto di partenza positivo per le sue caratteristiche.",
     "tit_index": null,
@@ -10656,9 +10171,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-07-23",
-    "updated_at": "2026-08-25",
+    "updated_at": "2026-09-01",
     "createdAt": "2026-07-23",
-    "updatedAt": "2026-08-25",
+    "updatedAt": "2026-09-01",
     "player": {
       "player_id": "1da941e1-9f25-4af2-9903-6d3004e1765c",
       "role": "A",
@@ -10672,11 +10187,11 @@
     "player_id": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 20,
+    "fascia": 6,
     "fascia_second": null,
     "fascia_third": null,
-    "price": 0,
-    "perc_price": "0.0000",
+    "price": 15,
+    "perc_price": "3.0000",
     "ex_fmv": null,
     "comment": "",
     "tit_index": null,
@@ -10687,9 +10202,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-07-23",
-    "updated_at": "2026-08-30",
+    "updated_at": "2026-09-01",
     "createdAt": "2026-07-23",
-    "updatedAt": "2026-08-30",
+    "updatedAt": "2026-09-01",
     "player": {
       "player_id": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea",
       "role": "A",
@@ -11095,13 +10610,13 @@
     "player_id": "f7f99d6a-c8e0-4ec8-a434-1ffba0253b41",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 1,
+    "fascia": 2,
     "fascia_second": null,
     "fascia_third": null,
-    "price": 68,
-    "perc_price": "13.6000",
+    "price": 60,
+    "perc_price": "12.0000",
     "ex_fmv": null,
-    "comment": "Era praticamente intoccabile con Conte e lo sarà anche nel nuovo Napoli di Allegri: se sta bene e non ha bisogno di tirare il fiato per gli impegni ravvicinati, Scott McTominay gioca sempre. 33 partite a voto nella passata stagione, 10 gol e 2 assist, fanta-media del 7,26 condizionata anche da un rigore sbagliato (dal dischetto salvo sorprese non si presenterà più). Un dato positivo per il fantacalcio: solo un giallo, nonostante il ruolo di centrocampista box to box. Con Allegri, McTominay sarà senza dubbio una delle due mezzali, da capire se sul centro-destra o sul centro-sinistra della mediana, dipenderà anche da chi saranno i compagni di reparto. Rimane una garanzia assoluta sia in termini di rendimento che di bonus: proverà a puntare quota 15 tra gol e assist (12 totali nella passata stagione). ",
+    "comment": "Era intoccabile con Conte e lo sarà anche nel nuovo Napoli di Allegri: se sta bene e non ha bisogno di tirare il fiato per gli impegni ravvicinati, Scott McTominay gioca sempre. L'unico problema è che inizierà ai box per un intervento a causa di una lieve aritmia, tornerà dopo la sosta di fine settembre/inizio ottobre. Inevitabilmente il prezzo cala perché perde qualche partita. 33 partite a voto nella passata stagione, 10 gol e 2 assist, fanta-media del 7,26 condizionata anche da un rigore sbagliato (dal dischetto salvo sorprese non si presenterà più). Un dato positivo per il fantacalcio: solo un giallo, nonostante il ruolo di centrocampista box to box. Con Allegri, McTominay sarà senza dubbio una delle due mezzali titolari, rimane una garanzia assoluta sia in termini di rendimento che di bonus.",
     "tit_index": null,
     "aff_index": null,
     "inf_index": null,
@@ -11110,9 +10625,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-07-23",
-    "updated_at": "2026-08-30",
+    "updated_at": "2026-09-01",
     "createdAt": "2026-07-23",
-    "updatedAt": "2026-08-30",
+    "updatedAt": "2026-09-01",
     "player": {
       "player_id": "f7f99d6a-c8e0-4ec8-a434-1ffba0253b41",
       "role": "C",
@@ -11160,8 +10675,8 @@
     "fascia": 3,
     "fascia_second": null,
     "fascia_third": null,
-    "price": 31,
-    "perc_price": "6.2000",
+    "price": 35,
+    "perc_price": "7.0000",
     "ex_fmv": null,
     "comment": "Rodrigo Mora è un nuovo rinforzo della Roma di Gian Piero Gasperini. Arriva dal Porto, un'operazione importante del club giallorosso per rinforzare la batteria di trequartisti a disposizione dell'allenatore. Va a collocarsi proprio nei due giocatori alle spalle della punta nel 3-4-2-1, dove Gasp aspettava da settimane ormai un rinforzo. Classe 2007, di piede destro, è un colpo per presente e futuro del club: brevilineo, dotato di velocità e grande tecnica, ha tutto per essere un'arma importantissima per Gasp. Arriva per provare a essere titolare, per caratteristiche è perfetto per giocare sul centro-sinistra sulla trequarti. Per asta e fantacalcio un grandissimo plus: è listato centrocampista. Così è decisamente più appetibile, da attaccante lo sarebbe stato meno. Nella scorso campionato ha collezionato 28 presenze, 1 gol e 1 assist. Ma due stagioni fa aveva raggiunto addirittura la doppia cifra realizzando 10 reti in 23 partite: la Roma ha investito su di lui nella speranza di rivedere proprio numeri di questo tipo.",
     "tit_index": 4,
@@ -11172,9 +10687,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-08-19",
-    "updated_at": "2026-08-26",
+    "updated_at": "2026-09-01",
     "createdAt": "2026-08-19",
-    "updatedAt": "2026-08-26",
+    "updatedAt": "2026-09-01",
     "player": {
       "player_id": "94142a98-c364-47a6-9a08-f922cb8b3e1f",
       "role": "C",
@@ -11310,13 +10825,13 @@
     "player_id": "3bd054af-2392-4003-8dd6-a5694c458f55",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 6,
+    "fascia": 4,
     "fascia_second": null,
     "fascia_third": null,
-    "price": 13,
-    "perc_price": "2.6000",
+    "price": 21,
+    "perc_price": "4.2000",
     "ex_fmv": null,
-    "comment": "Sembrava che potesse partire subito e invece Albert Gudmundsson è ancora alla Fiorentina, si deciderà tutto negli ultimi giorni. La scorsa stagione è stata al di sotto delle aspettative per lui come per tutta la viola: 5 gol e 3 assist in 32 partite a voto, considerando anche i 3 rigori su 3 segnati capite bene che su azione ha fatto soltanto 2 reti. Riparte da questi numeri, ha tutto per fare meglio: l'allenatore lo sta testando come esterno puro a sinistra nel tridente d'attacco. Un ruolo che Gudmundsson aveva ricoperto solo sporadicamente in passato, si sta ambientando e Grosso ne è soddisfatto finora. Ma adesso c'è da capire il mercato.",
+    "comment": "Albert Gudmundsson passa alla Lazio in prestito con diritto di riscatto e cercherà di rilanciarsi in Serie A dopo il flop in maglia Fiorentina. Il 29enne islandese non è riuscito a tornare ai livelli della stagione 2022/23 dove con il Genoa mise a segno 14 gol e 4 assist. A Firenze tante ombre e poche luci ma i bonus non sono comunque mancati, almeno sulla carta: 6 reti e 2 assist nella prima annata, 5 e 4 nella seconda. Gattuso proverà a bissare il lavoro che sta facendo con Frattesi ma rimane da capire la sua posizione in campo. Nel 4-3-3 attuale potrebbe adattarsi a destra come titolare ma anche fare il vice Zaccagni a sinistra, alla Fiorentina era stato provato anche da mezzala atipica con un passaggio quindi eventuale al 4-2-3-1. Al fantacalcio può regalare bonus anche grazie ai calci piazzati, sarà un jolly totale per il reparto offensivo.",
     "tit_index": null,
     "aff_index": null,
     "inf_index": null,
@@ -11325,9 +10840,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-07-23",
-    "updated_at": "2026-08-30",
+    "updated_at": "2026-09-01",
     "createdAt": "2026-07-23",
-    "updatedAt": "2026-08-30",
+    "updatedAt": "2026-09-01",
     "player": {
       "player_id": "3bd054af-2392-4003-8dd6-a5694c458f55",
       "role": "C",
@@ -11394,7 +10909,8 @@
       "player_id": "30e4cb57-632d-4f52-b027-97d390efaf3f",
       "role": "C",
       "mantra_roles": [
-        "C"
+        "C",
+        "T"
       ]
     }
   },
@@ -11556,7 +11072,7 @@
     "player_id": "cc2fad0a-cba6-4e46-9cba-d7d28ae5f195",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 20,
+    "fascia": 12,
     "fascia_second": null,
     "fascia_third": null,
     "price": 0,
@@ -11571,9 +11087,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-07-24",
-    "updated_at": "2026-08-31",
+    "updated_at": "2026-09-01",
     "createdAt": "2026-07-24",
-    "updatedAt": "2026-08-31",
+    "updatedAt": "2026-09-01",
     "player": {
       "player_id": "cc2fad0a-cba6-4e46-9cba-d7d28ae5f195",
       "role": "C",
@@ -11589,8 +11105,8 @@
     "fascia": 5,
     "fascia_second": null,
     "fascia_third": null,
-    "price": 15,
-    "perc_price": "3.0000",
+    "price": 17,
+    "perc_price": "3.4000",
     "ex_fmv": null,
     "comment": "Jurgen Ekkelenkamp può fare sia la mezzala che la seconda punta nell'Udinese, Runjaic anche l'anno scorso lo ha utilizzato in entrambe le posizioni. Da mezzala è sicuramente titolare, davanti le prime scelte sono invece Zaniolo e Davis. 5 gol e 3 assist in 31 partite a voto, un solo cartellino giallo: riparte da questi numeri e da una fanta-media del 6,61. Avrà grande spazio nell'Udinese e proverà a confermarsi in termini di bonus. Se non a migliorarsi.",
     "tit_index": null,
@@ -11601,9 +11117,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-07-23",
-    "updated_at": "2026-08-26",
+    "updated_at": "2026-09-01",
     "createdAt": "2026-07-23",
-    "updatedAt": "2026-08-26",
+    "updatedAt": "2026-09-01",
     "player": {
       "player_id": "2b362169-cf19-4a08-a822-d99382ed5e0e",
       "role": "C",
@@ -11620,8 +11136,8 @@
     "fascia": 5,
     "fascia_second": null,
     "fascia_third": null,
-    "price": 12,
-    "perc_price": "2.4000",
+    "price": 14,
+    "perc_price": "2.8000",
     "ex_fmv": null,
     "comment": "Manu Koné nella passata stagione ha portato voto in 29 partite, con 2 gol e 3 assist. Ha avuto qualche acciacco in più rispetto alle stagioni precedenti, Gasperini si augura di averlo al 100% fin dall'inizio di questo campionato. Per caratteristiche non è un giocatore da cui aspettarsi più bonus di quelli che ha realizzato nella scorsa stagione, al massimo qualcuno in più. Siamo sul 3/4° slot all'asta, è un titolare nella Roma e difficilmente prende meno di 6/6,5. La fanta-media del 6,53 lo dimostra.",
     "tit_index": null,
@@ -11632,9 +11148,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-07-23",
-    "updated_at": "2026-08-26",
+    "updated_at": "2026-09-01",
     "createdAt": "2026-07-23",
-    "updatedAt": "2026-08-26",
+    "updatedAt": "2026-09-01",
     "player": {
       "player_id": "0ae5f68a-c8e6-4a82-8269-b1207b182df4",
       "role": "C",
@@ -11682,8 +11198,8 @@
     "fascia": 7,
     "fascia_second": null,
     "fascia_third": null,
-    "price": 10,
-    "perc_price": "2.0000",
+    "price": 12,
+    "perc_price": "2.4000",
     "ex_fmv": null,
     "comment": "Luis Milla, 31enne spagnolo, è un centrocampista centrale di grande esperienza. Una vita passata in Liga tra Granada e Getafe, promette equilibrio ed eccellenti doti nel palleggio. Nell'ultima stagione l'exploit con 10 assist e un gol in 37 partite nel massimo campionato spagnolo. Al fantacalcio può portare buoni voti e appunto qualche +1 (specialista nei calci di punizione) ma occhio alla concorrenza nei due posti in mediana tra Da Cunha e Perrone. Qualche giallo di troppo e una posizione da play lo potrebbero penalizzare un po' ma rimane un profilo che può portare anche dei bonus e avere più spazio del previsto.",
     "tit_index": null,
@@ -11694,9 +11210,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-07-24",
-    "updated_at": "2026-08-30",
+    "updated_at": "2026-09-01",
     "createdAt": "2026-07-24",
-    "updatedAt": "2026-08-30",
+    "updatedAt": "2026-09-01",
     "player": {
       "player_id": "56f6449f-dda3-48cd-b535-9016b9ac7e65",
       "role": "C",
@@ -11765,36 +11281,6 @@
       "mantra_roles": [
         "W",
         "T"
-      ]
-    }
-  },
-  {
-    "player_id": "a22c4fed-ed14-4567-bb53-c672d5bf5a5a",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 5,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 15,
-    "perc_price": "3.0000",
-    "ex_fmv": null,
-    "comment": "Diego Moreira è un nuovo rinforzo del Milan di Ruben Amorim. Operazione molto importante per i rossoneri, arriva dallo Strasburgo per circa 50 milioni di euro più bonus. Si tratta di un esterno di nazionalità belga classe 2004 e di piede mancino, che predilige la fascia sinistra ma è stato impiegato anche a destra (ruolo in cui ha detto di volerlo provare Amorim). Arriva per rinforzare la batteria degli esterni, anche se può giocare più avanzato all'occorrenza: grandi accelerazioni e sgroppate palla al piede, i rossoneri sperano di trovare un 'nuovo Theo Hernandez'. Nelle idee del Milan ha tutto per essere il titolare a sinistra, si giocherà il posto con Bartesaghi inizialmente ma Moreira può presto diventare la primissima scelta. 4 presenze nella nazionale maggiore belga, ha scelto il Belgio dopo aver fatto tutta la trafila con le giovanili del Portogallo (ha la doppia nazionalità). 4 gol e 7 assist in 27 partite nell'ultima Ligue 1, è il suo record tra gol e assist da quando è professionista. Nell'ultima stagione ha perso 9 partite per un problema agli adduttori tra febbraio e aprile, ma poi ha recuperato e arriva integro e pronto in rossonero. Al fantacalcio è listato centrocampista: siamo sui 15 crediti circa in partenza, può essere un 3/4° slot.",
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": [],
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-08-19",
-    "updated_at": "2026-08-26",
-    "createdAt": "2026-08-19",
-    "updatedAt": "2026-08-26",
-    "player": {
-      "player_id": "a22c4fed-ed14-4567-bb53-c672d5bf5a5a",
-      "role": "C",
-      "mantra_roles": [
-        "W"
       ]
     }
   },
@@ -12315,6 +11801,7 @@
       "player_id": "b2ce362c-91f3-408b-a84c-f3b6e49d2f88",
       "role": "C",
       "mantra_roles": [
+        "M",
         "C"
       ]
     }
@@ -12326,8 +11813,8 @@
     "fascia": 10,
     "fascia_second": null,
     "fascia_third": null,
-    "price": 2,
-    "perc_price": "0.4000",
+    "price": 4,
+    "perc_price": "0.8000",
     "ex_fmv": null,
     "comment": "Emanuele Lulli ha stupito tutti al debutto nella prima di campionato contro la Fiorentina, ha giocato titolare e ha fatto una buonissima prestazione. Ha solo 19 anni, appena compiuti, ma è sembrato già pronto per la Serie A. A destra il titolare è Molina, ma Lulli si farà trovare pronto se Gasperini punterà ancora su di lui. Al fantacalcio però è solo una scommessa.",
     "tit_index": 2,
@@ -12338,9 +11825,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-08-26",
-    "updated_at": "2026-08-27",
+    "updated_at": "2026-09-01",
     "createdAt": "2026-08-26",
-    "updatedAt": "2026-08-27",
+    "updatedAt": "2026-09-01",
     "player": {
       "player_id": "04f390f1-2846-46f0-bc52-8ab0fbf3bcc1",
       "role": "D",
@@ -12961,36 +12448,6 @@
     }
   },
   {
-    "player_id": "e2f65951-61bc-4469-bd01-9340d6a556b2",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 3,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 85,
-    "perc_price": "17.0000",
-    "ex_fmv": null,
-    "comment": "Moise Kean ha deluso nell’ultima stagione, facendo 8 gol e 1 assist. Un crollo rispetto alla stagione precedente, è inevitabile dunque che non sia più considerato tra 2/3 i più pagati in assoluto. Proverà il rilancio al Como, con l'obiettivo di tornare quello di due stagioni fa.",
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": [],
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-23",
-    "updated_at": "2026-08-30",
-    "createdAt": "2026-07-23",
-    "updatedAt": "2026-08-30",
-    "player": {
-      "player_id": "e2f65951-61bc-4469-bd01-9340d6a556b2",
-      "role": "A",
-      "mantra_roles": [
-        "Pc"
-      ]
-    }
-  },
-  {
     "player_id": "4eabc8e1-2a75-44f1-80b8-d1f206027ecd",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
@@ -13332,11 +12789,11 @@
     "player_id": "8f8eb4c3-9f0b-429e-9f76-69a46cc09c98",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 12,
+    "fascia": 6,
     "fascia_second": null,
     "fascia_third": null,
-    "price": 2,
-    "perc_price": "0.4000",
+    "price": 6,
+    "perc_price": "1.2000",
     "ex_fmv": null,
     "comment": "Alla fine Benjamin Pavard è tornato all'Inter, dopo un anno in prestito al Marsiglia. Dopo Inzaghi ora trova Chivu, che ha avuto fiducia in lui a partire dalla preseason. Chiaramente non è titolare, non è più quello delle scorse stagioni, però sarà un jolly e così anche per il fantacalcio, come alternativa.",
     "tit_index": null,
@@ -13347,9 +12804,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-07-24",
-    "updated_at": "2026-08-27",
+    "updated_at": "2026-09-02",
     "createdAt": "2026-07-24",
-    "updatedAt": "2026-08-27",
+    "updatedAt": "2026-09-02",
     "player": {
       "player_id": "8f8eb4c3-9f0b-429e-9f76-69a46cc09c98",
       "role": "D",
@@ -13794,8 +13251,8 @@
     "fascia": 17,
     "fascia_second": null,
     "fascia_third": null,
-    "price": null,
-    "perc_price": null,
+    "price": 1,
+    "perc_price": "0.2000",
     "ex_fmv": null,
     "comment": null,
     "tit_index": null,
@@ -13806,9 +13263,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-08-30",
-    "updated_at": "2026-08-30",
+    "updated_at": "2026-09-01",
     "createdAt": "2026-08-30",
-    "updatedAt": "2026-08-30",
+    "updatedAt": "2026-09-01",
     "player": {
       "player_id": "bab1552e-5098-4681-b75c-5c9be49fcb4e",
       "role": "C",
@@ -13933,67 +13390,6 @@
     "player": {
       "player_id": "81dda297-825d-419f-bdc1-dadd2d326b6c",
       "role": "C",
-      "mantra_roles": [
-        "W",
-        "A"
-      ]
-    }
-  },
-  {
-    "player_id": "5a4cd663-45d1-4860-a750-c36684a2399b",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 3,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 100,
-    "perc_price": "20.0000",
-    "ex_fmv": null,
-    "comment": "Randal Kolo Muani è tornato alla Juve dal PSG, ma questa volta a titolo definitivo per oltre 50 milioni di euro bonus inclusi. Luciano Spalletti ha fortemente voluto il centravanti classe 1998, aveva già fatto il suo nome al club lo scorso gennaio. Non ci sono dubbi, guiderà lui l'attacco di Spalletti. L'allenatore ha fortemente voluto il francese (lo voleva già a gennaio) ed è pronto ad affidargli una maglia al centro del reparto. Muani farà di tutto per migliorare il suo record stagionale di gol in un campionato. È datato 2022/23, in Bundesliga, 15 reti e 14 assist in 32 partite con l'Eintracht Francoforte. Rimane questa la sua miglior annata in termini di bonus, al PSG è arrivato massimo a 6 gol stagionali in Ligue 1, al Tottenham l'anno scorso ne ha segnato solo 1 in 30 gare. Non stiamo parlando di un bomber vero e proprio, ma ha tutto per diventarlo, sappiamo che Spalletti è molto bravo a lavorare con i centravanti. 97 gol e 56 assist in 331 partite in carriera per Kolo Muani, toccherà quindi la quota 100 con la maglia bianconera. Ha voluto fortemente la Juve (la voleva già a gennaio), ha fatto qualsiasi cosa per tornare in bianconero e ha grandissime motivazioni: ci sono tutti gli ingredienti per vedere una stagione importante del francese. Fisicamente arriva un giocatore integro, ha saltato 7 gare l'anno scorso col Tottenham per una fastidiosa contusione al muscolo, ma non ha mai avuto infortuni gravi. Solo 35 gialli e 2 rossi in carriera, non è un giocatore che prende tanti cartellini, anzi. E poi c'è un fattore molto importante: i rigori. 6 su 6 in carriera per Kolo Muani (di cui 1 alla Juve), si candida a essere la prima scelta dal dischetto visto che le principali alternative sono a oggi Locatelli (2 su 3) e Yildiz (1 su 2). Sarebbe un grandissimo attestato di fiducia e potrebbe così aumentare il suo bottino di reti stagionali.",
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": [],
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-08-04",
-    "updated_at": "2026-08-30",
-    "createdAt": "2026-08-04",
-    "updatedAt": "2026-08-30",
-    "player": {
-      "player_id": "5a4cd663-45d1-4860-a750-c36684a2399b",
-      "role": "A",
-      "mantra_roles": [
-        "Pc"
-      ]
-    }
-  },
-  {
-    "player_id": "3cd2885e-8e25-4e3f-8c86-8af871b76421",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 6,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 10,
-    "perc_price": "2.0000",
-    "ex_fmv": null,
-    "comment": "David Neres paga un po’ il grave infortunio accusato nella passata stagione e il passaggio tra gli attaccanti nel listone. 3 gol e 3 assist in 16 partite a voto, si era preso la scena nel Napoli di Conte, poi il lungo stop che gli ha fatto chiudere la stagione ai box. È arrivato Allegri in panchina, con il passaggio al 4-3-3 che può valorizzare Neres: se sta bene può essere titolare, anche se nel pre-campionato ha trovato meno spazio del previsto. Ma a prescindere si può mettere comunque da terzo slot, che giochi o che subentri non fa differenza, può lasciare il segno anche in pochissimi minuti. Va preso alle giuste condizioni e il fatto che abbia chiuso la scorsa stagione ai box fa scendere il prezzo di partenza, è meno in hype anche per il cambio di ruolo nel listone.",
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": [],
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-23",
-    "updated_at": "2026-08-30",
-    "createdAt": "2026-07-23",
-    "updatedAt": "2026-08-30",
-    "player": {
-      "player_id": "3cd2885e-8e25-4e3f-8c86-8af871b76421",
-      "role": "A",
       "mantra_roles": [
         "W",
         "A"
@@ -14299,37 +13695,6 @@
       "role": "C",
       "mantra_roles": [
         "C"
-      ]
-    }
-  },
-  {
-    "player_id": "5f28f5f6-550d-4329-ae56-01f2db6e9e28",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 4,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 22,
-    "perc_price": "4.4000",
-    "ex_fmv": null,
-    "comment": "Attenzione a Jonathan Rowe, ha tutto per esplodere e diventare un vero e proprio 'crack' al fantacalcio. 3 gol e 3 assist in 28 partite nella scorsa stagione, ma di fatto li ha realizzati tutti tra la 21a e la 38a di campionato. Se trova continuità anche all'Atalanta, può provare a puntare la doppia cifra tra gol e assist. ",
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": [],
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-23",
-    "updated_at": "2026-08-31",
-    "createdAt": "2026-07-23",
-    "updatedAt": "2026-08-31",
-    "player": {
-      "player_id": "5f28f5f6-550d-4329-ae56-01f2db6e9e28",
-      "role": "C",
-      "mantra_roles": [
-        "W",
-        "T"
       ]
     }
   },
@@ -14644,36 +14009,6 @@
     }
   },
   {
-    "player_id": "0f012235-9647-48c6-b0ae-529ea8156ce1",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 10,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 5,
-    "perc_price": "1.0000",
-    "ex_fmv": null,
-    "comment": "Arrivato al Torino dalla Fiorentina in prestito con diritto di riscatto fissato a 10 milioni di euro, Niccolò Fortini è un terzino classe 2006, alto 185 centimetri, dotato di corsa, tecnica e buona capacità di accompagnare l’azione offensiva. Predilige la fascia destra, ma può essere impiegato anche a sinistra. Nell’ultima stagione ha raccolto 26 presenze complessive: 16 in Serie A, 9 in Conference League e una in Coppa Italia, mettendo a referto un assist nella competizione europea. Al fantacalcio può trovare sicuramente maggiore continuità rispetto all’esperienza di Firenze e giocarsi un posto sulla corsia destra con chance di essere titolare: rappresenta una giovane scommessa da ultimi slot, interessante soprattutto per la sua duttilità e per il potenziale contributo offensivo.",
-    "tit_index": 3,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": [],
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-24",
-    "updated_at": "2026-08-30",
-    "createdAt": "2026-07-24",
-    "updatedAt": "2026-08-30",
-    "player": {
-      "player_id": "0f012235-9647-48c6-b0ae-529ea8156ce1",
-      "role": "D",
-      "mantra_roles": [
-        "E"
-      ]
-    }
-  },
-  {
     "player_id": "0ed792c8-0d5a-4e48-8a59-009d9590b1b8",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
@@ -14708,11 +14043,11 @@
     "player_id": "d47bf2f7-f320-4340-9845-33ef2f94d175",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 13,
+    "fascia": 10,
     "fascia_second": null,
     "fascia_third": null,
-    "price": 3,
-    "perc_price": "0.6000",
+    "price": 5,
+    "perc_price": "1.0000",
     "ex_fmv": null,
     "comment": "Ricardo Mangas sbarca in Serie A al Monza dopo una carriera passata in Portogallo al netto di due avventure in Francia (Bordeaux) e Russia (Spartak Mosca). Terzino sinistro classe 1998 arriva in prestito con obbligo di riscatto dallo Sporting Lisbona. Troverà Juric che sa come valorizzare gli esterni con Mangas che ha ricoperto il ruolo per molto tempo anche se abituato anche a giocare in una difesa a 4. Non ha sempre trovato grande continuità in carriera e le appena 15 presenze nella scorsa stagione e le 11 della annata precedente in Russia lo testimoniano. Nonostante ciò, Mangas porta con sé al fantacalcio una notevole propensione al gol: 2 allo Sporting, 3 allo Spartak, 4 al Vitoria Guimaraes, 4 al Boavista e 3 al Bordeaux nelle ultime stagioni. All'asta rimane un esterno di una neopromossa ma la curiosità di vedere il portoghese ai servizi di Juric è tanta e può essere potenzialmente un 5-6° slot.",
     "tit_index": null,
@@ -14723,9 +14058,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-08-01",
-    "updated_at": "2026-08-30",
+    "updated_at": "2026-09-01",
     "createdAt": "2026-08-01",
-    "updatedAt": "2026-08-30",
+    "updatedAt": "2026-09-01",
     "player": {
       "player_id": "d47bf2f7-f320-4340-9845-33ef2f94d175",
       "role": "D",
@@ -14942,6 +14277,894 @@
     "updatedAt": "2026-08-31",
     "player": {
       "player_id": "54398484-ccc0-43e1-b9a1-716b35d836d1",
+      "role": "D",
+      "mantra_roles": [
+        "Dc"
+      ]
+    }
+  },
+  {
+    "player_id": "854680bd-ac74-4895-bd1b-f439d2315b67",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 12,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 4,
+    "perc_price": "0.8000",
+    "ex_fmv": null,
+    "comment": "Omari Hutchinson è un nuovo giocatore del Milan. Si tratta di un fantasista classe 2003, è alto 174 cm ed è inglese di nazionalità. Di ruolo naturale è un’ala destra, nel 3-4-2-1 di Amorim giocherà nei due dietro alla punta. C’è concorrenza nel ruolo, non sarà titolare fisso ma un jolly. E così anche al fantacalcio, dove diventa un po’ più interessante per il ruolo di centrocampista nel listone. Nell’ultima stagione non era titolare al Nottingham Forest, ne ha giocate dall’inizio 17 su 38. Il bottino è stato di un gol e 7 assist.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-09-01",
+    "updated_at": "2026-09-01",
+    "createdAt": "2026-09-01",
+    "updatedAt": "2026-09-01",
+    "player": {
+      "player_id": "854680bd-ac74-4895-bd1b-f439d2315b67",
+      "role": "C",
+      "mantra_roles": [
+        "W",
+        "A"
+      ]
+    }
+  },
+  {
+    "player_id": "ce950363-d565-4e38-aa78-93bb22b65fa1",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 10,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 3,
+    "perc_price": "0.6000",
+    "ex_fmv": null,
+    "comment": "Joel Monteiro è un acquisto interessante da parte del Lecce. Interessante anche perché è stato listato a centrocampo. Si tratta di un’ala sinistra del 1999, è svizzero di nazionalità ed è alto 191 cm. Gioca a sinistra ed è di piede destro, vede la porta e lo dicono i numeri: 3 gol in 5 partite quest’anno (quindi è già in forma), 4 gol l’anno scorso in campionato, 7 due anni fa e 12 tre anni fa. Il Lecce lo ha pagato 3 milioni e al fanta può essere una scommessa.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-09-01",
+    "updated_at": "2026-09-01",
+    "createdAt": "2026-09-01",
+    "updatedAt": "2026-09-01",
+    "player": {
+      "player_id": "ce950363-d565-4e38-aa78-93bb22b65fa1",
+      "role": "C",
+      "mantra_roles": [
+        "W",
+        "A"
+      ]
+    }
+  },
+  {
+    "player_id": "a22c4fed-ed14-4567-bb53-c672d5bf5a5a",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 5,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 13,
+    "perc_price": "2.6000",
+    "ex_fmv": null,
+    "comment": "Diego Moreira è un nuovo rinforzo del Milan di Ruben Amorim. Operazione molto importante per i rossoneri, arriva dallo Strasburgo per circa 50 milioni di euro più bonus. Si tratta di un esterno di nazionalità belga classe 2004 e di piede mancino, che predilige la fascia sinistra ma è stato impiegato anche a destra (ruolo in cui ha detto di volerlo provare Amorim). Arriva per rinforzare la batteria degli esterni, anche se può giocare più avanzato all'occorrenza: grandi accelerazioni e sgroppate palla al piede, i rossoneri sperano di trovare un 'nuovo Theo Hernandez'. Nelle idee del Milan ha tutto per essere il titolare a sinistra, si giocherà il posto con Bartesaghi inizialmente ma Moreira può presto diventare la primissima scelta. 4 presenze nella nazionale maggiore belga, ha scelto il Belgio dopo aver fatto tutta la trafila con le giovanili del Portogallo (ha la doppia nazionalità). 4 gol e 7 assist in 27 partite nell'ultima Ligue 1, è il suo record tra gol e assist da quando è professionista. Nell'ultima stagione ha perso 9 partite per un problema agli adduttori tra febbraio e aprile, ma poi ha recuperato e arriva integro e pronto in rossonero. Al fantacalcio è listato centrocampista: siamo sui 15 crediti circa in partenza, può essere un 3/4° slot.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-08-19",
+    "updated_at": "2026-09-01",
+    "createdAt": "2026-08-19",
+    "updatedAt": "2026-09-01",
+    "player": {
+      "player_id": "a22c4fed-ed14-4567-bb53-c672d5bf5a5a",
+      "role": "C",
+      "mantra_roles": [
+        "E",
+        "W"
+      ]
+    }
+  },
+  {
+    "player_id": "7a6908eb-f092-4f48-95af-b03ba52381dd",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 8,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 32,
+    "perc_price": "6.4000",
+    "ex_fmv": null,
+    "comment": "Artem Dovbyk è passato dalla Roma al Bologna, restando così al fantacalcio. L’anno scorso ha deluso con 3 gol e 1 assist in 13 partite, arriva anche da un infortunio che gli ha fatto perdere la seconda parte di stagione. In Italia non ha brillato come aveva fatto in Spagna, ora c’è anche da capire come si adatterà al Bologna e se entrerà subito in forma (gli infortuni sono un punto debole). Ma intanto per il fanta ci sono buone notizie, al Bologna sarà probabilmente titolare e prenderà il posto di Castro. Quando non segna qualche insufficienza arriverà, considerando le sue caratteristiche, però può avere più continuità e fare quindi più gol, aspirando alla doppia cifra. Può prendersi anche qualche rigore (27 su 32 calciati), alle spalle dello specialista Orsolini e forse anche di Bernardeschi, ma se la giocheranno. Siamo intorno al terzo slot, in chiave asta cerca il rilancio. Occhio al dualismo con Piccoli, ma l'ucraino parte davanti all'ex Fiorentina.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": 2,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-07-23",
+    "updated_at": "2026-09-01",
+    "createdAt": "2026-07-23",
+    "updatedAt": "2026-09-01",
+    "player": {
+      "player_id": "7a6908eb-f092-4f48-95af-b03ba52381dd",
+      "role": "A",
+      "mantra_roles": [
+        "Pc"
+      ]
+    }
+  },
+  {
+    "player_id": "019db866-8ef1-4aea-894b-eb37ed3b792e",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 8,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 8,
+    "perc_price": "1.6000",
+    "ex_fmv": null,
+    "comment": "Rafik Belghali torna in Serie A e lo fa vestendo questa volta la maglia del Torino, dopo essersi messo in mostra a Verona. 24enne di nazionalità algerina, arriva ai granata per giocarsi il posto con l’ex Fiorentina Fortini dopo l’addio di Pedersen. E l’ex Hellas parte avanti. Sette i milioni che il Torino dovrà spendere per esercitare il riscatto: nella passata stagione in A è stato tra i più positivi nel Verona soprattutto nella prima parte di stagione dove ha raccolto 26 presenze e 2 gol. Poi la Coppa d’Africa e l’infortunio lo hanno rallentato ma può garantire spinta, cross dal fondo e quindi assist. Un minimo di prudenza serve per via delle sue condizioni fisiche ma è un profilo potenzialmente titolare e che garantisce spinta.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-09-01",
+    "updated_at": "2026-09-01",
+    "createdAt": "2026-09-01",
+    "updatedAt": "2026-09-01",
+    "player": {
+      "player_id": "019db866-8ef1-4aea-894b-eb37ed3b792e",
+      "role": "D",
+      "mantra_roles": [
+        "Dd",
+        "E"
+      ]
+    }
+  },
+  {
+    "player_id": "8194c04b-9af2-4f63-af75-712ae72e0842",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 14,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 2,
+    "perc_price": "0.4000",
+    "ex_fmv": null,
+    "comment": "Promesso sposo del Napoli, alla fine l'argentino Exequiel Zeballos se lo è aggiudicato il Monza che ha speso per lui circa 4,5 milioni di euro. L’esterno destro d’attacco classe 2002 arriva dal Boca Juniors dove nell’ultima stagione non ha giocato molto per via di un problema muscolare alla coscia, stesso destino anche tra il 2022 e il 2023 dove subì due infortuni gravi e una successiva ricaduta. Il talento, però, è cristallino e il gol nel Superclasico Boca-River del novembre scorso lo testimonia. Sulla trequarti di Juric, alle spalle di Varela, il 24enne potrebbe ritagliarsi spazio al fianco di Colpani. È all’esordio in Serie A e c’è il tema infortuni, quindi servono le dovute precauzioni, ma a pochi crediti si può prendere come scommessa. È un po’ penalizzato dal ruolo di attaccante, con la maglia del Boca ha fatto 16 gol e 16 assist in 140 partite. ",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-09-01",
+    "updated_at": "2026-09-01",
+    "createdAt": "2026-09-01",
+    "updatedAt": "2026-09-01",
+    "player": {
+      "player_id": "8194c04b-9af2-4f63-af75-712ae72e0842",
+      "role": "A",
+      "mantra_roles": [
+        "A"
+      ]
+    }
+  },
+  {
+    "player_id": "d223681f-3306-47fa-a0f6-e0b1149260a2",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 16,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 1,
+    "perc_price": "0.2000",
+    "ex_fmv": null,
+    "comment": "Lazar Jovanovic è il colpo giovane dell’ultimo giorno di mercato dell’Udinese che si assicura un talento di appena 19 anni per la trequarti. Arriva dallo Stoccarda a titolo definitivo per 7 milioni di euro e proverà a trovare spazio sulla trequarti occupata da Zaniolo e al nuovo arrivato Unai Gomez. I numeri in Serbia tra Vojvodina, Stella Rossa e OFK Belgrado suggeriscono che sia nata una nuova stella ed è quello che aveva spinto lo Stoccarda a prelevarlo. Nell’ultima stagione la frenata con appena 6 presenze tra campionato ed Europa League per via di problemi fisici. Al fantacalcio è una scommessa da leghe numerose, anche per chi ha le conferme.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-09-01",
+    "updated_at": "2026-09-01",
+    "createdAt": "2026-09-01",
+    "updatedAt": "2026-09-01",
+    "player": {
+      "player_id": "d223681f-3306-47fa-a0f6-e0b1149260a2",
+      "role": "C",
+      "mantra_roles": [
+        "W",
+        "T"
+      ]
+    }
+  },
+  {
+    "player_id": "b5caebe6-a205-4fb2-bbd4-16e49bb20a36",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 8,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 6,
+    "perc_price": "1.2000",
+    "ex_fmv": null,
+    "comment": "Pape Matar Sarr è il rinforzo messo a segno dalla Juventus a centrocampo. Investimento importante nel caso in cui le condizioni dell’obbligo di riscatto si dovessero realizzare: circa 2 milioni il prestito, 27,5 milioni per l’acquisto a titolo definitivo nella prossima stagione. Arrivato in Europa al Metz e poi passato al Tottenham, il 23enne di nazionalità senegalese si è preso pian piano un posto da titolare nelle difficili annate degli Spurs. I gol e gli assist non sono mancati (circa 2-3 gol e 3-4 assist negli ultimi tre campionati), soprattutto se si pensa che Sarr è prevalentemente un centrocampista centrale, bravo a giocare in una mediana. Allo stesso tempo, però, è dinamico e dotato di un buon tiro da fuori area. Una volta entrato nei meccanismi di Spalletti, si gioca il posto da titolare a centrocampo, avrà molto spazio e di fatto inizialmente prende il posto di K. Thuram che ha problemi fisici.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-09-01",
+    "updated_at": "2026-09-01",
+    "createdAt": "2026-09-01",
+    "updatedAt": "2026-09-01",
+    "player": {
+      "player_id": "b5caebe6-a205-4fb2-bbd4-16e49bb20a36",
+      "role": "C",
+      "mantra_roles": [
+        "M",
+        "C"
+      ]
+    }
+  },
+  {
+    "player_id": "89f67672-1ec4-4dc3-8831-dbeee6f56f2e",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 17,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 1,
+    "perc_price": "0.2000",
+    "ex_fmv": null,
+    "comment": null,
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": null,
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-09-01",
+    "updated_at": "2026-09-01",
+    "createdAt": "2026-09-01",
+    "updatedAt": "2026-09-01",
+    "player": {
+      "player_id": "89f67672-1ec4-4dc3-8831-dbeee6f56f2e",
+      "role": "A",
+      "mantra_roles": [
+        "A"
+      ]
+    }
+  },
+  {
+    "player_id": "3cd2885e-8e25-4e3f-8c86-8af871b76421",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 6,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 9,
+    "perc_price": "1.8000",
+    "ex_fmv": null,
+    "comment": "David Neres paga un po’ il grave infortunio accusato nella passata stagione e il passaggio tra gli attaccanti nel listone. 3 gol e 3 assist in 16 partite a voto, si era preso la scena nel Napoli di Conte, poi il lungo stop che gli ha fatto chiudere la stagione ai box. È arrivato Allegri in panchina, con il passaggio al 4-3-3 che può valorizzare Neres: se sta bene può essere titolare, anche se nel pre-campionato ha trovato meno spazio del previsto. Ma a prescindere si può mettere comunque da terzo slot, che giochi o che subentri non fa differenza, può lasciare il segno anche in pochissimi minuti. Va preso alle giuste condizioni e il fatto che abbia chiuso la scorsa stagione ai box fa scendere il prezzo di partenza, è meno in hype anche per il cambio di ruolo nel listone.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-07-23",
+    "updated_at": "2026-09-01",
+    "createdAt": "2026-07-23",
+    "updatedAt": "2026-09-01",
+    "player": {
+      "player_id": "3cd2885e-8e25-4e3f-8c86-8af871b76421",
+      "role": "A",
+      "mantra_roles": [
+        "W",
+        "A"
+      ]
+    }
+  },
+  {
+    "player_id": "d05121f2-7f6b-44df-8cd1-e4611b85700d",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 13,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 2,
+    "perc_price": "0.4000",
+    "ex_fmv": null,
+    "comment": "Yukinari Sugawara sarà il primo giapponese a vestire la maglia del Cagliari. Il terzino destro classe 2000 arriva dal Southampton in prestito con diritto di riscatto. L’ultima stagione il 26enne l’ha giocata in Bundesliga al Werder Brema dove ha raccolto 31 presenze condite da ben 6 assist. Buon rinforzo della squadra di Pisacane che si assicura un profilo di esperienza che andrà a sostituire sulla corsia di destra Gabriele Zappa, approdato al Verona. Una vita all’AZ Alkmaar prima di passare proprio in Premier League, in Olanda il punto più alto della carriera dove nel 22/23 realizzò 4 gol e 7 assist. Al Cagliari sarà probabilmente il terzino destro titolare nella formazione di Pisacane.",
+    "tit_index": 3,
+    "aff_index": 4,
+    "inf_index": 4,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-09-01",
+    "updated_at": "2026-09-01",
+    "createdAt": "2026-09-01",
+    "updatedAt": "2026-09-01",
+    "player": {
+      "player_id": "d05121f2-7f6b-44df-8cd1-e4611b85700d",
+      "role": "D",
+      "mantra_roles": [
+        "Dd",
+        "E"
+      ]
+    }
+  },
+  {
+    "player_id": "cff37405-7da7-494e-b4c4-34296cb8be1f",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 15,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 1,
+    "perc_price": "0.2000",
+    "ex_fmv": null,
+    "comment": null,
+    "tit_index": 4,
+    "aff_index": 3,
+    "inf_index": 4,
+    "notes": null,
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-07-24",
+    "updated_at": "2026-09-01",
+    "createdAt": "2026-07-24",
+    "updatedAt": "2026-09-01",
+    "player": {
+      "player_id": "cff37405-7da7-494e-b4c4-34296cb8be1f",
+      "role": "D",
+      "mantra_roles": [
+        "Dd",
+        "Dc"
+      ]
+    }
+  },
+  {
+    "player_id": "3490cc1c-60cd-4cb8-b606-45c9c3279e4c",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 14,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 1,
+    "perc_price": "0.2000",
+    "ex_fmv": null,
+    "comment": "Cody Drameh è un nuovo giocatore del Genoa, che sul terzino destro dell’Hull City ha investito circa 5 milioni di euro (come valutazione nell'operazione). Sarà il sostituto di Norton-Cuffy sulla destra, con quest’ultimo che ha fatto il percorso inverso rispetto al 24enne inglese. Classe 2001, nonostante la giovane età ha già tanta esperienza nel calcio d’oltremanica tra Leeds, Cardiff, Luton Town e Birmigham. Più terzino che esterno a tutta fascia, Drameh ha portato pochi bonus nelle ultime stagioni, appena un assist nella cavalcata promozione dell’Hull City. È il favorito, però, per essere titolare nel lungo periodo al Genoa.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-09-01",
+    "updated_at": "2026-09-01",
+    "createdAt": "2026-09-01",
+    "updatedAt": "2026-09-01",
+    "player": {
+      "player_id": "3490cc1c-60cd-4cb8-b606-45c9c3279e4c",
+      "role": "D",
+      "mantra_roles": [
+        "Dd",
+        "Ds",
+        "E"
+      ]
+    }
+  },
+  {
+    "player_id": "0f012235-9647-48c6-b0ae-529ea8156ce1",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 10,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 2,
+    "perc_price": "0.4000",
+    "ex_fmv": null,
+    "comment": "Arrivato al Torino dalla Fiorentina in prestito con diritto di riscatto fissato a 10 milioni di euro, Niccolò Fortini è un terzino classe 2006, alto 185 centimetri, dotato di corsa, tecnica e buona capacità di accompagnare l’azione offensiva. Predilige la fascia destra, ma può essere impiegato anche a sinistra. Nell’ultima stagione ha raccolto 26 presenze complessive: 16 in Serie A, 9 in Conference League e una in Coppa Italia, mettendo a referto un assist nella competizione europea. Al fantacalcio può trovare sicuramente maggiore continuità rispetto all’esperienza di Firenze e giocarsi un posto sulla corsia destra con Belghali, che però parte avanti. Rappresenta una giovane scommessa solo da ultimi slot, interessante soprattutto per la sua duttilità e per il potenziale contributo offensivo. Anche per chi ha le conferme.",
+    "tit_index": 3,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-07-24",
+    "updated_at": "2026-09-01",
+    "createdAt": "2026-07-24",
+    "updatedAt": "2026-09-01",
+    "player": {
+      "player_id": "0f012235-9647-48c6-b0ae-529ea8156ce1",
+      "role": "D",
+      "mantra_roles": [
+        "E"
+      ]
+    }
+  },
+  {
+    "player_id": "1b344136-9333-44d3-a27e-e9a80f819cea",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 13,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 3,
+    "perc_price": "0.6000",
+    "ex_fmv": null,
+    "comment": "Diego Carlos torna in Serie A, questa volta non con la maglia del Como ma con quella del Parma, che mette a segno un acquisto di esperienza in difesa. Centrale roccioso di 185 cm, sarà titolare nella retroguardia di Carlos Cuesta che ha perso durante il mercato Circati. Dopo diverse annate tempestate di infortuni tra Aston Villa e Fenerbahce, il nazionale brasiliano ha ritrovato la forma fisica a Como nell’ultima stagione dove si è giocato il posto da titolare e ha raccolto 27 presenze e un gol. Al fantacalcio è un acquisto low cost che andrà sempre a voto e chissà che non possa portare qualche bonus su palla inattiva.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-09-01",
+    "updated_at": "2026-09-01",
+    "createdAt": "2026-09-01",
+    "updatedAt": "2026-09-01",
+    "player": {
+      "player_id": "1b344136-9333-44d3-a27e-e9a80f819cea",
+      "role": "D",
+      "mantra_roles": [
+        "Dc"
+      ]
+    }
+  },
+  {
+    "player_id": "5a9eacee-7614-4621-b78f-5d0cc774cc76",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 16,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": null,
+    "perc_price": null,
+    "ex_fmv": null,
+    "comment": null,
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": null,
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-09-01",
+    "updated_at": "2026-09-01",
+    "createdAt": "2026-09-01",
+    "updatedAt": "2026-09-01",
+    "player": {
+      "player_id": "5a9eacee-7614-4621-b78f-5d0cc774cc76",
+      "role": "D",
+      "mantra_roles": [
+        "Dd",
+        "E"
+      ]
+    }
+  },
+  {
+    "player_id": "ce5cd19a-b929-4b5c-a0a4-067b0b355879",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 5,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 50,
+    "perc_price": "10.0000",
+    "ex_fmv": null,
+    "comment": "Beto Betuncal torna a distanza di tre anni in Serie A e vestirà la maglia della Fiorentina, che lo ha prelevato dall’Everton per circa 18 milioni. L’attaccante di 194 cm è ancora nella testa di tutti i fantallenatori per le due annate passate all’Udinese dove andò in doppia cifra in entrambe le occasioni con 11 e 10 gol. Poi la chiamata della Premier League dove l’impatto non è stato dei migliori con appena 3 reti all’esordio. Il guineano però pian piano si è ritaglitato spazio e ha chiuso le ultime due stagioni con 8 e 9 gol in campionato. Alla Fiorentina sarà testa a testa per il ruolo di centravanti con l’altro nuovo arrivato Pellegrino. Per esperienza, senso del gol e la fisicità che conta molto in Serie A, il classe 1998 può partire davanti nelle gerarchie ma, in ogni caso, collezionerà tanti minuti e potrà essere decisivo anche a gara in corsa. Hanno caratteristiche diverse (Beto è molto più bravo ad attaccare la profondità) quindi dipenderà anche dalla partita. In Serie A non solo diversi gol di testa, specialità della casa, ma di lui si ricordano anche cavalcate palla al piede facendo valere il fisico. Non è un rigorista per ora, uno solo segnato in Serie A.",
+    "tit_index": 4,
+    "aff_index": 4,
+    "inf_index": 4,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-09-01",
+    "updated_at": "2026-09-01",
+    "createdAt": "2026-09-01",
+    "updatedAt": "2026-09-01",
+    "player": {
+      "player_id": "ce5cd19a-b929-4b5c-a0a4-067b0b355879",
+      "role": "A",
+      "mantra_roles": [
+        "Pc"
+      ]
+    }
+  },
+  {
+    "player_id": "b14c7f71-1f98-4e11-b92b-4c5f7a50f693",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 12,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 4,
+    "perc_price": "0.8000",
+    "ex_fmv": null,
+    "comment": "Wilfried Gnonto giocherà per la prima volta in Serie A con la maglia della Fiorentina dopo esser cresciuto con la maglia dello Zurigo (8 gol e 3 assist nel 2022/23) e poi del Leeds dove si è distinto in Championship (8 reti e 2 assist nel 2023/24, 9 e 6 nella stagione seguente). Poi l’impatto con la Premier League e il 22enne ha perso la titolarità totalizzando 23 presenze e 3 gol nell’ultimo campionato. Proverà a rilanciarsi in viola sfruttando un inizio complicato e un possibile passaggio definitivo al 4-3-3. Gerarchia aperta e non ha il posto fisso, ma la sua velocità e i suoi spunti nello stretto possono essere fonte di bonus e assist per Beto e Pellegrino. Al fantacalcio perde un po’ di appeal listato attaccante ma per gli ultimi slot può essere più di un’idea.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-09-01",
+    "updated_at": "2026-09-01",
+    "createdAt": "2026-09-01",
+    "updatedAt": "2026-09-01",
+    "player": {
+      "player_id": "b14c7f71-1f98-4e11-b92b-4c5f7a50f693",
+      "role": "A",
+      "mantra_roles": [
+        "W",
+        "A"
+      ]
+    }
+  },
+  {
+    "player_id": "5a4cd663-45d1-4860-a750-c36684a2399b",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 3,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 90,
+    "perc_price": "18.0000",
+    "ex_fmv": null,
+    "comment": "Randal Kolo Muani è tornato alla Juve dal PSG, ma questa volta a titolo definitivo per oltre 50 milioni di euro bonus inclusi. Luciano Spalletti ha fortemente voluto il centravanti classe 1998, aveva già fatto il suo nome al club lo scorso gennaio. Non ci sono dubbi, guiderà lui l'attacco di Spalletti. L'allenatore ha fortemente voluto il francese (lo voleva già a gennaio) ed è pronto ad affidargli una maglia al centro del reparto. Muani farà di tutto per migliorare il suo record stagionale di gol in un campionato. È datato 2022/23, in Bundesliga, 15 reti e 14 assist in 32 partite con l'Eintracht Francoforte. Rimane questa la sua miglior annata in termini di bonus, al PSG è arrivato massimo a 6 gol stagionali in Ligue 1, al Tottenham l'anno scorso ne ha segnato solo 1 in 30 gare. Non stiamo parlando di un bomber vero e proprio, ma ha tutto per diventarlo, sappiamo che Spalletti è molto bravo a lavorare con i centravanti. 97 gol e 56 assist in 331 partite in carriera per Kolo Muani, toccherà quindi la quota 100 con la maglia bianconera. Ha voluto fortemente la Juve (la voleva già a gennaio), ha fatto qualsiasi cosa per tornare in bianconero e ha grandissime motivazioni: ci sono tutti gli ingredienti per vedere una stagione importante del francese. Fisicamente arriva un giocatore integro, ha saltato 7 gare l'anno scorso col Tottenham per una fastidiosa contusione al muscolo, ma non ha mai avuto infortuni gravi. Solo 35 gialli e 2 rossi in carriera, non è un giocatore che prende tanti cartellini, anzi. E poi c'è un fattore molto importante: i rigori. 6 su 6 in carriera per Kolo Muani (di cui 1 alla Juve), si candida a essere la prima scelta dal dischetto visto che le principali alternative sono a oggi Locatelli (2 su 3) e Yildiz (1 su 2). Sarebbe un grandissimo attestato di fiducia e potrebbe così aumentare il suo bottino di reti stagionali.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-08-04",
+    "updated_at": "2026-09-01",
+    "createdAt": "2026-08-04",
+    "updatedAt": "2026-09-01",
+    "player": {
+      "player_id": "5a4cd663-45d1-4860-a750-c36684a2399b",
+      "role": "A",
+      "mantra_roles": [
+        "Pc"
+      ]
+    }
+  },
+  {
+    "player_id": "4861bf31-26b9-4827-9718-9a6787414277",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 6,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 10,
+    "perc_price": "2.0000",
+    "ex_fmv": null,
+    "comment": "Robert Sanchez, 28enne spagnolo ex Chelsea e Brighton, arriva a sorpresa al Como e non sarà il vice di Butez. L’estremo difensore ha giocato titolare nelle ultime due stagioni nei blues alternando alti e bassi. Nonostante il nome altisonante è difficile che Fabregas si privi da un giorno all'altro del francese, che è anche molto bravo a giocare coi piedi ed è stato più che positivo l'anno scorso. Non ci saranno primo e secondo ma due portieri che si giocheranno il posto, come succede in diverse big. Butez sta facendo bene, ma Sanchez non è arrivato al Como per fare panchina. Si prevede un'alternanza tra campionato e coppe, coppia obbligata dunque al fantacalcio.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-09-01",
+    "updated_at": "2026-09-01",
+    "createdAt": "2026-09-01",
+    "updatedAt": "2026-09-01",
+    "player": {
+      "player_id": "4861bf31-26b9-4827-9718-9a6787414277",
+      "role": "P",
+      "mantra_roles": [
+        "Por"
+      ]
+    }
+  },
+  {
+    "player_id": "5f28f5f6-550d-4329-ae56-01f2db6e9e28",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 4,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 26,
+    "perc_price": "5.2000",
+    "ex_fmv": null,
+    "comment": "Jonathan Rowe è passato dal Bologna all’Atalanta per oltre 35 milioni. 3 gol e 3 assist nell’ultima stagione con i rossoblù mettendosi in mostra soprattutto nell’ultima parte di stagione. Con un anno di Serie A alle spalle, adesso si attende il definitivo salto di qualità sotto la guida di Sarri, un allenatore che sa valorizzare gli esterni d’attacco. Si giocherà il posto con Raspadori sulla sinistra, potrebbe partire avanti alla lunga considerando che quel ruolo è più nelle sue corde, visto anche l’ampio investimento a livello economico da parte del club. Al fantacalcio resta al di sotto dei top ma se trova più continuità può arrivare a ottimi numeri dal punto di vista dei bonus.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-07-23",
+    "updated_at": "2026-09-01",
+    "createdAt": "2026-07-23",
+    "updatedAt": "2026-09-01",
+    "player": {
+      "player_id": "5f28f5f6-550d-4329-ae56-01f2db6e9e28",
+      "role": "C",
+      "mantra_roles": [
+        "W",
+        "T"
+      ]
+    }
+  },
+  {
+    "player_id": "21a58529-376d-41b3-9bf8-2444f31c8a86",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 7,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 17,
+    "perc_price": "3.4000",
+    "ex_fmv": null,
+    "comment": "Pedro Goncalves arriva in Italia e vestirà la maglia della Fiorentina con la società viola che ha fatto un grosso investimento per il 28enne portoghese: circa 22,5 per l’obbligo di riscatto se si attiverà a fine stagione. È un esterno sinistro d'attacco di appena 173 cm, bravo negli spazi stretti e dotato di un bel tiro dalla distanza. Fantasista vero e proprio, il classe 1998 viene da 13 gol e 8 assist nel campionato portoghese. Con lo Sporting numeri impressionanti: 239 presenze, 97 reti e 66 assist. Al fantacalcio è listato centrocampista ma di fatto giocherà in un attacco a tre con la valutazione che si può alzare alla lunga. In un 4-3-3 può partire davanti a Njie, è più maturo e pronto. Occhio quindi alla possibile sorpresa al fantacalcio se riuscirà ad avvicinarsi ai numeri avuto in Portogallo.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-09-01",
+    "updated_at": "2026-09-01",
+    "createdAt": "2026-09-01",
+    "updatedAt": "2026-09-01",
+    "player": {
+      "player_id": "21a58529-376d-41b3-9bf8-2444f31c8a86",
+      "role": "C",
+      "mantra_roles": [
+        "W",
+        "T"
+      ]
+    }
+  },
+  {
+    "player_id": "fbe3ff89-8369-4e4f-af9e-6176daa6e0c3",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 7,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 11,
+    "perc_price": "2.2000",
+    "ex_fmv": null,
+    "comment": "Samuel Mbangula torna in Serie A dopo appena una stagione e vestirà la maglia del Bologna. 22enne belga, è un'ala sinistra che fa delle accelerazioni la sua migliore qualità. Arriva per rimpiazzare Rowe e come caratteristiche lo ricorda. Nei primi due anni tra le big del calcio internazionale il 2004 si è messo in mostra: 3 gol e 4 assist alla Juventus, stesso risultato nell’ultima stagione al Werder Brema in 26 presenze. Al Bologna si giocherà il posto con Cambiaghi a sinistra e solo inizialmente partirà dietro (deve adattarsi) ma alla lunga può prendersi il posto. Occhio anche al rapporto con Tedesco che lo aveva convocato per le uniche sue presenze in nazionale maggiore belga. Al fantacalcio, listato centrocampista, stuzzica e non poco: può portare bonus.",
+    "tit_index": 4,
+    "aff_index": 4,
+    "inf_index": 4,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-09-01",
+    "updated_at": "2026-09-01",
+    "createdAt": "2026-09-01",
+    "updatedAt": "2026-09-01",
+    "player": {
+      "player_id": "fbe3ff89-8369-4e4f-af9e-6176daa6e0c3",
+      "role": "C",
+      "mantra_roles": [
+        "W",
+        "A"
+      ]
+    }
+  },
+  {
+    "player_id": "8a0855b4-5bbc-45b0-95e7-ea1ebd420246",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 14,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 1,
+    "perc_price": "0.2000",
+    "ex_fmv": null,
+    "comment": "Daniel Braganca ha firmato per il Torino nell’ultimo giorno di mercato. Centrocampista classe 1999, il portoghese è dotato di un’ottima tecnica e proverà a conquistarsi la titolarità a centrocampo nei granata, anche se c'è concorrenza. È il regista che mancava ad Abate e nell’ultima stagione allo Sporting, nonostante la rottura del legamento crociato, ha totalizzato 6 gol in appena 14 presenze. Stesso copione nell’anno precedente: appena 18 i gettoni, 3 reti e 4 assist, prima dell’inizio del brutto calvario. L’incognita è la condizione fisica, ma può essere un buon profilo al fantacalcio se preso a prezzo basso da ultimo slot.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-09-01",
+    "updated_at": "2026-09-01",
+    "createdAt": "2026-09-01",
+    "updatedAt": "2026-09-01",
+    "player": {
+      "player_id": "8a0855b4-5bbc-45b0-95e7-ea1ebd420246",
+      "role": "C",
+      "mantra_roles": [
+        "C"
+      ]
+    }
+  },
+  {
+    "player_id": "307bd1b7-8698-4247-be19-95a1b2d3a58c",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 16,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 1,
+    "perc_price": "0.2000",
+    "ex_fmv": null,
+    "comment": "Ibrahim Sulemana continua la sua avventura in Serie A e questa volta giocherà con la maglia del Sassuolo. Il centrocampista ghanese arriva in prestito dall’Atalanta. Per avere 23 anni ha già un po’ di esperienza in Serie A: Verona, Cagliari, Atalanta, Bologna, di nuovo Cagliari per poi accasarsi ora ai neroverdi. Centrocampista centrale, può fare sia il mediano che la mezzala. Occhio perché in Serie A ha segnato 5 gol nelle ultime 3 stagioni, giocando pochissimo.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-07-24",
+    "updated_at": "2026-09-01",
+    "createdAt": "2026-07-24",
+    "updatedAt": "2026-09-01",
+    "player": {
+      "player_id": "307bd1b7-8698-4247-be19-95a1b2d3a58c",
+      "role": "C",
+      "mantra_roles": [
+        "M",
+        "C"
+      ]
+    }
+  },
+  {
+    "player_id": "57fb735b-1c97-4575-8388-1a2d46bf272f",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 16,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 1,
+    "perc_price": "0.2000",
+    "ex_fmv": null,
+    "comment": "Toni Fernandez è un nuovo giocatore del Venezia. Arriva in prestito dal Barcellona con il quale ha esordito nell’ultima stagione e ha vinto la Liga. 18 anni, di ruolo trequartista, arriva in Italia per affrontare la sua prima vera stagione da professionista. Nell’ultima stagione con il Barcellona B 5 gol e 3 assist. Ha talento ma è molto giovane, ottimo per chi ha le conferme.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-09-01",
+    "updated_at": "2026-09-01",
+    "createdAt": "2026-09-01",
+    "updatedAt": "2026-09-01",
+    "player": {
+      "player_id": "57fb735b-1c97-4575-8388-1a2d46bf272f",
+      "role": "C",
+      "mantra_roles": [
+        "T",
+        "A"
+      ]
+    }
+  },
+  {
+    "player_id": "e2f65951-61bc-4469-bd01-9340d6a556b2",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 3,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 105,
+    "perc_price": "21.0000",
+    "ex_fmv": null,
+    "comment": "Moise Kean passa al Como per circa 40 milioni di euro complessivi con Fabregas pronto a farlo tornare ai livelli di due anni fa. Complice il continuo ballottaggio, le tre competizioni e gli appena 8 gol siglati nella passata stagione a Firenze, l’attaccante italiano non sarà tra i più pagati all’asta ma la sua valutazione di certo risale potendo contare su ottimi assistman alle spalle come Baturina e Nico Paz. Appena un gradino sotto ai top più costosi, il ventiseienne è quasi impossibile da prendere in coppia con Douvikas per una questione di costi. Ci sarà alternanza tra campionato e Champions, entrambi avranno spazio. Douvikas è in forma, il loro valore sarà simile con Moise che può costare qualcosa in più e può tirare anche più rigori.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-07-23",
+    "updated_at": "2026-09-01",
+    "createdAt": "2026-07-23",
+    "updatedAt": "2026-09-01",
+    "player": {
+      "player_id": "e2f65951-61bc-4469-bd01-9340d6a556b2",
+      "role": "A",
+      "mantra_roles": [
+        "Pc"
+      ]
+    }
+  },
+  {
+    "player_id": "13718197-c982-4d9b-bbd2-87ce694e018c",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 4,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 63,
+    "perc_price": "12.6000",
+    "ex_fmv": null,
+    "comment": "Nick Woltemade è sicuramente uno dei colpi più importanti in Serie A nell’ultimo giorno di questo mercato estivo. Il tedesco, che l’anno scorso fu pagato dal Newcastle circa 80 milioni di euro, arriva in prestito secco per rilanciare la sua giovane carriera in un grande club. Attaccante atipico perché i quasi due metri di altezza non devono ingannare: allo Stoccarda e al Werder Brema il 24enne ha fatto anche la seconda punta, sa giocare anche fuori dall’area di rigore. Un attaccante che a primo impatto può sembrare completo ma che ha subito l’impatto con la Premier League (8 i gol realizzati in 33 presenze). Alla Juventus si giocherà il posto da titolare con Kolo Muani con quest’ultimo che almeno inizialmente parte avanti nelle gerarchie essendo già inserito negli schemi di Spalletti e avendo già giocato a Torino. Nel lungo periodo però se il francese continuasse a trovare difficoltà le cose potrebbero cambiare, quindi occhio: la gerarchia sarà aperta, ci sarà alternanza tra campionato ed Europa League. Difficile pensare di fare la coppia al fantacalcio ma sicuramente l’ex Newcastle troverà spazio e minuti per incidere: la sua fisicità può essere determinante in Serie A. Va considerato praticamente come un titolare, occhio anche ai rigori perché è molto bravo a calciarli.",
+    "tit_index": 3,
+    "aff_index": 4,
+    "inf_index": 4,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-09-01",
+    "updated_at": "2026-09-01",
+    "createdAt": "2026-09-01",
+    "updatedAt": "2026-09-01",
+    "player": {
+      "player_id": "13718197-c982-4d9b-bbd2-87ce694e018c",
+      "role": "A",
+      "mantra_roles": [
+        "A"
+      ]
+    }
+  },
+  {
+    "player_id": "ff6d2747-657b-40dd-ba8e-ce66d83e2925",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 12,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 2,
+    "perc_price": "0.4000",
+    "ex_fmv": null,
+    "comment": "Alessio Romagnoli è stato più volte a un passo dall’addio, la trattativa con l’Al Sadd è davvero infinita. E non è ancora finita, perché il mercato in Qatar resta aperto. Per questo rimane qualche incertezza sul suo acquisto al fantacalcio, se non andrà via ora potrebbe essere a gennaio. Se dovesse restare fino al termine della stagione potrebbe anche tornare titolare, rimane anche questa un’opzione ma è difficile fare previsioni in questi casi.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-07-24",
+    "updated_at": "2026-09-02",
+    "createdAt": "2026-07-24",
+    "updatedAt": "2026-09-02",
+    "player": {
+      "player_id": "ff6d2747-657b-40dd-ba8e-ce66d83e2925",
       "role": "D",
       "mantra_roles": [
         "Dc"

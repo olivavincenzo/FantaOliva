@@ -10,6 +10,11 @@
     "in_listone": true
   },
   {
+    "player_id": "019db866-8ef1-4aea-894b-eb37ed3b792e",
+    "price": 7,
+    "in_listone": true
+  },
+  {
     "player_id": "03943eb7-aa1e-4daf-b816-f2722e9e46ce",
     "price": 8,
     "in_listone": true
@@ -120,6 +125,11 @@
     "in_listone": true
   },
   {
+    "player_id": "0de4b321-e19f-4d43-83a8-4fcae5ebc658",
+    "price": 1,
+    "in_listone": true
+  },
+  {
     "player_id": "0e05ec77-0d73-452e-8d72-7ddf162ced52",
     "price": 45,
     "in_listone": true
@@ -197,7 +207,7 @@
   {
     "player_id": "1209dc7a-a7e3-4bf8-a10a-0cd5f3dd9f77",
     "price": 1,
-    "in_listone": true
+    "in_listone": false
   },
   {
     "player_id": "13034c80-e0fe-41b2-afdf-fcd19188d226",
@@ -207,6 +217,11 @@
   {
     "player_id": "1322078d-eafc-4027-a05c-20b25df0f006",
     "price": 6,
+    "in_listone": true
+  },
+  {
+    "player_id": "13718197-c982-4d9b-bbd2-87ce694e018c",
+    "price": 120,
     "in_listone": true
   },
   {
@@ -292,7 +307,7 @@
   {
     "player_id": "1a26b98e-29c0-4ead-9dc9-8851a25a3f27",
     "price": 2,
-    "in_listone": true
+    "in_listone": false
   },
   {
     "player_id": "1a34b9f5-bd27-4a6b-a2e5-3961be3bd835",
@@ -313,6 +328,16 @@
     "player_id": "1b0d7ac9-3030-4864-96a8-20aa778d0c8a",
     "price": 171,
     "in_listone": true
+  },
+  {
+    "player_id": "1b344136-9333-44d3-a27e-e9a80f819cea",
+    "price": 5,
+    "in_listone": true
+  },
+  {
+    "player_id": "1b856a51-5169-4a56-9a5b-f7a42a91873b",
+    "price": 4,
+    "in_listone": false
   },
   {
     "player_id": "1bef666d-d305-4795-af71-2e946eb6ab0e",
@@ -377,6 +402,11 @@
   {
     "player_id": "21898bcb-7bbf-46c7-9892-8e05475fcb53",
     "price": 32,
+    "in_listone": true
+  },
+  {
+    "player_id": "21a58529-376d-41b3-9bf8-2444f31c8a86",
+    "price": 44,
     "in_listone": true
   },
   {
@@ -447,6 +477,11 @@
   {
     "player_id": "280d15dc-3cf6-47ec-ad41-19b983b09d20",
     "price": 15,
+    "in_listone": true
+  },
+  {
+    "player_id": "28753317-40c7-4cad-be90-7ac0bf090819",
+    "price": 1,
     "in_listone": true
   },
   {
@@ -575,6 +610,11 @@
     "in_listone": true
   },
   {
+    "player_id": "3490cc1c-60cd-4cb8-b606-45c9c3279e4c",
+    "price": 3,
+    "in_listone": true
+  },
+  {
     "player_id": "349b1554-cf28-42c6-bc65-6582f28a0f5b",
     "price": 1,
     "in_listone": true
@@ -607,7 +647,7 @@
   {
     "player_id": "35f76419-21c6-4f06-b68c-fa14f67717e2",
     "price": 1,
-    "in_listone": true
+    "in_listone": false
   },
   {
     "player_id": "36014808-99ee-486d-a681-26d3d5fbe551",
@@ -792,6 +832,11 @@
   {
     "player_id": "484337f8-bd3c-4565-9573-242728f35aa7",
     "price": 7,
+    "in_listone": true
+  },
+  {
+    "player_id": "4861bf31-26b9-4827-9718-9a6787414277",
+    "price": 40,
     "in_listone": true
   },
   {
@@ -990,6 +1035,11 @@
     "in_listone": false
   },
   {
+    "player_id": "57fb735b-1c97-4575-8388-1a2d46bf272f",
+    "price": 8,
+    "in_listone": true
+  },
+  {
     "player_id": "5812c91b-36cc-413d-bc47-84de4f6e758a",
     "price": 11,
     "in_listone": true
@@ -1007,6 +1057,11 @@
   {
     "player_id": "5a4cd663-45d1-4860-a750-c36684a2399b",
     "price": 129,
+    "in_listone": true
+  },
+  {
+    "player_id": "5a9eacee-7614-4621-b78f-5d0cc774cc76",
+    "price": 5,
     "in_listone": true
   },
   {
@@ -1037,7 +1092,7 @@
   {
     "player_id": "5cadee4f-90f3-4c1d-81aa-81037d286dbf",
     "price": 1,
-    "in_listone": true
+    "in_listone": false
   },
   {
     "player_id": "5d4bd759-1210-413a-8cd0-5b7ba268c802",
@@ -1107,7 +1162,7 @@
   {
     "player_id": "66d27e91-681e-469d-a0f6-107f3fe04dbb",
     "price": 1,
-    "in_listone": true
+    "in_listone": false
   },
   {
     "player_id": "671bde75-248a-4a1c-9c28-e307fc924fd8",
@@ -1167,7 +1222,7 @@
   {
     "player_id": "6d1c5858-770c-4814-b9ca-3fd83a3337c9",
     "price": 46,
-    "in_listone": true
+    "in_listone": false
   },
   {
     "player_id": "6d40d5f0-2b47-4c3f-b828-982dc4241386",
@@ -1302,12 +1357,12 @@
   {
     "player_id": "79706ce4-6a0e-4a57-bced-75dfcf9a9107",
     "price": 1,
-    "in_listone": true
+    "in_listone": false
   },
   {
     "player_id": "79b8b749-2cf5-4559-950a-448041c0a581",
     "price": 1,
-    "in_listone": true
+    "in_listone": false
   },
   {
     "player_id": "79e0486c-5861-4fb0-ba5c-f35bc19df8c3",
@@ -1397,7 +1452,7 @@
   {
     "player_id": "8062eeb3-ae6f-47db-b242-e8177da7652a",
     "price": 13,
-    "in_listone": true
+    "in_listone": false
   },
   {
     "player_id": "806328ab-7895-4972-a29d-b73f77580592",
@@ -1407,6 +1462,11 @@
   {
     "player_id": "80ce5ddd-aff9-41f7-90d7-2f39513370bd",
     "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "8194c04b-9af2-4f63-af75-712ae72e0842",
+    "price": 9,
     "in_listone": true
   },
   {
@@ -1467,7 +1527,7 @@
   {
     "player_id": "866cbbd2-aa03-4161-af69-b95d337460f4",
     "price": 1,
-    "in_listone": true
+    "in_listone": false
   },
   {
     "player_id": "870b7bce-aea5-49b8-8e82-7bd7d4f247f9",
@@ -1497,6 +1557,16 @@
   {
     "player_id": "89b6b9f9-a5d9-4f2c-9752-60e85cd8be37",
     "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "89f67672-1ec4-4dc3-8831-dbeee6f56f2e",
+    "price": 3,
+    "in_listone": true
+  },
+  {
+    "player_id": "8a0855b4-5bbc-45b0-95e7-ea1ebd420246",
+    "price": 3,
     "in_listone": true
   },
   {
@@ -1787,7 +1857,7 @@
   {
     "player_id": "a3a9c8fe-19e5-4bd3-86f2-dc1959163ada",
     "price": 2,
-    "in_listone": true
+    "in_listone": false
   },
   {
     "player_id": "a411c282-00be-4e2f-8599-e0a2e5da85bf",
@@ -1802,7 +1872,7 @@
   {
     "player_id": "a42dcf25-e2b6-444a-91de-de30af32d121",
     "price": 2,
-    "in_listone": true
+    "in_listone": false
   },
   {
     "player_id": "a438f78d-7f8e-420f-ba4c-69246794d767",
@@ -1940,6 +2010,11 @@
     "in_listone": true
   },
   {
+    "player_id": "b14c7f71-1f98-4e11-b92b-4c5f7a50f693",
+    "price": 20,
+    "in_listone": true
+  },
+  {
     "player_id": "b179e9e8-54a1-40bc-92b3-e2d1c1627e4e",
     "price": 31,
     "in_listone": true
@@ -1977,6 +2052,11 @@
   {
     "player_id": "b5bd1c96-73a5-4302-afd4-84f4139f1f2b",
     "price": 16,
+    "in_listone": true
+  },
+  {
+    "player_id": "b5caebe6-a205-4fb2-bbd4-16e49bb20a36",
+    "price": 18,
     "in_listone": true
   },
   {
@@ -2097,7 +2177,7 @@
   {
     "player_id": "c155dc9b-bfb9-4a7d-8809-3ff0635ae290",
     "price": 1,
-    "in_listone": true
+    "in_listone": false
   },
   {
     "player_id": "c1ccf92c-b87c-4abd-9e4a-9c38375c920d",
@@ -2147,7 +2227,7 @@
   {
     "player_id": "c54ad644-51bc-4d7c-a8d1-300c3adc9324",
     "price": 1,
-    "in_listone": true
+    "in_listone": false
   },
   {
     "player_id": "c569b210-c9a1-4e64-9d9f-0d4106d10235",
@@ -2207,6 +2287,11 @@
   {
     "player_id": "c9db8149-35c2-4640-9b87-0ac4efe8d1b9",
     "price": 9,
+    "in_listone": true
+  },
+  {
+    "player_id": "ca1a4e82-6e21-4c6d-8daa-45de90b977b0",
+    "price": 25,
     "in_listone": true
   },
   {
@@ -2280,6 +2365,16 @@
     "in_listone": true
   },
   {
+    "player_id": "ce5cd19a-b929-4b5c-a0a4-067b0b355879",
+    "price": 62,
+    "in_listone": true
+  },
+  {
+    "player_id": "ce950363-d565-4e38-aa78-93bb22b65fa1",
+    "price": 3,
+    "in_listone": true
+  },
+  {
     "player_id": "cea0b1cd-23f3-4967-934b-aea2845446a9",
     "price": 1,
     "in_listone": true
@@ -2292,6 +2387,16 @@
   {
     "player_id": "cfea3674-619d-4349-8165-5e5935a4e5a3",
     "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "cff37405-7da7-494e-b4c4-34296cb8be1f",
+    "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "d05121f2-7f6b-44df-8cd1-e4611b85700d",
+    "price": 2,
     "in_listone": true
   },
   {
@@ -2312,6 +2417,11 @@
   {
     "player_id": "d190b87f-14d2-4a26-b57d-a8b2803d175e",
     "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "d223681f-3306-47fa-a0f6-e0b1149260a2",
+    "price": 1,
     "in_listone": true
   },
   {
@@ -2347,7 +2457,7 @@
   {
     "player_id": "d627e1c5-e7e3-462e-8c4c-2f9aff0215f4",
     "price": 7,
-    "in_listone": true
+    "in_listone": false
   },
   {
     "player_id": "d739968a-b64a-4934-b1a7-695255f63af0",
@@ -2472,7 +2582,7 @@
   {
     "player_id": "e1c87272-b4c8-47e7-a8b8-ffe2f7f1ec80",
     "price": 1,
-    "in_listone": true
+    "in_listone": false
   },
   {
     "player_id": "e1cd55ab-bde2-4d15-914d-d6795e905ac0",
@@ -2737,6 +2847,11 @@
   {
     "player_id": "fbbfed22-f662-4c6c-b22a-0778746038c2",
     "price": 2,
+    "in_listone": true
+  },
+  {
+    "player_id": "fbe3ff89-8369-4e4f-af9e-6176daa6e0c3",
+    "price": 19,
     "in_listone": true
   },
   {
