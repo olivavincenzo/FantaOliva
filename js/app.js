@@ -37,38 +37,86 @@ class App {
     window.app = this;
 
     // 1. Inizializzazione State Store
-    store.init();
+    try {
+      store.init();
+    } catch (err) {
+      console.error('Errore durante store.init():', err);
+    }
 
-    // 2. Montaggio Componenti Principali
-    this.teamSelector = new TeamSelectorComponent(document.querySelector('#sidebar-teams'));
-    this.pitch = new PitchComponent(document.querySelector('#pitch-container'));
-    this.inspector = new PlayerInspectorComponent(document.querySelector('#sidebar-inspector'));
-    this.listone = new PlayersListoneComponent('listone-view-wrapper');
-    this.listone.init();
-    this.myTeam = new MyTeamComponent('my-team-view-wrapper');
-    this.myTeam.init();
-    this.leagueTeams = new LeagueTeamsComponent('league-view-wrapper');
-    this.leagueTeams.init();
-    this.injuries = new InjuriesComponent('injuries-view-wrapper');
-    this.injuries.init();
-    this.trades = new TradesComponent('trades-view-wrapper');
-    this.trades.init();
-    this.strategyManager = new StrategyManagerComponent('strategy-modal');
-    this.strategyManager.init();
-
-    // 3. Inizializzazione Modali, Resizer e Utility
-    initHistoryModal();
-    initExportModal();
-    initSyncModal();
-    initSidebarResizer();
-    this.initAddPlayerModal();
-
-    // 4. Bind Controlli Header, Toolbar e Switcher Viste
+    // 2. Bind Switcher Viste e Controlli Header (subito attivi per massima reattività)
     this.populateFormationSelect();
     this.bindHeaderControls();
     this.bindViewSwitcher();
     this.bindResponsiveToggles();
     this.subscribeStoreEvents();
+
+    // 3. Montaggio Componenti Principali in blocchi isolati
+    try {
+      this.teamSelector = new TeamSelectorComponent(document.querySelector('#sidebar-teams'));
+    } catch (err) {
+      console.error('Errore inizializzazione TeamSelectorComponent:', err);
+    }
+
+    try {
+      this.pitch = new PitchComponent(document.querySelector('#pitch-container'));
+    } catch (err) {
+      console.error('Errore inizializzazione PitchComponent:', err);
+    }
+
+    try {
+      this.inspector = new PlayerInspectorComponent(document.querySelector('#sidebar-inspector'));
+    } catch (err) {
+      console.error('Errore inizializzazione PlayerInspectorComponent:', err);
+    }
+
+    try {
+      this.listone = new PlayersListoneComponent('listone-view-wrapper');
+      this.listone.init();
+    } catch (err) {
+      console.error('Errore inizializzazione PlayersListoneComponent:', err);
+    }
+
+    try {
+      this.myTeam = new MyTeamComponent('my-team-view-wrapper');
+      this.myTeam.init();
+    } catch (err) {
+      console.error('Errore inizializzazione MyTeamComponent:', err);
+    }
+
+    try {
+      this.leagueTeams = new LeagueTeamsComponent('league-view-wrapper');
+      this.leagueTeams.init();
+    } catch (err) {
+      console.error('Errore inizializzazione LeagueTeamsComponent:', err);
+    }
+
+    try {
+      this.injuries = new InjuriesComponent('injuries-view-wrapper');
+      this.injuries.init();
+    } catch (err) {
+      console.error('Errore inizializzazione InjuriesComponent:', err);
+    }
+
+    try {
+      this.trades = new TradesComponent('trades-view-wrapper');
+      this.trades.init();
+    } catch (err) {
+      console.error('Errore inizializzazione TradesComponent:', err);
+    }
+
+    try {
+      this.strategyManager = new StrategyManagerComponent('strategy-modal');
+      this.strategyManager.init();
+    } catch (err) {
+      console.error('Errore inizializzazione StrategyManagerComponent:', err);
+    }
+
+    // 4. Inizializzazione Modali, Resizer e Utility
+    try { initHistoryModal(); } catch (e) { console.error('Errore initHistoryModal:', e); }
+    try { initExportModal(); } catch (e) { console.error('Errore initExportModal:', e); }
+    try { initSyncModal(); } catch (e) { console.error('Errore initSyncModal:', e); }
+    try { initSidebarResizer(); } catch (e) { console.error('Errore initSidebarResizer:', e); }
+    try { this.initAddPlayerModal(); } catch (e) { console.error('Errore initAddPlayerModal:', e); }
 
     // 5. Aggiornamento UI Header
     this.updateHeader();

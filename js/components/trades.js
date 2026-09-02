@@ -624,18 +624,6 @@ export class TradesComponent {
     return text.trim();
   }
 
-  render() {
-    if (!this.container) return;
-
-    if (this.mode === 'compare1v1') {
-      this.renderCompare1v1Mode();
-    } else {
-      this.renderTradeMode();
-    }
-
-    this.bindEvents();
-  }
-
   renderTradeMode() {
     const evalRes = this.evaluateTrade();
 
