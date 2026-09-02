@@ -647,15 +647,24 @@
   display: none !important;
 }
 
-.pitch-outer-wrapper.is-pitch-mode .filters .filter[data-role] {
-  display: none !important;
-}
-
-.pitch-outer-wrapper.is-pitch-mode .filters {
+.pitch-outer-wrapper.is-pitch-mode .filters:not(.league-teams-nav) {
   justify-content: flex-end;
   margin-bottom: 12px;
   gap: 8px;
   display: none !important;
+}
+
+/* Navigazione squadre FantaLega sempre visibile sia in campo che in lista */
+.league-teams-nav {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.league-teams-nav .filter {
+  display: inline-flex !important;
 }
 
 .filter-pitch-formation-wrap {
