@@ -382,4 +382,35 @@ export class InjuriesComponent {
       });
     });
   }
+
+  scrollToPlayer(playerOrName) {
+    if (!playerOrName) return;
+    const targetQuery = (typeof playerOrName === 'string' ? playerOrName : (playerOrName.name || playerOrName.displayName || '')).toLowerCase().trim();
+
+    // 1. Assicurati che i filtri mostrino il giocatore
+    this.activeRole = 'ALL';
+    this.selectedTeam = 'ALL';
+    this.statusFilter = 'ALL';
+    this.searchQuery = '';
+    this.render();
+
+    // 2. Trova l'elemento della card e scrolla
+    setTimeout(() => {
+      if (!this.container) return;
+      const cards = Array.from(this.container.querySelectorAll('.injury-card'));
+      const targetCard = cards.find(c => {
+        const cName = (c.dataset.playerName || '').toLowerCase().trim();
+        const cId = c.dataset.playerId;
+        return cName === targetQuery || cId === playerOrName || (targetQuery.length > 2 && (cName.includes(targetQuery) || targetQuery.includes(cName)));
+      });
+
+      if (targetCard) {
+        targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        targetCard.classList.add('injury-card-target-highlight');
+        setTimeout(() => {
+          targetCard.classList.remove('injury-card-target-highlight');
+        }, 3500);
+      }
+    }, 120);
+  }
 }

@@ -9,6 +9,7 @@ import { SOS_STRATEGY_1 } from './data/sosStrategy1.js';
 import { SOS_TEAMS_DATA } from './data/sosTeamsData.js';
 import { getPlayerIndices, TITOLARITA_LABELS, AFFIDABILITA_LABELS, INTEGRITA_LABELS } from './data/playerIndices.js';
 import { LEAGUE_ROSTERS_RAW, LEAGUE_TEAMS_DEFAULT } from './data/leagueRostersData.js';
+import { INJURIES_DATA } from './data/injuriesData.js';
 import { deepClone, generateId } from './utils/helpers.js';
 
 const STORAGE_KEY = 'fantaoliva_app_data_v2026_27_fantalab_v1';
@@ -708,6 +709,28 @@ class Store {
   getSelectedPlayer() {
     if (!this.selectedPlayerId) return null;
     return this.getPlayer(this.selectedPlayerId);
+  }
+
+  getPlayerInjury(player) {
+    if (!player) return null;
+    if (!this._injuriesMap) {
+      this._injuriesMap = new Map();
+      INJURIES_DATA.forEach(item => {
+        if (item.name) this._injuriesMap.set(item.name.toLowerCase().trim(), item);
+        if (item.displayName) this._injuriesMap.set(item.displayName.toLowerCase().trim(), item);
+        if (item.id) this._injuriesMap.set(item.id, item);
+      });
+    }
+
+    const pId = player.id || player.fantalabId || player.csvId;
+    const pName = (player.name || '').toLowerCase().trim();
+    const pDisp = (player.displayName || '').toLowerCase().trim();
+
+    return this._injuriesMap.get(pId) || 
+           this._injuriesMap.get(pName) || 
+           this._injuriesMap.get(pDisp) || 
+           (pName ? INJURIES_DATA.find(i => (i.name || '').toLowerCase().trim() === pName) : null) || 
+           null;
   }
 
   selectPlayer(playerId, slotId = null) {

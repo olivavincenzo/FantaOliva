@@ -25,6 +25,10 @@ export class PlayerInspectorComponent {
   }
 
   init() {
+    const player = store.getSelectedPlayer();
+    if (!player) {
+      document.body.classList.add('right-sidebar-collapsed');
+    }
     this.render();
     this.subscribeEvents();
   }
@@ -33,6 +37,14 @@ export class PlayerInspectorComponent {
     store.subscribe('player:selected', () => {
       this.isEditingTier = false;
       this.isEditingIndices = false;
+      const p = store.getSelectedPlayer();
+      if (!p) {
+        document.body.classList.add('right-sidebar-collapsed');
+        this.container?.classList.remove('mobile-open');
+        document.querySelector('#mobile-drawer-backdrop')?.classList.add('hidden');
+      } else {
+        document.body.classList.remove('right-sidebar-collapsed');
+      }
       this.render();
     });
     store.subscribe('player:updated', () => this.render());
@@ -837,14 +849,12 @@ export class PlayerInspectorComponent {
   bindCloseButton() {
     const closeBtn = this.container.querySelector('#close-inspector-btn') || this.container.querySelector('.sidebar-close-btn');
     closeBtn?.addEventListener('click', () => {
-      if (window.innerWidth <= 900) {
-        const sidebarInspector = document.querySelector('#sidebar-inspector');
-        const backdrop = document.querySelector('#mobile-drawer-backdrop');
-        sidebarInspector?.classList.remove('mobile-open');
-        backdrop?.classList.add('hidden');
-      } else {
-        document.body.classList.toggle('right-sidebar-collapsed');
-      }
+      store.selectPlayer(null);
+      document.body.classList.add('right-sidebar-collapsed');
+      const sidebarInspector = document.querySelector('#sidebar-inspector');
+      const backdrop = document.querySelector('#mobile-drawer-backdrop');
+      sidebarInspector?.classList.remove('mobile-open');
+      backdrop?.classList.add('hidden');
     });
   }
 }

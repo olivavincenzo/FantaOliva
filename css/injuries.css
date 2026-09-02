@@ -254,3 +254,25 @@
   margin-bottom: 3px;
   letter-spacing: 0.02em;
 }
+
+/* Evidenziazione card quando si arriva dal listone */
+@keyframes injuryTargetPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(239, 68, 68, 0);
+    transform: scale(1.02);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+    transform: scale(1);
+  }
+}
+
+.injury-card.injury-card-target-highlight {
+  animation: injuryTargetPulse 1s ease-in-out 3;
+  border-color: #ef4444 !important;
+  background: rgba(239, 68, 68, 0.06) !important;
+}

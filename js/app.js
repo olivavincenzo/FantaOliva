@@ -582,12 +582,12 @@ class App {
       setRightSidebarCollapsed(true);
     });
 
-    // Ripristina lo stato salvato
+    // Ripristina lo stato salvato (se nessun giocatore è attivo, la sidebar destra rimane chiusa)
     try {
       if (localStorage.getItem(COLLAPSE_KEY) === '1') {
         setLeftSidebarCollapsed(true);
       }
-      if (localStorage.getItem(COLLAPSE_RIGHT_KEY) === '1') {
+      if (!store.getSelectedPlayer() || localStorage.getItem(COLLAPSE_RIGHT_KEY) === '1') {
         setRightSidebarCollapsed(true);
       }
     } catch (err) {

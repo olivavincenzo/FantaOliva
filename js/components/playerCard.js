@@ -167,7 +167,16 @@ export function createPlayerCard(player, options = {}) {
   const leagueOwner = store.getPlayerLeagueOwner(player);
   const isInMyTeam = store.isPlayerInMyTeam(player.id) || (leagueOwner && leagueOwner.isMyTeam);
   const myTeamInfo = isInMyTeam ? store.getMyTeamPlayerInfo(player.id) : null;
-  const effectiveAvailable = (leagueOwner ? false : isAvailable);
+  const injury = store.getPlayerInjury ? store.getPlayerInjury(player) : null;
+  const isInjured = injury && (injury.isInjured || injury.isDoubtful || injury.status === 'injured');
+  const injuryBtnHtml = isInjured ? `
+    <button class="card-injury-badge-btn ${injury.isDoubtful ? 'is-doubtful' : 'is-injured'}" 
+            type="button" 
+            title="🏥 ${sanitizeHtml(injury.injuryDescription || (injury.isDoubtful ? 'In dubbio' : 'Infortunato'))} (Clicca per andare in Infermeria)" 
+            aria-label="Infortunato">
+      <i class="fa-solid ${injury.isDoubtful ? 'fa-triangle-exclamation' : 'fa-notes-medical'}"></i>
+    </button>
+  ` : '';
 
   // Header player top con foto, info piazzati e preferiti
   const headerHtml = `
@@ -184,6 +193,7 @@ export function createPlayerCard(player, options = {}) {
         </div>
       </div>
       <div class="player-top-actions">
+        ${injuryBtnHtml}
         <button class="card-fav-btn ${isFavorite ? 'is-fav' : ''}" type="button" title="${isFavorite ? 'Rimuovi dai Preferiti' : 'Aggiungi ai Preferiti'}" aria-label="Preferito">
           <i class="fa-${isFavorite ? 'solid' : 'regular'} fa-star"></i>
         </button>
@@ -381,7 +391,7 @@ export function createPlayerCard(player, options = {}) {
 
   // 1. Native dblclick per mouse -> Su mobile apre scheda giocatore, su desktop naviga alla lavagna
   card.addEventListener('dblclick', (e) => {
-    if (e.target.closest('.availability') || e.target.closest('.card-fav-btn')) return;
+    if (e.target.closest('.availability') || e.target.closest('.card-fav-btn') || e.target.closest('.card-injury-badge-btn')) return;
     e.stopPropagation();
     e.preventDefault();
     if (window.innerWidth <= 900) {
@@ -393,7 +403,7 @@ export function createPlayerCard(player, options = {}) {
 
   // 2. Click / Touch handler (mobile: 1 click seleziona, 2 click apre scheda; desktop: 1 click seleziona+ispettore, 2 click naviga lavagna)
   card.addEventListener('click', (e) => {
-    if (e.target.closest('.availability') || e.target.closest('.card-fav-btn')) return;
+    if (e.target.closest('.availability') || e.target.closest('.card-fav-btn') || e.target.closest('.card-injury-badge-btn')) return;
     if (hasMoved) {
       hasMoved = false;
       return;
@@ -427,6 +437,21 @@ export function createPlayerCard(player, options = {}) {
         selectPlayerAndOpenInspector();
       }
     }
+  });
+
+  // Listener per navigazione rapida al tab Infermeria
+  const injuryBtn = card.querySelector('.card-injury-badge-btn');
+  injuryBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    e.preventDefault();
+    if (window.app?.switchView) {
+      window.app.switchView('injuries');
+    } else {
+      store.setView('injuries');
+    }
+    setTimeout(() => {
+      window.app?.injuries?.scrollToPlayer(player.name || player.displayName || player.id);
+    }, 120);
   });
 
   // Listener per toggle rapido preferito
