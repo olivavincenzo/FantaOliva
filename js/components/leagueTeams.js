@@ -18,7 +18,6 @@ export class LeagueTeamsComponent {
     this.container = typeof containerId === 'string' ? (typeof document !== 'undefined' && document.getElementById ? document.getElementById(containerId) : null) : containerId;
     this.selectedTeamName = 'VINCENZO';
     this.layoutMode = 'pitch'; // 'pitch' | 'list'
-    this.is3D = (typeof localStorage !== 'undefined' ? localStorage.getItem('fantaoliva_league_3d') === 'true' : false);
     this.gridColumns = Number((typeof localStorage !== 'undefined' ? localStorage.getItem('fantaoliva_league_cols') : null) || 2);
   }
 
@@ -112,13 +111,6 @@ export class LeagueTeamsComponent {
             <button class="circle-button ${this.layoutMode === 'pitch' ? 'active' : ''}" id="league-toggle-layout-btn" type="button" aria-label="Alterna Campo / Lista Reparti" title="${this.layoutMode === 'pitch' ? 'Mostra Lista Reparti' : 'Mostra Campo Grafico'}">
               <i class="fa-solid ${this.layoutMode === 'pitch' ? 'fa-list' : 'fa-futbol'}" style="font-size: 14px;"></i>
             </button>
-
-            <!-- Toggle Visuale 3D -->
-            ${this.layoutMode === 'pitch' ? `
-              <button class="circle-button ${this.is3D ? 'active' : ''}" id="league-toggle-3d-btn" type="button" aria-label="Prospettiva 3D" title="Alterna visuale 3D / 2D">
-                <i class="fa-solid fa-cube" style="font-size: 14px;"></i>
-              </button>
-            ` : ''}
           </div>
         </header>
 
@@ -289,7 +281,7 @@ export class LeagueTeamsComponent {
     }).join('');
 
     return `
-      <div class="soccer-pitch ${this.is3D ? 'is-3d-pitch' : ''}" style="display: block; position: relative; min-height: 580px; width: 100%;">
+      <div class="soccer-pitch" style="display: block; position: relative; min-height: 580px; width: 100%;">
         <div class="pitch-grass-stripes"></div>
         <div class="pitch-lines">
           <div class="pitch-boundary"></div>
@@ -416,15 +408,6 @@ export class LeagueTeamsComponent {
     // Toggle Vista Campo / Lista
     this.container.querySelector('#league-toggle-layout-btn')?.addEventListener('click', () => {
       this.layoutMode = this.layoutMode === 'pitch' ? 'list' : 'pitch';
-      this.render();
-    });
-
-    // 3D Perspective Toggle
-    this.container.querySelector('#league-toggle-3d-btn')?.addEventListener('click', () => {
-      this.is3D = !this.is3D;
-      if (typeof localStorage !== 'undefined') {
-        localStorage.setItem('fantaoliva_league_3d', String(this.is3D));
-      }
       this.render();
     });
 
