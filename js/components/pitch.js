@@ -176,23 +176,31 @@ export class PitchComponent {
           ${this.renderTeamNotesHtml(team)}
         </div>
 
-        <!-- BARRA DI RICERCA EDITORIALE -->
-        <div class="search" role="search" aria-label="Cerca giocatori">
-          <svg class="search-icon" viewBox="0 0 24 24">
-            <circle cx="11" cy="11" r="6.5" />
-            <path d="m16 16 4 4" />
-          </svg>
-          <input 
-            type="text" 
-            id="pitch-search-input" 
-            class="search-input" 
-            placeholder="Cerca giocatore o squadra" 
-            autocomplete="off"
-          />
-          <button id="pitch-search-clear" class="search-clear hidden" aria-label="Pulisci ricerca">&times;</button>
+        <!-- BARRA DI RICERCA EDITORIALE CON ICONA FILTRI MOBILE -->
+        <div class="search-with-mobile-filter">
+          <div class="search" role="search" aria-label="Cerca giocatori">
+            <svg class="search-icon" viewBox="0 0 24 24">
+              <circle cx="11" cy="11" r="6.5" />
+              <path d="m16 16 4 4" />
+            </svg>
+            <input 
+              type="text" 
+              id="pitch-search-input" 
+              class="search-input" 
+              placeholder="Cerca giocatore o squadra" 
+              autocomplete="off"
+            />
+            <button id="pitch-search-clear" class="search-clear hidden" aria-label="Pulisci ricerca">&times;</button>
+          </div>
+
+          <!-- Singola icona filtri per modalità Mobile -->
+          <button type="button" class="circle-button pitch-mobile-filter-btn" id="pitch-open-filters-modal-btn" aria-label="Filtri" title="Filtri">
+            <i class="fa-solid fa-sliders"></i>
+            <span class="filter-indicator-dot ${this.activeRoleFilter !== 'ALL' || this.squadScope !== 'ALL' ? '' : 'hidden'}" id="pitch-filter-active-dot"></span>
+          </button>
         </div>
 
-        <!-- FILTRI RUOLI, SQUAD SCOPE & COLONNE A SCORRIMENTO ORIZZONTALE -->
+        <!-- FILTRI RUOLI, SQUAD SCOPE & COLONNE A SCORRIMENTO ORIZZONTALE (DESKTOP) -->
         <nav class="filters" aria-label="Filtri giocatori">
           <button class="filter active" data-role="ALL" type="button">Tutti · <span id="filter-total-count">0</span></button>
           <button class="filter" data-role="ATT" type="button">ATT</button>
@@ -249,6 +257,69 @@ export class PitchComponent {
             <g id="tactical-lines-group"></g>
           </svg>
           <div class="pitch-slots-layer" id="pitch-slots-layer"></div>
+        </div>
+
+        <!-- MODALE FILTRI PITCH (MOBILE) -->
+        <div class="modal-backdrop hidden" id="pitch-filters-modal" role="dialog" aria-modal="true" aria-labelledby="pitch-filters-title">
+          <div class="fanta-modal modal-sm">
+            <div class="modal-header">
+              <div class="modal-title-group">
+                <i class="fa-solid fa-sliders modal-title-icon" style="color: var(--ink);"></i>
+                <h3 id="pitch-filters-title">Filtri Rosa</h3>
+              </div>
+              <button class="modal-close-btn" id="close-pitch-filters-btn" aria-label="Chiudi filtri">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <div class="modal-body" style="padding: 18px 16px; display: flex; flex-direction: column; gap: 18px;">
+              <!-- Sezione 1: Ruolo -->
+              <div>
+                <label style="font-size: 11px; font-weight: 750; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; display: block;">Ruolo</label>
+                <div class="modal-filter-pills" style="display: flex; gap: 6px; flex-wrap: wrap;">
+                  <button type="button" class="filter modal-role-btn ${this.activeRoleFilter === 'ALL' ? 'active' : ''}" data-role="ALL">Tutti</button>
+                  <button type="button" class="filter modal-role-btn ${this.activeRoleFilter === 'ATT' ? 'active' : ''}" data-role="ATT">ATT</button>
+                  <button type="button" class="filter modal-role-btn ${this.activeRoleFilter === 'CEN' ? 'active' : ''}" data-role="CEN">CEN</button>
+                  <button type="button" class="filter modal-role-btn ${this.activeRoleFilter === 'DIF' ? 'active' : ''}" data-role="DIF">DIF</button>
+                  <button type="button" class="filter modal-role-btn ${this.activeRoleFilter === 'POR' ? 'active' : ''}" data-role="POR">POR</button>
+                </div>
+              </div>
+
+              <!-- Sezione 2: Ambito Formazione -->
+              <div>
+                <label style="font-size: 11px; font-weight: 750; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; display: block;">Ambito</label>
+                <div class="squad-scope-selector" style="display: flex; width: 100%;">
+                  <button type="button" class="squad-scope-btn modal-scope-btn ${this.squadScope === 'STARTERS' ? 'is-active' : ''}" data-scope="STARTERS" style="flex: 1; justify-content: center;">
+                    Titolari <span class="scope-count" id="modal-scope-count-starters">0</span>
+                  </button>
+                  <button type="button" class="squad-scope-btn modal-scope-btn ${this.squadScope === 'BENCH' ? 'is-active' : ''}" data-scope="BENCH" style="flex: 1; justify-content: center;">
+                    <i class="fa-solid fa-chair" style="font-size: 10px;"></i> Panchina <span class="scope-count" id="modal-scope-count-bench">0</span>
+                  </button>
+                  <button type="button" class="squad-scope-btn modal-scope-btn ${this.squadScope === 'ALL' ? 'is-active' : ''}" data-scope="ALL" style="flex: 1; justify-content: center;">
+                    Tutti <span class="scope-count" id="modal-scope-count-all">0</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Sezione 3: Disposizione Colonne -->
+              <div>
+                <label style="font-size: 11px; font-weight: 750; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; display: block;">Disposizione Colonne</label>
+                <div class="cols-button-group" style="display: inline-flex;">
+                  <button type="button" class="col-btn modal-col-btn ${this.gridColumns === 1 ? 'is-active' : ''}" data-cols="1">1</button>
+                  <button type="button" class="col-btn modal-col-btn ${this.gridColumns === 2 ? 'is-active' : ''}" data-cols="2">2</button>
+                  <button type="button" class="col-btn modal-col-btn ${this.gridColumns === 3 ? 'is-active' : ''}" data-cols="3">3</button>
+                  <button type="button" class="col-btn modal-col-btn ${this.gridColumns === 4 ? 'is-active' : ''}" data-cols="4">4</button>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="fanta-btn secondary-btn" id="reset-pitch-filters-btn" type="button">
+                <i class="fa-solid fa-rotate-left"></i> Reset
+              </button>
+              <button class="fanta-btn primary-btn" id="apply-pitch-filters-btn" type="button">
+                <i class="fa-solid fa-check"></i> Applica
+              </button>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -313,7 +384,7 @@ export class PitchComponent {
     });
 
     // Selettore Colonne Lista
-    this.container.querySelectorAll('.filters .col-btn[data-cols]').forEach(btn => {
+    this.container.querySelectorAll('.col-btn[data-cols]').forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.stopPropagation();
         const cols = Number(btn.dataset.cols) || 1;
@@ -323,6 +394,61 @@ export class PitchComponent {
         }
         this.renderVerticalList();
       });
+    });
+
+    // Modale Filtri Mobile: Apertura, Chiusura & Eventi
+    const openModalBtn = this.container.querySelector('#pitch-open-filters-modal-btn');
+    const filtersModal = this.container.querySelector('#pitch-filters-modal');
+    const closeModalBtn = this.container.querySelector('#close-pitch-filters-btn');
+    const applyModalBtn = this.container.querySelector('#apply-pitch-filters-btn');
+    const resetModalBtn = this.container.querySelector('#reset-pitch-filters-btn');
+
+    openModalBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      filtersModal?.classList.remove('hidden');
+    });
+
+    const closeFiltersModal = () => {
+      filtersModal?.classList.add('hidden');
+    };
+
+    closeModalBtn?.addEventListener('click', closeFiltersModal);
+    applyModalBtn?.addEventListener('click', closeFiltersModal);
+    filtersModal?.addEventListener('click', (e) => {
+      if (e.target === filtersModal) closeFiltersModal();
+    });
+
+    // Filtri Ruoli nella Modale
+    this.container.querySelectorAll('.modal-role-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        this.container.querySelectorAll('.modal-role-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        this.activeRoleFilter = btn.dataset.role;
+
+        // Sincronizza anche la barra filtri desktop
+        this.container.querySelectorAll('.filters .filter[data-role]').forEach(b => {
+          b.classList.toggle('active', b.dataset.role === this.activeRoleFilter);
+        });
+
+        this.renderVerticalList();
+      });
+    });
+
+    // Reset Filtri nella Modale
+    resetModalBtn?.addEventListener('click', () => {
+      this.activeRoleFilter = 'ALL';
+      this.squadScope = 'ALL';
+      this.gridColumns = 1;
+      if (typeof localStorage !== 'undefined') {
+        localStorage.setItem('fantaoliva_pitch_list_cols', 1);
+      }
+      this.container.querySelectorAll('.filters .filter[data-role]').forEach(b => {
+        b.classList.toggle('active', b.dataset.role === 'ALL');
+      });
+      this.container.querySelectorAll('.modal-role-btn').forEach(b => {
+        b.classList.toggle('active', b.dataset.role === 'ALL');
+      });
+      this.renderVerticalList();
     });
 
     // Ricerca Giocatori
@@ -727,13 +853,33 @@ export class PitchComponent {
     const allCountEl = this.container.querySelector('#scope-count-all');
     if (allCountEl) allCountEl.textContent = allSquadItems.length;
 
+    // Sincronizza conteggi anche nella modale mobile
+    const modalStartersCountEl = this.container.querySelector('#modal-scope-count-starters');
+    if (modalStartersCountEl) modalStartersCountEl.textContent = starters.length;
+
+    const modalBenchCountEl = this.container.querySelector('#modal-scope-count-bench');
+    if (modalBenchCountEl) modalBenchCountEl.textContent = bench.length;
+
+    const modalAllCountEl = this.container.querySelector('#modal-scope-count-all');
+    if (modalAllCountEl) modalAllCountEl.textContent = allSquadItems.length;
+
     this.container.querySelectorAll('.squad-scope-btn').forEach(btn => {
       btn.classList.toggle('is-active', (btn.dataset.scope || 'ALL') === this.squadScope);
     });
 
-    this.container.querySelectorAll('.filters .col-btn[data-cols]').forEach(btn => {
+    this.container.querySelectorAll('.col-btn[data-cols]').forEach(btn => {
       btn.classList.toggle('is-active', Number(btn.dataset.cols) === this.gridColumns);
     });
+
+    this.container.querySelectorAll('.modal-role-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.role === this.activeRoleFilter);
+    });
+
+    // Indicatore dot attivo sul pulsante filtri mobile
+    const activeDot = this.container.querySelector('#pitch-filter-active-dot');
+    if (activeDot) {
+      activeDot.classList.toggle('hidden', this.activeRoleFilter === 'ALL' && this.squadScope === 'ALL');
+    }
 
     let hasAnyPlayer = false;
 

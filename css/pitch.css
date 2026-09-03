@@ -653,7 +653,8 @@
 /* ==========================================================================
    MODALITÀ CAMPO GRAFICO (Pitch Mode)
    ========================================================================== */
-.pitch-outer-wrapper.is-pitch-mode .search {
+.pitch-outer-wrapper.is-pitch-mode .search,
+.pitch-outer-wrapper.is-pitch-mode .search-with-mobile-filter {
   display: none !important;
 }
 
@@ -662,6 +663,50 @@
   margin-bottom: 12px;
   gap: 8px;
   display: none !important;
+}
+
+.search-with-mobile-filter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.search-with-mobile-filter .search {
+  margin-bottom: 0 !important;
+}
+
+.pitch-mobile-filter-btn {
+  display: none;
+  position: relative;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+}
+
+.filter-indicator-dot {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 8px;
+  height: 8px;
+  background: #22c55e;
+  border-radius: 50%;
+  border: 1.5px solid var(--paper);
+  box-shadow: 0 0 6px rgba(34, 197, 94, 0.6);
+}
+
+@media (max-width: 900px) {
+  .pitch-mobile-filter-btn {
+    display: grid !important;
+  }
+
+  /* Nascondi la barra filtri orizzontale su mobile quando siamo in modalità lista */
+  .pitch-outer-wrapper:not(.is-pitch-mode) .filters:not(.league-teams-nav) {
+    display: none !important;
+  }
 }
 
 /* Navigazione squadre FantaLega sempre visibile sia in campo che in lista */
