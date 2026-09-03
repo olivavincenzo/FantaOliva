@@ -192,13 +192,37 @@ export class PitchComponent {
           <button id="pitch-search-clear" class="search-clear hidden" aria-label="Pulisci ricerca">&times;</button>
         </div>
 
-        <!-- FILTRI RUOLI A SCORRIMENTO ORIZZONTALE -->
+        <!-- FILTRI RUOLI, SQUAD SCOPE & COLONNE A SCORRIMENTO ORIZZONTALE -->
         <nav class="filters" aria-label="Filtri giocatori">
           <button class="filter active" data-role="ALL" type="button">Tutti · <span id="filter-total-count">0</span></button>
           <button class="filter" data-role="ATT" type="button">ATT</button>
           <button class="filter" data-role="CEN" type="button">CEN</button>
           <button class="filter" data-role="DIF" type="button">DIF</button>
           <button class="filter" data-role="POR" type="button">POR</button>
+
+          <!-- Filtro Titolari / Panchina / Tutti -->
+          <div class="squad-scope-selector" role="group" aria-label="Filtro titolari o panchina">
+            <button type="button" class="squad-scope-btn ${this.squadScope === 'STARTERS' ? 'is-active' : ''}" data-scope="STARTERS" title="Mostra solo la formazione titolare">
+              Titolari <span class="scope-count" id="scope-count-starters">0</span>
+            </button>
+            <button type="button" class="squad-scope-btn ${this.squadScope === 'BENCH' ? 'is-active' : ''}" data-scope="BENCH" title="Mostra i giocatori in panchina divisi per ruolo">
+              <i class="fa-solid fa-chair" style="font-size: 10px;"></i> Panchina <span class="scope-count" id="scope-count-bench">0</span>
+            </button>
+            <button type="button" class="squad-scope-btn ${this.squadScope === 'ALL' ? 'is-active' : ''}" data-scope="ALL" title="Mostra tutti i calciatori della rosa (Titolari + Panchina)">
+              Tutti <span class="scope-count" id="scope-count-all">0</span>
+            </button>
+          </div>
+
+          <!-- Selettore Colonne Lista -->
+          <div class="section-columns-switcher" title="Disposizione colonne lista" style="margin-left: auto;">
+            <span class="cols-label">Colonne</span>
+            <div class="cols-button-group">
+              <button type="button" class="col-btn ${this.gridColumns === 1 ? 'is-active' : ''}" data-cols="1">1</button>
+              <button type="button" class="col-btn ${this.gridColumns === 2 ? 'is-active' : ''}" data-cols="2">2</button>
+              <button type="button" class="col-btn ${this.gridColumns === 3 ? 'is-active' : ''}" data-cols="3">3</button>
+              <button type="button" class="col-btn ${this.gridColumns === 4 ? 'is-active' : ''}" data-cols="4">4</button>
+            </div>
+          </div>
         </nav>
 
         <!-- 1. LISTA VERTICALE EDITORIALE (Visualizzazione Principale) -->
@@ -275,6 +299,28 @@ export class PitchComponent {
         filterBtns.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         this.activeRoleFilter = btn.dataset.role;
+        this.renderVerticalList();
+      });
+    });
+
+    // Filtro Titolari / Panchina / Tutti (Squad Scope)
+    this.container.querySelectorAll('.squad-scope-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        this.squadScope = btn.dataset.scope || 'ALL';
+        this.renderVerticalList();
+      });
+    });
+
+    // Selettore Colonne Lista
+    this.container.querySelectorAll('.filters .col-btn[data-cols]').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const cols = Number(btn.dataset.cols) || 1;
+        this.gridColumns = cols;
+        if (typeof localStorage !== 'undefined') {
+          localStorage.setItem('fantaoliva_pitch_list_cols', cols);
+        }
         this.renderVerticalList();
       });
     });
@@ -672,63 +718,24 @@ export class PitchComponent {
       totalCountEl.textContent = targetItems.length;
     }
 
+    const startersCountEl = this.container.querySelector('#scope-count-starters');
+    if (startersCountEl) startersCountEl.textContent = starters.length;
+
+    const benchCountEl = this.container.querySelector('#scope-count-bench');
+    if (benchCountEl) benchCountEl.textContent = bench.length;
+
+    const allCountEl = this.container.querySelector('#scope-count-all');
+    if (allCountEl) allCountEl.textContent = allSquadItems.length;
+
+    this.container.querySelectorAll('.squad-scope-btn').forEach(btn => {
+      btn.classList.toggle('is-active', (btn.dataset.scope || 'ALL') === this.squadScope);
+    });
+
+    this.container.querySelectorAll('.filters .col-btn[data-cols]').forEach(btn => {
+      btn.classList.toggle('is-active', Number(btn.dataset.cols) === this.gridColumns);
+    });
+
     let hasAnyPlayer = false;
-
-    // Barra Superiore Lista con Selettore Colonne 1 2 3 4 e Filtro Titolari/Panchina
-    const team = store.getCurrentTeam();
-    const teamTitle = team ? team.name : 'Rosa';
-    const topBarEl = document.createElement('div');
-    topBarEl.className = 'list-view-header-bar';
-    topBarEl.innerHTML = `
-      <div class="section-head-title">
-        <div class="section-title-wrap">
-          <h2>${this.squadScope === 'BENCH' ? 'Panchina' : (this.squadScope === 'STARTERS' ? 'Titolari' : 'Rosa')} ${sanitizeHtml(teamTitle)}</h2>
-          <span class="head-count">${targetItems.length} calciatori</span>
-        </div>
-        <div class="squad-scope-selector" role="group" aria-label="Filtro titolari o panchina">
-          <button type="button" class="squad-scope-btn ${this.squadScope === 'STARTERS' ? 'is-active' : ''}" data-scope="STARTERS" title="Mostra solo la formazione titolare">
-            Titolari <span class="scope-count">${starters.length}</span>
-          </button>
-          <button type="button" class="squad-scope-btn ${this.squadScope === 'BENCH' ? 'is-active' : ''}" data-scope="BENCH" title="Mostra i giocatori in panchina divisi per ruolo">
-            <i class="fa-solid fa-chair" style="font-size: 10px;"></i> Panchina <span class="scope-count">${bench.length}</span>
-          </button>
-          <button type="button" class="squad-scope-btn ${this.squadScope === 'ALL' ? 'is-active' : ''}" data-scope="ALL" title="Mostra tutti i calciatori della rosa (Titolari + Panchina)">
-            Tutti <span class="scope-count">${allSquadItems.length}</span>
-          </button>
-        </div>
-      </div>
-      <div class="section-columns-switcher" title="Disposizione colonne lista">
-        <span class="cols-label">Colonne</span>
-        <div class="cols-button-group">
-          <button type="button" class="col-btn ${this.gridColumns === 1 ? 'is-active' : ''}" data-cols="1">1</button>
-          <button type="button" class="col-btn ${this.gridColumns === 2 ? 'is-active' : ''}" data-cols="2">2</button>
-          <button type="button" class="col-btn ${this.gridColumns === 3 ? 'is-active' : ''}" data-cols="3">3</button>
-          <button type="button" class="col-btn ${this.gridColumns === 4 ? 'is-active' : ''}" data-cols="4">4</button>
-        </div>
-      </div>
-    `;
-
-    topBarEl.querySelectorAll('.squad-scope-btn').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        this.squadScope = btn.dataset.scope || 'ALL';
-        this.renderVerticalList();
-      });
-    });
-
-    topBarEl.querySelectorAll('.col-btn').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const cols = Number(btn.dataset.cols) || 1;
-        this.gridColumns = cols;
-        if (typeof localStorage !== 'undefined') {
-          localStorage.setItem('fantaoliva_pitch_list_cols', cols);
-        }
-        this.renderVerticalList();
-      });
-    });
-
-    this.verticalListEl.appendChild(topBarEl);
 
     departments.forEach(dept => {
       if (dept.items.length === 0) return;
