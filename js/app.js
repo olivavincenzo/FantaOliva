@@ -511,7 +511,11 @@ class App {
       }
 
       if (e.target.closest('.mobile-drawer-close-btn') || e.target.closest('#close-teams-sidebar-btn')) {
-        closeDrawers();
+        if (window.innerWidth <= 900) {
+          closeDrawers();
+        } else {
+          document.body.classList.toggle('left-sidebar-collapsed');
+        }
         return;
       }
 

@@ -19,7 +19,6 @@ export class TeamSelectorComponent {
 
   init() {
     this.render();
-    this.bindEvents();
     this.subscribeEvents();
   }
 
@@ -69,6 +68,7 @@ export class TeamSelectorComponent {
     this.searchInput = this.container.querySelector('#team-search-input');
     this.teamListEl = this.container.querySelector('#team-list-container');
     this.renderTeamList();
+    this.bindEvents();
   }
 
   renderTeamList() {
@@ -244,7 +244,9 @@ export class TeamSelectorComponent {
     });
 
     const closeBtn = this.container.querySelector('#close-teams-sidebar-btn') || this.container.querySelector('.sidebar-close-btn');
-    closeBtn?.addEventListener('click', () => {
+    closeBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      e.preventDefault();
       if (window.innerWidth <= 900) {
         const sidebarTeams = document.querySelector('#sidebar-teams');
         const backdrop = document.querySelector('#mobile-drawer-backdrop');
