@@ -124,11 +124,19 @@ export class PitchComponent {
           </div>
         </div>
         <div class="topbar-actions">
-          <button class="circle-button" id="pitch-hud-teams-btn" type="button" aria-label="Cambia Squadra" title="Cambia Squadra Serie A">
-            ⇄
+          <!-- Pulsante Apri Elenco Squadre Serie A (Mobile Drawer Sinistro) -->
+          <button class="circle-button" id="pitch-hud-teams-btn" type="button" aria-label="Cambia Squadra" title="Elenco Squadre Serie A">
+            <i class="fa-solid fa-shield-halved" style="font-size: 13px;"></i>
           </button>
+
+          <!-- Toggle Vista Campo Grafico / Lista Giocatori -->
           <button class="circle-button" id="toggle-pitch-layout-btn" type="button" aria-label="Alterna Campo Grafico / Lista Giocatori" title="Mostra Campo Grafico">
             <i class="fa-solid fa-futbol" style="font-size: 14px;"></i>
+          </button>
+
+          <!-- Pulsante Apri Scheda Giocatore (Ispettore Destro / Right Slidebar) -->
+          <button class="circle-button" id="pitch-hud-inspector-btn" type="button" aria-label="Scheda Giocatore" title="Apri Scheda Giocatore">
+            <i class="fa-solid fa-clipboard-user" style="font-size: 14px;"></i>
           </button>
         </div>
       </header>
@@ -313,6 +321,29 @@ export class PitchComponent {
         toggleLayoutBtn.title = 'Mostra Campo Grafico';
         toggleLayoutBtn.innerHTML = '<i class="fa-solid fa-futbol" style="font-size: 14px;"></i>';
         this.renderVerticalList();
+      }
+    });
+
+    // Toggle Scheda Giocatore (Ispettore Destro / Right Slidebar)
+    const inspectorBtn = this.container.querySelector('#pitch-hud-inspector-btn');
+    inspectorBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      e.preventDefault();
+      const sidebarInspector = document.querySelector('#sidebar-inspector');
+      const sidebarTeams = document.querySelector('#sidebar-teams');
+      const backdrop = document.querySelector('#mobile-drawer-backdrop');
+
+      if (window.innerWidth <= 900) {
+        if (sidebarInspector?.classList.contains('mobile-open')) {
+          sidebarInspector?.classList.remove('mobile-open');
+          backdrop?.classList.add('hidden');
+        } else {
+          sidebarInspector?.classList.add('mobile-open');
+          sidebarTeams?.classList.remove('mobile-open');
+          backdrop?.classList.remove('hidden');
+        }
+      } else {
+        document.body.classList.toggle('right-sidebar-collapsed');
       }
     });
   }
