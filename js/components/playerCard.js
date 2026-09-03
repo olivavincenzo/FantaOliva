@@ -44,7 +44,7 @@ function getStatusLabel(status) {
   return map[status] || 'Titolare';
 }
 
-function renderIndexSegments(score) {
+export function renderIndexSegments(score) {
   const s = Math.max(1, Math.min(5, Math.round(Number(score) || 3)));
   let segs = '';
   for (let i = 1; i <= 5; i++) {

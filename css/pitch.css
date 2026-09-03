@@ -141,6 +141,12 @@
   color: var(--ink);
 }
 
+.tactical-rating-pill .index-segments-bar {
+  display: inline-flex !important;
+  margin-left: 3px;
+  vertical-align: middle;
+}
+
 /* Banner Tattico Squadra (Specialisti & Punti Chiave) */
 .team-tactical-banner {
   display: flex;

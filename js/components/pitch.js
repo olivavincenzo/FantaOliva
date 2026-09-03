@@ -4,7 +4,7 @@
 
 import { store } from '../store.js';
 import { FORMATION_LIST } from '../data/formations.js';
-import { createPlayerCard } from './playerCard.js';
+import { createPlayerCard, renderIndexSegments } from './playerCard.js';
 import { dragDrop } from '../utils/dragDrop.js';
 import { sanitizeHtml, getTitolaritaClass } from '../utils/helpers.js';
 import { notify } from '../utils/notifications.js';
@@ -146,8 +146,8 @@ export class PitchComponent {
         <div class="team-tactical-banner" id="pitch-tactical-banner">
           <div class="team-coach-ratings-row" id="pitch-coach-ratings-row">
             <span class="team-coach-text" title="Allenatore"><i class="fa-solid fa-user-tie"></i> All. <strong>${sanitizeHtml(coachName)}</strong></span>
-            <span class="tactical-rating-pill" title="Indice Attacco SOS Fanta (1-5)">⚔️ Att: <strong>${attackRating}/5</strong></span>
-            <span class="tactical-rating-pill" title="Indice Difesa SOS Fanta (1-5)">🛡️ Dif: <strong>${defenseRating}/5</strong></span>
+            <span class="tactical-rating-pill" title="Indice Attacco SOS Fanta (${attackRating}/5)">⚔️ Att: <strong>${attackRating}/5</strong> ${renderIndexSegments(attackRating)}</span>
+            <span class="tactical-rating-pill" title="Indice Difesa SOS Fanta (${defenseRating}/5)">🛡️ Dif: <strong>${defenseRating}/5</strong> ${renderIndexSegments(defenseRating)}</span>
           </div>
           <div class="team-specialists-group">
             <div class="tactical-spec-item" title="Gerarchia Rigoristi: ${sanitizeHtml(rigText)}">
@@ -611,8 +611,8 @@ export class PitchComponent {
       bannerEl.innerHTML = `
         <div class="team-coach-ratings-row" id="pitch-coach-ratings-row">
           <span class="team-coach-text" title="Allenatore"><i class="fa-solid fa-user-tie"></i> All. <strong>${sanitizeHtml(coachName)}</strong></span>
-          <span class="tactical-rating-pill" title="Indice Attacco SOS Fanta (1-5)">⚔️ Att: <strong>${attackRating}/5</strong></span>
-          <span class="tactical-rating-pill" title="Indice Difesa SOS Fanta (1-5)">🛡️ Dif: <strong>${defenseRating}/5</strong></span>
+          <span class="tactical-rating-pill" title="Indice Attacco SOS Fanta (${attackRating}/5)">⚔️ Att: <strong>${attackRating}/5</strong> ${renderIndexSegments(attackRating)}</span>
+          <span class="tactical-rating-pill" title="Indice Difesa SOS Fanta (${defenseRating}/5)">🛡️ Dif: <strong>${defenseRating}/5</strong> ${renderIndexSegments(defenseRating)}</span>
         </div>
         <div class="team-specialists-group">
           <div class="tactical-spec-item" title="Gerarchia Rigoristi: ${sanitizeHtml(rigText)}">
