@@ -905,6 +905,10 @@
   display: none !important;
 }
 
+.player-card.is-compact .player-top-actions {
+  display: none !important;
+}
+
 .player-card.is-compact .player-top {
   gap: 6px;
 }

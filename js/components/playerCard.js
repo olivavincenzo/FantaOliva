@@ -193,19 +193,21 @@ export function createPlayerCard(player, options = {}) {
           <span class="set-pieces-badge ${piazzatiText !== '—' ? 'has-set-pieces' : ''}">${piazzatiText}</span>
         </div>
       </div>
-      <div class="player-top-actions">
-        ${injuryBtnHtml}
-        <button class="card-fav-btn ${isFavorite ? 'is-fav' : ''}" type="button" title="${isFavorite ? 'Rimuovi dai Preferiti' : 'Aggiungi ai Preferiti'}" aria-label="Preferito">
-          <i class="fa-${isFavorite ? 'solid' : 'regular'} fa-star"></i>
-        </button>
-        <button class="availability ${effectiveAvailable ? 'available' : 'taken'}" type="button" title="Stato Asta: ${effectiveAvailable ? 'Disponibile (clicca per segnare PRESO)' : (leagueOwner ? `PRESO da ${leagueOwner.teamName} (${leagueOwner.price} cr)` : 'PRESO (clicca per segnare DISPONIBILE)')}" aria-label="Cambia stato asta">
-          <svg viewBox="0 0 24 24">
-            ${effectiveAvailable
-        ? '<path d="m5 12 4 4L19 6" />'
-        : '<path d="m7 7 10 10M17 7 7 17" />'}
-          </svg>
-        </button>
-      </div>
+      ${compact ? '' : `
+        <div class="player-top-actions">
+          ${injuryBtnHtml}
+          <button class="card-fav-btn ${isFavorite ? 'is-fav' : ''}" type="button" title="${isFavorite ? 'Rimuovi dai Preferiti' : 'Aggiungi ai Preferiti'}" aria-label="Preferito">
+            <i class="fa-${isFavorite ? 'solid' : 'regular'} fa-star"></i>
+          </button>
+          <button class="availability ${effectiveAvailable ? 'available' : 'taken'}" type="button" title="Stato Asta: ${effectiveAvailable ? 'Disponibile (clicca per segnare PRESO)' : (leagueOwner ? `PRESO da ${leagueOwner.teamName} (${leagueOwner.price} cr)` : 'PRESO (clicca per segnare DISPONIBILE)')}" aria-label="Cambia stato asta">
+            <svg viewBox="0 0 24 24">
+              ${effectiveAvailable
+          ? '<path d="m5 12 4 4L19 6" />'
+          : '<path d="m7 7 10 10M17 7 7 17" />'}
+            </svg>
+          </button>
+        </div>
+      `}
     </header>
   `;
 
