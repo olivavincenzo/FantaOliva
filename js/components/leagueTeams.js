@@ -87,26 +87,11 @@ export class LeagueTeamsComponent {
             <p class="context">Asta 2026/27 · FantaLega (${leagueTeams.length} Squadre)</p>
             <div class="team-heading-row">
               <h1 class="team-title-heading" id="league-team-title">${sanitizeHtml(currentTeam.name.toUpperCase())}</h1>
-              ${currentTeam.name.toUpperCase() === 'VINCENZO' ? `<span class="badge-my-team" style="font-size: 10px; padding: 2px 7px;"><i class="fa-solid fa-shield-halved"></i> LA TUA ROSA</span>` : ''}
+              
               <span class="team-formation-badge">${sanitizeHtml(formationId)}</span>
             </div>
           </div>
           <div class="topbar-actions">
-            <!-- Pulsante Ottimizza Formazione (Schiera Miglior 11) -->
-            <button type="button" class="fanta-btn primary-btn btn-sm" id="league-optimize-lineup-btn" style="background: linear-gradient(135deg, #9333ea, #4f46e5); border: 1px solid rgba(255,255,255,0.25); color: #fff; padding: 4px 12px; font-size: 11px; font-weight: 750; box-shadow: 0 2px 10px rgba(147, 51, 234, 0.35);" title="Calcola e schiera automaticamente i migliori 11 titolari per la giornata">
-              <i class="fa-solid fa-wand-magic-sparkles"></i> <span>Schiera Miglior 11</span>
-            </button>
-
-            <!-- Selettore Modulo Topbar -->
-            <div class="topbar-formation-wrap" title="Cambia Modulo Tattico">
-              <select id="league-formation-select" class="topbar-formation-select" aria-label="Cambia Modulo">
-                ${FORMATION_LIST.map(f => `
-                  <option value="${f.id}" ${f.id === formationId ? 'selected' : ''}>${f.id}</option>
-                `).join('')}
-              </select>
-              <span class="formation-arrow">▾</span>
-            </div>
-
             <!-- Toggle Vista Campo / Lista Reparti -->
             <button class="circle-button ${this.layoutMode === 'pitch' ? 'active' : ''}" id="league-toggle-layout-btn" type="button" aria-label="Alterna Campo / Lista Reparti" title="${this.layoutMode === 'pitch' ? 'Mostra Lista Reparti' : 'Mostra Campo Grafico'}">
               <i class="fa-solid ${this.layoutMode === 'pitch' ? 'fa-list' : 'fa-futbol'}" style="font-size: 14px;"></i>
@@ -119,8 +104,8 @@ export class LeagueTeamsComponent {
           <!-- BARRA SELETTORE SQUADRE LEGA (Pill Switcher) -->
           <nav class="filters league-teams-nav" style="margin-bottom: 10px;" aria-label="Selettore Squadre FantaLega">
             ${leagueTeams.map(t => {
-              const isSelected = t.name.toUpperCase() === currentTeam.name.toUpperCase();
-              return `
+      const isSelected = t.name.toUpperCase() === currentTeam.name.toUpperCase();
+      return `
                 <button 
                   type="button" 
                   class="filter ${isSelected ? 'active' : ''}" 
@@ -130,7 +115,7 @@ export class LeagueTeamsComponent {
                   ${t.name.toUpperCase() === 'VINCENZO' ? '⭐ ' : '🛡️ '}${sanitizeHtml(t.name)}
                 </button>
               `;
-            }).join('')}
+    }).join('')}
           </nav>
 
           <!-- BANNER TATTICO SQUADRA (Budget Stats & Quote) -->
@@ -157,8 +142,24 @@ export class LeagueTeamsComponent {
                 <span class="spec-icon">⚡</span> <span class="spec-label">Att:</span> <strong class="spec-names" style="color: ${counts.A >= 6 ? '#16a34a' : 'inherit'};">${counts.A}/6</strong>
               </div>
 
-              <!-- Carica CSV Rose -->
-              <div style="margin-left: auto; display: flex; align-items: center; gap: 8px;">
+              <!-- Controlli Tattici Formazione & CSV Rose -->
+              <div style="margin-left: auto; display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                <!-- Selettore Modulo -->
+                <div class="topbar-formation-wrap" title="Cambia Modulo Tattico" style="height: 28px;">
+                  <select id="league-formation-select" class="topbar-formation-select" aria-label="Cambia Modulo" style="height: 28px; padding: 2px 22px 2px 8px; font-size: 11px;">
+                    ${FORMATION_LIST.map(f => `
+                      <option value="${f.id}" ${f.id === formationId ? 'selected' : ''}>${f.id}</option>
+                    `).join('')}
+                  </select>
+                  <span class="formation-arrow" style="font-size: 9px; right: 7px;">▾</span>
+                </div>
+
+                <!-- Pulsante Ottimizza Formazione (Schiera Miglior 11) -->
+                <button type="button" class="fanta-btn primary-btn btn-sm" id="league-optimize-lineup-btn" style="background: linear-gradient(135deg, #9333ea, #4f46e5); border: 1px solid rgba(255,255,255,0.25); color: #fff; padding: 3px 10px; font-size: 11px; font-weight: 750; box-shadow: 0 2px 10px rgba(147, 51, 234, 0.35);" title="Calcola e schiera automaticamente i migliori 11 titolari per la giornata">
+                  <i class="fa-solid fa-wand-magic-sparkles"></i> <span>Miglior 11</span>
+                </button>
+
+                <!-- Carica CSV Rose -->
                 <button type="button" class="fanta-btn secondary-btn btn-sm" id="league-upload-csv-btn" style="padding: 3px 10px; font-size: 11px;" title="Aggiorna o carica file CSV rose">
                   <i class="fa-solid fa-file-csv"></i> Aggiorna Rose CSV
                 </button>
@@ -346,14 +347,14 @@ export class LeagueTeamsComponent {
         </div>
         <div class="player-list cols-${this.gridColumns}">
           ${dept.items.map(player => {
-            const isSelected = selectedPlayer && selectedPlayer.id === player.id;
-            const cardEl = createPlayerCard(player, {
-              isLineup: false,
-              isSelected,
-              showTeam: true
-            });
-            return cardEl.outerHTML;
-          }).join('')}
+        const isSelected = selectedPlayer && selectedPlayer.id === player.id;
+        const cardEl = createPlayerCard(player, {
+          isLineup: false,
+          isSelected,
+          showTeam: true
+        });
+        return cardEl.outerHTML;
+      }).join('')}
         </div>
       `;
     });
