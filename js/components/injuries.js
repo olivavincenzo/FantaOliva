@@ -141,15 +141,6 @@ export class InjuriesComponent {
             </div>
           </div>
           <div style="display: flex; align-items: center; gap: 10px;">
-            <div class="section-columns-switcher" title="Disposizione colonne">
-              <span class="cols-label">Colonne</span>
-              <div class="cols-button-group">
-                <button type="button" class="col-btn ${this.gridColumns === 1 ? 'is-active' : ''}" data-cols="1">1</button>
-                <button type="button" class="col-btn ${this.gridColumns === 2 ? 'is-active' : ''}" data-cols="2">2</button>
-                <button type="button" class="col-btn ${this.gridColumns === 3 ? 'is-active' : ''}" data-cols="3">3</button>
-                <button type="button" class="col-btn ${this.gridColumns === 4 ? 'is-active' : ''}" data-cols="4">4</button>
-              </div>
-            </div>
             <span class="listone-total-badge" title="Infortunati visualizzati">
               <strong>${filtered.length}</strong>/${baseList.length}
             </span>
@@ -216,6 +207,17 @@ export class InjuriesComponent {
               <option value="MYTEAM" ${this.statusFilter === 'MYTEAM' ? 'selected' : ''}>⭐ Mia Rosa</option>
             </select>
             <span class="select-arrow">▾</span>
+          </div>
+
+          <!-- Disposizione colonne lista -->
+          <div class="section-columns-switcher" title="Disposizione colonne lista" style="margin-left: auto;">
+            <span class="cols-label">Colonne</span>
+            <div class="cols-button-group">
+              <button type="button" class="col-btn ${this.gridColumns === 1 ? 'is-active' : ''}" data-cols="1">1</button>
+              <button type="button" class="col-btn ${this.gridColumns === 2 ? 'is-active' : ''}" data-cols="2">2</button>
+              <button type="button" class="col-btn ${this.gridColumns === 3 ? 'is-active' : ''}" data-cols="3">3</button>
+              <button type="button" class="col-btn ${this.gridColumns === 4 ? 'is-active' : ''}" data-cols="4">4</button>
+            </div>
           </div>
         </nav>
 
