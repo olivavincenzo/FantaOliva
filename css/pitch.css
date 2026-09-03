@@ -709,8 +709,10 @@
     display: grid !important;
   }
 
-  /* Nascondi la barra filtri orizzontale su mobile quando siamo in modalità lista */
-  .pitch-outer-wrapper:not(.is-pitch-mode) .filters:not(.league-teams-nav) {
+  /* Nascondi la barra filtri orizzontale su mobile quando siamo in modalità lista o pagine con modale filtri */
+  .pitch-outer-wrapper:not(.is-pitch-mode) .filters:not(.league-teams-nav),
+  .injuries-page-container .filters,
+  .listone-page-container .filters {
     display: none !important;
   }
 }

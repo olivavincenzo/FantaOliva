@@ -165,23 +165,30 @@ export class InjuriesComponent {
           </span>
         </div>
 
-        <!-- BARRA DI RICERCA EDITORIALE -->
-        <div class="search" role="search" aria-label="Cerca infortunato o diagnosi" style="margin-bottom: 8px;">
-          <svg class="search-icon" viewBox="0 0 24 24">
-            <circle cx="11" cy="11" r="6.5" />
-            <path d="m16 16 4 4" />
-          </svg>
-          <input 
-            type="text" 
-            class="injuries-search-input search-input" 
-            placeholder="Cerca calciatore, club o diagnosi clinica (es. crociato, flessori, caviglia)..." 
-            value="${sanitizeHtml(this.searchQuery)}"
-            autocomplete="off"
-          />
-          ${this.searchQuery ? `<button class="injuries-search-clear search-clear" aria-label="Pulisci ricerca">&times;</button>` : ''}
+        <!-- BARRA DI RICERCA EDITORIALE CON ICONA FILTRI MOBILE -->
+        <div class="search-with-mobile-filter">
+          <div class="search" role="search" aria-label="Cerca infortunato o diagnosi">
+            <svg class="search-icon" viewBox="0 0 24 24">
+              <circle cx="11" cy="11" r="6.5" />
+            </svg>
+            <input 
+              type="text" 
+              class="injuries-search-input search-input" 
+              placeholder="Cerca calciatore, club o diagnosi clinica (es. crociato, flessori, caviglia)..." 
+              value="${sanitizeHtml(this.searchQuery)}"
+              autocomplete="off"
+            />
+            ${this.searchQuery ? `<button class="injuries-search-clear search-clear" aria-label="Pulisci ricerca">&times;</button>` : ''}
+          </div>
+
+          <!-- Singola icona filtri per modalità Mobile -->
+          <button type="button" class="circle-button pitch-mobile-filter-btn" id="injuries-open-filters-modal-btn" aria-label="Filtri" title="Filtri">
+            <i class="fa-solid fa-sliders"></i>
+            <span class="filter-indicator-dot ${this.activeRole !== 'ALL' || this.selectedTeam !== 'ALL' || this.statusFilter !== 'ALL' ? '' : 'hidden'}" id="injuries-filter-active-dot"></span>
+          </button>
         </div>
 
-        <!-- BARRA FILTRI RUOLI, CLUB & STATO -->
+        <!-- BARRA FILTRI RUOLI, CLUB & STATO (DESKTOP) -->
         <nav class="filters" aria-label="Filtri Infermeria" style="margin-bottom: 12px;">
           <button class="filter ${this.activeRole === 'ALL' ? 'active' : ''}" data-role="ALL" type="button">Tutti · ${filtered.length}</button>
           <button class="filter ${this.activeRole === 'A' ? 'active' : ''}" data-role="A" type="button">ATT</button>
@@ -230,6 +237,79 @@ export class InjuriesComponent {
               <p>Nessun infortunato o indisponibile corrisponde ai filtri selezionati.</p>
             </div>
           ` : filtered.map(item => this.renderInjuryCard(item)).join('')}
+        </div>
+
+        <!-- MODALE FILTRI INFERMERIA (MOBILE) -->
+        <div class="modal-backdrop hidden" id="injuries-filters-modal" role="dialog" aria-modal="true" aria-labelledby="injuries-filters-title">
+          <div class="fanta-modal modal-sm">
+            <div class="modal-header">
+              <div class="modal-title-group">
+                <i class="fa-solid fa-sliders modal-title-icon" style="color: var(--ink);"></i>
+                <h3 id="injuries-filters-title">Filtri Report Medico</h3>
+              </div>
+              <button class="modal-close-btn" id="close-injuries-filters-btn" aria-label="Chiudi filtri">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <div class="modal-body" style="padding: 18px 16px; display: flex; flex-direction: column; gap: 18px;">
+              <!-- Sezione 1: Ruolo -->
+              <div>
+                <label style="font-size: 11px; font-weight: 750; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; display: block;">Ruolo</label>
+                <div class="modal-filter-pills" style="display: flex; gap: 6px; flex-wrap: wrap;">
+                  <button type="button" class="filter modal-injuries-role-btn ${this.activeRole === 'ALL' ? 'active' : ''}" data-role="ALL">Tutti</button>
+                  <button type="button" class="filter modal-injuries-role-btn ${this.activeRole === 'A' ? 'active' : ''}" data-role="A">ATT</button>
+                  <button type="button" class="filter modal-injuries-role-btn ${this.activeRole === 'C' ? 'active' : ''}" data-role="C">CEN</button>
+                  <button type="button" class="filter modal-injuries-role-btn ${this.activeRole === 'D' ? 'active' : ''}" data-role="D">DIF</button>
+                  <button type="button" class="filter modal-injuries-role-btn ${this.activeRole === 'P' ? 'active' : ''}" data-role="P">POR</button>
+                </div>
+              </div>
+
+              <!-- Sezione 2: Club Serie A -->
+              <div>
+                <label style="font-size: 11px; font-weight: 750; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; display: block;">Club Serie A</label>
+                <div class="listone-select-pill-wrap" style="width: 100%;">
+                  <select class="filter filter-select" id="modal-injuries-team-select" style="width: 100%;">
+                    <option value="ALL" ${this.selectedTeam === 'ALL' ? 'selected' : ''}>Tutti i Club (${teams.length})</option>
+                    ${teams.map(t => `<option value="${t.id}" ${this.selectedTeam === t.id ? 'selected' : ''}>${sanitizeHtml(t.name)}</option>`).join('')}
+                  </select>
+                  <span class="select-arrow">▾</span>
+                </div>
+              </div>
+
+              <!-- Sezione 3: Stato Indisponibilità -->
+              <div>
+                <label style="font-size: 11px; font-weight: 750; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; display: block;">Stato</label>
+                <div class="listone-select-pill-wrap" style="width: 100%;">
+                  <select class="filter filter-select" id="modal-injuries-status-select" style="width: 100%;">
+                    <option value="ALL" ${this.statusFilter === 'ALL' ? 'selected' : ''}>Tutti gli Infortunati (${baseList.length})</option>
+                    <option value="INJURED" ${this.statusFilter === 'INJURED' ? 'selected' : ''}>🏥 Infortunati (${totalInjured})</option>
+                    <option value="SUSPENDED" ${this.statusFilter === 'SUSPENDED' ? 'selected' : ''}>🟥 Squalificati (${totalSuspended})</option>
+                    <option value="MYTEAM" ${this.statusFilter === 'MYTEAM' ? 'selected' : ''}>⭐ Mia Rosa</option>
+                  </select>
+                  <span class="select-arrow">▾</span>
+                </div>
+              </div>
+
+              <!-- Sezione 4: Disposizione Colonne -->
+              <div>
+                <label style="font-size: 11px; font-weight: 750; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; display: block;">Disposizione Colonne</label>
+                <div class="cols-button-group" style="display: inline-flex;">
+                  <button type="button" class="col-btn modal-injuries-col-btn ${this.gridColumns === 1 ? 'is-active' : ''}" data-cols="1">1</button>
+                  <button type="button" class="col-btn modal-injuries-col-btn ${this.gridColumns === 2 ? 'is-active' : ''}" data-cols="2">2</button>
+                  <button type="button" class="col-btn modal-injuries-col-btn ${this.gridColumns === 3 ? 'is-active' : ''}" data-cols="3">3</button>
+                  <button type="button" class="col-btn modal-injuries-col-btn ${this.gridColumns === 4 ? 'is-active' : ''}" data-cols="4">4</button>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="fanta-btn secondary-btn" id="reset-injuries-filters-btn" type="button">
+                <i class="fa-solid fa-rotate-left"></i> Reset
+              </button>
+              <button class="fanta-btn primary-btn" id="apply-injuries-filters-btn" type="button">
+                <i class="fa-solid fa-check"></i> Applica
+              </button>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -369,6 +449,62 @@ export class InjuriesComponent {
         }
         this.render();
       });
+    });
+
+    // Modale Filtri Mobile
+    const openModalBtn = this.container.querySelector('#injuries-open-filters-modal-btn');
+    const filtersModal = this.container.querySelector('#injuries-filters-modal');
+    const closeModalBtn = this.container.querySelector('#close-injuries-filters-btn');
+    const applyModalBtn = this.container.querySelector('#apply-injuries-filters-btn');
+    const resetModalBtn = this.container.querySelector('#reset-injuries-filters-btn');
+
+    openModalBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      filtersModal?.classList.remove('hidden');
+    });
+
+    const closeFiltersModal = () => {
+      filtersModal?.classList.add('hidden');
+    };
+
+    closeModalBtn?.addEventListener('click', closeFiltersModal);
+    applyModalBtn?.addEventListener('click', closeFiltersModal);
+    filtersModal?.addEventListener('click', (e) => {
+      if (e.target === filtersModal) closeFiltersModal();
+    });
+
+    // Filtro Ruolo nella Modale
+    this.container.querySelectorAll('.modal-injuries-role-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        this.activeRole = btn.dataset.role;
+        this.render();
+      });
+    });
+
+    // Filtro Club nella Modale
+    const modalTeamSelect = this.container.querySelector('#modal-injuries-team-select');
+    modalTeamSelect?.addEventListener('change', (e) => {
+      this.selectedTeam = e.target.value;
+      this.render();
+    });
+
+    // Filtro Stato nella Modale
+    const modalStatusSelect = this.container.querySelector('#modal-injuries-status-select');
+    modalStatusSelect?.addEventListener('change', (e) => {
+      this.statusFilter = e.target.value;
+      this.render();
+    });
+
+    // Reset Filtri nella Modale
+    resetModalBtn?.addEventListener('click', () => {
+      this.activeRole = 'ALL';
+      this.selectedTeam = 'ALL';
+      this.statusFilter = 'ALL';
+      this.gridColumns = 2;
+      if (typeof localStorage !== 'undefined') {
+        localStorage.setItem('fantaoliva_injuries_cols', 2);
+      }
+      this.render();
     });
 
     // Click su Card Infortunato -> Apre l'Ispettore laterale

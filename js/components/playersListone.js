@@ -305,38 +305,37 @@ export class PlayersListoneComponent {
             <h1 class="team-title-heading">LISTONE COMPLETO</h1>
           </div>
           <div style="display: flex; align-items: center; gap: 10px;">
-            <div class="section-columns-switcher" title="Disposizione colonne listone">
-              <span class="cols-label">Colonne</span>
-              <div class="cols-button-group">
-                <button type="button" class="col-btn ${this.gridColumns === 1 ? 'is-active' : ''}" data-cols="1">1</button>
-                <button type="button" class="col-btn ${this.gridColumns === 2 ? 'is-active' : ''}" data-cols="2">2</button>
-                <button type="button" class="col-btn ${this.gridColumns === 3 ? 'is-active' : ''}" data-cols="3">3</button>
-                <button type="button" class="col-btn ${this.gridColumns === 4 ? 'is-active' : ''}" data-cols="4">4</button>
-              </div>
-            </div>
             <span class="listone-total-badge" title="Calciatori visualizzati / Totale">
               <strong>${filtered.length}</strong>/${total}
             </span>
           </div>
         </header>
 
-        <!-- BARRA DI RICERCA EDITORIALE -->
-        <div class="search" role="search" aria-label="Cerca nel listone">
-          <svg class="search-icon" viewBox="0 0 24 24">
-            <circle cx="11" cy="11" r="6.5" />
-            <path d="m16 16 4 4" />
-          </svg>
-          <input 
-            type="text" 
-            class="listone-search-input search-input" 
-            placeholder="Cerca calciatore o squadra nel listone" 
-            value="${sanitizeHtml(this.searchQuery)}"
-            autocomplete="off"
-          />
-          ${this.searchQuery ? `<button class="listone-search-clear search-clear" aria-label="Pulisci ricerca">&times;</button>` : ''}
+        <!-- BARRA DI RICERCA EDITORIALE CON ICONA FILTRI MOBILE -->
+        <div class="search-with-mobile-filter">
+          <div class="search" role="search" aria-label="Cerca nel listone">
+            <svg class="search-icon" viewBox="0 0 24 24">
+              <circle cx="11" cy="11" r="6.5" />
+              <path d="m16 16 4 4" />
+            </svg>
+            <input 
+              type="text" 
+              class="listone-search-input search-input" 
+              placeholder="Cerca calciatore o squadra nel listone" 
+              value="${sanitizeHtml(this.searchQuery)}"
+              autocomplete="off"
+            />
+            ${this.searchQuery ? `<button class="listone-search-clear search-clear" aria-label="Pulisci ricerca">&times;</button>` : ''}
+          </div>
+
+          <!-- Singola icona filtri per modalità Mobile -->
+          <button type="button" class="circle-button pitch-mobile-filter-btn" id="listone-open-filters-modal-btn" aria-label="Filtri" title="Filtri">
+            <i class="fa-solid fa-sliders"></i>
+            <span class="filter-indicator-dot ${this.activeRole !== 'ALL' || this.selectedTeam !== 'ALL' || this.leagueFilter !== 'ALL' || this.availabilityFilter !== 'ALL' || this.onlyFavorites ? '' : 'hidden'}" id="listone-filter-active-dot"></span>
+          </button>
         </div>
 
-        <!-- FILTRI RUOLI, SQUADRE & ORDINAMENTO A SCORRIMENTO ORIZZONTALE -->
+        <!-- FILTRI RUOLI, SQUADRE & ORDINAMENTO A SCORRIMENTO ORIZZONTALE (DESKTOP) -->
         <nav class="filters" aria-label="Filtri Listone">
           <button class="filter ${this.activeRole === 'ALL' ? 'active' : ''}" data-role="ALL" type="button">Tutti · ${filtered.length}</button>
           <button class="filter ${this.activeRole === 'A' ? 'active' : ''}" data-role="A" type="button">ATT</button>
@@ -388,6 +387,17 @@ export class PlayersListoneComponent {
           <button id="toggle-listone-fav-btn" class="filter ${this.onlyFavorites ? 'active' : ''}" type="button" title="Mostra solo preferiti">
             <i class="fa-${this.onlyFavorites ? 'solid' : 'regular'} fa-star"></i> Preferiti
           </button>
+
+          <!-- Disposizione colonne lista -->
+          <div class="section-columns-switcher" title="Disposizione colonne listone" style="margin-left: auto;">
+            <span class="cols-label">Colonne</span>
+            <div class="cols-button-group">
+              <button type="button" class="col-btn ${this.gridColumns === 1 ? 'is-active' : ''}" data-cols="1">1</button>
+              <button type="button" class="col-btn ${this.gridColumns === 2 ? 'is-active' : ''}" data-cols="2">2</button>
+              <button type="button" class="col-btn ${this.gridColumns === 3 ? 'is-active' : ''}" data-cols="3">3</button>
+              <button type="button" class="col-btn ${this.gridColumns === 4 ? 'is-active' : ''}" data-cols="4">4</button>
+            </div>
+          </div>
         </nav>
 
         <!-- LISTA CARDS CALCIATORI EDITORIAL MINIMAL -->
@@ -404,6 +414,105 @@ export class PlayersListoneComponent {
               </button>
             </div>
           ` : ''}
+        </div>
+
+        <!-- MODALE FILTRI LISTONE (MOBILE) -->
+        <div class="modal-backdrop hidden" id="listone-filters-modal" role="dialog" aria-modal="true" aria-labelledby="listone-filters-title">
+          <div class="fanta-modal modal-sm">
+            <div class="modal-header">
+              <div class="modal-title-group">
+                <i class="fa-solid fa-sliders modal-title-icon" style="color: var(--ink);"></i>
+                <h3 id="listone-filters-title">Filtri Listone & Asta</h3>
+              </div>
+              <button class="modal-close-btn" id="close-listone-filters-btn" aria-label="Chiudi filtri">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <div class="modal-body" style="padding: 18px 16px; display: flex; flex-direction: column; gap: 16px;">
+              <!-- Sezione 1: Ruolo -->
+              <div>
+                <label style="font-size: 11px; font-weight: 750; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; display: block;">Ruolo</label>
+                <div class="modal-filter-pills" style="display: flex; gap: 6px; flex-wrap: wrap;">
+                  <button type="button" class="filter modal-listone-role-btn ${this.activeRole === 'ALL' ? 'active' : ''}" data-role="ALL">Tutti</button>
+                  <button type="button" class="filter modal-listone-role-btn ${this.activeRole === 'A' ? 'active' : ''}" data-role="A">ATT</button>
+                  <button type="button" class="filter modal-listone-role-btn ${this.activeRole === 'C' ? 'active' : ''}" data-role="C">CEN</button>
+                  <button type="button" class="filter modal-listone-role-btn ${this.activeRole === 'D' ? 'active' : ''}" data-role="D">DIF</button>
+                  <button type="button" class="filter modal-listone-role-btn ${this.activeRole === 'P' ? 'active' : ''}" data-role="P">POR</button>
+                </div>
+              </div>
+
+              <!-- Sezione 2: FantaLega & Svincolati -->
+              <div>
+                <label style="font-size: 11px; font-weight: 750; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; display: block;">Stato FantaLega</label>
+                <div class="listone-select-pill-wrap" style="width: 100%;">
+                  <select class="filter filter-select" id="modal-listone-league-select" style="width: 100%;">
+                    <option value="ALL" ${this.leagueFilter === 'ALL' ? 'selected' : ''}>🏆 Tutte le Rose Lega</option>
+                    <option value="FREE" ${this.leagueFilter === 'FREE' ? 'selected' : ''}>🟢 Solo Svincolati / Liberi</option>
+                    <option value="MYTEAM" ${this.leagueFilter === 'MYTEAM' ? 'selected' : ''}>⭐ Vincenzo (Mia Rosa)</option>
+                    ${store.getLeagueTeams().filter(t => t.name.toUpperCase() !== 'VINCENZO').map(t => `
+                      <option value="${t.name}" ${this.leagueFilter === t.name ? 'selected' : ''}>🛡️ ${t.name} (${t.roster?.length || 0})</option>
+                    `).join('')}
+                  </select>
+                  <span class="select-arrow">▾</span>
+                </div>
+              </div>
+
+              <!-- Sezione 3: Club Serie A -->
+              <div>
+                <label style="font-size: 11px; font-weight: 750; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; display: block;">Club Serie A</label>
+                <div class="listone-select-pill-wrap" style="width: 100%;">
+                  <select class="filter filter-select" id="modal-listone-team-select" style="width: 100%;">
+                    <option value="ALL" ${this.selectedTeam === 'ALL' ? 'selected' : ''}>Tutti i Club (${teams.length})</option>
+                    ${teams.map(t => `<option value="${t.id}" ${this.selectedTeam === t.id ? 'selected' : ''}>${sanitizeHtml(t.name)}</option>`).join('')}
+                  </select>
+                  <span class="select-arrow">▾</span>
+                </div>
+              </div>
+
+              <!-- Sezione 4: Ordinamento -->
+              <div>
+                <label style="font-size: 11px; font-weight: 750; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; display: block;">Ordina Per</label>
+                <div class="listone-select-pill-wrap" style="width: 100%;">
+                  <select class="filter filter-select" id="modal-listone-sort-select" style="width: 100%;">
+                    ${sortOptions.map(s => `<option value="${s.key}" ${this.sortBy === s.key ? 'selected' : ''}>${s.label}</option>`).join('')}
+                  </select>
+                  <span class="select-arrow">▾</span>
+                </div>
+              </div>
+
+              <!-- Sezione 5: Toggle Rapidi (Disponibili & Preferiti) -->
+              <div>
+                <label style="font-size: 11px; font-weight: 750; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; display: block;">Stato Asta</label>
+                <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                  <button type="button" class="filter ${isOnlyAvail ? 'active' : ''}" id="modal-toggle-listone-available-btn">
+                    <i class="fa-solid ${isOnlyAvail ? 'fa-circle-check' : 'fa-filter'}"></i> ${isOnlyAvail ? 'Solo Disponibili' : 'Tutti i Giocatori'}
+                  </button>
+                  <button type="button" class="filter ${this.onlyFavorites ? 'active' : ''}" id="modal-toggle-listone-fav-btn">
+                    <i class="fa-${this.onlyFavorites ? 'solid' : 'regular'} fa-star"></i> Solo Preferiti
+                  </button>
+                </div>
+              </div>
+
+              <!-- Sezione 6: Disposizione Colonne -->
+              <div>
+                <label style="font-size: 11px; font-weight: 750; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; display: block;">Disposizione Colonne</label>
+                <div class="cols-button-group" style="display: inline-flex;">
+                  <button type="button" class="col-btn modal-listone-col-btn ${this.gridColumns === 1 ? 'is-active' : ''}" data-cols="1">1</button>
+                  <button type="button" class="col-btn modal-listone-col-btn ${this.gridColumns === 2 ? 'is-active' : ''}" data-cols="2">2</button>
+                  <button type="button" class="col-btn modal-listone-col-btn ${this.gridColumns === 3 ? 'is-active' : ''}" data-cols="3">3</button>
+                  <button type="button" class="col-btn modal-listone-col-btn ${this.gridColumns === 4 ? 'is-active' : ''}" data-cols="4">4</button>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="fanta-btn secondary-btn" id="reset-listone-filters-btn" type="button">
+                <i class="fa-solid fa-rotate-left"></i> Reset
+              </button>
+              <button class="fanta-btn primary-btn" id="apply-listone-filters-btn" type="button">
+                <i class="fa-solid fa-check"></i> Applica
+              </button>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -441,7 +550,7 @@ export class PlayersListoneComponent {
 
   bindEvents() {
     // Selettore Colonne 1 2 3 4
-    this.container.querySelectorAll('.section-columns-switcher .col-btn').forEach(btn => {
+    this.container.querySelectorAll('.col-btn[data-cols]').forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.stopPropagation();
         const cols = Number(btn.dataset.cols) || 2;
@@ -451,6 +560,95 @@ export class PlayersListoneComponent {
         }
         this.render();
       });
+    });
+
+    // Modale Filtri Mobile
+    const openModalBtn = this.container.querySelector('#listone-open-filters-modal-btn');
+    const filtersModal = this.container.querySelector('#listone-filters-modal');
+    const closeModalBtn = this.container.querySelector('#close-listone-filters-btn');
+    const applyModalBtn = this.container.querySelector('#apply-listone-filters-btn');
+    const resetModalBtn = this.container.querySelector('#reset-listone-filters-btn');
+
+    openModalBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      filtersModal?.classList.remove('hidden');
+    });
+
+    const closeFiltersModal = () => {
+      filtersModal?.classList.add('hidden');
+    };
+
+    closeModalBtn?.addEventListener('click', closeFiltersModal);
+    applyModalBtn?.addEventListener('click', closeFiltersModal);
+    filtersModal?.addEventListener('click', (e) => {
+      if (e.target === filtersModal) closeFiltersModal();
+    });
+
+    // Filtro Ruoli nella Modale Mobile
+    this.container.querySelectorAll('.modal-listone-role-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        this.activeRole = btn.dataset.role;
+        this.renderLimit = 40;
+        this.render();
+      });
+    });
+
+    // Dropdown FantaLega nella Modale
+    const modalLeagueSelect = this.container.querySelector('#modal-listone-league-select');
+    modalLeagueSelect?.addEventListener('change', (e) => {
+      this.leagueFilter = e.target.value;
+      this.renderLimit = 40;
+      this.render();
+    });
+
+    // Dropdown Club nella Modale
+    const modalTeamSelect = this.container.querySelector('#modal-listone-team-select');
+    modalTeamSelect?.addEventListener('change', (e) => {
+      this.selectedTeam = e.target.value;
+      this.renderLimit = 40;
+      this.render();
+    });
+
+    // Dropdown Sort nella Modale
+    const modalSortSelect = this.container.querySelector('#modal-listone-sort-select');
+    modalSortSelect?.addEventListener('change', (e) => {
+      this.sortBy = e.target.value;
+      this.sortOrder = (e.target.value === 'name' || e.target.value === 'teamName') ? 'asc' : 'desc';
+      this.renderLimit = 40;
+      this.render();
+    });
+
+    // Toggle Disponibili nella Modale
+    const modalAvailBtn = this.container.querySelector('#modal-toggle-listone-available-btn');
+    modalAvailBtn?.addEventListener('click', () => {
+      this.availabilityFilter = this.availabilityFilter === 'AVAILABLE' ? 'ALL' : 'AVAILABLE';
+      this.renderLimit = 40;
+      this.render();
+    });
+
+    // Toggle Preferiti nella Modale
+    const modalFavBtn = this.container.querySelector('#modal-toggle-listone-fav-btn');
+    modalFavBtn?.addEventListener('click', () => {
+      this.onlyFavorites = !this.onlyFavorites;
+      this.renderLimit = 40;
+      this.render();
+    });
+
+    // Reset Filtri nella Modale
+    resetModalBtn?.addEventListener('click', () => {
+      this.activeRole = 'ALL';
+      this.selectedTeam = 'ALL';
+      this.leagueFilter = 'ALL';
+      this.availabilityFilter = 'ALL';
+      this.onlyFavorites = false;
+      this.sortBy = 'strategy_tier';
+      this.sortOrder = 'asc';
+      this.gridColumns = 2;
+      this.renderLimit = 40;
+      if (typeof localStorage !== 'undefined') {
+        localStorage.setItem('fantaoliva_listone_cols', 2);
+      }
+      this.render();
     });
 
     // Ruolo Tabs
