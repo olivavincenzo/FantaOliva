@@ -400,6 +400,37 @@
   box-shadow: 0 0 3px rgba(163, 230, 53, 0.6);
 }
 
+/* Colori dinamici in base al punteggio dell'indice (1 a 5) */
+.index-segments-bar.score-1 .segment-bar.is-filled,
+.index-segments-bar[data-score="1"] .segment-bar.is-filled {
+  background: linear-gradient(113deg, #f87171, #ef4444);
+  box-shadow: 0 0 3.5px rgba(239, 68, 68, 0.7);
+}
+
+.index-segments-bar.score-2 .segment-bar.is-filled,
+.index-segments-bar[data-score="2"] .segment-bar.is-filled {
+  background: linear-gradient(113deg, #fb923c, #f97316);
+  box-shadow: 0 0 3.5px rgba(249, 115, 22, 0.7);
+}
+
+.index-segments-bar.score-3 .segment-bar.is-filled,
+.index-segments-bar[data-score="3"] .segment-bar.is-filled {
+  background: linear-gradient(113deg, #fde047, #eab308);
+  box-shadow: 0 0 3.5px rgba(234, 179, 8, 0.7);
+}
+
+.index-segments-bar.score-4 .segment-bar.is-filled,
+.index-segments-bar[data-score="4"] .segment-bar.is-filled {
+  background: linear-gradient(113deg, #bef264, #84cc16);
+  box-shadow: 0 0 3.5px rgba(132, 204, 22, 0.7);
+}
+
+.index-segments-bar.score-5 .segment-bar.is-filled,
+.index-segments-bar[data-score="5"] .segment-bar.is-filled {
+  background: linear-gradient(113deg, #4ade80, #22c55e);
+  box-shadow: 0 0 4px rgba(34, 197, 94, 0.75);
+}
+
 .metric-index-val {
   font-size: 11px;
   font-weight: 790;

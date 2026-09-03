@@ -45,12 +45,12 @@ function getStatusLabel(status) {
 }
 
 function renderIndexSegments(score) {
-  const s = Math.max(1, Math.min(5, Number(score) || 3));
+  const s = Math.max(1, Math.min(5, Math.round(Number(score) || 3)));
   let segs = '';
   for (let i = 1; i <= 5; i++) {
     segs += `<span class="segment-bar ${i <= s ? 'is-filled' : ''}"></span>`;
   }
-  return `<div class="index-segments-bar" role="img" aria-label="${s}/5">${segs}</div>`;
+  return `<div class="index-segments-bar score-${s}" data-score="${s}" role="img" aria-label="${s}/5">${segs}</div>`;
 }
 
 export function createPlayerCard(player, options = {}) {
