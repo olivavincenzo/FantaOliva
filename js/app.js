@@ -467,13 +467,24 @@ class App {
 
     // Apertura Drawer Squadre da pulsanti dedicati (Event Delegation)
     document.addEventListener('click', (e) => {
-      const teamsBtn = e.target.closest('#pitch-hud-teams-btn') || e.target.closest('#list-teams-btn') || e.target.closest('#mobile-open-teams-btn');
+      const teamsBtn = e.target.closest('#pitch-hud-teams-btn') || e.target.closest('#list-teams-btn') || e.target.closest('#mobile-open-teams-btn') || e.target.closest('#league-hud-teams-btn');
       if (teamsBtn) {
         e.stopPropagation();
         if (sidebarTeams?.classList.contains('mobile-open')) {
           closeDrawers();
         } else {
           openLeftDrawer();
+        }
+        return;
+      }
+
+      const inspectorBtn = e.target.closest('#league-toggle-inspector-btn') || e.target.closest('#pitch-hud-inspector-btn') || e.target.closest('#myteam-toggle-inspector-btn');
+      if (inspectorBtn) {
+        e.stopPropagation();
+        if (sidebarInspector?.classList.contains('mobile-open')) {
+          closeDrawers();
+        } else {
+          openRightDrawer();
         }
         return;
       }
@@ -491,7 +502,9 @@ class App {
       // Quando si seleziona una squadra dal drawer su mobile, passa alla vista Campo e chiudi il drawer
       if (e.target.closest('.team') || e.target.closest('.team-list-item')) {
         if (window.innerWidth <= 900) {
-          this.switchView('tactical');
+          if (store.activeView !== 'league') {
+            this.switchView('tactical');
+          }
           closeDrawers();
           return;
         }

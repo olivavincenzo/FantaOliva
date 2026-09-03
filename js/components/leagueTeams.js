@@ -92,9 +92,19 @@ export class LeagueTeamsComponent {
             </div>
           </div>
           <div class="topbar-actions">
+            <!-- Pulsante Apri Elenco Squadre Lega (Mobile) -->
+            <button class="circle-button" id="league-hud-teams-btn" type="button" aria-label="Squadre Lega" title="Elenco Squadre FantaLega">
+              <i class="fa-solid fa-shield-halved" style="font-size: 13px;"></i>
+            </button>
+
             <!-- Toggle Vista Campo / Lista Reparti -->
             <button class="circle-button ${this.layoutMode === 'pitch' ? 'active' : ''}" id="league-toggle-layout-btn" type="button" aria-label="Alterna Campo / Lista Reparti" title="${this.layoutMode === 'pitch' ? 'Mostra Lista Reparti' : 'Mostra Campo Grafico'}">
               <i class="fa-solid ${this.layoutMode === 'pitch' ? 'fa-list' : 'fa-futbol'}" style="font-size: 14px;"></i>
+            </button>
+
+            <!-- Pulsante Apri Scheda Giocatore (Ispettore Destro / Right Slidebar) -->
+            <button class="circle-button" id="league-toggle-inspector-btn" type="button" aria-label="Scheda Giocatore" title="Apri Scheda Giocatore">
+              <i class="fa-solid fa-clipboard-user" style="font-size: 14px;"></i>
             </button>
           </div>
         </header>
@@ -386,6 +396,50 @@ export class LeagueTeamsComponent {
     this.container.querySelector('#league-toggle-layout-btn')?.addEventListener('click', () => {
       this.layoutMode = this.layoutMode === 'pitch' ? 'list' : 'pitch';
       this.render();
+    });
+
+    // Toggle Scheda Giocatore (Ispettore Destro / Right Slidebar)
+    this.container.querySelector('#league-toggle-inspector-btn')?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      e.preventDefault();
+      const sidebarInspector = document.querySelector('#sidebar-inspector');
+      const sidebarTeams = document.querySelector('#sidebar-teams');
+      const backdrop = document.querySelector('#mobile-drawer-backdrop');
+
+      if (window.innerWidth <= 900) {
+        if (sidebarInspector?.classList.contains('mobile-open')) {
+          sidebarInspector?.classList.remove('mobile-open');
+          backdrop?.classList.add('hidden');
+        } else {
+          sidebarInspector?.classList.add('mobile-open');
+          sidebarTeams?.classList.remove('mobile-open');
+          backdrop?.classList.remove('hidden');
+        }
+      } else {
+        document.body.classList.toggle('right-sidebar-collapsed');
+      }
+    });
+
+    // Toggle Elenco Squadre Lega (Mobile Left Drawer)
+    this.container.querySelector('#league-hud-teams-btn')?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      e.preventDefault();
+      const sidebarTeams = document.querySelector('#sidebar-teams');
+      const sidebarInspector = document.querySelector('#sidebar-inspector');
+      const backdrop = document.querySelector('#mobile-drawer-backdrop');
+
+      if (window.innerWidth <= 900) {
+        if (sidebarTeams?.classList.contains('mobile-open')) {
+          sidebarTeams?.classList.remove('mobile-open');
+          backdrop?.classList.add('hidden');
+        } else {
+          sidebarTeams?.classList.add('mobile-open');
+          sidebarInspector?.classList.remove('mobile-open');
+          backdrop?.classList.remove('hidden');
+        }
+      } else {
+        document.body.classList.toggle('left-sidebar-collapsed');
+      }
     });
 
     // Column switcher in list view

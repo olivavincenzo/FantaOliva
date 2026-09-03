@@ -77,7 +77,7 @@
   position: absolute;
   right: 9px;
   pointer-events: none;
-  font-size: 9px;
+  font-size: 15px;
   color: var(--body);
 }
 
@@ -121,6 +121,7 @@
 }
 
 @media (max-width: 600px) {
+
   .listone-cards-grid.cols-2,
   .listone-cards-grid.cols-3,
   .listone-cards-grid.cols-4 {
