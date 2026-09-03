@@ -228,6 +228,16 @@
   font-size: 9.5px;
 }
 
+/* Riga tool per cambio moduto e ottimizzazione formazione */
+.team-tool-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--line);
+  padding-top: 6px;
+}
+
 /* Riga Ballottaggi Ufficiali della Squadra */
 .team-ballottaggi-group {
   display: flex;

@@ -141,29 +141,31 @@ export class LeagueTeamsComponent {
               <div class="tactical-spec-item" title="Attaccanti">
                 <span class="spec-icon">⚡</span> <span class="spec-label">Att:</span> <strong class="spec-names" style="color: ${counts.A >= 6 ? '#16a34a' : 'inherit'};">${counts.A}/6</strong>
               </div>
+              </div>
 
               <!-- Controlli Tattici Formazione & CSV Rose -->
-              <div style="margin-left: auto; display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-                <!-- Selettore Modulo -->
-                <div class="topbar-formation-wrap" title="Cambia Modulo Tattico" style="height: 28px;">
-                  <select id="league-formation-select" class="topbar-formation-select" aria-label="Cambia Modulo" style="height: 28px; padding: 2px 22px 2px 8px; font-size: 11px;">
-                    ${FORMATION_LIST.map(f => `
-                      <option value="${f.id}" ${f.id === formationId ? 'selected' : ''}>${f.id}</option>
-                    `).join('')}
-                  </select>
-                  <span class="formation-arrow" style="font-size: 9px; right: 7px;">▾</span>
+              <div class="team-tool-group">
+                <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                  <!-- Selettore Modulo -->
+                  <div class="topbar-formation-wrap" title="Cambia Modulo Tattico" style="height: 28px;">
+                    <select id="league-formation-select" class="topbar-formation-select" aria-label="Cambia Modulo" style="height: 28px; padding: 2px 22px 2px 8px; font-size: 11px;">
+                      ${FORMATION_LIST.map(f => `
+                        <option value="${f.id}" ${f.id === formationId ? 'selected' : ''}>${f.id}</option>
+                      `).join('')}
+                    </select>
+                    <span class="formation-arrow" style="font-size: 9px; right: 7px;">▾</span>
+                  </div>
+
+                  <!-- Pulsante Ottimizza Formazione (Schiera Miglior 11) -->
+                  <button type="button" class="fanta-btn primary-btn btn-sm" id="league-optimize-lineup-btn" style="background: linear-gradient(135deg, #9333ea, #4f46e5); border: 1px solid rgba(255,255,255,0.25); color: #fff; padding: 3px 10px; font-size: 11px; font-weight: 750; box-shadow: 0 2px 10px rgba(147, 51, 234, 0.35);" title="Calcola e schiera automaticamente i migliori 11 titolari per la giornata">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> <span>Miglior 11</span>
+                  </button>
+
+                  <!-- Carica CSV Rose -->
+                  <button type="button" class="fanta-btn secondary-btn btn-sm" id="league-upload-csv-btn" style="padding: 3px 10px; font-size: 11px;" title="Aggiorna o carica file CSV rose">
+                    <i class="fa-solid fa-file-csv"></i> Aggiorna Rose CSV
+                  </button>
                 </div>
-
-                <!-- Pulsante Ottimizza Formazione (Schiera Miglior 11) -->
-                <button type="button" class="fanta-btn primary-btn btn-sm" id="league-optimize-lineup-btn" style="background: linear-gradient(135deg, #9333ea, #4f46e5); border: 1px solid rgba(255,255,255,0.25); color: #fff; padding: 3px 10px; font-size: 11px; font-weight: 750; box-shadow: 0 2px 10px rgba(147, 51, 234, 0.35);" title="Calcola e schiera automaticamente i migliori 11 titolari per la giornata">
-                  <i class="fa-solid fa-wand-magic-sparkles"></i> <span>Miglior 11</span>
-                </button>
-
-                <!-- Carica CSV Rose -->
-                <button type="button" class="fanta-btn secondary-btn btn-sm" id="league-upload-csv-btn" style="padding: 3px 10px; font-size: 11px;" title="Aggiorna o carica file CSV rose">
-                  <i class="fa-solid fa-file-csv"></i> Aggiorna Rose CSV
-                </button>
-              </div>
             </div>
 
           </div>

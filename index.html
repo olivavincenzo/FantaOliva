@@ -43,7 +43,8 @@
       <!-- Sezione Sinistra: Switcher Viste (Lavagna Tattica / FantaLega / Infermeria / Scambi / Listone) -->
       <div class="header-left-section">
         <div class="view-switch-nav">
-          <button id="view-tab-tactical" class="view-switch-btn is-active" title="Visualizza Campo e Lavagna Tattica Serie A">
+          <button id="view-tab-tactical" class="view-switch-btn is-active"
+            title="Visualizza Campo e Lavagna Tattica Serie A">
             <i class="fa-solid fa-futbol"></i> <span>Lavagna</span>
           </button>
           <button id="view-tab-league" class="view-switch-btn" title="Visualizza Squadre e Rose FantaLega">
@@ -55,8 +56,7 @@
           <button id="view-tab-trades" class="view-switch-btn" title="Valutatore Scambi & Confronti FantaLab">
             <i class="fa-solid fa-arrows-rotate"></i> <span>Scambi</span>
           </button>
-          <button id="view-tab-listone" class="view-switch-btn"
-            title="Visualizza Listone Completo Calciatori Serie A">
+          <button id="view-tab-listone" class="view-switch-btn" title="Visualizza Listone Completo Calciatori Serie A">
             <i class="fa-solid fa-table-list"></i> <span>Listone</span>
           </button>
         </div>
@@ -81,14 +81,14 @@
     <div class="header-dropdown-menu" id="header-settings-menu" role="menu" aria-label="Menu Impostazioni e Strumenti">
       <div class="dropdown-menu-header">
         <span class="dropdown-menu-title"><i class="fa-solid fa-sliders"></i> Strumenti & Impostazioni</span>
-        <button class="mobile-drawer-close-btn" id="close-settings-menu-btn" title="Chiudi impostazioni" aria-label="Chiudi">
+        <button class="mobile-drawer-close-btn" id="close-settings-menu-btn" title="Chiudi impostazioni"
+          aria-label="Chiudi">
           <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
 
       <div class="dropdown-items-list">
-        <button id="save-formation-btn" class="dropdown-menu-item item-save"
-          title="Salva modifiche della formazione">
+        <button id="save-formation-btn" class="dropdown-menu-item item-save" title="Salva modifiche della formazione">
           <div class="dropdown-item-icon icon-green"><i class="fa-solid fa-floppy-disk"></i></div>
           <div class="dropdown-item-text">
             <span class="item-title">Salva Formazione</span>
@@ -100,7 +100,8 @@
 
         <button id="open-sync-modal-btn" class="dropdown-menu-item"
           title="Sincronizza dati ufficiali e statistiche live da Fantalab / SOS Fanta">
-          <div class="dropdown-item-icon" style="background: rgba(168, 85, 247, 0.15); color: #a855f7;"><i class="fa-solid fa-cloud-arrow-down"></i></div>
+          <div class="dropdown-item-icon" style="background: rgba(168, 85, 247, 0.15); color: #a855f7;"><i
+              class="fa-solid fa-cloud-arrow-down"></i></div>
           <div class="dropdown-item-text">
             <span class="item-title">Sincronizzazione Dati</span>
             <span class="item-desc">Aggiorna da Fantalab / GitHub Actions</span>
@@ -109,7 +110,8 @@
 
         <button id="open-strategy-modal-btn" class="dropdown-menu-item"
           title="Gestisci strategie custom, fasce e gerarchie per ruolo">
-          <div class="dropdown-item-icon" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b;"><i class="fa-solid fa-chess-knight"></i></div>
+          <div class="dropdown-item-icon" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b;"><i
+              class="fa-solid fa-chess-knight"></i></div>
           <div class="dropdown-item-text">
             <span class="item-title">Strategie Custom</span>
             <span class="item-desc">Gerarchia fasce e label per ruolo</span>
@@ -159,12 +161,10 @@
 
       <!-- ZONA CENTRALE: CAMPO DA CALCIO TATTICO -->
       <main class="app-main-content" id="main-content">
-        <button id="reopen-left-sidebar-btn" class="reopen-sidebar-btn"
-          title="Apri il pannello squadre">
+        <button id="reopen-left-sidebar-btn" class="reopen-sidebar-btn" title="Apri il pannello squadre">
           <i class="fa-solid fa-chevron-right"></i>
         </button>
-        <button id="reopen-right-sidebar-btn" class="reopen-sidebar-btn right"
-          title="Apri il pannello ispettore">
+        <button id="reopen-right-sidebar-btn" class="reopen-sidebar-btn right" title="Apri il pannello ispettore">
           <i class="fa-solid fa-chevron-left"></i>
         </button>
         <div class="pitch-container" id="pitch-container">
@@ -234,9 +234,6 @@
           <span class="nav-label">Menu</span>
         </button>
       </nav>
-      <button class="add-button" id="mobile-quick-add-btn" type="button" aria-label="Aggiungi giocatore" title="Aggiungi giocatore">
-        <i class="fa-solid fa-plus"></i>
-      </button>
     </div>
 
   </div>
@@ -425,7 +422,8 @@
   </div>
 
   <!-- MODALE FILTRI SLOT ASTA (MOBILE) -->
-  <div class="modal-backdrop hidden" id="auction-filters-modal" role="dialog" aria-modal="true" aria-labelledby="auction-filters-title">
+  <div class="modal-backdrop hidden" id="auction-filters-modal" role="dialog" aria-modal="true"
+    aria-labelledby="auction-filters-title">
     <div class="fanta-modal modal-sm">
       <div class="modal-header">
         <div class="modal-title-group">
@@ -440,14 +438,17 @@
         <!-- Rendered dynamically -->
       </div>
       <div class="modal-footer">
-        <button class="fanta-btn secondary-btn" id="reset-modal-auction-btn"><i class="fa-solid fa-rotate-left"></i> Reset Asta</button>
-        <button class="fanta-btn primary-btn" id="apply-auction-filters-btn"><i class="fa-solid fa-check"></i> Applica Filtri</button>
+        <button class="fanta-btn secondary-btn" id="reset-modal-auction-btn"><i class="fa-solid fa-rotate-left"></i>
+          Reset Asta</button>
+        <button class="fanta-btn primary-btn" id="apply-auction-filters-btn"><i class="fa-solid fa-check"></i> Applica
+          Filtri</button>
       </div>
     </div>
   </div>
 
   <!-- MODALE FILTRI LISTONE & SVINCOLATI (MOBILE) -->
-  <div class="modal-backdrop hidden" id="listone-filters-modal" role="dialog" aria-modal="true" aria-labelledby="listone-filters-title">
+  <div class="modal-backdrop hidden" id="listone-filters-modal" role="dialog" aria-modal="true"
+    aria-labelledby="listone-filters-title">
     <div class="fanta-modal modal-md">
       <div class="modal-header">
         <div class="modal-title-group">
@@ -462,8 +463,10 @@
         <!-- Rendered dynamically -->
       </div>
       <div class="modal-footer">
-        <button class="fanta-btn secondary-btn" id="reset-modal-listone-btn"><i class="fa-solid fa-rotate-left"></i> Reset Filtri</button>
-        <button class="fanta-btn primary-btn" id="apply-listone-filters-btn"><i class="fa-solid fa-check"></i> Applica Filtri</button>
+        <button class="fanta-btn secondary-btn" id="reset-modal-listone-btn"><i class="fa-solid fa-rotate-left"></i>
+          Reset Filtri</button>
+        <button class="fanta-btn primary-btn" id="apply-listone-filters-btn"><i class="fa-solid fa-check"></i> Applica
+          Filtri</button>
       </div>
     </div>
   </div>
@@ -472,7 +475,8 @@
   <div class="hidden" id="strategy-modal"></div>
 
   <!-- MODALE SINCRONIZZAZIONE DATI & GITHUB ACTIONS -->
-  <div class="modal-backdrop hidden" id="sync-data-modal" role="dialog" aria-modal="true" aria-labelledby="sync-modal-title">
+  <div class="modal-backdrop hidden" id="sync-data-modal" role="dialog" aria-modal="true"
+    aria-labelledby="sync-modal-title">
     <div class="fanta-modal modal-md">
       <div class="modal-header">
         <div class="modal-title-group">
@@ -487,26 +491,36 @@
       <div class="modal-body">
         <div class="sync-modal-intro">
           <p style="font-size: 0.88rem; color: var(--body); margin-bottom: 14px;">
-            Aggiorna in automatico tutti i <strong>520+ calciatori, foto HD, quote, statistiche, titolari, ballottaggi e fasce SOS Fanta</strong> direttamente tramite <strong>GitHub Actions</strong>.
+            Aggiorna in automatico tutti i <strong>520+ calciatori, foto HD, quote, statistiche, titolari, ballottaggi e
+              fasce SOS Fanta</strong> direttamente tramite <strong>GitHub Actions</strong>.
           </p>
         </div>
 
-        <div class="sync-card-section" style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 14px; margin-bottom: 14px;">
+        <div class="sync-card-section"
+          style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 14px; margin-bottom: 14px;">
           <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
-            <strong style="font-size: 0.9rem; color: var(--ink);"><i class="fa-brands fa-github" style="color: var(--accent-neon-green);"></i> Esegui Sincronizzazione Online</strong>
-            <span class="badge" style="background: rgba(34, 197, 94, 0.15); color: #22c55e; border: 1px solid rgba(34, 197, 94, 0.3); font-size: 0.72rem; padding: 2px 6px; border-radius: var(--radius-sm);">GitHub Pages</span>
+            <strong style="font-size: 0.9rem; color: var(--ink);"><i class="fa-brands fa-github"
+                style="color: var(--accent-neon-green);"></i> Esegui Sincronizzazione Online</strong>
+            <span class="badge"
+              style="background: rgba(34, 197, 94, 0.15); color: #22c55e; border: 1px solid rgba(34, 197, 94, 0.3); font-size: 0.72rem; padding: 2px 6px; border-radius: var(--radius-sm);">GitHub
+              Pages</span>
           </div>
 
           <div class="fanta-form-group" style="margin-bottom: 10px;">
-            <label for="github-pat-input" style="font-size: 0.78rem; font-weight: 700; color: var(--muted); display: flex; justify-content: space-between;">
+            <label for="github-pat-input"
+              style="font-size: 0.78rem; font-weight: 700; color: var(--muted); display: flex; justify-content: space-between;">
               <span>GitHub Personal Access Token (PAT):</span>
-              <a href="https://github.com/settings/tokens/new?scopes=repo,workflow&description=FantaOliva-Sync" target="_blank" rel="noopener" style="color: var(--accent-neon-blue); text-decoration: none; font-size: 0.75rem;">
+              <a href="https://github.com/settings/tokens/new?scopes=repo,workflow&description=FantaOliva-Sync"
+                target="_blank" rel="noopener"
+                style="color: var(--accent-neon-blue); text-decoration: none; font-size: 0.75rem;">
                 <i class="fa-solid fa-plus-circle"></i> Crea Token su GitHub
               </a>
             </label>
             <div style="display: flex; gap: 8px; margin-top: 4px;">
-              <input type="password" id="github-pat-input" class="fanta-input" placeholder="ghp_..." style="font-family: monospace; font-size: 0.82rem; flex: 1;" />
-              <button type="button" id="save-github-pat-btn" class="fanta-btn secondary-btn" style="padding: 0 12px; font-size: 0.8rem;" title="Salva token nel browser">
+              <input type="password" id="github-pat-input" class="fanta-input" placeholder="ghp_..."
+                style="font-family: monospace; font-size: 0.82rem; flex: 1;" />
+              <button type="button" id="save-github-pat-btn" class="fanta-btn secondary-btn"
+                style="padding: 0 12px; font-size: 0.8rem;" title="Salva token nel browser">
                 <i class="fa-solid fa-floppy-disk"></i> Salva
               </button>
             </div>
@@ -515,29 +529,36 @@
             </span>
           </div>
 
-          <button id="trigger-github-sync-btn" class="fanta-btn primary-btn" style="width: 100%; justify-content: center; padding: 10px; font-size: 0.88rem;">
+          <button id="trigger-github-sync-btn" class="fanta-btn primary-btn"
+            style="width: 100%; justify-content: center; padding: 10px; font-size: 0.88rem;">
             <i class="fa-solid fa-cloud-arrow-down"></i> Sincronizza Ora su GitHub Actions
           </button>
 
           <div id="sync-status-message" style="display: none; margin-top: 12px;"></div>
         </div>
 
-        <div class="sync-schedule-info" style="background: rgba(168, 85, 247, 0.08); border: 1px dashed rgba(168, 85, 247, 0.35); border-radius: var(--radius-md); padding: 12px;">
+        <div class="sync-schedule-info"
+          style="background: rgba(168, 85, 247, 0.08); border: 1px dashed rgba(168, 85, 247, 0.35); border-radius: var(--radius-md); padding: 12px;">
           <div style="display: flex; gap: 10px; align-items: flex-start;">
             <i class="fa-solid fa-clock" style="color: #a855f7; font-size: 1.1rem; margin-top: 2px;"></i>
             <div style="font-size: 0.8rem; color: var(--body); line-height: 1.4;">
-              <strong style="color: var(--ink); display: block; margin-bottom: 2px;">Aggiornamento Automatico Giornaliero</strong>
-              Il workflow di GitHub Actions è programmato per girare automaticamente <strong>ogni mattina alle 07:00</strong>. Tutti i dati del sito su GitHub Pages vengono aggiornati senza nessun intervento manuale.
+              <strong style="color: var(--ink); display: block; margin-bottom: 2px;">Aggiornamento Automatico
+                Giornaliero</strong>
+              Il workflow di GitHub Actions è programmato per girare automaticamente <strong>ogni mattina alle
+                07:00</strong>. Tutti i dati del sito su GitHub Pages vengono aggiornati senza nessun intervento
+              manuale.
             </div>
           </div>
         </div>
       </div>
 
       <div class="modal-footer">
-        <a href="https://github.com/olivavincenzo/FantaOliva/actions" target="_blank" rel="noopener" class="fanta-btn secondary-btn">
+        <a href="https://github.com/olivavincenzo/FantaOliva/actions" target="_blank" rel="noopener"
+          class="fanta-btn secondary-btn">
           <i class="fa-solid fa-arrow-up-right-from-square"></i> Apri GitHub Actions
         </a>
-        <button class="fanta-btn secondary-btn" id="close-sync-modal-footer-btn" onclick="document.querySelector('#sync-data-modal').classList.add('hidden')">
+        <button class="fanta-btn secondary-btn" id="close-sync-modal-footer-btn"
+          onclick="document.querySelector('#sync-data-modal').classList.add('hidden')">
           Chiudi
         </button>
       </div>
