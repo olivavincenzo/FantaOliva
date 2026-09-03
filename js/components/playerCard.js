@@ -230,7 +230,8 @@ export function createPlayerCard(player, options = {}) {
       ${leagueOwner ? `
         <div class="player-card-league-owner-strip">
           <span class="badge-league-owner" title="Acquistato da ${sanitizeHtml(leagueOwner.teamName)} all'asta per ${leagueOwner.price} cr">
-            <i class="fa-solid fa-users"></i> ${sanitizeHtml(leagueOwner.teamName)} (${leagueOwner.price} cr)
+            <i class="fa-solid fa-users league-owner-icon"></i>
+            <span class="league-owner-label-text">${sanitizeHtml(leagueOwner.teamName)} (${leagueOwner.price} cr)</span>
           </span>
         </div>
       ` : ''}
