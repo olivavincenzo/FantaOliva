@@ -101,23 +101,6 @@ export class LeagueTeamsComponent {
 
         <div class="pitch-outer-wrapper ${this.layoutMode === 'pitch' ? 'is-pitch-mode' : ''}">
 
-          <!-- BARRA SELETTORE SQUADRE LEGA (Pill Switcher) -->
-          <nav class="filters league-teams-nav" style="margin-bottom: 10px;" aria-label="Selettore Squadre FantaLega">
-            ${leagueTeams.map(t => {
-      const isSelected = t.name.toUpperCase() === currentTeam.name.toUpperCase();
-      return `
-                <button 
-                  type="button" 
-                  class="filter ${isSelected ? 'active' : ''}" 
-                  data-league-team="${sanitizeHtml(t.name)}"
-                  style="${t.name.toUpperCase() === 'VINCENZO' ? 'font-weight: 800; border-color: #22c55e;' : ''}"
-                >
-                  ${t.name.toUpperCase() === 'VINCENZO' ? '⭐ ' : '🛡️ '}${sanitizeHtml(t.name)}
-                </button>
-              `;
-    }).join('')}
-          </nav>
-
           <!-- BANNER TATTICO SQUADRA (Budget Stats & Quote) -->
           <div class="team-tactical-banner" id="league-tactical-banner">
             <div class="team-coach-ratings-row">
@@ -365,15 +348,6 @@ export class LeagueTeamsComponent {
   }
 
   bindEvents() {
-    // Switcher Squadre FantaLega
-    this.container.querySelectorAll('.league-teams-nav button[data-league-team]').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        this.selectedTeamName = btn.dataset.leagueTeam;
-        this.render();
-      });
-    });
-
     // Ottimizza Formazione (Schiera Miglior 11 per la squadra selezionata)
     this.container.querySelector('#league-optimize-lineup-btn')?.addEventListener('click', () => {
       const currentTeam = store.getLeagueTeam(this.selectedTeamName);

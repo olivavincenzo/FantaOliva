@@ -192,7 +192,7 @@ class App {
       tacticalToolbar?.classList.add('hidden');
       mobileLeagueBtn?.classList.add('active');
       activeTeam?.classList.add('hidden');
-      document.body.classList.add('view-myteam-mode');
+      this.teamSelector?.render();
       this.leagueTeams?.render();
     } else if (viewName === 'injuries') {
       injuriesTab?.classList.add('is-active');
