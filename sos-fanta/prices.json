@@ -750,6 +750,11 @@
     "in_listone": true
   },
   {
+    "player_id": "409ec215-c1df-4c66-b5f6-11e32645341d",
+    "price": 2,
+    "in_listone": true
+  },
+  {
     "player_id": "40a63839-7178-4c07-a693-34397b15f3f9",
     "price": 1,
     "in_listone": false
@@ -1052,7 +1057,7 @@
   {
     "player_id": "5a25ffbb-db05-482f-91f8-24e76380f7c8",
     "price": 1,
-    "in_listone": true
+    "in_listone": false
   },
   {
     "player_id": "5a4cd663-45d1-4860-a750-c36684a2399b",
@@ -1822,6 +1827,11 @@
   {
     "player_id": "9fa87205-24eb-47a7-8e79-689915992c32",
     "price": 30,
+    "in_listone": true
+  },
+  {
+    "player_id": "a19762d0-1aeb-4d65-af0b-a0df2c8dcc6a",
+    "price": 1,
     "in_listone": true
   },
   {

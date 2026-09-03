@@ -2808,6 +2808,33 @@
       }
     },
     {
+      "player_id": "0992e869-48bb-4438-9aa9-d212c238371c",
+      "sportsmonks_id": 96514,
+      "fantalab_id": "0992e869-48bb-4438-9aa9-d212c238371c",
+      "fantacalcio_id": 795,
+      "name": "El Shaarawy",
+      "full_name": "Federico Insúa",
+      "team_id": 102,
+      "team_name": "Genoa",
+      "team_short": "GEN",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/6/102.png",
+      "role": "C",
+      "mantra_roles": [
+        "W"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/96514/v1.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": null,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 6.31,
+        "mv": 6.14
+      }
+    },
+    {
       "player_id": "fed6d3d3-72d2-46f8-b556-77a12cc4dd0d",
       "sportsmonks_id": 10967415,
       "fantalab_id": "fed6d3d3-72d2-46f8-b556-77a12cc4dd0d",
@@ -6646,33 +6673,6 @@
       "stats": {
         "fmv": 5.91,
         "mv": 6.03
-      }
-    },
-    {
-      "player_id": "5a25ffbb-db05-482f-91f8-24e76380f7c8",
-      "sportsmonks_id": 37683890,
-      "fantalab_id": "5a25ffbb-db05-482f-91f8-24e76380f7c8",
-      "fantacalcio_id": 6598,
-      "name": "Mutandwa",
-      "full_name": "Kingstone Mutandwa",
-      "team_id": 585,
-      "team_name": "Cagliari",
-      "team_short": "CAG",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/9/585.png",
-      "role": "A",
-      "mantra_roles": [
-        "Pc"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/37683890/v1.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 0,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": false,
-      "stats": {
-        "fmv": 5.9,
-        "mv": 5.9
       }
     },
     {
@@ -13065,6 +13065,33 @@
       }
     },
     {
+      "player_id": "efbaff18-54de-44ce-a386-2c3dab6d1e7a",
+      "sportsmonks_id": 37609025,
+      "fantalab_id": "efbaff18-54de-44ce-a386-2c3dab6d1e7a",
+      "fantacalcio_id": 7627,
+      "name": "Enem",
+      "full_name": "Jay Enem",
+      "team_id": 8513,
+      "team_name": "Bologna",
+      "team_short": "BOL",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/1/8513.png",
+      "role": "A",
+      "mantra_roles": [
+        "Pc"
+      ],
+      "player_image": null,
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": null,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": true,
+      "stats": {
+        "fmv": null,
+        "mv": null
+      }
+    },
+    {
       "player_id": "fbbfed22-f662-4c6c-b22a-0778746038c2",
       "sportsmonks_id": 37608597,
       "fantalab_id": "fbbfed22-f662-4c6c-b22a-0778746038c2",
@@ -14085,6 +14112,33 @@
       }
     },
     {
+      "player_id": "a19762d0-1aeb-4d65-af0b-a0df2c8dcc6a",
+      "sportsmonks_id": 37784805,
+      "fantalab_id": "a19762d0-1aeb-4d65-af0b-a0df2c8dcc6a",
+      "fantacalcio_id": 7626,
+      "name": "Pompei",
+      "full_name": "Thomas Pompei",
+      "team_id": 708,
+      "team_name": "Atalanta",
+      "team_short": "ATA",
+      "team_image": "https://cdn.falsesoftware.com/teams/atalanta.png",
+      "role": "P",
+      "mantra_roles": [
+        "Por"
+      ],
+      "player_image": null,
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": null,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": true,
+      "stats": {
+        "fmv": null,
+        "mv": null
+      }
+    },
+    {
       "player_id": "f74767ab-b1d1-4341-852a-5ba85a0326c5",
       "sportsmonks_id": 4192303,
       "fantalab_id": "f74767ab-b1d1-4341-852a-5ba85a0326c5",
@@ -14778,7 +14832,7 @@
     "fallback_price"
   ],
   "pagination": {
-    "total": 532,
+    "total": 534,
     "limit": 1000,
     "offset": 0
   },

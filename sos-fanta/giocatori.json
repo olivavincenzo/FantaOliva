@@ -3980,6 +3980,89 @@
       }
     ]
   },
+  "0992e869-48bb-4438-9aa9-d212c238371c": {
+    "player_id": "0992e869-48bb-4438-9aa9-d212c238371c",
+    "name": "El Shaarawy",
+    "role": "C",
+    "stats": [
+      {
+        "player_id": "0992e869-48bb-4438-9aa9-d212c238371c",
+        "season": "s_22_23",
+        "presenze": 29,
+        "mv": 6.37,
+        "fmv": 7.16,
+        "gf": 7,
+        "gs": 0,
+        "rp": 0,
+        "r_plus": 0,
+        "r_minus": 0,
+        "assist": 1,
+        "amm": 3,
+        "esp": 0,
+        "autogol": 0,
+        "injured": 2,
+        "starts_eleven": 14,
+        "min_playing_time": 1490
+      },
+      {
+        "player_id": "0992e869-48bb-4438-9aa9-d212c238371c",
+        "season": "s_23_24",
+        "presenze": 34,
+        "mv": 6.05,
+        "fmv": 6.39,
+        "gf": 3,
+        "gs": 0,
+        "rp": 0,
+        "r_plus": 0,
+        "r_minus": 0,
+        "assist": 2,
+        "amm": 2,
+        "esp": 0,
+        "autogol": 0,
+        "injured": 0,
+        "starts_eleven": 19,
+        "min_playing_time": 1739
+      },
+      {
+        "player_id": "0992e869-48bb-4438-9aa9-d212c238371c",
+        "season": "s_24_25",
+        "presenze": 31,
+        "mv": 6.19,
+        "fmv": 6.71,
+        "gf": 3,
+        "gs": 0,
+        "rp": 0,
+        "r_plus": 0,
+        "r_minus": 0,
+        "assist": 3,
+        "amm": 2,
+        "esp": 0,
+        "autogol": 0,
+        "injured": 1,
+        "starts_eleven": 12,
+        "min_playing_time": 1089
+      },
+      {
+        "player_id": "0992e869-48bb-4438-9aa9-d212c238371c",
+        "season": "s_25_26",
+        "presenze": 20,
+        "mv": 6.14,
+        "fmv": 6.31,
+        "gf": 1,
+        "gs": 0,
+        "rp": 0,
+        "r_plus": 0,
+        "r_minus": 0,
+        "assist": 2,
+        "amm": 4,
+        "esp": 0,
+        "autogol": 0,
+        "injured": 1,
+        "starts_eleven": 5,
+        "min_playing_time": 656
+      }
+    ]
+  },
   "0ecc1bd6-1dba-4b1c-9dc9-579838907f33": {
     "player_id": "0ecc1bd6-1dba-4b1c-9dc9-579838907f33",
     "name": "Coulibaly L.",
@@ -18812,13 +18895,13 @@
       }
     ]
   },
-  "68dfb4b7-edfd-4258-8d10-9a75394d38dc": {
-    "player_id": "68dfb4b7-edfd-4258-8d10-9a75394d38dc",
+  "ce5cd19a-b929-4b5c-a0a4-067b0b355879": {
+    "player_id": "ce5cd19a-b929-4b5c-a0a4-067b0b355879",
     "name": "Beto",
     "role": "A",
     "stats": [
       {
-        "player_id": "68dfb4b7-edfd-4258-8d10-9a75394d38dc",
+        "player_id": "ce5cd19a-b929-4b5c-a0a4-067b0b355879",
         "season": "s_22_23",
         "presenze": 33,
         "mv": null,
@@ -18837,7 +18920,7 @@
         "min_playing_time": 2131
       },
       {
-        "player_id": "68dfb4b7-edfd-4258-8d10-9a75394d38dc",
+        "player_id": "ce5cd19a-b929-4b5c-a0a4-067b0b355879",
         "season": "s_23_24",
         "presenze": 30,
         "mv": null,
@@ -18856,7 +18939,7 @@
         "min_playing_time": 973
       },
       {
-        "player_id": "68dfb4b7-edfd-4258-8d10-9a75394d38dc",
+        "player_id": "ce5cd19a-b929-4b5c-a0a4-067b0b355879",
         "season": "s_24_25",
         "presenze": 30,
         "mv": null,
@@ -18875,7 +18958,7 @@
         "min_playing_time": 1533
       },
       {
-        "player_id": "68dfb4b7-edfd-4258-8d10-9a75394d38dc",
+        "player_id": "ce5cd19a-b929-4b5c-a0a4-067b0b355879",
         "season": "s_25_26",
         "presenze": 37,
         "mv": null,
@@ -30271,70 +30354,6 @@
         "injured": 0,
         "starts_eleven": 21,
         "min_playing_time": 1794
-      }
-    ]
-  },
-  "5a25ffbb-db05-482f-91f8-24e76380f7c8": {
-    "player_id": "5a25ffbb-db05-482f-91f8-24e76380f7c8",
-    "name": "Mutandwa",
-    "role": "A",
-    "stats": [
-      {
-        "player_id": "5a25ffbb-db05-482f-91f8-24e76380f7c8",
-        "season": "s_23_24",
-        "presenze": 5,
-        "mv": null,
-        "fmv": null,
-        "gf": 1,
-        "gs": 0,
-        "rp": 0,
-        "r_plus": 0,
-        "r_minus": 0,
-        "assist": 0,
-        "amm": 0,
-        "esp": 0,
-        "autogol": 0,
-        "injured": 0,
-        "starts_eleven": 0,
-        "min_playing_time": 34
-      },
-      {
-        "player_id": "5a25ffbb-db05-482f-91f8-24e76380f7c8",
-        "season": "s_24_25",
-        "presenze": 6,
-        "mv": 5.9,
-        "fmv": 5.9,
-        "gf": 0,
-        "gs": 0,
-        "rp": 0,
-        "r_plus": 0,
-        "r_minus": 0,
-        "assist": 0,
-        "amm": 0,
-        "esp": 0,
-        "autogol": 0,
-        "injured": 0,
-        "starts_eleven": 0,
-        "min_playing_time": 121
-      },
-      {
-        "player_id": "5a25ffbb-db05-482f-91f8-24e76380f7c8",
-        "season": "s_25_26",
-        "presenze": 32,
-        "mv": null,
-        "fmv": null,
-        "gf": 12,
-        "gs": 0,
-        "rp": 0,
-        "r_plus": 4,
-        "r_minus": 0,
-        "assist": 3,
-        "amm": 6,
-        "esp": 0,
-        "autogol": 0,
-        "injured": 0,
-        "starts_eleven": 28,
-        "min_playing_time": 2409
       }
     ]
   },
