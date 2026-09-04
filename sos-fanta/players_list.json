@@ -2246,7 +2246,7 @@
       "mantra_roles": [
         "E"
       ],
-      "player_image": "https://cdn.falsesoftware.com/players/37757029/v1.webp",
+      "player_image": "https://cdn.falsesoftware.com/players/37757029/v2.webp",
       "league": "serie_a",
       "league_id": 384,
       "league_name": "Serie A",
@@ -2822,7 +2822,7 @@
       "mantra_roles": [
         "W"
       ],
-      "player_image": "https://cdn.falsesoftware.com/players/96514/v1.webp",
+      "player_image": "https://cdn.falsesoftware.com/players/96514/v2.webp",
       "league": "serie_a",
       "league_id": 384,
       "league_name": "Serie A",
@@ -6508,6 +6508,63 @@
       }
     },
     {
+      "player_id": "1d51f5cf-e44d-402b-9882-54dab796376e",
+      "sportsmonks_id": 25187,
+      "fantalab_id": "1d51f5cf-e44d-402b-9882-54dab796376e",
+      "fantacalcio_id": 6047,
+      "name": "Ehizibue",
+      "full_name": "Kingsley Ehizibue",
+      "team_id": 102,
+      "team_name": "Genoa",
+      "team_short": "GEN",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/6/102.png",
+      "role": "D",
+      "mantra_roles": [
+        "Dd",
+        "E"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/25187/v1.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": null,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 5.96,
+        "mv": 5.83
+      }
+    },
+    {
+      "player_id": "52c73119-c573-4f9d-91c2-6a4977464787",
+      "sportsmonks_id": 31653,
+      "fantalab_id": "52c73119-c573-4f9d-91c2-6a4977464787",
+      "fantacalcio_id": 2169,
+      "name": "Rodriguez R.",
+      "full_name": "Ricardo Rodríguez",
+      "team_id": 613,
+      "team_name": "Torino",
+      "team_short": "TOR",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/613.png",
+      "role": "D",
+      "mantra_roles": [
+        "B",
+        "Ds",
+        "E"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/31653/v1.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": null,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 5.96,
+        "mv": 5.83
+      }
+    },
+    {
       "player_id": "d190b87f-14d2-4a26-b57d-a8b2803d175e",
       "sportsmonks_id": 27088972,
       "fantalab_id": "d190b87f-14d2-4a26-b57d-a8b2803d175e",
@@ -6646,33 +6703,6 @@
       "stats": {
         "fmv": 5.91,
         "mv": 5.93
-      }
-    },
-    {
-      "player_id": "ff6d2747-657b-40dd-ba8e-ce66d83e2925",
-      "sportsmonks_id": 129202,
-      "fantalab_id": "ff6d2747-657b-40dd-ba8e-ce66d83e2925",
-      "fantacalcio_id": 460,
-      "name": "Romagnoli",
-      "full_name": "Alessio Romagnoli",
-      "team_id": 43,
-      "team_name": "Lazio",
-      "team_short": "LAZ",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/43.png",
-      "role": "D",
-      "mantra_roles": [
-        "Dc"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/129202/v1.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 0,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": true,
-      "stats": {
-        "fmv": 5.91,
-        "mv": 6.03
       }
     },
     {
@@ -13079,7 +13109,7 @@
       "mantra_roles": [
         "Pc"
       ],
-      "player_image": null,
+      "player_image": "https://cdn.falsesoftware.com/players/37609025/v1.webp",
       "league": "serie_a",
       "league_id": 384,
       "league_name": "Serie A",
@@ -14126,7 +14156,7 @@
       "mantra_roles": [
         "Por"
       ],
-      "player_image": null,
+      "player_image": "https://cdn.falsesoftware.com/players/37784805/v1.webp",
       "league": "serie_a",
       "league_id": 384,
       "league_name": "Serie A",
@@ -14832,7 +14862,7 @@
     "fallback_price"
   ],
   "pagination": {
-    "total": 534,
+    "total": 535,
     "limit": 1000,
     "offset": 0
   },

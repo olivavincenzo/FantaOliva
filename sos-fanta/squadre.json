@@ -291,12 +291,12 @@
         "id": 6206
       },
       {
-        "player_id": "2e331f32-cc88-4a67-b471-f05a2db80063",
-        "id": 7561
-      },
-      {
         "player_id": "280d15dc-3cf6-47ec-ad41-19b983b09d20",
         "id": 6229
+      },
+      {
+        "player_id": "2e331f32-cc88-4a67-b471-f05a2db80063",
+        "id": 7561
       },
       {
         "player_id": "eb01cf4b-a689-4016-8c30-0e7b058d0210",
@@ -340,7 +340,7 @@
     "comment": "ll nuovo Parma abbraccia un calcio moderno e ambizioso: pressing alto, scambi di posizione e ricerca costante della superiorità numerica. Un’impronta propositiva che può tradursi in bonus preziosi per i fantallenatori. Il mantra sarà il coraggio nelle giocate e la fluidità tra i reparti. Per rendere efficace il sistema serviranno interpreti duttili, tecnici e dinamici: il mercato estivo sarà quindi decisivo. Nel precampionato è stata testata la difesa a tre, con Delprato e Valeri schierati da quinti per garantire ampiezza e spinta. Le due punte saranno supportate da centrocampisti offensivi e inserimenti continui.",
     "sosFantaComment": "Confermato Cuesta in panchina nel Parma e sta provando molto il 4-3-3 nel pre campionato. Corvi parte nettamente avanti a Daffara tra i pali. In difesa Diego Carlos arriva per giocare titolare. A centrocampo è arrivato Fabbian, destinato a trovare molto spazio, ma per una maglia c'è anche Ordonez. In attacco il nuovo arrivato El Bilal Touré si candida subito una maglia da titolare, può giocare sia punta che ala. È arrivato anche David Romero e troverà molto spazio, scommessa interessante da punta: più lui di Elphege. In fascia per ora il baby Lontani ha rubato l'occhio, ma occhio al mercato.",
     "created_at": "2026-07-21T13:10:52.139Z",
-    "updated_at": "2026-09-02T11:16:54.680Z",
+    "updated_at": "2026-09-03T11:49:33.426Z",
     "up": [
       {
         "player_id": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
@@ -458,7 +458,7 @@
       }
     ],
     "createdAt": "2026-07-21T13:10:52.139Z",
-    "updatedAt": "2026-09-02T11:16:54.680Z"
+    "updatedAt": "2026-09-03T11:49:33.426Z"
   },
   {
     "team": "CAG",
@@ -1167,8 +1167,8 @@
         "id": 6642
       },
       {
-        "player_id": "355f295d-4904-459a-b863-49aff62de841",
-        "id": 7526
+        "player_id": "52c73119-c573-4f9d-91c2-6a4977464787",
+        "id": 2169
       },
       {
         "player_id": "019db866-8ef1-4aea-894b-eb37ed3b792e",
@@ -1234,9 +1234,9 @@
     "attack": 2.5,
     "defense": 2,
     "comment": "Il Torino cambia guida tecnica dopo la 26ª giornata con l'arrivo di Roberto D'Aversa al posto di Marco Baroni. L'obiettivo è salvare la stagione granata ed evitare la retrocessione in Serie B. D'aversa è un tecnico specializzato in salvezze. Di base non  dovrebbe cambiare il modulo tattico della squadra granata, con la difesa a 3 un centrocampo muscolare e Vlasic come supporto alle due punte. Ciò che cambierà è l'attenzione alla fase difensiva, vero tallone d'Achille della stagione granata. D'Aversa richiede una pressione costante sul portatore di palla avversario e un'organizzazione difensiva solida, cercando di ridurre al minimo gli spazi tra le linee. Le sue squadre cercano spesso la verticalizzazione immediata. In fase di costruzione può utilizzare una struttura 4+2, dove i difensori e i mediani collaborano per uscire dalla pressione, cercando poi il lancio lungo per le punte se pressati intensamente. L'ago della bilancia sarà Vlasic, collante tra centrocampo e attacco.",
-    "sosFantaComment": "È arrivato Ignazio Abate sulla panchina del Torino: più 3-4-2-1 che difesa a 4, provato solo una volta nel precampionato. Cacciamani si candida a giocare a sinistra, promettente e già pronto. A destra Perdesen è andato via ed sono arrivati Belghali e Fortini, col primo nettamente favorito. Occhio a Casadei: è stato provato praticamente sulla trequarti. Il tridente sarebbe con lui e Vlasic a supporto di Simeone; Zapata è di fatto il vice Cholito, c'è anche Kulenovic. Ma può diventare anche un 3-4-1-2. In difesa sono arrivati Comuzzo e Comert, a oggi loro due e Coco sono avanti su Ismajli. A centrocampo i nuovi arrivati Fitz-Jim e Mandragora si candidano a giocare titolari con Gineitis e Ilkhan valide alternative. In porta è arrivato Perri e sarà il titolare.",
+    "sosFantaComment": "È arrivato Ignazio Abate sulla panchina del Torino: più 3-4-2-1 che difesa a 4, provato solo una volta nel precampionato. Cacciamani si candida a giocare a sinistra, promettente e già pronto. A destra Perdesen è andato via ed è arrivato Belghali al suo posto. Occhio a Casadei: è stato provato praticamente sulla trequarti. Il tridente sarebbe con lui e Vlasic a supporto di Simeone; Zapata è di fatto il vice Cholito, c'è anche Kulenovic. Ma può diventare anche un 3-4-1-2. In difesa Rodriguez si candida a essere il titolare sul centro-sinistra (Abate aspettava un mancino), poi ci sono Comuzzo, Comert e Ismajli a giocarsi il posto. A centrocampo i nuovi arrivati Fitz-Jim e Mandragora si candidano a giocare titolari con Gineitis e Ilkhan valide alternative. In porta è arrivato Perri e sarà il titolare.",
     "created_at": "2026-07-21T13:23:02.397Z",
-    "updated_at": "2026-09-02T14:43:17.095Z",
+    "updated_at": "2026-09-03T19:24:48.808Z",
     "up": [
       {
         "player_id": "d24218a4-0bbc-4dd6-b01d-cf9d0a9a90d5",
@@ -1302,11 +1302,11 @@
       {
         "players": [
           {
-            "player_id": "355f295d-4904-459a-b863-49aff62de841",
+            "player_id": "52c73119-c573-4f9d-91c2-6a4977464787",
             "perc": 51
           },
           {
-            "player_id": "eedbf897-636b-42dc-9a40-fefd10c30051",
+            "player_id": "355f295d-4904-459a-b863-49aff62de841",
             "perc": 49
           }
         ]
@@ -1342,7 +1342,7 @@
       }
     ],
     "createdAt": "2026-07-21T13:23:02.397Z",
-    "updatedAt": "2026-09-02T14:43:17.095Z"
+    "updatedAt": "2026-09-03T19:24:48.808Z"
   },
   {
     "team": "BOL",
@@ -1430,7 +1430,7 @@
     "comment": "Il Bologna si caratterizza per un gioco molto dinamico, con i giocatori che spesso si scambiano le posizioni per creare confusione nella difesa avversaria. Il ruolo degli esterni d’attacco è fondamentale: sono loro a garantire ampiezza, velocità e spesso i gol e gli assist più importanti. La difesa è molto alta, in linea con il pressing aggressivo che la squadra mette in campo, ma questo comporta qualche rischio in ripartenza. Attenzione anche al turn over elevato, che può influenzare la continuità di rendimento di alcuni giocatori, specialmente in ottica fantacalcio.",
     "sosFantaComment": "Da Italiano a Domenico Tedesco: cambia la guida tecnica del Bologna, ma a livello tattico resta confermato il 4-3-3 di partenza. Dovbyk è arrivato per giocare e, se starà bene, sarà il centravanti titolare, con Piccoli come vice. Rowe è andato via, spazio a uno tra Cambiaghi e il nuovo arrivato Mbangula sulla sinistra. Pobega, Moro ed El Azzouzi si contendono la maglia lasciata da Freuler. Bernardeschi in estate provato da mezzala ma preferisce fare l'ala pura o il trequartista, di fatto è un jolly che avrà molto spazio. E lo stesso si può dire di Odgaard, che sta convincendo da mezzala. Zortea parte avanti rispetto a Holm per il ruolo di terzino destro, mentre al centro della difesa è appena arrivato Theate, che insieme a Heggem partono leggermente avanti rispetto a Vitik e Helland.",
     "created_at": "2026-07-21T13:36:37.003Z",
-    "updated_at": "2026-09-02T14:16:34.822Z",
+    "updated_at": "2026-09-03T11:14:56.317Z",
     "up": [
       {
         "player_id": "c904108e-6a70-494d-9732-b39d2fc8264a",
@@ -1580,7 +1580,7 @@
       }
     ],
     "createdAt": "2026-07-21T13:36:37.003Z",
-    "updatedAt": "2026-09-02T14:16:34.822Z"
+    "updatedAt": "2026-09-03T11:14:56.317Z"
   },
   {
     "team": "LAZ",
@@ -1805,216 +1805,6 @@
     "updatedAt": "2026-09-02T12:27:22.811Z"
   },
   {
-    "team": "ROM",
-    "season": "s_26_27",
-    "starters": [
-      {
-        "player_id": "b832c4ec-72cf-4c4b-8c6a-203912e87e4d",
-        "id": "5841"
-      },
-      {
-        "player_id": "0e4a800a-f8df-4bc4-8ddc-fe32b660a537",
-        "id": 2296
-      },
-      {
-        "player_id": "56047277-ecee-44df-a949-782ccdb20a4b",
-        "id": 4317
-      },
-      {
-        "player_id": "8bf7a1fa-038d-4086-9c0b-1f0cd8342690",
-        "id": 4807
-      },
-      {
-        "player_id": "beeb810b-47f6-4017-9337-21edb30796a6",
-        "id": 4998
-      },
-      {
-        "player_id": "fd7ae364-1f16-4f37-b54e-4f8453fe9de1",
-        "id": "7181"
-      },
-      {
-        "player_id": "a42a0043-f7e9-42fb-b6a1-e9045138b7b2",
-        "id": "779"
-      },
-      {
-        "player_id": "0ae5f68a-c8e6-4a82-8269-b1207b182df4",
-        "id": "5589"
-      },
-      {
-        "player_id": "78344e2f-3ab0-44e0-9b4f-9322f65e4bed",
-        "id": 309
-      },
-      {
-        "player_id": "94142a98-c364-47a6-9a08-f922cb8b3e1f",
-        "id": 7556
-      },
-      {
-        "player_id": "4ad9120d-c9ab-43fc-90e1-8365d2ab22d1",
-        "id": "5585"
-      }
-    ],
-    "rig": [
-      {
-        "player_id": "4ad9120d-c9ab-43fc-90e1-8365d2ab22d1"
-      },
-      {
-        "player_id": "78344e2f-3ab0-44e0-9b4f-9322f65e4bed"
-      },
-      {
-        "player_id": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea"
-      }
-    ],
-    "pun": [
-      {
-        "player_id": "78344e2f-3ab0-44e0-9b4f-9322f65e4bed"
-      },
-      {
-        "player_id": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea"
-      }
-    ],
-    "corner": [
-      {
-        "player_id": "78344e2f-3ab0-44e0-9b4f-9322f65e4bed"
-      },
-      {
-        "player_id": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea"
-      },
-      {
-        "player_id": "fd7ae364-1f16-4f37-b54e-4f8453fe9de1"
-      }
-    ],
-    "module": "3-4-2-1",
-    "coach": "Gian Piero Gasperini",
-    "attack": 4.5,
-    "defense": 5,
-    "comment": "Porta alla Roma il suo collaudato 3-4-2-1, con possibile variante 3-4-3, mantenendo invariata la difesa a tre, suo marchio di fabbrica fin dai tempi del Genoa. Il suo calcio è offensivo, aggressivo e ad alta intensità, con pressing alto e marcature a uomo a tutto campo. I duelli individuali saranno centrali, così come la capacità dei singoli di interpretare più ruoli. Attenzione agli esterni: fondamentali per ampiezza e inserimenti. I tre davanti saranno spesso intercambiabili. Anche i difensori e i centrocampisti dinamici: potrebbero portare bonus e diventare sorprese al fantacalcio.",
-    "sosFantaComment": "Confermatissimo Gasperini dopo l'approdo della Roma in Champions, sul modulo non c'è alcun dubbio. In difesa il nuovo arrivato Koulierakis si alternerà con Hermoso. A destra è arrivato Molina, che parte come titolare; sull’altra fascia resta Wesley, le alternative sono Rensch e il baby Lulli. Dybala se sta bene è intoccabile, verrà gestito da Gasperini visto che c'è anche la Champions. Investimento importante per Mora: ha tutto per essere il titolare accanto a Dybala, il nuovo arrivato si gioca una maglia con Soulé che alla fine è rimasto. Pisilli e Pellegrini jolly tra trequarti e centrocampo. Castro arriva come vice Malen, ma a volte potranno anche giocare insieme.",
-    "created_at": "2026-07-21T13:08:51.218Z",
-    "updated_at": "2026-09-02T10:41:26.502Z",
-    "up": [
-      {
-        "player_id": "4ad9120d-c9ab-43fc-90e1-8365d2ab22d1",
-        "points": [
-          {
-            "text": "Recupero palla di Gasperini lo porta ad avere molti palloni puliti",
-            "tone": "good"
-          },
-          {
-            "tone": "good",
-            "text": "Caratteristiche adatte al gioco di Gasperini"
-          }
-        ]
-      },
-      {
-        "player_id": "fd7ae364-1f16-4f37-b54e-4f8453fe9de1",
-        "points": [
-          {
-            "text": "Partecipa attivamente alla manovra offensiva",
-            "tone": "good"
-          },
-          {
-            "tone": "good",
-            "text": "Esterni a tutto campo valorizzati da Gasperini"
-          }
-        ]
-      }
-    ],
-    "down": [
-      {
-        "player_id": "03abf7ae-63a5-4f70-a892-d0f6b57b243b",
-        "points": [
-          {
-            "text": "Molta concorrenza per il suo ruolo",
-            "tone": "bad"
-          }
-        ]
-      }
-    ],
-    "young": [
-      {
-        "player_id": "04f390f1-2846-46f0-bc52-8ab0fbf3bcc1",
-        "points": [
-          {
-            "text": "Può avere grande spazio nelle rotazioni",
-            "tone": "good"
-          }
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "player_id": "8bf7a1fa-038d-4086-9c0b-1f0cd8342690",
-        "points": [
-          {
-            "text": "Molto costante nelle prestazioni",
-            "tone": "good"
-          }
-        ]
-      }
-    ],
-    "ballottaggi": [
-      {
-        "players": [
-          {
-            "player_id": "8bf7a1fa-038d-4086-9c0b-1f0cd8342690",
-            "perc": 51
-          },
-          {
-            "player_id": "2ade4141-3042-437f-a00b-ff8b17438a0f",
-            "perc": 49
-          }
-        ]
-      },
-      {
-        "players": [
-          {
-            "player_id": "94142a98-c364-47a6-9a08-f922cb8b3e1f",
-            "perc": 51
-          },
-          {
-            "player_id": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea",
-            "perc": 49
-          }
-        ]
-      }
-    ],
-    "coachRating": {
-      "attack": 4.5,
-      "defense": 5,
-      "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Gasperini.webp"
-    },
-    "keyPoints": [
-      {
-        "text": "Esterni molto offensivi",
-        "tone": "good"
-      },
-      {
-        "text": "Attacco molto prolifico",
-        "tone": "good"
-      },
-      {
-        "text": "Marcatura a uomo aggressiva",
-        "tone": "neutral"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "mid-wide",
-        "tone": "good"
-      },
-      {
-        "role": "treq-center",
-        "tone": "good"
-      },
-      {
-        "role": "att-center",
-        "tone": "good"
-      }
-    ],
-    "createdAt": "2026-07-21T13:08:51.218Z",
-    "updatedAt": "2026-09-02T10:41:26.502Z"
-  },
-  {
     "team": "GEN",
     "season": "s_26_27",
     "starters": [
@@ -2055,8 +1845,8 @@
         "id": 5823
       },
       {
-        "player_id": "a34e2242-a8a2-479d-af45-90a3b6646223",
-        "id": "6164"
+        "player_id": "0992e869-48bb-4438-9aa9-d212c238371c",
+        "id": 795
       },
       {
         "player_id": "71a719be-e4c4-4b55-abe6-2a33135d4d18",
@@ -2098,9 +1888,9 @@
     "attack": 3,
     "defense": 3,
     "comment": "De Rossi è chiamato a far risalire il Genoa dopo l'esonero di Patrick Viera a causa del rendimento dei grifoni in piena zona retrocessione. Il tecnico ex Roma propone un calcio propositivo, fondato su costruzione dal basso, intensità e compattezza. Tra i principi chiave spiccano una pressione alta coordinata, fluidità tra reparti e cura dei dettagli tecnici e tattici. De Rossi potrebbe sviluppare, almeno inizialmente, il proprio progetto al Genoa optando per il sistema di gioco del 3-5-2, ma non è escluso il passaggio al 4-3-3 opzione tanto cara al tecnico romano e che rimane quella più utilizzata nel corso delle sue esperienze precedenti.",
-    "sosFantaComment": "È rimasto De Rossi alla guida del Genoa, avanti con il 3-4-2-1 che in alcune occasioni può essere anche 3-4-1-2 o 3-5-2 puro. A centrocampo è arrivato Djibril Sow dal Siviglia, destinato a essere uno dei punti fermi di De Rossi. Occhio al nuovo arrivato Traoré: può fare sia la mezzala che il trequartista, a oggi prova a insidiare Baldanzi. Ma a volte potrebbero anche giocare insieme. L'altro nuovo arrivato Meichtry scalpita, c'è Vitinha avanti. A destra è andato via Norton-Cuffy ed è arrivato Drameh per giocare. A sinistra si giocano il posto in un ballottaggio serratissimo il nuovo arrivato Mitaj ed Ellertsson (vero e proprio jolly, è stato provato anche a centrocampo). E un altro grande jolly è arrivato a mercato chiuso: El Shaarawy, può fare sia seconda punta che esterno.",
+    "sosFantaComment": "È rimasto De Rossi alla guida del Genoa, avanti con il 3-4-2-1 che in alcune occasioni può essere anche 3-4-1-2 o 3-5-2 puro. El Shaarawy è tornato per giocare, parte in pole su Vitinha e può giocare anche a tutta fascia. A destra è andato via Norton-Cuffy e sono arrivati Drameh ed Ehizibue che si contenderanno il posto, col primo favorito. A sinistra si giocano il posto in un ballottaggio serratissimo il nuovo arrivato Mitaj ed Ellertsson (vero e proprio jolly, è stato provato anche a centrocampo). Occhio a Meichtry, è promettente e prova a insidiare Sow, può giocare anche più avanzato da vice Baldanzi. Stesso dicasi per Traoré, che in partenza non è un titolare.",
     "created_at": "2026-07-21T13:42:48.789Z",
-    "updated_at": "2026-09-02T11:08:45.050Z",
+    "updated_at": "2026-09-03T20:38:51.902Z",
     "up": [
       {
         "player_id": "3ba8d8de-4fd3-47ed-90b2-00ec9789f80c",
@@ -2166,12 +1956,12 @@
       {
         "players": [
           {
-            "player_id": "a34e2242-a8a2-479d-af45-90a3b6646223",
-            "perc": 60
+            "player_id": "0992e869-48bb-4438-9aa9-d212c238371c",
+            "perc": 51
           },
           {
-            "player_id": "47b98f36-e016-472c-b964-68dacaa07147",
-            "perc": 40
+            "player_id": "a34e2242-a8a2-479d-af45-90a3b6646223",
+            "perc": 49
           }
         ]
       },
@@ -2184,6 +1974,30 @@
           {
             "player_id": "72dbbe00-ef42-4579-ba5e-74ac1cc06c8c",
             "perc": 49
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "3d49b936-1e2d-4daa-9b4c-5da87824531d",
+            "perc": 55
+          },
+          {
+            "player_id": "47b98f36-e016-472c-b964-68dacaa07147",
+            "perc": 45
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "3490cc1c-60cd-4cb8-b606-45c9c3279e4c",
+            "perc": 55
+          },
+          {
+            "player_id": "1d51f5cf-e44d-402b-9882-54dab796376e",
+            "perc": 45
           }
         ]
       }
@@ -2222,7 +2036,7 @@
       }
     ],
     "createdAt": "2026-07-21T13:42:48.789Z",
-    "updatedAt": "2026-09-02T11:08:45.050Z"
+    "updatedAt": "2026-09-03T20:38:51.902Z"
   },
   {
     "team": "COM",
@@ -2744,6 +2558,228 @@
     ],
     "createdAt": "2026-07-21T12:43:26.463Z",
     "updatedAt": "2026-09-02T14:36:39.147Z"
+  },
+  {
+    "team": "ROM",
+    "season": "s_26_27",
+    "starters": [
+      {
+        "player_id": "b832c4ec-72cf-4c4b-8c6a-203912e87e4d",
+        "id": "5841"
+      },
+      {
+        "player_id": "0e4a800a-f8df-4bc4-8ddc-fe32b660a537",
+        "id": 2296
+      },
+      {
+        "player_id": "56047277-ecee-44df-a949-782ccdb20a4b",
+        "id": 4317
+      },
+      {
+        "player_id": "8bf7a1fa-038d-4086-9c0b-1f0cd8342690",
+        "id": 4807
+      },
+      {
+        "player_id": "beeb810b-47f6-4017-9337-21edb30796a6",
+        "id": 4998
+      },
+      {
+        "player_id": "fd7ae364-1f16-4f37-b54e-4f8453fe9de1",
+        "id": "7181"
+      },
+      {
+        "player_id": "a42a0043-f7e9-42fb-b6a1-e9045138b7b2",
+        "id": "779"
+      },
+      {
+        "player_id": "0ae5f68a-c8e6-4a82-8269-b1207b182df4",
+        "id": "5589"
+      },
+      {
+        "player_id": "78344e2f-3ab0-44e0-9b4f-9322f65e4bed",
+        "id": 309
+      },
+      {
+        "player_id": "94142a98-c364-47a6-9a08-f922cb8b3e1f",
+        "id": 7556
+      },
+      {
+        "player_id": "4ad9120d-c9ab-43fc-90e1-8365d2ab22d1",
+        "id": "5585"
+      }
+    ],
+    "rig": [
+      {
+        "player_id": "4ad9120d-c9ab-43fc-90e1-8365d2ab22d1"
+      },
+      {
+        "player_id": "78344e2f-3ab0-44e0-9b4f-9322f65e4bed"
+      },
+      {
+        "player_id": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea"
+      }
+    ],
+    "pun": [
+      {
+        "player_id": "78344e2f-3ab0-44e0-9b4f-9322f65e4bed"
+      },
+      {
+        "player_id": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea"
+      }
+    ],
+    "corner": [
+      {
+        "player_id": "78344e2f-3ab0-44e0-9b4f-9322f65e4bed"
+      },
+      {
+        "player_id": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea"
+      },
+      {
+        "player_id": "fd7ae364-1f16-4f37-b54e-4f8453fe9de1"
+      }
+    ],
+    "module": "3-4-2-1",
+    "coach": "Gian Piero Gasperini",
+    "attack": 4.5,
+    "defense": 5,
+    "comment": "Porta alla Roma il suo collaudato 3-4-2-1, con possibile variante 3-4-3, mantenendo invariata la difesa a tre, suo marchio di fabbrica fin dai tempi del Genoa. Il suo calcio è offensivo, aggressivo e ad alta intensità, con pressing alto e marcature a uomo a tutto campo. I duelli individuali saranno centrali, così come la capacità dei singoli di interpretare più ruoli. Attenzione agli esterni: fondamentali per ampiezza e inserimenti. I tre davanti saranno spesso intercambiabili. Anche i difensori e i centrocampisti dinamici: potrebbero portare bonus e diventare sorprese al fantacalcio.",
+    "sosFantaComment": "Confermatissimo Gasperini dopo l'approdo della Roma in Champions, sul modulo non c'è alcun dubbio. In difesa il nuovo arrivato Koulierakis si alternerà con Hermoso. A destra è arrivato Molina, che parte come titolare; sull’altra fascia resta Wesley, le alternative sono Rensch e il baby Lulli. Dybala se sta bene è intoccabile, verrà gestito da Gasperini visto che c'è anche la Champions. Investimento importante per Mora: ha tutto per essere il titolare accanto a Dybala, il nuovo arrivato si gioca una maglia con Soulé che alla fine è rimasto. Pisilli e Pellegrini jolly tra trequarti e centrocampo. Castro arriva come vice Malen, ma a volte potranno anche giocare insieme.",
+    "created_at": "2026-07-21T13:08:51.218Z",
+    "updated_at": "2026-09-03T19:12:19.728Z",
+    "up": [
+      {
+        "player_id": "4ad9120d-c9ab-43fc-90e1-8365d2ab22d1",
+        "points": [
+          {
+            "text": "Recupero palla di Gasperini lo porta ad avere molti palloni puliti",
+            "tone": "good"
+          },
+          {
+            "tone": "good",
+            "text": "Caratteristiche adatte al gioco di Gasperini"
+          }
+        ]
+      },
+      {
+        "player_id": "fd7ae364-1f16-4f37-b54e-4f8453fe9de1",
+        "points": [
+          {
+            "text": "Partecipa attivamente alla manovra offensiva",
+            "tone": "good"
+          },
+          {
+            "tone": "good",
+            "text": "Esterni a tutto campo valorizzati da Gasperini"
+          }
+        ]
+      }
+    ],
+    "down": [
+      {
+        "player_id": "03abf7ae-63a5-4f70-a892-d0f6b57b243b",
+        "points": [
+          {
+            "text": "Molta concorrenza per il suo ruolo",
+            "tone": "bad"
+          }
+        ]
+      }
+    ],
+    "young": [
+      {
+        "player_id": "04f390f1-2846-46f0-bc52-8ab0fbf3bcc1",
+        "points": [
+          {
+            "text": "Può avere grande spazio nelle rotazioni",
+            "tone": "good"
+          }
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "player_id": "8bf7a1fa-038d-4086-9c0b-1f0cd8342690",
+        "points": [
+          {
+            "text": "Molto costante nelle prestazioni",
+            "tone": "good"
+          }
+        ]
+      }
+    ],
+    "ballottaggi": [
+      {
+        "players": [
+          {
+            "player_id": "8bf7a1fa-038d-4086-9c0b-1f0cd8342690",
+            "perc": 51
+          },
+          {
+            "player_id": "2ade4141-3042-437f-a00b-ff8b17438a0f",
+            "perc": 49
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "94142a98-c364-47a6-9a08-f922cb8b3e1f",
+            "perc": 51
+          },
+          {
+            "player_id": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea",
+            "perc": 49
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "beeb810b-47f6-4017-9337-21edb30796a6",
+            "perc": 60
+          },
+          {
+            "player_id": "04f390f1-2846-46f0-bc52-8ab0fbf3bcc1",
+            "perc": 40
+          }
+        ]
+      }
+    ],
+    "coachRating": {
+      "attack": 4.5,
+      "defense": 5,
+      "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Gasperini.webp"
+    },
+    "keyPoints": [
+      {
+        "text": "Esterni molto offensivi",
+        "tone": "good"
+      },
+      {
+        "text": "Attacco molto prolifico",
+        "tone": "good"
+      },
+      {
+        "text": "Marcatura a uomo aggressiva",
+        "tone": "neutral"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "mid-wide",
+        "tone": "good"
+      },
+      {
+        "role": "treq-center",
+        "tone": "good"
+      },
+      {
+        "role": "att-center",
+        "tone": "good"
+      }
+    ],
+    "createdAt": "2026-07-21T13:08:51.218Z",
+    "updatedAt": "2026-09-03T19:12:19.728Z"
   },
   {
     "team": "VEN",
@@ -3654,12 +3690,12 @@
         "id": 554
       },
       {
-        "player_id": "e259c4a6-1385-479b-b970-730c08be498f",
-        "id": 5526
-      },
-      {
         "player_id": "e8093c47-4f1a-4bcb-83b1-0c64385cddbe",
         "id": 6485
+      },
+      {
+        "player_id": "e259c4a6-1385-479b-b970-730c08be498f",
+        "id": 5526
       },
       {
         "player_id": "e12cb1ac-c451-4b75-bbe1-94bb602aa355",
@@ -3727,7 +3763,7 @@
     "comment": "Raffaele Palladino sostituisce Juric alla vigilia della 12^ giornata. Come i predecessori Gasperini e Juric, Palladino dovrebbe schierarsi con la difesa a 3 e con il doppio trequartista a supporto della prima punta. Il punto di forza sono gli esterni, i cosiddetti quinti di centrocampo, chiamati a fare la doppia fase. Palladino dovrà lavorare soprattutto a livello mentsle, una squadra che \"prende\" al tredicesimo, peggior risultato degli ultimi 11 anni. Tanti ballottaggi, soprattutto dalla trequarti in su. ",
     "sosFantaComment": "Rivoluzione totale in casa Atalanta: dopo anni col 3-5-2, si passa al 4-3-3 con l'arrivo di Maurizio Sarri in panchina. Meccanismi da oliare, soprattutto nel reparto difensivo. Kristensen arriva per giocare, lui e Scalvini sono i favoriti in partenza. Tutto apertissimo sulle fasce: Zappacosta e Bernasconi partono in pole, ma ci sono anche Bellanova e Kolasinac. A centrocampo Ederson è rimasto e sarà titolare: le novità sono Gaetano in cabina di regia e soprattutto il ritorno di Kessié, che arriva per giocare. Anche Pasalic avrà spazio nelle rotazioni. De Ketelaere e Raspadori provati sulle due fasce, da ali pure, ma il nuovo arrivato Rowe è stato un investimento importante e una scelta decisa di Sarri quindi troverà molto spazio ed è il favorito a sinistra. Scamacca o Krstovic centravanti, è un testa a testa e sarà un'alternanza continua. Elmas e Samardzic da classici jolly: mezzali o anche esterni alti, avranno comunque spazio nelle rotazioni.",
     "created_at": "2026-07-21T13:14:35.079Z",
-    "updated_at": "2026-09-02T14:16:09.170Z",
+    "updated_at": "2026-09-03T10:52:06.680Z",
     "up": [
       {
         "player_id": "e259c4a6-1385-479b-b970-730c08be498f",
@@ -3877,7 +3913,7 @@
       }
     ],
     "createdAt": "2026-07-21T13:14:35.079Z",
-    "updatedAt": "2026-09-02T14:16:09.170Z"
+    "updatedAt": "2026-09-03T10:52:06.680Z"
   },
   {
     "team": "FIO",
@@ -3904,16 +3940,16 @@
         "id": 7294
       },
       {
-        "player_id": "b0909a8f-766a-4a8c-86e6-d4295d761421",
-        "id": 6908
+        "player_id": "40b7cab1-faa3-4b57-a7ae-a775c8b35c97",
+        "id": 6294
       },
       {
         "player_id": "38941855-dc42-4bba-923a-ff9515a68f2a",
         "id": 7464
       },
       {
-        "player_id": "40b7cab1-faa3-4b57-a7ae-a775c8b35c97",
-        "id": 6294
+        "player_id": "b0909a8f-766a-4a8c-86e6-d4295d761421",
+        "id": 6908
       },
       {
         "player_id": "dc1712b1-57f3-433e-991a-2174387b8d39",
@@ -3965,7 +4001,7 @@
     "comment": "Paolo Vanoli è chiamato a far risalire la squadra viola costretta a esonerare Pioli dopo l'ulitmo posto in classifica. Vanoli gioca con il 3-5-2 anche se lo scorsa stagione con il Torino ha utilizzato anche il 4-2-3-1 e il 4-3-3. Importante il ruolo degli esterni che sono chiamati ad accompagnare le azioni offensive con le mezzali che attaccano gli spazi per dare maggiore densità in attacco. Nel sistema del tecnico ex Torino, gli esterni hanno anche il compito di inserirsi con tempismo nell’area di rigore sul cross proveniente dal lato opposto, diventando di fatto un terzo attaccante. Vanoli infatti, fa della difesa a tre la sua base di partenza, e a Firenze troverà le condizioni ideali per confermare il proprio credo calcistico. Resta però da capire quali saranno gli interpreti del reparto, visto che finora le prestazioni della retroguardia sono state altalenanti con la sola eccezione di De Gea, spesso decisivo nel limitare i danni. ",
     "sosFantaComment": "È arrivato Fabio Grosso al posto di Vanoli in panchina: la Fiorentina giocherà con il 4-3-3 e Paratici si è letteralmente scatenato sul mercato. Jimenez e Dodo si contendono il posto a destra, Viery e Ranieri quello al centro, mentre Valdepenas è in ballottaggio con Joao Mario. Oulai può agire sia da mezzala sia da regista e c'è anche Fagioli. Ndour agirà da mezzala pura, come Atta che sarà un titolarissimo. Mastantuono arriva dal Real Madrid per giocare. Kean è andato al Como e, con la sua partenza, i nuovi arrivati Pellegrino e Beto si giocheranno il posto da titolare. Nell'ultimo giorno di mercato è stato acquistato anche Pedro Goncalves e sarà titolare a sinistra. In attacco sono arrivati anche Njie dal Torino e Gnonto dal Leeds che potranno dire la loro nelle rotazioni di Grosso.",
     "created_at": "2026-07-21T12:36:56.706Z",
-    "updated_at": "2026-09-02T10:16:46.165Z",
+    "updated_at": "2026-09-03T11:06:47.664Z",
     "up": [
       {
         "player_id": "1d2a470a-c2dd-4e85-9269-2432dab4989e",
@@ -4136,7 +4172,7 @@
       }
     ],
     "createdAt": "2026-07-21T12:36:56.706Z",
-    "updatedAt": "2026-09-02T10:16:46.165Z"
+    "updatedAt": "2026-09-03T11:06:47.664Z"
   },
   {
     "team": "NAP",

@@ -840,7 +840,6 @@ export const SOS_STRATEGY_1 = {
     "bobcek": "tier_a_14",
     "gonzalez n.": "tier_c_6",
     "gonzalezn": "tier_c_6",
-    "mastantuono": "tier_c_3",
     "ciervo": "tier_c_17",
     "theate": "tier_d_11",
     "balerdi": "tier_d_12",
@@ -911,7 +910,6 @@ export const SOS_STRATEGY_1 = {
     "fernandezt": "tier_c_16",
     "kean": "tier_a_3",
     "lang": "tier_a_12",
-    "romagnoli": "tier_d_20",
     "meichtry": "tier_c_10",
     "butez": "tier_p_2",
     "raspadori": "tier_a_8",
@@ -936,6 +934,14 @@ export const SOS_STRATEGY_1 = {
     "cancellieri": "tier_c_12",
     "ndour": "tier_c_10",
     "elphege": "tier_a_14",
-    "woltemade": "tier_a_4"
+    "woltemade": "tier_a_4",
+    "el shaarawy": "tier_c_8",
+    "elshaarawy": "tier_c_8",
+    "mastantuono": "tier_c_3",
+    "rodriguez r.": "tier_d_13",
+    "rodriguezr": "tier_d_13",
+    "caleta-car": "tier_d_14",
+    "caletacar": "tier_d_14",
+    "ehizibue": "tier_d_15"
   }
 };
