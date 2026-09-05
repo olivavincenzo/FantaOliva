@@ -151,36 +151,6 @@
     }
   },
   {
-    "player_id": "7e004e1c-1d3a-4b48-bf93-e3a912b7b7f3",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 16,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 1,
-    "perc_price": "0.2000",
-    "ex_fmv": null,
-    "comment": null,
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": null,
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-23",
-    "updated_at": "2026-08-02",
-    "createdAt": "2026-07-23",
-    "updatedAt": "2026-08-02",
-    "player": {
-      "player_id": "7e004e1c-1d3a-4b48-bf93-e3a912b7b7f3",
-      "role": "A",
-      "mantra_roles": [
-        "Pc"
-      ]
-    }
-  },
-  {
     "player_id": "ff782703-864f-4bd4-bf85-b904f8816c2d",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
@@ -933,36 +903,6 @@
     "updatedAt": "2026-08-31",
     "player": {
       "player_id": "c824abfd-1f86-4d6f-a395-b9ed4661dc73",
-      "role": "P",
-      "mantra_roles": [
-        "Por"
-      ]
-    }
-  },
-  {
-    "player_id": "36014808-99ee-486d-a681-26d3d5fbe551",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 0,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": null,
-    "perc_price": null,
-    "ex_fmv": null,
-    "comment": null,
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": null,
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-24",
-    "updated_at": "2026-08-31",
-    "createdAt": "2026-07-24",
-    "updatedAt": "2026-08-31",
-    "player": {
-      "player_id": "36014808-99ee-486d-a681-26d3d5fbe551",
       "role": "P",
       "mantra_roles": [
         "Por"
@@ -2168,37 +2108,6 @@
       "mantra_roles": [
         "M",
         "C"
-      ]
-    }
-  },
-  {
-    "player_id": "d979e1ba-febc-4944-809a-90b3759e75c0",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 17,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 1,
-    "perc_price": "0.2000",
-    "ex_fmv": null,
-    "comment": null,
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": null,
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-24",
-    "updated_at": "2026-08-02",
-    "createdAt": "2026-07-24",
-    "updatedAt": "2026-08-02",
-    "player": {
-      "player_id": "d979e1ba-febc-4944-809a-90b3759e75c0",
-      "role": "C",
-      "mantra_roles": [
-        "C",
-        "T"
       ]
     }
   },
@@ -5675,36 +5584,6 @@
       "role": "C",
       "mantra_roles": [
         "M",
-        "C"
-      ]
-    }
-  },
-  {
-    "player_id": "671bde75-248a-4a1c-9c28-e307fc924fd8",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 18,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 0,
-    "perc_price": "0.0000",
-    "ex_fmv": null,
-    "comment": "",
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": [],
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-24",
-    "updated_at": "2026-08-29",
-    "createdAt": "2026-07-24",
-    "updatedAt": "2026-08-29",
-    "player": {
-      "player_id": "671bde75-248a-4a1c-9c28-e307fc924fd8",
-      "role": "C",
-      "mantra_roles": [
         "C"
       ]
     }
