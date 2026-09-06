@@ -727,7 +727,7 @@ export const SOS_STRATEGY_1 = {
     "vlasic": "tier_c_3",
     "adams a.": "tier_a_7",
     "adamsa": "tier_a_7",
-    "osmajic": "tier_a_16",
+    "osmajic": "tier_a_13",
     "zapata d.": "tier_a_14",
     "zapatad": "tier_a_14",
     "cutrone": "tier_a_13",
@@ -897,8 +897,6 @@ export const SOS_STRATEGY_1 = {
     "sanchez ro.": "tier_p_6",
     "sanchezro": "tier_p_6",
     "rowe": "tier_c_4",
-    "goncalves p.": "tier_c_7",
-    "goncalvesp": "tier_c_7",
     "mbangula": "tier_c_7",
     "braganca": "tier_c_14",
     "sulemana i.": "tier_c_16",
@@ -939,6 +937,8 @@ export const SOS_STRATEGY_1 = {
     "rodriguezr": "tier_d_13",
     "caleta-car": "tier_d_14",
     "caletacar": "tier_d_14",
-    "ehizibue": "tier_d_15"
+    "ehizibue": "tier_d_15",
+    "goncalves p.": "tier_c_7",
+    "goncalvesp": "tier_c_7"
   }
 };

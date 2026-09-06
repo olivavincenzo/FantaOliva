@@ -6351,10 +6351,10 @@
     "fascia": 8,
     "fascia_second": null,
     "fascia_third": null,
-    "price": 23,
-    "perc_price": "4.6000",
+    "price": 31,
+    "perc_price": "6.2000",
     "ex_fmv": null,
-    "comment": "Assane Diao arriva da una stagione negativa, condizionata dagli infortuni. Era esploso due stagioni fa, mentre l’anno scorso ha giocato solo 16 partite. Le cose migliori le ha fatte negli ultimi 2-3 mesi di campionato, quando ha fatto 2 gol e 1 assist, ma è troppo poco per uno come lui. Se sta bene può puntare ad almeno 6-7 gol e altrettanti assist, ne aveva fatti 8 in 15 partite appena arrivato in Italia.",
+    "comment": "Assane Diao arriva da una stagione negativa, condizionata dagli infortuni. Era esploso due stagioni fa, mentre l’anno scorso ha giocato solo 16 partite. Le cose migliori le ha fatte negli ultimi 2-3 mesi di campionato, quando ha fatto 2 gol e 1 assist, ma è troppo poco per uno come lui. Se sta bene può puntare ad almeno 6-7 gol e altrettanti assist, ne aveva fatti 8 in 15 partite appena arrivato in Italia. Il prezzo sale dopo la doppietta al Genoa. ",
     "tit_index": null,
     "aff_index": null,
     "inf_index": null,
@@ -6363,9 +6363,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-07-23",
-    "updated_at": "2026-08-30",
+    "updated_at": "2026-09-05",
     "createdAt": "2026-07-23",
-    "updatedAt": "2026-08-30",
+    "updatedAt": "2026-09-05",
     "player": {
       "player_id": "0e555a7f-5113-49d2-9bbd-0a138250968f",
       "role": "A",
@@ -9818,24 +9818,24 @@
     "player_id": "16bd57cd-1af6-42ea-abfd-23a1051c73c1",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 16,
+    "fascia": 13,
     "fascia_second": null,
     "fascia_third": null,
-    "price": 1,
-    "perc_price": "0.2000",
+    "price": 4,
+    "perc_price": "0.8000",
     "ex_fmv": null,
-    "comment": null,
+    "comment": "Milutin Osmajić si è presentato al Genoa con un gol contro il Como, giocando da titolare. Si tratta di una prima punta classe 1999, è alto 186 cm. Anche dopo il gol non si può parlare di un titolare fisso, ma piace a De Rossi e avrà spazio. È una scelta low cost.\n",
     "tit_index": null,
     "aff_index": null,
     "inf_index": null,
-    "notes": null,
+    "notes": [],
     "target": null,
     "unlocked": null,
     "links": null,
     "created_at": "2026-08-25",
-    "updated_at": "2026-08-25",
+    "updated_at": "2026-09-05",
     "createdAt": "2026-08-25",
-    "updatedAt": "2026-08-25",
+    "updatedAt": "2026-09-05",
     "player": {
       "player_id": "16bd57cd-1af6-42ea-abfd-23a1051c73c1",
       "role": "A",
@@ -14074,37 +14074,6 @@
     }
   },
   {
-    "player_id": "21a58529-376d-41b3-9bf8-2444f31c8a86",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 7,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 17,
-    "perc_price": "3.4000",
-    "ex_fmv": null,
-    "comment": "Pedro Goncalves arriva in Italia e vestirà la maglia della Fiorentina con la società viola che ha fatto un grosso investimento per il 28enne portoghese: circa 22,5 per l’obbligo di riscatto se si attiverà a fine stagione. È un esterno sinistro d'attacco di appena 173 cm, bravo negli spazi stretti e dotato di un bel tiro dalla distanza. Fantasista vero e proprio, il classe 1998 viene da 13 gol e 8 assist nel campionato portoghese. Con lo Sporting numeri impressionanti: 239 presenze, 97 reti e 66 assist. Al fantacalcio è listato centrocampista ma di fatto giocherà in un attacco a tre con la valutazione che si può alzare alla lunga. In un 4-3-3 può partire davanti a Njie, è più maturo e pronto. Occhio quindi alla possibile sorpresa al fantacalcio se riuscirà ad avvicinarsi ai numeri avuto in Portogallo.",
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": [],
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-09-01",
-    "updated_at": "2026-09-01",
-    "createdAt": "2026-09-01",
-    "updatedAt": "2026-09-01",
-    "player": {
-      "player_id": "21a58529-376d-41b3-9bf8-2444f31c8a86",
-      "role": "C",
-      "mantra_roles": [
-        "W",
-        "T"
-      ]
-    }
-  },
-  {
     "player_id": "fbe3ff89-8369-4e4f-af9e-6176daa6e0c3",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
@@ -15140,6 +15109,37 @@
       "mantra_roles": [
         "Dd",
         "E"
+      ]
+    }
+  },
+  {
+    "player_id": "21a58529-376d-41b3-9bf8-2444f31c8a86",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 7,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 17,
+    "perc_price": "3.4000",
+    "ex_fmv": null,
+    "comment": "Pedro Goncalves arriva in Italia e vestirà la maglia della Fiorentina con la società viola che ha fatto un grosso investimento per il 28enne portoghese: circa 22,5 per l’obbligo di riscatto se si attiverà a fine stagione. È un esterno sinistro d'attacco di appena 173 cm, bravo negli spazi stretti e dotato di un bel tiro dalla distanza. Fantasista vero e proprio, il classe 1998 viene da 13 gol e 8 assist nel campionato portoghese. Con lo Sporting numeri impressionanti: 239 presenze, 97 reti e 66 assist. Al fantacalcio è listato centrocampista ma di fatto giocherà in un attacco a tre con la valutazione che si può alzare alla lunga. In un 4-3-3 può partire davanti a Njie, è più maturo e pronto. Occhio quindi alla possibile sorpresa al fantacalcio se riuscirà ad avvicinarsi ai numeri avuto in Portogallo, soprattutto se dovesse anche tirare i rigori. In carriera 17 su 21, si candida anche a Firenze.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-09-01",
+    "updated_at": "2026-09-05",
+    "createdAt": "2026-09-01",
+    "updatedAt": "2026-09-05",
+    "player": {
+      "player_id": "21a58529-376d-41b3-9bf8-2444f31c8a86",
+      "role": "C",
+      "mantra_roles": [
+        "W",
+        "T"
       ]
     }
   }

@@ -8843,9 +8843,9 @@ export const SOS_TEAMS_DATA = {
         "role": "A"
       },
       {
-        "playerId": "ce5cd19a-b929-4b5c-a0a4-067b0b355879",
-        "name": "Beto",
-        "role": "A"
+        "playerId": "21a58529-376d-41b3-9bf8-2444f31c8a86",
+        "name": "Goncalves P.",
+        "role": "C"
       }
     ],
     "pun": [
@@ -9127,9 +9127,9 @@ export const SOS_TEAMS_DATA = {
         "role": "A"
       },
       {
-        "playerId": "ce5cd19a-b929-4b5c-a0a4-067b0b355879",
-        "name": "Beto",
-        "role": "A"
+        "playerId": "21a58529-376d-41b3-9bf8-2444f31c8a86",
+        "name": "Goncalves P.",
+        "role": "C"
       }
     ],
     "pun": [
