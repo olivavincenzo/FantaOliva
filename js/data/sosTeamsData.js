@@ -3185,6 +3185,20 @@ export const SOS_TEAMS_DATA = {
           "role": "C",
           "perc": 49
         }
+      ],
+      [
+        {
+          "playerId": "c904108e-6a70-494d-9732-b39d2fc8264a",
+          "name": "Miranda J.",
+          "role": "D",
+          "perc": 51
+        },
+        {
+          "playerId": "0dcc082f-d28e-4c82-9e1c-f19db5b7bc43",
+          "name": "Alhassane",
+          "role": "D",
+          "perc": 49
+        }
       ]
     ],
     "up": [
@@ -3451,6 +3465,20 @@ export const SOS_TEAMS_DATA = {
           "playerId": "91989231-9213-435b-81c5-a7c7a7d85104",
           "name": "Moro N.",
           "role": "C",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "c904108e-6a70-494d-9732-b39d2fc8264a",
+          "name": "Miranda J.",
+          "role": "D",
+          "perc": 51
+        },
+        {
+          "playerId": "0dcc082f-d28e-4c82-9e1c-f19db5b7bc43",
+          "name": "Alhassane",
+          "role": "D",
           "perc": 49
         }
       ]

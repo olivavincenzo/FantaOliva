@@ -8268,36 +8268,6 @@
     }
   },
   {
-    "player_id": "2e331f32-cc88-4a67-b471-f05a2db80063",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 16,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 1,
-    "perc_price": "0.2000",
-    "ex_fmv": null,
-    "comment": null,
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": null,
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-08-17",
-    "updated_at": "2026-08-25",
-    "createdAt": "2026-08-17",
-    "updatedAt": "2026-08-25",
-    "player": {
-      "player_id": "2e331f32-cc88-4a67-b471-f05a2db80063",
-      "role": "A",
-      "mantra_roles": [
-        "A"
-      ]
-    }
-  },
-  {
     "player_id": "1eceb250-521e-4a1c-beff-c21eccc15af6",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
@@ -12546,7 +12516,7 @@
     "player_id": "440c9918-20a7-4fc7-9985-3b4031b1ac74",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 12,
+    "fascia": 6,
     "fascia_second": null,
     "fascia_third": null,
     "price": 2,
@@ -12561,9 +12531,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-08-30",
-    "updated_at": "2026-08-30",
+    "updated_at": "2026-09-06",
     "createdAt": "2026-08-30",
-    "updatedAt": "2026-08-30",
+    "updatedAt": "2026-09-06",
     "player": {
       "player_id": "440c9918-20a7-4fc7-9985-3b4031b1ac74",
       "role": "D",
@@ -15140,6 +15110,36 @@
       "mantra_roles": [
         "W",
         "T"
+      ]
+    }
+  },
+  {
+    "player_id": "2e331f32-cc88-4a67-b471-f05a2db80063",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 10,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 1,
+    "perc_price": "0.2000",
+    "ex_fmv": null,
+    "comment": "Simone Lontani è un gioiellino di casa Parma, si tratta di un attaccante classe 2008 alto 181 cm. È molto bravo nell’uno contro e parte dall’esterno per saltare l’uomo. Cuesta gli sta dando fiducia e lui ha ripagato con un gol contro il Monza, così diventa una scommessa anche al fantacalcio.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-08-17",
+    "updated_at": "2026-09-06",
+    "createdAt": "2026-08-17",
+    "updatedAt": "2026-09-06",
+    "player": {
+      "player_id": "2e331f32-cc88-4a67-b471-f05a2db80063",
+      "role": "A",
+      "mantra_roles": [
+        "A"
       ]
     }
   }

@@ -1430,7 +1430,7 @@
     "comment": "Il Bologna si caratterizza per un gioco molto dinamico, con i giocatori che spesso si scambiano le posizioni per creare confusione nella difesa avversaria. Il ruolo degli esterni d’attacco è fondamentale: sono loro a garantire ampiezza, velocità e spesso i gol e gli assist più importanti. La difesa è molto alta, in linea con il pressing aggressivo che la squadra mette in campo, ma questo comporta qualche rischio in ripartenza. Attenzione anche al turn over elevato, che può influenzare la continuità di rendimento di alcuni giocatori, specialmente in ottica fantacalcio.",
     "sosFantaComment": "Da Italiano a Domenico Tedesco: cambia la guida tecnica del Bologna, ma a livello tattico resta confermato il 4-3-3 di partenza. Dovbyk è arrivato per giocare e, se starà bene, sarà il centravanti titolare, con Piccoli come vice. Rowe è andato via, spazio a uno tra Cambiaghi e il nuovo arrivato Mbangula sulla sinistra. Pobega, Moro ed El Azzouzi si contendono la maglia lasciata da Freuler. Bernardeschi in estate provato da mezzala ma preferisce fare l'ala pura o il trequartista, di fatto è un jolly che avrà molto spazio. E lo stesso si può dire di Odgaard, che sta convincendo da mezzala. Zortea parte avanti rispetto a Holm per il ruolo di terzino destro, mentre al centro della difesa è appena arrivato Theate, che insieme a Heggem partono leggermente avanti rispetto a Vitik e Helland.",
     "created_at": "2026-07-21T13:36:37.003Z",
-    "updated_at": "2026-09-03T11:14:56.317Z",
+    "updated_at": "2026-09-06T17:05:20.532Z",
     "up": [
       {
         "player_id": "c904108e-6a70-494d-9732-b39d2fc8264a",
@@ -1552,6 +1552,18 @@
             "perc": 49
           }
         ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "c904108e-6a70-494d-9732-b39d2fc8264a",
+            "perc": 51
+          },
+          {
+            "player_id": "0dcc082f-d28e-4c82-9e1c-f19db5b7bc43",
+            "perc": 49
+          }
+        ]
       }
     ],
     "coachRating": {
@@ -1580,7 +1592,7 @@
       }
     ],
     "createdAt": "2026-07-21T13:36:37.003Z",
-    "updatedAt": "2026-09-03T11:14:56.317Z"
+    "updatedAt": "2026-09-06T17:05:20.532Z"
   },
   {
     "team": "LAZ",

@@ -839,7 +839,7 @@ export const SOS_STRATEGY_1 = {
     "gonzalezn": "tier_c_6",
     "ciervo": "tier_c_17",
     "theate": "tier_d_11",
-    "balerdi": "tier_d_12",
+    "balerdi": "tier_d_6",
     "perri": "tier_p_14",
     "njie": "tier_c_10",
     "castro s.": "tier_a_6",
