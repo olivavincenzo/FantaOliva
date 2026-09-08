@@ -1033,12 +1033,24 @@
 .soccer-pitch {
   position: relative;
   width: 100%;
-  height: 100%;
+  min-height: 540px;
+  height: 580px;
+  margin-bottom: 16px;
   background: #f0f3f0;
   border-radius: var(--radius-xl);
   border: 1px solid var(--line);
   box-shadow: var(--card-shadow);
   overflow: hidden;
+  flex-shrink: 0;
+  transition: opacity var(--transition-fast);
+}
+
+@media (max-width: 900px) {
+  .soccer-pitch {
+    min-height: 440px;
+    height: 480px;
+    margin-bottom: 12px;
+  }
 }
 
 .pitch-lines {

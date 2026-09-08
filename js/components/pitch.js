@@ -129,8 +129,8 @@ export class PitchComponent {
             <i class="fa-solid fa-shield-halved" style="font-size: 13px;"></i>
           </button>
 
-          <!-- Toggle Vista Campo Grafico / Lista Giocatori -->
-          <button class="circle-button" id="toggle-pitch-layout-btn" type="button" aria-label="Alterna Campo Grafico / Lista Giocatori" title="Mostra Campo Grafico">
+          <!-- Toggle Vista Campo Grafico -->
+          <button class="circle-button active" id="toggle-pitch-layout-btn" type="button" aria-label="Nascondi Campo Grafico" title="Nascondi Campo Grafico">
             <i class="fa-solid fa-futbol" style="font-size: 14px;"></i>
           </button>
 
@@ -174,6 +174,29 @@ export class PitchComponent {
             </div>
           ` : ''}
           ${this.renderTeamNotesHtml(team)}
+        </div>
+
+        <!-- CAMPO DA CALCIO GRAFICO (Sempre attivo sotto a team-tactical-banner) -->
+        <div class="soccer-pitch" id="soccer-pitch">
+          <div class="pitch-grass-stripes"></div>
+          <div class="pitch-lines">
+            <div class="pitch-boundary"></div>
+            <div class="halfway-line"></div>
+            <div class="center-circle"></div>
+            <div class="center-spot"></div>
+            <div class="penalty-box top-box"></div>
+            <div class="goal-box top-goal-box"></div>
+            <div class="penalty-spot top-spot"></div>
+            <div class="penalty-arc top-arc"></div>
+            <div class="penalty-box bottom-box"></div>
+            <div class="goal-box bottom-goal-box"></div>
+            <div class="penalty-spot bottom-spot"></div>
+            <div class="penalty-arc bottom-arc"></div>
+          </div>
+          <svg class="tactical-lines-svg" id="tactical-lines-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <g id="tactical-lines-group"></g>
+          </svg>
+          <div class="pitch-slots-layer" id="pitch-slots-layer"></div>
         </div>
 
         <!-- BARRA DI RICERCA EDITORIALE CON ICONA FILTRI MOBILE -->
@@ -233,31 +256,8 @@ export class PitchComponent {
           </div>
         </nav>
 
-        <!-- 1. LISTA VERTICALE EDITORIALE (Visualizzazione Principale) -->
+        <!-- LISTA VERTICALE EDITORIALE (Visualizzazione Principale) -->
         <div class="pitch-vertical-list-container" id="pitch-vertical-list"></div>
-
-        <!-- 2. CAMPO DA CALCIO GRAFICO (Visualizzazione Alternativa) -->
-        <div class="soccer-pitch hidden" id="soccer-pitch">
-          <div class="pitch-grass-stripes"></div>
-          <div class="pitch-lines">
-            <div class="pitch-boundary"></div>
-            <div class="halfway-line"></div>
-            <div class="center-circle"></div>
-            <div class="center-spot"></div>
-            <div class="penalty-box top-box"></div>
-            <div class="goal-box top-goal-box"></div>
-            <div class="penalty-spot top-spot"></div>
-            <div class="penalty-arc top-arc"></div>
-            <div class="penalty-box bottom-box"></div>
-            <div class="goal-box bottom-goal-box"></div>
-            <div class="penalty-spot bottom-spot"></div>
-            <div class="penalty-arc bottom-arc"></div>
-          </div>
-          <svg class="tactical-lines-svg" id="tactical-lines-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <g id="tactical-lines-group"></g>
-          </svg>
-          <div class="pitch-slots-layer" id="pitch-slots-layer"></div>
-        </div>
 
         <!-- MODALE FILTRI PITCH (MOBILE) -->
         <div class="modal-backdrop hidden" id="pitch-filters-modal" role="dialog" aria-modal="true" aria-labelledby="pitch-filters-title">
@@ -468,31 +468,25 @@ export class PitchComponent {
       searchInput?.focus();
     });
 
-    // Toggle Vista Lista / Campo
+    // Toggle Vista Campo Grafico (Mostra / Nascondi campo sotto al banner)
     const toggleLayoutBtn = this.container.querySelector('#toggle-pitch-layout-btn');
-    const outerWrapper = this.container.querySelector('.pitch-outer-wrapper');
 
     toggleLayoutBtn?.addEventListener('click', () => {
-      const isPitchHidden = this.pitchEl?.classList.contains('hidden');
-      if (isPitchHidden) {
-        // Mostra campo
-        this.pitchEl?.classList.remove('hidden');
-        this.verticalListEl?.classList.add('hidden');
-        outerWrapper?.classList.add('is-pitch-mode');
-        toggleLayoutBtn.classList.add('active');
-        toggleLayoutBtn.title = 'Mostra Lista Giocatori';
-        toggleLayoutBtn.innerHTML = '<i class="fa-solid fa-list" style="font-size: 14px;"></i>';
-        this.updateSlotsPositions();
-        this.renderTacticalLines();
-      } else {
-        // Mostra lista editoriale
+      const isPitchVisible = !this.pitchEl?.classList.contains('hidden');
+      if (isPitchVisible) {
+        // Nascondi campo
         this.pitchEl?.classList.add('hidden');
-        this.verticalListEl?.classList.remove('hidden');
-        outerWrapper?.classList.remove('is-pitch-mode');
         toggleLayoutBtn.classList.remove('active');
         toggleLayoutBtn.title = 'Mostra Campo Grafico';
-        toggleLayoutBtn.innerHTML = '<i class="fa-solid fa-futbol" style="font-size: 14px;"></i>';
-        this.renderVerticalList();
+        toggleLayoutBtn.setAttribute('aria-label', 'Mostra Campo Grafico');
+      } else {
+        // Mostra campo
+        this.pitchEl?.classList.remove('hidden');
+        toggleLayoutBtn.classList.add('active');
+        toggleLayoutBtn.title = 'Nascondi Campo Grafico';
+        toggleLayoutBtn.setAttribute('aria-label', 'Nascondi Campo Grafico');
+        this.updateSlotsPositions();
+        this.renderTacticalLines();
       }
     });
 
