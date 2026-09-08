@@ -18,7 +18,7 @@ export const SOS_TEAMS_DATA = {
     "attackRating": 3.0,
     "defenseRating": 2.5,
     "comment": "Il 4-3-3 di Grosso punta su verticalità e ripartenze rapide, con un gioco diretto che privilegia il lancio lungo rispetto alla costruzione dal basso. I due esterni offensivi sono centrali nel sistema: liberati da compiti difensivi, hanno licenza di colpire. Il centravanti è un punto di riferimento costante, cercato con palloni in profondità per sfruttare spazi e fisicità. A centrocampo servono corsa e intensità, più che palleggio. La difesa a quattro è solida ma può soffrire se attaccata in velocità. In chiave fantacalcio, occhio agli esterni offensivi: possono portare bonus importanti. Meno appetibili, invece, i difensori e i mediani.",
-    "sosFantaComment": "È arrivato Alberto Aquilani in panchina al posto di Grosso. Il modulo di riferimento sembra essere il 4-2-3-1, ma il Sassuolo può schierarsi anche con il 4-3-3, già provato durante la preparazione. Muric a sorpresa è rimasto ed è il titolare. A destra è arrivato Van Der Brempt e sarà lui il titolare, le alternative sono Cinquegrano e Walukiewicz (al momento infortunato), con il polacco che può agire anche da centrale. A sinistra è arrivato Obrador e si candida ad essere il titolare, con Doig che resta un'alternativa affidabile. A centrocampo Koné resterà fuori ancora per diversi mesi e, in attesa del suo rientro, spazio a Lipani o Bakola. Thorstvedt alla fine è rimasto ed è la prima scelta sulla trequarti, ma occhio ad Adzic che si è presentato positivamente e si è fatto trovare pronto, prova a insidiarlo. Per sostituire Pinamonti è arrivato Bowie, ma è arrivato anche Seba Esposito che sulla carta diventerà il titolare.",
+    "sosFantaComment": "È arrivato Alberto Aquilani in panchina al posto di Grosso. Il modulo di riferimento sembra essere il 4-2-3-1, ma il Sassuolo può schierarsi anche con il 4-3-3, già provato durante la preparazione. Muric a sorpresa è rimasto ed è il titolare. A destra è arrivato Van Der Brempt e si giocherà il posto con Cinquegrano, che ha già sfornato un assist a Bologna, e Walukiewicz (al momento infortunato), con il polacco che può agire anche da centrale. A sinistra è arrivato Obrador e si giocherà il posto con Doig. A centrocampo Koné resterà fuori ancora per diversi mesi e, in attesa del suo rientro, spazio a Lipani o Bakola. Thorstvedt alla fine è rimasto ed è la prima scelta sulla trequarti, ma occhio ad Adzic che si è presentato positivamente e si è fatto trovare pronto, prova a insidiarlo. Per sostituire Pinamonti è arrivato Bowie, ma è arrivato anche Seba Esposito che sulla carta diventerà il titolare.",
     "keyPoints": [
       {
         "text": "Costruzione dal basso",
@@ -195,13 +195,13 @@ export const SOS_TEAMS_DATA = {
           "playerId": "95aaa469-351a-4ce1-a71f-97dce55d47de",
           "name": "Obrador",
           "role": "D",
-          "perc": 55
+          "perc": 51
         },
         {
           "playerId": "371edc7e-8557-4af7-ac46-3481c7601c38",
           "name": "Doig",
           "role": "D",
-          "perc": 45
+          "perc": 49
         }
       ],
       [
@@ -216,6 +216,20 @@ export const SOS_TEAMS_DATA = {
           "name": "Bowie",
           "role": "A",
           "perc": 45
+        }
+      ],
+      [
+        {
+          "playerId": "d190b87f-14d2-4a26-b57d-a8b2803d175e",
+          "name": "Van Der Brempt",
+          "role": "D",
+          "perc": 51
+        },
+        {
+          "playerId": "76cabc00-f29e-402b-aa35-b88bacfd8aae",
+          "name": "",
+          "role": "",
+          "perc": 49
         }
       ]
     ],
@@ -290,7 +304,7 @@ export const SOS_TEAMS_DATA = {
     "attackRating": 3.0,
     "defenseRating": 2.5,
     "comment": "Il 4-3-3 di Grosso punta su verticalità e ripartenze rapide, con un gioco diretto che privilegia il lancio lungo rispetto alla costruzione dal basso. I due esterni offensivi sono centrali nel sistema: liberati da compiti difensivi, hanno licenza di colpire. Il centravanti è un punto di riferimento costante, cercato con palloni in profondità per sfruttare spazi e fisicità. A centrocampo servono corsa e intensità, più che palleggio. La difesa a quattro è solida ma può soffrire se attaccata in velocità. In chiave fantacalcio, occhio agli esterni offensivi: possono portare bonus importanti. Meno appetibili, invece, i difensori e i mediani.",
-    "sosFantaComment": "È arrivato Alberto Aquilani in panchina al posto di Grosso. Il modulo di riferimento sembra essere il 4-2-3-1, ma il Sassuolo può schierarsi anche con il 4-3-3, già provato durante la preparazione. Muric a sorpresa è rimasto ed è il titolare. A destra è arrivato Van Der Brempt e sarà lui il titolare, le alternative sono Cinquegrano e Walukiewicz (al momento infortunato), con il polacco che può agire anche da centrale. A sinistra è arrivato Obrador e si candida ad essere il titolare, con Doig che resta un'alternativa affidabile. A centrocampo Koné resterà fuori ancora per diversi mesi e, in attesa del suo rientro, spazio a Lipani o Bakola. Thorstvedt alla fine è rimasto ed è la prima scelta sulla trequarti, ma occhio ad Adzic che si è presentato positivamente e si è fatto trovare pronto, prova a insidiarlo. Per sostituire Pinamonti è arrivato Bowie, ma è arrivato anche Seba Esposito che sulla carta diventerà il titolare.",
+    "sosFantaComment": "È arrivato Alberto Aquilani in panchina al posto di Grosso. Il modulo di riferimento sembra essere il 4-2-3-1, ma il Sassuolo può schierarsi anche con il 4-3-3, già provato durante la preparazione. Muric a sorpresa è rimasto ed è il titolare. A destra è arrivato Van Der Brempt e si giocherà il posto con Cinquegrano, che ha già sfornato un assist a Bologna, e Walukiewicz (al momento infortunato), con il polacco che può agire anche da centrale. A sinistra è arrivato Obrador e si giocherà il posto con Doig. A centrocampo Koné resterà fuori ancora per diversi mesi e, in attesa del suo rientro, spazio a Lipani o Bakola. Thorstvedt alla fine è rimasto ed è la prima scelta sulla trequarti, ma occhio ad Adzic che si è presentato positivamente e si è fatto trovare pronto, prova a insidiarlo. Per sostituire Pinamonti è arrivato Bowie, ma è arrivato anche Seba Esposito che sulla carta diventerà il titolare.",
     "keyPoints": [
       {
         "text": "Costruzione dal basso",
@@ -467,13 +481,13 @@ export const SOS_TEAMS_DATA = {
           "playerId": "95aaa469-351a-4ce1-a71f-97dce55d47de",
           "name": "Obrador",
           "role": "D",
-          "perc": 55
+          "perc": 51
         },
         {
           "playerId": "371edc7e-8557-4af7-ac46-3481c7601c38",
           "name": "Doig",
           "role": "D",
-          "perc": 45
+          "perc": 49
         }
       ],
       [
@@ -488,6 +502,20 @@ export const SOS_TEAMS_DATA = {
           "name": "Bowie",
           "role": "A",
           "perc": 45
+        }
+      ],
+      [
+        {
+          "playerId": "d190b87f-14d2-4a26-b57d-a8b2803d175e",
+          "name": "Van Der Brempt",
+          "role": "D",
+          "perc": 51
+        },
+        {
+          "playerId": "76cabc00-f29e-402b-aa35-b88bacfd8aae",
+          "name": "",
+          "role": "",
+          "perc": 49
         }
       ]
     ],
@@ -1711,8 +1739,8 @@ export const SOS_TEAMS_DATA = {
     ],
     "up": [
       {
-        "playerId": "1d24cd78-760a-415a-96d0-075251eb2c71",
-        "name": "N'Dri",
+        "playerId": "ce950363-d565-4e38-aa78-93bb22b65fa1",
+        "name": "Monteiro J.",
         "points": [
           "Ali fondamentali nel gioco di Di Franscesco",
           "Utile nelle ripartenze"
@@ -1969,8 +1997,8 @@ export const SOS_TEAMS_DATA = {
     ],
     "up": [
       {
-        "playerId": "1d24cd78-760a-415a-96d0-075251eb2c71",
-        "name": "N'Dri",
+        "playerId": "ce950363-d565-4e38-aa78-93bb22b65fa1",
+        "name": "Monteiro J.",
         "points": [
           "Ali fondamentali nel gioco di Di Franscesco",
           "Utile nelle ripartenze"
@@ -2741,10 +2769,10 @@ export const SOS_TEAMS_DATA = {
     ],
     "hidden": [
       {
-        "playerId": "2d18f8b5-9c3a-4878-ad3f-9765c8d0e1b6",
-        "name": "Casadei",
+        "playerId": "491914f6-841c-478f-a8d8-8710dd039a27",
+        "name": "Adams C.",
         "points": [
-          "Tanti inserimenti in area sui cross"
+          "Ottima finalizzazione dentro l'area"
         ]
       }
     ]
@@ -2957,10 +2985,10 @@ export const SOS_TEAMS_DATA = {
     ],
     "hidden": [
       {
-        "playerId": "2d18f8b5-9c3a-4878-ad3f-9765c8d0e1b6",
-        "name": "Casadei",
+        "playerId": "491914f6-841c-478f-a8d8-8710dd039a27",
+        "name": "Adams C.",
         "points": [
-          "Tanti inserimenti in area sui cross"
+          "Ottima finalizzazione dentro l'area"
         ]
       }
     ]
@@ -3203,11 +3231,10 @@ export const SOS_TEAMS_DATA = {
     ],
     "up": [
       {
-        "playerId": "c904108e-6a70-494d-9732-b39d2fc8264a",
-        "name": "Miranda J.",
+        "playerId": "c3763cc2-a3d9-403f-8f5a-856896a47c5d",
+        "name": "Bernardeschi",
         "points": [
-          "Spinta sulla fascia con sovrapposizioni",
-          "Cross precisi per la punta"
+          "Duttile tatticamente. Usato in più ruoli"
         ]
       },
       {
@@ -3239,10 +3266,10 @@ export const SOS_TEAMS_DATA = {
     ],
     "hidden": [
       {
-        "playerId": "c3763cc2-a3d9-403f-8f5a-856896a47c5d",
-        "name": "Bernardeschi",
+        "playerId": "fbe3ff89-8369-4e4f-af9e-6176daa6e0c3",
+        "name": "Mbangula",
         "points": [
-          "Duttile tatticamente. Usato in più ruoli."
+          "Corsa esplosiva. Usato per spaccare le partite"
         ]
       }
     ]
@@ -3485,11 +3512,10 @@ export const SOS_TEAMS_DATA = {
     ],
     "up": [
       {
-        "playerId": "c904108e-6a70-494d-9732-b39d2fc8264a",
-        "name": "Miranda J.",
+        "playerId": "c3763cc2-a3d9-403f-8f5a-856896a47c5d",
+        "name": "Bernardeschi",
         "points": [
-          "Spinta sulla fascia con sovrapposizioni",
-          "Cross precisi per la punta"
+          "Duttile tatticamente. Usato in più ruoli"
         ]
       },
       {
@@ -3521,10 +3547,10 @@ export const SOS_TEAMS_DATA = {
     ],
     "hidden": [
       {
-        "playerId": "c3763cc2-a3d9-403f-8f5a-856896a47c5d",
-        "name": "Bernardeschi",
+        "playerId": "fbe3ff89-8369-4e4f-af9e-6176daa6e0c3",
+        "name": "Mbangula",
         "points": [
-          "Duttile tatticamente. Usato in più ruoli."
+          "Corsa esplosiva. Usato per spaccare le partite"
         ]
       }
     ]
@@ -3733,8 +3759,8 @@ export const SOS_TEAMS_DATA = {
     ],
     "up": [
       {
-        "playerId": "38edda0f-f801-4946-b49b-cd87541fa645",
-        "name": "Taylor K.",
+        "playerId": "51f0abe3-4fe5-42fb-9994-34fbddcb56d5",
+        "name": "Frattesi",
         "points": [
           "Utile negli inserimenti richiesti dal mister",
           "Propensione alla fase offensiva"
@@ -3769,10 +3795,10 @@ export const SOS_TEAMS_DATA = {
     ],
     "hidden": [
       {
-        "playerId": "1db44169-c0c7-424c-8a05-3e15e764b782",
-        "name": "Pedraza",
+        "playerId": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
+        "name": "Doekhi",
         "points": [
-          "Gattuso richiede molta spinta dai terzini"
+          "Forte sulle palle inattive"
         ]
       }
     ]
@@ -3981,8 +4007,8 @@ export const SOS_TEAMS_DATA = {
     ],
     "up": [
       {
-        "playerId": "38edda0f-f801-4946-b49b-cd87541fa645",
-        "name": "Taylor K.",
+        "playerId": "51f0abe3-4fe5-42fb-9994-34fbddcb56d5",
+        "name": "Frattesi",
         "points": [
           "Utile negli inserimenti richiesti dal mister",
           "Propensione alla fase offensiva"
@@ -4017,10 +4043,10 @@ export const SOS_TEAMS_DATA = {
     ],
     "hidden": [
       {
-        "playerId": "1db44169-c0c7-424c-8a05-3e15e764b782",
-        "name": "Pedraza",
+        "playerId": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
+        "name": "Doekhi",
         "points": [
-          "Gattuso richiede molta spinta dai terzini"
+          "Forte sulle palle inattive"
         ]
       }
     ]
@@ -4270,19 +4296,19 @@ export const SOS_TEAMS_DATA = {
     ],
     "young": [
       {
-        "playerId": "4e6addce-b231-4f62-a054-3979cf1f4563",
+        "playerId": "89f67672-1ec4-4dc3-8831-dbeee6f56f2e",
         "name": "",
         "points": [
-          "Può giocare in tutti i ruoli della fascia"
+          "Talentino brasiliano."
         ]
       }
     ],
     "hidden": [
       {
-        "playerId": "8c21288d-a991-4672-8d81-cc527060831c",
-        "name": "Marcandalli",
+        "playerId": "16bd57cd-1af6-42ea-abfd-23a1051c73c1",
+        "name": "Osmajic",
         "points": [
-          "Caratteristiche compatibili con il sistema difensivo"
+          "Viene sfruttato per la sua fisicità"
         ]
       }
     ]
@@ -4532,19 +4558,19 @@ export const SOS_TEAMS_DATA = {
     ],
     "young": [
       {
-        "playerId": "4e6addce-b231-4f62-a054-3979cf1f4563",
+        "playerId": "89f67672-1ec4-4dc3-8831-dbeee6f56f2e",
         "name": "",
         "points": [
-          "Può giocare in tutti i ruoli della fascia"
+          "Talentino brasiliano."
         ]
       }
     ],
     "hidden": [
       {
-        "playerId": "8c21288d-a991-4672-8d81-cc527060831c",
-        "name": "Marcandalli",
+        "playerId": "16bd57cd-1af6-42ea-abfd-23a1051c73c1",
+        "name": "Osmajic",
         "points": [
-          "Caratteristiche compatibili con il sistema difensivo"
+          "Viene sfruttato per la sua fisicità"
         ]
       }
     ]
@@ -4820,11 +4846,11 @@ export const SOS_TEAMS_DATA = {
         ]
       },
       {
-        "playerId": "21aae13c-0a10-4bf2-aa9a-0a44c6cec6b2",
-        "name": "Douvikas",
+        "playerId": "883a53f2-3f11-4cc7-bbcc-ec7d21a99f74",
+        "name": "Baturina",
         "points": [
-          "Gioco della squadra molto offensivo",
-          "Fluidità della manovra crea spazi per la punta"
+          "Utilizzato su più ruoli della trequarti",
+          "Cinico in fase di finalizzazione"
         ]
       }
     ],
@@ -5127,11 +5153,11 @@ export const SOS_TEAMS_DATA = {
         ]
       },
       {
-        "playerId": "21aae13c-0a10-4bf2-aa9a-0a44c6cec6b2",
-        "name": "Douvikas",
+        "playerId": "883a53f2-3f11-4cc7-bbcc-ec7d21a99f74",
+        "name": "Baturina",
         "points": [
-          "Gioco della squadra molto offensivo",
-          "Fluidità della manovra crea spazi per la punta"
+          "Utilizzato su più ruoli della trequarti",
+          "Cinico in fase di finalizzazione"
         ]
       }
     ],
@@ -5163,6 +5189,502 @@ export const SOS_TEAMS_DATA = {
       }
     ]
   },
+  "ROM": {
+    "code": "ROM",
+    "name": "Roma",
+    "city": "Roma",
+    "stadium": "Stadio Olimpico",
+    "primaryColor": "#8e1822",
+    "secondaryColor": "#f0bc42",
+    "accentColor": "#ffffff",
+    "coach": "Gian Piero Gasperini",
+    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Gasperini.webp",
+    "defaultFormation": "3-4-2-1",
+    "module": "3-4-2-1",
+    "attackRating": 4.5,
+    "defenseRating": 5.0,
+    "comment": "Porta alla Roma il suo collaudato 3-4-2-1, con possibile variante 3-4-3, mantenendo invariata la difesa a tre, suo marchio di fabbrica fin dai tempi del Genoa. Il suo calcio è offensivo, aggressivo e ad alta intensità, con pressing alto e marcature a uomo a tutto campo. I duelli individuali saranno centrali, così come la capacità dei singoli di interpretare più ruoli. Attenzione agli esterni: fondamentali per ampiezza e inserimenti. I tre davanti saranno spesso intercambiabili. Anche i difensori e i centrocampisti dinamici: potrebbero portare bonus e diventare sorprese al fantacalcio.",
+    "sosFantaComment": "Confermatissimo Gasperini dopo l'approdo della Roma in Champions, sul modulo non c'è alcun dubbio. In difesa il nuovo arrivato Koulierakis dovrà sudare per soffiare il posto a Hermoso che, gol a parte, ha iniziato come meglio non poteva la stagione da leader assoluto. Balerdi proverà ad insediare N'Dicka. A destra è arrivato Molina e si giocherà il posto con il baby Lulli, sul quale Gasperini fa tantissimo affidamento; sull’altra fascia il titolare resta Wesley, Rensch l'alternativa. Dybala se sta bene è intoccabile, verrà gestito da Gasperini visto che c'è anche la Champions. Investimento importante per Mora: ha tutto per essere il titolare accanto a Dybala, il nuovo arrivato si gioca una maglia con Soulé che alla fine è rimasto ed è risultato subito decisivo contro l'Atalanta. Pisilli e Pellegrini jolly tra trequarti e centrocampo. Castro arriva come vice Malen, ma a volte potranno anche giocare insieme.",
+    "keyPoints": [
+      {
+        "text": "Esterni molto offensivi",
+        "tone": "good"
+      },
+      {
+        "text": "Attacco molto prolifico",
+        "tone": "good"
+      },
+      {
+        "text": "Marcatura a uomo aggressiva",
+        "tone": "neutral"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "mid-wide",
+        "tone": "good"
+      },
+      {
+        "role": "treq-center",
+        "tone": "good"
+      },
+      {
+        "role": "att-center",
+        "tone": "good"
+      }
+    ],
+    "starters": [
+      {
+        "playerId": "b832c4ec-72cf-4c4b-8c6a-203912e87e4d",
+        "csvId": "5841",
+        "name": "Svilar",
+        "role": "P"
+      },
+      {
+        "playerId": "0e4a800a-f8df-4bc4-8ddc-fe32b660a537",
+        "csvId": 2296,
+        "name": "Mancini",
+        "role": "D"
+      },
+      {
+        "playerId": "56047277-ecee-44df-a949-782ccdb20a4b",
+        "csvId": 4317,
+        "name": "N'Dicka",
+        "role": "D"
+      },
+      {
+        "playerId": "8bf7a1fa-038d-4086-9c0b-1f0cd8342690",
+        "csvId": 4807,
+        "name": "Hermoso",
+        "role": "D"
+      },
+      {
+        "playerId": "beeb810b-47f6-4017-9337-21edb30796a6",
+        "csvId": 4998,
+        "name": "Molina N.",
+        "role": "D"
+      },
+      {
+        "playerId": "fd7ae364-1f16-4f37-b54e-4f8453fe9de1",
+        "csvId": "7181",
+        "name": "Wesley",
+        "role": "D"
+      },
+      {
+        "playerId": "a42a0043-f7e9-42fb-b6a1-e9045138b7b2",
+        "csvId": "779",
+        "name": "Cristante",
+        "role": "C"
+      },
+      {
+        "playerId": "0ae5f68a-c8e6-4a82-8269-b1207b182df4",
+        "csvId": "5589",
+        "name": "Konè M.",
+        "role": "C"
+      },
+      {
+        "playerId": "78344e2f-3ab0-44e0-9b4f-9322f65e4bed",
+        "csvId": 309,
+        "name": "Dybala",
+        "role": "A"
+      },
+      {
+        "playerId": "94142a98-c364-47a6-9a08-f922cb8b3e1f",
+        "csvId": 7556,
+        "name": "Mora",
+        "role": "C"
+      },
+      {
+        "playerId": "4ad9120d-c9ab-43fc-90e1-8365d2ab22d1",
+        "csvId": "5585",
+        "name": "Malen",
+        "role": "A"
+      }
+    ],
+    "rig": [
+      {
+        "playerId": "4ad9120d-c9ab-43fc-90e1-8365d2ab22d1",
+        "name": "Malen",
+        "role": "A"
+      },
+      {
+        "playerId": "78344e2f-3ab0-44e0-9b4f-9322f65e4bed",
+        "name": "Dybala",
+        "role": "A"
+      },
+      {
+        "playerId": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea",
+        "name": "Soulè",
+        "role": "A"
+      }
+    ],
+    "pun": [
+      {
+        "playerId": "78344e2f-3ab0-44e0-9b4f-9322f65e4bed",
+        "name": "Dybala",
+        "role": "A"
+      },
+      {
+        "playerId": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea",
+        "name": "Soulè",
+        "role": "A"
+      }
+    ],
+    "corner": [
+      {
+        "playerId": "78344e2f-3ab0-44e0-9b4f-9322f65e4bed",
+        "name": "Dybala",
+        "role": "A"
+      },
+      {
+        "playerId": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea",
+        "name": "Soulè",
+        "role": "A"
+      },
+      {
+        "playerId": "fd7ae364-1f16-4f37-b54e-4f8453fe9de1",
+        "name": "Wesley",
+        "role": "D"
+      }
+    ],
+    "ballottaggi": [
+      [
+        {
+          "playerId": "94142a98-c364-47a6-9a08-f922cb8b3e1f",
+          "name": "Mora",
+          "role": "C",
+          "perc": 51
+        },
+        {
+          "playerId": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea",
+          "name": "Soulè",
+          "role": "A",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "beeb810b-47f6-4017-9337-21edb30796a6",
+          "name": "Molina N.",
+          "role": "D",
+          "perc": 51
+        },
+        {
+          "playerId": "04f390f1-2846-46f0-bc52-8ab0fbf3bcc1",
+          "name": "",
+          "role": "",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "56047277-ecee-44df-a949-782ccdb20a4b",
+          "name": "N'Dicka",
+          "role": "D",
+          "perc": 51
+        },
+        {
+          "playerId": "440c9918-20a7-4fc7-9985-3b4031b1ac74",
+          "name": "Balerdi",
+          "role": "D",
+          "perc": 49
+        }
+      ]
+    ],
+    "up": [
+      {
+        "playerId": "4ad9120d-c9ab-43fc-90e1-8365d2ab22d1",
+        "name": "Malen",
+        "points": [
+          "Recupero palla di Gasperini lo porta ad avere molti palloni puliti",
+          "Caratteristiche adatte al gioco di Gasperini"
+        ]
+      },
+      {
+        "playerId": "fd7ae364-1f16-4f37-b54e-4f8453fe9de1",
+        "name": "Wesley",
+        "points": [
+          "Partecipa attivamente alla manovra offensiva",
+          "Esterni a tutto campo valorizzati da Gasperini"
+        ]
+      }
+    ],
+    "down": [
+      {
+        "playerId": "03abf7ae-63a5-4f70-a892-d0f6b57b243b",
+        "name": "Pellegrini Lo.",
+        "points": [
+          "Molta concorrenza per il suo ruolo"
+        ]
+      }
+    ],
+    "young": [
+      {
+        "playerId": "04f390f1-2846-46f0-bc52-8ab0fbf3bcc1",
+        "name": "",
+        "points": [
+          "Può avere grande spazio nelle rotazioni"
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "playerId": "8bf7a1fa-038d-4086-9c0b-1f0cd8342690",
+        "name": "Hermoso",
+        "points": [
+          "Molto costante nelle prestazioni"
+        ]
+      }
+    ]
+  },
+  "roma": {
+    "code": "ROM",
+    "name": "Roma",
+    "city": "Roma",
+    "stadium": "Stadio Olimpico",
+    "primaryColor": "#8e1822",
+    "secondaryColor": "#f0bc42",
+    "accentColor": "#ffffff",
+    "coach": "Gian Piero Gasperini",
+    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Gasperini.webp",
+    "defaultFormation": "3-4-2-1",
+    "module": "3-4-2-1",
+    "attackRating": 4.5,
+    "defenseRating": 5.0,
+    "comment": "Porta alla Roma il suo collaudato 3-4-2-1, con possibile variante 3-4-3, mantenendo invariata la difesa a tre, suo marchio di fabbrica fin dai tempi del Genoa. Il suo calcio è offensivo, aggressivo e ad alta intensità, con pressing alto e marcature a uomo a tutto campo. I duelli individuali saranno centrali, così come la capacità dei singoli di interpretare più ruoli. Attenzione agli esterni: fondamentali per ampiezza e inserimenti. I tre davanti saranno spesso intercambiabili. Anche i difensori e i centrocampisti dinamici: potrebbero portare bonus e diventare sorprese al fantacalcio.",
+    "sosFantaComment": "Confermatissimo Gasperini dopo l'approdo della Roma in Champions, sul modulo non c'è alcun dubbio. In difesa il nuovo arrivato Koulierakis dovrà sudare per soffiare il posto a Hermoso che, gol a parte, ha iniziato come meglio non poteva la stagione da leader assoluto. Balerdi proverà ad insediare N'Dicka. A destra è arrivato Molina e si giocherà il posto con il baby Lulli, sul quale Gasperini fa tantissimo affidamento; sull’altra fascia il titolare resta Wesley, Rensch l'alternativa. Dybala se sta bene è intoccabile, verrà gestito da Gasperini visto che c'è anche la Champions. Investimento importante per Mora: ha tutto per essere il titolare accanto a Dybala, il nuovo arrivato si gioca una maglia con Soulé che alla fine è rimasto ed è risultato subito decisivo contro l'Atalanta. Pisilli e Pellegrini jolly tra trequarti e centrocampo. Castro arriva come vice Malen, ma a volte potranno anche giocare insieme.",
+    "keyPoints": [
+      {
+        "text": "Esterni molto offensivi",
+        "tone": "good"
+      },
+      {
+        "text": "Attacco molto prolifico",
+        "tone": "good"
+      },
+      {
+        "text": "Marcatura a uomo aggressiva",
+        "tone": "neutral"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "mid-wide",
+        "tone": "good"
+      },
+      {
+        "role": "treq-center",
+        "tone": "good"
+      },
+      {
+        "role": "att-center",
+        "tone": "good"
+      }
+    ],
+    "starters": [
+      {
+        "playerId": "b832c4ec-72cf-4c4b-8c6a-203912e87e4d",
+        "csvId": "5841",
+        "name": "Svilar",
+        "role": "P"
+      },
+      {
+        "playerId": "0e4a800a-f8df-4bc4-8ddc-fe32b660a537",
+        "csvId": 2296,
+        "name": "Mancini",
+        "role": "D"
+      },
+      {
+        "playerId": "56047277-ecee-44df-a949-782ccdb20a4b",
+        "csvId": 4317,
+        "name": "N'Dicka",
+        "role": "D"
+      },
+      {
+        "playerId": "8bf7a1fa-038d-4086-9c0b-1f0cd8342690",
+        "csvId": 4807,
+        "name": "Hermoso",
+        "role": "D"
+      },
+      {
+        "playerId": "beeb810b-47f6-4017-9337-21edb30796a6",
+        "csvId": 4998,
+        "name": "Molina N.",
+        "role": "D"
+      },
+      {
+        "playerId": "fd7ae364-1f16-4f37-b54e-4f8453fe9de1",
+        "csvId": "7181",
+        "name": "Wesley",
+        "role": "D"
+      },
+      {
+        "playerId": "a42a0043-f7e9-42fb-b6a1-e9045138b7b2",
+        "csvId": "779",
+        "name": "Cristante",
+        "role": "C"
+      },
+      {
+        "playerId": "0ae5f68a-c8e6-4a82-8269-b1207b182df4",
+        "csvId": "5589",
+        "name": "Konè M.",
+        "role": "C"
+      },
+      {
+        "playerId": "78344e2f-3ab0-44e0-9b4f-9322f65e4bed",
+        "csvId": 309,
+        "name": "Dybala",
+        "role": "A"
+      },
+      {
+        "playerId": "94142a98-c364-47a6-9a08-f922cb8b3e1f",
+        "csvId": 7556,
+        "name": "Mora",
+        "role": "C"
+      },
+      {
+        "playerId": "4ad9120d-c9ab-43fc-90e1-8365d2ab22d1",
+        "csvId": "5585",
+        "name": "Malen",
+        "role": "A"
+      }
+    ],
+    "rig": [
+      {
+        "playerId": "4ad9120d-c9ab-43fc-90e1-8365d2ab22d1",
+        "name": "Malen",
+        "role": "A"
+      },
+      {
+        "playerId": "78344e2f-3ab0-44e0-9b4f-9322f65e4bed",
+        "name": "Dybala",
+        "role": "A"
+      },
+      {
+        "playerId": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea",
+        "name": "Soulè",
+        "role": "A"
+      }
+    ],
+    "pun": [
+      {
+        "playerId": "78344e2f-3ab0-44e0-9b4f-9322f65e4bed",
+        "name": "Dybala",
+        "role": "A"
+      },
+      {
+        "playerId": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea",
+        "name": "Soulè",
+        "role": "A"
+      }
+    ],
+    "corner": [
+      {
+        "playerId": "78344e2f-3ab0-44e0-9b4f-9322f65e4bed",
+        "name": "Dybala",
+        "role": "A"
+      },
+      {
+        "playerId": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea",
+        "name": "Soulè",
+        "role": "A"
+      },
+      {
+        "playerId": "fd7ae364-1f16-4f37-b54e-4f8453fe9de1",
+        "name": "Wesley",
+        "role": "D"
+      }
+    ],
+    "ballottaggi": [
+      [
+        {
+          "playerId": "94142a98-c364-47a6-9a08-f922cb8b3e1f",
+          "name": "Mora",
+          "role": "C",
+          "perc": 51
+        },
+        {
+          "playerId": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea",
+          "name": "Soulè",
+          "role": "A",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "beeb810b-47f6-4017-9337-21edb30796a6",
+          "name": "Molina N.",
+          "role": "D",
+          "perc": 51
+        },
+        {
+          "playerId": "04f390f1-2846-46f0-bc52-8ab0fbf3bcc1",
+          "name": "",
+          "role": "",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "56047277-ecee-44df-a949-782ccdb20a4b",
+          "name": "N'Dicka",
+          "role": "D",
+          "perc": 51
+        },
+        {
+          "playerId": "440c9918-20a7-4fc7-9985-3b4031b1ac74",
+          "name": "Balerdi",
+          "role": "D",
+          "perc": 49
+        }
+      ]
+    ],
+    "up": [
+      {
+        "playerId": "4ad9120d-c9ab-43fc-90e1-8365d2ab22d1",
+        "name": "Malen",
+        "points": [
+          "Recupero palla di Gasperini lo porta ad avere molti palloni puliti",
+          "Caratteristiche adatte al gioco di Gasperini"
+        ]
+      },
+      {
+        "playerId": "fd7ae364-1f16-4f37-b54e-4f8453fe9de1",
+        "name": "Wesley",
+        "points": [
+          "Partecipa attivamente alla manovra offensiva",
+          "Esterni a tutto campo valorizzati da Gasperini"
+        ]
+      }
+    ],
+    "down": [
+      {
+        "playerId": "03abf7ae-63a5-4f70-a892-d0f6b57b243b",
+        "name": "Pellegrini Lo.",
+        "points": [
+          "Molta concorrenza per il suo ruolo"
+        ]
+      }
+    ],
+    "young": [
+      {
+        "playerId": "04f390f1-2846-46f0-bc52-8ab0fbf3bcc1",
+        "name": "",
+        "points": [
+          "Può avere grande spazio nelle rotazioni"
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "playerId": "8bf7a1fa-038d-4086-9c0b-1f0cd8342690",
+        "name": "Hermoso",
+        "points": [
+          "Molto costante nelle prestazioni"
+        ]
+      }
+    ]
+  },
   "JUV": {
     "code": "JUV",
     "name": "Juventus",
@@ -5178,7 +5700,7 @@ export const SOS_TEAMS_DATA = {
     "attackRating": 4.5,
     "defenseRating": 4.5,
     "comment": "Luciano Spalletti sostituisce in panchina l'ex tecnico Igor Tudor dopo un difficile inizio di stagione della Juventus. Inizialmente utilizzerà il modulo con la difesa a 3 per dare continuità alla precedente gestione ma con il tempo si passerà al 4-3-3 mantra del tecnico ex Napoli con la possibilià di virare al 4-3-1-2 con l'utilizzo del doppio centravanti. La base tattica di Luciano Spalletti è la difesa a 4 e il centrocampo a3 che permette maggior equilibrio e maggior copertura per il reparto offensivo.",
-    "sosFantaComment": "Luciano Spalletti è rimasto alla guida della Juventus, avanti con il 4-2-3-1. Il nuovo portiere titolare è Vicario, arrivato dal mercato. Alla fine è tornato Kolo Muani, ma è arrivato anche Woltemade, si giocheranno il posto, col primo favorito. Il club ha fatto un investimento importantissimo per Alajbegovic, che si gioca un posto con Conceicao sulla fascia, ma i due potranno anche giocare insieme. C’è inoltre Boga, che avrà spazio durante l’assenza di Yildiz, destinato a tornare titolare una volta recuperato. McKennie può giocare sia da trequartista sia in mediana. Douglas Luiz parte avanti rispetto a Thuram, che si sottoporrà a un'operazione al ginocchio e tornerà solo nel 2027. E' arrivato Sarr dal Tottenham e si alternerà con Locatelli. In difesa Lucumi è arrivato per giocare ed è in pole su Kelly accanto a Bremer, mentre Celik parte favorito su Cambiaso per il ruolo di terzino sinistro.",
+    "sosFantaComment": "Luciano Spalletti è rimasto alla guida della Juventus, avanti con il 4-2-3-1. Il nuovo portiere titolare è Vicario, arrivato dal mercato. Alla fine è tornato Kolo Muani, ma è arrivato anche Woltemade, si giocheranno il posto, col primo favorito. Il club ha fatto un investimento importantissimo per Alajbegovic, che si gioca un posto con Conceicao sulla fascia, ma i due potranno anche giocare insieme. C’è inoltre Boga, che avrà spazio durante l’assenza di Yildiz, destinato a tornare titolare una volta recuperato. McKennie può giocare sia da trequartista sia in mediana. Douglas Luiz parte avanti rispetto a Thuram (tornerà solo nel 2027). E solo nel 2027 tornerà anche Locatelli: il nuovo arrivato Sarr pronto a sostituirlo, nelle rotazioni avrà spazio anche Koopmeiners. In difesa Lucumi è arrivato per giocare ed è in pole su Kelly accanto a Bremer, mentre Celik parte favorito su Cambiaso per il ruolo di terzino sinistro.",
     "keyPoints": [
       {
         "text": "Valorizzazione esterni offesivi",
@@ -5241,9 +5763,9 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
-        "playerId": "8c008468-48e2-47f3-be8e-017ec6cdec35",
-        "csvId": "827",
-        "name": "Locatelli",
+        "playerId": "b5caebe6-a205-4fb2-bbd4-16e49bb20a36",
+        "csvId": 5680,
+        "name": "Sarr P.",
         "role": "C"
       },
       {
@@ -5334,20 +5856,6 @@ export const SOS_TEAMS_DATA = {
       ],
       [
         {
-          "playerId": "484337f8-bd3c-4565-9573-242728f35aa7",
-          "name": "Douglas Luiz",
-          "role": "C",
-          "perc": 60
-        },
-        {
-          "playerId": "dc3c7e4f-66dd-4d40-ac05-4c222aa0e770",
-          "name": "Thuram K.",
-          "role": "C",
-          "perc": 40
-        }
-      ],
-      [
-        {
           "playerId": "e61e195b-f44a-4d8c-8eff-8cab676bcc94",
           "name": "Celik",
           "role": "D",
@@ -5362,30 +5870,16 @@ export const SOS_TEAMS_DATA = {
       ],
       [
         {
-          "playerId": "8c008468-48e2-47f3-be8e-017ec6cdec35",
-          "name": "Locatelli",
-          "role": "C",
-          "perc": 55
-        },
-        {
-          "playerId": "b5caebe6-a205-4fb2-bbd4-16e49bb20a36",
-          "name": "Sarr P.",
-          "role": "C",
-          "perc": 45
-        }
-      ],
-      [
-        {
           "playerId": "5a4cd663-45d1-4860-a750-c36684a2399b",
           "name": "Kolo Muani",
           "role": "A",
-          "perc": 55
+          "perc": 51
         },
         {
           "playerId": "13718197-c982-4d9b-bbd2-87ce694e018c",
           "name": "Woltemade",
           "role": "A",
-          "perc": 45
+          "perc": 49
         }
       ]
     ],
@@ -5457,7 +5951,7 @@ export const SOS_TEAMS_DATA = {
     "attackRating": 4.5,
     "defenseRating": 4.5,
     "comment": "Luciano Spalletti sostituisce in panchina l'ex tecnico Igor Tudor dopo un difficile inizio di stagione della Juventus. Inizialmente utilizzerà il modulo con la difesa a 3 per dare continuità alla precedente gestione ma con il tempo si passerà al 4-3-3 mantra del tecnico ex Napoli con la possibilià di virare al 4-3-1-2 con l'utilizzo del doppio centravanti. La base tattica di Luciano Spalletti è la difesa a 4 e il centrocampo a3 che permette maggior equilibrio e maggior copertura per il reparto offensivo.",
-    "sosFantaComment": "Luciano Spalletti è rimasto alla guida della Juventus, avanti con il 4-2-3-1. Il nuovo portiere titolare è Vicario, arrivato dal mercato. Alla fine è tornato Kolo Muani, ma è arrivato anche Woltemade, si giocheranno il posto, col primo favorito. Il club ha fatto un investimento importantissimo per Alajbegovic, che si gioca un posto con Conceicao sulla fascia, ma i due potranno anche giocare insieme. C’è inoltre Boga, che avrà spazio durante l’assenza di Yildiz, destinato a tornare titolare una volta recuperato. McKennie può giocare sia da trequartista sia in mediana. Douglas Luiz parte avanti rispetto a Thuram, che si sottoporrà a un'operazione al ginocchio e tornerà solo nel 2027. E' arrivato Sarr dal Tottenham e si alternerà con Locatelli. In difesa Lucumi è arrivato per giocare ed è in pole su Kelly accanto a Bremer, mentre Celik parte favorito su Cambiaso per il ruolo di terzino sinistro.",
+    "sosFantaComment": "Luciano Spalletti è rimasto alla guida della Juventus, avanti con il 4-2-3-1. Il nuovo portiere titolare è Vicario, arrivato dal mercato. Alla fine è tornato Kolo Muani, ma è arrivato anche Woltemade, si giocheranno il posto, col primo favorito. Il club ha fatto un investimento importantissimo per Alajbegovic, che si gioca un posto con Conceicao sulla fascia, ma i due potranno anche giocare insieme. C’è inoltre Boga, che avrà spazio durante l’assenza di Yildiz, destinato a tornare titolare una volta recuperato. McKennie può giocare sia da trequartista sia in mediana. Douglas Luiz parte avanti rispetto a Thuram (tornerà solo nel 2027). E solo nel 2027 tornerà anche Locatelli: il nuovo arrivato Sarr pronto a sostituirlo, nelle rotazioni avrà spazio anche Koopmeiners. In difesa Lucumi è arrivato per giocare ed è in pole su Kelly accanto a Bremer, mentre Celik parte favorito su Cambiaso per il ruolo di terzino sinistro.",
     "keyPoints": [
       {
         "text": "Valorizzazione esterni offesivi",
@@ -5520,9 +6014,9 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
-        "playerId": "8c008468-48e2-47f3-be8e-017ec6cdec35",
-        "csvId": "827",
-        "name": "Locatelli",
+        "playerId": "b5caebe6-a205-4fb2-bbd4-16e49bb20a36",
+        "csvId": 5680,
+        "name": "Sarr P.",
         "role": "C"
       },
       {
@@ -5613,20 +6107,6 @@ export const SOS_TEAMS_DATA = {
       ],
       [
         {
-          "playerId": "484337f8-bd3c-4565-9573-242728f35aa7",
-          "name": "Douglas Luiz",
-          "role": "C",
-          "perc": 60
-        },
-        {
-          "playerId": "dc3c7e4f-66dd-4d40-ac05-4c222aa0e770",
-          "name": "Thuram K.",
-          "role": "C",
-          "perc": 40
-        }
-      ],
-      [
-        {
           "playerId": "e61e195b-f44a-4d8c-8eff-8cab676bcc94",
           "name": "Celik",
           "role": "D",
@@ -5641,30 +6121,16 @@ export const SOS_TEAMS_DATA = {
       ],
       [
         {
-          "playerId": "8c008468-48e2-47f3-be8e-017ec6cdec35",
-          "name": "Locatelli",
-          "role": "C",
-          "perc": 55
-        },
-        {
-          "playerId": "b5caebe6-a205-4fb2-bbd4-16e49bb20a36",
-          "name": "Sarr P.",
-          "role": "C",
-          "perc": 45
-        }
-      ],
-      [
-        {
           "playerId": "5a4cd663-45d1-4860-a750-c36684a2399b",
           "name": "Kolo Muani",
           "role": "A",
-          "perc": 55
+          "perc": 51
         },
         {
           "playerId": "13718197-c982-4d9b-bbd2-87ce694e018c",
           "name": "Woltemade",
           "role": "A",
-          "perc": 45
+          "perc": 49
         }
       ]
     ],
@@ -5717,502 +6183,6 @@ export const SOS_TEAMS_DATA = {
         "name": "Boga",
         "points": [
           "Utilizzato spesso a partita in corso"
-        ]
-      }
-    ]
-  },
-  "ROM": {
-    "code": "ROM",
-    "name": "Roma",
-    "city": "Roma",
-    "stadium": "Stadio Olimpico",
-    "primaryColor": "#8e1822",
-    "secondaryColor": "#f0bc42",
-    "accentColor": "#ffffff",
-    "coach": "Gian Piero Gasperini",
-    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Gasperini.webp",
-    "defaultFormation": "3-4-2-1",
-    "module": "3-4-2-1",
-    "attackRating": 4.5,
-    "defenseRating": 5.0,
-    "comment": "Porta alla Roma il suo collaudato 3-4-2-1, con possibile variante 3-4-3, mantenendo invariata la difesa a tre, suo marchio di fabbrica fin dai tempi del Genoa. Il suo calcio è offensivo, aggressivo e ad alta intensità, con pressing alto e marcature a uomo a tutto campo. I duelli individuali saranno centrali, così come la capacità dei singoli di interpretare più ruoli. Attenzione agli esterni: fondamentali per ampiezza e inserimenti. I tre davanti saranno spesso intercambiabili. Anche i difensori e i centrocampisti dinamici: potrebbero portare bonus e diventare sorprese al fantacalcio.",
-    "sosFantaComment": "Confermatissimo Gasperini dopo l'approdo della Roma in Champions, sul modulo non c'è alcun dubbio. In difesa il nuovo arrivato Koulierakis si alternerà con Hermoso. A destra è arrivato Molina, che parte come titolare; sull’altra fascia resta Wesley, le alternative sono Rensch e il baby Lulli. Dybala se sta bene è intoccabile, verrà gestito da Gasperini visto che c'è anche la Champions. Investimento importante per Mora: ha tutto per essere il titolare accanto a Dybala, il nuovo arrivato si gioca una maglia con Soulé che alla fine è rimasto. Pisilli e Pellegrini jolly tra trequarti e centrocampo. Castro arriva come vice Malen, ma a volte potranno anche giocare insieme.",
-    "keyPoints": [
-      {
-        "text": "Esterni molto offensivi",
-        "tone": "good"
-      },
-      {
-        "text": "Attacco molto prolifico",
-        "tone": "good"
-      },
-      {
-        "text": "Marcatura a uomo aggressiva",
-        "tone": "neutral"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "mid-wide",
-        "tone": "good"
-      },
-      {
-        "role": "treq-center",
-        "tone": "good"
-      },
-      {
-        "role": "att-center",
-        "tone": "good"
-      }
-    ],
-    "starters": [
-      {
-        "playerId": "b832c4ec-72cf-4c4b-8c6a-203912e87e4d",
-        "csvId": "5841",
-        "name": "Svilar",
-        "role": "P"
-      },
-      {
-        "playerId": "0e4a800a-f8df-4bc4-8ddc-fe32b660a537",
-        "csvId": 2296,
-        "name": "Mancini",
-        "role": "D"
-      },
-      {
-        "playerId": "56047277-ecee-44df-a949-782ccdb20a4b",
-        "csvId": 4317,
-        "name": "N'Dicka",
-        "role": "D"
-      },
-      {
-        "playerId": "8bf7a1fa-038d-4086-9c0b-1f0cd8342690",
-        "csvId": 4807,
-        "name": "Hermoso",
-        "role": "D"
-      },
-      {
-        "playerId": "beeb810b-47f6-4017-9337-21edb30796a6",
-        "csvId": 4998,
-        "name": "Molina N.",
-        "role": "D"
-      },
-      {
-        "playerId": "fd7ae364-1f16-4f37-b54e-4f8453fe9de1",
-        "csvId": "7181",
-        "name": "Wesley",
-        "role": "D"
-      },
-      {
-        "playerId": "a42a0043-f7e9-42fb-b6a1-e9045138b7b2",
-        "csvId": "779",
-        "name": "Cristante",
-        "role": "C"
-      },
-      {
-        "playerId": "0ae5f68a-c8e6-4a82-8269-b1207b182df4",
-        "csvId": "5589",
-        "name": "Konè M.",
-        "role": "C"
-      },
-      {
-        "playerId": "78344e2f-3ab0-44e0-9b4f-9322f65e4bed",
-        "csvId": 309,
-        "name": "Dybala",
-        "role": "A"
-      },
-      {
-        "playerId": "94142a98-c364-47a6-9a08-f922cb8b3e1f",
-        "csvId": 7556,
-        "name": "Mora",
-        "role": "C"
-      },
-      {
-        "playerId": "4ad9120d-c9ab-43fc-90e1-8365d2ab22d1",
-        "csvId": "5585",
-        "name": "Malen",
-        "role": "A"
-      }
-    ],
-    "rig": [
-      {
-        "playerId": "4ad9120d-c9ab-43fc-90e1-8365d2ab22d1",
-        "name": "Malen",
-        "role": "A"
-      },
-      {
-        "playerId": "78344e2f-3ab0-44e0-9b4f-9322f65e4bed",
-        "name": "Dybala",
-        "role": "A"
-      },
-      {
-        "playerId": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea",
-        "name": "Soulè",
-        "role": "A"
-      }
-    ],
-    "pun": [
-      {
-        "playerId": "78344e2f-3ab0-44e0-9b4f-9322f65e4bed",
-        "name": "Dybala",
-        "role": "A"
-      },
-      {
-        "playerId": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea",
-        "name": "Soulè",
-        "role": "A"
-      }
-    ],
-    "corner": [
-      {
-        "playerId": "78344e2f-3ab0-44e0-9b4f-9322f65e4bed",
-        "name": "Dybala",
-        "role": "A"
-      },
-      {
-        "playerId": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea",
-        "name": "Soulè",
-        "role": "A"
-      },
-      {
-        "playerId": "fd7ae364-1f16-4f37-b54e-4f8453fe9de1",
-        "name": "Wesley",
-        "role": "D"
-      }
-    ],
-    "ballottaggi": [
-      [
-        {
-          "playerId": "8bf7a1fa-038d-4086-9c0b-1f0cd8342690",
-          "name": "Hermoso",
-          "role": "D",
-          "perc": 51
-        },
-        {
-          "playerId": "2ade4141-3042-437f-a00b-ff8b17438a0f",
-          "name": "Koulierakis",
-          "role": "D",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "94142a98-c364-47a6-9a08-f922cb8b3e1f",
-          "name": "Mora",
-          "role": "C",
-          "perc": 51
-        },
-        {
-          "playerId": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea",
-          "name": "Soulè",
-          "role": "A",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "beeb810b-47f6-4017-9337-21edb30796a6",
-          "name": "Molina N.",
-          "role": "D",
-          "perc": 60
-        },
-        {
-          "playerId": "04f390f1-2846-46f0-bc52-8ab0fbf3bcc1",
-          "name": "",
-          "role": "",
-          "perc": 40
-        }
-      ]
-    ],
-    "up": [
-      {
-        "playerId": "4ad9120d-c9ab-43fc-90e1-8365d2ab22d1",
-        "name": "Malen",
-        "points": [
-          "Recupero palla di Gasperini lo porta ad avere molti palloni puliti",
-          "Caratteristiche adatte al gioco di Gasperini"
-        ]
-      },
-      {
-        "playerId": "fd7ae364-1f16-4f37-b54e-4f8453fe9de1",
-        "name": "Wesley",
-        "points": [
-          "Partecipa attivamente alla manovra offensiva",
-          "Esterni a tutto campo valorizzati da Gasperini"
-        ]
-      }
-    ],
-    "down": [
-      {
-        "playerId": "03abf7ae-63a5-4f70-a892-d0f6b57b243b",
-        "name": "Pellegrini Lo.",
-        "points": [
-          "Molta concorrenza per il suo ruolo"
-        ]
-      }
-    ],
-    "young": [
-      {
-        "playerId": "04f390f1-2846-46f0-bc52-8ab0fbf3bcc1",
-        "name": "",
-        "points": [
-          "Può avere grande spazio nelle rotazioni"
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "playerId": "8bf7a1fa-038d-4086-9c0b-1f0cd8342690",
-        "name": "Hermoso",
-        "points": [
-          "Molto costante nelle prestazioni"
-        ]
-      }
-    ]
-  },
-  "roma": {
-    "code": "ROM",
-    "name": "Roma",
-    "city": "Roma",
-    "stadium": "Stadio Olimpico",
-    "primaryColor": "#8e1822",
-    "secondaryColor": "#f0bc42",
-    "accentColor": "#ffffff",
-    "coach": "Gian Piero Gasperini",
-    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Gasperini.webp",
-    "defaultFormation": "3-4-2-1",
-    "module": "3-4-2-1",
-    "attackRating": 4.5,
-    "defenseRating": 5.0,
-    "comment": "Porta alla Roma il suo collaudato 3-4-2-1, con possibile variante 3-4-3, mantenendo invariata la difesa a tre, suo marchio di fabbrica fin dai tempi del Genoa. Il suo calcio è offensivo, aggressivo e ad alta intensità, con pressing alto e marcature a uomo a tutto campo. I duelli individuali saranno centrali, così come la capacità dei singoli di interpretare più ruoli. Attenzione agli esterni: fondamentali per ampiezza e inserimenti. I tre davanti saranno spesso intercambiabili. Anche i difensori e i centrocampisti dinamici: potrebbero portare bonus e diventare sorprese al fantacalcio.",
-    "sosFantaComment": "Confermatissimo Gasperini dopo l'approdo della Roma in Champions, sul modulo non c'è alcun dubbio. In difesa il nuovo arrivato Koulierakis si alternerà con Hermoso. A destra è arrivato Molina, che parte come titolare; sull’altra fascia resta Wesley, le alternative sono Rensch e il baby Lulli. Dybala se sta bene è intoccabile, verrà gestito da Gasperini visto che c'è anche la Champions. Investimento importante per Mora: ha tutto per essere il titolare accanto a Dybala, il nuovo arrivato si gioca una maglia con Soulé che alla fine è rimasto. Pisilli e Pellegrini jolly tra trequarti e centrocampo. Castro arriva come vice Malen, ma a volte potranno anche giocare insieme.",
-    "keyPoints": [
-      {
-        "text": "Esterni molto offensivi",
-        "tone": "good"
-      },
-      {
-        "text": "Attacco molto prolifico",
-        "tone": "good"
-      },
-      {
-        "text": "Marcatura a uomo aggressiva",
-        "tone": "neutral"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "mid-wide",
-        "tone": "good"
-      },
-      {
-        "role": "treq-center",
-        "tone": "good"
-      },
-      {
-        "role": "att-center",
-        "tone": "good"
-      }
-    ],
-    "starters": [
-      {
-        "playerId": "b832c4ec-72cf-4c4b-8c6a-203912e87e4d",
-        "csvId": "5841",
-        "name": "Svilar",
-        "role": "P"
-      },
-      {
-        "playerId": "0e4a800a-f8df-4bc4-8ddc-fe32b660a537",
-        "csvId": 2296,
-        "name": "Mancini",
-        "role": "D"
-      },
-      {
-        "playerId": "56047277-ecee-44df-a949-782ccdb20a4b",
-        "csvId": 4317,
-        "name": "N'Dicka",
-        "role": "D"
-      },
-      {
-        "playerId": "8bf7a1fa-038d-4086-9c0b-1f0cd8342690",
-        "csvId": 4807,
-        "name": "Hermoso",
-        "role": "D"
-      },
-      {
-        "playerId": "beeb810b-47f6-4017-9337-21edb30796a6",
-        "csvId": 4998,
-        "name": "Molina N.",
-        "role": "D"
-      },
-      {
-        "playerId": "fd7ae364-1f16-4f37-b54e-4f8453fe9de1",
-        "csvId": "7181",
-        "name": "Wesley",
-        "role": "D"
-      },
-      {
-        "playerId": "a42a0043-f7e9-42fb-b6a1-e9045138b7b2",
-        "csvId": "779",
-        "name": "Cristante",
-        "role": "C"
-      },
-      {
-        "playerId": "0ae5f68a-c8e6-4a82-8269-b1207b182df4",
-        "csvId": "5589",
-        "name": "Konè M.",
-        "role": "C"
-      },
-      {
-        "playerId": "78344e2f-3ab0-44e0-9b4f-9322f65e4bed",
-        "csvId": 309,
-        "name": "Dybala",
-        "role": "A"
-      },
-      {
-        "playerId": "94142a98-c364-47a6-9a08-f922cb8b3e1f",
-        "csvId": 7556,
-        "name": "Mora",
-        "role": "C"
-      },
-      {
-        "playerId": "4ad9120d-c9ab-43fc-90e1-8365d2ab22d1",
-        "csvId": "5585",
-        "name": "Malen",
-        "role": "A"
-      }
-    ],
-    "rig": [
-      {
-        "playerId": "4ad9120d-c9ab-43fc-90e1-8365d2ab22d1",
-        "name": "Malen",
-        "role": "A"
-      },
-      {
-        "playerId": "78344e2f-3ab0-44e0-9b4f-9322f65e4bed",
-        "name": "Dybala",
-        "role": "A"
-      },
-      {
-        "playerId": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea",
-        "name": "Soulè",
-        "role": "A"
-      }
-    ],
-    "pun": [
-      {
-        "playerId": "78344e2f-3ab0-44e0-9b4f-9322f65e4bed",
-        "name": "Dybala",
-        "role": "A"
-      },
-      {
-        "playerId": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea",
-        "name": "Soulè",
-        "role": "A"
-      }
-    ],
-    "corner": [
-      {
-        "playerId": "78344e2f-3ab0-44e0-9b4f-9322f65e4bed",
-        "name": "Dybala",
-        "role": "A"
-      },
-      {
-        "playerId": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea",
-        "name": "Soulè",
-        "role": "A"
-      },
-      {
-        "playerId": "fd7ae364-1f16-4f37-b54e-4f8453fe9de1",
-        "name": "Wesley",
-        "role": "D"
-      }
-    ],
-    "ballottaggi": [
-      [
-        {
-          "playerId": "8bf7a1fa-038d-4086-9c0b-1f0cd8342690",
-          "name": "Hermoso",
-          "role": "D",
-          "perc": 51
-        },
-        {
-          "playerId": "2ade4141-3042-437f-a00b-ff8b17438a0f",
-          "name": "Koulierakis",
-          "role": "D",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "94142a98-c364-47a6-9a08-f922cb8b3e1f",
-          "name": "Mora",
-          "role": "C",
-          "perc": 51
-        },
-        {
-          "playerId": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea",
-          "name": "Soulè",
-          "role": "A",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "beeb810b-47f6-4017-9337-21edb30796a6",
-          "name": "Molina N.",
-          "role": "D",
-          "perc": 60
-        },
-        {
-          "playerId": "04f390f1-2846-46f0-bc52-8ab0fbf3bcc1",
-          "name": "",
-          "role": "",
-          "perc": 40
-        }
-      ]
-    ],
-    "up": [
-      {
-        "playerId": "4ad9120d-c9ab-43fc-90e1-8365d2ab22d1",
-        "name": "Malen",
-        "points": [
-          "Recupero palla di Gasperini lo porta ad avere molti palloni puliti",
-          "Caratteristiche adatte al gioco di Gasperini"
-        ]
-      },
-      {
-        "playerId": "fd7ae364-1f16-4f37-b54e-4f8453fe9de1",
-        "name": "Wesley",
-        "points": [
-          "Partecipa attivamente alla manovra offensiva",
-          "Esterni a tutto campo valorizzati da Gasperini"
-        ]
-      }
-    ],
-    "down": [
-      {
-        "playerId": "03abf7ae-63a5-4f70-a892-d0f6b57b243b",
-        "name": "Pellegrini Lo.",
-        "points": [
-          "Molta concorrenza per il suo ruolo"
-        ]
-      }
-    ],
-    "young": [
-      {
-        "playerId": "04f390f1-2846-46f0-bc52-8ab0fbf3bcc1",
-        "name": "",
-        "points": [
-          "Può avere grande spazio nelle rotazioni"
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "playerId": "8bf7a1fa-038d-4086-9c0b-1f0cd8342690",
-        "name": "Hermoso",
-        "points": [
-          "Molto costante nelle prestazioni"
         ]
       }
     ]
@@ -6462,10 +6432,10 @@ export const SOS_TEAMS_DATA = {
     ],
     "young": [
       {
-        "playerId": "ecefd2d9-6777-459a-8683-2f95a1210f1e",
-        "name": "Dagasso",
+        "playerId": "57fb735b-1c97-4575-8388-1a2d46bf272f",
+        "name": "Fernandez T.",
         "points": [
-          "Bravo in fase di interdizione e di inserimento"
+          "Talento con ottima tecnica di base"
         ]
       }
     ],
@@ -6724,10 +6694,10 @@ export const SOS_TEAMS_DATA = {
     ],
     "young": [
       {
-        "playerId": "ecefd2d9-6777-459a-8683-2f95a1210f1e",
-        "name": "Dagasso",
+        "playerId": "57fb735b-1c97-4575-8388-1a2d46bf272f",
+        "name": "Fernandez T.",
         "points": [
-          "Bravo in fase di interdizione e di inserimento"
+          "Talento con ottima tecnica di base"
         ]
       }
     ],
@@ -7462,10 +7432,10 @@ export const SOS_TEAMS_DATA = {
     ],
     "young": [
       {
-        "playerId": "4bf60a8e-e3c7-4373-b5d5-80f893e7948b",
-        "name": "Bartesaghi",
+        "playerId": "faff68a8-6487-469e-add5-36912ee075a1",
+        "name": "Cissè A.",
         "points": [
-          "Rendimento solido e costante"
+          "Talento utilizzato molto in fase offensiva"
         ]
       }
     ],
@@ -7710,10 +7680,10 @@ export const SOS_TEAMS_DATA = {
     ],
     "young": [
       {
-        "playerId": "4bf60a8e-e3c7-4373-b5d5-80f893e7948b",
-        "name": "Bartesaghi",
+        "playerId": "faff68a8-6487-469e-add5-36912ee075a1",
+        "name": "Cissè A.",
         "points": [
-          "Rendimento solido e costante"
+          "Talento utilizzato molto in fase offensiva"
         ]
       }
     ],
@@ -8444,21 +8414,26 @@ export const SOS_TEAMS_DATA = {
         ]
       },
       {
-        "playerId": "6b73ffab-1bf1-40c1-9a8c-35dbc1d0ed1d",
-        "name": "Raspadori",
+        "playerId": "c56c787c-4c3c-40e6-873f-596cffcd773e",
+        "name": "Ederson D.S.",
         "points": [
-          "Adattabile anche al centro ",
-          "Esterni di Sarri prolifici",
-          "Rotazioni elevate nel suo ruolo"
+          "Si inserisce di più rispetto agli scorsi anni"
         ]
       }
     ],
     "down": [
       {
-        "playerId": "60a8a763-dcd9-42f3-b6db-875bca54ae39",
-        "name": "Kossounou",
+        "playerId": "ff782703-864f-4bd4-bf85-b904f8816c2d",
+        "name": "Sulemana K.",
         "points": [
-          "Parte indietro nelle gerarchie del mister"
+          "Parte indietro nelle gerarchie"
+        ]
+      },
+      {
+        "playerId": "ce2387e6-839b-4f79-8e00-c2dd93f6ed8a",
+        "name": "Hien",
+        "points": [
+          "Concorrenza elevata"
         ]
       }
     ],
@@ -8710,21 +8685,26 @@ export const SOS_TEAMS_DATA = {
         ]
       },
       {
-        "playerId": "6b73ffab-1bf1-40c1-9a8c-35dbc1d0ed1d",
-        "name": "Raspadori",
+        "playerId": "c56c787c-4c3c-40e6-873f-596cffcd773e",
+        "name": "Ederson D.S.",
         "points": [
-          "Adattabile anche al centro ",
-          "Esterni di Sarri prolifici",
-          "Rotazioni elevate nel suo ruolo"
+          "Si inserisce di più rispetto agli scorsi anni"
         ]
       }
     ],
     "down": [
       {
-        "playerId": "60a8a763-dcd9-42f3-b6db-875bca54ae39",
-        "name": "Kossounou",
+        "playerId": "ff782703-864f-4bd4-bf85-b904f8816c2d",
+        "name": "Sulemana K.",
         "points": [
-          "Parte indietro nelle gerarchie del mister"
+          "Parte indietro nelle gerarchie"
+        ]
+      },
+      {
+        "playerId": "ce2387e6-839b-4f79-8e00-c2dd93f6ed8a",
+        "name": "Hien",
+        "points": [
+          "Concorrenza elevata"
         ]
       }
     ],
@@ -8755,25 +8735,25 @@ export const SOS_TEAMS_DATA = {
     "primaryColor": "#5a2d82",
     "secondaryColor": "#ffffff",
     "accentColor": "#ff0033",
-    "coach": "Fabio Grosso",
-    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Grosso.webp",
-    "defaultFormation": "4-3-2-1",
-    "module": "4-3-2-1",
+    "coach": "Paolo Vanoli",
+    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Vanoli%20PNG.webp",
+    "defaultFormation": "4-1-4-1",
+    "module": "4-1-4-1",
     "attackRating": 3.5,
     "defenseRating": 3.0,
     "comment": "Paolo Vanoli è chiamato a far risalire la squadra viola costretta a esonerare Pioli dopo l'ulitmo posto in classifica. Vanoli gioca con il 3-5-2 anche se lo scorsa stagione con il Torino ha utilizzato anche il 4-2-3-1 e il 4-3-3. Importante il ruolo degli esterni che sono chiamati ad accompagnare le azioni offensive con le mezzali che attaccano gli spazi per dare maggiore densità in attacco. Nel sistema del tecnico ex Torino, gli esterni hanno anche il compito di inserirsi con tempismo nell’area di rigore sul cross proveniente dal lato opposto, diventando di fatto un terzo attaccante. Vanoli infatti, fa della difesa a tre la sua base di partenza, e a Firenze troverà le condizioni ideali per confermare il proprio credo calcistico. Resta però da capire quali saranno gli interpreti del reparto, visto che finora le prestazioni della retroguardia sono state altalenanti con la sola eccezione di De Gea, spesso decisivo nel limitare i danni. ",
-    "sosFantaComment": "È arrivato Fabio Grosso al posto di Vanoli in panchina: la Fiorentina giocherà con il 4-3-3 e Paratici si è letteralmente scatenato sul mercato. Jimenez e Dodo si contendono il posto a destra, Viery e Ranieri quello al centro, mentre Valdepenas è in ballottaggio con Joao Mario. Oulai può agire sia da mezzala sia da regista e c'è anche Fagioli. Ndour agirà da mezzala pura, come Atta che sarà un titolarissimo. Mastantuono arriva dal Real Madrid per giocare. Kean è andato al Como e, con la sua partenza, i nuovi arrivati Pellegrino e Beto si giocheranno il posto da titolare. Nell'ultimo giorno di mercato è stato acquistato anche Pedro Goncalves e sarà titolare a sinistra. In attacco sono arrivati anche Njie dal Torino e Gnonto dal Leeds che potranno dire la loro nelle rotazioni di Grosso.",
+    "sosFantaComment": "Clamoroso ribaltone dopo l’inizio shock della Fiorentina: Paolo Vanoli è tornato in panchina al posto di Fabio Grosso. Il modulo dovrebbe essere il 4-1-4-1 utilizzato nella passata stagione: Dodo può ritrovare spazio a destra, parte in pole. O Ranieri o Viery al centro della difesa con Dragusin. A centrocampo Ndour favorito su Oulai, ma si dovrebbero giocare loro due il posto. Testa a testa tra Pellegrino e Beto in attacco e possibile alternanza, con a supporto Goncalves e Mastantuono. Quest'ultimo dovrà convincere Vanoli, che di solito schierava un giocatore più 'di gamba' in quella posizione (come Jimenez e Njie per capirci).",
     "keyPoints": [
       {
-        "text": "Valorizzazione esterni d'attacco ",
+        "text": "Regista che smista tanti palloni a tutto campo",
         "tone": "good"
       },
       {
-        "text": "Importanza mezzali",
+        "text": "Esterni che riempiono l'area",
         "tone": "good"
       },
       {
-        "text": "Difesa poco solida",
+        "text": "Equilibrio non sempre presente nelle transizioni",
         "tone": "bad"
       },
       {
@@ -8783,11 +8763,11 @@ export const SOS_TEAMS_DATA = {
     ],
     "keyRoles": [
       {
-        "role": "mid-center",
+        "role": "mid-holding",
         "tone": "good"
       },
       {
-        "role": "treq-center",
+        "role": "def-fullbacks",
         "tone": "good"
       }
     ],
@@ -8799,9 +8779,9 @@ export const SOS_TEAMS_DATA = {
         "role": "P"
       },
       {
-        "playerId": "1d2a470a-c2dd-4e85-9269-2432dab4989e",
-        "csvId": 6531,
-        "name": "Jimenez A.",
+        "playerId": "74386d11-89c5-443b-a5c5-bb9737ca2717",
+        "csvId": 5885,
+        "name": "Dodò",
         "role": "D"
       },
       {
@@ -8811,9 +8791,9 @@ export const SOS_TEAMS_DATA = {
         "role": "D"
       },
       {
-        "playerId": "92bcdaf9-6420-4fb2-b3f5-ab7faca6f35f",
-        "csvId": 7410,
-        "name": "Viery",
+        "playerId": "c64e2aa4-98c4-4867-8f32-7b2fdb0df61d",
+        "csvId": 4378,
+        "name": "Ranieri L.",
         "role": "D"
       },
       {
@@ -8829,9 +8809,9 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
-        "playerId": "38941855-dc42-4bba-923a-ff9515a68f2a",
-        "csvId": 7464,
-        "name": "Oulai",
+        "playerId": "b7ea8289-af1f-4f8d-8722-329bd42eca4b",
+        "csvId": 4465,
+        "name": "Fagioli",
         "role": "C"
       },
       {
@@ -8853,9 +8833,9 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
-        "playerId": "ce5cd19a-b929-4b5c-a0a4-067b0b355879",
-        "csvId": 5694,
-        "name": "Beto",
+        "playerId": "f5c4b009-851b-4901-b6b4-0f66ec783639",
+        "csvId": 7023,
+        "name": "Pellegrino M.",
         "role": "A"
       }
     ],
@@ -8908,28 +8888,14 @@ export const SOS_TEAMS_DATA = {
     "ballottaggi": [
       [
         {
-          "playerId": "1d2a470a-c2dd-4e85-9269-2432dab4989e",
-          "name": "Jimenez A.",
+          "playerId": "c64e2aa4-98c4-4867-8f32-7b2fdb0df61d",
+          "name": "Ranieri L.",
           "role": "D",
           "perc": 51
         },
-        {
-          "playerId": "74386d11-89c5-443b-a5c5-bb9737ca2717",
-          "name": "Dodò",
-          "role": "D",
-          "perc": 49
-        }
-      ],
-      [
         {
           "playerId": "92bcdaf9-6420-4fb2-b3f5-ab7faca6f35f",
           "name": "Viery",
-          "role": "D",
-          "perc": 51
-        },
-        {
-          "playerId": "31786ff3-11ce-42f4-b5e3-a5ced40ae0b6",
-          "name": "Pongracic",
           "role": "D",
           "perc": 49
         }
@@ -8950,48 +8916,62 @@ export const SOS_TEAMS_DATA = {
       ],
       [
         {
-          "playerId": "ce5cd19a-b929-4b5c-a0a4-067b0b355879",
-          "name": "Beto",
-          "role": "A",
+          "playerId": "40b7cab1-faa3-4b57-a7ae-a775c8b35c97",
+          "name": "Ndour",
+          "role": "C",
           "perc": 51
         },
         {
-          "playerId": "f5c4b009-851b-4901-b6b4-0f66ec783639",
-          "name": "Pellegrino M.",
-          "role": "A",
+          "playerId": "38941855-dc42-4bba-923a-ff9515a68f2a",
+          "name": "Oulai",
+          "role": "C",
           "perc": 49
         }
       ],
       [
         {
-          "playerId": "21a58529-376d-41b3-9bf8-2444f31c8a86",
-          "name": "Goncalves P.",
+          "playerId": "dc1712b1-57f3-433e-991a-2174387b8d39",
+          "name": "Mastantuono",
           "role": "C",
           "perc": 60
         },
         {
-          "playerId": "81dda297-825d-419f-bdc1-dadd2d326b6c",
-          "name": "Njie",
-          "role": "C",
+          "playerId": "1d2a470a-c2dd-4e85-9269-2432dab4989e",
+          "name": "Jimenez A.",
+          "role": "D",
           "perc": 40
+        }
+      ],
+      [
+        {
+          "playerId": "f5c4b009-851b-4901-b6b4-0f66ec783639",
+          "name": "Pellegrino M.",
+          "role": "A",
+          "perc": 51
+        },
+        {
+          "playerId": "ce5cd19a-b929-4b5c-a0a4-067b0b355879",
+          "name": "Beto",
+          "role": "A",
+          "perc": 49
         }
       ]
     ],
     "up": [
       {
-        "playerId": "1d2a470a-c2dd-4e85-9269-2432dab4989e",
-        "name": "Jimenez A.",
+        "playerId": "dc1712b1-57f3-433e-991a-2174387b8d39",
+        "name": "Mastantuono",
         "points": [
-          "Duttile tatticamente",
-          "Usato sia come terzino che ala offensiva"
+          "Cercato spesso dai compagni in fase di possesso",
+          "Si accentra per provare il tiro o l'imbucata per un compagno"
         ]
       },
       {
         "playerId": "b0909a8f-766a-4a8c-86e6-d4295d761421",
         "name": "Atta",
         "points": [
-          "Mezz'ali di grosso prolifiche",
-          "Caratteristiche compatibili con il gioco di Grosso"
+          "Utilizzabile sia come mezzala che come trequartista",
+          "Forte tecnicamente e duttile tatticamente"
         ]
       }
     ],
@@ -9007,7 +8987,7 @@ export const SOS_TEAMS_DATA = {
         "playerId": "c64e2aa4-98c4-4867-8f32-7b2fdb0df61d",
         "name": "Ranieri L.",
         "points": [
-          "Può soffrire il sistema offensivo del mister",
+          "Tendenza al cartellino",
           "Titolarità non garantita"
         ]
       }
@@ -9023,10 +9003,10 @@ export const SOS_TEAMS_DATA = {
     ],
     "hidden": [
       {
-        "playerId": "40b7cab1-faa3-4b57-a7ae-a775c8b35c97",
-        "name": "Ndour",
+        "playerId": "b7ea8289-af1f-4f8d-8722-329bd42eca4b",
+        "name": "Fagioli",
         "points": [
-          "Giocatore fisico che può entrare facilmente nelle rotazioni"
+          "Protagonista in passato con Vanoli"
         ]
       }
     ]
@@ -9039,25 +9019,25 @@ export const SOS_TEAMS_DATA = {
     "primaryColor": "#5a2d82",
     "secondaryColor": "#ffffff",
     "accentColor": "#ff0033",
-    "coach": "Fabio Grosso",
-    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Grosso.webp",
-    "defaultFormation": "4-3-2-1",
-    "module": "4-3-2-1",
+    "coach": "Paolo Vanoli",
+    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Vanoli%20PNG.webp",
+    "defaultFormation": "4-1-4-1",
+    "module": "4-1-4-1",
     "attackRating": 3.5,
     "defenseRating": 3.0,
     "comment": "Paolo Vanoli è chiamato a far risalire la squadra viola costretta a esonerare Pioli dopo l'ulitmo posto in classifica. Vanoli gioca con il 3-5-2 anche se lo scorsa stagione con il Torino ha utilizzato anche il 4-2-3-1 e il 4-3-3. Importante il ruolo degli esterni che sono chiamati ad accompagnare le azioni offensive con le mezzali che attaccano gli spazi per dare maggiore densità in attacco. Nel sistema del tecnico ex Torino, gli esterni hanno anche il compito di inserirsi con tempismo nell’area di rigore sul cross proveniente dal lato opposto, diventando di fatto un terzo attaccante. Vanoli infatti, fa della difesa a tre la sua base di partenza, e a Firenze troverà le condizioni ideali per confermare il proprio credo calcistico. Resta però da capire quali saranno gli interpreti del reparto, visto che finora le prestazioni della retroguardia sono state altalenanti con la sola eccezione di De Gea, spesso decisivo nel limitare i danni. ",
-    "sosFantaComment": "È arrivato Fabio Grosso al posto di Vanoli in panchina: la Fiorentina giocherà con il 4-3-3 e Paratici si è letteralmente scatenato sul mercato. Jimenez e Dodo si contendono il posto a destra, Viery e Ranieri quello al centro, mentre Valdepenas è in ballottaggio con Joao Mario. Oulai può agire sia da mezzala sia da regista e c'è anche Fagioli. Ndour agirà da mezzala pura, come Atta che sarà un titolarissimo. Mastantuono arriva dal Real Madrid per giocare. Kean è andato al Como e, con la sua partenza, i nuovi arrivati Pellegrino e Beto si giocheranno il posto da titolare. Nell'ultimo giorno di mercato è stato acquistato anche Pedro Goncalves e sarà titolare a sinistra. In attacco sono arrivati anche Njie dal Torino e Gnonto dal Leeds che potranno dire la loro nelle rotazioni di Grosso.",
+    "sosFantaComment": "Clamoroso ribaltone dopo l’inizio shock della Fiorentina: Paolo Vanoli è tornato in panchina al posto di Fabio Grosso. Il modulo dovrebbe essere il 4-1-4-1 utilizzato nella passata stagione: Dodo può ritrovare spazio a destra, parte in pole. O Ranieri o Viery al centro della difesa con Dragusin. A centrocampo Ndour favorito su Oulai, ma si dovrebbero giocare loro due il posto. Testa a testa tra Pellegrino e Beto in attacco e possibile alternanza, con a supporto Goncalves e Mastantuono. Quest'ultimo dovrà convincere Vanoli, che di solito schierava un giocatore più 'di gamba' in quella posizione (come Jimenez e Njie per capirci).",
     "keyPoints": [
       {
-        "text": "Valorizzazione esterni d'attacco ",
+        "text": "Regista che smista tanti palloni a tutto campo",
         "tone": "good"
       },
       {
-        "text": "Importanza mezzali",
+        "text": "Esterni che riempiono l'area",
         "tone": "good"
       },
       {
-        "text": "Difesa poco solida",
+        "text": "Equilibrio non sempre presente nelle transizioni",
         "tone": "bad"
       },
       {
@@ -9067,11 +9047,11 @@ export const SOS_TEAMS_DATA = {
     ],
     "keyRoles": [
       {
-        "role": "mid-center",
+        "role": "mid-holding",
         "tone": "good"
       },
       {
-        "role": "treq-center",
+        "role": "def-fullbacks",
         "tone": "good"
       }
     ],
@@ -9083,9 +9063,9 @@ export const SOS_TEAMS_DATA = {
         "role": "P"
       },
       {
-        "playerId": "1d2a470a-c2dd-4e85-9269-2432dab4989e",
-        "csvId": 6531,
-        "name": "Jimenez A.",
+        "playerId": "74386d11-89c5-443b-a5c5-bb9737ca2717",
+        "csvId": 5885,
+        "name": "Dodò",
         "role": "D"
       },
       {
@@ -9095,9 +9075,9 @@ export const SOS_TEAMS_DATA = {
         "role": "D"
       },
       {
-        "playerId": "92bcdaf9-6420-4fb2-b3f5-ab7faca6f35f",
-        "csvId": 7410,
-        "name": "Viery",
+        "playerId": "c64e2aa4-98c4-4867-8f32-7b2fdb0df61d",
+        "csvId": 4378,
+        "name": "Ranieri L.",
         "role": "D"
       },
       {
@@ -9113,9 +9093,9 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
-        "playerId": "38941855-dc42-4bba-923a-ff9515a68f2a",
-        "csvId": 7464,
-        "name": "Oulai",
+        "playerId": "b7ea8289-af1f-4f8d-8722-329bd42eca4b",
+        "csvId": 4465,
+        "name": "Fagioli",
         "role": "C"
       },
       {
@@ -9137,9 +9117,9 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
-        "playerId": "ce5cd19a-b929-4b5c-a0a4-067b0b355879",
-        "csvId": 5694,
-        "name": "Beto",
+        "playerId": "f5c4b009-851b-4901-b6b4-0f66ec783639",
+        "csvId": 7023,
+        "name": "Pellegrino M.",
         "role": "A"
       }
     ],
@@ -9192,28 +9172,14 @@ export const SOS_TEAMS_DATA = {
     "ballottaggi": [
       [
         {
-          "playerId": "1d2a470a-c2dd-4e85-9269-2432dab4989e",
-          "name": "Jimenez A.",
+          "playerId": "c64e2aa4-98c4-4867-8f32-7b2fdb0df61d",
+          "name": "Ranieri L.",
           "role": "D",
           "perc": 51
         },
-        {
-          "playerId": "74386d11-89c5-443b-a5c5-bb9737ca2717",
-          "name": "Dodò",
-          "role": "D",
-          "perc": 49
-        }
-      ],
-      [
         {
           "playerId": "92bcdaf9-6420-4fb2-b3f5-ab7faca6f35f",
           "name": "Viery",
-          "role": "D",
-          "perc": 51
-        },
-        {
-          "playerId": "31786ff3-11ce-42f4-b5e3-a5ced40ae0b6",
-          "name": "Pongracic",
           "role": "D",
           "perc": 49
         }
@@ -9234,48 +9200,62 @@ export const SOS_TEAMS_DATA = {
       ],
       [
         {
-          "playerId": "ce5cd19a-b929-4b5c-a0a4-067b0b355879",
-          "name": "Beto",
-          "role": "A",
+          "playerId": "40b7cab1-faa3-4b57-a7ae-a775c8b35c97",
+          "name": "Ndour",
+          "role": "C",
           "perc": 51
         },
         {
-          "playerId": "f5c4b009-851b-4901-b6b4-0f66ec783639",
-          "name": "Pellegrino M.",
-          "role": "A",
+          "playerId": "38941855-dc42-4bba-923a-ff9515a68f2a",
+          "name": "Oulai",
+          "role": "C",
           "perc": 49
         }
       ],
       [
         {
-          "playerId": "21a58529-376d-41b3-9bf8-2444f31c8a86",
-          "name": "Goncalves P.",
+          "playerId": "dc1712b1-57f3-433e-991a-2174387b8d39",
+          "name": "Mastantuono",
           "role": "C",
           "perc": 60
         },
         {
-          "playerId": "81dda297-825d-419f-bdc1-dadd2d326b6c",
-          "name": "Njie",
-          "role": "C",
+          "playerId": "1d2a470a-c2dd-4e85-9269-2432dab4989e",
+          "name": "Jimenez A.",
+          "role": "D",
           "perc": 40
+        }
+      ],
+      [
+        {
+          "playerId": "f5c4b009-851b-4901-b6b4-0f66ec783639",
+          "name": "Pellegrino M.",
+          "role": "A",
+          "perc": 51
+        },
+        {
+          "playerId": "ce5cd19a-b929-4b5c-a0a4-067b0b355879",
+          "name": "Beto",
+          "role": "A",
+          "perc": 49
         }
       ]
     ],
     "up": [
       {
-        "playerId": "1d2a470a-c2dd-4e85-9269-2432dab4989e",
-        "name": "Jimenez A.",
+        "playerId": "dc1712b1-57f3-433e-991a-2174387b8d39",
+        "name": "Mastantuono",
         "points": [
-          "Duttile tatticamente",
-          "Usato sia come terzino che ala offensiva"
+          "Cercato spesso dai compagni in fase di possesso",
+          "Si accentra per provare il tiro o l'imbucata per un compagno"
         ]
       },
       {
         "playerId": "b0909a8f-766a-4a8c-86e6-d4295d761421",
         "name": "Atta",
         "points": [
-          "Mezz'ali di grosso prolifiche",
-          "Caratteristiche compatibili con il gioco di Grosso"
+          "Utilizzabile sia come mezzala che come trequartista",
+          "Forte tecnicamente e duttile tatticamente"
         ]
       }
     ],
@@ -9291,7 +9271,7 @@ export const SOS_TEAMS_DATA = {
         "playerId": "c64e2aa4-98c4-4867-8f32-7b2fdb0df61d",
         "name": "Ranieri L.",
         "points": [
-          "Può soffrire il sistema offensivo del mister",
+          "Tendenza al cartellino",
           "Titolarità non garantita"
         ]
       }
@@ -9307,10 +9287,10 @@ export const SOS_TEAMS_DATA = {
     ],
     "hidden": [
       {
-        "playerId": "40b7cab1-faa3-4b57-a7ae-a775c8b35c97",
-        "name": "Ndour",
+        "playerId": "b7ea8289-af1f-4f8d-8722-329bd42eca4b",
+        "name": "Fagioli",
         "points": [
-          "Giocatore fisico che può entrare facilmente nelle rotazioni"
+          "Protagonista in passato con Vanoli"
         ]
       }
     ]
