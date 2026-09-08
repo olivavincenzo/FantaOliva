@@ -331,7 +331,7 @@ export class InjuriesComponent {
       : (item.isDoubtful 
           ? `<span class="injury-status-badge is-doubtful"><i class="fa-solid fa-triangle-exclamation"></i> In dubbio</span>`
           : (isFuoriRosa 
-              ? `<span class="injury-status-badge is-unavailable" style="background: rgba(100, 116, 139, 0.12); color: #64748b; border: 1px solid rgba(100, 116, 139, 0.28);"><i class="fa-solid fa-user-slash"></i> Fuori Rosa / Scelta Tecnica</span>`
+              ? `<span class="injury-status-badge is-unavailable"><i class="fa-solid fa-user-slash"></i> Fuori Rosa / Scelta Tecnica</span>`
               : `<span class="injury-status-badge is-injured"><i class="fa-solid fa-hospital"></i> Infortunato</span>`));
 
     const returnHtml = item.returnDay 
@@ -357,12 +357,12 @@ export class InjuriesComponent {
             <div class="injury-player-name-row">
               <h3 class="injury-player-name">${sanitizeHtml(item.displayName || item.name)}</h3>
               <span class="role ${roleClass}" style="font-size: 9px; padding: 1px 5px;">${item.classicRole || item.role}</span>
-              ${item.leagueOwner ? `<span class="badge-league-owner" title="Acquistato da ${sanitizeHtml(item.leagueOwner.teamName)}"><i class="fa-solid fa-users"></i> ${sanitizeHtml(item.leagueOwner.teamName)}</span>` : ''}
+              ${item.leagueOwner ? `<span class="badge-league-owner" title="Acquistato da ${sanitizeHtml(item.leagueOwner.teamName)}"><i class="fa-solid fa-users"></i> <span class="league-owner-label-text">${sanitizeHtml(item.leagueOwner.teamName)}</span></span>` : ''}
             </div>
 
             <div class="injury-meta-row">
-              <span>${sanitizeHtml(item.teamName)}</span>
-              <span>·</span>
+              <span class="injury-team-name">${sanitizeHtml(item.teamName)}</span>
+              ${(item.teamName && (statusBadgeHtml || returnHtml)) ? `<span class="injury-meta-sep">·</span>` : ''}
               ${statusBadgeHtml}
               ${returnHtml}
             </div>

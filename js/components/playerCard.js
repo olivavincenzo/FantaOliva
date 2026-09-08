@@ -179,6 +179,15 @@ export function createPlayerCard(player, options = {}) {
     </button>
   ` : '';
 
+  const specificRole = (player.role && player.role !== classicRole) ? player.role : (player.mantraRole && player.mantraRole !== classicRole ? player.mantraRole : (player.role || ''));
+
+  const rolesBadgesHtml = `
+    <div class="roles-badges-wrap">
+      <span class="role role-${classicRole.toLowerCase()}" title="Ruolo Classic: ${classicRole}">${classicRole}</span>
+      ${specificRole ? `<span class="role role-tactical" title="Ruolo Specifico: ${specificRole}">${specificRole}</span>` : ''}
+    </div>
+  `;
+
   // Header player top con foto, info piazzati e preferiti
   const headerHtml = `
     <header class="player-top">
@@ -194,6 +203,19 @@ export function createPlayerCard(player, options = {}) {
         </div>
       </div>
       ${compact ? '' : `
+        ${rolesBadgesHtml}
+        <div class="player-card-strategy-strip">
+          ${tier ? `
+            <span class="player-strategy-badge" style="background: ${tier.color}1c; color: ${tier.color}; border: 1px solid ${tier.color}45;" title="Fascia Strategia: ${sanitizeHtml(tier.name)}">
+              <span class="tier-label-text">${sanitizeHtml(tier.name)}</span>
+            </span>
+          ` : `
+            <span class="player-strategy-badge badge-unassigned" title="Fascia non impostata per questa strategia">
+              <span class="tier-dot unassigned-dot"></span>
+              <span class="tier-label-text">Non impostato</span>
+            </span>
+          `}
+        </div>
         <div class="player-top-actions">
           ${injuryBtnHtml}
           <button class="card-fav-btn ${isFavorite ? 'is-fav' : ''}" type="button" title="${isFavorite ? 'Rimuovi dai Preferiti' : 'Aggiungi ai Preferiti'}" aria-label="Preferito">
@@ -202,8 +224,8 @@ export function createPlayerCard(player, options = {}) {
           <button class="availability ${effectiveAvailable ? 'available' : 'taken'}" type="button" title="Stato Asta: ${effectiveAvailable ? 'Disponibile (clicca per segnare PRESO)' : (leagueOwner ? `PRESO da ${leagueOwner.teamName} (${leagueOwner.price} cr)` : 'PRESO (clicca per segnare DISPONIBILE)')}" aria-label="Cambia stato asta">
             <svg viewBox="0 0 24 24">
               ${effectiveAvailable
-          ? '<path d="m5 12 4 4L19 6" />'
-          : '<path d="m7 7 10 10M17 7 7 17" />'}
+        ? '<path d="m5 12 4 4L19 6" />'
+        : '<path d="m7 7 10 10M17 7 7 17" />'}
             </svg>
           </button>
         </div>
@@ -211,36 +233,17 @@ export function createPlayerCard(player, options = {}) {
     </header>
   `;
 
-  // Strip Unificata in colonna: Fascia Strategia & Proprietario FantaLega
-  const stripsColumnHtml = `
-    <div class="player-card-strips-col">
-      <div class="player-card-strategy-strip">
-        ${tier ? `
-          <span class="player-strategy-badge" style="background: ${tier.color}1c; color: ${tier.color}; border: 1px solid ${tier.color}45;" title="Fascia Strategia: ${sanitizeHtml(tier.name)}">
-            <span class="tier-dot" style="background: ${tier.color};"></span>
-            <span class="tier-label-text">${sanitizeHtml(tier.name)}</span>
-          </span>
-        ` : `
-          <span class="player-strategy-badge badge-unassigned" title="Fascia non impostata per questa strategia">
-            <span class="tier-dot unassigned-dot"></span>
-            <span class="tier-label-text">Non impostato</span>
-          </span>
-        `}
-      </div>
-      ${leagueOwner ? `
-        <div class="player-card-league-owner-strip">
-          <span class="badge-league-owner" title="Acquistato da ${sanitizeHtml(leagueOwner.teamName)} all'asta per ${leagueOwner.price} cr">
-            <i class="fa-solid fa-users league-owner-icon"></i>
-            <span class="league-owner-label-text">${sanitizeHtml(leagueOwner.teamName)} (${leagueOwner.price} cr)</span>
-          </span>
-        </div>
-      ` : ''}
+  // Metriche Core: Titolarità, Affidabilità, Integrità, Crediti Consigliati, Ruolo e Statistiche Stagionali
+  const seasonHtml = `
+    <div class="season">
+      <span class="stat-item stat-fm" title="Fantamedia Stagionale"><span class="stat-lbl">FM</span><strong class="stat-val">${fmVal}</strong></span>
+      <span class="stat-item stat-mv" title="Media Voto"><span class="stat-lbl">MV</span><strong class="stat-val">${mvVal}</strong></span>
+      <span class="stat-item stat-pg" title="Partite Giocate / Presenze"><span class="stat-lbl">PG</span><strong class="stat-val">${presenze}</strong></span>
+      <span class="stat-item stat-g" title="Gol Segnati"><span class="stat-lbl">G</span><strong class="stat-val">${gol}</strong></span>
+      <span class="stat-item stat-a" title="Assist Realizzati"><span class="stat-lbl">A</span><strong class="stat-val">${assist}</strong></span>
     </div>
   `;
 
-  const specificRole = (player.role && player.role !== classicRole) ? player.role : (player.mantraRole && player.mantraRole !== classicRole ? player.mantraRole : (player.role || ''));
-
-  // Metriche Core: Titolarità, Affidabilità, Integrità, Crediti Consigliati e Ruolo
   const metricsHtml = `
     <div class="core-metrics ${compact ? 'compact-metrics' : ''}">
       <div class="metric metric-index" title="Titolarità: ${indices.titIndex}/5 (${sanitizeHtml(indices.titDesc)})">
@@ -271,13 +274,13 @@ export function createPlayerCard(player, options = {}) {
         </div>
         <span class="metric-label">Consigliati</span>
       </div>
+      ${compact ? `
       <div class="metric metric-role">
-        <div class="roles-badges-wrap">
-          <span class="role role-${classicRole.toLowerCase()}" title="Ruolo Classic: ${classicRole}">${classicRole}</span>
-          ${specificRole ? `<span class="role role-tactical" title="Ruolo Specifico: ${specificRole}">${specificRole}</span>` : ''}
-        </div>
+        ${rolesBadgesHtml}
         <span class="metric-label">Ruolo</span>
       </div>
+      ` : ''}
+      ${compact ? '' : seasonHtml}
     </div>
   `;
 
@@ -288,20 +291,12 @@ export function createPlayerCard(player, options = {}) {
         <div class="market market-qta" title="Quotazione Attuale Classic"><label>QtA</label><strong>${qtA}</strong></div>
         <div class="market market-fvm" title="Fantavoto di Mercato (base 1000)"><label>FVM</label><strong>${fvm}</strong></div>
       </div>
-      <div class="season">
-        <span class="stat-item stat-fm" title="Fantamedia Stagionale"><span class="stat-lbl">FM</span><strong class="stat-val">${fmVal}</strong></span>
-        <span class="stat-item stat-mv" title="Media Voto"><span class="stat-lbl">MV</span><strong class="stat-val">${mvVal}</strong></span>
-        <span class="stat-item stat-pg" title="Partite Giocate / Presenze"><span class="stat-lbl">PG</span><strong class="stat-val">${presenze}</strong></span>
-        <span class="stat-item stat-g" title="Gol Segnati"><span class="stat-lbl">G</span><strong class="stat-val">${gol}</strong></span>
-        <span class="stat-item stat-a" title="Assist Realizzati"><span class="stat-lbl">A</span><strong class="stat-val">${assist}</strong></span>
-      </div>
     </div>
   `;
 
   // Template Strutturale Editorial Minimal
   card.innerHTML = `
     ${headerHtml}
-    ${stripsColumnHtml}
     ${metricsHtml}
     ${railHtml}
     ${ballottaggioHtml}

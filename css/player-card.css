@@ -50,7 +50,7 @@
 .player-top {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 7px;
   width: 100%;
 }
 
@@ -133,56 +133,12 @@
   flex-shrink: 0;
 }
 
-.badge-league-owner {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  width: 125px;
-  min-width: 125px;
-  max-width: 125px;
-  min-height: 22px;
-  height: auto;
-  padding: 3px 8px;
-  border-radius: 8px;
-  font-size: 0.66rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-  line-height: 1.2;
-  white-space: normal;
-  word-break: break-word;
-  overflow-wrap: break-word;
-  box-sizing: border-box;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
-  transition: all 0.15s ease;
-  background: rgba(99, 102, 241, 0.12);
-  color: #4f46e5;
-  border: 1px solid rgba(99, 102, 241, 0.28);
-}
-
-.badge-league-owner i,
-.badge-league-owner .league-owner-icon {
-  font-size: 8px;
-  flex-shrink: 0;
-}
-
-.badge-league-owner .league-owner-label-text {
-  flex: 1;
-  white-space: normal;
-  word-break: break-word;
-  overflow-wrap: break-word;
-  line-height: 1.15;
-}
-
-/* Quando badge-league-owner è usato fuori dalla strip (es. in header o ispettore), mantieni layout inline fluido */
-.injury-card .badge-league-owner,
-.inspector-header .badge-league-owner {
-  width: auto;
-  min-width: 0;
-  max-width: none;
-  min-height: 0;
-  padding: 2px 7px;
-  font-size: 8px;
+/* Badge proprietario FantaLega nascosto su richiesta */
+.badge-league-owner,
+.player-card .badge-league-owner,
+.player-card-league-owner-strip,
+.player-card-strips-col {
+  display: none !important;
 }
 
 .card-price-paid-tag {
@@ -259,12 +215,87 @@
   color: #c0c0c7;
 }
 
-/* Azioni Header Card (Preferito & Disponibilità Asta) */
+/* Badge Ruolo e Fascia Strategia integrati nell'header a sinistra delle azioni */
+.player-top .roles-badges-wrap {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  flex: 0 0 auto;
+  margin-left: auto;
+}
+
+.player-top .roles-badges-wrap .role {
+  min-width: 20px;
+  height: 20px;
+  padding: 0 4.5px;
+  font-size: 9.5px;
+  font-weight: 850;
+  border-radius: 5px;
+  line-height: 1;
+}
+
+.player-top .player-card-strategy-strip {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  margin-left: 0;
+  min-height: 0;
+  height: 20px;
+}
+
+.player-top:not(:has(.roles-badges-wrap)) .player-card-strategy-strip {
+  margin-left: auto;
+}
+
+.player-top .player-strategy-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: auto;
+  min-width: 0;
+  max-width: 120px;
+  height: 20px;
+  min-height: 20px;
+  max-height: 20px;
+  padding: 0 6px;
+  border-radius: 5px;
+  font-size: 8.5px;
+  font-weight: 750;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  white-space: nowrap;
+  box-sizing: border-box;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+  transition: all 0.15s ease;
+}
+
+.player-top .player-strategy-badge .tier-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.player-top .player-strategy-badge .tier-label-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 95px;
+  line-height: 1;
+}
+
+/* Azioni Header Card (Preferito, Infortunio & Disponibilità Asta) */
 .player-top-actions {
   display: flex;
   align-items: center;
   gap: 6px;
   flex: 0 0 auto;
+  margin-left: 0;
+}
+
+.player-top:not(:has(.roles-badges-wrap)):not(:has(.player-card-strategy-strip)) .player-top-actions {
   margin-left: auto;
 }
 
@@ -372,8 +403,7 @@
 }
 
 .availability.taken {
-  color: var(--red);
-  background: var(--red-bg);
+  display: none !important;
 }
 
 .availability:hover {
@@ -384,17 +414,14 @@
   transform: scale(0.92);
 }
 
-/* Griglia Metriche Principali (Titol, Affid, Integr, Consigliati, Ruolo con auto-wrap fluido) */
+/* Griglia Metriche Principali (Titol, Affid, Integr, Consigliati, Ruolo, Season con auto-wrap fluido) */
 .core-metrics {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-  gap: 6px 10px;
-  padding: 8px 0 7px;
+  gap: 6px 8px;
   margin-top: 8px;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
   width: 100%;
   box-sizing: border-box;
 }
@@ -402,6 +429,27 @@
 .core-metrics .metric {
   min-width: fit-content;
   flex: 0 0 auto;
+}
+
+.core-metrics .season {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  width: auto;
+  flex: 0 0 auto;
+}
+
+.core-metrics .season .stat-item {
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 2.5px 5px;
+  background: var(--soft);
+  border-radius: 4px;
+  line-height: 1;
+  box-sizing: border-box;
+  white-space: nowrap;
 }
 
 .metric-index-wrap {
@@ -511,7 +559,6 @@
 .metric-label {
   display: block;
   overflow: hidden;
-  margin-top: 4px;
   color: var(--muted);
   font-size: 8px;
   font-weight: 620;
@@ -522,11 +569,7 @@
 }
 
 .player-card-strips-col {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  margin-top: 7px;
-  margin-bottom: -1px;
+  display: none !important;
 }
 
 .player-card-strategy-strip {
@@ -535,8 +578,7 @@
 }
 
 .player-card-league-owner-strip {
-  display: flex;
-  align-items: center;
+  display: none !important;
 }
 
 .roles-badges-wrap {
@@ -671,13 +713,16 @@
     justify-content: flex-start;
   }
 
-  .market-list,
-  .season {
+  .market-list {
     width: 100%;
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 4px 6px;
   }
+}
+
+.data-rail:empty {
+  display: none !important;
 }
 
 .stat-item {
@@ -822,10 +867,10 @@
 
   .player-list.cols-1 .player-card .player-top,
   .listone-cards-grid.cols-1 .player-card .player-top {
-    flex: 0 1 240px;
+    flex: 0 1 auto;
     width: auto;
-    max-width: 280px;
-    min-width: 180px;
+    max-width: 420px;
+    min-width: 200px;
     margin-bottom: 0;
   }
 
@@ -868,12 +913,11 @@
 
   .player-list.cols-1 .player-card .data-rail,
   .listone-cards-grid.cols-1 .player-card .data-rail {
-    flex: 1 1 260px;
-    min-width: 200px;
+    flex: 0 1 auto;
+    min-width: 0;
     padding-top: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 8px 12px;
     flex-wrap: wrap;
   }
@@ -892,7 +936,7 @@
     gap: 6px;
     flex-shrink: 0;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    align-items: center;
   }
 
   .player-list.cols-1 .player-card .duels-list,
@@ -1255,6 +1299,32 @@
 }
 
 @media (max-width: 480px) {
+
+  .player-top .roles-badges-wrap .role {
+    min-width: 17px;
+    height: 18px;
+    font-size: 8.5px;
+    padding: 0 3px;
+    border-radius: 4px;
+  }
+
+  .player-top .player-card-strategy-strip {
+    height: 18px;
+  }
+
+  .player-top .player-strategy-badge {
+    height: 18px;
+    min-height: 18px;
+    max-height: 18px;
+    max-width: 80px;
+    padding: 0 5px;
+    font-size: 7.5px;
+    border-radius: 4px;
+  }
+
+  .player-top .player-strategy-badge .tier-label-text {
+    max-width: 65px;
+  }
 
   .metric-index-val,
   .credits-number {

@@ -98,6 +98,23 @@
     display: none !important;
   }
 
+  /* Tab Lavagna su Mobile: nascondi riga market-list e statistiche PG, G, A su season */
+  #pitch-container .player-card .market-list,
+  .pitch-vertical-list-container .player-card .market-list,
+  #pitch-container .player-card .data-rail,
+  .pitch-vertical-list-container .player-card .data-rail {
+    display: none !important;
+  }
+
+  #pitch-container .player-card .season .stat-pg,
+  #pitch-container .player-card .season .stat-g,
+  #pitch-container .player-card .season .stat-a,
+  .pitch-vertical-list-container .player-card .season .stat-pg,
+  .pitch-vertical-list-container .player-card .season .stat-g,
+  .pitch-vertical-list-container .player-card .season .stat-a {
+    display: none !important;
+  }
+
   /* Sidebar Sinistra come Drawer Schermo Intero */
   .app-sidebar-left {
     position: fixed;

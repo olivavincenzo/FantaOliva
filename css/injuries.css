@@ -76,7 +76,7 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .injuries-cards-grid.cols-2,
   .injuries-cards-grid.cols-3,
   .injuries-cards-grid.cols-4 {
@@ -96,6 +96,10 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.035);
   cursor: pointer;
   transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .injury-card:hover {
@@ -107,6 +111,7 @@
 .injury-card.is-selected {
   border-color: #22c55e;
   box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.35);
+  background: rgba(34, 197, 94, 0.02);
 }
 
 /* Header Card */
@@ -115,6 +120,9 @@
   align-items: flex-start;
   gap: 10px;
   margin-bottom: 10px;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 .injury-avatar-wrap {
@@ -156,6 +164,8 @@
 .injury-card-identity {
   flex: 1;
   min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .injury-player-name-row {
@@ -163,7 +173,9 @@
   align-items: center;
   gap: 6px;
   flex-wrap: wrap;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .injury-player-name {
@@ -176,15 +188,55 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.injury-card .badge-league-owner {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  width: auto;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 0;
+  padding: 2px 7px;
+  font-size: 8px;
+  box-sizing: border-box;
+}
+
+.injury-card .badge-league-owner .league-owner-label-text {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .injury-meta-row {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 5px 6px;
+  flex-wrap: wrap;
   font-size: 10px;
   color: var(--muted);
   font-weight: 600;
+  min-width: 0;
+  max-width: 100%;
+  line-height: 1.35;
+}
+
+.injury-team-name {
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.injury-meta-sep {
+  color: var(--line-strong, rgba(0, 0, 0, 0.25));
+  font-weight: 700;
+  flex-shrink: 0;
 }
 
 /* Status & Return Day Badges */
@@ -198,6 +250,12 @@
   font-weight: 800;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  flex-shrink: 0;
 }
 
 .injury-status-badge.is-injured {
@@ -218,6 +276,12 @@
   border: 1px solid rgba(185, 28, 28, 0.3);
 }
 
+.injury-status-badge.is-unavailable {
+  background: rgba(100, 116, 139, 0.12);
+  color: #64748b;
+  border: 1px solid rgba(100, 116, 139, 0.28);
+}
+
 .injury-return-badge {
   display: inline-flex;
   align-items: center;
@@ -229,6 +293,12 @@
   background: var(--soft);
   color: var(--body);
   border: 1px solid var(--line);
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  flex-shrink: 0;
 }
 
 /* Diagnosis Box */
@@ -241,6 +311,11 @@
   color: var(--body);
   line-height: 1.45;
   margin-top: 4px;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .injury-diagnosis-title {
@@ -253,6 +328,97 @@
   text-transform: uppercase;
   margin-bottom: 3px;
   letter-spacing: 0.02em;
+}
+
+/* Responsive Infermeria per Schermi Mobile & Tablet */
+@media (max-width: 900px) {
+  .injuries-page-container {
+    padding: 12px 12px calc(var(--mobile-bar-height, 60px) + 20px);
+  }
+
+  .injury-card {
+    padding: 10px 12px;
+  }
+
+  .injury-card-top {
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .injury-avatar-wrap {
+    width: 40px;
+    height: 40px;
+  }
+
+  .injury-player-name {
+    font-size: 13px;
+  }
+
+  .injury-meta-row {
+    gap: 4px 6px;
+  }
+
+  .injury-status-badge,
+  .injury-return-badge {
+    font-size: 9px;
+    padding: 2px 6px;
+  }
+
+  .injury-diagnosis-box {
+    padding: 6px 9px;
+    font-size: 10.5px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .injuries-page-container {
+    padding: 8px 10px calc(var(--mobile-bar-height, 60px) + 20px);
+  }
+
+  .injury-card {
+    padding: 9px 11px;
+  }
+
+  .injury-avatar-wrap {
+    width: 38px;
+    height: 38px;
+  }
+
+  .injury-badge-overlay {
+    width: 14px;
+    height: 14px;
+    font-size: 7.5px;
+  }
+
+  .injury-player-name {
+    font-size: 12.5px;
+  }
+
+  .injury-meta-sep {
+    display: none;
+  }
+
+  .injury-meta-row {
+    gap: 4px 5px;
+  }
+
+  .injury-status-badge,
+  .injury-return-badge {
+    font-size: 8.5px;
+    padding: 1.5px 5.5px;
+  }
+
+  .injury-diagnosis-box {
+    padding: 5px 8px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 355px) {
+  .injury-card {
+    padding: 8px 9px;
+  }
 }
 
 /* Evidenziazione card quando si arriva dal listone */
