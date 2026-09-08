@@ -188,11 +188,63 @@
   font-weight: 600;
   color: var(--muted);
   letter-spacing: -0.01em;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
 }
 
 .set-pieces-badge.has-set-pieces {
   color: var(--body);
   font-weight: 740;
+}
+
+.set-pieces-badge .sp-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 19px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: 4px;
+  gap: 1.5px;
+  font-size: 9px;
+  font-weight: 850;
+  line-height: 18px;
+  box-sizing: border-box;
+  background: var(--soft);
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+
+.set-pieces-badge .sp-item.sp-rig {
+  background: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid rgba(185, 28, 28, 0.2);
+}
+
+.set-pieces-badge .sp-item.sp-pun {
+  background: #dbeafe;
+  color: #1d4ed8;
+  border: 1px solid rgba(29, 78, 216, 0.2);
+}
+
+.set-pieces-badge .sp-item.sp-corner,
+.set-pieces-badge .sp-item.sp-cor {
+  background: #d1fae5;
+  color: #047857;
+  border: 1px solid rgba(4, 120, 87, 0.2);
+}
+
+.set-pieces-badge .sp-item .sp-num {
+  font-size: 9px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.set-pieces-badge .sp-item .sp-ico {
+  font-size: 8.5px;
+  line-height: 1;
+  display: inline-block;
 }
 
 .rank-badge {
@@ -222,16 +274,21 @@
   gap: 3px;
   flex: 0 0 auto;
   margin-left: auto;
+  height: 20px;
+  min-height: 20px;
+  max-height: 20px;
 }
 
 .player-top .roles-badges-wrap .role {
   min-width: 20px;
   height: 20px;
+  min-height: 20px;
+  max-height: 20px;
   padding: 0 4.5px;
   font-size: 9.5px;
   font-weight: 850;
   border-radius: 5px;
-  line-height: 1;
+  line-height: 20px;
 }
 
 .player-top .player-card-strategy-strip {
@@ -241,6 +298,8 @@
   margin-left: 0;
   min-height: 0;
   height: 20px;
+  min-height: 20px;
+  max-height: 20px;
 }
 
 .player-top:not(:has(.roles-badges-wrap)) .player-card-strategy-strip {
@@ -975,328 +1034,507 @@
   font-size: 1rem;
 }
 
-/* Variante Compatta per Campo da Calcio e Panchina */
+/* ==========================================================================
+   Variante Compatta per Campo da Calcio e Panchina: Sistema a Griglia a 5 Colonne
+   - Riga 1: Nome Giocatore (span 5 / 100% larghezza)
+   - Riga 2 (se presente): Piazzati / Rigori (span 5, display: none se assente -> collassa a 0)
+   - Riga 3 (o 2 se no piazzati): Ruolo (1 colonna = 20%) | Fascia Strategia (4 colonne = 80%)
+   - Riga 4 (opzionale): Ballottaggi / Duelli (span 5)
+   ========================================================================== */
 .player-card.is-compact {
-  padding: 8px 10px;
-  border-radius: var(--radius-lg);
-  gap: 4px;
+  display: grid !important;
+  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+  align-items: center !important;
+  gap: 1.5px 3px !important;
+  padding: 3.5px 5px !important;
+  border-radius: 6px !important;
+  min-height: 0 !important;
+  box-sizing: border-box !important;
+  background: #ffffff !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08) !important;
 }
 
-.player-card.is-compact .avatar {
+/* Appiattimento semantico dei contenitori intermedi per abilitare la griglia unificata a 5 colonne */
+.player-card.is-compact .player-top,
+.player-card.is-compact .identity,
+.player-card.is-compact .core-metrics.compact-metrics {
+  display: contents !important;
+}
+
+.player-card.is-compact .avatar,
+.player-card.is-compact .player-top-actions,
+.player-card.is-compact .metric-index,
+.player-card.is-compact .metric-credits,
+.player-card.is-compact .season,
+.player-card.is-compact .data-rail,
+.player-card.is-compact .metric-label,
+.player-card.is-compact .index-segments-bar {
   display: none !important;
 }
 
-.player-card.is-compact .player-top-actions {
-  display: none !important;
-}
-
-.player-card.is-compact .player-top {
-  gap: 6px;
+/* RIGA 1: Nome Giocatore (Occupa tutte e 5 le colonne) */
+.player-card.is-compact .player-name-row {
+  grid-column: 1 / -1 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .player-card.is-compact .player-name {
-  font-size: 11px;
-  font-weight: 780;
-  letter-spacing: -0.025em;
-  line-height: 1.1;
+  font-size: 11.5px !important;
+  font-weight: 850 !important;
+  color: #000000 !important;
+  letter-spacing: -0.025em !important;
+  line-height: 1.15 !important;
+  text-align: center !important;
+  width: 100% !important;
+  text-transform: uppercase !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-.player-card.is-compact .card-fav-star {
-  font-size: 9.5px;
+/* PIAZZATI E RIGORI - Stili chip */
+.player-card.is-compact .player-set-pieces-row,
+.player-card.is-compact.has-no-set-pieces .player-set-pieces-row {
+  display: none !important;
 }
 
-.player-card.is-compact .player-set-pieces-row {
-  display: none;
-}
-
-.player-card.is-compact .player-set-pieces-row.has-active-set-pieces,
-.player-card.is-compact .player-set-pieces-row:has(.has-set-pieces) {
-  display: flex;
-  align-items: center;
-  gap: 3px;
-  margin-top: 1px;
-}
-
+.player-card.is-compact .player-set-pieces-row .rank-badge,
+.player-card.is-compact .player-set-pieces-row .team-badge,
+.player-card.is-compact .player-set-pieces-row .separator,
 .player-card.is-compact .player-set-pieces-row .set-pieces-badge:not(.has-set-pieces) {
-  display: none;
+  display: none !important;
 }
 
-.player-card.is-compact .player-meta {
-  font-size: 8.5px;
-  margin-top: 2px;
-  gap: 3px;
+.player-card.is-compact .player-set-pieces-row .set-pieces-badge.has-set-pieces {
+  font-size: 8.5px !important;
+  font-weight: 800 !important;
+  background: transparent !important;
+  padding: 0 !important;
+  line-height: 1 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 2.5px !important;
+  overflow: visible !important;
+  white-space: nowrap !important;
+  border: none !important;
+  width: 100% !important;
 }
 
-.player-card.is-compact .availability {
-  width: 18px;
-  height: 18px;
-  flex: 0 0 18px;
+.player-card.is-compact .set-pieces-badge .sp-item {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 17px !important;
+  width: auto !important;
+  height: 16px !important;
+  min-height: 16px !important;
+  max-height: 16px !important;
+  padding: 0 3px !important;
+  font-size: 8.5px !important;
+  font-weight: 850 !important;
+  line-height: 1 !important;
+  border-radius: 3.5px !important;
+  gap: 1px !important;
+  box-sizing: border-box !important;
 }
 
-.player-card.is-compact .availability svg {
-  width: 10px;
-  height: 10px;
-  stroke-width: 2.6;
+.player-card.is-compact .set-pieces-badge .sp-item.sp-rig {
+  background: #fee2e2 !important;
+  color: #b91c1c !important;
+  border: 1px solid rgba(185, 28, 28, 0.25) !important;
 }
 
-.player-card.is-compact .core-metrics.compact-metrics {
-  display: grid;
-  grid-template-columns: 1fr 1fr 0.8fr;
-  padding: 0px;
-  margin-top: 0px;
-  gap: 3px;
-  border-top: none;
-  border-bottom: none;
+.player-card.is-compact .set-pieces-badge .sp-item.sp-pun {
+  background: #dbeafe !important;
+  color: #1d4ed8 !important;
+  border: 1px solid rgba(29, 78, 216, 0.25) !important;
+}
+
+.player-card.is-compact .set-pieces-badge .sp-item.sp-corner,
+.player-card.is-compact .set-pieces-badge .sp-item.sp-cor {
+  background: #d1fae5 !important;
+  color: #047857 !important;
+  border: 1px solid rgba(4, 120, 87, 0.25) !important;
+}
+
+.player-card.is-compact .set-pieces-badge .sp-item .sp-num {
+  font-size: 8px !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+}
+
+.player-card.is-compact .set-pieces-badge .sp-item .sp-ico {
+  font-size: 7.5px !important;
+  line-height: 1 !important;
+}
+
+/* Stili comuni Ruolo e Fascia */
+.player-card.is-compact .roles-badges-wrap {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  height: 16px !important;
+  min-height: 16px !important;
+  max-height: 16px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 0 !important;
 }
 
 .player-card.is-compact .role {
-  width: 18px;
-  height: 15px;
-  font-size: 8.5px;
-  border-radius: 4px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  height: 16px !important;
+  min-height: 16px !important;
+  max-height: 16px !important;
+  line-height: 1 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: 9.5px !important;
+  font-weight: 900 !important;
+  border-radius: 3.5px !important;
+  box-sizing: border-box !important;
 }
 
-.player-card.is-compact .metric-value {
-  font-size: 13px;
-  min-height: 14px;
+.player-card.is-compact .role.role-p {
+  border: 1px solid rgba(180, 83, 9, 0.25) !important;
 }
 
-.player-card.is-compact .metric-label {
-  font-size: 7.5px;
-  margin-top: 1px;
+.player-card.is-compact .role.role-d {
+  border: 1px solid rgba(29, 78, 216, 0.25) !important;
 }
 
+.player-card.is-compact .role.role-c {
+  border: 1px solid rgba(4, 120, 87, 0.25) !important;
+}
+
+.player-card.is-compact .role.role-a {
+  border: 1px solid rgba(185, 28, 28, 0.25) !important;
+}
+
+.player-card.is-compact .role.role-tactical {
+  display: none !important;
+}
+
+.player-card.is-compact .player-strategy-badge {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: 16px !important;
+  min-height: 16px !important;
+  max-height: 16px !important;
+  padding: 0 4px !important;
+  border-radius: 3.5px !important;
+  font-size: 8.5px !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+  gap: 3px !important;
+  box-sizing: border-box !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  box-shadow: none !important;
+}
+
+.player-card.is-compact .player-strategy-badge .tier-dot {
+  width: 4px !important;
+  height: 4px !important;
+  border-radius: 50% !important;
+  flex-shrink: 0 !important;
+}
+
+.player-card.is-compact .player-strategy-badge .tier-label-text {
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  text-align: center !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  font-size: 8.5px !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+}
+
+/* ==========================================================================
+   CASO A: NESSUN PIAZZATO (Default, es. Bastoni, Acerbi) -> 2 RIGHE
+   - Riga 1: Nome Giocatore (cols 1-5)
+   - Riga 2: Ruolo (col 1, 20%) | Fascia (cols 2-5, 80%)
+   ========================================================================== */
+.player-card.is-compact:not(.has-active-set-pieces) .metric-role,
+.player-card.is-compact.has-no-set-pieces .metric-role {
+  grid-row: 2 !important;
+  grid-column: 1 / 2 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+
+.player-card.is-compact:not(.has-active-set-pieces) .player-card-strategy-strip,
+.player-card.is-compact.has-no-set-pieces .player-card-strategy-strip {
+  grid-row: 2 !important;
+  grid-column: 2 / 6 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: 16px !important;
+  min-height: 16px !important;
+  max-height: 16px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* ==========================================================================
+   CASO 1: NESSUN PIAZZATO (Default, es. Bastoni, Acerbi) -> 2 RIGHE
+   - Riga 1: Nome Giocatore (cols 1-5, 100%)
+   - Riga 2: Ruolo (col 1, 20%) | Fascia (cols 2-5, 80%)
+   ========================================================================== */
+.player-card.is-compact.has-no-set-pieces .player-set-pieces-row,
+.player-card.is-compact:not(.has-active-set-pieces) .player-set-pieces-row {
+  display: none !important;
+}
+
+.player-card.is-compact.has-no-set-pieces .metric-role,
+.player-card.is-compact:not(.has-active-set-pieces) .metric-role {
+  grid-row: 2 !important;
+  grid-column: 1 / 2 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+
+.player-card.is-compact.has-no-set-pieces .player-card-strategy-strip,
+.player-card.is-compact:not(.has-active-set-pieces) .player-card-strategy-strip {
+  grid-row: 2 !important;
+  grid-column: 2 / 6 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: 16px !important;
+  min-height: 16px !important;
+  max-height: 16px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* ==========================================================================
+   CASO 2: 1 SOLO PIAZZATO (es. Lautaro 3🎯) -> 2 RIGHE
+   - Riga 1: Nome Giocatore (cols 1-5, 100%)
+   - Riga 2: Ruolo (1 elemento, col 1) | Piazzato (2 elementi, cols 2-3) | Fascia (2 elementi, cols 4-5)
+   ========================================================================== */
+.player-card.is-compact.has-single-set-piece .metric-role {
+  grid-row: 2 !important;
+  grid-column: 1 / 2 !important; /* 1 elemento */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+
+.player-card.is-compact.has-single-set-piece .player-set-pieces-row {
+  grid-row: 2 !important;
+  grid-column: 2 / 4 !important; /* Prende 2 elementi della griglia */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1 !important;
+}
+
+.player-card.is-compact.has-single-set-piece .player-set-pieces-row .set-pieces-badge {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+}
+
+.player-card.is-compact.has-single-set-piece .player-set-pieces-row .set-pieces-badge .sp-item {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 16px !important;
+  min-height: 16px !important;
+  max-height: 16px !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 3px !important;
+  padding: 0 4px !important;
+}
+
+.player-card.is-compact.has-single-set-piece .player-card-strategy-strip {
+  grid-row: 2 !important;
+  grid-column: 4 / 6 !important; /* 2 elementi della griglia */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: 16px !important;
+  min-height: 16px !important;
+  max-height: 16px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* ==========================================================================
+   CASO 3: PIAZZATI MULTIPLI (es. Dimarco, Calhanoglu) -> 3 RIGHE
+   - Riga 1: Nome Giocatore (cols 1-5, 100%)
+   - Riga 2: Riga Dedicata Piazzati (ciascun piazzato occupa 2 elementi = 40% larghezza!)
+   - Riga 3: Ruolo (1 elemento, col 1) | Fascia (4 elementi, cols 2-5)
+   ========================================================================== */
+.player-card.is-compact.has-multi-set-pieces .player-set-pieces-row {
+  grid-row: 2 !important;
+  grid-column: 1 / -1 !important; /* Tutta la riga dedicata */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1 !important;
+}
+
+.player-card.is-compact.has-multi-set-pieces .player-set-pieces-row .set-pieces-badge {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 3px !important;
+  width: 100% !important;
+}
+
+/* Ogni singolo piazzato occupa 2 elementi della griglia (40% di 5 colonne)! */
+.player-card.is-compact.has-multi-set-pieces .player-set-pieces-row .set-pieces-badge .sp-item {
+  flex: 0 0 calc(40% - 2px) !important;
+  width: calc(40% - 2px) !important;
+  max-width: calc(40% - 2px) !important;
+  height: 16px !important;
+  min-height: 16px !important;
+  max-height: 16px !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 2.5px !important;
+  padding: 0 3px !important;
+}
+
+.player-card.is-compact.has-multi-set-pieces .metric-role {
+  grid-row: 3 !important;
+  grid-column: 1 / 2 !important; /* 1 elemento */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+
+.player-card.is-compact.has-multi-set-pieces .player-card-strategy-strip {
+  grid-row: 3 !important;
+  grid-column: 2 / 6 !important; /* 4 elementi */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: 16px !important;
+  min-height: 16px !important;
+  max-height: 16px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* RIGA BALLOTTAGGI / DUELLI */
 .player-card.is-compact .duels-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-top: 4px;
-  gap: 2.5px;
-  width: 100%;
+  grid-column: 1 / -1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  margin-top: 1.5px !important;
+  padding: 0 !important;
+  border: none !important;
+  gap: 1px !important;
+  width: 100% !important;
+}
+
+.player-card.is-compact.has-multi-set-pieces .duels-list {
+  grid-row: 4 !important;
+}
+
+.player-card.is-compact:not(.has-multi-set-pieces) .duels-list {
+  grid-row: 3 !important;
 }
 
 .player-card.is-compact .duel {
-  padding: 1.5px 4px;
-  font-size: 7.2px;
-  font-weight: 750;
-  border-radius: 4px;
-  gap: 3px;
-  letter-spacing: -0.02em;
+  padding: 1px 3px !important;
+  font-size: 7.5px !important;
+  font-weight: 800 !important;
+  width: 100% !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+  background: rgba(245, 158, 11, 0.15) !important;
+  color: #78350f !important;
+  border-radius: 2px !important;
+  border: none !important;
 }
 
-.player-card.is-compact .duel i {
-  font-size: 6.5px;
+.player-card.is-compact .duel i,
+.player-card.is-compact .duel svg,
+.player-card.is-compact .duel .fa-scale-unbalanced {
+  display: none !important;
 }
 
-.player-card.is-compact .duel svg {
-  width: 7px;
-  height: 7px;
-}
-
-/* Ottimizzazione Specifica Solo per Mobile / Tablet (<= 900px) */
-@media (max-width: 900px) {
-  .player-card.is-compact {
-    padding: 4px 6px;
-    border-radius: var(--radius-sm);
-    overflow: hidden;
-  }
-
-  .player-card.is-compact .player-top {
-    gap: 3px;
-    min-width: 0;
-  }
-
-  .player-card.is-compact .player-name {
-    font-size: 9.5px;
-    min-width: 0;
-  }
-
-  .player-card.is-compact .player-set-pieces-row {
-    display: none !important;
-  }
-
-  .player-card.is-compact .player-set-pieces-row.has-active-set-pieces,
-  .player-card.is-compact .player-set-pieces-row:has(.has-set-pieces) {
-    display: flex !important;
-    align-items: center;
-    gap: 2px;
-    margin: 1px 0 0;
-    padding-bottom: 2px;
-  }
-
-  .player-card.is-compact .player-set-pieces-row .rank-badge,
-  .player-card.is-compact .player-set-pieces-row .team-badge,
-  .player-card.is-compact .player-set-pieces-row .separator,
-  .player-card.is-compact .player-set-pieces-row .set-pieces-badge:not(.has-set-pieces) {
-    display: none !important;
-  }
-
-  .player-card.is-compact .player-set-pieces-row .set-pieces-badge.has-set-pieces {
-    font-size: 5.5px;
-    font-weight: 750;
-    line-height: 1;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  .player-card.is-compact .player-card-strategy-strip,
-  .player-card.is-compact .player-card-league-owner-strip {
-    display: flex !important;
-    width: 100%;
-    margin: 0px;
-    min-height: 0;
-  }
-
-  .player-card.is-compact .player-strategy-badge,
-  .player-card.is-compact .badge-league-owner {
-    width: 100%;
-    min-width: 0;
-    max-width: 100%;
-    min-height: 13px;
-    height: auto;
-    padding: 1px 4px;
-    border-radius: 3px;
-    font-size: 6.5px;
-    font-weight: 750;
-    gap: 3px;
-    box-sizing: border-box;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-
-  .player-card.is-compact .player-strategy-badge .tier-dot {
-    width: 3.5px;
-    height: 3.5px;
-  }
-
-  .player-card.is-compact .badge-league-owner i,
-  .player-card.is-compact .badge-league-owner .league-owner-icon {
-    font-size: 4px;
-  }
-
-  .player-card.is-compact .player-strategy-badge .tier-label-text,
-  .player-card.is-compact .badge-league-owner .league-owner-label-text {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    line-height: 1;
-  }
-
-  .player-card.is-compact .availability {
-    width: 14px;
-    height: 14px;
-    flex: 0 0 14px;
-  }
-
-  .player-card.is-compact .availability svg {
-    width: 8px;
-    height: 8px;
-  }
-
-  .player-card.is-compact .core-metrics.compact-metrics {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px;
-    margin-top: 2px;
-    gap: 2px;
-    border: none;
-  }
-
-  .player-card.is-compact .core-metrics.compact-metrics .metric {
-    flex: 1 1 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* Su mobile nascondi Affidabilità e Integrità per far respirare la card */
-  .player-card.is-compact .core-metrics.compact-metrics .metric:nth-child(2),
-  .player-card.is-compact .core-metrics.compact-metrics .metric:nth-child(3) {
-    display: none !important;
-  }
-
-  /* Su mobile nascondi completamente le barre a segmenti per non sprecare spazio */
-  .index-segments-bar {
-    display: none !important;
-  }
-
-  /* Su mobile allinea le dimensioni di metric-index e metric-credits */
-  .metric-index-val,
-  .credits-number {
-    font-size: 11px !important;
-    font-weight: 790 !important;
-    line-height: 1 !important;
-  }
-
-  .metric-credits-val {
-    min-height: 11px;
-    align-items: baseline;
-    gap: 1.5px;
-  }
-
-  .credits-unit {
-    font-size: 7px;
-  }
-
-  .player-card.is-compact .metric-index-val,
-  .player-card.is-compact .credits-number {
-    font-size: 9px !important;
-    font-weight: 800 !important;
-    line-height: 1 !important;
-  }
-
-  .player-card.is-compact .metric-credits-val {
-    min-height: 9px;
-    gap: 1px;
-  }
-
-  .player-card.is-compact .credits-unit {
-    font-size: 5.5px;
-  }
-
-  .player-card.is-compact .role {
-    width: 15px;
-    height: 13px;
-    font-size: 7.5px;
-  }
-
-  /* Su mobile nascondi l'etichetta del ruolo */
-  .metric-role .metric-label {
-    display: none !important;
-  }
-
-  .player-card.is-compact .metric-label {
-    font-size: 6px;
-    text-align: center;
-    line-height: 1;
-  }
-
-  .player-card.is-compact .duels-list {
-    flex-direction: column;
-    margin-top: 2px;
-    gap: 1.5px;
-  }
-
-  .player-card.is-compact .duel {
-    padding: 1px 3px;
-    font-size: 6.5px;
-    width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    box-sizing: border-box;
-  }
-
-  /* Su mobile nascondi l'iconcina del ballottaggio */
-  .duel i,
-  .duel svg,
-  .duel .fa-scale-unbalanced {
-    display: none !important;
-  }
-}
 
 @media (max-width: 480px) {
 
@@ -1332,32 +1570,130 @@
   }
 
   .player-card.is-compact {
-    padding: 3px 5px;
-    border-radius: 6px;
+    padding: 3px 4px !important;
+    gap: 1.5px 2.5px !important;
   }
 
   .player-card.is-compact .player-name {
-    font-size: 8px;
+    font-size: 11px !important;
   }
 
-  .player-card.is-compact .metric-index-val,
-  .player-card.is-compact .credits-number {
-    font-size: 8px !important;
-  }
-
-  .player-card.is-compact .metric-label {
-    font-size: 5.5px;
+  .player-card.is-compact .roles-badges-wrap {
+    height: 15px !important;
+    min-height: 15px !important;
+    max-height: 15px !important;
   }
 
   .player-card.is-compact .role {
-    width: 13px;
-    height: 11px;
-    font-size: 6.5px;
+    min-width: 0 !important;
+    width: 100% !important;
+    height: 15px !important;
+    min-height: 15px !important;
+    max-height: 15px !important;
+    line-height: 1 !important;
+    font-size: 9.5px !important;
+    padding: 0 !important;
   }
 
-  .player-card.is-compact .availability {
-    width: 12px;
-    height: 12px;
-    flex: 0 0 12px;
+  .player-card.is-compact .player-card-strategy-strip {
+    height: 15px !important;
+    min-height: 15px !important;
+    max-height: 15px !important;
+  }
+
+  .player-card.is-compact .player-strategy-badge {
+    height: 15px !important;
+    min-height: 15px !important;
+    max-height: 15px !important;
+    line-height: 1 !important;
+    font-size: 8px !important;
+    padding: 0 3px !important;
+  }
+
+  .player-card.is-compact .player-strategy-badge .tier-label-text {
+    font-size: 8px !important;
+    line-height: 1 !important;
+  }
+
+  .player-card.is-compact .set-pieces-badge .sp-item {
+    height: 15px !important;
+    min-height: 15px !important;
+    max-height: 15px !important;
+    line-height: 1 !important;
+    padding: 0 2px !important;
+    border-radius: 3px !important;
+  }
+
+  .player-card.is-compact .set-pieces-badge .sp-item .sp-num {
+    font-size: 7.5px !important;
+  }
+
+  .player-card.is-compact .set-pieces-badge .sp-item .sp-ico {
+    font-size: 7px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .player-card.is-compact {
+    padding: 2.5px 3px !important;
+    gap: 1px 2px !important;
+  }
+
+  .player-card.is-compact .player-name {
+    font-size: 10px !important;
+  }
+
+  .player-card.is-compact .roles-badges-wrap {
+    height: 14px !important;
+    min-height: 14px !important;
+    max-height: 14px !important;
+  }
+
+  .player-card.is-compact .role {
+    min-width: 0 !important;
+    width: 100% !important;
+    height: 14px !important;
+    min-height: 14px !important;
+    max-height: 14px !important;
+    line-height: 1 !important;
+    font-size: 9px !important;
+    padding: 0 !important;
+  }
+
+  .player-card.is-compact .player-card-strategy-strip {
+    height: 14px !important;
+    min-height: 14px !important;
+    max-height: 14px !important;
+  }
+
+  .player-card.is-compact .player-strategy-badge {
+    height: 14px !important;
+    min-height: 14px !important;
+    max-height: 14px !important;
+    line-height: 1 !important;
+    font-size: 7.5px !important;
+    padding: 0 2px !important;
+  }
+
+  .player-card.is-compact .player-strategy-badge .tier-label-text {
+    font-size: 7.5px !important;
+    line-height: 1 !important;
+  }
+
+  .player-card.is-compact .set-pieces-badge .sp-item {
+    height: 14px !important;
+    min-height: 14px !important;
+    max-height: 14px !important;
+    line-height: 1 !important;
+    padding: 0 1.5px !important;
+    border-radius: 2.5px !important;
+  }
+
+  .player-card.is-compact .set-pieces-badge .sp-item .sp-num {
+    font-size: 7px !important;
+  }
+
+  .player-card.is-compact .set-pieces-badge .sp-item .sp-ico {
+    font-size: 6.5px !important;
   }
 }

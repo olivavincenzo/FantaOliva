@@ -15,20 +15,41 @@ function getPlayerInitials(name) {
 
 function getPiazzatiLabel(player) {
   if (!player) return '—';
+  const iconMap = {
+    rig: '🎯',
+    pun: '📐',
+    corner: '🚩'
+  };
+  const titleMap = {
+    rig: 'Rigorista',
+    pun: 'Tiratore Punizioni',
+    corner: 'Tiratore Calci d\'angolo'
+  };
+
   if (store.getPlayerSpecialists) {
     const spec = store.getPlayerSpecialists(player);
-    return spec.detailedText || spec.labelText || '—';
+    if (spec && Array.isArray(spec.items) && spec.items.length > 0) {
+      return spec.items.map(item => {
+        const icon = iconMap[item.type] || '🎯';
+        const typeTitle = titleMap[item.type] || 'Piazzato';
+        const orderText = item.order ? `${item.order}ª scelta` : 'Specialista';
+        const fullTitle = `${orderText} ${typeTitle}`;
+        const num = item.order ? `<strong class="sp-num">${item.order}</strong>` : '';
+        return `<span class="sp-item sp-${item.type}" title="${fullTitle}">${num}<span class="sp-ico">${icon}</span></span>`;
+      }).join(' ');
+    }
   }
+
   const isRigorista = Boolean(player.isPenaltyTaker ?? player.rigorista ?? false);
   const isPunizioni = Boolean(player.isFreeKickTaker ?? player.punizioni ?? false);
   const isCorner = Boolean(player.isCornerTaker ?? player.corner ?? false);
 
-  const list = [];
-  if (isRigorista) list.push('Rig.');
-  if (isPunizioni) list.push('Pun.');
-  if (isCorner) list.push('Cor.');
+  const chips = [];
+  if (isRigorista) chips.push(`<span class="sp-item sp-rig" title="1ª scelta Rigorista"><strong class="sp-num">1</strong><span class="sp-ico">🎯</span></span>`);
+  if (isPunizioni) chips.push(`<span class="sp-item sp-pun" title="Tiratore Punizioni"><span class="sp-ico">📐</span></span>`);
+  if (isCorner) chips.push(`<span class="sp-item sp-corner" title="Tiratore Calci d'angolo"><span class="sp-ico">🚩</span></span>`);
 
-  return list.length > 0 ? list.join(' · ') : '—';
+  return chips.length > 0 ? chips.join(' ') : '—';
 }
 
 function getStatusLabel(status) {
@@ -117,6 +138,11 @@ export function createPlayerCard(player, options = {}) {
   const teamName = player.teamName || (player.teamId ? store.getTeam(player.teamId)?.name : null) || currentTeam?.name || 'Serie A';
   const statusText = getStatusLabel(player.status);
   const piazzatiText = getPiazzatiLabel(player);
+  const hasSetPieces = piazzatiText !== '—';
+  const spCount = hasSetPieces ? (piazzatiText.match(/class="sp-item/g) || []).length : 0;
+  const setPiecesClass = spCount === 1 ? 'has-single-set-piece' : (spCount > 1 ? 'has-multi-set-pieces' : 'has-no-set-pieces');
+  card.classList.add(setPiecesClass);
+  if (hasSetPieces) card.classList.add('has-active-set-pieces');
 
   const qtA = player.quotazioni?.qtA ?? '-';
   const fvm = player.quotazioni?.fvm ?? '-';
@@ -188,6 +214,21 @@ export function createPlayerCard(player, options = {}) {
     </div>
   `;
 
+  const strategyStripHtml = `
+    <div class="player-card-strategy-strip">
+      ${tier ? `
+        <span class="player-strategy-badge" style="background: ${tier.color}1c; color: ${tier.color}; border: 1px solid ${tier.color}45;" title="Fascia Strategia: ${sanitizeHtml(tier.name)}">
+          <span class="tier-label-text">${sanitizeHtml(tier.name)}</span>
+        </span>
+      ` : `
+        <span class="player-strategy-badge badge-unassigned" title="Fascia non impostata per questa strategia">
+          <span class="tier-dot unassigned-dot"></span>
+          <span class="tier-label-text">${compact ? 'N.D.' : 'Non impostato'}</span>
+        </span>
+      `}
+    </div>
+  `;
+
   // Header player top con foto, info piazzati e preferiti
   const headerHtml = `
     <header class="player-top">
@@ -196,7 +237,7 @@ export function createPlayerCard(player, options = {}) {
         <div class="player-name-row">
           <h3 class="player-name" title="${sanitizeHtml(player.name)}">${sanitizeHtml(displayName)}</h3>
         </div>
-        <div class="player-set-pieces-row ${piazzatiText !== '—' ? 'has-active-set-pieces' : ''}">
+        <div class="player-set-pieces-row ${piazzatiText !== '—' ? 'has-active-set-pieces' : ''} ${setPiecesClass}">
           ${rank ? `<span class="rank-badge">#${rank}</span>` : ''}
           ${showTeam && teamName ? `<span class="team-badge" title="Squadra: ${sanitizeHtml(teamName)}">${sanitizeHtml(teamName)}</span><span class="separator">·</span>` : ''}
           <span class="set-pieces-badge ${piazzatiText !== '—' ? 'has-set-pieces' : ''}">${piazzatiText}</span>
@@ -204,18 +245,7 @@ export function createPlayerCard(player, options = {}) {
       </div>
       ${compact ? '' : `
         ${rolesBadgesHtml}
-        <div class="player-card-strategy-strip">
-          ${tier ? `
-            <span class="player-strategy-badge" style="background: ${tier.color}1c; color: ${tier.color}; border: 1px solid ${tier.color}45;" title="Fascia Strategia: ${sanitizeHtml(tier.name)}">
-              <span class="tier-label-text">${sanitizeHtml(tier.name)}</span>
-            </span>
-          ` : `
-            <span class="player-strategy-badge badge-unassigned" title="Fascia non impostata per questa strategia">
-              <span class="tier-dot unassigned-dot"></span>
-              <span class="tier-label-text">Non impostato</span>
-            </span>
-          `}
-        </div>
+        ${strategyStripHtml}
         <div class="player-top-actions">
           ${injuryBtnHtml}
           <button class="card-fav-btn ${isFavorite ? 'is-fav' : ''}" type="button" title="${isFavorite ? 'Rimuovi dai Preferiti' : 'Aggiungi ai Preferiti'}" aria-label="Preferito">
@@ -244,8 +274,15 @@ export function createPlayerCard(player, options = {}) {
     </div>
   `;
 
-  const metricsHtml = `
-    <div class="core-metrics ${compact ? 'compact-metrics' : ''}">
+  const metricsHtml = compact ? `
+    <div class="core-metrics compact-metrics">
+      <div class="metric metric-role" title="Ruolo: ${classicRole}">
+        ${rolesBadgesHtml}
+      </div>
+      ${strategyStripHtml}
+    </div>
+  ` : `
+    <div class="core-metrics">
       <div class="metric metric-index" title="Titolarità: ${indices.titIndex}/5 (${sanitizeHtml(indices.titDesc)})">
         <div class="metric-index-wrap">
           ${renderIndexSegments(indices.titIndex)}
@@ -274,13 +311,7 @@ export function createPlayerCard(player, options = {}) {
         </div>
         <span class="metric-label">Consigliati</span>
       </div>
-      ${compact ? `
-      <div class="metric metric-role">
-        ${rolesBadgesHtml}
-        <span class="metric-label">Ruolo</span>
-      </div>
-      ` : ''}
-      ${compact ? '' : seasonHtml}
+      ${seasonHtml}
     </div>
   `;
 
