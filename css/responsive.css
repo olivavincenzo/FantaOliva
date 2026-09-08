@@ -271,7 +271,6 @@
   align-items: center;
   justify-content: center;
   gap: 2px;
-  width: 62px;
   height: 42px;
   color: var(--muted);
   border-radius: var(--radius-md);
