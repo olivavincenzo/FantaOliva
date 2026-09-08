@@ -21,6 +21,9 @@ export class PitchComponent {
     this.searchQuery = '';
     this.gridColumns = Number((typeof localStorage !== 'undefined' ? localStorage.getItem('fantaoliva_pitch_list_cols') : null) || 1);
     this.isEditingTeamNotes = false;
+    this.is3D = (typeof localStorage !== 'undefined' && localStorage.getItem('fantaoliva_pitch_3d') !== null)
+      ? localStorage.getItem('fantaoliva_pitch_3d') === 'true'
+      : true;
 
     this.init();
   }
@@ -134,6 +137,11 @@ export class PitchComponent {
             <i class="fa-solid fa-futbol" style="font-size: 14px;"></i>
           </button>
 
+          <!-- Toggle Visuale 3D / 2D -->
+          <button class="circle-button ${this.is3D ? 'active' : ''}" id="pitch-toggle-3d-btn" type="button" aria-label="Prospettiva 3D" title="${this.is3D ? 'Visuale 3D attiva (clicca per 2D)' : 'Attiva visuale 3D'}">
+            <i class="fa-solid fa-cube" style="font-size: 14px;"></i>
+          </button>
+
           <!-- Pulsante Apri Scheda Giocatore (Ispettore Destro / Right Slidebar) -->
           <button class="circle-button" id="pitch-hud-inspector-btn" type="button" aria-label="Scheda Giocatore" title="Apri Scheda Giocatore">
             <i class="fa-solid fa-clipboard-user" style="font-size: 14px;"></i>
@@ -177,7 +185,7 @@ export class PitchComponent {
         </div>
 
         <!-- CAMPO DA CALCIO GRAFICO (Sempre attivo sotto a team-tactical-banner) -->
-        <div class="soccer-pitch" id="soccer-pitch">
+        <div class="soccer-pitch ${this.is3D ? 'is-3d-pitch' : ''}" id="soccer-pitch">
           <div class="pitch-grass-stripes"></div>
           <div class="pitch-lines">
             <div class="pitch-boundary"></div>
@@ -470,6 +478,7 @@ export class PitchComponent {
 
     // Toggle Vista Campo Grafico (Mostra / Nascondi campo sotto al banner)
     const toggleLayoutBtn = this.container.querySelector('#toggle-pitch-layout-btn');
+    const toggle3dBtn = this.container.querySelector('#pitch-toggle-3d-btn');
 
     toggleLayoutBtn?.addEventListener('click', () => {
       const isPitchVisible = !this.pitchEl?.classList.contains('hidden');
@@ -479,15 +488,31 @@ export class PitchComponent {
         toggleLayoutBtn.classList.remove('active');
         toggleLayoutBtn.title = 'Mostra Campo Grafico';
         toggleLayoutBtn.setAttribute('aria-label', 'Mostra Campo Grafico');
+        toggle3dBtn?.classList.add('hidden');
       } else {
         // Mostra campo
         this.pitchEl?.classList.remove('hidden');
         toggleLayoutBtn.classList.add('active');
         toggleLayoutBtn.title = 'Nascondi Campo Grafico';
         toggleLayoutBtn.setAttribute('aria-label', 'Nascondi Campo Grafico');
+        toggle3dBtn?.classList.remove('hidden');
         this.updateSlotsPositions();
         this.renderTacticalLines();
       }
+    });
+
+    // Toggle Visuale 3D / 2D
+    toggle3dBtn?.addEventListener('click', () => {
+      this.is3D = !this.is3D;
+      if (typeof localStorage !== 'undefined') {
+        localStorage.setItem('fantaoliva_pitch_3d', String(this.is3D));
+      }
+      this.pitchEl?.classList.toggle('is-3d-pitch', this.is3D);
+      toggle3dBtn.classList.toggle('active', this.is3D);
+      toggle3dBtn.title = this.is3D ? 'Visuale 3D attiva (clicca per 2D)' : 'Attiva visuale 3D';
+      toggle3dBtn.setAttribute('aria-label', this.is3D ? 'Visuale 3D attiva (clicca per 2D)' : 'Attiva visuale 3D');
+      this.updateSlotsPositions();
+      this.renderTacticalLines();
     });
 
     // Toggle Scheda Giocatore (Ispettore Destro / Right Slidebar)

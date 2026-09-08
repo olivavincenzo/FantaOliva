@@ -125,10 +125,25 @@
   border-radius: var(--radius-sm);
 }
 
-.quota-item.quota-p { background: rgba(234, 179, 8, 0.15); color: #ca8a04; }
-.quota-item.quota-d { background: rgba(59, 130, 246, 0.15); color: #2563eb; }
-.quota-item.quota-c { background: rgba(34, 197, 94, 0.15); color: #16a34a; }
-.quota-item.quota-a { background: rgba(239, 68, 68, 0.15); color: #dc2626; }
+.quota-item.quota-p {
+  background: rgba(234, 179, 8, 0.15);
+  color: #ca8a04;
+}
+
+.quota-item.quota-d {
+  background: rgba(59, 130, 246, 0.15);
+  color: #2563eb;
+}
+
+.quota-item.quota-c {
+  background: rgba(34, 197, 94, 0.15);
+  color: #16a34a;
+}
+
+.quota-item.quota-a {
+  background: rgba(239, 68, 68, 0.15);
+  color: #dc2626;
+}
 
 /* --- CONTROLS TOOLBAR --- */
 .my-team-toolbar {
@@ -156,7 +171,7 @@
 /* --- 3D PERSPECTIVE SOCCER PITCH --- */
 .soccer-pitch.is-3d-pitch {
   perspective: 1100px;
-  background: linear-gradient(180deg, #15803d 0%, #166534 100%) !important;
+  background: linear-gradient(180deg, #000000 0%, #166534 100%) !important;
   box-shadow: 0 24px 48px rgba(0, 0, 0, 0.22), inset 0 0 80px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(34, 197, 94, 0.3);
 }

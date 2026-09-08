@@ -1200,3 +1200,75 @@
   cursor: grabbing;
   z-index: 70 !important;
 }
+
+/* ==========================================================================
+   VISUALE CAMPO 3D (Perspective & Grass Shading)
+   ========================================================================== */
+.soccer-pitch.is-3d-pitch {
+  perspective: 1100px;
+  background: linear-gradient(180deg, #000000 0%, #166534 100%) !important;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.22), inset 0 0 80px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.soccer-pitch.is-3d-pitch .pitch-grass-stripes {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(180deg, rgb(15 75 38) 0px, rgb(20 89 46) 48px, #12542b 48px, #0e4121 96px);
+  transform: rotateX(26deg) scale(0.92);
+  transform-origin: 50% 60%;
+  pointer-events: none;
+  border-radius: var(--radius-xl);
+}
+
+.soccer-pitch.is-3d-pitch .pitch-lines {
+  transform: rotateX(26deg) scale(0.92);
+  transform-origin: 50% 60%;
+  border-color: rgba(255, 255, 255, 0.38);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.soccer-pitch.is-3d-pitch .pitch-boundary,
+.soccer-pitch.is-3d-pitch .halfway-line,
+.soccer-pitch.is-3d-pitch .center-circle,
+.soccer-pitch.is-3d-pitch .penalty-box,
+.soccer-pitch.is-3d-pitch .goal-box {
+  border-color: rgba(255, 255, 255, 0.38) !important;
+}
+
+.soccer-pitch.is-3d-pitch .center-spot,
+.soccer-pitch.is-3d-pitch .penalty-spot {
+  background: rgba(255, 255, 255, 0.45) !important;
+}
+
+.soccer-pitch.is-3d-pitch .tactical-lines-svg {
+  transform: rotateX(26deg) scale(0.92);
+  transform-origin: 50% 60%;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.soccer-pitch.is-3d-pitch .tactical-lines-svg line {
+  stroke: rgba(255, 255, 255, 0.48) !important;
+}
+
+.soccer-pitch.is-3d-pitch .pitch-slots-layer {
+  transform: rotateX(26deg) scale(0.92);
+  transform-origin: 50% 60%;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.soccer-pitch.is-3d-pitch .pitch-slot-wrapper {
+  transform: translate(-50%, -50%) rotateX(-26deg);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease;
+}
+
+.soccer-pitch.is-3d-pitch .pitch-slot-wrapper:hover {
+  transform: translate(-50%, -55%) rotateX(-26deg) scale(1.06);
+  z-index: 55;
+}
+
+.soccer-pitch.is-3d-pitch .pitch-slot-wrapper:has(.player-card.is-selected),
+.soccer-pitch.is-3d-pitch .pitch-slot-wrapper.is-selected {
+  transform: translate(-50%, -55%) rotateX(-26deg) scale(1.08);
+  z-index: 65 !important;
+}
