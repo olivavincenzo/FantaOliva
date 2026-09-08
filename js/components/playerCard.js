@@ -65,6 +65,45 @@ function getStatusLabel(status) {
   return map[status] || 'Titolare';
 }
 
+/**
+ * Formatta il nome della fascia per la visualizzazione compatta (Soluzione 3).
+ * - Fino a 11 caratteri (es. "SUPER TOP", "1ª FASCIA", "SEMI-TOP", "TITOLARE"): mostra il nome per intero (100%).
+ * - Per nomi lunghi (> 11 caratteri): garantisce sempre almeno il 70% dei caratteri prima di '…'.
+ */
+function formatTierName(name, isCompact = false) {
+  if (!name || typeof name !== 'string') return '';
+  const trimmed = name.trim();
+  // Fino a 16 caratteri entra comodamente (su riga intera o 5 colonne) e viene mostrato al 100% per intero
+  if (!isCompact || trimmed.length <= 16) return trimmed;
+
+  // Calcola il 70% minimo garantito dei caratteri originali
+  const minChars = Math.ceil(trimmed.length * 0.7);
+
+  // Se il testo è composto da più parole, cerca un confine naturale di parola che copra >= 70%
+  const words = trimmed.split(/\s+/);
+  if (words.length > 1) {
+    let accumulated = '';
+    for (const w of words) {
+      const next = accumulated ? `${accumulated} ${w}` : w;
+      if (next.length >= minChars) {
+        accumulated = next;
+        break;
+      }
+      accumulated = next;
+    }
+    if (accumulated && accumulated.length >= minChars && accumulated.length < trimmed.length) {
+      return `${accumulated}…`;
+    }
+  }
+
+  // Altrimenti, tronca garantendo matematicamente almeno il 70% dei caratteri
+  const sliceLen = Math.max(minChars, 9);
+  if (sliceLen < trimmed.length) {
+    return `${trimmed.slice(0, sliceLen).trim()}…`;
+  }
+  return trimmed;
+}
+
 export function renderIndexSegments(score) {
   const s = Math.max(1, Math.min(5, Math.round(Number(score) || 3)));
   let segs = '';
@@ -140,13 +179,34 @@ export function createPlayerCard(player, options = {}) {
   const piazzatiText = getPiazzatiLabel(player);
   const hasSetPieces = piazzatiText !== '—';
   const spCount = hasSetPieces ? (piazzatiText.match(/class="sp-item/g) || []).length : 0;
-  const setPiecesClass = spCount === 1 ? 'has-single-set-piece' : (spCount > 1 ? 'has-multi-set-pieces' : 'has-no-set-pieces');
-  card.classList.add(setPiecesClass);
+  let setPiecesClass = 'has-no-set-pieces sp-count-0';
+  if (spCount === 1) {
+    setPiecesClass = 'has-single-set-piece has-1-set-piece sp-count-1';
+  } else if (spCount === 2) {
+    setPiecesClass = 'has-double-set-piece has-2-set-pieces has-multi-set-pieces sp-count-2';
+  } else if (spCount >= 3) {
+    setPiecesClass = 'has-triple-set-piece has-3-set-pieces has-multi-set-pieces sp-count-3';
+  }
+  card.classList.add(...setPiecesClass.split(' '));
   if (hasSetPieces) card.classList.add('has-active-set-pieces');
 
   const qtA = player.quotazioni?.qtA ?? '-';
   const fvm = player.quotazioni?.fvm ?? '-';
   const tier = store.getPlayerTier(player);
+
+  // Se la card è compatta, verifica se il 70% dei caratteri della fascia entra nello spazio disponibile sulla riga.
+  // Se non entra al 70%, la fascia va a capo su Riga 3 (mantenendo la grandezza originale del font)!
+  if (compact && tier?.name) {
+    const tierNameLen = tier.name.trim().length;
+    const chars70 = Math.ceil(tierNameLen * 0.7);
+    // Con 1 piazzato (spCount === 1) ci sono solo 3 colonne disponibili sulla riga (~40px), entrano max 5 caratteri
+    if (spCount === 1 && chars70 > 5) {
+      card.classList.add('has-tier-row-3');
+    } else if (spCount === 0 && chars70 > 13) {
+      // Con 0 piazzati ci sono 5 colonne disponibili sulla riga (~75px), entrano max 13 caratteri
+      card.classList.add('has-tier-row-3');
+    }
+  }
 
   // Ballottaggio badge (pillole separate per ciascuna scelta con icona e percentuali)
   let ballottaggioHtml = '';
@@ -218,7 +278,7 @@ export function createPlayerCard(player, options = {}) {
     <div class="player-card-strategy-strip">
       ${tier ? `
         <span class="player-strategy-badge" style="background: ${tier.color}1c; color: ${tier.color}; border: 1px solid ${tier.color}45;" title="Fascia Strategia: ${sanitizeHtml(tier.name)}">
-          <span class="tier-label-text">${sanitizeHtml(tier.name)}</span>
+          <span class="tier-label-text">${sanitizeHtml(formatTierName(tier.name, compact))}</span>
         </span>
       ` : `
         <span class="player-strategy-badge badge-unassigned" title="Fascia non impostata per questa strategia">

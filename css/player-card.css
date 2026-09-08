@@ -1035,18 +1035,20 @@
 }
 
 /* ==========================================================================
-   Variante Compatta per Campo da Calcio e Panchina: Sistema a Griglia a 5 Colonne
-   - Riga 1: Nome Giocatore (span 5 / 100% larghezza)
-   - Riga 2 (se presente): Piazzati / Rigori (span 5, display: none se assente -> collassa a 0)
-   - Riga 3 (o 2 se no piazzati): Ruolo (1 colonna = 20%) | Fascia Strategia (4 colonne = 80%)
-   - Riga 4 (opzionale): Ballottaggi / Duelli (span 5)
+   Variante Compatta per Campo da Calcio e Panchina: Sistema a Griglia a 6 Colonne
+   - Riga 1: Nome Giocatore (span 6 / 100% larghezza)
+   - Riga 2 / 3:
+     * Caso 1 (No piazzati): Ruolo (1 col) | Fascia (5 col)
+     * Caso 2 (1 solo piazzato): Ruolo (1 col) | Piazzato (2 col) | Fascia (3 col)
+     * Caso 3 (Piazzati multipli): Riga 2 dedicata con 2 col per ciascun piazzato, Riga 3 Ruolo (1 col) | Fascia (5 col)
+   - Riga Successiva (opzionale): Ballottaggi / Duelli (span 6)
    ========================================================================== */
 .player-card.is-compact {
   display: grid !important;
-  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+  grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
   align-items: center !important;
-  gap: 1.5px 3px !important;
-  padding: 3.5px 5px !important;
+  gap: 1.5px 2px !important;
+  padding: 3.5px 4.5px !important;
   border-radius: 6px !important;
   min-height: 0 !important;
   box-sizing: border-box !important;
@@ -1056,7 +1058,7 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08) !important;
 }
 
-/* Appiattimento semantico dei contenitori intermedi per abilitare la griglia unificata a 5 colonne */
+/* Appiattimento semantico dei contenitori intermedi per abilitare la griglia unificata a 6 colonne */
 .player-card.is-compact .player-top,
 .player-card.is-compact .identity,
 .player-card.is-compact .core-metrics.compact-metrics {
@@ -1123,7 +1125,7 @@
   line-height: 1 !important;
   display: flex !important;
   align-items: center !important;
-  justify-content: center !important;
+  justify-content: space-between !important;
   gap: 2.5px !important;
   overflow: visible !important;
   white-space: nowrap !important;
@@ -1235,7 +1237,7 @@
 .player-card.is-compact .player-strategy-badge {
   display: flex !important;
   align-items: center !important;
-  justify-content: center !important;
+  justify-content: flex-start !important;
   width: 100% !important;
   min-width: 0 !important;
   max-width: 100% !important;
@@ -1265,55 +1267,19 @@
   white-space: nowrap !important;
   overflow: hidden !important;
   text-overflow: ellipsis !important;
-  text-align: center !important;
+  text-align: left !important;
   width: 100% !important;
   max-width: 100% !important;
   font-size: 8.5px !important;
   font-weight: 800 !important;
+  letter-spacing: normal !important;
   line-height: 1 !important;
 }
 
 /* ==========================================================================
-   CASO A: NESSUN PIAZZATO (Default, es. Bastoni, Acerbi) -> 2 RIGHE
-   - Riga 1: Nome Giocatore (cols 1-5)
-   - Riga 2: Ruolo (col 1, 20%) | Fascia (cols 2-5, 80%)
-   ========================================================================== */
-.player-card.is-compact:not(.has-active-set-pieces) .metric-role,
-.player-card.is-compact.has-no-set-pieces .metric-role {
-  grid-row: 2 !important;
-  grid-column: 1 / 2 !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 100% !important;
-  min-width: 0 !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  border: none !important;
-}
-
-.player-card.is-compact:not(.has-active-set-pieces) .player-card-strategy-strip,
-.player-card.is-compact.has-no-set-pieces .player-card-strategy-strip {
-  grid-row: 2 !important;
-  grid-column: 2 / 6 !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 100% !important;
-  min-width: 0 !important;
-  max-width: 100% !important;
-  height: 16px !important;
-  min-height: 16px !important;
-  max-height: 16px !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  box-sizing: border-box !important;
-}
-
-/* ==========================================================================
-   CASO 1: NESSUN PIAZZATO (Default, es. Bastoni, Acerbi) -> 2 RIGHE
-   - Riga 1: Nome Giocatore (cols 1-5, 100%)
-   - Riga 2: Ruolo (col 1, 20%) | Fascia (cols 2-5, 80%)
+   CASO 1: NESSUN PIAZZATO (0 piazzati, es. Bastoni, Acerbi) -> 2 RIGHE
+   - Riga 1: Nome Giocatore (cols 1-6, 100%)
+   - Riga 2: Ruolo (1 col, sinistra) | Fascia (5 col, sinistra)
    ========================================================================== */
 .player-card.is-compact.has-no-set-pieces .player-set-pieces-row,
 .player-card.is-compact:not(.has-active-set-pieces) .player-set-pieces-row {
@@ -1323,7 +1289,7 @@
 .player-card.is-compact.has-no-set-pieces .metric-role,
 .player-card.is-compact:not(.has-active-set-pieces) .metric-role {
   grid-row: 2 !important;
-  grid-column: 1 / 2 !important;
+  grid-column: 1 / 2 !important; /* 1 elemento */
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -1337,10 +1303,10 @@
 .player-card.is-compact.has-no-set-pieces .player-card-strategy-strip,
 .player-card.is-compact:not(.has-active-set-pieces) .player-card-strategy-strip {
   grid-row: 2 !important;
-  grid-column: 2 / 6 !important;
+  grid-column: 2 / 7 !important; /* 5 elementi */
   display: flex !important;
   align-items: center !important;
-  justify-content: center !important;
+  justify-content: flex-start !important;
   width: 100% !important;
   min-width: 0 !important;
   max-width: 100% !important;
@@ -1353,9 +1319,12 @@
 }
 
 /* ==========================================================================
-   CASO 2: 1 SOLO PIAZZATO (es. Lautaro 3🎯) -> 2 RIGHE
-   - Riga 1: Nome Giocatore (cols 1-5, 100%)
-   - Riga 2: Ruolo (1 elemento, col 1) | Piazzato (2 elementi, cols 2-3) | Fascia (2 elementi, cols 4-5)
+   CASO 2: 1 SOLO PIAZZATO (es. Lautaro 3🎯) -> 2 o 3 RIGHE
+   - Riga 1: Nome Giocatore (cols 1-6, 100%)
+   - Riga 2: Ruolo (1 col) | Piazzato (2 col) | Fascia (3 col se corta, es. "TOP")
+   - Se la fascia è lunga (es. "SUPER TOP"):
+     Riga 2: Ruolo (col 1, 1 slot) | Piazzato (cols 2-7 a sinistra)
+     Riga 3: Fascia a tutta larghezza (cols 1-6 allineata a sinistra)
    ========================================================================== */
 .player-card.is-compact.has-single-set-piece .metric-role {
   grid-row: 2 !important;
@@ -1372,10 +1341,10 @@
 
 .player-card.is-compact.has-single-set-piece .player-set-pieces-row {
   grid-row: 2 !important;
-  grid-column: 2 / 4 !important; /* Prende 2 elementi della griglia */
+  grid-column: 2 / 4 !important; /* 2 elementi della griglia a 6 colonne */
   display: flex !important;
   align-items: center !important;
-  justify-content: center !important;
+  justify-content: flex-start !important;
   width: 100% !important;
   min-width: 0 !important;
   margin: 0 !important;
@@ -1386,7 +1355,7 @@
 .player-card.is-compact.has-single-set-piece .player-set-pieces-row .set-pieces-badge {
   display: flex !important;
   align-items: center !important;
-  justify-content: center !important;
+  justify-content: flex-start !important;
   width: 100% !important;
 }
 
@@ -1406,10 +1375,129 @@
 
 .player-card.is-compact.has-single-set-piece .player-card-strategy-strip {
   grid-row: 2 !important;
-  grid-column: 4 / 6 !important; /* 2 elementi della griglia */
+  grid-column: 4 / 7 !important; /* 3 elementi della griglia a 6 colonne */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: 16px !important;
+  min-height: 16px !important;
+  max-height: 16px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* Se la fascia non entra al 70% su Riga 2 (es. SUPER TOP per Lautaro), va a capo su Riga 3 a tutta larghezza */
+.player-card.is-compact.has-single-set-piece.has-tier-row-3 .metric-role {
+  grid-row: 2 !important;
+  grid-column: 1 / 2 !important;
+}
+
+.player-card.is-compact.has-single-set-piece.has-tier-row-3 .player-set-pieces-row {
+  grid-row: 2 !important;
+  grid-column: 5 / 7 !important; /* Spinto all'estrema destra (slot 5-6): i 3 slot liberi rimangono in mezzo tra Ruolo e Piazzato! */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  width: 100% !important;
+}
+
+.player-card.is-compact.has-single-set-piece.has-tier-row-3 .player-set-pieces-row .set-pieces-badge {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  width: 100% !important;
+}
+
+.player-card.is-compact.has-single-set-piece.has-tier-row-3 .player-set-pieces-row .sp-item {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: 16px !important;
+  padding: 0 4px !important;
+}
+
+.player-card.is-compact.has-tier-row-3 .player-card-strategy-strip {
+  grid-row: 3 !important;
+  grid-column: 1 / -1 !important; /* Tutta la Riga 3 per la fascia con font a grandezza naturale */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  width: 100% !important;
+}
+
+/* ==========================================================================
+   CASO 3: 2 PIAZZATI (es. Dimarco: punizioni + corner) -> 3 RIGHE
+   - Riga 1: Nome Giocatore (cols 1-6, 100%)
+   - Riga 2: Ruolo (col 1, 1 slot) | 2 Piazzati (cols 2-7, 5 slot).
+             Con justify-content: space-between, Punizioni occupa gli slot 2-3 (sinistra),
+             Corner occupa gli slot 5-6 (destra), e lo slot libero 4 sta in mezzo tra i due!
+   - Riga 3: Fascia di Strategia (tutta la riga a 6 colonne, 100%)
+   ========================================================================== */
+.player-card.is-compact.has-double-set-piece .metric-role,
+.player-card.is-compact.sp-count-2 .metric-role {
+  grid-row: 2 !important;
+  grid-column: 1 / 2 !important; /* Ruolo sale su Riga 2 perché c'è spazio (1 slot su 6)! */
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+
+.player-card.is-compact.has-double-set-piece .player-set-pieces-row,
+.player-card.is-compact.sp-count-2 .player-set-pieces-row {
+  grid-row: 2 !important;
+  grid-column: 2 / 7 !important; /* Restanti 5 slot di Riga 2 */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1 !important;
+}
+
+.player-card.is-compact.has-double-set-piece .player-set-pieces-row .set-pieces-badge,
+.player-card.is-compact.sp-count-2 .player-set-pieces-row .set-pieces-badge {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+}
+
+/* Ciascun piazzato occupa esattamente 2 slot dei 5 disponibili (2/5 = 40%). 
+   Con justify-content: space-between, il primo va a sinistra (slot 2-3),
+   il secondo va a destra (slot 5-6), e lo slot libero (slot 4) sta in mezzo tra i due! */
+.player-card.is-compact.has-double-set-piece .player-set-pieces-row .set-pieces-badge .sp-item,
+.player-card.is-compact.sp-count-2 .player-set-pieces-row .set-pieces-badge .sp-item {
+  flex: 0 0 calc((100% - 2px) * 0.4) !important;
+  width: calc((100% - 2px) * 0.4) !important;
+  max-width: calc((100% - 2px) * 0.4) !important;
+  height: 16px !important;
+  min-height: 16px !important;
+  max-height: 16px !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 2.5px !important;
+  padding: 0 3px !important;
+}
+
+.player-card.is-compact.has-double-set-piece .player-card-strategy-strip,
+.player-card.is-compact.sp-count-2 .player-card-strategy-strip {
+  grid-row: 3 !important;
+  grid-column: 1 / -1 !important; /* Tutta la Riga 3 per la fascia a grandezza naturale */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
   width: 100% !important;
   min-width: 0 !important;
   max-width: 100% !important;
@@ -1422,36 +1510,38 @@
 }
 
 /* ==========================================================================
-   CASO 3: PIAZZATI MULTIPLI (es. Dimarco, Calhanoglu) -> 3 RIGHE
-   - Riga 1: Nome Giocatore (cols 1-5, 100%)
-   - Riga 2: Riga Dedicata Piazzati (ciascun piazzato occupa 2 elementi = 40% larghezza!)
-   - Riga 3: Ruolo (1 elemento, col 1) | Fascia (4 elementi, cols 2-5)
+   CASO 4: 3 O PIÙ PIAZZATI (es. Calhanoglu: rigori + punizioni + corner) -> 3 RIGHE
+   - 3 piazzati riempiono l'intera Riga 2 (6 colonne, 2 ciascuno).
+   - Riga 2: 3 Piazzati (cols 1-6, 100%) con justify-content: space-between
+   - Riga 3: Ruolo (1 col) | Fascia (5 col) con justify-content: flex-start
    ========================================================================== */
-.player-card.is-compact.has-multi-set-pieces .player-set-pieces-row {
+.player-card.is-compact.has-triple-set-piece .player-set-pieces-row,
+.player-card.is-compact.sp-count-3 .player-set-pieces-row {
   grid-row: 2 !important;
-  grid-column: 1 / -1 !important; /* Tutta la riga dedicata */
+  grid-column: 1 / -1 !important; /* Tutta la riga a 6 colonne */
   display: flex !important;
   align-items: center !important;
-  justify-content: center !important;
+  justify-content: space-between !important;
   width: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
   line-height: 1 !important;
 }
 
-.player-card.is-compact.has-multi-set-pieces .player-set-pieces-row .set-pieces-badge {
+.player-card.is-compact.has-triple-set-piece .player-set-pieces-row .set-pieces-badge,
+.player-card.is-compact.sp-count-3 .player-set-pieces-row .set-pieces-badge {
   display: flex !important;
   align-items: center !important;
-  justify-content: center !important;
-  gap: 3px !important;
+  justify-content: space-between !important;
   width: 100% !important;
 }
 
-/* Ogni singolo piazzato occupa 2 elementi della griglia (40% di 5 colonne)! */
-.player-card.is-compact.has-multi-set-pieces .player-set-pieces-row .set-pieces-badge .sp-item {
-  flex: 0 0 calc(40% - 2px) !important;
-  width: calc(40% - 2px) !important;
-  max-width: calc(40% - 2px) !important;
+/* Ciascun piazzato occupa 2 posti della griglia a 6 colonne (2/6 = 33.333%)! */
+.player-card.is-compact.has-triple-set-piece .player-set-pieces-row .set-pieces-badge .sp-item,
+.player-card.is-compact.sp-count-3 .player-set-pieces-row .set-pieces-badge .sp-item {
+  flex: 0 0 calc((100% - 4px) / 3) !important;
+  width: calc((100% - 4px) / 3) !important;
+  max-width: calc((100% - 4px) / 3) !important;
   height: 16px !important;
   min-height: 16px !important;
   max-height: 16px !important;
@@ -1463,7 +1553,8 @@
   padding: 0 3px !important;
 }
 
-.player-card.is-compact.has-multi-set-pieces .metric-role {
+.player-card.is-compact.has-triple-set-piece .metric-role,
+.player-card.is-compact.sp-count-3 .metric-role {
   grid-row: 3 !important;
   grid-column: 1 / 2 !important; /* 1 elemento */
   display: flex !important;
@@ -1476,12 +1567,13 @@
   border: none !important;
 }
 
-.player-card.is-compact.has-multi-set-pieces .player-card-strategy-strip {
+.player-card.is-compact.has-triple-set-piece .player-card-strategy-strip,
+.player-card.is-compact.sp-count-3 .player-card-strategy-strip {
   grid-row: 3 !important;
-  grid-column: 2 / 6 !important; /* 4 elementi */
+  grid-column: 2 / 7 !important; /* 5 elementi */
   display: flex !important;
   align-items: center !important;
-  justify-content: center !important;
+  justify-content: flex-start !important;
   width: 100% !important;
   min-width: 0 !important;
   max-width: 100% !important;
@@ -1505,11 +1597,15 @@
   width: 100% !important;
 }
 
-.player-card.is-compact.has-multi-set-pieces .duels-list {
+.player-card.is-compact.has-double-set-piece .duels-list,
+.player-card.is-compact.has-triple-set-piece .duels-list,
+.player-card.is-compact.sp-count-2 .duels-list,
+.player-card.is-compact.sp-count-3 .duels-list,
+.player-card.is-compact.has-tier-row-3 .duels-list {
   grid-row: 4 !important;
 }
 
-.player-card.is-compact:not(.has-multi-set-pieces) .duels-list {
+.player-card.is-compact:not(.has-double-set-piece):not(.has-triple-set-piece):not(.sp-count-2):not(.sp-count-3):not(.has-tier-row-3) .duels-list {
   grid-row: 3 !important;
 }
 
@@ -1612,6 +1708,7 @@
 
   .player-card.is-compact .player-strategy-badge .tier-label-text {
     font-size: 8px !important;
+    letter-spacing: normal !important;
     line-height: 1 !important;
   }
 
@@ -1677,6 +1774,7 @@
 
   .player-card.is-compact .player-strategy-badge .tier-label-text {
     font-size: 7.5px !important;
+    letter-spacing: normal !important;
     line-height: 1 !important;
   }
 

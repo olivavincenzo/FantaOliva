@@ -225,6 +225,11 @@
   filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.45));
 }
 
+.soccer-pitch.is-3d-pitch .pitch-slot-wrapper[data-slot-id="pos_1"],
+.soccer-pitch.is-3d-pitch .pitch-slot-wrapper[data-slot-role="POR"] {
+  top: 90% !important;
+}
+
 /* Ombra di contatto realistica proiettata sull'erba dal calciatore in 3D */
 .soccer-pitch.is-3d-pitch .pitch-slot-wrapper::after {
   content: '';
