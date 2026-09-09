@@ -4,7 +4,7 @@
  */
 
 import { INITIAL_TEAMS, CSV_PLAYER_CATALOG } from './data/initialData.js';
-import { FORMATIONS } from './data/formations.js';
+import { FORMATIONS } from './data/formations.js?v=33';
 import { SOS_STRATEGY_1 } from './data/sosStrategy1.js';
 import { SOS_TEAMS_DATA } from './data/sosTeamsData.js';
 import { getPlayerIndices, TITOLARITA_LABELS, AFFIDABILITA_LABELS, INTEGRITA_LABELS } from './data/playerIndices.js';
@@ -910,7 +910,7 @@ class Store {
         slot,
         player,
         x: customPos ? customPos.x : slot.x,
-        y: slot.id === 'pos_1' ? (customPos && customPos.y !== 86.5 ? customPos.y : 90) : (customPos ? customPos.y : slot.y),
+        y: customPos ? customPos.y : slot.y,
         isCustom: Boolean(customPos)
       };
     });

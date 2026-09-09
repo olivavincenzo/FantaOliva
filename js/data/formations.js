@@ -18,9 +18,9 @@ export const FORMATIONS = {
       { id: 'pos_6',  role: 'M',   label: 'MED', x: 50, y: 43, defaultRole: 'M' },
       { id: 'pos_7',  role: 'C',   label: 'MZD', x: 73, y: 37, defaultRole: 'C' },
       { id: 'pos_8',  role: 'C',   label: 'MZS', x: 27, y: 37, defaultRole: 'C' },
-      { id: 'pos_9',  role: 'W',   label: 'AD',  x: 83, y: 16, defaultRole: 'W' },
-      { id: 'pos_10', role: 'PC',  label: 'PC',  x: 50, y: 11, defaultRole: 'PC' },
-      { id: 'pos_11', role: 'W',   label: 'AS',  x: 17, y: 16, defaultRole: 'W' }
+      { id: 'pos_9',  role: 'W',   label: 'AD',  x: 83, y: 12, defaultRole: 'W' },
+      { id: 'pos_10', role: 'PC',  label: 'PC',  x: 50, y: 8,  defaultRole: 'PC' },
+      { id: 'pos_11', role: 'W',   label: 'AS',  x: 17, y: 12, defaultRole: 'W' }
     ],
     connections: [
       ['pos_1', 'pos_3'], ['pos_1', 'pos_4'],
@@ -100,11 +100,11 @@ export const FORMATIONS = {
       { id: 'pos_2',  role: 'DC',  label: 'BR-D', x: 74, y: 65, defaultRole: 'DC' },
       { id: 'pos_3',  role: 'DC',  label: 'LIB',  x: 50, y: 65, defaultRole: 'DC' },
       { id: 'pos_4',  role: 'DC',  label: 'BR-S', x: 26, y: 65, defaultRole: 'DC' },
-      { id: 'pos_5',  role: 'E',   label: 'ED',   x: 90, y: 33, defaultRole: 'E' },
-      { id: 'pos_6',  role: 'C',   label: 'MZD',  x: 71, y: 37, defaultRole: 'C' },
-      { id: 'pos_7',  role: 'M',   label: 'REG',  x: 50, y: 42, defaultRole: 'M' },
-      { id: 'pos_8',  role: 'C',   label: 'MZS',  x: 29, y: 37, defaultRole: 'C' },
-      { id: 'pos_9',  role: 'E',   label: 'ES',   x: 10, y: 33, defaultRole: 'E' },
+      { id: 'pos_5',  role: 'E',   label: 'ED',   x: 90.5, y: 33, defaultRole: 'E' },
+      { id: 'pos_6',  role: 'C',   label: 'MZD',  x: 70.5, y: 37, defaultRole: 'C' },
+      { id: 'pos_7',  role: 'M',   label: 'REG',  x: 50,   y: 42, defaultRole: 'M' },
+      { id: 'pos_8',  role: 'C',   label: 'MZS',  x: 29.5, y: 37, defaultRole: 'C' },
+      { id: 'pos_9',  role: 'E',   label: 'ES',   x: 9.5,  y: 33, defaultRole: 'E' },
       { id: 'pos_10', role: 'PC',  label: 'PCD',  x: 62, y: 11, defaultRole: 'PC' },
       { id: 'pos_11', role: 'A',   label: 'PCS',  x: 38, y: 11, defaultRole: 'A' }
     ],

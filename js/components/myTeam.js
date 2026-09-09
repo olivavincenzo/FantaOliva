@@ -4,7 +4,7 @@
 
 import { store } from '../store.js';
 import { createPlayerCard } from './playerCard.js';
-import { FORMATIONS, FORMATION_LIST } from '../data/formations.js';
+import { FORMATIONS, FORMATION_LIST } from '../data/formations.js?v=33';
 import { LineupOptimizer } from '../utils/optimizer.js';
 import { sanitizeHtml } from '../utils/helpers.js';
 import { notify } from '../utils/notifications.js';

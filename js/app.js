@@ -4,7 +4,7 @@
  */
 
 import { store } from './store.js';
-import { FORMATION_LIST } from './data/formations.js';
+import { FORMATION_LIST } from './data/formations.js?v=33';
 import { TeamSelectorComponent } from './components/teamSelector.js';
 import { PitchComponent } from './components/pitch.js';
 import { PlayerInspectorComponent } from './components/playerInspector.js';
