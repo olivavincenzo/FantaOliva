@@ -518,7 +518,7 @@ export function createPlayerCard(player, options = {}) {
         ${chipsHtml ? `<div class="set-pieces-chips">${chipsHtml}</div>` : ''}
       </div>
       <div class="card-center-figure">
-        <div class="player-avatar-circle ${photoUrl ? 'has-photo' : ''}">
+        <div class="player-avatar-wrap player-avatar-circle ${photoUrl ? 'has-photo' : ''}">
           ${photoUrl ? `
             <img src="${photoUrl}" alt="${sanitizeHtml(displayName)}" class="player-avatar-photo" loading="lazy" onerror="this.parentElement.classList.remove('has-photo'); this.parentElement.classList.add('photo-error');" />
             <span class="player-avatar-fallback">${initials}</span>

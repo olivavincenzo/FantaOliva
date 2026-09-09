@@ -469,52 +469,83 @@
   margin-bottom: 1px;
 }
 
+.soccer-pitch.is-3d-pitch .player-avatar-wrap,
 .soccer-pitch.is-3d-pitch .player-avatar-circle,
+.studio-player-card .player-avatar-wrap,
 .studio-player-card .player-avatar-circle {
-  width: 27px;
-  height: 27px;
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   position: relative;
-  overflow: hidden;
-  border: 1.5px solid rgba(255, 255, 255, 0.7);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.55), 0 0 10px rgba(0, 180, 255, 0.35);
-  background: linear-gradient(135deg, #0d1e3d 0%, #030b1e 100%);
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
   flex-shrink: 0;
 }
 
-/* Fallback Iniziali colorate in base al ruolo */
-.studio-player-card.role-p .player-avatar-circle,
-.soccer-pitch.is-3d-pitch .player-card.role-p .player-avatar-circle {
-  background: linear-gradient(135deg, #d97706 0%, #78350f 100%);
-  border-color: rgba(251, 191, 36, 0.85);
-}
-.studio-player-card.role-d .player-avatar-circle,
-.soccer-pitch.is-3d-pitch .player-card.role-d .player-avatar-circle {
-  background: linear-gradient(135deg, #059669 0%, #064e3b 100%);
-  border-color: rgba(52, 211, 153, 0.85);
-}
-.studio-player-card.role-c .player-avatar-circle,
-.soccer-pitch.is-3d-pitch .player-card.role-c .player-avatar-circle {
-  background: linear-gradient(135deg, #2563eb 0%, #1e3a8a 100%);
-  border-color: rgba(96, 165, 250, 0.85);
-}
-.studio-player-card.role-a .player-avatar-circle,
-.soccer-pitch.is-3d-pitch .player-card.role-a .player-avatar-circle {
-  background: linear-gradient(135deg, #dc2626 0%, #7f1d1d 100%);
-  border-color: rgba(248, 113, 113, 0.85);
-}
-
+/* Avatar foto: visibile per intero, nessun cerchio, nessuna maschera circolare */
 .soccer-pitch.is-3d-pitch .player-avatar-photo,
 .studio-player-card .player-avatar-photo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top center;
-  border-radius: 50%;
+  height: 32px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  border-radius: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
   display: block;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.55));
+}
+
+/* Fallback Iniziali: solo quando non c'è la foto */
+.soccer-pitch.is-3d-pitch .player-avatar-wrap:not(.has-photo),
+.soccer-pitch.is-3d-pitch .player-avatar-circle:not(.has-photo),
+.soccer-pitch.is-3d-pitch .player-avatar-wrap.photo-error,
+.soccer-pitch.is-3d-pitch .player-avatar-circle.photo-error,
+.studio-player-card .player-avatar-wrap:not(.has-photo),
+.studio-player-card .player-avatar-circle:not(.has-photo),
+.studio-player-card .player-avatar-wrap.photo-error,
+.studio-player-card .player-avatar-circle.photo-error {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  background: linear-gradient(135deg, #0d1e3d 0%, #030b1e 100%) !important;
+  align-self: center;
+}
+
+/* Fallback Iniziali colorate in base al ruolo */
+.studio-player-card.role-p .player-avatar-wrap:not(.has-photo),
+.studio-player-card.role-p .player-avatar-circle:not(.has-photo),
+.soccer-pitch.is-3d-pitch .player-card.role-p .player-avatar-wrap:not(.has-photo),
+.soccer-pitch.is-3d-pitch .player-card.role-p .player-avatar-circle:not(.has-photo) {
+  background: linear-gradient(135deg, #d97706 0%, #78350f 100%) !important;
+  border-color: rgba(251, 191, 36, 0.85) !important;
+}
+.studio-player-card.role-d .player-avatar-wrap:not(.has-photo),
+.studio-player-card.role-d .player-avatar-circle:not(.has-photo),
+.soccer-pitch.is-3d-pitch .player-card.role-d .player-avatar-wrap:not(.has-photo),
+.soccer-pitch.is-3d-pitch .player-card.role-d .player-avatar-circle:not(.has-photo) {
+  background: linear-gradient(135deg, #059669 0%, #064e3b 100%) !important;
+  border-color: rgba(52, 211, 153, 0.85) !important;
+}
+.studio-player-card.role-c .player-avatar-wrap:not(.has-photo),
+.studio-player-card.role-c .player-avatar-circle:not(.has-photo),
+.soccer-pitch.is-3d-pitch .player-card.role-c .player-avatar-wrap:not(.has-photo),
+.soccer-pitch.is-3d-pitch .player-card.role-c .player-avatar-circle:not(.has-photo) {
+  background: linear-gradient(135deg, #2563eb 0%, #1e3a8a 100%) !important;
+  border-color: rgba(96, 165, 250, 0.85) !important;
+}
+.studio-player-card.role-a .player-avatar-wrap:not(.has-photo),
+.studio-player-card.role-a .player-avatar-circle:not(.has-photo),
+.soccer-pitch.is-3d-pitch .player-card.role-a .player-avatar-wrap:not(.has-photo),
+.soccer-pitch.is-3d-pitch .player-card.role-a .player-avatar-circle:not(.has-photo) {
+  background: linear-gradient(135deg, #dc2626 0%, #7f1d1d 100%) !important;
+  border-color: rgba(248, 113, 113, 0.85) !important;
 }
 
 .soccer-pitch.is-3d-pitch .player-avatar-fallback,
@@ -525,19 +556,23 @@
   align-items: center;
   justify-content: center;
   font-weight: 800;
-  font-size: 13px;
+  font-size: 11px;
   color: #ffffff;
   letter-spacing: 0.5px;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
   font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
 }
 
+.soccer-pitch.is-3d-pitch .player-avatar-wrap.has-photo:not(.photo-error) .player-avatar-fallback,
 .soccer-pitch.is-3d-pitch .player-avatar-circle.has-photo:not(.photo-error) .player-avatar-fallback,
+.studio-player-card .player-avatar-wrap.has-photo:not(.photo-error) .player-avatar-fallback,
 .studio-player-card .player-avatar-circle.has-photo:not(.photo-error) .player-avatar-fallback {
   display: none !important;
 }
 
+.soccer-pitch.is-3d-pitch .player-avatar-wrap.photo-error .player-avatar-photo,
 .soccer-pitch.is-3d-pitch .player-avatar-circle.photo-error .player-avatar-photo,
+.studio-player-card .player-avatar-wrap.photo-error .player-avatar-photo,
 .studio-player-card .player-avatar-circle.photo-error .player-avatar-photo {
   display: none !important;
 }
@@ -761,12 +796,11 @@
   .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .card-center-figure {
     height: 30px;
     margin-bottom: 1px;
+    overflow: visible;
   }
 
-  .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .player-avatar-circle {
-    width: 28px;
-    height: 28px;
-    border-width: 1px;
+  .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .player-avatar-photo {
+    height: 30px;
   }
 
   .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .player-avatar-fallback {
