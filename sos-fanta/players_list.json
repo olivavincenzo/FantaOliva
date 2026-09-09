@@ -1871,6 +1871,33 @@
       }
     },
     {
+      "player_id": "ab2a5fb7-6ee0-4efe-92d2-adafe3bb3d3d",
+      "sportsmonks_id": 24081699,
+      "fantalab_id": "ab2a5fb7-6ee0-4efe-92d2-adafe3bb3d3d",
+      "fantacalcio_id": 4359,
+      "name": "Piccoli",
+      "full_name": "Roberto Piccoli",
+      "team_id": 8513,
+      "team_name": "Bologna",
+      "team_short": "BOL",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/1/8513.png",
+      "role": "A",
+      "mantra_roles": [
+        "Pc"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/24081699/v2.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 3,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": true,
+      "stats": {
+        "fmv": 6.83,
+        "mv": 5.83
+      }
+    },
+    {
       "player_id": "fd980a09-99b1-4174-81e5-60cbcd1fbb49",
       "sportsmonks_id": 37684319,
       "fantalab_id": "fd980a09-99b1-4174-81e5-60cbcd1fbb49",
@@ -2253,33 +2280,6 @@
       "stats": {
         "fmv": 6.66,
         "mv": 6.33
-      }
-    },
-    {
-      "player_id": "ab2a5fb7-6ee0-4efe-92d2-adafe3bb3d3d",
-      "sportsmonks_id": 24081699,
-      "fantalab_id": "ab2a5fb7-6ee0-4efe-92d2-adafe3bb3d3d",
-      "fantacalcio_id": 4359,
-      "name": "Piccoli",
-      "full_name": "Roberto Piccoli",
-      "team_id": 8513,
-      "team_name": "Bologna",
-      "team_short": "BOL",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/1/8513.png",
-      "role": "A",
-      "mantra_roles": [
-        "Pc"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/24081699/v2.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 3,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": true,
-      "stats": {
-        "fmv": 6.66,
-        "mv": 5.83
       }
     },
     {
@@ -13786,6 +13786,33 @@
       }
     },
     {
+      "player_id": "b8f742ac-6eba-4fe7-a6bb-fd9d8f657f18",
+      "sportsmonks_id": 540203,
+      "fantalab_id": "b8f742ac-6eba-4fe7-a6bb-fd9d8f657f18",
+      "fantacalcio_id": 6319,
+      "name": "Leite",
+      "full_name": "Diogo Leite",
+      "team_id": 43,
+      "team_name": "Lazio",
+      "team_short": "LAZ",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/43.png",
+      "role": "D",
+      "mantra_roles": [
+        "Dc"
+      ],
+      "player_image": null,
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": null,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": true,
+      "stats": {
+        "fmv": null,
+        "mv": null
+      }
+    },
+    {
       "player_id": "307a60c0-42d3-4540-845e-461bdb360a9a",
       "sportsmonks_id": 129766,
       "fantalab_id": "307a60c0-42d3-4540-845e-461bdb360a9a",
@@ -14781,7 +14808,7 @@
     "fallback_price"
   ],
   "pagination": {
-    "total": 532,
+    "total": 533,
     "limit": 1000,
     "offset": 0
   },

@@ -578,7 +578,7 @@ export const INITIAL_TEAMS = [
           "diffM": 5,
           "fvm": 147,
           "fvmM": 147,
-          "classic_8_mod_median": 5.6,
+          "classic_8_mod_median": 5.7,
           "classic_10_mod_median": 6.4,
           "classic_12_mod_median": 7.3
         },
@@ -720,9 +720,9 @@ export const INITIAL_TEAMS = [
           "diffM": -18,
           "fvm": 262,
           "fvmM": 262,
-          "classic_8_mod_median": 8.5,
-          "classic_10_mod_median": 14.8,
-          "classic_12_mod_median": 18.2
+          "classic_8_mod_median": 8.2,
+          "classic_10_mod_median": 14.6,
+          "classic_12_mod_median": 18.1
         },
         "stats": {
           "titolarita": 87,
@@ -781,7 +781,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Randal Kolo Muani è tornato alla Juve dal PSG, ma questa volta a titolo definitivo per oltre 50 milioni di euro bonus inclusi. Luciano Spalletti ha fortemente voluto il centravanti classe 1998, aveva già fatto il suo nome al club lo scorso gennaio. Guiderà lui l'attacco di Spalletti, ma occhio alla concorrenza del nuovo arrivato Woltemade: proverà a insidiarlo, i due sono molto vicini. L'allenatore ha fortemente voluto il francese (lo voleva già a gennaio) ed è pronto ad affidargli una maglia al centro del reparto, ma la sua stagione non è iniziata col piede giusto finora. Muani farà di tutto per migliorare il suo record stagionale di gol in un campionato. È datato 2022/23, in Bundesliga, 15 reti e 14 assist in 32 partite con l'Eintracht Francoforte. Rimane questa la sua miglior annata in termini di bonus, al PSG è arrivato massimo a 6 gol stagionali in Ligue 1, al Tottenham l'anno scorso ne ha segnato solo 1 in 30 gare. Non stiamo parlando di un bomber vero e proprio, ma ha tutto per diventarlo, sappiamo che Spalletti è molto bravo a lavorare con i centravanti. 97 gol e 56 assist in 331 partite in carriera per Kolo Muani, toccherà quindi la quota 100 con la maglia bianconera. Ha voluto fortemente la Juve (la voleva già a gennaio), ha fatto qualsiasi cosa per tornare in bianconero e ha grandissime motivazioni: ci sono tutti gli ingredienti per vedere una stagione importante del francese, ma è chiamato a svoltare presto perché Woltemade può essere più di una semplice alternativa. Fisicamente arriva un giocatore integro, ha saltato 7 gare l'anno scorso col Tottenham per una fastidiosa contusione al muscolo, ma non ha mai avuto infortuni gravi. Solo 35 gialli e 2 rossi in carriera, non è un giocatore che prende tanti cartellini, anzi. E poi c'è un fattore molto importante: i rigori. 6 su 6 in carriera per Kolo Muani (di cui 1 alla Juve), si candida a essere uno dei principali specialisti insieme a Woltemade.",
+        "fantaComment": "Randal Kolo Muani è tornato alla Juve dal PSG, ma questa volta a titolo definitivo per oltre 50 milioni di euro bonus inclusi. Luciano Spalletti ha fortemente voluto il centravanti classe 1998, aveva già fatto il suo nome al club lo scorso gennaio. Guiderà lui l'attacco di Spalletti, ma occhio alla concorrenza del nuovo arrivato Woltemade: proverà a insidiarlo, i due sono molto vicini. L'allenatore ha fortemente voluto il francese (lo voleva già a gennaio) ed è pronto ad affidargli una maglia al centro del reparto, ma la sua stagione non è iniziata col piede giusto finora. Muani farà di tutto per migliorare il suo record stagionale di gol in un campionato. È datato 2022/23, in Bundesliga, 15 reti e 14 assist in 32 partite con l'Eintracht Francoforte. Rimane questa la sua miglior annata in termini di bonus, al PSG è arrivato massimo a 6 gol stagionali in Ligue 1, al Tottenham l'anno scorso ne ha segnato solo 1 in 30 gare. Non stiamo parlando di un bomber vero e proprio, ma sappiamo che Spalletti è molto bravo a lavorare con i centravanti. 97 gol e 56 assist in 331 partite in carriera per Kolo Muani, toccherà quindi la quota 100 con la maglia bianconera. Ha voluto fortemente la Juve (la voleva già a gennaio), ha fatto qualsiasi cosa per tornare in bianconero e ha grandissime motivazioni: ci sono tutti gli ingredienti per vedere una stagione importante del francese, ma è chiamato a svoltare presto perché Woltemade può essere più di una semplice alternativa. Fisicamente arriva un giocatore integro, ha saltato 7 gare l'anno scorso col Tottenham per una fastidiosa contusione al muscolo, ma non ha mai avuto infortuni gravi. Solo 35 gialli e 2 rossi in carriera, non è un giocatore che prende tanti cartellini, anzi. E poi c'è un fattore molto importante: i rigori. 6 su 6 in carriera per Kolo Muani (di cui 1 alla Juve), si candida a essere uno dei principali specialisti insieme a Woltemade.",
         "quotazioni": {
           "qtA": 123,
           "qtI": 105,
@@ -791,7 +791,7 @@ export const INITIAL_TEAMS = [
           "diffM": 18,
           "fvm": 394,
           "fvmM": 394,
-          "classic_8_mod_median": 19.2,
+          "classic_8_mod_median": 19,
           "classic_10_mod_median": 24,
           "classic_12_mod_median": 25.8
         },
@@ -864,7 +864,7 @@ export const INITIAL_TEAMS = [
           "diffM": 1,
           "fvm": 19,
           "fvmM": 19,
-          "classic_8_mod_median": 0.3,
+          "classic_8_mod_median": 0.4,
           "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0.3
         },
@@ -999,7 +999,7 @@ export const INITIAL_TEAMS = [
           "fvm": 160,
           "fvmM": 160,
           "classic_8_mod_median": 2,
-          "classic_10_mod_median": 2.7,
+          "classic_10_mod_median": 2.8,
           "classic_12_mod_median": 4
         },
         "stats": {
@@ -1400,9 +1400,9 @@ export const INITIAL_TEAMS = [
           "diffM": 120,
           "fvm": 387,
           "fvmM": 387,
-          "classic_8_mod_median": 10.3,
-          "classic_10_mod_median": 12.2,
-          "classic_12_mod_median": 13.2
+          "classic_8_mod_median": 10.2,
+          "classic_10_mod_median": 12.1,
+          "classic_12_mod_median": 12.9
         },
         "stats": {
           "titolarita": 63,
@@ -1591,7 +1591,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Jeremie Boga è uno dei jolly del fantacalcio, uno spacca-partite. Uno di quei giocatori da mettere a prescindere, anche quando parte fuori. Non garantisce la titolarità ma andrà spesso a voto, alla Juve ha fatto molto bene da gennaio in poi con 4 gol e 1 assist ma ora c’è più concorrenza. Buon jolly da avere in attacco e da schierare come terzo slot, alternandolo ad altri.",
+        "fantaComment": "Jeremie Boga è uno dei jolly del fantacalcio, uno spacca-partite. Uno di quei giocatori da mettere a prescindere, anche quando parte fuori. Non garantisce la titolarità ma andrà spesso a voto, alla Juve ha fatto molto bene da gennaio in poi con 4 gol e 1 assist ma ora c’è più concorrenza. Buon jolly da avere in attacco e da schierare come terzo slot, alternandolo ad altri. Ma attenzione agli infortuni, fatica a trovare continuità.",
         "quotazioni": {
           "qtA": 24,
           "qtI": 50,
@@ -1802,7 +1802,7 @@ export const INITIAL_TEAMS = [
           "diffM": 40,
           "fvm": 131,
           "fvmM": 131,
-          "classic_8_mod_median": 4.2,
+          "classic_8_mod_median": 4,
           "classic_10_mod_median": 6.8,
           "classic_12_mod_median": 8.2
         },
@@ -1869,7 +1869,7 @@ export const INITIAL_TEAMS = [
           "diffM": -5,
           "fvm": 29,
           "fvmM": 29,
-          "classic_8_mod_median": 1.8,
+          "classic_8_mod_median": 1.7,
           "classic_10_mod_median": 3,
           "classic_12_mod_median": 4
         },
@@ -2018,7 +2018,7 @@ export const INITIAL_TEAMS = [
           "fvm": 112,
           "fvmM": 112,
           "classic_8_mod_median": 2,
-          "classic_10_mod_median": 3.1,
+          "classic_10_mod_median": 3.2,
           "classic_12_mod_median": 5
         },
         "stats": {
@@ -2088,7 +2088,7 @@ export const INITIAL_TEAMS = [
           "fvm": 6,
           "fvmM": 6,
           "classic_8_mod_median": 0.2,
-          "classic_10_mod_median": 0.3,
+          "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0.6
         },
         "stats": {
@@ -2300,7 +2300,7 @@ export const INITIAL_TEAMS = [
           "diffM": -3,
           "fvm": 45,
           "fvmM": 45,
-          "classic_8_mod_median": 1.6,
+          "classic_8_mod_median": 1.7,
           "classic_10_mod_median": 1.2,
           "classic_12_mod_median": 0.6
         },
@@ -2513,8 +2513,8 @@ export const INITIAL_TEAMS = [
           "diffM": 40,
           "fvm": 141,
           "fvmM": 141,
-          "classic_8_mod_median": 5,
-          "classic_10_mod_median": 5.1,
+          "classic_8_mod_median": 5.2,
+          "classic_10_mod_median": 5.2,
           "classic_12_mod_median": 5.4
         },
         "stats": {
@@ -2586,7 +2586,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 54,
           "classic_8_mod_median": 0.5,
           "classic_10_mod_median": 1.2,
-          "classic_12_mod_median": 2.3
+          "classic_12_mod_median": 2.2
         },
         "stats": {
           "titolarita": 47,
@@ -2727,8 +2727,8 @@ export const INITIAL_TEAMS = [
           "fvm": 115,
           "fvmM": 115,
           "classic_8_mod_median": 4.4,
-          "classic_10_mod_median": 6.2,
-          "classic_12_mod_median": 7.2
+          "classic_10_mod_median": 6.3,
+          "classic_12_mod_median": 7.3
         },
         "stats": {
           "titolarita": 84,
@@ -2787,7 +2787,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Albert Gudmundsson passa alla Lazio in prestito con diritto di riscatto e cercherà di rilanciarsi in Serie A dopo il flop in maglia Fiorentina. Il 29enne islandese non è riuscito a tornare ai livelli della stagione 2022/23 dove con il Genoa mise a segno 14 gol e 4 assist. A Firenze tante ombre e poche luci ma i bonus non sono comunque mancati, almeno sulla carta: 6 reti e 2 assist nella prima annata, 5 e 4 nella seconda. Gattuso proverà a bissare il lavoro che sta facendo con Frattesi ma rimane da capire la sua posizione in campo. Nel 4-3-3 attuale potrebbe adattarsi a destra come titolare ma anche fare il vice Zaccagni a sinistra, alla Fiorentina era stato provato anche da mezzala atipica con un passaggio quindi eventuale al 4-2-3-1. Al fantacalcio può regalare bonus anche grazie ai calci piazzati, sarà un jolly totale per il reparto offensivo.",
+        "fantaComment": "Albert Gudmundsson passa alla Lazio in prestito con diritto di riscatto e cercherà di rilanciarsi in Serie A dopo il flop in maglia Fiorentina. Il 29enne islandese non è riuscito a tornare ai livelli della stagione 2022/23 dove con il Genoa mise a segno 14 gol e 4 assist. A Firenze tante ombre e poche luci ma i bonus non sono comunque mancati, almeno sulla carta: 6 reti e 2 assist nella prima annata, 5 e 4 nella seconda. Gattuso proverà a bissare il lavoro che sta facendo con Frattesi ma rimane da capire la sua posizione in campo. Nel 4-3-3 attuale potrebbe adattarsi a destra come titolare ma anche fare il vice Zaccagni a sinistra, alla Fiorentina era stato provato anche da mezzala atipica con un passaggio quindi eventuale al 4-2-3-1. Al fantacalcio può regalare bonus anche grazie ai calci piazzati, sarà un jolly totale per il reparto offensivo e si è sbloccato subito a Udine.",
         "quotazioni": {
           "qtA": 33,
           "qtI": 37,
@@ -3561,6 +3561,73 @@ export const INITIAL_TEAMS = [
           "espulsioni": 0,
           "esp": 0,
           "au": 0
+        },
+        "substitutes": [],
+        "slotId": null
+      },
+      {
+        "id": "lazio_leite_6319",
+        "csvId": "6319",
+        "fantalabId": "b8f742ac-6eba-4fe7-a6bb-fd9d8f657f18",
+        "name": "Leite",
+        "displayName": "Leite",
+        "fullName": "Diogo Leite",
+        "teamName": "Lazio",
+        "teamId": "lazio",
+        "teamShort": "LAZ",
+        "role": "DC",
+        "classicRole": "D",
+        "mantraRole": "Dc",
+        "fantaRole": "D",
+        "photoUrl": "",
+        "playerImage": "",
+        "appetibilita": 84,
+        "status": "panchina",
+        "isAvailable": true,
+        "isPenaltyTaker": false,
+        "isFreeKickTaker": false,
+        "isCornerTaker": false,
+        "rigorista": false,
+        "punizioni": false,
+        "corner": false,
+        "positionNotes": "",
+        "fantaComment": "",
+        "quotazioni": {
+          "qtA": 1,
+          "qtI": 1,
+          "diff": 0,
+          "qtAM": 1,
+          "qtIM": 1,
+          "diffM": 0,
+          "fvm": 1,
+          "fvmM": 1,
+          "classic_8_mod_median": 0,
+          "classic_10_mod_median": 0,
+          "classic_12_mod_median": 0
+        },
+        "stats": {
+          "titolarita": 61,
+          "fantamedia": 6.0,
+          "mediaVoto": 6.0,
+          "pv": 23,
+          "presenze": 23,
+          "gol": 0,
+          "gf": 0,
+          "gs": 0,
+          "golSubiti": 0,
+          "rp": 0,
+          "rc": 0,
+          "rPlus": 0,
+          "rMinus": 0,
+          "rigoriSegnati": 0,
+          "rigoriSbagliati": 0,
+          "assist": 0,
+          "ass": 0,
+          "ammonizioni": 4,
+          "amm": 4,
+          "espulsioni": 0,
+          "esp": 0,
+          "au": 1
         },
         "substitutes": [],
         "slotId": null
@@ -4384,7 +4451,7 @@ export const INITIAL_TEAMS = [
           "fvm": 208,
           "fvmM": 208,
           "classic_8_mod_median": 10,
-          "classic_10_mod_median": 13,
+          "classic_10_mod_median": 12.8,
           "classic_12_mod_median": 14.3
         },
         "stats": {
@@ -4526,7 +4593,7 @@ export const INITIAL_TEAMS = [
           "fvm": 163,
           "fvmM": 163,
           "classic_8_mod_median": 4,
-          "classic_10_mod_median": 7.7,
+          "classic_10_mod_median": 7.6,
           "classic_12_mod_median": 10.2
         },
         "stats": {
@@ -4597,8 +4664,8 @@ export const INITIAL_TEAMS = [
           "diffM": 19,
           "fvm": 109,
           "fvmM": 109,
-          "classic_8_mod_median": 0.6,
-          "classic_10_mod_median": 1.7,
+          "classic_8_mod_median": 0.7,
+          "classic_10_mod_median": 1.8,
           "classic_12_mod_median": 2.8
         },
         "stats": {
@@ -5046,7 +5113,7 @@ export const INITIAL_TEAMS = [
         "fantaRole": "D",
         "photoUrl": "https://cdn.falsesoftware.com/players/37550824/v2.webp",
         "playerImage": "https://cdn.falsesoftware.com/players/37550824/v2.webp",
-        "appetibilita": 83,
+        "appetibilita": 84,
         "status": "panchina",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -7965,7 +8032,7 @@ export const INITIAL_TEAMS = [
           "diffM": 19,
           "fvm": 64,
           "fvmM": 64,
-          "classic_8_mod_median": 3.4,
+          "classic_8_mod_median": 3.5,
           "classic_10_mod_median": 4,
           "classic_12_mod_median": 4.5
         },
@@ -8036,7 +8103,7 @@ export const INITIAL_TEAMS = [
           "diffM": 6,
           "fvm": 38,
           "fvmM": 38,
-          "classic_8_mod_median": 1,
+          "classic_8_mod_median": 1.2,
           "classic_10_mod_median": 1.2,
           "classic_12_mod_median": 1.4
         },
@@ -8178,7 +8245,7 @@ export const INITIAL_TEAMS = [
           "diffM": -2,
           "fvm": 138,
           "fvmM": 138,
-          "classic_8_mod_median": 6.5,
+          "classic_8_mod_median": 6.4,
           "classic_10_mod_median": 7.8,
           "classic_12_mod_median": 8.6
         },
@@ -8249,7 +8316,7 @@ export const INITIAL_TEAMS = [
           "diffM": 18,
           "fvm": 195,
           "fvmM": 195,
-          "classic_8_mod_median": 3.1,
+          "classic_8_mod_median": 3.2,
           "classic_10_mod_median": 4.2,
           "classic_12_mod_median": 5.2
         },
@@ -8389,7 +8456,7 @@ export const INITIAL_TEAMS = [
           "diffM": 7,
           "fvm": 173,
           "fvmM": 173,
-          "classic_8_mod_median": 10,
+          "classic_8_mod_median": 10.2,
           "classic_10_mod_median": 11,
           "classic_12_mod_median": 12
         },
@@ -8462,7 +8529,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 406,
           "classic_8_mod_median": 13.6,
           "classic_10_mod_median": 15.6,
-          "classic_12_mod_median": 16.7
+          "classic_12_mod_median": 16.8
         },
         "stats": {
           "titolarita": 66,
@@ -8531,7 +8598,7 @@ export const INITIAL_TEAMS = [
           "diffM": 34,
           "fvm": 365,
           "fvmM": 365,
-          "classic_8_mod_median": 15.2,
+          "classic_8_mod_median": 15.1,
           "classic_10_mod_median": 19.2,
           "classic_12_mod_median": 21
         },
@@ -8935,7 +9002,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 29,
           "classic_8_mod_median": 0.4,
           "classic_10_mod_median": 0.8,
-          "classic_12_mod_median": 1.3
+          "classic_12_mod_median": 1.2
         },
         "stats": {
           "titolarita": 53,
@@ -9069,7 +9136,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 128,
           "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.4,
-          "classic_12_mod_median": 0.8
+          "classic_12_mod_median": 0.7
         },
         "stats": {
           "titolarita": 92,
@@ -9550,7 +9617,7 @@ export const INITIAL_TEAMS = [
           "diffM": 1,
           "fvm": 179,
           "fvmM": 179,
-          "classic_8_mod_median": 9.9,
+          "classic_8_mod_median": 10,
           "classic_10_mod_median": 11,
           "classic_12_mod_median": 12.6
         },
@@ -9762,7 +9829,7 @@ export const INITIAL_TEAMS = [
           "diffM": 4,
           "fvm": 77,
           "fvmM": 77,
-          "classic_8_mod_median": 1.8,
+          "classic_8_mod_median": 1.9,
           "classic_10_mod_median": 2,
           "classic_12_mod_median": 2.5
         },
@@ -9904,7 +9971,7 @@ export const INITIAL_TEAMS = [
           "diffM": 4,
           "fvm": 157,
           "fvmM": 157,
-          "classic_8_mod_median": 8.4,
+          "classic_8_mod_median": 8.5,
           "classic_10_mod_median": 9,
           "classic_12_mod_median": 9.5
         },
@@ -9976,7 +10043,7 @@ export const INITIAL_TEAMS = [
           "fvm": 22,
           "fvmM": 22,
           "classic_8_mod_median": 0.4,
-          "classic_10_mod_median": 0.7,
+          "classic_10_mod_median": 0.8,
           "classic_12_mod_median": 1.3
         },
         "stats": {
@@ -10118,7 +10185,7 @@ export const INITIAL_TEAMS = [
           "fvm": 298,
           "fvmM": 298,
           "classic_8_mod_median": 10,
-          "classic_10_mod_median": 10.4,
+          "classic_10_mod_median": 10.6,
           "classic_12_mod_median": 10.4
         },
         "stats": {
@@ -10258,8 +10325,8 @@ export const INITIAL_TEAMS = [
           "diffM": 25,
           "fvm": 656,
           "fvmM": 656,
-          "classic_8_mod_median": 37.8,
-          "classic_10_mod_median": 36.2,
+          "classic_8_mod_median": 38,
+          "classic_10_mod_median": 36.3,
           "classic_12_mod_median": 34.2
         },
         "stats": {
@@ -10331,7 +10398,7 @@ export const INITIAL_TEAMS = [
           "fvm": 170,
           "fvmM": 170,
           "classic_8_mod_median": 2.4,
-          "classic_10_mod_median": 3.2,
+          "classic_10_mod_median": 3.3,
           "classic_12_mod_median": 4.2
         },
         "stats": {
@@ -10733,7 +10800,7 @@ export const INITIAL_TEAMS = [
           "fvm": 61,
           "fvmM": 61,
           "classic_8_mod_median": 0.6,
-          "classic_10_mod_median": 0.6,
+          "classic_10_mod_median": 0.7,
           "classic_12_mod_median": 1
         },
         "stats": {
@@ -11766,7 +11833,7 @@ export const INITIAL_TEAMS = [
         "fantaRole": "C",
         "photoUrl": "https://cdn.falsesoftware.com/players/37537730/v1.webp",
         "playerImage": "https://cdn.falsesoftware.com/players/37537730/v1.webp",
-        "appetibilita": 84,
+        "appetibilita": 85,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -11859,7 +11926,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 42,
           "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 1,
-          "classic_12_mod_median": 2.2
+          "classic_12_mod_median": 2.1
         },
         "stats": {
           "titolarita": 32,
@@ -13644,7 +13711,7 @@ export const INITIAL_TEAMS = [
         "punizioni": true,
         "corner": true,
         "positionNotes": "",
-        "fantaComment": "Jacopo Fazzini è sempre stato un nome intrigante al Fantacalcio, nonostante la vera esplosione nella posizione di trequartista non sia arrivata con la maglia della Fiorentina. Il 23enne ha messo a segno 4 gol e un assist nell'ultima stagione a Empoli gravitando tra centrocampo e attacco ma spesso anche da mezz'ala. A secco di bonus, invece, nell'ultima stagione a Firenze. Adesso riparte da Cagliari dove potrà ricoprire diversi ruoli: mezz'ala nel 3-5-2 e 4-3-3, oppure tra le linee con l'inserimento di un trequartista negli schemi. All'asta del fantacalcio, Fazzini si può prendere come titolare low-cost delle 'provinciali', soprattutto nelle leghe numerose. In questa stagione ha saltato appena 7 partite per problemi di natura fisica.",
+        "fantaComment": "Jacopo Fazzini è sempre stato un nome intrigante al Fantacalcio, nonostante la vera esplosione nella posizione di trequartista non sia arrivata con la maglia della Fiorentina. Il 23enne ha messo a segno 4 gol e un assist nell'ultima stagione a Empoli gravitando tra centrocampo e attacco ma spesso anche da mezz'ala. A secco di bonus, invece, nell'ultima stagione a Firenze. Adesso riparte da Cagliari dove potrà ricoprire diversi ruoli: mezz'ala nel 3-5-2 e 4-3-3, oppure tra le linee con l'inserimento di un trequartista negli schemi. All'asta del fantacalcio, Fazzini si può prendere come titolare low-cost delle 'provinciali', soprattutto nelle leghe numerose. Nella scorsa stagione ha saltato appena 7 partite per problemi di natura fisica.",
         "quotazioni": {
           "qtA": 12,
           "qtI": 12,
@@ -13726,7 +13793,7 @@ export const INITIAL_TEAMS = [
           "fvm": 42,
           "fvmM": 42,
           "classic_8_mod_median": 0.2,
-          "classic_10_mod_median": 1,
+          "classic_10_mod_median": 0.9,
           "classic_12_mod_median": 2
         },
         "stats": {
@@ -13867,7 +13934,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 70,
           "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
-          "classic_12_mod_median": 0.6
+          "classic_12_mod_median": 0.5
         },
         "stats": {
           "titolarita": 39,
@@ -15646,7 +15713,7 @@ export const INITIAL_TEAMS = [
         "fantaRole": "A",
         "photoUrl": "https://cdn.falsesoftware.com/players/5283704/v1.webp",
         "playerImage": "https://cdn.falsesoftware.com/players/5283704/v1.webp",
-        "appetibilita": 84,
+        "appetibilita": 85,
         "status": "panchina",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -17389,7 +17456,7 @@ export const INITIAL_TEAMS = [
           "diffM": 0,
           "fvm": 186,
           "fvmM": 186,
-          "classic_8_mod_median": 4.2,
+          "classic_8_mod_median": 4.1,
           "classic_10_mod_median": 6,
           "classic_12_mod_median": 7.2
         },
@@ -17596,7 +17663,7 @@ export const INITIAL_TEAMS = [
           "diffM": 11,
           "fvm": 45,
           "fvmM": 45,
-          "classic_8_mod_median": 0.4,
+          "classic_8_mod_median": 0.5,
           "classic_10_mod_median": 0.8,
           "classic_12_mod_median": 1.6
         },
@@ -18890,7 +18957,7 @@ export const INITIAL_TEAMS = [
           "diffM": 4,
           "fvm": 51,
           "fvmM": 51,
-          "classic_8_mod_median": 2.5,
+          "classic_8_mod_median": 2.4,
           "classic_10_mod_median": 3.2,
           "classic_12_mod_median": 3.9
         },
@@ -19032,9 +19099,9 @@ export const INITIAL_TEAMS = [
           "diffM": 18,
           "fvm": 74,
           "fvmM": 74,
-          "classic_8_mod_median": 2.6,
+          "classic_8_mod_median": 2.7,
           "classic_10_mod_median": 3,
-          "classic_12_mod_median": 3.2
+          "classic_12_mod_median": 3.3
         },
         "stats": {
           "titolarita": 11,
@@ -19104,7 +19171,7 @@ export const INITIAL_TEAMS = [
           "fvm": 256,
           "fvmM": 256,
           "classic_8_mod_median": 14,
-          "classic_10_mod_median": 14.8,
+          "classic_10_mod_median": 14.7,
           "classic_12_mod_median": 15.6
         },
         "stats": {
@@ -19387,7 +19454,7 @@ export const INITIAL_TEAMS = [
           "diffM": 6,
           "fvm": 563,
           "fvmM": 563,
-          "classic_8_mod_median": 33.4,
+          "classic_8_mod_median": 33.6,
           "classic_10_mod_median": 34,
           "classic_12_mod_median": 33.4
         },
@@ -19999,7 +20066,7 @@ export const INITIAL_TEAMS = [
           "fvm": 96,
           "fvmM": 96,
           "classic_8_mod_median": 0.8,
-          "classic_10_mod_median": 1.8,
+          "classic_10_mod_median": 1.7,
           "classic_12_mod_median": 2.4
         },
         "stats": {
@@ -20132,7 +20199,7 @@ export const INITIAL_TEAMS = [
           "diffM": 21,
           "fvm": 70,
           "fvmM": 70,
-          "classic_8_mod_median": 4,
+          "classic_8_mod_median": 3.8,
           "classic_10_mod_median": 5,
           "classic_12_mod_median": 6
         },
@@ -20199,7 +20266,7 @@ export const INITIAL_TEAMS = [
           "diffM": -3,
           "fvm": 138,
           "fvmM": 138,
-          "classic_8_mod_median": 0.9,
+          "classic_8_mod_median": 0.8,
           "classic_10_mod_median": 1.6,
           "classic_12_mod_median": 2.4
         },
@@ -20556,7 +20623,7 @@ export const INITIAL_TEAMS = [
           "fvm": 42,
           "fvmM": 42,
           "classic_8_mod_median": 0.6,
-          "classic_10_mod_median": 0.6,
+          "classic_10_mod_median": 0.7,
           "classic_12_mod_median": 0.6
         },
         "stats": {
@@ -20699,7 +20766,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 86,
           "classic_8_mod_median": 1,
           "classic_10_mod_median": 1.4,
-          "classic_12_mod_median": 1.8
+          "classic_12_mod_median": 1.9
         },
         "stats": {
           "titolarita": 26,
@@ -20768,9 +20835,9 @@ export const INITIAL_TEAMS = [
           "diffM": 22,
           "fvm": 74,
           "fvmM": 74,
-          "classic_8_mod_median": 2.6,
-          "classic_10_mod_median": 4.3,
-          "classic_12_mod_median": 5.8
+          "classic_8_mod_median": 2.4,
+          "classic_10_mod_median": 4.2,
+          "classic_12_mod_median": 5.7
         },
         "stats": {
           "titolarita": 61,
@@ -20981,8 +21048,8 @@ export const INITIAL_TEAMS = [
           "diffM": -13,
           "fvm": 214,
           "fvmM": 214,
-          "classic_8_mod_median": 10.1,
-          "classic_10_mod_median": 12.3,
+          "classic_8_mod_median": 10,
+          "classic_10_mod_median": 12.2,
           "classic_12_mod_median": 13.7
         },
         "stats": {
@@ -21042,7 +21109,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "“I love Cisse”. Ruben Amorim si è sbilanciato così in conferenza stampa su Alphadjo Cisse, classe 2006 del Milan. E il baby rossonero si è preso subito la scena a Torino: destro a giro e gol, è suo il primo gol del Milan della stagione e anche dell’era Amorim. Nella scorsa stagione era in prestito al Catanzaro (6 gol e 1 assist in 22 presenze), ha fatto tutta la trafila nelle giovanili del Verona: è un centrocampista offensivo di piede destro, dotato di tecnica e grande velocità palla al piede. Deve chiaramente ancora migliorare in alcune scelte e situazioni di gioco, ma Amorim stravede per lui. Ha bloccato una sua possibile uscita in state: lo vuole nel suo Milan. Non possiamo parlare di un titolare fisso perché c’è grande abbondanza, quindi non esagerate con la spesa per l'hype post-Torino; ma Amorim lo vuole in rosa e ne apprezza le qualità calcistiche e non solo.",
+        "fantaComment": "“I love Cisse”. Ruben Amorim si è sbilanciato così in conferenza stampa su Alphadjo Cisse, classe 2006 del Milan. E il baby rossonero si è preso subito la scena a Torino: destro a giro e gol, è stato suo il primo gol del Milan della stagione e anche dell’era Amorim. Si è ripetuto poi con la Juve con un altro gol di pregevole fattura. Nella scorsa stagione era in prestito al Catanzaro (6 gol e 1 assist in 22 presenze), ha fatto tutta la trafila nelle giovanili del Verona: è un centrocampista offensivo di piede destro, dotato di tecnica e grande velocità palla al piede. Deve chiaramente ancora migliorare in alcune scelte e situazioni di gioco, ma Amorim stravede per lui. Ha bloccato una sua possibile uscita in state: lo vuole nel suo Milan. Non possiamo parlare di un titolare fisso perché c’è grande abbondanza, quindi non esagerate con la spesa per l'hype post prime giornate; ma Amorim lo vuole in rosa e ne apprezza le qualità calcistiche e non solo.",
         "quotazioni": {
           "qtA": 18,
           "qtI": 1,
@@ -21052,8 +21119,8 @@ export const INITIAL_TEAMS = [
           "diffM": 17,
           "fvm": 58,
           "fvmM": 58,
-          "classic_8_mod_median": 1,
-          "classic_10_mod_median": 1.3,
+          "classic_8_mod_median": 1.2,
+          "classic_10_mod_median": 1.4,
           "classic_12_mod_median": 1.2
         },
         "stats": {
@@ -21123,7 +21190,7 @@ export const INITIAL_TEAMS = [
           "diffM": 1,
           "fvm": 442,
           "fvmM": 442,
-          "classic_8_mod_median": 25.8,
+          "classic_8_mod_median": 25.6,
           "classic_10_mod_median": 28,
           "classic_12_mod_median": 28
         },
@@ -21194,7 +21261,7 @@ export const INITIAL_TEAMS = [
           "diffM": 11,
           "fvm": 67,
           "fvmM": 67,
-          "classic_8_mod_median": 1.7,
+          "classic_8_mod_median": 1.6,
           "classic_10_mod_median": 2.8,
           "classic_12_mod_median": 3.6
         },
@@ -21395,7 +21462,7 @@ export const INITIAL_TEAMS = [
           "diffM": -3,
           "fvm": 32,
           "fvmM": 32,
-          "classic_8_mod_median": 1.3,
+          "classic_8_mod_median": 1.2,
           "classic_10_mod_median": 2,
           "classic_12_mod_median": 2.5
         },
@@ -22283,9 +22350,9 @@ export const INITIAL_TEAMS = [
           "diffM": 2,
           "fvm": 86,
           "fvmM": 86,
-          "classic_8_mod_median": 4.1,
+          "classic_8_mod_median": 4,
           "classic_10_mod_median": 4.9,
-          "classic_12_mod_median": 5.6
+          "classic_12_mod_median": 5.5
         },
         "stats": {
           "titolarita": 68,
@@ -22427,7 +22494,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 32,
           "classic_8_mod_median": 0.4,
           "classic_10_mod_median": 0.9,
-          "classic_12_mod_median": 1.6
+          "classic_12_mod_median": 1.5
         },
         "stats": {
           "titolarita": 16,
@@ -22567,7 +22634,7 @@ export const INITIAL_TEAMS = [
           "diffM": 0,
           "fvm": 182,
           "fvmM": 182,
-          "classic_8_mod_median": 6.5,
+          "classic_8_mod_median": 6.4,
           "classic_10_mod_median": 7.7,
           "classic_12_mod_median": 8.2
         },
@@ -22709,9 +22776,9 @@ export const INITIAL_TEAMS = [
           "diffM": -2,
           "fvm": 218,
           "fvmM": 218,
-          "classic_8_mod_median": 12.8,
+          "classic_8_mod_median": 12.5,
           "classic_10_mod_median": 15.2,
-          "classic_12_mod_median": 16.6
+          "classic_12_mod_median": 16.5
         },
         "stats": {
           "titolarita": 82,
@@ -22851,7 +22918,7 @@ export const INITIAL_TEAMS = [
           "diffM": -12,
           "fvm": 147,
           "fvmM": 147,
-          "classic_8_mod_median": 3.5,
+          "classic_8_mod_median": 3.4,
           "classic_10_mod_median": 5.6,
           "classic_12_mod_median": 7.2
         },
@@ -22922,7 +22989,7 @@ export const INITIAL_TEAMS = [
           "diffM": 10,
           "fvm": 464,
           "fvmM": 464,
-          "classic_8_mod_median": 22.7,
+          "classic_8_mod_median": 23,
           "classic_10_mod_median": 25.2,
           "classic_12_mod_median": 25.8
         },
@@ -22995,7 +23062,7 @@ export const INITIAL_TEAMS = [
           "diffM": -7,
           "fvm": 67,
           "fvmM": 67,
-          "classic_8_mod_median": 0.9,
+          "classic_8_mod_median": 1,
           "classic_10_mod_median": 1.2,
           "classic_12_mod_median": 1.4
         },
@@ -25801,7 +25868,7 @@ export const INITIAL_TEAMS = [
           "diffM": 0,
           "fvm": 1,
           "fvmM": 1,
-          "classic_8_mod_median": 0,
+          "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0,
           "classic_12_mod_median": 0
         },
@@ -26431,7 +26498,7 @@ export const INITIAL_TEAMS = [
         "punizioni": true,
         "corner": true,
         "positionNotes": "",
-        "fantaComment": "Rolando Mandragora è passato al Torino nell’ultimo giorno di mercato. È reduce da una grande stagione in una Fiorentina in difficoltà: 7 gol e 2 assist, quasi doppia cifra di bonus. Il centrocampista ha già giocato con la maglia granata per due stagioni: la 2020/21 e la 2021/22 segnando 3 gol nella prima annata e appena 2 assist nella seconda. Con Abate sarà titolare al fianco del nuovo arrivato Fitz-Jim. Avrà meno libertà di sganciarsi come in maglia viola ma il 29enne è dotato di un buon tiro da fuori area e anche sui corner può dire la sua: è più di un centrocampista low-cost al fantacalcio.",
+        "fantaComment": "Rolando Mandragora è passato al Torino nell’ultimo giorno di mercato. È reduce da una grande stagione in una Fiorentina in difficoltà: 7 gol e 2 assist, quasi doppia cifra di bonus. Il centrocampista ha già giocato con la maglia granata per due stagioni: la 2020/21 e la 2021/22 segnando 3 gol nella prima annata e appena 2 assist nella seconda. Con Abate sarà titolare al fianco del nuovo arrivato Fitz-Jim. Avrà meno libertà di sganciarsi come in maglia viola ma il 29enne è dotato di un buon tiro da fuori area e anche sui corner può dire la sua: è più di un centrocampista low-cost al fantacalcio. Si è subito sbloccato nel match di Firenze.",
         "quotazioni": {
           "qtA": 11,
           "qtI": 16,
@@ -26584,7 +26651,7 @@ export const INITIAL_TEAMS = [
           "fvm": 26,
           "fvmM": 26,
           "classic_8_mod_median": 0.6,
-          "classic_10_mod_median": 1.6,
+          "classic_10_mod_median": 1.5,
           "classic_12_mod_median": 2.6
         },
         "stats": {
@@ -26725,8 +26792,8 @@ export const INITIAL_TEAMS = [
           "diffM": -5,
           "fvm": 218,
           "fvmM": 218,
-          "classic_8_mod_median": 7,
-          "classic_10_mod_median": 10.2,
+          "classic_8_mod_median": 6.9,
+          "classic_10_mod_median": 10,
           "classic_12_mod_median": 12
         },
         "stats": {
@@ -26799,8 +26866,8 @@ export const INITIAL_TEAMS = [
           "fvm": 74,
           "fvmM": 74,
           "classic_8_mod_median": 0.6,
-          "classic_10_mod_median": 0.8,
-          "classic_12_mod_median": 1.2
+          "classic_10_mod_median": 0.9,
+          "classic_12_mod_median": 1.3
         },
         "stats": {
           "titolarita": 50,
@@ -27817,7 +27884,7 @@ export const INITIAL_TEAMS = [
           "diffM": 5,
           "fvm": 147,
           "fvmM": 147,
-          "classic_8_mod_median": 7.7,
+          "classic_8_mod_median": 7.8,
           "classic_10_mod_median": 9.2,
           "classic_12_mod_median": 11
         },
@@ -28029,7 +28096,7 @@ export const INITIAL_TEAMS = [
           "diffM": 0,
           "fvm": 61,
           "fvmM": 61,
-          "classic_8_mod_median": 1.9,
+          "classic_8_mod_median": 2,
           "classic_10_mod_median": 2.4,
           "classic_12_mod_median": 3
         },
@@ -28171,8 +28238,8 @@ export const INITIAL_TEAMS = [
           "diffM": 20,
           "fvm": 67,
           "fvmM": 67,
-          "classic_8_mod_median": 2.4,
-          "classic_10_mod_median": 3.4,
+          "classic_8_mod_median": 2.3,
+          "classic_10_mod_median": 3.3,
           "classic_12_mod_median": 3.7
         },
         "stats": {
@@ -28455,7 +28522,7 @@ export const INITIAL_TEAMS = [
           "diffM": -2,
           "fvm": 93,
           "fvmM": 93,
-          "classic_8_mod_median": 3.7,
+          "classic_8_mod_median": 3.6,
           "classic_10_mod_median": 5.4,
           "classic_12_mod_median": 6.8
         },
@@ -28527,7 +28594,7 @@ export const INITIAL_TEAMS = [
           "fvm": 285,
           "fvmM": 285,
           "classic_8_mod_median": 8.8,
-          "classic_10_mod_median": 12.2,
+          "classic_10_mod_median": 12.1,
           "classic_12_mod_median": 14
         },
         "stats": {
@@ -28599,7 +28666,7 @@ export const INITIAL_TEAMS = [
           "diffM": -7,
           "fvm": 176,
           "fvmM": 176,
-          "classic_8_mod_median": 2.9,
+          "classic_8_mod_median": 2.8,
           "classic_10_mod_median": 5,
           "classic_12_mod_median": 6.7
         },
@@ -29484,7 +29551,7 @@ export const INITIAL_TEAMS = [
           "diffM": -3,
           "fvm": 64,
           "fvmM": 64,
-          "classic_8_mod_median": 2.5,
+          "classic_8_mod_median": 2.4,
           "classic_10_mod_median": 5.2,
           "classic_12_mod_median": 8
         },
@@ -29625,7 +29692,7 @@ export const INITIAL_TEAMS = [
           "diffM": -2,
           "fvm": 26,
           "fvmM": 26,
-          "classic_8_mod_median": 1.4,
+          "classic_8_mod_median": 1.3,
           "classic_10_mod_median": 2.2,
           "classic_12_mod_median": 3.2
         },
@@ -29767,7 +29834,7 @@ export const INITIAL_TEAMS = [
           "diffM": 2,
           "fvm": 16,
           "fvmM": 16,
-          "classic_8_mod_median": 1.1,
+          "classic_8_mod_median": 1,
           "classic_10_mod_median": 2,
           "classic_12_mod_median": 2.8
         },
@@ -29980,8 +30047,8 @@ export const INITIAL_TEAMS = [
           "diffM": -9,
           "fvm": 99,
           "fvmM": 99,
-          "classic_8_mod_median": 6,
-          "classic_10_mod_median": 8.2,
+          "classic_8_mod_median": 5.8,
+          "classic_10_mod_median": 8.1,
           "classic_12_mod_median": 9.4
         },
         "stats": {
@@ -30051,7 +30118,7 @@ export const INITIAL_TEAMS = [
           "diffM": 36,
           "fvm": 118,
           "fvmM": 118,
-          "classic_8_mod_median": 6,
+          "classic_8_mod_median": 5.8,
           "classic_10_mod_median": 8,
           "classic_12_mod_median": 9.1
         },
@@ -30122,7 +30189,7 @@ export const INITIAL_TEAMS = [
           "diffM": 42,
           "fvm": 138,
           "fvmM": 138,
-          "classic_8_mod_median": 2.8,
+          "classic_8_mod_median": 2.7,
           "classic_10_mod_median": 4,
           "classic_12_mod_median": 6
         },
@@ -30667,7 +30734,7 @@ export const INITIAL_TEAMS = [
           "diffM": 59,
           "fvm": 192,
           "fvmM": 192,
-          "classic_8_mod_median": 4,
+          "classic_8_mod_median": 3.8,
           "classic_10_mod_median": 6,
           "classic_12_mod_median": 8.4
         },
@@ -31297,7 +31364,7 @@ export const INITIAL_TEAMS = [
           "fvm": 6,
           "fvmM": 6,
           "classic_8_mod_median": 0.2,
-          "classic_10_mod_median": 0.3,
+          "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0.6
         },
         "stats": {
@@ -31721,7 +31788,7 @@ export const INITIAL_TEAMS = [
           "diffM": 22,
           "fvm": 74,
           "fvmM": 74,
-          "classic_8_mod_median": 0.3,
+          "classic_8_mod_median": 0.4,
           "classic_10_mod_median": 0.4,
           "classic_12_mod_median": 0.8
         },
@@ -31791,8 +31858,8 @@ export const INITIAL_TEAMS = [
           "diffM": 13,
           "fvm": 112,
           "fvmM": 112,
-          "classic_8_mod_median": 0.8,
-          "classic_10_mod_median": 0.9,
+          "classic_8_mod_median": 0.9,
+          "classic_10_mod_median": 1,
           "classic_12_mod_median": 1.6
         },
         "stats": {
@@ -31930,7 +31997,7 @@ export const INITIAL_TEAMS = [
           "diffM": 3,
           "fvm": 13,
           "fvmM": 13,
-          "classic_8_mod_median": 0.2,
+          "classic_8_mod_median": 0.3,
           "classic_10_mod_median": 0.3,
           "classic_12_mod_median": 0.2
         },
@@ -33504,7 +33571,7 @@ export const INITIAL_TEAMS = [
           "diffM": -4,
           "fvm": 35,
           "fvmM": 35,
-          "classic_8_mod_median": 0.7,
+          "classic_8_mod_median": 0.6,
           "classic_10_mod_median": 1.4,
           "classic_12_mod_median": 2.2
         },
@@ -33719,7 +33786,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 48,
           "classic_8_mod_median": 0.4,
           "classic_10_mod_median": 1.7,
-          "classic_12_mod_median": 3.2
+          "classic_12_mod_median": 3.1
         },
         "stats": {
           "titolarita": 50,
@@ -35298,8 +35365,8 @@ export const INITIAL_TEAMS = [
           "diffM": -3,
           "fvm": 96,
           "fvmM": 96,
-          "classic_8_mod_median": 5.1,
-          "classic_10_mod_median": 5.7,
+          "classic_8_mod_median": 5,
+          "classic_10_mod_median": 5.6,
           "classic_12_mod_median": 6.2
         },
         "stats": {
@@ -35653,7 +35720,7 @@ export const INITIAL_TEAMS = [
           "diffM": -4,
           "fvm": 147,
           "fvmM": 147,
-          "classic_8_mod_median": 5.8,
+          "classic_8_mod_median": 5.6,
           "classic_10_mod_median": 8,
           "classic_12_mod_median": 9.4
         },
@@ -36877,8 +36944,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 25,
       "fvm": 656,
       "fvmM": 656,
-      "classic_8_mod_median": 37.8,
-      "classic_10_mod_median": 36.2,
+      "classic_8_mod_median": 38,
+      "classic_10_mod_median": 36.3,
       "classic_12_mod_median": 34.2
     },
     "stats": {
@@ -36943,8 +37010,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 13,
       "fvm": 112,
       "fvmM": 112,
-      "classic_8_mod_median": 0.8,
-      "classic_10_mod_median": 0.9,
+      "classic_8_mod_median": 0.9,
+      "classic_10_mod_median": 1,
       "classic_12_mod_median": 1.6
     },
     "stats": {
@@ -37009,8 +37076,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 40,
       "fvm": 141,
       "fvmM": 141,
-      "classic_8_mod_median": 5,
-      "classic_10_mod_median": 5.1,
+      "classic_8_mod_median": 5.2,
+      "classic_10_mod_median": 5.2,
       "classic_12_mod_median": 5.4
     },
     "stats": {
@@ -37339,7 +37406,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 1,
       "fvm": 19,
       "fvmM": 19,
-      "classic_8_mod_median": 0.3,
+      "classic_8_mod_median": 0.4,
       "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0.3
     },
@@ -37406,7 +37473,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 170,
       "fvmM": 170,
       "classic_8_mod_median": 2.4,
-      "classic_10_mod_median": 3.2,
+      "classic_10_mod_median": 3.3,
       "classic_12_mod_median": 4.2
     },
     "stats": {
@@ -37471,7 +37538,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 18,
       "fvm": 195,
       "fvmM": 195,
-      "classic_8_mod_median": 3.1,
+      "classic_8_mod_median": 3.2,
       "classic_10_mod_median": 4.2,
       "classic_12_mod_median": 5.2
     },
@@ -37670,8 +37737,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 74,
       "fvmM": 74,
       "classic_8_mod_median": 0.6,
-      "classic_10_mod_median": 0.8,
-      "classic_12_mod_median": 1.2
+      "classic_10_mod_median": 0.9,
+      "classic_12_mod_median": 1.3
     },
     "stats": {
       "titolarita": 50,
@@ -37736,7 +37803,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 298,
       "fvmM": 298,
       "classic_8_mod_median": 10,
-      "classic_10_mod_median": 10.4,
+      "classic_10_mod_median": 10.6,
       "classic_12_mod_median": 10.4
     },
     "stats": {
@@ -37801,7 +37868,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 7,
       "fvm": 173,
       "fvmM": 173,
-      "classic_8_mod_median": 10,
+      "classic_8_mod_median": 10.2,
       "classic_10_mod_median": 11,
       "classic_12_mod_median": 12
     },
@@ -37933,7 +38000,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 10,
       "fvm": 464,
       "fvmM": 464,
-      "classic_8_mod_median": 22.7,
+      "classic_8_mod_median": 23,
       "classic_10_mod_median": 25.2,
       "classic_12_mod_median": 25.8
     },
@@ -38000,7 +38067,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 160,
       "fvmM": 160,
       "classic_8_mod_median": 2,
-      "classic_10_mod_median": 2.7,
+      "classic_10_mod_median": 2.8,
       "classic_12_mod_median": 4
     },
     "stats": {
@@ -38055,7 +38122,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "“I love Cisse”. Ruben Amorim si è sbilanciato così in conferenza stampa su Alphadjo Cisse, classe 2006 del Milan. E il baby rossonero si è preso subito la scena a Torino: destro a giro e gol, è suo il primo gol del Milan della stagione e anche dell’era Amorim. Nella scorsa stagione era in prestito al Catanzaro (6 gol e 1 assist in 22 presenze), ha fatto tutta la trafila nelle giovanili del Verona: è un centrocampista offensivo di piede destro, dotato di tecnica e grande velocità palla al piede. Deve chiaramente ancora migliorare in alcune scelte e situazioni di gioco, ma Amorim stravede per lui. Ha bloccato una sua possibile uscita in state: lo vuole nel suo Milan. Non possiamo parlare di un titolare fisso perché c’è grande abbondanza, quindi non esagerate con la spesa per l'hype post-Torino; ma Amorim lo vuole in rosa e ne apprezza le qualità calcistiche e non solo.",
+    "fantaComment": "“I love Cisse”. Ruben Amorim si è sbilanciato così in conferenza stampa su Alphadjo Cisse, classe 2006 del Milan. E il baby rossonero si è preso subito la scena a Torino: destro a giro e gol, è stato suo il primo gol del Milan della stagione e anche dell’era Amorim. Si è ripetuto poi con la Juve con un altro gol di pregevole fattura. Nella scorsa stagione era in prestito al Catanzaro (6 gol e 1 assist in 22 presenze), ha fatto tutta la trafila nelle giovanili del Verona: è un centrocampista offensivo di piede destro, dotato di tecnica e grande velocità palla al piede. Deve chiaramente ancora migliorare in alcune scelte e situazioni di gioco, ma Amorim stravede per lui. Ha bloccato una sua possibile uscita in state: lo vuole nel suo Milan. Non possiamo parlare di un titolare fisso perché c’è grande abbondanza, quindi non esagerate con la spesa per l'hype post prime giornate; ma Amorim lo vuole in rosa e ne apprezza le qualità calcistiche e non solo.",
     "quotazioni": {
       "qtA": 18,
       "qtI": 1,
@@ -38065,8 +38132,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 17,
       "fvm": 58,
       "fvmM": 58,
-      "classic_8_mod_median": 1,
-      "classic_10_mod_median": 1.3,
+      "classic_8_mod_median": 1.2,
+      "classic_10_mod_median": 1.4,
       "classic_12_mod_median": 1.2
     },
     "stats": {
@@ -38133,7 +38200,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 406,
       "classic_8_mod_median": 13.6,
       "classic_10_mod_median": 15.6,
-      "classic_12_mod_median": 16.7
+      "classic_12_mod_median": 16.8
     },
     "stats": {
       "titolarita": 66,
@@ -38263,7 +38330,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -7,
       "fvm": 67,
       "fvmM": 67,
-      "classic_8_mod_median": 0.9,
+      "classic_8_mod_median": 1,
       "classic_10_mod_median": 1.2,
       "classic_12_mod_median": 1.4
     },
@@ -38329,7 +38396,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 22,
       "fvm": 74,
       "fvmM": 74,
-      "classic_8_mod_median": 0.3,
+      "classic_8_mod_median": 0.4,
       "classic_10_mod_median": 0.4,
       "classic_12_mod_median": 0.8
     },
@@ -38395,7 +38462,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 0,
       "fvm": 182,
       "fvmM": 182,
-      "classic_8_mod_median": 6.5,
+      "classic_8_mod_median": 6.4,
       "classic_10_mod_median": 7.7,
       "classic_12_mod_median": 8.2
     },
@@ -38527,7 +38594,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 6,
       "fvm": 563,
       "fvmM": 563,
-      "classic_8_mod_median": 33.4,
+      "classic_8_mod_median": 33.6,
       "classic_10_mod_median": 34,
       "classic_12_mod_median": 33.4
     },
@@ -38725,7 +38792,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -7,
       "fvm": 176,
       "fvmM": 176,
-      "classic_8_mod_median": 2.9,
+      "classic_8_mod_median": 2.8,
       "classic_10_mod_median": 5,
       "classic_12_mod_median": 6.7
     },
@@ -39121,7 +39188,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 11,
       "fvm": 45,
       "fvmM": 45,
-      "classic_8_mod_median": 0.4,
+      "classic_8_mod_median": 0.5,
       "classic_10_mod_median": 0.8,
       "classic_12_mod_median": 1.6
     },
@@ -39187,7 +39254,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 4,
       "fvm": 77,
       "fvmM": 77,
-      "classic_8_mod_median": 1.8,
+      "classic_8_mod_median": 1.9,
       "classic_10_mod_median": 2,
       "classic_12_mod_median": 2.5
     },
@@ -39715,9 +39782,9 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 18,
       "fvm": 74,
       "fvmM": 74,
-      "classic_8_mod_median": 2.6,
+      "classic_8_mod_median": 2.7,
       "classic_10_mod_median": 3,
-      "classic_12_mod_median": 3.2
+      "classic_12_mod_median": 3.3
     },
     "stats": {
       "titolarita": 11,
@@ -39827,7 +39894,7 @@ export const CSV_PLAYER_CATALOG = [
     "fantaRole": "A",
     "photoUrl": "https://cdn.falsesoftware.com/players/5283704/v1.webp",
     "playerImage": "https://cdn.falsesoftware.com/players/5283704/v1.webp",
-    "appetibilita": 84,
+    "appetibilita": 85,
     "status": "in_ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -40047,7 +40114,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 86,
       "classic_8_mod_median": 1,
       "classic_10_mod_median": 1.4,
-      "classic_12_mod_median": 1.8
+      "classic_12_mod_median": 1.9
     },
     "stats": {
       "titolarita": 26,
@@ -40573,7 +40640,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 4,
       "fvm": 157,
       "fvmM": 157,
-      "classic_8_mod_median": 8.4,
+      "classic_8_mod_median": 8.5,
       "classic_10_mod_median": 9,
       "classic_12_mod_median": 9.5
     },
@@ -40639,8 +40706,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -13,
       "fvm": 214,
       "fvmM": 214,
-      "classic_8_mod_median": 10.1,
-      "classic_10_mod_median": 12.3,
+      "classic_8_mod_median": 10,
+      "classic_10_mod_median": 12.2,
       "classic_12_mod_median": 13.7
     },
     "stats": {
@@ -40695,7 +40762,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Rolando Mandragora è passato al Torino nell’ultimo giorno di mercato. È reduce da una grande stagione in una Fiorentina in difficoltà: 7 gol e 2 assist, quasi doppia cifra di bonus. Il centrocampista ha già giocato con la maglia granata per due stagioni: la 2020/21 e la 2021/22 segnando 3 gol nella prima annata e appena 2 assist nella seconda. Con Abate sarà titolare al fianco del nuovo arrivato Fitz-Jim. Avrà meno libertà di sganciarsi come in maglia viola ma il 29enne è dotato di un buon tiro da fuori area e anche sui corner può dire la sua: è più di un centrocampista low-cost al fantacalcio.",
+    "fantaComment": "Rolando Mandragora è passato al Torino nell’ultimo giorno di mercato. È reduce da una grande stagione in una Fiorentina in difficoltà: 7 gol e 2 assist, quasi doppia cifra di bonus. Il centrocampista ha già giocato con la maglia granata per due stagioni: la 2020/21 e la 2021/22 segnando 3 gol nella prima annata e appena 2 assist nella seconda. Con Abate sarà titolare al fianco del nuovo arrivato Fitz-Jim. Avrà meno libertà di sganciarsi come in maglia viola ma il 29enne è dotato di un buon tiro da fuori area e anche sui corner può dire la sua: è più di un centrocampista low-cost al fantacalcio. Si è subito sbloccato nel match di Firenze.",
     "quotazioni": {
       "qtA": 11,
       "qtI": 16,
@@ -40771,7 +40838,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 1,
       "fvm": 442,
       "fvmM": 442,
-      "classic_8_mod_median": 25.8,
+      "classic_8_mod_median": 25.6,
       "classic_10_mod_median": 28,
       "classic_12_mod_median": 28
     },
@@ -40893,7 +40960,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Albert Gudmundsson passa alla Lazio in prestito con diritto di riscatto e cercherà di rilanciarsi in Serie A dopo il flop in maglia Fiorentina. Il 29enne islandese non è riuscito a tornare ai livelli della stagione 2022/23 dove con il Genoa mise a segno 14 gol e 4 assist. A Firenze tante ombre e poche luci ma i bonus non sono comunque mancati, almeno sulla carta: 6 reti e 2 assist nella prima annata, 5 e 4 nella seconda. Gattuso proverà a bissare il lavoro che sta facendo con Frattesi ma rimane da capire la sua posizione in campo. Nel 4-3-3 attuale potrebbe adattarsi a destra come titolare ma anche fare il vice Zaccagni a sinistra, alla Fiorentina era stato provato anche da mezzala atipica con un passaggio quindi eventuale al 4-2-3-1. Al fantacalcio può regalare bonus anche grazie ai calci piazzati, sarà un jolly totale per il reparto offensivo.",
+    "fantaComment": "Albert Gudmundsson passa alla Lazio in prestito con diritto di riscatto e cercherà di rilanciarsi in Serie A dopo il flop in maglia Fiorentina. Il 29enne islandese non è riuscito a tornare ai livelli della stagione 2022/23 dove con il Genoa mise a segno 14 gol e 4 assist. A Firenze tante ombre e poche luci ma i bonus non sono comunque mancati, almeno sulla carta: 6 reti e 2 assist nella prima annata, 5 e 4 nella seconda. Gattuso proverà a bissare il lavoro che sta facendo con Frattesi ma rimane da capire la sua posizione in campo. Nel 4-3-3 attuale potrebbe adattarsi a destra come titolare ma anche fare il vice Zaccagni a sinistra, alla Fiorentina era stato provato anche da mezzala atipica con un passaggio quindi eventuale al 4-2-3-1. Al fantacalcio può regalare bonus anche grazie ai calci piazzati, sarà un jolly totale per il reparto offensivo e si è sbloccato subito a Udine.",
     "quotazioni": {
       "qtA": 33,
       "qtI": 37,
@@ -40969,7 +41036,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -3,
       "fvm": 45,
       "fvmM": 45,
-      "classic_8_mod_median": 1.6,
+      "classic_8_mod_median": 1.7,
       "classic_10_mod_median": 1.2,
       "classic_12_mod_median": 0.6
     },
@@ -41299,7 +41366,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 5,
       "fvm": 147,
       "fvmM": 147,
-      "classic_8_mod_median": 5.6,
+      "classic_8_mod_median": 5.7,
       "classic_10_mod_median": 6.4,
       "classic_12_mod_median": 7.3
     },
@@ -41323,6 +41390,72 @@ export const CSV_PLAYER_CATALOG = [
       "ass": 5,
       "ammonizioni": 3,
       "amm": 3,
+      "espulsioni": 0,
+      "esp": 0,
+      "au": 0
+    },
+    "substitutes": []
+  },
+  {
+    "id": "bologna_piccoli_4359",
+    "csvId": "4359",
+    "fantalabId": "ab2a5fb7-6ee0-4efe-92d2-adafe3bb3d3d",
+    "name": "Piccoli",
+    "displayName": "Piccoli",
+    "fullName": "Roberto Piccoli",
+    "teamName": "Bologna",
+    "teamId": "bologna",
+    "teamShort": "BOL",
+    "role": "PC",
+    "classicRole": "A",
+    "mantraRole": "Pc",
+    "fantaRole": "A",
+    "photoUrl": "https://cdn.falsesoftware.com/players/24081699/v2.webp",
+    "playerImage": "https://cdn.falsesoftware.com/players/24081699/v2.webp",
+    "appetibilita": 88,
+    "status": "in_ballottaggio",
+    "isAvailable": true,
+    "isPenaltyTaker": false,
+    "isFreeKickTaker": false,
+    "isCornerTaker": false,
+    "rigorista": false,
+    "punizioni": false,
+    "corner": false,
+    "positionNotes": "",
+    "fantaComment": "Roberto Piccoli, dopo l'esperienza non fortunata alla Fiorentina, prova a rilanciarsi a Bologna dove sarà un testa a testa là davanti per un posto da titolare con Dovbyk. L'ucraino rimane davanti almeno per il momento ma il 25enne ex Cagliari avrà le sue occasioni e il suo spazio. In area di rigore può essere un fattore, soprattutto per scaltrezza e velocità di movimento dove supera lo stesso Dovbyk. Al fantacalcio è un jolly da giocarsi sperando ritorni ai fasti di Cagliari. Solo 4, invece, i gol nella passata stagione per un 6,24 di fanta-media. A cifre contenute si può pensare anche di formare la coppia.",
+    "quotazioni": {
+      "qtA": 34,
+      "qtI": 15,
+      "diff": 19,
+      "qtAM": 34,
+      "qtIM": 15,
+      "diffM": 19,
+      "fvm": 109,
+      "fvmM": 109,
+      "classic_8_mod_median": 0.7,
+      "classic_10_mod_median": 1.8,
+      "classic_12_mod_median": 2.8
+    },
+    "stats": {
+      "titolarita": 42,
+      "fantamedia": 6.24,
+      "mediaVoto": 5.78,
+      "pv": 32,
+      "presenze": 32,
+      "gol": 4,
+      "gf": 4,
+      "gs": 0,
+      "golSubiti": 0,
+      "rp": 0,
+      "rc": 0,
+      "rPlus": 0,
+      "rMinus": 0,
+      "rigoriSegnati": 0,
+      "rigoriSbagliati": 0,
+      "assist": 1,
+      "ass": 1,
+      "ammonizioni": 1,
+      "amm": 1,
       "espulsioni": 0,
       "esp": 0,
       "au": 0
@@ -41497,7 +41630,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 34,
       "fvm": 365,
       "fvmM": 365,
-      "classic_8_mod_median": 15.2,
+      "classic_8_mod_median": 15.1,
       "classic_10_mod_median": 19.2,
       "classic_12_mod_median": 21
     },
@@ -41960,7 +42093,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 256,
       "fvmM": 256,
       "classic_8_mod_median": 14,
-      "classic_10_mod_median": 14.8,
+      "classic_10_mod_median": 14.7,
       "classic_12_mod_median": 15.6
     },
     "stats": {
@@ -42092,7 +42225,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 163,
       "fvmM": 163,
       "classic_8_mod_median": 4,
-      "classic_10_mod_median": 7.7,
+      "classic_10_mod_median": 7.6,
       "classic_12_mod_median": 10.2
     },
     "stats": {
@@ -42223,7 +42356,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 3,
       "fvm": 13,
       "fvmM": 13,
-      "classic_8_mod_median": 0.2,
+      "classic_8_mod_median": 0.3,
       "classic_10_mod_median": 0.3,
       "classic_12_mod_median": 0.2
     },
@@ -42247,72 +42380,6 @@ export const CSV_PLAYER_CATALOG = [
       "ass": 1,
       "ammonizioni": 5,
       "amm": 5,
-      "espulsioni": 0,
-      "esp": 0,
-      "au": 0
-    },
-    "substitutes": []
-  },
-  {
-    "id": "bologna_piccoli_4359",
-    "csvId": "4359",
-    "fantalabId": "ab2a5fb7-6ee0-4efe-92d2-adafe3bb3d3d",
-    "name": "Piccoli",
-    "displayName": "Piccoli",
-    "fullName": "Roberto Piccoli",
-    "teamName": "Bologna",
-    "teamId": "bologna",
-    "teamShort": "BOL",
-    "role": "PC",
-    "classicRole": "A",
-    "mantraRole": "Pc",
-    "fantaRole": "A",
-    "photoUrl": "https://cdn.falsesoftware.com/players/24081699/v2.webp",
-    "playerImage": "https://cdn.falsesoftware.com/players/24081699/v2.webp",
-    "appetibilita": 88,
-    "status": "in_ballottaggio",
-    "isAvailable": true,
-    "isPenaltyTaker": false,
-    "isFreeKickTaker": false,
-    "isCornerTaker": false,
-    "rigorista": false,
-    "punizioni": false,
-    "corner": false,
-    "positionNotes": "",
-    "fantaComment": "Roberto Piccoli, dopo l'esperienza non fortunata alla Fiorentina, prova a rilanciarsi a Bologna dove sarà un testa a testa là davanti per un posto da titolare con Dovbyk. L'ucraino rimane davanti almeno per il momento ma il 25enne ex Cagliari avrà le sue occasioni e il suo spazio. In area di rigore può essere un fattore, soprattutto per scaltrezza e velocità di movimento dove supera lo stesso Dovbyk. Al fantacalcio è un jolly da giocarsi sperando ritorni ai fasti di Cagliari. Solo 4, invece, i gol nella passata stagione per un 6,24 di fanta-media. A cifre contenute si può pensare anche di formare la coppia.",
-    "quotazioni": {
-      "qtA": 34,
-      "qtI": 15,
-      "diff": 19,
-      "qtAM": 34,
-      "qtIM": 15,
-      "diffM": 19,
-      "fvm": 109,
-      "fvmM": 109,
-      "classic_8_mod_median": 0.6,
-      "classic_10_mod_median": 1.7,
-      "classic_12_mod_median": 2.8
-    },
-    "stats": {
-      "titolarita": 42,
-      "fantamedia": 6.24,
-      "mediaVoto": 5.78,
-      "pv": 32,
-      "presenze": 32,
-      "gol": 4,
-      "gf": 4,
-      "gs": 0,
-      "golSubiti": 0,
-      "rp": 0,
-      "rc": 0,
-      "rPlus": 0,
-      "rMinus": 0,
-      "rigoriSegnati": 0,
-      "rigoriSbagliati": 0,
-      "assist": 1,
-      "ass": 1,
-      "ammonizioni": 1,
-      "amm": 1,
       "espulsioni": 0,
       "esp": 0,
       "au": 0
@@ -42421,7 +42488,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 6,
       "fvm": 38,
       "fvmM": 38,
-      "classic_8_mod_median": 1,
+      "classic_8_mod_median": 1.2,
       "classic_10_mod_median": 1.2,
       "classic_12_mod_median": 1.4
     },
@@ -43082,7 +43149,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 42,
       "fvmM": 42,
       "classic_8_mod_median": 0.6,
-      "classic_10_mod_median": 0.6,
+      "classic_10_mod_median": 0.7,
       "classic_12_mod_median": 0.6
     },
     "stats": {
@@ -43345,7 +43412,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 11,
       "fvm": 67,
       "fvmM": 67,
-      "classic_8_mod_median": 1.7,
+      "classic_8_mod_median": 1.6,
       "classic_10_mod_median": 2.8,
       "classic_12_mod_median": 3.6
     },
@@ -43675,7 +43742,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -4,
       "fvm": 147,
       "fvmM": 147,
-      "classic_8_mod_median": 5.8,
+      "classic_8_mod_median": 5.6,
       "classic_10_mod_median": 8,
       "classic_12_mod_median": 9.4
     },
@@ -44401,7 +44468,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 19,
       "fvm": 64,
       "fvmM": 64,
-      "classic_8_mod_median": 3.4,
+      "classic_8_mod_median": 3.5,
       "classic_10_mod_median": 4,
       "classic_12_mod_median": 4.5
     },
@@ -44732,7 +44799,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 22,
       "fvmM": 22,
       "classic_8_mod_median": 0.4,
-      "classic_10_mod_median": 0.7,
+      "classic_10_mod_median": 0.8,
       "classic_12_mod_median": 1.3
     },
     "stats": {
@@ -44797,7 +44864,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -2,
       "fvm": 138,
       "fvmM": 138,
-      "classic_8_mod_median": 6.5,
+      "classic_8_mod_median": 6.4,
       "classic_10_mod_median": 7.8,
       "classic_12_mod_median": 8.6
     },
@@ -44996,7 +45063,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 61,
       "fvmM": 61,
       "classic_8_mod_median": 0.6,
-      "classic_10_mod_median": 0.6,
+      "classic_10_mod_median": 0.7,
       "classic_12_mod_median": 1
     },
     "stats": {
@@ -45657,7 +45724,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 70,
       "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
-      "classic_12_mod_median": 0.6
+      "classic_12_mod_median": 0.5
     },
     "stats": {
       "titolarita": 39,
@@ -46513,9 +46580,9 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 2,
       "fvm": 86,
       "fvmM": 86,
-      "classic_8_mod_median": 4.1,
+      "classic_8_mod_median": 4,
       "classic_10_mod_median": 4.9,
-      "classic_12_mod_median": 5.6
+      "classic_12_mod_median": 5.5
     },
     "stats": {
       "titolarita": 68,
@@ -46569,7 +46636,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Jacopo Fazzini è sempre stato un nome intrigante al Fantacalcio, nonostante la vera esplosione nella posizione di trequartista non sia arrivata con la maglia della Fiorentina. Il 23enne ha messo a segno 4 gol e un assist nell'ultima stagione a Empoli gravitando tra centrocampo e attacco ma spesso anche da mezz'ala. A secco di bonus, invece, nell'ultima stagione a Firenze. Adesso riparte da Cagliari dove potrà ricoprire diversi ruoli: mezz'ala nel 3-5-2 e 4-3-3, oppure tra le linee con l'inserimento di un trequartista negli schemi. All'asta del fantacalcio, Fazzini si può prendere come titolare low-cost delle 'provinciali', soprattutto nelle leghe numerose. In questa stagione ha saltato appena 7 partite per problemi di natura fisica.",
+    "fantaComment": "Jacopo Fazzini è sempre stato un nome intrigante al Fantacalcio, nonostante la vera esplosione nella posizione di trequartista non sia arrivata con la maglia della Fiorentina. Il 23enne ha messo a segno 4 gol e un assist nell'ultima stagione a Empoli gravitando tra centrocampo e attacco ma spesso anche da mezz'ala. A secco di bonus, invece, nell'ultima stagione a Firenze. Adesso riparte da Cagliari dove potrà ricoprire diversi ruoli: mezz'ala nel 3-5-2 e 4-3-3, oppure tra le linee con l'inserimento di un trequartista negli schemi. All'asta del fantacalcio, Fazzini si può prendere come titolare low-cost delle 'provinciali', soprattutto nelle leghe numerose. Nella scorsa stagione ha saltato appena 7 partite per problemi di natura fisica.",
     "quotazioni": {
       "qtA": 12,
       "qtI": 12,
@@ -47041,7 +47108,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 0,
       "fvm": 61,
       "fvmM": 61,
-      "classic_8_mod_median": 1.9,
+      "classic_8_mod_median": 2,
       "classic_10_mod_median": 2.4,
       "classic_12_mod_median": 3
     },
@@ -47305,7 +47372,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 5,
       "fvm": 147,
       "fvmM": 147,
-      "classic_8_mod_median": 7.7,
+      "classic_8_mod_median": 7.8,
       "classic_10_mod_median": 9.2,
       "classic_12_mod_median": 11
     },
@@ -47437,7 +47504,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 0,
       "fvm": 186,
       "fvmM": 186,
-      "classic_8_mod_median": 4.2,
+      "classic_8_mod_median": 4.1,
       "classic_10_mod_median": 6,
       "classic_12_mod_median": 7.2
     },
@@ -48560,7 +48627,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 112,
       "fvmM": 112,
       "classic_8_mod_median": 2,
-      "classic_10_mod_median": 3.1,
+      "classic_10_mod_median": 3.2,
       "classic_12_mod_median": 5
     },
     "stats": {
@@ -49021,7 +49088,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -12,
       "fvm": 147,
       "fvmM": 147,
-      "classic_8_mod_median": 3.5,
+      "classic_8_mod_median": 3.4,
       "classic_10_mod_median": 5.6,
       "classic_12_mod_median": 7.2
     },
@@ -49087,8 +49154,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -3,
       "fvm": 96,
       "fvmM": 96,
-      "classic_8_mod_median": 5.1,
-      "classic_10_mod_median": 5.7,
+      "classic_8_mod_median": 5,
+      "classic_10_mod_median": 5.6,
       "classic_12_mod_median": 6.2
     },
     "stats": {
@@ -49351,7 +49418,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -3,
       "fvm": 32,
       "fvmM": 32,
-      "classic_8_mod_median": 1.3,
+      "classic_8_mod_median": 1.2,
       "classic_10_mod_median": 2,
       "classic_12_mod_median": 2.5
     },
@@ -50012,7 +50079,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 6,
       "fvmM": 6,
       "classic_8_mod_median": 0.2,
-      "classic_10_mod_median": 0.3,
+      "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0.6
     },
     "stats": {
@@ -50341,7 +50408,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 4,
       "fvm": 51,
       "fvmM": 51,
-      "classic_8_mod_median": 2.5,
+      "classic_8_mod_median": 2.4,
       "classic_10_mod_median": 3.2,
       "classic_12_mod_median": 3.9
     },
@@ -50540,7 +50607,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 96,
       "fvmM": 96,
       "classic_8_mod_median": 0.8,
-      "classic_10_mod_median": 1.8,
+      "classic_10_mod_median": 1.7,
       "classic_12_mod_median": 2.4
     },
     "stats": {
@@ -51135,7 +51202,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 29,
       "classic_8_mod_median": 0.4,
       "classic_10_mod_median": 0.8,
-      "classic_12_mod_median": 1.3
+      "classic_12_mod_median": 1.2
     },
     "stats": {
       "titolarita": 53,
@@ -51266,7 +51333,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 6,
       "fvmM": 6,
       "classic_8_mod_median": 0.2,
-      "classic_10_mod_median": 0.3,
+      "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0.6
     },
     "stats": {
@@ -51991,9 +52058,9 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 120,
       "fvm": 387,
       "fvmM": 387,
-      "classic_8_mod_median": 10.3,
-      "classic_10_mod_median": 12.2,
-      "classic_12_mod_median": 13.2
+      "classic_8_mod_median": 10.2,
+      "classic_10_mod_median": 12.1,
+      "classic_12_mod_median": 12.9
     },
     "stats": {
       "titolarita": 63,
@@ -53509,7 +53576,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 1,
       "fvm": 179,
       "fvmM": 179,
-      "classic_8_mod_median": 9.9,
+      "classic_8_mod_median": 10,
       "classic_10_mod_median": 11,
       "classic_12_mod_median": 12.6
     },
@@ -53829,7 +53896,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Jeremie Boga è uno dei jolly del fantacalcio, uno spacca-partite. Uno di quei giocatori da mettere a prescindere, anche quando parte fuori. Non garantisce la titolarità ma andrà spesso a voto, alla Juve ha fatto molto bene da gennaio in poi con 4 gol e 1 assist ma ora c’è più concorrenza. Buon jolly da avere in attacco e da schierare come terzo slot, alternandolo ad altri.",
+    "fantaComment": "Jeremie Boga è uno dei jolly del fantacalcio, uno spacca-partite. Uno di quei giocatori da mettere a prescindere, anche quando parte fuori. Non garantisce la titolarità ma andrà spesso a voto, alla Juve ha fatto molto bene da gennaio in poi con 4 gol e 1 assist ma ora c’è più concorrenza. Buon jolly da avere in attacco e da schierare come terzo slot, alternandolo ad altri. Ma attenzione agli infortuni, fatica a trovare continuità.",
     "quotazioni": {
       "qtA": 24,
       "qtI": 50,
@@ -54632,7 +54699,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 285,
       "fvmM": 285,
       "classic_8_mod_median": 8.8,
-      "classic_10_mod_median": 12.2,
+      "classic_10_mod_median": 12.1,
       "classic_12_mod_median": 14
     },
     "stats": {
@@ -55403,7 +55470,7 @@ export const CSV_PLAYER_CATALOG = [
     "fantaRole": "D",
     "photoUrl": "https://cdn.falsesoftware.com/players/37550824/v2.webp",
     "playerImage": "https://cdn.falsesoftware.com/players/37550824/v2.webp",
-    "appetibilita": 83,
+    "appetibilita": 84,
     "status": "in_ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -55621,7 +55688,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -4,
       "fvm": 35,
       "fvmM": 35,
-      "classic_8_mod_median": 0.7,
+      "classic_8_mod_median": 0.6,
       "classic_10_mod_median": 1.4,
       "classic_12_mod_median": 2.2
     },
@@ -56413,9 +56480,9 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -2,
       "fvm": 218,
       "fvmM": 218,
-      "classic_8_mod_median": 12.8,
+      "classic_8_mod_median": 12.5,
       "classic_10_mod_median": 15.2,
-      "classic_12_mod_median": 16.6
+      "classic_12_mod_median": 16.5
     },
     "stats": {
       "titolarita": 82,
@@ -56546,7 +56613,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 208,
       "fvmM": 208,
       "classic_8_mod_median": 10,
-      "classic_10_mod_median": 13,
+      "classic_10_mod_median": 12.8,
       "classic_12_mod_median": 14.3
     },
     "stats": {
@@ -57273,7 +57340,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 128,
       "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.4,
-      "classic_12_mod_median": 0.8
+      "classic_12_mod_median": 0.7
     },
     "stats": {
       "titolarita": 92,
@@ -58129,8 +58196,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -5,
       "fvm": 218,
       "fvmM": 218,
-      "classic_8_mod_median": 7,
-      "classic_10_mod_median": 10.2,
+      "classic_8_mod_median": 6.9,
+      "classic_10_mod_median": 10,
       "classic_12_mod_median": 12
     },
     "stats": {
@@ -58263,7 +58330,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 48,
       "classic_8_mod_median": 0.4,
       "classic_10_mod_median": 1.7,
-      "classic_12_mod_median": 3.2
+      "classic_12_mod_median": 3.1
     },
     "stats": {
       "titolarita": 50,
@@ -58527,7 +58594,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 54,
       "classic_8_mod_median": 0.5,
       "classic_10_mod_median": 1.2,
-      "classic_12_mod_median": 2.3
+      "classic_12_mod_median": 2.2
     },
     "stats": {
       "titolarita": 47,
@@ -59251,7 +59318,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 21,
       "fvm": 70,
       "fvmM": 70,
-      "classic_8_mod_median": 4,
+      "classic_8_mod_median": 3.8,
       "classic_10_mod_median": 5,
       "classic_12_mod_median": 6
     },
@@ -60307,7 +60374,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 40,
       "fvm": 131,
       "fvmM": 131,
-      "classic_8_mod_median": 4.2,
+      "classic_8_mod_median": 4,
       "classic_10_mod_median": 6.8,
       "classic_12_mod_median": 8.2
     },
@@ -61165,7 +61232,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 59,
       "fvm": 192,
       "fvmM": 192,
-      "classic_8_mod_median": 4,
+      "classic_8_mod_median": 3.8,
       "classic_10_mod_median": 6,
       "classic_12_mod_median": 8.4
     },
@@ -61231,7 +61298,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -5,
       "fvm": 29,
       "fvmM": 29,
-      "classic_8_mod_median": 1.8,
+      "classic_8_mod_median": 1.7,
       "classic_10_mod_median": 3,
       "classic_12_mod_median": 4
     },
@@ -62201,7 +62268,7 @@ export const CSV_PLAYER_CATALOG = [
     "fantaRole": "C",
     "photoUrl": "https://cdn.falsesoftware.com/players/37537730/v1.webp",
     "playerImage": "https://cdn.falsesoftware.com/players/37537730/v1.webp",
-    "appetibilita": 84,
+    "appetibilita": 85,
     "status": "in_ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -62485,7 +62552,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -2,
       "fvm": 93,
       "fvmM": 93,
-      "classic_8_mod_median": 3.7,
+      "classic_8_mod_median": 3.6,
       "classic_10_mod_median": 5.4,
       "classic_12_mod_median": 6.8
     },
@@ -62749,9 +62816,9 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -18,
       "fvm": 262,
       "fvmM": 262,
-      "classic_8_mod_median": 8.5,
-      "classic_10_mod_median": 14.8,
-      "classic_12_mod_median": 18.2
+      "classic_8_mod_median": 8.2,
+      "classic_10_mod_median": 14.6,
+      "classic_12_mod_median": 18.1
     },
     "stats": {
       "titolarita": 87,
@@ -62947,7 +63014,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -3,
       "fvm": 138,
       "fvmM": 138,
-      "classic_8_mod_median": 0.9,
+      "classic_8_mod_median": 0.8,
       "classic_10_mod_median": 1.6,
       "classic_12_mod_median": 2.4
     },
@@ -63277,7 +63344,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 36,
       "fvm": 118,
       "fvmM": 118,
-      "classic_8_mod_median": 6,
+      "classic_8_mod_median": 5.8,
       "classic_10_mod_median": 8,
       "classic_12_mod_median": 9.1
     },
@@ -63741,7 +63808,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 42,
       "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 1,
-      "classic_12_mod_median": 2.2
+      "classic_12_mod_median": 2.1
     },
     "stats": {
       "titolarita": 32,
@@ -63993,7 +64060,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Randal Kolo Muani è tornato alla Juve dal PSG, ma questa volta a titolo definitivo per oltre 50 milioni di euro bonus inclusi. Luciano Spalletti ha fortemente voluto il centravanti classe 1998, aveva già fatto il suo nome al club lo scorso gennaio. Guiderà lui l'attacco di Spalletti, ma occhio alla concorrenza del nuovo arrivato Woltemade: proverà a insidiarlo, i due sono molto vicini. L'allenatore ha fortemente voluto il francese (lo voleva già a gennaio) ed è pronto ad affidargli una maglia al centro del reparto, ma la sua stagione non è iniziata col piede giusto finora. Muani farà di tutto per migliorare il suo record stagionale di gol in un campionato. È datato 2022/23, in Bundesliga, 15 reti e 14 assist in 32 partite con l'Eintracht Francoforte. Rimane questa la sua miglior annata in termini di bonus, al PSG è arrivato massimo a 6 gol stagionali in Ligue 1, al Tottenham l'anno scorso ne ha segnato solo 1 in 30 gare. Non stiamo parlando di un bomber vero e proprio, ma ha tutto per diventarlo, sappiamo che Spalletti è molto bravo a lavorare con i centravanti. 97 gol e 56 assist in 331 partite in carriera per Kolo Muani, toccherà quindi la quota 100 con la maglia bianconera. Ha voluto fortemente la Juve (la voleva già a gennaio), ha fatto qualsiasi cosa per tornare in bianconero e ha grandissime motivazioni: ci sono tutti gli ingredienti per vedere una stagione importante del francese, ma è chiamato a svoltare presto perché Woltemade può essere più di una semplice alternativa. Fisicamente arriva un giocatore integro, ha saltato 7 gare l'anno scorso col Tottenham per una fastidiosa contusione al muscolo, ma non ha mai avuto infortuni gravi. Solo 35 gialli e 2 rossi in carriera, non è un giocatore che prende tanti cartellini, anzi. E poi c'è un fattore molto importante: i rigori. 6 su 6 in carriera per Kolo Muani (di cui 1 alla Juve), si candida a essere uno dei principali specialisti insieme a Woltemade.",
+    "fantaComment": "Randal Kolo Muani è tornato alla Juve dal PSG, ma questa volta a titolo definitivo per oltre 50 milioni di euro bonus inclusi. Luciano Spalletti ha fortemente voluto il centravanti classe 1998, aveva già fatto il suo nome al club lo scorso gennaio. Guiderà lui l'attacco di Spalletti, ma occhio alla concorrenza del nuovo arrivato Woltemade: proverà a insidiarlo, i due sono molto vicini. L'allenatore ha fortemente voluto il francese (lo voleva già a gennaio) ed è pronto ad affidargli una maglia al centro del reparto, ma la sua stagione non è iniziata col piede giusto finora. Muani farà di tutto per migliorare il suo record stagionale di gol in un campionato. È datato 2022/23, in Bundesliga, 15 reti e 14 assist in 32 partite con l'Eintracht Francoforte. Rimane questa la sua miglior annata in termini di bonus, al PSG è arrivato massimo a 6 gol stagionali in Ligue 1, al Tottenham l'anno scorso ne ha segnato solo 1 in 30 gare. Non stiamo parlando di un bomber vero e proprio, ma sappiamo che Spalletti è molto bravo a lavorare con i centravanti. 97 gol e 56 assist in 331 partite in carriera per Kolo Muani, toccherà quindi la quota 100 con la maglia bianconera. Ha voluto fortemente la Juve (la voleva già a gennaio), ha fatto qualsiasi cosa per tornare in bianconero e ha grandissime motivazioni: ci sono tutti gli ingredienti per vedere una stagione importante del francese, ma è chiamato a svoltare presto perché Woltemade può essere più di una semplice alternativa. Fisicamente arriva un giocatore integro, ha saltato 7 gare l'anno scorso col Tottenham per una fastidiosa contusione al muscolo, ma non ha mai avuto infortuni gravi. Solo 35 gialli e 2 rossi in carriera, non è un giocatore che prende tanti cartellini, anzi. E poi c'è un fattore molto importante: i rigori. 6 su 6 in carriera per Kolo Muani (di cui 1 alla Juve), si candida a essere uno dei principali specialisti insieme a Woltemade.",
     "quotazioni": {
       "qtA": 123,
       "qtI": 105,
@@ -64003,7 +64070,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 18,
       "fvm": 394,
       "fvmM": 394,
-      "classic_8_mod_median": 19.2,
+      "classic_8_mod_median": 19,
       "classic_10_mod_median": 24,
       "classic_12_mod_median": 25.8
     },
@@ -64465,8 +64532,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -9,
       "fvm": 99,
       "fvmM": 99,
-      "classic_8_mod_median": 6,
-      "classic_10_mod_median": 8.2,
+      "classic_8_mod_median": 5.8,
+      "classic_10_mod_median": 8.1,
       "classic_12_mod_median": 9.4
     },
     "stats": {
@@ -64861,7 +64928,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 2,
       "fvm": 16,
       "fvmM": 16,
-      "classic_8_mod_median": 1.1,
+      "classic_8_mod_median": 1,
       "classic_10_mod_median": 2,
       "classic_12_mod_median": 2.8
     },
@@ -64929,7 +64996,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 32,
       "classic_8_mod_median": 0.4,
       "classic_10_mod_median": 0.9,
-      "classic_12_mod_median": 1.6
+      "classic_12_mod_median": 1.5
     },
     "stats": {
       "titolarita": 16,
@@ -65060,7 +65127,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 26,
       "fvmM": 26,
       "classic_8_mod_median": 0.6,
-      "classic_10_mod_median": 1.6,
+      "classic_10_mod_median": 1.5,
       "classic_12_mod_median": 2.6
     },
     "stats": {
@@ -65258,7 +65325,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 42,
       "fvmM": 42,
       "classic_8_mod_median": 0.2,
-      "classic_10_mod_median": 1,
+      "classic_10_mod_median": 0.9,
       "classic_12_mod_median": 2
     },
     "stats": {
@@ -65323,9 +65390,9 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 22,
       "fvm": 74,
       "fvmM": 74,
-      "classic_8_mod_median": 2.6,
-      "classic_10_mod_median": 4.3,
-      "classic_12_mod_median": 5.8
+      "classic_8_mod_median": 2.4,
+      "classic_10_mod_median": 4.2,
+      "classic_12_mod_median": 5.7
     },
     "stats": {
       "titolarita": 61,
@@ -65522,8 +65589,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 115,
       "fvmM": 115,
       "classic_8_mod_median": 4.4,
-      "classic_10_mod_median": 6.2,
-      "classic_12_mod_median": 7.2
+      "classic_10_mod_median": 6.3,
+      "classic_12_mod_median": 7.3
     },
     "stats": {
       "titolarita": 84,
@@ -66379,7 +66446,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -2,
       "fvm": 26,
       "fvmM": 26,
-      "classic_8_mod_median": 1.4,
+      "classic_8_mod_median": 1.3,
       "classic_10_mod_median": 2.2,
       "classic_12_mod_median": 3.2
     },
@@ -67501,7 +67568,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -3,
       "fvm": 64,
       "fvmM": 64,
-      "classic_8_mod_median": 2.5,
+      "classic_8_mod_median": 2.4,
       "classic_10_mod_median": 5.2,
       "classic_12_mod_median": 8
     },
@@ -69151,7 +69218,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 42,
       "fvm": 138,
       "fvmM": 138,
-      "classic_8_mod_median": 2.8,
+      "classic_8_mod_median": 2.7,
       "classic_10_mod_median": 4,
       "classic_12_mod_median": 6
     },
@@ -69679,8 +69746,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 20,
       "fvm": 67,
       "fvmM": 67,
-      "classic_8_mod_median": 2.4,
-      "classic_10_mod_median": 3.4,
+      "classic_8_mod_median": 2.3,
+      "classic_10_mod_median": 3.3,
       "classic_12_mod_median": 3.7
     },
     "stats": {
@@ -69838,6 +69905,72 @@ export const CSV_PLAYER_CATALOG = [
       "espulsioni": 0,
       "esp": 0,
       "au": 0
+    },
+    "substitutes": []
+  },
+  {
+    "id": "lazio_leite_6319",
+    "csvId": "6319",
+    "fantalabId": "b8f742ac-6eba-4fe7-a6bb-fd9d8f657f18",
+    "name": "Leite",
+    "displayName": "Leite",
+    "fullName": "Diogo Leite",
+    "teamName": "Lazio",
+    "teamId": "lazio",
+    "teamShort": "LAZ",
+    "role": "DC",
+    "classicRole": "D",
+    "mantraRole": "Dc",
+    "fantaRole": "D",
+    "photoUrl": "",
+    "playerImage": "",
+    "appetibilita": 84,
+    "status": "in_ballottaggio",
+    "isAvailable": true,
+    "isPenaltyTaker": false,
+    "isFreeKickTaker": false,
+    "isCornerTaker": false,
+    "rigorista": false,
+    "punizioni": false,
+    "corner": false,
+    "positionNotes": "",
+    "fantaComment": "",
+    "quotazioni": {
+      "qtA": 1,
+      "qtI": 1,
+      "diff": 0,
+      "qtAM": 1,
+      "qtIM": 1,
+      "diffM": 0,
+      "fvm": 1,
+      "fvmM": 1,
+      "classic_8_mod_median": 0,
+      "classic_10_mod_median": 0,
+      "classic_12_mod_median": 0
+    },
+    "stats": {
+      "titolarita": 61,
+      "fantamedia": 6.0,
+      "mediaVoto": 6.0,
+      "pv": 23,
+      "presenze": 23,
+      "gol": 0,
+      "gf": 0,
+      "gs": 0,
+      "golSubiti": 0,
+      "rp": 0,
+      "rc": 0,
+      "rPlus": 0,
+      "rMinus": 0,
+      "rigoriSegnati": 0,
+      "rigoriSbagliati": 0,
+      "assist": 0,
+      "ass": 0,
+      "ammonizioni": 4,
+      "amm": 4,
+      "espulsioni": 0,
+      "esp": 0,
+      "au": 1
     },
     "substitutes": []
   },
@@ -70141,7 +70274,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 0,
       "fvm": 1,
       "fvmM": 1,
-      "classic_8_mod_median": 0,
+      "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0,
       "classic_12_mod_median": 0
     },

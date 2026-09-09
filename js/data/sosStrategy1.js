@@ -925,11 +925,11 @@ export const SOS_STRATEGY_1 = {
     "goncalvesp": "tier_c_7",
     "sierro": "tier_c_17",
     "woltemade": "tier_a_4",
-    "kolo muani": "tier_a_4",
-    "kolomuani": "tier_a_4",
     "solet": "tier_d_2",
     "cambiaso": "tier_d_6",
     "bobcek": "tier_a_14",
-    "beto": "tier_a_5"
+    "beto": "tier_a_5",
+    "kolo muani": "tier_a_4",
+    "kolomuani": "tier_a_4"
   }
 };
