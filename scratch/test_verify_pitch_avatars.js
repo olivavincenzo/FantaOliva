@@ -12,11 +12,18 @@ async function runTest() {
     'http://127.0.0.1:5500/index.html'
   ]);
 
-  await new Promise(r => setTimeout(r, 1800));
+  let tabs = null;
+  for (let i = 0; i < 25; i++) {
+    await new Promise(r => setTimeout(r, 400));
+    try {
+      const listRes = await fetch(`http://127.0.0.1:${port}/json`);
+      tabs = await listRes.json();
+      if (tabs && tabs.find(t => t.type === 'page')) break;
+    } catch (e) {}
+  }
 
   try {
-    const listRes = await fetch(`http://127.0.0.1:${port}/json`);
-    const tabs = await listRes.json();
+    if (!tabs) throw new Error('No tabs available from Chrome');
     const pageTab = tabs.find(t => t.type === 'page');
     if (!pageTab) throw new Error('No page tab found');
 
@@ -48,13 +55,38 @@ async function runTest() {
     // Wait 2s for page to render pitch
     await new Promise(r => setTimeout(r, 2000));
 
-    // Capture desktop pitch
+    // Capture desktop pitch (top)
     const pitchScreenshot = await send('Page.captureScreenshot', { format: 'png' });
     fs.writeFileSync(
       '/Users/vincenzo/.gemini/antigravity-ide/brain/4ef933ea-d781-4505-97fa-6b6b06821fa3/pitch_with_avatars_desktop.png',
       Buffer.from(pitchScreenshot.data, 'base64')
     );
     console.log('Desktop pitch screenshot saved.');
+
+    // Scroll desktop slightly to show lower defense & goalkeeper
+    await send('Runtime.evaluate', {
+      expression: `(() => {
+        const outer = document.querySelector('.pitch-outer-wrapper');
+        if (outer) outer.scrollTop = 180;
+      })()`
+    });
+    await new Promise(r => setTimeout(r, 400));
+
+    const scrolledDesktop = await send('Page.captureScreenshot', { format: 'png' });
+    fs.writeFileSync(
+      '/Users/vincenzo/.gemini/antigravity-ide/brain/4ef933ea-d781-4505-97fa-6b6b06821fa3/desktop_pitch_scrolled.png',
+      Buffer.from(scrolledDesktop.data, 'base64')
+    );
+    console.log('Scrolled desktop screenshot saved.');
+
+    // Scroll back to top for clicking
+    await send('Runtime.evaluate', {
+      expression: `(() => {
+        const outer = document.querySelector('.pitch-outer-wrapper');
+        if (outer) outer.scrollTop = 0;
+      })()`
+    });
+    await new Promise(r => setTimeout(r, 300));
 
     // Click on a player to check selected card appearance with avatar
     await send('Runtime.evaluate', {
@@ -82,6 +114,15 @@ async function runTest() {
       mobile: true
     });
     await new Promise(r => setTimeout(r, 600));
+
+    // Scroll mobile to show defense and goalkeeper cleanly above bottom bar
+    await send('Runtime.evaluate', {
+      expression: `(() => {
+        const outer = document.querySelector('.pitch-outer-wrapper');
+        if (outer) outer.scrollTop = 220;
+      })()`
+    });
+    await new Promise(r => setTimeout(r, 400));
 
     const mobileScreenshot = await send('Page.captureScreenshot', { format: 'png' });
     fs.writeFileSync(
