@@ -186,25 +186,30 @@ export class PitchComponent {
 
         <!-- CAMPO DA CALCIO GRAFICO (Sempre attivo sotto a team-tactical-banner) -->
         <div class="soccer-pitch ${this.is3D ? 'is-3d-pitch' : ''}" id="soccer-pitch">
-          <div class="pitch-grass-stripes"></div>
-          <div class="pitch-lines">
-            <div class="pitch-boundary"></div>
-            <div class="halfway-line"></div>
-            <div class="center-circle"></div>
-            <div class="center-spot"></div>
-            <div class="penalty-box top-box"></div>
-            <div class="goal-box top-goal-box"></div>
-            <div class="penalty-spot top-spot"></div>
-            <div class="penalty-arc top-arc"></div>
-            <div class="penalty-box bottom-box"></div>
-            <div class="goal-box bottom-goal-box"></div>
-            <div class="penalty-spot bottom-spot"></div>
-            <div class="penalty-arc bottom-arc"></div>
+          <div class="pitch-stage">
+            <div class="pitch-surface">
+              <div class="pitch-grass-stripes"></div>
+              <div class="pitch-lines">
+                <div class="pitch-boundary"></div>
+                <div class="halfway-line"></div>
+                <div class="center-circle"></div>
+                <div class="center-spot"></div>
+                <div class="penalty-box top-box"></div>
+                <div class="goal-box top-goal-box"></div>
+                <div class="penalty-spot top-spot"></div>
+                <div class="penalty-arc top-arc"></div>
+                <div class="penalty-box bottom-box"></div>
+                <div class="goal-box bottom-goal-box"></div>
+                <div class="penalty-spot bottom-spot"></div>
+                <div class="penalty-arc bottom-arc"></div>
+              </div>
+              <div class="pitch-depth"></div>
+            </div>
+            <svg class="tactical-lines-svg" id="tactical-lines-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <g id="tactical-lines-group"></g>
+            </svg>
+            <div class="pitch-slots-layer" id="pitch-slots-layer"></div>
           </div>
-          <svg class="tactical-lines-svg" id="tactical-lines-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <g id="tactical-lines-group"></g>
-          </svg>
-          <div class="pitch-slots-layer" id="pitch-slots-layer"></div>
         </div>
 
         <!-- BARRA DI RICERCA EDITORIALE CON ICONA FILTRI MOBILE -->
@@ -993,6 +998,9 @@ export class PitchComponent {
     this.slotsLayer?.querySelectorAll('.pitch-slot-wrapper').forEach(slotEl => {
       const isSlotSelected = slotEl.querySelector('.player-card.is-selected');
       slotEl.classList.toggle('is-selected', Boolean(isSlotSelected));
+      if (isSlotSelected && slotEl.parentElement) {
+        slotEl.parentElement.appendChild(slotEl);
+      }
     });
 
     if (options && options.scroll) {

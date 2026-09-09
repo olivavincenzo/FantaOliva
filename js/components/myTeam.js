@@ -47,6 +47,14 @@ export class MyTeamComponent {
       const isSelected = selectedPlayer && pId === selectedPlayer.id;
       card.classList.toggle('is-selected', Boolean(isSelected));
     });
+
+    this.container?.querySelectorAll('.pitch-slot-wrapper').forEach(slotEl => {
+      const isSlotSelected = slotEl.querySelector('.player-card.is-selected');
+      slotEl.classList.toggle('is-selected', Boolean(isSlotSelected));
+      if (isSlotSelected && slotEl.parentElement) {
+        slotEl.parentElement.appendChild(slotEl);
+      }
+    });
   }
 
   render() {
@@ -185,23 +193,28 @@ export class MyTeamComponent {
 
     return `
       <div class="soccer-pitch ${this.is3D ? 'is-3d-pitch' : ''}" style="display: block; position: relative; width: 100%;">
-        <div class="pitch-grass-stripes"></div>
-        <div class="pitch-lines">
-          <div class="pitch-boundary"></div>
-          <div class="halfway-line"></div>
-          <div class="center-circle"></div>
-          <div class="center-spot"></div>
-          <div class="penalty-box top-box"></div>
-          <div class="goal-box top-goal-box"></div>
-          <div class="penalty-spot top-spot"></div>
-          <div class="penalty-arc top-arc"></div>
-          <div class="penalty-box bottom-box"></div>
-          <div class="goal-box bottom-goal-box"></div>
-          <div class="penalty-spot bottom-spot"></div>
-          <div class="penalty-arc bottom-arc"></div>
-        </div>
-        <div class="pitch-slots-layer" id="myteam-pitch-slots-layer" style="position: absolute; inset: 0;">
-          ${slotsHtml}
+        <div class="pitch-stage">
+          <div class="pitch-surface">
+            <div class="pitch-grass-stripes"></div>
+            <div class="pitch-lines">
+              <div class="pitch-boundary"></div>
+              <div class="halfway-line"></div>
+              <div class="center-circle"></div>
+              <div class="center-spot"></div>
+              <div class="penalty-box top-box"></div>
+              <div class="goal-box top-goal-box"></div>
+              <div class="penalty-spot top-spot"></div>
+              <div class="penalty-arc top-arc"></div>
+              <div class="penalty-box bottom-box"></div>
+              <div class="goal-box bottom-goal-box"></div>
+              <div class="penalty-spot bottom-spot"></div>
+              <div class="penalty-arc bottom-arc"></div>
+            </div>
+            <div class="pitch-depth"></div>
+          </div>
+          <div class="pitch-slots-layer" id="myteam-pitch-slots-layer" style="position: absolute; inset: 0;">
+            ${slotsHtml}
+          </div>
         </div>
       </div>
     `;

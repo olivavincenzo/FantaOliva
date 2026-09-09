@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulazione Card 3D - Stile ai_studio_code per FantaOliva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,800;1,900&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Roboto:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    body {
+      background: #02091d;
+      color: #e2e8f0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      padding: 30px 20px 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* HEADER TITOLO */
+    .demo-header {
+      text-align: center;
+      max-width: 820px;
+      margin-bottom: 35px;
+    }
+
+    .demo-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(0, 195, 255, 0.15);
+      border: 1px solid rgba(0, 195, 255, 0.4);
+      color: #38bdf8;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      font-size: 32px;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-shadow: 0 0 25px rgba(0, 180, 255, 0.6);
+      margin-bottom: 8px;
+    }
+
+    p.subtitle {
+      font-size: 14px;
+      color: #94a3b8;
+      line-height: 1.5;
+    }
+
+    /* ==========================================================================
+       SEZIONE 1: SHOWCASE DETTAGLIATO CARD SINGOLE A CONFRONTO
+       ========================================================================== */
+    .showcase-section {
+      width: 100%;
+      max-width: 1100px;
+      background: rgba(8, 26, 68, 0.55);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      border-radius: 24px;
+      padding: 28px 24px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), inset 0 0 40px rgba(0, 120, 255, 0.15);
+      margin-bottom: 50px;
+    }
+
+    .section-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 17px;
+      font-weight: 800;
+      color: #38bdf8;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid rgba(56, 189, 248, 0.2);
+      padding-bottom: 12px;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .card-preview-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: rgba(3, 15, 42, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 16px 12px 14px;
+      width: 100%;
+      max-width: 190px;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .card-preview-box:hover {
+      border-color: rgba(56, 189, 248, 0.5);
+      transform: translateY(-3px);
+    }
+
+    .card-scenario-label {
+      font-size: 10px;
+      font-weight: 800;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+      text-align: center;
+      min-height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ==========================================================================
+       STILE CARD CALCIATORE (ISPIRATO AD AI_STUDIO_CODE CON I DATI DI FANTAOLIVA)
+       ========================================================================== */
+    .studio-player-card {
+      position: relative;
+      width: 82px;
+      height: 100px;
+      border-radius: 13px;
+      background: rgba(4, 24, 75, 0.78);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.6), 0 0 14px rgba(0, 170, 255, 0.28);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 4px 4px 6px;
+      cursor: pointer;
+      border: 1.5px solid transparent;
+      background-clip: padding-box, border-box;
+      background-origin: padding-box, border-box;
+      transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.25s;
+    }
+
+    /* Versione ingrandita per visualizzazione dettagliata */
+    .studio-player-card.is-enlarged {
+      width: 120px;
+      height: 146px;
+      border-radius: 18px;
+      padding: 6px 6px 9px;
+    }
+    .studio-player-card.is-enlarged .role-badge-tag {
+      font-size: 10.5px;
+      padding: 2px 7px;
+      border-radius: 5px;
+    }
+    .studio-player-card.is-enlarged .sp-chip {
+      font-size: 10px;
+      padding: 1px 4.5px;
+    }
+    .studio-player-card.is-enlarged .card-center-figure {
+      height: 64px;
+    }
+    .studio-player-card.is-enlarged .jersey-svg {
+      width: 66px;
+      height: 60px;
+    }
+    .studio-player-card.is-enlarged .player-avatar-photo {
+      width: 52px;
+      height: 52px;
+    }
+    .studio-player-card.is-enlarged .player-name-tag {
+      font-size: 11px;
+      padding: 3px 4px;
+      margin-bottom: 5px;
+      border-radius: 5px;
+    }
+    .studio-player-card.is-enlarged .player-tier-tag {
+      font-size: 10px;
+      padding: 3px 6px;
+      border-radius: 5px;
+    }
+    .studio-player-card.is-enlarged .duel-sub-badge {
+      font-size: 9.5px;
+      padding: 2.5px 7px;
+      top: -8px;
+      right: -8px;
+    }
+    .studio-player-card.is-enlarged .duel-sub-badge.is-top-full {
+      font-size: 9px;
+      padding: 2.5px 8px;
+      top: -11px;
+    }
+    .studio-player-card.is-enlarged .duel-sub-badge.is-bottom-full {
+      font-size: 9px;
+      padding: 2.5px 8px;
+      top: auto;
+      bottom: -11px;
+      left: 50%;
+      right: auto;
+      transform: translateX(-50%);
+    }
+    .studio-player-card.is-enlarged .card-duel-pill-bottom {
+      font-size: 8.5px;
+      padding: 2.5px 6px;
+      margin-top: 4px;
+    }
+    .studio-player-card.is-enlarged .card-duel-pill-bottom i {
+      font-size: 8px;
+    }
+    .studio-player-card.is-enlarged .card-duel-strip {
+      font-size: 9px;
+      padding: 2.5px 5px;
+      margin-bottom: 4px;
+    }
+    .studio-player-card.is-enlarged .card-duel-strip i {
+      font-size: 8px;
+    }
+    .studio-player-card.is-enlarged .player-name-duel-box {
+      margin-bottom: 5px;
+      padding: 3px 4px;
+      border-radius: 6px;
+    }
+    .studio-player-card.is-enlarged .player-name-duel-box .primary-name {
+      font-size: 11px;
+    }
+    .studio-player-card.is-enlarged .player-name-duel-box .primary-perc {
+      font-size: 9px;
+    }
+    .studio-player-card.is-enlarged .player-name-duel-box .duel-sub-name {
+      font-size: 9px;
+      margin-top: 2px;
+    }
+    .studio-player-card.is-enlarged .card-footer-split .player-tier-tag {
+      font-size: 8.5px;
+      padding: 2.5px 4px;
+    }
+    .studio-player-card.is-enlarged .card-footer-split .duel-mini-tag {
+      font-size: 8.5px;
+      padding: 2.5px 4px;
+    }
+
+    /* Foto/Avatar circolare alternativo alla maglia */
+    .player-avatar-photo {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1.5px solid rgba(255, 255, 255, 0.4);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      background: #003cd6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 12px;
+      color: #fff;
+    }
+
+    .studio-player-card:hover {
+      transform: scale(1.14) translateY(-6px) translateZ(24px);
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.75), 0 0 28px rgba(0, 220, 255, 0.7);
+      z-index: 60;
+    }
+
+    /* BORDI GRADIENTE NEON IN BASE AL RUOLO */
+    .studio-player-card.role-a {
+      background-image: 
+        linear-gradient(rgba(12, 22, 54, 0.92), rgba(8, 16, 42, 0.94)),
+        linear-gradient(135deg, #ff0055 0%, #ff5500 50%, #ffcc00 100%);
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.6), 0 0 14px rgba(255, 0, 85, 0.28);
+    }
+
+    .studio-player-card.role-c {
+      background-image: 
+        linear-gradient(rgba(8, 24, 60, 0.92), rgba(4, 18, 50, 0.94)),
+        linear-gradient(135deg, #00d4ff 0%, #0066ff 50%, #8800ff 100%);
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.6), 0 0 14px rgba(0, 180, 255, 0.28);
+    }
+
+    .studio-player-card.role-d {
+      background-image: 
+        linear-gradient(rgba(6, 28, 48, 0.92), rgba(4, 20, 38, 0.94)),
+        linear-gradient(135deg, #00ffaa 0%, #00a86b 50%, #00ddff 100%);
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.6), 0 0 14px rgba(0, 255, 170, 0.25);
+    }
+
+    .studio-player-card.role-p {
+      background-image: 
+        linear-gradient(rgba(28, 24, 40, 0.92), rgba(18, 16, 30, 0.94)),
+        linear-gradient(135deg, #ffbb00 0%, #ff6600 50%, #ff0066 100%);
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.6), 0 0 14px rgba(255, 187, 0, 0.28);
+    }
+
+    /* TOP BAR DELLA CARD: Ruolo e Piazzati */
+    .card-top-bar {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 3px;
+      margin-bottom: 2px;
+      height: 14px;
+      z-index: 2;
+    }
+
+    .role-badge-tag {
+      font-size: 7.5px;
+      font-weight: 900;
+      font-family: 'Roboto', sans-serif;
+      padding: 1px 4.5px;
+      border-radius: 4px;
+      line-height: 1.1;
+      text-transform: uppercase;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+    }
+
+    .role-badge-tag.badge-a { background: #ef4444; color: #fff; }
+    .role-badge-tag.badge-c { background: #0ea5e9; color: #fff; }
+    .role-badge-tag.badge-d { background: #10b981; color: #fff; }
+    .role-badge-tag.badge-p { background: #f59e0b; color: #000; }
+
+    .set-pieces-chips {
+      display: flex;
+      align-items: center;
+      gap: 2.5px;
+    }
+
+    .sp-chip {
+      font-size: 7px;
+      font-weight: 800;
+      background: rgba(255, 255, 255, 0.15);
+      border: 0.8px solid rgba(255, 255, 255, 0.3);
+      border-radius: 3px;
+      padding: 0.5px 2.5px;
+      display: inline-flex;
+      align-items: center;
+      gap: 1px;
+      color: #fff;
+    }
+
+    .sp-chip.sp-rig { background: rgba(239, 68, 68, 0.35); border-color: rgba(239, 68, 68, 0.6); }
+    .sp-chip.sp-pun { background: rgba(14, 165, 233, 0.35); border-color: rgba(14, 165, 233, 0.6); }
+    .sp-chip.sp-cor { background: rgba(234, 179, 8, 0.35); border-color: rgba(234, 179, 8, 0.6); }
+
+    /* PARTE CENTRALE: MAGLIA SVG PERSONALIZZATA */
+    .card-center-figure {
+      position: relative;
+      width: 100%;
+      height: 42px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2px;
+    }
+
+    .jersey-svg {
+      width: 44px;
+      height: 40px;
+      filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.6));
+    }
+
+    /* TARGHETTA NOME GIOCATORE (ai_studio_code style) */
+    .player-name-tag {
+      width: 96%;
+      background: #004ecc;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+      font-size: 8px;
+      font-weight: 800;
+      text-align: center;
+      padding: 2px 2px;
+      border-radius: 4px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+      margin-bottom: 3px;
+      letter-spacing: 0.3px;
+    }
+
+    /* TARGHETTA PREZZO / FASCIA STRATEGICA (ai_studio_code style) */
+    .player-tier-tag {
+      width: 90%;
+      font-family: 'Roboto', sans-serif;
+      font-size: 7.5px;
+      font-weight: 900;
+      text-align: center;
+      padding: 1.5px 3px;
+      border-radius: 3px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3px;
+    }
+
+    .tier-supertop {
+      background: #ffaa00;
+      color: #1a0f00;
+      box-shadow: 0 0 10px rgba(255, 170, 0, 0.5);
+    }
+
+    .tier-top {
+      background: #00e1ff;
+      color: #011438;
+      box-shadow: 0 0 10px rgba(0, 225, 255, 0.5);
+    }
+
+    .tier-semitop {
+      background: #b388ff;
+      color: #16003b;
+      box-shadow: 0 0 10px rgba(179, 136, 255, 0.5);
+    }
+
+    .tier-titolare {
+      background: #22c55e;
+      color: #02230e;
+      box-shadow: 0 0 10px rgba(34, 197, 94, 0.5);
+    }
+
+    /* CHIP BALLOTTAGGIO */
+    .duel-sub-badge {
+      position: absolute;
+      top: -6px;
+      right: -6px;
+      background: #1e1b4b;
+      border: 1px solid #818cf8;
+      color: #c7d2fe;
+      font-size: 7px;
+      font-weight: 900;
+      padding: 1.5px 4px;
+      border-radius: 999px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.6);
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      z-index: 10;
+      white-space: nowrap;
+    }
+
+    /* Variante A: Ballottaggio centrato in alto (ottimale quando ci sono 3 piazzati a destra) */
+    .duel-sub-badge.is-top-center {
+      top: -7px;
+      left: 50%;
+      right: auto;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+      border: 1px solid #a5b4fc;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7), 0 0 8px rgba(129, 140, 248, 0.4);
+    }
+
+    /* OPZIONE 5: Pillola Ovale Superiore con Nome Avversario */
+    .duel-sub-badge.is-top-full {
+      top: -8px;
+      left: 50%;
+      right: auto;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+      border: 1px solid #a5b4fc;
+      color: #ffffff;
+      font-size: 6.5px;
+      font-weight: 800;
+      padding: 1.5px 6px;
+      border-radius: 999px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7), 0 0 8px rgba(129, 140, 248, 0.4);
+      display: flex;
+      align-items: center;
+      gap: 2.5px;
+      z-index: 15;
+      white-space: nowrap;
+    }
+
+    .duel-sub-badge.is-top-full .opp-highlight {
+      color: #fef08a;
+      font-weight: 900;
+    }
+
+    /* OPZIONE 3A: Pillola Flottante in Basso per Ballottaggio */
+    .duel-sub-badge.is-bottom-full {
+      bottom: -8px;
+      top: auto;
+      left: 50%;
+      right: auto;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+      border: 1px solid #818cf8;
+      color: #ffffff;
+      font-size: 6.5px;
+      font-weight: 800;
+      padding: 1.5px 6px;
+      border-radius: 999px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7), 0 0 8px rgba(129, 140, 248, 0.4);
+      display: flex;
+      align-items: center;
+      gap: 2.5px;
+      z-index: 15;
+      white-space: nowrap;
+    }
+
+    .duel-sub-badge.is-bottom-full .opp-highlight {
+      color: #fef08a;
+      font-weight: 900;
+    }
+
+    /* OPZIONE 3B: Pillola Integrata in Basso (subito sotto la fascia) */
+    .card-duel-pill-bottom {
+      width: 92%;
+      background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+      border: 1px solid #818cf8;
+      color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+      font-size: 6.5px;
+      font-weight: 800;
+      padding: 1.5px 4px;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5px;
+      margin-top: 2.5px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    .card-duel-pill-bottom .opp-highlight {
+      color: #fef08a;
+      font-weight: 900;
+    }
+
+    .card-duel-pill-bottom i {
+      font-size: 6px;
+      color: #a5b4fc;
+    }
+
+    /* OPZIONE 1: Striscia tra Maglia e Nome */
+    .card-duel-strip {
+      width: 96%;
+      background: linear-gradient(90deg, rgba(30, 27, 75, 0.96), rgba(49, 46, 129, 0.96));
+      border: 1px solid rgba(129, 140, 248, 0.85);
+      color: #c7d2fe;
+      font-family: 'Roboto', sans-serif;
+      font-size: 6.5px;
+      font-weight: 700;
+      letter-spacing: -0.1px;
+      padding: 1.5px 2px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5px;
+      margin-bottom: 2.5px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.55);
+    }
+
+    .card-duel-strip i {
+      font-size: 6px;
+      color: #a5b4fc;
+    }
+
+    .card-duel-strip .duel-opp-name {
+      color: #ffffff;
+      font-weight: 900;
+      letter-spacing: 0.1px;
+    }
+
+    .card-duel-strip .duel-opp-perc {
+      color: #fef08a;
+      font-weight: 800;
+    }
+
+    /* OPZIONE 2: Striscia tra Nome e Fascia */
+    .card-duel-strip.is-between-name-tier {
+      margin-top: 1px;
+      margin-bottom: 3px;
+      background: linear-gradient(90deg, rgba(30, 27, 75, 0.96), rgba(49, 46, 129, 0.96));
+      border: 1px solid #818cf8;
+      font-size: 6.5px;
+    }
+
+    /* OPZIONE 3: Box Nome Integrato a 2 Righe (Titolare + Avversario) */
+    .player-name-duel-box {
+      width: 96%;
+      background: #004ecc;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      border-radius: 4px;
+      padding: 2px 2px;
+      text-align: center;
+      margin-bottom: 3px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      line-height: 1.15;
+    }
+
+    .player-name-duel-box .primary-name {
+      font-family: 'Roboto', sans-serif;
+      font-size: 8px;
+      font-weight: 900;
+      color: #ffffff;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      letter-spacing: 0.3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+    }
+
+    .player-name-duel-box .primary-perc {
+      color: #67e8f9;
+      font-size: 7px;
+      font-weight: 800;
+    }
+
+    .player-name-duel-box .duel-sub-name {
+      font-family: 'Roboto', sans-serif;
+      font-size: 6.5px;
+      font-weight: 800;
+      color: #fef08a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
+    }
+
+    /* OPZIONE 4: Footer Split (Fascia a SX, Ballottaggio con Nome a DX) */
+    .card-footer-split {
+      width: 96%;
+      display: flex;
+      gap: 2px;
+      margin-top: 1px;
+    }
+
+    .card-footer-split .player-tier-tag {
+      flex: 0.85;
+      font-size: 6px;
+      padding: 1.5px 1px;
+      margin-bottom: 0;
+    }
+
+    .card-footer-split .duel-mini-tag {
+      flex: 1.45;
+      background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+      border: 1px solid #818cf8;
+      color: #e0e7ff;
+      font-size: 5.8px;
+      font-weight: 800;
+      letter-spacing: -0.1px;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding: 1.5px 1px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    }
+
+    .card-footer-split .duel-mini-tag strong {
+      color: #fef08a;
+    }
+
+    /* ==========================================================================
+       SEZIONE 2: CAMPO 3D COMPLETO CON QUESTE CARD
+       ========================================================================== */
+    .pitch-demo-section {
+      width: 100%;
+      max-width: 1000px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .pitch-viewport {
+      position: relative;
+      width: 100%;
+      max-width: 960px;
+      height: 520px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      perspective: 950px;
+      perspective-origin: 50% 18%;
+      margin-bottom: 20px;
+    }
+
+    .pitch-stage {
+      position: relative;
+      width: min(100% - 16px, 890px);
+      height: 450px;
+      transform-style: preserve-3d;
+      transform: rotateX(48deg) translateY(-10px);
+    }
+
+    .pitch-surface {
+      position: absolute;
+      inset: 0;
+      border-radius: 20px;
+      background: linear-gradient(180deg, #093118 0%, #0e4b25 45%, #156232 100%);
+      backdrop-filter: blur(6px);
+      box-shadow: 
+        0 0 35px rgba(34, 197, 94, 0.35),
+        0 24px 60px rgba(0, 0, 0, 0.6),
+        inset 0 0 60px rgba(0, 0, 0, 0.45);
+      border: 2px solid rgba(74, 222, 128, 0.85);
+      transform-style: preserve-3d;
+    }
+
+    .pitch-depth {
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 20px;
+      background: linear-gradient(180deg, #0d4622 0%, #04180c 100%);
+      transform-origin: top;
+      transform: rotateX(-90deg);
+      border-bottom: 2.5px solid #22c55e;
+      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.8);
+    }
+
+    .pitch-lines {
+      position: absolute;
+      inset: 14px;
+      pointer-events: none;
+      border: 1.8px solid rgba(255, 255, 255, 0.45);
+      border-radius: 12px;
+    }
+
+    .halfway-line {
+      position: absolute;
+      top: 50%; left: 0; right: 0;
+      height: 1.8px;
+      background: rgba(255, 255, 255, 0.45);
+    }
+
+    .center-circle {
+      position: absolute;
+      top: 50%; left: 50%;
+      width: 96px; height: 96px;
+      border: 1.8px solid rgba(255, 255, 255, 0.45);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .penalty-box.top-box {
+      position: absolute;
+      top: 0; left: 24%; right: 24%; height: 19%;
+      border: 1.8px solid rgba(255, 255, 255, 0.45);
+      border-top: none;
+    }
+
+    .penalty-box.bottom-box {
+      position: absolute;
+      bottom: 0; left: 24%; right: 24%; height: 19%;
+      border: 1.8px solid rgba(255, 255, 255, 0.45);
+      border-bottom: none;
+    }
+
+    .players-layer {
+      position: absolute;
+      inset: 0;
+      transform-style: preserve-3d;
+      pointer-events: none;
+    }
+
+    /* SLOT IN 3D SUL CAMPO */
+    .pitch-slot {
+      position: absolute;
+      transform-style: preserve-3d;
+      transform-origin: 50% 90%;
+      transform: translate(-50%, -50%) rotateX(-48deg) translateZ(14px);
+      pointer-events: auto;
+    }
+
+    .pitch-slot::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 15%;
+      width: 70%;
+      height: 12px;
+      background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.2) 50%, transparent 75%);
+      transform: rotateX(48deg) translateZ(-14px);
+      pointer-events: none;
+      border-radius: 50%;
+    }
+
+    .pitch-slot:hover {
+      transform: translate(-50%, -56%) rotateX(-48deg) translateZ(32px) scale(1.08);
+      z-index: 55;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="demo-header">
+    <div class="demo-badge"><i class="fa-solid fa-wand-magic-sparkles"></i> Studio Prototipo Card 3D</div>
+    <h1>Simulazione Card Giocatori Stile UCL Fantasy</h1>
+    <p class="subtitle">
+      Confronto visivo tra i dati reali di FantaOliva (ruolo, piazzati, fascia, ballottaggi, quotazione) 
+      e la struttura badge/scudetto verticale presa dall'esempio Champions.
+    </p>
+  </header>
+
+  <!-- ==========================================
+       SHOWCASE CARD SINGOLE CON TUTTI I DATI REALI
+       ========================================== -->
+  <section class="showcase-section">
+    <div class="section-title">
+      <i class="fa-solid fa-layer-group"></i> 1. Dettaglio Card Singole (Tutti i Ruoli & Casistiche)
+    </div>
+
+    <div class="cards-grid">
+
+      <!-- 1. MARTINEZ L. (Attacco - Super Top - Rigorista) -->
+      <div class="card-preview-box">
+        <span class="card-scenario-label">Attaccante Super Top (Rigori)</span>
+        <div class="studio-player-card role-a">
+          <div class="card-top-bar">
+            <span class="role-badge-tag badge-a">A</span>
+            <div class="set-pieces-chips">
+              <span class="sp-chip sp-rig" title="3ª scelta Rigori">3🎯</span>
+            </div>
+          </div>
+          <div class="card-center-figure">
+            <!-- Maglia Nerazzurra Inter -->
+            <svg class="jersey-svg" viewBox="0 0 64 64">
+              <path d="M16 12 L24 6 L40 6 L48 12 L56 22 L46 29 L44 24 L44 58 L20 58 L20 24 L18 29 L8 22 Z" fill="#003cd6"/>
+              <rect x="23" y="6" width="6" height="52" fill="#0b0f19"/>
+              <rect x="35" y="6" width="6" height="52" fill="#0b0f19"/>
+              <circle cx="28" cy="22" r="3" fill="#ffdd00" opacity="0.9"/>
+            </svg>
+          </div>
+          <div class="player-name-tag">MARTINEZ L.</div>
+          <div class="player-tier-tag tier-supertop">
+            SUPER TOP · 458cr
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. THURAM (Attacco - Top) -->
+      <div class="card-preview-box">
+        <span class="card-scenario-label">Attaccante Top</span>
+        <div class="studio-player-card role-a">
+          <div class="card-top-bar">
+            <span class="role-badge-tag badge-a">A</span>
+          </div>
+          <div class="card-center-figure">
+            <svg class="jersey-svg" viewBox="0 0 64 64">
+              <path d="M16 12 L24 6 L40 6 L48 12 L56 22 L46 29 L44 24 L44 58 L20 58 L20 24 L18 29 L8 22 Z" fill="#003cd6"/>
+              <rect x="23" y="6" width="6" height="52" fill="#0b0f19"/>
+              <rect x="35" y="6" width="6" height="52" fill="#0b0f19"/>
+              <circle cx="28" cy="22" r="3" fill="#ffdd00" opacity="0.9"/>
+            </svg>
+          </div>
+          <div class="player-name-tag">THURAM</div>
+          <div class="player-tier-tag tier-top">
+            TOP · 458cr
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. DIMARCO (Difensore - Super Top - Punizioni & Corner) -->
+      <div class="card-preview-box">
+        <span class="card-scenario-label">Difensore Super Top (Puniz. & Angoli)</span>
+        <div class="studio-player-card role-d">
+          <div class="card-top-bar">
+            <span class="role-badge-tag badge-d">D</span>
+            <div class="set-pieces-chips">
+              <span class="sp-chip sp-pun" title="1ª scelta Punizioni">1📐</span>
+              <span class="sp-chip sp-cor" title="2ª scelta Corner">2🚩</span>
+            </div>
+          </div>
+          <div class="card-center-figure">
+            <svg class="jersey-svg" viewBox="0 0 64 64">
+              <path d="M16 12 L24 6 L40 6 L48 12 L56 22 L46 29 L44 24 L44 58 L20 58 L20 24 L18 29 L8 22 Z" fill="#003cd6"/>
+              <rect x="23" y="6" width="6" height="52" fill="#0b0f19"/>
+              <rect x="35" y="6" width="6" height="52" fill="#0b0f19"/>
+              <circle cx="28" cy="22" r="3" fill="#ffdd00" opacity="0.9"/>
+            </svg>
+          </div>
+          <div class="player-name-tag">DIMARCO</div>
+          <div class="player-tier-tag tier-supertop">
+            SUPER TOP
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. CALHANOGLU (Centrocampista - Super Top - Rigori, Puniz, Angoli) -->
+      <div class="card-preview-box">
+        <span class="card-scenario-label">Centrocampista (Tripli Piazzati)</span>
+        <div class="studio-player-card role-c">
+          <div class="card-top-bar">
+            <span class="role-badge-tag badge-c">C</span>
+            <div class="set-pieces-chips">
+              <span class="sp-chip sp-rig" title="1ª scelta Rigori">1🎯</span>
+              <span class="sp-chip sp-pun" title="2ª scelta Punizioni">2📐</span>
+              <span class="sp-chip sp-cor" title="1ª scelta Corner">1🚩</span>
+            </div>
+          </div>
+          <div class="card-center-figure">
+            <svg class="jersey-svg" viewBox="0 0 64 64">
+              <path d="M16 12 L24 6 L40 6 L48 12 L56 22 L46 29 L44 24 L44 58 L20 58 L20 24 L18 29 L8 22 Z" fill="#003cd6"/>
+              <rect x="23" y="6" width="6" height="52" fill="#0b0f19"/>
+              <rect x="35" y="6" width="6" height="52" fill="#0b0f19"/>
+              <circle cx="28" cy="22" r="3" fill="#ffdd00" opacity="0.9"/>
+            </svg>
+          </div>
+          <div class="player-name-tag">CALHANOGLU</div>
+          <div class="player-tier-tag tier-supertop">
+            SUPER TOP
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. OPZIONE 2: STRISCIA SOTTO IL NOME (Calhanoglu: 3 Piazzati + Ballottaggio) -->
+      <div class="card-preview-box" style="border-color: rgba(99, 102, 241, 0.85); background: rgba(18, 15, 48, 0.65); box-shadow: 0 0 20px rgba(99, 102, 241, 0.25);">
+        <span class="card-scenario-label" style="color: #a5b4fc;">⭐ Opzione 2: Striscia Sotto Nome</span>
+        <div class="studio-player-card role-c">
+          <div class="card-top-bar">
+            <span class="role-badge-tag badge-c">C</span>
+            <div class="set-pieces-chips">
+              <span class="sp-chip sp-rig" title="1ª scelta Rigori">1🎯</span>
+              <span class="sp-chip sp-pun" title="2ª scelta Punizioni">2📐</span>
+              <span class="sp-chip sp-cor" title="1ª scelta Corner">1🚩</span>
+            </div>
+          </div>
+          <div class="card-center-figure" style="height: 35px; margin-bottom: 1px;">
+            <svg class="jersey-svg" viewBox="0 0 64 64" style="height: 34px;">
+              <path d="M16 12 L24 6 L40 6 L48 12 L56 22 L46 29 L44 24 L44 58 L20 58 L20 24 L18 29 L8 22 Z" fill="#003cd6"/>
+              <rect x="23" y="6" width="6" height="52" fill="#0b0f19"/>
+              <rect x="35" y="6" width="6" height="52" fill="#0b0f19"/>
+              <circle cx="28" cy="22" r="3" fill="#ffdd00" opacity="0.9"/>
+            </svg>
+          </div>
+          <div class="player-name-tag" style="margin-bottom: 1px;">CALHANOGLU</div>
+          <!-- Striscia tra nome e fascia con icona bilancia e rivale in evidenza -->
+          <div class="card-duel-strip is-between-name-tier" title="Calhanoglu 55% vs Zielinski 45%">
+            <i class="fa-solid fa-scale-unbalanced"></i> vs <span class="duel-opp-name">Zielinski</span> <span class="duel-opp-perc">(45%)</span>
+          </div>
+          <div class="player-tier-tag tier-supertop">
+            SUPER TOP
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. OPZIONE 3A: PILLOLA IN BASSO FLOTTANTE -->
+      <div class="card-preview-box" style="border-color: rgba(234, 179, 8, 0.85); background: rgba(30, 20, 5, 0.65); box-shadow: 0 0 20px rgba(234, 179, 8, 0.25);">
+        <span class="card-scenario-label" style="color: #fbbf24;">⭐ Opz 3A: Pillola Basso (Flottante)</span>
+        <div class="studio-player-card role-c">
+          <div class="card-top-bar">
+            <span class="role-badge-tag badge-c">C</span>
+            <div class="set-pieces-chips">
+              <span class="sp-chip sp-rig" title="1ª scelta Rigori">1🎯</span>
+              <span class="sp-chip sp-pun" title="2ª scelta Punizioni">2📐</span>
+              <span class="sp-chip sp-cor" title="1ª scelta Corner">1🚩</span>
+            </div>
+          </div>
+          <div class="card-center-figure" style="height: 40px;">
+            <svg class="jersey-svg" viewBox="0 0 64 64">
+              <path d="M16 12 L24 6 L40 6 L48 12 L56 22 L46 29 L44 24 L44 58 L20 58 L20 24 L18 29 L8 22 Z" fill="#003cd6"/>
+              <rect x="23" y="6" width="6" height="52" fill="#0b0f19"/>
+              <rect x="35" y="6" width="6" height="52" fill="#0b0f19"/>
+              <circle cx="28" cy="22" r="3" fill="#ffdd00" opacity="0.9"/>
+            </svg>
+          </div>
+          <div class="player-name-tag">CALHANOGLU</div>
+          <div class="player-tier-tag tier-supertop">
+            SUPER TOP
+          </div>
+          <!-- Pillola sagomata in basso flottante a cavallo del bordo inferiore -->
+          <div class="duel-sub-badge is-bottom-full" title="55% vs Zielinski (45%)">
+            <i class="fa-solid fa-scale-unbalanced" style="font-size: 6px;"></i> vs <span class="opp-highlight">Zielinski</span> 45%
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. OPZIONE 3B: PILLOLA IN BASSO INTEGRATA -->
+      <div class="card-preview-box" style="border-color: rgba(168, 85, 247, 0.85); background: rgba(25, 12, 45, 0.65); box-shadow: 0 0 20px rgba(168, 85, 247, 0.25);">
+        <span class="card-scenario-label" style="color: #c084fc;">⭐ Opz 3B: Pillola Basso (Integrata)</span>
+        <div class="studio-player-card role-c" style="height: 110px;">
+          <div class="card-top-bar">
+            <span class="role-badge-tag badge-c">C</span>
+            <div class="set-pieces-chips">
+              <span class="sp-chip sp-rig" title="1ª scelta Rigori">1🎯</span>
+              <span class="sp-chip sp-pun" title="2ª scelta Punizioni">2📐</span>
+              <span class="sp-chip sp-cor" title="1ª scelta Corner">1🚩</span>
+            </div>
+          </div>
+          <div class="card-center-figure" style="height: 38px;">
+            <svg class="jersey-svg" viewBox="0 0 64 64">
+              <path d="M16 12 L24 6 L40 6 L48 12 L56 22 L46 29 L44 24 L44 58 L20 58 L20 24 L18 29 L8 22 Z" fill="#003cd6"/>
+              <rect x="23" y="6" width="6" height="52" fill="#0b0f19"/>
+              <rect x="35" y="6" width="6" height="52" fill="#0b0f19"/>
+              <circle cx="28" cy="22" r="3" fill="#ffdd00" opacity="0.9"/>
+            </svg>
+          </div>
+          <div class="player-name-tag">CALHANOGLU</div>
+          <div class="player-tier-tag tier-supertop">
+            SUPER TOP
+          </div>
+          <!-- Pillola integrata all'interno sotto la fascia -->
+          <div class="card-duel-pill-bottom" title="55% vs Zielinski (45%)">
+            <i class="fa-solid fa-scale-unbalanced"></i> vs <span class="opp-highlight">Zielinski</span> 45%
+          </div>
+        </div>
+      </div>
+
+      <!-- 8. MARTINEZ JO. (Portiere - Top) -->
+      <div class="card-preview-box">
+        <span class="card-scenario-label">Portiere Top</span>
+        <div class="studio-player-card role-p">
+          <div class="card-top-bar">
+            <span class="role-badge-tag badge-p">POR</span>
+          </div>
+          <div class="card-center-figure">
+            <svg class="jersey-svg" viewBox="0 0 64 64">
+              <path d="M16 12 L24 6 L40 6 L48 12 L56 22 L46 29 L44 24 L44 58 L20 58 L20 24 L18 29 L8 22 Z" fill="#f59e0b"/>
+              <path d="M25 6 C 25 14, 39 14, 39 6" fill="none" stroke="#000000" stroke-width="2.5"/>
+              <circle cx="28" cy="22" r="3" fill="#003cd6" opacity="0.9"/>
+            </svg>
+          </div>
+          <div class="player-name-tag">MARTINEZ JO.</div>
+          <div class="player-tier-tag tier-top">
+            TOP
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SOTTO-SEZIONE: INGRANDIMENTO 1.5X PER ISPEZIONE NITIDA -->
+    <div class="section-title" style="margin-top: 35px;">
+      <i class="fa-solid fa-magnifying-glass-plus"></i> Vista Ingrandita (1.5x) per Ispezione Dettagli
+    </div>
+
+    <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+
+      <!-- INGRANDITO 1: MARTINEZ L. (Versione Maglia) -->
+      <div class="card-preview-box" style="max-width: 240px; padding: 20px 16px;">
+        <span class="card-scenario-label">Martinez L. (Attacco · Super Top)</span>
+        <div class="studio-player-card is-enlarged role-a">
+          <div class="card-top-bar">
+            <span class="role-badge-tag badge-a">A</span>
+            <div class="set-pieces-chips">
+              <span class="sp-chip sp-rig" title="3ª scelta Rigori">3🎯</span>
+            </div>
+          </div>
+          <div class="card-center-figure">
+            <svg class="jersey-svg" viewBox="0 0 64 64">
+              <path d="M16 12 L24 6 L40 6 L48 12 L56 22 L46 29 L44 24 L44 58 L20 58 L20 24 L18 29 L8 22 Z" fill="#003cd6"/>
+              <rect x="23" y="6" width="6" height="52" fill="#0b0f19"/>
+              <rect x="35" y="6" width="6" height="52" fill="#0b0f19"/>
+              <circle cx="28" cy="22" r="3" fill="#ffdd00" opacity="0.9"/>
+            </svg>
+          </div>
+          <div class="player-name-tag">MARTINEZ L.</div>
+          <div class="player-tier-tag tier-supertop">
+            SUPER TOP · 458cr
+          </div>
+        </div>
+      </div>
+
+      <!-- INGRANDITO 2: CALHANOGLU (Versione Piazzati Multipli) -->
+      <div class="card-preview-box" style="max-width: 240px; padding: 20px 16px;">
+        <span class="card-scenario-label">Calhanoglu (Centrocampo · 3 Piazzati)</span>
+        <div class="studio-player-card is-enlarged role-c">
+          <div class="card-top-bar">
+            <span class="role-badge-tag badge-c">C</span>
+            <div class="set-pieces-chips">
+              <span class="sp-chip sp-rig" title="1ª scelta Rigori">1🎯</span>
+              <span class="sp-chip sp-pun" title="2ª scelta Punizioni">2📐</span>
+              <span class="sp-chip sp-cor" title="1ª scelta Corner">1🚩</span>
+            </div>
+          </div>
+          <div class="card-center-figure">
+            <svg class="jersey-svg" viewBox="0 0 64 64">
+              <path d="M16 12 L24 6 L40 6 L48 12 L56 22 L46 29 L44 24 L44 58 L20 58 L20 24 L18 29 L8 22 Z" fill="#003cd6"/>
+              <rect x="23" y="6" width="6" height="52" fill="#0b0f19"/>
+              <rect x="35" y="6" width="6" height="52" fill="#0b0f19"/>
+              <circle cx="28" cy="22" r="3" fill="#ffdd00" opacity="0.9"/>
+            </svg>
+          </div>
+          <div class="player-name-tag">CALHANOGLU</div>
+          <div class="player-tier-tag tier-supertop">
+            SUPER TOP
+          </div>
+        </div>
+      </div>
+
+      <!-- INGRANDITO 3: OPZIONE 2 (STRISCIA SOTTO IL NOME) -->
+      <div class="card-preview-box" style="max-width: 250px; padding: 20px 16px; border-color: rgba(99, 102, 241, 0.85); background: rgba(18, 15, 48, 0.65); box-shadow: 0 0 20px rgba(99, 102, 241, 0.25);">
+        <span class="card-scenario-label" style="color: #a5b4fc;">⭐ Opzione 2: Striscia Sotto Nome</span>
+        <div class="studio-player-card is-enlarged role-c">
+          <div class="card-top-bar">
+            <span class="role-badge-tag badge-c">C</span>
+            <div class="set-pieces-chips">
+              <span class="sp-chip sp-rig" title="1ª scelta Rigori">1🎯</span>
+              <span class="sp-chip sp-pun" title="2ª scelta Punizioni">2📐</span>
+              <span class="sp-chip sp-cor" title="1ª scelta Corner">1🚩</span>
+            </div>
+          </div>
+          <div class="card-center-figure" style="height: 52px; margin-bottom: 2px;">
+            <svg class="jersey-svg" viewBox="0 0 64 64" style="height: 50px;">
+              <path d="M16 12 L24 6 L40 6 L48 12 L56 22 L46 29 L44 24 L44 58 L20 58 L20 24 L18 29 L8 22 Z" fill="#003cd6"/>
+              <rect x="23" y="6" width="6" height="52" fill="#0b0f19"/>
+              <rect x="35" y="6" width="6" height="52" fill="#0b0f19"/>
+              <circle cx="28" cy="22" r="3" fill="#ffdd00" opacity="0.9"/>
+            </svg>
+          </div>
+          <div class="player-name-tag" style="margin-bottom: 2px;">CALHANOGLU</div>
+          <div class="card-duel-strip is-between-name-tier" title="Calhanoglu 55% vs Zielinski 45%">
+            <i class="fa-solid fa-scale-unbalanced"></i> vs <span class="duel-opp-name">Zielinski</span> <span class="duel-opp-perc">(45%)</span>
+          </div>
+          <div class="player-tier-tag tier-supertop">
+            SUPER TOP
+          </div>
+        </div>
+      </div>
+
+      <!-- INGRANDITO 4: OPZIONE 3A (PILLOLA IN BASSO FLOTTANTE) -->
+      <div class="card-preview-box" style="max-width: 250px; padding: 20px 16px; border-color: rgba(234, 179, 8, 0.85); background: rgba(30, 20, 5, 0.65); box-shadow: 0 0 20px rgba(234, 179, 8, 0.25);">
+        <span class="card-scenario-label" style="color: #fbbf24;">⭐ Opz 3A: Pillola Basso (Flottante)</span>
+        <div class="studio-player-card is-enlarged role-c">
+          <div class="card-top-bar">
+            <span class="role-badge-tag badge-c">C</span>
+            <div class="set-pieces-chips">
+              <span class="sp-chip sp-rig" title="1ª scelta Rigori">1🎯</span>
+              <span class="sp-chip sp-pun" title="2ª scelta Punizioni">2📐</span>
+              <span class="sp-chip sp-cor" title="1ª scelta Corner">1🚩</span>
+            </div>
+          </div>
+          <div class="card-center-figure" style="height: 58px;">
+            <svg class="jersey-svg" viewBox="0 0 64 64">
+              <path d="M16 12 L24 6 L40 6 L48 12 L56 22 L46 29 L44 24 L44 58 L20 58 L20 24 L18 29 L8 22 Z" fill="#003cd6"/>
+              <rect x="23" y="6" width="6" height="52" fill="#0b0f19"/>
+              <rect x="35" y="6" width="6" height="52" fill="#0b0f19"/>
+              <circle cx="28" cy="22" r="3" fill="#ffdd00" opacity="0.9"/>
+            </svg>
+          </div>
+          <div class="player-name-tag">CALHANOGLU</div>
+          <div class="player-tier-tag tier-supertop">
+            SUPER TOP
+          </div>
+          <div class="duel-sub-badge is-bottom-full" title="55% vs Zielinski (45%)">
+            <i class="fa-solid fa-scale-unbalanced"></i> vs <span class="opp-highlight">Zielinski</span> 45%
+          </div>
+        </div>
+      </div>
+
+      <!-- INGRANDITO 5: OPZIONE 3B (PILLOLA IN BASSO INTEGRATA) -->
+      <div class="card-preview-box" style="max-width: 250px; padding: 20px 16px; border-color: rgba(168, 85, 247, 0.85); background: rgba(25, 12, 45, 0.65); box-shadow: 0 0 20px rgba(168, 85, 247, 0.25);">
+        <span class="card-scenario-label" style="color: #c084fc;">⭐ Opz 3B: Pillola Basso (Integrata)</span>
+        <div class="studio-player-card is-enlarged role-c" style="height: 154px;">
+          <div class="card-top-bar">
+            <span class="role-badge-tag badge-c">C</span>
+            <div class="set-pieces-chips">
+              <span class="sp-chip sp-rig" title="1ª scelta Rigori">1🎯</span>
+              <span class="sp-chip sp-pun" title="2ª scelta Punizioni">2📐</span>
+              <span class="sp-chip sp-cor" title="1ª scelta Corner">1🚩</span>
+            </div>
+          </div>
+          <div class="card-center-figure" style="height: 56px;">
+            <svg class="jersey-svg" viewBox="0 0 64 64">
+              <path d="M16 12 L24 6 L40 6 L48 12 L56 22 L46 29 L44 24 L44 58 L20 58 L20 24 L18 29 L8 22 Z" fill="#003cd6"/>
+              <rect x="23" y="6" width="6" height="52" fill="#0b0f19"/>
+              <rect x="35" y="6" width="6" height="52" fill="#0b0f19"/>
+              <circle cx="28" cy="22" r="3" fill="#ffdd00" opacity="0.9"/>
+            </svg>
+          </div>
+          <div class="player-name-tag">CALHANOGLU</div>
+          <div class="player-tier-tag tier-supertop">
+            SUPER TOP
+          </div>
+          <div class="card-duel-pill-bottom" title="55% vs Zielinski (45%)">
+            <i class="fa-solid fa-scale-unbalanced"></i> vs <span class="opp-highlight">Zielinski</span> 45%
+          </div>
+        </div>
+      </div>
+
+      <!-- INGRANDITO 5: DIMARCO (Opzione Alternativa con Avatar Iniziali/Foto) -->
+      <div class="card-preview-box" style="max-width: 250px; padding: 20px 16px;">
+        <span class="card-scenario-label">Dimarco (Variante con Avatar Foto)</span>
+        <div class="studio-player-card is-enlarged role-d">
+          <div class="card-top-bar">
+            <span class="role-badge-tag badge-d">D</span>
+            <div class="set-pieces-chips">
+              <span class="sp-chip sp-pun">1📐</span>
+              <span class="sp-chip sp-cor">2🚩</span>
+            </div>
+          </div>
+          <div class="card-center-figure">
+            <div class="player-avatar-photo" style="background: linear-gradient(135deg, #10b981 0%, #047857 100%);">
+              FD
+            </div>
+          </div>
+          <div class="player-name-tag">DIMARCO</div>
+          <div class="player-tier-tag tier-supertop">
+            SUPER TOP
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SEZIONE 2: VISTA CAMPO 3D CON FORMAZIONE 3-5-2
+       ========================================== -->
+  <section class="pitch-demo-section">
+    <div class="section-title" style="width: 100%;">
+      <i class="fa-solid fa-futbol"></i> 2. Anteprima nel Campo 3D Sospeso (11 Titolari 3-5-2)
+    </div>
+
+    <div class="pitch-viewport">
+      <div class="pitch-stage">
+        <div class="pitch-surface">
+          <div class="pitch-lines">
+            <div class="halfway-line"></div>
+            <div class="center-circle"></div>
+            <div class="penalty-box top-box"></div>
+            <div class="penalty-box bottom-box"></div>
+          </div>
+          <div class="pitch-depth"></div>
+        </div>
+
+        <div class="players-layer">
+
+          <!-- ATTACCANTI (top: 16%) -->
+          <div class="pitch-slot" style="left: 38%; top: 16%;">
+            <div class="studio-player-card role-a">
+              <div class="card-top-bar">
+                <span class="role-badge-tag badge-a">A</span>
+                <div class="set-pieces-chips"><span class="sp-chip sp-rig">3🎯</span></div>
+              </div>
+              <div class="card-center-figure">
+                <svg class="jersey-svg" viewBox="0 0 64 64"><path d="M16 12 L24 6 L40 6 L48 12 L56 22 L46 29 L44 24 L44 58 L20 58 L20 24 L18 29 L8 22 Z" fill="#003cd6"/><rect x="23" y="6" width="6" height="52" fill="#0b0f19"/><rect x="35" y="6" width="6" height="52" fill="#0b0f19"/></svg>
+              </div>
+              <div class="player-name-tag">MARTINEZ L.</div>
+              <div class="player-tier-tag tier-supertop">SUPER TOP</div>
+            </div>
+          </div>
+
+          <div class="pitch-slot" style="left: 62%; top: 16%;">
+            <div class="studio-player-card role-a">
+              <div class="card-top-bar">
+                <span class="role-badge-tag badge-a">A</span>
+              </div>
+              <div class="card-center-figure">
+                <svg class="jersey-svg" viewBox="0 0 64 64"><path d="M16 12 L24 6 L40 6 L48 12 L56 22 L46 29 L44 24 L44 58 L20 58 L20 24 L18 29 L8 22 Z" fill="#003cd6"/><rect x="23" y="6" width="6" height="52" fill="#0b0f19"/><rect x="35" y="6" width="6" height="52" fill="#0b0f19"/></svg>
+              </div>
+              <div class="player-name-tag">THURAM</div>
+              <div class="player-tier-tag tier-top">TOP</div>
+            </div>
+          </div>
+
+          <!-- CENTROCAMPO (top: 39-48%) -->
+          <div class="pitch-slot" style="left: 15%; top: 39%;">
+            <div class="studio-player-card role-d">
+              <div class="card-top-bar">
+                <span class="role-badge-tag badge-d">D</span>
+                <div class="set-pieces-chips"><span class="sp-chip sp-pun">1📐</span><span class="sp-chip sp-cor">2🚩</span></div>
+              </div>
+              <div class="card-center-figure">
+                <svg class="jersey-svg" viewBox="0 0 64 64"><path d="M16 12 L24 6 L40 6 L48 12 L56 22 L46 29 L44 24 L44 58 L20 58 L20 24 L18 29 L8 22 Z" fill="#003cd6"/><rect x="23" y="6" width="6" height="52" fill="#0b0f19"/><rect x="35" y="6" width="6" height="52" fill="#0b0f19"/></svg>
+              </div>
+              <div class="player-name-tag">DIMARCO</div>
+              <div class="player-tier-tag tier-supertop">SUPER TOP</div>
+            </div>
+          </div>
+
+          <div class="pitch-slot" style="left: 32%; top: 43%;">
+            <div class="studio-player-card role-c">
+              <div class="card-top-bar">
+                <span class="role-badge-tag badge-c">C</span>
+              </div>
+              <div class="card-center-figure">
+                <svg class="jersey-svg" viewBox="0 0 64 64"><path d="M16 12 L24 6 L40 6 L48 12 L56 22 L46 29 L44 24 L44 58 L20 58 L20 24 L18 29 L8 22 Z" fill="#003cd6"/><rect x="23" y="6" width="6" height="52" fill="#0b0f19"/><rect x="35" y="6" width="6" height="52" fill="#0b0f19"/></svg>
+              </div>
+              <div class="player-name-tag">JONES C.</div>
+              <div class="player-tier-tag tier-semitop">SEMITOP</div>
+              <!-- Opzione 3: Pillola in basso sul campo 3D -->
+              <div class="duel-sub-badge is-bottom-full" style="font-size: 6px; padding: 1px 5px;" title="55% vs Elliott 45%">
+                <i class="fa-solid fa-scale-unbalanced"></i> vs Elliott 45%
+              </div>
+            </div>
+          </div>
+
+          <div class="pitch-slot" style="left: 50%; top: 48%;">
+            <div class="studio-player-card role-c">
+              <div class="card-top-bar">
+                <span class="role-badge-tag badge-c">C</span>
+                <div class="set-pieces-chips"><span class="sp-chip sp-rig">1🎯</span><span class="sp-chip sp-pun">2📐</span><span class="sp-chip sp-cor">1🚩</span></div>
+              </div>
+              <div class="card-center-figure" style="height: 35px; margin-bottom: 1px;">
+                <svg class="jersey-svg" viewBox="0 0 64 64" style="height: 34px;"><path d="M16 12 L24 6 L40 6 L48 12 L56 22 L46 29 L44 24 L44 58 L20 58 L20 24 L18 29 L8 22 Z" fill="#003cd6"/><rect x="23" y="6" width="6" height="52" fill="#0b0f19"/><rect x="35" y="6" width="6" height="52" fill="#0b0f19"/><circle cx="28" cy="22" r="3" fill="#ffdd00" opacity="0.9"/></svg>
+              </div>
+              <div class="card-duel-strip" title="Calhanoglu 55% vs Zielinski 45%">
+                <i class="fa-solid fa-scale-unbalanced"></i> 55% vs <span class="duel-opp-name">Zielinski</span> <span class="duel-opp-perc">45%</span>
+              </div>
+              <div class="player-name-tag">CALHANOGLU</div>
+              <div class="player-tier-tag tier-supertop">SUPER TOP</div>
+            </div>
+          </div>
+
+          <div class="pitch-slot" style="left: 68%; top: 43%;">
+            <div class="studio-player-card role-c">
+              <div class="card-top-bar">
+                <span class="role-badge-tag badge-c">C</span>
+              </div>
+              <div class="card-center-figure">
+                <svg class="jersey-svg" viewBox="0 0 64 64"><path d="M16 12 L24 6 L40 6 L48 12 L56 22 L46 29 L44 24 L44 58 L20 58 L20 24 L18 29 L8 22 Z" fill="#003cd6"/><rect x="23" y="6" width="6" height="52" fill="#0b0f19"/><rect x="35" y="6" width="6" height="52" fill="#0b0f19"/></svg>
+              </div>
+              <div class="player-name-tag">BARELLA</div>
+              <div class="player-tier-tag tier-semitop">SEMITOP</div>
+            </div>
+          </div>
+
+          <div class="pitch-slot" style="left: 85%; top: 39%;">
+            <div class="studio-player-card role-c">
+              <div class="duel-sub-badge"><i class="fa-solid fa-scale-unbalanced"></i> 51%</div>
+              <div class="card-top-bar">
+                <span class="role-badge-tag badge-c">C</span>
+              </div>
+              <div class="card-center-figure">
+                <svg class="jersey-svg" viewBox="0 0 64 64"><path d="M16 12 L24 6 L40 6 L48 12 L56 22 L46 29 L44 24 L44 58 L20 58 L20 24 L18 29 L8 22 Z" fill="#003cd6"/><rect x="23" y="6" width="6" height="52" fill="#0b0f19"/><rect x="35" y="6" width="6" height="52" fill="#0b0f19"/></svg>
+              </div>
+              <div class="player-name-tag">DIOUF</div>
+              <div class="player-tier-tag tier-titolare">TITOLARE</div>
+            </div>
+          </div>
+
+          <!-- DIFESA (top: 73%) -->
+          <div class="pitch-slot" style="left: 26%; top: 73%;">
+            <div class="studio-player-card role-d">
+              <div class="card-top-bar">
+                <span class="role-badge-tag badge-d">D</span>
+              </div>
+              <div class="card-center-figure">
+                <svg class="jersey-svg" viewBox="0 0 64 64"><path d="M16 12 L24 6 L40 6 L48 12 L56 22 L46 29 L44 24 L44 58 L20 58 L20 24 L18 29 L8 22 Z" fill="#003cd6"/><rect x="23" y="6" width="6" height="52" fill="#0b0f19"/><rect x="35" y="6" width="6" height="52" fill="#0b0f19"/></svg>
+              </div>
+              <div class="player-name-tag">BASTONI</div>
+              <div class="player-tier-tag tier-top">TOP</div>
+            </div>
+          </div>
+
+          <div class="pitch-slot" style="left: 50%; top: 73%;">
+            <div class="studio-player-card role-d">
+              <div class="duel-sub-badge"><i class="fa-solid fa-scale-unbalanced"></i> 51%</div>
+              <div class="card-top-bar">
+                <span class="role-badge-tag badge-d">D</span>
+              </div>
+              <div class="card-center-figure">
+                <svg class="jersey-svg" viewBox="0 0 64 64"><path d="M16 12 L24 6 L40 6 L48 12 L56 22 L46 29 L44 24 L44 58 L20 58 L20 24 L18 29 L8 22 Z" fill="#003cd6"/><rect x="23" y="6" width="6" height="52" fill="#0b0f19"/><rect x="35" y="6" width="6" height="52" fill="#0b0f19"/></svg>
+              </div>
+              <div class="player-name-tag">STONES</div>
+              <div class="player-tier-tag tier-semitop">SEMITOP</div>
+            </div>
+          </div>
+
+          <div class="pitch-slot" style="left: 74%; top: 73%;">
+            <div class="studio-player-card role-d">
+              <div class="card-top-bar">
+                <span class="role-badge-tag badge-d">D</span>
+              </div>
+              <div class="card-center-figure">
+                <svg class="jersey-svg" viewBox="0 0 64 64"><path d="M16 12 L24 6 L40 6 L48 12 L56 22 L46 29 L44 24 L44 58 L20 58 L20 24 L18 29 L8 22 Z" fill="#003cd6"/><rect x="23" y="6" width="6" height="52" fill="#0b0f19"/><rect x="35" y="6" width="6" height="52" fill="#0b0f19"/></svg>
+              </div>
+              <div class="player-name-tag">AKANJI</div>
+              <div class="player-tier-tag tier-semitop">SEMITOP</div>
+            </div>
+          </div>
+
+          <!-- PORTIERE (top: 91%) -->
+          <div class="pitch-slot" style="left: 50%; top: 91%;">
+            <div class="studio-player-card role-p">
+              <div class="card-top-bar">
+                <span class="role-badge-tag badge-p">POR</span>
+              </div>
+              <div class="card-center-figure">
+                <svg class="jersey-svg" viewBox="0 0 64 64">
+                  <path d="M16 12 L24 6 L40 6 L48 12 L56 22 L46 29 L44 24 L44 58 L20 58 L20 24 L18 29 L8 22 Z" fill="#f59e0b"/>
+                  <path d="M25 6 C 25 14, 39 14, 39 6" fill="none" stroke="#000000" stroke-width="2.5"/>
+                  <circle cx="28" cy="22" r="3" fill="#003cd6" opacity="0.9"/>
+                </svg>
+              </div>
+              <div class="player-name-tag">MARTINEZ JO.</div>
+              <div class="player-tier-tag tier-top">TOP</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

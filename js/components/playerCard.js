@@ -104,6 +104,87 @@ function formatTierName(name, isCompact = false) {
   return trimmed;
 }
 
+function getTeamJerseySvg(player, team) {
+  const classicRole = (player?.classicRole || player?.fantaRole || player?.role || 'C').toUpperCase();
+  const isGk = classicRole === 'P' || classicRole === 'POR';
+
+  if (isGk) {
+    return `
+      <svg class="jersey-svg" viewBox="0 0 64 64" aria-hidden="true">
+        <path d="M16 12 L24 6 L40 6 L48 12 L56 22 L46 29 L44 24 L44 58 L20 58 L20 24 L18 29 L8 22 Z" fill="#f59e0b"/>
+        <path d="M25 6 C 25 14, 39 14, 39 6" fill="none" stroke="#000000" stroke-width="2.5"/>
+        <circle cx="28" cy="22" r="3" fill="#003cd6" opacity="0.9"/>
+      </svg>
+    `;
+  }
+
+  const primary = team?.primaryColor || '#003cd6';
+  const secondary = team?.secondaryColor || (primary.toLowerCase() === '#ffffff' ? '#111827' : '#0b0f19');
+  const accent = team?.accentColor || '#ffdd00';
+
+  return `
+    <svg class="jersey-svg" viewBox="0 0 64 64" aria-hidden="true">
+      <path d="M16 12 L24 6 L40 6 L48 12 L56 22 L46 29 L44 24 L44 58 L20 58 L20 24 L18 29 L8 22 Z" fill="${primary}"/>
+      <rect x="23" y="6" width="6" height="52" fill="${secondary}"/>
+      <rect x="35" y="6" width="6" height="52" fill="${secondary}"/>
+      <circle cx="28" cy="22" r="3" fill="${accent}" opacity="0.9"/>
+    </svg>
+  `;
+}
+
+function getSetPiecesChipsHtml(player) {
+  if (!player || !store.getPlayerSpecialists) return '';
+  const spec = store.getPlayerSpecialists(player);
+  if (!spec || !Array.isArray(spec.items) || spec.items.length === 0) return '';
+
+  const iconMap = { rig: '🎯', pun: '📐', corner: '🚩' };
+  const classMap = { rig: 'sp-rig', pun: 'sp-pun', corner: 'sp-cor' };
+  const titleMap = { rig: 'Rigori', pun: 'Punizioni', corner: 'Corner' };
+
+  return spec.items.map(item => {
+    const icon = iconMap[item.type] || '🎯';
+    const cls = classMap[item.type] || 'sp-rig';
+    const title = item.order ? `${item.order}ª scelta ${titleMap[item.type] || 'Piazzati'}` : (titleMap[item.type] || 'Specialista');
+    const orderStr = item.order ? `${item.order}` : '';
+    return `<span class="sp-chip ${cls}" title="${title}">${orderStr}${icon}</span>`;
+  }).join('');
+}
+
+function getTierStyleAndClass(tier) {
+  if (!tier || !tier.name) {
+    return {
+      className: 'tier-default',
+      style: '',
+      label: 'N.D.'
+    };
+  }
+
+  const nameNorm = tier.name.toLowerCase().replace(/[^a-z]/g, '');
+  let cls = 'tier-default';
+  let hasPresetClass = false;
+
+  if (nameNorm.includes('supertop')) {
+    cls = 'tier-supertop';
+    hasPresetClass = true;
+  } else if (nameNorm.includes('top')) {
+    cls = 'tier-top';
+    hasPresetClass = true;
+  } else if (nameNorm.includes('semitop')) {
+    cls = 'tier-semitop';
+    hasPresetClass = true;
+  } else if (nameNorm.includes('titolare')) {
+    cls = 'tier-titolare';
+    hasPresetClass = true;
+  }
+
+  const style = (!hasPresetClass && tier.color) ? `background: ${tier.color}; color: #050b1a; box-shadow: 0 0 10px ${tier.color}80;` : '';
+  return {
+    className: cls,
+    style,
+    label: tier.name.toUpperCase()
+  };
+}
+
 export function renderIndexSegments(score) {
   const s = Math.max(1, Math.min(5, Math.round(Number(score) || 3)));
   let segs = '';
@@ -118,16 +199,19 @@ export function createPlayerCard(player, options = {}) {
     slotId = null,
     slotRole = null,
     isLineup = false,
+    isPitchCard = false,
     isSelected = false,
     compact = false,
     rank = null,
     showTeam = false
   } = options;
 
+  const is3dPitchCard = Boolean(isPitchCard || (isLineup && compact));
+
   if (!player) {
     // Card slot vuoto: mostra direttamente il ruolo/posizione dello slot
     const emptyCard = document.createElement('div');
-    emptyCard.className = `player-card empty-slot ${isSelected ? 'is-selected' : ''}`;
+    emptyCard.className = `player-card empty-slot ${is3dPitchCard ? 'studio-empty-slot' : ''} ${isSelected ? 'is-selected' : ''}`;
     if (slotId) emptyCard.dataset.slotId = slotId;
     const labelText = slotRole ? `${slotRole}` : 'Seleziona';
     emptyCard.innerHTML = `
@@ -145,10 +229,16 @@ export function createPlayerCard(player, options = {}) {
 
   const isFavorite = Boolean(player.isFavorite || store.isPlayerFavorite(player.id) || (player.csvId && store.isPlayerFavorite(player.csvId.toString())));
 
+  const classicRole = store.getRoleCategory(player) || player.classicRole || player.fantaRole || 'C';
+  const roleNorm = (classicRole || 'C').toUpperCase();
+  const roleChar = (roleNorm === 'P' || roleNorm === 'POR') ? 'p' : roleNorm.charAt(0).toLowerCase();
+  const roleClass = `role-${roleChar}`;
+
   const card = document.createElement('article');
   card.className = [
     'player-card',
     isLineup ? 'pitch-slot-card' : 'bench-player-card',
+    is3dPitchCard ? `studio-player-card ${roleClass}` : '',
     isSelected ? 'is-selected' : '',
     compact ? 'is-compact' : '',
     isFavorite ? 'is-favorite' : '',
@@ -161,7 +251,6 @@ export function createPlayerCard(player, options = {}) {
 
   const displayName = player.displayName || player.name || 'Giocatore';
   const initials = getPlayerInitials(player.name || displayName);
-  const classicRole = store.getRoleCategory(player) || player.classicRole || player.fantaRole || 'C';
   const fmVal = player.stats?.fantamedia ?? player.fantamedia ?? '-';
   const mvVal = player.stats?.mediaVoto ?? '-';
   const presenze = player.stats?.presenze ?? 0;
@@ -385,13 +474,74 @@ export function createPlayerCard(player, options = {}) {
     </div>
   `;
 
-  // Template Strutturale Editorial Minimal
-  card.innerHTML = `
-    ${headerHtml}
-    ${metricsHtml}
-    ${railHtml}
-    ${ballottaggioHtml}
-  `;
+  if (is3dPitchCard) {
+    const roleDisplay = (classicRole === 'P' || classicRole === 'POR') ? 'POR' : roleChar.toUpperCase();
+    const chipsHtml = getSetPiecesChipsHtml(player);
+    const tierInfo = getTierStyleAndClass(tier);
+    const photoUrl = player.photoUrl || player.playerImage || player.photo || '';
+
+    // Opzione 3A: Pillola Flottante in Basso per Ballottaggio
+    let duelBottomPillHtml = '';
+    if (ballottaggio) {
+      let oppCleanName = '';
+      let oppPercVal = 50;
+      let myPercVal = 50;
+      let subId = '';
+
+      if (ballottaggio.substitutes && ballottaggio.substitutes.length > 0) {
+        const primarySub = ballottaggio.substitutes[0];
+        const rawName = primarySub.displayName || primarySub.name || '';
+        oppCleanName = rawName.replace(/\s*\(\d+%\)$/, '').trim();
+        oppPercVal = primarySub.perc ?? ballottaggio.percB ?? 50;
+        myPercVal = ballottaggio.percA ?? (100 - oppPercVal);
+        subId = primarySub.id || primarySub.playerId || '';
+      } else if (ballottaggio.opponentName) {
+        const opp = ballottaggio.opponentName;
+        oppCleanName = opp.replace(/\s*\(\d+%\)$/, '').trim();
+        oppPercVal = ballottaggio.percB ?? (100 - (ballottaggio.percA ?? 50));
+        myPercVal = ballottaggio.percA ?? 50;
+        subId = ballottaggio.playerBId || '';
+      }
+
+      if (oppCleanName) {
+        duelBottomPillHtml = `
+          <div class="duel-sub-badge is-bottom-full duel" data-duel-id="${subId}" data-duel-name="${sanitizeHtml(oppCleanName)}" title="${myPercVal}% vs ${sanitizeHtml(oppCleanName)} (${oppPercVal}%) (Doppio click per aprire scheda)">
+            <i class="fa-solid fa-scale-unbalanced" style="font-size: 6px;"></i> vs <span class="opp-highlight">${sanitizeHtml(oppCleanName)}</span> ${oppPercVal}%
+          </div>
+        `;
+      }
+    }
+
+    card.innerHTML = `
+      <div class="card-top-bar">
+        <span class="role-badge-tag badge-${roleChar}">${roleDisplay}</span>
+        ${chipsHtml ? `<div class="set-pieces-chips">${chipsHtml}</div>` : ''}
+      </div>
+      <div class="card-center-figure">
+        <div class="player-avatar-circle ${photoUrl ? 'has-photo' : ''}">
+          ${photoUrl ? `
+            <img src="${photoUrl}" alt="${sanitizeHtml(displayName)}" class="player-avatar-photo" loading="lazy" onerror="this.parentElement.classList.remove('has-photo'); this.parentElement.classList.add('photo-error');" />
+            <span class="player-avatar-fallback">${initials}</span>
+          ` : `
+            <span class="player-avatar-fallback">${initials}</span>
+          `}
+        </div>
+      </div>
+      <div class="player-name-tag" title="${sanitizeHtml(player.name || displayName)}">${sanitizeHtml(displayName.toUpperCase())}</div>
+      <div class="player-tier-tag ${tierInfo.className}" ${tierInfo.style ? `style="${tierInfo.style}"` : ''}>
+        ${sanitizeHtml(tierInfo.label)}
+      </div>
+      ${duelBottomPillHtml}
+    `;
+  } else {
+    // Template Strutturale Editorial Minimal
+    card.innerHTML = `
+      ${headerHtml}
+      ${metricsHtml}
+      ${railHtml}
+      ${ballottaggioHtml}
+    `;
+  }
 
   // Gestione Universale Click (selezione) e Doppio Click / Doppio Tocco (apertura scheda)
   let lastTapTime = 0;
