@@ -291,54 +291,43 @@
   height: 76px;
   transform-style: preserve-3d;
   transform-origin: 50% 90%;
-  transform: translate(-50%, -50%) rotateX(-32deg) translateZ(12px);
+  transform: translate(-50%, -50%) rotateX(-32deg) translateZ(6px);
   pointer-events: auto;
-  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), filter 0.25s ease;
-  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.55));
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  filter: none !important;
 }
 
 .soccer-pitch.is-3d-pitch .pitch-slot-wrapper[data-slot-id="pos_1"],
 .soccer-pitch.is-3d-pitch .pitch-slot-wrapper[data-slot-role="POR"] {
-  top: 93% !important;
+  top: 88% !important;
 }
 
-/* Ombra di contatto realistica proiettata sull'erba dal calciatore in 3D */
+/* Rimosse ombre sotto alle card */
 .soccer-pitch.is-3d-pitch .pitch-slot-wrapper::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 15%;
-  width: 70%;
-  height: 12px;
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.2) 50%, transparent 75%);
-  transform: rotateX(32deg) translateZ(-12px);
-  pointer-events: none;
-  border-radius: 50%;
-  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+  display: none !important;
 }
 
 .soccer-pitch.is-3d-pitch .pitch-slot-wrapper:not(.is-selected):hover {
-  transform: translate(-50%, -55%) rotateX(-32deg) translateZ(30px) scale(1.08);
-  filter: drop-shadow(0 16px 28px rgba(0, 0, 0, 0.7));
+  transform: translate(-50%, -50%) rotateX(-32deg) translateZ(8px) !important;
+  filter: none !important;
   z-index: 50 !important;
 }
 
 .soccer-pitch.is-3d-pitch .pitch-slot-wrapper:not(.is-selected):hover::after {
-  transform: rotateX(32deg) translateZ(-30px) scale(1.2);
-  opacity: 0.8;
+  display: none !important;
 }
 
+/* Card cliccata/selezionata: NON si ingrandisce, nessuna ombra sotto, sopra a tutte le card */
 .soccer-pitch.is-3d-pitch .pitch-slot-wrapper:has(.player-card.is-selected),
 .soccer-pitch.is-3d-pitch .pitch-slot-wrapper.is-selected {
-  transform: translate(-50%, -60%) rotateX(-32deg) translateZ(110px) scale(1.15) !important;
-  filter: drop-shadow(0 28px 48px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 20px rgba(0, 255, 255, 0.75)) !important;
+  transform: translate(-50%, -50%) rotateX(-32deg) translateZ(12px) !important;
+  filter: none !important;
   z-index: 9999 !important;
 }
 
 .soccer-pitch.is-3d-pitch .pitch-slot-wrapper.is-selected::after,
 .soccer-pitch.is-3d-pitch .pitch-slot-wrapper:has(.player-card.is-selected)::after {
-  transform: rotateX(32deg) translateZ(-110px) scale(1.3) !important;
-  opacity: 0.95 !important;
+  display: none !important;
 }
 
 /* ==========================================================================
@@ -350,9 +339,9 @@
   width: 70px;
   height: 76px;
   border-radius: 10px;
-  background: rgba(4, 24, 75, 0.78);
+  background: rgba(4, 24, 75, 0.88);
   backdrop-filter: blur(8px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6), 0 0 12px rgba(0, 170, 255, 0.28);
+  box-shadow: none !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -362,28 +351,29 @@
   border: 1.5px solid transparent;
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
-  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.25s;
+  transition: border-color 0.2s ease;
   transform-style: preserve-3d;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
 
-/* Evidenziazione card selezionata */
+/* Evidenziazione card selezionata: bordo netto senza ingrandirsi */
 .soccer-pitch.is-3d-pitch .pitch-slot-wrapper.is-selected .player-card,
 .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .player-card.is-selected,
 .player-card.studio-player-card.is-selected {
-  outline: 2.5px solid #00ffff !important;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.85), 0 0 32px rgba(0, 255, 255, 0.95) !important;
+  outline: 2px solid #00ffff !important;
+  outline-offset: 1px !important;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.4) !important;
   z-index: 10000 !important;
 }
 
-/* BORDI GRADIENTE NEON IN BASE AL RUOLO */
+/* BORDI GRADIENTE NEON IN BASE AL RUOLO (SENZA OMBRA SOTTO) */
 .soccer-pitch.is-3d-pitch .player-card.role-a,
 .studio-player-card.role-a {
   background-image: 
     linear-gradient(rgba(12, 22, 54, 0.92), rgba(8, 16, 42, 0.94)),
     linear-gradient(135deg, #ff0055 0%, #ff5500 50%, #ffcc00 100%);
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.6), 0 0 14px rgba(255, 0, 85, 0.28);
+  box-shadow: none !important;
 }
 
 .soccer-pitch.is-3d-pitch .player-card.role-c,
@@ -391,7 +381,7 @@
   background-image: 
     linear-gradient(rgba(8, 24, 60, 0.92), rgba(4, 18, 50, 0.94)),
     linear-gradient(135deg, #00d4ff 0%, #0066ff 50%, #8800ff 100%);
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.6), 0 0 14px rgba(0, 180, 255, 0.28);
+  box-shadow: none !important;
 }
 
 .soccer-pitch.is-3d-pitch .player-card.role-d,
@@ -399,7 +389,7 @@
   background-image: 
     linear-gradient(rgba(6, 28, 48, 0.92), rgba(4, 20, 38, 0.94)),
     linear-gradient(135deg, #00ffaa 0%, #00a86b 50%, #00ddff 100%);
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.6), 0 0 14px rgba(0, 255, 170, 0.25);
+  box-shadow: none !important;
 }
 
 .soccer-pitch.is-3d-pitch .player-card.role-p,
@@ -407,7 +397,7 @@
   background-image: 
     linear-gradient(rgba(28, 24, 40, 0.92), rgba(18, 16, 30, 0.94)),
     linear-gradient(135deg, #ffbb00 0%, #ff6600 50%, #ff0066 100%);
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.6), 0 0 14px rgba(255, 187, 0, 0.28);
+  box-shadow: none !important;
 }
 
 /* TOP BAR: Ruolo e Piazzati */
