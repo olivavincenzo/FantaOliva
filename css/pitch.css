@@ -1435,17 +1435,18 @@
   box-shadow: none !important;
 }
 
-/* TOP BAR: Ruolo in alto a sinistra e Piazzati in colonna verticale sotto */
+/* TOP BAR: Ruolo in alto a sinistra e Piazzati in colonna verticale a destra */
 .soccer-pitch.is-3d-pitch .card-top-bar,
 .studio-player-card .card-top-bar {
   position: absolute !important;
   top: 2.5px !important;
   left: 2.5px !important;
+  right: 2.5px !important;
+  width: calc(100% - 5px) !important;
   display: flex !important;
-  flex-direction: column !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
   align-items: flex-start !important;
-  gap: 1.5px !important;
-  width: auto !important;
   height: auto !important;
   z-index: 10 !important;
   pointer-events: none !important;
@@ -1475,8 +1476,10 @@
 .studio-player-card .set-pieces-chips {
   display: flex !important;
   flex-direction: column !important;
-  align-items: flex-start !important;
+  align-items: flex-end !important;
+  margin-left: auto !important;
   gap: 1.5px !important;
+  pointer-events: auto !important;
 }
 
 .soccer-pitch.is-3d-pitch .sp-chip,
@@ -1830,6 +1833,11 @@
   .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .card-top-bar {
     top: 2px !important;
     left: 2px !important;
+    right: 2px !important;
+    width: calc(100% - 4px) !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
     gap: 1px !important;
   }
 
@@ -1841,6 +1849,8 @@
 
   .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .set-pieces-chips {
     gap: 1px !important;
+    align-items: flex-end !important;
+    margin-left: auto !important;
   }
 
   .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .sp-chip {
