@@ -339,7 +339,7 @@
   width: 70px;
   height: 76px;
   border-radius: 10px;
-  background: rgba(4, 24, 75, 0.88);
+  background: rgb(158 158 158 / 15%) !important;
   backdrop-filter: blur(8px);
   box-shadow: none !important;
   display: flex;
@@ -348,7 +348,7 @@
   justify-content: flex-start;
   padding: 2px 2px 3.5px;
   cursor: pointer;
-  border: 1.5px solid transparent;
+  border: 1px solid #ffffff21 !important;
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
   transition: border-color 0.2s ease;
@@ -369,34 +369,13 @@
 
 /* BORDI GRADIENTE NEON IN BASE AL RUOLO (SENZA OMBRA SOTTO) */
 .soccer-pitch.is-3d-pitch .player-card.role-a,
-.studio-player-card.role-a {
-  background-image:
-    linear-gradient(rgba(12, 22, 54, 0.92), rgba(8, 16, 42, 0.94)),
-    linear-gradient(135deg, #ff0055 0%, #ff5500 50%, #ffcc00 100%);
-  box-shadow: none !important;
-}
-
+.studio-player-card.role-a,
 .soccer-pitch.is-3d-pitch .player-card.role-c,
-.studio-player-card.role-c {
-  background-image:
-    linear-gradient(rgba(8, 24, 60, 0.92), rgba(4, 18, 50, 0.94)),
-    linear-gradient(135deg, #00d4ff 0%, #0066ff 50%, #8800ff 100%);
-  box-shadow: none !important;
-}
-
+.studio-player-card.role-c,
 .soccer-pitch.is-3d-pitch .player-card.role-d,
-.studio-player-card.role-d {
-  background-image:
-    linear-gradient(rgba(6, 28, 48, 0.92), rgba(4, 20, 38, 0.94)),
-    linear-gradient(135deg, #00ffaa 0%, #00a86b 50%, #00ddff 100%);
-  box-shadow: none !important;
-}
-
+.studio-player-card.role-d,
 .soccer-pitch.is-3d-pitch .player-card.role-p,
 .studio-player-card.role-p {
-  background-image:
-    linear-gradient(rgba(28, 24, 40, 0.92), rgba(18, 16, 30, 0.94)),
-    linear-gradient(135deg, #ffbb00 0%, #ff6600 50%, #ff0066 100%);
   box-shadow: none !important;
 }
 
@@ -427,33 +406,21 @@
   border-radius: 3px;
   line-height: 1.1;
   text-transform: uppercase;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); */
   pointer-events: auto !important;
   align-self: flex-start;
 }
 
 .soccer-pitch.is-3d-pitch .role-badge-tag.badge-a,
-.studio-player-card .role-badge-tag.badge-a {
-  background: #ef4444;
-  color: #fff;
-}
-
+.studio-player-card .role-badge-tag.badge-a,
 .soccer-pitch.is-3d-pitch .role-badge-tag.badge-c,
-.studio-player-card .role-badge-tag.badge-c {
-  background: #0ea5e9;
-  color: #fff;
-}
-
+.studio-player-card .role-badge-tag.badge-c,
 .soccer-pitch.is-3d-pitch .role-badge-tag.badge-d,
-.studio-player-card .role-badge-tag.badge-d {
-  background: #10b981;
-  color: #fff;
-}
-
+.studio-player-card .role-badge-tag.badge-d,
 .soccer-pitch.is-3d-pitch .role-badge-tag.badge-p,
 .studio-player-card .role-badge-tag.badge-p {
-  background: #f59e0b;
-  color: #000;
+  background: #0000006e !important;
+  color: #fff !important;
 }
 
 .soccer-pitch.is-3d-pitch .set-pieces-chips,
