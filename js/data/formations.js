@@ -18,9 +18,9 @@ export const FORMATIONS = {
       { id: 'pos_6',  role: 'M',   label: 'MED', x: 50, y: 56, defaultRole: 'M' },
       { id: 'pos_7',  role: 'C',   label: 'MZD', x: 74, y: 46, defaultRole: 'C' },
       { id: 'pos_8',  role: 'C',   label: 'MZS', x: 26, y: 46, defaultRole: 'C' },
-      { id: 'pos_9',  role: 'W',   label: 'AD',  x: 82, y: 24, defaultRole: 'W' },
-      { id: 'pos_10', role: 'PC',  label: 'PC',  x: 50, y: 13, defaultRole: 'PC' },
-      { id: 'pos_11', role: 'W',   label: 'AS',  x: 18, y: 24, defaultRole: 'W' }
+      { id: 'pos_9',  role: 'W',   label: 'AD',  x: 82, y: 28, defaultRole: 'W' },
+      { id: 'pos_10', role: 'PC',  label: 'PC',  x: 50, y: 20, defaultRole: 'PC' },
+      { id: 'pos_11', role: 'W',   label: 'AS',  x: 18, y: 28, defaultRole: 'W' }
     ],
     connections: [
       ['pos_1', 'pos_3'], ['pos_1', 'pos_4'],
@@ -48,8 +48,8 @@ export const FORMATIONS = {
       { id: 'pos_7',  role: 'C',   label: 'CCD', x: 62, y: 52, defaultRole: 'C' },
       { id: 'pos_8',  role: 'C',   label: 'CCS', x: 38, y: 52, defaultRole: 'C' },
       { id: 'pos_9',  role: 'E',   label: 'ES',  x: 14, y: 46, defaultRole: 'E' },
-      { id: 'pos_10', role: 'PC',  label: 'PCD', x: 62, y: 15, defaultRole: 'PC' },
-      { id: 'pos_11', role: 'A',   label: 'PCS', x: 38, y: 15, defaultRole: 'A' }
+      { id: 'pos_10', role: 'PC',  label: 'PCD', x: 62, y: 22, defaultRole: 'PC' },
+      { id: 'pos_11', role: 'A',   label: 'PCS', x: 38, y: 22, defaultRole: 'A' }
     ],
     connections: [
       ['pos_1', 'pos_3'], ['pos_1', 'pos_4'],
@@ -74,10 +74,10 @@ export const FORMATIONS = {
       { id: 'pos_5',  role: 'TS',  label: 'TS',  x: 14, y: 73, defaultRole: 'TS' },
       { id: 'pos_6',  role: 'M',   label: 'MED-D', x: 64, y: 56, defaultRole: 'M' },
       { id: 'pos_7',  role: 'M',   label: 'MED-S', x: 36, y: 56, defaultRole: 'M' },
-      { id: 'pos_8',  role: 'W',   label: 'TRQ-D', x: 80, y: 34, defaultRole: 'W' },
-      { id: 'pos_9',  role: 'T',   label: 'TRQ-C', x: 50, y: 32, defaultRole: 'T' },
-      { id: 'pos_10', role: 'W',   label: 'TRQ-S', x: 20, y: 34, defaultRole: 'W' },
-      { id: 'pos_11', role: 'PC',  label: 'PC',    x: 50, y: 13, defaultRole: 'PC' }
+      { id: 'pos_8',  role: 'W',   label: 'TRQ-D', x: 80, y: 37, defaultRole: 'W' },
+      { id: 'pos_9',  role: 'T',   label: 'TRQ-C', x: 50, y: 35, defaultRole: 'T' },
+      { id: 'pos_10', role: 'W',   label: 'TRQ-S', x: 20, y: 37, defaultRole: 'W' },
+      { id: 'pos_11', role: 'PC',  label: 'PC',    x: 50, y: 20, defaultRole: 'PC' }
     ],
     connections: [
       ['pos_1', 'pos_3'], ['pos_1', 'pos_4'],
@@ -105,8 +105,8 @@ export const FORMATIONS = {
       { id: 'pos_7',  role: 'M',   label: 'REG',  x: 50, y: 56, defaultRole: 'M' },
       { id: 'pos_8',  role: 'C',   label: 'MZS',  x: 32, y: 50, defaultRole: 'C' },
       { id: 'pos_9',  role: 'E',   label: 'ES',   x: 12, y: 46, defaultRole: 'E' },
-      { id: 'pos_10', role: 'PC',  label: 'PCD',  x: 62, y: 15, defaultRole: 'PC' },
-      { id: 'pos_11', role: 'A',   label: 'PCS',  x: 38, y: 15, defaultRole: 'A' }
+      { id: 'pos_10', role: 'PC',  label: 'PCD',  x: 62, y: 22, defaultRole: 'PC' },
+      { id: 'pos_11', role: 'A',   label: 'PCS',  x: 38, y: 22, defaultRole: 'A' }
     ],
     connections: [
       ['pos_1', 'pos_3'], ['pos_4', 'pos_3'], ['pos_3', 'pos_2'],
@@ -131,9 +131,9 @@ export const FORMATIONS = {
       { id: 'pos_6',  role: 'C',   label: 'CCD',  x: 64, y: 56, defaultRole: 'C' },
       { id: 'pos_7',  role: 'C',   label: 'CCS',  x: 36, y: 56, defaultRole: 'C' },
       { id: 'pos_8',  role: 'E',   label: 'ES',   x: 12, y: 48, defaultRole: 'E' },
-      { id: 'pos_9',  role: 'T',   label: 'TRQ-D', x: 66, y: 30, defaultRole: 'T' },
-      { id: 'pos_10', role: 'T',   label: 'TRQ-S', x: 34, y: 30, defaultRole: 'T' },
-      { id: 'pos_11', role: 'PC',  label: 'PC',    x: 50, y: 13, defaultRole: 'PC' }
+      { id: 'pos_9',  role: 'T',   label: 'TRQ-D', x: 66, y: 34, defaultRole: 'T' },
+      { id: 'pos_10', role: 'T',   label: 'TRQ-S', x: 34, y: 34, defaultRole: 'T' },
+      { id: 'pos_11', role: 'PC',  label: 'PC',    x: 50, y: 20, defaultRole: 'PC' }
     ],
     connections: [
       ['pos_1', 'pos_3'], ['pos_4', 'pos_3'], ['pos_3', 'pos_2'],
@@ -158,9 +158,9 @@ export const FORMATIONS = {
       { id: 'pos_6',  role: 'C',   label: 'CCD',  x: 64, y: 56, defaultRole: 'C' },
       { id: 'pos_7',  role: 'C',   label: 'CCS',  x: 36, y: 56, defaultRole: 'C' },
       { id: 'pos_8',  role: 'E',   label: 'ES',   x: 12, y: 50, defaultRole: 'E' },
-      { id: 'pos_9',  role: 'W',   label: 'AD',   x: 82, y: 24, defaultRole: 'W' },
-      { id: 'pos_10', role: 'PC',  label: 'PC',   x: 50, y: 13, defaultRole: 'PC' },
-      { id: 'pos_11', role: 'W',   label: 'AS',   x: 18, y: 24, defaultRole: 'W' }
+      { id: 'pos_9',  role: 'W',   label: 'AD',   x: 82, y: 28, defaultRole: 'W' },
+      { id: 'pos_10', role: 'PC',  label: 'PC',   x: 50, y: 20, defaultRole: 'PC' },
+      { id: 'pos_11', role: 'W',   label: 'AS',   x: 18, y: 28, defaultRole: 'W' }
     ],
     connections: [
       ['pos_1', 'pos_3'], ['pos_4', 'pos_3'], ['pos_3', 'pos_2'],
@@ -185,9 +185,9 @@ export const FORMATIONS = {
       { id: 'pos_6',  role: 'M',   label: 'REG', x: 50, y: 60, defaultRole: 'M' },
       { id: 'pos_7',  role: 'C',   label: 'MZD', x: 74, y: 48, defaultRole: 'C' },
       { id: 'pos_8',  role: 'C',   label: 'MZS', x: 26, y: 48, defaultRole: 'C' },
-      { id: 'pos_9',  role: 'T',   label: 'TRQ', x: 50, y: 32, defaultRole: 'T' },
-      { id: 'pos_10', role: 'PC',  label: 'PCD', x: 62, y: 15, defaultRole: 'PC' },
-      { id: 'pos_11', role: 'A',   label: 'PCS', x: 38, y: 15, defaultRole: 'A' }
+      { id: 'pos_9',  role: 'T',   label: 'TRQ', x: 50, y: 36, defaultRole: 'T' },
+      { id: 'pos_10', role: 'PC',  label: 'PCD', x: 62, y: 22, defaultRole: 'PC' },
+      { id: 'pos_11', role: 'A',   label: 'PCS', x: 38, y: 22, defaultRole: 'A' }
     ],
     connections: [
       ['pos_1', 'pos_3'], ['pos_1', 'pos_4'],
@@ -213,8 +213,8 @@ export const FORMATIONS = {
       { id: 'pos_7',  role: 'C',   label: 'CCD', x: 62, y: 54, defaultRole: 'C' },
       { id: 'pos_8',  role: 'C',   label: 'CCS', x: 38, y: 54, defaultRole: 'C' },
       { id: 'pos_9',  role: 'E',   label: 'ES',  x: 14, y: 48, defaultRole: 'E' },
-      { id: 'pos_10', role: 'T',   label: 'SP',  x: 50, y: 30, defaultRole: 'T' },
-      { id: 'pos_11', role: 'PC',  label: 'PC',  x: 50, y: 13, defaultRole: 'PC' }
+      { id: 'pos_10', role: 'T',   label: 'SP',  x: 50, y: 34, defaultRole: 'T' },
+      { id: 'pos_11', role: 'PC',  label: 'PC',  x: 50, y: 20, defaultRole: 'PC' }
     ],
     connections: [
       ['pos_1', 'pos_3'], ['pos_1', 'pos_4'],
@@ -241,8 +241,8 @@ export const FORMATIONS = {
       { id: 'pos_7',  role: 'C',   label: 'CCD', x: 70, y: 48, defaultRole: 'C' },
       { id: 'pos_8',  role: 'M',   label: 'REG', x: 50, y: 54, defaultRole: 'M' },
       { id: 'pos_9',  role: 'C',   label: 'CCS', x: 30, y: 48, defaultRole: 'C' },
-      { id: 'pos_10', role: 'PC',  label: 'PCD', x: 62, y: 15, defaultRole: 'PC' },
-      { id: 'pos_11', role: 'A',   label: 'PCS', x: 38, y: 15, defaultRole: 'A' }
+      { id: 'pos_10', role: 'PC',  label: 'PCD', x: 62, y: 22, defaultRole: 'PC' },
+      { id: 'pos_11', role: 'A',   label: 'PCS', x: 38, y: 22, defaultRole: 'A' }
     ],
     connections: [
       ['pos_1', 'pos_4'], ['pos_6', 'pos_5'], ['pos_5', 'pos_4'], ['pos_4', 'pos_3'], ['pos_3', 'pos_2'],
@@ -269,7 +269,7 @@ export const FORMATIONS = {
       { id: 'pos_8',  role: 'C',   label: 'CCD', x: 62, y: 52, defaultRole: 'C' },
       { id: 'pos_9',  role: 'C',   label: 'CCS', x: 38, y: 52, defaultRole: 'C' },
       { id: 'pos_10', role: 'E',   label: 'ES',  x: 14, y: 46, defaultRole: 'E' },
-      { id: 'pos_11', role: 'PC',  label: 'PC',  x: 50, y: 13, defaultRole: 'PC' }
+      { id: 'pos_11', role: 'PC',  label: 'PC',  x: 50, y: 20, defaultRole: 'PC' }
     ],
     connections: [
       ['pos_1', 'pos_4'], ['pos_6', 'pos_5'], ['pos_5', 'pos_4'], ['pos_4', 'pos_3'], ['pos_3', 'pos_2'],

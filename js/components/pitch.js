@@ -1026,36 +1026,6 @@ export class PitchComponent {
 
   renderTacticalLines() {
     if (!this.linesSvgLayer) return;
-    const formation = store.getCurrentFormation();
-    if (!formation || !formation.connections) {
-      this.linesSvgLayer.innerHTML = '';
-      return;
-    }
-
-    const lineup = store.getLineupPlayers();
-    const slotMap = new Map();
-    lineup.forEach(item => {
-      slotMap.set(item.slot.id, { x: item.x, y: item.y });
-    });
-
-    let svgLinesHtml = '';
-    formation.connections.forEach(([slotAId, slotBId]) => {
-      const posA = slotMap.get(slotAId);
-      const posB = slotMap.get(slotBId);
-
-      if (posA && posB) {
-        svgLinesHtml += `
-          <line 
-            x1="${posA.x}" y1="${posA.y}" 
-            x2="${posB.x}" y2="${posB.y}" 
-            stroke="rgba(16, 16, 20, 0.25)" 
-            stroke-width="0.35" 
-            stroke-dasharray="1 0.6"
-          />
-        `;
-      }
-    });
-
-    this.linesSvgLayer.innerHTML = svgLinesHtml;
+    this.linesSvgLayer.innerHTML = '';
   }
 }

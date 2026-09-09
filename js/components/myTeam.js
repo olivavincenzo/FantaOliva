@@ -157,33 +157,6 @@ export class MyTeamComponent {
   renderPitchView(formation, myTeam) {
     const selectedPlayer = store.getSelectedPlayer();
 
-    // Map di coordinate percentuali (x, y) per le linee tattiche
-    const slotMap = new Map();
-    formation.slots.forEach(slot => {
-      const posX = slot.x !== undefined ? slot.x : (slot.left !== undefined ? slot.left : 50);
-      const posY = slot.y !== undefined ? slot.y : (slot.top !== undefined ? slot.top : 50);
-      slotMap.set(slot.id, { x: posX, y: posY });
-    });
-
-    let svgLinesHtml = '';
-    if (formation.connections) {
-      formation.connections.forEach(([slotAId, slotBId]) => {
-        const posA = slotMap.get(slotAId);
-        const posB = slotMap.get(slotBId);
-        if (posA && posB) {
-          svgLinesHtml += `
-            <line 
-              x1="${posA.x}" y1="${posA.y}" 
-              x2="${posB.x}" y2="${posB.y}" 
-              stroke="rgba(16, 16, 20, 0.25)" 
-              stroke-width="0.35" 
-              stroke-dasharray="1 0.6"
-            />
-          `;
-        }
-      });
-    }
-
     const slotsHtml = formation.slots.map(slot => {
       const player = myTeam.lineup?.[slot.id];
       const isSelected = selectedPlayer && player && selectedPlayer.id === player.id;
@@ -211,7 +184,7 @@ export class MyTeamComponent {
     }).join('');
 
     return `
-      <div class="soccer-pitch ${this.is3D ? 'is-3d-pitch' : ''}" style="display: block; position: relative; min-height: 580px; width: 100%;">
+      <div class="soccer-pitch ${this.is3D ? 'is-3d-pitch' : ''}" style="display: block; position: relative; width: 100%;">
         <div class="pitch-grass-stripes"></div>
         <div class="pitch-lines">
           <div class="pitch-boundary"></div>
@@ -227,9 +200,6 @@ export class MyTeamComponent {
           <div class="penalty-spot bottom-spot"></div>
           <div class="penalty-arc bottom-arc"></div>
         </div>
-        <svg class="tactical-lines-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <g>${svgLinesHtml}</g>
-        </svg>
         <div class="pitch-slots-layer" id="myteam-pitch-slots-layer" style="position: absolute; inset: 0;">
           ${slotsHtml}
         </div>

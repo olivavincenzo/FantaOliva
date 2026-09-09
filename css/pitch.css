@@ -1138,12 +1138,7 @@
 }
 
 .tactical-lines-svg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 10;
+  display: none !important;
 }
 
 .pitch-slots-layer {
@@ -1212,24 +1207,26 @@
 .soccer-pitch.is-3d-pitch {
   perspective: 1200px;
   transform-style: preserve-3d;
-  background: linear-gradient(180deg, #000000 0%, #166534 100%) !important;
+  min-height: 360px !important;
+  height: 380px !important;
+  background: linear-gradient(180deg, #0d3b1d 0%, #166534 100%) !important;
   box-shadow: 0 24px 48px rgba(0, 0, 0, 0.22), inset 0 0 80px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(34, 197, 94, 0.3);
 }
 
 .soccer-pitch.is-3d-pitch .pitch-grass-stripes {
   position: absolute;
-  inset: 0;
+  inset: -25px -15px -15px -15px;
   background: repeating-linear-gradient(180deg, rgb(15 75 38) 0px, rgb(20 89 46) 48px, #12542b 48px, #0e4121 96px);
-  transform: rotateX(26deg) scale(0.92);
-  transform-origin: 50% 60%;
+  transform: rotateX(27deg) translateY(-10px) scale(0.98);
+  transform-origin: 50% 50%;
   pointer-events: none;
   border-radius: var(--radius-xl);
 }
 
 .soccer-pitch.is-3d-pitch .pitch-lines {
-  transform: rotateX(26deg) scale(0.92);
-  transform-origin: 50% 60%;
+  transform: rotateX(27deg) translateY(-10px) scale(0.98);
+  transform-origin: 50% 50%;
   border-color: rgba(255, 255, 255, 0.38);
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -1248,19 +1245,13 @@
 }
 
 .soccer-pitch.is-3d-pitch .tactical-lines-svg {
-  transform: rotateX(26deg) scale(0.92);
-  transform-origin: 50% 60%;
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.soccer-pitch.is-3d-pitch .tactical-lines-svg line {
-  stroke: rgba(255, 255, 255, 0.48) !important;
+  display: none !important;
 }
 
 /* Layer slot con preserve-3d e prospettiva indipendente per le card dei calciatori */
 .soccer-pitch.is-3d-pitch .pitch-slots-layer {
-  transform: rotateX(26deg) scale(0.92);
-  transform-origin: 50% 60%;
+  transform: rotateX(27deg) translateY(-10px) scale(0.98);
+  transform-origin: 50% 50%;
   transform-style: preserve-3d;
   pointer-events: none;
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
@@ -1269,7 +1260,7 @@
 /* Card calciatore in 3D: sollevata dal prato con inclinazione prospettica propria */
 .soccer-pitch.is-3d-pitch .pitch-slot-wrapper {
   position: absolute;
-  transform: translate(-50%, -50%) rotateX(-18deg) translateZ(24px);
+  transform: translate(-50%, -50%) rotateX(-25deg) translateZ(28px);
   transform-style: preserve-3d;
   pointer-events: auto;
   transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), filter 0.25s ease;
@@ -1325,6 +1316,11 @@
 }
 
 @media (max-width: 900px) {
+  .soccer-pitch.is-3d-pitch {
+    min-height: 330px !important;
+    height: 350px !important;
+  }
+
   .soccer-pitch.is-3d-pitch .pitch-slot-wrapper {
     transform: translate(-50%, -50%) rotateX(-18deg) translateZ(16px);
   }

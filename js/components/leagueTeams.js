@@ -339,32 +339,6 @@ export class LeagueTeamsComponent {
 
     const rolePointers = { POR: 0, DIF: 0, CEN: 0, ATT: 0 };
 
-    const slotMap = new Map();
-    formation.slots.forEach(slot => {
-      const posX = slot.x !== undefined ? slot.x : (slot.left !== undefined ? slot.left : 50);
-      const posY = slot.y !== undefined ? slot.y : (slot.top !== undefined ? slot.top : 50);
-      slotMap.set(slot.id, { x: posX, y: posY });
-    });
-
-    let svgLinesHtml = '';
-    if (formation.connections) {
-      formation.connections.forEach(([slotAId, slotBId]) => {
-        const posA = slotMap.get(slotAId);
-        const posB = slotMap.get(slotBId);
-        if (posA && posB) {
-          svgLinesHtml += `
-            <line 
-              x1="${posA.x}" y1="${posA.y}" 
-              x2="${posB.x}" y2="${posB.y}" 
-              stroke="rgba(16, 16, 20, 0.25)" 
-              stroke-width="0.35" 
-              stroke-dasharray="1 0.6"
-            />
-          `;
-        }
-      });
-    }
-
     const slotsHtml = formation.slots.map(slot => {
       let roleGroup = 'CEN';
       if (['POR', 'P'].includes(slot.role)) roleGroup = 'POR';
@@ -417,9 +391,6 @@ export class LeagueTeamsComponent {
           <div class="penalty-spot bottom-spot"></div>
           <div class="penalty-arc bottom-arc"></div>
         </div>
-        <svg class="tactical-lines-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <g>${svgLinesHtml}</g>
-        </svg>
         <div class="pitch-slots-layer" id="league-pitch-slots-layer" style="position: absolute; inset: 0;">
           ${slotsHtml}
         </div>
