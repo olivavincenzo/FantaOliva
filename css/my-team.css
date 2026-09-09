@@ -189,7 +189,7 @@
 }
 
 .soccer-pitch.is-3d-pitch .pitch-lines {
-  transform: rotateX(27deg) translateY(-10px) scale(0.98);
+  transform: rotateX(55deg) translateY(-10px) scale(0.98);
   transform-origin: 50% 50%;
   border-color: rgba(255, 255, 255, 0.38);
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
