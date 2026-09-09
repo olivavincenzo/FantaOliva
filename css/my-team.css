@@ -216,7 +216,7 @@
   border-radius: 20px;
   background: linear-gradient(180deg, #093118 0%, #0e4b25 45%, #156232 100%) !important;
   backdrop-filter: blur(6px);
-  box-shadow: 
+  box-shadow:
     0 0 35px rgba(34, 197, 94, 0.35),
     0 24px 60px rgba(0, 0, 0, 0.6),
     inset 0 0 60px rgba(0, 0, 0, 0.45);
@@ -370,7 +370,7 @@
 /* BORDI GRADIENTE NEON IN BASE AL RUOLO (SENZA OMBRA SOTTO) */
 .soccer-pitch.is-3d-pitch .player-card.role-a,
 .studio-player-card.role-a {
-  background-image: 
+  background-image:
     linear-gradient(rgba(12, 22, 54, 0.92), rgba(8, 16, 42, 0.94)),
     linear-gradient(135deg, #ff0055 0%, #ff5500 50%, #ffcc00 100%);
   box-shadow: none !important;
@@ -378,7 +378,7 @@
 
 .soccer-pitch.is-3d-pitch .player-card.role-c,
 .studio-player-card.role-c {
-  background-image: 
+  background-image:
     linear-gradient(rgba(8, 24, 60, 0.92), rgba(4, 18, 50, 0.94)),
     linear-gradient(135deg, #00d4ff 0%, #0066ff 50%, #8800ff 100%);
   box-shadow: none !important;
@@ -386,7 +386,7 @@
 
 .soccer-pitch.is-3d-pitch .player-card.role-d,
 .studio-player-card.role-d {
-  background-image: 
+  background-image:
     linear-gradient(rgba(6, 28, 48, 0.92), rgba(4, 20, 38, 0.94)),
     linear-gradient(135deg, #00ffaa 0%, #00a86b 50%, #00ddff 100%);
   box-shadow: none !important;
@@ -394,24 +394,27 @@
 
 .soccer-pitch.is-3d-pitch .player-card.role-p,
 .studio-player-card.role-p {
-  background-image: 
+  background-image:
     linear-gradient(rgba(28, 24, 40, 0.92), rgba(18, 16, 30, 0.94)),
     linear-gradient(135deg, #ffbb00 0%, #ff6600 50%, #ff0066 100%);
   box-shadow: none !important;
 }
 
-/* TOP BAR: Ruolo e Piazzati */
+/* TOP BAR: Ruolo in alto a sinistra e Piazzati in colonna verticale sotto */
 .soccer-pitch.is-3d-pitch .card-top-bar,
 .studio-player-card .card-top-bar {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2px;
-  margin-bottom: 1px;
-  height: 12px;
-  z-index: 2;
-  box-sizing: border-box;
+  position: absolute !important;
+  top: 2.5px !important;
+  left: 2.5px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 1.5px !important;
+  width: auto !important;
+  height: auto !important;
+  z-index: 10 !important;
+  pointer-events: none !important;
+  box-sizing: border-box !important;
 }
 
 .soccer-pitch.is-3d-pitch .role-badge-tag,
@@ -424,49 +427,89 @@
   line-height: 1.1;
   text-transform: uppercase;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  pointer-events: auto !important;
+  align-self: flex-start;
 }
 
-.soccer-pitch.is-3d-pitch .role-badge-tag.badge-a, .studio-player-card .role-badge-tag.badge-a { background: #ef4444; color: #fff; }
-.soccer-pitch.is-3d-pitch .role-badge-tag.badge-c, .studio-player-card .role-badge-tag.badge-c { background: #0ea5e9; color: #fff; }
-.soccer-pitch.is-3d-pitch .role-badge-tag.badge-d, .studio-player-card .role-badge-tag.badge-d { background: #10b981; color: #fff; }
-.soccer-pitch.is-3d-pitch .role-badge-tag.badge-p, .studio-player-card .role-badge-tag.badge-p { background: #f59e0b; color: #000; }
+.soccer-pitch.is-3d-pitch .role-badge-tag.badge-a,
+.studio-player-card .role-badge-tag.badge-a {
+  background: #ef4444;
+  color: #fff;
+}
+
+.soccer-pitch.is-3d-pitch .role-badge-tag.badge-c,
+.studio-player-card .role-badge-tag.badge-c {
+  background: #0ea5e9;
+  color: #fff;
+}
+
+.soccer-pitch.is-3d-pitch .role-badge-tag.badge-d,
+.studio-player-card .role-badge-tag.badge-d {
+  background: #10b981;
+  color: #fff;
+}
+
+.soccer-pitch.is-3d-pitch .role-badge-tag.badge-p,
+.studio-player-card .role-badge-tag.badge-p {
+  background: #f59e0b;
+  color: #000;
+}
 
 .soccer-pitch.is-3d-pitch .set-pieces-chips,
 .studio-player-card .set-pieces-chips {
-  display: flex;
-  align-items: center;
-  gap: 2px;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 1.5px !important;
 }
 
 .soccer-pitch.is-3d-pitch .sp-chip,
 .studio-player-card .sp-chip {
   font-size: 6px;
   font-weight: 800;
-  background: rgba(255, 255, 255, 0.15);
-  border: 0.8px solid rgba(255, 255, 255, 0.3);
-  border-radius: 3px;
-  padding: 0 1.5px;
+  background: rgba(255, 255, 255, 0.18);
+  border: 0.8px solid rgba(255, 255, 255, 0.35);
+  border-radius: 2.5px;
+  padding: 0.5px 2px;
   display: inline-flex;
   align-items: center;
   gap: 1px;
   color: #fff;
   line-height: 1;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  pointer-events: auto !important;
 }
 
-.soccer-pitch.is-3d-pitch .sp-chip.sp-rig, .studio-player-card .sp-chip.sp-rig { background: rgba(239, 68, 68, 0.35); border-color: rgba(239, 68, 68, 0.6); }
-.soccer-pitch.is-3d-pitch .sp-chip.sp-pun, .studio-player-card .sp-chip.sp-pun { background: rgba(14, 165, 233, 0.35); border-color: rgba(14, 165, 233, 0.6); }
-.soccer-pitch.is-3d-pitch .sp-chip.sp-cor, .studio-player-card .sp-chip.sp-cor { background: rgba(234, 179, 8, 0.35); border-color: rgba(234, 179, 8, 0.6); }
+.soccer-pitch.is-3d-pitch .sp-chip.sp-rig,
+.studio-player-card .sp-chip.sp-rig {
+  background: rgba(239, 68, 68, 0.45);
+  border-color: rgba(239, 68, 68, 0.7);
+}
+
+.soccer-pitch.is-3d-pitch .sp-chip.sp-pun,
+.studio-player-card .sp-chip.sp-pun {
+  background: rgba(14, 165, 233, 0.45);
+  border-color: rgba(14, 165, 233, 0.7);
+}
+
+.soccer-pitch.is-3d-pitch .sp-chip.sp-cor,
+.studio-player-card .sp-chip.sp-cor {
+  background: rgba(234, 179, 8, 0.45);
+  border-color: rgba(234, 179, 8, 0.7);
+}
 
 /* PARTE CENTRALE: AVATAR / FOTO CIRCOLARE */
 .soccer-pitch.is-3d-pitch .card-center-figure,
 .studio-player-card .card-center-figure {
   position: relative;
   width: 100%;
-  height: 29px;
+  height: 38px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 1px;
+  align-items: flex-end;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  overflow: visible;
 }
 
 .soccer-pitch.is-3d-pitch .player-avatar-wrap,
@@ -526,6 +569,7 @@
   background: linear-gradient(135deg, #d97706 0%, #78350f 100%) !important;
   border-color: rgba(251, 191, 36, 0.85) !important;
 }
+
 .studio-player-card.role-d .player-avatar-wrap:not(.has-photo),
 .studio-player-card.role-d .player-avatar-circle:not(.has-photo),
 .soccer-pitch.is-3d-pitch .player-card.role-d .player-avatar-wrap:not(.has-photo),
@@ -533,6 +577,7 @@
   background: linear-gradient(135deg, #059669 0%, #064e3b 100%) !important;
   border-color: rgba(52, 211, 153, 0.85) !important;
 }
+
 .studio-player-card.role-c .player-avatar-wrap:not(.has-photo),
 .studio-player-card.role-c .player-avatar-circle:not(.has-photo),
 .soccer-pitch.is-3d-pitch .player-card.role-c .player-avatar-wrap:not(.has-photo),
@@ -540,6 +585,7 @@
   background: linear-gradient(135deg, #2563eb 0%, #1e3a8a 100%) !important;
   border-color: rgba(96, 165, 250, 0.85) !important;
 }
+
 .studio-player-card.role-a .player-avatar-wrap:not(.has-photo),
 .studio-player-card.role-a .player-avatar-circle:not(.has-photo),
 .soccer-pitch.is-3d-pitch .player-card.role-a .player-avatar-wrap:not(.has-photo),
@@ -627,31 +673,36 @@
   box-sizing: border-box;
 }
 
-.soccer-pitch.is-3d-pitch .tier-supertop, .studio-player-card .tier-supertop {
+.soccer-pitch.is-3d-pitch .tier-supertop,
+.studio-player-card .tier-supertop {
   background: #ffaa00;
   color: #1a0f00;
   box-shadow: 0 0 10px rgba(255, 170, 0, 0.5);
 }
 
-.soccer-pitch.is-3d-pitch .tier-top, .studio-player-card .tier-top {
+.soccer-pitch.is-3d-pitch .tier-top,
+.studio-player-card .tier-top {
   background: #00e1ff;
   color: #011438;
   box-shadow: 0 0 10px rgba(0, 225, 255, 0.5);
 }
 
-.soccer-pitch.is-3d-pitch .tier-semitop, .studio-player-card .tier-semitop {
+.soccer-pitch.is-3d-pitch .tier-semitop,
+.studio-player-card .tier-semitop {
   background: #b388ff;
   color: #16003b;
   box-shadow: 0 0 10px rgba(179, 136, 255, 0.5);
 }
 
-.soccer-pitch.is-3d-pitch .tier-titolare, .studio-player-card .tier-titolare {
+.soccer-pitch.is-3d-pitch .tier-titolare,
+.studio-player-card .tier-titolare {
   background: #22c55e;
   color: #02230e;
   box-shadow: 0 0 10px rgba(34, 197, 94, 0.5);
 }
 
-.soccer-pitch.is-3d-pitch .tier-default, .studio-player-card .tier-default {
+.soccer-pitch.is-3d-pitch .tier-default,
+.studio-player-card .tier-default {
   background: rgba(255, 255, 255, 0.15);
   color: #ffffff;
 }
@@ -686,6 +737,12 @@
 .studio-player-card .duel-sub-badge.is-bottom-full .opp-highlight {
   color: #fef08a !important;
   font-weight: 900 !important;
+}
+
+.soccer-pitch.is-3d-pitch .duel-sub-badge.is-bottom-full .duel-vs-text,
+.studio-player-card .duel-sub-badge.is-bottom-full .duel-vs-text {
+  opacity: 0.85;
+  font-weight: 700;
 }
 
 /* SLOT VUOTO IN 3D */
@@ -777,30 +834,35 @@
   }
 
   .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .card-top-bar {
-    height: 11px;
-    padding: 0 1px;
-    margin-bottom: 1px;
+    top: 2px !important;
+    left: 2px !important;
+    gap: 1px !important;
   }
 
   .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .role-badge-tag {
-    font-size: 6px;
-    padding: 0.5px 3px;
-    border-radius: 2.5px;
+    font-size: 5.5px !important;
+    padding: 0.5px 2.5px !important;
+    border-radius: 2px !important;
+  }
+
+  .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .set-pieces-chips {
+    gap: 1px !important;
   }
 
   .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .sp-chip {
-    font-size: 5.5px;
-    padding: 0 1px;
+    font-size: 5px !important;
+    padding: 0.5px 1.5px !important;
   }
 
   .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .card-center-figure {
-    height: 30px;
-    margin-bottom: 1px;
-    overflow: visible;
+    height: 34px !important;
+    margin-top: 1px !important;
+    margin-bottom: 1px !important;
+    overflow: visible !important;
   }
 
   .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .player-avatar-photo {
-    height: 30px;
+    height: 48px !important;
   }
 
   .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .player-avatar-fallback {
@@ -830,6 +892,13 @@
     padding: 1px 4px !important;
     bottom: -6px !important;
     gap: 1.5px !important;
+  }
+
+  /* Elimina il 'vs' nella pillola del ballottaggio su mobile */
+  .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .duel-sub-badge .duel-vs-text,
+  .studio-player-card .duel-sub-badge .duel-vs-text,
+  .duel-sub-badge .duel-vs-text {
+    display: none !important;
   }
 }
 

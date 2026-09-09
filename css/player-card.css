@@ -1289,7 +1289,8 @@
 .player-card.is-compact.has-no-set-pieces .metric-role,
 .player-card.is-compact:not(.has-active-set-pieces) .metric-role {
   grid-row: 2 !important;
-  grid-column: 1 / 2 !important; /* 1 elemento */
+  grid-column: 1 / 2 !important;
+  /* 1 elemento */
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -1303,7 +1304,8 @@
 .player-card.is-compact.has-no-set-pieces .player-card-strategy-strip,
 .player-card.is-compact:not(.has-active-set-pieces) .player-card-strategy-strip {
   grid-row: 2 !important;
-  grid-column: 2 / 7 !important; /* 5 elementi */
+  grid-column: 2 / 7 !important;
+  /* 5 elementi */
   display: flex !important;
   align-items: center !important;
   justify-content: flex-start !important;
@@ -1328,7 +1330,8 @@
    ========================================================================== */
 .player-card.is-compact.has-single-set-piece .metric-role {
   grid-row: 2 !important;
-  grid-column: 1 / 2 !important; /* 1 elemento */
+  grid-column: 1 / 2 !important;
+  /* 1 elemento */
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -1341,7 +1344,8 @@
 
 .player-card.is-compact.has-single-set-piece .player-set-pieces-row {
   grid-row: 2 !important;
-  grid-column: 2 / 4 !important; /* 2 elementi della griglia a 6 colonne */
+  grid-column: 2 / 4 !important;
+  /* 2 elementi della griglia a 6 colonne */
   display: flex !important;
   align-items: center !important;
   justify-content: flex-start !important;
@@ -1375,7 +1379,8 @@
 
 .player-card.is-compact.has-single-set-piece .player-card-strategy-strip {
   grid-row: 2 !important;
-  grid-column: 4 / 7 !important; /* 3 elementi della griglia a 6 colonne */
+  grid-column: 4 / 7 !important;
+  /* 3 elementi della griglia a 6 colonne */
   display: flex !important;
   align-items: center !important;
   justify-content: flex-start !important;
@@ -1398,7 +1403,8 @@
 
 .player-card.is-compact.has-single-set-piece.has-tier-row-3 .player-set-pieces-row {
   grid-row: 2 !important;
-  grid-column: 5 / 7 !important; /* Spinto all'estrema destra (slot 5-6): i 3 slot liberi rimangono in mezzo tra Ruolo e Piazzato! */
+  grid-column: 5 / 7 !important;
+  /* Spinto all'estrema destra (slot 5-6): i 3 slot liberi rimangono in mezzo tra Ruolo e Piazzato! */
   display: flex !important;
   align-items: center !important;
   justify-content: flex-end !important;
@@ -1422,7 +1428,8 @@
 
 .player-card.is-compact.has-tier-row-3 .player-card-strategy-strip {
   grid-row: 3 !important;
-  grid-column: 1 / -1 !important; /* Tutta la Riga 3 per la fascia con font a grandezza naturale */
+  grid-column: 1 / -1 !important;
+  /* Tutta la Riga 3 per la fascia con font a grandezza naturale */
   display: flex !important;
   align-items: center !important;
   justify-content: flex-start !important;
@@ -1440,7 +1447,8 @@
 .player-card.is-compact.has-double-set-piece .metric-role,
 .player-card.is-compact.sp-count-2 .metric-role {
   grid-row: 2 !important;
-  grid-column: 1 / 2 !important; /* Ruolo sale su Riga 2 perché c'è spazio (1 slot su 6)! */
+  grid-column: 1 / 2 !important;
+  /* Ruolo sale su Riga 2 perché c'è spazio (1 slot su 6)! */
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -1454,7 +1462,8 @@
 .player-card.is-compact.has-double-set-piece .player-set-pieces-row,
 .player-card.is-compact.sp-count-2 .player-set-pieces-row {
   grid-row: 2 !important;
-  grid-column: 2 / 7 !important; /* Restanti 5 slot di Riga 2 */
+  grid-column: 2 / 7 !important;
+  /* Restanti 5 slot di Riga 2 */
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
@@ -1494,7 +1503,8 @@
 .player-card.is-compact.has-double-set-piece .player-card-strategy-strip,
 .player-card.is-compact.sp-count-2 .player-card-strategy-strip {
   grid-row: 3 !important;
-  grid-column: 1 / -1 !important; /* Tutta la Riga 3 per la fascia a grandezza naturale */
+  grid-column: 1 / -1 !important;
+  /* Tutta la Riga 3 per la fascia a grandezza naturale */
   display: flex !important;
   align-items: center !important;
   justify-content: flex-start !important;
@@ -1518,7 +1528,8 @@
 .player-card.is-compact.has-triple-set-piece .player-set-pieces-row,
 .player-card.is-compact.sp-count-3 .player-set-pieces-row {
   grid-row: 2 !important;
-  grid-column: 1 / -1 !important; /* Tutta la riga a 6 colonne */
+  grid-column: 1 / -1 !important;
+  /* Tutta la riga a 6 colonne */
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
@@ -1556,7 +1567,8 @@
 .player-card.is-compact.has-triple-set-piece .metric-role,
 .player-card.is-compact.sp-count-3 .metric-role {
   grid-row: 3 !important;
-  grid-column: 1 / 2 !important; /* 1 elemento */
+  grid-column: 1 / 2 !important;
+  /* 1 elemento */
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -1570,7 +1582,8 @@
 .player-card.is-compact.has-triple-set-piece .player-card-strategy-strip,
 .player-card.is-compact.sp-count-3 .player-card-strategy-strip {
   grid-row: 3 !important;
-  grid-column: 2 / 7 !important; /* 5 elementi */
+  grid-column: 2 / 7 !important;
+  /* 5 elementi */
   display: flex !important;
   align-items: center !important;
   justify-content: flex-start !important;
@@ -1836,7 +1849,7 @@
 /* BORDI GRADIENTE NEON IN BASE AL RUOLO (SENZA OMBRA SOTTO) */
 .player-card.studio-player-card.role-a,
 .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .player-card.role-a {
-  background-image: 
+  background-image:
     linear-gradient(rgba(12, 22, 54, 0.92), rgba(8, 16, 42, 0.94)),
     linear-gradient(135deg, #ff0055 0%, #ff5500 50%, #ffcc00 100%) !important;
   box-shadow: none !important;
@@ -1844,7 +1857,7 @@
 
 .player-card.studio-player-card.role-c,
 .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .player-card.role-c {
-  background-image: 
+  background-image:
     linear-gradient(rgba(8, 24, 60, 0.92), rgba(4, 18, 50, 0.94)),
     linear-gradient(135deg, #00d4ff 0%, #0066ff 50%, #8800ff 100%) !important;
   box-shadow: none !important;
@@ -1852,7 +1865,7 @@
 
 .player-card.studio-player-card.role-d,
 .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .player-card.role-d {
-  background-image: 
+  background-image:
     linear-gradient(rgba(6, 28, 48, 0.92), rgba(4, 20, 38, 0.94)),
     linear-gradient(135deg, #00ffaa 0%, #00a86b 50%, #00ddff 100%) !important;
   box-shadow: none !important;
@@ -1860,23 +1873,26 @@
 
 .player-card.studio-player-card.role-p,
 .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .player-card.role-p {
-  background-image: 
+  background-image:
     linear-gradient(rgba(28, 24, 40, 0.92), rgba(18, 16, 30, 0.94)),
     linear-gradient(135deg, #ffbb00 0%, #ff6600 50%, #ff0066 100%) !important;
   box-shadow: none !important;
 }
 
-/* TOP BAR: Ruolo e Piazzati */
+/* TOP BAR: Ruolo in alto a sinistra e Piazzati in colonna verticale sotto */
 .player-card.studio-player-card .card-top-bar,
 .soccer-pitch.is-3d-pitch .card-top-bar {
-  width: 100% !important;
+  position: absolute !important;
+  top: 2.5px !important;
+  left: 2.5px !important;
   display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  padding: 0 2px !important;
-  margin-bottom: 1px !important;
-  height: 12px !important;
-  z-index: 2 !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 1.5px !important;
+  width: auto !important;
+  height: auto !important;
+  z-index: 10 !important;
+  pointer-events: none !important;
   box-sizing: border-box !important;
 }
 
@@ -1890,49 +1906,88 @@
   line-height: 1.1 !important;
   text-transform: uppercase !important;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4) !important;
+  pointer-events: auto !important;
+  align-self: flex-start !important;
 }
 
-.player-card.studio-player-card .role-badge-tag.badge-a, .soccer-pitch.is-3d-pitch .role-badge-tag.badge-a { background: #ef4444 !important; color: #fff !important; }
-.player-card.studio-player-card .role-badge-tag.badge-c, .soccer-pitch.is-3d-pitch .role-badge-tag.badge-c { background: #0ea5e9 !important; color: #fff !important; }
-.player-card.studio-player-card .role-badge-tag.badge-d, .soccer-pitch.is-3d-pitch .role-badge-tag.badge-d { background: #10b981 !important; color: #fff !important; }
-.player-card.studio-player-card .role-badge-tag.badge-p, .soccer-pitch.is-3d-pitch .role-badge-tag.badge-p { background: #f59e0b !important; color: #000 !important; }
+.player-card.studio-player-card .role-badge-tag.badge-a,
+.soccer-pitch.is-3d-pitch .role-badge-tag.badge-a {
+  background: #ef4444 !important;
+  color: #fff !important;
+}
+
+.player-card.studio-player-card .role-badge-tag.badge-c,
+.soccer-pitch.is-3d-pitch .role-badge-tag.badge-c {
+  background: #0ea5e9 !important;
+  color: #fff !important;
+}
+
+.player-card.studio-player-card .role-badge-tag.badge-d,
+.soccer-pitch.is-3d-pitch .role-badge-tag.badge-d {
+  background: #10b981 !important;
+  color: #fff !important;
+}
+
+.player-card.studio-player-card .role-badge-tag.badge-p,
+.soccer-pitch.is-3d-pitch .role-badge-tag.badge-p {
+  background: #f59e0b !important;
+  color: #000 !important;
+}
 
 .player-card.studio-player-card .set-pieces-chips,
 .soccer-pitch.is-3d-pitch .set-pieces-chips {
   display: flex !important;
-  align-items: center !important;
-  gap: 2px !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 1.5px !important;
 }
 
 .player-card.studio-player-card .sp-chip,
 .soccer-pitch.is-3d-pitch .sp-chip {
   font-size: 6px !important;
   font-weight: 800 !important;
-  background: rgba(255, 255, 255, 0.15) !important;
-  border: 0.8px solid rgba(255, 255, 255, 0.3) !important;
-  border-radius: 3px !important;
-  padding: 0 1.5px !important;
+  background: rgba(255, 255, 255, 0.18) !important;
+  border: 0.8px solid rgba(255, 255, 255, 0.35) !important;
+  border-radius: 2.5px !important;
+  padding: 0.5px 2px !important;
   display: inline-flex !important;
   align-items: center !important;
   gap: 1px !important;
   color: #fff !important;
   line-height: 1 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) !important;
+  pointer-events: auto !important;
 }
 
-.player-card.studio-player-card .sp-chip.sp-rig, .soccer-pitch.is-3d-pitch .sp-chip.sp-rig { background: rgba(239, 68, 68, 0.35) !important; border-color: rgba(239, 68, 68, 0.6) !important; }
-.player-card.studio-player-card .sp-chip.sp-pun, .soccer-pitch.is-3d-pitch .sp-chip.sp-pun { background: rgba(14, 165, 233, 0.35) !important; border-color: rgba(14, 165, 233, 0.6) !important; }
-.player-card.studio-player-card .sp-chip.sp-cor, .soccer-pitch.is-3d-pitch .sp-chip.sp-cor { background: rgba(234, 179, 8, 0.35) !important; border-color: rgba(234, 179, 8, 0.6) !important; }
+.player-card.studio-player-card .sp-chip.sp-rig,
+.soccer-pitch.is-3d-pitch .sp-chip.sp-rig {
+  background: rgba(239, 68, 68, 0.45) !important;
+  border-color: rgba(239, 68, 68, 0.7) !important;
+}
+
+.player-card.studio-player-card .sp-chip.sp-pun,
+.soccer-pitch.is-3d-pitch .sp-chip.sp-pun {
+  background: rgba(14, 165, 233, 0.45) !important;
+  border-color: rgba(14, 165, 233, 0.7) !important;
+}
+
+.player-card.studio-player-card .sp-chip.sp-cor,
+.soccer-pitch.is-3d-pitch .sp-chip.sp-cor {
+  background: rgba(234, 179, 8, 0.45) !important;
+  border-color: rgba(234, 179, 8, 0.7) !important;
+}
 
 /* PARTE CENTRALE: AVATAR / FOTO CIRCOLARE */
 .player-card.studio-player-card .card-center-figure,
 .soccer-pitch.is-3d-pitch .card-center-figure {
   position: relative !important;
   width: 100% !important;
-  height: 32px !important;
+  height: 38px !important;
   display: flex !important;
   justify-content: center !important;
   align-items: flex-end !important;
-  margin-bottom: 1.5px !important;
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
   overflow: visible !important;
 }
 
@@ -1956,7 +2011,7 @@
 /* Avatar foto: visibile per intero, nessun cerchio, nessuna maschera circolare */
 .player-card.studio-player-card .player-avatar-photo,
 .soccer-pitch.is-3d-pitch .player-avatar-photo {
-  height: 32px !important;
+  height: 38px !important;
   width: auto !important;
   max-width: 100% !important;
   object-fit: contain !important;
@@ -1993,6 +2048,7 @@
   background: linear-gradient(135deg, #d97706 0%, #78350f 100%) !important;
   border-color: rgba(251, 191, 36, 0.85) !important;
 }
+
 .player-card.studio-player-card.role-d .player-avatar-wrap:not(.has-photo),
 .player-card.studio-player-card.role-d .player-avatar-circle:not(.has-photo),
 .soccer-pitch.is-3d-pitch .player-card.role-d .player-avatar-wrap:not(.has-photo),
@@ -2000,6 +2056,7 @@
   background: linear-gradient(135deg, #059669 0%, #064e3b 100%) !important;
   border-color: rgba(52, 211, 153, 0.85) !important;
 }
+
 .player-card.studio-player-card.role-c .player-avatar-wrap:not(.has-photo),
 .player-card.studio-player-card.role-c .player-avatar-circle:not(.has-photo),
 .soccer-pitch.is-3d-pitch .player-card.role-c .player-avatar-wrap:not(.has-photo),
@@ -2007,6 +2064,7 @@
   background: linear-gradient(135deg, #2563eb 0%, #1e3a8a 100%) !important;
   border-color: rgba(96, 165, 250, 0.85) !important;
 }
+
 .player-card.studio-player-card.role-a .player-avatar-wrap:not(.has-photo),
 .player-card.studio-player-card.role-a .player-avatar-circle:not(.has-photo),
 .soccer-pitch.is-3d-pitch .player-card.role-a .player-avatar-wrap:not(.has-photo),
@@ -2094,31 +2152,36 @@
   box-sizing: border-box !important;
 }
 
-.player-card.studio-player-card .tier-supertop, .soccer-pitch.is-3d-pitch .tier-supertop {
+.player-card.studio-player-card .tier-supertop,
+.soccer-pitch.is-3d-pitch .tier-supertop {
   background: #ffaa00 !important;
   color: #1a0f00 !important;
   box-shadow: 0 0 10px rgba(255, 170, 0, 0.5) !important;
 }
 
-.player-card.studio-player-card .tier-top, .soccer-pitch.is-3d-pitch .tier-top {
+.player-card.studio-player-card .tier-top,
+.soccer-pitch.is-3d-pitch .tier-top {
   background: #00e1ff !important;
   color: #011438 !important;
   box-shadow: 0 0 10px rgba(0, 225, 255, 0.5) !important;
 }
 
-.player-card.studio-player-card .tier-semitop, .soccer-pitch.is-3d-pitch .tier-semitop {
+.player-card.studio-player-card .tier-semitop,
+.soccer-pitch.is-3d-pitch .tier-semitop {
   background: #b388ff !important;
   color: #16003b !important;
   box-shadow: 0 0 10px rgba(179, 136, 255, 0.5) !important;
 }
 
-.player-card.studio-player-card .tier-titolare, .soccer-pitch.is-3d-pitch .tier-titolare {
+.player-card.studio-player-card .tier-titolare,
+.soccer-pitch.is-3d-pitch .tier-titolare {
   background: #22c55e !important;
   color: #02230e !important;
   box-shadow: 0 0 10px rgba(34, 197, 94, 0.5) !important;
 }
 
-.player-card.studio-player-card .tier-default, .soccer-pitch.is-3d-pitch .tier-default {
+.player-card.studio-player-card .tier-default,
+.soccer-pitch.is-3d-pitch .tier-default {
   background: rgba(255, 255, 255, 0.15) !important;
   color: #ffffff !important;
 }
@@ -2153,6 +2216,12 @@
 .soccer-pitch.is-3d-pitch .duel-sub-badge.is-bottom-full .opp-highlight {
   color: #fef08a !important;
   font-weight: 900 !important;
+}
+
+.player-card.studio-player-card .duel-sub-badge.is-bottom-full .duel-vs-text,
+.soccer-pitch.is-3d-pitch .duel-sub-badge.is-bottom-full .duel-vs-text {
+  opacity: 0.85 !important;
+  font-weight: 700 !important;
 }
 
 /* SLOT VUOTO IN 3D */
@@ -2193,6 +2262,7 @@
 }
 
 @media (max-width: 768px) {
+
   .player-card.studio-player-card,
   .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .player-card {
     width: 62px !important;
@@ -2203,34 +2273,42 @@
 
   .player-card.studio-player-card .card-top-bar,
   .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .card-top-bar {
-    height: 11px !important;
-    padding: 0 1px !important;
-    margin-bottom: 1px !important;
+    top: 2px !important;
+    left: 2px !important;
+    gap: 1.2px !important;
+    width: auto !important;
+    height: auto !important;
   }
 
   .player-card.studio-player-card .role-badge-tag,
   .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .role-badge-tag {
-    font-size: 6.5px !important;
+    font-size: 6px !important;
     padding: 0.5px 3px !important;
     border-radius: 2.5px !important;
+  }
+
+  .player-card.studio-player-card .set-pieces-chips,
+  .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .set-pieces-chips {
+    gap: 1.2px !important;
   }
 
   .player-card.studio-player-card .sp-chip,
   .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .sp-chip {
     font-size: 5.5px !important;
-    padding: 0 1.2px !important;
+    padding: 0.5px 1.5px !important;
   }
 
   .player-card.studio-player-card .card-center-figure,
   .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .card-center-figure {
-    height: 28px !important;
+    height: 36px !important;
+    margin-top: 1px !important;
     margin-bottom: 1px !important;
     overflow: visible !important;
   }
 
   .player-card.studio-player-card .player-avatar-photo,
   .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .player-avatar-photo {
-    height: 28px !important;
+    height: 36px !important;
   }
 
   .player-card.studio-player-card .player-avatar-fallback,
@@ -2266,13 +2344,21 @@
     bottom: -6px !important;
     gap: 1.5px !important;
   }
+
+  /* Elimina il 'vs' nella pillola del ballottaggio su mobile */
+  .player-card.studio-player-card .duel-sub-badge .duel-vs-text,
+  .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .duel-sub-badge .duel-vs-text,
+  .duel-sub-badge .duel-vs-text {
+    display: none !important;
+  }
 }
 
 @media (max-width: 480px) {
+
   .player-card.studio-player-card,
   .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .player-card {
-    width: 50px !important;
-    height: 64px !important;
+    width: 65px !important;
+    height: 68px !important;
     padding: 1.5px 1.5px 2.5px !important;
     border-radius: 7px !important;
   }
@@ -2284,29 +2370,44 @@
     margin-bottom: 0.5px !important;
   }
 
+  .player-card.studio-player-card .card-top-bar,
+  .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .card-top-bar {
+    top: 1.5px !important;
+    left: 1.5px !important;
+    gap: 1px !important;
+    width: auto !important;
+    height: auto !important;
+  }
+
   .player-card.studio-player-card .role-badge-tag,
   .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .role-badge-tag {
     font-size: 5.5px !important;
-    padding: 0 2.5px !important;
+    padding: 0.5px 2.5px !important;
     border-radius: 2px !important;
+  }
+
+  .player-card.studio-player-card .set-pieces-chips,
+  .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .set-pieces-chips {
+    gap: 1px !important;
   }
 
   .player-card.studio-player-card .sp-chip,
   .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .sp-chip {
     font-size: 5px !important;
-    padding: 0 1px !important;
+    padding: 0.5px 1px !important;
   }
 
   .player-card.studio-player-card .card-center-figure,
   .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .card-center-figure {
-    height: 24px !important;
+    height: 34px !important;
+    margin-top: 1px !important;
     margin-bottom: 0.5px !important;
     overflow: visible !important;
   }
 
   .player-card.studio-player-card .player-avatar-photo,
   .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .player-avatar-photo {
-    height: 24px !important;
+    height: 36px !important;
   }
 
   .player-card.studio-player-card .player-avatar-fallback,
@@ -2341,5 +2442,12 @@
     padding: 1px 4px !important;
     bottom: -6px !important;
     gap: 1.5px !important;
+  }
+
+  /* Elimina il 'vs' nella pillola del ballottaggio su mobile */
+  .player-card.studio-player-card .duel-sub-badge .duel-vs-text,
+  .soccer-pitch.is-3d-pitch .pitch-slot-wrapper .duel-sub-badge .duel-vs-text,
+  .duel-sub-badge .duel-vs-text {
+    display: none !important;
   }
 }

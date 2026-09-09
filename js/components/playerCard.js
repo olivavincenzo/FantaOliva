@@ -506,7 +506,7 @@ export function createPlayerCard(player, options = {}) {
       if (oppCleanName) {
         duelBottomPillHtml = `
           <div class="duel-sub-badge is-bottom-full duel" data-duel-id="${subId}" data-duel-name="${sanitizeHtml(oppCleanName)}" title="${myPercVal}% vs ${sanitizeHtml(oppCleanName)} (${oppPercVal}%) (Doppio click per aprire scheda)">
-            <i class="fa-solid fa-scale-unbalanced" style="font-size: 6px;"></i> vs <span class="opp-highlight">${sanitizeHtml(oppCleanName)}</span> ${oppPercVal}%
+            <i class="fa-solid fa-scale-unbalanced" style="font-size: 6px;"></i><span class="duel-vs-text">vs</span><span class="opp-highlight">${sanitizeHtml(oppCleanName)}</span><span class="duel-opp-perc">${oppPercVal}%</span>
           </div>
         `;
       }
