@@ -359,20 +359,7 @@
       letter-spacing: 0.3px;
     }
 
-    .card-rating-pill {
-      background: rgba(255, 255, 255, 0.15);
-      color: #FFFFFF;
-      font-size: 9.5px;
-      font-weight: 800;
-      padding: 2px 6px;
-      border-radius: 6px;
-      margin-left: 2px;
-    }
 
-    .field-player-card.selected .card-rating-pill {
-      background: var(--lime);
-      color: var(--dark);
-    }
 
     /* Barra superiore sopra al campo */
     .pitch-overlay-header {
@@ -1654,16 +1641,15 @@
       // TERRENO
       const pitchGeo = new THREE.BoxGeometry(18, 0.4, 26);
       const pitchMat = [
-        new THREE.MeshLambertMaterial({ color: '#1B5E20' }),
-        new THREE.MeshLambertMaterial({ color: '#1B5E20' }),
-        new THREE.MeshStandardMaterial({ map: createVerticalPitchTexture(), roughness: 0.8 }),
-        new THREE.MeshLambertMaterial({ color: '#1B5E20' }),
-        new THREE.MeshLambertMaterial({ color: '#1B5E20' }),
-        new THREE.MeshLambertMaterial({ color: '#1B5E20' }),
+        new THREE.MeshBasicMaterial({ color: '#9CD237' }),
+        new THREE.MeshBasicMaterial({ color: '#9CD237' }),
+        new THREE.MeshBasicMaterial({ map: createVerticalPitchTexture() }),
+        new THREE.MeshBasicMaterial({ color: '#9CD237' }),
+        new THREE.MeshBasicMaterial({ color: '#9CD237' }),
+        new THREE.MeshBasicMaterial({ color: '#9CD237' }),
       ];
       const pitchMesh = new THREE.Mesh(pitchGeo, pitchMat);
       pitchMesh.position.y = -0.2;
-      pitchMesh.receiveShadow = true;
       scene.add(pitchMesh);
 
       // PORTE 3D
@@ -1761,7 +1747,6 @@
           <span class="card-name">${p.name}</span>
           <span class="card-role">${p.desc.split(' ')[0]}</span>
         </div>
-        <div class="card-rating-pill">${p.rating}</div>
       `;
 
       cardEl.addEventListener('click', (e) => {
