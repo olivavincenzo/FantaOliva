@@ -182,7 +182,6 @@
 .soccer-pitch.is-3d-pitch .pitch-grass-stripes {
   position: absolute;
   inset: -25px -15px -15px -15px;
-  background: repeating-linear-gradient(180deg, rgb(15 75 38) 0px, rgb(20 89 46) 48px, #12542b 48px, #0e4121 96px);
   transform: rotateX(27deg) translateY(-10px) scale(0.98);
   transform-origin: 50% 50%;
   pointer-events: none;
