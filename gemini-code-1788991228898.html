@@ -285,10 +285,10 @@
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
       border-radius: 12px;
-      padding: 4px 8px 4px 6px;
+      padding: 3.5px 7px 3.5px 5px;
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 5px;
       box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
       border: 1px solid rgba(255, 255, 255, 0.16);
       cursor: pointer;
@@ -471,11 +471,12 @@
 
     .sel-player-avatar {
       width: 40px;
-      height: 40px;
+
       border-radius: 14px;
-      object-fit: cover;
+      margin-top: -20px;
+      /* object-fit: cover;
       border: 1.5px solid var(--green);
-      background: #F1F4F8;
+      background: #F1F4F8; */
     }
 
     .sel-num {
@@ -1231,8 +1232,9 @@
       <!-- Barra Giocatore Attivo in Evidenza -->
       <div class="selected-player-bar">
         <div class="sel-left">
-          <img id="barAvatar" class="sel-player-avatar" src="https://cdn.falsesoftware.com/players/333594/v1.webp"
-            alt="Avatar">
+          <div> <img id="barAvatar" class="sel-player-avatar" src="https://cdn.falsesoftware.com/players/333594/v1.webp"
+              alt="Avatar">
+          </div>
           <div>
             <div class="sel-name" id="barName">Lautaro Martínez</div>
             <div class="sel-sub" id="barRole">Attaccante (Capitano) · Super Top</div>
@@ -1687,27 +1689,27 @@
     // FORMAZIONI VERTICALI CON IL 3-5-2 INTER IN PRIMO PIANO
     const formations = {
       '3-5-2': [
-        { x: 0, z: 10.4 },                           // 0: Martinez Jo. (P)
-        { x: -4.5, z: 7.6 }, { x: 0, z: 8.0 }, { x: 4.5, z: 7.6 }, // 1: Bastoni, 2: Stones, 3: Akanji
-        { x: -6.4, z: 2.2 },                         // 4: Dimarco (LWB)
-        { x: 6.4, z: 2.2 },                          // 5: Diouf (RWB)
-        { x: 2.7, z: 3.8 },                          // 6: Barella (RCM)
-        { x: 0, z: 4.6 },                            // 7: Calhanoglu (REG)
-        { x: -2.7, z: 3.8 },                         // 8: Jones C. (LCM)
-        { x: -2.4, z: -5.6 },                        // 9: Thuram (ST)
-        { x: 2.4, z: -5.6 }                          // 10: Lautaro (ST)
+        { x: 0, z: 10.6 },                           // 0: Martinez Jo. (P)
+        { x: -4.8, z: 7.6 }, { x: 0, z: 8.2 }, { x: 4.8, z: 7.6 }, // 1: Bastoni, 2: Stones, 3: Akanji
+        { x: -6.8, z: 1.8 },                         // 4: Dimarco (LWB)
+        { x: 6.8, z: 1.8 },                          // 5: Diouf (RWB)
+        { x: 3.6, z: 3.2 },                          // 6: Barella (RCM)
+        { x: 0, z: 5.2 },                            // 7: Calhanoglu (REG)
+        { x: -3.6, z: 3.2 },                         // 8: Jones C. (LCM)
+        { x: -2.8, z: -4.8 },                        // 9: Thuram (ST)
+        { x: 2.4, z: -6.2 }                          // 10: Lautaro (ST)
       ],
       '4-3-3': [
-        { x: 0, z: 10.4 },                           // Martinez Jo.
-        { x: -5.4, z: 7.2 }, { x: -1.9, z: 7.7 }, { x: 1.9, z: 7.7 }, { x: 5.4, z: 7.2 }, // Dimarco, Bastoni, Stones, Akanji
-        { x: -3.4, z: 2.8 }, { x: 0, z: 4.2 }, { x: 3.4, z: 2.8 },                     // Jones, Calha, Barella
-        { x: -5.0, z: -4.8 }, { x: 0, z: -6.4 }, { x: 5.0, z: -4.8 }                    // Diouf, Lautaro, Thuram
+        { x: 0, z: 10.6 },                           // Martinez Jo.
+        { x: -5.6, z: 7.2 }, { x: -1.9, z: 7.8 }, { x: 1.9, z: 7.8 }, { x: 5.6, z: 7.2 }, // Dimarco, Bastoni, Stones, Akanji
+        { x: -3.6, z: 2.8 }, { x: 0, z: 4.8 }, { x: 3.6, z: 2.8 },                     // Jones, Calha, Barella
+        { x: -5.2, z: -4.6 }, { x: 0, z: -6.4 }, { x: 5.2, z: -4.6 }                    // Diouf, Lautaro, Thuram
       ],
       '4-4-2': [
-        { x: 0, z: 10.4 },
-        { x: -5.4, z: 7.2 }, { x: -1.9, z: 7.7 }, { x: 1.9, z: 7.7 }, { x: 5.4, z: 7.2 },
-        { x: -5.4, z: 2.5 }, { x: -1.8, z: 3.2 }, { x: 1.8, z: 3.2 }, { x: 5.4, z: 2.5 },
-        { x: -2.2, z: -5.5 }, { x: 2.2, z: -5.5 }
+        { x: 0, z: 10.6 },
+        { x: -5.6, z: 7.2 }, { x: -1.9, z: 7.8 }, { x: 1.9, z: 7.8 }, { x: 5.6, z: 7.2 },
+        { x: -5.8, z: 2.4 }, { x: -2.0, z: 3.4 }, { x: 2.0, z: 3.4 }, { x: 5.8, z: 2.4 },
+        { x: -2.8, z: -4.8 }, { x: 2.4, z: -6.2 }
       ]
     };
 
@@ -1997,14 +1999,16 @@
       if (controls) controls.target.set(0, 0, -0.5);
     };
 
-    // AGGIORNAMENTO POSIZIONE CARD 3D
+    // AGGIORNAMENTO POSIZIONE CARD 3D CON SISTEMA ANTI-COLLISIONE
     const tempVec = new THREE.Vector3();
     function updateCardPositions() {
       if (!camera || !container) return;
       const w = container.clientWidth;
       const h = container.clientHeight;
 
-      playerObjects.forEach((po) => {
+      const cardPositions = [];
+
+      playerObjects.forEach((po, idx) => {
         if (!po.mesh) return;
         po.mesh.getWorldPosition(tempVec);
         tempVec.y += 0.45;
@@ -2020,10 +2024,58 @@
         const screenY = (-tempVec.y * 0.5 + 0.5) * h;
 
         const dist = camera.position.distanceTo(po.mesh.position);
-        const scale = Math.max(0.80, Math.min(1.05, 22 / dist));
+        const scale = Math.max(0.76, Math.min(1.0, 22 / dist));
 
-        po.dom.style.transform = `translate(-50%, -50%) translate3d(${screenX}px, ${screenY}px, 0) scale(${scale})`;
-        po.dom.style.zIndex = Math.round((1 - tempVec.z) * 1000);
+        const cardW = 76 * scale;
+        const cardH = 28 * scale;
+
+        cardPositions.push({
+          idx,
+          po,
+          x: screenX,
+          y: screenY,
+          scale,
+          w: cardW,
+          h: cardH,
+          z: tempVec.z
+        });
+      });
+
+      // RILASSAMENTO ITERATIVO 2D PER EVITARE SOVRAPPOSIZIONI
+      const paddingX = 6;
+      const paddingY = 4;
+      for (let iter = 0; iter < 4; iter++) {
+        for (let i = 0; i < cardPositions.length; i++) {
+          for (let j = i + 1; j < cardPositions.length; j++) {
+            const a = cardPositions[i];
+            const b = cardPositions[j];
+
+            const dx = b.x - a.x;
+            const dy = b.y - a.y;
+            const minX = (a.w + b.w) * 0.5 + paddingX;
+            const minY = (a.h + b.h) * 0.5 + paddingY;
+
+            if (Math.abs(dx) < minX && Math.abs(dy) < minY) {
+              const overlapX = minX - Math.abs(dx);
+              const overlapY = minY - Math.abs(dy);
+
+              if (overlapX < overlapY * 1.4) {
+                const shift = (overlapX * 0.5) * (dx >= 0 ? 1 : -1);
+                a.x -= shift;
+                b.x += shift;
+              } else {
+                const shift = (overlapY * 0.5) * (dy >= 0 ? 1 : -1);
+                a.y -= shift;
+                b.y += shift;
+              }
+            }
+          }
+        }
+      }
+
+      cardPositions.forEach((cp) => {
+        cp.po.dom.style.transform = `translate(-50%, -50%) translate3d(${cp.x.toFixed(1)}px, ${cp.y.toFixed(1)}px, 0) scale(${cp.scale.toFixed(2)})`;
+        cp.po.dom.style.zIndex = Math.round((1 - cp.z) * 1000);
       });
     }
 
