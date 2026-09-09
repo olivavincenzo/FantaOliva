@@ -177,22 +177,20 @@
     }
 
     .team-crest-mini {
-      position: absolute;
-      bottom: -3px;
-      right: -3px;
-      width: 18px;
-      height: 18px;
+      width: 32px;
+      height: 32px;
       border-radius: 50%;
       background: #000;
-      border: 1.5px solid #FFF;
+      border: 1.5px solid rgba(255, 255, 255, 0.22);
       display: flex;
       align-items: center;
       justify-content: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     }
 
     .team-crest-mini img {
-      width: 13px;
-      height: 13px;
+      width: 22px;
+      height: 22px;
       object-fit: contain;
     }
 
@@ -311,15 +309,16 @@
     }
 
     .card-num-badge {
-      width: 20px;
-      height: 20px;
+      width: 19px;
+      height: 19px;
       border-radius: 6px;
+      background: rgba(255, 255, 255, 0.15) !important;
       color: #FFFFFF;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 10px;
-      font-weight: 800;
+      font-weight: 700;
     }
 
     .badge-role-p {
@@ -1176,17 +1175,15 @@
         <div class="user-profile">
           <div class="coach-avatar-wrap">
             <div class="avatar">
-              <img src="https://cdn.falsesoftware.com/cartoons/coach/Chivu.webp" alt="Cristian Chivu"
-                onerror="this.src='https://cdn.sportmonks.com/images/soccer/teams/18/2930.png'">
-            </div>
-            <div class="team-crest-mini">
-              <img src="https://cdn.sportmonks.com/images/soccer/teams/18/2930.png" alt="Inter Crest">
+              <div class="team-crest-mini">
+                <img src="https://cdn.sportmonks.com/images/soccer/teams/18/2930.png" alt="Inter Crest">
+              </div>
             </div>
           </div>
           <div class="user-info">
             <h2>
               <span>Inter Milano</span>
-              <span class="module-pill-tag" id="headerModule">3-5-2</span>
+
             </h2>
             <p>All. Cristian Chivu • Asta 2026/27</p>
           </div>
