@@ -20,7 +20,7 @@
 
   <style>
     :root {
-      --lime: #E3F786;
+      --lime: #9cd237;
       --green: #9CD237;
       --dark: #292A2C;
       --gold: #FFB800;
@@ -29,7 +29,6 @@
       --card-bg: #FFFFFF;
       --text-muted: #7E8490;
       --border-subtle: rgba(0, 0, 0, 0.06);
-
       --role-p: #F59E0B;
       --role-d: #10B981;
       --role-c: #0EA5E9;
@@ -244,7 +243,7 @@
     /* Card Campo 3D Verticale con Effetto 3D Flip */
     .pitch-card {
       margin: 0 18px;
-      height: 390px;
+      height: 380px;
       position: relative;
       perspective: 1200px;
       -webkit-perspective: 1200px;
@@ -278,7 +277,7 @@
 
     .pitch-front {
       transform: rotateY(0deg);
-      background: linear-gradient(180deg, #E6F7A2 0%, #D8F27B 100%);
+      background: linear-gradient(180deg, #E6F7A2 0%, #a5d300 100%);
       box-shadow: 0 16px 36px rgba(41, 42, 44, 0.14), 0 10px 24px rgba(27, 94, 32, 0.25);
       border: 2px solid rgba(255, 255, 255, 0.5);
       z-index: 2;
@@ -585,7 +584,7 @@
       height: 7px;
       background-color: var(--lime);
       border-radius: 50%;
-      box-shadow: 0 0 8px var(--lime);
+      /* box-shadow: 0 0 8px var(--lime); */
     }
 
     .formation-pills {
@@ -697,23 +696,109 @@
     }
 
     .sel-rating {
-      background: var(--dark);
-      color: var(--lime);
-      padding: 6px 12px;
+      width: 38px;
+      height: 38px;
       border-radius: 14px;
-      font-size: 13px;
-      font-weight: 800;
+      background: #F3F4F6;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      color: #9CA3AF;
       display: flex;
       align-items: center;
-      gap: 4px;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      padding: 0;
+      outline: none;
     }
 
-    /* Griglia Statistiche Rapide 2x2 */
-    .stats-section {
-      padding: 12px 18px;
+    .sel-rating:hover {
+      transform: scale(1.08);
+      background: #FFFFFF;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .sel-rating.is-favorite {
+      background: var(--dark);
+      border-color: var(--dark);
+      color: #FFB800;
+      box-shadow: 0 4px 12px rgba(41, 42, 44, 0.25);
+    }
+
+    .sel-rating.is-favorite svg {
+      fill: #d1fe50;
+      stroke: #d2ff50;
+    }
+
+    /* Contenitore Carousel Statistiche Rapide con Swipe e 2 Pagine */
+    .stats-carousel-wrap {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stats-carousel-track {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+      user-select: none;
+    }
+
+    .stats-carousel-track::-webkit-scrollbar {
+      display: none;
+    }
+
+    .stats-page {
+      flex: 0 0 100%;
+      width: 100%;
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+      padding: 12px 18px 4px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 10px;
+      box-sizing: border-box;
+    }
+
+    /* Griglia Statistiche Rapide 2x2 (Retrocompatibilità) */
+    .stats-section {
+      padding: 12px 18px 4px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    /* Pallini Indicatori di Pagina (Dots) */
+    .stats-dots-indicator {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 8px 0 12px;
+    }
+
+    .stats-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 3px;
+      background: rgba(41, 42, 44, 0.22);
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .stats-dot:hover {
+      background: rgba(41, 42, 44, 0.45);
+    }
+
+    .stats-dot.active {
+      width: 18px;
+      background: var(--dark);
+      box-shadow: 0 2px 6px rgba(41, 42, 44, 0.22);
     }
 
     .stat-card {
@@ -736,11 +821,12 @@
     }
 
     .stat-num {
-      font-size: 24px;
+      font-size: 21px;
       font-weight: 900;
-      line-height: 1;
-      letter-spacing: -0.5px;
+      line-height: 1.1;
+      letter-spacing: -0.4px;
       color: var(--dark);
+      white-space: nowrap;
     }
 
     .stat-arrow {
@@ -1321,10 +1407,9 @@
     }
 
     .nav-item.active {
-      background: var(--lime);
+      background: var(--white);
       color: var(--dark);
       max-width: 58px;
-      box-shadow: 0 3px 10px rgba(227, 247, 134, 0.4);
     }
 
     .nav-item svg {
@@ -1380,8 +1465,7 @@
             <p>All. Cristian Chivu • Asta 2026/27</p>
           </div>
         </div>
-        <button class="btn-icon" title="Note Tattiche Inter"
-          onclick="alert('NOTE TATTICHE INTER:\n- Modulo base: 3-5-2\n- Punti di forza: Valorizzazione esterni, transizione rapida, fase difensiva compatta (5.0/5.0)\n- Rigoristi: Calhanoglu, Zielinski, Martinez L.\n- Punizioni & Corner: Dimarco, Calhanoglu')">
+        <button class="btn-icon" title="Cambia squadra" onclick="">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--dark)" stroke-width="2.2">
             <path stroke-linecap="round" stroke-linejoin="round"
               d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
@@ -1505,48 +1589,105 @@
       <div class="selected-player-bar">
         <div class="sel-left">
           <div> <img id="barAvatar" class="sel-player-avatar" src="https://cdn.falsesoftware.com/players/333594/v1.webp"
-              alt="Avatar">
+              alt="Avatar"
+              onerror="this.onerror=null; this.src='https://cdn.sportmonks.com/images/soccer/teams/18/2930.png';">
           </div>
           <div>
             <div class="sel-name" id="barName">Lautaro Martínez</div>
             <div class="sel-sub" id="barRole">Attaccante (Capitano) · Super Top</div>
           </div>
         </div>
-        <div class="sel-rating" id="barRating">★ 9.6</div>
+        <button type="button" class="sel-rating is-favorite" id="barRating" title="Rimuovi dai preferiti"
+          aria-label="Preferito">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polygon
+              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+            </polygon>
+          </svg>
+        </button>
       </div>
 
-      <!-- Griglia Statistiche Rapide 2x2 Dinamiche -->
-      <div class="stats-section">
-        <div class="stat-card">
-          <span class="stat-num" id="statGoals">17</span>
-          <svg class="stat-arrow" viewBox="0 0 24 24" fill="none">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
-          </svg>
-          <p class="stat-desc" id="statGoalsDesc">gol realizzati<br>in Serie A 2026/27</p>
+      <!-- Sezione Statistiche Rapide a 2 Pagine con Swipe e Indicatori (Pallini) -->
+      <div class="stats-carousel-wrap">
+        <div class="stats-carousel-track" id="statsTrack">
+
+          <!-- Pagina 1: Statistiche Principali -->
+          <div class="stats-page" data-page="0">
+            <div class="stat-card">
+              <span class="stat-num" id="statGoals">17 Goal</span>
+              <svg class="stat-arrow" viewBox="0 0 24 24" fill="none">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
+              </svg>
+              <p class="stat-desc" id="statGoalsDesc">gol realizzati<br>in Serie A 2026/27</p>
+            </div>
+
+            <div class="stat-card">
+              <span class="stat-num" id="statFm">8.25</span>
+              <svg class="stat-arrow" viewBox="0 0 24 24" fill="none">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
+              </svg>
+              <p class="stat-desc" id="statFmDesc">FantaMedia (FM)<br>Media Voto: 6.42</p>
+            </div>
+
+            <div class="stat-card">
+              <span class="stat-num" id="statCredits">563 CR</span>
+              <svg class="stat-arrow" viewBox="0 0 24 24" fill="none">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
+              </svg>
+              <p class="stat-desc">crediti consigliati<br>su base 1000 all'asta</p>
+            </div>
+
+            <div class="stat-card">
+              <span class="stat-num" id="statStarts">SUPER TOP</span>
+              <svg class="stat-arrow" viewBox="0 0 24 24" fill="none">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
+              </svg>
+              <p class="stat-desc" id="statStartsDesc">titolarità 5/5 e integrità 5/5</p>
+            </div>
+          </div>
+
+          <!-- Pagina 2: Statistiche Avanzate -->
+          <div class="stats-page" data-page="1">
+            <div class="stat-card">
+              <span class="stat-num" id="statMv">6.42</span>
+              <svg class="stat-arrow" viewBox="0 0 24 24" fill="none">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
+              </svg>
+              <p class="stat-desc">Media Voto (MV)<br>rendimento costante</p>
+            </div>
+
+            <div class="stat-card">
+              <span class="stat-num" id="statMetric">17 / 6</span>
+              <svg class="stat-arrow" viewBox="0 0 24 24" fill="none">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
+              </svg>
+              <p class="stat-desc" id="statMetricDesc">Gol / Assist totali<br>incidenza fanta</p>
+            </div>
+
+            <div class="stat-card">
+              <span class="stat-num" id="statApps">30</span>
+              <svg class="stat-arrow" viewBox="0 0 24 24" fill="none">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
+              </svg>
+              <p class="stat-desc">partite a voto<br>presenze complessive</p>
+            </div>
+
+            <div class="stat-card">
+              <span class="stat-num" id="statFitness">95%</span>
+              <svg class="stat-arrow" viewBox="0 0 24 24" fill="none">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
+              </svg>
+              <p class="stat-desc">condizione atletica<br>integrità fisica e forma</p>
+            </div>
+          </div>
+
         </div>
 
-        <div class="stat-card">
-          <span class="stat-num" id="statFm">8.25</span>
-          <svg class="stat-arrow" viewBox="0 0 24 24" fill="none">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
-          </svg>
-          <p class="stat-desc">FantaMedia (FM)<br>Media Voto: 6.42</p>
-        </div>
-
-        <div class="stat-card">
-          <span class="stat-num" id="statCredits">563 CR</span>
-          <svg class="stat-arrow" viewBox="0 0 24 24" fill="none">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
-          </svg>
-          <p class="stat-desc">crediti consigliati<br>su base 1000 all'asta</p>
-        </div>
-
-        <div class="stat-card">
-          <span class="stat-num" id="statStarts">90%</span>
-          <svg class="stat-arrow" viewBox="0 0 24 24" fill="none">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
-          </svg>
-          <p class="stat-desc">titolarità 5/5<br>27 presenze da titolare</p>
+        <!-- Indicatori di Pagina (Due Pallini per Swipe) -->
+        <div class="stats-dots-indicator" id="statsDots">
+          <button type="button" class="stats-dot active" data-page="0" aria-label="Pagina statistiche 1"></button>
+          <button type="button" class="stats-dot" data-page="1" aria-label="Pagina statistiche 2"></button>
         </div>
       </div>
 
@@ -1679,79 +1820,79 @@
     const playerSquad = [
       {
         id: 0, num: 13, name: "Martinez Jo.", full: "Josep Martínez", role: "P", roleClass: "badge-role-p",
-        desc: "Portiere Titolare", age: 26, nat: "ESP", apps: 26,
+        desc: "Portiere Titolare", age: 26, nat: "ESP", apps: 26, goals: 0,
         metricKey: "Clean Sheet", metricVal: "14", fm: "5.85", mv: "6.25", starts: "86%", credits: "140 CR",
-        rating: "7.2", tier: "TOP", fitness: 97, img: "https://cdn.falsesoftware.com/players/529414/v1.webp",
+        rating: "7.2", tier: "SEMI-TOP", titolaritaStars: "4/5", integritaStars: "5/5", fitness: 97, img: "https://cdn.falsesoftware.com/players/529414/v1.webp",
         stat1: "14", stat1Desc: "clean sheet stagionali<br>porta inviolata"
       },
       {
         id: 1, num: 95, name: "Bastoni", full: "Alessandro Bastoni", role: "D", roleClass: "badge-role-d",
-        desc: "Braccetto Sinistro", age: 25, nat: "ITA", apps: 29,
+        desc: "Braccetto Sinistro", age: 25, nat: "ITA", apps: 29, goals: 2,
         metricKey: "Gol / Assist", metricVal: "2 / 5", fm: "7.15", mv: "6.28", starts: "93%", credits: "260 CR",
-        rating: "8.2", tier: "TOP", fitness: 95, img: "https://cdn.falsesoftware.com/players/133797/v1.webp",
+        rating: "8.2", tier: "TOP", titolaritaStars: "5/5", integritaStars: "5/5", fitness: 95, img: "https://cdn.falsesoftware.com/players/133797/v1.webp",
         stat1: "2 G • 5 A", stat1Desc: "bonus difensivi<br>traversoni & inserimenti"
       },
       {
         id: 2, num: 5, name: "Stones", full: "John Stones", role: "D", roleClass: "badge-role-d",
-        desc: "Centrale Difensivo", age: 30, nat: "ENG", apps: 25,
+        desc: "Centrale Difensivo", age: 30, nat: "ENG", apps: 25, goals: 2,
         metricKey: "Ballottaggio", metricVal: "51% vs Biss", fm: "6.85", mv: "6.22", starts: "82%", credits: "210 CR",
-        rating: "7.7", tier: "SEMITOP", fitness: 89, img: "https://cdn.falsesoftware.com/players/982/v2.webp",
+        rating: "7.7", tier: "SEMI-TOP", titolaritaStars: "4/5", integritaStars: "4/5", fitness: 89, img: "https://cdn.falsesoftware.com/players/982/v2.webp",
         stat1: "2 G", stat1Desc: "gol di testa<br>51% ballottaggio con Bisseck"
       },
       {
         id: 3, num: 25, name: "Akanji", full: "Manuel Akanji", role: "D", roleClass: "badge-role-d",
-        desc: "Braccetto Destro", age: 29, nat: "SUI", apps: 28,
+        desc: "Braccetto Destro", age: 29, nat: "SUI", apps: 28, goals: 1,
         metricKey: "Recuperi/G", metricVal: "7.2", fm: "6.70", mv: "6.18", starts: "88%", credits: "180 CR",
-        rating: "7.6", tier: "SEMITOP", fitness: 92, img: "https://cdn.falsesoftware.com/players/198062/v1.webp",
+        rating: "7.6", tier: "SEMI-TOP", titolaritaStars: "4/5", integritaStars: "5/5", fitness: 92, img: "https://cdn.falsesoftware.com/players/198062/v1.webp",
         stat1: "7.2", stat1Desc: "palloni recuperati/gara<br>solidità pura"
       },
       {
         id: 4, num: 32, name: "Dimarco", full: "Federico Dimarco", role: "D", roleClass: "badge-role-d",
-        desc: "Esterno Sinistro (Piazzati)", age: 27, nat: "ITA", apps: 30,
+        desc: "Esterno Sinistro (Piazzati)", age: 27, nat: "ITA", apps: 30, goals: 5,
         metricKey: "Gol / Assist", metricVal: "5 / 9", fm: "7.65", mv: "6.32", starts: "90%", credits: "320 CR",
-        rating: "8.8", tier: "SUPER TOP", fitness: 93, img: "https://cdn.falsesoftware.com/players/129842/v2.webp",
+        rating: "8.8", tier: "SUPER TOP", titolaritaStars: "5/5", integritaStars: "4/5", fitness: 93, img: "https://cdn.falsesoftware.com/players/129842/v2.webp",
         stat1: "5 G • 9 A", stat1Desc: "1° punizioni & corner<br>top assoluto di difesa"
       },
       {
         id: 5, num: 17, name: "Diouf", full: "Andy Diouf", role: "C", roleClass: "badge-role-c",
-        desc: "Esterno Destro (Sorpresa)", age: 22, nat: "FRA", apps: 22,
+        desc: "Esterno Destro (Sorpresa)", age: 22, nat: "FRA", apps: 22, goals: 2,
         metricKey: "Ballottaggio", metricVal: "51% vs Spen", fm: "6.75", mv: "6.10", starts: "72%", credits: "140 CR",
-        rating: "7.4", tier: "SORPRESA", fitness: 90, img: "https://cdn.falsesoftware.com/players/37423138/v1.webp",
+        rating: "7.4", tier: "JOLLY", titolaritaStars: "3/5", integritaStars: "4/5", fitness: 90, img: "https://cdn.falsesoftware.com/players/37423138/v1.webp",
         stat1: "2 G • 3 A", stat1Desc: "spinta costante a destra<br>51% vs Spence 49%"
       },
       {
         id: 6, num: 23, name: "Barella", full: "Nicolò Barella", role: "C", roleClass: "badge-role-c",
-        desc: "Mezzala Destra", age: 27, nat: "ITA", apps: 31,
+        desc: "Mezzala Destra", age: 27, nat: "ITA", apps: 31, goals: 4,
         metricKey: "Gol / Assist", metricVal: "4 / 8", fm: "7.20", mv: "6.30", starts: "95%", credits: "310 CR",
-        rating: "8.4", tier: "TOP", fitness: 96, img: "https://cdn.falsesoftware.com/players/30154/v1.webp",
+        rating: "8.4", tier: "TOP", titolaritaStars: "5/5", integritaStars: "5/5", fitness: 96, img: "https://cdn.falsesoftware.com/players/30154/v1.webp",
         stat1: "4 G • 8 A", stat1Desc: "motorino del centrocampo<br>titolarità 5/5"
       },
       {
         id: 7, num: 20, name: "Calhanoglu", full: "Hakan Calhanoglu", role: "C", roleClass: "badge-role-c",
-        desc: "Regista (1° Rigorista)", age: 30, nat: "TUR", apps: 28,
+        desc: "Regista (1° Rigorista)", age: 30, nat: "TUR", apps: 28, goals: 10,
         metricKey: "Rigori / Gol", metricVal: "6 / 10", fm: "7.95", mv: "6.38", starts: "92%", credits: "390 CR",
-        rating: "9.2", tier: "SUPER TOP", fitness: 94, img: "https://cdn.falsesoftware.com/players/31825/v1.webp",
+        rating: "9.2", tier: "SUPER TOP", titolaritaStars: "5/5", integritaStars: "5/5", fitness: 94, img: "https://cdn.falsesoftware.com/players/31825/v1.webp",
         stat1: "10 G • 5 A", stat1Desc: "cecchino dal dischetto<br>1° rigorista infallibile"
       },
       {
         id: 8, num: 18, name: "Jones C.", full: "Curtis Jones", role: "C", roleClass: "badge-role-c",
-        desc: "Mezzala Sinistra", age: 24, nat: "ENG", apps: 24,
+        desc: "Mezzala Sinistra", age: 24, nat: "ENG", apps: 24, goals: 3,
         metricKey: "Ballottaggio", metricVal: "55% vs Ziel", fm: "6.90", mv: "6.15", starts: "76%", credits: "190 CR",
-        rating: "7.5", tier: "SEMITOP", fitness: 88, img: "https://cdn.falsesoftware.com/players/4545513/v2.webp",
+        rating: "7.5", tier: "SEMITOP", titolaritaStars: "4/5", integritaStars: "4/5", fitness: 88, img: "https://cdn.falsesoftware.com/players/4545513/v2.webp",
         stat1: "3 G • 4 A", stat1Desc: "inserimenti & qualità<br>in pole su Zielinski"
       },
       {
         id: 9, num: 9, name: "Thuram", full: "Marcus Thuram", role: "A", roleClass: "badge-role-a",
-        desc: "Seconda Punta", age: 27, nat: "FRA", apps: 29,
+        desc: "Seconda Punta", age: 27, nat: "FRA", apps: 29, goals: 13,
         metricKey: "Gol / Assist", metricVal: "13 / 7", fm: "7.85", mv: "6.35", starts: "88%", credits: "460 CR",
-        rating: "8.9", tier: "TOP", fitness: 92, img: "https://cdn.falsesoftware.com/players/99000/v1.webp",
+        rating: "8.9", tier: "TOP", titolaritaStars: "5/5", integritaStars: "5/5", fitness: 92, img: "https://cdn.falsesoftware.com/players/99000/v1.webp",
         stat1: "13 G • 7 A", stat1Desc: "strappi atletici devastanti<br>coppia d'oro con Lautaro"
       },
       {
         id: 10, num: 10, name: "Martinez L.", full: "Lautaro Martínez", role: "A", roleClass: "badge-role-a",
-        desc: "Centravanti (Capitano)", age: 27, nat: "ARG", apps: 30,
+        desc: "Centravanti (Capitano)", age: 27, nat: "ARG", apps: 30, goals: 17,
         metricKey: "Gol / Assist", metricVal: "17 / 6", fm: "8.25", mv: "6.42", starts: "90%", credits: "563 CR",
-        rating: "9.6", tier: "SUPER TOP", fitness: 95, img: "https://cdn.falsesoftware.com/players/333594/v1.webp",
+        rating: "9.6", tier: "SUPER TOP", titolaritaStars: "5/5", integritaStars: "5/5", fitness: 95, img: "https://cdn.falsesoftware.com/players/333594/v1.webp",
         stat1: "17 G • 6 A", stat1Desc: "capocannoniere & leader<br>top pick assoluto asta"
       }
     ];
@@ -1859,7 +2000,7 @@
         const stripes = 14;
         const stripeH = pCanvas.height / stripes;
         for (let i = 0; i < stripes; i++) {
-          ctx.fillStyle = i % 2 === 0 ? '#c2ff47' : '#d2ff50';
+          ctx.fillStyle = i % 2 === 0 ? '#d2ff50' : '#d2ff50';
           ctx.fillRect(0, i * stripeH, pCanvas.width, stripeH);
         }
 
@@ -2037,6 +2178,35 @@
       });
     });
 
+    // GESTIONE PREFERITI (SEL-RATING TOGGLE)
+    let currentSelectedPlayerId = 10;
+    const favoritePlayerIds = new Set([10]); // Lautaro preferito di default
+
+    function updateFavoriteButton(playerId) {
+      const favBtn = document.getElementById('barRating');
+      if (!favBtn) return;
+      const isFav = favoritePlayerIds.has(playerId);
+      favBtn.classList.toggle('is-favorite', isFav);
+      favBtn.title = isFav ? "Rimuovi dai preferiti" : "Aggiungi ai preferiti";
+      const svg = favBtn.querySelector('svg');
+      if (svg) {
+        svg.setAttribute('fill', isFav ? 'currentColor' : 'none');
+      }
+    }
+
+    const favToggleBtn = document.getElementById('barRating');
+    if (favToggleBtn) {
+      favToggleBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (favoritePlayerIds.has(currentSelectedPlayerId)) {
+          favoritePlayerIds.delete(currentSelectedPlayerId);
+        } else {
+          favoritePlayerIds.add(currentSelectedPlayerId);
+        }
+        updateFavoriteButton(currentSelectedPlayerId);
+      });
+    }
+
     // SELEZIONE SINCRONIZZATA
     function selectPlayer(idx, fromRowClick = false) {
       // Evidenzia card sul campo 3D
@@ -2049,18 +2219,41 @@
         row.classList.toggle('active', i === idx);
       });
 
-      // Aggiorna banner rapido e statistiche
+      // Aggiorna banner rapido
       const p = playerSquad[idx];
+      currentSelectedPlayerId = p.id;
       document.getElementById('barAvatar').src = p.img;
       document.getElementById('barName').textContent = p.full;
       document.getElementById('barRole').textContent = `${p.desc} · ${p.tier}`;
-      document.getElementById('barRating').textContent = `★ ${p.rating}`;
+      updateFavoriteButton(p.id);
 
-      document.getElementById('statGoals').textContent = p.stat1.split(' ')[0];
-      document.getElementById('statGoalsDesc').innerHTML = p.stat1Desc;
-      document.getElementById('statFm').textContent = p.fm;
-      document.getElementById('statCredits').textContent = p.credits;
-      document.getElementById('statStarts').textContent = p.starts;
+      // Statistiche Pagina 1
+      const elGoals = document.getElementById('statGoals');
+      if (elGoals) elGoals.textContent = `${p.goals} Goal`;
+      const elGoalsDesc = document.getElementById('statGoalsDesc');
+      if (elGoalsDesc) elGoalsDesc.innerHTML = p.stat1Desc;
+      const elFm = document.getElementById('statFm');
+      if (elFm) elFm.textContent = p.fm;
+      const elFmDesc = document.getElementById('statFmDesc');
+      if (elFmDesc) elFmDesc.innerHTML = `FantaMedia (FM)<br>Media Voto: ${p.mv}`;
+      const elCredits = document.getElementById('statCredits');
+      if (elCredits) elCredits.textContent = p.credits;
+      const elStarts = document.getElementById('statStarts');
+      if (elStarts) elStarts.textContent = p.tier;
+      const elStartsDesc = document.getElementById('statStartsDesc');
+      if (elStartsDesc) elStartsDesc.innerHTML = `titolarità ${p.titolaritaStars} e integrità ${p.integritaStars}`;
+
+      // Statistiche Pagina 2
+      const elMv = document.getElementById('statMv');
+      if (elMv) elMv.textContent = p.mv;
+      const elMetric = document.getElementById('statMetric');
+      if (elMetric) elMetric.textContent = p.metricVal;
+      const elMetricDesc = document.getElementById('statMetricDesc');
+      if (elMetricDesc) elMetricDesc.innerHTML = `${p.metricKey}<br>incidenza fanta`;
+      const elApps = document.getElementById('statApps');
+      if (elApps) elApps.textContent = `${p.apps}`;
+      const elFitness = document.getElementById('statFitness');
+      if (elFitness) elFitness.textContent = `${p.fitness}%`;
     }
 
     // GESTIONE RICERCA E FILTRI (MOC)
@@ -2377,6 +2570,73 @@
       renderer.setSize(w, h);
     });
 
+    // SWIPE / DRAG STATISTICHE RAPIDE & SINCRONIZZAZIONE DUE PALLINI (DOTS)
+    const statsTrack = document.getElementById('statsTrack');
+    const statsDots = document.querySelectorAll('#statsDots .stats-dot');
+
+    if (statsTrack && statsDots.length > 0) {
+      let isUpdatingScroll = false;
+
+      function updateActiveDot() {
+        const scrollLeft = statsTrack.scrollLeft;
+        const pageW = statsTrack.clientWidth || 1;
+        const activeIdx = Math.round(scrollLeft / pageW);
+        statsDots.forEach((dot, idx) => {
+          dot.classList.toggle('active', idx === activeIdx);
+        });
+      }
+
+      statsTrack.addEventListener('scroll', () => {
+        if (!isUpdatingScroll) {
+          window.requestAnimationFrame(() => {
+            updateActiveDot();
+            isUpdatingScroll = false;
+          });
+          isUpdatingScroll = true;
+        }
+      }, { passive: true });
+
+      statsDots.forEach((dot, idx) => {
+        dot.addEventListener('click', () => {
+          statsTrack.scrollTo({
+            left: idx * statsTrack.clientWidth,
+            behavior: 'smooth'
+          });
+        });
+      });
+
+      // Supporto Drag con Mouse per desktop
+      let isDown = false;
+      let startX = 0;
+      let scrollStart = 0;
+
+      statsTrack.addEventListener('mousedown', (e) => {
+        isDown = true;
+        startX = e.pageX - statsTrack.offsetLeft;
+        scrollStart = statsTrack.scrollLeft;
+        statsTrack.style.cursor = 'grabbing';
+      });
+
+      window.addEventListener('mouseup', () => {
+        if (!isDown) return;
+        isDown = false;
+        if (statsTrack) {
+          statsTrack.style.cursor = '';
+          const pageW = statsTrack.clientWidth || 1;
+          const nearest = Math.round(statsTrack.scrollLeft / pageW);
+          statsTrack.scrollTo({ left: nearest * pageW, behavior: 'smooth' });
+        }
+      });
+
+      statsTrack.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - statsTrack.offsetLeft;
+        const walk = (x - startX) * 1.2;
+        statsTrack.scrollLeft = scrollStart - walk;
+      });
+    }
+
     // ANIMATION LOOP
     function animate(time) {
       requestAnimationFrame(animate);
@@ -2386,6 +2646,82 @@
       if (renderer && scene && camera) renderer.render(scene, camera);
     }
     animate();
+  </script>
+  <!-- Code injected by live-server -->
+  <script>
+    // <![CDATA[  <-- For SVG support
+    if ('WebSocket' in window) {
+      (function () {
+        function refreshCSS() {
+          var sheets = [].slice.call(document.getElementsByTagName("link"));
+          var head = document.getElementsByTagName("head")[0];
+          for (var i = 0; i < sheets.length; ++i) {
+            var elem = sheets[i];
+            var parent = elem.parentElement || head;
+            parent.removeChild(elem);
+            var rel = elem.rel;
+            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+              var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+              elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+            }
+            parent.appendChild(elem);
+          }
+        }
+        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+        var address = protocol + window.location.host + window.location.pathname + '/ws';
+        var socket = new WebSocket(address);
+        socket.onmessage = function (msg) {
+          if (msg.data == 'reload') window.location.reload();
+          else if (msg.data == 'refreshcss') refreshCSS();
+        };
+        if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+          console.log('Live reload enabled.');
+          sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+        }
+      })();
+    }
+    else {
+      console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+    }
+    // ]]>
+  </script>
+  <!-- Code injected by live-server -->
+  <script>
+    // <![CDATA[  <-- For SVG support
+    if ('WebSocket' in window) {
+      (function () {
+        function refreshCSS() {
+          var sheets = [].slice.call(document.getElementsByTagName("link"));
+          var head = document.getElementsByTagName("head")[0];
+          for (var i = 0; i < sheets.length; ++i) {
+            var elem = sheets[i];
+            var parent = elem.parentElement || head;
+            parent.removeChild(elem);
+            var rel = elem.rel;
+            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+              var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+              elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+            }
+            parent.appendChild(elem);
+          }
+        }
+        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+        var address = protocol + window.location.host + window.location.pathname + '/ws';
+        var socket = new WebSocket(address);
+        socket.onmessage = function (msg) {
+          if (msg.data == 'reload') window.location.reload();
+          else if (msg.data == 'refreshcss') refreshCSS();
+        };
+        if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+          console.log('Live reload enabled.');
+          sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+        }
+      })();
+    }
+    else {
+      console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+    }
+    // ]]>
   </script>
   <!-- Code injected by live-server -->
   <script>
