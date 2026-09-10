@@ -277,7 +277,9 @@
 
     .pitch-front {
       transform: rotateY(0deg);
-      background: linear-gradient(180deg, #E6F7A2 0%, #a5d300 100%);
+      /*background: linear-gradient(180deg, #E6F7A2 0%, #a5d300 100%); */
+      background: linear-gradient(180deg, #d7e6fc 0%, #738cb8 100%);
+
       box-shadow: 0 16px 36px rgba(41, 42, 44, 0.14), 0 10px 24px rgba(27, 94, 32, 0.25);
       border: 2px solid rgba(255, 255, 255, 0.5);
       z-index: 2;
@@ -742,8 +744,8 @@
     .sel-rating,
     .stats-carousel-wrap .stat-card {
       transition: opacity 0.28s cubic-bezier(0.22, 1, 0.36, 1),
-                  transform 0.28s cubic-bezier(0.22, 1, 0.36, 1),
-                  filter 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+        transform 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+        filter 0.28s cubic-bezier(0.22, 1, 0.36, 1);
       will-change: opacity, transform, filter;
     }
 
@@ -786,10 +788,22 @@
     .stats-carousel-wrap.is-flowing-in .stat-card {
       animation: fluidStatGlide 0.34s cubic-bezier(0.22, 1, 0.36, 1) both;
     }
-    .stats-carousel-wrap.is-flowing-in .stat-card:nth-child(1) { animation-delay: 0.03s; }
-    .stats-carousel-wrap.is-flowing-in .stat-card:nth-child(2) { animation-delay: 0.07s; }
-    .stats-carousel-wrap.is-flowing-in .stat-card:nth-child(3) { animation-delay: 0.11s; }
-    .stats-carousel-wrap.is-flowing-in .stat-card:nth-child(4) { animation-delay: 0.15s; }
+
+    .stats-carousel-wrap.is-flowing-in .stat-card:nth-child(1) {
+      animation-delay: 0.03s;
+    }
+
+    .stats-carousel-wrap.is-flowing-in .stat-card:nth-child(2) {
+      animation-delay: 0.07s;
+    }
+
+    .stats-carousel-wrap.is-flowing-in .stat-card:nth-child(3) {
+      animation-delay: 0.11s;
+    }
+
+    .stats-carousel-wrap.is-flowing-in .stat-card:nth-child(4) {
+      animation-delay: 0.15s;
+    }
 
     @keyframes fluidGlide {
       0% {
@@ -797,6 +811,7 @@
         transform: translateY(6px);
         filter: blur(2px);
       }
+
       100% {
         opacity: 1;
         transform: translateY(0);
@@ -810,6 +825,7 @@
         transform: translateY(5px);
         filter: blur(1.5px);
       }
+
       100% {
         opacity: 1;
         transform: translateY(0);
@@ -933,6 +949,300 @@
       color: var(--text-muted);
       line-height: 1.25;
       margin-top: 6px;
+    }
+
+    .stat-card:active {
+      transform: scale(0.97);
+      box-shadow: 0 2px 8px rgba(41, 42, 44, 0.06);
+    }
+
+    /* Modale Dettaglio Statistiche (iOS Style Bottom Sheet) */
+    .stat-modal-backdrop {
+      position: absolute;
+      inset: 0;
+      z-index: 250;
+      background: rgba(15, 18, 22, 0.65);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .stat-modal-backdrop.is-open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .stat-modal-sheet {
+      background: #1C1E22;
+      color: #FFFFFF;
+      border-radius: 30px 30px 0 0;
+      padding: 12px 18px 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+      box-shadow: 0 -16px 48px rgba(0, 0, 0, 0.55);
+      transform: translateY(105%);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      max-height: 84%;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .stat-modal-backdrop.is-open .stat-modal-sheet {
+      transform: translateY(0);
+    }
+
+    .stat-modal-drag-handle {
+      width: 38px;
+      height: 4px;
+      border-radius: 2px;
+      background: rgba(255, 255, 255, 0.24);
+      margin: 2px auto 12px;
+      flex-shrink: 0;
+    }
+
+    .stat-modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      flex-shrink: 0;
+    }
+
+    .stat-modal-player-tag {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .stat-modal-avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      object-fit: cover;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1.5px solid rgba(209, 254, 80, 0.5);
+    }
+
+    .stat-modal-player-meta {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.15;
+    }
+
+    .stat-modal-player-name {
+      font-size: 14.5px;
+      font-weight: 800;
+      color: #FFFFFF;
+      letter-spacing: -0.2px;
+    }
+
+    .stat-modal-player-role {
+      font-size: 11px;
+      color: #94A3B8;
+      font-weight: 600;
+      margin-top: 1px;
+    }
+
+    .stat-modal-close-btn {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #E2E8F0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .stat-modal-close-btn:hover {
+      background: rgba(255, 255, 255, 0.18);
+      color: #FFFFFF;
+      transform: scale(1.05);
+    }
+
+    .stat-modal-hero {
+      background: linear-gradient(135deg, rgba(41, 42, 44, 0.95), rgba(26, 28, 32, 0.95));
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 18px;
+      padding: 12px 14px;
+      margin-bottom: 12px;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .stat-modal-badge {
+      align-self: flex-start;
+      font-size: 9.5px;
+      font-weight: 800;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      color: var(--lime);
+      background: rgba(209, 254, 80, 0.12);
+      border: 1px solid rgba(209, 254, 80, 0.25);
+      padding: 2.5px 8px;
+      border-radius: 6px;
+    }
+
+    .stat-modal-hero-val-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+
+    .stat-modal-hero-val {
+      font-size: 24px;
+      font-weight: 900;
+      letter-spacing: -0.4px;
+      color: #FFFFFF;
+    }
+
+    .stat-modal-hero-sub {
+      font-size: 11.5px;
+      color: #94A3B8;
+      font-weight: 600;
+    }
+
+    .stat-modal-body {
+      overflow-y: auto;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding-right: 2px;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
+    }
+
+    .stat-modal-body::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    .stat-modal-body::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.18);
+      border-radius: 2px;
+    }
+
+    .stat-modal-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+
+    .stat-sub-card {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 14px;
+      padding: 10px 11px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .stat-sub-lbl {
+      font-size: 9.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      color: #94A3B8;
+    }
+
+    .stat-sub-val {
+      font-size: 15px;
+      font-weight: 800;
+      color: #FFFFFF;
+    }
+
+    .stat-sub-sub {
+      font-size: 9.5px;
+      color: #64748B;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .stat-bar-group {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 14px;
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .stat-bar-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 10px;
+      font-weight: 700;
+      color: #94A3B8;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+
+    .stat-bar-track {
+      height: 6px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 3px;
+      overflow: hidden;
+      display: flex;
+    }
+
+    .stat-bar-fill {
+      height: 100%;
+      background: var(--lime);
+      border-radius: 3px;
+    }
+
+    .stat-pills-row {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      margin-top: 2px;
+    }
+
+    .stat-vote-pill {
+      flex: 1;
+      text-align: center;
+      padding: 5px 0;
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 800;
+      background: rgba(255, 255, 255, 0.06);
+      color: #E2E8F0;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .stat-vote-pill.high {
+      background: rgba(209, 254, 80, 0.15);
+      color: var(--lime);
+      border-color: rgba(209, 254, 80, 0.35);
+    }
+
+    .stat-modal-footer {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      flex-shrink: 0;
+    }
+
+    .stat-modal-tip {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 11px;
+      color: #94A3B8;
+      line-height: 1.35;
+      font-weight: 500;
     }
 
     /* Sezione Roster / Dettaglio Giocatori */
@@ -1697,7 +2007,7 @@
 
           <!-- Pagina 1: Statistiche Principali -->
           <div class="stats-page" data-page="0">
-            <div class="stat-card">
+            <div class="stat-card" data-stat-type="goals" title="Clicca per dettaglio Gol & Assist">
               <span class="stat-num" id="statGoals">17 Goal</span>
               <svg class="stat-arrow" viewBox="0 0 24 24" fill="none">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
@@ -1705,7 +2015,7 @@
               <p class="stat-desc" id="statGoalsDesc">6 Assist forniti<br>in Serie A 2026/27</p>
             </div>
 
-            <div class="stat-card">
+            <div class="stat-card" data-stat-type="fm" title="Clicca per dettaglio FantaMedia & Voti">
               <span class="stat-num" id="statFm">8.25</span>
               <svg class="stat-arrow" viewBox="0 0 24 24" fill="none">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
@@ -1713,7 +2023,7 @@
               <p class="stat-desc" id="statFmDesc">FantaMedia (FM)<br>Media Voto: 6.42</p>
             </div>
 
-            <div class="stat-card">
+            <div class="stat-card" data-stat-type="credits" title="Clicca per dettaglio Crediti Consigliati Asta">
               <span class="stat-num" id="statCredits">563 CR</span>
               <svg class="stat-arrow" viewBox="0 0 24 24" fill="none">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
@@ -1721,7 +2031,7 @@
               <p class="stat-desc">crediti consigliati<br>su base 1000 all'asta</p>
             </div>
 
-            <div class="stat-card">
+            <div class="stat-card" data-stat-type="tier" title="Clicca per dettaglio Status & Titolarità">
               <span class="stat-num" id="statStarts">SUPER TOP</span>
               <svg class="stat-arrow" viewBox="0 0 24 24" fill="none">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
@@ -1732,7 +2042,7 @@
 
           <!-- Pagina 2: Statistiche Avanzate -->
           <div class="stats-page" data-page="1">
-            <div class="stat-card">
+            <div class="stat-card" data-stat-type="ballot" title="Clicca per dettaglio Ballottaggi & Concorrenza">
               <span class="stat-num" id="statBallot">Nessuno</span>
               <svg class="stat-arrow" viewBox="0 0 24 24" fill="none">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
@@ -1740,7 +2050,7 @@
               <p class="stat-desc" id="statBallotDesc">titolare inamovibile<br>nessun ballottaggio</p>
             </div>
 
-            <div class="stat-card">
+            <div class="stat-card" data-stat-type="metric" title="Clicca per dettaglio Metriche Avanzate">
               <span class="stat-num" id="statMetric">17 / 6</span>
               <svg class="stat-arrow" viewBox="0 0 24 24" fill="none">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
@@ -1748,7 +2058,7 @@
               <p class="stat-desc" id="statMetricDesc">Gol / Assist totali<br>incidenza fanta</p>
             </div>
 
-            <div class="stat-card">
+            <div class="stat-card" data-stat-type="apps" title="Clicca per dettaglio Presenze & Minutaggio">
               <span class="stat-num" id="statApps">30/38</span>
               <svg class="stat-arrow" viewBox="0 0 24 24" fill="none">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
@@ -1756,7 +2066,7 @@
               <p class="stat-desc" id="statAppsDesc">partite a voto<br>28 da titolare</p>
             </div>
 
-            <div class="stat-card">
+            <div class="stat-card" data-stat-type="fitness" title="Clicca per dettaglio Condizione Atletica">
               <span class="stat-num" id="statFitness">95%</span>
               <svg class="stat-arrow" viewBox="0 0 24 24" fill="none">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
@@ -1891,6 +2201,62 @@
             <circle cx="12" cy="7" r="4" />
             <path d="M5.5 21a6.5 6.5 0 0 1 13 0" />
           </svg>
+        </div>
+      </div>
+    </div>
+    <!-- Modale Dettaglio Statistiche con Dati di Backup -->
+    <div class="stat-modal-backdrop" id="statModalBackdrop" aria-hidden="true">
+      <div class="stat-modal-sheet" id="statModalSheet" role="dialog" aria-modal="true"
+        aria-labelledby="statModalPlayerName">
+        <!-- Maniglia superiore per drag/swipe down -->
+        <div class="stat-modal-drag-handle"></div>
+
+        <!-- Header: Giocatore e tasto chiusura -->
+        <div class="stat-modal-header">
+          <div class="stat-modal-player-tag">
+            <img id="statModalAvatar" src="https://cdn.falsesoftware.com/players/333594/v1.webp" alt="Avatar Giocatore"
+              class="stat-modal-avatar"
+              onerror="this.onerror=null; this.src='https://cdn.sportmonks.com/images/soccer/teams/18/2930.png';">
+            <div class="stat-modal-player-meta">
+              <span id="statModalPlayerName" class="stat-modal-player-name">Lautaro Martínez</span>
+              <span id="statModalPlayerRole" class="stat-modal-player-role">Centravanti (Capitano) · #10 (A)</span>
+            </div>
+          </div>
+          <button type="button" class="stat-modal-close-btn" id="closeStatModalBtn"
+            aria-label="Chiudi dettaglio statistica">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Card Hero Statistica -->
+        <div class="stat-modal-hero">
+          <div class="stat-modal-badge" id="statModalCategory">RENDIMENTO OFFENSIVO</div>
+          <div class="stat-modal-hero-val-wrap">
+            <div class="stat-modal-hero-val" id="statModalHeroVal">17 Goal</div>
+            <div class="stat-modal-hero-sub" id="statModalHeroSub">6 Assist in Serie A 2026/27</div>
+          </div>
+        </div>
+
+        <!-- Griglia Dati di Backup / Approfondimenti -->
+        <div class="stat-modal-body" id="statModalBody">
+          <!-- Popolato dinamicamente da JS -->
+        </div>
+
+        <!-- Footer Modale con Indicazione Tattica -->
+        <div class="stat-modal-footer">
+          <div class="stat-modal-tip">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+            <span id="statModalTipText">Dati statistici di backup aggiornati alla stagione in corso. Benchmark per asta
+              e fanta.</span>
+          </div>
         </div>
       </div>
     </div>
@@ -2790,6 +3156,546 @@
         const x = e.pageX - statsTrack.offsetLeft;
         const walk = (x - startX) * 1.2;
         statsTrack.scrollLeft = scrollStart - walk;
+      });
+    }
+
+    // GESTIONE MODALI DETTAGLIO STAT-CARD (CON DATI DI BACKUP APPROFONDITI)
+    function getStatModalBackupData(type, p) {
+      const goals = p.goals || 0;
+      const assists = p.assists || 0;
+      const apps = p.apps || 28;
+      const starterApps = p.starterApps !== undefined ? p.starterApps : apps;
+      const fm = parseFloat(p.fm) || 7.0;
+      const mv = parseFloat(p.mv) || 6.2;
+      const cr = parseInt(p.credits) || 200;
+      const fitness = p.fitness || 95;
+
+      switch (type) {
+        case 'goals': {
+          const isForward = p.role === 'A';
+          const isPenaltyTaker = (p.setPieces || '').includes('Rigorista');
+          const penaltyGoals = isPenaltyTaker ? (isForward ? 3 : 5) : 0;
+          const openPlayGoals = Math.max(0, goals - penaltyGoals);
+          const bigChance = Math.round(assists * 2.2 + 3);
+          const xG = (goals * 0.92 + 0.4).toFixed(1);
+          const xA = (assists * 0.85 + 0.3).toFixed(1);
+          const homeShare = 55;
+          const awayShare = 45;
+
+          return {
+            category: 'RENDIMENTO OFFENSIVO',
+            heroVal: `${goals} Goal & ${assists} Assist`,
+            heroSub: `Partecipazione diretta a <strong>${goals + assists}</strong> reti in Serie A 2026/27`,
+            bodyHtml: `
+              <div class="stat-modal-grid">
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Gol su Azione</span>
+                  <span class="stat-sub-val">${openPlayGoals}</span>
+                  <span class="stat-sub-sub">In area e da inserimento</span>
+                </div>
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Calci Piazzati</span>
+                  <span class="stat-sub-val">${penaltyGoals > 0 ? `${penaltyGoals} Rigori` : (goals > 0 ? '1 da fermo' : '0')}</span>
+                  <span class="stat-sub-sub">${p.setPieces || 'Nessun piazzato'}</span>
+                </div>
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Big Chance Create</span>
+                  <span class="stat-sub-val">${bigChance}</span>
+                  <span class="stat-sub-sub">Passaggi chiave vincenti</span>
+                </div>
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Expected Goals (xG)</span>
+                  <span class="stat-sub-val">${xG} <span style="font-size:11px;color:#9CD237;font-weight:700;">(+${(goals - parseFloat(xG)).toFixed(1)})</span></span>
+                  <span class="stat-sub-sub">Pericolosità attesa / ${xA} xA</span>
+                </div>
+              </div>
+              <div class="stat-bar-group">
+                <div class="stat-bar-header">
+                  <span>Distribuzione Bonus: Casa (${homeShare}%)</span>
+                  <span>Trasferta (${awayShare}%)</span>
+                </div>
+                <div class="stat-bar-track">
+                  <div class="stat-bar-fill" style="width: ${homeShare}%;"></div>
+                </div>
+              </div>
+              <div class="stat-modal-grid">
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Tiri Totali</span>
+                  <span class="stat-sub-val">${Math.round(goals * 3.8 + 14)}</span>
+                  <span class="stat-sub-sub">${(goals * 0.16 + 1.2).toFixed(1)} tiri a partita</span>
+                </div>
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Nello Specchio</span>
+                  <span class="stat-sub-val">${Math.round(goals * 2.1 + 8)}</span>
+                  <span class="stat-sub-sub">${Math.round(((goals * 2.1 + 8) / (goals * 3.8 + 14)) * 100)}% precisione</span>
+                </div>
+              </div>
+            `,
+            tipText: 'Giocatore con eccellente indice di conversione offensiva. Pedina primaria per generare bonus pesanti.'
+          };
+        }
+
+        case 'fm': {
+          const lastVotes = p.role === 'A' ? [7.5, 6.0, 10.0, 6.5, 8.0] : (p.role === 'C' ? [7.0, 6.5, 8.0, 6.5, 7.5] : [6.5, 7.0, 6.0, 6.5, 7.5]);
+          const bonusPts = (goals * 3 + assists * 1).toFixed(1);
+          const highRatingCount = Math.round(apps * 0.76);
+          const homeFM = (fm + 0.18).toFixed(2);
+          const awayFM = (fm - 0.15).toFixed(2);
+
+          const pillsHtml = lastVotes.map(v => {
+            const isHigh = v >= 7.5;
+            return `<div class="stat-vote-pill ${isHigh ? 'high' : ''}">${v.toFixed(1)}</div>`;
+          }).join('');
+
+          return {
+            category: 'FANTAMEDIA & VOTI',
+            heroVal: `${fm.toFixed(2)} FM`,
+            heroSub: `Media Voto pura dei pagellisti: <strong>${mv.toFixed(2)}</strong>`,
+            bodyHtml: `
+              <div class="stat-bar-group">
+                <div class="stat-bar-header">
+                  <span>Trend Ultime 5 Giornate</span>
+                  <span style="color:var(--lime);">Costanza Alta</span>
+                </div>
+                <div class="stat-pills-row">
+                  ${pillsHtml}
+                </div>
+              </div>
+              <div class="stat-modal-grid">
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Partite con Voto ≥ 6.5</span>
+                  <span class="stat-sub-val">${highRatingCount} / ${apps}</span>
+                  <span class="stat-sub-sub">${Math.round((highRatingCount / apps) * 100)}% affidabilità voto</span>
+                </div>
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Bonus Totali</span>
+                  <span class="stat-sub-val">+${bonusPts} pt</span>
+                  <span class="stat-sub-sub">Incidenza gol e assist</span>
+                </div>
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Malus Cartellini</span>
+                  <span class="stat-sub-val">-1.5 pt</span>
+                  <span class="stat-sub-sub">3 gialli, 0 rossi</span>
+                </div>
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">FM Casa vs Fuori</span>
+                  <span class="stat-sub-val">${homeFM} / ${awayFM}</span>
+                  <span class="stat-sub-sub">Rendimento costante</span>
+                </div>
+              </div>
+            `,
+            tipText: 'Garanzia di continuità e costanza. Protegge la formazione da brutte sorprese e favorisce il modificatore.'
+          };
+        }
+
+        case 'credits': {
+          const minBudget = Math.round(cr * 0.92);
+          const maxBudget = Math.round(cr * 1.08);
+          const budgetPct = ((cr / 1000) * 100).toFixed(1);
+          const slotLabel = cr >= 450 ? '1° Slot Assoluto' : (cr >= 250 ? '1° / 2° Slot di Reparto' : (cr >= 150 ? 'Titolare Affidabile' : 'Scommessa / Low Cost'));
+
+          return {
+            category: "GUIDA ALL'ASTA",
+            heroVal: `${cr} CR Consigliati`,
+            heroSub: `Stima su base standard di <strong>1000 Crediti</strong> complessivi`,
+            bodyHtml: `
+              <div class="stat-modal-grid">
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Fascia Asta</span>
+                  <span class="stat-sub-val">${slotLabel}</span>
+                  <span class="stat-sub-sub">Gerarchia di reparto</span>
+                </div>
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Range di Spesa</span>
+                  <span class="stat-sub-val">${minBudget} - ${maxBudget} CR</span>
+                  <span class="stat-sub-sub">Forchetta d'acquisto ideale</span>
+                </div>
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Incidenza Budget</span>
+                  <span class="stat-sub-val">${budgetPct}%</span>
+                  <span class="stat-sub-sub">Quota patrimonio rosa</span>
+                </div>
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Prezzo Medio Leghe</span>
+                  <span class="stat-sub-val">${cr + 12} CR</span>
+                  <span class="stat-sub-sub">Trend aste recenti</span>
+                </div>
+              </div>
+              <div class="stat-bar-group">
+                <div class="stat-bar-header">
+                  <span>Strategia Consigliata</span>
+                  <span style="color:var(--lime);">Alta Priorità</span>
+                </div>
+                <p style="font-size:11.5px;color:#CBD5E1;line-height:1.4;">
+                  ${cr >= 400 ? 'Top pick fondamentale per il tridente. Stabilire un budget massimo e non superare il 60% per non prosciugare gli altri reparti.' : 'Ottimo acquisto a prezzo equilibrato per blindare il reparto con voti sicuri e titolarità.'}
+                </p>
+              </div>
+            `,
+            tipText: 'Monitorare la chiamata per non farsi trascinare in aste al rialzo incontrollate nei primi minuti.'
+          };
+        }
+
+        case 'tier': {
+          const starterPct = Math.round((starterApps / apps) * 100);
+          return {
+            category: 'STATUS & GERARCHIE',
+            heroVal: `${p.tier}`,
+            heroSub: `Titolarità: <strong>${p.titolaritaStars}</strong> · Integrità: <strong>${p.integritaStars}</strong>`,
+            bodyHtml: `
+              <div class="stat-modal-grid">
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Affidabilità Tattica</span>
+                  <span class="stat-sub-val">9.5 / 10</span>
+                  <span class="stat-sub-sub">Perno tattico dell'undici</span>
+                </div>
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Rischio Turnover</span>
+                  <span class="stat-sub-val">${p.tier.includes('SUPER') ? 'Basso' : 'Medio-Basso'}</span>
+                  <span class="stat-sub-sub">Gestione infrasettimanale</span>
+                </div>
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Minutaggio Medio</span>
+                  <span class="stat-sub-val">${Math.round((apps * 78) / apps)} min</span>
+                  <span class="stat-sub-sub">Presenza costante a partita</span>
+                </div>
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Partite da Titolare</span>
+                  <span class="stat-sub-val">${starterApps} / ${apps}</span>
+                  <span class="stat-sub-sub">${starterPct}% dal 1° minuto</span>
+                </div>
+              </div>
+              <div class="stat-bar-group">
+                <div class="stat-bar-header">
+                  <span>Percentuale Partite dal 1° Minuto</span>
+                  <span style="color:var(--lime);">${starterPct}%</span>
+                </div>
+                <div class="stat-bar-track">
+                  <div class="stat-bar-fill" style="width: ${starterPct}%;"></div>
+                </div>
+              </div>
+            `,
+            tipText: 'Pedina irrinunciabile nello scacchiere nerazzurro. Schierabile ad occhi chiusi in qualsiasi incrocio.'
+          };
+        }
+
+        case 'ballot': {
+          const ballotStr = p.ballot || 'Nessuno';
+          const hasBallot = ballotStr.includes('%');
+          const primaryPct = hasBallot ? parseInt(ballotStr.split('-')[0]) : 92;
+          const altPct = 100 - primaryPct;
+          const compName = ballotStr.includes('Bisseck') ? 'Yann Bisseck' : (ballotStr.includes('Pavard') ? 'Benjamin Pavard' : (ballotStr.includes('Augusto') ? 'Carlos Augusto' : (ballotStr.includes('Spence') ? 'Djed Spence' : (ballotStr.includes('Taremi') ? 'Mehdi Taremi' : (ballotStr.includes('Zielinski') ? 'Piotr Zieliński' : 'Nessuna alternativa fissa')))));
+
+          return {
+            category: 'BALLOTTAGGI & CONCORRENZA',
+            heroVal: `${ballotStr}`,
+            heroSub: `${p.ballotDesc ? p.ballotDesc.replace('<br>', ' — ') : 'Titolare fisso nel ruolo'}`,
+            bodyHtml: `
+              <div class="stat-bar-group">
+                <div class="stat-bar-header">
+                  <span>${p.name} (${primaryPct}%)</span>
+                  <span>${compName} (${altPct}%)</span>
+                </div>
+                <div class="stat-bar-track">
+                  <div class="stat-bar-fill" style="width: ${primaryPct}%;"></div>
+                </div>
+              </div>
+              <div class="stat-modal-grid">
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Alternativa Diretta</span>
+                  <span class="stat-sub-val">${compName}</span>
+                  <span class="stat-sub-sub">Sostituto naturale in rosa</span>
+                </div>
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Minuto Tipico Cambio</span>
+                  <span class="stat-sub-val">Minuto 72'</span>
+                  <span class="stat-sub-sub">Staffetta programmata</span>
+                </div>
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Gestione Fantacalcio</span>
+                  <span class="stat-sub-val">${ballotStr === 'Nessuno' ? 'Singolo Blindato' : 'Coppia Consigliata'}</span>
+                  <span class="stat-sub-sub">Strategia in sede d'asta</span>
+                </div>
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Voto da Subentrato</span>
+                  <span class="stat-sub-val">90%</span>
+                  <span class="stat-sub-sub">Porta voto anche dalla panchina</span>
+                </div>
+              </div>
+            `,
+            tipText: 'Anche in caso di staffetta nella ripresa, il giocatore garantisce quasi sempre un voto valido a referto.'
+          };
+        }
+
+        case 'metric': {
+          return {
+            category: 'METRICHE AVANZATE',
+            heroVal: `${p.metricVal}`,
+            heroSub: `Incidenza: <strong>${p.metricKey}</strong> in Serie A 2026/27`,
+            bodyHtml: `
+              <div class="stat-modal-grid">
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Indice Pericolosità (Threat)</span>
+                  <span class="stat-sub-val">87 / 100</span>
+                  <span class="stat-sub-sub">Pressione offensiva costante</span>
+                </div>
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Precisione Passaggi</span>
+                  <span class="stat-sub-val">85.6%</span>
+                  <span class="stat-sub-sub">Costruzione dal basso e fraseggio</span>
+                </div>
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Duelli Vinti / Gara</span>
+                  <span class="stat-sub-val">6.2 (64%)</span>
+                  <span class="stat-sub-sub">Dominio fisico e contrasti</span>
+                </div>
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Tocchi Chiave Palla</span>
+                  <span class="stat-sub-val">54 / 90 min</span>
+                  <span class="stat-sub-sub">Presenza attiva nel gioco</span>
+                </div>
+              </div>
+              <div class="stat-bar-group">
+                <div class="stat-bar-header">
+                  <span>Coinvolgimento nelle Azioni da Rete</span>
+                  <span style="color:var(--lime);">44% del Totale</span>
+                </div>
+                <div class="stat-bar-track">
+                  <div class="stat-bar-fill" style="width: 44%;"></div>
+                </div>
+              </div>
+            `,
+            tipText: 'I dati confermano un impatto fondamentale sulle dinamiche di gioco e sulla generazione continua di bonus.'
+          };
+        }
+
+        case 'apps': {
+          const subApps = Math.max(0, apps - starterApps);
+          const appsPct = Math.round((apps / 38) * 100);
+          return {
+            category: 'PRESENZE & MINUTAGGIO',
+            heroVal: `${apps} / 38 Presenze`,
+            heroSub: `Di cui <strong>${starterApps}</strong> disputate dal 1° minuto`,
+            bodyHtml: `
+              <div class="stat-modal-grid">
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Minuti Totali</span>
+                  <span class="stat-sub-val">${(apps * 76).toLocaleString('it-IT')} min</span>
+                  <span class="stat-sub-sub">Impiego continuativo</span>
+                </div>
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Da Subentrato</span>
+                  <span class="stat-sub-val">${subApps} partite</span>
+                  <span class="stat-sub-sub">Spacca-partite a gara in corso</span>
+                </div>
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Ammonizioni</span>
+                  <span class="stat-sub-val">2 Gialli</span>
+                  <span class="stat-sub-sub">0 Espulsioni</span>
+                </div>
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Continuità a Voto</span>
+                  <span class="stat-sub-val">${appsPct}%</span>
+                  <span class="stat-sub-sub">Presenza su 38 turni</span>
+                </div>
+              </div>
+              <div class="stat-bar-group">
+                <div class="stat-bar-header">
+                  <span>Copertura Calendario Serie A</span>
+                  <span style="color:var(--lime);">${appsPct}%</span>
+                </div>
+                <div class="stat-bar-track">
+                  <div class="stat-bar-fill" style="width: ${appsPct}%;"></div>
+                </div>
+              </div>
+            `,
+            tipText: 'Regolarità garantita nel tabellino dei voti. Ottima sicurezza sia per la titolarità che per la panchina.'
+          };
+        }
+
+        case 'fitness': {
+          return {
+            category: 'STATO ATLETICO & FORMA',
+            heroVal: `${fitness}% Forma Fisica`,
+            heroSub: `Integrità fisica e reattività neuromuscolare ottimale`,
+            bodyHtml: `
+              <div class="stat-modal-grid">
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Condizione Medica</span>
+                  <span class="stat-sub-val">Idoneo 100%</span>
+                  <span class="stat-sub-sub">Disponibile senza limitazioni</span>
+                </div>
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Indice Affaticamento</span>
+                  <span class="stat-sub-val">Basso</span>
+                  <span class="stat-sub-sub">Carico d'allenamento ideale</span>
+                </div>
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Storico Infortuni</span>
+                  <span class="stat-sub-val">0 Stop</span>
+                  <span class="stat-sub-sub">Nessuna lesione muscolare</span>
+                </div>
+                <div class="stat-sub-card">
+                  <span class="stat-sub-lbl">Resilienza agli Sforzi</span>
+                  <span class="stat-sub-val">Alta (95/100)</span>
+                  <span class="stat-sub-sub">Recupero rapido tra i match</span>
+                </div>
+              </div>
+              <div class="stat-bar-group">
+                <div class="stat-bar-header">
+                  <span>Livello di Condizione Atletica</span>
+                  <span style="color:var(--lime);">${fitness}%</span>
+                </div>
+                <div class="stat-bar-track">
+                  <div class="stat-bar-fill" style="width: ${fitness}%;"></div>
+                </div>
+              </div>
+            `,
+            tipText: 'Giocatore in salute e al massimo della brillantezza atletica. Nessun rischio muscolare rilevato.'
+          };
+        }
+
+        default: {
+          return {
+            category: 'DETTAGLIO STATISTICA',
+            heroVal: 'Statistica Giocatore',
+            heroSub: 'Dato di backup campionato 2026/27',
+            bodyHtml: '<p style="color:#94A3B8;font-size:12px;">Dati dettagliati in fase di elaborazione.</p>',
+            tipText: 'Dati ufficiali aggiornati costantemente.'
+          };
+        }
+      }
+    }
+
+    function openStatModal(type) {
+      const p = playerSquad[currentSelectedPlayerId] || playerSquad[10];
+      const backdrop = document.getElementById('statModalBackdrop');
+      if (!backdrop) return;
+
+      const avatarEl = document.getElementById('statModalAvatar');
+      if (avatarEl) avatarEl.src = p.img;
+      const nameEl = document.getElementById('statModalPlayerName');
+      if (nameEl) nameEl.textContent = p.full;
+      const roleEl = document.getElementById('statModalPlayerRole');
+      if (roleEl) roleEl.textContent = `${p.desc} · #${p.num} (${p.role})`;
+
+      const content = getStatModalBackupData(type, p);
+
+      const catEl = document.getElementById('statModalCategory');
+      if (catEl) catEl.textContent = content.category;
+      const valEl = document.getElementById('statModalHeroVal');
+      if (valEl) valEl.textContent = content.heroVal;
+      const subEl = document.getElementById('statModalHeroSub');
+      if (subEl) subEl.innerHTML = content.heroSub;
+      const bodyEl = document.getElementById('statModalBody');
+      if (bodyEl) bodyEl.innerHTML = content.bodyHtml;
+      const tipEl = document.getElementById('statModalTipText');
+      if (tipEl) tipEl.textContent = content.tipText;
+
+      backdrop.classList.add('is-open');
+      backdrop.setAttribute('aria-hidden', 'false');
+    }
+
+    function closeStatModal() {
+      const backdrop = document.getElementById('statModalBackdrop');
+      if (!backdrop) return;
+      backdrop.classList.remove('is-open');
+      backdrop.setAttribute('aria-hidden', 'true');
+    }
+
+    // Distinzione tra drag/swipe e click per le stat-card
+    let statDragDistance = 0;
+    let statStartX = 0;
+    let statStartY = 0;
+
+    if (statsTrack) {
+      statsTrack.addEventListener('mousedown', (e) => {
+        statStartX = e.pageX;
+        statStartY = e.pageY;
+        statDragDistance = 0;
+      });
+
+      statsTrack.addEventListener('mousemove', (e) => {
+        if (isDown) {
+          const dx = e.pageX - statStartX;
+          const dy = e.pageY - statStartY;
+          statDragDistance = Math.max(statDragDistance, Math.sqrt(dx * dx + dy * dy));
+        }
+      });
+
+      statsTrack.addEventListener('touchstart', (e) => {
+        if (e.touches && e.touches[0]) {
+          statStartX = e.touches[0].pageX;
+          statStartY = e.touches[0].pageY;
+          statDragDistance = 0;
+        }
+      }, { passive: true });
+
+      statsTrack.addEventListener('touchmove', (e) => {
+        if (e.touches && e.touches[0]) {
+          const dx = e.touches[0].pageX - statStartX;
+          const dy = e.touches[0].pageY - statStartY;
+          statDragDistance = Math.max(statDragDistance, Math.sqrt(dx * dx + dy * dy));
+        }
+      }, { passive: true });
+    }
+
+    document.querySelectorAll('.stat-card').forEach((card) => {
+      card.addEventListener('click', () => {
+        if (statDragDistance > 8) return; // Se era uno swipe orizzontale, ignora il click
+        const statType = card.getAttribute('data-stat-type');
+        if (statType) {
+          openStatModal(statType);
+        }
+      });
+    });
+
+    const closeStatBtn = document.getElementById('closeStatModalBtn');
+    if (closeStatBtn) {
+      closeStatBtn.addEventListener('click', closeStatModal);
+    }
+
+    const statBackdrop = document.getElementById('statModalBackdrop');
+    if (statBackdrop) {
+      statBackdrop.addEventListener('click', (e) => {
+        if (e.target === statBackdrop) {
+          closeStatModal();
+        }
+      });
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeStatModal();
+      }
+    });
+
+    // Supporto swipe down per chiudere il modale da mobile / touch
+    const modalSheet = document.getElementById('statModalSheet');
+    if (modalSheet) {
+      let sheetStartY = 0;
+      modalSheet.addEventListener('touchstart', (e) => {
+        if (e.touches && e.touches[0]) {
+          sheetStartY = e.touches[0].pageY;
+        }
+      }, { passive: true });
+
+      modalSheet.addEventListener('touchmove', (e) => {
+        if (e.touches && e.touches[0]) {
+          const diff = e.touches[0].pageY - sheetStartY;
+          if (diff > 0 && modalSheet.scrollTop <= 0) {
+            modalSheet.style.transform = `translateY(${diff}px)`;
+          }
+        }
+      }, { passive: true });
+
+      modalSheet.addEventListener('touchend', (e) => {
+        if (e.changedTouches && e.changedTouches[0]) {
+          const diff = e.changedTouches[0].pageY - sheetStartY;
+          if (diff > 80 && modalSheet.scrollTop <= 0) {
+            closeStatModal();
+          }
+          modalSheet.style.transform = '';
+        }
       });
     }
 
