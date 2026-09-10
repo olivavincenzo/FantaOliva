@@ -1871,33 +1871,6 @@
       }
     },
     {
-      "player_id": "ab2a5fb7-6ee0-4efe-92d2-adafe3bb3d3d",
-      "sportsmonks_id": 24081699,
-      "fantalab_id": "ab2a5fb7-6ee0-4efe-92d2-adafe3bb3d3d",
-      "fantacalcio_id": 4359,
-      "name": "Piccoli",
-      "full_name": "Roberto Piccoli",
-      "team_id": 8513,
-      "team_name": "Bologna",
-      "team_short": "BOL",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/1/8513.png",
-      "role": "A",
-      "mantra_roles": [
-        "Pc"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/24081699/v2.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 3,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": true,
-      "stats": {
-        "fmv": 6.83,
-        "mv": 5.83
-      }
-    },
-    {
       "player_id": "fd980a09-99b1-4174-81e5-60cbcd1fbb49",
       "sportsmonks_id": 37684319,
       "fantalab_id": "fd980a09-99b1-4174-81e5-60cbcd1fbb49",
@@ -2280,6 +2253,33 @@
       "stats": {
         "fmv": 6.66,
         "mv": 6.33
+      }
+    },
+    {
+      "player_id": "ab2a5fb7-6ee0-4efe-92d2-adafe3bb3d3d",
+      "sportsmonks_id": 24081699,
+      "fantalab_id": "ab2a5fb7-6ee0-4efe-92d2-adafe3bb3d3d",
+      "fantacalcio_id": 4359,
+      "name": "Piccoli",
+      "full_name": "Roberto Piccoli",
+      "team_id": 8513,
+      "team_name": "Bologna",
+      "team_short": "BOL",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/1/8513.png",
+      "role": "A",
+      "mantra_roles": [
+        "Pc"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/24081699/v2.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 3,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": true,
+      "stats": {
+        "fmv": 6.66,
+        "mv": 5.83
       }
     },
     {
@@ -3541,7 +3541,7 @@
       "mantra_roles": [
         "W"
       ],
-      "player_image": "https://cdn.falsesoftware.com/players/96514/v2.webp",
+      "player_image": "https://cdn.falsesoftware.com/players/96514/v3.webp",
       "league": "serie_a",
       "league_id": 384,
       "league_name": "Serie A",
@@ -3707,7 +3707,7 @@
         "M",
         "C"
       ],
-      "player_image": "https://cdn.falsesoftware.com/players/37591402/v1.webp",
+      "player_image": "https://cdn.falsesoftware.com/players/37591402/v2.webp",
       "league": "serie_a",
       "league_id": 384,
       "league_name": "Serie A",
@@ -13800,7 +13800,7 @@
       "mantra_roles": [
         "Dc"
       ],
-      "player_image": null,
+      "player_image": "https://cdn.falsesoftware.com/players/540203/v1.webp",
       "league": "serie_a",
       "league_id": 384,
       "league_name": "Serie A",
@@ -14048,33 +14048,6 @@
         "Por"
       ],
       "player_image": "https://cdn.falsesoftware.com/players/37726034/v1.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 0,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": false,
-      "stats": {
-        "fmv": null,
-        "mv": null
-      }
-    },
-    {
-      "player_id": "a896fcfb-1628-4043-a396-9f5b05cf90c2",
-      "sportsmonks_id": 37568659,
-      "fantalab_id": "a896fcfb-1628-4043-a396-9f5b05cf90c2",
-      "fantacalcio_id": 5707,
-      "name": "Piana",
-      "full_name": "Edoardo Piana",
-      "team_id": 346,
-      "team_name": "Udinese",
-      "team_short": "UDI",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/346.png",
-      "role": "P",
-      "mantra_roles": [
-        "Por"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/37568659/v1.webp",
       "league": "serie_a",
       "league_id": 384,
       "league_name": "Serie A",
@@ -14808,7 +14781,7 @@
     "fallback_price"
   ],
   "pagination": {
-    "total": 533,
+    "total": 532,
     "limit": 1000,
     "offset": 0
   },

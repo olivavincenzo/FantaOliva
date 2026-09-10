@@ -26446,32 +26446,6 @@
       }
     ]
   },
-  "a896fcfb-1628-4043-a396-9f5b05cf90c2": {
-    "player_id": "a896fcfb-1628-4043-a396-9f5b05cf90c2",
-    "name": "Piana",
-    "role": "P",
-    "stats": [
-      {
-        "player_id": "a896fcfb-1628-4043-a396-9f5b05cf90c2",
-        "season": "s_22_23",
-        "presenze": 0,
-        "mv": null,
-        "fmv": null,
-        "gf": 0,
-        "gs": 34,
-        "rp": 0,
-        "r_plus": 0,
-        "r_minus": 0,
-        "assist": 0,
-        "amm": 0,
-        "esp": 0,
-        "autogol": 0,
-        "injured": 0,
-        "starts_eleven": 0,
-        "min_playing_time": 0
-      }
-    ]
-  },
   "40b7cab1-faa3-4b57-a7ae-a775c8b35c97": {
     "player_id": "40b7cab1-faa3-4b57-a7ae-a775c8b35c97",
     "name": "Ndour",
