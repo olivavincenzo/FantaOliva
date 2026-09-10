@@ -729,6 +729,94 @@
       stroke: #d2ff50;
     }
 
+    /* Transizione fluida, liquida e armonica tra gli elementi del giocatore attivo */
+    .selected-player-bar.bar-glow {
+      border-color: rgba(209, 254, 80, 0.85);
+      box-shadow: 0 0 0 2.5px rgba(209, 254, 80, 0.35), 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Elementi interni alla barra e alle statistiche */
+    .sel-player-avatar,
+    .sel-name,
+    .sel-sub,
+    .sel-rating,
+    .stats-carousel-wrap .stat-card {
+      transition: opacity 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+                  transform 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+                  filter 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+      will-change: opacity, transform, filter;
+    }
+
+    /* Fase 1: Uscita fluida e morbida (soft dissolve sincronizzato) */
+    .selected-player-bar.is-fading-out .sel-player-avatar,
+    .selected-player-bar.is-fading-out .sel-name,
+    .selected-player-bar.is-fading-out .sel-sub,
+    .selected-player-bar.is-fading-out .sel-rating {
+      opacity: 0.12;
+      transform: translateY(-4px);
+      filter: blur(1.5px);
+      transition: opacity 0.075s ease-out, transform 0.075s ease-out, filter 0.075s ease-out;
+    }
+
+    .stats-carousel-wrap.is-fading-out .stat-card {
+      opacity: 0.2;
+      transform: translateY(-3px);
+      filter: blur(1px);
+      transition: opacity 0.075s ease-out, transform 0.075s ease-out, filter 0.075s ease-out;
+    }
+
+    /* Fase 2: Entrata a cascata fluida e armoniosa tra gli elementi */
+    .selected-player-bar.is-flowing-in .sel-player-avatar {
+      animation: fluidGlide 0.34s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .selected-player-bar.is-flowing-in .sel-name {
+      animation: fluidGlide 0.34s 0.03s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .selected-player-bar.is-flowing-in .sel-sub {
+      animation: fluidGlide 0.34s 0.06s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .selected-player-bar.is-flowing-in .sel-rating {
+      animation: fluidGlide 0.34s 0.09s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    /* Cascata per le stat-card rapide */
+    .stats-carousel-wrap.is-flowing-in .stat-card {
+      animation: fluidStatGlide 0.34s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+    .stats-carousel-wrap.is-flowing-in .stat-card:nth-child(1) { animation-delay: 0.03s; }
+    .stats-carousel-wrap.is-flowing-in .stat-card:nth-child(2) { animation-delay: 0.07s; }
+    .stats-carousel-wrap.is-flowing-in .stat-card:nth-child(3) { animation-delay: 0.11s; }
+    .stats-carousel-wrap.is-flowing-in .stat-card:nth-child(4) { animation-delay: 0.15s; }
+
+    @keyframes fluidGlide {
+      0% {
+        opacity: 0.15;
+        transform: translateY(6px);
+        filter: blur(2px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+      }
+    }
+
+    @keyframes fluidStatGlide {
+      0% {
+        opacity: 0.2;
+        transform: translateY(5px);
+        filter: blur(1.5px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+      }
+    }
+
     /* Contenitore Carousel Statistiche Rapide con Swipe e 2 Pagine */
     .stats-carousel-wrap {
       width: 100%;
@@ -2224,9 +2312,12 @@
       });
     }
 
-    // SELEZIONE SINCRONIZZATA
+    let selectAnimTimeout = null;
+    let selectClearTimeout = null;
+
+    // SELEZIONE SINCRONIZZATA CON TRANSIZIONE FLUIDA
     function selectPlayer(idx, fromRowClick = false) {
-      // Evidenzia card sul campo 3D
+      // Evidenzia card sul campo 3D istantaneamente (zero input lag)
       playerObjects.forEach((po, i) => {
         po.dom.classList.toggle('selected', i === idx);
       });
@@ -2236,49 +2327,89 @@
         row.classList.toggle('active', i === idx);
       });
 
-      // Aggiorna banner rapido
       const p = playerSquad[idx];
       currentSelectedPlayerId = p.id;
-      document.getElementById('barAvatar').src = p.img;
-      document.getElementById('barName').textContent = p.full;
-      document.getElementById('barRole').textContent = p.setPieces || `${p.desc} · ${p.tier}`;
-      updateFavoriteButton(p.id);
 
-      // Statistiche Pagina 1
-      const elGoals = document.getElementById('statGoals');
-      if (elGoals) elGoals.textContent = `${p.goals} Goal`;
-      const elGoalsDesc = document.getElementById('statGoalsDesc');
-      if (elGoalsDesc) {
-        const assistCount = p.assists !== undefined ? p.assists : 0;
-        const assistLabel = assistCount === 1 ? '1 Assist fornito' : `${assistCount} Assist forniti`;
-        elGoalsDesc.innerHTML = `${assistLabel}<br>in Serie A 2026/27`;
+      const playerBar = document.querySelector('.selected-player-bar');
+      const statsWrap = document.querySelector('.stats-carousel-wrap');
+
+      // Annulla eventuali timeout precedenti per evitare sovrapposizioni
+      if (selectAnimTimeout) clearTimeout(selectAnimTimeout);
+      if (selectClearTimeout) clearTimeout(selectClearTimeout);
+
+      // Fase 1: micro-dissolvenza fluida di uscita
+      if (playerBar) {
+        playerBar.classList.remove('is-flowing-in');
+        playerBar.classList.add('is-fading-out', 'bar-glow');
       }
-      const elFm = document.getElementById('statFm');
-      if (elFm) elFm.textContent = p.fm;
-      const elFmDesc = document.getElementById('statFmDesc');
-      if (elFmDesc) elFmDesc.innerHTML = `FantaMedia (FM)<br>Media Voto: ${p.mv}`;
-      const elCredits = document.getElementById('statCredits');
-      if (elCredits) elCredits.textContent = p.credits;
-      const elStarts = document.getElementById('statStarts');
-      if (elStarts) elStarts.textContent = p.tier;
-      const elStartsDesc = document.getElementById('statStartsDesc');
-      if (elStartsDesc) elStartsDesc.innerHTML = `titolarità ${p.titolaritaStars} e integrità ${p.integritaStars}`;
+      if (statsWrap) {
+        statsWrap.classList.remove('is-flowing-in');
+        statsWrap.classList.add('is-fading-out');
+      }
 
-      // Statistiche Pagina 2
-      const elBallot = document.getElementById('statBallot');
-      if (elBallot) elBallot.textContent = p.ballot || 'Nessuno';
-      const elBallotDesc = document.getElementById('statBallotDesc');
-      if (elBallotDesc) elBallotDesc.innerHTML = p.ballotDesc || 'titolare inamovibile<br>nessun ballottaggio';
-      const elMetric = document.getElementById('statMetric');
-      if (elMetric) elMetric.textContent = p.metricVal;
-      const elMetricDesc = document.getElementById('statMetricDesc');
-      if (elMetricDesc) elMetricDesc.innerHTML = `${p.metricKey}<br>incidenza fanta`;
-      const elApps = document.getElementById('statApps');
-      if (elApps) elApps.textContent = `${p.apps}/38`;
-      const elAppsDesc = document.getElementById('statAppsDesc');
-      if (elAppsDesc) elAppsDesc.innerHTML = `partite a voto<br>${p.starterApps !== undefined ? p.starterApps : p.apps} da titolare`;
-      const elFitness = document.getElementById('statFitness');
-      if (elFitness) elFitness.textContent = `${p.fitness}%`;
+      selectAnimTimeout = setTimeout(() => {
+        // Aggiorna contenuti DOM durante la dissolvenza morbida
+        document.getElementById('barAvatar').src = p.img;
+        document.getElementById('barName').textContent = p.full;
+        document.getElementById('barRole').textContent = p.setPieces || `${p.desc} · ${p.tier}`;
+        updateFavoriteButton(p.id);
+
+        // Statistiche Pagina 1
+        const elGoals = document.getElementById('statGoals');
+        if (elGoals) elGoals.textContent = `${p.goals} Goal`;
+        const elGoalsDesc = document.getElementById('statGoalsDesc');
+        if (elGoalsDesc) {
+          const assistCount = p.assists !== undefined ? p.assists : 0;
+          const assistLabel = assistCount === 1 ? '1 Assist fornito' : `${assistCount} Assist forniti`;
+          elGoalsDesc.innerHTML = `${assistLabel}<br>in Serie A 2026/27`;
+        }
+        const elFm = document.getElementById('statFm');
+        if (elFm) elFm.textContent = p.fm;
+        const elFmDesc = document.getElementById('statFmDesc');
+        if (elFmDesc) elFmDesc.innerHTML = `FantaMedia (FM)<br>Media Voto: ${p.mv}`;
+        const elCredits = document.getElementById('statCredits');
+        if (elCredits) elCredits.textContent = p.credits;
+        const elStarts = document.getElementById('statStarts');
+        if (elStarts) elStarts.textContent = p.tier;
+        const elStartsDesc = document.getElementById('statStartsDesc');
+        if (elStartsDesc) elStartsDesc.innerHTML = `titolarità ${p.titolaritaStars} e integrità ${p.integritaStars}`;
+
+        // Statistiche Pagina 2
+        const elBallot = document.getElementById('statBallot');
+        if (elBallot) elBallot.textContent = p.ballot || 'Nessuno';
+        const elBallotDesc = document.getElementById('statBallotDesc');
+        if (elBallotDesc) elBallotDesc.innerHTML = p.ballotDesc || 'titolare inamovibile<br>nessun ballottaggio';
+        const elMetric = document.getElementById('statMetric');
+        if (elMetric) elMetric.textContent = p.metricVal;
+        const elMetricDesc = document.getElementById('statMetricDesc');
+        if (elMetricDesc) elMetricDesc.innerHTML = `${p.metricKey}<br>incidenza fanta`;
+        const elApps = document.getElementById('statApps');
+        if (elApps) elApps.textContent = `${p.apps}/38`;
+        const elAppsDesc = document.getElementById('statAppsDesc');
+        if (elAppsDesc) elAppsDesc.innerHTML = `partite a voto<br>${p.starterApps !== undefined ? p.starterApps : p.apps} da titolare`;
+        const elFitness = document.getElementById('statFitness');
+        if (elFitness) elFitness.textContent = `${p.fitness}%`;
+
+        // Fase 2: entrata a cascata liquida e sincronizzata
+        if (playerBar) {
+          playerBar.classList.remove('is-fading-out');
+          playerBar.classList.add('is-flowing-in');
+        }
+        if (statsWrap) {
+          statsWrap.classList.remove('is-fading-out');
+          statsWrap.classList.add('is-flowing-in');
+        }
+
+        // Pulizia al termine per preservare gli stati hover
+        selectClearTimeout = setTimeout(() => {
+          if (playerBar) {
+            playerBar.classList.remove('is-flowing-in', 'bar-glow');
+          }
+          if (statsWrap) {
+            statsWrap.classList.remove('is-flowing-in');
+          }
+        }, 450);
+      }, 75);
     }
 
     // GESTIONE RICERCA E FILTRI (MOC)
