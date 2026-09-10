@@ -1594,7 +1594,7 @@
           </div>
           <div>
             <div class="sel-name" id="barName">Lautaro Martínez</div>
-            <div class="sel-sub" id="barRole">Attaccante (Capitano) · Super Top</div>
+            <div class="sel-sub" id="barRole">2° Rigorista · 2° Punizioni</div>
           </div>
         </div>
         <button type="button" class="sel-rating is-favorite" id="barRating" title="Rimuovi dai preferiti"
@@ -1650,11 +1650,11 @@
           <!-- Pagina 2: Statistiche Avanzate -->
           <div class="stats-page" data-page="1">
             <div class="stat-card">
-              <span class="stat-num" id="statMv">6.42</span>
+              <span class="stat-num" id="statBallot">Nessuno</span>
               <svg class="stat-arrow" viewBox="0 0 24 24" fill="none">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
               </svg>
-              <p class="stat-desc">Media Voto (MV)<br>rendimento costante</p>
+              <p class="stat-desc" id="statBallotDesc">titolare inamovibile<br>nessun ballottaggio</p>
             </div>
 
             <div class="stat-card">
@@ -1666,11 +1666,11 @@
             </div>
 
             <div class="stat-card">
-              <span class="stat-num" id="statApps">30</span>
+              <span class="stat-num" id="statApps">30/38</span>
               <svg class="stat-arrow" viewBox="0 0 24 24" fill="none">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
               </svg>
-              <p class="stat-desc">partite a voto<br>presenze complessive</p>
+              <p class="stat-desc" id="statAppsDesc">partite a voto<br>28 da titolare</p>
             </div>
 
             <div class="stat-card">
@@ -1820,80 +1820,102 @@
     const playerSquad = [
       {
         id: 0, num: 13, name: "Martinez Jo.", full: "Josep Martínez", role: "P", roleClass: "badge-role-p",
-        desc: "Portiere Titolare", age: 26, nat: "ESP", apps: 26, goals: 0, assists: 0,
+        desc: "Portiere Titolare", age: 26, nat: "ESP", apps: 26, starterApps: 26, goals: 0, assists: 0,
         metricKey: "Clean Sheet", metricVal: "14", fm: "5.85", mv: "6.25", starts: "86%", credits: "140 CR",
         rating: "7.2", tier: "SEMI-TOP", titolaritaStars: "4/5", integritaStars: "5/5", fitness: 97, img: "https://cdn.falsesoftware.com/players/529414/v1.webp",
-        stat1: "14", stat1Desc: "clean sheet stagionali<br>porta inviolata"
+        stat1: "14", stat1Desc: "clean sheet stagionali<br>porta inviolata",
+        setPieces: "Nessun piazzato · Portiere",
+        ballot: "Nessuno", ballotDesc: "portiere titolare<br>nessun ballottaggio"
       },
       {
         id: 1, num: 95, name: "Bastoni", full: "Alessandro Bastoni", role: "D", roleClass: "badge-role-d",
-        desc: "Braccetto Sinistro", age: 25, nat: "ITA", apps: 29, goals: 2, assists: 5,
+        desc: "Braccetto Sinistro", age: 25, nat: "ITA", apps: 29, starterApps: 27, goals: 2, assists: 5,
         metricKey: "Gol / Assist", metricVal: "2 / 5", fm: "7.15", mv: "6.28", starts: "93%", credits: "260 CR",
         rating: "8.2", tier: "TOP", titolaritaStars: "5/5", integritaStars: "5/5", fitness: 95, img: "https://cdn.falsesoftware.com/players/133797/v1.webp",
-        stat1: "2 G • 5 A", stat1Desc: "bonus difensivi<br>traversoni & inserimenti"
+        stat1: "2 G • 5 A", stat1Desc: "bonus difensivi<br>traversoni & inserimenti",
+        setPieces: "Saltatore in area · Nessun piazzato",
+        ballot: "Nessuno", ballotDesc: "braccetto titolare fisso<br>nessun ballottaggio"
       },
       {
         id: 2, num: 5, name: "Stones", full: "John Stones", role: "D", roleClass: "badge-role-d",
-        desc: "Centrale Difensivo", age: 30, nat: "ENG", apps: 25, goals: 2, assists: 1,
-        metricKey: "Ballottaggio", metricVal: "51% vs Biss", fm: "6.85", mv: "6.22", starts: "82%", credits: "210 CR",
+        desc: "Centrale Difensivo", age: 30, nat: "ENG", apps: 25, starterApps: 21, goals: 2, assists: 1,
+        metricKey: "Duelli Aerei", metricVal: "78%", fm: "6.85", mv: "6.22", starts: "82%", credits: "210 CR",
         rating: "7.7", tier: "SEMI-TOP", titolaritaStars: "4/5", integritaStars: "4/5", fitness: 89, img: "https://cdn.falsesoftware.com/players/982/v2.webp",
-        stat1: "2 G", stat1Desc: "gol di testa<br>51% ballottaggio con Bisseck"
+        stat1: "2 G", stat1Desc: "gol di testa<br>55% ballottaggio con Bisseck",
+        setPieces: "Saltatore in area · Nessun piazzato",
+        ballot: "55% - 45%", ballotDesc: "ballottaggio con Bisseck<br>attualmente in vantaggio"
       },
       {
         id: 3, num: 25, name: "Akanji", full: "Manuel Akanji", role: "D", roleClass: "badge-role-d",
-        desc: "Braccetto Destro", age: 29, nat: "SUI", apps: 28, goals: 1, assists: 1,
+        desc: "Braccetto Destro", age: 29, nat: "SUI", apps: 28, starterApps: 25, goals: 1, assists: 1,
         metricKey: "Recuperi/G", metricVal: "7.2", fm: "6.70", mv: "6.18", starts: "88%", credits: "180 CR",
         rating: "7.6", tier: "SEMI-TOP", titolaritaStars: "4/5", integritaStars: "5/5", fitness: 92, img: "https://cdn.falsesoftware.com/players/198062/v1.webp",
-        stat1: "7.2", stat1Desc: "palloni recuperati/gara<br>solidità pura"
+        stat1: "7.2", stat1Desc: "palloni recuperati/gara<br>solidità pura",
+        setPieces: "Saltatore in area · Nessun piazzato",
+        ballot: "75% - 25%", ballotDesc: "ballottaggio con Pavard<br>in pole position"
       },
       {
         id: 4, num: 32, name: "Dimarco", full: "Federico Dimarco", role: "D", roleClass: "badge-role-d",
-        desc: "Esterno Sinistro (Piazzati)", age: 27, nat: "ITA", apps: 30, goals: 5, assists: 9,
+        desc: "Esterno Sinistro (Piazzati)", age: 27, nat: "ITA", apps: 30, starterApps: 27, goals: 5, assists: 9,
         metricKey: "Gol / Assist", metricVal: "5 / 9", fm: "7.65", mv: "6.32", starts: "90%", credits: "320 CR",
         rating: "8.8", tier: "SUPER TOP", titolaritaStars: "5/5", integritaStars: "4/5", fitness: 93, img: "https://cdn.falsesoftware.com/players/129842/v2.webp",
-        stat1: "5 G • 9 A", stat1Desc: "1° punizioni & corner<br>top assoluto di difesa"
+        stat1: "5 G • 9 A", stat1Desc: "1° punizioni & corner<br>top assoluto di difesa",
+        setPieces: "1° Angolo sx/dx · 1° Punizioni · 3° Rigorista",
+        ballot: "80% - 20%", ballotDesc: "ballottaggio con C. Augusto<br>staffetta a gara in corso"
       },
       {
         id: 5, num: 17, name: "Diouf", full: "Andy Diouf", role: "C", roleClass: "badge-role-c",
-        desc: "Esterno Destro (Sorpresa)", age: 22, nat: "FRA", apps: 22, goals: 2, assists: 3,
-        metricKey: "Ballottaggio", metricVal: "51% vs Spen", fm: "6.75", mv: "6.10", starts: "72%", credits: "140 CR",
+        desc: "Esterno Destro (Sorpresa)", age: 22, nat: "FRA", apps: 22, starterApps: 16, goals: 2, assists: 3,
+        metricKey: "Dribbling", metricVal: "68%", fm: "6.75", mv: "6.10", starts: "72%", credits: "140 CR",
         rating: "7.4", tier: "JOLLY", titolaritaStars: "3/5", integritaStars: "4/5", fitness: 90, img: "https://cdn.falsesoftware.com/players/37423138/v1.webp",
-        stat1: "2 G • 3 A", stat1Desc: "spinta costante a destra<br>51% vs Spence 49%"
+        stat1: "2 G • 3 A", stat1Desc: "spinta costante a destra<br>51% vs Spence 49%",
+        setPieces: "Nessun piazzato",
+        ballot: "51% - 49%", ballotDesc: "ballottaggio con Spence<br>duello aperto a destra"
       },
       {
         id: 6, num: 23, name: "Barella", full: "Nicolò Barella", role: "C", roleClass: "badge-role-c",
-        desc: "Mezzala Destra", age: 27, nat: "ITA", apps: 31, goals: 4, assists: 8,
+        desc: "Mezzala Destra", age: 27, nat: "ITA", apps: 31, starterApps: 30, goals: 4, assists: 8,
         metricKey: "Gol / Assist", metricVal: "4 / 8", fm: "7.20", mv: "6.30", starts: "95%", credits: "310 CR",
         rating: "8.4", tier: "TOP", titolaritaStars: "5/5", integritaStars: "5/5", fitness: 96, img: "https://cdn.falsesoftware.com/players/30154/v1.webp",
-        stat1: "4 G • 8 A", stat1Desc: "motorino del centrocampo<br>titolarità 5/5"
+        stat1: "4 G • 8 A", stat1Desc: "motorino del centrocampo<br>titolarità 5/5",
+        setPieces: "2° Angolo dx/sx · 3° Punizioni",
+        ballot: "Nessuno", ballotDesc: "titolare inamovibile<br>nessun ballottaggio"
       },
       {
         id: 7, num: 20, name: "Calhanoglu", full: "Hakan Calhanoglu", role: "C", roleClass: "badge-role-c",
-        desc: "Regista (1° Rigorista)", age: 30, nat: "TUR", apps: 28, goals: 10, assists: 5,
+        desc: "Regista (1° Rigorista)", age: 30, nat: "TUR", apps: 28, starterApps: 26, goals: 10, assists: 5,
         metricKey: "Rigori / Gol", metricVal: "6 / 10", fm: "7.95", mv: "6.38", starts: "92%", credits: "390 CR",
         rating: "9.2", tier: "SUPER TOP", titolaritaStars: "5/5", integritaStars: "5/5", fitness: 94, img: "https://cdn.falsesoftware.com/players/31825/v1.webp",
-        stat1: "10 G • 5 A", stat1Desc: "cecchino dal dischetto<br>1° rigorista infallibile"
+        stat1: "10 G • 5 A", stat1Desc: "cecchino dal dischetto<br>1° rigorista infallibile",
+        setPieces: "1° Rigorista · 2° Punizioni · 1° Angolo dx/sx",
+        ballot: "Nessuno", ballotDesc: "regista indiscusso<br>nessun ballottaggio"
       },
       {
         id: 8, num: 18, name: "Jones C.", full: "Curtis Jones", role: "C", roleClass: "badge-role-c",
-        desc: "Mezzala Sinistra", age: 24, nat: "ENG", apps: 24, goals: 3, assists: 4,
-        metricKey: "Ballottaggio", metricVal: "55% vs Ziel", fm: "6.90", mv: "6.15", starts: "76%", credits: "190 CR",
+        desc: "Mezzala Sinistra", age: 24, nat: "ENG", apps: 24, starterApps: 18, goals: 3, assists: 4,
+        metricKey: "Passaggi Chiave", metricVal: "1.8/G", fm: "6.90", mv: "6.15", starts: "76%", credits: "190 CR",
         rating: "7.5", tier: "SEMITOP", titolaritaStars: "4/5", integritaStars: "4/5", fitness: 88, img: "https://cdn.falsesoftware.com/players/4545513/v2.webp",
-        stat1: "3 G • 4 A", stat1Desc: "inserimenti & qualità<br>in pole su Zielinski"
+        stat1: "3 G • 4 A", stat1Desc: "inserimenti & qualità<br>in pole su Zielinski",
+        setPieces: "Nessun piazzato",
+        ballot: "55% - 45%", ballotDesc: "ballottaggio con Zieliński<br>in leggero vantaggio"
       },
       {
         id: 9, num: 9, name: "Thuram", full: "Marcus Thuram", role: "A", roleClass: "badge-role-a",
-        desc: "Seconda Punta", age: 27, nat: "FRA", apps: 29, goals: 13, assists: 7,
+        desc: "Seconda Punta", age: 27, nat: "FRA", apps: 29, starterApps: 26, goals: 13, assists: 7,
         metricKey: "Gol / Assist", metricVal: "13 / 7", fm: "7.85", mv: "6.35", starts: "88%", credits: "460 CR",
         rating: "8.9", tier: "TOP", titolaritaStars: "5/5", integritaStars: "5/5", fitness: 92, img: "https://cdn.falsesoftware.com/players/99000/v1.webp",
-        stat1: "13 G • 7 A", stat1Desc: "strappi atletici devastanti<br>coppia d'oro con Lautaro"
+        stat1: "13 G • 7 A", stat1Desc: "strappi atletici devastanti<br>coppia d'oro con Lautaro",
+        setPieces: "3° Rigorista · Saltatore in area",
+        ballot: "80% - 20%", ballotDesc: "ballottaggio con Taremi<br>rotazione programmata"
       },
       {
         id: 10, num: 10, name: "Martinez L.", full: "Lautaro Martínez", role: "A", roleClass: "badge-role-a",
-        desc: "Centravanti (Capitano)", age: 27, nat: "ARG", apps: 30, goals: 17, assists: 6,
+        desc: "Centravanti (Capitano)", age: 27, nat: "ARG", apps: 30, starterApps: 28, goals: 17, assists: 6,
         metricKey: "Gol / Assist", metricVal: "17 / 6", fm: "8.25", mv: "6.42", starts: "90%", credits: "563 CR",
         rating: "9.6", tier: "SUPER TOP", titolaritaStars: "5/5", integritaStars: "5/5", fitness: 95, img: "https://cdn.falsesoftware.com/players/333594/v1.webp",
-        stat1: "17 G • 6 A", stat1Desc: "capocannoniere & leader<br>top pick assoluto asta"
+        stat1: "17 G • 6 A", stat1Desc: "capocannoniere & leader<br>top pick assoluto asta",
+        setPieces: "2° Rigorista · 2° Punizioni",
+        ballot: "Nessuno", ballotDesc: "titolare inamovibile<br>nessun ballottaggio"
       }
     ];
 
@@ -2224,7 +2246,7 @@
       currentSelectedPlayerId = p.id;
       document.getElementById('barAvatar').src = p.img;
       document.getElementById('barName').textContent = p.full;
-      document.getElementById('barRole').textContent = `${p.desc} · ${p.tier}`;
+      document.getElementById('barRole').textContent = p.setPieces || `${p.desc} · ${p.tier}`;
       updateFavoriteButton(p.id);
 
       // Statistiche Pagina 1
@@ -2248,14 +2270,18 @@
       if (elStartsDesc) elStartsDesc.innerHTML = `titolarità ${p.titolaritaStars} e integrità ${p.integritaStars}`;
 
       // Statistiche Pagina 2
-      const elMv = document.getElementById('statMv');
-      if (elMv) elMv.textContent = p.mv;
+      const elBallot = document.getElementById('statBallot');
+      if (elBallot) elBallot.textContent = p.ballot || 'Nessuno';
+      const elBallotDesc = document.getElementById('statBallotDesc');
+      if (elBallotDesc) elBallotDesc.innerHTML = p.ballotDesc || 'titolare inamovibile<br>nessun ballottaggio';
       const elMetric = document.getElementById('statMetric');
       if (elMetric) elMetric.textContent = p.metricVal;
       const elMetricDesc = document.getElementById('statMetricDesc');
       if (elMetricDesc) elMetricDesc.innerHTML = `${p.metricKey}<br>incidenza fanta`;
       const elApps = document.getElementById('statApps');
-      if (elApps) elApps.textContent = `${p.apps}`;
+      if (elApps) elApps.textContent = `${p.apps}/38`;
+      const elAppsDesc = document.getElementById('statAppsDesc');
+      if (elAppsDesc) elAppsDesc.innerHTML = `partite a voto<br>${p.starterApps !== undefined ? p.starterApps : p.apps} da titolare`;
       const elFitness = document.getElementById('statFitness');
       if (elFitness) elFitness.textContent = `${p.fitness}%`;
     }
