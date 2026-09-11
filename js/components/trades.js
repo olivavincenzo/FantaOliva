@@ -188,7 +188,7 @@ export class TradesComponent {
                      {};
 
     const injury = INJURIES_DATA.find(i => (i.name || '').toLowerCase().trim() === normName) || null;
-    const leagueOwner = store.getPlayerLeagueOwner(p);
+    const leagueOwner = null;
 
     const fmv = Number(stats.fmv ?? ratEntry.xfmv ?? p.fantamedia ?? p.fmv ?? p.xfmv ?? 6.0);
     const mv = Number(stats.mv ?? p.mediaVoto ?? p.mv ?? 6.0);
@@ -803,7 +803,6 @@ export class TradesComponent {
             </div>
             <div class="trade-player-meta-row">
               <span>${sanitizeHtml(en.teamName || '')}</span>
-              ${en.leagueOwner ? `<span>• 👤 ${sanitizeHtml(en.leagueOwner.teamName)}</span>` : ''}
             </div>
           </div>
         </div>
@@ -1065,10 +1064,6 @@ export class TradesComponent {
               <select id="trade-modal-source-select" class="fanta-select" style="max-width: 160px; font-size: 11px;">
                 <option value="ALL" ${this.modalSourceFilter === 'ALL' ? 'selected' : ''}>Tutti i Giocatori</option>
                 <option value="MYTEAM" ${this.modalSourceFilter === 'MYTEAM' ? 'selected' : ''}>La Mia Rosa</option>
-                <option value="FREE">Svincolati</option>
-                ${Object.keys(store.getLeagueTeams() || {}).map(k => `
-                  <option value="${k}">${k}</option>
-                `).join('')}
               </select>
             </div>
 
@@ -1106,14 +1101,7 @@ export class TradesComponent {
     if (this.modalSourceFilter === 'MYTEAM') {
       const myTeam = store.getMyTeam();
       const myIds = new Set([...(myTeam.lineup ? Object.values(myTeam.lineup).map(p => p.id || p.csvId) : []), ...(myTeam.bench || []).map(p => p.id || p.csvId)]);
-      players = players.filter(p => myIds.has(p.id) || myIds.has(p.csvId) || (store.getPlayerLeagueOwner(p)?.isMyTeam));
-    } else if (this.modalSourceFilter === 'FREE') {
-      players = players.filter(p => !store.getPlayerLeagueOwner(p));
-    } else if (this.modalSourceFilter !== 'ALL') {
-      players = players.filter(p => {
-        const owner = store.getPlayerLeagueOwner(p);
-        return owner && owner.teamId === this.modalSourceFilter;
-      });
+      players = players.filter(p => myIds.has(p.id) || myIds.has(p.csvId));
     }
 
     players.sort((a, b) => {
@@ -1142,7 +1130,7 @@ export class TradesComponent {
             <span class="trade-role-badge role-badge-${en.role}">${en.role}</span>
             <div>
               <div style="font-size: 13px; font-weight: 750; color: var(--ink);">${sanitizeHtml(en.name)}</div>
-              <div style="font-size: 11px; color: var(--muted);">${sanitizeHtml(en.teamName || '')} ${en.leagueOwner ? `• 👤 ${sanitizeHtml(en.leagueOwner.teamName)}` : ''}</div>
+              <div style="font-size: 11px; color: var(--muted);">${sanitizeHtml(en.teamName || '')}</div>
             </div>
           </div>
           <div style="display: flex; align-items: center; gap: 10px;">

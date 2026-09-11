@@ -9,12 +9,17 @@
     content="Lavagna tattica interattiva per il Fantacalcio e le squadre di Serie A con interfaccia EA Sports FC / FIFA. Moduli, titolari, panchina, ballottaggi e statistiche.">
   <meta name="theme-color" content="#1B1E22">
 
-  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <!-- Google Fonts: Outfit, Plus Jakarta Sans & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
+
+  <!-- Three.js, OrbitControls & Tween.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js"></script>
 
   <!-- Font Awesome 6 Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -30,7 +35,8 @@
   <link rel="stylesheet" href="css/my-team.css?v=32">
   <link rel="stylesheet" href="css/injuries.css?v=3">
   <link rel="stylesheet" href="css/trades.css?v=3">
-  <link rel="stylesheet" href="css/responsive.css?v=5">
+  <link rel="stylesheet" href="css/responsive.css?v=6">
+  <link rel="stylesheet" href="css/tactical-mock-v2.css?v=3">
 </head>
 
 <body>
@@ -46,9 +52,6 @@
           <button id="view-tab-tactical" class="view-switch-btn is-active"
             title="Visualizza Campo e Lavagna Tattica Serie A">
             <i class="fa-solid fa-futbol"></i> <span>Lavagna</span>
-          </button>
-          <button id="view-tab-league" class="view-switch-btn" title="Visualizza Squadre e Rose FantaLega">
-            <i class="fa-solid fa-trophy"></i> <span>FantaLega</span>
           </button>
           <button id="view-tab-injuries" class="view-switch-btn" title="Visualizza Infermeria & Indisponibili Serie A">
             <i class="fa-solid fa-notes-medical"></i> <span>Infermeria</span>
@@ -150,42 +153,344 @@
 
     <!-- VISTA 1: LAVAGNA TATTICA INTERATTIVA (CAMPO + SIDEBARS) -->
     <div class="tactical-view-wrapper" id="tactical-view-wrapper">
-      <!-- SIDEBAR SINISTRA: SELETTORE SQUADRE SERIE A -->
-      <aside class="app-sidebar-left" id="sidebar-teams" aria-label="Elenco Squadre Serie A">
-        <!-- Rendered by TeamSelectorComponent -->
-      </aside>
+      <!-- Colonna Principale: Header, Campo 3D, Barra Giocatore, Statistiche -->
+      <div class="tactical-main-column">
 
-      <!-- SEPARATORE DI RIDIMENSIONAMENTO SIDEBAR SINISTRA -->
-      <div class="sidebar-resizer left-sidebar-resizer" id="sidebar-teams-resizer"
-        title="Trascina verso destra/sinistra per ridimensionare l'elenco squadre"></div>
-
-      <!-- ZONA CENTRALE: CAMPO DA CALCIO TATTICO -->
-      <main class="app-main-content" id="main-content">
-        <button id="reopen-left-sidebar-btn" class="reopen-sidebar-btn" title="Apri il pannello squadre">
-          <i class="fa-solid fa-chevron-right"></i>
+      <!-- Header Inter & Coach Chivu -->
+      <div class="mockup-team-header">
+        <div class="user-profile">
+          <div class="coach-avatar-wrap">
+            <div class="avatar">
+              <div class="team-crest-mini">
+                <img id="headerTeamCrest" src="https://cdn.sportmonks.com/images/soccer/teams/18/2930.png" alt="Inter Crest">
+              </div>
+            </div>
+          </div>
+          <div class="user-info">
+            <h2>
+              <span id="headerTeamName">Inter Milano</span>
+            </h2>
+            <p id="headerTeamCoach">All. Cristian Chivu • Asta 2026/27</p>
+          </div>
+        </div>
+        <button class="btn-icon" title="Cambia squadra" id="openTeamModalBtn" aria-label="Cambia squadra Serie A">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--dark)" stroke-width="2.2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+          </svg>
         </button>
-        <button id="reopen-right-sidebar-btn" class="reopen-sidebar-btn right" title="Apri il pannello ispettore">
-          <i class="fa-solid fa-chevron-left"></i>
+      </div>
+
+      <!-- Card Campo 3D Verticale Inter con 3D Flip Animazione -->
+      <div class="pitch-card" id="pitchContainer">
+        <div class="pitch-flipper" id="pitchFlipper">
+
+          <!-- FRONTE: Campo 3D e Pedine Tattiche -->
+          <div class="pitch-face pitch-front" id="pitchFront">
+            <div class="pitch-overlay-header">
+              <div class="pitch-badge">
+                <span class="live-dot"></span>
+                MODULO <span id="headerModule">3-5-2</span>
+              </div>
+            </div>
+
+            <!-- Canvas Three.js -->
+            <canvas id="threejs-canvas"></canvas>
+
+            <!-- Card Giocatori ancorate al 3D -->
+            <div class="pitch-cards-layer" id="cardsLayer"></div>
+
+            <!-- Pulsante Gira per Info Squadra -->
+            <button class="cam-reset-btn" onclick="togglePitchFlip()" title="Gira per informazioni squadra">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4 4v5h.58M20 20v-5h-.58M4.93 9A8 8 0 0118.36 5.64M19.07 15A8 8 0 015.64 18.36" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- RETRO: Informazioni e Scheda Tattica Squadra -->
+          <div class="pitch-face pitch-back" id="pitchBack">
+            <div class="pitch-back-header">
+              <div>
+                <div class="pitch-back-badge">
+                  <span style="width: 6px; height: 6px; border-radius: 50%; background: var(--lime);"></span>
+                  REPORT SQUADRA
+                </div>
+                <div class="pitch-back-title">Inter Milano · Cristian Chivu</div>
+              </div>
+              <button class="pitch-back-btn" onclick="togglePitchFlip()" title="Torna al campo 3D">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M4 4v5h.58M20 20v-5h-.58M4.93 9A8 8 0 0118.36 5.64M19.07 15A8 8 0 015.64 18.36" />
+                </svg>
+              </button>
+            </div>
+
+            <!-- Valutazioni Reparti -->
+            <div class="pitch-back-stats-row">
+              <div class="back-stat-card">
+                <div class="back-stat-val">9.2</div>
+                <div class="back-stat-lbl">Difesa</div>
+              </div>
+              <div class="back-stat-card">
+                <div class="back-stat-val">9.5</div>
+                <div class="back-stat-lbl">Centrocampo</div>
+              </div>
+              <div class="back-stat-card">
+                <div class="back-stat-val">9.4</div>
+                <div class="back-stat-lbl">Attacco</div>
+              </div>
+            </div>
+
+            <!-- Gerarchie Specialisti -->
+            <div class="pitch-back-section">
+              <div class="back-sec-title">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <circle cx="12" cy="12" r="10" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+                Specialisti & Rigori
+              </div>
+              <div class="back-sec-row">
+                <span>🎯 Rigoristi</span>
+                <span><strong>1° Çalhanoğlu</strong> · 2° Lautaro · 3° Zieliński</span>
+              </div>
+              <div class="back-sec-row">
+                <span>⚡ Punizioni / Corner</span>
+                <span><strong>Dimarco</strong> (sx) · <strong>Çalhanoğlu</strong> (dx)</span>
+              </div>
+            </div>
+
+            <!-- Note Tattiche & Ballottaggi -->
+            <div class="pitch-back-section">
+              <div class="back-sec-title">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M12 20h9" />
+                  <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+                </svg>
+                Assetto Tattico & Ballottaggi
+              </div>
+              <div class="back-sec-row" style="margin-bottom: 4px;">
+                <span>Modulo attivo: <strong id="backCurrentModule">3-5-2</strong></span>
+                <span>Solidità: <strong>5.0 / 5.0</strong></span>
+              </div>
+              <div class="back-pills-wrap">
+                <span class="back-mini-pill">Diouf (60%) vs Dumfries</span>
+                <span class="back-mini-pill">Jones (55%) vs Frattesi</span>
+                <span class="back-mini-pill">Akanji (65%) vs Pavard</span>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Barra Giocatore Attivo in Evidenza -->
+      <div class="selected-player-bar">
+        <div class="sel-left">
+          <div> <img id="barAvatar" class="sel-player-avatar" src="https://cdn.falsesoftware.com/players/333594/v1.webp"
+              alt="Avatar"
+              onerror="this.onerror=null; this.src='https://cdn.sportmonks.com/images/soccer/teams/18/2930.png';">
+          </div>
+          <div>
+            <div class="sel-name" id="barName">Lautaro Martínez</div>
+            <div class="sel-sub" id="barRole">2° Rigorista · 2° Punizioni</div>
+          </div>
+        </div>
+        <button type="button" class="sel-rating is-favorite" id="barRating" title="Rimuovi dai preferiti"
+          aria-label="Preferito">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polygon
+              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+            </polygon>
+          </svg>
         </button>
-        <div class="pitch-container" id="pitch-container">
-          <!-- Rendered by PitchComponent -->
-        </div>
-        <div class="pitch-container hidden" id="my-team-view-wrapper">
-          <!-- Rendered by MyTeamComponent -->
-        </div>
-        <div class="pitch-container hidden" id="league-view-wrapper">
-          <!-- Rendered by LeagueTeamsComponent -->
-        </div>
-      </main>
+      </div>
 
-      <!-- SEPARATORE DI RIDIMENSIONAMENTO SCHEDA GIOCATORE -->
-      <div class="sidebar-resizer" id="sidebar-inspector-resizer"
-        title="Trascina verso sinistra per allargare la scheda giocatore"></div>
+      <!-- Sezione Statistiche Rapide a 2 Pagine con Swipe e Indicatori (Pallini) -->
+      <div class="stats-carousel-wrap">
+        <div class="stats-carousel-track" id="statsTrack">
 
-      <!-- SIDEBAR DESTRA: ISPETTORE GIOCATORE, SOSTITUTI & PANCHINA -->
-      <aside class="app-sidebar-right" id="sidebar-inspector" aria-label="Scheda Giocatore e Panchina">
-        <!-- Rendered by PlayerInspectorComponent -->
-      </aside>
+          <!-- Pagina 1: Statistiche Principali -->
+          <div class="stats-page" data-page="0">
+            <div class="stat-card" data-stat-type="goals" title="Clicca per dettaglio Gol/assist">
+              <span class="stat-num" id="statGoals">2 G • 0 A</span>
+              <svg class="stat-arrow" viewBox="0 0 24 24" fill="none">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
+              </svg>
+              <p class="stat-desc" id="statGoalsDesc">26/27 attuale (3 pres.)<br><span class="stat-prev-val">25/26 scorsa: 17 G • 6 A</span></p>
+            </div>
+
+            <div class="stat-card" data-stat-type="fm" title="Clicca per dettaglio FantaMedia & Media Voto">
+              <span class="stat-num" id="statFm">8.00 FM • 6.33 MV</span>
+              <svg class="stat-arrow" viewBox="0 0 24 24" fill="none">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
+              </svg>
+              <p class="stat-desc" id="statFmDesc">26/27 attuale (3 pres.)<br><span class="stat-prev-val">25/26 scorsa: 8.25 FM • 6.42 MV</span></p>
+            </div>
+
+            <div class="stat-card" data-stat-type="credits" title="Clicca per dettaglio Crediti Consigliati Asta">
+              <span class="stat-num" id="statCredits">563 CR</span>
+              <svg class="stat-arrow" viewBox="0 0 24 24" fill="none">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
+              </svg>
+              <p class="stat-desc">crediti consigliati<br>su base 1000 all'asta</p>
+            </div>
+
+            <div class="stat-card" data-stat-type="tier" title="Clicca per dettaglio Status & Titolarità">
+              <span class="stat-num" id="statStarts">SUPER TOP</span>
+              <svg class="stat-arrow" viewBox="0 0 24 24" fill="none">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
+              </svg>
+              <p class="stat-desc" id="statStartsDesc">titolarità 5/5 e integrità 5/5</p>
+            </div>
+          </div>
+
+          <!-- Pagina 2: Statistiche Avanzate -->
+          <div class="stats-page" data-page="1">
+            <div class="stat-card" data-stat-type="ballot" title="Clicca per dettaglio Ballottaggi & Concorrenza">
+              <span class="stat-num" id="statBallot">Nessuno</span>
+              <svg class="stat-arrow" viewBox="0 0 24 24" fill="none">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
+              </svg>
+              <p class="stat-desc" id="statBallotDesc">titolare inamovibile<br>nessun ballottaggio</p>
+            </div>
+
+            <div class="stat-card" data-stat-type="metric" title="Clicca per dettaglio Metriche Avanzate">
+              <span class="stat-num" id="statMetric">17 / 6</span>
+              <svg class="stat-arrow" viewBox="0 0 24 24" fill="none">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
+              </svg>
+              <p class="stat-desc" id="statMetricDesc">Gol / Assist totali<br>incidenza fanta</p>
+            </div>
+
+            <div class="stat-card" data-stat-type="apps" title="Clicca per dettaglio Presenze & Minutaggio">
+              <span class="stat-num" id="statApps">30/38</span>
+              <svg class="stat-arrow" viewBox="0 0 24 24" fill="none">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
+              </svg>
+              <p class="stat-desc" id="statAppsDesc">partite a voto<br>28 da titolare</p>
+            </div>
+
+            <div class="stat-card" data-stat-type="fitness" title="Clicca per dettaglio Condizione Atletica">
+              <span class="stat-num" id="statFitness">95%</span>
+              <svg class="stat-arrow" viewBox="0 0 24 24" fill="none">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
+              </svg>
+              <p class="stat-desc">condizione atletica<br>integrità fisica e forma</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Indicatori di Pagina (Due Pallini per Swipe) -->
+        <div class="stats-dots-indicator" id="statsDots">
+          <button type="button" class="stats-dot active" data-page="0" aria-label="Pagina statistiche 1"></button>
+          <button type="button" class="stats-dot" data-page="1" aria-label="Pagina statistiche 2"></button>
+        </div>
+      </div>
+
+      </div><!-- /.tactical-main-column -->
+
+      <!-- Colonna Laterale: Roster Squadra & Filtri -->
+      <div class="tactical-side-column">
+        <div class="roster-section">
+        <!-- Toolbar di Ricerca & Pulsante Filtri (Moc) -->
+        <div class="roster-toolbar">
+          <div class="roster-search-bar">
+            <svg class="roster-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="rosterSearchInput" class="roster-search-input" placeholder="Cerca titolare, ruolo..."
+              autocomplete="off">
+            <button type="button" id="rosterSearchClear" class="roster-search-clear" aria-label="Cancella ricerca">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </button>
+          </div>
+
+          <button type="button" id="rosterFilterBtn" class="roster-filter-btn" aria-label="Filtri">
+            <svg class="roster-filter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+            </svg>
+            <span class="filter-btn-label">Filtri</span>
+            <span class="filter-active-dot" id="filterActiveDot"></span>
+          </button>
+        </div>
+
+        <!-- Pannello Filtri a Comparsa (MOC) -->
+        <div class="roster-filter-panel" id="rosterFilterPanel">
+          <div class="filter-panel-header">
+            <div class="filter-panel-title-group">
+              <span class="filter-panel-title">Filtri Rapidi</span>
+              <span class="filter-active-badge" id="filterActiveCount">Tutti</span>
+            </div>
+            <button type="button" class="filter-reset-link" id="filterResetBtn">Ripristina</button>
+          </div>
+
+          <!-- Filtro per Ruolo -->
+          <div class="filter-section-row">
+            <div class="filter-section-title">Ruolo</div>
+            <div class="filter-chips-grid" id="roleChipsContainer">
+              <button type="button" class="role-filter-chip active" data-role="ALL">Tutti</button>
+              <button type="button" class="role-filter-chip chip-p" data-role="P">P · Portieri</button>
+              <button type="button" class="role-filter-chip chip-d" data-role="D">D · Difensori</button>
+              <button type="button" class="role-filter-chip chip-c" data-role="C">C · Centrocampisti</button>
+              <button type="button" class="role-filter-chip chip-a" data-role="A">A · Attaccanti</button>
+            </div>
+          </div>
+
+          <!-- Filtro Ordinamento Rapido -->
+          <div class="filter-section-row">
+            <div class="filter-section-title">Ordina per</div>
+            <div class="filter-chips-grid" id="sortChipsContainer">
+              <button type="button" class="sort-filter-chip active" data-sort="default">Campo (3-5-2)</button>
+              <button type="button" class="sort-filter-chip" data-sort="rating">★ Rating</button>
+              <button type="button" class="sort-filter-chip" data-sort="fm">FantaMedia</button>
+              <button type="button" class="sort-filter-chip" data-sort="credits">Prezzo CR</button>
+            </div>
+          </div>
+
+          <!-- Pulsante Applica Filtri -->
+          <div class="filter-apply-wrapper">
+            <button type="button" class="filter-apply-btn" id="filterApplyBtn">
+              <span>Applica Filtri</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="roster-header">
+          <span class="roster-title">Titolari Inter • Chivu 3-5-2</span>
+          <span class="roster-count" id="rosterCount">11 Calciatori</span>
+        </div>
+
+        <!-- Stato Vuoto quando nessun filtro matcha -->
+        <div id="rosterEmptyState" class="roster-empty-state" style="display: none;">
+          Nessun calciatore trovato con questi criteri di ricerca.
+        </div>
+
+        <!-- Lista righe generate da JS -->
+        <div id="playersListContainer"></div>
+      </div><!-- /.roster-section -->
+    </div><!-- /.tactical-side-column -->
+
+      <!-- Container secondari per compatibilità viste MyTeam -->
+      <div class="pitch-container hidden" id="my-team-view-wrapper"></div>
+      <div class="pitch-container hidden" id="pitch-container"></div>
     </div>
 
     <!-- VISTA 2: LISTONE COMPLETO CALCIATORI SERIE A -->
@@ -213,10 +518,6 @@
           <i class="fa-solid fa-chalkboard-user"></i>
           <span class="nav-label">Lavagna</span>
         </button>
-        <button id="mobile-league-btn" class="nav-item" aria-label="FantaLega" title="FantaLega">
-          <i class="fa-solid fa-trophy"></i>
-          <span class="nav-label">Lega</span>
-        </button>
         <button id="mobile-injuries-btn" class="nav-item" aria-label="Infermeria" title="Infermeria">
           <i class="fa-solid fa-notes-medical"></i>
           <span class="nav-label">Infermeria</span>
@@ -241,6 +542,104 @@
   <!-- ==========================================================================
        FINESTRE MODALI
        ========================================================================== -->
+
+  <!-- Modale Dettaglio Statistiche con Dati di Backup (iOS Style Bottom Sheet Mobile / Modal Desktop) -->
+  <div class="stat-modal-backdrop" id="statModalBackdrop" aria-hidden="true">
+    <div class="stat-modal-sheet" id="statModalSheet" role="dialog" aria-modal="true"
+      aria-labelledby="statModalPlayerName">
+      <!-- Maniglia superiore per drag/swipe down -->
+      <div class="stat-modal-drag-handle"></div>
+
+      <!-- Header: Giocatore e tasto chiusura -->
+      <div class="stat-modal-header">
+        <div class="stat-modal-player-tag">
+          <img id="statModalAvatar" src="https://cdn.falsesoftware.com/players/333594/v1.webp" alt="Avatar Giocatore"
+            class="stat-modal-avatar"
+            onerror="this.onerror=null; this.src='https://cdn.sportmonks.com/images/soccer/teams/18/2930.png';">
+          <div class="stat-modal-player-meta">
+            <span id="statModalPlayerName" class="stat-modal-player-name">Lautaro Martínez</span>
+            <span id="statModalPlayerRole" class="stat-modal-player-role">Centravanti (Capitano) · #10 (A)</span>
+          </div>
+        </div>
+        <button type="button" class="stat-modal-close-btn" id="closeStatModalBtn"
+          aria-label="Chiudi dettaglio statistica">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Card Hero Statistica -->
+      <div class="stat-modal-hero">
+        <div class="stat-modal-badge" id="statModalCategory">RENDIMENTO OFFENSIVO</div>
+        <div class="stat-modal-hero-val-wrap">
+          <div class="stat-modal-hero-val" id="statModalHeroVal">17 Goal</div>
+          <div class="stat-modal-hero-sub" id="statModalHeroSub">6 Assist in Serie A 2026/27</div>
+        </div>
+      </div>
+
+      <!-- Griglia Dati di Backup / Approfondimenti -->
+      <div class="stat-modal-body" id="statModalBody">
+        <!-- Popolato dinamicamente da JS -->
+      </div>
+
+      <!-- Footer Modale con Indicazione Tattica -->
+      <div class="stat-modal-footer">
+        <div class="stat-modal-tip">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
+          <span id="statModalTipText">Dati statistici di backup aggiornati alla stagione in corso. Benchmark per asta
+            e fanta.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modale Selezione Squadre Serie A (Bottom Sheet Mobile / Modal Desktop) -->
+  <div class="stat-modal-backdrop team-modal-backdrop" id="teamModalBackdrop" aria-hidden="true">
+    <div class="stat-modal-sheet team-modal-sheet" id="teamModalSheet" role="dialog" aria-modal="true"
+      aria-labelledby="teamModalTitle">
+      <!-- Maniglia superiore per drag/swipe down su mobile -->
+      <div class="stat-modal-drag-handle"></div>
+
+      <!-- Header: Titolo e tasto chiusura -->
+      <div class="team-modal-header">
+        <div class="team-modal-title-wrap">
+          <span class="team-modal-badge">SERIE A ENILIVE 2026/27</span>
+          <h3 id="teamModalTitle" class="team-modal-title">Seleziona Squadra</h3>
+          <p class="team-modal-subtitle">20 Club · Scegli per visualizzare lavagna e rosa</p>
+        </div>
+        <button type="button" class="stat-modal-close-btn" id="closeTeamModalBtn"
+          aria-label="Chiudi selezione squadra">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Barra di ricerca rapida club -->
+      <div class="team-modal-search-box">
+        <svg class="team-modal-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="teamModalSearchInput" class="team-modal-search-input" placeholder="Cerca squadra o allenatore..." autocomplete="off" autocorrect="off" spellcheck="false">
+        <button type="button" id="teamModalClearSearchBtn" class="team-modal-clear-btn hidden" aria-label="Cancella ricerca">&times;</button>
+      </div>
+
+      <!-- Griglia Squadre -->
+      <div class="team-modal-grid" id="teamModalGrid">
+        <!-- Popolato dinamicamente da JS -->
+      </div>
+    </div>
+  </div>
 
   <!-- MODALE: STORICO VERSIONI & SNAPSHOT -->
   <div class="modal-backdrop hidden" id="history-modal">

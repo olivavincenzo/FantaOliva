@@ -62,13 +62,11 @@ export class InjuriesComponent {
                           store.getPlayer(item.displayName) || 
                           store.getAllPlayersFlat().find(p => p.name.toLowerCase() === item.name.toLowerCase());
       
-      const leagueOwner = storePlayer ? store.getPlayerLeagueOwner(storePlayer) : null;
-      const isInMyTeam = storePlayer ? (store.isPlayerInMyTeam(storePlayer.id) || (leagueOwner && leagueOwner.isMyTeam)) : false;
+      const isInMyTeam = storePlayer ? store.isPlayerInMyTeam(storePlayer.id) : false;
 
       return {
         ...item,
         storePlayer,
-        leagueOwner,
         isInMyTeam,
         role: storePlayer?.role || item.role || 'C',
         classicRole: storePlayer?.classicRole || item.classicRole || 'C',
@@ -357,7 +355,6 @@ export class InjuriesComponent {
             <div class="injury-player-name-row">
               <h3 class="injury-player-name">${sanitizeHtml(item.displayName || item.name)}</h3>
               <span class="role ${roleClass}" style="font-size: 9px; padding: 1px 5px;">${item.classicRole || item.role}</span>
-              ${item.leagueOwner ? `<span class="badge-league-owner" title="Acquistato da ${sanitizeHtml(item.leagueOwner.teamName)}"><i class="fa-solid fa-users"></i> <span class="league-owner-label-text">${sanitizeHtml(item.leagueOwner.teamName)}</span></span>` : ''}
             </div>
 
             <div class="injury-meta-row">

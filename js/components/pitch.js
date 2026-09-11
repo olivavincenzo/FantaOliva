@@ -12,6 +12,7 @@ import { notify } from '../utils/notifications.js';
 export class PitchComponent {
   constructor(container) {
     this.container = container;
+    if (!this.container) return;
     this.pitchEl = null;
     this.slotsLayer = null;
     this.linesSvgLayer = null;

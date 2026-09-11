@@ -86,12 +86,6 @@ export class PlayersListoneComponent {
       }
     });
 
-    store.subscribe('league:updated', () => {
-      if (store.activeView === 'listone') {
-        this.render();
-      }
-    });
-
     store.subscribe('player:selected', () => {
       if (store.activeView === 'listone') {
         this.updateSelectionHighlight();
@@ -127,19 +121,7 @@ export class PlayersListoneComponent {
 
     // Filtro La Mia Rosa
     if (this.onlyMyTeam) {
-      filtered = filtered.filter(p => store.isPlayerInMyTeam(p.id) || store.getPlayerLeagueOwner(p)?.isMyTeam);
-    }
-
-    // Filtro FantaLega (Svincolati o Squadra Specifica)
-    if (this.leagueFilter === 'FREE') {
-      filtered = filtered.filter(p => !store.isPlayerOwnedInLeague(p));
-    } else if (this.leagueFilter === 'MYTEAM') {
-      filtered = filtered.filter(p => store.isPlayerInMyTeam(p.id) || store.getPlayerLeagueOwner(p)?.isMyTeam);
-    } else if (this.leagueFilter && this.leagueFilter !== 'ALL') {
-      filtered = filtered.filter(p => {
-        const owner = store.getPlayerLeagueOwner(p);
-        return owner && owner.teamName.toUpperCase() === this.leagueFilter.toUpperCase();
-      });
+      filtered = filtered.filter(p => store.isPlayerInMyTeam(p.id));
     }
 
     // 4. Ricerca Testuale
@@ -331,7 +313,7 @@ export class PlayersListoneComponent {
           <!-- Singola icona filtri per modalità Mobile -->
           <button type="button" class="circle-button pitch-mobile-filter-btn" id="listone-open-filters-modal-btn" aria-label="Filtri" title="Filtri">
             <i class="fa-solid fa-sliders"></i>
-            <span class="filter-indicator-dot ${this.activeRole !== 'ALL' || this.selectedTeam !== 'ALL' || this.leagueFilter !== 'ALL' || this.availabilityFilter !== 'ALL' || this.onlyFavorites ? '' : 'hidden'}" id="listone-filter-active-dot"></span>
+            <span class="filter-indicator-dot ${this.activeRole !== 'ALL' || this.selectedTeam !== 'ALL' || this.availabilityFilter !== 'ALL' || this.onlyFavorites ? '' : 'hidden'}" id="listone-filter-active-dot"></span>
           </button>
         </div>
 
@@ -342,19 +324,6 @@ export class PlayersListoneComponent {
           <button class="filter ${this.activeRole === 'C' ? 'active' : ''}" data-role="C" type="button">CEN</button>
           <button class="filter ${this.activeRole === 'D' ? 'active' : ''}" data-role="D" type="button">DIF</button>
           <button class="filter ${this.activeRole === 'P' ? 'active' : ''}" data-role="P" type="button">POR</button>
-
-          <!-- Dropdown Squadre FantaLega & Svincolati -->
-          <div class="listone-select-pill-wrap" title="Filtra per Rosa FantaLega o Svincolati">
-            <select class="listone-league-select filter filter-select" id="listone-league-select" aria-label="Filtro FantaLega">
-              <option value="ALL" ${this.leagueFilter === 'ALL' ? 'selected' : ''}>🏆 Tutte le Rose Lega</option>
-              <option value="FREE" ${this.leagueFilter === 'FREE' ? 'selected' : ''}>🟢 Solo Svincolati / Liberi</option>
-              <option value="MYTEAM" ${this.leagueFilter === 'MYTEAM' ? 'selected' : ''}>⭐ Vincenzo (Mia Rosa)</option>
-              ${store.getLeagueTeams().filter(t => t.name.toUpperCase() !== 'VINCENZO').map(t => `
-                <option value="${t.name}" ${this.leagueFilter === t.name ? 'selected' : ''}>🛡️ ${t.name} (${t.roster?.length || 0})</option>
-              `).join('')}
-            </select>
-            <span class="select-arrow">▾</span>
-          </div>
 
           <!-- Dropdown Squadre Serie A -->
           <div class="listone-select-pill-wrap" title="Filtra per Club Serie A">
@@ -438,22 +407,6 @@ export class PlayersListoneComponent {
                   <button type="button" class="filter modal-listone-role-btn ${this.activeRole === 'C' ? 'active' : ''}" data-role="C">CEN</button>
                   <button type="button" class="filter modal-listone-role-btn ${this.activeRole === 'D' ? 'active' : ''}" data-role="D">DIF</button>
                   <button type="button" class="filter modal-listone-role-btn ${this.activeRole === 'P' ? 'active' : ''}" data-role="P">POR</button>
-                </div>
-              </div>
-
-              <!-- Sezione 2: FantaLega & Svincolati -->
-              <div>
-                <label style="font-size: 11px; font-weight: 750; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; display: block;">Stato FantaLega</label>
-                <div class="listone-select-pill-wrap" style="width: 100%;">
-                  <select class="filter filter-select" id="modal-listone-league-select" style="width: 100%;">
-                    <option value="ALL" ${this.leagueFilter === 'ALL' ? 'selected' : ''}>🏆 Tutte le Rose Lega</option>
-                    <option value="FREE" ${this.leagueFilter === 'FREE' ? 'selected' : ''}>🟢 Solo Svincolati / Liberi</option>
-                    <option value="MYTEAM" ${this.leagueFilter === 'MYTEAM' ? 'selected' : ''}>⭐ Vincenzo (Mia Rosa)</option>
-                    ${store.getLeagueTeams().filter(t => t.name.toUpperCase() !== 'VINCENZO').map(t => `
-                      <option value="${t.name}" ${this.leagueFilter === t.name ? 'selected' : ''}>🛡️ ${t.name} (${t.roster?.length || 0})</option>
-                    `).join('')}
-                  </select>
-                  <span class="select-arrow">▾</span>
                 </div>
               </div>
 
@@ -593,14 +546,6 @@ export class PlayersListoneComponent {
       });
     });
 
-    // Dropdown FantaLega nella Modale
-    const modalLeagueSelect = this.container.querySelector('#modal-listone-league-select');
-    modalLeagueSelect?.addEventListener('change', (e) => {
-      this.leagueFilter = e.target.value;
-      this.renderLimit = 40;
-      this.render();
-    });
-
     // Dropdown Club nella Modale
     const modalTeamSelect = this.container.querySelector('#modal-listone-team-select');
     modalTeamSelect?.addEventListener('change', (e) => {
@@ -664,14 +609,6 @@ export class PlayersListoneComponent {
     const teamSelect = this.container.querySelector('#listone-team-select');
     teamSelect?.addEventListener('change', (e) => {
       this.selectedTeam = e.target.value;
-      this.renderLimit = 40;
-      this.render();
-    });
-
-    // Filtro Dropdown FantaLega
-    const leagueSelect = this.container.querySelector('#listone-league-select');
-    leagueSelect?.addEventListener('change', (e) => {
-      this.leagueFilter = e.target.value;
       this.renderLimit = 40;
       this.render();
     });

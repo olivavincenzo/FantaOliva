@@ -1954,42 +1954,17 @@ class Store {
   }
 
   getPlayerLeagueOwner(playerOrId) {
-    if (!playerOrId) return null;
-    const pId = typeof playerOrId === 'object' ? (playerOrId.csvId || playerOrId.id) : playerOrId;
-    const pName = typeof playerOrId === 'object' ? (playerOrId.name || playerOrId.displayName || '') : String(playerOrId);
-    const pIdStr = String(pId || '').trim();
-    const pNameLower = String(pName || '').trim().toLowerCase();
-
-    for (const team of Object.values(this.leagueTeams || {})) {
-      const found = (team.roster || []).find(item => {
-        if (item.fantacalcioId && String(item.fantacalcioId) === pIdStr) return true;
-        if (item.name && item.name.toLowerCase() === pNameLower) return true;
-        return false;
-      });
-      if (found) {
-        return {
-          teamId: team.id,
-          teamName: team.name,
-          price: found.price,
-          qt: found.qt,
-          qtMantra: found.qtMantra,
-          mantraRole: found.mantraRole,
-          isMyTeam: team.name.toUpperCase() === 'VINCENZO'
-        };
-      }
-    }
     return null;
   }
 
   isPlayerOwnedInLeague(playerOrId) {
-    return Boolean(this.getPlayerLeagueOwner(playerOrId));
+    return false;
   }
 
   isPlayerAvailable(playerOrId) {
     if (!playerOrId) return false;
     const player = typeof playerOrId === 'object' ? playerOrId : this.getPlayer(playerOrId);
     if (!player) return false;
-    if (this.isPlayerOwnedInLeague(player)) return false;
     return player.isAvailable !== false;
   }
 

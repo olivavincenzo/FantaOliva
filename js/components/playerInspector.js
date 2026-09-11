@@ -13,10 +13,12 @@ import { renderBallottaggioSection } from './ballottaggioManager.js';
 import { TITOLARITA_LABELS, AFFIDABILITA_LABELS, INTEGRITA_LABELS } from '../data/playerIndices.js';
 import { sanitizeHtml, getTitolaritaClass, getPlayerInitials } from '../utils/helpers.js';
 import { notify } from '../utils/notifications.js';
+import { PLAYER_HISTORY_MAP } from '../data/playerHistoryData.js';
 
 export class PlayerInspectorComponent {
   constructor(container) {
     this.container = container;
+    if (!this.container) return;
     this.activeTab = 'tab-details'; // 'tab-details' | 'tab-subs'
     this.isEditingTier = false;
     this.isEditingIndices = false;
@@ -180,7 +182,7 @@ export class PlayerInspectorComponent {
           </button>
         </div>
         <div class="status-line ${isAvailable ? 'available' : 'taken'}" id="toggle-player-auction-btn" style="cursor: pointer;" title="Clicca per cambiare disponibilità all'asta">
-          <div><span class="status-dot"></span>${isAvailable ? "Disponibile all'asta" : (leagueOwner ? `Preso da ${sanitizeHtml(leagueOwner.teamName)} (${leagueOwner.price} cr)` : "Già preso / Non disponibile")}</div>
+          <div><span class="status-dot"></span>${isAvailable ? "Disponibile all'asta" : "Già preso / Non disponibile"}</div>
           <span style="font-size: 9px; opacity: 0.6; margin-left: auto;">Cambia ⇄</span>
         </div>
       </section>
@@ -275,6 +277,25 @@ export class PlayerInspectorComponent {
       const gol = player.stats?.gol ?? player.stats?.gf ?? player.gol ?? 0;
       const assist = player.stats?.assist ?? player.stats?.ass ?? player.assist ?? 0;
 
+      // Recupera storico stagioni 26/27 (attuale) e 25/26 (scorsa)
+      const histEntry = (player.fantalabId && PLAYER_HISTORY_MAP?.[player.fantalabId]) ||
+                        (player.id && PLAYER_HISTORY_MAP?.[player.id]) ||
+                        (PLAYER_HISTORY_MAP && Object.values(PLAYER_HISTORY_MAP).find(x => x.name && (x.name.toLowerCase() === (player.name || '').toLowerCase() || x.name.toLowerCase() === (player.displayName || '').toLowerCase()))) || null;
+      const s26 = histEntry?.seasons?.s_26_27;
+      const s25 = histEntry?.seasons?.s_25_26;
+
+      const fm26 = typeof s26?.fmv === 'number' ? s26.fmv.toFixed(2) : null;
+      const mv26 = typeof s26?.mv === 'number' ? s26.mv.toFixed(2) : null;
+      const apps26 = s26?.presenze ?? null;
+      const g26 = s26?.gf ?? null;
+      const a26 = s26?.assist ?? null;
+
+      const fm25 = typeof s25?.fmv === 'number' ? s25.fmv.toFixed(2) : fmtFm;
+      const mv25 = typeof s25?.mv === 'number' ? s25.mv.toFixed(2) : fmtMv;
+      const apps25 = s25?.presenze ?? presenze;
+      const g25 = s25?.gf ?? gol;
+      const a25 = s25?.assist ?? assist;
+
       // Strategia e Ruolo
       const activeStrategy = store.getActiveStrategy();
       const roleKey = store.getRoleCategory(player);
@@ -293,49 +314,32 @@ export class PlayerInspectorComponent {
         : (sosComment || '');
       const notes = player.notes || player.comment || player.positionNotes || fantaComment || '';
 
-      const leagueOwner = store.getPlayerLeagueOwner(player);
-      const isInMyTeam = store.isPlayerInMyTeam(player.id) || (leagueOwner && leagueOwner.isMyTeam);
+      const isInMyTeam = store.isPlayerInMyTeam(player.id);
       const myTeamInfo = isInMyTeam ? store.getMyTeamPlayerInfo(player.id) : null;
-      const isOtherLeagueOwner = Boolean(leagueOwner && !leagueOwner.isMyTeam);
 
     container.innerHTML = `
-      <!-- SEZIONE LA MIA ROSA / GESTIONE ASTA PERSONALE & FANTALEGA -->
+      <!-- SEZIONE LA MIA ROSA / GESTIONE ASTA PERSONALE -->
       <section class="detail-section">
-        ${isOtherLeagueOwner ? `
-          <div class="my-team-inspector-card" style="border-left: 3px solid #6366f1;">
-            <div class="my-team-inspector-row">
-              <span class="badge-league-owner" style="font-size: 9px; padding: 2px 7px;"><i class="fa-solid fa-users"></i> ACQUISTATO DA ${sanitizeHtml(leagueOwner.teamName)}</span>
-              <span style="font-size: 0.74rem; font-weight: 750; color: #4f46e5;">FantaLega</span>
-            </div>
-            <div class="my-team-inspector-row" style="margin-top: 6px;">
-              <div style="display: flex; align-items: baseline; gap: 8px;">
-                <span style="font-size: 0.76rem; color: var(--muted); font-weight: 600;">Prezzo pagato all'asta:</span>
-                <strong style="font-size: 0.95rem; color: #ea580c; font-weight: 800;">${leagueOwner.price} cr</strong>
-              </div>
-              <span style="font-size: 0.72rem; color: var(--muted);">QtA: ${leagueOwner.qt || '-'}</span>
-            </div>
+        <div class="my-team-inspector-card">
+          <div class="my-team-inspector-row">
+            ${isInMyTeam ? `
+              <span class="badge-league-owner"><i class="fa-solid fa-shield-halved"></i> IN ROSA</span>
+              <span style="font-size: 0.74rem; font-weight: 750; color: ${myTeamInfo?.isStarter ? '#16a34a' : 'var(--muted)'};">
+                ${myTeamInfo?.isStarter ? '🟢 Titolare' : '⚪ In Panchina'}
+              </span>
+            ` : `
+              <span style="font-size: 0.78rem; font-weight: 750; color: var(--muted);"><i class="fa-solid fa-shield-halved"></i> Rosa</span>
+              <span style="font-size: 0.72rem; color: var(--muted);">🟢 Svincolato / Libero</span>
+            `}
           </div>
-        ` : `
-          <div class="my-team-inspector-card">
-            <div class="my-team-inspector-row">
-              ${isInMyTeam ? `
-                <span class="badge-league-owner"><i class="fa-solid fa-shield-halved"></i> IN ROSA</span>
-                <span style="font-size: 0.74rem; font-weight: 750; color: ${myTeamInfo?.isStarter ? '#16a34a' : 'var(--muted)'};">
-                  ${myTeamInfo?.isStarter ? '🟢 Titolare' : '⚪ In Panchina'}
-                </span>
-              ` : `
-                <span style="font-size: 0.78rem; font-weight: 750; color: var(--muted);"><i class="fa-solid fa-shield-halved"></i> Rosa</span>
-                <span style="font-size: 0.72rem; color: var(--muted);">🟢 Svincolato / Libero</span>
-              `}
-            </div>
 
-            <div class="my-team-inspector-row" style="margin-top: 4px;">
-              ${isInMyTeam ? `
-                <div style="display: flex; align-items: center; gap: 5px;">
-                  <span style="font-size: 0.72rem; color: var(--muted); font-weight: 600;">Prezzo pagato:</span>
-                  <input type="number" id="myteam-player-price-input" class="my-team-price-input" min="0" value="${myTeamInfo?.purchasePrice || (leagueOwner?.price || 0)}" title="Modifica crediti spesi per l'acquisto" />
-                  <span style="font-size: 0.74rem; font-weight: 750; color: var(--ink);">cr</span>
-                </div>
+          <div class="my-team-inspector-row" style="margin-top: 4px;">
+            ${isInMyTeam ? `
+              <div style="display: flex; align-items: center; gap: 5px;">
+                <span style="font-size: 0.72rem; color: var(--muted); font-weight: 600;">Prezzo pagato:</span>
+                <input type="number" id="myteam-player-price-input" class="my-team-price-input" min="0" value="${myTeamInfo?.purchasePrice || 0}" title="Modifica crediti spesi per l'acquisto" />
+                <span style="font-size: 0.74rem; font-weight: 750; color: var(--ink);">cr</span>
+              </div>
                 <div style="display: flex; align-items: center; gap: 5px;">
                   <button type="button" class="fanta-btn secondary-btn" id="myteam-toggle-starter-btn" style="padding: 3px 8px; font-size: 0.72rem;" title="Sposta tra titolari e panchina">
                     ${myTeamInfo?.isStarter ? 'In Panchina' : 'Titolare'}
@@ -356,7 +360,6 @@ export class PlayerInspectorComponent {
               `}
             </div>
           </div>
-        `}
       </section>
 
       <!-- SEZIONE STRATEGIA & FASCIA CUSTOM -->
@@ -529,12 +532,12 @@ export class PlayerInspectorComponent {
 
       <!-- SEZIONE RENDIMENTO STAGIONE CON SPECIALISTI INTEGRATI -->
       <section class="detail-section">
-        <h2>Rendimento stagione</h2>
+        <h2>Rendimento stagione (26/27 vs 25/26)</h2>
         <div class="info-card">
-          <div class="info-row"><span>Fantamedia</span><strong>${fmtFm}</strong></div>
-          <div class="info-row"><span>Media voto</span><strong>${fmtMv}</strong></div>
-          <div class="info-row"><span>Presenze</span><strong>${presenze}</strong></div>
-          <div class="info-row"><span>Gol / Assist</span><strong>${gol} / ${assist}</strong></div>
+          <div class="info-row"><span>Fantamedia</span><strong>${fm26 ? `${fm26} FM <span style="font-size:11px;font-weight:600;color:var(--text-muted);">(25/26: ${fm25})</span>` : `${fmtFm} FM`}</strong></div>
+          <div class="info-row"><span>Media voto</span><strong>${mv26 ? `${mv26} MV <span style="font-size:11px;font-weight:600;color:var(--text-muted);">(25/26: ${mv25})</span>` : `${fmtMv} MV`}</strong></div>
+          <div class="info-row"><span>Presenze</span><strong>${apps26 !== null ? `${apps26} <span style="font-size:11px;font-weight:600;color:var(--text-muted);">(25/26: ${apps25})</span>` : presenze}</strong></div>
+          <div class="info-row"><span>Gol / Assist</span><strong>${g26 !== null ? `${g26} G • ${a26} A <span style="font-size:11px;font-weight:600;color:var(--text-muted);">(25/26: ${g25} G • ${a25} A)</span>` : `${gol} / ${assist}`}</strong></div>
           <div class="info-row info-row-piazzati">
             <span>Calci piazzati</span>
             <div class="specialists-checkbox-row inline-specialists">

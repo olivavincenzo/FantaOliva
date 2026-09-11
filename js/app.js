@@ -11,7 +11,6 @@ import { PlayerInspectorComponent } from './components/playerInspector.js';
 import { PlayersListoneComponent } from './components/playersListone.js';
 import { StrategyManagerComponent } from './components/strategyManager.js';
 import { MyTeamComponent } from './components/myTeam.js';
-import { LeagueTeamsComponent } from './components/leagueTeams.js';
 import { InjuriesComponent } from './components/injuries.js';
 import { TradesComponent } from './components/trades.js';
 import { initHistoryModal } from './components/historyManager.js';
@@ -19,15 +18,16 @@ import { initExportModal } from './components/exporter.js';
 import { initSyncModal } from './components/syncManager.js';
 import { initSidebarResizer } from './utils/resizer.js';
 import { notify } from './utils/notifications.js';
+import { TacticalMockV2Component } from './components/tacticalMockV2.js';
 
 class App {
   constructor() {
+    this.tacticalMock = null;
     this.teamSelector = null;
     this.pitch = null;
     this.inspector = null;
     this.listone = null;
     this.myTeam = null;
-    this.leagueTeams = null;
     this.injuries = null;
     this.trades = null;
     this.strategyManager = null;
@@ -52,13 +52,21 @@ class App {
 
     // 3. Montaggio Componenti Principali in blocchi isolati
     try {
+      this.tacticalMock = new TacticalMockV2Component(document.querySelector('#tactical-view-wrapper'));
+    } catch (err) {
+      console.error('Errore inizializzazione TacticalMockV2Component:', err);
+    }
+
+    try {
       this.teamSelector = new TeamSelectorComponent(document.querySelector('#sidebar-teams'));
     } catch (err) {
       console.error('Errore inizializzazione TeamSelectorComponent:', err);
     }
 
     try {
-      this.pitch = new PitchComponent(document.querySelector('#pitch-container'));
+      if (!document.querySelector('.tactical-main-column')) {
+        this.pitch = new PitchComponent(document.querySelector('#pitch-container'));
+      }
     } catch (err) {
       console.error('Errore inizializzazione PitchComponent:', err);
     }
@@ -81,13 +89,6 @@ class App {
       this.myTeam.init();
     } catch (err) {
       console.error('Errore inizializzazione MyTeamComponent:', err);
-    }
-
-    try {
-      this.leagueTeams = new LeagueTeamsComponent('league-view-wrapper');
-      this.leagueTeams.init();
-    } catch (err) {
-      console.error('Errore inizializzazione LeagueTeamsComponent:', err);
     }
 
     try {
@@ -126,14 +127,12 @@ class App {
     store.setView(viewName);
     const tacticalTab = document.querySelector('#view-tab-tactical');
     const myteamTab = document.querySelector('#view-tab-myteam');
-    const leagueTab = document.querySelector('#view-tab-league');
     const injuriesTab = document.querySelector('#view-tab-injuries');
     const tradesTab = document.querySelector('#view-tab-trades');
     const listoneTab = document.querySelector('#view-tab-listone');
 
     const tacticalView = document.querySelector('#tactical-view-wrapper');
     const myteamView = document.querySelector('#my-team-view-wrapper');
-    const leagueView = document.querySelector('#league-view-wrapper');
     const injuriesView = document.querySelector('#injuries-view-wrapper');
     const tradesView = document.querySelector('#trades-view-wrapper');
     const listoneView = document.querySelector('#listone-view-wrapper');
@@ -143,14 +142,13 @@ class App {
 
     const mobileFieldBtn = document.querySelector('#mobile-field-btn');
     const mobileMyTeamBtn = document.querySelector('#mobile-myteam-btn');
-    const mobileLeagueBtn = document.querySelector('#mobile-league-btn');
     const mobileInjuriesBtn = document.querySelector('#mobile-injuries-btn');
     const mobileTradesBtn = document.querySelector('#mobile-trades-btn');
     const mobileListoneBtn = document.querySelector('#mobile-listone-btn');
 
     // Reset All Active classes
-    [tacticalTab, myteamTab, leagueTab, injuriesTab, tradesTab, listoneTab].forEach(t => t?.classList.remove('is-active'));
-    [mobileFieldBtn, mobileMyTeamBtn, mobileLeagueBtn, mobileInjuriesBtn, mobileTradesBtn, mobileListoneBtn].forEach(b => b?.classList.remove('active'));
+    [tacticalTab, myteamTab, injuriesTab, tradesTab, listoneTab].forEach(t => t?.classList.remove('is-active'));
+    [mobileFieldBtn, mobileMyTeamBtn, mobileInjuriesBtn, mobileTradesBtn, mobileListoneBtn].forEach(b => b?.classList.remove('active'));
 
     document.body.classList.remove('view-myteam-mode');
 
@@ -159,7 +157,6 @@ class App {
       tacticalView?.classList.remove('hidden');
       pitchContainer?.classList.remove('hidden');
       myteamView?.classList.add('hidden');
-      leagueView?.classList.add('hidden');
       injuriesView?.classList.add('hidden');
       tradesView?.classList.add('hidden');
       listoneView?.classList.add('hidden');
@@ -171,7 +168,6 @@ class App {
       tacticalView?.classList.remove('hidden');
       pitchContainer?.classList.add('hidden');
       myteamView?.classList.remove('hidden');
-      leagueView?.classList.add('hidden');
       injuriesView?.classList.add('hidden');
       tradesView?.classList.add('hidden');
       listoneView?.classList.add('hidden');
@@ -180,26 +176,11 @@ class App {
       activeTeam?.classList.add('hidden');
       document.body.classList.add('view-myteam-mode');
       this.myTeam?.render();
-    } else if (viewName === 'league') {
-      leagueTab?.classList.add('is-active');
-      tacticalView?.classList.remove('hidden');
-      pitchContainer?.classList.add('hidden');
-      myteamView?.classList.add('hidden');
-      leagueView?.classList.remove('hidden');
-      injuriesView?.classList.add('hidden');
-      tradesView?.classList.add('hidden');
-      listoneView?.classList.add('hidden');
-      tacticalToolbar?.classList.add('hidden');
-      mobileLeagueBtn?.classList.add('active');
-      activeTeam?.classList.add('hidden');
-      this.teamSelector?.render();
-      this.leagueTeams?.render();
     } else if (viewName === 'injuries') {
       injuriesTab?.classList.add('is-active');
       tacticalView?.classList.add('hidden');
       pitchContainer?.classList.add('hidden');
       myteamView?.classList.add('hidden');
-      leagueView?.classList.add('hidden');
       injuriesView?.classList.remove('hidden');
       tradesView?.classList.add('hidden');
       listoneView?.classList.add('hidden');
@@ -212,7 +193,6 @@ class App {
       tacticalView?.classList.add('hidden');
       pitchContainer?.classList.add('hidden');
       myteamView?.classList.add('hidden');
-      leagueView?.classList.add('hidden');
       injuriesView?.classList.add('hidden');
       tradesView?.classList.remove('hidden');
       listoneView?.classList.add('hidden');
@@ -225,7 +205,6 @@ class App {
       tacticalView?.classList.add('hidden');
       pitchContainer?.classList.add('hidden');
       myteamView?.classList.add('hidden');
-      leagueView?.classList.add('hidden');
       injuriesView?.classList.add('hidden');
       tradesView?.classList.add('hidden');
       listoneView?.classList.remove('hidden');
@@ -239,28 +218,24 @@ class App {
   bindViewSwitcher() {
     const tacticalTab = document.querySelector('#view-tab-tactical');
     const myteamTab = document.querySelector('#view-tab-myteam');
-    const leagueTab = document.querySelector('#view-tab-league');
     const injuriesTab = document.querySelector('#view-tab-injuries');
     const tradesTab = document.querySelector('#view-tab-trades');
     const listoneTab = document.querySelector('#view-tab-listone');
 
     const mobileFieldBtn = document.querySelector('#mobile-field-btn');
     const mobileMyTeamBtn = document.querySelector('#mobile-myteam-btn');
-    const mobileLeagueBtn = document.querySelector('#mobile-league-btn');
     const mobileInjuriesBtn = document.querySelector('#mobile-injuries-btn');
     const mobileTradesBtn = document.querySelector('#mobile-trades-btn');
     const mobileListoneBtn = document.querySelector('#mobile-listone-btn');
 
     tacticalTab?.addEventListener('click', () => this.switchView('tactical'));
     myteamTab?.addEventListener('click', () => this.switchView('myteam'));
-    leagueTab?.addEventListener('click', () => this.switchView('league'));
     injuriesTab?.addEventListener('click', () => this.switchView('injuries'));
     tradesTab?.addEventListener('click', () => this.switchView('trades'));
     listoneTab?.addEventListener('click', () => this.switchView('listone'));
 
     mobileFieldBtn?.addEventListener('click', () => this.switchView('tactical'));
     mobileMyTeamBtn?.addEventListener('click', () => this.switchView('myteam'));
-    mobileLeagueBtn?.addEventListener('click', () => this.switchView('league'));
     mobileInjuriesBtn?.addEventListener('click', () => this.switchView('injuries'));
     mobileTradesBtn?.addEventListener('click', () => this.switchView('trades'));
     mobileListoneBtn?.addEventListener('click', () => this.switchView('listone'));
@@ -467,7 +442,7 @@ class App {
 
     // Apertura Drawer Squadre da pulsanti dedicati (Event Delegation)
     document.addEventListener('click', (e) => {
-      const teamsBtn = e.target.closest('#pitch-hud-teams-btn') || e.target.closest('#list-teams-btn') || e.target.closest('#mobile-open-teams-btn') || e.target.closest('#league-hud-teams-btn');
+      const teamsBtn = e.target.closest('#pitch-hud-teams-btn') || e.target.closest('#list-teams-btn') || e.target.closest('#mobile-open-teams-btn');
       if (teamsBtn) {
         e.stopPropagation();
         if (sidebarTeams?.classList.contains('mobile-open')) {
@@ -478,7 +453,7 @@ class App {
         return;
       }
 
-      const inspectorBtn = e.target.closest('#league-toggle-inspector-btn') || e.target.closest('#pitch-hud-inspector-btn') || e.target.closest('#myteam-toggle-inspector-btn');
+      const inspectorBtn = e.target.closest('#pitch-hud-inspector-btn') || e.target.closest('#myteam-toggle-inspector-btn');
       if (inspectorBtn) {
         e.stopPropagation();
         if (sidebarInspector?.classList.contains('mobile-open')) {
@@ -502,9 +477,7 @@ class App {
       // Quando si seleziona una squadra dal drawer su mobile, passa alla vista Campo e chiudi il drawer
       if (e.target.closest('.team') || e.target.closest('.team-list-item')) {
         if (window.innerWidth <= 900) {
-          if (store.activeView !== 'league') {
-            this.switchView('tactical');
-          }
+          this.switchView('tactical');
           closeDrawers();
           return;
         }

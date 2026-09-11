@@ -5,6 +5,8 @@
 import { ROLES, PLAYER_STATUSES } from '../data/roles.js';
 import { store } from '../store.js';
 import { sanitizeHtml, getTitolaritaClass } from '../utils/helpers.js';
+import { PLAYER_HISTORY_MAP } from '../data/playerHistoryData.js';
+import { notify } from '../utils/notifications.js';
 
 function getPlayerInitials(name) {
   if (!name) return '??';
@@ -251,11 +253,24 @@ export function createPlayerCard(player, options = {}) {
 
   const displayName = player.displayName || player.name || 'Giocatore';
   const initials = getPlayerInitials(player.name || displayName);
-  const fmVal = player.stats?.fantamedia ?? player.fantamedia ?? '-';
-  const mvVal = player.stats?.mediaVoto ?? '-';
-  const presenze = player.stats?.presenze ?? 0;
-  const gol = player.stats?.gol ?? 0;
-  const assist = player.stats?.assist ?? 0;
+
+  // Recupera dati storici 26/27 e 25/26
+  const hist = (player.fantalabId && PLAYER_HISTORY_MAP?.[player.fantalabId]) ||
+               (player.id && PLAYER_HISTORY_MAP?.[player.id]) ||
+               (PLAYER_HISTORY_MAP && Object.values(PLAYER_HISTORY_MAP).find(x => x.name && (x.name.toLowerCase() === (player.name || '').toLowerCase() || x.name.toLowerCase() === (player.displayName || '').toLowerCase()))) || null;
+  const s26 = hist?.seasons?.s_26_27;
+  const s25 = hist?.seasons?.s_25_26;
+
+  const fm26 = typeof s26?.fmv === 'number' ? s26.fmv.toFixed(2) : null;
+  const mv26 = typeof s26?.mv === 'number' ? s26.mv.toFixed(2) : null;
+  const fm25 = typeof s25?.fmv === 'number' ? s25.fmv.toFixed(2) : (player.stats?.fantamedia ?? player.fantamedia);
+  const mv25 = typeof s25?.mv === 'number' ? s25.mv.toFixed(2) : (player.stats?.mediaVoto ?? '-');
+
+  const fmVal = fm26 || fm25 || '-';
+  const mvVal = mv26 || mv25 || '-';
+  const presenze = (s26?.presenze !== undefined) ? s26.presenze : (player.stats?.presenze ?? 0);
+  const gol = (s26?.gf !== undefined) ? s26.gf : (player.stats?.gol ?? 0);
+  const assist = (s26?.assist !== undefined) ? s26.assist : (player.stats?.assist ?? 0);
   const titolarita = player.stats?.titolarita ?? player.titolaritaPerc;
   const titClass = getTitolaritaClass(titolarita ?? 50);
 
@@ -339,10 +354,9 @@ export function createPlayerCard(player, options = {}) {
     </div>
   `;
 
-  const leagueOwner = store.getPlayerLeagueOwner(player);
-  const isInMyTeam = store.isPlayerInMyTeam(player.id) || (leagueOwner && leagueOwner.isMyTeam);
+  const isInMyTeam = store.isPlayerInMyTeam(player.id);
   const myTeamInfo = isInMyTeam ? store.getMyTeamPlayerInfo(player.id) : null;
-  const effectiveAvailable = (leagueOwner ? false : isAvailable);
+  const effectiveAvailable = isAvailable;
   const injury = store.getPlayerInjury ? store.getPlayerInjury(player) : null;
   const isInjured = injury && (injury.isInjured || injury.isDoubtful || injury.status === 'injured');
   const injuryBtnHtml = isInjured ? `
@@ -400,7 +414,7 @@ export function createPlayerCard(player, options = {}) {
           <button class="card-fav-btn ${isFavorite ? 'is-fav' : ''}" type="button" title="${isFavorite ? 'Rimuovi dai Preferiti' : 'Aggiungi ai Preferiti'}" aria-label="Preferito">
             <i class="fa-${isFavorite ? 'solid' : 'regular'} fa-star"></i>
           </button>
-          <button class="availability ${effectiveAvailable ? 'available' : 'taken'}" type="button" title="Stato Asta: ${effectiveAvailable ? 'Disponibile (clicca per segnare PRESO)' : (leagueOwner ? `PRESO da ${leagueOwner.teamName} (${leagueOwner.price} cr)` : 'PRESO (clicca per segnare DISPONIBILE)')}" aria-label="Cambia stato asta">
+          <button class="availability ${effectiveAvailable ? 'available' : 'taken'}" type="button" title="Stato Asta: ${effectiveAvailable ? 'Disponibile (clicca per segnare PRESO)' : 'PRESO (clicca per segnare DISPONIBILE)'}" aria-label="Cambia stato asta">
             <svg viewBox="0 0 24 24">
               ${effectiveAvailable
         ? '<path d="m5 12 4 4L19 6" />'
@@ -415,11 +429,11 @@ export function createPlayerCard(player, options = {}) {
   // Metriche Core: Titolarità, Affidabilità, Integrità, Crediti Consigliati, Ruolo e Statistiche Stagionali
   const seasonHtml = `
     <div class="season">
-      <span class="stat-item stat-fm" title="Fantamedia Stagionale"><span class="stat-lbl">FM</span><strong class="stat-val">${fmVal}</strong></span>
-      <span class="stat-item stat-mv" title="Media Voto"><span class="stat-lbl">MV</span><strong class="stat-val">${mvVal}</strong></span>
-      <span class="stat-item stat-pg" title="Partite Giocate / Presenze"><span class="stat-lbl">PG</span><strong class="stat-val">${presenze}</strong></span>
-      <span class="stat-item stat-g" title="Gol Segnati"><span class="stat-lbl">G</span><strong class="stat-val">${gol}</strong></span>
-      <span class="stat-item stat-a" title="Assist Realizzati"><span class="stat-lbl">A</span><strong class="stat-val">${assist}</strong></span>
+      <span class="stat-item stat-fm" title="FM 26/27: ${fm26 || 'S.V.'} (25/26: ${fm25 || '-'})"><span class="stat-lbl">FM</span><strong class="stat-val">${fmVal}</strong></span>
+      <span class="stat-item stat-mv" title="MV 26/27: ${mv26 || 'S.V.'} (25/26: ${mv25 || '-'})"><span class="stat-lbl">MV</span><strong class="stat-val">${mvVal}</strong></span>
+      <span class="stat-item stat-pg" title="Presenze 26/27: ${s26?.presenze ?? 0} (25/26: ${s25?.presenze ?? presenze})"><span class="stat-lbl">PG</span><strong class="stat-val">${presenze}</strong></span>
+      <span class="stat-item stat-g" title="Gol 26/27: ${s26?.gf ?? 0} (25/26: ${s25?.gf ?? gol})"><span class="stat-lbl">G</span><strong class="stat-val">${gol}</strong></span>
+      <span class="stat-item stat-a" title="Assist 26/27: ${s26?.assist ?? 0} (25/26: ${s25?.assist ?? assist})"><span class="stat-lbl">A</span><strong class="stat-val">${assist}</strong></span>
     </div>
   `;
 
@@ -565,41 +579,39 @@ export function createPlayerCard(player, options = {}) {
   }, { passive: true });
 
   const navigateToPlayerTactical = () => {
-    const targetTeamId = player.teamId || (player.teamName ? store.teams.find(t => t.name.toLowerCase() === player.teamName.toLowerCase())?.id : null);
+    // 1. Chiudi eventuali drawer/backdrop mobile aperti prima di navigare
+    const sidebarInspector = document.querySelector('#sidebar-inspector');
+    const sidebarTeams = document.querySelector('#sidebar-teams');
+    const backdrop = document.querySelector('#mobile-drawer-backdrop');
+    sidebarInspector?.classList.remove('mobile-open');
+    sidebarTeams?.classList.remove('mobile-open');
+    backdrop?.classList.add('hidden');
 
-    // 1. Commuta la vista alla Lavagna Tattica
+    // 2. Commuta la vista alla Lavagna Tattica
     if (window.app?.switchView) {
       window.app.switchView('tactical');
     } else {
       store.setView('tactical');
     }
 
-    // 2. Seleziona la squadra del giocatore impostando contestualmente il giocatore come selezionato
-    if (targetTeamId) {
-      store.setTeam(targetTeamId, player.id, slotId);
+    // 3. Usa focusPlayer del TacticalMockV2 per selezionare squadra + giocatore + scroll
+    if (window.app?.tacticalMock?.focusPlayer) {
+      setTimeout(() => {
+        window.app.tacticalMock.focusPlayer(player);
+      }, 60);
     } else {
-      store.selectPlayer(player.id, slotId);
+      // Fallback: imposta squadra e giocatore nello store
+      const targetTeamId = player.teamId || (player.teamName ? store.teams.find(t => t.name.toLowerCase() === player.teamName.toLowerCase())?.id : null);
+      if (targetTeamId) {
+        store.setTeam(targetTeamId, player.id, slotId);
+      } else {
+        store.selectPlayer(player.id, slotId);
+      }
     }
-
-    // 3. Scrolla direttamente alla player card del giocatore nella lista della lavagna
-    setTimeout(() => {
-      window.app?.pitch?.scrollToSelectedPlayer(true);
-    }, 80);
 
     // 4. Desktop: apri sidebar destra se collassata
     if (document.body.classList.contains('right-sidebar-collapsed')) {
       document.body.classList.remove('right-sidebar-collapsed');
-    }
-
-    // 5. Mobile: apri drawer sidebar destra
-    const sidebarInspector = document.querySelector('#sidebar-inspector');
-    const sidebarTeams = document.querySelector('#sidebar-teams');
-    const backdrop = document.querySelector('#mobile-drawer-backdrop');
-
-    if (window.innerWidth <= 900) {
-      sidebarInspector?.classList.add('mobile-open');
-      sidebarTeams?.classList.remove('mobile-open');
-      backdrop?.classList.remove('hidden');
     }
   };
 
@@ -629,16 +641,12 @@ export function createPlayerCard(player, options = {}) {
     }
   };
 
-  // 1. Native dblclick per mouse -> Su mobile apre scheda giocatore, su desktop naviga alla lavagna
+  // 1. Native dblclick per mouse -> Naviga alla lavagna su TUTTE le dimensioni schermo
   card.addEventListener('dblclick', (e) => {
     if (e.target.closest('.availability') || e.target.closest('.card-fav-btn') || e.target.closest('.card-injury-badge-btn')) return;
     e.stopPropagation();
     e.preventDefault();
-    if (window.innerWidth <= 900) {
-      selectPlayerAndOpenInspector();
-    } else {
-      navigateToPlayerTactical();
-    }
+    navigateToPlayerTactical();
   });
 
   // 2. Click / Touch handler (mobile: 1 click seleziona, 2 click apre scheda; desktop: 1 click seleziona+ispettore, 2 click naviga lavagna)
@@ -654,14 +662,9 @@ export function createPlayerCard(player, options = {}) {
     const now = Date.now();
 
     if (now - lastTapTime < 350) {
-      // Doppio click / doppio tocco
+      // Doppio click / doppio tocco -> Naviga alla lavagna su TUTTE le dimensioni schermo
       lastTapTime = 0;
-      if (isMobile) {
-        // In modalità mobile (sia vista lista che vista campo): apre la scheda giocatore (drawer ispezione)
-        selectPlayerAndOpenInspector();
-      } else {
-        navigateToPlayerTactical();
-      }
+      navigateToPlayerTactical();
     } else {
       // Singolo click
       lastTapTime = now;
@@ -705,7 +708,10 @@ export function createPlayerCard(player, options = {}) {
   const astaToggleBtn = card.querySelector('.availability');
   astaToggleBtn?.addEventListener('click', (e) => {
     e.stopPropagation();
-    store.togglePlayerAvailability(player.id);
+    const newState = store.togglePlayerAvailability(player.id);
+    if (typeof notify !== 'undefined' && notify?.info) {
+      notify.info(newState ? `${player.displayName || player.name} segnato come DISPONIBILE all'asta` : `${player.displayName || player.name} segnato come PRESO all'asta`);
+    }
   });
 
   // Listener per badge ballottaggio (apre la scheda del giocatore in ballottaggio al doppio click o click)
