@@ -83,7 +83,7 @@ export const INITIAL_TEAMS = [
           "fvm": 157,
           "fvmM": 157,
           "classic_8_mod_median": 8.2,
-          "classic_10_mod_median": 9.8,
+          "classic_10_mod_median": 9.7,
           "classic_12_mod_median": 11.4
         },
         "stats": {
@@ -580,7 +580,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 147,
           "classic_8_mod_median": 5.8,
           "classic_10_mod_median": 6.4,
-          "classic_12_mod_median": 7.3
+          "classic_12_mod_median": 7.4
         },
         "stats": {
           "titolarita": 71,
@@ -650,7 +650,7 @@ export const INITIAL_TEAMS = [
           "fvm": 106,
           "fvmM": 106,
           "classic_8_mod_median": 4.6,
-          "classic_10_mod_median": 6,
+          "classic_10_mod_median": 5.9,
           "classic_12_mod_median": 6.6
         },
         "stats": {
@@ -720,8 +720,8 @@ export const INITIAL_TEAMS = [
           "diffM": -18,
           "fvm": 262,
           "fvmM": 262,
-          "classic_8_mod_median": 8,
-          "classic_10_mod_median": 14.3,
+          "classic_8_mod_median": 7.8,
+          "classic_10_mod_median": 14,
           "classic_12_mod_median": 18
         },
         "stats": {
@@ -791,8 +791,8 @@ export const INITIAL_TEAMS = [
           "diffM": 18,
           "fvm": 394,
           "fvmM": 394,
-          "classic_8_mod_median": 18.7,
-          "classic_10_mod_median": 24,
+          "classic_8_mod_median": 18.4,
+          "classic_10_mod_median": 23.8,
           "classic_12_mod_median": 25.7
         },
         "stats": {
@@ -931,7 +931,7 @@ export const INITIAL_TEAMS = [
           "diffM": 5,
           "fvm": 22,
           "fvmM": 22,
-          "classic_8_mod_median": 0.2,
+          "classic_8_mod_median": 0.3,
           "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0.2
         },
@@ -998,8 +998,8 @@ export const INITIAL_TEAMS = [
           "diffM": 37,
           "fvm": 160,
           "fvmM": 160,
-          "classic_8_mod_median": 2.1,
-          "classic_10_mod_median": 2.8,
+          "classic_8_mod_median": 2.2,
+          "classic_10_mod_median": 3,
           "classic_12_mod_median": 4
         },
         "stats": {
@@ -1400,9 +1400,9 @@ export const INITIAL_TEAMS = [
           "diffM": 120,
           "fvm": 387,
           "fvmM": 387,
-          "classic_8_mod_median": 10.1,
-          "classic_10_mod_median": 12,
-          "classic_12_mod_median": 12.9
+          "classic_8_mod_median": 10,
+          "classic_10_mod_median": 11.9,
+          "classic_12_mod_median": 12.2
         },
         "stats": {
           "titolarita": 63,
@@ -1803,7 +1803,7 @@ export const INITIAL_TEAMS = [
           "fvm": 131,
           "fvmM": 131,
           "classic_8_mod_median": 4,
-          "classic_10_mod_median": 6.8,
+          "classic_10_mod_median": 6.7,
           "classic_12_mod_median": 8.2
         },
         "stats": {
@@ -1870,7 +1870,7 @@ export const INITIAL_TEAMS = [
           "fvm": 29,
           "fvmM": 29,
           "classic_8_mod_median": 1.6,
-          "classic_10_mod_median": 2.9,
+          "classic_10_mod_median": 2.8,
           "classic_12_mod_median": 4
         },
         "stats": {
@@ -2301,7 +2301,7 @@ export const INITIAL_TEAMS = [
           "fvm": 45,
           "fvmM": 45,
           "classic_8_mod_median": 1.8,
-          "classic_10_mod_median": 1.3,
+          "classic_10_mod_median": 1.4,
           "classic_12_mod_median": 0.6
         },
         "stats": {
@@ -2372,7 +2372,7 @@ export const INITIAL_TEAMS = [
           "fvm": 74,
           "fvmM": 74,
           "classic_8_mod_median": 2.2,
-          "classic_10_mod_median": 3.6,
+          "classic_10_mod_median": 3.5,
           "classic_12_mod_median": 4.6
         },
         "stats": {
@@ -2513,9 +2513,9 @@ export const INITIAL_TEAMS = [
           "diffM": 40,
           "fvm": 141,
           "fvmM": 141,
-          "classic_8_mod_median": 5.3,
+          "classic_8_mod_median": 5.5,
           "classic_10_mod_median": 5.2,
-          "classic_12_mod_median": 5.5
+          "classic_12_mod_median": 5.6
         },
         "stats": {
           "titolarita": 8,
@@ -2727,7 +2727,7 @@ export const INITIAL_TEAMS = [
           "fvm": 115,
           "fvmM": 115,
           "classic_8_mod_median": 4.4,
-          "classic_10_mod_median": 6.3,
+          "classic_10_mod_median": 6.4,
           "classic_12_mod_median": 7.4
         },
         "stats": {
@@ -3601,7 +3601,7 @@ export const INITIAL_TEAMS = [
           "diffM": 6,
           "fvm": 22,
           "fvmM": 22,
-          "classic_8_mod_median": 0,
+          "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0,
           "classic_12_mod_median": 0
         },
@@ -4268,7 +4268,7 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "bologna_bernardeschi_184",
           "bologna_mbangula_6833",
-          "bologna_amondarain_7528"
+          "bologna_libra_7629"
         ],
         "slotId": "pos_7"
       },
@@ -4339,7 +4339,7 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "bologna_bernardeschi_184",
           "bologna_mbangula_6833",
-          "bologna_amondarain_7528"
+          "bologna_libra_7629"
         ],
         "slotId": "pos_6"
       },
@@ -4410,7 +4410,7 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "bologna_bernardeschi_184",
           "bologna_mbangula_6833",
-          "bologna_amondarain_7528"
+          "bologna_libra_7629"
         ],
         "slotId": "pos_8"
       },
@@ -4450,9 +4450,9 @@ export const INITIAL_TEAMS = [
           "diffM": -7,
           "fvm": 208,
           "fvmM": 208,
-          "classic_8_mod_median": 10,
+          "classic_8_mod_median": 9.8,
           "classic_10_mod_median": 12.8,
-          "classic_12_mod_median": 14.3
+          "classic_12_mod_median": 14.2
         },
         "stats": {
           "titolarita": 68,
@@ -4481,7 +4481,7 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "bologna_bernardeschi_184",
           "bologna_mbangula_6833",
-          "bologna_amondarain_7528"
+          "bologna_libra_7629"
         ],
         "slotId": "pos_9"
       },
@@ -4552,7 +4552,7 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "bologna_bernardeschi_184",
           "bologna_mbangula_6833",
-          "bologna_amondarain_7528"
+          "bologna_libra_7629"
         ],
         "slotId": "pos_11"
       },
@@ -4592,8 +4592,8 @@ export const INITIAL_TEAMS = [
           "diffM": -9,
           "fvm": 163,
           "fvmM": 163,
-          "classic_8_mod_median": 3.9,
-          "classic_10_mod_median": 7.6,
+          "classic_8_mod_median": 3.8,
+          "classic_10_mod_median": 7.5,
           "classic_12_mod_median": 10.2
         },
         "stats": {
@@ -4732,7 +4732,7 @@ export const INITIAL_TEAMS = [
           "fvm": 70,
           "fvmM": 70,
           "classic_8_mod_median": 1.6,
-          "classic_10_mod_median": 2.5,
+          "classic_10_mod_median": 2.4,
           "classic_12_mod_median": 3.4
         },
         "stats": {
@@ -4956,6 +4956,73 @@ export const INITIAL_TEAMS = [
           "ass": 0,
           "ammonizioni": 2,
           "amm": 2,
+          "espulsioni": 0,
+          "esp": 0,
+          "au": 0
+        },
+        "substitutes": [],
+        "slotId": null
+      },
+      {
+        "id": "bologna_libra_7629",
+        "csvId": "7629",
+        "fantalabId": "55f1b0f6-9c46-451f-b85a-2f4d12f6de12",
+        "name": "Libra",
+        "displayName": "Libra",
+        "fullName": "Marco Libra",
+        "teamName": "Bologna",
+        "teamId": "bologna",
+        "teamShort": "BOL",
+        "role": "CC",
+        "classicRole": "C",
+        "mantraRole": "C;T",
+        "fantaRole": "C",
+        "photoUrl": "",
+        "playerImage": "",
+        "appetibilita": 84,
+        "status": "panchina",
+        "isAvailable": true,
+        "isPenaltyTaker": false,
+        "isFreeKickTaker": false,
+        "isCornerTaker": false,
+        "rigorista": false,
+        "punizioni": false,
+        "corner": false,
+        "positionNotes": "",
+        "fantaComment": "",
+        "quotazioni": {
+          "qtA": 1,
+          "qtI": 1,
+          "diff": 0,
+          "qtAM": 1,
+          "qtIM": 1,
+          "diffM": 0,
+          "fvm": 1,
+          "fvmM": 1,
+          "classic_8_mod_median": 0,
+          "classic_10_mod_median": 0,
+          "classic_12_mod_median": 0
+        },
+        "stats": {
+          "titolarita": 50,
+          "fantamedia": 6.0,
+          "mediaVoto": 6.0,
+          "pv": 0,
+          "presenze": 0,
+          "gol": 0,
+          "gf": 0,
+          "gs": 0,
+          "golSubiti": 0,
+          "rp": 0,
+          "rc": 0,
+          "rPlus": 0,
+          "rMinus": 0,
+          "rigoriSegnati": 0,
+          "rigoriSbagliati": 0,
+          "assist": 0,
+          "ass": 0,
+          "ammonizioni": 0,
+          "amm": 0,
           "espulsioni": 0,
           "esp": 0,
           "au": 0
@@ -6322,8 +6389,8 @@ export const INITIAL_TEAMS = [
           "diffM": -38,
           "fvm": 83,
           "fvmM": 83,
-          "classic_8_mod_median": 1.2,
-          "classic_10_mod_median": 3,
+          "classic_8_mod_median": 1.1,
+          "classic_10_mod_median": 2.9,
           "classic_12_mod_median": 4.5
         },
         "stats": {
@@ -6395,7 +6462,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 80,
           "classic_8_mod_median": 0.6,
           "classic_10_mod_median": 1.4,
-          "classic_12_mod_median": 2.6
+          "classic_12_mod_median": 2.5
         },
         "stats": {
           "titolarita": 82,
@@ -6734,7 +6801,7 @@ export const INITIAL_TEAMS = [
           "diffM": 0,
           "fvm": 1,
           "fvmM": 1,
-          "classic_8_mod_median": 0.3,
+          "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0
         },
@@ -7822,7 +7889,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 134,
           "classic_8_mod_median": 7.2,
           "classic_10_mod_median": 8.8,
-          "classic_12_mod_median": 10.2
+          "classic_12_mod_median": 10.3
         },
         "stats": {
           "titolarita": 100,
@@ -8032,7 +8099,7 @@ export const INITIAL_TEAMS = [
           "diffM": 19,
           "fvm": 64,
           "fvmM": 64,
-          "classic_8_mod_median": 3.5,
+          "classic_8_mod_median": 3.6,
           "classic_10_mod_median": 4,
           "classic_12_mod_median": 4.5
         },
@@ -8176,7 +8243,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 19,
           "classic_8_mod_median": 0.4,
           "classic_10_mod_median": 0.6,
-          "classic_12_mod_median": 0.4
+          "classic_12_mod_median": 0.5
         },
         "stats": {
           "titolarita": 97,
@@ -8316,8 +8383,8 @@ export const INITIAL_TEAMS = [
           "diffM": 18,
           "fvm": 195,
           "fvmM": 195,
-          "classic_8_mod_median": 3.4,
-          "classic_10_mod_median": 4.3,
+          "classic_8_mod_median": 3.6,
+          "classic_10_mod_median": 4.4,
           "classic_12_mod_median": 5.2
         },
         "stats": {
@@ -8527,7 +8594,7 @@ export const INITIAL_TEAMS = [
           "diffM": 2,
           "fvm": 406,
           "fvmM": 406,
-          "classic_8_mod_median": 13.6,
+          "classic_8_mod_median": 13.7,
           "classic_10_mod_median": 15.6,
           "classic_12_mod_median": 16.8
         },
@@ -8600,7 +8667,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 365,
           "classic_8_mod_median": 15,
           "classic_10_mod_median": 19.2,
-          "classic_12_mod_median": 20.9
+          "classic_12_mod_median": 20.8
         },
         "stats": {
           "titolarita": 61,
@@ -9201,7 +9268,7 @@ export const INITIAL_TEAMS = [
           "diffM": -5,
           "fvm": 64,
           "fvmM": 64,
-          "classic_8_mod_median": 0.9,
+          "classic_8_mod_median": 0.8,
           "classic_10_mod_median": 2,
           "classic_12_mod_median": 2.8
         },
@@ -9830,7 +9897,7 @@ export const INITIAL_TEAMS = [
           "fvm": 77,
           "fvmM": 77,
           "classic_8_mod_median": 2,
-          "classic_10_mod_median": 2,
+          "classic_10_mod_median": 2.1,
           "classic_12_mod_median": 2.5
         },
         "stats": {
@@ -10254,7 +10321,7 @@ export const INITIAL_TEAMS = [
           "diffM": 46,
           "fvm": 150,
           "fvmM": 150,
-          "classic_8_mod_median": 7.4,
+          "classic_8_mod_median": 7.5,
           "classic_10_mod_median": 8.2,
           "classic_12_mod_median": 9
         },
@@ -10397,7 +10464,7 @@ export const INITIAL_TEAMS = [
           "diffM": -2,
           "fvm": 170,
           "fvmM": 170,
-          "classic_8_mod_median": 2.5,
+          "classic_8_mod_median": 2.6,
           "classic_10_mod_median": 3.4,
           "classic_12_mod_median": 4.2
         },
@@ -10665,8 +10732,8 @@ export const INITIAL_TEAMS = [
           "diffM": 8,
           "fvm": 29,
           "fvmM": 29,
-          "classic_8_mod_median": 0.2,
-          "classic_10_mod_median": 0.2,
+          "classic_8_mod_median": 0.3,
+          "classic_10_mod_median": 0.3,
           "classic_12_mod_median": 0.5
         },
         "stats": {
@@ -10799,8 +10866,8 @@ export const INITIAL_TEAMS = [
           "diffM": 18,
           "fvm": 61,
           "fvmM": 61,
-          "classic_8_mod_median": 0.6,
-          "classic_10_mod_median": 0.7,
+          "classic_8_mod_median": 0.7,
+          "classic_10_mod_median": 0.8,
           "classic_12_mod_median": 1
         },
         "stats": {
@@ -11855,7 +11922,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 10,
           "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
-          "classic_12_mod_median": 0.4
+          "classic_12_mod_median": 0.6
         },
         "stats": {
           "titolarita": 63,
@@ -11926,7 +11993,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 42,
           "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 1,
-          "classic_12_mod_median": 2.1
+          "classic_12_mod_median": 2
         },
         "stats": {
           "titolarita": 32,
@@ -13580,7 +13647,7 @@ export const INITIAL_TEAMS = [
           "fvm": 19,
           "fvmM": 19,
           "classic_8_mod_median": 0.2,
-          "classic_10_mod_median": 0.2,
+          "classic_10_mod_median": 0.3,
           "classic_12_mod_median": 0.4
         },
         "stats": {
@@ -13793,7 +13860,7 @@ export const INITIAL_TEAMS = [
           "fvm": 42,
           "fvmM": 42,
           "classic_8_mod_median": 0.2,
-          "classic_10_mod_median": 0.9,
+          "classic_10_mod_median": 0.8,
           "classic_12_mod_median": 2
         },
         "stats": {
@@ -14133,7 +14200,7 @@ export const INITIAL_TEAMS = [
           "diffM": 0,
           "fvm": 13,
           "fvmM": 13,
-          "classic_8_mod_median": 0.3,
+          "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0.2
         },
@@ -14402,7 +14469,7 @@ export const INITIAL_TEAMS = [
           "fvm": 1,
           "fvmM": 1,
           "classic_8_mod_median": 0.2,
-          "classic_10_mod_median": 0.3,
+          "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0
         },
         "stats": {
@@ -14736,7 +14803,7 @@ export const INITIAL_TEAMS = [
           "diffM": 0,
           "fvm": 1,
           "fvmM": 1,
-          "classic_8_mod_median": 0.3,
+          "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0
         },
@@ -15307,7 +15374,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 1,
           "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
-          "classic_12_mod_median": 0.4
+          "classic_12_mod_median": 0.3
         },
         "stats": {
           "titolarita": 50,
@@ -15519,7 +15586,7 @@ export const INITIAL_TEAMS = [
           "fvm": 48,
           "fvmM": 48,
           "classic_8_mod_median": 1,
-          "classic_10_mod_median": 2.2,
+          "classic_10_mod_median": 2.1,
           "classic_12_mod_median": 3.2
         },
         "stats": {
@@ -15590,7 +15657,7 @@ export const INITIAL_TEAMS = [
           "fvm": 32,
           "fvmM": 32,
           "classic_8_mod_median": 0.3,
-          "classic_10_mod_median": 0.5,
+          "classic_10_mod_median": 0.4,
           "classic_12_mod_median": 0.8
         },
         "stats": {
@@ -15660,7 +15727,7 @@ export const INITIAL_TEAMS = [
           "diffM": -6,
           "fvm": 115,
           "fvmM": 115,
-          "classic_8_mod_median": 3,
+          "classic_8_mod_median": 2.8,
           "classic_10_mod_median": 5.2,
           "classic_12_mod_median": 7
         },
@@ -16135,7 +16202,7 @@ export const INITIAL_TEAMS = [
           "diffM": -15,
           "fvm": 26,
           "fvmM": 26,
-          "classic_8_mod_median": 0.4,
+          "classic_8_mod_median": 0.3,
           "classic_10_mod_median": 1,
           "classic_12_mod_median": 1.8
         },
@@ -17317,7 +17384,7 @@ export const INITIAL_TEAMS = [
           "fvm": 208,
           "fvmM": 208,
           "classic_8_mod_median": 6.8,
-          "classic_10_mod_median": 9,
+          "classic_10_mod_median": 8.9,
           "classic_12_mod_median": 10.2
         },
         "stats": {
@@ -17663,7 +17730,7 @@ export const INITIAL_TEAMS = [
           "diffM": 11,
           "fvm": 45,
           "fvmM": 45,
-          "classic_8_mod_median": 0.5,
+          "classic_8_mod_median": 0.6,
           "classic_10_mod_median": 0.8,
           "classic_12_mod_median": 1.6
         },
@@ -19100,7 +19167,7 @@ export const INITIAL_TEAMS = [
           "fvm": 74,
           "fvmM": 74,
           "classic_8_mod_median": 2.8,
-          "classic_10_mod_median": 3.1,
+          "classic_10_mod_median": 3.2,
           "classic_12_mod_median": 3.3
         },
         "stats": {
@@ -19170,7 +19237,7 @@ export const INITIAL_TEAMS = [
           "diffM": 5,
           "fvm": 256,
           "fvmM": 256,
-          "classic_8_mod_median": 13.9,
+          "classic_8_mod_median": 13.8,
           "classic_10_mod_median": 14.6,
           "classic_12_mod_median": 15.6
         },
@@ -19454,9 +19521,9 @@ export const INITIAL_TEAMS = [
           "diffM": 6,
           "fvm": 563,
           "fvmM": 563,
-          "classic_8_mod_median": 33.7,
+          "classic_8_mod_median": 33.8,
           "classic_10_mod_median": 34,
-          "classic_12_mod_median": 33.4
+          "classic_12_mod_median": 33.5
         },
         "stats": {
           "titolarita": 71,
@@ -19524,7 +19591,7 @@ export const INITIAL_TEAMS = [
           "diffM": -2,
           "fvm": 458,
           "fvmM": 458,
-          "classic_8_mod_median": 21.3,
+          "classic_8_mod_median": 21.4,
           "classic_10_mod_median": 24.6,
           "classic_12_mod_median": 25
         },
@@ -19597,8 +19664,8 @@ export const INITIAL_TEAMS = [
           "fvm": 259,
           "fvmM": 259,
           "classic_8_mod_median": 8.8,
-          "classic_10_mod_median": 9.9,
-          "classic_12_mod_median": 10
+          "classic_10_mod_median": 10,
+          "classic_12_mod_median": 10.1
         },
         "stats": {
           "titolarita": 39,
@@ -19731,7 +19798,7 @@ export const INITIAL_TEAMS = [
           "fvm": 115,
           "fvmM": 115,
           "classic_8_mod_median": 4.2,
-          "classic_10_mod_median": 6,
+          "classic_10_mod_median": 5.9,
           "classic_12_mod_median": 6.6
         },
         "stats": {
@@ -19797,7 +19864,7 @@ export const INITIAL_TEAMS = [
           "diffM": 1,
           "fvm": 35,
           "fvmM": 35,
-          "classic_8_mod_median": 0.6,
+          "classic_8_mod_median": 0.7,
           "classic_10_mod_median": 1.1,
           "classic_12_mod_median": 1.6
         },
@@ -20199,7 +20266,7 @@ export const INITIAL_TEAMS = [
           "diffM": 21,
           "fvm": 70,
           "fvmM": 70,
-          "classic_8_mod_median": 3.8,
+          "classic_8_mod_median": 3.7,
           "classic_10_mod_median": 5,
           "classic_12_mod_median": 6
         },
@@ -20267,7 +20334,7 @@ export const INITIAL_TEAMS = [
           "fvm": 138,
           "fvmM": 138,
           "classic_8_mod_median": 0.8,
-          "classic_10_mod_median": 1.6,
+          "classic_10_mod_median": 1.5,
           "classic_12_mod_median": 2.4
         },
         "stats": {
@@ -20483,7 +20550,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 160,
           "classic_8_mod_median": 8.2,
           "classic_10_mod_median": 9.4,
-          "classic_12_mod_median": 11.2
+          "classic_12_mod_median": 11.1
         },
         "stats": {
           "titolarita": 97,
@@ -20623,7 +20690,7 @@ export const INITIAL_TEAMS = [
           "fvm": 42,
           "fvmM": 42,
           "classic_8_mod_median": 0.6,
-          "classic_10_mod_median": 0.7,
+          "classic_10_mod_median": 0.8,
           "classic_12_mod_median": 0.6
         },
         "stats": {
@@ -20766,7 +20833,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 86,
           "classic_8_mod_median": 1,
           "classic_10_mod_median": 1.4,
-          "classic_12_mod_median": 1.9
+          "classic_12_mod_median": 1.8
         },
         "stats": {
           "titolarita": 26,
@@ -20835,7 +20902,7 @@ export const INITIAL_TEAMS = [
           "diffM": 22,
           "fvm": 74,
           "fvmM": 74,
-          "classic_8_mod_median": 2.4,
+          "classic_8_mod_median": 2.3,
           "classic_10_mod_median": 4.2,
           "classic_12_mod_median": 5.6
         },
@@ -20977,7 +21044,7 @@ export const INITIAL_TEAMS = [
           "diffM": -3,
           "fvm": 58,
           "fvmM": 58,
-          "classic_8_mod_median": 2.3,
+          "classic_8_mod_median": 2.2,
           "classic_10_mod_median": 3,
           "classic_12_mod_median": 3.6
         },
@@ -21119,9 +21186,9 @@ export const INITIAL_TEAMS = [
           "diffM": 17,
           "fvm": 58,
           "fvmM": 58,
-          "classic_8_mod_median": 1.2,
+          "classic_8_mod_median": 1.4,
           "classic_10_mod_median": 1.4,
-          "classic_12_mod_median": 1.2
+          "classic_12_mod_median": 1.3
         },
         "stats": {
           "titolarita": 55,
@@ -21866,7 +21933,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 19,
           "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
-          "classic_12_mod_median": 0.5
+          "classic_12_mod_median": 0.4
         },
         "stats": {
           "titolarita": 32,
@@ -22270,7 +22337,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Occhio al cambio di gerarchia nella porta del Napoli: con l'arrivo di Allegri in panchina, Alex Meret è davanti a Milinkovic-Savic. Rimane una situazione aperta per il futuro, che può cambiare da un momento all'altro: dipende da tanti fattori visto che i due portieri per valore assoluto sono vicini. Al momento Allegri considera Meret primo, ma ci sarà alternanza per il turnover. Meret l'anno scorso ha perso il posto ed è stato fuori anche per infortunio, quest'anno riparte in pole e dovrà poi dimostrare sul campo di meritarsi il posto. È la porta della squadra vice campione d'Italia in carica, siamo sul primo slot ma per il fantacalcio è obbligatorio pensare alla coppia Meret-Milinkovic a oggi. Quindi calcolate già la spesa per arrivare a tutti e due i portieri, per non correre rischi.",
+        "fantaComment": "È cambiata la gerarchia nella porta del Napoli: con l'arrivo di Allegri in panchina, Alex Meret è davanti a Milinkovic-Savic. Rimane una situazione aperta per il futuro, a maggior ragione dopo lo stop del titolare contro l’Arsenal. Avrà spazio Milinkovic fino al suo recupero, poi in teoria tornerà Meret, ma parlerà il campo. È la porta della squadra vice campione d'Italia in carica, siamo sul primo slot ma per il fantacalcio abbiamo sempre ribadito che è obbligatorio pensare alla coppia Meret-Milinkovic a oggi. Quindi calcolate già la spesa per arrivare a tutti e due i portieri, per non correre rischi.",
         "quotazioni": {
           "qtA": 46,
           "qtI": 47,
@@ -22280,7 +22347,7 @@ export const INITIAL_TEAMS = [
           "diffM": -1,
           "fvm": 147,
           "fvmM": 147,
-          "classic_8_mod_median": 6.4,
+          "classic_8_mod_median": 6.3,
           "classic_10_mod_median": 8.2,
           "classic_12_mod_median": 10
         },
@@ -22494,7 +22561,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 32,
           "classic_8_mod_median": 0.4,
           "classic_10_mod_median": 0.8,
-          "classic_12_mod_median": 1.5
+          "classic_12_mod_median": 1.4
         },
         "stats": {
           "titolarita": 16,
@@ -22776,9 +22843,9 @@ export const INITIAL_TEAMS = [
           "diffM": -2,
           "fvm": 218,
           "fvmM": 218,
-          "classic_8_mod_median": 12.3,
-          "classic_10_mod_median": 15.2,
-          "classic_12_mod_median": 16.5
+          "classic_8_mod_median": 12.2,
+          "classic_10_mod_median": 15,
+          "classic_12_mod_median": 16.4
         },
         "stats": {
           "titolarita": 82,
@@ -22908,7 +22975,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "4 gol in 13 partite a voto per Alisson Santos, nessun assist ed è un dato curioso per le caratteristiche del giocatore. Grandissima tecnica e dribbling, garantisce imprevedibilità alla manovra del Napoli e Allegri è pronto a utilizzarlo da esterno alto. Il club ha fortemente voluto il suo riscatto e Alisson ha tutto per essere il titolare della fascia. Grande potenziale anche per il fantacalcio, anche se passa da centrocampista ad attaccante e questo lo penalizza un po’. Resta comunque un giocatore su cui si può puntare e che può fare bene, da centrocampista siamo sul terzo slot. Sarà una stagione molto importante per lui e il fatto che Allegri sia ripartito dal 4-3-3 non può che essere un punto di partenza positivo per le sue caratteristiche.",
+        "fantaComment": "4 gol in 13 partite a voto per Alisson Santos, nessun assist ed è un dato curioso per le caratteristiche del giocatore. Grandissima tecnica e dribbling, garantisce imprevedibilità alla manovra del Napoli e Allegri è pronto a utilizzarlo da esterno alto. Il club ha fortemente voluto il suo riscatto e Alisson ha tutto per essere il titolare della fascia. Si è però fermato con l’Arsenal, questo stop può influire anche al fantacalcio: non aveva inciso e l’infortunio non ci voleva. Sfrutterà la lunga sosta per provare a tornare al 100%, poi sulla carta tornerà il titolare a sinistra. Ma la concorrenza c’è, chi fa l’asta dopo l’Arsenal lo paga sicuramente meno rispetto a prima. Ma non lo avrà subito a disposizione.",
         "quotazioni": {
           "qtA": 46,
           "qtI": 58,
@@ -22918,7 +22985,7 @@ export const INITIAL_TEAMS = [
           "diffM": -12,
           "fvm": 147,
           "fvmM": 147,
-          "classic_8_mod_median": 3.4,
+          "classic_8_mod_median": 3.3,
           "classic_10_mod_median": 5.6,
           "classic_12_mod_median": 7.2
         },
@@ -22989,7 +23056,7 @@ export const INITIAL_TEAMS = [
           "diffM": 10,
           "fvm": 464,
           "fvmM": 464,
-          "classic_8_mod_median": 23,
+          "classic_8_mod_median": 23.2,
           "classic_10_mod_median": 25.2,
           "classic_12_mod_median": 25.8
         },
@@ -24181,8 +24248,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "monza_bakoune_7476",
-          "monza_birindelli_5838",
-          "monza_kouadio_7238"
+          "monza_kouadio_7238",
+          "monza_lucchesi_6659"
         ],
         "slotId": "pos_2"
       },
@@ -24252,8 +24319,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "monza_bakoune_7476",
-          "monza_birindelli_5838",
-          "monza_kouadio_7238"
+          "monza_kouadio_7238",
+          "monza_lucchesi_6659"
         ],
         "slotId": "pos_3"
       },
@@ -24323,28 +24390,28 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "monza_bakoune_7476",
-          "monza_birindelli_5838",
-          "monza_kouadio_7238"
+          "monza_kouadio_7238",
+          "monza_lucchesi_6659"
         ],
         "slotId": "pos_4"
       },
       "pos_5": {
-        "id": "monza_touri_7146",
-        "csvId": "7146",
-        "fantalabId": "e2613024-bb41-4d9a-8c1d-24f6e2c63838",
-        "name": "Tourè I.",
-        "displayName": "Tourè I.",
-        "fullName": "Idrissa Touré",
+        "id": "monza_birindelli_5838",
+        "csvId": "5838",
+        "fantalabId": "76ccd152-fe9d-440b-a890-6c9adef778ec",
+        "name": "Birindelli",
+        "displayName": "Birindelli",
+        "fullName": "Samuele Birindelli",
         "teamName": "Monza",
         "teamId": "monza",
         "teamShort": "MON",
-        "role": "CC",
-        "classicRole": "C",
-        "mantraRole": "E;M",
-        "fantaRole": "C",
-        "photoUrl": "https://cdn.falsesoftware.com/players/36565/v2.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/36565/v2.webp",
-        "appetibilita": 82,
+        "role": "TD",
+        "classicRole": "D",
+        "mantraRole": "Dd;Ds;E",
+        "fantaRole": "D",
+        "photoUrl": "https://cdn.falsesoftware.com/players/132862/v1.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/132862/v1.webp",
+        "appetibilita": 84,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -24354,28 +24421,28 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Idrissa Touré arriva al Monza per giocarsi il posto con Birindelli sulla corsia destra. 1 gol nella passata stagione in Serie A con la maglia del Pisa, ha perso il posto nella seconda parte di stagione. Sulla carta, ha le caratteristiche per diventare il titolare alla lunga. Per il fantacalcio è un colpo low cost, da 1 credito per gli ultimi slot se cercate un giocatore che vi porti quasi sempre voto in provincia. ",
+        "fantaComment": null,
         "quotazioni": {
-          "qtA": 2,
-          "qtI": 1,
-          "diff": 1,
-          "qtAM": 2,
-          "qtIM": 1,
-          "diffM": 1,
-          "fvm": 6,
-          "fvmM": 6,
+          "qtA": 5,
+          "qtI": 5,
+          "diff": 0,
+          "qtAM": 5,
+          "qtIM": 5,
+          "diffM": 0,
+          "fvm": 16,
+          "fvmM": 16,
           "classic_8_mod_median": 0.2,
-          "classic_10_mod_median": 0.2,
-          "classic_12_mod_median": 0.2
+          "classic_10_mod_median": 0.4,
+          "classic_12_mod_median": 0.6
         },
         "stats": {
-          "titolarita": 68,
-          "fantamedia": 5.82,
-          "mediaVoto": 5.82,
-          "pv": 32,
-          "presenze": 32,
-          "gol": 1,
-          "gf": 1,
+          "titolarita": 87,
+          "fantamedia": 6.0,
+          "mediaVoto": 6.0,
+          "pv": 37,
+          "presenze": 37,
+          "gol": 5,
+          "gf": 5,
           "gs": 0,
           "golSubiti": 0,
           "rp": 0,
@@ -24384,18 +24451,18 @@ export const INITIAL_TEAMS = [
           "rMinus": 0,
           "rigoriSegnati": 0,
           "rigoriSbagliati": 0,
-          "assist": 0,
-          "ass": 0,
-          "ammonizioni": 4,
-          "amm": 4,
-          "espulsioni": 1,
-          "esp": 1,
+          "assist": 2,
+          "ass": 2,
+          "ammonizioni": 7,
+          "amm": 7,
+          "espulsioni": 0,
+          "esp": 0,
           "au": 0
         },
         "substitutes": [
-          "monza_akinsanmiro_6593",
-          "monza_mout_7575",
-          "monza_ciurria_5880"
+          "monza_bakoune_7476",
+          "monza_kouadio_7238",
+          "monza_lucchesi_6659"
         ],
         "slotId": "pos_5"
       },
@@ -24465,8 +24532,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "monza_bakoune_7476",
-          "monza_birindelli_5838",
-          "monza_kouadio_7238"
+          "monza_kouadio_7238",
+          "monza_lucchesi_6659"
         ],
         "slotId": "pos_8"
       },
@@ -24537,7 +24604,7 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "monza_akinsanmiro_6593",
           "monza_mout_7575",
-          "monza_ciurria_5880"
+          "monza_touri_7146"
         ],
         "slotId": "pos_6"
       },
@@ -24608,7 +24675,7 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "monza_akinsanmiro_6593",
           "monza_mout_7575",
-          "monza_ciurria_5880"
+          "monza_touri_7146"
         ],
         "slotId": "pos_7"
       },
@@ -24679,7 +24746,7 @@ export const INITIAL_TEAMS = [
         "substitutes": [
           "monza_akinsanmiro_6593",
           "monza_mout_7575",
-          "monza_ciurria_5880"
+          "monza_touri_7146"
         ],
         "slotId": "pos_9"
       },
@@ -24720,7 +24787,7 @@ export const INITIAL_TEAMS = [
           "fvm": 29,
           "fvmM": 29,
           "classic_8_mod_median": 0.2,
-          "classic_10_mod_median": 0.8,
+          "classic_10_mod_median": 0.7,
           "classic_12_mod_median": 1.6
         },
         "stats": {
@@ -24792,7 +24859,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 70,
           "classic_8_mod_median": 0.8,
           "classic_10_mod_median": 1.2,
-          "classic_12_mod_median": 0.9
+          "classic_12_mod_median": 1
         },
         "stats": {
           "titolarita": 39,
@@ -25230,22 +25297,22 @@ export const INITIAL_TEAMS = [
         "slotId": null
       },
       {
-        "id": "monza_birindelli_5838",
-        "csvId": "5838",
-        "fantalabId": "76ccd152-fe9d-440b-a890-6c9adef778ec",
-        "name": "Birindelli",
-        "displayName": "Birindelli",
-        "fullName": "Samuele Birindelli",
+        "id": "monza_touri_7146",
+        "csvId": "7146",
+        "fantalabId": "e2613024-bb41-4d9a-8c1d-24f6e2c63838",
+        "name": "Tourè I.",
+        "displayName": "Tourè I.",
+        "fullName": "Idrissa Touré",
         "teamName": "Monza",
         "teamId": "monza",
         "teamShort": "MON",
-        "role": "TD",
-        "classicRole": "D",
-        "mantraRole": "Dd;Ds;E",
-        "fantaRole": "D",
-        "photoUrl": "https://cdn.falsesoftware.com/players/132862/v1.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/132862/v1.webp",
-        "appetibilita": 84,
+        "role": "CC",
+        "classicRole": "C",
+        "mantraRole": "E;M",
+        "fantaRole": "C",
+        "photoUrl": "https://cdn.falsesoftware.com/players/36565/v2.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/36565/v2.webp",
+        "appetibilita": 82,
         "status": "panchina",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -25255,28 +25322,28 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": null,
+        "fantaComment": "Idrissa Touré arriva al Monza per giocarsi il posto con Birindelli sulla corsia destra. 1 gol nella passata stagione in Serie A con la maglia del Pisa, ha perso il posto nella seconda parte di stagione. Sulla carta, ha le caratteristiche per diventare il titolare alla lunga. Per il fantacalcio è un colpo low cost, da 1 credito per gli ultimi slot se cercate un giocatore che vi porti quasi sempre voto in provincia. ",
         "quotazioni": {
-          "qtA": 5,
-          "qtI": 5,
-          "diff": 0,
-          "qtAM": 5,
-          "qtIM": 5,
-          "diffM": 0,
-          "fvm": 16,
-          "fvmM": 16,
+          "qtA": 2,
+          "qtI": 1,
+          "diff": 1,
+          "qtAM": 2,
+          "qtIM": 1,
+          "diffM": 1,
+          "fvm": 6,
+          "fvmM": 6,
           "classic_8_mod_median": 0.2,
-          "classic_10_mod_median": 0.4,
-          "classic_12_mod_median": 0.6
+          "classic_10_mod_median": 0.2,
+          "classic_12_mod_median": 0.2
         },
         "stats": {
-          "titolarita": 87,
-          "fantamedia": 6.0,
-          "mediaVoto": 6.0,
-          "pv": 37,
-          "presenze": 37,
-          "gol": 5,
-          "gf": 5,
+          "titolarita": 68,
+          "fantamedia": 5.82,
+          "mediaVoto": 5.82,
+          "pv": 32,
+          "presenze": 32,
+          "gol": 1,
+          "gf": 1,
           "gs": 0,
           "golSubiti": 0,
           "rp": 0,
@@ -25285,12 +25352,12 @@ export const INITIAL_TEAMS = [
           "rMinus": 0,
           "rigoriSegnati": 0,
           "rigoriSbagliati": 0,
-          "assist": 2,
-          "ass": 2,
-          "ammonizioni": 7,
-          "amm": 7,
-          "espulsioni": 0,
-          "esp": 0,
+          "assist": 0,
+          "ass": 0,
+          "ammonizioni": 4,
+          "amm": 4,
+          "espulsioni": 1,
+          "esp": 1,
           "au": 0
         },
         "substitutes": [],
@@ -25736,7 +25803,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 13,
           "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
-          "classic_12_mod_median": 0.5
+          "classic_12_mod_median": 0.4
         },
         "stats": {
           "titolarita": 100,
@@ -26085,7 +26152,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 22,
           "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.4,
-          "classic_12_mod_median": 1.4
+          "classic_12_mod_median": 1.5
         },
         "stats": {
           "titolarita": 42,
@@ -26508,7 +26575,7 @@ export const INITIAL_TEAMS = [
           "diffM": -5,
           "fvm": 35,
           "fvmM": 35,
-          "classic_8_mod_median": 0.6,
+          "classic_8_mod_median": 0.8,
           "classic_10_mod_median": 0.6,
           "classic_12_mod_median": 0.8
         },
@@ -26651,7 +26718,7 @@ export const INITIAL_TEAMS = [
           "fvm": 26,
           "fvmM": 26,
           "classic_8_mod_median": 0.6,
-          "classic_10_mod_median": 1.5,
+          "classic_10_mod_median": 1.4,
           "classic_12_mod_median": 2.6
         },
         "stats": {
@@ -26792,7 +26859,7 @@ export const INITIAL_TEAMS = [
           "diffM": -5,
           "fvm": 218,
           "fvmM": 218,
-          "classic_8_mod_median": 6.8,
+          "classic_8_mod_median": 6.7,
           "classic_10_mod_median": 10,
           "classic_12_mod_median": 12
         },
@@ -28169,7 +28236,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 16,
           "classic_8_mod_median": 1.2,
           "classic_10_mod_median": 2,
-          "classic_12_mod_median": 2.8
+          "classic_12_mod_median": 2.7
         },
         "stats": {
           "titolarita": 45,
@@ -28451,7 +28518,7 @@ export const INITIAL_TEAMS = [
           "diffM": -5,
           "fvm": 134,
           "fvmM": 134,
-          "classic_8_mod_median": 4.8,
+          "classic_8_mod_median": 4.7,
           "classic_10_mod_median": 7.2,
           "classic_12_mod_median": 8.8
         },
@@ -28666,7 +28733,7 @@ export const INITIAL_TEAMS = [
           "diffM": -7,
           "fvm": 176,
           "fvmM": 176,
-          "classic_8_mod_median": 2.8,
+          "classic_8_mod_median": 2.6,
           "classic_10_mod_median": 5,
           "classic_12_mod_median": 6.6
         },
@@ -28733,7 +28800,7 @@ export const INITIAL_TEAMS = [
           "diffM": 10,
           "fvm": 74,
           "fvmM": 74,
-          "classic_8_mod_median": 2.9,
+          "classic_8_mod_median": 2.8,
           "classic_10_mod_median": 4.6,
           "classic_12_mod_median": 6
         },
@@ -29068,7 +29135,7 @@ export const INITIAL_TEAMS = [
           "diffM": -2,
           "fvm": 1,
           "fvmM": 1,
-          "classic_8_mod_median": 0.3,
+          "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0.4
         },
@@ -29551,7 +29618,7 @@ export const INITIAL_TEAMS = [
           "diffM": -3,
           "fvm": 64,
           "fvmM": 64,
-          "classic_8_mod_median": 2.4,
+          "classic_8_mod_median": 2.3,
           "classic_10_mod_median": 5.2,
           "classic_12_mod_median": 8
         },
@@ -30047,7 +30114,7 @@ export const INITIAL_TEAMS = [
           "diffM": -9,
           "fvm": 99,
           "fvmM": 99,
-          "classic_8_mod_median": 5.8,
+          "classic_8_mod_median": 5.6,
           "classic_10_mod_median": 8,
           "classic_12_mod_median": 9.4
         },
@@ -30118,9 +30185,9 @@ export const INITIAL_TEAMS = [
           "diffM": 36,
           "fvm": 118,
           "fvmM": 118,
-          "classic_8_mod_median": 5.8,
-          "classic_10_mod_median": 8,
-          "classic_12_mod_median": 9.1
+          "classic_8_mod_median": 5.7,
+          "classic_10_mod_median": 7.9,
+          "classic_12_mod_median": 9
         },
         "stats": {
           "titolarita": 29,
@@ -30189,9 +30256,9 @@ export const INITIAL_TEAMS = [
           "diffM": 42,
           "fvm": 138,
           "fvmM": 138,
-          "classic_8_mod_median": 2.7,
+          "classic_8_mod_median": 2.6,
           "classic_10_mod_median": 4,
-          "classic_12_mod_median": 6
+          "classic_12_mod_median": 5.8
         },
         "stats": {
           "titolarita": 66,
@@ -30734,7 +30801,7 @@ export const INITIAL_TEAMS = [
           "diffM": 59,
           "fvm": 192,
           "fvmM": 192,
-          "classic_8_mod_median": 3.8,
+          "classic_8_mod_median": 3.6,
           "classic_10_mod_median": 6,
           "classic_12_mod_median": 8.2
         },
@@ -31002,7 +31069,7 @@ export const INITIAL_TEAMS = [
           "diffM": -4,
           "fvm": 35,
           "fvmM": 35,
-          "classic_8_mod_median": 1.7,
+          "classic_8_mod_median": 1.6,
           "classic_10_mod_median": 3,
           "classic_12_mod_median": 3.8
         },
@@ -31364,7 +31431,7 @@ export const INITIAL_TEAMS = [
           "fvm": 6,
           "fvmM": 6,
           "classic_8_mod_median": 0.2,
-          "classic_10_mod_median": 0.3,
+          "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0.6
         },
         "stats": {
@@ -31858,7 +31925,7 @@ export const INITIAL_TEAMS = [
           "diffM": 13,
           "fvm": 112,
           "fvmM": 112,
-          "classic_8_mod_median": 1,
+          "classic_8_mod_median": 1.2,
           "classic_10_mod_median": 1,
           "classic_12_mod_median": 1.6
         },
@@ -31998,7 +32065,7 @@ export const INITIAL_TEAMS = [
           "fvm": 13,
           "fvmM": 13,
           "classic_8_mod_median": 0.2,
-          "classic_10_mod_median": 0.3,
+          "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0.2
         },
         "stats": {
@@ -33070,7 +33137,7 @@ export const INITIAL_TEAMS = [
           "fvm": 1,
           "fvmM": 1,
           "classic_8_mod_median": 0.2,
-          "classic_10_mod_median": 0.2,
+          "classic_10_mod_median": 0.4,
           "classic_12_mod_median": 0
         },
         "stats": {
@@ -33136,7 +33203,7 @@ export const INITIAL_TEAMS = [
           "diffM": 0,
           "fvm": 1,
           "fvmM": 1,
-          "classic_8_mod_median": 0,
+          "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0
         },
@@ -33179,7 +33246,7 @@ export const INITIAL_TEAMS = [
     "primaryColor": "#ffd700",
     "secondaryColor": "#003399",
     "accentColor": "#000000",
-    "defaultFormation": "4-3-3",
+    "defaultFormation": "3-5-2",
     "lineup": {
       "pos_1": {
         "id": "parma_corvi_6662",
@@ -33316,9 +33383,9 @@ export const INITIAL_TEAMS = [
           "au": 0
         },
         "substitutes": [
-          "parma_britschgi_7255",
           "parma_ndiaye_7202",
-          "parma_valenti_5307"
+          "parma_valenti_5307",
+          "parma_carbonif_6149"
         ],
         "slotId": "pos_2"
       },
@@ -33387,9 +33454,9 @@ export const INITIAL_TEAMS = [
           "au": 0
         },
         "substitutes": [
-          "parma_britschgi_7255",
           "parma_ndiaye_7202",
-          "parma_valenti_5307"
+          "parma_valenti_5307",
+          "parma_carbonif_6149"
         ],
         "slotId": "pos_3"
       },
@@ -33431,7 +33498,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 16,
           "classic_8_mod_median": 0.4,
           "classic_10_mod_median": 0.6,
-          "classic_12_mod_median": 1
+          "classic_12_mod_median": 0.9
         },
         "stats": {
           "titolarita": 55,
@@ -33458,13 +33525,84 @@ export const INITIAL_TEAMS = [
           "au": 0
         },
         "substitutes": [
-          "parma_britschgi_7255",
           "parma_ndiaye_7202",
-          "parma_valenti_5307"
+          "parma_valenti_5307",
+          "parma_carbonif_6149"
         ],
         "slotId": "pos_4"
       },
       "pos_5": {
+        "id": "parma_britschgi_7255",
+        "csvId": "7255",
+        "fantalabId": "eb1e8211-468b-4db8-b9be-1a15afa2339d",
+        "name": "Britschgi",
+        "displayName": "Britschgi",
+        "fullName": "Sascha Britschgi",
+        "teamName": "Parma",
+        "teamId": "parma",
+        "teamShort": "PAR",
+        "role": "TD",
+        "classicRole": "D",
+        "mantraRole": "Dd;Ds;E",
+        "fantaRole": "D",
+        "photoUrl": "https://cdn.falsesoftware.com/players/37904226/v1.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/37904226/v1.webp",
+        "appetibilita": 80,
+        "status": "tit_sicuro",
+        "isAvailable": true,
+        "isPenaltyTaker": false,
+        "isFreeKickTaker": false,
+        "isCornerTaker": false,
+        "rigorista": false,
+        "punizioni": false,
+        "corner": false,
+        "positionNotes": "",
+        "fantaComment": null,
+        "quotazioni": {
+          "qtA": 3,
+          "qtI": 1,
+          "diff": 2,
+          "qtAM": 3,
+          "qtIM": 1,
+          "diffM": 2,
+          "fvm": 10,
+          "fvmM": 10,
+          "classic_8_mod_median": 0.2,
+          "classic_10_mod_median": 0.2,
+          "classic_12_mod_median": 0.2
+        },
+        "stats": {
+          "titolarita": 58,
+          "fantamedia": 5.7,
+          "mediaVoto": 5.75,
+          "pv": 29,
+          "presenze": 29,
+          "gol": 0,
+          "gf": 0,
+          "gs": 0,
+          "golSubiti": 0,
+          "rp": 0,
+          "rc": 0,
+          "rPlus": 0,
+          "rMinus": 0,
+          "rigoriSegnati": 0,
+          "rigoriSbagliati": 0,
+          "assist": 2,
+          "ass": 2,
+          "ammonizioni": 5,
+          "amm": 5,
+          "espulsioni": 1,
+          "esp": 1,
+          "au": 0
+        },
+        "substitutes": [
+          "parma_ndiaye_7202",
+          "parma_valenti_5307",
+          "parma_carbonif_6149"
+        ],
+        "slotId": "pos_5"
+      },
+      "pos_9": {
         "id": "parma_valeri_5862",
         "csvId": "5862",
         "fantalabId": "4505706f-e4f1-483b-995c-6c12460a2fe7",
@@ -33529,13 +33667,13 @@ export const INITIAL_TEAMS = [
           "au": 0
         },
         "substitutes": [
-          "parma_britschgi_7255",
           "parma_ndiaye_7202",
-          "parma_valenti_5307"
+          "parma_valenti_5307",
+          "parma_carbonif_6149"
         ],
-        "slotId": "pos_5"
+        "slotId": "pos_9"
       },
-      "pos_7": {
+      "pos_6": {
         "id": "parma_bernab_6666",
         "csvId": "6666",
         "fantalabId": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
@@ -33604,9 +33742,9 @@ export const INITIAL_TEAMS = [
           "parma_sierro_7628",
           "parma_nicolussicaviglia_4349"
         ],
-        "slotId": "pos_7"
+        "slotId": "pos_6"
       },
-      "pos_6": {
+      "pos_7": {
         "id": "parma_keitam_6898",
         "csvId": "6898",
         "fantalabId": "9ce7c50c-4dc1-427e-ab59-516c891e2ffb",
@@ -33675,7 +33813,7 @@ export const INITIAL_TEAMS = [
           "parma_sierro_7628",
           "parma_nicolussicaviglia_4349"
         ],
-        "slotId": "pos_6"
+        "slotId": "pos_7"
       },
       "pos_8": {
         "id": "parma_fabbian_6206",
@@ -33748,78 +33886,7 @@ export const INITIAL_TEAMS = [
         ],
         "slotId": "pos_8"
       },
-      "pos_9": {
-        "id": "parma_toure_6229",
-        "csvId": "6229",
-        "fantalabId": "280d15dc-3cf6-47ec-ad41-19b983b09d20",
-        "name": "Tourè E.",
-        "displayName": "Tourè E.",
-        "fullName": "El Bilal Touré",
-        "teamName": "Parma",
-        "teamId": "parma",
-        "teamShort": "PAR",
-        "role": "PC",
-        "classicRole": "A",
-        "mantraRole": "Pc",
-        "fantaRole": "A",
-        "photoUrl": "https://cdn.falsesoftware.com/players/30446920/v3.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/30446920/v3.webp",
-        "appetibilita": 85,
-        "status": "tit_sicuro",
-        "isAvailable": true,
-        "isPenaltyTaker": true,
-        "isFreeKickTaker": false,
-        "isCornerTaker": false,
-        "rigorista": true,
-        "punizioni": false,
-        "corner": false,
-        "positionNotes": "",
-        "fantaComment": "El Bilal Touré è un nuovo attaccante del Parma, arrivato dall’Atalanta in prestito oneroso con diritto di riscatto. Il maliano classe 2001 è un attaccante rapido e potente, bravo ad attaccare gli spazi e capace di muoversi su più zone del fronte offensivo. Nella scorsa stagione ha collezionato 26 presenze e 7 gol in tutte le competizioni con il Besiktas. Ha già maturato esperienza importante tra Francia, Spagna, Germania, Turchia e Serie A, oltre ad aver giocato in Champions League e vinto l’Europa League 2023/24 con l’Atalanta. Mentre Elphege ha dato buone risposte. Touré può comunque ritagliarsi spazio grazie a velocità, fisicità e capacità di dare profondità alla squadra. Al fantacalcio è una scommessa low cost interessante da ultimi slot: potrebbe essere titolare e le sue caratteristiche possono adattarsi bene al sistema del Parma, con la possibilità di portare qualche bonus.",
-        "quotazioni": {
-          "qtA": 15,
-          "qtI": 1,
-          "diff": 14,
-          "qtAM": 15,
-          "qtIM": 1,
-          "diffM": 14,
-          "fvm": 48,
-          "fvmM": 48,
-          "classic_8_mod_median": 0.4,
-          "classic_10_mod_median": 1.6,
-          "classic_12_mod_median": 3.1
-        },
-        "stats": {
-          "titolarita": 50,
-          "fantamedia": 6.0,
-          "mediaVoto": 6.0,
-          "pv": 22,
-          "presenze": 22,
-          "gol": 5,
-          "gf": 5,
-          "gs": 0,
-          "golSubiti": 0,
-          "rp": 0,
-          "rc": 0,
-          "rPlus": 0,
-          "rMinus": 0,
-          "rigoriSegnati": 0,
-          "rigoriSbagliati": 0,
-          "assist": 4,
-          "ass": 4,
-          "ammonizioni": 4,
-          "amm": 4,
-          "espulsioni": 1,
-          "esp": 1,
-          "au": 0
-        },
-        "substitutes": [
-          "parma_elphege_7342",
-          "parma_frigan_7213",
-          "parma_demartis_7568"
-        ],
-        "slotId": "pos_9"
-      },
-      "pos_11": {
+      "pos_10": {
         "id": "parma_lontani_7561",
         "csvId": "7561",
         "fantalabId": "2e331f32-cc88-4a67-b471-f05a2db80063",
@@ -33884,13 +33951,86 @@ export const INITIAL_TEAMS = [
           "au": 0
         },
         "substitutes": [
+          "parma_romerod_7554",
           "parma_elphege_7342",
-          "parma_frigan_7213",
-          "parma_demartis_7568"
+          "parma_frigan_7213"
+        ],
+        "slotId": "pos_10"
+      },
+      "pos_11": {
+        "id": "parma_toure_6229",
+        "csvId": "6229",
+        "fantalabId": "280d15dc-3cf6-47ec-ad41-19b983b09d20",
+        "name": "Tourè E.",
+        "displayName": "Tourè E.",
+        "fullName": "El Bilal Touré",
+        "teamName": "Parma",
+        "teamId": "parma",
+        "teamShort": "PAR",
+        "role": "PC",
+        "classicRole": "A",
+        "mantraRole": "Pc",
+        "fantaRole": "A",
+        "photoUrl": "https://cdn.falsesoftware.com/players/30446920/v3.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/30446920/v3.webp",
+        "appetibilita": 85,
+        "status": "tit_sicuro",
+        "isAvailable": true,
+        "isPenaltyTaker": true,
+        "isFreeKickTaker": false,
+        "isCornerTaker": false,
+        "rigorista": true,
+        "punizioni": false,
+        "corner": false,
+        "positionNotes": "",
+        "fantaComment": "El Bilal Touré è un nuovo attaccante del Parma, arrivato dall’Atalanta in prestito oneroso con diritto di riscatto. Il maliano classe 2001 è un attaccante rapido e potente, bravo ad attaccare gli spazi e capace di muoversi su più zone del fronte offensivo. Nella scorsa stagione ha collezionato 26 presenze e 7 gol in tutte le competizioni con il Besiktas. Ha già maturato esperienza importante tra Francia, Spagna, Germania, Turchia e Serie A, oltre ad aver giocato in Champions League e vinto l’Europa League 2023/24 con l’Atalanta. Mentre Elphege ha dato buone risposte. Touré può comunque ritagliarsi spazio grazie a velocità, fisicità e capacità di dare profondità alla squadra. Al fantacalcio è una scommessa low cost interessante da ultimi slot: potrebbe essere titolare e le sue caratteristiche possono adattarsi bene al sistema del Parma, con la possibilità di portare qualche bonus.",
+        "quotazioni": {
+          "qtA": 15,
+          "qtI": 1,
+          "diff": 14,
+          "qtAM": 15,
+          "qtIM": 1,
+          "diffM": 14,
+          "fvm": 48,
+          "fvmM": 48,
+          "classic_8_mod_median": 0.4,
+          "classic_10_mod_median": 1.6,
+          "classic_12_mod_median": 3.1
+        },
+        "stats": {
+          "titolarita": 50,
+          "fantamedia": 6.0,
+          "mediaVoto": 6.0,
+          "pv": 22,
+          "presenze": 22,
+          "gol": 5,
+          "gf": 5,
+          "gs": 0,
+          "golSubiti": 0,
+          "rp": 0,
+          "rc": 0,
+          "rPlus": 0,
+          "rMinus": 0,
+          "rigoriSegnati": 0,
+          "rigoriSbagliati": 0,
+          "assist": 4,
+          "ass": 4,
+          "ammonizioni": 4,
+          "amm": 4,
+          "espulsioni": 1,
+          "esp": 1,
+          "au": 0
+        },
+        "substitutes": [
+          "parma_romerod_7554",
+          "parma_elphege_7342",
+          "parma_frigan_7213"
         ],
         "slotId": "pos_11"
-      },
-      "pos_10": {
+      }
+    },
+    "bench": [
+      {
         "id": "parma_romerod_7554",
         "csvId": "7554",
         "fantalabId": "eb01cf4b-a689-4016-8c30-0e7b058d0210",
@@ -33907,7 +34047,7 @@ export const INITIAL_TEAMS = [
         "photoUrl": "https://cdn.falsesoftware.com/players/37396586/v1.webp",
         "playerImage": "https://cdn.falsesoftware.com/players/37396586/v1.webp",
         "appetibilita": 85,
-        "status": "tit_sicuro",
+        "status": "panchina",
         "isAvailable": true,
         "isPenaltyTaker": false,
         "isFreeKickTaker": false,
@@ -33952,79 +34092,6 @@ export const INITIAL_TEAMS = [
           "amm": 0,
           "espulsioni": 0,
           "esp": 0,
-          "au": 0
-        },
-        "substitutes": [
-          "parma_elphege_7342",
-          "parma_frigan_7213",
-          "parma_demartis_7568"
-        ],
-        "slotId": "pos_10"
-      }
-    },
-    "bench": [
-      {
-        "id": "parma_britschgi_7255",
-        "csvId": "7255",
-        "fantalabId": "eb1e8211-468b-4db8-b9be-1a15afa2339d",
-        "name": "Britschgi",
-        "displayName": "Britschgi",
-        "fullName": "Sascha Britschgi",
-        "teamName": "Parma",
-        "teamId": "parma",
-        "teamShort": "PAR",
-        "role": "TD",
-        "classicRole": "D",
-        "mantraRole": "Dd;Ds;E",
-        "fantaRole": "D",
-        "photoUrl": "https://cdn.falsesoftware.com/players/37904226/v1.webp",
-        "playerImage": "https://cdn.falsesoftware.com/players/37904226/v1.webp",
-        "appetibilita": 80,
-        "status": "panchina",
-        "isAvailable": true,
-        "isPenaltyTaker": false,
-        "isFreeKickTaker": false,
-        "isCornerTaker": false,
-        "rigorista": false,
-        "punizioni": false,
-        "corner": false,
-        "positionNotes": "",
-        "fantaComment": null,
-        "quotazioni": {
-          "qtA": 3,
-          "qtI": 1,
-          "diff": 2,
-          "qtAM": 3,
-          "qtIM": 1,
-          "diffM": 2,
-          "fvm": 10,
-          "fvmM": 10,
-          "classic_8_mod_median": 0.2,
-          "classic_10_mod_median": 0.2,
-          "classic_12_mod_median": 0.2
-        },
-        "stats": {
-          "titolarita": 58,
-          "fantamedia": 5.7,
-          "mediaVoto": 5.75,
-          "pv": 29,
-          "presenze": 29,
-          "gol": 0,
-          "gf": 0,
-          "gs": 0,
-          "golSubiti": 0,
-          "rp": 0,
-          "rc": 0,
-          "rPlus": 0,
-          "rMinus": 0,
-          "rigoriSegnati": 0,
-          "rigoriSbagliati": 0,
-          "assist": 2,
-          "ass": 2,
-          "ammonizioni": 5,
-          "amm": 5,
-          "espulsioni": 1,
-          "esp": 1,
           "au": 0
         },
         "substitutes": [],
@@ -34870,7 +34937,7 @@ export const INITIAL_TEAMS = [
           "diffM": 0,
           "fvm": 1,
           "fvmM": 1,
-          "classic_8_mod_median": 0.4,
+          "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.4,
           "classic_12_mod_median": 0
         },
@@ -35354,7 +35421,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Oumar Solet è rimasto a Udine un altro anno, lì dove tutti lo abbiamo scoperto e dove si è confermato nell'ultima stagione fino a diventare un top di reparto anche al fantacalcio. 1 gol e 2 assist in metà stagione nel 24/25, 3 gol e 1 assist nella scorsa Serie A, il tutto condito da appena 2 gialli e 1 rosso in 54 partite. La difesa di Runjaic è decima per gol subiti, sintomo di solidità difensiva di tutto il reparto. Il francese ne è sempre più leader e sul centro-sinistra è cresciuto anche in fase di impostazione palla al piede. Con i suoi compagni di reparto, rimane il pericolo numero uno sui calci piazzati nell'area avversaria. Appena due le partite saltate per infortunio nell'ultimo campionato ma si è fermato proprio con la Lazio per un problema muscolare: attesi gli esami, la 'buona notizia' è che c'è la sosta lunga a breve e potrebbe rimettersi in sesto.",
+        "fantaComment": "Oumar Solet è rimasto a Udine un altro anno, lì dove tutti lo abbiamo scoperto e dove si è confermato nell'ultima stagione fino a diventare un top di reparto anche al fantacalcio. 1 gol e 2 assist in metà stagione nel 24/25, 3 gol e 1 assist nella scorsa Serie A, il tutto condito da appena 2 gialli e 1 rosso in 54 partite. La difesa di Runjaic è comunque solida e il francese ne è sempre più leader e sul centro-sinistra è cresciuto anche in fase di impostazione palla al piede. Con i suoi compagni di reparto, rimane il pericolo numero uno sui calci piazzati nell'area avversaria. Appena due le partite saltate per infortunio nell'ultimo campionato ma si è fermato proprio con la Lazio per un problema muscolare: previste due settimane di stop, vuol dire che tornerà già dopo la sosta, per la 6a giornata. Un intoppo che non ‘sposta’ in chiave fanta.",
         "quotazioni": {
           "qtA": 30,
           "qtI": 33,
@@ -35719,8 +35786,8 @@ export const INITIAL_TEAMS = [
           "diffM": -4,
           "fvm": 147,
           "fvmM": 147,
-          "classic_8_mod_median": 5.6,
-          "classic_10_mod_median": 8,
+          "classic_8_mod_median": 5.4,
+          "classic_10_mod_median": 7.8,
           "classic_12_mod_median": 9.4
         },
         "stats": {
@@ -35790,7 +35857,7 @@ export const INITIAL_TEAMS = [
           "diffM": 13,
           "fvm": 86,
           "fvmM": 86,
-          "classic_8_mod_median": 3.4,
+          "classic_8_mod_median": 3.5,
           "classic_10_mod_median": 4.2,
           "classic_12_mod_median": 4.8
         },
@@ -36942,7 +37009,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 13,
       "fvm": 112,
       "fvmM": 112,
-      "classic_8_mod_median": 1,
+      "classic_8_mod_median": 1.2,
       "classic_10_mod_median": 1,
       "classic_12_mod_median": 1.6
     },
@@ -37008,9 +37075,9 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 40,
       "fvm": 141,
       "fvmM": 141,
-      "classic_8_mod_median": 5.3,
+      "classic_8_mod_median": 5.5,
       "classic_10_mod_median": 5.2,
-      "classic_12_mod_median": 5.5
+      "classic_12_mod_median": 5.6
     },
     "stats": {
       "titolarita": 8,
@@ -37076,7 +37143,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 70,
       "classic_8_mod_median": 0.8,
       "classic_10_mod_median": 1.2,
-      "classic_12_mod_median": 0.9
+      "classic_12_mod_median": 1
     },
     "stats": {
       "titolarita": 39,
@@ -37404,7 +37471,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -2,
       "fvm": 170,
       "fvmM": 170,
-      "classic_8_mod_median": 2.5,
+      "classic_8_mod_median": 2.6,
       "classic_10_mod_median": 3.4,
       "classic_12_mod_median": 4.2
     },
@@ -37470,8 +37537,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 18,
       "fvm": 195,
       "fvmM": 195,
-      "classic_8_mod_median": 3.4,
-      "classic_10_mod_median": 4.3,
+      "classic_8_mod_median": 3.6,
+      "classic_10_mod_median": 4.4,
       "classic_12_mod_median": 5.2
     },
     "stats": {
@@ -37602,7 +37669,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 5,
       "fvm": 22,
       "fvmM": 22,
-      "classic_8_mod_median": 0.2,
+      "classic_8_mod_median": 0.3,
       "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0.2
     },
@@ -37932,7 +37999,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 10,
       "fvm": 464,
       "fvmM": 464,
-      "classic_8_mod_median": 23,
+      "classic_8_mod_median": 23.2,
       "classic_10_mod_median": 25.2,
       "classic_12_mod_median": 25.8
     },
@@ -37998,8 +38065,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 37,
       "fvm": 160,
       "fvmM": 160,
-      "classic_8_mod_median": 2.1,
-      "classic_10_mod_median": 2.8,
+      "classic_8_mod_median": 2.2,
+      "classic_10_mod_median": 3,
       "classic_12_mod_median": 4
     },
     "stats": {
@@ -38064,9 +38131,9 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 17,
       "fvm": 58,
       "fvmM": 58,
-      "classic_8_mod_median": 1.2,
+      "classic_8_mod_median": 1.4,
       "classic_10_mod_median": 1.4,
-      "classic_12_mod_median": 1.2
+      "classic_12_mod_median": 1.3
     },
     "stats": {
       "titolarita": 55,
@@ -38130,7 +38197,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 2,
       "fvm": 406,
       "fvmM": 406,
-      "classic_8_mod_median": 13.6,
+      "classic_8_mod_median": 13.7,
       "classic_10_mod_median": 15.6,
       "classic_12_mod_median": 16.8
     },
@@ -38197,7 +38264,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 208,
       "fvmM": 208,
       "classic_8_mod_median": 6.8,
-      "classic_10_mod_median": 9,
+      "classic_10_mod_median": 8.9,
       "classic_12_mod_median": 10.2
     },
     "stats": {
@@ -38461,8 +38528,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 259,
       "fvmM": 259,
       "classic_8_mod_median": 8.8,
-      "classic_10_mod_median": 9.9,
-      "classic_12_mod_median": 10
+      "classic_10_mod_median": 10,
+      "classic_12_mod_median": 10.1
     },
     "stats": {
       "titolarita": 39,
@@ -38526,9 +38593,9 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 6,
       "fvm": 563,
       "fvmM": 563,
-      "classic_8_mod_median": 33.7,
+      "classic_8_mod_median": 33.8,
       "classic_10_mod_median": 34,
-      "classic_12_mod_median": 33.4
+      "classic_12_mod_median": 33.5
     },
     "stats": {
       "titolarita": 71,
@@ -38658,7 +38725,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 13,
       "fvm": 86,
       "fvmM": 86,
-      "classic_8_mod_median": 3.4,
+      "classic_8_mod_median": 3.5,
       "classic_10_mod_median": 4.2,
       "classic_12_mod_median": 4.8
     },
@@ -38724,7 +38791,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -7,
       "fvm": 176,
       "fvmM": 176,
-      "classic_8_mod_median": 2.8,
+      "classic_8_mod_median": 2.6,
       "classic_10_mod_median": 5,
       "classic_12_mod_median": 6.6
     },
@@ -38790,7 +38857,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -2,
       "fvm": 458,
       "fvmM": 458,
-      "classic_8_mod_median": 21.3,
+      "classic_8_mod_median": 21.4,
       "classic_10_mod_median": 24.6,
       "classic_12_mod_median": 25
     },
@@ -39055,7 +39122,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 115,
       "fvmM": 115,
       "classic_8_mod_median": 4.2,
-      "classic_10_mod_median": 6,
+      "classic_10_mod_median": 5.9,
       "classic_12_mod_median": 6.6
     },
     "stats": {
@@ -39120,7 +39187,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 11,
       "fvm": 45,
       "fvmM": 45,
-      "classic_8_mod_median": 0.5,
+      "classic_8_mod_median": 0.6,
       "classic_10_mod_median": 0.8,
       "classic_12_mod_median": 1.6
     },
@@ -39187,7 +39254,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 77,
       "fvmM": 77,
       "classic_8_mod_median": 2,
-      "classic_10_mod_median": 2,
+      "classic_10_mod_median": 2.1,
       "classic_12_mod_median": 2.5
     },
     "stats": {
@@ -39384,7 +39451,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 46,
       "fvm": 150,
       "fvmM": 150,
-      "classic_8_mod_median": 7.4,
+      "classic_8_mod_median": 7.5,
       "classic_10_mod_median": 8.2,
       "classic_12_mod_median": 9
     },
@@ -39517,7 +39584,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 19,
       "fvmM": 19,
       "classic_8_mod_median": 0.2,
-      "classic_10_mod_median": 0.2,
+      "classic_10_mod_median": 0.3,
       "classic_12_mod_median": 0.4
     },
     "stats": {
@@ -39650,7 +39717,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 80,
       "classic_8_mod_median": 0.6,
       "classic_10_mod_median": 1.4,
-      "classic_12_mod_median": 2.6
+      "classic_12_mod_median": 2.5
     },
     "stats": {
       "titolarita": 82,
@@ -39715,7 +39782,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 74,
       "fvmM": 74,
       "classic_8_mod_median": 2.8,
-      "classic_10_mod_median": 3.1,
+      "classic_10_mod_median": 3.2,
       "classic_12_mod_median": 3.3
     },
     "stats": {
@@ -39978,7 +40045,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 1,
       "fvm": 35,
       "fvmM": 35,
-      "classic_8_mod_median": 0.6,
+      "classic_8_mod_median": 0.7,
       "classic_10_mod_median": 1.1,
       "classic_12_mod_median": 1.6
     },
@@ -40046,7 +40113,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 86,
       "classic_8_mod_median": 1,
       "classic_10_mod_median": 1.4,
-      "classic_12_mod_median": 1.9
+      "classic_12_mod_median": 1.8
     },
     "stats": {
       "titolarita": 26,
@@ -40110,7 +40177,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 10,
       "fvm": 74,
       "fvmM": 74,
-      "classic_8_mod_median": 2.9,
+      "classic_8_mod_median": 2.8,
       "classic_10_mod_median": 4.6,
       "classic_12_mod_median": 6
     },
@@ -40704,7 +40771,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -5,
       "fvm": 35,
       "fvmM": 35,
-      "classic_8_mod_median": 0.6,
+      "classic_8_mod_median": 0.8,
       "classic_10_mod_median": 0.6,
       "classic_12_mod_median": 0.8
     },
@@ -40969,7 +41036,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 45,
       "fvmM": 45,
       "classic_8_mod_median": 1.8,
-      "classic_10_mod_median": 1.3,
+      "classic_10_mod_median": 1.4,
       "classic_12_mod_median": 0.6
     },
     "stats": {
@@ -41300,7 +41367,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 147,
       "classic_8_mod_median": 5.8,
       "classic_10_mod_median": 6.4,
-      "classic_12_mod_median": 7.3
+      "classic_12_mod_median": 7.4
     },
     "stats": {
       "titolarita": 71,
@@ -41498,7 +41565,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 365,
       "classic_8_mod_median": 15,
       "classic_10_mod_median": 19.2,
-      "classic_12_mod_median": 20.9
+      "classic_12_mod_median": 20.8
     },
     "stats": {
       "titolarita": 61,
@@ -41564,7 +41631,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 19,
       "classic_8_mod_median": 0.4,
       "classic_10_mod_median": 0.6,
-      "classic_12_mod_median": 0.4
+      "classic_12_mod_median": 0.5
     },
     "stats": {
       "titolarita": 97,
@@ -41958,7 +42025,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 5,
       "fvm": 256,
       "fvmM": 256,
-      "classic_8_mod_median": 13.9,
+      "classic_8_mod_median": 13.8,
       "classic_10_mod_median": 14.6,
       "classic_12_mod_median": 15.6
     },
@@ -42090,8 +42157,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -9,
       "fvm": 163,
       "fvmM": 163,
-      "classic_8_mod_median": 3.9,
-      "classic_10_mod_median": 7.6,
+      "classic_8_mod_median": 3.8,
+      "classic_10_mod_median": 7.5,
       "classic_12_mod_median": 10.2
     },
     "stats": {
@@ -42223,7 +42290,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 13,
       "fvmM": 13,
       "classic_8_mod_median": 0.2,
-      "classic_10_mod_median": 0.3,
+      "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0.2
     },
     "stats": {
@@ -43081,7 +43148,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 42,
       "fvmM": 42,
       "classic_8_mod_median": 0.6,
-      "classic_10_mod_median": 0.7,
+      "classic_10_mod_median": 0.8,
       "classic_12_mod_median": 0.6
     },
     "stats": {
@@ -43476,8 +43543,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 8,
       "fvm": 29,
       "fvmM": 29,
-      "classic_8_mod_median": 0.2,
-      "classic_10_mod_median": 0.2,
+      "classic_8_mod_median": 0.3,
+      "classic_10_mod_median": 0.3,
       "classic_12_mod_median": 0.5
     },
     "stats": {
@@ -43674,8 +43741,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -4,
       "fvm": 147,
       "fvmM": 147,
-      "classic_8_mod_median": 5.6,
-      "classic_10_mod_median": 8,
+      "classic_8_mod_median": 5.4,
+      "classic_10_mod_median": 7.8,
       "classic_12_mod_median": 9.4
     },
     "stats": {
@@ -44335,7 +44402,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 70,
       "fvmM": 70,
       "classic_8_mod_median": 1.6,
-      "classic_10_mod_median": 2.5,
+      "classic_10_mod_median": 2.4,
       "classic_12_mod_median": 3.4
     },
     "stats": {
@@ -44400,7 +44467,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 19,
       "fvm": 64,
       "fvmM": 64,
-      "classic_8_mod_median": 3.5,
+      "classic_8_mod_median": 3.6,
       "classic_10_mod_median": 4,
       "classic_12_mod_median": 4.5
     },
@@ -44532,7 +44599,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -6,
       "fvm": 115,
       "fvmM": 115,
-      "classic_8_mod_median": 3,
+      "classic_8_mod_median": 2.8,
       "classic_10_mod_median": 5.2,
       "classic_12_mod_median": 7
     },
@@ -44994,8 +45061,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 18,
       "fvm": 61,
       "fvmM": 61,
-      "classic_8_mod_median": 0.6,
-      "classic_10_mod_median": 0.7,
+      "classic_8_mod_median": 0.7,
+      "classic_10_mod_median": 0.8,
       "classic_12_mod_median": 1
     },
     "stats": {
@@ -45325,7 +45392,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 32,
       "fvmM": 32,
       "classic_8_mod_median": 0.3,
-      "classic_10_mod_median": 0.5,
+      "classic_10_mod_median": 0.4,
       "classic_12_mod_median": 0.8
     },
     "stats": {
@@ -48756,7 +48823,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -3,
       "fvm": 58,
       "fvmM": 58,
-      "classic_8_mod_median": 2.3,
+      "classic_8_mod_median": 2.2,
       "classic_10_mod_median": 3,
       "classic_12_mod_median": 3.6
     },
@@ -49010,7 +49077,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "4 gol in 13 partite a voto per Alisson Santos, nessun assist ed è un dato curioso per le caratteristiche del giocatore. Grandissima tecnica e dribbling, garantisce imprevedibilità alla manovra del Napoli e Allegri è pronto a utilizzarlo da esterno alto. Il club ha fortemente voluto il suo riscatto e Alisson ha tutto per essere il titolare della fascia. Grande potenziale anche per il fantacalcio, anche se passa da centrocampista ad attaccante e questo lo penalizza un po’. Resta comunque un giocatore su cui si può puntare e che può fare bene, da centrocampista siamo sul terzo slot. Sarà una stagione molto importante per lui e il fatto che Allegri sia ripartito dal 4-3-3 non può che essere un punto di partenza positivo per le sue caratteristiche.",
+    "fantaComment": "4 gol in 13 partite a voto per Alisson Santos, nessun assist ed è un dato curioso per le caratteristiche del giocatore. Grandissima tecnica e dribbling, garantisce imprevedibilità alla manovra del Napoli e Allegri è pronto a utilizzarlo da esterno alto. Il club ha fortemente voluto il suo riscatto e Alisson ha tutto per essere il titolare della fascia. Si è però fermato con l’Arsenal, questo stop può influire anche al fantacalcio: non aveva inciso e l’infortunio non ci voleva. Sfrutterà la lunga sosta per provare a tornare al 100%, poi sulla carta tornerà il titolare a sinistra. Ma la concorrenza c’è, chi fa l’asta dopo l’Arsenal lo paga sicuramente meno rispetto a prima. Ma non lo avrà subito a disposizione.",
     "quotazioni": {
       "qtA": 46,
       "qtI": 58,
@@ -49020,7 +49087,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -12,
       "fvm": 147,
       "fvmM": 147,
-      "classic_8_mod_median": 3.4,
+      "classic_8_mod_median": 3.3,
       "classic_10_mod_median": 5.6,
       "classic_12_mod_median": 7.2
     },
@@ -49076,7 +49143,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Oumar Solet è rimasto a Udine un altro anno, lì dove tutti lo abbiamo scoperto e dove si è confermato nell'ultima stagione fino a diventare un top di reparto anche al fantacalcio. 1 gol e 2 assist in metà stagione nel 24/25, 3 gol e 1 assist nella scorsa Serie A, il tutto condito da appena 2 gialli e 1 rosso in 54 partite. La difesa di Runjaic è decima per gol subiti, sintomo di solidità difensiva di tutto il reparto. Il francese ne è sempre più leader e sul centro-sinistra è cresciuto anche in fase di impostazione palla al piede. Con i suoi compagni di reparto, rimane il pericolo numero uno sui calci piazzati nell'area avversaria. Appena due le partite saltate per infortunio nell'ultimo campionato ma si è fermato proprio con la Lazio per un problema muscolare: attesi gli esami, la 'buona notizia' è che c'è la sosta lunga a breve e potrebbe rimettersi in sesto.",
+    "fantaComment": "Oumar Solet è rimasto a Udine un altro anno, lì dove tutti lo abbiamo scoperto e dove si è confermato nell'ultima stagione fino a diventare un top di reparto anche al fantacalcio. 1 gol e 2 assist in metà stagione nel 24/25, 3 gol e 1 assist nella scorsa Serie A, il tutto condito da appena 2 gialli e 1 rosso in 54 partite. La difesa di Runjaic è comunque solida e il francese ne è sempre più leader e sul centro-sinistra è cresciuto anche in fase di impostazione palla al piede. Con i suoi compagni di reparto, rimane il pericolo numero uno sui calci piazzati nell'area avversaria. Appena due le partite saltate per infortunio nell'ultimo campionato ma si è fermato proprio con la Lazio per un problema muscolare: previste due settimane di stop, vuol dire che tornerà già dopo la sosta, per la 6a giornata. Un intoppo che non ‘sposta’ in chiave fanta.",
     "quotazioni": {
       "qtA": 30,
       "qtI": 33,
@@ -49153,7 +49220,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 74,
       "fvmM": 74,
       "classic_8_mod_median": 2.2,
-      "classic_10_mod_median": 3.6,
+      "classic_10_mod_median": 3.5,
       "classic_12_mod_median": 4.6
     },
     "stats": {
@@ -49483,7 +49550,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 29,
       "fvmM": 29,
       "classic_8_mod_median": 0.2,
-      "classic_10_mod_median": 0.8,
+      "classic_10_mod_median": 0.7,
       "classic_12_mod_median": 1.6
     },
     "stats": {
@@ -49548,7 +49615,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 0,
       "fvm": 13,
       "fvmM": 13,
-      "classic_8_mod_median": 0.3,
+      "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0.2
     },
@@ -50011,7 +50078,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 6,
       "fvmM": 6,
       "classic_8_mod_median": 0.2,
-      "classic_10_mod_median": 0.3,
+      "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0.6
     },
     "stats": {
@@ -51163,6 +51230,72 @@ export const CSV_PLAYER_CATALOG = [
     "substitutes": []
   },
   {
+    "id": "bologna_libra_7629",
+    "csvId": "7629",
+    "fantalabId": "55f1b0f6-9c46-451f-b85a-2f4d12f6de12",
+    "name": "Libra",
+    "displayName": "Libra",
+    "fullName": "Marco Libra",
+    "teamName": "Bologna",
+    "teamId": "bologna",
+    "teamShort": "BOL",
+    "role": "CC",
+    "classicRole": "C",
+    "mantraRole": "C;T",
+    "fantaRole": "C",
+    "photoUrl": "",
+    "playerImage": "",
+    "appetibilita": 84,
+    "status": "in_ballottaggio",
+    "isAvailable": true,
+    "isPenaltyTaker": false,
+    "isFreeKickTaker": false,
+    "isCornerTaker": false,
+    "rigorista": false,
+    "punizioni": false,
+    "corner": false,
+    "positionNotes": "",
+    "fantaComment": "",
+    "quotazioni": {
+      "qtA": 1,
+      "qtI": 1,
+      "diff": 0,
+      "qtAM": 1,
+      "qtIM": 1,
+      "diffM": 0,
+      "fvm": 1,
+      "fvmM": 1,
+      "classic_8_mod_median": 0,
+      "classic_10_mod_median": 0,
+      "classic_12_mod_median": 0
+    },
+    "stats": {
+      "titolarita": 50,
+      "fantamedia": 6.0,
+      "mediaVoto": 6.0,
+      "pv": 0,
+      "presenze": 0,
+      "gol": 0,
+      "gf": 0,
+      "gs": 0,
+      "golSubiti": 0,
+      "rp": 0,
+      "rc": 0,
+      "rPlus": 0,
+      "rMinus": 0,
+      "rigoriSegnati": 0,
+      "rigoriSbagliati": 0,
+      "assist": 0,
+      "ass": 0,
+      "ammonizioni": 0,
+      "amm": 0,
+      "espulsioni": 0,
+      "esp": 0,
+      "au": 0
+    },
+    "substitutes": []
+  },
+  {
     "id": "sassuolo_lipani_6246",
     "csvId": "6246",
     "fantalabId": "dbad7fbe-2421-4646-9b4f-6f065ae9a076",
@@ -51331,7 +51464,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 106,
       "fvmM": 106,
       "classic_8_mod_median": 4.6,
-      "classic_10_mod_median": 6,
+      "classic_10_mod_median": 5.9,
       "classic_12_mod_median": 6.6
     },
     "stats": {
@@ -51990,9 +52123,9 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 120,
       "fvm": 387,
       "fvmM": 387,
-      "classic_8_mod_median": 10.1,
-      "classic_10_mod_median": 12,
-      "classic_12_mod_median": 12.9
+      "classic_8_mod_median": 10,
+      "classic_10_mod_median": 11.9,
+      "classic_12_mod_median": 12.2
     },
     "stats": {
       "titolarita": 63,
@@ -53178,7 +53311,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 0,
       "fvm": 1,
       "fvmM": 1,
-      "classic_8_mod_median": 0.3,
+      "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0
     },
@@ -53244,7 +53377,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -2,
       "fvm": 1,
       "fvmM": 1,
-      "classic_8_mod_median": 0.3,
+      "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0.4
     },
@@ -53641,7 +53774,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 157,
       "fvmM": 157,
       "classic_8_mod_median": 8.2,
-      "classic_10_mod_median": 9.8,
+      "classic_10_mod_median": 9.7,
       "classic_12_mod_median": 11.4
     },
     "stats": {
@@ -53707,7 +53840,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 48,
       "fvmM": 48,
       "classic_8_mod_median": 1,
-      "classic_10_mod_median": 2.2,
+      "classic_10_mod_median": 2.1,
       "classic_12_mod_median": 3.2
     },
     "stats": {
@@ -54102,7 +54235,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -5,
       "fvm": 134,
       "fvmM": 134,
-      "classic_8_mod_median": 4.8,
+      "classic_8_mod_median": 4.7,
       "classic_10_mod_median": 7.2,
       "classic_12_mod_median": 8.8
     },
@@ -56412,9 +56545,9 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -2,
       "fvm": 218,
       "fvmM": 218,
-      "classic_8_mod_median": 12.3,
-      "classic_10_mod_median": 15.2,
-      "classic_12_mod_median": 16.5
+      "classic_8_mod_median": 12.2,
+      "classic_10_mod_median": 15,
+      "classic_12_mod_median": 16.4
     },
     "stats": {
       "titolarita": 82,
@@ -56544,9 +56677,9 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -7,
       "fvm": 208,
       "fvmM": 208,
-      "classic_8_mod_median": 10,
+      "classic_8_mod_median": 9.8,
       "classic_10_mod_median": 12.8,
-      "classic_12_mod_median": 14.3
+      "classic_12_mod_median": 14.2
     },
     "stats": {
       "titolarita": 68,
@@ -56809,7 +56942,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 1,
       "fvmM": 1,
       "classic_8_mod_median": 0.2,
-      "classic_10_mod_median": 0.3,
+      "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0
     },
     "stats": {
@@ -58128,7 +58261,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -5,
       "fvm": 218,
       "fvmM": 218,
-      "classic_8_mod_median": 6.8,
+      "classic_8_mod_median": 6.7,
       "classic_10_mod_median": 10,
       "classic_12_mod_median": 12
     },
@@ -58658,7 +58791,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 19,
       "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
-      "classic_12_mod_median": 0.5
+      "classic_12_mod_median": 0.4
     },
     "stats": {
       "titolarita": 32,
@@ -59250,7 +59383,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 21,
       "fvm": 70,
       "fvmM": 70,
-      "classic_8_mod_median": 3.8,
+      "classic_8_mod_median": 3.7,
       "classic_10_mod_median": 5,
       "classic_12_mod_median": 6
     },
@@ -59580,8 +59713,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -38,
       "fvm": 83,
       "fvmM": 83,
-      "classic_8_mod_median": 1.2,
-      "classic_10_mod_median": 3,
+      "classic_8_mod_median": 1.1,
+      "classic_10_mod_median": 2.9,
       "classic_12_mod_median": 4.5
     },
     "stats": {
@@ -60174,7 +60307,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -15,
       "fvm": 26,
       "fvmM": 26,
-      "classic_8_mod_median": 0.4,
+      "classic_8_mod_median": 0.3,
       "classic_10_mod_median": 1,
       "classic_12_mod_median": 1.8
     },
@@ -60307,7 +60440,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 131,
       "fvmM": 131,
       "classic_8_mod_median": 4,
-      "classic_10_mod_median": 6.8,
+      "classic_10_mod_median": 6.7,
       "classic_12_mod_median": 8.2
     },
     "stats": {
@@ -61034,7 +61167,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 16,
       "classic_8_mod_median": 1.2,
       "classic_10_mod_median": 2,
-      "classic_12_mod_median": 2.8
+      "classic_12_mod_median": 2.7
     },
     "stats": {
       "titolarita": 45,
@@ -61164,7 +61297,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 59,
       "fvm": 192,
       "fvmM": 192,
-      "classic_8_mod_median": 3.8,
+      "classic_8_mod_median": 3.6,
       "classic_10_mod_median": 6,
       "classic_12_mod_median": 8.2
     },
@@ -61231,7 +61364,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 29,
       "fvmM": 29,
       "classic_8_mod_median": 1.6,
-      "classic_10_mod_median": 2.9,
+      "classic_10_mod_median": 2.8,
       "classic_12_mod_median": 4
     },
     "stats": {
@@ -61430,7 +61563,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 16,
       "classic_8_mod_median": 0.4,
       "classic_10_mod_median": 0.6,
-      "classic_12_mod_median": 1
+      "classic_12_mod_median": 0.9
     },
     "stats": {
       "titolarita": 55,
@@ -62222,7 +62355,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 10,
       "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
-      "classic_12_mod_median": 0.4
+      "classic_12_mod_median": 0.6
     },
     "stats": {
       "titolarita": 63,
@@ -62418,7 +62551,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -5,
       "fvm": 64,
       "fvmM": 64,
-      "classic_8_mod_median": 0.9,
+      "classic_8_mod_median": 0.8,
       "classic_10_mod_median": 2,
       "classic_12_mod_median": 2.8
     },
@@ -62748,8 +62881,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -18,
       "fvm": 262,
       "fvmM": 262,
-      "classic_8_mod_median": 8,
-      "classic_10_mod_median": 14.3,
+      "classic_8_mod_median": 7.8,
+      "classic_10_mod_median": 14,
       "classic_12_mod_median": 18
     },
     "stats": {
@@ -62947,7 +63080,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 138,
       "fvmM": 138,
       "classic_8_mod_median": 0.8,
-      "classic_10_mod_median": 1.6,
+      "classic_10_mod_median": 1.5,
       "classic_12_mod_median": 2.4
     },
     "stats": {
@@ -63146,7 +63279,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 160,
       "classic_8_mod_median": 8.2,
       "classic_10_mod_median": 9.4,
-      "classic_12_mod_median": 11.2
+      "classic_12_mod_median": 11.1
     },
     "stats": {
       "titolarita": 97,
@@ -63276,9 +63409,9 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 36,
       "fvm": 118,
       "fvmM": 118,
-      "classic_8_mod_median": 5.8,
-      "classic_10_mod_median": 8,
-      "classic_12_mod_median": 9.1
+      "classic_8_mod_median": 5.7,
+      "classic_10_mod_median": 7.9,
+      "classic_12_mod_median": 9
     },
     "stats": {
       "titolarita": 29,
@@ -63740,7 +63873,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 42,
       "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 1,
-      "classic_12_mod_median": 2.1
+      "classic_12_mod_median": 2
     },
     "stats": {
       "titolarita": 32,
@@ -64002,8 +64135,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 18,
       "fvm": 394,
       "fvmM": 394,
-      "classic_8_mod_median": 18.7,
-      "classic_10_mod_median": 24,
+      "classic_8_mod_median": 18.4,
+      "classic_10_mod_median": 23.8,
       "classic_12_mod_median": 25.7
     },
     "stats": {
@@ -64464,7 +64597,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -9,
       "fvm": 99,
       "fvmM": 99,
-      "classic_8_mod_median": 5.8,
+      "classic_8_mod_median": 5.6,
       "classic_10_mod_median": 8,
       "classic_12_mod_median": 9.4
     },
@@ -64928,7 +65061,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 32,
       "classic_8_mod_median": 0.4,
       "classic_10_mod_median": 0.8,
-      "classic_12_mod_median": 1.5
+      "classic_12_mod_median": 1.4
     },
     "stats": {
       "titolarita": 16,
@@ -65059,7 +65192,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 26,
       "fvmM": 26,
       "classic_8_mod_median": 0.6,
-      "classic_10_mod_median": 1.5,
+      "classic_10_mod_median": 1.4,
       "classic_12_mod_median": 2.6
     },
     "stats": {
@@ -65257,7 +65390,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 42,
       "fvmM": 42,
       "classic_8_mod_median": 0.2,
-      "classic_10_mod_median": 0.9,
+      "classic_10_mod_median": 0.8,
       "classic_12_mod_median": 2
     },
     "stats": {
@@ -65322,7 +65455,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 22,
       "fvm": 74,
       "fvmM": 74,
-      "classic_8_mod_median": 2.4,
+      "classic_8_mod_median": 2.3,
       "classic_10_mod_median": 4.2,
       "classic_12_mod_median": 5.6
     },
@@ -65521,7 +65654,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 115,
       "fvmM": 115,
       "classic_8_mod_median": 4.4,
-      "classic_10_mod_median": 6.3,
+      "classic_10_mod_median": 6.4,
       "classic_12_mod_median": 7.4
     },
     "stats": {
@@ -66182,7 +66315,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 134,
       "classic_8_mod_median": 7.2,
       "classic_10_mod_median": 8.8,
-      "classic_12_mod_median": 10.2
+      "classic_12_mod_median": 10.3
     },
     "stats": {
       "titolarita": 100,
@@ -66246,7 +66379,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -4,
       "fvm": 35,
       "fvmM": 35,
-      "classic_8_mod_median": 1.7,
+      "classic_8_mod_median": 1.6,
       "classic_10_mod_median": 3,
       "classic_12_mod_median": 3.8
     },
@@ -66312,7 +66445,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 0,
       "fvm": 1,
       "fvmM": 1,
-      "classic_8_mod_median": 0.4,
+      "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.4,
       "classic_12_mod_median": 0
     },
@@ -66434,7 +66567,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Occhio al cambio di gerarchia nella porta del Napoli: con l'arrivo di Allegri in panchina, Alex Meret è davanti a Milinkovic-Savic. Rimane una situazione aperta per il futuro, che può cambiare da un momento all'altro: dipende da tanti fattori visto che i due portieri per valore assoluto sono vicini. Al momento Allegri considera Meret primo, ma ci sarà alternanza per il turnover. Meret l'anno scorso ha perso il posto ed è stato fuori anche per infortunio, quest'anno riparte in pole e dovrà poi dimostrare sul campo di meritarsi il posto. È la porta della squadra vice campione d'Italia in carica, siamo sul primo slot ma per il fantacalcio è obbligatorio pensare alla coppia Meret-Milinkovic a oggi. Quindi calcolate già la spesa per arrivare a tutti e due i portieri, per non correre rischi.",
+    "fantaComment": "È cambiata la gerarchia nella porta del Napoli: con l'arrivo di Allegri in panchina, Alex Meret è davanti a Milinkovic-Savic. Rimane una situazione aperta per il futuro, a maggior ragione dopo lo stop del titolare contro l’Arsenal. Avrà spazio Milinkovic fino al suo recupero, poi in teoria tornerà Meret, ma parlerà il campo. È la porta della squadra vice campione d'Italia in carica, siamo sul primo slot ma per il fantacalcio abbiamo sempre ribadito che è obbligatorio pensare alla coppia Meret-Milinkovic a oggi. Quindi calcolate già la spesa per arrivare a tutti e due i portieri, per non correre rischi.",
     "quotazioni": {
       "qtA": 46,
       "qtI": 47,
@@ -66444,7 +66577,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -1,
       "fvm": 147,
       "fvmM": 147,
-      "classic_8_mod_median": 6.4,
+      "classic_8_mod_median": 6.3,
       "classic_10_mod_median": 8.2,
       "classic_12_mod_median": 10
     },
@@ -66908,7 +67041,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 22,
       "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.4,
-      "classic_12_mod_median": 1.4
+      "classic_12_mod_median": 1.5
     },
     "stats": {
       "titolarita": 42,
@@ -67370,7 +67503,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 13,
       "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
-      "classic_12_mod_median": 0.5
+      "classic_12_mod_median": 0.4
     },
     "stats": {
       "titolarita": 100,
@@ -67500,7 +67633,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -3,
       "fvm": 64,
       "fvmM": 64,
-      "classic_8_mod_median": 2.4,
+      "classic_8_mod_median": 2.3,
       "classic_10_mod_median": 5.2,
       "classic_12_mod_median": 8
     },
@@ -69150,9 +69283,9 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 42,
       "fvm": 138,
       "fvmM": 138,
-      "classic_8_mod_median": 2.7,
+      "classic_8_mod_median": 2.6,
       "classic_10_mod_median": 4,
-      "classic_12_mod_median": 6
+      "classic_12_mod_median": 5.8
     },
     "stats": {
       "titolarita": 66,
@@ -69876,7 +70009,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 6,
       "fvm": 22,
       "fvmM": 22,
-      "classic_8_mod_median": 0,
+      "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0,
       "classic_12_mod_median": 0
     },
@@ -70140,7 +70273,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 0,
       "fvm": 1,
       "fvmM": 1,
-      "classic_8_mod_median": 0.3,
+      "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0
     },
@@ -70274,7 +70407,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 1,
       "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
-      "classic_12_mod_median": 0.4
+      "classic_12_mod_median": 0.3
     },
     "stats": {
       "titolarita": 50,
@@ -70405,7 +70538,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 1,
       "fvmM": 1,
       "classic_8_mod_median": 0.2,
-      "classic_10_mod_median": 0.2,
+      "classic_10_mod_median": 0.4,
       "classic_12_mod_median": 0
     },
     "stats": {
@@ -70602,7 +70735,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 0,
       "fvm": 1,
       "fvmM": 1,
-      "classic_8_mod_median": 0,
+      "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0
     },

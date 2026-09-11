@@ -287,6 +287,10 @@
         "id": 4137
       },
       {
+        "player_id": "eb1e8211-468b-4db8-b9be-1a15afa2339d",
+        "id": 7255
+      },
+      {
         "player_id": "4505706f-e4f1-483b-995c-6c12460a2fe7",
         "id": 5862
       },
@@ -303,16 +307,12 @@
         "id": 6206
       },
       {
-        "player_id": "280d15dc-3cf6-47ec-ad41-19b983b09d20",
-        "id": 6229
-      },
-      {
         "player_id": "2e331f32-cc88-4a67-b471-f05a2db80063",
         "id": 7561
       },
       {
-        "player_id": "eb01cf4b-a689-4016-8c30-0e7b058d0210",
-        "id": 7554
+        "player_id": "280d15dc-3cf6-47ec-ad41-19b983b09d20",
+        "id": 6229
       }
     ],
     "rig": [
@@ -345,14 +345,14 @@
         "player_id": "4505706f-e4f1-483b-995c-6c12460a2fe7"
       }
     ],
-    "module": "4-3-3",
+    "module": "3-5-2",
     "coach": "Carlos Cuesta",
     "attack": 2,
     "defense": 2.5,
     "comment": "ll nuovo Parma abbraccia un calcio moderno e ambizioso: pressing alto, scambi di posizione e ricerca costante della superiorità numerica. Un’impronta propositiva che può tradursi in bonus preziosi per i fantallenatori. Il mantra sarà il coraggio nelle giocate e la fluidità tra i reparti. Per rendere efficace il sistema serviranno interpreti duttili, tecnici e dinamici: il mercato estivo sarà quindi decisivo. Nel precampionato è stata testata la difesa a tre, con Delprato e Valeri schierati da quinti per garantire ampiezza e spinta. Le due punte saranno supportate da centrocampisti offensivi e inserimenti continui.",
-    "sosFantaComment": "Confermato Cuesta in panchina nel Parma e sta provando molto il 4-3-3 nel pre campionato. Corvi parte nettamente avanti a Daffara tra i pali. In difesa Diego Carlos arriva per giocare titolare. A centrocampo è arrivato Fabbian, destinato a trovare molto spazio, ma per una maglia c'è anche Ordonez. In attacco il nuovo arrivato El Bilal Touré si candida subito una maglia da titolare, può giocare sia punta che ala. È arrivato anche David Romero e troverà molto spazio, scommessa interessante da punta: più lui di Elphege. In fascia per ora il baby Lontani ha rubato l'occhio, ma occhio al mercato.",
+    "sosFantaComment": "Confermato Cuesta in panchina nel Parma, dopo una prima parte di stagione col 4-3-3 è tornato al 3-5-2. Diego Carlos è arrivato per giocare in difesa, come Fabbian a centrocampo: favorito su Ordonez. In attacco sono principalmente in tre per due posti: El Bilal Touré, Romero e il baby Lontani, vera e propria sorpresa di questa prima parte di stagione. È già più di una semplice alternativa.",
     "created_at": "2026-07-21T13:10:52.139Z",
-    "updated_at": "2026-09-03T11:49:33.426Z",
+    "updated_at": "2026-09-10T12:36:28.148Z",
     "up": [
       {
         "player_id": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
@@ -430,12 +430,24 @@
       {
         "players": [
           {
+            "player_id": "2e331f32-cc88-4a67-b471-f05a2db80063",
+            "perc": 51
+          },
+          {
             "player_id": "eb01cf4b-a689-4016-8c30-0e7b058d0210",
-            "perc": 55
+            "perc": 49
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "280d15dc-3cf6-47ec-ad41-19b983b09d20",
+            "perc": 60
           },
           {
             "player_id": "d063038f-c807-450b-a1a0-4ef17966dddc",
-            "perc": 45
+            "perc": 40
           }
         ]
       }
@@ -461,7 +473,7 @@
     ],
     "keyRoles": [
       {
-        "role": "att-wings",
+        "role": "mid-wide",
         "tone": "good"
       },
       {
@@ -470,7 +482,7 @@
       }
     ],
     "createdAt": "2026-07-21T13:10:52.139Z",
-    "updatedAt": "2026-09-03T11:49:33.426Z"
+    "updatedAt": "2026-09-10T12:36:28.148Z"
   },
   {
     "team": "CAG",
@@ -925,438 +937,6 @@
     "updatedAt": "2026-09-08T07:46:47.476Z"
   },
   {
-    "team": "MON",
-    "season": "s_26_27",
-    "starters": [
-      {
-        "player_id": "b4537b2c-643d-4182-9c88-5669bb11e7f6",
-        "id": 7301
-      },
-      {
-        "player_id": "cff37405-7da7-494e-b4c4-34296cb8be1f",
-        "id": 6537
-      },
-      {
-        "player_id": "54398484-ccc0-43e1-b9a1-716b35d836d1",
-        "id": 7260
-      },
-      {
-        "player_id": "f729e4bf-bf18-4e1d-827a-20ef37865b8a",
-        "id": 4925
-      },
-      {
-        "player_id": "e2613024-bb41-4d9a-8c1d-24f6e2c63838",
-        "id": 7146
-      },
-      {
-        "player_id": "d47bf2f7-f320-4340-9845-33ef2f94d175",
-        "id": null
-      },
-      {
-        "player_id": "d5269f57-2928-4d3d-855c-fa0be565d03a",
-        "id": 6252
-      },
-      {
-        "player_id": "c294c6f4-b7d2-4657-a072-6d5cb3b65869",
-        "id": 2741
-      },
-      {
-        "player_id": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
-        "id": 5878
-      },
-      {
-        "player_id": "4cc6309e-aacf-4bb2-b5a8-e425bfdafcb0",
-        "id": 2155
-      },
-      {
-        "player_id": "0053b230-688b-4fef-90f5-b823c64ea378",
-        "id": 7523
-      }
-    ],
-    "rig": [
-      {
-        "player_id": "c294c6f4-b7d2-4657-a072-6d5cb3b65869"
-      },
-      {
-        "player_id": "4cc6309e-aacf-4bb2-b5a8-e425bfdafcb0"
-      },
-      {
-        "player_id": "0a3e9174-68bc-430c-845e-e04c95bcbc5a"
-      }
-    ],
-    "pun": [
-      {
-        "player_id": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91"
-      },
-      {
-        "player_id": "c294c6f4-b7d2-4657-a072-6d5cb3b65869"
-      }
-    ],
-    "corner": [
-      {
-        "player_id": "c294c6f4-b7d2-4657-a072-6d5cb3b65869"
-      },
-      {
-        "player_id": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91"
-      },
-      {
-        "player_id": "f4f8e1e3-4b76-446f-b395-f7c2eeb90176"
-      }
-    ],
-    "module": "3-4-2-1",
-    "coach": "Ivan Jurić",
-    "attack": 2,
-    "defense": 2,
-    "comment": "",
-    "sosFantaComment": "È arrivato Ivan Juric sulla panchina del neopromosso Monza, sarà difesa a 3: provato il 3-4-2-1. Tornqvist arriva per giocare e per essere il titolare, Thiam non ha convinto Juric e diventerà così il secondo portiere. In difesa sono arrivati Ziolkowski dalla Roma e Goglichidze e saranno titolari. A centrocampo si candidano a giocare i nuovi arrivati Folorunsho e Akinsanmiro, inseguono Mout e Colombo, giocheranno i primi due finché è infortunato Pessina (starà fuori 2 mesi circa da metà agosto, poi tornerà e sarà lui il titolare). A destra Touré ha tutto per diventare il titolare, si gioca un posto con Birindelli. Cutrone o il nuovo arrivato Varela a guidare l'attacco, dipenderà anche dal momento dei due. Poi Colpani, Mota, Ciurria (al momento infortunato), Zeballos e Ngonge si giocano i due posti a supporto del centravanti, ma Varela può contendersi una maglia anche qui e lo ha dimostrato nel pre-campionato e con l'Inter.",
-    "created_at": "2026-07-21T13:04:19.695Z",
-    "updated_at": "2026-09-02T10:43:17.078Z",
-    "up": [
-      {
-        "player_id": "88893e63-f3f6-4224-838b-8e189ef9f312",
-        "points": [
-          {
-            "tone": "good",
-            "text": "Leader della squadra"
-          },
-          {
-            "tone": "good",
-            "text": "Svaria su tutto il fronte d'attacco"
-          },
-          {
-            "tone": "bad",
-            "text": "Qualche dubbio sull'integrità fisica"
-          }
-        ]
-      },
-      {
-        "player_id": "76ccd152-fe9d-440b-a890-6c9adef778ec",
-        "points": [
-          {
-            "tone": "good",
-            "text": "Gioca su entrambe le fasce"
-          },
-          {
-            "tone": "good",
-            "text": "Partecipa alla manovra offensiva"
-          }
-        ]
-      }
-    ],
-    "down": [
-      {
-        "player_id": "f4f8e1e3-4b76-446f-b395-f7c2eeb90176",
-        "points": [
-          {
-            "tone": "bad",
-            "text": "Elevata concorrenza"
-          }
-        ]
-      }
-    ],
-    "young": [
-      {
-        "player_id": "2d943164-e3df-4a78-a795-93d26f2623e7",
-        "points": [
-          {
-            "tone": "good",
-            "text": "Ha doti per scalare le gerarchie"
-          }
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "player_id": "d47bf2f7-f320-4340-9845-33ef2f94d175",
-        "points": [
-          {
-            "tone": "good",
-            "text": "Elevata propensione offensiva"
-          },
-          {
-            "tone": "good",
-            "text": "Precisione nei cross"
-          }
-        ]
-      }
-    ],
-    "ballottaggi": [
-      {
-        "players": [
-          {
-            "player_id": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
-            "perc": 55
-          },
-          {
-            "player_id": "f4f8e1e3-4b76-446f-b395-f7c2eeb90176",
-            "perc": 45
-          }
-        ]
-      },
-      {
-        "players": [
-          {
-            "player_id": "4cc6309e-aacf-4bb2-b5a8-e425bfdafcb0",
-            "perc": 55
-          },
-          {
-            "player_id": "88893e63-f3f6-4224-838b-8e189ef9f312",
-            "perc": 45
-          }
-        ]
-      },
-      {
-        "players": [
-          {
-            "player_id": "d5269f57-2928-4d3d-855c-fa0be565d03a",
-            "perc": 51
-          },
-          {
-            "player_id": "fd980a09-99b1-4174-81e5-60cbcd1fbb49",
-            "perc": 49
-          }
-        ]
-      },
-      {
-        "players": [
-          {
-            "player_id": "e2613024-bb41-4d9a-8c1d-24f6e2c63838",
-            "perc": 51
-          },
-          {
-            "player_id": "76ccd152-fe9d-440b-a890-6c9adef778ec",
-            "perc": 49
-          }
-        ]
-      }
-    ],
-    "coachRating": {
-      "attack": 2,
-      "defense": 2,
-      "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Juric.webp"
-    },
-    "keyPoints": [
-      {
-        "text": "Importanza esterni",
-        "tone": "good"
-      },
-      {
-        "text": "Marcatura a tutto campo",
-        "tone": "neutral"
-      },
-      {
-        "text": "Gioco molto aggressivo",
-        "tone": "neutral"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "mid-wide",
-        "tone": "good"
-      },
-      {
-        "role": "mid-center",
-        "tone": "bad"
-      }
-    ],
-    "createdAt": "2026-07-21T13:04:19.695Z",
-    "updatedAt": "2026-09-02T10:43:17.078Z"
-  },
-  {
-    "team": "TOR",
-    "season": "s_26_27",
-    "starters": [
-      {
-        "player_id": "36a9825a-5980-4cda-8103-62cc944e7a83",
-        "id": 6534
-      },
-      {
-        "player_id": "791c7987-68bd-402f-9206-2cf71a15e628",
-        "id": 6495
-      },
-      {
-        "player_id": "2ae97ae9-6de8-47be-a015-6421fa448f61",
-        "id": 6642
-      },
-      {
-        "player_id": "52c73119-c573-4f9d-91c2-6a4977464787",
-        "id": 2169
-      },
-      {
-        "player_id": "019db866-8ef1-4aea-894b-eb37ed3b792e",
-        "id": 7220
-      },
-      {
-        "player_id": "53e42c7e-ea10-414b-a19f-ce1880b59641",
-        "id": 7060
-      },
-      {
-        "player_id": "9c1fb348-62af-4a63-9dfc-de159549767c",
-        "id": 1933
-      },
-      {
-        "player_id": "2d9b4c39-4108-459f-8932-faa1b495f64b",
-        "id": null
-      },
-      {
-        "player_id": "2d18f8b5-9c3a-4878-ad3f-9765c8d0e1b6",
-        "id": 5888
-      },
-      {
-        "player_id": "9fa87205-24eb-47a7-8e79-689915992c32",
-        "id": 5687
-      },
-      {
-        "player_id": "d24218a4-0bbc-4dd6-b01d-cf9d0a9a90d5",
-        "id": "2061"
-      }
-    ],
-    "rig": [
-      {
-        "player_id": "9fa87205-24eb-47a7-8e79-689915992c32"
-      },
-      {
-        "player_id": "b0a5adbc-a222-48c2-9a8e-ccf200c42084"
-      },
-      {
-        "player_id": "279970ec-46fe-4c48-9c84-2cd2193b512c"
-      }
-    ],
-    "pun": [
-      {
-        "player_id": "9fa87205-24eb-47a7-8e79-689915992c32"
-      },
-      {
-        "player_id": "9c1fb348-62af-4a63-9dfc-de159549767c"
-      }
-    ],
-    "corner": [
-      {
-        "player_id": "9fa87205-24eb-47a7-8e79-689915992c32"
-      },
-      {
-        "player_id": "2d9b4c39-4108-459f-8932-faa1b495f64b"
-      },
-      {
-        "player_id": "9c1fb348-62af-4a63-9dfc-de159549767c"
-      }
-    ],
-    "module": "3-4-2-1",
-    "coach": "Ignazio Abate",
-    "attack": 2.5,
-    "defense": 2,
-    "comment": "Il Torino cambia guida tecnica dopo la 26ª giornata con l'arrivo di Roberto D'Aversa al posto di Marco Baroni. L'obiettivo è salvare la stagione granata ed evitare la retrocessione in Serie B. D'aversa è un tecnico specializzato in salvezze. Di base non  dovrebbe cambiare il modulo tattico della squadra granata, con la difesa a 3 un centrocampo muscolare e Vlasic come supporto alle due punte. Ciò che cambierà è l'attenzione alla fase difensiva, vero tallone d'Achille della stagione granata. D'Aversa richiede una pressione costante sul portatore di palla avversario e un'organizzazione difensiva solida, cercando di ridurre al minimo gli spazi tra le linee. Le sue squadre cercano spesso la verticalizzazione immediata. In fase di costruzione può utilizzare una struttura 4+2, dove i difensori e i mediani collaborano per uscire dalla pressione, cercando poi il lancio lungo per le punte se pressati intensamente. L'ago della bilancia sarà Vlasic, collante tra centrocampo e attacco.",
-    "sosFantaComment": "È arrivato Ignazio Abate sulla panchina del Torino: più 3-4-2-1 che difesa a 4, provato solo una volta nel precampionato. Cacciamani si candida a giocare a sinistra, promettente e già pronto. A destra Perdesen è andato via ed è arrivato Belghali al suo posto. Occhio a Casadei: è stato provato praticamente sulla trequarti. Il tridente sarebbe con lui e Vlasic a supporto di Simeone; Zapata è di fatto il vice Cholito, c'è anche Kulenovic. Ma può diventare anche un 3-4-1-2. In difesa Rodriguez si candida a essere il titolare sul centro-sinistra (Abate aspettava un mancino), poi ci sono Comuzzo, Comert e Ismajli a giocarsi il posto. A centrocampo i nuovi arrivati Fitz-Jim e Mandragora si candidano a giocare titolari con Gineitis e Ilkhan valide alternative. In porta è arrivato Perri e sarà il titolare.",
-    "created_at": "2026-07-21T13:23:02.397Z",
-    "updated_at": "2026-09-08T08:11:09.243Z",
-    "up": [
-      {
-        "player_id": "d24218a4-0bbc-4dd6-b01d-cf9d0a9a90d5",
-        "points": [
-          {
-            "text": "Utile nella costruzione del gioco",
-            "tone": "good"
-          },
-          {
-            "tone": "good",
-            "text": "Utile nel gioco aereo per un modulo con gli esterni"
-          }
-        ]
-      },
-      {
-        "player_id": "9fa87205-24eb-47a7-8e79-689915992c32",
-        "points": [
-          {
-            "text": "Svaria su tutto il fronte offensivo",
-            "tone": "good"
-          },
-          {
-            "tone": "good",
-            "text": "Bravo a giocare tra le linee"
-          }
-        ]
-      }
-    ],
-    "down": [
-      {
-        "player_id": "a631380f-8283-444f-948c-bc772ffcc1bc",
-        "points": [
-          {
-            "text": "Potrebbe soffrire la difesa alta",
-            "tone": "bad"
-          }
-        ]
-      }
-    ],
-    "young": [
-      {
-        "player_id": "53e42c7e-ea10-414b-a19f-ce1880b59641",
-        "points": [
-          {
-            "text": "Ottima velocità e caparbietà",
-            "tone": "good"
-          }
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "player_id": "491914f6-841c-478f-a8d8-8710dd039a27",
-        "points": [
-          {
-            "text": "Ottima finalizzazione dentro l'area",
-            "tone": "good"
-          }
-        ]
-      }
-    ],
-    "ballottaggi": [
-      {
-        "players": [
-          {
-            "player_id": "52c73119-c573-4f9d-91c2-6a4977464787",
-            "perc": 51
-          },
-          {
-            "player_id": "355f295d-4904-459a-b863-49aff62de841",
-            "perc": 49
-          }
-        ]
-      }
-    ],
-    "coachRating": {
-      "attack": 2.5,
-      "defense": 2,
-      "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Abate.webp"
-    },
-    "keyPoints": [
-      {
-        "text": "Trequartisti mobili",
-        "tone": "good"
-      },
-      {
-        "text": "Pressing a tutto campo",
-        "tone": "neutral"
-      },
-      {
-        "text": "Costruzione dal basso e palleggio",
-        "tone": "neutral"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "def-center",
-        "tone": "bad"
-      },
-      {
-        "role": "treq-center",
-        "tone": "good"
-      }
-    ],
-    "createdAt": "2026-07-21T13:23:02.397Z",
-    "updatedAt": "2026-09-08T08:11:09.243Z"
-  },
-  {
     "team": "BOL",
     "season": "s_26_27",
     "starters": [
@@ -1442,7 +1022,7 @@
     "comment": "Il Bologna si caratterizza per un gioco molto dinamico, con i giocatori che spesso si scambiano le posizioni per creare confusione nella difesa avversaria. Il ruolo degli esterni d’attacco è fondamentale: sono loro a garantire ampiezza, velocità e spesso i gol e gli assist più importanti. La difesa è molto alta, in linea con il pressing aggressivo che la squadra mette in campo, ma questo comporta qualche rischio in ripartenza. Attenzione anche al turn over elevato, che può influenzare la continuità di rendimento di alcuni giocatori, specialmente in ottica fantacalcio.",
     "sosFantaComment": "Da Italiano a Domenico Tedesco: cambia la guida tecnica del Bologna, ma a livello tattico resta confermato il 4-3-3 di partenza. Dovbyk è arrivato per giocare e, se starà bene, sarà il centravanti titolare, con Piccoli come vice. Rowe è andato via, spazio a uno tra Cambiaghi e il nuovo arrivato Mbangula sulla sinistra. Pobega, Moro ed El Azzouzi si contendono la maglia lasciata da Freuler. Bernardeschi in estate provato da mezzala ma preferisce fare l'ala pura o il trequartista, di fatto è un jolly che avrà molto spazio. E lo stesso si può dire di Odgaard, che sta convincendo da mezzala. Zortea parte avanti rispetto a Holm per il ruolo di terzino destro, mentre al centro della difesa è appena arrivato Theate, che insieme a Heggem partono leggermente avanti rispetto a Vitik e Helland.",
     "created_at": "2026-07-21T13:36:37.003Z",
-    "updated_at": "2026-09-08T07:24:41.776Z",
+    "updated_at": "2026-09-10T12:31:43.358Z",
     "up": [
       {
         "player_id": "c3763cc2-a3d9-403f-8f5a-856896a47c5d",
@@ -1462,7 +1042,7 @@
           },
           {
             "tone": "good",
-            "text": "Maggiore minutaggio rispetto all'anno scorso"
+            "text": "Calcia spesso verso la porta con buona precisione"
           }
         ]
       }
@@ -1600,7 +1180,7 @@
       }
     ],
     "createdAt": "2026-07-21T13:36:37.003Z",
-    "updatedAt": "2026-09-08T07:24:41.776Z"
+    "updatedAt": "2026-09-10T12:31:43.358Z"
   },
   {
     "team": "LAZ",
@@ -3012,6 +2592,668 @@
     "updatedAt": "2026-09-08T08:12:25.153Z"
   },
   {
+    "team": "NAP",
+    "season": "s_26_27",
+    "starters": [
+      {
+        "player_id": "1bef666d-d305-4795-af71-2e946eb6ab0e",
+        "id": 572
+      },
+      {
+        "player_id": "dbd256fc-4861-493d-8fc6-8abc4503c061",
+        "id": 2816
+      },
+      {
+        "player_id": "f61d5ce5-111a-4f71-b6f7-dfe4393621d3",
+        "id": 4409
+      },
+      {
+        "player_id": "9974d5bb-0599-421d-8ee6-2aebf34143f8",
+        "id": 4664
+      },
+      {
+        "player_id": "65b01da4-d962-42ce-bc23-e7bcc306a61b",
+        "id": 1852
+      },
+      {
+        "player_id": "f06f2f39-13e2-4cda-8319-dffd25ec0cbd",
+        "id": 2517
+      },
+      {
+        "player_id": "a411c282-00be-4e2f-8599-e0a2e5da85bf",
+        "id": 4287
+      },
+      {
+        "player_id": "f7f99d6a-c8e0-4ec8-a434-1ffba0253b41",
+        "id": 4777
+      },
+      {
+        "player_id": "e3ca6a3a-4c39-4307-ab09-0520b0f066db",
+        "id": 536
+      },
+      {
+        "player_id": "1da941e1-9f25-4af2-9903-6d3004e1765c",
+        "id": 7351
+      },
+      {
+        "player_id": "4c72a8d4-8416-4a9b-b70f-810f16af86ff",
+        "id": "6052"
+      }
+    ],
+    "rig": [
+      {
+        "player_id": "f06f2f39-13e2-4cda-8319-dffd25ec0cbd"
+      },
+      {
+        "player_id": "4c72a8d4-8416-4a9b-b70f-810f16af86ff"
+      },
+      {
+        "player_id": "e3ca6a3a-4c39-4307-ab09-0520b0f066db"
+      }
+    ],
+    "pun": [
+      {
+        "player_id": "f06f2f39-13e2-4cda-8319-dffd25ec0cbd"
+      },
+      {
+        "player_id": "e3ca6a3a-4c39-4307-ab09-0520b0f066db"
+      }
+    ],
+    "corner": [
+      {
+        "player_id": "f06f2f39-13e2-4cda-8319-dffd25ec0cbd"
+      },
+      {
+        "player_id": "e3ca6a3a-4c39-4307-ab09-0520b0f066db"
+      },
+      {
+        "player_id": "3cd2885e-8e25-4e3f-8c86-8af871b76421"
+      }
+    ],
+    "module": "4-3-3",
+    "coach": "Massimiliano Allegri",
+    "attack": 4.5,
+    "defense": 4.5,
+    "comment": "Reduce dalla conquista dello scudetto, Conte ha portato a Napoli mentalità vincente, rigore tattico e una forte identità di squadra. Pur avendo nel 3-5-2 il suo marchio di fabbrica, ha dimostrato grande intelligenza adattandosi al contesto partenopeo, riuscendo a trovare equilibrio anche con il 4-3-3, modulo che meglio valorizza le caratteristiche tecniche e offensive della rosa azzurra. Le sue squadre si distinguono per organizzazione, intensità e spirito di sacrificio, con un’attenzione maniacale alla fase difensiva. Difensori centrali affidabili ed esterni dinamici restano fondamentali nel suo sistema, così come i centrocampisti con capacità di inserimento e gli attaccanti di movimento. ",
+    "sosFantaComment": "Da Antonio Conte a Massimiliano Allegri, dalla difesa a 3 al 4-3-3 provato finora (a volte potrà essere anche un 4-2-3-1). Meret più di Milinkovic, le prime uscite ufficiali dicono questo sulla gerarchia in porta ma occhio allo stop dell'italiano in Champions. Vi abbiamo sempre consigliato di prenderli in coppia. Inizia ai box la stagione di Buongiorno e lo stop non sarà breve (tornerà verso novembre): o il nuovo arrivato Badiashile o Marin fino a quel momento, con il primo in pole. Anguissa parte da prima alternativa di McTominay e/o De Bruyne. Nel tridente più Alisson Santos (ma si è infortunato con l'Arsenal e rischia di perdere terreno) e Politano di Neres e Lang, ma c'è anche Vergara che Allegri utilizza sia nel tridente che da mezzala.",
+    "created_at": "2026-07-21T13:11:53.537Z",
+    "updated_at": "2026-09-10T12:27:44.280Z",
+    "up": [
+      {
+        "player_id": "f61d5ce5-111a-4f71-b6f7-dfe4393621d3",
+        "points": [
+          {
+            "text": "Forte nei duelli difensivi",
+            "tone": "good"
+          },
+          {
+            "tone": "good",
+            "text": "Abile nelle palle inattive"
+          }
+        ]
+      },
+      {
+        "player_id": "dbd256fc-4861-493d-8fc6-8abc4503c061",
+        "points": [
+          {
+            "text": "Si trova spesso in zona tiro",
+            "tone": "good"
+          },
+          {
+            "tone": "good",
+            "text": "Abile nelle palle inattive"
+          }
+        ]
+      }
+    ],
+    "down": [
+      {
+        "player_id": "d850d49a-7b84-4f80-a7f3-f83b61df60a5",
+        "points": [
+          {
+            "text": "Indietro nelle gerarchie",
+            "tone": "neutral"
+          }
+        ]
+      }
+    ],
+    "young": [
+      {
+        "player_id": "06e40e5b-de3e-410d-8540-4775224cb363",
+        "points": [
+          {
+            "text": "Utile nelle rotazioni",
+            "tone": "good"
+          }
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "player_id": "732b19cf-3340-4588-ba8a-85459261b4c1",
+        "points": [
+          {
+            "text": "Jolly difensivo",
+            "tone": "good"
+          }
+        ]
+      }
+    ],
+    "ballottaggi": [
+      {
+        "players": [
+          {
+            "player_id": "e3ca6a3a-4c39-4307-ab09-0520b0f066db",
+            "perc": 55
+          },
+          {
+            "player_id": "3cd2885e-8e25-4e3f-8c86-8af871b76421",
+            "perc": 45
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "9974d5bb-0599-421d-8ee6-2aebf34143f8",
+            "perc": 51
+          },
+          {
+            "player_id": "3cbf391b-c091-4b2f-a391-23c8fa6b4eb3",
+            "perc": 49
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "1bef666d-d305-4795-af71-2e946eb6ab0e",
+            "perc": 60
+          },
+          {
+            "player_id": "85575d07-92d4-4504-962b-b60be45e68a6",
+            "perc": 40
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "1da941e1-9f25-4af2-9903-6d3004e1765c",
+            "perc": 51
+          },
+          {
+            "player_id": "06e40e5b-de3e-410d-8540-4775224cb363",
+            "perc": 49
+          }
+        ]
+      }
+    ],
+    "coachRating": {
+      "attack": 4.5,
+      "defense": 4.5,
+      "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Allegri.webp"
+    },
+    "keyPoints": [
+      {
+        "text": "Solidità difensiva",
+        "tone": "good"
+      },
+      {
+        "text": "Palle inattive decisive",
+        "tone": "good"
+      },
+      {
+        "text": "Baricentro squadra basso",
+        "tone": "bad"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "gk",
+        "tone": "good"
+      },
+      {
+        "role": "def-center",
+        "tone": "good"
+      }
+    ],
+    "createdAt": "2026-07-21T13:11:53.537Z",
+    "updatedAt": "2026-09-10T12:27:44.280Z"
+  },
+  {
+    "team": "TOR",
+    "season": "s_26_27",
+    "starters": [
+      {
+        "player_id": "36a9825a-5980-4cda-8103-62cc944e7a83",
+        "id": 6534
+      },
+      {
+        "player_id": "791c7987-68bd-402f-9206-2cf71a15e628",
+        "id": 6495
+      },
+      {
+        "player_id": "2ae97ae9-6de8-47be-a015-6421fa448f61",
+        "id": 6642
+      },
+      {
+        "player_id": "52c73119-c573-4f9d-91c2-6a4977464787",
+        "id": 2169
+      },
+      {
+        "player_id": "019db866-8ef1-4aea-894b-eb37ed3b792e",
+        "id": 7220
+      },
+      {
+        "player_id": "53e42c7e-ea10-414b-a19f-ce1880b59641",
+        "id": 7060
+      },
+      {
+        "player_id": "9c1fb348-62af-4a63-9dfc-de159549767c",
+        "id": 1933
+      },
+      {
+        "player_id": "2d9b4c39-4108-459f-8932-faa1b495f64b",
+        "id": null
+      },
+      {
+        "player_id": "2d18f8b5-9c3a-4878-ad3f-9765c8d0e1b6",
+        "id": 5888
+      },
+      {
+        "player_id": "9fa87205-24eb-47a7-8e79-689915992c32",
+        "id": 5687
+      },
+      {
+        "player_id": "d24218a4-0bbc-4dd6-b01d-cf9d0a9a90d5",
+        "id": "2061"
+      }
+    ],
+    "rig": [
+      {
+        "player_id": "9fa87205-24eb-47a7-8e79-689915992c32"
+      },
+      {
+        "player_id": "b0a5adbc-a222-48c2-9a8e-ccf200c42084"
+      },
+      {
+        "player_id": "279970ec-46fe-4c48-9c84-2cd2193b512c"
+      }
+    ],
+    "pun": [
+      {
+        "player_id": "9fa87205-24eb-47a7-8e79-689915992c32"
+      },
+      {
+        "player_id": "9c1fb348-62af-4a63-9dfc-de159549767c"
+      }
+    ],
+    "corner": [
+      {
+        "player_id": "9fa87205-24eb-47a7-8e79-689915992c32"
+      },
+      {
+        "player_id": "2d9b4c39-4108-459f-8932-faa1b495f64b"
+      },
+      {
+        "player_id": "9c1fb348-62af-4a63-9dfc-de159549767c"
+      }
+    ],
+    "module": "3-4-2-1",
+    "coach": "Ignazio Abate",
+    "attack": 2.5,
+    "defense": 2,
+    "comment": "Il Torino cambia guida tecnica dopo la 26ª giornata con l'arrivo di Roberto D'Aversa al posto di Marco Baroni. L'obiettivo è salvare la stagione granata ed evitare la retrocessione in Serie B. D'aversa è un tecnico specializzato in salvezze. Di base non  dovrebbe cambiare il modulo tattico della squadra granata, con la difesa a 3 un centrocampo muscolare e Vlasic come supporto alle due punte. Ciò che cambierà è l'attenzione alla fase difensiva, vero tallone d'Achille della stagione granata. D'Aversa richiede una pressione costante sul portatore di palla avversario e un'organizzazione difensiva solida, cercando di ridurre al minimo gli spazi tra le linee. Le sue squadre cercano spesso la verticalizzazione immediata. In fase di costruzione può utilizzare una struttura 4+2, dove i difensori e i mediani collaborano per uscire dalla pressione, cercando poi il lancio lungo per le punte se pressati intensamente. L'ago della bilancia sarà Vlasic, collante tra centrocampo e attacco.",
+    "sosFantaComment": "È arrivato Ignazio Abate sulla panchina del Torino: più 3-4-2-1 che difesa a 4, provato solo una volta nel precampionato. Cacciamani si candida a giocare a sinistra, promettente e già pronto. A destra Perdesen è andato via ed è arrivato Belghali al suo posto. Occhio a Casadei: è stato provato praticamente sulla trequarti. Il tridente sarebbe con lui e Vlasic a supporto di Simeone; Zapata è di fatto il vice Cholito, c'è anche Kulenovic. Ma può diventare anche un 3-4-1-2. In difesa Rodriguez si candida a essere il titolare sul centro-sinistra (Abate aspettava un mancino), poi ci sono Comuzzo, Comert e Ismajli a giocarsi il posto. A centrocampo i nuovi arrivati Fitz-Jim e Mandragora si candidano a giocare titolari con Gineitis e Ilkhan valide alternative. In porta è arrivato Perri e sarà il titolare.",
+    "created_at": "2026-07-21T13:23:02.397Z",
+    "updated_at": "2026-09-10T12:38:21.512Z",
+    "up": [
+      {
+        "player_id": "d24218a4-0bbc-4dd6-b01d-cf9d0a9a90d5",
+        "points": [
+          {
+            "text": "Ottimi movimenti di smarcamento",
+            "tone": "good"
+          },
+          {
+            "tone": "good",
+            "text": "Buona finalizzazione"
+          }
+        ]
+      },
+      {
+        "player_id": "9fa87205-24eb-47a7-8e79-689915992c32",
+        "points": [
+          {
+            "text": "Svaria su tutto il fronte offensivo",
+            "tone": "good"
+          },
+          {
+            "tone": "good",
+            "text": "Bravo a giocare tra le linee"
+          }
+        ]
+      }
+    ],
+    "down": [
+      {
+        "player_id": "a631380f-8283-444f-948c-bc772ffcc1bc",
+        "points": [
+          {
+            "text": "Potrebbe soffrire la difesa alta",
+            "tone": "bad"
+          }
+        ]
+      }
+    ],
+    "young": [
+      {
+        "player_id": "53e42c7e-ea10-414b-a19f-ce1880b59641",
+        "points": [
+          {
+            "text": "Ottima velocità e caparbietà",
+            "tone": "good"
+          }
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "player_id": "491914f6-841c-478f-a8d8-8710dd039a27",
+        "points": [
+          {
+            "text": "Ottima finalizzazione dentro l'area",
+            "tone": "good"
+          }
+        ]
+      }
+    ],
+    "ballottaggi": [
+      {
+        "players": [
+          {
+            "player_id": "52c73119-c573-4f9d-91c2-6a4977464787",
+            "perc": 51
+          },
+          {
+            "player_id": "355f295d-4904-459a-b863-49aff62de841",
+            "perc": 49
+          }
+        ]
+      }
+    ],
+    "coachRating": {
+      "attack": 2.5,
+      "defense": 2,
+      "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Abate.webp"
+    },
+    "keyPoints": [
+      {
+        "text": "Trequartisti mobili",
+        "tone": "good"
+      },
+      {
+        "text": "Pressing a tutto campo",
+        "tone": "neutral"
+      },
+      {
+        "text": "Costruzione dal basso e palleggio",
+        "tone": "neutral"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "def-center",
+        "tone": "bad"
+      },
+      {
+        "role": "treq-center",
+        "tone": "good"
+      }
+    ],
+    "createdAt": "2026-07-21T13:23:02.397Z",
+    "updatedAt": "2026-09-10T12:38:21.512Z"
+  },
+  {
+    "team": "MON",
+    "season": "s_26_27",
+    "starters": [
+      {
+        "player_id": "b4537b2c-643d-4182-9c88-5669bb11e7f6",
+        "id": 7301
+      },
+      {
+        "player_id": "cff37405-7da7-494e-b4c4-34296cb8be1f",
+        "id": 6537
+      },
+      {
+        "player_id": "54398484-ccc0-43e1-b9a1-716b35d836d1",
+        "id": 7260
+      },
+      {
+        "player_id": "f729e4bf-bf18-4e1d-827a-20ef37865b8a",
+        "id": 4925
+      },
+      {
+        "player_id": "76ccd152-fe9d-440b-a890-6c9adef778ec",
+        "id": 5838
+      },
+      {
+        "player_id": "d47bf2f7-f320-4340-9845-33ef2f94d175",
+        "id": null
+      },
+      {
+        "player_id": "d5269f57-2928-4d3d-855c-fa0be565d03a",
+        "id": 6252
+      },
+      {
+        "player_id": "c294c6f4-b7d2-4657-a072-6d5cb3b65869",
+        "id": 2741
+      },
+      {
+        "player_id": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
+        "id": 5878
+      },
+      {
+        "player_id": "4cc6309e-aacf-4bb2-b5a8-e425bfdafcb0",
+        "id": 2155
+      },
+      {
+        "player_id": "0053b230-688b-4fef-90f5-b823c64ea378",
+        "id": 7523
+      }
+    ],
+    "rig": [
+      {
+        "player_id": "c294c6f4-b7d2-4657-a072-6d5cb3b65869"
+      },
+      {
+        "player_id": "4cc6309e-aacf-4bb2-b5a8-e425bfdafcb0"
+      },
+      {
+        "player_id": "0a3e9174-68bc-430c-845e-e04c95bcbc5a"
+      }
+    ],
+    "pun": [
+      {
+        "player_id": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91"
+      },
+      {
+        "player_id": "c294c6f4-b7d2-4657-a072-6d5cb3b65869"
+      }
+    ],
+    "corner": [
+      {
+        "player_id": "c294c6f4-b7d2-4657-a072-6d5cb3b65869"
+      },
+      {
+        "player_id": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91"
+      },
+      {
+        "player_id": "f4f8e1e3-4b76-446f-b395-f7c2eeb90176"
+      }
+    ],
+    "module": "3-4-2-1",
+    "coach": "Ivan Jurić",
+    "attack": 2,
+    "defense": 2,
+    "comment": "",
+    "sosFantaComment": "È arrivato Ivan Juric sulla panchina del neopromosso Monza, sarà difesa a 3: provato il 3-4-2-1. Tornqvist arriva per giocare e per essere il titolare, Thiam non ha convinto Juric e diventerà così il secondo portiere. In difesa sono arrivati Ziolkowski dalla Roma e Goglichidze e saranno titolari. A centrocampo si candidano a giocare i nuovi arrivati Folorunsho e Akinsanmiro, inseguono Mout e Colombo, giocheranno i primi due finché è infortunato Pessina (starà fuori 2 mesi circa da metà agosto, poi tornerà e sarà lui il titolare). A destra Touré ha tutto per diventare il titolare, si gioca un posto con Birindelli. Cutrone o il nuovo arrivato Varela a guidare l'attacco, dipenderà anche dal momento dei due. Poi Colpani, Mota, Ciurria (al momento infortunato), Zeballos e Ngonge si giocano i due posti a supporto del centravanti, ma Varela può contendersi una maglia anche qui e lo ha dimostrato nel pre-campionato e con l'Inter.",
+    "created_at": "2026-07-21T13:04:19.695Z",
+    "updated_at": "2026-09-10T13:01:36.358Z",
+    "up": [
+      {
+        "player_id": "88893e63-f3f6-4224-838b-8e189ef9f312",
+        "points": [
+          {
+            "tone": "good",
+            "text": "Leader della squadra"
+          },
+          {
+            "tone": "good",
+            "text": "Svaria su tutto il fronte d'attacco"
+          },
+          {
+            "tone": "bad",
+            "text": "Qualche dubbio sull'integrità fisica"
+          }
+        ]
+      },
+      {
+        "player_id": "76ccd152-fe9d-440b-a890-6c9adef778ec",
+        "points": [
+          {
+            "tone": "good",
+            "text": "Gioca su entrambe le fasce"
+          },
+          {
+            "tone": "good",
+            "text": "Partecipa alla manovra offensiva"
+          }
+        ]
+      }
+    ],
+    "down": [
+      {
+        "player_id": "f4f8e1e3-4b76-446f-b395-f7c2eeb90176",
+        "points": [
+          {
+            "tone": "bad",
+            "text": "Elevata concorrenza"
+          }
+        ]
+      }
+    ],
+    "young": [
+      {
+        "player_id": "2d943164-e3df-4a78-a795-93d26f2623e7",
+        "points": [
+          {
+            "tone": "good",
+            "text": "Ha doti per scalare le gerarchie"
+          }
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "player_id": "d47bf2f7-f320-4340-9845-33ef2f94d175",
+        "points": [
+          {
+            "tone": "good",
+            "text": "Elevata propensione offensiva"
+          },
+          {
+            "tone": "good",
+            "text": "Precisione nei cross"
+          }
+        ]
+      }
+    ],
+    "ballottaggi": [
+      {
+        "players": [
+          {
+            "player_id": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
+            "perc": 55
+          },
+          {
+            "player_id": "f4f8e1e3-4b76-446f-b395-f7c2eeb90176",
+            "perc": 45
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "4cc6309e-aacf-4bb2-b5a8-e425bfdafcb0",
+            "perc": 55
+          },
+          {
+            "player_id": "88893e63-f3f6-4224-838b-8e189ef9f312",
+            "perc": 45
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "d5269f57-2928-4d3d-855c-fa0be565d03a",
+            "perc": 51
+          },
+          {
+            "player_id": "fd980a09-99b1-4174-81e5-60cbcd1fbb49",
+            "perc": 49
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "76ccd152-fe9d-440b-a890-6c9adef778ec",
+            "perc": 51
+          },
+          {
+            "player_id": "e2613024-bb41-4d9a-8c1d-24f6e2c63838",
+            "perc": 49
+          }
+        ]
+      }
+    ],
+    "coachRating": {
+      "attack": 2,
+      "defense": 2,
+      "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Juric.webp"
+    },
+    "keyPoints": [
+      {
+        "text": "Importanza esterni",
+        "tone": "good"
+      },
+      {
+        "text": "Marcatura a tutto campo",
+        "tone": "neutral"
+      },
+      {
+        "text": "Gioco molto aggressivo",
+        "tone": "neutral"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "mid-wide",
+        "tone": "good"
+      },
+      {
+        "role": "mid-center",
+        "tone": "bad"
+      }
+    ],
+    "createdAt": "2026-07-21T13:04:19.695Z",
+    "updatedAt": "2026-09-10T13:01:36.358Z"
+  },
+  {
     "team": "INT",
     "season": "s_26_27",
     "starters": [
@@ -3319,18 +3561,18 @@
     "comment": "Dopo anni di cambiamenti tattici, il ritorno di Allegri al Milan segnerebbe un ritorno al pragmatismo e alla solidità. Il tecnico livornese incarna una filosofia votata all’equilibrio: linee strette, difesa ordinata, gestione dei ritmi e adattamento costante all’avversario. Non ama il pressing alto sistematico, ma preferisce tempi di pressione mirati e ripartenze rapide dopo il recupero. In fase offensiva punta sulla lettura dei momenti: verticalizzazioni improvvise, inserimenti intelligenti e massima attenzione all’efficacia. Il risultato viene prima della prestazione, e la valorizzazione dei profili più duttili e intelligenti tatticamente è una costante.",
     "sosFantaComment": "È arrivato Ruben Amorim in panchina, il suo Milan giocherà col 3-4-2-1. La grandissima novità è il centravanti Goncalo Ramos, che sarà il titolare. Leao è andato al Galatasaray quindi alle sue spalle una maglia è di Pulisic, l'altra di Cissè o Saelemaekers, ma c'è anche l'ipotesi Rabiot più avanzato (può fare sia il mediano che il trequartista) e c'è anche il nuovo arrivato Hutchinson. Saelemaekers provato più sulla trequarti che a tutta fascia, visto il grande pre-campionato di Chukwueze a tutta fascia a destra. A sinistra il nuovo arrivato Moreira diventa il primo candidato per il posto, con Estupinan e Bartesaghi alle sue spalle (ma quest'ultimo può fare anche il vice Pavlovic). De Winter e Gabbia si giocano il posto al centro della difesa, verranno anche alternati.",
     "created_at": "2026-07-21T12:48:10.325Z",
-    "updated_at": "2026-09-08T07:50:11.391Z",
+    "updated_at": "2026-09-10T12:34:44.268Z",
     "up": [
       {
-        "player_id": "c35852ca-fb1c-4449-b6a1-026f9628d99e",
+        "player_id": "f5b1b43f-45be-4ebb-bed8-811434235418",
         "points": [
           {
-            "text": "Adattabile su tutto il fronte offensivo",
+            "text": "Marcatura stretta sulla punta avversaria",
             "tone": "good"
           },
           {
             "tone": "good",
-            "text": "Fantasista della squadra"
+            "text": "Buono in fase di impostazione"
           }
         ]
       },
@@ -3448,12 +3690,12 @@
         "tone": "good"
       },
       {
-        "role": "def-center",
+        "role": "def-halfbacks",
         "tone": "bad"
       }
     ],
     "createdAt": "2026-07-21T12:48:10.325Z",
-    "updatedAt": "2026-09-08T07:50:11.391Z"
+    "updatedAt": "2026-09-10T12:34:44.268Z"
   },
   {
     "team": "UDI",
@@ -3539,9 +3781,9 @@
     "attack": 3,
     "defense": 3,
     "comment": "Il sistema del tecnico dei friulani si basa su una struttura ordinata e aggressiva, con grande attenzione alla riconquista del pallone e rapide transizioni offensive. Tatticamente, la squadra tende a mantenere una difesa posizionata piuttosto bassa, privilegiando la compattezza e la copertura degli spazi piuttosto che una linea alta che esponga ai contropiedi avversari. Questo approccio permette all’Udinese di limitare le occasioni avversarie, ma può riduce anche le occasione da goal da parte degli attaccanti.",
-    "sosFantaComment": "È rimasto Kosta Runjaic in panchina nell'Udinese, ha provato più il 3-4-2-1 del 3-5-2 finora. In difesa Solet la certezza, al suo fianco è tutto aperto: Palma e Kabasele i favoriti, ma ci sono anche Abankwah e Bertola. A destra la novità è Vojvoda aspettando il pieno recupero di Zanoli (poi si giocheranno una maglia). Partito Atta, a centrocampo Piotrowski parte avanti su Miller e sul nuovo arrivato Unai Gomez. Ekkelenkamp provato più avanzato accanto a Zaniolo, alle spalle di Davis.",
+    "sosFantaComment": "È rimasto Kosta Runjaic in panchina nell'Udinese, ha provato più il 3-4-2-1 del 3-5-2 finora. In difesa Solet se sta bene è la certezza, al suo fianco è tutto aperto: Palma e Kabasele i favoriti, ma ci sono anche Abankwah e Bertola. A destra la novità è Vojvoda aspettando il pieno recupero di Zanoli (poi si giocheranno una maglia). Partito Atta, a centrocampo Piotrowski parte avanti su Miller e sul nuovo arrivato Unai Gomez. Ekkelenkamp provato più avanzato accanto a Zaniolo, alle spalle di Davis.",
     "created_at": "2026-07-21T13:49:09.077Z",
-    "updated_at": "2026-09-01T15:27:58.365Z",
+    "updated_at": "2026-09-10T11:05:15.189Z",
     "up": [
       {
         "player_id": "5bca84cb-b411-4807-b588-7cbc2d7dc3f8",
@@ -3671,7 +3913,7 @@
       }
     ],
     "createdAt": "2026-07-21T13:49:09.077Z",
-    "updatedAt": "2026-09-01T15:27:58.365Z"
+    "updatedAt": "2026-09-10T11:05:15.189Z"
   },
   {
     "team": "ATA",
@@ -3759,7 +4001,7 @@
     "comment": "Raffaele Palladino sostituisce Juric alla vigilia della 12^ giornata. Come i predecessori Gasperini e Juric, Palladino dovrebbe schierarsi con la difesa a 3 e con il doppio trequartista a supporto della prima punta. Il punto di forza sono gli esterni, i cosiddetti quinti di centrocampo, chiamati a fare la doppia fase. Palladino dovrà lavorare soprattutto a livello mentsle, una squadra che \"prende\" al tredicesimo, peggior risultato degli ultimi 11 anni. Tanti ballottaggi, soprattutto dalla trequarti in su. ",
     "sosFantaComment": "Rivoluzione totale in casa Atalanta: dopo anni col 3-5-2, si passa al 4-3-3 con l'arrivo di Maurizio Sarri in panchina. Meccanismi da oliare, soprattutto nel reparto difensivo. Kristensen arriva per giocare, lui e Scalvini sono i favoriti in partenza. Tutto apertissimo sulle fasce: Zappacosta e Bernasconi partono in pole, ma ci sono anche Bellanova e Kolasinac. A centrocampo Ederson è rimasto e sarà titolare: le novità sono Gaetano in cabina di regia e soprattutto il ritorno di Kessié, che arriva per giocare. Anche Pasalic avrà spazio nelle rotazioni. De Ketelaere e Raspadori provati sulle due fasce, da ali pure, ma il nuovo arrivato Rowe è stato un investimento importante e una scelta decisa di Sarri quindi troverà molto spazio ed è il favorito a sinistra. Scamacca o Krstovic centravanti, è un testa a testa e sarà un'alternanza continua. Elmas e Samardzic da classici jolly: mezzali o anche esterni alti, avranno comunque spazio nelle rotazioni.",
     "created_at": "2026-07-21T13:14:35.079Z",
-    "updated_at": "2026-09-08T07:13:43.779Z",
+    "updated_at": "2026-09-10T12:29:55.044Z",
     "up": [
       {
         "player_id": "e259c4a6-1385-479b-b970-730c08be498f",
@@ -3893,6 +4135,10 @@
       {
         "text": "Scarsa libertà ai terzini",
         "tone": "bad"
+      },
+      {
+        "text": "Mezzali pericolose in zona offensiva",
+        "tone": "neutral"
       }
     ],
     "keyRoles": [
@@ -3907,10 +4153,14 @@
       {
         "role": "def-fullbacks",
         "tone": "bad"
+      },
+      {
+        "role": "mid-center",
+        "tone": "good"
       }
     ],
     "createdAt": "2026-07-21T13:14:35.079Z",
-    "updatedAt": "2026-09-08T07:13:43.779Z"
+    "updatedAt": "2026-09-10T12:29:55.044Z"
   },
   {
     "team": "FIO",
@@ -4170,216 +4420,6 @@
     ],
     "createdAt": "2026-07-21T12:36:56.706Z",
     "updatedAt": "2026-09-08T08:41:43.438Z"
-  },
-  {
-    "team": "NAP",
-    "season": "s_26_27",
-    "starters": [
-      {
-        "player_id": "1bef666d-d305-4795-af71-2e946eb6ab0e",
-        "id": 572
-      },
-      {
-        "player_id": "dbd256fc-4861-493d-8fc6-8abc4503c061",
-        "id": 2816
-      },
-      {
-        "player_id": "f61d5ce5-111a-4f71-b6f7-dfe4393621d3",
-        "id": 4409
-      },
-      {
-        "player_id": "9974d5bb-0599-421d-8ee6-2aebf34143f8",
-        "id": 4664
-      },
-      {
-        "player_id": "65b01da4-d962-42ce-bc23-e7bcc306a61b",
-        "id": 1852
-      },
-      {
-        "player_id": "f06f2f39-13e2-4cda-8319-dffd25ec0cbd",
-        "id": 2517
-      },
-      {
-        "player_id": "a411c282-00be-4e2f-8599-e0a2e5da85bf",
-        "id": 4287
-      },
-      {
-        "player_id": "f7f99d6a-c8e0-4ec8-a434-1ffba0253b41",
-        "id": 4777
-      },
-      {
-        "player_id": "e3ca6a3a-4c39-4307-ab09-0520b0f066db",
-        "id": 536
-      },
-      {
-        "player_id": "1da941e1-9f25-4af2-9903-6d3004e1765c",
-        "id": 7351
-      },
-      {
-        "player_id": "4c72a8d4-8416-4a9b-b70f-810f16af86ff",
-        "id": "6052"
-      }
-    ],
-    "rig": [
-      {
-        "player_id": "f06f2f39-13e2-4cda-8319-dffd25ec0cbd"
-      },
-      {
-        "player_id": "4c72a8d4-8416-4a9b-b70f-810f16af86ff"
-      },
-      {
-        "player_id": "e3ca6a3a-4c39-4307-ab09-0520b0f066db"
-      }
-    ],
-    "pun": [
-      {
-        "player_id": "f06f2f39-13e2-4cda-8319-dffd25ec0cbd"
-      },
-      {
-        "player_id": "e3ca6a3a-4c39-4307-ab09-0520b0f066db"
-      }
-    ],
-    "corner": [
-      {
-        "player_id": "f06f2f39-13e2-4cda-8319-dffd25ec0cbd"
-      },
-      {
-        "player_id": "e3ca6a3a-4c39-4307-ab09-0520b0f066db"
-      },
-      {
-        "player_id": "3cd2885e-8e25-4e3f-8c86-8af871b76421"
-      }
-    ],
-    "module": "4-3-3",
-    "coach": "Massimiliano Allegri",
-    "attack": 4.5,
-    "defense": 4.5,
-    "comment": "Reduce dalla conquista dello scudetto, Conte ha portato a Napoli mentalità vincente, rigore tattico e una forte identità di squadra. Pur avendo nel 3-5-2 il suo marchio di fabbrica, ha dimostrato grande intelligenza adattandosi al contesto partenopeo, riuscendo a trovare equilibrio anche con il 4-3-3, modulo che meglio valorizza le caratteristiche tecniche e offensive della rosa azzurra. Le sue squadre si distinguono per organizzazione, intensità e spirito di sacrificio, con un’attenzione maniacale alla fase difensiva. Difensori centrali affidabili ed esterni dinamici restano fondamentali nel suo sistema, così come i centrocampisti con capacità di inserimento e gli attaccanti di movimento. ",
-    "sosFantaComment": "Da Antonio Conte a Massimiliano Allegri, dalla difesa a 3 al 4-3-3 provato finora (a volte potrà essere anche un 4-2-3-1). Meret più di Milinkovic, le prime uscite ufficiali dicono questo sulla gerarchia in porta. Inizia ai box la stagione di Buongiorno e lo stop non sarà breve (tornerà verso novembre): o il nuovo arrivato Badiashile o Marin fino a quel momento, con il primo in pole. Anguissa parte da prima alternativa di McTominay e/o De Bruyne. Nel tridente più Alisson Santos e Politano di Neres e Lang, ma c'è anche Vergara che Allegri utilizza sia nel tridente che da mezzala.",
-    "created_at": "2026-07-21T13:11:53.537Z",
-    "updated_at": "2026-09-02T10:42:36.181Z",
-    "up": [
-      {
-        "player_id": "1da941e1-9f25-4af2-9903-6d3004e1765c",
-        "points": [
-          {
-            "text": "Prolifico nei contropiedi",
-            "tone": "good"
-          },
-          {
-            "tone": "good",
-            "text": "Bravo a sfruttare gli spazi aperti dalla difesa bassa"
-          }
-        ]
-      },
-      {
-        "player_id": "f7f99d6a-c8e0-4ec8-a434-1ffba0253b41",
-        "points": [
-          {
-            "text": "Prolifico nei piazzati",
-            "tone": "good"
-          },
-          {
-            "tone": "good",
-            "text": "Inserimenti in area avversaria"
-          }
-        ]
-      }
-    ],
-    "down": [
-      {
-        "player_id": "d850d49a-7b84-4f80-a7f3-f83b61df60a5",
-        "points": [
-          {
-            "text": "Indietro nelle gerarchie",
-            "tone": "neutral"
-          }
-        ]
-      }
-    ],
-    "young": [
-      {
-        "player_id": "06e40e5b-de3e-410d-8540-4775224cb363",
-        "points": [
-          {
-            "text": "Utile nelle rotazioni",
-            "tone": "good"
-          }
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "player_id": "732b19cf-3340-4588-ba8a-85459261b4c1",
-        "points": [
-          {
-            "text": "Jolly difensivo",
-            "tone": "good"
-          }
-        ]
-      }
-    ],
-    "ballottaggi": [
-      {
-        "players": [
-          {
-            "player_id": "e3ca6a3a-4c39-4307-ab09-0520b0f066db",
-            "perc": 40
-          },
-          {
-            "player_id": "06e40e5b-de3e-410d-8540-4775224cb363",
-            "perc": 30
-          },
-          {
-            "player_id": "3cd2885e-8e25-4e3f-8c86-8af871b76421",
-            "perc": 30
-          }
-        ]
-      },
-      {
-        "players": [
-          {
-            "player_id": "9974d5bb-0599-421d-8ee6-2aebf34143f8",
-            "perc": 51
-          },
-          {
-            "player_id": "3cbf391b-c091-4b2f-a391-23c8fa6b4eb3",
-            "perc": 49
-          }
-        ]
-      }
-    ],
-    "coachRating": {
-      "attack": 4.5,
-      "defense": 4.5,
-      "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Allegri.webp"
-    },
-    "keyPoints": [
-      {
-        "text": "Solidità difensiva",
-        "tone": "good"
-      },
-      {
-        "text": "Palle inattive decisive",
-        "tone": "good"
-      },
-      {
-        "text": "Baricentro squadra basso",
-        "tone": "bad"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "gk",
-        "tone": "good"
-      },
-      {
-        "role": "def-center",
-        "tone": "good"
-      }
-    ],
-    "createdAt": "2026-07-21T13:11:53.537Z",
-    "updatedAt": "2026-09-02T10:42:36.181Z"
   },
   {
     "team": "FRO",

@@ -5405,6 +5405,36 @@
     }
   },
   {
+    "player_id": "21898bcb-7bbf-46c7-9892-8e05475fcb53",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 2,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 28,
+    "perc_price": "5.6000",
+    "ex_fmv": null,
+    "comment": "Oumar Solet è rimasto a Udine un altro anno, lì dove tutti lo abbiamo scoperto e dove si è confermato nell'ultima stagione fino a diventare un top di reparto anche al fantacalcio. 1 gol e 2 assist in metà stagione nel 24/25, 3 gol e 1 assist nella scorsa Serie A, il tutto condito da appena 2 gialli e 1 rosso in 54 partite. La difesa di Runjaic è comunque solida e il francese ne è sempre più leader e sul centro-sinistra è cresciuto anche in fase di impostazione palla al piede. Con i suoi compagni di reparto, rimane il pericolo numero uno sui calci piazzati nell'area avversaria. Appena due le partite saltate per infortunio nell'ultimo campionato ma si è fermato proprio con la Lazio per un problema muscolare: previste due settimane di stop, vuol dire che tornerà già dopo la sosta, per la 6a giornata. Un intoppo che non ‘sposta’ in chiave fanta.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-07-24",
+    "updated_at": "2026-09-10",
+    "createdAt": "2026-07-24",
+    "updatedAt": "2026-09-10",
+    "player": {
+      "player_id": "21898bcb-7bbf-46c7-9892-8e05475fcb53",
+      "role": "D",
+      "mantra_roles": [
+        "Dc"
+      ]
+    }
+  },
+  {
     "player_id": "56047277-ecee-44df-a949-782ccdb20a4b",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
@@ -8643,7 +8673,7 @@
     "price": 30,
     "perc_price": "6.0000",
     "ex_fmv": null,
-    "comment": "Occhio al cambio di gerarchia nella porta del Napoli: con l'arrivo di Allegri in panchina, Alex Meret è davanti a Milinkovic-Savic. Rimane una situazione aperta per il futuro, che può cambiare da un momento all'altro: dipende da tanti fattori visto che i due portieri per valore assoluto sono vicini. Al momento Allegri considera Meret primo, ma ci sarà alternanza per il turnover. Meret l'anno scorso ha perso il posto ed è stato fuori anche per infortunio, quest'anno riparte in pole e dovrà poi dimostrare sul campo di meritarsi il posto. È la porta della squadra vice campione d'Italia in carica, siamo sul primo slot ma per il fantacalcio è obbligatorio pensare alla coppia Meret-Milinkovic a oggi. Quindi calcolate già la spesa per arrivare a tutti e due i portieri, per non correre rischi.",
+    "comment": "È cambiata la gerarchia nella porta del Napoli: con l'arrivo di Allegri in panchina, Alex Meret è davanti a Milinkovic-Savic. Rimane una situazione aperta per il futuro, a maggior ragione dopo lo stop del titolare contro l’Arsenal. Avrà spazio Milinkovic fino al suo recupero, poi in teoria tornerà Meret, ma parlerà il campo. È la porta della squadra vice campione d'Italia in carica, siamo sul primo slot ma per il fantacalcio abbiamo sempre ribadito che è obbligatorio pensare alla coppia Meret-Milinkovic a oggi. Quindi calcolate già la spesa per arrivare a tutti e due i portieri, per non correre rischi.",
     "tit_index": null,
     "aff_index": null,
     "inf_index": null,
@@ -8652,9 +8682,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-07-24",
-    "updated_at": "2026-09-02",
+    "updated_at": "2026-09-10",
     "createdAt": "2026-07-24",
-    "updatedAt": "2026-09-02",
+    "updatedAt": "2026-09-10",
     "player": {
       "player_id": "1bef666d-d305-4795-af71-2e946eb6ab0e",
       "role": "P",
@@ -9488,10 +9518,10 @@
     "fascia": 8,
     "fascia_second": null,
     "fascia_third": null,
-    "price": 33,
-    "perc_price": "6.6000",
+    "price": 28,
+    "perc_price": "5.6000",
     "ex_fmv": null,
-    "comment": "4 gol in 13 partite a voto per Alisson Santos, nessun assist ed è un dato curioso per le caratteristiche del giocatore. Grandissima tecnica e dribbling, garantisce imprevedibilità alla manovra del Napoli e Allegri è pronto a utilizzarlo da esterno alto. Il club ha fortemente voluto il suo riscatto e Alisson ha tutto per essere il titolare della fascia. Grande potenziale anche per il fantacalcio, anche se passa da centrocampista ad attaccante e questo lo penalizza un po’. Resta comunque un giocatore su cui si può puntare e che può fare bene, da centrocampista siamo sul terzo slot. Sarà una stagione molto importante per lui e il fatto che Allegri sia ripartito dal 4-3-3 non può che essere un punto di partenza positivo per le sue caratteristiche.",
+    "comment": "4 gol in 13 partite a voto per Alisson Santos, nessun assist ed è un dato curioso per le caratteristiche del giocatore. Grandissima tecnica e dribbling, garantisce imprevedibilità alla manovra del Napoli e Allegri è pronto a utilizzarlo da esterno alto. Il club ha fortemente voluto il suo riscatto e Alisson ha tutto per essere il titolare della fascia. Si è però fermato con l’Arsenal, questo stop può influire anche al fantacalcio: non aveva inciso e l’infortunio non ci voleva. Sfrutterà la lunga sosta per provare a tornare al 100%, poi sulla carta tornerà il titolare a sinistra. Ma la concorrenza c’è, chi fa l’asta dopo l’Arsenal lo paga sicuramente meno rispetto a prima. Ma non lo avrà subito a disposizione.",
     "tit_index": null,
     "aff_index": null,
     "inf_index": null,
@@ -9500,9 +9530,9 @@
     "unlocked": null,
     "links": null,
     "created_at": "2026-07-23",
-    "updated_at": "2026-09-01",
+    "updated_at": "2026-09-10",
     "createdAt": "2026-07-23",
-    "updatedAt": "2026-09-01",
+    "updatedAt": "2026-09-10",
     "player": {
       "player_id": "1da941e1-9f25-4af2-9903-6d3004e1765c",
       "role": "A",
@@ -15019,36 +15049,6 @@
       "role": "A",
       "mantra_roles": [
         "A"
-      ]
-    }
-  },
-  {
-    "player_id": "21898bcb-7bbf-46c7-9892-8e05475fcb53",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 2,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 28,
-    "perc_price": "5.6000",
-    "ex_fmv": null,
-    "comment": "Oumar Solet è rimasto a Udine un altro anno, lì dove tutti lo abbiamo scoperto e dove si è confermato nell'ultima stagione fino a diventare un top di reparto anche al fantacalcio. 1 gol e 2 assist in metà stagione nel 24/25, 3 gol e 1 assist nella scorsa Serie A, il tutto condito da appena 2 gialli e 1 rosso in 54 partite. La difesa di Runjaic è decima per gol subiti, sintomo di solidità difensiva di tutto il reparto. Il francese ne è sempre più leader e sul centro-sinistra è cresciuto anche in fase di impostazione palla al piede. Con i suoi compagni di reparto, rimane il pericolo numero uno sui calci piazzati nell'area avversaria. Appena due le partite saltate per infortunio nell'ultimo campionato ma si è fermato proprio con la Lazio per un problema muscolare: attesi gli esami, la 'buona notizia' è che c'è la sosta lunga a breve e potrebbe rimettersi in sesto.",
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": [],
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-24",
-    "updated_at": "2026-09-08",
-    "createdAt": "2026-07-24",
-    "updatedAt": "2026-09-08",
-    "player": {
-      "player_id": "21898bcb-7bbf-46c7-9892-8e05475fcb53",
-      "role": "D",
-      "mantra_roles": [
-        "Dc"
       ]
     }
   },

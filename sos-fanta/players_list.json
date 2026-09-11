@@ -5979,6 +5979,34 @@
       }
     },
     {
+      "player_id": "55f1b0f6-9c46-451f-b85a-2f4d12f6de12",
+      "sportsmonks_id": 37756346,
+      "fantalab_id": "55f1b0f6-9c46-451f-b85a-2f4d12f6de12",
+      "fantacalcio_id": 7629,
+      "name": "Libra",
+      "full_name": "Marco Libra",
+      "team_id": 8513,
+      "team_name": "Bologna",
+      "team_short": "BOL",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/1/8513.png",
+      "role": "C",
+      "mantra_roles": [
+        "C",
+        "T"
+      ],
+      "player_image": null,
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 1,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": true,
+      "stats": {
+        "fmv": 6,
+        "mv": 6
+      }
+    },
+    {
       "player_id": "dbad7fbe-2421-4646-9b4f-6f065ae9a076",
       "sportsmonks_id": 37599992,
       "fantalab_id": "dbad7fbe-2421-4646-9b4f-6f065ae9a076",
@@ -14781,7 +14809,7 @@
     "fallback_price"
   ],
   "pagination": {
-    "total": 532,
+    "total": 533,
     "limit": 1000,
     "offset": 0
   },
