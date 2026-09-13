@@ -1063,496 +1063,6 @@ export const SOS_TEAMS_DATA = {
       }
     ]
   },
-  "CAG": {
-    "code": "CAG",
-    "name": "Cagliari",
-    "city": "Cagliari",
-    "stadium": "Unipol Domus",
-    "primaryColor": "#b22222",
-    "secondaryColor": "#002366",
-    "accentColor": "#ffd700",
-    "coach": "Fabio Pisacane",
-    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Pisacane.webp",
-    "defaultFormation": "4-3-3",
-    "module": "4-3-3",
-    "attackRating": 2.5,
-    "defenseRating": 2.5,
-    "comment": "Promosso dopo l’ottimo lavoro svolto con la Primavera del Cagliari. La società ha scelto di puntare su un tecnico che conosce bene l’ambiente e che ha dimostrato di saper valorizzare i giovani, in linea con la nuova filosofia del club. Pisacane predilige un modulo con la difesa a 4  con grande attenzione all’organizzazione difensiva. Non è escluso, però, che in alcune partite possa optare per una linea a 3. Gli esterni difensivi avranno un ruolo chiave: dovranno garantire equilibrio tra copertura e spinta, supportando sia i centrali che il reparto offensivo. ",
-    "sosFantaComment": "Confermato Pisacane sulla panchina del Cagliari, che continuerà ad alternare la difesa a quattro e quella a tre come nella passata stagione, con pochi cambiamenti a livello di uomini. Zé Pedro o il nuovo arrivato Sugawara nel ruolo di terzino destro. Ha convinto Deiola da difensore: prova a insidiare Mina e si giocano il posto, a maggior ragione visti i svariati problemi fisici del colombiano. Winks e Romano sono arrivati per giocare in mediana, ma anche Fazzini: o mezzala o anche più avanzato, da trequartista/ala. Maldini arriva per giocare, Kevin Carlos si gioca una maglia con Mendy e l'ultimo arrivato Nzola: partono tutti e tre alla pari di fatto.",
-    "keyPoints": [
-      {
-        "text": "Valorizzazione giovani",
-        "tone": "good"
-      },
-      {
-        "text": "Solidità difensiva",
-        "tone": "good"
-      },
-      {
-        "text": "Attacco poco prolifico",
-        "tone": "bad"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "def-center",
-        "tone": "good"
-      },
-      {
-        "role": "att-center",
-        "tone": "bad"
-      }
-    ],
-    "starters": [
-      {
-        "playerId": "e81593ae-46a8-4fe1-9624-44dd35e63ee9",
-        "csvId": "4360",
-        "name": "Caprile",
-        "role": "P"
-      },
-      {
-        "playerId": "5d4bd759-1210-413a-8cd0-5b7ba268c802",
-        "csvId": "7274",
-        "name": "Zè Pedro",
-        "role": "D"
-      },
-      {
-        "playerId": "1a88a4d7-81a0-42c2-911f-33ffef2551c6",
-        "csvId": "4210",
-        "name": "Mina",
-        "role": "D"
-      },
-      {
-        "playerId": "ce5b19a3-93bc-4d98-b799-c466274df41a",
-        "csvId": 7268,
-        "name": "Rodriguez Ju.",
-        "role": "D"
-      },
-      {
-        "playerId": "c9566c48-86e0-42ff-8820-d01b0d55efd7",
-        "csvId": 5701,
-        "name": "Obert",
-        "role": "D"
-      },
-      {
-        "playerId": "4d65afcd-dc9b-4804-ac3e-1fd5d688c48c",
-        "csvId": 4870,
-        "name": "Adopo",
-        "role": "C"
-      },
-      {
-        "playerId": "dd49cb6b-4769-4e5f-ab8c-a90ad7e100a8",
-        "csvId": 4260,
-        "name": "Winks",
-        "role": "C"
-      },
-      {
-        "playerId": "e750e65a-2285-401b-b7ad-a0fea8d2c498",
-        "csvId": null,
-        "name": "Romano",
-        "role": "C"
-      },
-      {
-        "playerId": "af9f364b-0c1d-47fa-aa9a-c74fc9d5e06b",
-        "csvId": 4896,
-        "name": "Maldini",
-        "role": "A"
-      },
-      {
-        "playerId": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
-        "csvId": 6010,
-        "name": "Fazzini",
-        "role": "C"
-      },
-      {
-        "playerId": "3280f1a1-e0be-4c7b-83ba-b254858b4426",
-        "csvId": 7547,
-        "name": "Kevin Carlos",
-        "role": "A"
-      }
-    ],
-    "rig": [
-      {
-        "playerId": "ca1a4e82-6e21-4c6d-8daa-45de90b977b0",
-        "name": "Nzola",
-        "role": "A"
-      },
-      {
-        "playerId": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
-        "name": "Fazzini",
-        "role": "C"
-      },
-      {
-        "playerId": "d11d503a-b278-4e14-b201-b7862e1f955d",
-        "name": "Deiola",
-        "role": "C"
-      }
-    ],
-    "pun": [
-      {
-        "playerId": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
-        "name": "Fazzini",
-        "role": "C"
-      },
-      {
-        "playerId": "af9f364b-0c1d-47fa-aa9a-c74fc9d5e06b",
-        "name": "Maldini",
-        "role": "A"
-      }
-    ],
-    "corner": [
-      {
-        "playerId": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
-        "name": "Fazzini",
-        "role": "C"
-      },
-      {
-        "playerId": "c9566c48-86e0-42ff-8820-d01b0d55efd7",
-        "name": "Obert",
-        "role": "D"
-      },
-      {
-        "playerId": "af9f364b-0c1d-47fa-aa9a-c74fc9d5e06b",
-        "name": "Maldini",
-        "role": "A"
-      }
-    ],
-    "ballottaggi": [
-      [
-        {
-          "playerId": "1a88a4d7-81a0-42c2-911f-33ffef2551c6",
-          "name": "Mina",
-          "role": "D",
-          "perc": 51
-        },
-        {
-          "playerId": "d11d503a-b278-4e14-b201-b7862e1f955d",
-          "name": "Deiola",
-          "role": "C",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "3280f1a1-e0be-4c7b-83ba-b254858b4426",
-          "name": "Kevin Carlos",
-          "role": "A",
-          "perc": 51
-        },
-        {
-          "playerId": "6332fc72-c508-4e04-bca1-db35ddda3e94",
-          "name": "Mendy P.",
-          "role": "A",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "5d4bd759-1210-413a-8cd0-5b7ba268c802",
-          "name": "Zè Pedro",
-          "role": "D",
-          "perc": 51
-        },
-        {
-          "playerId": "d05121f2-7f6b-44df-8cd1-e4611b85700d",
-          "name": "Sugawara",
-          "role": "D",
-          "perc": 49
-        }
-      ]
-    ],
-    "up": [
-      {
-        "playerId": "c9566c48-86e0-42ff-8820-d01b0d55efd7",
-        "name": "Obert",
-        "points": [
-          "Buoni cross anche dai piazzati",
-          "Utilizzato in più posizioni nella fase difensiva"
-        ]
-      },
-      {
-        "playerId": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
-        "name": "Fazzini",
-        "points": [
-          "Voluto fortemente da Pisacane",
-          "Propensione al bonus",
-          "Dubbio su integrità fisica"
-        ]
-      }
-    ],
-    "down": [
-      {
-        "playerId": "d11d503a-b278-4e14-b201-b7862e1f955d",
-        "name": "Deiola",
-        "points": [
-          "Utilizzato in un ruolo molto arretrato"
-        ]
-      }
-    ],
-    "young": [
-      {
-        "playerId": "6332fc72-c508-4e04-bca1-db35ddda3e94",
-        "name": "Mendy P.",
-        "points": [
-          "Può facilmente ritagliarsi spazio"
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "playerId": "e750e65a-2285-401b-b7ad-a0fea8d2c498",
-        "name": "Romano",
-        "points": [
-          "Forte nelle transizioni offensive"
-        ]
-      }
-    ]
-  },
-  "cagliari": {
-    "code": "CAG",
-    "name": "Cagliari",
-    "city": "Cagliari",
-    "stadium": "Unipol Domus",
-    "primaryColor": "#b22222",
-    "secondaryColor": "#002366",
-    "accentColor": "#ffd700",
-    "coach": "Fabio Pisacane",
-    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Pisacane.webp",
-    "defaultFormation": "4-3-3",
-    "module": "4-3-3",
-    "attackRating": 2.5,
-    "defenseRating": 2.5,
-    "comment": "Promosso dopo l’ottimo lavoro svolto con la Primavera del Cagliari. La società ha scelto di puntare su un tecnico che conosce bene l’ambiente e che ha dimostrato di saper valorizzare i giovani, in linea con la nuova filosofia del club. Pisacane predilige un modulo con la difesa a 4  con grande attenzione all’organizzazione difensiva. Non è escluso, però, che in alcune partite possa optare per una linea a 3. Gli esterni difensivi avranno un ruolo chiave: dovranno garantire equilibrio tra copertura e spinta, supportando sia i centrali che il reparto offensivo. ",
-    "sosFantaComment": "Confermato Pisacane sulla panchina del Cagliari, che continuerà ad alternare la difesa a quattro e quella a tre come nella passata stagione, con pochi cambiamenti a livello di uomini. Zé Pedro o il nuovo arrivato Sugawara nel ruolo di terzino destro. Ha convinto Deiola da difensore: prova a insidiare Mina e si giocano il posto, a maggior ragione visti i svariati problemi fisici del colombiano. Winks e Romano sono arrivati per giocare in mediana, ma anche Fazzini: o mezzala o anche più avanzato, da trequartista/ala. Maldini arriva per giocare, Kevin Carlos si gioca una maglia con Mendy e l'ultimo arrivato Nzola: partono tutti e tre alla pari di fatto.",
-    "keyPoints": [
-      {
-        "text": "Valorizzazione giovani",
-        "tone": "good"
-      },
-      {
-        "text": "Solidità difensiva",
-        "tone": "good"
-      },
-      {
-        "text": "Attacco poco prolifico",
-        "tone": "bad"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "def-center",
-        "tone": "good"
-      },
-      {
-        "role": "att-center",
-        "tone": "bad"
-      }
-    ],
-    "starters": [
-      {
-        "playerId": "e81593ae-46a8-4fe1-9624-44dd35e63ee9",
-        "csvId": "4360",
-        "name": "Caprile",
-        "role": "P"
-      },
-      {
-        "playerId": "5d4bd759-1210-413a-8cd0-5b7ba268c802",
-        "csvId": "7274",
-        "name": "Zè Pedro",
-        "role": "D"
-      },
-      {
-        "playerId": "1a88a4d7-81a0-42c2-911f-33ffef2551c6",
-        "csvId": "4210",
-        "name": "Mina",
-        "role": "D"
-      },
-      {
-        "playerId": "ce5b19a3-93bc-4d98-b799-c466274df41a",
-        "csvId": 7268,
-        "name": "Rodriguez Ju.",
-        "role": "D"
-      },
-      {
-        "playerId": "c9566c48-86e0-42ff-8820-d01b0d55efd7",
-        "csvId": 5701,
-        "name": "Obert",
-        "role": "D"
-      },
-      {
-        "playerId": "4d65afcd-dc9b-4804-ac3e-1fd5d688c48c",
-        "csvId": 4870,
-        "name": "Adopo",
-        "role": "C"
-      },
-      {
-        "playerId": "dd49cb6b-4769-4e5f-ab8c-a90ad7e100a8",
-        "csvId": 4260,
-        "name": "Winks",
-        "role": "C"
-      },
-      {
-        "playerId": "e750e65a-2285-401b-b7ad-a0fea8d2c498",
-        "csvId": null,
-        "name": "Romano",
-        "role": "C"
-      },
-      {
-        "playerId": "af9f364b-0c1d-47fa-aa9a-c74fc9d5e06b",
-        "csvId": 4896,
-        "name": "Maldini",
-        "role": "A"
-      },
-      {
-        "playerId": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
-        "csvId": 6010,
-        "name": "Fazzini",
-        "role": "C"
-      },
-      {
-        "playerId": "3280f1a1-e0be-4c7b-83ba-b254858b4426",
-        "csvId": 7547,
-        "name": "Kevin Carlos",
-        "role": "A"
-      }
-    ],
-    "rig": [
-      {
-        "playerId": "ca1a4e82-6e21-4c6d-8daa-45de90b977b0",
-        "name": "Nzola",
-        "role": "A"
-      },
-      {
-        "playerId": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
-        "name": "Fazzini",
-        "role": "C"
-      },
-      {
-        "playerId": "d11d503a-b278-4e14-b201-b7862e1f955d",
-        "name": "Deiola",
-        "role": "C"
-      }
-    ],
-    "pun": [
-      {
-        "playerId": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
-        "name": "Fazzini",
-        "role": "C"
-      },
-      {
-        "playerId": "af9f364b-0c1d-47fa-aa9a-c74fc9d5e06b",
-        "name": "Maldini",
-        "role": "A"
-      }
-    ],
-    "corner": [
-      {
-        "playerId": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
-        "name": "Fazzini",
-        "role": "C"
-      },
-      {
-        "playerId": "c9566c48-86e0-42ff-8820-d01b0d55efd7",
-        "name": "Obert",
-        "role": "D"
-      },
-      {
-        "playerId": "af9f364b-0c1d-47fa-aa9a-c74fc9d5e06b",
-        "name": "Maldini",
-        "role": "A"
-      }
-    ],
-    "ballottaggi": [
-      [
-        {
-          "playerId": "1a88a4d7-81a0-42c2-911f-33ffef2551c6",
-          "name": "Mina",
-          "role": "D",
-          "perc": 51
-        },
-        {
-          "playerId": "d11d503a-b278-4e14-b201-b7862e1f955d",
-          "name": "Deiola",
-          "role": "C",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "3280f1a1-e0be-4c7b-83ba-b254858b4426",
-          "name": "Kevin Carlos",
-          "role": "A",
-          "perc": 51
-        },
-        {
-          "playerId": "6332fc72-c508-4e04-bca1-db35ddda3e94",
-          "name": "Mendy P.",
-          "role": "A",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "5d4bd759-1210-413a-8cd0-5b7ba268c802",
-          "name": "Zè Pedro",
-          "role": "D",
-          "perc": 51
-        },
-        {
-          "playerId": "d05121f2-7f6b-44df-8cd1-e4611b85700d",
-          "name": "Sugawara",
-          "role": "D",
-          "perc": 49
-        }
-      ]
-    ],
-    "up": [
-      {
-        "playerId": "c9566c48-86e0-42ff-8820-d01b0d55efd7",
-        "name": "Obert",
-        "points": [
-          "Buoni cross anche dai piazzati",
-          "Utilizzato in più posizioni nella fase difensiva"
-        ]
-      },
-      {
-        "playerId": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
-        "name": "Fazzini",
-        "points": [
-          "Voluto fortemente da Pisacane",
-          "Propensione al bonus",
-          "Dubbio su integrità fisica"
-        ]
-      }
-    ],
-    "down": [
-      {
-        "playerId": "d11d503a-b278-4e14-b201-b7862e1f955d",
-        "name": "Deiola",
-        "points": [
-          "Utilizzato in un ruolo molto arretrato"
-        ]
-      }
-    ],
-    "young": [
-      {
-        "playerId": "6332fc72-c508-4e04-bca1-db35ddda3e94",
-        "name": "Mendy P.",
-        "points": [
-          "Può facilmente ritagliarsi spazio"
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "playerId": "e750e65a-2285-401b-b7ad-a0fea8d2c498",
-        "name": "Romano",
-        "points": [
-          "Forte nelle transizioni offensive"
-        ]
-      }
-    ]
-  },
   "LEC": {
     "code": "LEC",
     "name": "Lecce",
@@ -3203,10 +2713,10 @@ export const SOS_TEAMS_DATA = {
         "role": "D"
       },
       {
-        "playerId": "bfba87ce-190b-4eab-a120-44416eb074c5",
-        "csvId": 7537,
-        "name": "Mitaj",
-        "role": "D"
+        "playerId": "72dbbe00-ef42-4579-ba5e-74ac1cc06c8c",
+        "csvId": 6020,
+        "name": "Ellertsson",
+        "role": "C"
       },
       {
         "playerId": "3d49b936-1e2d-4daa-9b4c-5da87824531d",
@@ -3302,16 +2812,16 @@ export const SOS_TEAMS_DATA = {
       ],
       [
         {
-          "playerId": "bfba87ce-190b-4eab-a120-44416eb074c5",
-          "name": "Mitaj",
-          "role": "D",
-          "perc": 51
-        },
-        {
           "playerId": "72dbbe00-ef42-4579-ba5e-74ac1cc06c8c",
           "name": "Ellertsson",
           "role": "C",
-          "perc": 49
+          "perc": 60
+        },
+        {
+          "playerId": "bfba87ce-190b-4eab-a120-44416eb074c5",
+          "name": "Mitaj",
+          "role": "D",
+          "perc": 40
         }
       ],
       [
@@ -3333,13 +2843,13 @@ export const SOS_TEAMS_DATA = {
           "playerId": "3490cc1c-60cd-4cb8-b606-45c9c3279e4c",
           "name": "Drameh",
           "role": "D",
-          "perc": 55
+          "perc": 51
         },
         {
           "playerId": "1d51f5cf-e44d-402b-9882-54dab796376e",
           "name": "Ehizibue",
           "role": "D",
-          "perc": 45
+          "perc": 49
         }
       ]
     ],
@@ -3465,10 +2975,10 @@ export const SOS_TEAMS_DATA = {
         "role": "D"
       },
       {
-        "playerId": "bfba87ce-190b-4eab-a120-44416eb074c5",
-        "csvId": 7537,
-        "name": "Mitaj",
-        "role": "D"
+        "playerId": "72dbbe00-ef42-4579-ba5e-74ac1cc06c8c",
+        "csvId": 6020,
+        "name": "Ellertsson",
+        "role": "C"
       },
       {
         "playerId": "3d49b936-1e2d-4daa-9b4c-5da87824531d",
@@ -3564,16 +3074,16 @@ export const SOS_TEAMS_DATA = {
       ],
       [
         {
-          "playerId": "bfba87ce-190b-4eab-a120-44416eb074c5",
-          "name": "Mitaj",
-          "role": "D",
-          "perc": 51
-        },
-        {
           "playerId": "72dbbe00-ef42-4579-ba5e-74ac1cc06c8c",
           "name": "Ellertsson",
           "role": "C",
-          "perc": 49
+          "perc": 60
+        },
+        {
+          "playerId": "bfba87ce-190b-4eab-a120-44416eb074c5",
+          "name": "Mitaj",
+          "role": "D",
+          "perc": 40
         }
       ],
       [
@@ -3595,13 +3105,13 @@ export const SOS_TEAMS_DATA = {
           "playerId": "3490cc1c-60cd-4cb8-b606-45c9c3279e4c",
           "name": "Drameh",
           "role": "D",
-          "perc": 55
+          "perc": 51
         },
         {
           "playerId": "1d51f5cf-e44d-402b-9882-54dab796376e",
           "name": "Ehizibue",
           "role": "D",
-          "perc": 45
+          "perc": 49
         }
       ]
     ],
@@ -6299,6 +5809,496 @@ export const SOS_TEAMS_DATA = {
         "name": "Olivera",
         "points": [
           "Jolly difensivo"
+        ]
+      }
+    ]
+  },
+  "CAG": {
+    "code": "CAG",
+    "name": "Cagliari",
+    "city": "Cagliari",
+    "stadium": "Unipol Domus",
+    "primaryColor": "#b22222",
+    "secondaryColor": "#002366",
+    "accentColor": "#ffd700",
+    "coach": "Fabio Pisacane",
+    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Pisacane.webp",
+    "defaultFormation": "4-3-3",
+    "module": "4-3-3",
+    "attackRating": 2.5,
+    "defenseRating": 2.5,
+    "comment": "Promosso dopo l’ottimo lavoro svolto con la Primavera del Cagliari. La società ha scelto di puntare su un tecnico che conosce bene l’ambiente e che ha dimostrato di saper valorizzare i giovani, in linea con la nuova filosofia del club. Pisacane predilige un modulo con la difesa a 4  con grande attenzione all’organizzazione difensiva. Non è escluso, però, che in alcune partite possa optare per una linea a 3. Gli esterni difensivi avranno un ruolo chiave: dovranno garantire equilibrio tra copertura e spinta, supportando sia i centrali che il reparto offensivo. ",
+    "sosFantaComment": "Confermato Pisacane sulla panchina del Cagliari, che continuerà ad alternare la difesa a quattro e quella a tre come nella passata stagione, con pochi cambiamenti a livello di uomini. Zé Pedro o il nuovo arrivato Sugawara nel ruolo di terzino destro. Ha convinto Deiola da difensore: prova a insidiare Mina e si giocano il posto, a maggior ragione visti i svariati problemi fisici del colombiano. Winks e Romano sono arrivati per giocare in mediana, ma anche Fazzini: o mezzala o anche più avanzato, da trequartista/ala. Maldini arriva per giocare, Kevin Carlos si gioca una maglia con Mendy e l'ultimo arrivato Nzola: partono tutti e tre alla pari di fatto.",
+    "keyPoints": [
+      {
+        "text": "Valorizzazione giovani",
+        "tone": "good"
+      },
+      {
+        "text": "Solidità difensiva",
+        "tone": "good"
+      },
+      {
+        "text": "Attacco poco prolifico",
+        "tone": "bad"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "def-center",
+        "tone": "good"
+      },
+      {
+        "role": "att-center",
+        "tone": "bad"
+      }
+    ],
+    "starters": [
+      {
+        "playerId": "e81593ae-46a8-4fe1-9624-44dd35e63ee9",
+        "csvId": "4360",
+        "name": "Caprile",
+        "role": "P"
+      },
+      {
+        "playerId": "5d4bd759-1210-413a-8cd0-5b7ba268c802",
+        "csvId": "7274",
+        "name": "Zè Pedro",
+        "role": "D"
+      },
+      {
+        "playerId": "1a88a4d7-81a0-42c2-911f-33ffef2551c6",
+        "csvId": "4210",
+        "name": "Mina",
+        "role": "D"
+      },
+      {
+        "playerId": "ce5b19a3-93bc-4d98-b799-c466274df41a",
+        "csvId": 7268,
+        "name": "Rodriguez Ju.",
+        "role": "D"
+      },
+      {
+        "playerId": "c9566c48-86e0-42ff-8820-d01b0d55efd7",
+        "csvId": 5701,
+        "name": "Obert",
+        "role": "D"
+      },
+      {
+        "playerId": "4d65afcd-dc9b-4804-ac3e-1fd5d688c48c",
+        "csvId": 4870,
+        "name": "Adopo",
+        "role": "C"
+      },
+      {
+        "playerId": "dd49cb6b-4769-4e5f-ab8c-a90ad7e100a8",
+        "csvId": 4260,
+        "name": "Winks",
+        "role": "C"
+      },
+      {
+        "playerId": "e750e65a-2285-401b-b7ad-a0fea8d2c498",
+        "csvId": null,
+        "name": "Romano",
+        "role": "C"
+      },
+      {
+        "playerId": "af9f364b-0c1d-47fa-aa9a-c74fc9d5e06b",
+        "csvId": 4896,
+        "name": "Maldini",
+        "role": "A"
+      },
+      {
+        "playerId": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
+        "csvId": 6010,
+        "name": "Fazzini",
+        "role": "C"
+      },
+      {
+        "playerId": "3280f1a1-e0be-4c7b-83ba-b254858b4426",
+        "csvId": 7547,
+        "name": "Kevin Carlos",
+        "role": "A"
+      }
+    ],
+    "rig": [
+      {
+        "playerId": "af9f364b-0c1d-47fa-aa9a-c74fc9d5e06b",
+        "name": "Maldini",
+        "role": "A"
+      },
+      {
+        "playerId": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
+        "name": "Fazzini",
+        "role": "C"
+      },
+      {
+        "playerId": "d11d503a-b278-4e14-b201-b7862e1f955d",
+        "name": "Deiola",
+        "role": "C"
+      }
+    ],
+    "pun": [
+      {
+        "playerId": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
+        "name": "Fazzini",
+        "role": "C"
+      },
+      {
+        "playerId": "af9f364b-0c1d-47fa-aa9a-c74fc9d5e06b",
+        "name": "Maldini",
+        "role": "A"
+      }
+    ],
+    "corner": [
+      {
+        "playerId": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
+        "name": "Fazzini",
+        "role": "C"
+      },
+      {
+        "playerId": "c9566c48-86e0-42ff-8820-d01b0d55efd7",
+        "name": "Obert",
+        "role": "D"
+      },
+      {
+        "playerId": "af9f364b-0c1d-47fa-aa9a-c74fc9d5e06b",
+        "name": "Maldini",
+        "role": "A"
+      }
+    ],
+    "ballottaggi": [
+      [
+        {
+          "playerId": "1a88a4d7-81a0-42c2-911f-33ffef2551c6",
+          "name": "Mina",
+          "role": "D",
+          "perc": 51
+        },
+        {
+          "playerId": "d11d503a-b278-4e14-b201-b7862e1f955d",
+          "name": "Deiola",
+          "role": "C",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "3280f1a1-e0be-4c7b-83ba-b254858b4426",
+          "name": "Kevin Carlos",
+          "role": "A",
+          "perc": 51
+        },
+        {
+          "playerId": "6332fc72-c508-4e04-bca1-db35ddda3e94",
+          "name": "Mendy P.",
+          "role": "A",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "5d4bd759-1210-413a-8cd0-5b7ba268c802",
+          "name": "Zè Pedro",
+          "role": "D",
+          "perc": 51
+        },
+        {
+          "playerId": "d05121f2-7f6b-44df-8cd1-e4611b85700d",
+          "name": "Sugawara",
+          "role": "D",
+          "perc": 49
+        }
+      ]
+    ],
+    "up": [
+      {
+        "playerId": "c9566c48-86e0-42ff-8820-d01b0d55efd7",
+        "name": "Obert",
+        "points": [
+          "Buoni cross anche dai piazzati",
+          "Utilizzato in più posizioni nella fase difensiva"
+        ]
+      },
+      {
+        "playerId": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
+        "name": "Fazzini",
+        "points": [
+          "Voluto fortemente da Pisacane",
+          "Propensione al bonus",
+          "Dubbio su integrità fisica"
+        ]
+      }
+    ],
+    "down": [
+      {
+        "playerId": "d11d503a-b278-4e14-b201-b7862e1f955d",
+        "name": "Deiola",
+        "points": [
+          "Utilizzato in un ruolo molto arretrato"
+        ]
+      }
+    ],
+    "young": [
+      {
+        "playerId": "6332fc72-c508-4e04-bca1-db35ddda3e94",
+        "name": "Mendy P.",
+        "points": [
+          "Può facilmente ritagliarsi spazio"
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "playerId": "e750e65a-2285-401b-b7ad-a0fea8d2c498",
+        "name": "Romano",
+        "points": [
+          "Forte nelle transizioni offensive"
+        ]
+      }
+    ]
+  },
+  "cagliari": {
+    "code": "CAG",
+    "name": "Cagliari",
+    "city": "Cagliari",
+    "stadium": "Unipol Domus",
+    "primaryColor": "#b22222",
+    "secondaryColor": "#002366",
+    "accentColor": "#ffd700",
+    "coach": "Fabio Pisacane",
+    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Pisacane.webp",
+    "defaultFormation": "4-3-3",
+    "module": "4-3-3",
+    "attackRating": 2.5,
+    "defenseRating": 2.5,
+    "comment": "Promosso dopo l’ottimo lavoro svolto con la Primavera del Cagliari. La società ha scelto di puntare su un tecnico che conosce bene l’ambiente e che ha dimostrato di saper valorizzare i giovani, in linea con la nuova filosofia del club. Pisacane predilige un modulo con la difesa a 4  con grande attenzione all’organizzazione difensiva. Non è escluso, però, che in alcune partite possa optare per una linea a 3. Gli esterni difensivi avranno un ruolo chiave: dovranno garantire equilibrio tra copertura e spinta, supportando sia i centrali che il reparto offensivo. ",
+    "sosFantaComment": "Confermato Pisacane sulla panchina del Cagliari, che continuerà ad alternare la difesa a quattro e quella a tre come nella passata stagione, con pochi cambiamenti a livello di uomini. Zé Pedro o il nuovo arrivato Sugawara nel ruolo di terzino destro. Ha convinto Deiola da difensore: prova a insidiare Mina e si giocano il posto, a maggior ragione visti i svariati problemi fisici del colombiano. Winks e Romano sono arrivati per giocare in mediana, ma anche Fazzini: o mezzala o anche più avanzato, da trequartista/ala. Maldini arriva per giocare, Kevin Carlos si gioca una maglia con Mendy e l'ultimo arrivato Nzola: partono tutti e tre alla pari di fatto.",
+    "keyPoints": [
+      {
+        "text": "Valorizzazione giovani",
+        "tone": "good"
+      },
+      {
+        "text": "Solidità difensiva",
+        "tone": "good"
+      },
+      {
+        "text": "Attacco poco prolifico",
+        "tone": "bad"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "def-center",
+        "tone": "good"
+      },
+      {
+        "role": "att-center",
+        "tone": "bad"
+      }
+    ],
+    "starters": [
+      {
+        "playerId": "e81593ae-46a8-4fe1-9624-44dd35e63ee9",
+        "csvId": "4360",
+        "name": "Caprile",
+        "role": "P"
+      },
+      {
+        "playerId": "5d4bd759-1210-413a-8cd0-5b7ba268c802",
+        "csvId": "7274",
+        "name": "Zè Pedro",
+        "role": "D"
+      },
+      {
+        "playerId": "1a88a4d7-81a0-42c2-911f-33ffef2551c6",
+        "csvId": "4210",
+        "name": "Mina",
+        "role": "D"
+      },
+      {
+        "playerId": "ce5b19a3-93bc-4d98-b799-c466274df41a",
+        "csvId": 7268,
+        "name": "Rodriguez Ju.",
+        "role": "D"
+      },
+      {
+        "playerId": "c9566c48-86e0-42ff-8820-d01b0d55efd7",
+        "csvId": 5701,
+        "name": "Obert",
+        "role": "D"
+      },
+      {
+        "playerId": "4d65afcd-dc9b-4804-ac3e-1fd5d688c48c",
+        "csvId": 4870,
+        "name": "Adopo",
+        "role": "C"
+      },
+      {
+        "playerId": "dd49cb6b-4769-4e5f-ab8c-a90ad7e100a8",
+        "csvId": 4260,
+        "name": "Winks",
+        "role": "C"
+      },
+      {
+        "playerId": "e750e65a-2285-401b-b7ad-a0fea8d2c498",
+        "csvId": null,
+        "name": "Romano",
+        "role": "C"
+      },
+      {
+        "playerId": "af9f364b-0c1d-47fa-aa9a-c74fc9d5e06b",
+        "csvId": 4896,
+        "name": "Maldini",
+        "role": "A"
+      },
+      {
+        "playerId": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
+        "csvId": 6010,
+        "name": "Fazzini",
+        "role": "C"
+      },
+      {
+        "playerId": "3280f1a1-e0be-4c7b-83ba-b254858b4426",
+        "csvId": 7547,
+        "name": "Kevin Carlos",
+        "role": "A"
+      }
+    ],
+    "rig": [
+      {
+        "playerId": "af9f364b-0c1d-47fa-aa9a-c74fc9d5e06b",
+        "name": "Maldini",
+        "role": "A"
+      },
+      {
+        "playerId": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
+        "name": "Fazzini",
+        "role": "C"
+      },
+      {
+        "playerId": "d11d503a-b278-4e14-b201-b7862e1f955d",
+        "name": "Deiola",
+        "role": "C"
+      }
+    ],
+    "pun": [
+      {
+        "playerId": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
+        "name": "Fazzini",
+        "role": "C"
+      },
+      {
+        "playerId": "af9f364b-0c1d-47fa-aa9a-c74fc9d5e06b",
+        "name": "Maldini",
+        "role": "A"
+      }
+    ],
+    "corner": [
+      {
+        "playerId": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
+        "name": "Fazzini",
+        "role": "C"
+      },
+      {
+        "playerId": "c9566c48-86e0-42ff-8820-d01b0d55efd7",
+        "name": "Obert",
+        "role": "D"
+      },
+      {
+        "playerId": "af9f364b-0c1d-47fa-aa9a-c74fc9d5e06b",
+        "name": "Maldini",
+        "role": "A"
+      }
+    ],
+    "ballottaggi": [
+      [
+        {
+          "playerId": "1a88a4d7-81a0-42c2-911f-33ffef2551c6",
+          "name": "Mina",
+          "role": "D",
+          "perc": 51
+        },
+        {
+          "playerId": "d11d503a-b278-4e14-b201-b7862e1f955d",
+          "name": "Deiola",
+          "role": "C",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "3280f1a1-e0be-4c7b-83ba-b254858b4426",
+          "name": "Kevin Carlos",
+          "role": "A",
+          "perc": 51
+        },
+        {
+          "playerId": "6332fc72-c508-4e04-bca1-db35ddda3e94",
+          "name": "Mendy P.",
+          "role": "A",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "5d4bd759-1210-413a-8cd0-5b7ba268c802",
+          "name": "Zè Pedro",
+          "role": "D",
+          "perc": 51
+        },
+        {
+          "playerId": "d05121f2-7f6b-44df-8cd1-e4611b85700d",
+          "name": "Sugawara",
+          "role": "D",
+          "perc": 49
+        }
+      ]
+    ],
+    "up": [
+      {
+        "playerId": "c9566c48-86e0-42ff-8820-d01b0d55efd7",
+        "name": "Obert",
+        "points": [
+          "Buoni cross anche dai piazzati",
+          "Utilizzato in più posizioni nella fase difensiva"
+        ]
+      },
+      {
+        "playerId": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
+        "name": "Fazzini",
+        "points": [
+          "Voluto fortemente da Pisacane",
+          "Propensione al bonus",
+          "Dubbio su integrità fisica"
+        ]
+      }
+    ],
+    "down": [
+      {
+        "playerId": "d11d503a-b278-4e14-b201-b7862e1f955d",
+        "name": "Deiola",
+        "points": [
+          "Utilizzato in un ruolo molto arretrato"
+        ]
+      }
+    ],
+    "young": [
+      {
+        "playerId": "6332fc72-c508-4e04-bca1-db35ddda3e94",
+        "name": "Mendy P.",
+        "points": [
+          "Può facilmente ritagliarsi spazio"
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "playerId": "e750e65a-2285-401b-b7ad-a0fea8d2c498",
+        "name": "Romano",
+        "points": [
+          "Forte nelle transizioni offensive"
         ]
       }
     ]

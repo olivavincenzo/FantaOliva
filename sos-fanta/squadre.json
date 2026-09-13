@@ -485,228 +485,6 @@
     "updatedAt": "2026-09-10T12:36:28.148Z"
   },
   {
-    "team": "CAG",
-    "season": "s_26_27",
-    "starters": [
-      {
-        "player_id": "e81593ae-46a8-4fe1-9624-44dd35e63ee9",
-        "id": "4360"
-      },
-      {
-        "player_id": "5d4bd759-1210-413a-8cd0-5b7ba268c802",
-        "id": "7274"
-      },
-      {
-        "player_id": "1a88a4d7-81a0-42c2-911f-33ffef2551c6",
-        "id": "4210"
-      },
-      {
-        "player_id": "ce5b19a3-93bc-4d98-b799-c466274df41a",
-        "id": 7268
-      },
-      {
-        "player_id": "c9566c48-86e0-42ff-8820-d01b0d55efd7",
-        "id": 5701
-      },
-      {
-        "player_id": "4d65afcd-dc9b-4804-ac3e-1fd5d688c48c",
-        "id": 4870
-      },
-      {
-        "player_id": "dd49cb6b-4769-4e5f-ab8c-a90ad7e100a8",
-        "id": 4260
-      },
-      {
-        "player_id": "e750e65a-2285-401b-b7ad-a0fea8d2c498",
-        "id": null
-      },
-      {
-        "player_id": "af9f364b-0c1d-47fa-aa9a-c74fc9d5e06b",
-        "id": 4896
-      },
-      {
-        "player_id": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
-        "id": 6010
-      },
-      {
-        "player_id": "3280f1a1-e0be-4c7b-83ba-b254858b4426",
-        "id": 7547
-      }
-    ],
-    "rig": [
-      {
-        "player_id": "ca1a4e82-6e21-4c6d-8daa-45de90b977b0"
-      },
-      {
-        "player_id": "b5b204ae-aa93-48b4-a220-73953eb4aa27"
-      },
-      {
-        "player_id": "d11d503a-b278-4e14-b201-b7862e1f955d"
-      }
-    ],
-    "pun": [
-      {
-        "player_id": "b5b204ae-aa93-48b4-a220-73953eb4aa27"
-      },
-      {
-        "player_id": "af9f364b-0c1d-47fa-aa9a-c74fc9d5e06b"
-      }
-    ],
-    "corner": [
-      {
-        "player_id": "b5b204ae-aa93-48b4-a220-73953eb4aa27"
-      },
-      {
-        "player_id": "c9566c48-86e0-42ff-8820-d01b0d55efd7"
-      },
-      {
-        "player_id": "af9f364b-0c1d-47fa-aa9a-c74fc9d5e06b"
-      }
-    ],
-    "module": "4-3-3",
-    "coach": "Fabio Pisacane",
-    "attack": 2.5,
-    "defense": 2.5,
-    "comment": "Promosso dopo l’ottimo lavoro svolto con la Primavera del Cagliari. La società ha scelto di puntare su un tecnico che conosce bene l’ambiente e che ha dimostrato di saper valorizzare i giovani, in linea con la nuova filosofia del club. Pisacane predilige un modulo con la difesa a 4  con grande attenzione all’organizzazione difensiva. Non è escluso, però, che in alcune partite possa optare per una linea a 3. Gli esterni difensivi avranno un ruolo chiave: dovranno garantire equilibrio tra copertura e spinta, supportando sia i centrali che il reparto offensivo. ",
-    "sosFantaComment": "Confermato Pisacane sulla panchina del Cagliari, che continuerà ad alternare la difesa a quattro e quella a tre come nella passata stagione, con pochi cambiamenti a livello di uomini. Zé Pedro o il nuovo arrivato Sugawara nel ruolo di terzino destro. Ha convinto Deiola da difensore: prova a insidiare Mina e si giocano il posto, a maggior ragione visti i svariati problemi fisici del colombiano. Winks e Romano sono arrivati per giocare in mediana, ma anche Fazzini: o mezzala o anche più avanzato, da trequartista/ala. Maldini arriva per giocare, Kevin Carlos si gioca una maglia con Mendy e l'ultimo arrivato Nzola: partono tutti e tre alla pari di fatto.",
-    "created_at": "2026-07-21T13:13:06.733Z",
-    "updated_at": "2026-09-04T15:23:51.275Z",
-    "up": [
-      {
-        "player_id": "c9566c48-86e0-42ff-8820-d01b0d55efd7",
-        "points": [
-          {
-            "text": "Buoni cross anche dai piazzati",
-            "tone": "good"
-          },
-          {
-            "tone": "good",
-            "text": "Utilizzato in più posizioni nella fase difensiva"
-          }
-        ]
-      },
-      {
-        "player_id": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
-        "points": [
-          {
-            "tone": "good",
-            "text": "Voluto fortemente da Pisacane"
-          },
-          {
-            "tone": "good",
-            "text": "Propensione al bonus"
-          },
-          {
-            "tone": "neutral",
-            "text": "Dubbio su integrità fisica"
-          }
-        ]
-      }
-    ],
-    "down": [
-      {
-        "player_id": "d11d503a-b278-4e14-b201-b7862e1f955d",
-        "points": [
-          {
-            "text": "Utilizzato in un ruolo molto arretrato",
-            "tone": "bad"
-          }
-        ]
-      }
-    ],
-    "young": [
-      {
-        "player_id": "6332fc72-c508-4e04-bca1-db35ddda3e94",
-        "points": [
-          {
-            "text": "Può facilmente ritagliarsi spazio",
-            "tone": "neutral"
-          }
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "player_id": "e750e65a-2285-401b-b7ad-a0fea8d2c498",
-        "points": [
-          {
-            "text": "Forte nelle transizioni offensive",
-            "tone": "good"
-          }
-        ]
-      }
-    ],
-    "ballottaggi": [
-      {
-        "players": [
-          {
-            "perc": 51,
-            "player_id": "1a88a4d7-81a0-42c2-911f-33ffef2551c6"
-          },
-          {
-            "perc": 49,
-            "player_id": "d11d503a-b278-4e14-b201-b7862e1f955d"
-          }
-        ]
-      },
-      {
-        "players": [
-          {
-            "player_id": "3280f1a1-e0be-4c7b-83ba-b254858b4426",
-            "perc": 51
-          },
-          {
-            "player_id": "6332fc72-c508-4e04-bca1-db35ddda3e94",
-            "perc": 49
-          }
-        ]
-      },
-      {
-        "players": [
-          {
-            "player_id": "5d4bd759-1210-413a-8cd0-5b7ba268c802",
-            "perc": 51
-          },
-          {
-            "player_id": "d05121f2-7f6b-44df-8cd1-e4611b85700d",
-            "perc": 49
-          }
-        ]
-      }
-    ],
-    "coachRating": {
-      "attack": 2.5,
-      "defense": 2.5,
-      "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Pisacane.webp"
-    },
-    "keyPoints": [
-      {
-        "text": "Valorizzazione giovani",
-        "tone": "good"
-      },
-      {
-        "text": "Solidità difensiva",
-        "tone": "good"
-      },
-      {
-        "text": "Attacco poco prolifico",
-        "tone": "bad"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "def-center",
-        "tone": "good"
-      },
-      {
-        "role": "att-center",
-        "tone": "bad"
-      }
-    ],
-    "createdAt": "2026-07-21T13:13:06.733Z",
-    "updatedAt": "2026-09-04T15:23:51.275Z"
-  },
-  {
     "team": "LEC",
     "season": "s_26_27",
     "starters": [
@@ -1429,8 +1207,8 @@
         "id": 5742
       },
       {
-        "player_id": "bfba87ce-190b-4eab-a120-44416eb074c5",
-        "id": 7537
+        "player_id": "72dbbe00-ef42-4579-ba5e-74ac1cc06c8c",
+        "id": 6020
       },
       {
         "player_id": "3d49b936-1e2d-4daa-9b4c-5da87824531d",
@@ -1490,7 +1268,7 @@
     "comment": "De Rossi è chiamato a far risalire il Genoa dopo l'esonero di Patrick Viera a causa del rendimento dei grifoni in piena zona retrocessione. Il tecnico ex Roma propone un calcio propositivo, fondato su costruzione dal basso, intensità e compattezza. Tra i principi chiave spiccano una pressione alta coordinata, fluidità tra reparti e cura dei dettagli tecnici e tattici. De Rossi potrebbe sviluppare, almeno inizialmente, il proprio progetto al Genoa optando per il sistema di gioco del 3-5-2, ma non è escluso il passaggio al 4-3-3 opzione tanto cara al tecnico romano e che rimane quella più utilizzata nel corso delle sue esperienze precedenti.",
     "sosFantaComment": "È rimasto De Rossi alla guida del Genoa, avanti con il 3-4-2-1 che in alcune occasioni può essere anche 3-4-1-2 o 3-5-2 puro. El Shaarawy è tornato per giocare, parte in pole su Vitinha e può giocare anche a tutta fascia. A destra è andato via Norton-Cuffy e sono arrivati Drameh ed Ehizibue che si contenderanno il posto, col primo favorito. A sinistra si giocano il posto in un ballottaggio serratissimo il nuovo arrivato Mitaj ed Ellertsson (vero e proprio jolly, è stato provato anche a centrocampo). Occhio a Meichtry, è promettente e prova a insidiare Sow, può giocare anche più avanzato da vice Baldanzi. Stesso dicasi per Traoré, che in partenza non è un titolare.",
     "created_at": "2026-07-21T13:42:48.789Z",
-    "updated_at": "2026-09-08T07:42:46.686Z",
+    "updated_at": "2026-09-12T16:16:57.770Z",
     "up": [
       {
         "player_id": "3ba8d8de-4fd3-47ed-90b2-00ec9789f80c",
@@ -1568,12 +1346,12 @@
       {
         "players": [
           {
-            "player_id": "bfba87ce-190b-4eab-a120-44416eb074c5",
-            "perc": 51
+            "player_id": "72dbbe00-ef42-4579-ba5e-74ac1cc06c8c",
+            "perc": 60
           },
           {
-            "player_id": "72dbbe00-ef42-4579-ba5e-74ac1cc06c8c",
-            "perc": 49
+            "player_id": "bfba87ce-190b-4eab-a120-44416eb074c5",
+            "perc": 40
           }
         ]
       },
@@ -1593,11 +1371,11 @@
         "players": [
           {
             "player_id": "3490cc1c-60cd-4cb8-b606-45c9c3279e4c",
-            "perc": 55
+            "perc": 51
           },
           {
             "player_id": "1d51f5cf-e44d-402b-9882-54dab796376e",
-            "perc": 45
+            "perc": 49
           }
         ]
       }
@@ -1636,7 +1414,7 @@
       }
     ],
     "createdAt": "2026-07-21T13:42:48.789Z",
-    "updatedAt": "2026-09-08T07:42:46.686Z"
+    "updatedAt": "2026-09-12T16:16:57.770Z"
   },
   {
     "team": "COM",
@@ -2820,6 +2598,228 @@
     ],
     "createdAt": "2026-07-21T13:11:53.537Z",
     "updatedAt": "2026-09-10T12:27:44.280Z"
+  },
+  {
+    "team": "CAG",
+    "season": "s_26_27",
+    "starters": [
+      {
+        "player_id": "e81593ae-46a8-4fe1-9624-44dd35e63ee9",
+        "id": "4360"
+      },
+      {
+        "player_id": "5d4bd759-1210-413a-8cd0-5b7ba268c802",
+        "id": "7274"
+      },
+      {
+        "player_id": "1a88a4d7-81a0-42c2-911f-33ffef2551c6",
+        "id": "4210"
+      },
+      {
+        "player_id": "ce5b19a3-93bc-4d98-b799-c466274df41a",
+        "id": 7268
+      },
+      {
+        "player_id": "c9566c48-86e0-42ff-8820-d01b0d55efd7",
+        "id": 5701
+      },
+      {
+        "player_id": "4d65afcd-dc9b-4804-ac3e-1fd5d688c48c",
+        "id": 4870
+      },
+      {
+        "player_id": "dd49cb6b-4769-4e5f-ab8c-a90ad7e100a8",
+        "id": 4260
+      },
+      {
+        "player_id": "e750e65a-2285-401b-b7ad-a0fea8d2c498",
+        "id": null
+      },
+      {
+        "player_id": "af9f364b-0c1d-47fa-aa9a-c74fc9d5e06b",
+        "id": 4896
+      },
+      {
+        "player_id": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
+        "id": 6010
+      },
+      {
+        "player_id": "3280f1a1-e0be-4c7b-83ba-b254858b4426",
+        "id": 7547
+      }
+    ],
+    "rig": [
+      {
+        "player_id": "af9f364b-0c1d-47fa-aa9a-c74fc9d5e06b"
+      },
+      {
+        "player_id": "b5b204ae-aa93-48b4-a220-73953eb4aa27"
+      },
+      {
+        "player_id": "d11d503a-b278-4e14-b201-b7862e1f955d"
+      }
+    ],
+    "pun": [
+      {
+        "player_id": "b5b204ae-aa93-48b4-a220-73953eb4aa27"
+      },
+      {
+        "player_id": "af9f364b-0c1d-47fa-aa9a-c74fc9d5e06b"
+      }
+    ],
+    "corner": [
+      {
+        "player_id": "b5b204ae-aa93-48b4-a220-73953eb4aa27"
+      },
+      {
+        "player_id": "c9566c48-86e0-42ff-8820-d01b0d55efd7"
+      },
+      {
+        "player_id": "af9f364b-0c1d-47fa-aa9a-c74fc9d5e06b"
+      }
+    ],
+    "module": "4-3-3",
+    "coach": "Fabio Pisacane",
+    "attack": 2.5,
+    "defense": 2.5,
+    "comment": "Promosso dopo l’ottimo lavoro svolto con la Primavera del Cagliari. La società ha scelto di puntare su un tecnico che conosce bene l’ambiente e che ha dimostrato di saper valorizzare i giovani, in linea con la nuova filosofia del club. Pisacane predilige un modulo con la difesa a 4  con grande attenzione all’organizzazione difensiva. Non è escluso, però, che in alcune partite possa optare per una linea a 3. Gli esterni difensivi avranno un ruolo chiave: dovranno garantire equilibrio tra copertura e spinta, supportando sia i centrali che il reparto offensivo. ",
+    "sosFantaComment": "Confermato Pisacane sulla panchina del Cagliari, che continuerà ad alternare la difesa a quattro e quella a tre come nella passata stagione, con pochi cambiamenti a livello di uomini. Zé Pedro o il nuovo arrivato Sugawara nel ruolo di terzino destro. Ha convinto Deiola da difensore: prova a insidiare Mina e si giocano il posto, a maggior ragione visti i svariati problemi fisici del colombiano. Winks e Romano sono arrivati per giocare in mediana, ma anche Fazzini: o mezzala o anche più avanzato, da trequartista/ala. Maldini arriva per giocare, Kevin Carlos si gioca una maglia con Mendy e l'ultimo arrivato Nzola: partono tutti e tre alla pari di fatto.",
+    "created_at": "2026-07-21T13:13:06.733Z",
+    "updated_at": "2026-09-12T23:21:11.007Z",
+    "up": [
+      {
+        "player_id": "c9566c48-86e0-42ff-8820-d01b0d55efd7",
+        "points": [
+          {
+            "text": "Buoni cross anche dai piazzati",
+            "tone": "good"
+          },
+          {
+            "tone": "good",
+            "text": "Utilizzato in più posizioni nella fase difensiva"
+          }
+        ]
+      },
+      {
+        "player_id": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
+        "points": [
+          {
+            "tone": "good",
+            "text": "Voluto fortemente da Pisacane"
+          },
+          {
+            "tone": "good",
+            "text": "Propensione al bonus"
+          },
+          {
+            "tone": "neutral",
+            "text": "Dubbio su integrità fisica"
+          }
+        ]
+      }
+    ],
+    "down": [
+      {
+        "player_id": "d11d503a-b278-4e14-b201-b7862e1f955d",
+        "points": [
+          {
+            "text": "Utilizzato in un ruolo molto arretrato",
+            "tone": "bad"
+          }
+        ]
+      }
+    ],
+    "young": [
+      {
+        "player_id": "6332fc72-c508-4e04-bca1-db35ddda3e94",
+        "points": [
+          {
+            "text": "Può facilmente ritagliarsi spazio",
+            "tone": "neutral"
+          }
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "player_id": "e750e65a-2285-401b-b7ad-a0fea8d2c498",
+        "points": [
+          {
+            "text": "Forte nelle transizioni offensive",
+            "tone": "good"
+          }
+        ]
+      }
+    ],
+    "ballottaggi": [
+      {
+        "players": [
+          {
+            "perc": 51,
+            "player_id": "1a88a4d7-81a0-42c2-911f-33ffef2551c6"
+          },
+          {
+            "perc": 49,
+            "player_id": "d11d503a-b278-4e14-b201-b7862e1f955d"
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "3280f1a1-e0be-4c7b-83ba-b254858b4426",
+            "perc": 51
+          },
+          {
+            "player_id": "6332fc72-c508-4e04-bca1-db35ddda3e94",
+            "perc": 49
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "5d4bd759-1210-413a-8cd0-5b7ba268c802",
+            "perc": 51
+          },
+          {
+            "player_id": "d05121f2-7f6b-44df-8cd1-e4611b85700d",
+            "perc": 49
+          }
+        ]
+      }
+    ],
+    "coachRating": {
+      "attack": 2.5,
+      "defense": 2.5,
+      "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Pisacane.webp"
+    },
+    "keyPoints": [
+      {
+        "text": "Valorizzazione giovani",
+        "tone": "good"
+      },
+      {
+        "text": "Solidità difensiva",
+        "tone": "good"
+      },
+      {
+        "text": "Attacco poco prolifico",
+        "tone": "bad"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "def-center",
+        "tone": "good"
+      },
+      {
+        "role": "att-center",
+        "tone": "bad"
+      }
+    ],
+    "createdAt": "2026-07-21T13:13:06.733Z",
+    "updatedAt": "2026-09-12T23:21:11.007Z"
   },
   {
     "team": "TOR",
