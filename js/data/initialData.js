@@ -649,7 +649,7 @@ export const INITIAL_TEAMS = [
           "diffM": -10,
           "fvm": 102,
           "fvmM": 102,
-          "classic_8_mod_median": 4.6,
+          "classic_8_mod_median": 4.5,
           "classic_10_mod_median": 5.8,
           "classic_12_mod_median": 6.6
         },
@@ -792,8 +792,8 @@ export const INITIAL_TEAMS = [
           "fvm": 381,
           "fvmM": 381,
           "classic_8_mod_median": 18,
-          "classic_10_mod_median": 23.6,
-          "classic_12_mod_median": 25.6
+          "classic_10_mod_median": 23.5,
+          "classic_12_mod_median": 25.4
         },
         "stats": {
           "titolarita": 55,
@@ -864,7 +864,7 @@ export const INITIAL_TEAMS = [
           "diffM": 5,
           "fvm": 45,
           "fvmM": 45,
-          "classic_8_mod_median": 0.2,
+          "classic_8_mod_median": 0.3,
           "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0.4
         },
@@ -1869,7 +1869,7 @@ export const INITIAL_TEAMS = [
           "diffM": -6,
           "fvm": 26,
           "fvmM": 26,
-          "classic_8_mod_median": 1.6,
+          "classic_8_mod_median": 1.5,
           "classic_10_mod_median": 2.8,
           "classic_12_mod_median": 4
         },
@@ -2301,7 +2301,7 @@ export const INITIAL_TEAMS = [
           "fvm": 51,
           "fvmM": 51,
           "classic_8_mod_median": 2,
-          "classic_10_mod_median": 1.5,
+          "classic_10_mod_median": 1.6,
           "classic_12_mod_median": 0.7
         },
         "stats": {
@@ -3841,7 +3841,7 @@ export const INITIAL_TEAMS = [
     "shortName": "BOL",
     "city": "Bologna",
     "stadium": "Renato Dall'Ara",
-    "coach": "Domenico Tedesco",
+    "coach": "Raffaele Palladino",
     "primaryColor": "#990000",
     "secondaryColor": "#001f3f",
     "accentColor": "#ffcc00",
@@ -3883,9 +3883,9 @@ export const INITIAL_TEAMS = [
           "diffM": -3,
           "fvm": 54,
           "fvmM": 54,
-          "classic_8_mod_median": 1.4,
+          "classic_8_mod_median": 1.3,
           "classic_10_mod_median": 2.6,
-          "classic_12_mod_median": 4.6
+          "classic_12_mod_median": 4.5
         },
         "stats": {
           "titolarita": 50,
@@ -4450,7 +4450,7 @@ export const INITIAL_TEAMS = [
           "diffM": -8,
           "fvm": 205,
           "fvmM": 205,
-          "classic_8_mod_median": 9.8,
+          "classic_8_mod_median": 9.7,
           "classic_10_mod_median": 12.6,
           "classic_12_mod_median": 14.2
         },
@@ -4666,7 +4666,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 109,
           "classic_8_mod_median": 0.8,
           "classic_10_mod_median": 1.8,
-          "classic_12_mod_median": 2.8
+          "classic_12_mod_median": 2.9
         },
         "stats": {
           "titolarita": 42,
@@ -4798,7 +4798,7 @@ export const INITIAL_TEAMS = [
           "diffM": 1,
           "fvm": 70,
           "fvmM": 70,
-          "classic_8_mod_median": 1.6,
+          "classic_8_mod_median": 1.5,
           "classic_10_mod_median": 2.4,
           "classic_12_mod_median": 3.4
         },
@@ -4934,7 +4934,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 6,
           "classic_8_mod_median": 0.4,
           "classic_10_mod_median": 0.8,
-          "classic_12_mod_median": 1.5
+          "classic_12_mod_median": 1.4
         },
         "stats": {
           "titolarita": 42,
@@ -6248,7 +6248,7 @@ export const INITIAL_TEAMS = [
           "fvm": 29,
           "fvmM": 29,
           "classic_8_mod_median": 0.3,
-          "classic_10_mod_median": 0.6,
+          "classic_10_mod_median": 0.5,
           "classic_12_mod_median": 1
         },
         "stats": {
@@ -8383,7 +8383,7 @@ export const INITIAL_TEAMS = [
           "diffM": 20,
           "fvm": 202,
           "fvmM": 202,
-          "classic_8_mod_median": 3.8,
+          "classic_8_mod_median": 3.9,
           "classic_10_mod_median": 4.4,
           "classic_12_mod_median": 5.3
         },
@@ -8799,7 +8799,7 @@ export const INITIAL_TEAMS = [
           "diffM": 31,
           "fvm": 355,
           "fvmM": 355,
-          "classic_8_mod_median": 14.9,
+          "classic_8_mod_median": 14.8,
           "classic_10_mod_median": 19,
           "classic_12_mod_median": 20.8
         },
@@ -9896,7 +9896,7 @@ export const INITIAL_TEAMS = [
           "diffM": 4,
           "fvm": 77,
           "fvmM": 77,
-          "classic_8_mod_median": 2.1,
+          "classic_8_mod_median": 2.2,
           "classic_10_mod_median": 2.2,
           "classic_12_mod_median": 2.6
         },
@@ -10321,7 +10321,7 @@ export const INITIAL_TEAMS = [
           "diffM": 44,
           "fvm": 144,
           "fvmM": 144,
-          "classic_8_mod_median": 7.6,
+          "classic_8_mod_median": 7.5,
           "classic_10_mod_median": 8.3,
           "classic_12_mod_median": 9
         },
@@ -10588,7 +10588,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Leonardo Balerdi è un nuovo difensore della Roma. Gasperini ha detto che i giallorossi hanno preso un capitano che ha personalità. Si tratta di un centrale alto 188 cm e che ha 27 anni, di nazionalità argentina. Al Marsiglia ha giocato molto negli ultimi anni, solo nel 2022-23 è riuscito a giocare più di 30 partite (35), nelle altre stagioni si è fermato sulle 26/27 per alcuni problemi fisici o scelte tecniche. Anche nel 2026 ha avuto un paio di stop muscolari. Alla Roma non parte come titolare ma è un’alternativa, anche al fanta sarà così.",
+        "fantaComment": "Leonardo Balerdi è un nuovo difensore della Roma. Gasperini ha detto che i giallorossi hanno preso un capitano che ha personalità. Si tratta di un centrale alto 188 cm e che ha 27 anni, di nazionalità argentina. Al Marsiglia ha giocato molto negli ultimi anni, solo nel 2022-23 è riuscito a giocare più di 30 partite (35), nelle altre stagioni si è fermato sulle 26/27 per alcuni problemi fisici o scelte tecniche. Anche nel 2026 ha avuto un paio di stop muscolari. Alla Roma non parte come titolare ma ha già dimostrato di essere più di una semplice alternativa.",
         "quotazioni": {
           "qtA": 13,
           "qtI": 1,
@@ -10935,7 +10935,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 67,
           "classic_8_mod_median": 0.8,
           "classic_10_mod_median": 0.8,
-          "classic_12_mod_median": 1
+          "classic_12_mod_median": 1.1
         },
         "stats": {
           "titolarita": 50,
@@ -16336,7 +16336,7 @@ export const INITIAL_TEAMS = [
           "diffM": 0,
           "fvm": 1,
           "fvmM": 1,
-          "classic_8_mod_median": 0.2,
+          "classic_8_mod_median": 0.3,
           "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0.2
         },
@@ -17170,7 +17170,7 @@ export const INITIAL_TEAMS = [
           "diffM": 5,
           "fvm": 22,
           "fvmM": 22,
-          "classic_8_mod_median": 0.2,
+          "classic_8_mod_median": 0.3,
           "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0.4
         },
@@ -18668,7 +18668,7 @@ export const INITIAL_TEAMS = [
           "diffM": 0,
           "fvm": 1,
           "fvmM": 1,
-          "classic_8_mod_median": 0.3,
+          "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0
         },
@@ -18955,7 +18955,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 83,
           "classic_8_mod_median": 3.6,
           "classic_10_mod_median": 3.9,
-          "classic_12_mod_median": 4
+          "classic_12_mod_median": 4.1
         },
         "stats": {
           "titolarita": 55,
@@ -19369,7 +19369,7 @@ export const INITIAL_TEAMS = [
         "punizioni": true,
         "corner": true,
         "positionNotes": "",
-        "fantaComment": "Hakan Calhanoglu continua a essere una vera certezza in casa Inter, si è confermato anche a inizio stagione. Nonostante rumors passati e problemi fisici (appena 22 presenze nell'ultima stagione), il turco continua a performare e al fantacalcio rimane un top di reparto anche da regista. 9 gol e 4 assist (7,64 di fanta-media) divisi tra le specialità della casa: tiri dalla distanza, piazzati e rigori. Tutto passerà ancora dal 32enne in questa stagione e soprattutto i rigori rimangono un fattore dove rimane la primissima scelta di Chivu (29 realizzati su 31 tirati all'Inter). Gli infortuni sono l'unico lato negativo.",
+        "fantaComment": "Hakan Calhanoglu continua a essere una vera certezza in casa Inter, si è confermato anche a inizio stagione. Nonostante rumors passati e problemi fisici (appena 22 presenze nell'ultima stagione), il turco continua a performare e al fantacalcio rimane un top di reparto anche da regista. 9 gol e 4 assist (7,64 di fanta-media) divisi tra le specialità della casa: tiri dalla distanza, piazzati e rigori. Tutto passerà ancora dal 32enne in questa stagione e soprattutto i rigori rimangono un fattore dove rimane la primissima scelta di Chivu (29 realizzati su 31 tirati all'Inter). Gli infortuni sono l'unico lato negativo e infatti si è già fermato con l'Udinese, ma tornerà dopo la lunga sosta di settembre.",
         "quotazioni": {
           "qtA": 83,
           "qtI": 75,
@@ -20055,7 +20055,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "John Stones è arrivato all'Inter, un rinforzo di grandissima esperienza internazionale per la squadra di Chivu. I numeri dicono che ha giocato solo 9 presenze in Premier nell'ultima stagione e 4 in Champions, ma i Mondiali disputati con la sua Inghilterra hanno fugato le incertezze sulla sua condizione fisica: arriva un giocatore che ha sì avuto diversi infortuni muscolari nelle ultime 4 stagioni (94 giorni nel 24/25 lo stop più lungo), ma che comunque al momento è integro. Non le giocherà chiaramente tutte, verrà gestito da Chivu tra campionato e Champions, si può pensare in linea di massima a una gestione di questo tipo: 2 gare disputate ogni 3 idealmente o in alcuni periodi potrà anche saltarne qualcuna prima dei big match. Non aspettatevi che le giochi tutte, se vi serve un voto fisso guardate altrove. È un giocatore d'esperienza, preso soprattutto per i big match e i momenti clou della stagione, darà tanto anche in termini di leadership nello spogliatoio. Al fantacalcio per i motivi sopra elencati siamo più sul 2° che sul 1° slot, ma dipende molto anche dal numero di partecipanti della lega. Anche perché non si può parlare di un difensore dal vizio del gol: solo 11 in 257 partite di Premier League. E un solo rosso ma il dato clamoroso sono i soli 12 gialli in tutte le gare nel massimo campionato inglese. Un dato veramente incredibile.",
+        "fantaComment": "John Stones è arrivato all'Inter, un rinforzo di grandissima esperienza internazionale per la squadra di Chivu. I numeri dicono che ha giocato solo 9 presenze in Premier nell'ultima stagione e 4 in Champions, ma i Mondiali disputati con la sua Inghilterra sembravano aver fugato le incertezze sulla sua condizione fisica: è arrivato un giocatore che aveva sì avuto diversi infortuni muscolari nelle ultime 4 stagioni (94 giorni nel 24/25 lo stop più lungo), ma comunque integro. Non le giocherà chiaramente tutte, verrà gestito da Chivu tra campionato e Champions e comunque qualche stop è da mettere in conto (con l'Udinese si è infortunato). Non aspettatevi che le giochi tutte, se vi serve un voto fisso guardate altrove. È un giocatore d'esperienza, preso soprattutto per i big match e i momenti clou della stagione, darà tanto anche in termini di leadership nello spogliatoio. Al fantacalcio per i motivi sopra elencati siamo più sul 2° che sul 1° slot, ma dipende molto anche dal numero di partecipanti della lega. Anche perché non si può parlare di un difensore dal vizio del gol: solo 11 in 257 partite di Premier League. E un solo rosso ma il dato clamoroso sono i soli 12 gialli in tutte le gare nel massimo campionato inglese. Un dato veramente incredibile.",
         "quotazioni": {
           "qtA": 15,
           "qtI": 12,
@@ -20892,7 +20892,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Diego Moreira è un nuovo rinforzo del Milan di Ruben Amorim. Operazione molto importante per i rossoneri, arriva dallo Strasburgo per circa 50 milioni di euro più bonus. Si tratta di un esterno di nazionalità belga classe 2004 e di piede mancino, che predilige la fascia sinistra ma è stato impiegato anche a destra (ruolo in cui ha detto di volerlo provare Amorim). Arriva per rinforzare la batteria degli esterni, anche se può giocare più avanzato all'occorrenza: grandi accelerazioni e sgroppate palla al piede, i rossoneri sperano di trovare un 'nuovo Theo Hernandez'. Nelle idee del Milan ha tutto per essere il titolare a sinistra, si giocherà il posto con Bartesaghi inizialmente ma Moreira può presto diventare la primissima scelta. 4 presenze nella nazionale maggiore belga, ha scelto il Belgio dopo aver fatto tutta la trafila con le giovanili del Portogallo (ha la doppia nazionalità). 4 gol e 7 assist in 27 partite nell'ultima Ligue 1, è il suo record tra gol e assist da quando è professionista. Nell'ultima stagione ha perso 9 partite per un problema agli adduttori tra febbraio e aprile, ma poi ha recuperato e arriva integro e pronto in rossonero. Al fantacalcio è listato centrocampista: siamo sui 15 crediti circa in partenza, può essere un 3/4° slot.",
+        "fantaComment": "Diego Moreira è un nuovo rinforzo del Milan di Ruben Amorim. Operazione molto importante per i rossoneri, arriva dallo Strasburgo per circa 50 milioni di euro più bonus. Si tratta di un esterno di nazionalità belga classe 2004 e di piede mancino, che predilige la fascia sinistra ma è stato impiegato anche a destra (ruolo in cui ha detto di volerlo provare Amorim). Arriva per rinforzare la batteria degli esterni, anche se può giocare più avanzato all'occorrenza: grandi accelerazioni e sgroppate palla al piede, i rossoneri sperano di trovare un 'nuovo Theo Hernandez'. Nelle idee del Milan ha tutto per essere il titolare a sinistra, si giocherà il posto con Estupinan e Bartesaghi inizialmente ma Moreira può presto diventare la primissima scelta. 4 presenze nella nazionale maggiore belga, ha scelto il Belgio dopo aver fatto tutta la trafila con le giovanili del Portogallo (ha la doppia nazionalità). 4 gol e 7 assist in 27 partite nell'ultima Ligue 1, è il suo record tra gol e assist da quando è professionista. Nell'ultima stagione ha perso 9 partite per un problema agli adduttori tra febbraio e aprile, ma poi ha recuperato e arriva integro e pronto in rossonero. Al fantacalcio è listato centrocampista: siamo sui 15 crediti circa in partenza, può essere un 3/4° slot. E la doppietta dell'Olimpico con la Lazio è una sorta di biglietto da visita: ecco cosa può dare al Milan.",
         "quotazioni": {
           "qtA": 31,
           "qtI": 1,
@@ -21531,7 +21531,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 26,
           "classic_8_mod_median": 1.2,
           "classic_10_mod_median": 1.8,
-          "classic_12_mod_median": 2.5
+          "classic_12_mod_median": 2.4
         },
         "stats": {
           "titolarita": 71,
@@ -22201,7 +22201,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 64,
           "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.3,
-          "classic_12_mod_median": 0.4
+          "classic_12_mod_median": 0.5
         },
         "stats": {
           "titolarita": 45,
@@ -23056,7 +23056,7 @@ export const INITIAL_TEAMS = [
           "diffM": 7,
           "fvm": 454,
           "fvmM": 454,
-          "classic_8_mod_median": 23.3,
+          "classic_8_mod_median": 23.4,
           "classic_10_mod_median": 25.4,
           "classic_12_mod_median": 25.8
         },
@@ -24502,7 +24502,7 @@ export const INITIAL_TEAMS = [
           "diffM": 6,
           "fvm": 42,
           "fvmM": 42,
-          "classic_8_mod_median": 0.6,
+          "classic_8_mod_median": 0.7,
           "classic_10_mod_median": 0.7,
           "classic_12_mod_median": 1.2
         },
@@ -24788,7 +24788,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 29,
           "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
-          "classic_12_mod_median": 0.4
+          "classic_12_mod_median": 0.5
         },
         "stats": {
           "titolarita": 50,
@@ -26859,7 +26859,7 @@ export const INITIAL_TEAMS = [
           "diffM": -9,
           "fvm": 205,
           "fvmM": 205,
-          "classic_8_mod_median": 6.5,
+          "classic_8_mod_median": 6.4,
           "classic_10_mod_median": 10,
           "classic_12_mod_median": 12
         },
@@ -28734,7 +28734,7 @@ export const INITIAL_TEAMS = [
           "fvm": 166,
           "fvmM": 166,
           "classic_8_mod_median": 2.6,
-          "classic_10_mod_median": 5,
+          "classic_10_mod_median": 4.9,
           "classic_12_mod_median": 6.6
         },
         "stats": {
@@ -28867,7 +28867,7 @@ export const INITIAL_TEAMS = [
           "diffM": -4,
           "fvm": 227,
           "fvmM": 227,
-          "classic_8_mod_median": 5.7,
+          "classic_8_mod_median": 5.6,
           "classic_10_mod_median": 8.2,
           "classic_12_mod_median": 10
         },
@@ -29678,7 +29678,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Alex Jimenez è tornato in Serie A con la Fiorentina. Terzino destro spagnolo classe 2005, può giocare anche da esterno di centrocampo e ha una spiccata propensione offensiva. Dopo l’esperienza al Milan, chiusa con un solo assist in 22 presenze al Fantacalcio, al Bournemouth si era ritagliato un ruolo importante con 26 partite da titolare e un gol. L’inizio in viola, però, è stato complicato: è subentrato a Roma, ha offerto una pessima prestazione contro il Frosinone e non è neppure entrato con il Torino. Sulla destra si gioca il posto soprattutto con Dodô, rimasto a Firenze, più che con João Mário. Vanoli proverà a rilanciarlo e a valorizzarne le qualità: all’asta resta una possibile scommessa tra i terzini, ma dovrà crescere nel rendimento e nei bonus per diventare davvero protagonista in Serie A e al fantacalcio.",
+        "fantaComment": "Alex Jimenez è tornato in Serie A con la Fiorentina. Terzino destro spagnolo classe 2005, può giocare anche da esterno di centrocampo e ha una spiccata propensione offensiva. Dopo l’esperienza al Milan, chiusa con un solo assist in 22 presenze al Fantacalcio, al Bournemouth si era ritagliato un ruolo importante con 26 partite da titolare e un gol. Sulla destra può essere lui il nuovo titolare, dovrà dare risposte importanti sul campo. Vanoli proverà a rilanciarlo e a valorizzarne le qualità: all’asta resta una possibile scommessa tra i terzini, ma dovrà crescere nel rendimento e nei bonus per diventare davvero protagonista in Serie A e al fantacalcio.",
         "quotazioni": {
           "qtA": 13,
           "qtI": 15,
@@ -30114,7 +30114,7 @@ export const INITIAL_TEAMS = [
           "diffM": -8,
           "fvm": 102,
           "fvmM": 102,
-          "classic_8_mod_median": 5.6,
+          "classic_8_mod_median": 5.5,
           "classic_10_mod_median": 8,
           "classic_12_mod_median": 9.4
         },
@@ -30175,7 +30175,7 @@ export const INITIAL_TEAMS = [
         "punizioni": true,
         "corner": true,
         "positionNotes": "",
-        "fantaComment": "Franco Mastantuono sbarca al fantacalcio con la maglia della Fiorentina. Al Real Madrid ha trovato poco spazio per la grandissima concorrenza: 35 presenze complessive, molte da subentrante, e 3 gol. Al River aveva già mostrato qualità anche come assist-man, chiudendo il 2025 con 7 reti e 4 assist. Ama partire da destra per rientrare sul mancino e creare la giocata, tra conclusioni, cross e passaggi filtranti. Ha grande tecnica, dribbling e visione di gioco, ma il suo inizio in viola è stato deludente. Vanoli proverà a valorizzarlo nel 4-3-3, schierandolo sulla destra e affidandogli un ruolo da protagonista. Arriva comunque per giocare con grande continuità e può candidarsi anche dagli undici metri: ha segnato tutti e tre i rigori calciati in carriera e inizialmente si contenderà il ruolo con Pellegrino. Al fantacalcio resta un profilo di alto livello, ma dovrà subito reagire dopo le prime prestazioni negative.",
+        "fantaComment": "Franco Mastantuono sbarca al fantacalcio con la maglia della Fiorentina. Al Real Madrid ha trovato poco spazio per la grandissima concorrenza: 35 presenze complessive, molte da subentrante, e 3 gol. Al River aveva già mostrato qualità anche come assist-man, chiudendo il 2025 con 7 reti e 4 assist. Ama partire da destra per rientrare sul mancino e creare la giocata, tra conclusioni, cross e passaggi filtranti. Ha grande tecnica, dribbling e visione di gioco, si è preso la scena con una tripletta a Venezia alla prima di Vanoli. L'allenatore può valorizzarlo, si è già visto, schierandolo sulla destra e affidandogli un ruolo da assoluto protagonista. Giocherà praticamente sempre se starà bene e può candidarsi anche dagli undici metri: ha segnato tutti e tre i rigori calciati in carriera e inizialmente si contenderà il ruolo con Pellegrino. Al fantacalcio è un profilo di alto livello e ora sale inevitabilmente l'hype dopo la tripletta. ",
         "quotazioni": {
           "qtA": 48,
           "qtI": 1,
@@ -30258,7 +30258,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 125,
           "classic_8_mod_median": 2.6,
           "classic_10_mod_median": 4,
-          "classic_12_mod_median": 5.6
+          "classic_12_mod_median": 5.7
         },
         "stats": {
           "titolarita": 66,
@@ -30992,7 +30992,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Dodo è rimasto alla Fiorentina ed è tornato anche Vanoli con cui ha fatto bene nella passata stagione: potrà trovare nuovamente spazio. Il terzino è in scadenza nel 2027 e, salvo sorprese, non dovrebbe rinnovare: al massimo potrebbe prolungare per un solo anno, lasciando comunque Firenze la prossima estate. Ma la squadra è partita malissimo in campionato e Vanoli vuole subito puntare su alcune certezze della passata stagione, tra cui appunto lo stesso Dodo: proverà a rilanciarlo. Sale il suo status per asta e fantacalcio dopo il cambio in panchina, il primo candidato come terzino destro dei viola ora è di nuovo lui. A prescindere dalla questione rinnovo e mercato. ",
+        "fantaComment": "Dodo è rimasto alla Fiorentina ed è tornato anche Vanoli con cui ha fatto bene nella passata stagione, ma è fuori dal progetto e alla prima l'allenatore viola ha fatto altre scelte. Non sembrano esserci i margini per rivederlo titolare, nemmeno con il cambio in panchina: è un'alternativa al momento, a meno che non ci sia un confronto tra le parti durante la sosta per le nazionali. Al fanta è solo un jolly per ora, rischia di trovare poco spazio.",
         "quotazioni": {
           "qtA": 5,
           "qtI": 15,
@@ -33427,7 +33427,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 6,
           "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
-          "classic_12_mod_median": 0.4
+          "classic_12_mod_median": 0.5
         },
         "stats": {
           "titolarita": 47,
@@ -37141,7 +37141,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 5,
       "fvm": 45,
       "fvmM": 45,
-      "classic_8_mod_median": 0.2,
+      "classic_8_mod_median": 0.3,
       "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0.4
     },
@@ -37263,7 +37263,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Diego Moreira è un nuovo rinforzo del Milan di Ruben Amorim. Operazione molto importante per i rossoneri, arriva dallo Strasburgo per circa 50 milioni di euro più bonus. Si tratta di un esterno di nazionalità belga classe 2004 e di piede mancino, che predilige la fascia sinistra ma è stato impiegato anche a destra (ruolo in cui ha detto di volerlo provare Amorim). Arriva per rinforzare la batteria degli esterni, anche se può giocare più avanzato all'occorrenza: grandi accelerazioni e sgroppate palla al piede, i rossoneri sperano di trovare un 'nuovo Theo Hernandez'. Nelle idee del Milan ha tutto per essere il titolare a sinistra, si giocherà il posto con Bartesaghi inizialmente ma Moreira può presto diventare la primissima scelta. 4 presenze nella nazionale maggiore belga, ha scelto il Belgio dopo aver fatto tutta la trafila con le giovanili del Portogallo (ha la doppia nazionalità). 4 gol e 7 assist in 27 partite nell'ultima Ligue 1, è il suo record tra gol e assist da quando è professionista. Nell'ultima stagione ha perso 9 partite per un problema agli adduttori tra febbraio e aprile, ma poi ha recuperato e arriva integro e pronto in rossonero. Al fantacalcio è listato centrocampista: siamo sui 15 crediti circa in partenza, può essere un 3/4° slot.",
+    "fantaComment": "Diego Moreira è un nuovo rinforzo del Milan di Ruben Amorim. Operazione molto importante per i rossoneri, arriva dallo Strasburgo per circa 50 milioni di euro più bonus. Si tratta di un esterno di nazionalità belga classe 2004 e di piede mancino, che predilige la fascia sinistra ma è stato impiegato anche a destra (ruolo in cui ha detto di volerlo provare Amorim). Arriva per rinforzare la batteria degli esterni, anche se può giocare più avanzato all'occorrenza: grandi accelerazioni e sgroppate palla al piede, i rossoneri sperano di trovare un 'nuovo Theo Hernandez'. Nelle idee del Milan ha tutto per essere il titolare a sinistra, si giocherà il posto con Estupinan e Bartesaghi inizialmente ma Moreira può presto diventare la primissima scelta. 4 presenze nella nazionale maggiore belga, ha scelto il Belgio dopo aver fatto tutta la trafila con le giovanili del Portogallo (ha la doppia nazionalità). 4 gol e 7 assist in 27 partite nell'ultima Ligue 1, è il suo record tra gol e assist da quando è professionista. Nell'ultima stagione ha perso 9 partite per un problema agli adduttori tra febbraio e aprile, ma poi ha recuperato e arriva integro e pronto in rossonero. Al fantacalcio è listato centrocampista: siamo sui 15 crediti circa in partenza, può essere un 3/4° slot. E la doppietta dell'Olimpico con la Lazio è una sorta di biglietto da visita: ecco cosa può dare al Milan.",
     "quotazioni": {
       "qtA": 31,
       "qtI": 1,
@@ -37473,7 +37473,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 29,
       "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
-      "classic_12_mod_median": 0.4
+      "classic_12_mod_median": 0.5
     },
     "stats": {
       "titolarita": 50,
@@ -37989,7 +37989,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Hakan Calhanoglu continua a essere una vera certezza in casa Inter, si è confermato anche a inizio stagione. Nonostante rumors passati e problemi fisici (appena 22 presenze nell'ultima stagione), il turco continua a performare e al fantacalcio rimane un top di reparto anche da regista. 9 gol e 4 assist (7,64 di fanta-media) divisi tra le specialità della casa: tiri dalla distanza, piazzati e rigori. Tutto passerà ancora dal 32enne in questa stagione e soprattutto i rigori rimangono un fattore dove rimane la primissima scelta di Chivu (29 realizzati su 31 tirati all'Inter). Gli infortuni sono l'unico lato negativo.",
+    "fantaComment": "Hakan Calhanoglu continua a essere una vera certezza in casa Inter, si è confermato anche a inizio stagione. Nonostante rumors passati e problemi fisici (appena 22 presenze nell'ultima stagione), il turco continua a performare e al fantacalcio rimane un top di reparto anche da regista. 9 gol e 4 assist (7,64 di fanta-media) divisi tra le specialità della casa: tiri dalla distanza, piazzati e rigori. Tutto passerà ancora dal 32enne in questa stagione e soprattutto i rigori rimangono un fattore dove rimane la primissima scelta di Chivu (29 realizzati su 31 tirati all'Inter). Gli infortuni sono l'unico lato negativo e infatti si è già fermato con l'Udinese, ma tornerà dopo la lunga sosta di settembre.",
     "quotazioni": {
       "qtA": 83,
       "qtI": 75,
@@ -38065,7 +38065,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 20,
       "fvm": 202,
       "fvmM": 202,
-      "classic_8_mod_median": 3.8,
+      "classic_8_mod_median": 3.9,
       "classic_10_mod_median": 4.4,
       "classic_12_mod_median": 5.3
     },
@@ -38121,7 +38121,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Franco Mastantuono sbarca al fantacalcio con la maglia della Fiorentina. Al Real Madrid ha trovato poco spazio per la grandissima concorrenza: 35 presenze complessive, molte da subentrante, e 3 gol. Al River aveva già mostrato qualità anche come assist-man, chiudendo il 2025 con 7 reti e 4 assist. Ama partire da destra per rientrare sul mancino e creare la giocata, tra conclusioni, cross e passaggi filtranti. Ha grande tecnica, dribbling e visione di gioco, ma il suo inizio in viola è stato deludente. Vanoli proverà a valorizzarlo nel 4-3-3, schierandolo sulla destra e affidandogli un ruolo da protagonista. Arriva comunque per giocare con grande continuità e può candidarsi anche dagli undici metri: ha segnato tutti e tre i rigori calciati in carriera e inizialmente si contenderà il ruolo con Pellegrino. Al fantacalcio resta un profilo di alto livello, ma dovrà subito reagire dopo le prime prestazioni negative.",
+    "fantaComment": "Franco Mastantuono sbarca al fantacalcio con la maglia della Fiorentina. Al Real Madrid ha trovato poco spazio per la grandissima concorrenza: 35 presenze complessive, molte da subentrante, e 3 gol. Al River aveva già mostrato qualità anche come assist-man, chiudendo il 2025 con 7 reti e 4 assist. Ama partire da destra per rientrare sul mancino e creare la giocata, tra conclusioni, cross e passaggi filtranti. Ha grande tecnica, dribbling e visione di gioco, si è preso la scena con una tripletta a Venezia alla prima di Vanoli. L'allenatore può valorizzarlo, si è già visto, schierandolo sulla destra e affidandogli un ruolo da assoluto protagonista. Giocherà praticamente sempre se starà bene e può candidarsi anche dagli undici metri: ha segnato tutti e tre i rigori calciati in carriera e inizialmente si contenderà il ruolo con Pellegrino. Al fantacalcio è un profilo di alto livello e ora sale inevitabilmente l'hype dopo la tripletta. ",
     "quotazioni": {
       "qtA": 48,
       "qtI": 1,
@@ -39253,7 +39253,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 7,
       "fvm": 454,
       "fvmM": 454,
-      "classic_8_mod_median": 23.3,
+      "classic_8_mod_median": 23.4,
       "classic_10_mod_median": 25.4,
       "classic_12_mod_median": 25.8
     },
@@ -39387,7 +39387,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 83,
       "classic_8_mod_median": 3.6,
       "classic_10_mod_median": 3.9,
-      "classic_12_mod_median": 4
+      "classic_12_mod_median": 4.1
     },
     "stats": {
       "titolarita": 55,
@@ -39715,7 +39715,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 6,
       "fvm": 42,
       "fvmM": 42,
-      "classic_8_mod_median": 0.6,
+      "classic_8_mod_median": 0.7,
       "classic_10_mod_median": 0.7,
       "classic_12_mod_median": 1.2
     },
@@ -40640,7 +40640,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 166,
       "fvmM": 166,
       "classic_8_mod_median": 2.6,
-      "classic_10_mod_median": 5,
+      "classic_10_mod_median": 4.9,
       "classic_12_mod_median": 6.6
     },
     "stats": {
@@ -40969,7 +40969,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 44,
       "fvm": 144,
       "fvmM": 144,
-      "classic_8_mod_median": 7.6,
+      "classic_8_mod_median": 7.5,
       "classic_10_mod_median": 8.3,
       "classic_12_mod_median": 9
     },
@@ -41299,7 +41299,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 5,
       "fvm": 22,
       "fvmM": 22,
-      "classic_8_mod_median": 0.2,
+      "classic_8_mod_median": 0.3,
       "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0.4
     },
@@ -41365,7 +41365,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 4,
       "fvm": 77,
       "fvmM": 77,
-      "classic_8_mod_median": 2.1,
+      "classic_8_mod_median": 2.2,
       "classic_10_mod_median": 2.2,
       "classic_12_mod_median": 2.6
     },
@@ -42609,7 +42609,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Leonardo Balerdi è un nuovo difensore della Roma. Gasperini ha detto che i giallorossi hanno preso un capitano che ha personalità. Si tratta di un centrale alto 188 cm e che ha 27 anni, di nazionalità argentina. Al Marsiglia ha giocato molto negli ultimi anni, solo nel 2022-23 è riuscito a giocare più di 30 partite (35), nelle altre stagioni si è fermato sulle 26/27 per alcuni problemi fisici o scelte tecniche. Anche nel 2026 ha avuto un paio di stop muscolari. Alla Roma non parte come titolare ma è un’alternativa, anche al fanta sarà così.",
+    "fantaComment": "Leonardo Balerdi è un nuovo difensore della Roma. Gasperini ha detto che i giallorossi hanno preso un capitano che ha personalità. Si tratta di un centrale alto 188 cm e che ha 27 anni, di nazionalità argentina. Al Marsiglia ha giocato molto negli ultimi anni, solo nel 2022-23 è riuscito a giocare più di 30 partite (35), nelle altre stagioni si è fermato sulle 26/27 per alcuni problemi fisici o scelte tecniche. Anche nel 2026 ha avuto un paio di stop muscolari. Alla Roma non parte come titolare ma ha già dimostrato di essere più di una semplice alternativa.",
     "quotazioni": {
       "qtA": 13,
       "qtI": 1,
@@ -43016,7 +43016,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 51,
       "fvmM": 51,
       "classic_8_mod_median": 2,
-      "classic_10_mod_median": 1.5,
+      "classic_10_mod_median": 1.6,
       "classic_12_mod_median": 0.7
     },
     "stats": {
@@ -43676,7 +43676,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 29,
       "fvmM": 29,
       "classic_8_mod_median": 0.3,
-      "classic_10_mod_median": 0.6,
+      "classic_10_mod_median": 0.5,
       "classic_12_mod_median": 1
     },
     "stats": {
@@ -45259,7 +45259,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -4,
       "fvm": 227,
       "fvmM": 227,
-      "classic_8_mod_median": 5.7,
+      "classic_8_mod_median": 5.6,
       "classic_10_mod_median": 8.2,
       "classic_12_mod_median": 10
     },
@@ -45393,7 +45393,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 109,
       "classic_8_mod_median": 0.8,
       "classic_10_mod_median": 1.8,
-      "classic_12_mod_median": 2.8
+      "classic_12_mod_median": 2.9
     },
     "stats": {
       "titolarita": 42,
@@ -45985,7 +45985,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 31,
       "fvm": 355,
       "fvmM": 355,
-      "classic_8_mod_median": 14.9,
+      "classic_8_mod_median": 14.8,
       "classic_10_mod_median": 19,
       "classic_12_mod_median": 20.8
     },
@@ -46513,7 +46513,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 1,
       "fvm": 70,
       "fvmM": 70,
-      "classic_8_mod_median": 1.6,
+      "classic_8_mod_median": 1.5,
       "classic_10_mod_median": 2.4,
       "classic_12_mod_median": 3.4
     },
@@ -46779,7 +46779,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 67,
       "classic_8_mod_median": 0.8,
       "classic_10_mod_median": 0.8,
-      "classic_12_mod_median": 1
+      "classic_12_mod_median": 1.1
     },
     "stats": {
       "titolarita": 50,
@@ -50805,7 +50805,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 26,
       "classic_8_mod_median": 1.2,
       "classic_10_mod_median": 1.8,
-      "classic_12_mod_median": 2.5
+      "classic_12_mod_median": 2.4
     },
     "stats": {
       "titolarita": 71,
@@ -51333,7 +51333,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 6,
       "classic_8_mod_median": 0.4,
       "classic_10_mod_median": 0.8,
-      "classic_12_mod_median": 1.5
+      "classic_12_mod_median": 1.4
     },
     "stats": {
       "titolarita": 42,
@@ -52123,7 +52123,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -10,
       "fvm": 102,
       "fvmM": 102,
-      "classic_8_mod_median": 4.6,
+      "classic_8_mod_median": 4.5,
       "classic_10_mod_median": 5.8,
       "classic_12_mod_median": 6.6
     },
@@ -55281,7 +55281,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "John Stones è arrivato all'Inter, un rinforzo di grandissima esperienza internazionale per la squadra di Chivu. I numeri dicono che ha giocato solo 9 presenze in Premier nell'ultima stagione e 4 in Champions, ma i Mondiali disputati con la sua Inghilterra hanno fugato le incertezze sulla sua condizione fisica: arriva un giocatore che ha sì avuto diversi infortuni muscolari nelle ultime 4 stagioni (94 giorni nel 24/25 lo stop più lungo), ma che comunque al momento è integro. Non le giocherà chiaramente tutte, verrà gestito da Chivu tra campionato e Champions, si può pensare in linea di massima a una gestione di questo tipo: 2 gare disputate ogni 3 idealmente o in alcuni periodi potrà anche saltarne qualcuna prima dei big match. Non aspettatevi che le giochi tutte, se vi serve un voto fisso guardate altrove. È un giocatore d'esperienza, preso soprattutto per i big match e i momenti clou della stagione, darà tanto anche in termini di leadership nello spogliatoio. Al fantacalcio per i motivi sopra elencati siamo più sul 2° che sul 1° slot, ma dipende molto anche dal numero di partecipanti della lega. Anche perché non si può parlare di un difensore dal vizio del gol: solo 11 in 257 partite di Premier League. E un solo rosso ma il dato clamoroso sono i soli 12 gialli in tutte le gare nel massimo campionato inglese. Un dato veramente incredibile.",
+    "fantaComment": "John Stones è arrivato all'Inter, un rinforzo di grandissima esperienza internazionale per la squadra di Chivu. I numeri dicono che ha giocato solo 9 presenze in Premier nell'ultima stagione e 4 in Champions, ma i Mondiali disputati con la sua Inghilterra sembravano aver fugato le incertezze sulla sua condizione fisica: è arrivato un giocatore che aveva sì avuto diversi infortuni muscolari nelle ultime 4 stagioni (94 giorni nel 24/25 lo stop più lungo), ma comunque integro. Non le giocherà chiaramente tutte, verrà gestito da Chivu tra campionato e Champions e comunque qualche stop è da mettere in conto (con l'Udinese si è infortunato). Non aspettatevi che le giochi tutte, se vi serve un voto fisso guardate altrove. È un giocatore d'esperienza, preso soprattutto per i big match e i momenti clou della stagione, darà tanto anche in termini di leadership nello spogliatoio. Al fantacalcio per i motivi sopra elencati siamo più sul 2° che sul 1° slot, ma dipende molto anche dal numero di partecipanti della lega. Anche perché non si può parlare di un difensore dal vizio del gol: solo 11 in 257 partite di Premier League. E un solo rosso ma il dato clamoroso sono i soli 12 gialli in tutte le gare nel massimo campionato inglese. Un dato veramente incredibile.",
     "quotazioni": {
       "qtA": 15,
       "qtI": 12,
@@ -57535,7 +57535,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -8,
       "fvm": 205,
       "fvmM": 205,
-      "classic_8_mod_median": 9.8,
+      "classic_8_mod_median": 9.7,
       "classic_10_mod_median": 12.6,
       "classic_12_mod_median": 14.2
     },
@@ -58977,7 +58977,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Alex Jimenez è tornato in Serie A con la Fiorentina. Terzino destro spagnolo classe 2005, può giocare anche da esterno di centrocampo e ha una spiccata propensione offensiva. Dopo l’esperienza al Milan, chiusa con un solo assist in 22 presenze al Fantacalcio, al Bournemouth si era ritagliato un ruolo importante con 26 partite da titolare e un gol. L’inizio in viola, però, è stato complicato: è subentrato a Roma, ha offerto una pessima prestazione contro il Frosinone e non è neppure entrato con il Torino. Sulla destra si gioca il posto soprattutto con Dodô, rimasto a Firenze, più che con João Mário. Vanoli proverà a rilanciarlo e a valorizzarne le qualità: all’asta resta una possibile scommessa tra i terzini, ma dovrà crescere nel rendimento e nei bonus per diventare davvero protagonista in Serie A e al fantacalcio.",
+    "fantaComment": "Alex Jimenez è tornato in Serie A con la Fiorentina. Terzino destro spagnolo classe 2005, può giocare anche da esterno di centrocampo e ha una spiccata propensione offensiva. Dopo l’esperienza al Milan, chiusa con un solo assist in 22 presenze al Fantacalcio, al Bournemouth si era ritagliato un ruolo importante con 26 partite da titolare e un gol. Sulla destra può essere lui il nuovo titolare, dovrà dare risposte importanti sul campo. Vanoli proverà a rilanciarlo e a valorizzarne le qualità: all’asta resta una possibile scommessa tra i terzini, ma dovrà crescere nel rendimento e nei bonus per diventare davvero protagonista in Serie A e al fantacalcio.",
     "quotazioni": {
       "qtA": 13,
       "qtI": 15,
@@ -60175,7 +60175,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -9,
       "fvm": 205,
       "fvmM": 205,
-      "classic_8_mod_median": 6.5,
+      "classic_8_mod_median": 6.4,
       "classic_10_mod_median": 10,
       "classic_12_mod_median": 12
     },
@@ -60309,7 +60309,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 6,
       "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
-      "classic_12_mod_median": 0.4
+      "classic_12_mod_median": 0.5
     },
     "stats": {
       "titolarita": 47,
@@ -62485,7 +62485,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -6,
       "fvm": 26,
       "fvmM": 26,
-      "classic_8_mod_median": 1.6,
+      "classic_8_mod_median": 1.5,
       "classic_10_mod_median": 2.8,
       "classic_12_mod_median": 4
     },
@@ -63871,7 +63871,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -8,
       "fvm": 102,
       "fvmM": 102,
-      "classic_8_mod_median": 5.6,
+      "classic_8_mod_median": 5.5,
       "classic_10_mod_median": 8,
       "classic_12_mod_median": 9.4
     },
@@ -63938,8 +63938,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 381,
       "fvmM": 381,
       "classic_8_mod_median": 18,
-      "classic_10_mod_median": 23.6,
-      "classic_12_mod_median": 25.6
+      "classic_10_mod_median": 23.5,
+      "classic_12_mod_median": 25.4
     },
     "stats": {
       "titolarita": 55,
@@ -66039,7 +66039,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Dodo è rimasto alla Fiorentina ed è tornato anche Vanoli con cui ha fatto bene nella passata stagione: potrà trovare nuovamente spazio. Il terzino è in scadenza nel 2027 e, salvo sorprese, non dovrebbe rinnovare: al massimo potrebbe prolungare per un solo anno, lasciando comunque Firenze la prossima estate. Ma la squadra è partita malissimo in campionato e Vanoli vuole subito puntare su alcune certezze della passata stagione, tra cui appunto lo stesso Dodo: proverà a rilanciarlo. Sale il suo status per asta e fantacalcio dopo il cambio in panchina, il primo candidato come terzino destro dei viola ora è di nuovo lui. A prescindere dalla questione rinnovo e mercato. ",
+    "fantaComment": "Dodo è rimasto alla Fiorentina ed è tornato anche Vanoli con cui ha fatto bene nella passata stagione, ma è fuori dal progetto e alla prima l'allenatore viola ha fatto altre scelte. Non sembrano esserci i margini per rivederlo titolare, nemmeno con il cambio in panchina: è un'alternativa al momento, a meno che non ci sia un confronto tra le parti durante la sosta per le nazionali. Al fanta è solo un jolly per ora, rischia di trovare poco spazio.",
     "quotazioni": {
       "qtA": 5,
       "qtI": 15,
@@ -67105,9 +67105,9 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -3,
       "fvm": 54,
       "fvmM": 54,
-      "classic_8_mod_median": 1.4,
+      "classic_8_mod_median": 1.3,
       "classic_10_mod_median": 2.6,
-      "classic_12_mod_median": 4.6
+      "classic_12_mod_median": 4.5
     },
     "stats": {
       "titolarita": 50,
@@ -67303,7 +67303,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 0,
       "fvm": 1,
       "fvmM": 1,
-      "classic_8_mod_median": 0.2,
+      "classic_8_mod_median": 0.3,
       "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0.2
     },
@@ -69615,7 +69615,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 125,
       "classic_8_mod_median": 2.6,
       "classic_10_mod_median": 4,
-      "classic_12_mod_median": 5.6
+      "classic_12_mod_median": 5.7
     },
     "stats": {
       "titolarita": 66,
@@ -70011,7 +70011,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 64,
       "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.3,
-      "classic_12_mod_median": 0.4
+      "classic_12_mod_median": 0.5
     },
     "stats": {
       "titolarita": 45,
@@ -70867,7 +70867,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 0,
       "fvm": 1,
       "fvmM": 1,
-      "classic_8_mod_median": 0.3,
+      "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0
     },
