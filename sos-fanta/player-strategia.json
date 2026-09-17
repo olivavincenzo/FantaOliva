@@ -1834,6 +1834,36 @@
     }
   },
   {
+    "player_id": "7e2b0b7a-a252-4d4c-88e4-df0104ee4b8c",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 17,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 1,
+    "perc_price": "0.2000",
+    "ex_fmv": null,
+    "comment": null,
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": null,
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-07-24",
+    "updated_at": "2026-08-02",
+    "createdAt": "2026-07-24",
+    "updatedAt": "2026-08-02",
+    "player": {
+      "player_id": "7e2b0b7a-a252-4d4c-88e4-df0104ee4b8c",
+      "role": "C",
+      "mantra_roles": [
+        "C"
+      ]
+    }
+  },
+  {
     "player_id": "30e7f451-834b-48ac-b1c0-749c1674d5c5",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",

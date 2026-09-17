@@ -739,20 +739,20 @@
         "id": 4734
       },
       {
-        "player_id": "0a11fe1e-7041-4409-9752-cbbd637f6aca",
-        "id": 2765
+        "player_id": "d796b194-efcc-4186-9291-2a8afcbf35ae",
+        "id": 5858
       },
       {
         "player_id": "c07a5ed0-b1db-429b-9291-2998365fffc3",
         "id": 5298
       },
       {
-        "player_id": "d796b194-efcc-4186-9291-2a8afcbf35ae",
-        "id": 5858
-      },
-      {
         "player_id": "c8bad906-4705-460c-88d4-708b73446b1b",
         "id": 2167
+      },
+      {
+        "player_id": "c3763cc2-a3d9-403f-8f5a-856896a47c5d",
+        "id": 184
       },
       {
         "player_id": "5232e236-cf75-4f0c-baf3-47c6c2e2887a",
@@ -793,14 +793,14 @@
         "player_id": "d796b194-efcc-4186-9291-2a8afcbf35ae"
       }
     ],
-    "module": "4-3-3",
+    "module": "4-2-3-1",
     "coach": "Raffaele Palladino",
     "attack": 4,
     "defense": 3.5,
     "comment": "Il Bologna si caratterizza per un gioco molto dinamico, con i giocatori che spesso si scambiano le posizioni per creare confusione nella difesa avversaria. Il ruolo degli esterni d’attacco è fondamentale: sono loro a garantire ampiezza, velocità e spesso i gol e gli assist più importanti. La difesa è molto alta, in linea con il pressing aggressivo che la squadra mette in campo, ma questo comporta qualche rischio in ripartenza. Attenzione anche al turn over elevato, che può influenzare la continuità di rendimento di alcuni giocatori, specialmente in ottica fantacalcio.",
-    "sosFantaComment": "Da Italiano a Domenico Tedesco: cambia la guida tecnica del Bologna, ma a livello tattico resta confermato il 4-3-3 di partenza. Dovbyk è arrivato per giocare e, se starà bene, sarà il centravanti titolare, con Piccoli come vice. La distanza tra i due è pochissima comunque. Rowe è andato via, spazio a uno tra Cambiaghi e il nuovo arrivato Mbangula sulla sinistra. Pobega, Moro ed El Azzouzi si contendono la maglia lasciata da Freuler. Bernardeschi in estate provato da mezzala ma preferisce fare l'ala pura o il trequartista, di fatto è un jolly che avrà molto spazio. E lo stesso si può dire di Odgaard. Holm parte avanti rispetto a Zortea per il ruolo di terzino destro, dall'altra parte Miranda in pole su Alhassane.",
+    "sosFantaComment": "Scossone in casa Bologna: è arrivato l'esonero di Tedesco dopo 4 giornate, al suo posto la squadra è stata affidata a Raffaele Palladino. In carriera ha utilizzato tanti moduli, la sensazione è che inizialmente confermerà il 4-2-3-1 (o 4-3-3) già utilizzato, ma non è da escludere un passaggio al 3-4-2-1. Testa a testa tra Dovbyk e Piccoli davanti, come era già con Tedesco del resto. La sensazione è che Bernardeschi possa agire da trequartista (o lui o Odgaard), con Orsolini da una parte e Cambiaghi o Mbangula dall'altra. Pobega più di Moro accanto a Ferguson. In difesa si azzera tutto sulle fasce: Holm o Zortea a destra, a sinistra Miranda in pole su Alhassane. In caso di difesa a 3, ci sarebbe un difensore in più al posto di un trequartista. ",
     "created_at": "2026-07-21T13:36:37.003Z",
-    "updated_at": "2026-09-15T09:01:38.372Z",
+    "updated_at": "2026-09-16T15:52:35.738Z",
     "up": [
       {
         "player_id": "c3763cc2-a3d9-403f-8f5a-856896a47c5d",
@@ -812,15 +812,15 @@
         ]
       },
       {
-        "player_id": "c8bad906-4705-460c-88d4-708b73446b1b",
+        "player_id": "7a6908eb-f092-4f48-95af-b03ba52381dd",
         "points": [
           {
-            "text": "Perno offensivo del gioco del mister",
+            "text": "Gioco che valorizza la punta",
             "tone": "good"
           },
           {
-            "tone": "good",
-            "text": "Calcia spesso verso la porta con buona precisione"
+            "tone": "bad",
+            "text": "Ballottaggio con Piccoli"
           }
         ]
       }
@@ -838,10 +838,10 @@
     ],
     "young": [
       {
-        "player_id": "4233bc51-6269-438c-8e85-5a77b7c17562",
+        "player_id": "55f1b0f6-9c46-451f-b85a-2f4d12f6de12",
         "points": [
           {
-            "text": "Si gioca il posto da titolare come centrale",
+            "text": "Subentra spesso a partita in corso",
             "tone": "neutral"
           }
         ]
@@ -863,11 +863,11 @@
         "players": [
           {
             "player_id": "b894b38e-67c8-42fb-946f-36b8a7b60349",
-            "perc": 55
+            "perc": 51
           },
           {
             "player_id": "2a411338-4370-4a88-8d00-f47f2167b09f",
-            "perc": 45
+            "perc": 49
           }
         ]
       },
@@ -898,12 +898,12 @@
       {
         "players": [
           {
-            "player_id": "0a11fe1e-7041-4409-9752-cbbd637f6aca",
-            "perc": 51
+            "player_id": "c3763cc2-a3d9-403f-8f5a-856896a47c5d",
+            "perc": 55
           },
           {
-            "player_id": "c3763cc2-a3d9-403f-8f5a-856896a47c5d",
-            "perc": 49
+            "player_id": "0a11fe1e-7041-4409-9752-cbbd637f6aca",
+            "perc": 45
           }
         ]
       },
@@ -918,6 +918,18 @@
             "perc": 45
           }
         ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "c07a5ed0-b1db-429b-9291-2998365fffc3",
+            "perc": 51
+          },
+          {
+            "player_id": "91989231-9213-435b-81c5-a7c7a7d85104",
+            "perc": 49
+          }
+        ]
       }
     ],
     "coachRating": {
@@ -927,26 +939,30 @@
     },
     "keyPoints": [
       {
-        "text": "Valorizzazione esterni d'attacco",
+        "text": "Punta solitamente prolifica",
         "tone": "good"
       },
       {
-        "text": "Adattamento Serie A",
+        "text": "Adattamento a stagione in corso",
         "tone": "bad"
       },
       {
-        "text": "Sistema di gioco molto elaborato",
+        "text": "Gioco dinamico e verticale",
         "tone": "neutral"
       }
     ],
     "keyRoles": [
       {
-        "role": "att-wings",
+        "role": "treq-wings",
+        "tone": "good"
+      },
+      {
+        "role": "att-center",
         "tone": "good"
       }
     ],
     "createdAt": "2026-07-21T13:36:37.003Z",
-    "updatedAt": "2026-09-15T09:01:38.372Z"
+    "updatedAt": "2026-09-16T15:52:35.738Z"
   },
   {
     "team": "LAZ",

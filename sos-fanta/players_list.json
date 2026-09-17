@@ -6105,7 +6105,7 @@
       "fantalab_id": "0992e869-48bb-4438-9aa9-d212c238371c",
       "fantacalcio_id": 795,
       "name": "El Shaarawy",
-      "full_name": "Federico Insúa",
+      "full_name": "Stephan El Shaarawy",
       "team_id": 102,
       "team_name": "Genoa",
       "team_short": "GEN",
@@ -8881,6 +8881,33 @@
         "C"
       ],
       "player_image": "https://cdn.falsesoftware.com/players/37694739/v1.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 0,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 5.75,
+        "mv": 5.75
+      }
+    },
+    {
+      "player_id": "7e2b0b7a-a252-4d4c-88e4-df0104ee4b8c",
+      "sportsmonks_id": 52500,
+      "fantalab_id": "7e2b0b7a-a252-4d4c-88e4-df0104ee4b8c",
+      "fantacalcio_id": 5850,
+      "name": "Lovric",
+      "full_name": "Sandi Lovrić",
+      "team_id": 346,
+      "team_name": "Udinese",
+      "team_short": "UDI",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/346.png",
+      "role": "C",
+      "mantra_roles": [
+        "C"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/52500/v2.webp",
       "league": "serie_a",
       "league_id": 384,
       "league_name": "Serie A",
@@ -14809,7 +14836,7 @@
     "fallback_price"
   ],
   "pagination": {
-    "total": 533,
+    "total": 534,
     "limit": 1000,
     "offset": 0
   },

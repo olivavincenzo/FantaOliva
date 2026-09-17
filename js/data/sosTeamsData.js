@@ -1589,29 +1589,33 @@ export const SOS_TEAMS_DATA = {
     "accentColor": "#ffcc00",
     "coach": "Raffaele Palladino",
     "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Palladino.webp",
-    "defaultFormation": "4-3-3",
-    "module": "4-3-3",
+    "defaultFormation": "4-2-3-1",
+    "module": "4-2-3-1",
     "attackRating": 4.0,
     "defenseRating": 3.5,
     "comment": "Il Bologna si caratterizza per un gioco molto dinamico, con i giocatori che spesso si scambiano le posizioni per creare confusione nella difesa avversaria. Il ruolo degli esterni d’attacco è fondamentale: sono loro a garantire ampiezza, velocità e spesso i gol e gli assist più importanti. La difesa è molto alta, in linea con il pressing aggressivo che la squadra mette in campo, ma questo comporta qualche rischio in ripartenza. Attenzione anche al turn over elevato, che può influenzare la continuità di rendimento di alcuni giocatori, specialmente in ottica fantacalcio.",
-    "sosFantaComment": "Da Italiano a Domenico Tedesco: cambia la guida tecnica del Bologna, ma a livello tattico resta confermato il 4-3-3 di partenza. Dovbyk è arrivato per giocare e, se starà bene, sarà il centravanti titolare, con Piccoli come vice. La distanza tra i due è pochissima comunque. Rowe è andato via, spazio a uno tra Cambiaghi e il nuovo arrivato Mbangula sulla sinistra. Pobega, Moro ed El Azzouzi si contendono la maglia lasciata da Freuler. Bernardeschi in estate provato da mezzala ma preferisce fare l'ala pura o il trequartista, di fatto è un jolly che avrà molto spazio. E lo stesso si può dire di Odgaard. Holm parte avanti rispetto a Zortea per il ruolo di terzino destro, dall'altra parte Miranda in pole su Alhassane.",
+    "sosFantaComment": "Scossone in casa Bologna: è arrivato l'esonero di Tedesco dopo 4 giornate, al suo posto la squadra è stata affidata a Raffaele Palladino. In carriera ha utilizzato tanti moduli, la sensazione è che inizialmente confermerà il 4-2-3-1 (o 4-3-3) già utilizzato, ma non è da escludere un passaggio al 3-4-2-1. Testa a testa tra Dovbyk e Piccoli davanti, come era già con Tedesco del resto. La sensazione è che Bernardeschi possa agire da trequartista (o lui o Odgaard), con Orsolini da una parte e Cambiaghi o Mbangula dall'altra. Pobega più di Moro accanto a Ferguson. In difesa si azzera tutto sulle fasce: Holm o Zortea a destra, a sinistra Miranda in pole su Alhassane. In caso di difesa a 3, ci sarebbe un difensore in più al posto di un trequartista. ",
     "keyPoints": [
       {
-        "text": "Valorizzazione esterni d'attacco",
+        "text": "Punta solitamente prolifica",
         "tone": "good"
       },
       {
-        "text": "Adattamento Serie A",
+        "text": "Adattamento a stagione in corso",
         "tone": "bad"
       },
       {
-        "text": "Sistema di gioco molto elaborato",
+        "text": "Gioco dinamico e verticale",
         "tone": "neutral"
       }
     ],
     "keyRoles": [
       {
-        "role": "att-wings",
+        "role": "treq-wings",
+        "tone": "good"
+      },
+      {
+        "role": "att-center",
         "tone": "good"
       }
     ],
@@ -1647,9 +1651,9 @@ export const SOS_TEAMS_DATA = {
         "role": "D"
       },
       {
-        "playerId": "0a11fe1e-7041-4409-9752-cbbd637f6aca",
-        "csvId": 2765,
-        "name": "Odgaard",
+        "playerId": "d796b194-efcc-4186-9291-2a8afcbf35ae",
+        "csvId": 5858,
+        "name": "Ferguson",
         "role": "C"
       },
       {
@@ -1659,15 +1663,15 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
-        "playerId": "d796b194-efcc-4186-9291-2a8afcbf35ae",
-        "csvId": 5858,
-        "name": "Ferguson",
-        "role": "C"
-      },
-      {
         "playerId": "c8bad906-4705-460c-88d4-708b73446b1b",
         "csvId": 2167,
         "name": "Orsolini",
+        "role": "C"
+      },
+      {
+        "playerId": "c3763cc2-a3d9-403f-8f5a-856896a47c5d",
+        "csvId": 184,
+        "name": "Bernardeschi",
         "role": "C"
       },
       {
@@ -1735,13 +1739,13 @@ export const SOS_TEAMS_DATA = {
           "playerId": "b894b38e-67c8-42fb-946f-36b8a7b60349",
           "name": "Holm",
           "role": "D",
-          "perc": 55
+          "perc": 51
         },
         {
           "playerId": "2a411338-4370-4a88-8d00-f47f2167b09f",
           "name": "Zortea",
           "role": "D",
-          "perc": 45
+          "perc": 49
         }
       ],
       [
@@ -1774,16 +1778,16 @@ export const SOS_TEAMS_DATA = {
       ],
       [
         {
-          "playerId": "0a11fe1e-7041-4409-9752-cbbd637f6aca",
-          "name": "Odgaard",
-          "role": "C",
-          "perc": 51
-        },
-        {
           "playerId": "c3763cc2-a3d9-403f-8f5a-856896a47c5d",
           "name": "Bernardeschi",
           "role": "C",
-          "perc": 49
+          "perc": 55
+        },
+        {
+          "playerId": "0a11fe1e-7041-4409-9752-cbbd637f6aca",
+          "name": "Odgaard",
+          "role": "C",
+          "perc": 45
         }
       ],
       [
@@ -1799,6 +1803,20 @@ export const SOS_TEAMS_DATA = {
           "role": "D",
           "perc": 45
         }
+      ],
+      [
+        {
+          "playerId": "c07a5ed0-b1db-429b-9291-2998365fffc3",
+          "name": "Pobega",
+          "role": "C",
+          "perc": 51
+        },
+        {
+          "playerId": "91989231-9213-435b-81c5-a7c7a7d85104",
+          "name": "Moro N.",
+          "role": "C",
+          "perc": 49
+        }
       ]
     ],
     "up": [
@@ -1810,11 +1828,11 @@ export const SOS_TEAMS_DATA = {
         ]
       },
       {
-        "playerId": "c8bad906-4705-460c-88d4-708b73446b1b",
-        "name": "Orsolini",
+        "playerId": "7a6908eb-f092-4f48-95af-b03ba52381dd",
+        "name": "Dovbyk",
         "points": [
-          "Perno offensivo del gioco del mister",
-          "Calcia spesso verso la porta con buona precisione"
+          "Gioco che valorizza la punta",
+          "Ballottaggio con Piccoli"
         ]
       }
     ],
@@ -1829,10 +1847,10 @@ export const SOS_TEAMS_DATA = {
     ],
     "young": [
       {
-        "playerId": "4233bc51-6269-438c-8e85-5a77b7c17562",
-        "name": "Helland",
+        "playerId": "55f1b0f6-9c46-451f-b85a-2f4d12f6de12",
+        "name": "",
         "points": [
-          "Si gioca il posto da titolare come centrale"
+          "Subentra spesso a partita in corso"
         ]
       }
     ],
@@ -1856,29 +1874,33 @@ export const SOS_TEAMS_DATA = {
     "accentColor": "#ffcc00",
     "coach": "Raffaele Palladino",
     "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Palladino.webp",
-    "defaultFormation": "4-3-3",
-    "module": "4-3-3",
+    "defaultFormation": "4-2-3-1",
+    "module": "4-2-3-1",
     "attackRating": 4.0,
     "defenseRating": 3.5,
     "comment": "Il Bologna si caratterizza per un gioco molto dinamico, con i giocatori che spesso si scambiano le posizioni per creare confusione nella difesa avversaria. Il ruolo degli esterni d’attacco è fondamentale: sono loro a garantire ampiezza, velocità e spesso i gol e gli assist più importanti. La difesa è molto alta, in linea con il pressing aggressivo che la squadra mette in campo, ma questo comporta qualche rischio in ripartenza. Attenzione anche al turn over elevato, che può influenzare la continuità di rendimento di alcuni giocatori, specialmente in ottica fantacalcio.",
-    "sosFantaComment": "Da Italiano a Domenico Tedesco: cambia la guida tecnica del Bologna, ma a livello tattico resta confermato il 4-3-3 di partenza. Dovbyk è arrivato per giocare e, se starà bene, sarà il centravanti titolare, con Piccoli come vice. La distanza tra i due è pochissima comunque. Rowe è andato via, spazio a uno tra Cambiaghi e il nuovo arrivato Mbangula sulla sinistra. Pobega, Moro ed El Azzouzi si contendono la maglia lasciata da Freuler. Bernardeschi in estate provato da mezzala ma preferisce fare l'ala pura o il trequartista, di fatto è un jolly che avrà molto spazio. E lo stesso si può dire di Odgaard. Holm parte avanti rispetto a Zortea per il ruolo di terzino destro, dall'altra parte Miranda in pole su Alhassane.",
+    "sosFantaComment": "Scossone in casa Bologna: è arrivato l'esonero di Tedesco dopo 4 giornate, al suo posto la squadra è stata affidata a Raffaele Palladino. In carriera ha utilizzato tanti moduli, la sensazione è che inizialmente confermerà il 4-2-3-1 (o 4-3-3) già utilizzato, ma non è da escludere un passaggio al 3-4-2-1. Testa a testa tra Dovbyk e Piccoli davanti, come era già con Tedesco del resto. La sensazione è che Bernardeschi possa agire da trequartista (o lui o Odgaard), con Orsolini da una parte e Cambiaghi o Mbangula dall'altra. Pobega più di Moro accanto a Ferguson. In difesa si azzera tutto sulle fasce: Holm o Zortea a destra, a sinistra Miranda in pole su Alhassane. In caso di difesa a 3, ci sarebbe un difensore in più al posto di un trequartista. ",
     "keyPoints": [
       {
-        "text": "Valorizzazione esterni d'attacco",
+        "text": "Punta solitamente prolifica",
         "tone": "good"
       },
       {
-        "text": "Adattamento Serie A",
+        "text": "Adattamento a stagione in corso",
         "tone": "bad"
       },
       {
-        "text": "Sistema di gioco molto elaborato",
+        "text": "Gioco dinamico e verticale",
         "tone": "neutral"
       }
     ],
     "keyRoles": [
       {
-        "role": "att-wings",
+        "role": "treq-wings",
+        "tone": "good"
+      },
+      {
+        "role": "att-center",
         "tone": "good"
       }
     ],
@@ -1914,9 +1936,9 @@ export const SOS_TEAMS_DATA = {
         "role": "D"
       },
       {
-        "playerId": "0a11fe1e-7041-4409-9752-cbbd637f6aca",
-        "csvId": 2765,
-        "name": "Odgaard",
+        "playerId": "d796b194-efcc-4186-9291-2a8afcbf35ae",
+        "csvId": 5858,
+        "name": "Ferguson",
         "role": "C"
       },
       {
@@ -1926,15 +1948,15 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
-        "playerId": "d796b194-efcc-4186-9291-2a8afcbf35ae",
-        "csvId": 5858,
-        "name": "Ferguson",
-        "role": "C"
-      },
-      {
         "playerId": "c8bad906-4705-460c-88d4-708b73446b1b",
         "csvId": 2167,
         "name": "Orsolini",
+        "role": "C"
+      },
+      {
+        "playerId": "c3763cc2-a3d9-403f-8f5a-856896a47c5d",
+        "csvId": 184,
+        "name": "Bernardeschi",
         "role": "C"
       },
       {
@@ -2002,13 +2024,13 @@ export const SOS_TEAMS_DATA = {
           "playerId": "b894b38e-67c8-42fb-946f-36b8a7b60349",
           "name": "Holm",
           "role": "D",
-          "perc": 55
+          "perc": 51
         },
         {
           "playerId": "2a411338-4370-4a88-8d00-f47f2167b09f",
           "name": "Zortea",
           "role": "D",
-          "perc": 45
+          "perc": 49
         }
       ],
       [
@@ -2041,16 +2063,16 @@ export const SOS_TEAMS_DATA = {
       ],
       [
         {
-          "playerId": "0a11fe1e-7041-4409-9752-cbbd637f6aca",
-          "name": "Odgaard",
-          "role": "C",
-          "perc": 51
-        },
-        {
           "playerId": "c3763cc2-a3d9-403f-8f5a-856896a47c5d",
           "name": "Bernardeschi",
           "role": "C",
-          "perc": 49
+          "perc": 55
+        },
+        {
+          "playerId": "0a11fe1e-7041-4409-9752-cbbd637f6aca",
+          "name": "Odgaard",
+          "role": "C",
+          "perc": 45
         }
       ],
       [
@@ -2066,6 +2088,20 @@ export const SOS_TEAMS_DATA = {
           "role": "D",
           "perc": 45
         }
+      ],
+      [
+        {
+          "playerId": "c07a5ed0-b1db-429b-9291-2998365fffc3",
+          "name": "Pobega",
+          "role": "C",
+          "perc": 51
+        },
+        {
+          "playerId": "91989231-9213-435b-81c5-a7c7a7d85104",
+          "name": "Moro N.",
+          "role": "C",
+          "perc": 49
+        }
       ]
     ],
     "up": [
@@ -2077,11 +2113,11 @@ export const SOS_TEAMS_DATA = {
         ]
       },
       {
-        "playerId": "c8bad906-4705-460c-88d4-708b73446b1b",
-        "name": "Orsolini",
+        "playerId": "7a6908eb-f092-4f48-95af-b03ba52381dd",
+        "name": "Dovbyk",
         "points": [
-          "Perno offensivo del gioco del mister",
-          "Calcia spesso verso la porta con buona precisione"
+          "Gioco che valorizza la punta",
+          "Ballottaggio con Piccoli"
         ]
       }
     ],
@@ -2096,10 +2132,10 @@ export const SOS_TEAMS_DATA = {
     ],
     "young": [
       {
-        "playerId": "4233bc51-6269-438c-8e85-5a77b7c17562",
-        "name": "Helland",
+        "playerId": "55f1b0f6-9c46-451f-b85a-2f4d12f6de12",
+        "name": "",
         "points": [
-          "Si gioca il posto da titolare come centrale"
+          "Subentra spesso a partita in corso"
         ]
       }
     ],
