@@ -1000,7 +1000,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 160,
           "classic_8_mod_median": 2.2,
           "classic_10_mod_median": 3,
-          "classic_12_mod_median": 4
+          "classic_12_mod_median": 4.1
         },
         "stats": {
           "titolarita": 47,
@@ -1267,7 +1267,7 @@ export const INITIAL_TEAMS = [
           "fvm": 26,
           "fvmM": 26,
           "classic_8_mod_median": 1.2,
-          "classic_10_mod_median": 1.9,
+          "classic_10_mod_median": 1.8,
           "classic_12_mod_median": 2.6
         },
         "stats": {
@@ -1602,8 +1602,8 @@ export const INITIAL_TEAMS = [
           "fvm": 378,
           "fvmM": 378,
           "classic_8_mod_median": 9.6,
-          "classic_10_mod_median": 11.6,
-          "classic_12_mod_median": 12.8
+          "classic_10_mod_median": 11.5,
+          "classic_12_mod_median": 12.4
         },
         "stats": {
           "titolarita": 63,
@@ -2017,7 +2017,7 @@ export const INITIAL_TEAMS = [
           "diffM": 7,
           "fvm": 112,
           "fvmM": 112,
-          "classic_8_mod_median": 2.1,
+          "classic_8_mod_median": 2.2,
           "classic_10_mod_median": 3.2,
           "classic_12_mod_median": 5
         },
@@ -2513,7 +2513,7 @@ export const INITIAL_TEAMS = [
           "diffM": 40,
           "fvm": 141,
           "fvmM": 141,
-          "classic_8_mod_median": 5.8,
+          "classic_8_mod_median": 5.9,
           "classic_10_mod_median": 5.4,
           "classic_12_mod_median": 5.6
         },
@@ -2931,7 +2931,7 @@ export const INITIAL_TEAMS = [
           "diffM": -7,
           "fvm": 96,
           "fvmM": 96,
-          "classic_8_mod_median": 3.2,
+          "classic_8_mod_median": 3.1,
           "classic_10_mod_median": 4.8,
           "classic_12_mod_median": 6.4
         },
@@ -3535,7 +3535,7 @@ export const INITIAL_TEAMS = [
           "fvm": 16,
           "fvmM": 16,
           "classic_8_mod_median": 0.2,
-          "classic_10_mod_median": 0.2,
+          "classic_10_mod_median": 0.3,
           "classic_12_mod_median": 0.6
         },
         "stats": {
@@ -4379,7 +4379,7 @@ export const INITIAL_TEAMS = [
           "diffM": -8,
           "fvm": 205,
           "fvmM": 205,
-          "classic_8_mod_median": 9.7,
+          "classic_8_mod_median": 9.6,
           "classic_10_mod_median": 12.6,
           "classic_12_mod_median": 14.2
         },
@@ -4666,7 +4666,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 109,
           "classic_8_mod_median": 0.8,
           "classic_10_mod_median": 1.8,
-          "classic_12_mod_median": 2.9
+          "classic_12_mod_median": 3
         },
         "stats": {
           "titolarita": 42,
@@ -6248,7 +6248,7 @@ export const INITIAL_TEAMS = [
           "fvm": 29,
           "fvmM": 29,
           "classic_8_mod_median": 0.3,
-          "classic_10_mod_median": 0.6,
+          "classic_10_mod_median": 0.5,
           "classic_12_mod_median": 1
         },
         "stats": {
@@ -8523,8 +8523,8 @@ export const INITIAL_TEAMS = [
           "diffM": 6,
           "fvm": 170,
           "fvmM": 170,
-          "classic_8_mod_median": 10.5,
-          "classic_10_mod_median": 11.1,
+          "classic_8_mod_median": 10.6,
+          "classic_10_mod_median": 11.2,
           "classic_12_mod_median": 12
         },
         "stats": {
@@ -10466,7 +10466,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 173,
           "classic_8_mod_median": 2.8,
           "classic_10_mod_median": 3.4,
-          "classic_12_mod_median": 4.3
+          "classic_12_mod_median": 4.4
         },
         "stats": {
           "titolarita": 74,
@@ -11002,7 +11002,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 134,
           "classic_8_mod_median": 2.4,
           "classic_10_mod_median": 4.4,
-          "classic_12_mod_median": 6.2
+          "classic_12_mod_median": 6.1
         },
         "stats": {
           "titolarita": 68,
@@ -11992,7 +11992,7 @@ export const INITIAL_TEAMS = [
           "fvm": 35,
           "fvmM": 35,
           "classic_8_mod_median": 0.2,
-          "classic_10_mod_median": 0.9,
+          "classic_10_mod_median": 0.8,
           "classic_12_mod_median": 2
         },
         "stats": {
@@ -12020,9 +12020,9 @@ export const INITIAL_TEAMS = [
           "au": 0
         },
         "substitutes": [
+          "lecce_esteban_7647",
           "lecce_ndri_7001",
-          "lecce_fatah_7602",
-          "lecce_stulic_7252"
+          "lecce_fatah_7602"
         ],
         "slotId": "pos_10"
       }
@@ -12291,6 +12291,73 @@ export const INITIAL_TEAMS = [
           "amm": 3,
           "espulsioni": 1,
           "esp": 1,
+          "au": 0
+        },
+        "substitutes": [],
+        "slotId": null
+      },
+      {
+        "id": "lecce_esteban_7647",
+        "csvId": "7647",
+        "fantalabId": "c929bd34-52e1-4e28-ab99-4b1ba0c3b595",
+        "name": "Esteban",
+        "displayName": "Esteban",
+        "fullName": "Paco Esteban",
+        "teamName": "Lecce",
+        "teamId": "lecce",
+        "teamShort": "LEC",
+        "role": "PC",
+        "classicRole": "A",
+        "mantraRole": "Pc",
+        "fantaRole": "A",
+        "photoUrl": "https://cdn.falsesoftware.com/players/37666027/v1.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/37666027/v1.webp",
+        "appetibilita": 84,
+        "status": "panchina",
+        "isAvailable": true,
+        "isPenaltyTaker": false,
+        "isFreeKickTaker": false,
+        "isCornerTaker": false,
+        "rigorista": false,
+        "punizioni": false,
+        "corner": false,
+        "positionNotes": "",
+        "fantaComment": null,
+        "quotazioni": {
+          "qtA": 1,
+          "qtI": 1,
+          "diff": 0,
+          "qtAM": 1,
+          "qtIM": 1,
+          "diffM": 0,
+          "fvm": 1,
+          "fvmM": 1,
+          "classic_8_mod_median": 0,
+          "classic_10_mod_median": 0,
+          "classic_12_mod_median": 0
+        },
+        "stats": {
+          "titolarita": 50,
+          "fantamedia": 6.0,
+          "mediaVoto": 6.0,
+          "pv": 0,
+          "presenze": 0,
+          "gol": 0,
+          "gf": 0,
+          "gs": 0,
+          "golSubiti": 0,
+          "rp": 0,
+          "rc": 0,
+          "rPlus": 0,
+          "rMinus": 0,
+          "rigoriSegnati": 0,
+          "rigoriSbagliati": 0,
+          "assist": 0,
+          "ass": 0,
+          "ammonizioni": 0,
+          "amm": 0,
+          "espulsioni": 0,
+          "esp": 0,
           "au": 0
         },
         "substitutes": [],
@@ -14001,7 +14068,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 51,
           "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
-          "classic_12_mod_median": 0.5
+          "classic_12_mod_median": 0.4
         },
         "stats": {
           "titolarita": 39,
@@ -14602,7 +14669,7 @@ export const INITIAL_TEAMS = [
           "diffM": 0,
           "fvm": 1,
           "fvmM": 1,
-          "classic_8_mod_median": 0,
+          "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0,
           "classic_12_mod_median": 0
         },
@@ -15658,7 +15725,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 54,
           "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
-          "classic_12_mod_median": 0.5
+          "classic_12_mod_median": 0.6
         },
         "stats": {
           "titolarita": 53,
@@ -17383,7 +17450,7 @@ export const INITIAL_TEAMS = [
           "diffM": -8,
           "fvm": 198,
           "fvmM": 198,
-          "classic_8_mod_median": 6.7,
+          "classic_8_mod_median": 6.6,
           "classic_10_mod_median": 8.9,
           "classic_12_mod_median": 10.3
         },
@@ -18333,7 +18400,7 @@ export const INITIAL_TEAMS = [
           "diffM": 0,
           "fvm": 1,
           "fvmM": 1,
-          "classic_8_mod_median": 0.2,
+          "classic_8_mod_median": 0.3,
           "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0
         },
@@ -18802,7 +18869,7 @@ export const INITIAL_TEAMS = [
           "diffM": 0,
           "fvm": 1,
           "fvmM": 1,
-          "classic_8_mod_median": 0,
+          "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0
         },
@@ -19523,7 +19590,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 557,
           "classic_8_mod_median": 34,
           "classic_10_mod_median": 34.2,
-          "classic_12_mod_median": 33.4
+          "classic_12_mod_median": 33.5
         },
         "stats": {
           "titolarita": 71,
@@ -19591,7 +19658,7 @@ export const INITIAL_TEAMS = [
           "diffM": 4,
           "fvm": 477,
           "fvmM": 477,
-          "classic_8_mod_median": 21.5,
+          "classic_8_mod_median": 21.6,
           "classic_10_mod_median": 24.6,
           "classic_12_mod_median": 25
         },
@@ -19664,7 +19731,7 @@ export const INITIAL_TEAMS = [
           "fvm": 48,
           "fvmM": 48,
           "classic_8_mod_median": 0.8,
-          "classic_10_mod_median": 1.1,
+          "classic_10_mod_median": 1.2,
           "classic_12_mod_median": 1.6
         },
         "stats": {
@@ -19933,7 +20000,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 45,
           "classic_8_mod_median": 0.6,
           "classic_10_mod_median": 1.2,
-          "classic_12_mod_median": 2
+          "classic_12_mod_median": 1.9
         },
         "stats": {
           "titolarita": 55,
@@ -20199,7 +20266,7 @@ export const INITIAL_TEAMS = [
           "diffM": 19,
           "fvm": 64,
           "fvmM": 64,
-          "classic_8_mod_median": 3.5,
+          "classic_8_mod_median": 3.4,
           "classic_10_mod_median": 4.8,
           "classic_12_mod_median": 6
         },
@@ -21117,7 +21184,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 224,
           "classic_8_mod_median": 9.8,
           "classic_10_mod_median": 12.2,
-          "classic_12_mod_median": 13.7
+          "classic_12_mod_median": 13.6
         },
         "stats": {
           "titolarita": 47,
@@ -21186,7 +21253,7 @@ export const INITIAL_TEAMS = [
           "diffM": 17,
           "fvm": 58,
           "fvmM": 58,
-          "classic_8_mod_median": 1.5,
+          "classic_8_mod_median": 1.6,
           "classic_10_mod_median": 1.6,
           "classic_12_mod_median": 1.4
         },
@@ -21257,7 +21324,7 @@ export const INITIAL_TEAMS = [
           "diffM": -2,
           "fvm": 432,
           "fvmM": 432,
-          "classic_8_mod_median": 25.3,
+          "classic_8_mod_median": 25.2,
           "classic_10_mod_median": 28,
           "classic_12_mod_median": 28
         },
@@ -22201,7 +22268,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 64,
           "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.3,
-          "classic_12_mod_median": 0.5
+          "classic_12_mod_median": 0.4
         },
         "stats": {
           "titolarita": 45,
@@ -22843,7 +22910,7 @@ export const INITIAL_TEAMS = [
           "diffM": -5,
           "fvm": 208,
           "fvmM": 208,
-          "classic_8_mod_median": 11.9,
+          "classic_8_mod_median": 11.8,
           "classic_10_mod_median": 15,
           "classic_12_mod_median": 16.4
         },
@@ -22985,7 +23052,7 @@ export const INITIAL_TEAMS = [
           "diffM": -16,
           "fvm": 134,
           "fvmM": 134,
-          "classic_8_mod_median": 3.1,
+          "classic_8_mod_median": 3,
           "classic_10_mod_median": 5.4,
           "classic_12_mod_median": 7.1
         },
@@ -24140,14 +24207,14 @@ export const INITIAL_TEAMS = [
         "positionNotes": "",
         "fantaComment": "Noel Tornqvist è il nuovo portiere del Monza, è un classe 2002 svedese. Arriva dal Como, dove però non ha mai giocato. Prima era titolare al Mjällby AIF in Svezia. Al Monza può essere nuovamente titolare, prendendo il posto di Thiam con cui sarà in ballottaggio. In ogni caso la porta della squadra di Juric è una delle peggiori della Serie A, quindi Tornqvist è solo per leghe numerose.",
         "quotazioni": {
-          "qtA": 3,
+          "qtA": 4,
           "qtI": 1,
-          "diff": 2,
-          "qtAM": 3,
+          "diff": 3,
+          "qtAM": 4,
           "qtIM": 1,
-          "diffM": 2,
-          "fvm": 10,
-          "fvmM": 10,
+          "diffM": 3,
+          "fvm": 13,
+          "fvmM": 13,
           "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0.2
@@ -27068,7 +27135,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 13,
           "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
-          "classic_12_mod_median": 0
+          "classic_12_mod_median": 0.2
         },
         "stats": {
           "titolarita": 13,
@@ -28447,7 +28514,7 @@ export const INITIAL_TEAMS = [
           "diffM": 10,
           "fvm": 70,
           "fvmM": 70,
-          "classic_8_mod_median": 2.9,
+          "classic_8_mod_median": 2.8,
           "classic_10_mod_median": 4,
           "classic_12_mod_median": 5.1
         },
@@ -28733,7 +28800,7 @@ export const INITIAL_TEAMS = [
           "diffM": -10,
           "fvm": 166,
           "fvmM": 166,
-          "classic_8_mod_median": 2.6,
+          "classic_8_mod_median": 2.5,
           "classic_10_mod_median": 4.9,
           "classic_12_mod_median": 6.6
         },
@@ -28869,7 +28936,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 227,
           "classic_8_mod_median": 5.6,
           "classic_10_mod_median": 8.2,
-          "classic_12_mod_median": 10
+          "classic_12_mod_median": 9.9
         },
         "stats": {
           "titolarita": 47,
@@ -30185,7 +30252,7 @@ export const INITIAL_TEAMS = [
           "diffM": 47,
           "fvm": 154,
           "fvmM": 154,
-          "classic_8_mod_median": 5.9,
+          "classic_8_mod_median": 6,
           "classic_10_mod_median": 8,
           "classic_12_mod_median": 9.1
         },
@@ -30258,7 +30325,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 125,
           "classic_8_mod_median": 2.6,
           "classic_10_mod_median": 4,
-          "classic_12_mod_median": 5.7
+          "classic_12_mod_median": 5.6
         },
         "stats": {
           "titolarita": 66,
@@ -31856,8 +31923,8 @@ export const INITIAL_TEAMS = [
           "fvm": 90,
           "fvmM": 90,
           "classic_8_mod_median": 0.5,
-          "classic_10_mod_median": 0.5,
-          "classic_12_mod_median": 0.9
+          "classic_10_mod_median": 0.6,
+          "classic_12_mod_median": 1
         },
         "stats": {
           "titolarita": 84,
@@ -33498,7 +33565,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 16,
           "classic_8_mod_median": 0.4,
           "classic_10_mod_median": 0.6,
-          "classic_12_mod_median": 0.9
+          "classic_12_mod_median": 0.8
         },
         "stats": {
           "titolarita": 55,
@@ -34937,7 +35004,7 @@ export const INITIAL_TEAMS = [
           "diffM": 0,
           "fvm": 1,
           "fvmM": 1,
-          "classic_8_mod_median": 0.2,
+          "classic_8_mod_median": 0.3,
           "classic_10_mod_median": 0.4,
           "classic_12_mod_median": 0
         },
@@ -35433,7 +35500,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 93,
           "classic_8_mod_median": 5,
           "classic_10_mod_median": 5.6,
-          "classic_12_mod_median": 6.2
+          "classic_12_mod_median": 6.1
         },
         "stats": {
           "titolarita": 89,
@@ -35573,8 +35640,8 @@ export const INITIAL_TEAMS = [
           "diffM": 6,
           "fvm": 29,
           "fvmM": 29,
-          "classic_8_mod_median": 1.4,
-          "classic_10_mod_median": 1.3,
+          "classic_8_mod_median": 1.5,
+          "classic_10_mod_median": 1.4,
           "classic_12_mod_median": 1
         },
         "stats": {
@@ -35930,7 +35997,7 @@ export const INITIAL_TEAMS = [
           "fvmM": 246,
           "classic_8_mod_median": 10,
           "classic_10_mod_median": 12.8,
-          "classic_12_mod_median": 14.4
+          "classic_12_mod_median": 14.5
         },
         "stats": {
           "titolarita": 71,
@@ -36449,7 +36516,7 @@ export const INITIAL_TEAMS = [
         "fantaRole": "C",
         "photoUrl": "https://cdn.falsesoftware.com/players/52500/v2.webp",
         "playerImage": "https://cdn.falsesoftware.com/players/52500/v2.webp",
-        "appetibilita": 84,
+        "appetibilita": 81,
         "status": "panchina",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -36474,11 +36541,11 @@ export const INITIAL_TEAMS = [
           "classic_12_mod_median": 0
         },
         "stats": {
-          "titolarita": 50,
-          "fantamedia": 6.0,
-          "mediaVoto": 6.0,
-          "pv": 0,
-          "presenze": 0,
+          "titolarita": 11,
+          "fantamedia": 5.75,
+          "mediaVoto": 5.75,
+          "pv": 14,
+          "presenze": 14,
           "gol": 0,
           "gf": 0,
           "gs": 0,
@@ -36489,10 +36556,10 @@ export const INITIAL_TEAMS = [
           "rMinus": 0,
           "rigoriSegnati": 0,
           "rigoriSbagliati": 0,
-          "assist": 0,
-          "ass": 0,
-          "ammonizioni": 0,
-          "amm": 0,
+          "assist": 1,
+          "ass": 1,
+          "ammonizioni": 2,
+          "amm": 2,
           "espulsioni": 0,
           "esp": 0,
           "au": 0
@@ -37604,7 +37671,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 40,
       "fvm": 141,
       "fvmM": 141,
-      "classic_8_mod_median": 5.8,
+      "classic_8_mod_median": 5.9,
       "classic_10_mod_median": 5.4,
       "classic_12_mod_median": 5.6
     },
@@ -37670,7 +37737,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 4,
       "fvm": 477,
       "fvmM": 477,
-      "classic_8_mod_median": 21.5,
+      "classic_8_mod_median": 21.6,
       "classic_10_mod_median": 24.6,
       "classic_12_mod_median": 25
     },
@@ -37737,7 +37804,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 48,
       "fvmM": 48,
       "classic_8_mod_median": 0.8,
-      "classic_10_mod_median": 1.1,
+      "classic_10_mod_median": 1.2,
       "classic_12_mod_median": 1.6
     },
     "stats": {
@@ -37935,8 +38002,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 90,
       "fvmM": 90,
       "classic_8_mod_median": 0.5,
-      "classic_10_mod_median": 0.5,
-      "classic_12_mod_median": 0.9
+      "classic_10_mod_median": 0.6,
+      "classic_12_mod_median": 1
     },
     "stats": {
       "titolarita": 84,
@@ -38198,7 +38265,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 47,
       "fvm": 154,
       "fvmM": 154,
-      "classic_8_mod_median": 5.9,
+      "classic_8_mod_median": 6,
       "classic_10_mod_median": 8,
       "classic_12_mod_median": 9.1
     },
@@ -38266,7 +38333,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 173,
       "classic_8_mod_median": 2.8,
       "classic_10_mod_median": 3.4,
-      "classic_12_mod_median": 4.3
+      "classic_12_mod_median": 4.4
     },
     "stats": {
       "titolarita": 74,
@@ -38728,7 +38795,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 557,
       "classic_8_mod_median": 34,
       "classic_10_mod_median": 34.2,
-      "classic_12_mod_median": 33.4
+      "classic_12_mod_median": 33.5
     },
     "stats": {
       "titolarita": 71,
@@ -38990,8 +39057,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 6,
       "fvm": 170,
       "fvmM": 170,
-      "classic_8_mod_median": 10.5,
-      "classic_10_mod_median": 11.1,
+      "classic_8_mod_median": 10.6,
+      "classic_10_mod_median": 11.2,
       "classic_12_mod_median": 12
     },
     "stats": {
@@ -39056,8 +39123,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 6,
       "fvm": 29,
       "fvmM": 29,
-      "classic_8_mod_median": 1.4,
-      "classic_10_mod_median": 1.3,
+      "classic_8_mod_median": 1.5,
+      "classic_10_mod_median": 1.4,
       "classic_12_mod_median": 1
     },
     "stats": {
@@ -39190,7 +39257,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 160,
       "classic_8_mod_median": 2.2,
       "classic_10_mod_median": 3,
-      "classic_12_mod_median": 4
+      "classic_12_mod_median": 4.1
     },
     "stats": {
       "titolarita": 47,
@@ -39584,7 +39651,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 17,
       "fvm": 58,
       "fvmM": 58,
-      "classic_8_mod_median": 1.5,
+      "classic_8_mod_median": 1.6,
       "classic_10_mod_median": 1.6,
       "classic_12_mod_median": 1.4
     },
@@ -40442,7 +40509,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -8,
       "fvm": 198,
       "fvmM": 198,
-      "classic_8_mod_median": 6.7,
+      "classic_8_mod_median": 6.6,
       "classic_10_mod_median": 8.9,
       "classic_12_mod_median": 10.3
     },
@@ -40706,7 +40773,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -10,
       "fvm": 166,
       "fvmM": 166,
-      "classic_8_mod_median": 2.6,
+      "classic_8_mod_median": 2.5,
       "classic_10_mod_median": 4.9,
       "classic_12_mod_median": 6.6
     },
@@ -41698,7 +41765,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 246,
       "classic_8_mod_median": 10,
       "classic_10_mod_median": 12.8,
-      "classic_12_mod_median": 14.4
+      "classic_12_mod_median": 14.5
     },
     "stats": {
       "titolarita": 71,
@@ -41830,7 +41897,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 224,
       "classic_8_mod_median": 9.8,
       "classic_10_mod_median": 12.2,
-      "classic_12_mod_median": 13.7
+      "classic_12_mod_median": 13.6
     },
     "stats": {
       "titolarita": 47,
@@ -42554,7 +42621,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 10,
       "fvm": 70,
       "fvmM": 70,
-      "classic_8_mod_median": 2.9,
+      "classic_8_mod_median": 2.8,
       "classic_10_mod_median": 4,
       "classic_12_mod_median": 5.1
     },
@@ -42820,7 +42887,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 54,
       "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
-      "classic_12_mod_median": 0.5
+      "classic_12_mod_median": 0.6
     },
     "stats": {
       "titolarita": 53,
@@ -43016,7 +43083,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -7,
       "fvm": 96,
       "fvmM": 96,
-      "classic_8_mod_median": 3.2,
+      "classic_8_mod_median": 3.1,
       "classic_10_mod_median": 4.8,
       "classic_12_mod_median": 6.4
     },
@@ -43346,7 +43413,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -2,
       "fvm": 432,
       "fvmM": 432,
-      "classic_8_mod_median": 25.3,
+      "classic_8_mod_median": 25.2,
       "classic_10_mod_median": 28,
       "classic_12_mod_median": 28
     },
@@ -43743,7 +43810,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 29,
       "fvmM": 29,
       "classic_8_mod_median": 0.3,
-      "classic_10_mod_median": 0.6,
+      "classic_10_mod_median": 0.5,
       "classic_12_mod_median": 1
     },
     "stats": {
@@ -45129,7 +45196,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 26,
       "fvmM": 26,
       "classic_8_mod_median": 1.2,
-      "classic_10_mod_median": 1.9,
+      "classic_10_mod_median": 1.8,
       "classic_12_mod_median": 2.6
     },
     "stats": {
@@ -45328,7 +45395,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 227,
       "classic_8_mod_median": 5.6,
       "classic_10_mod_median": 8.2,
-      "classic_12_mod_median": 10
+      "classic_12_mod_median": 9.9
     },
     "stats": {
       "titolarita": 47,
@@ -45460,7 +45527,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 109,
       "classic_8_mod_median": 0.8,
       "classic_10_mod_median": 1.8,
-      "classic_12_mod_median": 2.9
+      "classic_12_mod_median": 3
     },
     "stats": {
       "titolarita": 42,
@@ -46516,7 +46583,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 51,
       "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
-      "classic_12_mod_median": 0.5
+      "classic_12_mod_median": 0.4
     },
     "stats": {
       "titolarita": 39,
@@ -47110,7 +47177,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 13,
       "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
-      "classic_12_mod_median": 0
+      "classic_12_mod_median": 0.2
     },
     "stats": {
       "titolarita": 13,
@@ -47836,7 +47903,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 45,
       "classic_8_mod_median": 0.6,
       "classic_10_mod_median": 1.2,
-      "classic_12_mod_median": 2
+      "classic_12_mod_median": 1.9
     },
     "stats": {
       "titolarita": 55,
@@ -49618,7 +49685,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 134,
       "classic_8_mod_median": 2.4,
       "classic_10_mod_median": 4.4,
-      "classic_12_mod_median": 6.2
+      "classic_12_mod_median": 6.1
     },
     "stats": {
       "titolarita": 68,
@@ -50738,7 +50805,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -16,
       "fvm": 134,
       "fvmM": 134,
-      "classic_8_mod_median": 3.1,
+      "classic_8_mod_median": 3,
       "classic_10_mod_median": 5.4,
       "classic_12_mod_median": 7.1
     },
@@ -50806,7 +50873,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 93,
       "classic_8_mod_median": 5,
       "classic_10_mod_median": 5.6,
-      "classic_12_mod_median": 6.2
+      "classic_12_mod_median": 6.1
     },
     "stats": {
       "titolarita": 89,
@@ -51620,6 +51687,72 @@ export const CSV_PLAYER_CATALOG = [
       "ass": 2,
       "ammonizioni": 4,
       "amm": 4,
+      "espulsioni": 0,
+      "esp": 0,
+      "au": 0
+    },
+    "substitutes": []
+  },
+  {
+    "id": "lecce_esteban_7647",
+    "csvId": "7647",
+    "fantalabId": "c929bd34-52e1-4e28-ab99-4b1ba0c3b595",
+    "name": "Esteban",
+    "displayName": "Esteban",
+    "fullName": "Paco Esteban",
+    "teamName": "Lecce",
+    "teamId": "lecce",
+    "teamShort": "LEC",
+    "role": "PC",
+    "classicRole": "A",
+    "mantraRole": "Pc",
+    "fantaRole": "A",
+    "photoUrl": "https://cdn.falsesoftware.com/players/37666027/v1.webp",
+    "playerImage": "https://cdn.falsesoftware.com/players/37666027/v1.webp",
+    "appetibilita": 84,
+    "status": "in_ballottaggio",
+    "isAvailable": true,
+    "isPenaltyTaker": false,
+    "isFreeKickTaker": false,
+    "isCornerTaker": false,
+    "rigorista": false,
+    "punizioni": false,
+    "corner": false,
+    "positionNotes": "",
+    "fantaComment": null,
+    "quotazioni": {
+      "qtA": 1,
+      "qtI": 1,
+      "diff": 0,
+      "qtAM": 1,
+      "qtIM": 1,
+      "diffM": 0,
+      "fvm": 1,
+      "fvmM": 1,
+      "classic_8_mod_median": 0,
+      "classic_10_mod_median": 0,
+      "classic_12_mod_median": 0
+    },
+    "stats": {
+      "titolarita": 50,
+      "fantamedia": 6.0,
+      "mediaVoto": 6.0,
+      "pv": 0,
+      "presenze": 0,
+      "gol": 0,
+      "gf": 0,
+      "gs": 0,
+      "golSubiti": 0,
+      "rp": 0,
+      "rc": 0,
+      "rPlus": 0,
+      "rMinus": 0,
+      "rigoriSegnati": 0,
+      "rigoriSbagliati": 0,
+      "assist": 0,
+      "ass": 0,
+      "ammonizioni": 0,
+      "amm": 0,
       "espulsioni": 0,
       "esp": 0,
       "au": 0
@@ -57404,7 +57537,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -5,
       "fvm": 208,
       "fvmM": 208,
-      "classic_8_mod_median": 11.9,
+      "classic_8_mod_median": 11.8,
       "classic_10_mod_median": 15,
       "classic_12_mod_median": 16.4
     },
@@ -57602,7 +57735,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -8,
       "fvm": 205,
       "fvmM": 205,
-      "classic_8_mod_median": 9.7,
+      "classic_8_mod_median": 9.6,
       "classic_10_mod_median": 12.6,
       "classic_12_mod_median": 14.2
     },
@@ -57999,8 +58132,8 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 378,
       "fvmM": 378,
       "classic_8_mod_median": 9.6,
-      "classic_10_mod_median": 11.6,
-      "classic_12_mod_median": 12.8
+      "classic_10_mod_median": 11.5,
+      "classic_12_mod_median": 12.4
     },
     "stats": {
       "titolarita": 63,
@@ -58130,7 +58263,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 0,
       "fvm": 1,
       "fvmM": 1,
-      "classic_8_mod_median": 0.2,
+      "classic_8_mod_median": 0.3,
       "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0
     },
@@ -58242,8 +58375,8 @@ export const CSV_PLAYER_CATALOG = [
     "fantaRole": "C",
     "photoUrl": "https://cdn.falsesoftware.com/players/52500/v2.webp",
     "playerImage": "https://cdn.falsesoftware.com/players/52500/v2.webp",
-    "appetibilita": 84,
-    "status": "in_ballottaggio",
+    "appetibilita": 81,
+    "status": "panchina",
     "isAvailable": true,
     "isPenaltyTaker": false,
     "isFreeKickTaker": false,
@@ -58267,11 +58400,11 @@ export const CSV_PLAYER_CATALOG = [
       "classic_12_mod_median": 0
     },
     "stats": {
-      "titolarita": 50,
-      "fantamedia": 6.0,
-      "mediaVoto": 6.0,
-      "pv": 0,
-      "presenze": 0,
+      "titolarita": 11,
+      "fantamedia": 5.75,
+      "mediaVoto": 5.75,
+      "pv": 14,
+      "presenze": 14,
       "gol": 0,
       "gf": 0,
       "gs": 0,
@@ -58282,10 +58415,10 @@ export const CSV_PLAYER_CATALOG = [
       "rMinus": 0,
       "rigoriSegnati": 0,
       "rigoriSbagliati": 0,
-      "assist": 0,
-      "ass": 0,
-      "ammonizioni": 0,
-      "amm": 0,
+      "assist": 1,
+      "ass": 1,
+      "ammonizioni": 2,
+      "amm": 2,
       "espulsioni": 0,
       "esp": 0,
       "au": 0
@@ -60242,7 +60375,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 7,
       "fvm": 112,
       "fvmM": 112,
-      "classic_8_mod_median": 2.1,
+      "classic_8_mod_median": 2.2,
       "classic_10_mod_median": 3.2,
       "classic_12_mod_median": 5
     },
@@ -60572,7 +60705,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 19,
       "fvm": 64,
       "fvmM": 64,
-      "classic_8_mod_median": 3.5,
+      "classic_8_mod_median": 3.4,
       "classic_10_mod_median": 4.8,
       "classic_12_mod_median": 6
     },
@@ -61828,7 +61961,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 16,
       "classic_8_mod_median": 0.4,
       "classic_10_mod_median": 0.6,
-      "classic_12_mod_median": 0.9
+      "classic_12_mod_median": 0.8
     },
     "stats": {
       "titolarita": 55,
@@ -63014,7 +63147,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 0,
       "fvm": 1,
       "fvmM": 1,
-      "classic_8_mod_median": 0,
+      "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0,
       "classic_12_mod_median": 0
     },
@@ -63675,7 +63808,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 16,
       "fvmM": 16,
       "classic_8_mod_median": 0.2,
-      "classic_10_mod_median": 0.2,
+      "classic_10_mod_median": 0.3,
       "classic_12_mod_median": 0.6
     },
     "stats": {
@@ -64929,7 +65062,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 35,
       "fvmM": 35,
       "classic_8_mod_median": 0.2,
-      "classic_10_mod_median": 0.9,
+      "classic_10_mod_median": 0.8,
       "classic_12_mod_median": 2
     },
     "stats": {
@@ -67040,7 +67173,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 0,
       "fvm": 1,
       "fvmM": 1,
-      "classic_8_mod_median": 0.2,
+      "classic_8_mod_median": 0.3,
       "classic_10_mod_median": 0.4,
       "classic_12_mod_median": 0
     },
@@ -69748,7 +69881,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 125,
       "classic_8_mod_median": 2.6,
       "classic_10_mod_median": 4,
-      "classic_12_mod_median": 5.7
+      "classic_12_mod_median": 5.6
     },
     "stats": {
       "titolarita": 66,
@@ -70144,7 +70277,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvmM": 64,
       "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.3,
-      "classic_12_mod_median": 0.5
+      "classic_12_mod_median": 0.4
     },
     "stats": {
       "titolarita": 45,
@@ -71660,7 +71793,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 0,
       "fvm": 1,
       "fvmM": 1,
-      "classic_8_mod_median": 0,
+      "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0
     },
@@ -72048,14 +72181,14 @@ export const CSV_PLAYER_CATALOG = [
     "positionNotes": "",
     "fantaComment": "Noel Tornqvist è il nuovo portiere del Monza, è un classe 2002 svedese. Arriva dal Como, dove però non ha mai giocato. Prima era titolare al Mjällby AIF in Svezia. Al Monza può essere nuovamente titolare, prendendo il posto di Thiam con cui sarà in ballottaggio. In ogni caso la porta della squadra di Juric è una delle peggiori della Serie A, quindi Tornqvist è solo per leghe numerose.",
     "quotazioni": {
-      "qtA": 3,
+      "qtA": 4,
       "qtI": 1,
-      "diff": 2,
-      "qtAM": 3,
+      "diff": 3,
+      "qtAM": 4,
       "qtIM": 1,
-      "diffM": 2,
-      "fvm": 10,
-      "fvmM": 10,
+      "diffM": 3,
+      "fvm": 13,
+      "fvmM": 13,
       "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0.2

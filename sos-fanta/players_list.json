@@ -6127,6 +6127,33 @@
       }
     },
     {
+      "player_id": "c929bd34-52e1-4e28-ab99-4b1ba0c3b595",
+      "sportsmonks_id": 37666027,
+      "fantalab_id": "c929bd34-52e1-4e28-ab99-4b1ba0c3b595",
+      "fantacalcio_id": 7647,
+      "name": "Esteban",
+      "full_name": "Paco Esteban",
+      "team_id": 7790,
+      "team_name": "Lecce",
+      "team_short": "LEC",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/7790.png",
+      "role": "A",
+      "mantra_roles": [
+        "Pc"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/37666027/v1.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 1,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 6,
+        "mv": 6
+      }
+    },
+    {
       "player_id": "8b03e85a-ae9b-4274-9eaf-008d8d2c95b7",
       "sportsmonks_id": 30482332,
       "fantalab_id": "8b03e85a-ae9b-4274-9eaf-008d8d2c95b7",
@@ -14836,7 +14863,7 @@
     "fallback_price"
   ],
   "pagination": {
-    "total": 534,
+    "total": 535,
     "limit": 1000,
     "offset": 0
   },

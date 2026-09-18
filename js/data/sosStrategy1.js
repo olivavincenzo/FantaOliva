@@ -408,6 +408,7 @@ export const SOS_STRATEGY_1 = {
     "fini": "tier_c_17",
     "boloca": "tier_c_18",
     "zarraga": "tier_c_17",
+    "lovric": "tier_c_17",
     "kaba": "tier_c_17",
     "el azzouzi o.": "tier_c_17",
     "elazzouzio": "tier_c_17",
