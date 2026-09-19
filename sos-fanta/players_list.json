@@ -28,33 +28,6 @@
       }
     },
     {
-      "player_id": "720f5bed-4429-4b81-9117-7cd3b297a085",
-      "sportsmonks_id": 23288058,
-      "fantalab_id": "720f5bed-4429-4b81-9117-7cd3b297a085",
-      "fantacalcio_id": 4463,
-      "name": "Esposito Se.",
-      "full_name": "Sebastiano Esposito",
-      "team_id": 2714,
-      "team_name": "Sassuolo",
-      "team_short": "SAS",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
-      "role": "A",
-      "mantra_roles": [
-        "A"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/23288058/v3.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 1,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": false,
-      "stats": {
-        "fmv": 10.5,
-        "mv": 7.5
-      }
-    },
-    {
       "player_id": "daf219f9-e5fb-4f2a-a7bf-808a15402abe",
       "sportsmonks_id": 37257608,
       "fantalab_id": "daf219f9-e5fb-4f2a-a7bf-808a15402abe",
@@ -79,6 +52,33 @@
       "stats": {
         "fmv": 10,
         "mv": 7
+      }
+    },
+    {
+      "player_id": "0053b230-688b-4fef-90f5-b823c64ea378",
+      "sportsmonks_id": 37596971,
+      "fantalab_id": "0053b230-688b-4fef-90f5-b823c64ea378",
+      "fantacalcio_id": 7523,
+      "name": "Varela G.",
+      "full_name": "Gustavo Varela",
+      "team_id": 1628,
+      "team_name": "Monza",
+      "team_short": "MON",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/1628.png",
+      "role": "A",
+      "mantra_roles": [
+        "Pc"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/37596971/v1.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 4,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 9.76,
+        "mv": 6.88
       }
     },
     {
@@ -357,33 +357,6 @@
       }
     },
     {
-      "player_id": "0053b230-688b-4fef-90f5-b823c64ea378",
-      "sportsmonks_id": 37596971,
-      "fantalab_id": "0053b230-688b-4fef-90f5-b823c64ea378",
-      "fantacalcio_id": 7523,
-      "name": "Varela G.",
-      "full_name": "Gustavo Varela",
-      "team_id": 1628,
-      "team_name": "Monza",
-      "team_short": "MON",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/1628.png",
-      "role": "A",
-      "mantra_roles": [
-        "Pc"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/37596971/v1.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 3,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": false,
-      "stats": {
-        "fmv": 8.67,
-        "mv": 6.67
-      }
-    },
-    {
       "player_id": "4efd1869-7483-4b32-9db3-bbeb1641fac7",
       "sportsmonks_id": 37567627,
       "fantalab_id": "4efd1869-7483-4b32-9db3-bbeb1641fac7",
@@ -409,6 +382,34 @@
       "stats": {
         "fmv": 8.63,
         "mv": 6.88
+      }
+    },
+    {
+      "player_id": "c9db8149-35c2-4640-9b87-0ac4efe8d1b9",
+      "sportsmonks_id": 37598836,
+      "fantalab_id": "c9db8149-35c2-4640-9b87-0ac4efe8d1b9",
+      "fantacalcio_id": 6677,
+      "name": "Adzic",
+      "full_name": "Vasilije Adžić",
+      "team_id": 2714,
+      "team_name": "Sassuolo",
+      "team_short": "SAS",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
+      "role": "C",
+      "mantra_roles": [
+        "C",
+        "T"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/37598836/v2.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 5,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 8.6,
+        "mv": 6.6
       }
     },
     {
@@ -577,34 +578,6 @@
       }
     },
     {
-      "player_id": "c9db8149-35c2-4640-9b87-0ac4efe8d1b9",
-      "sportsmonks_id": 37598836,
-      "fantalab_id": "c9db8149-35c2-4640-9b87-0ac4efe8d1b9",
-      "fantacalcio_id": 6677,
-      "name": "Adzic",
-      "full_name": "Vasilije Adžić",
-      "team_id": 2714,
-      "team_name": "Sassuolo",
-      "team_short": "SAS",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
-      "role": "C",
-      "mantra_roles": [
-        "C",
-        "T"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/37598836/v2.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 4,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": false,
-      "stats": {
-        "fmv": 8.25,
-        "mv": 6.5
-      }
-    },
-    {
       "player_id": "2b362169-cf19-4a08-a822-d99382ed5e0e",
       "sportsmonks_id": 5270451,
       "fantalab_id": "2b362169-cf19-4a08-a822-d99382ed5e0e",
@@ -630,33 +603,6 @@
       "stats": {
         "fmv": 8.25,
         "mv": 6.5
-      }
-    },
-    {
-      "player_id": "6a2d0ee2-6bae-42d1-9cfd-06994a361b3d",
-      "sportsmonks_id": 37617684,
-      "fantalab_id": "6a2d0ee2-6bae-42d1-9cfd-06994a361b3d",
-      "fantacalcio_id": 7546,
-      "name": "Robinson J.",
-      "full_name": "Jay Robinson",
-      "team_id": 1628,
-      "team_name": "Monza",
-      "team_short": "MON",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/1628.png",
-      "role": "A",
-      "mantra_roles": [
-        "A"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/37617684/v1.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 2,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": false,
-      "stats": {
-        "fmv": 8.25,
-        "mv": 6.75
       }
     },
     {
@@ -763,6 +709,33 @@
       "presenze": 2,
       "is_in_listone": true,
       "is_in_listone_euroleghe": true,
+      "stats": {
+        "fmv": 8,
+        "mv": 6.5
+      }
+    },
+    {
+      "player_id": "720f5bed-4429-4b81-9117-7cd3b297a085",
+      "sportsmonks_id": 23288058,
+      "fantalab_id": "720f5bed-4429-4b81-9117-7cd3b297a085",
+      "fantacalcio_id": 4463,
+      "name": "Esposito Se.",
+      "full_name": "Sebastiano Esposito",
+      "team_id": 2714,
+      "team_name": "Sassuolo",
+      "team_short": "SAS",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
+      "role": "A",
+      "mantra_roles": [
+        "A"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/23288058/v3.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 2,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
       "stats": {
         "fmv": 8,
         "mv": 6.5
@@ -1044,6 +1017,33 @@
       }
     },
     {
+      "player_id": "6a2d0ee2-6bae-42d1-9cfd-06994a361b3d",
+      "sportsmonks_id": 37617684,
+      "fantalab_id": "6a2d0ee2-6bae-42d1-9cfd-06994a361b3d",
+      "fantacalcio_id": 7546,
+      "name": "Robinson J.",
+      "full_name": "Jay Robinson",
+      "team_id": 1628,
+      "team_name": "Monza",
+      "team_short": "MON",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/1628.png",
+      "role": "A",
+      "mantra_roles": [
+        "A"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/37617684/v1.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 3,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 7.67,
+        "mv": 6.67
+      }
+    },
+    {
       "player_id": "bd30d79a-7c55-4012-b561-490cb8c2c69d",
       "sportsmonks_id": 29184,
       "fantalab_id": "bd30d79a-7c55-4012-b561-490cb8c2c69d",
@@ -1151,34 +1151,6 @@
       "stats": {
         "fmv": 7.5,
         "mv": 6.5
-      }
-    },
-    {
-      "player_id": "d47bf2f7-f320-4340-9845-33ef2f94d175",
-      "sportsmonks_id": 537429,
-      "fantalab_id": "d47bf2f7-f320-4340-9845-33ef2f94d175",
-      "fantacalcio_id": 7485,
-      "name": "Mangas",
-      "full_name": "Ricardo Mangas",
-      "team_id": 1628,
-      "team_name": "Monza",
-      "team_short": "MON",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/1628.png",
-      "role": "D",
-      "mantra_roles": [
-        "Ds",
-        "E"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/537429/v1.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 4,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": false,
-      "stats": {
-        "fmv": 7.5,
-        "mv": 6.25
       }
     },
     {
@@ -1433,33 +1405,6 @@
       }
     },
     {
-      "player_id": "749247cd-79ed-44d6-a376-50afab6e25a0",
-      "sportsmonks_id": 129553,
-      "fantalab_id": "749247cd-79ed-44d6-a376-50afab6e25a0",
-      "fantacalcio_id": 531,
-      "name": "Berardi",
-      "full_name": "Domenico Berardi ",
-      "team_id": 2714,
-      "team_name": "Sassuolo",
-      "team_short": "SAS",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
-      "role": "A",
-      "mantra_roles": [
-        "A"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/129553/v1.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 3,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": false,
-      "stats": {
-        "fmv": 7.33,
-        "mv": 6.33
-      }
-    },
-    {
       "player_id": "eb01cf4b-a689-4016-8c30-0e7b058d0210",
       "sportsmonks_id": 37396586,
       "fantalab_id": "eb01cf4b-a689-4016-8c30-0e7b058d0210",
@@ -1540,6 +1485,34 @@
       "stats": {
         "fmv": 7.25,
         "mv": 6.25
+      }
+    },
+    {
+      "player_id": "d47bf2f7-f320-4340-9845-33ef2f94d175",
+      "sportsmonks_id": 537429,
+      "fantalab_id": "d47bf2f7-f320-4340-9845-33ef2f94d175",
+      "fantacalcio_id": 7485,
+      "name": "Mangas",
+      "full_name": "Ricardo Mangas",
+      "team_id": 1628,
+      "team_name": "Monza",
+      "team_short": "MON",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/1628.png",
+      "role": "D",
+      "mantra_roles": [
+        "Ds",
+        "E"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/537429/v1.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 5,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 7.2,
+        "mv": 6.2
       }
     },
     {
@@ -1734,33 +1707,6 @@
       }
     },
     {
-      "player_id": "3b5b8e3f-ce26-4764-80bd-334b9a5aef7f",
-      "sportsmonks_id": 25954296,
-      "fantalab_id": "3b5b8e3f-ce26-4764-80bd-334b9a5aef7f",
-      "fantacalcio_id": 7347,
-      "name": "Bowie",
-      "full_name": "Kieron Bowie",
-      "team_id": 2714,
-      "team_name": "Sassuolo",
-      "team_short": "SAS",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
-      "role": "A",
-      "mantra_roles": [
-        "Pc"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/25954296/v2.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 4,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": false,
-      "stats": {
-        "fmv": 7,
-        "mv": 6.25
-      }
-    },
-    {
       "player_id": "a3420003-4392-4db8-ae31-712523234361",
       "sportsmonks_id": 1167415,
       "fantalab_id": "a3420003-4392-4db8-ae31-712523234361",
@@ -1813,34 +1759,6 @@
       "stats": {
         "fmv": 7,
         "mv": 6.5
-      }
-    },
-    {
-      "player_id": "371edc7e-8557-4af7-ac46-3481c7601c38",
-      "sportsmonks_id": 37260591,
-      "fantalab_id": "371edc7e-8557-4af7-ac46-3481c7601c38",
-      "fantacalcio_id": 5851,
-      "name": "Doig",
-      "full_name": "Josh Doig",
-      "team_id": 2714,
-      "team_name": "Sassuolo",
-      "team_short": "SAS",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
-      "role": "D",
-      "mantra_roles": [
-        "Ds",
-        "E"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/37260591/v2.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 4,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": false,
-      "stats": {
-        "fmv": 7,
-        "mv": 6.25
       }
     },
     {
@@ -2062,6 +1980,33 @@
       }
     },
     {
+      "player_id": "749247cd-79ed-44d6-a376-50afab6e25a0",
+      "sportsmonks_id": 129553,
+      "fantalab_id": "749247cd-79ed-44d6-a376-50afab6e25a0",
+      "fantacalcio_id": 531,
+      "name": "Berardi",
+      "full_name": "Domenico Berardi ",
+      "team_id": 2714,
+      "team_name": "Sassuolo",
+      "team_short": "SAS",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
+      "role": "A",
+      "mantra_roles": [
+        "A"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/129553/v1.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 4,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 6.88,
+        "mv": 6.13
+      }
+    },
+    {
       "player_id": "c936ac6a-f383-43a3-8568-182189db11a8",
       "sportsmonks_id": 191011,
       "fantalab_id": "c936ac6a-f383-43a3-8568-182189db11a8",
@@ -2171,6 +2116,33 @@
       }
     },
     {
+      "player_id": "3b5b8e3f-ce26-4764-80bd-334b9a5aef7f",
+      "sportsmonks_id": 25954296,
+      "fantalab_id": "3b5b8e3f-ce26-4764-80bd-334b9a5aef7f",
+      "fantacalcio_id": 7347,
+      "name": "Bowie",
+      "full_name": "Kieron Bowie",
+      "team_id": 2714,
+      "team_name": "Sassuolo",
+      "team_short": "SAS",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
+      "role": "A",
+      "mantra_roles": [
+        "Pc"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/25954296/v2.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 5,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 6.8,
+        "mv": 6.2
+      }
+    },
+    {
       "player_id": "2edd4901-5632-4cc8-b8b8-981150639745",
       "sportsmonks_id": 37575719,
       "fantalab_id": "2edd4901-5632-4cc8-b8b8-981150639745",
@@ -2224,34 +2196,6 @@
       "stats": {
         "fmv": 6.76,
         "mv": 6.13
-      }
-    },
-    {
-      "player_id": "9ecf743b-95b3-46f4-b3b8-777f6ed9262f",
-      "sportsmonks_id": 1335,
-      "fantalab_id": "9ecf743b-95b3-46f4-b3b8-777f6ed9262f",
-      "fantacalcio_id": 2528,
-      "name": "Matic",
-      "full_name": "Nemanja Matić",
-      "team_id": 2714,
-      "team_name": "Sassuolo",
-      "team_short": "SAS",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
-      "role": "C",
-      "mantra_roles": [
-        "M",
-        "C"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/1335/v1.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 4,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": false,
-      "stats": {
-        "fmv": 6.76,
-        "mv": 6.63
       }
     },
     {
@@ -2418,6 +2362,62 @@
       "stats": {
         "fmv": 6.75,
         "mv": 6.75
+      }
+    },
+    {
+      "player_id": "371edc7e-8557-4af7-ac46-3481c7601c38",
+      "sportsmonks_id": 37260591,
+      "fantalab_id": "371edc7e-8557-4af7-ac46-3481c7601c38",
+      "fantacalcio_id": 5851,
+      "name": "Doig",
+      "full_name": "Josh Doig",
+      "team_id": 2714,
+      "team_name": "Sassuolo",
+      "team_short": "SAS",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
+      "role": "D",
+      "mantra_roles": [
+        "Ds",
+        "E"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/37260591/v2.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 5,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 6.7,
+        "mv": 6.1
+      }
+    },
+    {
+      "player_id": "9ecf743b-95b3-46f4-b3b8-777f6ed9262f",
+      "sportsmonks_id": 1335,
+      "fantalab_id": "9ecf743b-95b3-46f4-b3b8-777f6ed9262f",
+      "fantacalcio_id": 2528,
+      "name": "Matic",
+      "full_name": "Nemanja Matić",
+      "team_id": 2714,
+      "team_name": "Sassuolo",
+      "team_short": "SAS",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
+      "role": "C",
+      "mantra_roles": [
+        "M",
+        "C"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/1335/v1.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 5,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 6.7,
+        "mv": 6.6
       }
     },
     {
@@ -2837,33 +2837,6 @@
       }
     },
     {
-      "player_id": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
-      "sportsmonks_id": 432840,
-      "fantalab_id": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
-      "fantacalcio_id": 6060,
-      "name": "Laurientè",
-      "full_name": "Armand Laurienté",
-      "team_id": 2714,
-      "team_name": "Sassuolo",
-      "team_short": "SAS",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
-      "role": "A",
-      "mantra_roles": [
-        "A"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/432840/v1.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 4,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": false,
-      "stats": {
-        "fmv": 6.51,
-        "mv": 6.38
-      }
-    },
-    {
       "player_id": "16d2f113-676b-4106-a457-67da034246c5",
       "sportsmonks_id": 35280474,
       "fantalab_id": "16d2f113-676b-4106-a457-67da034246c5",
@@ -2916,6 +2889,34 @@
       "stats": {
         "fmv": 6.5,
         "mv": 5.75
+      }
+    },
+    {
+      "player_id": "18a51ba4-0193-458c-be47-c733b4d9dfd8",
+      "sportsmonks_id": 37737405,
+      "fantalab_id": "18a51ba4-0193-458c-be47-c733b4d9dfd8",
+      "fantacalcio_id": 7036,
+      "name": "Bakola",
+      "full_name": "Darryl Bakola",
+      "team_id": 2714,
+      "team_name": "Sassuolo",
+      "team_short": "SAS",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
+      "role": "C",
+      "mantra_roles": [
+        "C",
+        "T"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/37737405/v1.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 4,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 6.5,
+        "mv": 6.25
       }
     },
     {
@@ -3054,34 +3055,6 @@
       "stats": {
         "fmv": 6.5,
         "mv": 6.25
-      }
-    },
-    {
-      "player_id": "18a51ba4-0193-458c-be47-c733b4d9dfd8",
-      "sportsmonks_id": 37737405,
-      "fantalab_id": "18a51ba4-0193-458c-be47-c733b4d9dfd8",
-      "fantacalcio_id": 7036,
-      "name": "Bakola",
-      "full_name": "Darryl Bakola",
-      "team_id": 2714,
-      "team_name": "Sassuolo",
-      "team_short": "SAS",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
-      "role": "C",
-      "mantra_roles": [
-        "C",
-        "T"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/37737405/v1.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 3,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": false,
-      "stats": {
-        "fmv": 6.5,
-        "mv": 6.17
       }
     },
     {
@@ -3361,6 +3334,33 @@
       }
     },
     {
+      "player_id": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
+      "sportsmonks_id": 432840,
+      "fantalab_id": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
+      "fantacalcio_id": 6060,
+      "name": "Laurientè",
+      "full_name": "Armand Laurienté",
+      "team_id": 2714,
+      "team_name": "Sassuolo",
+      "team_short": "SAS",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
+      "role": "A",
+      "mantra_roles": [
+        "A"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/432840/v1.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 5,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 6.4,
+        "mv": 6.3
+      }
+    },
+    {
       "player_id": "1392a871-45c8-4782-8b9e-583c324b8eec",
       "sportsmonks_id": 129476,
       "fantalab_id": "1392a871-45c8-4782-8b9e-583c324b8eec",
@@ -3499,34 +3499,6 @@
       }
     },
     {
-      "player_id": "0d58faf5-1ed1-4610-8a3b-caddd2c688a8",
-      "sportsmonks_id": 37459055,
-      "fantalab_id": "0d58faf5-1ed1-4610-8a3b-caddd2c688a8",
-      "fantacalcio_id": 7564,
-      "name": "Leysen F.",
-      "full_name": "Fedde Leysen",
-      "team_id": 2714,
-      "team_name": "Sassuolo",
-      "team_short": "SAS",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
-      "role": "D",
-      "mantra_roles": [
-        "Ds",
-        "Dc"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/37459055/v1.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 4,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": false,
-      "stats": {
-        "fmv": 6.38,
-        "mv": 6.25
-      }
-    },
-    {
       "player_id": "ab2a5fb7-6ee0-4efe-92d2-adafe3bb3d3d",
       "sportsmonks_id": 24081699,
       "fantalab_id": "ab2a5fb7-6ee0-4efe-92d2-adafe3bb3d3d",
@@ -3661,33 +3633,6 @@
       "stats": {
         "fmv": 6.34,
         "mv": 6.17
-      }
-    },
-    {
-      "player_id": "fd980a09-99b1-4174-81e5-60cbcd1fbb49",
-      "sportsmonks_id": 37684319,
-      "fantalab_id": "fd980a09-99b1-4174-81e5-60cbcd1fbb49",
-      "fantacalcio_id": 6593,
-      "name": "Akinsanmiro",
-      "full_name": "Ebenezer Akinsanmiro",
-      "team_id": 1628,
-      "team_name": "Monza",
-      "team_short": "MON",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/1628.png",
-      "role": "C",
-      "mantra_roles": [
-        "C"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/37684319/v4.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 3,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": false,
-      "stats": {
-        "fmv": 6.33,
-        "mv": 6
       }
     },
     {
@@ -3884,6 +3829,63 @@
       }
     },
     {
+      "player_id": "76ccd152-fe9d-440b-a890-6c9adef778ec",
+      "sportsmonks_id": 132862,
+      "fantalab_id": "76ccd152-fe9d-440b-a890-6c9adef778ec",
+      "fantacalcio_id": 5838,
+      "name": "Birindelli",
+      "full_name": "Samuele Birindelli",
+      "team_id": 1628,
+      "team_name": "Monza",
+      "team_short": "MON",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/1628.png",
+      "role": "D",
+      "mantra_roles": [
+        "Dd",
+        "Ds",
+        "E"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/132862/v1.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 5,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 6.3,
+        "mv": 6
+      }
+    },
+    {
+      "player_id": "0d58faf5-1ed1-4610-8a3b-caddd2c688a8",
+      "sportsmonks_id": 37459055,
+      "fantalab_id": "0d58faf5-1ed1-4610-8a3b-caddd2c688a8",
+      "fantacalcio_id": 7564,
+      "name": "Leysen F.",
+      "full_name": "Fedde Leysen",
+      "team_id": 2714,
+      "team_name": "Sassuolo",
+      "team_short": "SAS",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
+      "role": "D",
+      "mantra_roles": [
+        "Ds",
+        "Dc"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/37459055/v1.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 5,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 6.3,
+        "mv": 6.2
+      }
+    },
+    {
       "player_id": "fed6d3d3-72d2-46f8-b556-77a12cc4dd0d",
       "sportsmonks_id": 10967415,
       "fantalab_id": "fed6d3d3-72d2-46f8-b556-77a12cc4dd0d",
@@ -3994,6 +3996,33 @@
       }
     },
     {
+      "player_id": "fd980a09-99b1-4174-81e5-60cbcd1fbb49",
+      "sportsmonks_id": 37684319,
+      "fantalab_id": "fd980a09-99b1-4174-81e5-60cbcd1fbb49",
+      "fantacalcio_id": 6593,
+      "name": "Akinsanmiro",
+      "full_name": "Ebenezer Akinsanmiro",
+      "team_id": 1628,
+      "team_name": "Monza",
+      "team_short": "MON",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/1628.png",
+      "role": "C",
+      "mantra_roles": [
+        "C"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/37684319/v4.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 4,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 6.25,
+        "mv": 6
+      }
+    },
+    {
       "player_id": "c3763cc2-a3d9-403f-8f5a-856896a47c5d",
       "sportsmonks_id": 129429,
       "fantalab_id": "c3763cc2-a3d9-403f-8f5a-856896a47c5d",
@@ -4019,34 +4048,6 @@
       "stats": {
         "fmv": 6.25,
         "mv": 6.25
-      }
-    },
-    {
-      "player_id": "76cabc00-f29e-402b-aa35-b88bacfd8aae",
-      "sportsmonks_id": 37653198,
-      "fantalab_id": "76cabc00-f29e-402b-aa35-b88bacfd8aae",
-      "fantacalcio_id": 7573,
-      "name": "Cinquegrano",
-      "full_name": "Simone Cinquegrano",
-      "team_id": 2714,
-      "team_name": "Sassuolo",
-      "team_short": "SAS",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
-      "role": "D",
-      "mantra_roles": [
-        "Dd",
-        "E"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/37653198/v1.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 4,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": false,
-      "stats": {
-        "fmv": 6.25,
-        "mv": 6
       }
     },
     {
@@ -4321,6 +4322,33 @@
       "presenze": 2,
       "is_in_listone": true,
       "is_in_listone_euroleghe": true,
+      "stats": {
+        "fmv": 6.25,
+        "mv": 6.25
+      }
+    },
+    {
+      "player_id": "88893e63-f3f6-4224-838b-8e189ef9f312",
+      "sportsmonks_id": 132079,
+      "fantalab_id": "88893e63-f3f6-4224-838b-8e189ef9f312",
+      "fantacalcio_id": 5882,
+      "name": "Mota",
+      "full_name": "Dany Mota",
+      "team_id": 1628,
+      "team_name": "Monza",
+      "team_short": "MON",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/1628.png",
+      "role": "A",
+      "mantra_roles": [
+        "A"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/132079/v1.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 2,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
       "stats": {
         "fmv": 6.25,
         "mv": 6.25
@@ -4713,35 +4741,6 @@
       }
     },
     {
-      "player_id": "76ccd152-fe9d-440b-a890-6c9adef778ec",
-      "sportsmonks_id": 132862,
-      "fantalab_id": "76ccd152-fe9d-440b-a890-6c9adef778ec",
-      "fantacalcio_id": 5838,
-      "name": "Birindelli",
-      "full_name": "Samuele Birindelli",
-      "team_id": 1628,
-      "team_name": "Monza",
-      "team_short": "MON",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/1628.png",
-      "role": "D",
-      "mantra_roles": [
-        "Dd",
-        "Ds",
-        "E"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/132862/v1.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 4,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": false,
-      "stats": {
-        "fmv": 6.13,
-        "mv": 5.88
-      }
-    },
-    {
       "player_id": "23591c67-0ce7-4ea7-9a8e-90692f978cf4",
       "sportsmonks_id": 37612468,
       "fantalab_id": "23591c67-0ce7-4ea7-9a8e-90692f978cf4",
@@ -5127,6 +5126,34 @@
       "stats": {
         "fmv": 6.13,
         "mv": 6.25
+      }
+    },
+    {
+      "player_id": "76cabc00-f29e-402b-aa35-b88bacfd8aae",
+      "sportsmonks_id": 37653198,
+      "fantalab_id": "76cabc00-f29e-402b-aa35-b88bacfd8aae",
+      "fantacalcio_id": 7573,
+      "name": "Cinquegrano",
+      "full_name": "Simone Cinquegrano",
+      "team_id": 2714,
+      "team_name": "Sassuolo",
+      "team_short": "SAS",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
+      "role": "D",
+      "mantra_roles": [
+        "Dd",
+        "E"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/37653198/v1.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 5,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 6.1,
+        "mv": 5.9
       }
     },
     {
@@ -5520,6 +5547,34 @@
       }
     },
     {
+      "player_id": "2d943164-e3df-4a78-a795-93d26f2623e7",
+      "sportsmonks_id": 37653813,
+      "fantalab_id": "2d943164-e3df-4a78-a795-93d26f2623e7",
+      "fantacalcio_id": 7476,
+      "name": "Bakoune",
+      "full_name": "Adam Bakoune",
+      "team_id": 1628,
+      "team_name": "Monza",
+      "team_short": "MON",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/1628.png",
+      "role": "D",
+      "mantra_roles": [
+        "Dd",
+        "E"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/37653813/v1.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 3,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 6,
+        "mv": 6
+      }
+    },
+    {
       "player_id": "eb1e8211-468b-4db8-b9be-1a15afa2339d",
       "sportsmonks_id": 37904226,
       "fantalab_id": "eb1e8211-468b-4db8-b9be-1a15afa2339d",
@@ -5574,33 +5629,6 @@
       "stats": {
         "fmv": 6,
         "mv": 6.17
-      }
-    },
-    {
-      "player_id": "4cc6309e-aacf-4bb2-b5a8-e425bfdafcb0",
-      "sportsmonks_id": 133805,
-      "fantalab_id": "4cc6309e-aacf-4bb2-b5a8-e425bfdafcb0",
-      "fantacalcio_id": 2155,
-      "name": "Cutrone",
-      "full_name": "Patrick Cutrone",
-      "team_id": 1628,
-      "team_name": "Monza",
-      "team_short": "MON",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/1628.png",
-      "role": "A",
-      "mantra_roles": [
-        "Pc"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/133805/v1.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 3,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": false,
-      "stats": {
-        "fmv": 6,
-        "mv": 6
       }
     },
     {
@@ -5906,34 +5934,6 @@
       }
     },
     {
-      "player_id": "dbad7fbe-2421-4646-9b4f-6f065ae9a076",
-      "sportsmonks_id": 37599992,
-      "fantalab_id": "dbad7fbe-2421-4646-9b4f-6f065ae9a076",
-      "fantacalcio_id": 6246,
-      "name": "Lipani",
-      "full_name": "Luca Lipani",
-      "team_id": 2714,
-      "team_name": "Sassuolo",
-      "team_short": "SAS",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
-      "role": "C",
-      "mantra_roles": [
-        "M",
-        "C"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/37599992/v1.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 2,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": false,
-      "stats": {
-        "fmv": 6,
-        "mv": 6.25
-      }
-    },
-    {
       "player_id": "3be96eac-0e83-4c3c-95db-1703ee2061a9",
       "sportsmonks_id": 31284407,
       "fantalab_id": "3be96eac-0e83-4c3c-95db-1703ee2061a9",
@@ -6060,6 +6060,33 @@
         "Pc"
       ],
       "player_image": "https://cdn.falsesoftware.com/players/9939034/v1.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 1,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 6,
+        "mv": 6
+      }
+    },
+    {
+      "player_id": "409ec215-c1df-4c66-b5f6-11e32645341d",
+      "sportsmonks_id": 52573,
+      "fantalab_id": "409ec215-c1df-4c66-b5f6-11e32645341d",
+      "fantacalcio_id": 4147,
+      "name": "Caleta-Car",
+      "full_name": "Duje Caleta-Car",
+      "team_id": 2714,
+      "team_name": "Sassuolo",
+      "team_short": "SAS",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
+      "role": "D",
+      "mantra_roles": [
+        "Dc"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/52573/v2.webp",
       "league": "serie_a",
       "league_id": 384,
       "league_name": "Serie A",
@@ -6424,33 +6451,6 @@
       "presenze": 1,
       "is_in_listone": true,
       "is_in_listone_euroleghe": true,
-      "stats": {
-        "fmv": 6,
-        "mv": 6
-      }
-    },
-    {
-      "player_id": "88893e63-f3f6-4224-838b-8e189ef9f312",
-      "sportsmonks_id": 132079,
-      "fantalab_id": "88893e63-f3f6-4224-838b-8e189ef9f312",
-      "fantacalcio_id": 5882,
-      "name": "Mota",
-      "full_name": "Dany Mota",
-      "team_id": 1628,
-      "team_name": "Monza",
-      "team_short": "MON",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/1628.png",
-      "role": "A",
-      "mantra_roles": [
-        "A"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/132079/v1.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 1,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": false,
       "stats": {
         "fmv": 6,
         "mv": 6
@@ -7092,6 +7092,33 @@
       }
     },
     {
+      "player_id": "4cc6309e-aacf-4bb2-b5a8-e425bfdafcb0",
+      "sportsmonks_id": 133805,
+      "fantalab_id": "4cc6309e-aacf-4bb2-b5a8-e425bfdafcb0",
+      "fantacalcio_id": 2155,
+      "name": "Cutrone",
+      "full_name": "Patrick Cutrone",
+      "team_id": 1628,
+      "team_name": "Monza",
+      "team_short": "MON",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/1628.png",
+      "role": "A",
+      "mantra_roles": [
+        "Pc"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/133805/v1.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 4,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 5.88,
+        "mv": 5.88
+      }
+    },
+    {
       "player_id": "0ea3b547-311e-4fa7-a58a-26f37efb05f5",
       "sportsmonks_id": 14337998,
       "fantalab_id": "0ea3b547-311e-4fa7-a58a-26f37efb05f5",
@@ -7118,6 +7145,34 @@
       "stats": {
         "fmv": 5.88,
         "mv": 6
+      }
+    },
+    {
+      "player_id": "bd8db1bf-e321-4a41-8c85-d8c992036168",
+      "sportsmonks_id": 37607194,
+      "fantalab_id": "bd8db1bf-e321-4a41-8c85-d8c992036168",
+      "fantacalcio_id": 6895,
+      "name": "Dominguez B.",
+      "full_name": "Benja Domínguez",
+      "team_id": 2714,
+      "team_name": "Sassuolo",
+      "team_short": "SAS",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
+      "role": "C",
+      "mantra_roles": [
+        "W",
+        "A"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/37607194/v2.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 4,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 5.88,
+        "mv": 5.88
       }
     },
     {
@@ -7199,34 +7254,6 @@
       "presenze": 4,
       "is_in_listone": true,
       "is_in_listone_euroleghe": true,
-      "stats": {
-        "fmv": 5.88,
-        "mv": 5.88
-      }
-    },
-    {
-      "player_id": "dc221c49-a187-478c-b460-b8daab6631e2",
-      "sportsmonks_id": 12016844,
-      "fantalab_id": "dc221c49-a187-478c-b460-b8daab6631e2",
-      "fantacalcio_id": 5844,
-      "name": "Thorstvedt",
-      "full_name": "Kristian Thorstvedt",
-      "team_id": 2714,
-      "team_name": "Sassuolo",
-      "team_short": "SAS",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
-      "role": "C",
-      "mantra_roles": [
-        "C",
-        "T"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/12016844/v2.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 4,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": false,
       "stats": {
         "fmv": 5.88,
         "mv": 5.88
@@ -7422,6 +7449,34 @@
       }
     },
     {
+      "player_id": "dbad7fbe-2421-4646-9b4f-6f065ae9a076",
+      "sportsmonks_id": 37599992,
+      "fantalab_id": "dbad7fbe-2421-4646-9b4f-6f065ae9a076",
+      "fantacalcio_id": 6246,
+      "name": "Lipani",
+      "full_name": "Luca Lipani",
+      "team_id": 2714,
+      "team_name": "Sassuolo",
+      "team_short": "SAS",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
+      "role": "C",
+      "mantra_roles": [
+        "M",
+        "C"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/37599992/v1.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 3,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 5.84,
+        "mv": 6.17
+      }
+    },
+    {
       "player_id": "1eceb250-521e-4a1c-beff-c21eccc15af6",
       "sportsmonks_id": 37590339,
       "fantalab_id": "1eceb250-521e-4a1c-beff-c21eccc15af6",
@@ -7504,22 +7559,21 @@
       }
     },
     {
-      "player_id": "bd8db1bf-e321-4a41-8c85-d8c992036168",
-      "sportsmonks_id": 37607194,
-      "fantalab_id": "bd8db1bf-e321-4a41-8c85-d8c992036168",
-      "fantacalcio_id": 6895,
-      "name": "Dominguez B.",
-      "full_name": "Benja Domínguez",
-      "team_id": 2714,
-      "team_name": "Sassuolo",
-      "team_short": "SAS",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
+      "player_id": "5e559083-6456-4918-8130-ba0af7bab6dc",
+      "sportsmonks_id": 37699520,
+      "fantalab_id": "5e559083-6456-4918-8130-ba0af7bab6dc",
+      "fantacalcio_id": 7574,
+      "name": "Foe Ondoa",
+      "full_name": "Foe Ondoa",
+      "team_id": 1628,
+      "team_name": "Monza",
+      "team_short": "MON",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/1628.png",
       "role": "C",
       "mantra_roles": [
-        "W",
-        "A"
+        "C"
       ],
-      "player_image": "https://cdn.falsesoftware.com/players/37607194/v2.webp",
+      "player_image": "https://cdn.falsesoftware.com/players/37699520/v1.webp",
       "league": "serie_a",
       "league_id": 384,
       "league_name": "Serie A",
@@ -7861,6 +7915,34 @@
       "stats": {
         "fmv": 5.81,
         "mv": 5.85
+      }
+    },
+    {
+      "player_id": "dc221c49-a187-478c-b460-b8daab6631e2",
+      "sportsmonks_id": 12016844,
+      "fantalab_id": "dc221c49-a187-478c-b460-b8daab6631e2",
+      "fantacalcio_id": 5844,
+      "name": "Thorstvedt",
+      "full_name": "Kristian Thorstvedt",
+      "team_id": 2714,
+      "team_name": "Sassuolo",
+      "team_short": "SAS",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
+      "role": "C",
+      "mantra_roles": [
+        "C",
+        "T"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/12016844/v2.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 5,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 5.8,
+        "mv": 5.8
       }
     },
     {
@@ -8335,34 +8417,6 @@
       }
     },
     {
-      "player_id": "2d943164-e3df-4a78-a795-93d26f2623e7",
-      "sportsmonks_id": 37653813,
-      "fantalab_id": "2d943164-e3df-4a78-a795-93d26f2623e7",
-      "fantacalcio_id": 7476,
-      "name": "Bakoune",
-      "full_name": "Adam Bakoune",
-      "team_id": 1628,
-      "team_name": "Monza",
-      "team_short": "MON",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/1628.png",
-      "role": "D",
-      "mantra_roles": [
-        "Dd",
-        "E"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/37653813/v1.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 2,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": false,
-      "stats": {
-        "fmv": 5.75,
-        "mv": 5.75
-      }
-    },
-    {
       "player_id": "6d146e3a-93ac-4fda-9c2b-8a65c94ab79d",
       "sportsmonks_id": 74062,
       "fantalab_id": "6d146e3a-93ac-4fda-9c2b-8a65c94ab79d",
@@ -8462,33 +8516,6 @@
         "C"
       ],
       "player_image": "https://cdn.falsesoftware.com/players/37678621/v1.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 2,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": false,
-      "stats": {
-        "fmv": 5.75,
-        "mv": 5.75
-      }
-    },
-    {
-      "player_id": "5e559083-6456-4918-8130-ba0af7bab6dc",
-      "sportsmonks_id": 37699520,
-      "fantalab_id": "5e559083-6456-4918-8130-ba0af7bab6dc",
-      "fantacalcio_id": 7574,
-      "name": "Foe Ondoa",
-      "full_name": "Foe Ondoa",
-      "team_id": 1628,
-      "team_name": "Monza",
-      "team_short": "MON",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/1628.png",
-      "role": "C",
-      "mantra_roles": [
-        "C"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/37699520/v1.webp",
       "league": "serie_a",
       "league_id": 384,
       "league_name": "Serie A",
@@ -9141,6 +9168,34 @@
       }
     },
     {
+      "player_id": "f729e4bf-bf18-4e1d-827a-20ef37865b8a",
+      "sportsmonks_id": 37391070,
+      "fantalab_id": "f729e4bf-bf18-4e1d-827a-20ef37865b8a",
+      "fantacalcio_id": 4925,
+      "name": "Carboni A.",
+      "full_name": "Andrea Carboni",
+      "team_id": 1628,
+      "team_name": "Monza",
+      "team_short": "MON",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/1628.png",
+      "role": "D",
+      "mantra_roles": [
+        "Ds",
+        "Dc"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/37391070/v1.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 5,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 5.7,
+        "mv": 5.7
+      }
+    },
+    {
       "player_id": "822eef68-617a-489d-acd7-806538ab99d2",
       "sportsmonks_id": 21803015,
       "fantalab_id": "822eef68-617a-489d-acd7-806538ab99d2",
@@ -9443,34 +9498,6 @@
       "stats": {
         "fmv": 5.64,
         "mv": 5.67
-      }
-    },
-    {
-      "player_id": "f729e4bf-bf18-4e1d-827a-20ef37865b8a",
-      "sportsmonks_id": 37391070,
-      "fantalab_id": "f729e4bf-bf18-4e1d-827a-20ef37865b8a",
-      "fantacalcio_id": 4925,
-      "name": "Carboni A.",
-      "full_name": "Andrea Carboni",
-      "team_id": 1628,
-      "team_name": "Monza",
-      "team_short": "MON",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/1628.png",
-      "role": "D",
-      "mantra_roles": [
-        "Ds",
-        "Dc"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/37391070/v1.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 4,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": false,
-      "stats": {
-        "fmv": 5.63,
-        "mv": 5.63
       }
     },
     {
@@ -10055,34 +10082,6 @@
       }
     },
     {
-      "player_id": "9b9115fc-6b78-47ec-9924-c974e8b83378",
-      "sportsmonks_id": 37729314,
-      "fantalab_id": "9b9115fc-6b78-47ec-9924-c974e8b83378",
-      "fantacalcio_id": 7238,
-      "name": "Kouadio",
-      "full_name": "Eddy Kouadio",
-      "team_id": 1628,
-      "team_name": "Monza",
-      "team_short": "MON",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/1628.png",
-      "role": "D",
-      "mantra_roles": [
-        "Dd",
-        "Dc"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/37729314/v2.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 4,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": false,
-      "stats": {
-        "fmv": 5.51,
-        "mv": 5.63
-      }
-    },
-    {
       "player_id": "e01c03d6-37a1-44be-bcf2-76cfa7fd0df3",
       "sportsmonks_id": 37592644,
       "fantalab_id": "e01c03d6-37a1-44be-bcf2-76cfa7fd0df3",
@@ -10189,6 +10188,61 @@
       "stats": {
         "fmv": 5.51,
         "mv": 5.63
+      }
+    },
+    {
+      "player_id": "9b9115fc-6b78-47ec-9924-c974e8b83378",
+      "sportsmonks_id": 37729314,
+      "fantalab_id": "9b9115fc-6b78-47ec-9924-c974e8b83378",
+      "fantacalcio_id": 7238,
+      "name": "Kouadio",
+      "full_name": "Eddy Kouadio",
+      "team_id": 1628,
+      "team_name": "Monza",
+      "team_short": "MON",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/1628.png",
+      "role": "D",
+      "mantra_roles": [
+        "Dd",
+        "Dc"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/37729314/v2.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 5,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 5.5,
+        "mv": 5.7
+      }
+    },
+    {
+      "player_id": "b6596869-9189-4e7e-910b-d56d056ee034",
+      "sportsmonks_id": 37600933,
+      "fantalab_id": "b6596869-9189-4e7e-910b-d56d056ee034",
+      "fantacalcio_id": 6659,
+      "name": "Lucchesi",
+      "full_name": "Lorenzo Lucchesi",
+      "team_id": 1628,
+      "team_name": "Monza",
+      "team_short": "MON",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/1628.png",
+      "role": "D",
+      "mantra_roles": [
+        "Dc"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/37600933/v1.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 5,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 5.5,
+        "mv": 5.7
       }
     },
     {
@@ -11218,6 +11272,33 @@
       }
     },
     {
+      "player_id": "b4537b2c-643d-4182-9c88-5669bb11e7f6",
+      "sportsmonks_id": 37395404,
+      "fantalab_id": "b4537b2c-643d-4182-9c88-5669bb11e7f6",
+      "fantacalcio_id": 7301,
+      "name": "Tornqvist",
+      "full_name": "Noel Törnqvist",
+      "team_id": 1628,
+      "team_name": "Monza",
+      "team_short": "MON",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/1628.png",
+      "role": "P",
+      "mantra_roles": [
+        "Por"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/37395404/v1.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 1,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 5.5,
+        "mv": 6.5
+      }
+    },
+    {
       "player_id": "63942496-8801-49de-a546-1936651b99d5",
       "sportsmonks_id": 37598725,
       "fantalab_id": "63942496-8801-49de-a546-1936651b99d5",
@@ -11518,34 +11599,6 @@
       }
     },
     {
-      "player_id": "d5269f57-2928-4d3d-855c-fa0be565d03a",
-      "sportsmonks_id": 368455,
-      "fantalab_id": "d5269f57-2928-4d3d-855c-fa0be565d03a",
-      "fantacalcio_id": 6252,
-      "name": "Folorunsho",
-      "full_name": "Michael Folorunsho",
-      "team_id": 1628,
-      "team_name": "Monza",
-      "team_short": "MON",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/1628.png",
-      "role": "C",
-      "mantra_roles": [
-        "C",
-        "T"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/368455/v3.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 3,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": false,
-      "stats": {
-        "fmv": 5.33,
-        "mv": 5.5
-      }
-    },
-    {
       "player_id": "4f21f16a-dafc-43da-b1d5-789a1a4be6f7",
       "sportsmonks_id": 96804,
       "fantalab_id": "4f21f16a-dafc-43da-b1d5-789a1a4be6f7",
@@ -11627,21 +11680,22 @@
       }
     },
     {
-      "player_id": "b6596869-9189-4e7e-910b-d56d056ee034",
-      "sportsmonks_id": 37600933,
-      "fantalab_id": "b6596869-9189-4e7e-910b-d56d056ee034",
-      "fantacalcio_id": 6659,
-      "name": "Lucchesi",
-      "full_name": "Lorenzo Lucchesi",
+      "player_id": "d5269f57-2928-4d3d-855c-fa0be565d03a",
+      "sportsmonks_id": 368455,
+      "fantalab_id": "d5269f57-2928-4d3d-855c-fa0be565d03a",
+      "fantacalcio_id": 6252,
+      "name": "Folorunsho",
+      "full_name": "Michael Folorunsho",
       "team_id": 1628,
       "team_name": "Monza",
       "team_short": "MON",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/1628.png",
-      "role": "D",
+      "role": "C",
       "mantra_roles": [
-        "Dc"
+        "C",
+        "T"
       ],
-      "player_image": "https://cdn.falsesoftware.com/players/37600933/v1.webp",
+      "player_image": "https://cdn.falsesoftware.com/players/368455/v3.webp",
       "league": "serie_a",
       "league_id": 384,
       "league_name": "Serie A",
@@ -12857,33 +12911,6 @@
       }
     },
     {
-      "player_id": "9c483384-d40d-4152-aa37-d7fd00624646",
-      "sportsmonks_id": 538038,
-      "fantalab_id": "9c483384-d40d-4152-aa37-d7fd00624646",
-      "fantacalcio_id": 4236,
-      "name": "Muric",
-      "full_name": "Arijanet Murić",
-      "team_id": 2714,
-      "team_name": "Sassuolo",
-      "team_short": "SAS",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
-      "role": "P",
-      "mantra_roles": [
-        "Por"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/538038/v1.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 4,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": false,
-      "stats": {
-        "fmv": 4.13,
-        "mv": 5.88
-      }
-    },
-    {
       "player_id": "36a9825a-5980-4cda-8103-62cc944e7a83",
       "sportsmonks_id": 460159,
       "fantalab_id": "36a9825a-5980-4cda-8103-62cc944e7a83",
@@ -12935,6 +12962,33 @@
       "stats": {
         "fmv": 3.88,
         "mv": 6.38
+      }
+    },
+    {
+      "player_id": "9c483384-d40d-4152-aa37-d7fd00624646",
+      "sportsmonks_id": 538038,
+      "fantalab_id": "9c483384-d40d-4152-aa37-d7fd00624646",
+      "fantacalcio_id": 4236,
+      "name": "Muric",
+      "full_name": "Arijanet Murić",
+      "team_id": 2714,
+      "team_name": "Sassuolo",
+      "team_short": "SAS",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
+      "role": "P",
+      "mantra_roles": [
+        "Por"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/538038/v1.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 5,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 3.8,
+        "mv": 5.6
       }
     },
     {
@@ -13305,33 +13359,6 @@
         "Por"
       ],
       "player_image": "https://cdn.falsesoftware.com/players/366496/v1.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 0,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": false,
-      "stats": {
-        "fmv": null,
-        "mv": null
-      }
-    },
-    {
-      "player_id": "409ec215-c1df-4c66-b5f6-11e32645341d",
-      "sportsmonks_id": 52573,
-      "fantalab_id": "409ec215-c1df-4c66-b5f6-11e32645341d",
-      "fantacalcio_id": 4147,
-      "name": "Caleta-Car",
-      "full_name": "Duje Caleta-Car",
-      "team_id": 2714,
-      "team_name": "Sassuolo",
-      "team_short": "SAS",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/2714.png",
-      "role": "D",
-      "mantra_roles": [
-        "Dc"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/52573/v2.webp",
       "league": "serie_a",
       "league_id": 384,
       "league_name": "Serie A",
@@ -14661,33 +14688,6 @@
       }
     },
     {
-      "player_id": "b4537b2c-643d-4182-9c88-5669bb11e7f6",
-      "sportsmonks_id": 37395404,
-      "fantalab_id": "b4537b2c-643d-4182-9c88-5669bb11e7f6",
-      "fantacalcio_id": 7301,
-      "name": "Tornqvist",
-      "full_name": "Noel Törnqvist",
-      "team_id": 1628,
-      "team_name": "Monza",
-      "team_short": "MON",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/1628.png",
-      "role": "P",
-      "mantra_roles": [
-        "Por"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/37395404/v1.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 0,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": false,
-      "stats": {
-        "fmv": null,
-        "mv": null
-      }
-    },
-    {
       "player_id": "4c0cefbf-1439-4815-9004-9bfdb5c41023",
       "sportsmonks_id": 37653812,
       "fantalab_id": "4c0cefbf-1439-4815-9004-9bfdb5c41023",
@@ -14752,7 +14752,7 @@
       "league": "serie_a",
       "league_id": 384,
       "season_id": 27895,
-      "giornate_giocate": 4
+      "giornate_giocate": 5
     }
   ],
   "aggregate": "by_player_league",
