@@ -303,16 +303,16 @@
         "id": 6898
       },
       {
-        "player_id": "72b2eb13-c625-4fd5-b0e1-349d05f9e2e6",
-        "id": 6206
+        "player_id": "280d15dc-3cf6-47ec-ad41-19b983b09d20",
+        "id": 6229
       },
       {
         "player_id": "2e331f32-cc88-4a67-b471-f05a2db80063",
         "id": 7561
       },
       {
-        "player_id": "280d15dc-3cf6-47ec-ad41-19b983b09d20",
-        "id": 6229
+        "player_id": "eb01cf4b-a689-4016-8c30-0e7b058d0210",
+        "id": 7554
       }
     ],
     "rig": [
@@ -345,14 +345,14 @@
         "player_id": "4505706f-e4f1-483b-995c-6c12460a2fe7"
       }
     ],
-    "module": "3-5-2",
+    "module": "3-4-2-1",
     "coach": "Carlos Cuesta",
     "attack": 2,
     "defense": 2.5,
     "comment": "ll nuovo Parma abbraccia un calcio moderno e ambizioso: pressing alto, scambi di posizione e ricerca costante della superiorità numerica. Un’impronta propositiva che può tradursi in bonus preziosi per i fantallenatori. Il mantra sarà il coraggio nelle giocate e la fluidità tra i reparti. Per rendere efficace il sistema serviranno interpreti duttili, tecnici e dinamici: il mercato estivo sarà quindi decisivo. Nel precampionato è stata testata la difesa a tre, con Delprato e Valeri schierati da quinti per garantire ampiezza e spinta. Le due punte saranno supportate da centrocampisti offensivi e inserimenti continui.",
-    "sosFantaComment": "Confermato Cuesta in panchina nel Parma, dopo una prima parte di stagione col 4-3-3 è tornato al 3-5-2. Diego Carlos è arrivato per giocare in difesa, come Fabbian a centrocampo: favorito su Ordonez. In attacco sono principalmente in tre per due posti: El Bilal Touré, Romero e il baby Lontani, vera e propria sorpresa di questa prima parte di stagione. È già più di una semplice alternativa. Senza dimenticare Elphege.",
+    "sosFantaComment": "Confermato Cuesta in panchina nel Parma, dopo una prima parte di stagione col 4-3-3 è passato al 3-4-2-1. Diego Carlos è arrivato per giocare in difesa. A centrocampo i titolari sono Keita e Bernabé, ma troverà spazio anche Sierro. In attacco i tre titolari sono: El Bilal Touré, Romero e il baby Lontani, vera e propria sorpresa di questa prima parte di stagione. È già più di una semplice alternativa. Senza dimenticare Elphege.",
     "created_at": "2026-07-21T13:10:52.139Z",
-    "updated_at": "2026-09-15T09:27:10.701Z",
+    "updated_at": "2026-09-22T09:34:03.483Z",
     "up": [
       {
         "player_id": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
@@ -418,31 +418,7 @@
       {
         "players": [
           {
-            "player_id": "72b2eb13-c625-4fd5-b0e1-349d05f9e2e6",
-            "perc": 51
-          },
-          {
-            "player_id": "13034c80-e0fe-41b2-afdf-fcd19188d226",
-            "perc": 49
-          }
-        ]
-      },
-      {
-        "players": [
-          {
-            "player_id": "2e331f32-cc88-4a67-b471-f05a2db80063",
-            "perc": 51
-          },
-          {
             "player_id": "eb01cf4b-a689-4016-8c30-0e7b058d0210",
-            "perc": 49
-          }
-        ]
-      },
-      {
-        "players": [
-          {
-            "player_id": "280d15dc-3cf6-47ec-ad41-19b983b09d20",
             "perc": 60
           },
           {
@@ -482,7 +458,7 @@
       }
     ],
     "createdAt": "2026-07-21T13:10:52.139Z",
-    "updatedAt": "2026-09-15T09:27:10.701Z"
+    "updatedAt": "2026-09-22T09:34:03.483Z"
   },
   {
     "team": "LEC",
@@ -723,8 +699,8 @@
         "id": "133"
       },
       {
-        "player_id": "b894b38e-67c8-42fb-946f-36b8a7b60349",
-        "id": 5678
+        "player_id": "4233bc51-6269-438c-8e85-5a77b7c17562",
+        "id": 7326
       },
       {
         "player_id": "dcd02213-98f7-48f7-9fe1-0825be166801",
@@ -735,24 +711,24 @@
         "id": 5675
       },
       {
-        "player_id": "c904108e-6a70-494d-9732-b39d2fc8264a",
-        "id": 4734
+        "player_id": "2a411338-4370-4a88-8d00-f47f2167b09f",
+        "id": 4433
       },
       {
-        "player_id": "d796b194-efcc-4186-9291-2a8afcbf35ae",
-        "id": 5858
+        "player_id": "c904108e-6a70-494d-9732-b39d2fc8264a",
+        "id": 4734
       },
       {
         "player_id": "c07a5ed0-b1db-429b-9291-2998365fffc3",
         "id": 5298
       },
       {
-        "player_id": "c8bad906-4705-460c-88d4-708b73446b1b",
-        "id": 2167
+        "player_id": "d796b194-efcc-4186-9291-2a8afcbf35ae",
+        "id": 5858
       },
       {
-        "player_id": "c3763cc2-a3d9-403f-8f5a-856896a47c5d",
-        "id": 184
+        "player_id": "c8bad906-4705-460c-88d4-708b73446b1b",
+        "id": 2167
       },
       {
         "player_id": "5232e236-cf75-4f0c-baf3-47c6c2e2887a",
@@ -793,14 +769,14 @@
         "player_id": "d796b194-efcc-4186-9291-2a8afcbf35ae"
       }
     ],
-    "module": "4-2-3-1",
+    "module": "3-4-3",
     "coach": "Raffaele Palladino",
     "attack": 4,
     "defense": 3.5,
     "comment": "Il Bologna si caratterizza per un gioco molto dinamico, con i giocatori che spesso si scambiano le posizioni per creare confusione nella difesa avversaria. Il ruolo degli esterni d’attacco è fondamentale: sono loro a garantire ampiezza, velocità e spesso i gol e gli assist più importanti. La difesa è molto alta, in linea con il pressing aggressivo che la squadra mette in campo, ma questo comporta qualche rischio in ripartenza. Attenzione anche al turn over elevato, che può influenzare la continuità di rendimento di alcuni giocatori, specialmente in ottica fantacalcio.",
-    "sosFantaComment": "Scossone in casa Bologna: è arrivato l'esonero di Tedesco dopo 4 giornate, al suo posto la squadra è stata affidata a Raffaele Palladino. In carriera ha utilizzato tanti moduli, la sensazione è che inizialmente confermerà il 4-2-3-1 (o 4-3-3) già utilizzato, ma non è da escludere un passaggio al 3-4-2-1. Testa a testa tra Dovbyk e Piccoli davanti, come era già con Tedesco del resto. La sensazione è che Bernardeschi possa agire da trequartista (o lui o Odgaard), con Orsolini da una parte e Cambiaghi o Mbangula dall'altra. Pobega più di Moro accanto a Ferguson. In difesa si azzera tutto sulle fasce: Holm o Zortea a destra, a sinistra Miranda in pole su Alhassane. In caso di difesa a 3, ci sarebbe un difensore in più al posto di un trequartista. ",
+    "sosFantaComment": "Scossone in casa Bologna: è arrivato l'esonero di Tedesco dopo 4 giornate, al suo posto la squadra è stata affidata a Raffaele Palladino. In carriera ha utilizzato tanti moduli, ma, come visto contro il Torino, sembra intenzionato a perseguire la strada del 3-4-3. Testa a testa tra Dovbyk e Piccoli davanti, come era già con Tedesco del resto. Ai lati Orsolini e Cambiaghi rispettivamente in vantaggio su Bernardeschi e Mbangula. A centrocampo Pobega più di Moro accanto a Ferguson. In difesa si azzera tutto sulle fasce: Zortea o Holm a destra, a sinistra Miranda in pole su Alhassane. I tre dietro sono Helland, Heggem e Theate.",
     "created_at": "2026-07-21T13:36:37.003Z",
-    "updated_at": "2026-09-16T15:52:35.738Z",
+    "updated_at": "2026-09-22T08:58:59.761Z",
     "up": [
       {
         "player_id": "c3763cc2-a3d9-403f-8f5a-856896a47c5d",
@@ -862,11 +838,11 @@
       {
         "players": [
           {
-            "player_id": "b894b38e-67c8-42fb-946f-36b8a7b60349",
+            "player_id": "2a411338-4370-4a88-8d00-f47f2167b09f",
             "perc": 51
           },
           {
-            "player_id": "2a411338-4370-4a88-8d00-f47f2167b09f",
+            "player_id": "b894b38e-67c8-42fb-946f-36b8a7b60349",
             "perc": 49
           }
         ]
@@ -898,11 +874,11 @@
       {
         "players": [
           {
-            "player_id": "c3763cc2-a3d9-403f-8f5a-856896a47c5d",
+            "player_id": "c8bad906-4705-460c-88d4-708b73446b1b",
             "perc": 55
           },
           {
-            "player_id": "0a11fe1e-7041-4409-9752-cbbd637f6aca",
+            "player_id": "c3763cc2-a3d9-403f-8f5a-856896a47c5d",
             "perc": 45
           }
         ]
@@ -962,229 +938,7 @@
       }
     ],
     "createdAt": "2026-07-21T13:36:37.003Z",
-    "updatedAt": "2026-09-16T15:52:35.738Z"
-  },
-  {
-    "team": "LAZ",
-    "season": "s_26_27",
-    "starters": [
-      {
-        "player_id": "c005a40e-c9d9-4673-94b5-1c85551c4460",
-        "id": 6482
-      },
-      {
-        "player_id": "46cb2e9f-1fe6-459b-87b0-af6cb7f17417",
-        "id": "2188"
-      },
-      {
-        "player_id": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
-        "id": 6320
-      },
-      {
-        "player_id": "19139ae2-8ceb-4f21-9980-134c64d95c92",
-        "id": 7012
-      },
-      {
-        "player_id": "e0da5b59-193d-4063-8b09-f6a556e70afd",
-        "id": 5620
-      },
-      {
-        "player_id": "38edda0f-f801-4946-b49b-cd87541fa645",
-        "id": "7314"
-      },
-      {
-        "player_id": "eb46d3ff-e668-421c-8274-0716cdb571b2",
-        "id": 4459
-      },
-      {
-        "player_id": "51f0abe3-4fe5-42fb-9994-34fbddcb56d5",
-        "id": 2848
-      },
-      {
-        "player_id": "1d26239a-02e3-4ee4-9c63-17d5dcb9b5be",
-        "id": "6398"
-      },
-      {
-        "player_id": "36aefe1e-18af-4824-9091-ef98f30c9778",
-        "id": "632"
-      },
-      {
-        "player_id": "ced01d22-1684-45d0-bcde-9898ff26ae86",
-        "id": 2038
-      }
-    ],
-    "rig": [
-      {
-        "player_id": "36aefe1e-18af-4824-9091-ef98f30c9778"
-      },
-      {
-        "player_id": "38edda0f-f801-4946-b49b-cd87541fa645"
-      },
-      {
-        "player_id": "ced01d22-1684-45d0-bcde-9898ff26ae86"
-      }
-    ],
-    "pun": [
-      {
-        "player_id": "36aefe1e-18af-4824-9091-ef98f30c9778"
-      },
-      {
-        "player_id": "1392a871-45c8-4782-8b9e-583c324b8eec"
-      }
-    ],
-    "corner": [
-      {
-        "player_id": "36aefe1e-18af-4824-9091-ef98f30c9778"
-      },
-      {
-        "player_id": "38edda0f-f801-4946-b49b-cd87541fa645"
-      },
-      {
-        "player_id": "eb46d3ff-e668-421c-8274-0716cdb571b2"
-      }
-    ],
-    "module": "4-3-3",
-    "coach": "Gennaro Gattuso",
-    "attack": 3.5,
-    "defense": 4,
-    "comment": "Torna alla Lazio dopo il biennio 2022-2024 con idee chiare e un gioco che conosciamo fin troppo bene. Il suo 4-3-3 si fonda su possesso palla, costruzione ragionata e movimenti codificati. Predilige giocatori tecnici e intelligenti: chi sta in mezzo deve saper palleggiare e inserirsi, mentre chi gioca largo ha il compito di dare ampiezza e saltare l’uomo. Il centravanti, invece, non può limitarsi a finalizzare: deve partecipare attivamente alla manovra. Chi ha già lavorato con lui parte favorito in chiave fantacalcio, mentre i nuovi potrebbero aver bisogno di tempo per assimilare i meccanismi.",
-    "sosFantaComment": "È arrivato Rino Gattuso in panchina, ma la Lazio giocherà ancora col 4-3-3 come nella passata stagione. Provedel è partito, Mandas è tornato: è il titolare tra i pali davanti a Motta. Romagnoli alla fine è partito, sul centro-sinistra la prima scelta è Provstgaard mentre per l'altra maglia si giocano un posto i nuovi arrivati Doekhi e Sutalo; a sinistra Tavares alla fine è rimasto e se sta bene è il titolare. Rovella o Cataldi, testa a testa in cabina di regia. A destra nel tridente Isaksen una volta al 100% è in pole, Pinamonti arriva per giocare titolare da centravanti. È arrivato anche Gudmundsson che può essere un jolly libero di svariare nel fronte offensivo e giocare a destra o a sinistra da vice Zaccagni.",
-    "created_at": "2026-07-21T12:45:39.344Z",
-    "updated_at": "2026-09-15T09:18:03.285Z",
-    "up": [
-      {
-        "player_id": "51f0abe3-4fe5-42fb-9994-34fbddcb56d5",
-        "points": [
-          {
-            "text": "Utile negli inserimenti richiesti dal mister",
-            "tone": "good"
-          },
-          {
-            "tone": "good",
-            "text": "Propensione alla fase offensiva"
-          }
-        ]
-      },
-      {
-        "player_id": "36aefe1e-18af-4824-9091-ef98f30c9778",
-        "points": [
-          {
-            "text": "Fantasista della squadra",
-            "tone": "good"
-          },
-          {
-            "tone": "good",
-            "text": "Fulcro del gioco offensivo"
-          }
-        ]
-      }
-    ],
-    "down": [
-      {
-        "player_id": "eb46d3ff-e668-421c-8274-0716cdb571b2",
-        "points": [
-          {
-            "text": "Propensione a cartellini nel gioco di Gattuso",
-            "tone": "bad"
-          }
-        ]
-      }
-    ],
-    "young": [
-      {
-        "player_id": "19139ae2-8ceb-4f21-9980-134c64d95c92",
-        "points": [
-          {
-            "text": "Può ricavarsi molto spazio nelle gerarchie",
-            "tone": "good"
-          }
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "player_id": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
-        "points": [
-          {
-            "text": "Forte sulle palle inattive",
-            "tone": "good"
-          }
-        ]
-      }
-    ],
-    "ballottaggi": [
-      {
-        "players": [
-          {
-            "player_id": "eb46d3ff-e668-421c-8274-0716cdb571b2",
-            "perc": 55
-          },
-          {
-            "player_id": "1392a871-45c8-4782-8b9e-583c324b8eec",
-            "perc": 45
-          }
-        ]
-      },
-      {
-        "players": [
-          {
-            "player_id": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
-            "perc": 51
-          },
-          {
-            "player_id": "c571ffe8-70c1-40b4-8175-6752f18eae5f",
-            "perc": 49
-          }
-        ]
-      },
-      {
-        "players": [
-          {
-            "player_id": "1d26239a-02e3-4ee4-9c63-17d5dcb9b5be",
-            "perc": 51
-          },
-          {
-            "player_id": "3bd054af-2392-4003-8dd6-a5694c458f55",
-            "perc": 49
-          }
-        ]
-      }
-    ],
-    "coachRating": {
-      "attack": 3.5,
-      "defense": 4,
-      "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Gattuso.webp"
-    },
-    "keyPoints": [
-      {
-        "text": "Punta centrale riferimento principale ",
-        "tone": "good"
-      },
-      {
-        "text": "Gioco aggressivo, cartellini e falli elevati",
-        "tone": "bad"
-      },
-      {
-        "text": "Esterni di difesa propositivi",
-        "tone": "good"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "att-center",
-        "tone": "good"
-      },
-      {
-        "role": "def-fullbacks",
-        "tone": "good"
-      },
-      {
-        "role": "mid-holding",
-        "tone": "bad"
-      }
-    ],
-    "createdAt": "2026-07-21T12:45:39.344Z",
-    "updatedAt": "2026-09-15T09:18:03.285Z"
+    "updatedAt": "2026-09-22T08:58:59.761Z"
   },
   {
     "team": "GEN",
@@ -1984,9 +1738,9 @@
     "attack": 4.5,
     "defense": 4.5,
     "comment": "Luciano Spalletti sostituisce in panchina l'ex tecnico Igor Tudor dopo un difficile inizio di stagione della Juventus. Inizialmente utilizzerà il modulo con la difesa a 3 per dare continuità alla precedente gestione ma con il tempo si passerà al 4-3-3 mantra del tecnico ex Napoli con la possibilià di virare al 4-3-1-2 con l'utilizzo del doppio centravanti. La base tattica di Luciano Spalletti è la difesa a 4 e il centrocampo a3 che permette maggior equilibrio e maggior copertura per il reparto offensivo.",
-    "sosFantaComment": "Luciano Spalletti è rimasto alla guida della Juventus, avanti con il 4-2-3-1. Il nuovo portiere titolare è Vicario, arrivato dal mercato. Alla fine è tornato Kolo Muani, ma è arrivato anche Woltemade, si giocheranno il posto, col primo favorito (ma ha deluso finora). Il club ha fatto un investimento importantissimo per Alajbegovic, che si gioca un posto con Conceicao sulla fascia, ma i due potranno anche giocare insieme. Yildiz ovviamente è destinato a tornare titolare una volta recuperato. McKennie può giocare sia da trequartista sia in mediana. Douglas Luiz parte avanti rispetto a Thuram (tornerà solo nel 2027). E solo nel 2027 tornerà anche Locatelli: il nuovo arrivato Sarr pronto a sostituirlo, nelle rotazioni avrà spazio anche Koopmeiners. In difesa Lucumi è arrivato per giocare ed è in pole su Kelly accanto a Bremer, mentre Celik parte favorito su Cambiaso per il ruolo di terzino sinistro.",
+    "sosFantaComment": "Luciano Spalletti è rimasto alla guida della Juventus, avanti con il 4-2-3-1. Il nuovo portiere titolare è Vicario, arrivato dal mercato. Alla fine è tornato Kolo Muani, ma è arrivato anche Woltemade, si giocheranno il posto, col primo favorito. Il club ha fatto un investimento importantissimo per Alajbegovic, che si gioca un posto con Conceicao sulla fascia, ma i due potranno anche giocare insieme. Yildiz ovviamente è destinato a tornare titolare una volta recuperato. McKennie può giocare sia da trequartista sia in mediana. Douglas Luiz parte avanti rispetto a Thuram (tornerà solo nel 2027). E solo nel 2027 tornerà anche Locatelli: il nuovo arrivato Sarr pronto a sostituirlo, nelle rotazioni avrà spazio anche Koopmeiners. In difesa Lucumi è arrivato per giocare ed è in pole su Kelly accanto a Bremer, mentre Celik parte favorito su Cambiaso per il ruolo di terzino sinistro.",
     "created_at": "2026-07-21T12:43:26.463Z",
-    "updated_at": "2026-09-15T09:17:19.582Z",
+    "updated_at": "2026-09-22T09:11:11.422Z",
     "up": [
       {
         "player_id": "25f782b5-3764-4a4e-8e32-6e950a038870",
@@ -2093,6 +1847,18 @@
             "perc": 49
           }
         ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "9fa1a4e4-e867-49fd-a887-6a29ae0ee4be",
+            "perc": 51
+          },
+          {
+            "player_id": "ace2a71a-be65-4788-aa2b-21036dfac576",
+            "perc": 49
+          }
+        ]
       }
     ],
     "coachRating": {
@@ -2125,7 +1891,7 @@
       }
     ],
     "createdAt": "2026-07-21T12:43:26.463Z",
-    "updatedAt": "2026-09-15T09:17:19.582Z"
+    "updatedAt": "2026-09-22T09:11:11.422Z"
   },
   {
     "team": "VEN",
@@ -2850,8 +2616,8 @@
         "id": 2741
       },
       {
-        "player_id": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
-        "id": 5878
+        "player_id": "6a2d0ee2-6bae-42d1-9cfd-06994a361b3d",
+        "id": 7546
       },
       {
         "player_id": "8194c04b-9af2-4f63-af75-712ae72e0842",
@@ -2897,9 +2663,9 @@
     "attack": 2,
     "defense": 2,
     "comment": "",
-    "sosFantaComment": "È arrivato Ivan Juric sulla panchina del neopromosso Monza, sarà difesa a 3: provato il 3-4-2-1. Tornqvist arriva per giocare e per essere il titolare, Thiam non ha convinto Juric e salvo sorprese diventerà il secondo portiere. A centrocampo si candidano a giocare i nuovi arrivati Folorunsho e Akinsanmiro, inseguono Mout e Colombo, giocheranno i primi due finché è infortunato Pessina (starà fuori 2 mesi circa da metà agosto, poi tornerà e sarà lui il titolare). A destra una volta recuperato Touré ha tutto per diventare il titolare, si gioca un posto con Birindelli. Varela a guidare l'attacco (Cutrone parte da vice), a supporto c'è grande abbondanza: Colpani, Mota, il baby Robinson e gli ultimi arrivati Zeballos e Ngonge. ",
+    "sosFantaComment": "È arrivato Ivan Juric sulla panchina del neopromosso Monza, sarà difesa a 3: provato il 3-4-2-1. Tornqvist arriva per giocare e per essere il titolare, Thiam non ha convinto Juric e salvo sorprese diventerà il secondo portiere. A centrocampo si candidano a giocare i nuovi arrivati Folorunsho e Akinsanmiro, inseguono Mout e Colombo, giocheranno i primi due finché è infortunato Pessina (starà fuori 2 mesi circa da metà agosto, poi tornerà e sarà lui il titolare). A destra una volta recuperato Touré ha tutto per diventare il titolare, si gioca un posto con Birindelli. Varela a guidare l'attacco (Cutrone parte da vice), a supporto c'è grande abbondanza: Robinson e Zeballos sono i favoriti, ma ci sono anche Colpani, Mota e Ngonge. ",
     "created_at": "2026-07-21T13:04:19.695Z",
-    "updated_at": "2026-09-15T09:25:52.535Z",
+    "updated_at": "2026-09-22T09:25:22.662Z",
     "up": [
       {
         "player_id": "88893e63-f3f6-4224-838b-8e189ef9f312",
@@ -3001,7 +2767,7 @@
             "perc": 51
           },
           {
-            "player_id": "6a2d0ee2-6bae-42d1-9cfd-06994a361b3d",
+            "player_id": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
             "perc": 49
           }
         ]
@@ -3009,11 +2775,11 @@
       {
         "players": [
           {
-            "player_id": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
+            "player_id": "6a2d0ee2-6bae-42d1-9cfd-06994a361b3d",
             "perc": 51
           },
           {
-            "player_id": "88893e63-f3f6-4224-838b-8e189ef9f312",
+            "player_id": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
             "perc": 49
           }
         ]
@@ -3061,7 +2827,7 @@
       }
     ],
     "createdAt": "2026-07-21T13:04:19.695Z",
-    "updatedAt": "2026-09-15T09:25:52.535Z"
+    "updatedAt": "2026-09-22T09:25:22.662Z"
   },
   {
     "team": "TOR",
@@ -3280,6 +3046,240 @@
     ],
     "createdAt": "2026-07-21T13:23:02.397Z",
     "updatedAt": "2026-09-15T09:33:05.449Z"
+  },
+  {
+    "team": "LAZ",
+    "season": "s_26_27",
+    "starters": [
+      {
+        "player_id": "c005a40e-c9d9-4673-94b5-1c85551c4460",
+        "id": 6482
+      },
+      {
+        "player_id": "46cb2e9f-1fe6-459b-87b0-af6cb7f17417",
+        "id": "2188"
+      },
+      {
+        "player_id": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
+        "id": 6320
+      },
+      {
+        "player_id": "19139ae2-8ceb-4f21-9980-134c64d95c92",
+        "id": 7012
+      },
+      {
+        "player_id": "e0da5b59-193d-4063-8b09-f6a556e70afd",
+        "id": 5620
+      },
+      {
+        "player_id": "38edda0f-f801-4946-b49b-cd87541fa645",
+        "id": "7314"
+      },
+      {
+        "player_id": "eb46d3ff-e668-421c-8274-0716cdb571b2",
+        "id": 4459
+      },
+      {
+        "player_id": "51f0abe3-4fe5-42fb-9994-34fbddcb56d5",
+        "id": 2848
+      },
+      {
+        "player_id": "1d26239a-02e3-4ee4-9c63-17d5dcb9b5be",
+        "id": "6398"
+      },
+      {
+        "player_id": "36aefe1e-18af-4824-9091-ef98f30c9778",
+        "id": "632"
+      },
+      {
+        "player_id": "ced01d22-1684-45d0-bcde-9898ff26ae86",
+        "id": 2038
+      }
+    ],
+    "rig": [
+      {
+        "player_id": "36aefe1e-18af-4824-9091-ef98f30c9778"
+      },
+      {
+        "player_id": "38edda0f-f801-4946-b49b-cd87541fa645"
+      },
+      {
+        "player_id": "ced01d22-1684-45d0-bcde-9898ff26ae86"
+      }
+    ],
+    "pun": [
+      {
+        "player_id": "36aefe1e-18af-4824-9091-ef98f30c9778"
+      },
+      {
+        "player_id": "1392a871-45c8-4782-8b9e-583c324b8eec"
+      }
+    ],
+    "corner": [
+      {
+        "player_id": "36aefe1e-18af-4824-9091-ef98f30c9778"
+      },
+      {
+        "player_id": "38edda0f-f801-4946-b49b-cd87541fa645"
+      },
+      {
+        "player_id": "eb46d3ff-e668-421c-8274-0716cdb571b2"
+      }
+    ],
+    "module": "4-3-3",
+    "coach": "Gennaro Gattuso",
+    "attack": 3.5,
+    "defense": 4,
+    "comment": "Torna alla Lazio dopo il biennio 2022-2024 con idee chiare e un gioco che conosciamo fin troppo bene. Il suo 4-3-3 si fonda su possesso palla, costruzione ragionata e movimenti codificati. Predilige giocatori tecnici e intelligenti: chi sta in mezzo deve saper palleggiare e inserirsi, mentre chi gioca largo ha il compito di dare ampiezza e saltare l’uomo. Il centravanti, invece, non può limitarsi a finalizzare: deve partecipare attivamente alla manovra. Chi ha già lavorato con lui parte favorito in chiave fantacalcio, mentre i nuovi potrebbero aver bisogno di tempo per assimilare i meccanismi.",
+    "sosFantaComment": "È arrivato Rino Gattuso in panchina, ma la Lazio giocherà ancora col 4-3-3 come nella passata stagione. Provedel è partito, Mandas è tornato: è il titolare tra i pali davanti a Motta. Romagnoli alla fine è partito, sul centro-sinistra la prima scelta è Provstgaard mentre per l'altra maglia si giocano un posto i nuovi arrivati Doekhi e Sutalo; a sinistra Tavares alla fine è rimasto e se sta bene è il titolare, a destra si contendono il posto Marusic e Floriani. Rovella o Cataldi, testa a testa in cabina di regia (c'è anche Belahyane che è partito bene). A destra nel tridente Isaksen una volta al 100% è in pole, Pinamonti si gioca il posto con Noslin. È arrivato anche Gudmundsson che può essere un jolly libero di svariare nel fronte offensivo e giocare a destra o a sinistra da vice Zaccagni.",
+    "created_at": "2026-07-21T12:45:39.344Z",
+    "updated_at": "2026-09-22T09:14:37.298Z",
+    "up": [
+      {
+        "player_id": "51f0abe3-4fe5-42fb-9994-34fbddcb56d5",
+        "points": [
+          {
+            "text": "Utile negli inserimenti richiesti dal mister",
+            "tone": "good"
+          },
+          {
+            "tone": "good",
+            "text": "Propensione alla fase offensiva"
+          }
+        ]
+      },
+      {
+        "player_id": "36aefe1e-18af-4824-9091-ef98f30c9778",
+        "points": [
+          {
+            "text": "Fantasista della squadra",
+            "tone": "good"
+          },
+          {
+            "tone": "good",
+            "text": "Fulcro del gioco offensivo"
+          }
+        ]
+      }
+    ],
+    "down": [
+      {
+        "player_id": "eb46d3ff-e668-421c-8274-0716cdb571b2",
+        "points": [
+          {
+            "text": "Propensione a cartellini nel gioco di Gattuso",
+            "tone": "bad"
+          }
+        ]
+      }
+    ],
+    "young": [
+      {
+        "player_id": "19139ae2-8ceb-4f21-9980-134c64d95c92",
+        "points": [
+          {
+            "text": "Può ricavarsi molto spazio nelle gerarchie",
+            "tone": "good"
+          }
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "player_id": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
+        "points": [
+          {
+            "text": "Forte sulle palle inattive",
+            "tone": "good"
+          }
+        ]
+      }
+    ],
+    "ballottaggi": [
+      {
+        "players": [
+          {
+            "player_id": "eb46d3ff-e668-421c-8274-0716cdb571b2",
+            "perc": 55
+          },
+          {
+            "player_id": "1392a871-45c8-4782-8b9e-583c324b8eec",
+            "perc": 45
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
+            "perc": 51
+          },
+          {
+            "player_id": "c571ffe8-70c1-40b4-8175-6752f18eae5f",
+            "perc": 49
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "1d26239a-02e3-4ee4-9c63-17d5dcb9b5be",
+            "perc": 51
+          },
+          {
+            "player_id": "b82add03-f6f8-4788-94a2-4d9165698df5",
+            "perc": 49
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "46cb2e9f-1fe6-459b-87b0-af6cb7f17417",
+            "perc": 51
+          },
+          {
+            "player_id": "e776d386-f107-4da9-8341-55a10fdf6c44",
+            "perc": 49
+          }
+        ]
+      }
+    ],
+    "coachRating": {
+      "attack": 3.5,
+      "defense": 4,
+      "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Gattuso.webp"
+    },
+    "keyPoints": [
+      {
+        "text": "Punta centrale riferimento principale ",
+        "tone": "good"
+      },
+      {
+        "text": "Gioco aggressivo, cartellini e falli elevati",
+        "tone": "bad"
+      },
+      {
+        "text": "Esterni di difesa propositivi",
+        "tone": "good"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "att-center",
+        "tone": "good"
+      },
+      {
+        "role": "def-fullbacks",
+        "tone": "good"
+      },
+      {
+        "role": "mid-holding",
+        "tone": "bad"
+      }
+    ],
+    "createdAt": "2026-07-21T12:45:39.344Z",
+    "updatedAt": "2026-09-22T09:14:37.298Z"
   },
   {
     "team": "INT",
@@ -3964,8 +3964,8 @@
         "id": "4431"
       },
       {
-        "player_id": "088bb69b-e23f-402f-bc6e-3ad4bb311560",
-        "id": 554
+        "player_id": "bde8b7a8-9307-4d1e-a3cc-430c5bee432b",
+        "id": 4887
       },
       {
         "player_id": "e8093c47-4f1a-4bcb-83b1-0c64385cddbe",
@@ -4039,9 +4039,9 @@
     "attack": 4,
     "defense": 4,
     "comment": "Raffaele Palladino sostituisce Juric alla vigilia della 12^ giornata. Come i predecessori Gasperini e Juric, Palladino dovrebbe schierarsi con la difesa a 3 e con il doppio trequartista a supporto della prima punta. Il punto di forza sono gli esterni, i cosiddetti quinti di centrocampo, chiamati a fare la doppia fase. Palladino dovrà lavorare soprattutto a livello mentsle, una squadra che \"prende\" al tredicesimo, peggior risultato degli ultimi 11 anni. Tanti ballottaggi, soprattutto dalla trequarti in su. ",
-    "sosFantaComment": "Rivoluzione totale in casa Atalanta: dopo anni col 3-5-2, si passa al 4-3-3 con l'arrivo di Maurizio Sarri in panchina. Meccanismi da oliare, soprattutto nel reparto difensivo. Kristensen arriva per giocare, lui e Scalvini sono i favoriti in partenza. Tutto apertissimo sulle fasce: Zappacosta e Bernasconi partono in pole, ma ci sono anche Bellanova e Kolasinac. A centrocampo Ederson è rimasto e gioca: le novità sono Gaetano in cabina di regia e soprattutto il ritorno di Kessié, che arriva per giocare. Ma avrà grande spazio anche Samardzic come si è già visto, oltre a Pasalic. Elmas jolly vero e proprio. Davanti testa a testa tra Scamacca e Krstovic col primo in vantaggio, a sinistra Rowe si gioca il posto con Raspadori.",
+    "sosFantaComment": "Rivoluzione totale in casa Atalanta: dopo anni col 3-5-2, si passa al 4-3-3 con l'arrivo di Maurizio Sarri in panchina. Meccanismi da oliare, soprattutto nel reparto difensivo. Kristensen arriva per giocare, lui e Scalvini sono i favoriti in partenza. Tutto apertissimo sulle fasce: Bellanova e Bernasconi partono in pole, ma si giocano il posto con Zappacosta e Kolasinac. A centrocampo Ederson è rimasto e gioca: le novità sono Gaetano in cabina di regia e soprattutto il ritorno di Kessié, che arriva per giocare. Ma avrà grande spazio anche Samardzic come si è già visto, oltre a Pasalic. Elmas jolly vero e proprio. Davanti testa a testa tra Scamacca e Krstovic col primo in vantaggio, a sinistra Rowe si gioca il posto con Raspadori.",
     "created_at": "2026-07-21T13:14:35.079Z",
-    "updated_at": "2026-09-15T08:59:25.319Z",
+    "updated_at": "2026-09-22T08:56:21.512Z",
     "up": [
       {
         "player_id": "e259c4a6-1385-479b-b970-730c08be498f",
@@ -4152,6 +4152,18 @@
             "perc": 49
           }
         ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "4f923ea1-81ed-468d-84e7-bc8adf85055f",
+            "perc": 51
+          },
+          {
+            "player_id": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
+            "perc": 49
+          }
+        ]
       }
     ],
     "coachRating": {
@@ -4200,7 +4212,7 @@
       }
     ],
     "createdAt": "2026-07-21T13:14:35.079Z",
-    "updatedAt": "2026-09-15T08:59:25.319Z"
+    "updatedAt": "2026-09-22T08:56:21.512Z"
   },
   {
     "team": "FIO",
@@ -4533,9 +4545,9 @@
     "attack": 2.5,
     "defense": 2,
     "comment": "",
-    "sosFantaComment": "È rimasto Massimiliano Alvini alla guida del Frosinone anche dopo la promozione in Serie A e si riparte dal 4-2-3-1. Oyono rimane favorito sul nuovo arrivato Tchato come terzino destro, al centro o Cittadini o Monterisi in coppia accanto a Calvani. Ghedjemis alla fine è rimasto e avrà grandissimo spazio a destra, Kvernadze inamovibile a sinistra di fatto. Difficile togliere questo Raimondo dal centro dell'attacco: proverà a insidiarlo Bobcek, ma c'è distanza al momento.",
+    "sosFantaComment": "È rimasto Massimiliano Alvini alla guida del Frosinone anche dopo la promozione in Serie A e si riparte dal 4-2-3-1. Oyono rimane favorito sul nuovo arrivato Tchato come terzino destro, al centro o Cittadini o Monterisi in coppia accanto a Calvani. A centrocampo ci sono Calò e Masini, Schimd trequartista. Ghedjemis alla fine è rimasto e avrà grandissimo spazio a destra, Kvernadze inamovibile a sinistra di fatto. Difficile togliere questo Raimondo dal centro dell'attacco: proverà a insidiarlo Bobcek, ma c'è distanza al momento.",
     "created_at": "2026-07-21T14:08:10.050Z",
-    "updated_at": "2026-09-15T09:09:10.623Z",
+    "updated_at": "2026-09-22T09:08:32.357Z",
     "up": [
       {
         "player_id": "4efd1869-7483-4b32-9db3-bbeb1641fac7",
@@ -4661,6 +4673,6 @@
       }
     ],
     "createdAt": "2026-07-21T14:08:10.050Z",
-    "updatedAt": "2026-09-15T09:09:10.623Z"
+    "updatedAt": "2026-09-22T09:08:32.357Z"
   }
 ]

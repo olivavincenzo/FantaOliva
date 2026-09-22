@@ -6075,402 +6075,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ha avuto diversi infortuni",
     "xfmv": 5.86
   },
-  "7b207af5-acdb-4021-9633-5b6fd9e29fa6": {
-    "playerId": "7b207af5-acdb-4021-9633-5b6fd9e29fa6",
-    "name": "Chakvetadze",
-    "role": "C",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.03
-  },
-  "chakvetadze": {
-    "playerId": "7b207af5-acdb-4021-9633-5b6fd9e29fa6",
-    "name": "Chakvetadze",
-    "role": "C",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.03
-  },
-  "3b5b8e3f-ce26-4764-80bd-334b9a5aef7f": {
-    "playerId": "3b5b8e3f-ce26-4764-80bd-334b9a5aef7f",
-    "name": "Bowie",
-    "role": "A",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.79
-  },
-  "bowie": {
-    "playerId": "3b5b8e3f-ce26-4764-80bd-334b9a5aef7f",
-    "name": "Bowie",
-    "role": "A",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.79
-  },
-  "d190b87f-14d2-4a26-b57d-a8b2803d175e": {
-    "playerId": "d190b87f-14d2-4a26-b57d-a8b2803d175e",
-    "name": "Van Der Brempt",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 5.84
-  },
-  "vanderbrempt": {
-    "playerId": "d190b87f-14d2-4a26-b57d-a8b2803d175e",
-    "name": "Van Der Brempt",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 5.84
-  },
-  "van der brempt": {
-    "playerId": "d190b87f-14d2-4a26-b57d-a8b2803d175e",
-    "name": "Van Der Brempt",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 5.84
-  },
-  "21898bcb-7bbf-46c7-9892-8e05475fcb53": {
-    "playerId": "21898bcb-7bbf-46c7-9892-8e05475fcb53",
-    "name": "Solet",
-    "role": "D",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.28
-  },
-  "solet": {
-    "playerId": "21898bcb-7bbf-46c7-9892-8e05475fcb53",
-    "name": "Solet",
-    "role": "D",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.28
-  },
-  "fd3cb6f4-d912-43b1-81f5-eedbd88a7390": {
-    "playerId": "fd3cb6f4-d912-43b1-81f5-eedbd88a7390",
-    "name": "Volpato",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 6.32
-  },
-  "volpato": {
-    "playerId": "fd3cb6f4-d912-43b1-81f5-eedbd88a7390",
-    "name": "Volpato",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 6.32
-  },
-  "4233bc51-6269-438c-8e85-5a77b7c17562": {
-    "playerId": "4233bc51-6269-438c-8e85-5a77b7c17562",
-    "name": "Helland",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 5.84
-  },
-  "helland": {
-    "playerId": "4233bc51-6269-438c-8e85-5a77b7c17562",
-    "name": "Helland",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 5.84
-  },
-  "83c096d2-f229-4069-8edc-bda786e34a7a": {
-    "playerId": "83c096d2-f229-4069-8edc-bda786e34a7a",
-    "name": "Vasquez",
-    "role": "D",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.11
-  },
-  "vasquez": {
-    "playerId": "83c096d2-f229-4069-8edc-bda786e34a7a",
-    "name": "Vasquez",
-    "role": "D",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.11
-  },
-  "e2613024-bb41-4d9a-8c1d-24f6e2c63838": {
-    "playerId": "e2613024-bb41-4d9a-8c1d-24f6e2c63838",
-    "name": "Tourè I.",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.11
-  },
-  "touri": {
-    "playerId": "e2613024-bb41-4d9a-8c1d-24f6e2c63838",
-    "name": "Tourè I.",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.11
-  },
-  "tourè i.": {
-    "playerId": "e2613024-bb41-4d9a-8c1d-24f6e2c63838",
-    "name": "Tourè I.",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.11
-  },
-  "30e7f451-834b-48ac-b1c0-749c1674d5c5": {
-    "playerId": "30e7f451-834b-48ac-b1c0-749c1674d5c5",
-    "name": "Kaba",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.86
-  },
-  "kaba": {
-    "playerId": "30e7f451-834b-48ac-b1c0-749c1674d5c5",
-    "name": "Kaba",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.86
-  },
-  "7615a481-1f3d-4179-9e9d-a4f148bb1b82": {
-    "playerId": "7615a481-1f3d-4179-9e9d-a4f148bb1b82",
-    "name": "Padelli",
-    "role": "P",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 4.7
-  },
-  "padelli": {
-    "playerId": "7615a481-1f3d-4179-9e9d-a4f148bb1b82",
-    "name": "Padelli",
-    "role": "P",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 4.7
-  },
-  "eeb84dbb-797e-48bc-835f-f521fa337d89": {
-    "playerId": "eeb84dbb-797e-48bc-835f-f521fa337d89",
-    "name": "Amey",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 5.69
-  },
-  "amey": {
-    "playerId": "eeb84dbb-797e-48bc-835f-f521fa337d89",
-    "name": "Amey",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 5.69
-  },
-  "eb46d3ff-e668-421c-8274-0716cdb571b2": {
-    "playerId": "eb46d3ff-e668-421c-8274-0716cdb571b2",
-    "name": "Rovella",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 5.99
-  },
-  "rovella": {
-    "playerId": "eb46d3ff-e668-421c-8274-0716cdb571b2",
-    "name": "Rovella",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 5.99
-  },
-  "f5b1b43f-45be-4ebb-bed8-811434235418": {
-    "playerId": "f5b1b43f-45be-4ebb-bed8-811434235418",
-    "name": "De Winter",
-    "role": "D",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 2,
-    "affDesc": "Profilo altamente incostante",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.87
-  },
-  "dewinter": {
-    "playerId": "f5b1b43f-45be-4ebb-bed8-811434235418",
-    "name": "De Winter",
-    "role": "D",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 2,
-    "affDesc": "Profilo altamente incostante",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.87
-  },
-  "de winter": {
-    "playerId": "f5b1b43f-45be-4ebb-bed8-811434235418",
-    "name": "De Winter",
-    "role": "D",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 2,
-    "affDesc": "Profilo altamente incostante",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.87
-  },
-  "352e6596-1e54-4044-8873-6f7310c2bd66": {
-    "playerId": "352e6596-1e54-4044-8873-6f7310c2bd66",
-    "name": "Pinsoglio",
-    "role": "P",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 4.7
-  },
-  "pinsoglio": {
-    "playerId": "352e6596-1e54-4044-8873-6f7310c2bd66",
-    "name": "Pinsoglio",
-    "role": "P",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 4.7
-  },
-  "732b19cf-3340-4588-ba8a-85459261b4c1": {
-    "playerId": "732b19cf-3340-4588-ba8a-85459261b4c1",
-    "name": "Olivera",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.88
-  },
-  "olivera": {
-    "playerId": "732b19cf-3340-4588-ba8a-85459261b4c1",
-    "name": "Olivera",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.88
-  },
   "999b1464-a7a0-45db-b466-8a24817b5a8c": {
     "playerId": "999b1464-a7a0-45db-b466-8a24817b5a8c",
     "name": "De Silvestri",
@@ -6507,101 +6111,53 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ha avuto diversi infortuni",
     "xfmv": 5.75
   },
-  "79e0486c-5861-4fb0-ba5c-f35bc19df8c3": {
-    "playerId": "79e0486c-5861-4fb0-ba5c-f35bc19df8c3",
-    "name": "Thuram",
-    "role": "A",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 5,
-    "affDesc": "Rendimento super costante",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 7.89
-  },
-  "thuram": {
-    "playerId": "79e0486c-5861-4fb0-ba5c-f35bc19df8c3",
-    "name": "Thuram",
-    "role": "A",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 5,
-    "affDesc": "Rendimento super costante",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 7.89
-  },
-  "7d117aaa-3a1c-4eb2-b76a-e4b784e21e06": {
-    "playerId": "7d117aaa-3a1c-4eb2-b76a-e4b784e21e06",
-    "name": "Gila",
-    "role": "D",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 5,
-    "affDesc": "Rendimento super costante",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 6.09
-  },
-  "gila": {
-    "playerId": "7d117aaa-3a1c-4eb2-b76a-e4b784e21e06",
-    "name": "Gila",
-    "role": "D",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 5,
-    "affDesc": "Rendimento super costante",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 6.09
-  },
-  "18de2da7-0388-4860-a39b-81d2fc5d3472": {
-    "playerId": "18de2da7-0388-4860-a39b-81d2fc5d3472",
-    "name": "Almqvist",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.35
-  },
-  "almqvist": {
-    "playerId": "18de2da7-0388-4860-a39b-81d2fc5d3472",
-    "name": "Almqvist",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.35
-  },
-  "92d60563-17a8-45d1-a6c1-3b8d5e676e1d": {
-    "playerId": "92d60563-17a8-45d1-a6c1-3b8d5e676e1d",
-    "name": "Mout",
+  "56f6449f-dda3-48cd-b535-9016b9ac7e65": {
+    "playerId": "56f6449f-dda3-48cd-b535-9016b9ac7e65",
+    "name": "Milla",
     "role": "C",
     "titIndex": 3,
     "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
     "infIndex": 5,
     "infDesc": "È sempre integro",
-    "xfmv": 6.04
+    "xfmv": 6.26
   },
-  "mout": {
-    "playerId": "92d60563-17a8-45d1-a6c1-3b8d5e676e1d",
-    "name": "Mout",
+  "milla": {
+    "playerId": "56f6449f-dda3-48cd-b535-9016b9ac7e65",
+    "name": "Milla",
     "role": "C",
     "titIndex": 3,
     "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
     "infIndex": 5,
     "infDesc": "È sempre integro",
-    "xfmv": 6.04
+    "xfmv": 6.26
+  },
+  "f33242f6-3341-4541-a2f8-bb241f018742": {
+    "playerId": "f33242f6-3341-4541-a2f8-bb241f018742",
+    "name": "Grabara",
+    "role": "P",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 5
+  },
+  "grabara": {
+    "playerId": "f33242f6-3341-4541-a2f8-bb241f018742",
+    "name": "Grabara",
+    "role": "P",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 5
   },
   "2ae97ae9-6de8-47be-a015-6421fa448f61": {
     "playerId": "2ae97ae9-6de8-47be-a015-6421fa448f61",
@@ -6627,33 +6183,789 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Pochissimi infortuni",
     "xfmv": 6.03
   },
-  "5b821b6a-1de9-4678-8dda-2cca3ddfda02": {
-    "playerId": "5b821b6a-1de9-4678-8dda-2cca3ddfda02",
-    "name": "Provedel",
+  "3b5b8e3f-ce26-4764-80bd-334b9a5aef7f": {
+    "playerId": "3b5b8e3f-ce26-4764-80bd-334b9a5aef7f",
+    "name": "Bowie",
+    "role": "A",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.79
+  },
+  "bowie": {
+    "playerId": "3b5b8e3f-ce26-4764-80bd-334b9a5aef7f",
+    "name": "Bowie",
+    "role": "A",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.79
+  },
+  "2d9b4c39-4108-459f-8932-faa1b495f64b": {
+    "playerId": "2d9b4c39-4108-459f-8932-faa1b495f64b",
+    "name": "Fitz-Jim",
+    "role": "C",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 6.22
+  },
+  "fitzjim": {
+    "playerId": "2d9b4c39-4108-459f-8932-faa1b495f64b",
+    "name": "Fitz-Jim",
+    "role": "C",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 6.22
+  },
+  "fitz-jim": {
+    "playerId": "2d9b4c39-4108-459f-8932-faa1b495f64b",
+    "name": "Fitz-Jim",
+    "role": "C",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 6.22
+  },
+  "6e6cb392-a2c4-4f16-bca7-f7e025f4c4fd": {
+    "playerId": "6e6cb392-a2c4-4f16-bca7-f7e025f4c4fd",
+    "name": "El Azzouzi A.",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.02
+  },
+  "elazzouzia": {
+    "playerId": "6e6cb392-a2c4-4f16-bca7-f7e025f4c4fd",
+    "name": "El Azzouzi A.",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.02
+  },
+  "el azzouzi a.": {
+    "playerId": "6e6cb392-a2c4-4f16-bca7-f7e025f4c4fd",
+    "name": "El Azzouzi A.",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.02
+  },
+  "371edc7e-8557-4af7-ac46-3481c7601c38": {
+    "playerId": "371edc7e-8557-4af7-ac46-3481c7601c38",
+    "name": "Doig",
+    "role": "D",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.89
+  },
+  "doig": {
+    "playerId": "371edc7e-8557-4af7-ac46-3481c7601c38",
+    "name": "Doig",
+    "role": "D",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.89
+  },
+  "3280f1a1-e0be-4c7b-83ba-b254858b4426": {
+    "playerId": "3280f1a1-e0be-4c7b-83ba-b254858b4426",
+    "name": "Kevin Carlos",
+    "role": "A",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.39
+  },
+  "kevincarlos": {
+    "playerId": "3280f1a1-e0be-4c7b-83ba-b254858b4426",
+    "name": "Kevin Carlos",
+    "role": "A",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.39
+  },
+  "kevin carlos": {
+    "playerId": "3280f1a1-e0be-4c7b-83ba-b254858b4426",
+    "name": "Kevin Carlos",
+    "role": "A",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.39
+  },
+  "434b9241-f825-4e71-b4a1-9ec6208bb5d5": {
+    "playerId": "434b9241-f825-4e71-b4a1-9ec6208bb5d5",
+    "name": "Cittadini",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.71
+  },
+  "cittadini": {
+    "playerId": "434b9241-f825-4e71-b4a1-9ec6208bb5d5",
+    "name": "Cittadini",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.71
+  },
+  "2ff8597a-cb95-42c1-a147-46ea883068c3": {
+    "playerId": "2ff8597a-cb95-42c1-a147-46ea883068c3",
+    "name": "Havel",
+    "role": "A",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 6.1
+  },
+  "havel": {
+    "playerId": "2ff8597a-cb95-42c1-a147-46ea883068c3",
+    "name": "Havel",
+    "role": "A",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 6.1
+  },
+  "2ade4141-3042-437f-a00b-ff8b17438a0f": {
+    "playerId": "2ade4141-3042-437f-a00b-ff8b17438a0f",
+    "name": "Koulierakis",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.03
+  },
+  "koulierakis": {
+    "playerId": "2ade4141-3042-437f-a00b-ff8b17438a0f",
+    "name": "Koulierakis",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.03
+  },
+  "8194c04b-9af2-4f63-af75-712ae72e0842": {
+    "playerId": "8194c04b-9af2-4f63-af75-712ae72e0842",
+    "name": "",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 6.37
+  },
+  "6b5429b6-38fc-4a22-bdb6-8d1e62cfa1c4": {
+    "playerId": "6b5429b6-38fc-4a22-bdb6-8d1e62cfa1c4",
+    "name": "Monterisi",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.93
+  },
+  "monterisi": {
+    "playerId": "6b5429b6-38fc-4a22-bdb6-8d1e62cfa1c4",
+    "name": "Monterisi",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.93
+  },
+  "f729e4bf-bf18-4e1d-827a-20ef37865b8a": {
+    "playerId": "f729e4bf-bf18-4e1d-827a-20ef37865b8a",
+    "name": "Carboni A.",
+    "role": "D",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 5.82
+  },
+  "carbonia": {
+    "playerId": "f729e4bf-bf18-4e1d-827a-20ef37865b8a",
+    "name": "Carboni A.",
+    "role": "D",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 5.82
+  },
+  "carboni a.": {
+    "playerId": "f729e4bf-bf18-4e1d-827a-20ef37865b8a",
+    "name": "Carboni A.",
+    "role": "D",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 5.82
+  },
+  "9869f556-9216-4950-b014-3dc6055d0167": {
+    "playerId": "9869f556-9216-4950-b014-3dc6055d0167",
+    "name": "Aurelio",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 5.69
+  },
+  "aurelio": {
+    "playerId": "9869f556-9216-4950-b014-3dc6055d0167",
+    "name": "Aurelio",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 5.69
+  },
+  "0750e0ff-54fd-4282-bd09-d1194918f5e4": {
+    "playerId": "0750e0ff-54fd-4282-bd09-d1194918f5e4",
+    "name": "Kambwala",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.75
+  },
+  "kambwala": {
+    "playerId": "0750e0ff-54fd-4282-bd09-d1194918f5e4",
+    "name": "Kambwala",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.75
+  },
+  "d063038f-c807-450b-a1a0-4ef17966dddc": {
+    "playerId": "d063038f-c807-450b-a1a0-4ef17966dddc",
+    "name": "Elphege",
+    "role": "A",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.36
+  },
+  "elphege": {
+    "playerId": "d063038f-c807-450b-a1a0-4ef17966dddc",
+    "name": "Elphege",
+    "role": "A",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.36
+  },
+  "1d2a470a-c2dd-4e85-9269-2432dab4989e": {
+    "playerId": "1d2a470a-c2dd-4e85-9269-2432dab4989e",
+    "name": "Jimenez A.",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.03
+  },
+  "jimeneza": {
+    "playerId": "1d2a470a-c2dd-4e85-9269-2432dab4989e",
+    "name": "Jimenez A.",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.03
+  },
+  "jimenez a.": {
+    "playerId": "1d2a470a-c2dd-4e85-9269-2432dab4989e",
+    "name": "Jimenez A.",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.03
+  },
+  "f2ef0efb-6a37-403e-ad92-1aec21604fb7": {
+    "playerId": "f2ef0efb-6a37-403e-ad92-1aec21604fb7",
+    "name": "Ghedjemis",
+    "role": "A",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.55
+  },
+  "ghedjemis": {
+    "playerId": "f2ef0efb-6a37-403e-ad92-1aec21604fb7",
+    "name": "Ghedjemis",
+    "role": "A",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.55
+  },
+  "0053b230-688b-4fef-90f5-b823c64ea378": {
+    "playerId": "0053b230-688b-4fef-90f5-b823c64ea378",
+    "name": "Varela G.",
+    "role": "A",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.68
+  },
+  "varelag": {
+    "playerId": "0053b230-688b-4fef-90f5-b823c64ea378",
+    "name": "Varela G.",
+    "role": "A",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.68
+  },
+  "varela g.": {
+    "playerId": "0053b230-688b-4fef-90f5-b823c64ea378",
+    "name": "Varela G.",
+    "role": "A",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.68
+  },
+  "ecefd2d9-6777-459a-8683-2f95a1210f1e": {
+    "playerId": "ecefd2d9-6777-459a-8683-2f95a1210f1e",
+    "name": "Dagasso",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.1
+  },
+  "dagasso": {
+    "playerId": "ecefd2d9-6777-459a-8683-2f95a1210f1e",
+    "name": "Dagasso",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.1
+  },
+  "ab9e8244-7145-4065-a831-eadbe98d33a7": {
+    "playerId": "ab9e8244-7145-4065-a831-eadbe98d33a7",
+    "name": "Stankovic A.",
+    "role": "C",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.2
+  },
+  "stankovica": {
+    "playerId": "ab9e8244-7145-4065-a831-eadbe98d33a7",
+    "name": "Stankovic A.",
+    "role": "C",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.2
+  },
+  "stankovic a.": {
+    "playerId": "ab9e8244-7145-4065-a831-eadbe98d33a7",
+    "name": "Stankovic A.",
+    "role": "C",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.2
+  },
+  "9768530a-cba2-4c92-89bb-2390e70459cc": {
+    "playerId": "9768530a-cba2-4c92-89bb-2390e70459cc",
+    "name": "Fini",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.28
+  },
+  "fini": {
+    "playerId": "9768530a-cba2-4c92-89bb-2390e70459cc",
+    "name": "Fini",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.28
+  },
+  "00dce0c7-d5a8-4d18-b22c-3c83c47670a3": {
+    "playerId": "00dce0c7-d5a8-4d18-b22c-3c83c47670a3",
+    "name": "Lolic",
     "role": "P",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 4.5
+  },
+  "lolic": {
+    "playerId": "00dce0c7-d5a8-4d18-b22c-3c83c47670a3",
+    "name": "Lolic",
+    "role": "P",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 4.5
+  },
+  "ea45629e-3083-496f-a75a-f75b06a132d8": {
+    "playerId": "ea45629e-3083-496f-a75a-f75b06a132d8",
+    "name": "Schingtienne",
+    "role": "D",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 2,
+    "affDesc": "Profilo altamente incostante",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.84
+  },
+  "schingtienne": {
+    "playerId": "ea45629e-3083-496f-a75a-f75b06a132d8",
+    "name": "Schingtienne",
+    "role": "D",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 2,
+    "affDesc": "Profilo altamente incostante",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.84
+  },
+  "c1ccf92c-b87c-4abd-9e4a-9c38375c920d": {
+    "playerId": "c1ccf92c-b87c-4abd-9e4a-9c38375c920d",
+    "name": "Kofler",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 5.66
+  },
+  "kofler": {
+    "playerId": "c1ccf92c-b87c-4abd-9e4a-9c38375c920d",
+    "name": "Kofler",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 5.66
+  },
+  "81dda297-825d-419f-bdc1-dadd2d326b6c": {
+    "playerId": "81dda297-825d-419f-bdc1-dadd2d326b6c",
+    "name": "Njie",
+    "role": "C",
     "titIndex": 3,
     "titDesc": "Nelle rotazioni",
     "affIndex": 4,
     "affDesc": "Quasi sempre sufficiente",
     "infIndex": 2,
     "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 5.2
+    "xfmv": 6.38
   },
-  "provedel": {
-    "playerId": "5b821b6a-1de9-4678-8dda-2cca3ddfda02",
-    "name": "Provedel",
-    "role": "P",
+  "njie": {
+    "playerId": "81dda297-825d-419f-bdc1-dadd2d326b6c",
+    "name": "Njie",
+    "role": "C",
     "titIndex": 3,
     "titDesc": "Nelle rotazioni",
     "affIndex": 4,
     "affDesc": "Quasi sempre sufficiente",
     "infIndex": 2,
     "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 5.2
+    "xfmv": 6.38
   },
-  "fa7e40ff-f212-423d-82ba-14887a232b9c": {
-    "playerId": "fa7e40ff-f212-423d-82ba-14887a232b9c",
-    "name": "Pisilli",
+  "2d943164-e3df-4a78-a795-93d26f2623e7": {
+    "playerId": "2d943164-e3df-4a78-a795-93d26f2623e7",
+    "name": "Bakoune",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.76
+  },
+  "bakoune": {
+    "playerId": "2d943164-e3df-4a78-a795-93d26f2623e7",
+    "name": "Bakoune",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.76
+  },
+  "4a7ed4dd-66d1-4837-9557-1e8148c21322": {
+    "playerId": "4a7ed4dd-66d1-4837-9557-1e8148c21322",
+    "name": "Ramon",
+    "role": "D",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 5,
+    "affDesc": "Rendimento super costante",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.21
+  },
+  "ramon": {
+    "playerId": "4a7ed4dd-66d1-4837-9557-1e8148c21322",
+    "name": "Ramon",
+    "role": "D",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 5,
+    "affDesc": "Rendimento super costante",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.21
+  },
+  "b99d0657-4f2a-4b37-90ba-9a43926e55be": {
+    "playerId": "b99d0657-4f2a-4b37-90ba-9a43926e55be",
+    "name": "Strajnar",
+    "role": "P",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 4.5
+  },
+  "strajnar": {
+    "playerId": "b99d0657-4f2a-4b37-90ba-9a43926e55be",
+    "name": "Strajnar",
+    "role": "P",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 4.5
+  },
+  "d8b66d33-4dcc-4cc8-9f3e-f5add19e00c5": {
+    "playerId": "d8b66d33-4dcc-4cc8-9f3e-f5add19e00c5",
+    "name": "Colombo L.",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 5.95
+  },
+  "colombol": {
+    "playerId": "d8b66d33-4dcc-4cc8-9f3e-f5add19e00c5",
+    "name": "Colombo L.",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 5.95
+  },
+  "colombo l.": {
+    "playerId": "d8b66d33-4dcc-4cc8-9f3e-f5add19e00c5",
+    "name": "Colombo L.",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 5.95
+  },
+  "ec9e54b7-272b-48b0-acb4-841704350150": {
+    "playerId": "ec9e54b7-272b-48b0-acb4-841704350150",
+    "name": "Cichella",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 5.89
+  },
+  "cichella": {
+    "playerId": "ec9e54b7-272b-48b0-acb4-841704350150",
+    "name": "Cichella",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 5.89
+  },
+  "ca464bbb-fe09-461d-a32f-8e235178752f": {
+    "playerId": "ca464bbb-fe09-461d-a32f-8e235178752f",
+    "name": "Sucic P.",
     "role": "C",
     "titIndex": 3,
     "titDesc": "Nelle rotazioni",
@@ -6663,9 +6975,9 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "È sempre integro",
     "xfmv": 6.31
   },
-  "pisilli": {
-    "playerId": "fa7e40ff-f212-423d-82ba-14887a232b9c",
-    "name": "Pisilli",
+  "sucicp": {
+    "playerId": "ca464bbb-fe09-461d-a32f-8e235178752f",
+    "name": "Sucic P.",
     "role": "C",
     "titIndex": 3,
     "titDesc": "Nelle rotazioni",
@@ -6675,92 +6987,176 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "È sempre integro",
     "xfmv": 6.31
   },
-  "776c5c30-c674-4570-b9d6-03d0004fd4f2": {
-    "playerId": "776c5c30-c674-4570-b9d6-03d0004fd4f2",
-    "name": "Barella",
+  "sucic p.": {
+    "playerId": "ca464bbb-fe09-461d-a32f-8e235178752f",
+    "name": "Sucic P.",
     "role": "C",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 5,
-    "affDesc": "Rendimento super costante",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.69
-  },
-  "barella": {
-    "playerId": "776c5c30-c674-4570-b9d6-03d0004fd4f2",
-    "name": "Barella",
-    "role": "C",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 5,
-    "affDesc": "Rendimento super costante",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.69
-  },
-  "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea": {
-    "playerId": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea",
-    "name": "Soulè",
-    "role": "A",
     "titIndex": 3,
     "titDesc": "Nelle rotazioni",
     "affIndex": 4,
     "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.92
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.31
   },
-  "soul": {
-    "playerId": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea",
-    "name": "Soulè",
-    "role": "A",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.92
-  },
-  "soulè": {
-    "playerId": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea",
-    "name": "Soulè",
-    "role": "A",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.92
-  },
-  "6f0efc62-d6a5-4540-a67b-cac636d8bdf0": {
-    "playerId": "6f0efc62-d6a5-4540-a67b-cac636d8bdf0",
-    "name": "Gineitis",
+  "91b6ce45-5fd3-4f81-bdcf-771427e7205d": {
+    "playerId": "91b6ce45-5fd3-4f81-bdcf-771427e7205d",
+    "name": "",
     "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
     "affIndex": 3,
     "affDesc": "Alterna buone prestazioni ad altre deludenti",
     "infIndex": 5,
     "infDesc": "È sempre integro",
-    "xfmv": 5.97
+    "xfmv": 4.5
   },
-  "gineitis": {
-    "playerId": "6f0efc62-d6a5-4540-a67b-cac636d8bdf0",
-    "name": "Gineitis",
+  "ce5b19a3-93bc-4d98-b799-c466274df41a": {
+    "playerId": "ce5b19a3-93bc-4d98-b799-c466274df41a",
+    "name": "Rodriguez Ju.",
+    "role": "D",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.89
+  },
+  "rodriguezju": {
+    "playerId": "ce5b19a3-93bc-4d98-b799-c466274df41a",
+    "name": "Rodriguez Ju.",
+    "role": "D",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.89
+  },
+  "rodriguez ju.": {
+    "playerId": "ce5b19a3-93bc-4d98-b799-c466274df41a",
+    "name": "Rodriguez Ju.",
+    "role": "D",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.89
+  },
+  "180c9fdc-84bd-45a0-8cee-0dabd9a321c3": {
+    "playerId": "180c9fdc-84bd-45a0-8cee-0dabd9a321c3",
+    "name": "",
     "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
     "affIndex": 3,
     "affDesc": "Alterna buone prestazioni ad altre deludenti",
     "infIndex": 5,
     "infDesc": "È sempre integro",
-    "xfmv": 5.97
+    "xfmv": 4.5
   },
-  "34e0b815-2a6c-409f-8c65-0ff73605d649": {
-    "playerId": "34e0b815-2a6c-409f-8c65-0ff73605d649",
+  "9f507758-5805-4ea3-9f4b-6158c66feefd": {
+    "playerId": "9f507758-5805-4ea3-9f4b-6158c66feefd",
+    "name": "Mascardi",
+    "role": "P",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 4.76
+  },
+  "mascardi": {
+    "playerId": "9f507758-5805-4ea3-9f4b-6158c66feefd",
+    "name": "Mascardi",
+    "role": "P",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 4.76
+  },
+  "a778e4d5-7591-4341-93cc-3fedebf36602": {
+    "playerId": "a778e4d5-7591-4341-93cc-3fedebf36602",
+    "name": "Palma",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 5.83
+  },
+  "palma": {
+    "playerId": "a778e4d5-7591-4341-93cc-3fedebf36602",
+    "name": "Palma",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 5.83
+  },
+  "bb0e0e1e-c1f8-4676-94d1-ec1358aff228": {
+    "playerId": "bb0e0e1e-c1f8-4676-94d1-ec1358aff228",
+    "name": "Lisman",
+    "role": "A",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 6.15
+  },
+  "lisman": {
+    "playerId": "bb0e0e1e-c1f8-4676-94d1-ec1358aff228",
+    "name": "Lisman",
+    "role": "A",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 6.15
+  },
+  "ca1d5381-2b54-4f76-8a2b-c52cda474dc8": {
+    "playerId": "ca1d5381-2b54-4f76-8a2b-c52cda474dc8",
+    "name": "Siviero",
+    "role": "P",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 4.5
+  },
+  "siviero": {
+    "playerId": "ca1d5381-2b54-4f76-8a2b-c52cda474dc8",
+    "name": "Siviero",
+    "role": "P",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 4.5
+  },
+  "6b1677bc-b9b5-4546-8183-98f46bd039ab": {
+    "playerId": "6b1677bc-b9b5-4546-8183-98f46bd039ab",
     "name": "",
     "role": "C",
     "titIndex": 2,
@@ -6769,31 +7165,259 @@ export const PLAYER_INDICES_MAP = {
     "affDesc": "Alterna buone prestazioni ad altre deludenti",
     "infIndex": 5,
     "infDesc": "È sempre integro",
-    "xfmv": 5.86
+    "xfmv": 6.11
   },
-  "8479a96e-18ca-4c21-9813-ec0cc992dcf6": {
-    "playerId": "8479a96e-18ca-4c21-9813-ec0cc992dcf6",
-    "name": "Dimarco",
-    "role": "D",
+  "2e331f32-cc88-4a67-b471-f05a2db80063": {
+    "playerId": "2e331f32-cc88-4a67-b471-f05a2db80063",
+    "name": "",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.49
+  },
+  "dc1712b1-57f3-433e-991a-2174387b8d39": {
+    "playerId": "dc1712b1-57f3-433e-991a-2174387b8d39",
+    "name": "Mastantuono",
+    "role": "C",
     "titIndex": 5,
     "titDesc": "Titolare inamovibile",
-    "affIndex": 5,
-    "affDesc": "Rendimento super costante",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 7.36
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.81
   },
-  "dimarco": {
-    "playerId": "8479a96e-18ca-4c21-9813-ec0cc992dcf6",
-    "name": "Dimarco",
-    "role": "D",
+  "mastantuono": {
+    "playerId": "dc1712b1-57f3-433e-991a-2174387b8d39",
+    "name": "Mastantuono",
+    "role": "C",
     "titIndex": 5,
     "titDesc": "Titolare inamovibile",
-    "affIndex": 5,
-    "affDesc": "Rendimento super costante",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 7.36
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.81
+  },
+  "9451216d-7d3a-453a-a899-626710d2e572": {
+    "playerId": "9451216d-7d3a-453a-a899-626710d2e572",
+    "name": "Ekhator",
+    "role": "A",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.29
+  },
+  "ekhator": {
+    "playerId": "9451216d-7d3a-453a-a899-626710d2e572",
+    "name": "Ekhator",
+    "role": "A",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.29
+  },
+  "659ce549-30d0-49f8-9880-ec47debabb4f": {
+    "playerId": "659ce549-30d0-49f8-9880-ec47debabb4f",
+    "name": "Lahdo",
+    "role": "C",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6
+  },
+  "lahdo": {
+    "playerId": "659ce549-30d0-49f8-9880-ec47debabb4f",
+    "name": "Lahdo",
+    "role": "C",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6
+  },
+  "27551bf1-46ae-44f8-bac1-825be51116f8": {
+    "playerId": "27551bf1-46ae-44f8-bac1-825be51116f8",
+    "name": "",
+    "role": "C",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 4.5
+  },
+  "e329f340-4dcb-450b-a014-f13b7177b16d": {
+    "playerId": "e329f340-4dcb-450b-a014-f13b7177b16d",
+    "name": "",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6
+  },
+  "eb1e8211-468b-4db8-b9be-1a15afa2339d": {
+    "playerId": "eb1e8211-468b-4db8-b9be-1a15afa2339d",
+    "name": "Britschgi",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 5.82
+  },
+  "britschgi": {
+    "playerId": "eb1e8211-468b-4db8-b9be-1a15afa2339d",
+    "name": "Britschgi",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 5.82
+  },
+  "35745a73-7a77-4d8e-9216-e8b4c2036a27": {
+    "playerId": "35745a73-7a77-4d8e-9216-e8b4c2036a27",
+    "name": "Gomes",
+    "role": "D",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 5.6
+  },
+  "gomes": {
+    "playerId": "35745a73-7a77-4d8e-9216-e8b4c2036a27",
+    "name": "Gomes",
+    "role": "D",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 5.6
+  },
+  "6332fc72-c508-4e04-bca1-db35ddda3e94": {
+    "playerId": "6332fc72-c508-4e04-bca1-db35ddda3e94",
+    "name": "Mendy P.",
+    "role": "A",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.56
+  },
+  "mendyp": {
+    "playerId": "6332fc72-c508-4e04-bca1-db35ddda3e94",
+    "name": "Mendy P.",
+    "role": "A",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.56
+  },
+  "mendy p.": {
+    "playerId": "6332fc72-c508-4e04-bca1-db35ddda3e94",
+    "name": "Mendy P.",
+    "role": "A",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.56
+  },
+  "c569b210-c9a1-4e64-9d9f-0d4106d10235": {
+    "playerId": "c569b210-c9a1-4e64-9d9f-0d4106d10235",
+    "name": "",
+    "role": "C",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6
+  },
+  "fd3cb6f4-d912-43b1-81f5-eedbd88a7390": {
+    "playerId": "fd3cb6f4-d912-43b1-81f5-eedbd88a7390",
+    "name": "Volpato",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 6.32
+  },
+  "volpato": {
+    "playerId": "fd3cb6f4-d912-43b1-81f5-eedbd88a7390",
+    "name": "Volpato",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 6.32
+  },
+  "92d60563-17a8-45d1-a6c1-3b8d5e676e1d": {
+    "playerId": "92d60563-17a8-45d1-a6c1-3b8d5e676e1d",
+    "name": "Mout",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.04
+  },
+  "mout": {
+    "playerId": "92d60563-17a8-45d1-a6c1-3b8d5e676e1d",
+    "name": "Mout",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.04
   },
   "b52353dc-b2c6-4118-9d13-d3a963ba583f": {
     "playerId": "b52353dc-b2c6-4118-9d13-d3a963ba583f",
@@ -6903,30 +7527,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ha avuto diversi infortuni",
     "xfmv": 4.5
   },
-  "a631380f-8283-444f-948c-bc772ffcc1bc": {
-    "playerId": "a631380f-8283-444f-948c-bc772ffcc1bc",
-    "name": "Biraghi",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.71
-  },
-  "biraghi": {
-    "playerId": "a631380f-8283-444f-948c-bc772ffcc1bc",
-    "name": "Biraghi",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.71
-  },
   "7fa392f2-d52e-4a8f-8f57-8f80d1cb3985": {
     "playerId": "7fa392f2-d52e-4a8f-8f57-8f80d1cb3985",
     "name": "Sommariva",
@@ -6950,6 +7550,30 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 5,
     "infDesc": "È sempre integro",
     "xfmv": 4.5
+  },
+  "a631380f-8283-444f-948c-bc772ffcc1bc": {
+    "playerId": "a631380f-8283-444f-948c-bc772ffcc1bc",
+    "name": "Biraghi",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.71
+  },
+  "biraghi": {
+    "playerId": "a631380f-8283-444f-948c-bc772ffcc1bc",
+    "name": "Biraghi",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.71
   },
   "c3763cc2-a3d9-403f-8f5a-856896a47c5d": {
     "playerId": "c3763cc2-a3d9-403f-8f5a-856896a47c5d",
@@ -6975,29 +7599,53 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 6.61
   },
-  "95d8739c-8b5e-44a3-9378-73a33aab1a00": {
-    "playerId": "95d8739c-8b5e-44a3-9378-73a33aab1a00",
-    "name": "Rugani",
-    "role": "D",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 5.77
+  "79e0486c-5861-4fb0-ba5c-f35bc19df8c3": {
+    "playerId": "79e0486c-5861-4fb0-ba5c-f35bc19df8c3",
+    "name": "Thuram",
+    "role": "A",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 5,
+    "affDesc": "Rendimento super costante",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 7.89
   },
-  "rugani": {
-    "playerId": "95d8739c-8b5e-44a3-9378-73a33aab1a00",
-    "name": "Rugani",
-    "role": "D",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
+  "thuram": {
+    "playerId": "79e0486c-5861-4fb0-ba5c-f35bc19df8c3",
+    "name": "Thuram",
+    "role": "A",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 5,
+    "affDesc": "Rendimento super costante",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 7.89
+  },
+  "18de2da7-0388-4860-a39b-81d2fc5d3472": {
+    "playerId": "18de2da7-0388-4860-a39b-81d2fc5d3472",
+    "name": "Almqvist",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
     "affIndex": 3,
     "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 5.77
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.35
+  },
+  "almqvist": {
+    "playerId": "18de2da7-0388-4860-a39b-81d2fc5d3472",
+    "name": "Almqvist",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.35
   },
   "78344e2f-3ab0-44e0-9b4f-9322f65e4bed": {
     "playerId": "78344e2f-3ab0-44e0-9b4f-9322f65e4bed",
@@ -7023,30 +7671,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Molto fragile",
     "xfmv": 7.42
   },
-  "aab3ee14-90d4-4eec-af47-33514cb8a009": {
-    "playerId": "aab3ee14-90d4-4eec-af47-33514cb8a009",
-    "name": "Patric",
-    "role": "D",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 5.75
-  },
-  "patric": {
-    "playerId": "aab3ee14-90d4-4eec-af47-33514cb8a009",
-    "name": "Patric",
-    "role": "D",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 5.75
-  },
   "5e30ad05-c817-4f96-b015-8e6c5c46e9eb": {
     "playerId": "5e30ad05-c817-4f96-b015-8e6c5c46e9eb",
     "name": "Goldaniga",
@@ -7070,6 +7694,30 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 1,
     "infDesc": "Molto fragile",
     "xfmv": 5.91
+  },
+  "aab3ee14-90d4-4eec-af47-33514cb8a009": {
+    "playerId": "aab3ee14-90d4-4eec-af47-33514cb8a009",
+    "name": "Patric",
+    "role": "D",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 5.75
+  },
+  "patric": {
+    "playerId": "aab3ee14-90d4-4eec-af47-33514cb8a009",
+    "name": "Patric",
+    "role": "D",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 5.75
   },
   "e3ca6a3a-4c39-4307-ab09-0520b0f066db": {
     "playerId": "e3ca6a3a-4c39-4307-ab09-0520b0f066db",
@@ -7167,6 +7815,42 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Molto fragile",
     "xfmv": 5.96
   },
+  "570ee83d-8f44-4206-875c-10dd0430c4f3": {
+    "playerId": "570ee83d-8f44-4206-875c-10dd0430c4f3",
+    "name": "De Roon",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.21
+  },
+  "deroon": {
+    "playerId": "570ee83d-8f44-4206-875c-10dd0430c4f3",
+    "name": "De Roon",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.21
+  },
+  "de roon": {
+    "playerId": "570ee83d-8f44-4206-875c-10dd0430c4f3",
+    "name": "De Roon",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.21
+  },
   "7fe15059-21a8-41b8-9b03-2c4bd1513ff1": {
     "playerId": "7fe15059-21a8-41b8-9b03-2c4bd1513ff1",
     "name": "Sabelli",
@@ -7215,18 +7899,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ha avuto diversi infortuni",
     "xfmv": 6.37
   },
-  "104f0fb3-0b02-4c2c-99e4-b628e47e7ee2": {
-    "playerId": "104f0fb3-0b02-4c2c-99e4-b628e47e7ee2",
-    "name": "",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.42
-  },
   "65b01da4-d962-42ce-bc23-e7bcc306a61b": {
     "playerId": "65b01da4-d962-42ce-bc23-e7bcc306a61b",
     "name": "Spinazzola",
@@ -7251,6 +7923,18 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ha avuto diversi infortuni",
     "xfmv": 6.28
   },
+  "104f0fb3-0b02-4c2c-99e4-b628e47e7ee2": {
+    "playerId": "104f0fb3-0b02-4c2c-99e4-b628e47e7ee2",
+    "name": "",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.42
+  },
   "d11d503a-b278-4e14-b201-b7862e1f955d": {
     "playerId": "d11d503a-b278-4e14-b201-b7862e1f955d",
     "name": "Deiola",
@@ -7274,42 +7958,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 3,
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 6.05
-  },
-  "570ee83d-8f44-4206-875c-10dd0430c4f3": {
-    "playerId": "570ee83d-8f44-4206-875c-10dd0430c4f3",
-    "name": "De Roon",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.21
-  },
-  "deroon": {
-    "playerId": "570ee83d-8f44-4206-875c-10dd0430c4f3",
-    "name": "De Roon",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.21
-  },
-  "de roon": {
-    "playerId": "570ee83d-8f44-4206-875c-10dd0430c4f3",
-    "name": "De Roon",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.21
   },
   "ab0c501a-2374-4942-8133-781cf2c60a8e": {
     "playerId": "ab0c501a-2374-4942-8133-781cf2c60a8e",
@@ -7359,6 +8007,30 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ha avuto diversi infortuni",
     "xfmv": 6.21
   },
+  "145d21dc-5021-44b4-a937-6f56c831a835": {
+    "playerId": "145d21dc-5021-44b4-a937-6f56c831a835",
+    "name": "Duncan",
+    "role": "C",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.9
+  },
+  "duncan": {
+    "playerId": "145d21dc-5021-44b4-a937-6f56c831a835",
+    "name": "Duncan",
+    "role": "C",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.9
+  },
   "03abf7ae-63a5-4f70-a892-d0f6b57b243b": {
     "playerId": "03abf7ae-63a5-4f70-a892-d0f6b57b243b",
     "name": "Pellegrini Lo.",
@@ -7394,30 +8066,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 2,
     "infDesc": "Ha avuto diversi infortuni",
     "xfmv": 6.25
-  },
-  "145d21dc-5021-44b4-a937-6f56c831a835": {
-    "playerId": "145d21dc-5021-44b4-a937-6f56c831a835",
-    "name": "Duncan",
-    "role": "C",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.9
-  },
-  "duncan": {
-    "playerId": "145d21dc-5021-44b4-a937-6f56c831a835",
-    "name": "Duncan",
-    "role": "C",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.9
   },
   "749247cd-79ed-44d6-a376-50afab6e25a0": {
     "playerId": "749247cd-79ed-44d6-a376-50afab6e25a0",
@@ -7671,30 +8319,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "È sempre integro",
     "xfmv": 5.25
   },
-  "46cdde29-6808-4c58-aee5-4bcfffce0c2f": {
-    "playerId": "46cdde29-6808-4c58-aee5-4bcfffce0c2f",
-    "name": "Calhanoglu",
-    "role": "C",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 5,
-    "affDesc": "Rendimento super costante",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 7.43
-  },
-  "calhanoglu": {
-    "playerId": "46cdde29-6808-4c58-aee5-4bcfffce0c2f",
-    "name": "Calhanoglu",
-    "role": "C",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 5,
-    "affDesc": "Rendimento super costante",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 7.43
-  },
   "b610c091-be19-455b-9407-3e900cd50db2": {
     "playerId": "b610c091-be19-455b-9407-3e900cd50db2",
     "name": "Di Gennaro",
@@ -7755,30 +8379,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 6.41
   },
-  "2cfcc521-bd1e-46a5-98f3-e900c436061d": {
-    "playerId": "2cfcc521-bd1e-46a5-98f3-e900c436061d",
-    "name": "Milik",
-    "role": "A",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 6.5
-  },
-  "milik": {
-    "playerId": "2cfcc521-bd1e-46a5-98f3-e900c436061d",
-    "name": "Milik",
-    "role": "A",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 6.5
-  },
   "ced01d22-1684-45d0-bcde-9898ff26ae86": {
     "playerId": "ced01d22-1684-45d0-bcde-9898ff26ae86",
     "name": "Pinamonti",
@@ -7803,29 +8403,53 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Pochissimi infortuni",
     "xfmv": 6.72
   },
-  "d24218a4-0bbc-4dd6-b01d-cf9d0a9a90d5": {
-    "playerId": "d24218a4-0bbc-4dd6-b01d-cf9d0a9a90d5",
-    "name": "Simeone",
+  "2cfcc521-bd1e-46a5-98f3-e900c436061d": {
+    "playerId": "2cfcc521-bd1e-46a5-98f3-e900c436061d",
+    "name": "Milik",
     "role": "A",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
     "affIndex": 4,
     "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 7.08
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 6.5
   },
-  "simeone": {
-    "playerId": "d24218a4-0bbc-4dd6-b01d-cf9d0a9a90d5",
-    "name": "Simeone",
+  "milik": {
+    "playerId": "2cfcc521-bd1e-46a5-98f3-e900c436061d",
+    "name": "Milik",
     "role": "A",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
     "affIndex": 4,
     "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 7.08
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 6.5
+  },
+  "46cdde29-6808-4c58-aee5-4bcfffce0c2f": {
+    "playerId": "46cdde29-6808-4c58-aee5-4bcfffce0c2f",
+    "name": "Calhanoglu",
+    "role": "C",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 5,
+    "affDesc": "Rendimento super costante",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 7.43
+  },
+  "calhanoglu": {
+    "playerId": "46cdde29-6808-4c58-aee5-4bcfffce0c2f",
+    "name": "Calhanoglu",
+    "role": "C",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 5,
+    "affDesc": "Rendimento super costante",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 7.43
   },
   "515cb6cb-fae1-428c-89cc-a97f5ccbc6c8": {
     "playerId": "515cb6cb-fae1-428c-89cc-a97f5ccbc6c8",
@@ -7851,29 +8475,29 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "È sempre integro",
     "xfmv": 6.34
   },
-  "b5bd1c96-73a5-4302-afd4-84f4139f1f2b": {
-    "playerId": "b5bd1c96-73a5-4302-afd4-84f4139f1f2b",
-    "name": "Falcone",
-    "role": "P",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
+  "d24218a4-0bbc-4dd6-b01d-cf9d0a9a90d5": {
+    "playerId": "d24218a4-0bbc-4dd6-b01d-cf9d0a9a90d5",
+    "name": "Simeone",
+    "role": "A",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
     "affIndex": 4,
     "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 5.02
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 7.08
   },
-  "falcone": {
-    "playerId": "b5bd1c96-73a5-4302-afd4-84f4139f1f2b",
-    "name": "Falcone",
-    "role": "P",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
+  "simeone": {
+    "playerId": "d24218a4-0bbc-4dd6-b01d-cf9d0a9a90d5",
+    "name": "Simeone",
+    "role": "A",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
     "affIndex": 4,
     "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 5.02
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 7.08
   },
   "e2f65951-61bc-4469-bd01-9340d6a556b2": {
     "playerId": "e2f65951-61bc-4469-bd01-9340d6a556b2",
@@ -7923,29 +8547,29 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 6.45
   },
-  "4cc6309e-aacf-4bb2-b5a8-e425bfdafcb0": {
-    "playerId": "4cc6309e-aacf-4bb2-b5a8-e425bfdafcb0",
-    "name": "Cutrone",
-    "role": "A",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.38
+  "b5bd1c96-73a5-4302-afd4-84f4139f1f2b": {
+    "playerId": "b5bd1c96-73a5-4302-afd4-84f4139f1f2b",
+    "name": "Falcone",
+    "role": "P",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 5.02
   },
-  "cutrone": {
-    "playerId": "4cc6309e-aacf-4bb2-b5a8-e425bfdafcb0",
-    "name": "Cutrone",
-    "role": "A",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.38
+  "falcone": {
+    "playerId": "b5bd1c96-73a5-4302-afd4-84f4139f1f2b",
+    "name": "Falcone",
+    "role": "P",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 5.02
   },
   "a42a0043-f7e9-42fb-b6a1-e9045138b7b2": {
     "playerId": "a42a0043-f7e9-42fb-b6a1-e9045138b7b2",
@@ -7970,6 +8594,30 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 4,
     "infDesc": "Pochissimi infortuni",
     "xfmv": 6.43
+  },
+  "4cc6309e-aacf-4bb2-b5a8-e425bfdafcb0": {
+    "playerId": "4cc6309e-aacf-4bb2-b5a8-e425bfdafcb0",
+    "name": "Cutrone",
+    "role": "A",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.38
+  },
+  "cutrone": {
+    "playerId": "4cc6309e-aacf-4bb2-b5a8-e425bfdafcb0",
+    "name": "Cutrone",
+    "role": "A",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.38
   },
   "52c73119-c573-4f9d-91c2-6a4977464787": {
     "playerId": "52c73119-c573-4f9d-91c2-6a4977464787",
@@ -8031,6 +8679,30 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ha avuto diversi infortuni",
     "xfmv": 5.95
   },
+  "912f7b0d-01d8-45e0-b7c3-62ba2037a649": {
+    "playerId": "912f7b0d-01d8-45e0-b7c3-62ba2037a649",
+    "name": "Rabiot",
+    "role": "C",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 5,
+    "affDesc": "Rendimento super costante",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.88
+  },
+  "rabiot": {
+    "playerId": "912f7b0d-01d8-45e0-b7c3-62ba2037a649",
+    "name": "Rabiot",
+    "role": "C",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 5,
+    "affDesc": "Rendimento super costante",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.88
+  },
   "287aea48-e990-419a-8744-9753b369dd13": {
     "playerId": "287aea48-e990-419a-8744-9753b369dd13",
     "name": "De Gea",
@@ -8067,30 +8739,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "È sempre integro",
     "xfmv": 5.03
   },
-  "912f7b0d-01d8-45e0-b7c3-62ba2037a649": {
-    "playerId": "912f7b0d-01d8-45e0-b7c3-62ba2037a649",
-    "name": "Rabiot",
-    "role": "C",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 5,
-    "affDesc": "Rendimento super costante",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.88
-  },
-  "rabiot": {
-    "playerId": "912f7b0d-01d8-45e0-b7c3-62ba2037a649",
-    "name": "Rabiot",
-    "role": "C",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 5,
-    "affDesc": "Rendimento super costante",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.88
-  },
   "9ecf743b-95b3-46f4-b3b8-777f6ed9262f": {
     "playerId": "9ecf743b-95b3-46f4-b3b8-777f6ed9262f",
     "name": "Matic",
@@ -8114,30 +8762,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 5,
     "infDesc": "È sempre integro",
     "xfmv": 5.97
-  },
-  "a4f95743-a2f0-4fb5-b7c4-c2b41c585cdf": {
-    "playerId": "a4f95743-a2f0-4fb5-b7c4-c2b41c585cdf",
-    "name": "Lazzari",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 5.81
-  },
-  "lazzari": {
-    "playerId": "a4f95743-a2f0-4fb5-b7c4-c2b41c585cdf",
-    "name": "Lazzari",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 5.81
   },
   "0e4a800a-f8df-4bc4-8ddc-fe32b660a537": {
     "playerId": "0e4a800a-f8df-4bc4-8ddc-fe32b660a537",
@@ -8187,30 +8811,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ha avuto diversi infortuni",
     "xfmv": 7.19
   },
-  "f0cc9638-e365-41ec-a8d0-d55c37c876df": {
-    "playerId": "f0cc9638-e365-41ec-a8d0-d55c37c876df",
-    "name": "Modric",
-    "role": "C",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 5,
-    "affDesc": "Rendimento super costante",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.41
-  },
-  "modric": {
-    "playerId": "f0cc9638-e365-41ec-a8d0-d55c37c876df",
-    "name": "Modric",
-    "role": "C",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 5,
-    "affDesc": "Rendimento super costante",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.41
-  },
   "4e863a5b-d6ea-4aa0-8915-ecd6686bfa7b": {
     "playerId": "4e863a5b-d6ea-4aa0-8915-ecd6686bfa7b",
     "name": "Kolasinac",
@@ -8234,42 +8834,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 1,
     "infDesc": "Molto fragile",
     "xfmv": 5.9
-  },
-  "1b0d7ac9-3030-4864-96a8-20aa778d0c8a": {
-    "playerId": "1b0d7ac9-3030-4864-96a8-20aa778d0c8a",
-    "name": "Martinez L.",
-    "role": "A",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 5,
-    "affDesc": "Rendimento super costante",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 8.24
-  },
-  "martinezl": {
-    "playerId": "1b0d7ac9-3030-4864-96a8-20aa778d0c8a",
-    "name": "Martinez L.",
-    "role": "A",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 5,
-    "affDesc": "Rendimento super costante",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 8.24
-  },
-  "martinez l.": {
-    "playerId": "1b0d7ac9-3030-4864-96a8-20aa778d0c8a",
-    "name": "Martinez L.",
-    "role": "A",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 5,
-    "affDesc": "Rendimento super costante",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 8.24
   },
   "244e0389-9c58-4c30-a0c2-dc221e3bb4ee": {
     "playerId": "244e0389-9c58-4c30-a0c2-dc221e3bb4ee",
@@ -8318,6 +8882,42 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 1,
     "infDesc": "Molto fragile",
     "xfmv": 6.38
+  },
+  "1b0d7ac9-3030-4864-96a8-20aa778d0c8a": {
+    "playerId": "1b0d7ac9-3030-4864-96a8-20aa778d0c8a",
+    "name": "Martinez L.",
+    "role": "A",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 5,
+    "affDesc": "Rendimento super costante",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 8.24
+  },
+  "martinezl": {
+    "playerId": "1b0d7ac9-3030-4864-96a8-20aa778d0c8a",
+    "name": "Martinez L.",
+    "role": "A",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 5,
+    "affDesc": "Rendimento super costante",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 8.24
+  },
+  "martinez l.": {
+    "playerId": "1b0d7ac9-3030-4864-96a8-20aa778d0c8a",
+    "name": "Martinez L.",
+    "role": "A",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 5,
+    "affDesc": "Rendimento super costante",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 8.24
   },
   "f1c0e033-83ec-4745-b8c7-cc6a43d6cb21": {
     "playerId": "f1c0e033-83ec-4745-b8c7-cc6a43d6cb21",
@@ -8403,6 +9003,30 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ha avuto diversi infortuni",
     "xfmv": 6.44
   },
+  "a27f6745-190b-4ca1-9274-bfc2933b074e": {
+    "playerId": "a27f6745-190b-4ca1-9274-bfc2933b074e",
+    "name": "Stones",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 6.19
+  },
+  "stones": {
+    "playerId": "a27f6745-190b-4ca1-9274-bfc2933b074e",
+    "name": "Stones",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 6.19
+  },
   "c91e4367-d0cc-42c8-a727-74afdb44f593": {
     "playerId": "c91e4367-d0cc-42c8-a727-74afdb44f593",
     "name": "Boga",
@@ -8450,30 +9074,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 4,
     "infDesc": "Pochissimi infortuni",
     "xfmv": 4.5
-  },
-  "a27f6745-190b-4ca1-9274-bfc2933b074e": {
-    "playerId": "a27f6745-190b-4ca1-9274-bfc2933b074e",
-    "name": "Stones",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 6.19
-  },
-  "stones": {
-    "playerId": "a27f6745-190b-4ca1-9274-bfc2933b074e",
-    "name": "Stones",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 6.19
   },
   "f06f2f39-13e2-4cda-8319-dffd25ec0cbd": {
     "playerId": "f06f2f39-13e2-4cda-8319-dffd25ec0cbd",
@@ -8967,30 +9567,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Molto fragile",
     "xfmv": 6.66
   },
-  "9f7a6ad7-d230-41f0-aa72-12933ab90027": {
-    "playerId": "9f7a6ad7-d230-41f0-aa72-12933ab90027",
-    "name": "Maignan",
-    "role": "P",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 5,
-    "affDesc": "Rendimento super costante",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.3
-  },
-  "maignan": {
-    "playerId": "9f7a6ad7-d230-41f0-aa72-12933ab90027",
-    "name": "Maignan",
-    "role": "P",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 5,
-    "affDesc": "Rendimento super costante",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.3
-  },
   "917b4ad5-2521-4728-96a1-e5df0346dcf3": {
     "playerId": "917b4ad5-2521-4728-96a1-e5df0346dcf3",
     "name": "Kabasele",
@@ -9014,6 +9590,30 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 4,
     "infDesc": "Pochissimi infortuni",
     "xfmv": 6.03
+  },
+  "9f7a6ad7-d230-41f0-aa72-12933ab90027": {
+    "playerId": "9f7a6ad7-d230-41f0-aa72-12933ab90027",
+    "name": "Maignan",
+    "role": "P",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 5,
+    "affDesc": "Rendimento super costante",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.3
+  },
+  "maignan": {
+    "playerId": "9f7a6ad7-d230-41f0-aa72-12933ab90027",
+    "name": "Maignan",
+    "role": "P",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 5,
+    "affDesc": "Rendimento super costante",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.3
   },
   "56047277-ecee-44df-a949-782ccdb20a4b": {
     "playerId": "56047277-ecee-44df-a949-782ccdb20a4b",
@@ -9075,42 +9675,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Pochissimi infortuni",
     "xfmv": 6.72
   },
-  "c64e2aa4-98c4-4867-8f32-7b2fdb0df61d": {
-    "playerId": "c64e2aa4-98c4-4867-8f32-7b2fdb0df61d",
-    "name": "Ranieri L.",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 5.8
-  },
-  "ranieril": {
-    "playerId": "c64e2aa4-98c4-4867-8f32-7b2fdb0df61d",
-    "name": "Ranieri L.",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 5.8
-  },
-  "ranieri l.": {
-    "playerId": "c64e2aa4-98c4-4867-8f32-7b2fdb0df61d",
-    "name": "Ranieri L.",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 5.8
-  },
   "6b73ffab-1bf1-40c1-9a8c-35dbc1d0ed1d": {
     "playerId": "6b73ffab-1bf1-40c1-9a8c-35dbc1d0ed1d",
     "name": "Raspadori",
@@ -9158,6 +9722,42 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 2,
     "infDesc": "Ha avuto diversi infortuni",
     "xfmv": 5.84
+  },
+  "c64e2aa4-98c4-4867-8f32-7b2fdb0df61d": {
+    "playerId": "c64e2aa4-98c4-4867-8f32-7b2fdb0df61d",
+    "name": "Ranieri L.",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 5.8
+  },
+  "ranieril": {
+    "playerId": "c64e2aa4-98c4-4867-8f32-7b2fdb0df61d",
+    "name": "Ranieri L.",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 5.8
+  },
+  "ranieri l.": {
+    "playerId": "c64e2aa4-98c4-4867-8f32-7b2fdb0df61d",
+    "name": "Ranieri L.",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 5.8
   },
   "aeed69d5-c370-4108-929d-ba03ac11e1ae": {
     "playerId": "aeed69d5-c370-4108-929d-ba03ac11e1ae",
@@ -9591,54 +10191,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 5.94
   },
-  "440c9918-20a7-4fc7-9985-3b4031b1ac74": {
-    "playerId": "440c9918-20a7-4fc7-9985-3b4031b1ac74",
-    "name": "Balerdi",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 6.06
-  },
-  "balerdi": {
-    "playerId": "440c9918-20a7-4fc7-9985-3b4031b1ac74",
-    "name": "Balerdi",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 6.06
-  },
-  "e61e195b-f44a-4d8c-8eff-8cab676bcc94": {
-    "playerId": "e61e195b-f44a-4d8c-8eff-8cab676bcc94",
-    "name": "Celik",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.12
-  },
-  "celik": {
-    "playerId": "e61e195b-f44a-4d8c-8eff-8cab676bcc94",
-    "name": "Celik",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.12
-  },
   "8952b9a9-20a7-430e-86c8-5a1eae9250fe": {
     "playerId": "8952b9a9-20a7-430e-86c8-5a1eae9250fe",
     "name": "Russo A.",
@@ -9674,6 +10226,90 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 5,
     "infDesc": "È sempre integro",
     "xfmv": 4.5
+  },
+  "e61e195b-f44a-4d8c-8eff-8cab676bcc94": {
+    "playerId": "e61e195b-f44a-4d8c-8eff-8cab676bcc94",
+    "name": "Celik",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.12
+  },
+  "celik": {
+    "playerId": "e61e195b-f44a-4d8c-8eff-8cab676bcc94",
+    "name": "Celik",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.12
+  },
+  "440c9918-20a7-4fc7-9985-3b4031b1ac74": {
+    "playerId": "440c9918-20a7-4fc7-9985-3b4031b1ac74",
+    "name": "Balerdi",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 6.06
+  },
+  "balerdi": {
+    "playerId": "440c9918-20a7-4fc7-9985-3b4031b1ac74",
+    "name": "Balerdi",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 6.06
+  },
+  "1a1929ec-ccd7-474f-8616-3d1fbeb54fd5": {
+    "playerId": "1a1929ec-ccd7-474f-8616-3d1fbeb54fd5",
+    "name": "Correia T.",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 5.92
+  },
+  "correiat": {
+    "playerId": "1a1929ec-ccd7-474f-8616-3d1fbeb54fd5",
+    "name": "Correia T.",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 5.92
+  },
+  "correia t.": {
+    "playerId": "1a1929ec-ccd7-474f-8616-3d1fbeb54fd5",
+    "name": "Correia T.",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 5.92
   },
   "74d5c13f-53e3-430b-b745-9043e34f51af": {
     "playerId": "74d5c13f-53e3-430b-b745-9043e34f51af",
@@ -9723,30 +10359,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Pochissimi infortuni",
     "xfmv": 7.16
   },
-  "1db44169-c0c7-424c-8a05-3e15e764b782": {
-    "playerId": "1db44169-c0c7-424c-8a05-3e15e764b782",
-    "name": "Pedraza",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 5.86
-  },
-  "pedraza": {
-    "playerId": "1db44169-c0c7-424c-8a05-3e15e764b782",
-    "name": "Pedraza",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 5.86
-  },
   "8bf7a1fa-038d-4086-9c0b-1f0cd8342690": {
     "playerId": "8bf7a1fa-038d-4086-9c0b-1f0cd8342690",
     "name": "Hermoso",
@@ -9771,9 +10383,9 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 6.17
   },
-  "1a1929ec-ccd7-474f-8616-3d1fbeb54fd5": {
-    "playerId": "1a1929ec-ccd7-474f-8616-3d1fbeb54fd5",
-    "name": "Correia T.",
+  "1db44169-c0c7-424c-8a05-3e15e764b782": {
+    "playerId": "1db44169-c0c7-424c-8a05-3e15e764b782",
+    "name": "Pedraza",
     "role": "D",
     "titIndex": 3,
     "titDesc": "Nelle rotazioni",
@@ -9781,11 +10393,11 @@ export const PLAYER_INDICES_MAP = {
     "affDesc": "Alterna buone prestazioni ad altre deludenti",
     "infIndex": 1,
     "infDesc": "Molto fragile",
-    "xfmv": 5.92
+    "xfmv": 5.86
   },
-  "correiat": {
-    "playerId": "1a1929ec-ccd7-474f-8616-3d1fbeb54fd5",
-    "name": "Correia T.",
+  "pedraza": {
+    "playerId": "1db44169-c0c7-424c-8a05-3e15e764b782",
+    "name": "Pedraza",
     "role": "D",
     "titIndex": 3,
     "titDesc": "Nelle rotazioni",
@@ -9793,19 +10405,7 @@ export const PLAYER_INDICES_MAP = {
     "affDesc": "Alterna buone prestazioni ad altre deludenti",
     "infIndex": 1,
     "infDesc": "Molto fragile",
-    "xfmv": 5.92
-  },
-  "correia t.": {
-    "playerId": "1a1929ec-ccd7-474f-8616-3d1fbeb54fd5",
-    "name": "Correia T.",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 5.92
+    "xfmv": 5.86
   },
   "4d65afcd-dc9b-4804-ac3e-1fd5d688c48c": {
     "playerId": "4d65afcd-dc9b-4804-ac3e-1fd5d688c48c",
@@ -9855,42 +10455,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 6.64
   },
-  "f729e4bf-bf18-4e1d-827a-20ef37865b8a": {
-    "playerId": "f729e4bf-bf18-4e1d-827a-20ef37865b8a",
-    "name": "Carboni A.",
-    "role": "D",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 5.82
-  },
-  "carbonia": {
-    "playerId": "f729e4bf-bf18-4e1d-827a-20ef37865b8a",
-    "name": "Carboni A.",
-    "role": "D",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 5.82
-  },
-  "carboni a.": {
-    "playerId": "f729e4bf-bf18-4e1d-827a-20ef37865b8a",
-    "name": "Carboni A.",
-    "role": "D",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 5.82
-  },
   "1f696a0b-f9cd-44bd-a2b0-a1eefa4fa15c": {
     "playerId": "1f696a0b-f9cd-44bd-a2b0-a1eefa4fa15c",
     "name": "Brescianini",
@@ -9914,54 +10478,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 3,
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 6.03
-  },
-  "6b5429b6-38fc-4a22-bdb6-8d1e62cfa1c4": {
-    "playerId": "6b5429b6-38fc-4a22-bdb6-8d1e62cfa1c4",
-    "name": "Monterisi",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.93
-  },
-  "monterisi": {
-    "playerId": "6b5429b6-38fc-4a22-bdb6-8d1e62cfa1c4",
-    "name": "Monterisi",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.93
-  },
-  "30e4cb57-632d-4f52-b027-97d390efaf3f": {
-    "playerId": "30e4cb57-632d-4f52-b027-97d390efaf3f",
-    "name": "McKennie",
-    "role": "C",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 5,
-    "affDesc": "Rendimento super costante",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.62
-  },
-  "mckennie": {
-    "playerId": "30e4cb57-632d-4f52-b027-97d390efaf3f",
-    "name": "McKennie",
-    "role": "C",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 5,
-    "affDesc": "Rendimento super costante",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.62
   },
   "c904108e-6a70-494d-9732-b39d2fc8264a": {
     "playerId": "c904108e-6a70-494d-9732-b39d2fc8264a",
@@ -10023,6 +10539,30 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 6.04
   },
+  "30e4cb57-632d-4f52-b027-97d390efaf3f": {
+    "playerId": "30e4cb57-632d-4f52-b027-97d390efaf3f",
+    "name": "McKennie",
+    "role": "C",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 5,
+    "affDesc": "Rendimento super costante",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.62
+  },
+  "mckennie": {
+    "playerId": "30e4cb57-632d-4f52-b027-97d390efaf3f",
+    "name": "McKennie",
+    "role": "C",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 5,
+    "affDesc": "Rendimento super costante",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.62
+  },
   "98d71181-5ff4-4e27-8603-a8d8c4ccfb49": {
     "playerId": "98d71181-5ff4-4e27-8603-a8d8c4ccfb49",
     "name": "Chukwueze",
@@ -10071,6 +10611,30 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 4.7
   },
+  "e8e7494e-aa9d-4469-9026-8615bbb45f32": {
+    "playerId": "e8e7494e-aa9d-4469-9026-8615bbb45f32",
+    "name": "Saelemaekers",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.37
+  },
+  "saelemaekers": {
+    "playerId": "e8e7494e-aa9d-4469-9026-8615bbb45f32",
+    "name": "Saelemaekers",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.37
+  },
   "484337f8-bd3c-4565-9573-242728f35aa7": {
     "playerId": "484337f8-bd3c-4565-9573-242728f35aa7",
     "name": "Douglas Luiz",
@@ -10106,30 +10670,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 3,
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 6.28
-  },
-  "e8e7494e-aa9d-4469-9026-8615bbb45f32": {
-    "playerId": "e8e7494e-aa9d-4469-9026-8615bbb45f32",
-    "name": "Saelemaekers",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.37
-  },
-  "saelemaekers": {
-    "playerId": "e8e7494e-aa9d-4469-9026-8615bbb45f32",
-    "name": "Saelemaekers",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.37
   },
   "71a719be-e4c4-4b55-abe6-2a33135d4d18": {
     "playerId": "71a719be-e4c4-4b55-abe6-2a33135d4d18",
@@ -10215,6 +10755,30 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ha avuto diversi infortuni",
     "xfmv": 6.08
   },
+  "0442eaa9-c6ac-4a7b-9135-8fd7ee6b2312": {
+    "playerId": "0442eaa9-c6ac-4a7b-9135-8fd7ee6b2312",
+    "name": "Pavlovic",
+    "role": "D",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.53
+  },
+  "pavlovic": {
+    "playerId": "0442eaa9-c6ac-4a7b-9135-8fd7ee6b2312",
+    "name": "Pavlovic",
+    "role": "D",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.53
+  },
   "7b7af6aa-db5d-495d-9b60-74ead0f6dff8": {
     "playerId": "7b7af6aa-db5d-495d-9b60-74ead0f6dff8",
     "name": "Samardzic",
@@ -10262,90 +10826,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 4,
     "infDesc": "Pochissimi infortuni",
     "xfmv": 6.22
-  },
-  "0442eaa9-c6ac-4a7b-9135-8fd7ee6b2312": {
-    "playerId": "0442eaa9-c6ac-4a7b-9135-8fd7ee6b2312",
-    "name": "Pavlovic",
-    "role": "D",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.53
-  },
-  "pavlovic": {
-    "playerId": "0442eaa9-c6ac-4a7b-9135-8fd7ee6b2312",
-    "name": "Pavlovic",
-    "role": "D",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.53
-  },
-  "909ba55e-54d3-40d3-acc4-9cc0113a8ed5": {
-    "playerId": "909ba55e-54d3-40d3-acc4-9cc0113a8ed5",
-    "name": "Martinez Jo.",
-    "role": "P",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 5.28
-  },
-  "martinezjo": {
-    "playerId": "909ba55e-54d3-40d3-acc4-9cc0113a8ed5",
-    "name": "Martinez Jo.",
-    "role": "P",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 5.28
-  },
-  "martinez jo.": {
-    "playerId": "909ba55e-54d3-40d3-acc4-9cc0113a8ed5",
-    "name": "Martinez Jo.",
-    "role": "P",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 5.28
-  },
-  "d850d49a-7b84-4f80-a7f3-f83b61df60a5": {
-    "playerId": "d850d49a-7b84-4f80-a7f3-f83b61df60a5",
-    "name": "Gilmour",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.08
-  },
-  "gilmour": {
-    "playerId": "d850d49a-7b84-4f80-a7f3-f83b61df60a5",
-    "name": "Gilmour",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.08
   },
   "d34d0df3-4b44-4cdd-8bfb-fdd5fcdfa14f": {
     "playerId": "d34d0df3-4b44-4cdd-8bfb-fdd5fcdfa14f",
@@ -10407,30 +10887,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 5.27
   },
-  "05a6d08b-b086-46f1-82ee-bdd2ca64ae31": {
-    "playerId": "05a6d08b-b086-46f1-82ee-bdd2ca64ae31",
-    "name": "Messias",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 6.27
-  },
-  "messias": {
-    "playerId": "05a6d08b-b086-46f1-82ee-bdd2ca64ae31",
-    "name": "Messias",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 6.27
-  },
   "25f782b5-3764-4a4e-8e32-6e950a038870": {
     "playerId": "25f782b5-3764-4a4e-8e32-6e950a038870",
     "name": "Kalulu",
@@ -10455,6 +10911,90 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 6.32
   },
+  "05a6d08b-b086-46f1-82ee-bdd2ca64ae31": {
+    "playerId": "05a6d08b-b086-46f1-82ee-bdd2ca64ae31",
+    "name": "Messias",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 6.27
+  },
+  "messias": {
+    "playerId": "05a6d08b-b086-46f1-82ee-bdd2ca64ae31",
+    "name": "Messias",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 6.27
+  },
+  "d850d49a-7b84-4f80-a7f3-f83b61df60a5": {
+    "playerId": "d850d49a-7b84-4f80-a7f3-f83b61df60a5",
+    "name": "Gilmour",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.08
+  },
+  "gilmour": {
+    "playerId": "d850d49a-7b84-4f80-a7f3-f83b61df60a5",
+    "name": "Gilmour",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.08
+  },
+  "909ba55e-54d3-40d3-acc4-9cc0113a8ed5": {
+    "playerId": "909ba55e-54d3-40d3-acc4-9cc0113a8ed5",
+    "name": "Martinez Jo.",
+    "role": "P",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 5.28
+  },
+  "martinezjo": {
+    "playerId": "909ba55e-54d3-40d3-acc4-9cc0113a8ed5",
+    "name": "Martinez Jo.",
+    "role": "P",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 5.28
+  },
+  "martinez jo.": {
+    "playerId": "909ba55e-54d3-40d3-acc4-9cc0113a8ed5",
+    "name": "Martinez Jo.",
+    "role": "P",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 5.28
+  },
   "6a4053f5-483f-4064-8e7b-0edadbbfa824": {
     "playerId": "6a4053f5-483f-4064-8e7b-0edadbbfa824",
     "name": "Geubbels",
@@ -10478,30 +11018,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 3,
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 6.42
-  },
-  "b2ce362c-91f3-408b-a84c-f3b6e49d2f88": {
-    "playerId": "b2ce362c-91f3-408b-a84c-f3b6e49d2f88",
-    "name": "Ilic",
-    "role": "C",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 6.27
-  },
-  "ilic": {
-    "playerId": "b2ce362c-91f3-408b-a84c-f3b6e49d2f88",
-    "name": "Ilic",
-    "role": "C",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 6.27
   },
   "f8e96ed3-8033-4167-b28c-ded154e83848": {
     "playerId": "f8e96ed3-8033-4167-b28c-ded154e83848",
@@ -10538,6 +11054,30 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 2,
     "infDesc": "Ha avuto diversi infortuni",
     "xfmv": 6.58
+  },
+  "b2ce362c-91f3-408b-a84c-f3b6e49d2f88": {
+    "playerId": "b2ce362c-91f3-408b-a84c-f3b6e49d2f88",
+    "name": "Ilic",
+    "role": "C",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 6.27
+  },
+  "ilic": {
+    "playerId": "b2ce362c-91f3-408b-a84c-f3b6e49d2f88",
+    "name": "Ilic",
+    "role": "C",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 6.27
   },
   "dbfc35e4-c44e-4082-921e-cacfec2de8a0": {
     "playerId": "dbfc35e4-c44e-4082-921e-cacfec2de8a0",
@@ -10623,30 +11163,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Pochissimi infortuni",
     "xfmv": 6.06
   },
-  "beda60e5-18b9-479d-bb70-2f5f94520db2": {
-    "playerId": "beda60e5-18b9-479d-bb70-2f5f94520db2",
-    "name": "Valenti",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 5.85
-  },
-  "valenti": {
-    "playerId": "beda60e5-18b9-479d-bb70-2f5f94520db2",
-    "name": "Valenti",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 5.85
-  },
   "c07a5ed0-b1db-429b-9291-2998365fffc3": {
     "playerId": "c07a5ed0-b1db-429b-9291-2998365fffc3",
     "name": "Pobega",
@@ -10670,6 +11186,30 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 2,
     "infDesc": "Ha avuto diversi infortuni",
     "xfmv": 6.31
+  },
+  "beda60e5-18b9-479d-bb70-2f5f94520db2": {
+    "playerId": "beda60e5-18b9-479d-bb70-2f5f94520db2",
+    "name": "Valenti",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 5.85
+  },
+  "valenti": {
+    "playerId": "beda60e5-18b9-479d-bb70-2f5f94520db2",
+    "name": "Valenti",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 5.85
   },
   "349b1554-cf28-42c6-bc65-6582f28a0f5b": {
     "playerId": "349b1554-cf28-42c6-bc65-6582f28a0f5b",
@@ -10767,6 +11307,30 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Molto fragile",
     "xfmv": 5.75
   },
+  "4fad1100-f7d5-4245-aa2f-ea5075b48e51": {
+    "playerId": "4fad1100-f7d5-4245-aa2f-ea5075b48e51",
+    "name": "Antov",
+    "role": "D",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 5.68
+  },
+  "antov": {
+    "playerId": "4fad1100-f7d5-4245-aa2f-ea5075b48e51",
+    "name": "Antov",
+    "role": "D",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 5.68
+  },
   "b71cb6d6-95ef-45c1-af79-1871010c0466": {
     "playerId": "b71cb6d6-95ef-45c1-af79-1871010c0466",
     "name": "Maleh",
@@ -10814,30 +11378,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 3,
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 6.88
-  },
-  "4fad1100-f7d5-4245-aa2f-ea5075b48e51": {
-    "playerId": "4fad1100-f7d5-4245-aa2f-ea5075b48e51",
-    "name": "Antov",
-    "role": "D",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 5.68
-  },
-  "antov": {
-    "playerId": "4fad1100-f7d5-4245-aa2f-ea5075b48e51",
-    "name": "Antov",
-    "role": "D",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 5.68
   },
   "ee4c44df-f6e9-464f-bb0d-89d675152de3": {
     "playerId": "ee4c44df-f6e9-464f-bb0d-89d675152de3",
@@ -10887,6 +11427,30 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ha avuto diversi infortuni",
     "xfmv": 5.63
   },
+  "b82add03-f6f8-4788-94a2-4d9165698df5": {
+    "playerId": "b82add03-f6f8-4788-94a2-4d9165698df5",
+    "name": "Cancellieri",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.4
+  },
+  "cancellieri": {
+    "playerId": "b82add03-f6f8-4788-94a2-4d9165698df5",
+    "name": "Cancellieri",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.4
+  },
   "910fbb96-6768-40c7-95cc-2fdeb9351f0c": {
     "playerId": "910fbb96-6768-40c7-95cc-2fdeb9351f0c",
     "name": "Busio",
@@ -10911,29 +11475,77 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 6.28
   },
-  "b82add03-f6f8-4788-94a2-4d9165698df5": {
-    "playerId": "b82add03-f6f8-4788-94a2-4d9165698df5",
-    "name": "Cancellieri",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+  "56ee78ba-2510-4d61-9f05-0756220a9156": {
+    "playerId": "56ee78ba-2510-4d61-9f05-0756220a9156",
+    "name": "Kamara H.",
+    "role": "D",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
     "infIndex": 3,
     "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.4
+    "xfmv": 6.08
   },
-  "cancellieri": {
-    "playerId": "b82add03-f6f8-4788-94a2-4d9165698df5",
-    "name": "Cancellieri",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+  "kamarah": {
+    "playerId": "56ee78ba-2510-4d61-9f05-0756220a9156",
+    "name": "Kamara H.",
+    "role": "D",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
     "infIndex": 3,
     "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.4
+    "xfmv": 6.08
+  },
+  "kamara h.": {
+    "playerId": "56ee78ba-2510-4d61-9f05-0756220a9156",
+    "name": "Kamara H.",
+    "role": "D",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.08
+  },
+  "dc3c7e4f-66dd-4d40-ac05-4c222aa0e770": {
+    "playerId": "dc3c7e4f-66dd-4d40-ac05-4c222aa0e770",
+    "name": "Thuram K.",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 6.39
+  },
+  "thuramk": {
+    "playerId": "dc3c7e4f-66dd-4d40-ac05-4c222aa0e770",
+    "name": "Thuram K.",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 6.39
+  },
+  "thuram k.": {
+    "playerId": "dc3c7e4f-66dd-4d40-ac05-4c222aa0e770",
+    "name": "Thuram K.",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 6.39
   },
   "e259c4a6-1385-479b-b970-730c08be498f": {
     "playerId": "e259c4a6-1385-479b-b970-730c08be498f",
@@ -10983,42 +11595,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Molto fragile",
     "xfmv": 6.1
   },
-  "56ee78ba-2510-4d61-9f05-0756220a9156": {
-    "playerId": "56ee78ba-2510-4d61-9f05-0756220a9156",
-    "name": "Kamara H.",
-    "role": "D",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.08
-  },
-  "kamarah": {
-    "playerId": "56ee78ba-2510-4d61-9f05-0756220a9156",
-    "name": "Kamara H.",
-    "role": "D",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.08
-  },
-  "kamara h.": {
-    "playerId": "56ee78ba-2510-4d61-9f05-0756220a9156",
-    "name": "Kamara H.",
-    "role": "D",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.08
-  },
   "975f7429-8320-4cf5-92a9-093eb9ce4c82": {
     "playerId": "975f7429-8320-4cf5-92a9-093eb9ce4c82",
     "name": "Da Cunha",
@@ -11054,42 +11630,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 5,
     "infDesc": "È sempre integro",
     "xfmv": 6.74
-  },
-  "dc3c7e4f-66dd-4d40-ac05-4c222aa0e770": {
-    "playerId": "dc3c7e4f-66dd-4d40-ac05-4c222aa0e770",
-    "name": "Thuram K.",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 6.39
-  },
-  "thuramk": {
-    "playerId": "dc3c7e4f-66dd-4d40-ac05-4c222aa0e770",
-    "name": "Thuram K.",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 6.39
-  },
-  "thuram k.": {
-    "playerId": "dc3c7e4f-66dd-4d40-ac05-4c222aa0e770",
-    "name": "Thuram K.",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 6.39
   },
   "60a8a763-dcd9-42f3-b6db-875bca54ae39": {
     "playerId": "60a8a763-dcd9-42f3-b6db-875bca54ae39",
@@ -11271,6 +11811,30 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Pochissimi infortuni",
     "xfmv": 6.03
   },
+  "bab1552e-5098-4681-b75c-5c9be49fcb4e": {
+    "playerId": "bab1552e-5098-4681-b75c-5c9be49fcb4e",
+    "name": "Ciervo",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.16
+  },
+  "ciervo": {
+    "playerId": "bab1552e-5098-4681-b75c-5c9be49fcb4e",
+    "name": "Ciervo",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.16
+  },
   "99766bd9-0c92-4c84-961c-8c25bfa81488": {
     "playerId": "99766bd9-0c92-4c84-961c-8c25bfa81488",
     "name": "Ricci S.",
@@ -11307,29 +11871,29 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 6.2
   },
-  "bab1552e-5098-4681-b75c-5c9be49fcb4e": {
-    "playerId": "bab1552e-5098-4681-b75c-5c9be49fcb4e",
-    "name": "Ciervo",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
+  "8ec42d80-ac4b-427d-83c1-9bfd15526f0d": {
+    "playerId": "8ec42d80-ac4b-427d-83c1-9bfd15526f0d",
+    "name": "Cambiaso",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
     "affIndex": 3,
     "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.16
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.14
   },
-  "ciervo": {
-    "playerId": "bab1552e-5098-4681-b75c-5c9be49fcb4e",
-    "name": "Ciervo",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
+  "cambiaso": {
+    "playerId": "8ec42d80-ac4b-427d-83c1-9bfd15526f0d",
+    "name": "Cambiaso",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
     "affIndex": 3,
     "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.16
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.14
   },
   "89b6b9f9-a5d9-4f2c-9752-60e85cd8be37": {
     "playerId": "89b6b9f9-a5d9-4f2c-9752-60e85cd8be37",
@@ -11355,9 +11919,9 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 5.87
   },
-  "8ec42d80-ac4b-427d-83c1-9bfd15526f0d": {
-    "playerId": "8ec42d80-ac4b-427d-83c1-9bfd15526f0d",
-    "name": "Cambiaso",
+  "31786ff3-11ce-42f4-b5e3-a5ced40ae0b6": {
+    "playerId": "31786ff3-11ce-42f4-b5e3-a5ced40ae0b6",
+    "name": "Pongracic",
     "role": "D",
     "titIndex": 3,
     "titDesc": "Nelle rotazioni",
@@ -11365,11 +11929,11 @@ export const PLAYER_INDICES_MAP = {
     "affDesc": "Alterna buone prestazioni ad altre deludenti",
     "infIndex": 3,
     "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.14
+    "xfmv": 5.76
   },
-  "cambiaso": {
-    "playerId": "8ec42d80-ac4b-427d-83c1-9bfd15526f0d",
-    "name": "Cambiaso",
+  "pongracic": {
+    "playerId": "31786ff3-11ce-42f4-b5e3-a5ced40ae0b6",
+    "name": "Pongracic",
     "role": "D",
     "titIndex": 3,
     "titDesc": "Nelle rotazioni",
@@ -11377,7 +11941,7 @@ export const PLAYER_INDICES_MAP = {
     "affDesc": "Alterna buone prestazioni ad altre deludenti",
     "infIndex": 3,
     "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.14
+    "xfmv": 5.76
   },
   "0ae5f68a-c8e6-4a82-8269-b1207b182df4": {
     "playerId": "0ae5f68a-c8e6-4a82-8269-b1207b182df4",
@@ -11415,30 +11979,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 6.52
   },
-  "31786ff3-11ce-42f4-b5e3-a5ced40ae0b6": {
-    "playerId": "31786ff3-11ce-42f4-b5e3-a5ced40ae0b6",
-    "name": "Pongracic",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.76
-  },
-  "pongracic": {
-    "playerId": "31786ff3-11ce-42f4-b5e3-a5ced40ae0b6",
-    "name": "Pongracic",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.76
-  },
   "73f10bed-3c22-4d9c-937b-e5dd70eaaf12": {
     "playerId": "73f10bed-3c22-4d9c-937b-e5dd70eaaf12",
     "name": "Haps",
@@ -11462,186 +12002,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 3,
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 6.04
-  },
-  "9fa87205-24eb-47a7-8e79-689915992c32": {
-    "playerId": "9fa87205-24eb-47a7-8e79-689915992c32",
-    "name": "Vlasic",
-    "role": "C",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.72
-  },
-  "vlasic": {
-    "playerId": "9fa87205-24eb-47a7-8e79-689915992c32",
-    "name": "Vlasic",
-    "role": "C",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.72
-  },
-  "3490cc1c-60cd-4cb8-b606-45c9c3279e4c": {
-    "playerId": "3490cc1c-60cd-4cb8-b606-45c9c3279e4c",
-    "name": "Drameh",
-    "role": "D",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 5.96
-  },
-  "drameh": {
-    "playerId": "3490cc1c-60cd-4cb8-b606-45c9c3279e4c",
-    "name": "Drameh",
-    "role": "D",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 5.96
-  },
-  "c9566c48-86e0-42ff-8820-d01b0d55efd7": {
-    "playerId": "c9566c48-86e0-42ff-8820-d01b0d55efd7",
-    "name": "Obert",
-    "role": "D",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.01
-  },
-  "obert": {
-    "playerId": "c9566c48-86e0-42ff-8820-d01b0d55efd7",
-    "name": "Obert",
-    "role": "D",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.01
-  },
-  "cc2fad0a-cba6-4e46-9cba-d7d28ae5f195": {
-    "playerId": "cc2fad0a-cba6-4e46-9cba-d7d28ae5f195",
-    "name": "Zhegrova",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 6.23
-  },
-  "zhegrova": {
-    "playerId": "cc2fad0a-cba6-4e46-9cba-d7d28ae5f195",
-    "name": "Zhegrova",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 6.23
-  },
-  "3bd6183c-6649-49f7-883f-17ff1646b2da": {
-    "playerId": "3bd6183c-6649-49f7-883f-17ff1646b2da",
-    "name": "Baldanzi",
-    "role": "C",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 6.48
-  },
-  "baldanzi": {
-    "playerId": "3bd6183c-6649-49f7-883f-17ff1646b2da",
-    "name": "Baldanzi",
-    "role": "C",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 6.48
-  },
-  "434b9241-f825-4e71-b4a1-9ec6208bb5d5": {
-    "playerId": "434b9241-f825-4e71-b4a1-9ec6208bb5d5",
-    "name": "Cittadini",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.71
-  },
-  "cittadini": {
-    "playerId": "434b9241-f825-4e71-b4a1-9ec6208bb5d5",
-    "name": "Cittadini",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.71
-  },
-  "c56c787c-4c3c-40e6-873f-596cffcd773e": {
-    "playerId": "c56c787c-4c3c-40e6-873f-596cffcd773e",
-    "name": "Ederson D.S.",
-    "role": "C",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 5,
-    "affDesc": "Rendimento super costante",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.47
-  },
-  "edersonds": {
-    "playerId": "c56c787c-4c3c-40e6-873f-596cffcd773e",
-    "name": "Ederson D.S.",
-    "role": "C",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 5,
-    "affDesc": "Rendimento super costante",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.47
-  },
-  "ederson d.s.": {
-    "playerId": "c56c787c-4c3c-40e6-873f-596cffcd773e",
-    "name": "Ederson D.S.",
-    "role": "C",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 5,
-    "affDesc": "Rendimento super costante",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.47
   },
   "6d146e3a-93ac-4fda-9c2b-8a65c94ab79d": {
     "playerId": "6d146e3a-93ac-4fda-9c2b-8a65c94ab79d",
@@ -11727,6 +12087,162 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Pochissimi infortuni",
     "xfmv": 6.28
   },
+  "9fa87205-24eb-47a7-8e79-689915992c32": {
+    "playerId": "9fa87205-24eb-47a7-8e79-689915992c32",
+    "name": "Vlasic",
+    "role": "C",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.72
+  },
+  "vlasic": {
+    "playerId": "9fa87205-24eb-47a7-8e79-689915992c32",
+    "name": "Vlasic",
+    "role": "C",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.72
+  },
+  "3490cc1c-60cd-4cb8-b606-45c9c3279e4c": {
+    "playerId": "3490cc1c-60cd-4cb8-b606-45c9c3279e4c",
+    "name": "Drameh",
+    "role": "D",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 5.96
+  },
+  "drameh": {
+    "playerId": "3490cc1c-60cd-4cb8-b606-45c9c3279e4c",
+    "name": "Drameh",
+    "role": "D",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 5.96
+  },
+  "c9566c48-86e0-42ff-8820-d01b0d55efd7": {
+    "playerId": "c9566c48-86e0-42ff-8820-d01b0d55efd7",
+    "name": "Obert",
+    "role": "D",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.01
+  },
+  "obert": {
+    "playerId": "c9566c48-86e0-42ff-8820-d01b0d55efd7",
+    "name": "Obert",
+    "role": "D",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.01
+  },
+  "c56c787c-4c3c-40e6-873f-596cffcd773e": {
+    "playerId": "c56c787c-4c3c-40e6-873f-596cffcd773e",
+    "name": "Ederson D.S.",
+    "role": "C",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 5,
+    "affDesc": "Rendimento super costante",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.47
+  },
+  "edersonds": {
+    "playerId": "c56c787c-4c3c-40e6-873f-596cffcd773e",
+    "name": "Ederson D.S.",
+    "role": "C",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 5,
+    "affDesc": "Rendimento super costante",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.47
+  },
+  "ederson d.s.": {
+    "playerId": "c56c787c-4c3c-40e6-873f-596cffcd773e",
+    "name": "Ederson D.S.",
+    "role": "C",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 5,
+    "affDesc": "Rendimento super costante",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.47
+  },
+  "cc2fad0a-cba6-4e46-9cba-d7d28ae5f195": {
+    "playerId": "cc2fad0a-cba6-4e46-9cba-d7d28ae5f195",
+    "name": "Zhegrova",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 6.23
+  },
+  "zhegrova": {
+    "playerId": "cc2fad0a-cba6-4e46-9cba-d7d28ae5f195",
+    "name": "Zhegrova",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 6.23
+  },
+  "3bd6183c-6649-49f7-883f-17ff1646b2da": {
+    "playerId": "3bd6183c-6649-49f7-883f-17ff1646b2da",
+    "name": "Baldanzi",
+    "role": "C",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 6.48
+  },
+  "baldanzi": {
+    "playerId": "3bd6183c-6649-49f7-883f-17ff1646b2da",
+    "name": "Baldanzi",
+    "role": "C",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 6.48
+  },
   "bd30d79a-7c55-4012-b561-490cb8c2c69d": {
     "playerId": "bd30d79a-7c55-4012-b561-490cb8c2c69d",
     "name": "Koopmeiners",
@@ -11750,6 +12266,30 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 3,
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 6.34
+  },
+  "ce5cd19a-b929-4b5c-a0a4-067b0b355879": {
+    "playerId": "ce5cd19a-b929-4b5c-a0a4-067b0b355879",
+    "name": "Beto",
+    "role": "A",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.87
+  },
+  "beto": {
+    "playerId": "ce5cd19a-b929-4b5c-a0a4-067b0b355879",
+    "name": "Beto",
+    "role": "A",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.87
   },
   "c4bdc06b-f44b-4a38-bcbd-f12ed77a0595": {
     "playerId": "c4bdc06b-f44b-4a38-bcbd-f12ed77a0595",
@@ -11787,30 +12327,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 5.75
   },
-  "ce5cd19a-b929-4b5c-a0a4-067b0b355879": {
-    "playerId": "ce5cd19a-b929-4b5c-a0a4-067b0b355879",
-    "name": "Beto",
-    "role": "A",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.87
-  },
-  "beto": {
-    "playerId": "ce5cd19a-b929-4b5c-a0a4-067b0b355879",
-    "name": "Beto",
-    "role": "A",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.87
-  },
   "a694ffa3-522e-4fb2-bbb0-074554dcec12": {
     "playerId": "a694ffa3-522e-4fb2-bbb0-074554dcec12",
     "name": "Frendrup",
@@ -11835,30 +12351,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Pochissimi infortuni",
     "xfmv": 6.17
   },
-  "3ba8d8de-4fd3-47ed-90b2-00ec9789f80c": {
-    "playerId": "3ba8d8de-4fd3-47ed-90b2-00ec9789f80c",
-    "name": "Ostigard",
-    "role": "D",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.28
-  },
-  "ostigard": {
-    "playerId": "3ba8d8de-4fd3-47ed-90b2-00ec9789f80c",
-    "name": "Ostigard",
-    "role": "D",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.28
-  },
   "5a9eacee-7614-4621-b78f-5d0cc774cc76": {
     "playerId": "5a9eacee-7614-4621-b78f-5d0cc774cc76",
     "name": "Patterson",
@@ -11882,6 +12374,30 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 1,
     "infDesc": "Molto fragile",
     "xfmv": 5.98
+  },
+  "3ba8d8de-4fd3-47ed-90b2-00ec9789f80c": {
+    "playerId": "3ba8d8de-4fd3-47ed-90b2-00ec9789f80c",
+    "name": "Ostigard",
+    "role": "D",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.28
+  },
+  "ostigard": {
+    "playerId": "3ba8d8de-4fd3-47ed-90b2-00ec9789f80c",
+    "name": "Ostigard",
+    "role": "D",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.28
   },
   "cea0b1cd-23f3-4967-934b-aea2845446a9": {
     "playerId": "cea0b1cd-23f3-4967-934b-aea2845446a9",
@@ -11919,30 +12435,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 5.8
   },
-  "b832c4ec-72cf-4c4b-8c6a-203912e87e4d": {
-    "playerId": "b832c4ec-72cf-4c4b-8c6a-203912e87e4d",
-    "name": "Svilar",
-    "role": "P",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 5,
-    "affDesc": "Rendimento super costante",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 5.42
-  },
-  "svilar": {
-    "playerId": "b832c4ec-72cf-4c4b-8c6a-203912e87e4d",
-    "name": "Svilar",
-    "role": "P",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 5,
-    "affDesc": "Rendimento super costante",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 5.42
-  },
   "7e2b0b7a-a252-4d4c-88e4-df0104ee4b8c": {
     "playerId": "7e2b0b7a-a252-4d4c-88e4-df0104ee4b8c",
     "name": "Lovric",
@@ -11967,29 +12459,29 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ha avuto diversi infortuni",
     "xfmv": 6.12
   },
-  "371edc7e-8557-4af7-ac46-3481c7601c38": {
-    "playerId": "371edc7e-8557-4af7-ac46-3481c7601c38",
-    "name": "Doig",
-    "role": "D",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.89
+  "b832c4ec-72cf-4c4b-8c6a-203912e87e4d": {
+    "playerId": "b832c4ec-72cf-4c4b-8c6a-203912e87e4d",
+    "name": "Svilar",
+    "role": "P",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 5,
+    "affDesc": "Rendimento super costante",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 5.42
   },
-  "doig": {
-    "playerId": "371edc7e-8557-4af7-ac46-3481c7601c38",
-    "name": "Doig",
-    "role": "D",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.89
+  "svilar": {
+    "playerId": "b832c4ec-72cf-4c4b-8c6a-203912e87e4d",
+    "name": "Svilar",
+    "role": "P",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 5,
+    "affDesc": "Rendimento super costante",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 5.42
   },
   "4505706f-e4f1-483b-995c-6c12460a2fe7": {
     "playerId": "4505706f-e4f1-483b-995c-6c12460a2fe7",
@@ -12014,30 +12506,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 4,
     "infDesc": "Pochissimi infortuni",
     "xfmv": 6.2
-  },
-  "3d49b936-1e2d-4daa-9b4c-5da87824531d": {
-    "playerId": "3d49b936-1e2d-4daa-9b4c-5da87824531d",
-    "name": "Sow",
-    "role": "C",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.21
-  },
-  "sow": {
-    "playerId": "3d49b936-1e2d-4daa-9b4c-5da87824531d",
-    "name": "Sow",
-    "role": "C",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.21
   },
   "3bd054af-2392-4003-8dd6-a5694c458f55": {
     "playerId": "3bd054af-2392-4003-8dd6-a5694c458f55",
@@ -12147,78 +12615,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 6.09
   },
-  "dc221c49-a187-478c-b460-b8daab6631e2": {
-    "playerId": "dc221c49-a187-478c-b460-b8daab6631e2",
-    "name": "Thorstvedt",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 6.66
-  },
-  "thorstvedt": {
-    "playerId": "dc221c49-a187-478c-b460-b8daab6631e2",
-    "name": "Thorstvedt",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 6.66
-  },
-  "d796b194-efcc-4186-9291-2a8afcbf35ae": {
-    "playerId": "d796b194-efcc-4186-9291-2a8afcbf35ae",
-    "name": "Ferguson",
-    "role": "C",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.26
-  },
-  "ferguson": {
-    "playerId": "d796b194-efcc-4186-9291-2a8afcbf35ae",
-    "name": "Ferguson",
-    "role": "C",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.26
-  },
-  "aa67fd77-201f-45e6-b64a-8f88f380ef1e": {
-    "playerId": "aa67fd77-201f-45e6-b64a-8f88f380ef1e",
-    "name": "Helgason",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.07
-  },
-  "helgason": {
-    "playerId": "aa67fd77-201f-45e6-b64a-8f88f380ef1e",
-    "name": "Helgason",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.07
-  },
   "88893e63-f3f6-4224-838b-8e189ef9f312": {
     "playerId": "88893e63-f3f6-4224-838b-8e189ef9f312",
     "name": "Mota",
@@ -12266,66 +12662,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 5,
     "infDesc": "È sempre integro",
     "xfmv": 6.45
-  },
-  "e8f602c5-a7bc-4d3a-a98b-a317bc211efa": {
-    "playerId": "e8f602c5-a7bc-4d3a-a98b-a317bc211efa",
-    "name": "Carlos Augusto",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.13
-  },
-  "carlosaugusto": {
-    "playerId": "e8f602c5-a7bc-4d3a-a98b-a317bc211efa",
-    "name": "Carlos Augusto",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.13
-  },
-  "carlos augusto": {
-    "playerId": "e8f602c5-a7bc-4d3a-a98b-a317bc211efa",
-    "name": "Carlos Augusto",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.13
-  },
-  "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91": {
-    "playerId": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
-    "name": "Colpani",
-    "role": "C",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.32
-  },
-  "colpani": {
-    "playerId": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
-    "name": "Colpani",
-    "role": "C",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.32
   },
   "5a4cd663-45d1-4860-a750-c36684a2399b": {
     "playerId": "5a4cd663-45d1-4860-a750-c36684a2399b",
@@ -12567,42 +12903,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ha avuto diversi infortuni",
     "xfmv": 6.32
   },
-  "85fe85c2-887d-490b-804b-8b0ff085e63f": {
-    "playerId": "85fe85c2-887d-490b-804b-8b0ff085e63f",
-    "name": "Lucumì",
-    "role": "D",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.97
-  },
-  "lucum": {
-    "playerId": "85fe85c2-887d-490b-804b-8b0ff085e63f",
-    "name": "Lucumì",
-    "role": "D",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.97
-  },
-  "lucumì": {
-    "playerId": "85fe85c2-887d-490b-804b-8b0ff085e63f",
-    "name": "Lucumì",
-    "role": "D",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.97
-  },
   "72dbbe00-ef42-4579-ba5e-74ac1cc06c8c": {
     "playerId": "72dbbe00-ef42-4579-ba5e-74ac1cc06c8c",
     "name": "Ellertsson",
@@ -12627,6 +12927,30 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Pochissimi infortuni",
     "xfmv": 5.99
   },
+  "ce2387e6-839b-4f79-8e00-c2dd93f6ed8a": {
+    "playerId": "ce2387e6-839b-4f79-8e00-c2dd93f6ed8a",
+    "name": "Hien",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 5.89
+  },
+  "hien": {
+    "playerId": "ce2387e6-839b-4f79-8e00-c2dd93f6ed8a",
+    "name": "Hien",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 5.89
+  },
   "2edd4901-5632-4cc8-b8b8-981150639745": {
     "playerId": "2edd4901-5632-4cc8-b8b8-981150639745",
     "name": "Abankwah",
@@ -12650,42 +12974,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 5,
     "infDesc": "È sempre integro",
     "xfmv": 5.82
-  },
-  "91989231-9213-435b-81c5-a7c7a7d85104": {
-    "playerId": "91989231-9213-435b-81c5-a7c7a7d85104",
-    "name": "Moro N.",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.11
-  },
-  "moron": {
-    "playerId": "91989231-9213-435b-81c5-a7c7a7d85104",
-    "name": "Moro N.",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.11
-  },
-  "moro n.": {
-    "playerId": "91989231-9213-435b-81c5-a7c7a7d85104",
-    "name": "Moro N.",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.11
   },
   "307bd1b7-8698-4247-be19-95a1b2d3a58c": {
     "playerId": "307bd1b7-8698-4247-be19-95a1b2d3a58c",
@@ -12723,29 +13011,41 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Molto fragile",
     "xfmv": 6.32
   },
-  "ce2387e6-839b-4f79-8e00-c2dd93f6ed8a": {
-    "playerId": "ce2387e6-839b-4f79-8e00-c2dd93f6ed8a",
-    "name": "Hien",
+  "85fe85c2-887d-490b-804b-8b0ff085e63f": {
+    "playerId": "85fe85c2-887d-490b-804b-8b0ff085e63f",
+    "name": "Lucumì",
     "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
     "affIndex": 3,
     "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 5.89
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.97
   },
-  "hien": {
-    "playerId": "ce2387e6-839b-4f79-8e00-c2dd93f6ed8a",
-    "name": "Hien",
+  "lucum": {
+    "playerId": "85fe85c2-887d-490b-804b-8b0ff085e63f",
+    "name": "Lucumì",
     "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
     "affIndex": 3,
     "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 5.89
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.97
+  },
+  "lucumì": {
+    "playerId": "85fe85c2-887d-490b-804b-8b0ff085e63f",
+    "name": "Lucumì",
+    "role": "D",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.97
   },
   "1d51f5cf-e44d-402b-9882-54dab796376e": {
     "playerId": "1d51f5cf-e44d-402b-9882-54dab796376e",
@@ -12818,66 +13118,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 3,
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 5.91
-  },
-  "870b7bce-aea5-49b8-8e82-7bd7d4f247f9": {
-    "playerId": "870b7bce-aea5-49b8-8e82-7bd7d4f247f9",
-    "name": "Lucca",
-    "role": "A",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.4
-  },
-  "lucca": {
-    "playerId": "870b7bce-aea5-49b8-8e82-7bd7d4f247f9",
-    "name": "Lucca",
-    "role": "A",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.4
-  },
-  "fd290189-76d7-40bb-9a66-614f6b595b53": {
-    "playerId": "fd290189-76d7-40bb-9a66-614f6b595b53",
-    "name": "Gelli F.",
-    "role": "C",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 5.95
-  },
-  "gellif": {
-    "playerId": "fd290189-76d7-40bb-9a66-614f6b595b53",
-    "name": "Gelli F.",
-    "role": "C",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 5.95
-  },
-  "gelli f.": {
-    "playerId": "fd290189-76d7-40bb-9a66-614f6b595b53",
-    "name": "Gelli F.",
-    "role": "C",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 5.95
   },
   "6bff9424-1ae3-4bba-b1d5-0ccfbafb3afa": {
     "playerId": "6bff9424-1ae3-4bba-b1d5-0ccfbafb3afa",
@@ -12987,6 +13227,30 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Pochissimi infortuni",
     "xfmv": 7.62
   },
+  "1322078d-eafc-4027-a05c-20b25df0f006": {
+    "playerId": "1322078d-eafc-4027-a05c-20b25df0f006",
+    "name": "Ngonge",
+    "role": "A",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.39
+  },
+  "ngonge": {
+    "playerId": "1322078d-eafc-4027-a05c-20b25df0f006",
+    "name": "Ngonge",
+    "role": "A",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.39
+  },
   "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8": {
     "playerId": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
     "name": "Laurientè",
@@ -13023,29 +13287,65 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Pochissimi infortuni",
     "xfmv": 6.91
   },
-  "1322078d-eafc-4027-a05c-20b25df0f006": {
-    "playerId": "1322078d-eafc-4027-a05c-20b25df0f006",
-    "name": "Ngonge",
+  "870b7bce-aea5-49b8-8e82-7bd7d4f247f9": {
+    "playerId": "870b7bce-aea5-49b8-8e82-7bd7d4f247f9",
+    "name": "Lucca",
     "role": "A",
     "titIndex": 2,
     "titDesc": "Subentra raramente",
     "affIndex": 3,
     "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.39
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.4
   },
-  "ngonge": {
-    "playerId": "1322078d-eafc-4027-a05c-20b25df0f006",
-    "name": "Ngonge",
+  "lucca": {
+    "playerId": "870b7bce-aea5-49b8-8e82-7bd7d4f247f9",
+    "name": "Lucca",
     "role": "A",
     "titIndex": 2,
     "titDesc": "Subentra raramente",
     "affIndex": 3,
     "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.39
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.4
+  },
+  "fd290189-76d7-40bb-9a66-614f6b595b53": {
+    "playerId": "fd290189-76d7-40bb-9a66-614f6b595b53",
+    "name": "Gelli F.",
+    "role": "C",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 5.95
+  },
+  "gellif": {
+    "playerId": "fd290189-76d7-40bb-9a66-614f6b595b53",
+    "name": "Gelli F.",
+    "role": "C",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 5.95
+  },
+  "gelli f.": {
+    "playerId": "fd290189-76d7-40bb-9a66-614f6b595b53",
+    "name": "Gelli F.",
+    "role": "C",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 5.95
   },
   "e0b15df5-ed66-4e9d-b661-fe2043de1245": {
     "playerId": "e0b15df5-ed66-4e9d-b661-fe2043de1245",
@@ -13083,6 +13383,30 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "È sempre integro",
     "xfmv": 5.5
   },
+  "477d1d7c-8070-4188-87b0-04c710f57123": {
+    "playerId": "477d1d7c-8070-4188-87b0-04c710f57123",
+    "name": "Perrone",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.37
+  },
+  "perrone": {
+    "playerId": "477d1d7c-8070-4188-87b0-04c710f57123",
+    "name": "Perrone",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.37
+  },
   "a34e2242-a8a2-479d-af45-90a3b6646223": {
     "playerId": "a34e2242-a8a2-479d-af45-90a3b6646223",
     "name": "Vitinha O.",
@@ -13119,29 +13443,29 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ha avuto diversi infortuni",
     "xfmv": 6.31
   },
-  "477d1d7c-8070-4188-87b0-04c710f57123": {
-    "playerId": "477d1d7c-8070-4188-87b0-04c710f57123",
-    "name": "Perrone",
+  "a3a3adaf-0fee-415a-8962-f92c07772797": {
+    "playerId": "a3a3adaf-0fee-415a-8962-f92c07772797",
+    "name": "Belahyane",
     "role": "C",
     "titIndex": 3,
     "titDesc": "Nelle rotazioni",
     "affIndex": 4,
     "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.37
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 5.81
   },
-  "perrone": {
-    "playerId": "477d1d7c-8070-4188-87b0-04c710f57123",
-    "name": "Perrone",
+  "belahyane": {
+    "playerId": "a3a3adaf-0fee-415a-8962-f92c07772797",
+    "name": "Belahyane",
     "role": "C",
     "titIndex": 3,
     "titDesc": "Nelle rotazioni",
     "affIndex": 4,
     "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.37
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 5.81
   },
   "7daaf35b-39c8-455e-b938-5da6e218f4ff": {
     "playerId": "7daaf35b-39c8-455e-b938-5da6e218f4ff",
@@ -13166,30 +13490,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 3,
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 6.07
-  },
-  "a3a3adaf-0fee-415a-8962-f92c07772797": {
-    "playerId": "a3a3adaf-0fee-415a-8962-f92c07772797",
-    "name": "Belahyane",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 5.81
-  },
-  "belahyane": {
-    "playerId": "a3a3adaf-0fee-415a-8962-f92c07772797",
-    "name": "Belahyane",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 5.81
   },
   "4efd1869-7483-4b32-9db3-bbeb1641fac7": {
     "playerId": "4efd1869-7483-4b32-9db3-bbeb1641fac7",
@@ -13551,114 +13851,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "È sempre integro",
     "xfmv": 4.97
   },
-  "c005a40e-c9d9-4673-94b5-1c85551c4460": {
-    "playerId": "c005a40e-c9d9-4673-94b5-1c85551c4460",
-    "name": "Mandas",
-    "role": "P",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 5.23
-  },
-  "mandas": {
-    "playerId": "c005a40e-c9d9-4673-94b5-1c85551c4460",
-    "name": "Mandas",
-    "role": "P",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 5.23
-  },
-  "63942496-8801-49de-a546-1936651b99d5": {
-    "playerId": "63942496-8801-49de-a546-1936651b99d5",
-    "name": "Yildiz",
-    "role": "A",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 5,
-    "affDesc": "Rendimento super costante",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 7.18
-  },
-  "yildiz": {
-    "playerId": "63942496-8801-49de-a546-1936651b99d5",
-    "name": "Yildiz",
-    "role": "A",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 5,
-    "affDesc": "Rendimento super costante",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 7.18
-  },
-  "cbe2156e-f2a7-4e4d-9d46-472bf9c4a258": {
-    "playerId": "cbe2156e-f2a7-4e4d-9d46-472bf9c4a258",
-    "name": "Okoye",
-    "role": "P",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 4.96
-  },
-  "okoye": {
-    "playerId": "cbe2156e-f2a7-4e4d-9d46-472bf9c4a258",
-    "name": "Okoye",
-    "role": "P",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 4.96
-  },
-  "f2f6c58f-a728-4126-a053-12812c775ed4": {
-    "playerId": "f2f6c58f-a728-4126-a053-12812c775ed4",
-    "name": "Forson O.",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.27
-  },
-  "forsono": {
-    "playerId": "f2f6c58f-a728-4126-a053-12812c775ed4",
-    "name": "Forson O.",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.27
-  },
-  "forson o.": {
-    "playerId": "f2f6c58f-a728-4126-a053-12812c775ed4",
-    "name": "Forson O.",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.27
-  },
   "dbad7fbe-2421-4646-9b4f-6f065ae9a076": {
     "playerId": "dbad7fbe-2421-4646-9b4f-6f065ae9a076",
     "name": "Lipani",
@@ -13791,42 +13983,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 5
   },
-  "cc4992f6-2313-4dfb-bd05-fde2ab22e067": {
-    "playerId": "cc4992f6-2313-4dfb-bd05-fde2ab22e067",
-    "name": "Ramos G.",
-    "role": "A",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 7.67
-  },
-  "ramosg": {
-    "playerId": "cc4992f6-2313-4dfb-bd05-fde2ab22e067",
-    "name": "Ramos G.",
-    "role": "A",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 7.67
-  },
-  "ramos g.": {
-    "playerId": "cc4992f6-2313-4dfb-bd05-fde2ab22e067",
-    "name": "Ramos G.",
-    "role": "A",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 7.67
-  },
   "18e725c3-54bb-40f6-95e2-96d2d058fb12": {
     "playerId": "18e725c3-54bb-40f6-95e2-96d2d058fb12",
     "name": "Christensen O.",
@@ -13862,6 +14018,90 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 4,
     "infDesc": "Pochissimi infortuni",
     "xfmv": 4.5
+  },
+  "63942496-8801-49de-a546-1936651b99d5": {
+    "playerId": "63942496-8801-49de-a546-1936651b99d5",
+    "name": "Yildiz",
+    "role": "A",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 5,
+    "affDesc": "Rendimento super costante",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 7.18
+  },
+  "yildiz": {
+    "playerId": "63942496-8801-49de-a546-1936651b99d5",
+    "name": "Yildiz",
+    "role": "A",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 5,
+    "affDesc": "Rendimento super costante",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 7.18
+  },
+  "cbe2156e-f2a7-4e4d-9d46-472bf9c4a258": {
+    "playerId": "cbe2156e-f2a7-4e4d-9d46-472bf9c4a258",
+    "name": "Okoye",
+    "role": "P",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 4.96
+  },
+  "okoye": {
+    "playerId": "cbe2156e-f2a7-4e4d-9d46-472bf9c4a258",
+    "name": "Okoye",
+    "role": "P",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 4.96
+  },
+  "f2f6c58f-a728-4126-a053-12812c775ed4": {
+    "playerId": "f2f6c58f-a728-4126-a053-12812c775ed4",
+    "name": "Forson O.",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.27
+  },
+  "forsono": {
+    "playerId": "f2f6c58f-a728-4126-a053-12812c775ed4",
+    "name": "Forson O.",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.27
+  },
+  "forson o.": {
+    "playerId": "f2f6c58f-a728-4126-a053-12812c775ed4",
+    "name": "Forson O.",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.27
   },
   "a2a9196a-3c70-4680-8e40-951ee6a10a22": {
     "playerId": "a2a9196a-3c70-4680-8e40-951ee6a10a22",
@@ -13971,102 +14211,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "È sempre integro",
     "xfmv": 6.09
   },
-  "1d2a470a-c2dd-4e85-9269-2432dab4989e": {
-    "playerId": "1d2a470a-c2dd-4e85-9269-2432dab4989e",
-    "name": "Jimenez A.",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.03
-  },
-  "jimeneza": {
-    "playerId": "1d2a470a-c2dd-4e85-9269-2432dab4989e",
-    "name": "Jimenez A.",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.03
-  },
-  "jimenez a.": {
-    "playerId": "1d2a470a-c2dd-4e85-9269-2432dab4989e",
-    "name": "Jimenez A.",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.03
-  },
-  "ab9e8244-7145-4065-a831-eadbe98d33a7": {
-    "playerId": "ab9e8244-7145-4065-a831-eadbe98d33a7",
-    "name": "Stankovic A.",
-    "role": "C",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.2
-  },
-  "stankovica": {
-    "playerId": "ab9e8244-7145-4065-a831-eadbe98d33a7",
-    "name": "Stankovic A.",
-    "role": "C",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.2
-  },
-  "stankovic a.": {
-    "playerId": "ab9e8244-7145-4065-a831-eadbe98d33a7",
-    "name": "Stankovic A.",
-    "role": "C",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.2
-  },
-  "9768530a-cba2-4c92-89bb-2390e70459cc": {
-    "playerId": "9768530a-cba2-4c92-89bb-2390e70459cc",
-    "name": "Fini",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.28
-  },
-  "fini": {
-    "playerId": "9768530a-cba2-4c92-89bb-2390e70459cc",
-    "name": "Fini",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.28
-  },
   "03943eb7-aa1e-4daf-b816-f2722e9e46ce": {
     "playerId": "03943eb7-aa1e-4daf-b816-f2722e9e46ce",
     "name": "Camarda",
@@ -14091,53 +14235,29 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Pochissimi infortuni",
     "xfmv": 6.33
   },
-  "f2ef0efb-6a37-403e-ad92-1aec21604fb7": {
-    "playerId": "f2ef0efb-6a37-403e-ad92-1aec21604fb7",
-    "name": "Ghedjemis",
-    "role": "A",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
+  "dbf4d6b8-9064-432c-afe6-57cea9ebf228": {
+    "playerId": "dbf4d6b8-9064-432c-afe6-57cea9ebf228",
+    "name": "Ghilardi",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
     "affIndex": 4,
     "affDesc": "Quasi sempre sufficiente",
     "infIndex": 4,
     "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.55
+    "xfmv": 5.91
   },
-  "ghedjemis": {
-    "playerId": "f2ef0efb-6a37-403e-ad92-1aec21604fb7",
-    "name": "Ghedjemis",
-    "role": "A",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
+  "ghilardi": {
+    "playerId": "dbf4d6b8-9064-432c-afe6-57cea9ebf228",
+    "name": "Ghilardi",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
     "affIndex": 4,
     "affDesc": "Quasi sempre sufficiente",
     "infIndex": 4,
     "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.55
-  },
-  "36a9825a-5980-4cda-8103-62cc944e7a83": {
-    "playerId": "36a9825a-5980-4cda-8103-62cc944e7a83",
-    "name": "Perri",
-    "role": "P",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 4.92
-  },
-  "perri": {
-    "playerId": "36a9825a-5980-4cda-8103-62cc944e7a83",
-    "name": "Perri",
-    "role": "P",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 4.92
+    "xfmv": 5.91
   },
   "95a465a2-502b-433b-8e10-67310cb1cb95": {
     "playerId": "95a465a2-502b-433b-8e10-67310cb1cb95",
@@ -14175,54 +14295,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ha avuto diversi infortuni",
     "xfmv": 5.89
   },
-  "0750e0ff-54fd-4282-bd09-d1194918f5e4": {
-    "playerId": "0750e0ff-54fd-4282-bd09-d1194918f5e4",
-    "name": "Kambwala",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.75
-  },
-  "kambwala": {
-    "playerId": "0750e0ff-54fd-4282-bd09-d1194918f5e4",
-    "name": "Kambwala",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.75
-  },
-  "dbf4d6b8-9064-432c-afe6-57cea9ebf228": {
-    "playerId": "dbf4d6b8-9064-432c-afe6-57cea9ebf228",
-    "name": "Ghilardi",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 5.91
-  },
-  "ghilardi": {
-    "playerId": "dbf4d6b8-9064-432c-afe6-57cea9ebf228",
-    "name": "Ghilardi",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 5.91
-  },
   "8b03e85a-ae9b-4274-9eaf-008d8d2c95b7": {
     "playerId": "8b03e85a-ae9b-4274-9eaf-008d8d2c95b7",
     "name": "Felici",
@@ -14246,30 +14318,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 1,
     "infDesc": "Molto fragile",
     "xfmv": 6.15
-  },
-  "8c21288d-a991-4672-8d81-cc527060831c": {
-    "playerId": "8c21288d-a991-4672-8d81-cc527060831c",
-    "name": "Marcandalli",
-    "role": "D",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 5.94
-  },
-  "marcandalli": {
-    "playerId": "8c21288d-a991-4672-8d81-cc527060831c",
-    "name": "Marcandalli",
-    "role": "D",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 5.94
   },
   "491914f6-841c-478f-a8d8-8710dd039a27": {
     "playerId": "491914f6-841c-478f-a8d8-8710dd039a27",
@@ -14307,89 +14355,29 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Pochissimi infortuni",
     "xfmv": 6.63
   },
-  "5dc700e9-cd9d-493b-a143-94fbad6152b7": {
-    "playerId": "5dc700e9-cd9d-493b-a143-94fbad6152b7",
-    "name": "Sherri",
-    "role": "P",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
+  "8c21288d-a991-4672-8d81-cc527060831c": {
+    "playerId": "8c21288d-a991-4672-8d81-cc527060831c",
+    "name": "Marcandalli",
+    "role": "D",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
     "affIndex": 3,
     "affDesc": "Alterna buone prestazioni ad altre deludenti",
     "infIndex": 5,
     "infDesc": "È sempre integro",
-    "xfmv": 4.5
+    "xfmv": 5.94
   },
-  "sherri": {
-    "playerId": "5dc700e9-cd9d-493b-a143-94fbad6152b7",
-    "name": "Sherri",
-    "role": "P",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
+  "marcandalli": {
+    "playerId": "8c21288d-a991-4672-8d81-cc527060831c",
+    "name": "Marcandalli",
+    "role": "D",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
     "affIndex": 3,
     "affDesc": "Alterna buone prestazioni ad altre deludenti",
     "infIndex": 5,
     "infDesc": "È sempre integro",
-    "xfmv": 4.5
-  },
-  "f1421f6f-3f6a-436b-9ed3-997e353873e0": {
-    "playerId": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
-    "name": "Bernabè",
-    "role": "C",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 6.37
-  },
-  "bernab": {
-    "playerId": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
-    "name": "Bernabè",
-    "role": "C",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 6.37
-  },
-  "bernabè": {
-    "playerId": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
-    "name": "Bernabè",
-    "role": "C",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 6.37
-  },
-  "1a34b9f5-bd27-4a6b-a2e5-3961be3bd835": {
-    "playerId": "1a34b9f5-bd27-4a6b-a2e5-3961be3bd835",
-    "name": "Idzes",
-    "role": "D",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.02
-  },
-  "idzes": {
-    "playerId": "1a34b9f5-bd27-4a6b-a2e5-3961be3bd835",
-    "name": "Idzes",
-    "role": "D",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.02
+    "xfmv": 5.94
   },
   "cff37405-7da7-494e-b4c4-34296cb8be1f": {
     "playerId": "cff37405-7da7-494e-b4c4-34296cb8be1f",
@@ -14414,6 +14402,54 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 3,
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 5.7
+  },
+  "5dc700e9-cd9d-493b-a143-94fbad6152b7": {
+    "playerId": "5dc700e9-cd9d-493b-a143-94fbad6152b7",
+    "name": "Sherri",
+    "role": "P",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 4.5
+  },
+  "sherri": {
+    "playerId": "5dc700e9-cd9d-493b-a143-94fbad6152b7",
+    "name": "Sherri",
+    "role": "P",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 4.5
+  },
+  "1a34b9f5-bd27-4a6b-a2e5-3961be3bd835": {
+    "playerId": "1a34b9f5-bd27-4a6b-a2e5-3961be3bd835",
+    "name": "Idzes",
+    "role": "D",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.02
+  },
+  "idzes": {
+    "playerId": "1a34b9f5-bd27-4a6b-a2e5-3961be3bd835",
+    "name": "Idzes",
+    "role": "D",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.02
   },
   "d4d1f7e7-31e5-40ec-ab01-11fa47ee49de": {
     "playerId": "d4d1f7e7-31e5-40ec-ab01-11fa47ee49de",
@@ -14679,54 +14715,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Pochissimi infortuni",
     "xfmv": 5.72
   },
-  "2d677888-6808-453b-976b-a9bde9d6c7e4": {
-    "playerId": "2d677888-6808-453b-976b-a9bde9d6c7e4",
-    "name": "Corvi",
-    "role": "P",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 4.84
-  },
-  "corvi": {
-    "playerId": "2d677888-6808-453b-976b-a9bde9d6c7e4",
-    "name": "Corvi",
-    "role": "P",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 4.84
-  },
-  "b179e9e8-54a1-40bc-92b3-e2d1c1627e4e": {
-    "playerId": "b179e9e8-54a1-40bc-92b3-e2d1c1627e4e",
-    "name": "Bonny",
-    "role": "A",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.71
-  },
-  "bonny": {
-    "playerId": "b179e9e8-54a1-40bc-92b3-e2d1c1627e4e",
-    "name": "Bonny",
-    "role": "A",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.71
-  },
   "0ea3b547-311e-4fa7-a58a-26f37efb05f5": {
     "playerId": "0ea3b547-311e-4fa7-a58a-26f37efb05f5",
     "name": "Delprato",
@@ -14751,6 +14739,30 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Pochissimi infortuni",
     "xfmv": 6.07
   },
+  "2d677888-6808-453b-976b-a9bde9d6c7e4": {
+    "playerId": "2d677888-6808-453b-976b-a9bde9d6c7e4",
+    "name": "Corvi",
+    "role": "P",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 4.84
+  },
+  "corvi": {
+    "playerId": "2d677888-6808-453b-976b-a9bde9d6c7e4",
+    "name": "Corvi",
+    "role": "P",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 4.84
+  },
   "2142c7e8-d27c-4c26-a133-363d0f634812": {
     "playerId": "2142c7e8-d27c-4c26-a133-363d0f634812",
     "name": "Grandi",
@@ -14774,6 +14786,30 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 4,
     "infDesc": "Pochissimi infortuni",
     "xfmv": 4.5
+  },
+  "b179e9e8-54a1-40bc-92b3-e2d1c1627e4e": {
+    "playerId": "b179e9e8-54a1-40bc-92b3-e2d1c1627e4e",
+    "name": "Bonny",
+    "role": "A",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.71
+  },
+  "bonny": {
+    "playerId": "b179e9e8-54a1-40bc-92b3-e2d1c1627e4e",
+    "name": "Bonny",
+    "role": "A",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.71
   },
   "931356db-0d1a-43a6-b927-59da3782b7a7": {
     "playerId": "931356db-0d1a-43a6-b927-59da3782b7a7",
@@ -14991,6 +15027,30 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Pochissimi infortuni",
     "xfmv": 6.02
   },
+  "ce1cb519-9ff1-4394-a2b4-370d4cb27895": {
+    "playerId": "ce1cb519-9ff1-4394-a2b4-370d4cb27895",
+    "name": "Hainaut",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.21
+  },
+  "hainaut": {
+    "playerId": "ce1cb519-9ff1-4394-a2b4-370d4cb27895",
+    "name": "Hainaut",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.21
+  },
   "89eaf72b-0768-4516-9b08-5ff48acd9d43": {
     "playerId": "89eaf72b-0768-4516-9b08-5ff48acd9d43",
     "name": "Dembelè A.",
@@ -15026,54 +15086,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 5,
     "infDesc": "È sempre integro",
     "xfmv": 5.74
-  },
-  "ce1cb519-9ff1-4394-a2b4-370d4cb27895": {
-    "playerId": "ce1cb519-9ff1-4394-a2b4-370d4cb27895",
-    "name": "Hainaut",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.21
-  },
-  "hainaut": {
-    "playerId": "ce1cb519-9ff1-4394-a2b4-370d4cb27895",
-    "name": "Hainaut",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.21
-  },
-  "81dda297-825d-419f-bdc1-dadd2d326b6c": {
-    "playerId": "81dda297-825d-419f-bdc1-dadd2d326b6c",
-    "name": "Njie",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 6.38
-  },
-  "njie": {
-    "playerId": "81dda297-825d-419f-bdc1-dadd2d326b6c",
-    "name": "Njie",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 6.38
   },
   "fbe3ff89-8369-4e4f-af9e-6176daa6e0c3": {
     "playerId": "fbe3ff89-8369-4e4f-af9e-6176daa6e0c3",
@@ -15123,29 +15135,29 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Pochissimi infortuni",
     "xfmv": 6.74
   },
-  "4a7ed4dd-66d1-4837-9557-1e8148c21322": {
-    "playerId": "4a7ed4dd-66d1-4837-9557-1e8148c21322",
-    "name": "Ramon",
-    "role": "D",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 5,
-    "affDesc": "Rendimento super costante",
+  "c9db8149-35c2-4640-9b87-0ac4efe8d1b9": {
+    "playerId": "c9db8149-35c2-4640-9b87-0ac4efe8d1b9",
+    "name": "Adzic",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
     "infIndex": 3,
     "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.21
+    "xfmv": 6.72
   },
-  "ramon": {
-    "playerId": "4a7ed4dd-66d1-4837-9557-1e8148c21322",
-    "name": "Ramon",
-    "role": "D",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 5,
-    "affDesc": "Rendimento super costante",
+  "adzic": {
+    "playerId": "c9db8149-35c2-4640-9b87-0ac4efe8d1b9",
+    "name": "Adzic",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
     "infIndex": 3,
     "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.21
+    "xfmv": 6.72
   },
   "b6e4d803-fb64-4bf4-9771-3673e4c4dc9a": {
     "playerId": "b6e4d803-fb64-4bf4-9771-3673e4c4dc9a",
@@ -15183,30 +15195,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "È sempre integro",
     "xfmv": 7.43
   },
-  "c9db8149-35c2-4640-9b87-0ac4efe8d1b9": {
-    "playerId": "c9db8149-35c2-4640-9b87-0ac4efe8d1b9",
-    "name": "Adzic",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.72
-  },
-  "adzic": {
-    "playerId": "c9db8149-35c2-4640-9b87-0ac4efe8d1b9",
-    "name": "Adzic",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.72
-  },
   "c936ac6a-f383-43a3-8568-182189db11a8": {
     "playerId": "c936ac6a-f383-43a3-8568-182189db11a8",
     "name": "Karlstrom",
@@ -15231,29 +15219,29 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Pochissimi infortuni",
     "xfmv": 6.09
   },
-  "35df14f3-13ca-4e70-b340-ff8bcb204a69": {
-    "playerId": "35df14f3-13ca-4e70-b340-ff8bcb204a69",
-    "name": "Marianucci",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
+  "4c0cefbf-1439-4815-9004-9bfdb5c41023": {
+    "playerId": "4c0cefbf-1439-4815-9004-9bfdb5c41023",
+    "name": "Torriani",
+    "role": "P",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
     "affIndex": 3,
     "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 5.65
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 4.5
   },
-  "marianucci": {
-    "playerId": "35df14f3-13ca-4e70-b340-ff8bcb204a69",
-    "name": "Marianucci",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
+  "torriani": {
+    "playerId": "4c0cefbf-1439-4815-9004-9bfdb5c41023",
+    "name": "Torriani",
+    "role": "P",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
     "affIndex": 3,
     "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 5.65
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 4.5
   },
   "13718197-c982-4d9b-bbd2-87ce694e018c": {
     "playerId": "13718197-c982-4d9b-bbd2-87ce694e018c",
@@ -15278,6 +15266,30 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 3,
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 7.08
+  },
+  "2748f5d9-1b7e-4731-8ff7-d89ba1c26bc3": {
+    "playerId": "2748f5d9-1b7e-4731-8ff7-d89ba1c26bc3",
+    "name": "Fadera",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.19
+  },
+  "fadera": {
+    "playerId": "2748f5d9-1b7e-4731-8ff7-d89ba1c26bc3",
+    "name": "Fadera",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.19
   },
   "1eceb250-521e-4a1c-beff-c21eccc15af6": {
     "playerId": "1eceb250-521e-4a1c-beff-c21eccc15af6",
@@ -15315,101 +15327,29 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 6.32
   },
-  "4c0cefbf-1439-4815-9004-9bfdb5c41023": {
-    "playerId": "4c0cefbf-1439-4815-9004-9bfdb5c41023",
-    "name": "Torriani",
-    "role": "P",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 4.5
-  },
-  "torriani": {
-    "playerId": "4c0cefbf-1439-4815-9004-9bfdb5c41023",
-    "name": "Torriani",
-    "role": "P",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 4.5
-  },
-  "2748f5d9-1b7e-4731-8ff7-d89ba1c26bc3": {
-    "playerId": "2748f5d9-1b7e-4731-8ff7-d89ba1c26bc3",
-    "name": "Fadera",
-    "role": "C",
+  "35df14f3-13ca-4e70-b340-ff8bcb204a69": {
+    "playerId": "35df14f3-13ca-4e70-b340-ff8bcb204a69",
+    "name": "Marianucci",
+    "role": "D",
     "titIndex": 2,
     "titDesc": "Subentra raramente",
     "affIndex": 3,
     "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.19
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 5.65
   },
-  "fadera": {
-    "playerId": "2748f5d9-1b7e-4731-8ff7-d89ba1c26bc3",
-    "name": "Fadera",
-    "role": "C",
+  "marianucci": {
+    "playerId": "35df14f3-13ca-4e70-b340-ff8bcb204a69",
+    "name": "Marianucci",
+    "role": "D",
     "titIndex": 2,
     "titDesc": "Subentra raramente",
     "affIndex": 3,
     "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.19
-  },
-  "9451216d-7d3a-453a-a899-626710d2e572": {
-    "playerId": "9451216d-7d3a-453a-a899-626710d2e572",
-    "name": "Ekhator",
-    "role": "A",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.29
-  },
-  "ekhator": {
-    "playerId": "9451216d-7d3a-453a-a899-626710d2e572",
-    "name": "Ekhator",
-    "role": "A",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.29
-  },
-  "3cd2885e-8e25-4e3f-8c86-8af871b76421": {
-    "playerId": "3cd2885e-8e25-4e3f-8c86-8af871b76421",
-    "name": "Neres",
-    "role": "A",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 6.67
-  },
-  "neres": {
-    "playerId": "3cd2885e-8e25-4e3f-8c86-8af871b76421",
-    "name": "Neres",
-    "role": "A",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 6.67
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 5.65
   },
   "9fa1a4e4-e867-49fd-a887-6a29ae0ee4be": {
     "playerId": "9fa1a4e4-e867-49fd-a887-6a29ae0ee4be",
@@ -15459,42 +15399,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 6.16
   },
-  "4f4aa73b-ba5e-400e-a7e0-4f4cff87cfab": {
-    "playerId": "4f4aa73b-ba5e-400e-a7e0-4f4cff87cfab",
-    "name": "Moreno M.",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.71
-  },
-  "morenom": {
-    "playerId": "4f4aa73b-ba5e-400e-a7e0-4f4cff87cfab",
-    "name": "Moreno M.",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.71
-  },
-  "moreno m.": {
-    "playerId": "4f4aa73b-ba5e-400e-a7e0-4f4cff87cfab",
-    "name": "Moreno M.",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.71
-  },
   "822eef68-617a-489d-acd7-806538ab99d2": {
     "playerId": "822eef68-617a-489d-acd7-806538ab99d2",
     "name": "Jean",
@@ -15518,54 +15422,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 3,
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 5.67
-  },
-  "ea45629e-3083-496f-a75a-f75b06a132d8": {
-    "playerId": "ea45629e-3083-496f-a75a-f75b06a132d8",
-    "name": "Schingtienne",
-    "role": "D",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 2,
-    "affDesc": "Profilo altamente incostante",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.84
-  },
-  "schingtienne": {
-    "playerId": "ea45629e-3083-496f-a75a-f75b06a132d8",
-    "name": "Schingtienne",
-    "role": "D",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 2,
-    "affDesc": "Profilo altamente incostante",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.84
-  },
-  "eac8b0ac-13f0-4df2-b79a-3cdd43e9d242": {
-    "playerId": "eac8b0ac-13f0-4df2-b79a-3cdd43e9d242",
-    "name": "Kempf",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.19
-  },
-  "kempf": {
-    "playerId": "eac8b0ac-13f0-4df2-b79a-3cdd43e9d242",
-    "name": "Kempf",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.19
   },
   "9ce7c50c-4dc1-427e-ab59-516c891e2ffb": {
     "playerId": "9ce7c50c-4dc1-427e-ab59-516c891e2ffb",
@@ -15603,6 +15459,90 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 6.05
   },
+  "4f4aa73b-ba5e-400e-a7e0-4f4cff87cfab": {
+    "playerId": "4f4aa73b-ba5e-400e-a7e0-4f4cff87cfab",
+    "name": "Moreno M.",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.71
+  },
+  "morenom": {
+    "playerId": "4f4aa73b-ba5e-400e-a7e0-4f4cff87cfab",
+    "name": "Moreno M.",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.71
+  },
+  "moreno m.": {
+    "playerId": "4f4aa73b-ba5e-400e-a7e0-4f4cff87cfab",
+    "name": "Moreno M.",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.71
+  },
+  "eac8b0ac-13f0-4df2-b79a-3cdd43e9d242": {
+    "playerId": "eac8b0ac-13f0-4df2-b79a-3cdd43e9d242",
+    "name": "Kempf",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.19
+  },
+  "kempf": {
+    "playerId": "eac8b0ac-13f0-4df2-b79a-3cdd43e9d242",
+    "name": "Kempf",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.19
+  },
+  "07ff1a4e-49ff-4334-be9d-082f0415a289": {
+    "playerId": "07ff1a4e-49ff-4334-be9d-082f0415a289",
+    "name": "Hasa",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6
+  },
+  "hasa": {
+    "playerId": "07ff1a4e-49ff-4334-be9d-082f0415a289",
+    "name": "Hasa",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6
+  },
   "bd8db1bf-e321-4a41-8c85-d8c992036168": {
     "playerId": "bd8db1bf-e321-4a41-8c85-d8c992036168",
     "name": "Dominguez B.",
@@ -15639,30 +15579,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Pochissimi infortuni",
     "xfmv": 6.43
   },
-  "07ff1a4e-49ff-4334-be9d-082f0415a289": {
-    "playerId": "07ff1a4e-49ff-4334-be9d-082f0415a289",
-    "name": "Hasa",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6
-  },
-  "hasa": {
-    "playerId": "07ff1a4e-49ff-4334-be9d-082f0415a289",
-    "name": "Hasa",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6
-  },
   "b0909a8f-766a-4a8c-86e6-d4295d761421": {
     "playerId": "b0909a8f-766a-4a8c-86e6-d4295d761421",
     "name": "Atta",
@@ -15686,114 +15602,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 3,
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 6.61
-  },
-  "a778e4d5-7591-4341-93cc-3fedebf36602": {
-    "playerId": "a778e4d5-7591-4341-93cc-3fedebf36602",
-    "name": "Palma",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 5.83
-  },
-  "palma": {
-    "playerId": "a778e4d5-7591-4341-93cc-3fedebf36602",
-    "name": "Palma",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 5.83
-  },
-  "05ed0add-6a0f-4ae8-aa97-eba61ba71d30": {
-    "playerId": "05ed0add-6a0f-4ae8-aa97-eba61ba71d30",
-    "name": "Butez",
-    "role": "P",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 5.16
-  },
-  "butez": {
-    "playerId": "05ed0add-6a0f-4ae8-aa97-eba61ba71d30",
-    "name": "Butez",
-    "role": "P",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 5.16
-  },
-  "e64cb10e-8e0f-439a-8eb1-0ef08eb5fcf7": {
-    "playerId": "e64cb10e-8e0f-439a-8eb1-0ef08eb5fcf7",
-    "name": "Candè",
-    "role": "D",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 2,
-    "affDesc": "Profilo altamente incostante",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 5.71
-  },
-  "cand": {
-    "playerId": "e64cb10e-8e0f-439a-8eb1-0ef08eb5fcf7",
-    "name": "Candè",
-    "role": "D",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 2,
-    "affDesc": "Profilo altamente incostante",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 5.71
-  },
-  "candè": {
-    "playerId": "e64cb10e-8e0f-439a-8eb1-0ef08eb5fcf7",
-    "name": "Candè",
-    "role": "D",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 2,
-    "affDesc": "Profilo altamente incostante",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 5.71
-  },
-  "7c69e511-41b6-4b38-b274-6b075e97d1de": {
-    "playerId": "7c69e511-41b6-4b38-b274-6b075e97d1de",
-    "name": "Rensch",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 6.11
-  },
-  "rensch": {
-    "playerId": "7c69e511-41b6-4b38-b274-6b075e97d1de",
-    "name": "Rensch",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 6.11
   },
   "7a3f1e53-1d23-427d-94ef-b4de00ca3edc": {
     "playerId": "7a3f1e53-1d23-427d-94ef-b4de00ca3edc",
@@ -15831,6 +15639,30 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Pochissimi infortuni",
     "xfmv": 5.85
   },
+  "21aae13c-0a10-4bf2-aa9a-0a44c6cec6b2": {
+    "playerId": "21aae13c-0a10-4bf2-aa9a-0a44c6cec6b2",
+    "name": "Douvikas",
+    "role": "A",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 7.54
+  },
+  "douvikas": {
+    "playerId": "21aae13c-0a10-4bf2-aa9a-0a44c6cec6b2",
+    "name": "Douvikas",
+    "role": "A",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 7.54
+  },
   "f5c4b009-851b-4901-b6b4-0f66ec783639": {
     "playerId": "f5c4b009-851b-4901-b6b4-0f66ec783639",
     "name": "Pellegrino M.",
@@ -15867,42 +15699,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Pochissimi infortuni",
     "xfmv": 6.83
   },
-  "21aae13c-0a10-4bf2-aa9a-0a44c6cec6b2": {
-    "playerId": "21aae13c-0a10-4bf2-aa9a-0a44c6cec6b2",
-    "name": "Douvikas",
-    "role": "A",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 7.54
-  },
-  "douvikas": {
-    "playerId": "21aae13c-0a10-4bf2-aa9a-0a44c6cec6b2",
-    "name": "Douvikas",
-    "role": "A",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 7.54
-  },
-  "27551bf1-46ae-44f8-bac1-825be51116f8": {
-    "playerId": "27551bf1-46ae-44f8-bac1-825be51116f8",
-    "name": "",
-    "role": "C",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 4.5
-  },
   "c54397de-b393-4e6c-8db3-ff1835fb14a5": {
     "playerId": "c54397de-b393-4e6c-8db3-ff1835fb14a5",
     "name": "Vitik",
@@ -15926,90 +15722,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 3,
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 5.87
-  },
-  "ca464bbb-fe09-461d-a32f-8e235178752f": {
-    "playerId": "ca464bbb-fe09-461d-a32f-8e235178752f",
-    "name": "Sucic P.",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.31
-  },
-  "sucicp": {
-    "playerId": "ca464bbb-fe09-461d-a32f-8e235178752f",
-    "name": "Sucic P.",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.31
-  },
-  "sucic p.": {
-    "playerId": "ca464bbb-fe09-461d-a32f-8e235178752f",
-    "name": "Sucic P.",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.31
-  },
-  "dc1712b1-57f3-433e-991a-2174387b8d39": {
-    "playerId": "dc1712b1-57f3-433e-991a-2174387b8d39",
-    "name": "Mastantuono",
-    "role": "C",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.81
-  },
-  "mastantuono": {
-    "playerId": "dc1712b1-57f3-433e-991a-2174387b8d39",
-    "name": "Mastantuono",
-    "role": "C",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.81
-  },
-  "d223681f-3306-47fa-a0f6-e0b1149260a2": {
-    "playerId": "d223681f-3306-47fa-a0f6-e0b1149260a2",
-    "name": "Jovanovic",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.07
-  },
-  "jovanovic": {
-    "playerId": "d223681f-3306-47fa-a0f6-e0b1149260a2",
-    "name": "Jovanovic",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.07
   },
   "248504d8-fd98-41ce-8f6b-db46784043a5": {
     "playerId": "248504d8-fd98-41ce-8f6b-db46784043a5",
@@ -16070,6 +15782,30 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 2,
     "infDesc": "Ha avuto diversi infortuni",
     "xfmv": 7.08
+  },
+  "d223681f-3306-47fa-a0f6-e0b1149260a2": {
+    "playerId": "d223681f-3306-47fa-a0f6-e0b1149260a2",
+    "name": "Jovanovic",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.07
+  },
+  "jovanovic": {
+    "playerId": "d223681f-3306-47fa-a0f6-e0b1149260a2",
+    "name": "Jovanovic",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.07
   },
   "b073922c-058b-49b2-9d3f-c84fd1d25f4c": {
     "playerId": "b073922c-058b-49b2-9d3f-c84fd1d25f4c",
@@ -16707,6 +16443,90 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "È sempre integro",
     "xfmv": 6.2
   },
+  "b36b42d9-ec5e-4332-aec9-9259f65e45c9": {
+    "playerId": "b36b42d9-ec5e-4332-aec9-9259f65e45c9",
+    "name": "Idrissi R.",
+    "role": "D",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.04
+  },
+  "idrissir": {
+    "playerId": "b36b42d9-ec5e-4332-aec9-9259f65e45c9",
+    "name": "Idrissi R.",
+    "role": "D",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.04
+  },
+  "idrissi r.": {
+    "playerId": "b36b42d9-ec5e-4332-aec9-9259f65e45c9",
+    "name": "Idrissi R.",
+    "role": "D",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.04
+  },
+  "e750e65a-2285-401b-b7ad-a0fea8d2c498": {
+    "playerId": "e750e65a-2285-401b-b7ad-a0fea8d2c498",
+    "name": "Romano",
+    "role": "C",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.21
+  },
+  "romano": {
+    "playerId": "e750e65a-2285-401b-b7ad-a0fea8d2c498",
+    "name": "Romano",
+    "role": "C",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.21
+  },
+  "361b37bf-01e0-4fee-b4e7-36e258c94ed4": {
+    "playerId": "361b37bf-01e0-4fee-b4e7-36e258c94ed4",
+    "name": "Cremaschi",
+    "role": "C",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6
+  },
+  "cremaschi": {
+    "playerId": "361b37bf-01e0-4fee-b4e7-36e258c94ed4",
+    "name": "Cremaschi",
+    "role": "C",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6
+  },
   "5d4bd759-1210-413a-8cd0-5b7ba268c802": {
     "playerId": "5d4bd759-1210-413a-8cd0-5b7ba268c802",
     "name": "Zè Pedro",
@@ -16742,30 +16562,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 3,
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 5.83
-  },
-  "361b37bf-01e0-4fee-b4e7-36e258c94ed4": {
-    "playerId": "361b37bf-01e0-4fee-b4e7-36e258c94ed4",
-    "name": "Cremaschi",
-    "role": "C",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6
-  },
-  "cremaschi": {
-    "playerId": "361b37bf-01e0-4fee-b4e7-36e258c94ed4",
-    "name": "Cremaschi",
-    "role": "C",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6
   },
   "1fe04853-522d-4f26-91ac-256aa3256a46": {
     "playerId": "1fe04853-522d-4f26-91ac-256aa3256a46",
@@ -16814,66 +16610,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 5,
     "infDesc": "È sempre integro",
     "xfmv": 4.72
-  },
-  "e750e65a-2285-401b-b7ad-a0fea8d2c498": {
-    "playerId": "e750e65a-2285-401b-b7ad-a0fea8d2c498",
-    "name": "Romano",
-    "role": "C",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.21
-  },
-  "romano": {
-    "playerId": "e750e65a-2285-401b-b7ad-a0fea8d2c498",
-    "name": "Romano",
-    "role": "C",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.21
-  },
-  "b36b42d9-ec5e-4332-aec9-9259f65e45c9": {
-    "playerId": "b36b42d9-ec5e-4332-aec9-9259f65e45c9",
-    "name": "Idrissi R.",
-    "role": "D",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.04
-  },
-  "idrissir": {
-    "playerId": "b36b42d9-ec5e-4332-aec9-9259f65e45c9",
-    "name": "Idrissi R.",
-    "role": "D",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.04
-  },
-  "idrissi r.": {
-    "playerId": "b36b42d9-ec5e-4332-aec9-9259f65e45c9",
-    "name": "Idrissi R.",
-    "role": "D",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.04
   },
   "e776d386-f107-4da9-8341-55a10fdf6c44": {
     "playerId": "e776d386-f107-4da9-8341-55a10fdf6c44",
@@ -16947,6 +16683,42 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Pochissimi infortuni",
     "xfmv": 6.55
   },
+  "80ce5ddd-aff9-41f7-90d7-2f39513370bd": {
+    "playerId": "80ce5ddd-aff9-41f7-90d7-2f39513370bd",
+    "name": "Pessina Mas.",
+    "role": "P",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 4.75
+  },
+  "pessinamas": {
+    "playerId": "80ce5ddd-aff9-41f7-90d7-2f39513370bd",
+    "name": "Pessina Mas.",
+    "role": "P",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 4.75
+  },
+  "pessina mas.": {
+    "playerId": "80ce5ddd-aff9-41f7-90d7-2f39513370bd",
+    "name": "Pessina Mas.",
+    "role": "P",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 4.75
+  },
   "daf219f9-e5fb-4f2a-a7bf-808a15402abe": {
     "playerId": "daf219f9-e5fb-4f2a-a7bf-808a15402abe",
     "name": "Odenthal",
@@ -17019,41 +16791,41 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 6
   },
-  "80ce5ddd-aff9-41f7-90d7-2f39513370bd": {
-    "playerId": "80ce5ddd-aff9-41f7-90d7-2f39513370bd",
-    "name": "Pessina Mas.",
-    "role": "P",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
+  "7070624c-93f7-47d9-8a5d-e91e25328462": {
+    "playerId": "7070624c-93f7-47d9-8a5d-e91e25328462",
+    "name": "Joao Mario",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
     "affIndex": 3,
     "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 4.75
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.93
   },
-  "pessinamas": {
-    "playerId": "80ce5ddd-aff9-41f7-90d7-2f39513370bd",
-    "name": "Pessina Mas.",
-    "role": "P",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
+  "joaomario": {
+    "playerId": "7070624c-93f7-47d9-8a5d-e91e25328462",
+    "name": "Joao Mario",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
     "affIndex": 3,
     "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 4.75
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.93
   },
-  "pessina mas.": {
-    "playerId": "80ce5ddd-aff9-41f7-90d7-2f39513370bd",
-    "name": "Pessina Mas.",
-    "role": "P",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
+  "joao mario": {
+    "playerId": "7070624c-93f7-47d9-8a5d-e91e25328462",
+    "name": "Joao Mario",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
     "affIndex": 3,
     "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 4.75
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.93
   },
   "1608c14a-caaa-4907-9b7f-57aa2dc2b47b": {
     "playerId": "1608c14a-caaa-4907-9b7f-57aa2dc2b47b",
@@ -17091,42 +16863,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "È sempre integro",
     "xfmv": 6.07
   },
-  "7070624c-93f7-47d9-8a5d-e91e25328462": {
-    "playerId": "7070624c-93f7-47d9-8a5d-e91e25328462",
-    "name": "Joao Mario",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.93
-  },
-  "joaomario": {
-    "playerId": "7070624c-93f7-47d9-8a5d-e91e25328462",
-    "name": "Joao Mario",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.93
-  },
-  "joao mario": {
-    "playerId": "7070624c-93f7-47d9-8a5d-e91e25328462",
-    "name": "Joao Mario",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.93
-  },
   "fd7ae364-1f16-4f37-b54e-4f8453fe9de1": {
     "playerId": "fd7ae364-1f16-4f37-b54e-4f8453fe9de1",
     "name": "Wesley",
@@ -17151,30 +16887,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 6.57
   },
-  "84253356-eeb5-4faa-89ed-1c0f4949f38a": {
-    "playerId": "84253356-eeb5-4faa-89ed-1c0f4949f38a",
-    "name": "Aboukhlal",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 6.1
-  },
-  "aboukhlal": {
-    "playerId": "84253356-eeb5-4faa-89ed-1c0f4949f38a",
-    "name": "Aboukhlal",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 6.1
-  },
   "5bcf0569-1900-4392-bdd9-9154fc5d1fba": {
     "playerId": "5bcf0569-1900-4392-bdd9-9154fc5d1fba",
     "name": "Ndaba",
@@ -17198,6 +16910,30 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 5,
     "infDesc": "È sempre integro",
     "xfmv": 5.58
+  },
+  "84253356-eeb5-4faa-89ed-1c0f4949f38a": {
+    "playerId": "84253356-eeb5-4faa-89ed-1c0f4949f38a",
+    "name": "Aboukhlal",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 6.1
+  },
+  "aboukhlal": {
+    "playerId": "84253356-eeb5-4faa-89ed-1c0f4949f38a",
+    "name": "Aboukhlal",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 6.1
   },
   "6f1fa3c2-5ce5-4273-97e3-0fcb5c647657": {
     "playerId": "6f1fa3c2-5ce5-4273-97e3-0fcb5c647657",
@@ -17307,29 +17043,29 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ha avuto diversi infortuni",
     "xfmv": 6.34
   },
-  "9b9115fc-6b78-47ec-9924-c974e8b83378": {
-    "playerId": "9b9115fc-6b78-47ec-9924-c974e8b83378",
-    "name": "Kouadio",
-    "role": "D",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 5.77
+  "248ae665-ab73-4e64-8e95-f19c50c469de": {
+    "playerId": "248ae665-ab73-4e64-8e95-f19c50c469de",
+    "name": "Stulic",
+    "role": "A",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 2,
+    "affDesc": "Profilo altamente incostante",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.41
   },
-  "kouadio": {
-    "playerId": "9b9115fc-6b78-47ec-9924-c974e8b83378",
-    "name": "Kouadio",
-    "role": "D",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 5.77
+  "stulic": {
+    "playerId": "248ae665-ab73-4e64-8e95-f19c50c469de",
+    "name": "Stulic",
+    "role": "A",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 2,
+    "affDesc": "Profilo altamente incostante",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.41
   },
   "019db866-8ef1-4aea-894b-eb37ed3b792e": {
     "playerId": "019db866-8ef1-4aea-894b-eb37ed3b792e",
@@ -17355,30 +17091,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ha avuto diversi infortuni",
     "xfmv": 6.09
   },
-  "248ae665-ab73-4e64-8e95-f19c50c469de": {
-    "playerId": "248ae665-ab73-4e64-8e95-f19c50c469de",
-    "name": "Stulic",
-    "role": "A",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 2,
-    "affDesc": "Profilo altamente incostante",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.41
-  },
-  "stulic": {
-    "playerId": "248ae665-ab73-4e64-8e95-f19c50c469de",
-    "name": "Stulic",
-    "role": "A",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 2,
-    "affDesc": "Profilo altamente incostante",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.41
-  },
   "b13f6c95-3e12-4745-85eb-c646483bea89": {
     "playerId": "b13f6c95-3e12-4745-85eb-c646483bea89",
     "name": "Troilo",
@@ -17402,6 +17114,30 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 5,
     "infDesc": "È sempre integro",
     "xfmv": 5.81
+  },
+  "9b9115fc-6b78-47ec-9924-c974e8b83378": {
+    "playerId": "9b9115fc-6b78-47ec-9924-c974e8b83378",
+    "name": "Kouadio",
+    "role": "D",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 5.77
+  },
+  "kouadio": {
+    "playerId": "9b9115fc-6b78-47ec-9924-c974e8b83378",
+    "name": "Kouadio",
+    "role": "D",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 5.77
   },
   "7d6c8859-3dff-4bee-9d5a-1d2b436791a5": {
     "playerId": "7d6c8859-3dff-4bee-9d5a-1d2b436791a5",
@@ -17451,6 +17187,30 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "È sempre integro",
     "xfmv": 6.23
   },
+  "54398484-ccc0-43e1-b9a1-716b35d836d1": {
+    "playerId": "54398484-ccc0-43e1-b9a1-716b35d836d1",
+    "name": "Ziolkowski",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 5.83
+  },
+  "ziolkowski": {
+    "playerId": "54398484-ccc0-43e1-b9a1-716b35d836d1",
+    "name": "Ziolkowski",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 5.83
+  },
   "503cf24d-dbdc-410e-8ce0-f58133032085": {
     "playerId": "503cf24d-dbdc-410e-8ce0-f58133032085",
     "name": "Bella-Kotchap",
@@ -17486,90 +17246,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 3,
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 5.91
-  },
-  "eb1e8211-468b-4db8-b9be-1a15afa2339d": {
-    "playerId": "eb1e8211-468b-4db8-b9be-1a15afa2339d",
-    "name": "Britschgi",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 5.82
-  },
-  "britschgi": {
-    "playerId": "eb1e8211-468b-4db8-b9be-1a15afa2339d",
-    "name": "Britschgi",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 5.82
-  },
-  "54398484-ccc0-43e1-b9a1-716b35d836d1": {
-    "playerId": "54398484-ccc0-43e1-b9a1-716b35d836d1",
-    "name": "Ziolkowski",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 5.83
-  },
-  "ziolkowski": {
-    "playerId": "54398484-ccc0-43e1-b9a1-716b35d836d1",
-    "name": "Ziolkowski",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 5.83
-  },
-  "ce5b19a3-93bc-4d98-b799-c466274df41a": {
-    "playerId": "ce5b19a3-93bc-4d98-b799-c466274df41a",
-    "name": "Rodriguez Ju.",
-    "role": "D",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.89
-  },
-  "rodriguezju": {
-    "playerId": "ce5b19a3-93bc-4d98-b799-c466274df41a",
-    "name": "Rodriguez Ju.",
-    "role": "D",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.89
-  },
-  "rodriguez ju.": {
-    "playerId": "ce5b19a3-93bc-4d98-b799-c466274df41a",
-    "name": "Rodriguez Ju.",
-    "role": "D",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.89
   },
   "e01c03d6-37a1-44be-bcf2-76cfa7fd0df3": {
     "playerId": "e01c03d6-37a1-44be-bcf2-76cfa7fd0df3",
@@ -17618,30 +17294,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 4,
     "infDesc": "Pochissimi infortuni",
     "xfmv": 6
-  },
-  "b0a5adbc-a222-48c2-9a8e-ccf200c42084": {
-    "playerId": "b0a5adbc-a222-48c2-9a8e-ccf200c42084",
-    "name": "Kulenovic",
-    "role": "A",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.3
-  },
-  "kulenovic": {
-    "playerId": "b0a5adbc-a222-48c2-9a8e-ccf200c42084",
-    "name": "Kulenovic",
-    "role": "A",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.3
   },
   "dfbe607e-c761-4f14-9791-98c4a0a02a75": {
     "playerId": "dfbe607e-c761-4f14-9791-98c4a0a02a75",
@@ -17811,30 +17463,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ha avuto diversi infortuni",
     "xfmv": 5.99
   },
-  "d063038f-c807-450b-a1a0-4ef17966dddc": {
-    "playerId": "d063038f-c807-450b-a1a0-4ef17966dddc",
-    "name": "Elphege",
-    "role": "A",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.36
-  },
-  "elphege": {
-    "playerId": "d063038f-c807-450b-a1a0-4ef17966dddc",
-    "name": "Elphege",
-    "role": "A",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.36
-  },
   "43ee7850-9ecc-4539-aef0-e38d7627642a": {
     "playerId": "43ee7850-9ecc-4539-aef0-e38d7627642a",
     "name": "Bijlow",
@@ -17907,30 +17535,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "È sempre integro",
     "xfmv": 5.96
   },
-  "ca1d5381-2b54-4f76-8a2b-c52cda474dc8": {
-    "playerId": "ca1d5381-2b54-4f76-8a2b-c52cda474dc8",
-    "name": "Siviero",
-    "role": "P",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 4.5
-  },
-  "siviero": {
-    "playerId": "ca1d5381-2b54-4f76-8a2b-c52cda474dc8",
-    "name": "Siviero",
-    "role": "P",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 4.5
-  },
   "1da941e1-9f25-4af2-9903-6d3004e1765c": {
     "playerId": "1da941e1-9f25-4af2-9903-6d3004e1765c",
     "name": "Santos A.",
@@ -17967,66 +17571,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ha avuto diversi infortuni",
     "xfmv": 6.71
   },
-  "6332fc72-c508-4e04-bca1-db35ddda3e94": {
-    "playerId": "6332fc72-c508-4e04-bca1-db35ddda3e94",
-    "name": "Mendy P.",
-    "role": "A",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.56
-  },
-  "mendyp": {
-    "playerId": "6332fc72-c508-4e04-bca1-db35ddda3e94",
-    "name": "Mendy P.",
-    "role": "A",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.56
-  },
-  "mendy p.": {
-    "playerId": "6332fc72-c508-4e04-bca1-db35ddda3e94",
-    "name": "Mendy P.",
-    "role": "A",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.56
-  },
-  "56f6449f-dda3-48cd-b535-9016b9ac7e65": {
-    "playerId": "56f6449f-dda3-48cd-b535-9016b9ac7e65",
-    "name": "Milla",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.26
-  },
-  "milla": {
-    "playerId": "56f6449f-dda3-48cd-b535-9016b9ac7e65",
-    "name": "Milla",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.26
-  },
   "4e6addce-b231-4f62-a054-3979cf1f4563": {
     "playerId": "4e6addce-b231-4f62-a054-3979cf1f4563",
     "name": "",
@@ -18039,77 +17583,17 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "È sempre integro",
     "xfmv": 5.81
   },
-  "2ff8597a-cb95-42c1-a147-46ea883068c3": {
-    "playerId": "2ff8597a-cb95-42c1-a147-46ea883068c3",
-    "name": "Havel",
-    "role": "A",
+  "92bcdaf9-6420-4fb2-b3f5-ab7faca6f35f": {
+    "playerId": "92bcdaf9-6420-4fb2-b3f5-ab7faca6f35f",
+    "name": "",
+    "role": "C",
     "titIndex": 2,
     "titDesc": "Subentra raramente",
     "affIndex": 3,
     "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 6.1
-  },
-  "havel": {
-    "playerId": "2ff8597a-cb95-42c1-a147-46ea883068c3",
-    "name": "Havel",
-    "role": "A",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 6.1
-  },
-  "659ce549-30d0-49f8-9880-ec47debabb4f": {
-    "playerId": "659ce549-30d0-49f8-9880-ec47debabb4f",
-    "name": "Lahdo",
-    "role": "C",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6
-  },
-  "lahdo": {
-    "playerId": "659ce549-30d0-49f8-9880-ec47debabb4f",
-    "name": "Lahdo",
-    "role": "C",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6
-  },
-  "bb0e0e1e-c1f8-4676-94d1-ec1358aff228": {
-    "playerId": "bb0e0e1e-c1f8-4676-94d1-ec1358aff228",
-    "name": "Lisman",
-    "role": "A",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 6.15
-  },
-  "lisman": {
-    "playerId": "bb0e0e1e-c1f8-4676-94d1-ec1358aff228",
-    "name": "Lisman",
-    "role": "A",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 6.15
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 5.88
   },
   "52bad1f3-96f7-40d7-a473-fada24de2f93": {
     "playerId": "52bad1f3-96f7-40d7-a473-fada24de2f93",
@@ -18135,30 +17619,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Pochissimi infortuni",
     "xfmv": 4.5
   },
-  "92bcdaf9-6420-4fb2-b3f5-ab7faca6f35f": {
-    "playerId": "92bcdaf9-6420-4fb2-b3f5-ab7faca6f35f",
-    "name": "",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 5.88
-  },
-  "e0a55f90-4742-4082-9921-d9ab29b25e18": {
-    "playerId": "e0a55f90-4742-4082-9921-d9ab29b25e18",
-    "name": "",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.07
-  },
   "ace2a71a-be65-4788-aa2b-21036dfac576": {
     "playerId": "ace2a71a-be65-4788-aa2b-21036dfac576",
     "name": "Alajbegovic",
@@ -18183,6 +17643,18 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "È sempre integro",
     "xfmv": 6.71
   },
+  "e0a55f90-4742-4082-9921-d9ab29b25e18": {
+    "playerId": "e0a55f90-4742-4082-9921-d9ab29b25e18",
+    "name": "",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.07
+  },
   "841ead71-8c30-4357-a513-9fbef459f3bb": {
     "playerId": "841ead71-8c30-4357-a513-9fbef459f3bb",
     "name": "",
@@ -18194,282 +17666,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 5,
     "infDesc": "È sempre integro",
     "xfmv": 6.46
-  },
-  "00dce0c7-d5a8-4d18-b22c-3c83c47670a3": {
-    "playerId": "00dce0c7-d5a8-4d18-b22c-3c83c47670a3",
-    "name": "Lolic",
-    "role": "P",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 4.5
-  },
-  "lolic": {
-    "playerId": "00dce0c7-d5a8-4d18-b22c-3c83c47670a3",
-    "name": "Lolic",
-    "role": "P",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 4.5
-  },
-  "ec9e54b7-272b-48b0-acb4-841704350150": {
-    "playerId": "ec9e54b7-272b-48b0-acb4-841704350150",
-    "name": "Cichella",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 5.89
-  },
-  "cichella": {
-    "playerId": "ec9e54b7-272b-48b0-acb4-841704350150",
-    "name": "Cichella",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 5.89
-  },
-  "b04a4c83-2ea5-461c-8fec-832d413b553c": {
-    "playerId": "b04a4c83-2ea5-461c-8fec-832d413b553c",
-    "name": "Lauberbach",
-    "role": "A",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.25
-  },
-  "lauberbach": {
-    "playerId": "b04a4c83-2ea5-461c-8fec-832d413b553c",
-    "name": "Lauberbach",
-    "role": "A",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.25
-  },
-  "b99d0657-4f2a-4b37-90ba-9a43926e55be": {
-    "playerId": "b99d0657-4f2a-4b37-90ba-9a43926e55be",
-    "name": "Strajnar",
-    "role": "P",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 4.5
-  },
-  "strajnar": {
-    "playerId": "b99d0657-4f2a-4b37-90ba-9a43926e55be",
-    "name": "Strajnar",
-    "role": "P",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 4.5
-  },
-  "d8b66d33-4dcc-4cc8-9f3e-f5add19e00c5": {
-    "playerId": "d8b66d33-4dcc-4cc8-9f3e-f5add19e00c5",
-    "name": "Colombo L.",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 5.95
-  },
-  "colombol": {
-    "playerId": "d8b66d33-4dcc-4cc8-9f3e-f5add19e00c5",
-    "name": "Colombo L.",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 5.95
-  },
-  "colombo l.": {
-    "playerId": "d8b66d33-4dcc-4cc8-9f3e-f5add19e00c5",
-    "name": "Colombo L.",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 5.95
-  },
-  "2d943164-e3df-4a78-a795-93d26f2623e7": {
-    "playerId": "2d943164-e3df-4a78-a795-93d26f2623e7",
-    "name": "Bakoune",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.76
-  },
-  "bakoune": {
-    "playerId": "2d943164-e3df-4a78-a795-93d26f2623e7",
-    "name": "Bakoune",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.76
-  },
-  "0053b230-688b-4fef-90f5-b823c64ea378": {
-    "playerId": "0053b230-688b-4fef-90f5-b823c64ea378",
-    "name": "Varela G.",
-    "role": "A",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.68
-  },
-  "varelag": {
-    "playerId": "0053b230-688b-4fef-90f5-b823c64ea378",
-    "name": "Varela G.",
-    "role": "A",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.68
-  },
-  "varela g.": {
-    "playerId": "0053b230-688b-4fef-90f5-b823c64ea378",
-    "name": "Varela G.",
-    "role": "A",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.68
-  },
-  "35745a73-7a77-4d8e-9216-e8b4c2036a27": {
-    "playerId": "35745a73-7a77-4d8e-9216-e8b4c2036a27",
-    "name": "Gomes",
-    "role": "D",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 5.6
-  },
-  "gomes": {
-    "playerId": "35745a73-7a77-4d8e-9216-e8b4c2036a27",
-    "name": "Gomes",
-    "role": "D",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 5.6
-  },
-  "6e6cb392-a2c4-4f16-bca7-f7e025f4c4fd": {
-    "playerId": "6e6cb392-a2c4-4f16-bca7-f7e025f4c4fd",
-    "name": "El Azzouzi A.",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.02
-  },
-  "elazzouzia": {
-    "playerId": "6e6cb392-a2c4-4f16-bca7-f7e025f4c4fd",
-    "name": "El Azzouzi A.",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.02
-  },
-  "el azzouzi a.": {
-    "playerId": "6e6cb392-a2c4-4f16-bca7-f7e025f4c4fd",
-    "name": "El Azzouzi A.",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.02
-  },
-  "9f507758-5805-4ea3-9f4b-6158c66feefd": {
-    "playerId": "9f507758-5805-4ea3-9f4b-6158c66feefd",
-    "name": "Mascardi",
-    "role": "P",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 4.76
-  },
-  "mascardi": {
-    "playerId": "9f507758-5805-4ea3-9f4b-6158c66feefd",
-    "name": "Mascardi",
-    "role": "P",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 4.76
   },
   "98549edb-5890-4d13-9027-43d228b85ca8": {
     "playerId": "98549edb-5890-4d13-9027-43d228b85ca8",
@@ -18651,114 +17847,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Molto fragile",
     "xfmv": 5.84
   },
-  "2d9b4c39-4108-459f-8932-faa1b495f64b": {
-    "playerId": "2d9b4c39-4108-459f-8932-faa1b495f64b",
-    "name": "Fitz-Jim",
-    "role": "C",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 6.22
-  },
-  "fitzjim": {
-    "playerId": "2d9b4c39-4108-459f-8932-faa1b495f64b",
-    "name": "Fitz-Jim",
-    "role": "C",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 6.22
-  },
-  "fitz-jim": {
-    "playerId": "2d9b4c39-4108-459f-8932-faa1b495f64b",
-    "name": "Fitz-Jim",
-    "role": "C",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 6.22
-  },
-  "c1ccf92c-b87c-4abd-9e4a-9c38375c920d": {
-    "playerId": "c1ccf92c-b87c-4abd-9e4a-9c38375c920d",
-    "name": "Kofler",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 5.66
-  },
-  "kofler": {
-    "playerId": "c1ccf92c-b87c-4abd-9e4a-9c38375c920d",
-    "name": "Kofler",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 5.66
-  },
-  "180c9fdc-84bd-45a0-8cee-0dabd9a321c3": {
-    "playerId": "180c9fdc-84bd-45a0-8cee-0dabd9a321c3",
-    "name": "",
-    "role": "C",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 4.5
-  },
-  "6b1677bc-b9b5-4546-8183-98f46bd039ab": {
-    "playerId": "6b1677bc-b9b5-4546-8183-98f46bd039ab",
-    "name": "",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.11
-  },
-  "ecefd2d9-6777-459a-8683-2f95a1210f1e": {
-    "playerId": "ecefd2d9-6777-459a-8683-2f95a1210f1e",
-    "name": "Dagasso",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.1
-  },
-  "dagasso": {
-    "playerId": "ecefd2d9-6777-459a-8683-2f95a1210f1e",
-    "name": "Dagasso",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.1
-  },
   "0dcc082f-d28e-4c82-9e1c-f19db5b7bc43": {
     "playerId": "0dcc082f-d28e-4c82-9e1c-f19db5b7bc43",
     "name": "Alhassane",
@@ -18855,18 +17943,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "È sempre integro",
     "xfmv": 5.5
   },
-  "91b6ce45-5fd3-4f81-bdcf-771427e7205d": {
-    "playerId": "91b6ce45-5fd3-4f81-bdcf-771427e7205d",
-    "name": "",
-    "role": "C",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 4.5
-  },
   "aa07f5bd-dd03-463d-b95b-8aa8f3f2e3f1": {
     "playerId": "aa07f5bd-dd03-463d-b95b-8aa8f3f2e3f1",
     "name": "",
@@ -18879,30 +17955,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "È sempre integro",
     "xfmv": 6.05
   },
-  "2ade4141-3042-437f-a00b-ff8b17438a0f": {
-    "playerId": "2ade4141-3042-437f-a00b-ff8b17438a0f",
-    "name": "Koulierakis",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.03
-  },
-  "koulierakis": {
-    "playerId": "2ade4141-3042-437f-a00b-ff8b17438a0f",
-    "name": "Koulierakis",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.03
-  },
   "f74767ab-b1d1-4341-852a-5ba85a0326c5": {
     "playerId": "f74767ab-b1d1-4341-852a-5ba85a0326c5",
     "name": "",
@@ -18914,138 +17966,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 5,
     "infDesc": "È sempre integro",
     "xfmv": 4.5
-  },
-  "9869f556-9216-4950-b014-3dc6055d0167": {
-    "playerId": "9869f556-9216-4950-b014-3dc6055d0167",
-    "name": "Aurelio",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 5.69
-  },
-  "aurelio": {
-    "playerId": "9869f556-9216-4950-b014-3dc6055d0167",
-    "name": "Aurelio",
-    "role": "D",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 5.69
-  },
-  "3280f1a1-e0be-4c7b-83ba-b254858b4426": {
-    "playerId": "3280f1a1-e0be-4c7b-83ba-b254858b4426",
-    "name": "Kevin Carlos",
-    "role": "A",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.39
-  },
-  "kevincarlos": {
-    "playerId": "3280f1a1-e0be-4c7b-83ba-b254858b4426",
-    "name": "Kevin Carlos",
-    "role": "A",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.39
-  },
-  "kevin carlos": {
-    "playerId": "3280f1a1-e0be-4c7b-83ba-b254858b4426",
-    "name": "Kevin Carlos",
-    "role": "A",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.39
-  },
-  "b2912366-c560-4739-94a4-758de3f8a7fa": {
-    "playerId": "b2912366-c560-4739-94a4-758de3f8a7fa",
-    "name": "Grillitsch",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.96
-  },
-  "grillitsch": {
-    "playerId": "b2912366-c560-4739-94a4-758de3f8a7fa",
-    "name": "Grillitsch",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.96
-  },
-  "b86d1013-2a20-417e-b5a9-1bd4b97427df": {
-    "playerId": "b86d1013-2a20-417e-b5a9-1bd4b97427df",
-    "name": "Schmid",
-    "role": "C",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.38
-  },
-  "schmid": {
-    "playerId": "b86d1013-2a20-417e-b5a9-1bd4b97427df",
-    "name": "Schmid",
-    "role": "C",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 6.38
-  },
-  "7f1897b4-80fd-479c-9c47-e760d97a4a4b": {
-    "playerId": "7f1897b4-80fd-479c-9c47-e760d97a4a4b",
-    "name": "",
-    "role": "C",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 4.5
-  },
-  "e329f340-4dcb-450b-a014-f13b7177b16d": {
-    "playerId": "e329f340-4dcb-450b-a014-f13b7177b16d",
-    "name": "",
-    "role": "C",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6
   },
   "290059c5-ba66-4548-ace0-2fc138dd4c28": {
     "playerId": "290059c5-ba66-4548-ace0-2fc138dd4c28",
@@ -19070,6 +17990,30 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 1,
     "infDesc": "Molto fragile",
     "xfmv": 5.8
+  },
+  "b2912366-c560-4739-94a4-758de3f8a7fa": {
+    "playerId": "b2912366-c560-4739-94a4-758de3f8a7fa",
+    "name": "Grillitsch",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.96
+  },
+  "grillitsch": {
+    "playerId": "b2912366-c560-4739-94a4-758de3f8a7fa",
+    "name": "Grillitsch",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.96
   },
   "6a2d0ee2-6bae-42d1-9cfd-06994a361b3d": {
     "playerId": "6a2d0ee2-6bae-42d1-9cfd-06994a361b3d",
@@ -19107,8 +18051,8 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "È sempre integro",
     "xfmv": 6.33
   },
-  "c569b210-c9a1-4e64-9d9f-0d4106d10235": {
-    "playerId": "c569b210-c9a1-4e64-9d9f-0d4106d10235",
+  "7f1897b4-80fd-479c-9c47-e760d97a4a4b": {
+    "playerId": "7f1897b4-80fd-479c-9c47-e760d97a4a4b",
     "name": "",
     "role": "C",
     "titIndex": 1,
@@ -19117,7 +18061,31 @@ export const PLAYER_INDICES_MAP = {
     "affDesc": "Alterna buone prestazioni ad altre deludenti",
     "infIndex": 5,
     "infDesc": "È sempre integro",
-    "xfmv": 6
+    "xfmv": 4.5
+  },
+  "b86d1013-2a20-417e-b5a9-1bd4b97427df": {
+    "playerId": "b86d1013-2a20-417e-b5a9-1bd4b97427df",
+    "name": "Schmid",
+    "role": "C",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.38
+  },
+  "schmid": {
+    "playerId": "b86d1013-2a20-417e-b5a9-1bd4b97427df",
+    "name": "Schmid",
+    "role": "C",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.38
   },
   "9dd220ed-42e4-491f-8351-ff0bc7ab9e05": {
     "playerId": "9dd220ed-42e4-491f-8351-ff0bc7ab9e05",
@@ -19190,18 +18158,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 4,
     "infDesc": "Pochissimi infortuni",
     "xfmv": 5.84
-  },
-  "2e331f32-cc88-4a67-b471-f05a2db80063": {
-    "playerId": "2e331f32-cc88-4a67-b471-f05a2db80063",
-    "name": "",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.49
   },
   "76cabc00-f29e-402b-aa35-b88bacfd8aae": {
     "playerId": "76cabc00-f29e-402b-aa35-b88bacfd8aae",
@@ -19371,29 +18327,29 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 6.38
   },
-  "8194c04b-9af2-4f63-af75-712ae72e0842": {
-    "playerId": "8194c04b-9af2-4f63-af75-712ae72e0842",
-    "name": "",
-    "role": "C",
+  "fbbfed22-f662-4c6c-b22a-0778746038c2": {
+    "playerId": "fbbfed22-f662-4c6c-b22a-0778746038c2",
+    "name": "Favasuli",
+    "role": "D",
     "titIndex": 3,
     "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 2,
-    "infDesc": "Ha avuto diversi infortuni",
-    "xfmv": 6.37
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.17
   },
-  "eb01cf4b-a689-4016-8c30-0e7b058d0210": {
-    "playerId": "eb01cf4b-a689-4016-8c30-0e7b058d0210",
-    "name": "",
-    "role": "C",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 6.59
+  "favasuli": {
+    "playerId": "fbbfed22-f662-4c6c-b22a-0778746038c2",
+    "name": "Favasuli",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.17
   },
   "94142a98-c364-47a6-9a08-f922cb8b3e1f": {
     "playerId": "94142a98-c364-47a6-9a08-f922cb8b3e1f",
@@ -19443,30 +18399,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "È sempre integro",
     "xfmv": 4.5
   },
-  "fbbfed22-f662-4c6c-b22a-0778746038c2": {
-    "playerId": "fbbfed22-f662-4c6c-b22a-0778746038c2",
-    "name": "Favasuli",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.17
-  },
-  "favasuli": {
-    "playerId": "fbbfed22-f662-4c6c-b22a-0778746038c2",
-    "name": "Favasuli",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.17
-  },
   "bebe162a-502e-4833-9871-d6ec85ae07b1": {
     "playerId": "bebe162a-502e-4833-9871-d6ec85ae07b1",
     "name": "",
@@ -19478,30 +18410,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 5,
     "infDesc": "È sempre integro",
     "xfmv": 6
-  },
-  "f33242f6-3341-4541-a2f8-bb241f018742": {
-    "playerId": "f33242f6-3341-4541-a2f8-bb241f018742",
-    "name": "Grabara",
-    "role": "P",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 5
-  },
-  "grabara": {
-    "playerId": "f33242f6-3341-4541-a2f8-bb241f018742",
-    "name": "Grabara",
-    "role": "P",
-    "titIndex": 2,
-    "titDesc": "Subentra raramente",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 5
   },
   "fe4dd59e-c29f-4618-9ae7-8df11a3bfbbc": {
     "playerId": "fe4dd59e-c29f-4618-9ae7-8df11a3bfbbc",
@@ -19611,6 +18519,30 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Pochissimi infortuni",
     "xfmv": 6.39
   },
+  "d05121f2-7f6b-44df-8cd1-e4611b85700d": {
+    "playerId": "d05121f2-7f6b-44df-8cd1-e4611b85700d",
+    "name": "Sugawara",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 5.92
+  },
+  "sugawara": {
+    "playerId": "d05121f2-7f6b-44df-8cd1-e4611b85700d",
+    "name": "Sugawara",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 5.92
+  },
   "ce950363-d565-4e38-aa78-93bb22b65fa1": {
     "playerId": "ce950363-d565-4e38-aa78-93bb22b65fa1",
     "name": "Monteiro J.",
@@ -19647,29 +18579,917 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ha avuto diversi infortuni",
     "xfmv": 6.28
   },
-  "d05121f2-7f6b-44df-8cd1-e4611b85700d": {
-    "playerId": "d05121f2-7f6b-44df-8cd1-e4611b85700d",
-    "name": "Sugawara",
+  "d190b87f-14d2-4a26-b57d-a8b2803d175e": {
+    "playerId": "d190b87f-14d2-4a26-b57d-a8b2803d175e",
+    "name": "Van Der Brempt",
     "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
     "affIndex": 3,
     "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 5.92
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 5.84
   },
-  "sugawara": {
-    "playerId": "d05121f2-7f6b-44df-8cd1-e4611b85700d",
-    "name": "Sugawara",
+  "vanderbrempt": {
+    "playerId": "d190b87f-14d2-4a26-b57d-a8b2803d175e",
+    "name": "Van Der Brempt",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 5.84
+  },
+  "van der brempt": {
+    "playerId": "d190b87f-14d2-4a26-b57d-a8b2803d175e",
+    "name": "Van Der Brempt",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 5.84
+  },
+  "7b207af5-acdb-4021-9633-5b6fd9e29fa6": {
+    "playerId": "7b207af5-acdb-4021-9633-5b6fd9e29fa6",
+    "name": "Chakvetadze",
+    "role": "C",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.03
+  },
+  "chakvetadze": {
+    "playerId": "7b207af5-acdb-4021-9633-5b6fd9e29fa6",
+    "name": "Chakvetadze",
+    "role": "C",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.03
+  },
+  "21898bcb-7bbf-46c7-9892-8e05475fcb53": {
+    "playerId": "21898bcb-7bbf-46c7-9892-8e05475fcb53",
+    "name": "Solet",
+    "role": "D",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.28
+  },
+  "solet": {
+    "playerId": "21898bcb-7bbf-46c7-9892-8e05475fcb53",
+    "name": "Solet",
+    "role": "D",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.28
+  },
+  "83c096d2-f229-4069-8edc-bda786e34a7a": {
+    "playerId": "83c096d2-f229-4069-8edc-bda786e34a7a",
+    "name": "Vasquez",
+    "role": "D",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.11
+  },
+  "vasquez": {
+    "playerId": "83c096d2-f229-4069-8edc-bda786e34a7a",
+    "name": "Vasquez",
+    "role": "D",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.11
+  },
+  "e2613024-bb41-4d9a-8c1d-24f6e2c63838": {
+    "playerId": "e2613024-bb41-4d9a-8c1d-24f6e2c63838",
+    "name": "Tourè I.",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.11
+  },
+  "touri": {
+    "playerId": "e2613024-bb41-4d9a-8c1d-24f6e2c63838",
+    "name": "Tourè I.",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.11
+  },
+  "tourè i.": {
+    "playerId": "e2613024-bb41-4d9a-8c1d-24f6e2c63838",
+    "name": "Tourè I.",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.11
+  },
+  "4233bc51-6269-438c-8e85-5a77b7c17562": {
+    "playerId": "4233bc51-6269-438c-8e85-5a77b7c17562",
+    "name": "Helland",
     "role": "D",
     "titIndex": 3,
     "titDesc": "Nelle rotazioni",
     "affIndex": 3,
     "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 5.84
+  },
+  "helland": {
+    "playerId": "4233bc51-6269-438c-8e85-5a77b7c17562",
+    "name": "Helland",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 5.84
+  },
+  "eb46d3ff-e668-421c-8274-0716cdb571b2": {
+    "playerId": "eb46d3ff-e668-421c-8274-0716cdb571b2",
+    "name": "Rovella",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 5.99
+  },
+  "rovella": {
+    "playerId": "eb46d3ff-e668-421c-8274-0716cdb571b2",
+    "name": "Rovella",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 5.99
+  },
+  "eeb84dbb-797e-48bc-835f-f521fa337d89": {
+    "playerId": "eeb84dbb-797e-48bc-835f-f521fa337d89",
+    "name": "Amey",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 5.69
+  },
+  "amey": {
+    "playerId": "eeb84dbb-797e-48bc-835f-f521fa337d89",
+    "name": "Amey",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 5.69
+  },
+  "30e7f451-834b-48ac-b1c0-749c1674d5c5": {
+    "playerId": "30e7f451-834b-48ac-b1c0-749c1674d5c5",
+    "name": "Kaba",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.86
+  },
+  "kaba": {
+    "playerId": "30e7f451-834b-48ac-b1c0-749c1674d5c5",
+    "name": "Kaba",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.86
+  },
+  "352e6596-1e54-4044-8873-6f7310c2bd66": {
+    "playerId": "352e6596-1e54-4044-8873-6f7310c2bd66",
+    "name": "Pinsoglio",
+    "role": "P",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 4.7
+  },
+  "pinsoglio": {
+    "playerId": "352e6596-1e54-4044-8873-6f7310c2bd66",
+    "name": "Pinsoglio",
+    "role": "P",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 4.7
+  },
+  "a4f95743-a2f0-4fb5-b7c4-c2b41c585cdf": {
+    "playerId": "a4f95743-a2f0-4fb5-b7c4-c2b41c585cdf",
+    "name": "Lazzari",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 5.81
+  },
+  "lazzari": {
+    "playerId": "a4f95743-a2f0-4fb5-b7c4-c2b41c585cdf",
+    "name": "Lazzari",
+    "role": "D",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 5.81
+  },
+  "95d8739c-8b5e-44a3-9378-73a33aab1a00": {
+    "playerId": "95d8739c-8b5e-44a3-9378-73a33aab1a00",
+    "name": "Rugani",
+    "role": "D",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 5.77
+  },
+  "rugani": {
+    "playerId": "95d8739c-8b5e-44a3-9378-73a33aab1a00",
+    "name": "Rugani",
+    "role": "D",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 5.77
+  },
+  "d796b194-efcc-4186-9291-2a8afcbf35ae": {
+    "playerId": "d796b194-efcc-4186-9291-2a8afcbf35ae",
+    "name": "Ferguson",
+    "role": "C",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.26
+  },
+  "ferguson": {
+    "playerId": "d796b194-efcc-4186-9291-2a8afcbf35ae",
+    "name": "Ferguson",
+    "role": "C",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.26
+  },
+  "f5b1b43f-45be-4ebb-bed8-811434235418": {
+    "playerId": "f5b1b43f-45be-4ebb-bed8-811434235418",
+    "name": "De Winter",
+    "role": "D",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 2,
+    "affDesc": "Profilo altamente incostante",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.87
+  },
+  "dewinter": {
+    "playerId": "f5b1b43f-45be-4ebb-bed8-811434235418",
+    "name": "De Winter",
+    "role": "D",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 2,
+    "affDesc": "Profilo altamente incostante",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.87
+  },
+  "de winter": {
+    "playerId": "f5b1b43f-45be-4ebb-bed8-811434235418",
+    "name": "De Winter",
+    "role": "D",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 2,
+    "affDesc": "Profilo altamente incostante",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.87
+  },
+  "7d117aaa-3a1c-4eb2-b76a-e4b784e21e06": {
+    "playerId": "7d117aaa-3a1c-4eb2-b76a-e4b784e21e06",
+    "name": "Gila",
+    "role": "D",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 5,
+    "affDesc": "Rendimento super costante",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 6.09
+  },
+  "gila": {
+    "playerId": "7d117aaa-3a1c-4eb2-b76a-e4b784e21e06",
+    "name": "Gila",
+    "role": "D",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 5,
+    "affDesc": "Rendimento super costante",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 6.09
+  },
+  "732b19cf-3340-4588-ba8a-85459261b4c1": {
+    "playerId": "732b19cf-3340-4588-ba8a-85459261b4c1",
+    "name": "Olivera",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.88
+  },
+  "olivera": {
+    "playerId": "732b19cf-3340-4588-ba8a-85459261b4c1",
+    "name": "Olivera",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.88
+  },
+  "eb01cf4b-a689-4016-8c30-0e7b058d0210": {
+    "playerId": "eb01cf4b-a689-4016-8c30-0e7b058d0210",
+    "name": "",
+    "role": "C",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 6.59
+  },
+  "21a58529-376d-41b3-9bf8-2444f31c8a86": {
+    "playerId": "21a58529-376d-41b3-9bf8-2444f31c8a86",
+    "name": "Goncalves P.",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 6.77
+  },
+  "goncalvesp": {
+    "playerId": "21a58529-376d-41b3-9bf8-2444f31c8a86",
+    "name": "Goncalves P.",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 6.77
+  },
+  "goncalves p.": {
+    "playerId": "21a58529-376d-41b3-9bf8-2444f31c8a86",
+    "name": "Goncalves P.",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 6.77
+  },
+  "a19762d0-1aeb-4d65-af0b-a0df2c8dcc6a": {
+    "playerId": "a19762d0-1aeb-4d65-af0b-a0df2c8dcc6a",
+    "name": "",
+    "role": "C",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
     "infIndex": 5,
     "infDesc": "È sempre integro",
-    "xfmv": 5.92
+    "xfmv": 4.5
+  },
+  "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91": {
+    "playerId": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
+    "name": "Colpani",
+    "role": "C",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.32
+  },
+  "colpani": {
+    "playerId": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
+    "name": "Colpani",
+    "role": "C",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.32
+  },
+  "f0cc9638-e365-41ec-a8d0-d55c37c876df": {
+    "playerId": "f0cc9638-e365-41ec-a8d0-d55c37c876df",
+    "name": "Modric",
+    "role": "C",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 5,
+    "affDesc": "Rendimento super costante",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.41
+  },
+  "modric": {
+    "playerId": "f0cc9638-e365-41ec-a8d0-d55c37c876df",
+    "name": "Modric",
+    "role": "C",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 5,
+    "affDesc": "Rendimento super costante",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.41
+  },
+  "dc221c49-a187-478c-b460-b8daab6631e2": {
+    "playerId": "dc221c49-a187-478c-b460-b8daab6631e2",
+    "name": "Thorstvedt",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 6.66
+  },
+  "thorstvedt": {
+    "playerId": "dc221c49-a187-478c-b460-b8daab6631e2",
+    "name": "Thorstvedt",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 6.66
+  },
+  "aa67fd77-201f-45e6-b64a-8f88f380ef1e": {
+    "playerId": "aa67fd77-201f-45e6-b64a-8f88f380ef1e",
+    "name": "Helgason",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.07
+  },
+  "helgason": {
+    "playerId": "aa67fd77-201f-45e6-b64a-8f88f380ef1e",
+    "name": "Helgason",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.07
+  },
+  "e8f602c5-a7bc-4d3a-a98b-a317bc211efa": {
+    "playerId": "e8f602c5-a7bc-4d3a-a98b-a317bc211efa",
+    "name": "Carlos Augusto",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.13
+  },
+  "carlosaugusto": {
+    "playerId": "e8f602c5-a7bc-4d3a-a98b-a317bc211efa",
+    "name": "Carlos Augusto",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.13
+  },
+  "carlos augusto": {
+    "playerId": "e8f602c5-a7bc-4d3a-a98b-a317bc211efa",
+    "name": "Carlos Augusto",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.13
+  },
+  "c005a40e-c9d9-4673-94b5-1c85551c4460": {
+    "playerId": "c005a40e-c9d9-4673-94b5-1c85551c4460",
+    "name": "Mandas",
+    "role": "P",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 5.23
+  },
+  "mandas": {
+    "playerId": "c005a40e-c9d9-4673-94b5-1c85551c4460",
+    "name": "Mandas",
+    "role": "P",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 5.23
+  },
+  "36a9825a-5980-4cda-8103-62cc944e7a83": {
+    "playerId": "36a9825a-5980-4cda-8103-62cc944e7a83",
+    "name": "Perri",
+    "role": "P",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 4.92
+  },
+  "perri": {
+    "playerId": "36a9825a-5980-4cda-8103-62cc944e7a83",
+    "name": "Perri",
+    "role": "P",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 4.92
+  },
+  "3d49b936-1e2d-4daa-9b4c-5da87824531d": {
+    "playerId": "3d49b936-1e2d-4daa-9b4c-5da87824531d",
+    "name": "Sow",
+    "role": "C",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.21
+  },
+  "sow": {
+    "playerId": "3d49b936-1e2d-4daa-9b4c-5da87824531d",
+    "name": "Sow",
+    "role": "C",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.21
+  },
+  "cc4992f6-2313-4dfb-bd05-fde2ab22e067": {
+    "playerId": "cc4992f6-2313-4dfb-bd05-fde2ab22e067",
+    "name": "Ramos G.",
+    "role": "A",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 7.67
+  },
+  "ramosg": {
+    "playerId": "cc4992f6-2313-4dfb-bd05-fde2ab22e067",
+    "name": "Ramos G.",
+    "role": "A",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 7.67
+  },
+  "ramos g.": {
+    "playerId": "cc4992f6-2313-4dfb-bd05-fde2ab22e067",
+    "name": "Ramos G.",
+    "role": "A",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 7.67
+  },
+  "3cd2885e-8e25-4e3f-8c86-8af871b76421": {
+    "playerId": "3cd2885e-8e25-4e3f-8c86-8af871b76421",
+    "name": "Neres",
+    "role": "A",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 6.67
+  },
+  "neres": {
+    "playerId": "3cd2885e-8e25-4e3f-8c86-8af871b76421",
+    "name": "Neres",
+    "role": "A",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 6.67
+  },
+  "05ed0add-6a0f-4ae8-aa97-eba61ba71d30": {
+    "playerId": "05ed0add-6a0f-4ae8-aa97-eba61ba71d30",
+    "name": "Butez",
+    "role": "P",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 5.16
+  },
+  "butez": {
+    "playerId": "05ed0add-6a0f-4ae8-aa97-eba61ba71d30",
+    "name": "Butez",
+    "role": "P",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 5.16
+  },
+  "e64cb10e-8e0f-439a-8eb1-0ef08eb5fcf7": {
+    "playerId": "e64cb10e-8e0f-439a-8eb1-0ef08eb5fcf7",
+    "name": "Candè",
+    "role": "D",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 2,
+    "affDesc": "Profilo altamente incostante",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 5.71
+  },
+  "cand": {
+    "playerId": "e64cb10e-8e0f-439a-8eb1-0ef08eb5fcf7",
+    "name": "Candè",
+    "role": "D",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 2,
+    "affDesc": "Profilo altamente incostante",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 5.71
+  },
+  "candè": {
+    "playerId": "e64cb10e-8e0f-439a-8eb1-0ef08eb5fcf7",
+    "name": "Candè",
+    "role": "D",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 2,
+    "affDesc": "Profilo altamente incostante",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 5.71
+  },
+  "7c69e511-41b6-4b38-b274-6b075e97d1de": {
+    "playerId": "7c69e511-41b6-4b38-b274-6b075e97d1de",
+    "name": "Rensch",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 6.11
+  },
+  "rensch": {
+    "playerId": "7c69e511-41b6-4b38-b274-6b075e97d1de",
+    "name": "Rensch",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 6.11
+  },
+  "f1421f6f-3f6a-436b-9ed3-997e353873e0": {
+    "playerId": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
+    "name": "Bernabè",
+    "role": "C",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 6.37
+  },
+  "bernab": {
+    "playerId": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
+    "name": "Bernabè",
+    "role": "C",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 6.37
+  },
+  "bernabè": {
+    "playerId": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
+    "name": "Bernabè",
+    "role": "C",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 6.37
+  },
+  "b04a4c83-2ea5-461c-8fec-832d413b553c": {
+    "playerId": "b04a4c83-2ea5-461c-8fec-832d413b553c",
+    "name": "Lauberbach",
+    "role": "A",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.25
+  },
+  "lauberbach": {
+    "playerId": "b04a4c83-2ea5-461c-8fec-832d413b553c",
+    "name": "Lauberbach",
+    "role": "A",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.25
+  },
+  "b0a5adbc-a222-48c2-9a8e-ccf200c42084": {
+    "playerId": "b0a5adbc-a222-48c2-9a8e-ccf200c42084",
+    "name": "Kulenovic",
+    "role": "A",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.3
+  },
+  "kulenovic": {
+    "playerId": "b0a5adbc-a222-48c2-9a8e-ccf200c42084",
+    "name": "Kulenovic",
+    "role": "A",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.3
   },
   "efbaff18-54de-44ce-a386-2c3dab6d1e7a": {
     "playerId": "efbaff18-54de-44ce-a386-2c3dab6d1e7a",
@@ -19682,6 +19502,18 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 5,
     "infDesc": "È sempre integro",
     "xfmv": 6.25
+  },
+  "55f1b0f6-9c46-451f-b85a-2f4d12f6de12": {
+    "playerId": "55f1b0f6-9c46-451f-b85a-2f4d12f6de12",
+    "name": "",
+    "role": "C",
+    "titIndex": 2,
+    "titDesc": "Subentra raramente",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.05
   },
   "0a19ce7d-4407-4475-a8ee-9331ef0d39c2": {
     "playerId": "0a19ce7d-4407-4475-a8ee-9331ef0d39c2",
@@ -19707,8 +19539,200 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ha avuto diversi infortuni",
     "xfmv": 5.86
   },
-  "55f1b0f6-9c46-451f-b85a-2f4d12f6de12": {
-    "playerId": "55f1b0f6-9c46-451f-b85a-2f4d12f6de12",
+  "91989231-9213-435b-81c5-a7c7a7d85104": {
+    "playerId": "91989231-9213-435b-81c5-a7c7a7d85104",
+    "name": "Moro N.",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.11
+  },
+  "moron": {
+    "playerId": "91989231-9213-435b-81c5-a7c7a7d85104",
+    "name": "Moro N.",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.11
+  },
+  "moro n.": {
+    "playerId": "91989231-9213-435b-81c5-a7c7a7d85104",
+    "name": "Moro N.",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.11
+  },
+  "7615a481-1f3d-4179-9e9d-a4f148bb1b82": {
+    "playerId": "7615a481-1f3d-4179-9e9d-a4f148bb1b82",
+    "name": "Padelli",
+    "role": "P",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 4.7
+  },
+  "padelli": {
+    "playerId": "7615a481-1f3d-4179-9e9d-a4f148bb1b82",
+    "name": "Padelli",
+    "role": "P",
+    "titIndex": 1,
+    "titDesc": "Non gioca mai",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 4.7
+  },
+  "5b821b6a-1de9-4678-8dda-2cca3ddfda02": {
+    "playerId": "5b821b6a-1de9-4678-8dda-2cca3ddfda02",
+    "name": "Provedel",
+    "role": "P",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 5.2
+  },
+  "provedel": {
+    "playerId": "5b821b6a-1de9-4678-8dda-2cca3ddfda02",
+    "name": "Provedel",
+    "role": "P",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 2,
+    "infDesc": "Ha avuto diversi infortuni",
+    "xfmv": 5.2
+  },
+  "fa7e40ff-f212-423d-82ba-14887a232b9c": {
+    "playerId": "fa7e40ff-f212-423d-82ba-14887a232b9c",
+    "name": "Pisilli",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.31
+  },
+  "pisilli": {
+    "playerId": "fa7e40ff-f212-423d-82ba-14887a232b9c",
+    "name": "Pisilli",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.31
+  },
+  "776c5c30-c674-4570-b9d6-03d0004fd4f2": {
+    "playerId": "776c5c30-c674-4570-b9d6-03d0004fd4f2",
+    "name": "Barella",
+    "role": "C",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 5,
+    "affDesc": "Rendimento super costante",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.69
+  },
+  "barella": {
+    "playerId": "776c5c30-c674-4570-b9d6-03d0004fd4f2",
+    "name": "Barella",
+    "role": "C",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 5,
+    "affDesc": "Rendimento super costante",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 6.69
+  },
+  "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea": {
+    "playerId": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea",
+    "name": "Soulè",
+    "role": "A",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.92
+  },
+  "soul": {
+    "playerId": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea",
+    "name": "Soulè",
+    "role": "A",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.92
+  },
+  "soulè": {
+    "playerId": "1f9a4c1f-e544-4c2e-9bc4-c5222d730cea",
+    "name": "Soulè",
+    "role": "A",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.92
+  },
+  "6f0efc62-d6a5-4540-a67b-cac636d8bdf0": {
+    "playerId": "6f0efc62-d6a5-4540-a67b-cac636d8bdf0",
+    "name": "Gineitis",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 5.97
+  },
+  "gineitis": {
+    "playerId": "6f0efc62-d6a5-4540-a67b-cac636d8bdf0",
+    "name": "Gineitis",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 5.97
+  },
+  "34e0b815-2a6c-409f-8c65-0ff73605d649": {
+    "playerId": "34e0b815-2a6c-409f-8c65-0ff73605d649",
     "name": "",
     "role": "C",
     "titIndex": 2,
@@ -19717,7 +19741,31 @@ export const PLAYER_INDICES_MAP = {
     "affDesc": "Alterna buone prestazioni ad altre deludenti",
     "infIndex": 5,
     "infDesc": "È sempre integro",
-    "xfmv": 6.05
+    "xfmv": 5.86
+  },
+  "8479a96e-18ca-4c21-9813-ec0cc992dcf6": {
+    "playerId": "8479a96e-18ca-4c21-9813-ec0cc992dcf6",
+    "name": "Dimarco",
+    "role": "D",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 5,
+    "affDesc": "Rendimento super costante",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 7.36
+  },
+  "dimarco": {
+    "playerId": "8479a96e-18ca-4c21-9813-ec0cc992dcf6",
+    "name": "Dimarco",
+    "role": "D",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 5,
+    "affDesc": "Rendimento super costante",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 7.36
   },
   "89f67672-1ec4-4dc3-8831-dbeee6f56f2e": {
     "playerId": "89f67672-1ec4-4dc3-8831-dbeee6f56f2e",
@@ -19730,18 +19778,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 5,
     "infDesc": "È sempre integro",
     "xfmv": 6.19
-  },
-  "c929bd34-52e1-4e28-ab99-4b1ba0c3b595": {
-    "playerId": "c929bd34-52e1-4e28-ab99-4b1ba0c3b595",
-    "name": "",
-    "role": "C",
-    "titIndex": 1,
-    "titDesc": "Non gioca mai",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6
   },
   "b14c7f71-1f98-4e11-b92b-4c5f7a50f693": {
     "playerId": "b14c7f71-1f98-4e11-b92b-4c5f7a50f693",
@@ -19791,44 +19827,8 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Molto fragile",
     "xfmv": 6.11
   },
-  "21a58529-376d-41b3-9bf8-2444f31c8a86": {
-    "playerId": "21a58529-376d-41b3-9bf8-2444f31c8a86",
-    "name": "Goncalves P.",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 6.77
-  },
-  "goncalvesp": {
-    "playerId": "21a58529-376d-41b3-9bf8-2444f31c8a86",
-    "name": "Goncalves P.",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 6.77
-  },
-  "goncalves p.": {
-    "playerId": "21a58529-376d-41b3-9bf8-2444f31c8a86",
-    "name": "Goncalves P.",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 6.77
-  },
-  "a19762d0-1aeb-4d65-af0b-a0df2c8dcc6a": {
-    "playerId": "a19762d0-1aeb-4d65-af0b-a0df2c8dcc6a",
+  "c929bd34-52e1-4e28-ab99-4b1ba0c3b595": {
+    "playerId": "c929bd34-52e1-4e28-ab99-4b1ba0c3b595",
     "name": "",
     "role": "C",
     "titIndex": 1,
@@ -19837,7 +19837,7 @@ export const PLAYER_INDICES_MAP = {
     "affDesc": "Alterna buone prestazioni ad altre deludenti",
     "infIndex": 5,
     "infDesc": "È sempre integro",
-    "xfmv": 4.5
+    "xfmv": 6
   },
   "d7febbfe-c61b-41d3-bc27-b98784322078": {
     "playerId": "d7febbfe-c61b-41d3-bc27-b98784322078",
@@ -19923,6 +19923,30 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 6.15
   },
+  "1137037e-c927-401f-b891-43a2965753a2": {
+    "playerId": "1137037e-c927-401f-b891-43a2965753a2",
+    "name": "Zaniolo",
+    "role": "C",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 6.96
+  },
+  "zaniolo": {
+    "playerId": "1137037e-c927-401f-b891-43a2965753a2",
+    "name": "Zaniolo",
+    "role": "C",
+    "titIndex": 5,
+    "titDesc": "Titolare inamovibile",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 6.96
+  },
   "0ecc1bd6-1dba-4b1c-9dc9-579838907f33": {
     "playerId": "0ecc1bd6-1dba-4b1c-9dc9-579838907f33",
     "name": "Coulibaly L.",
@@ -19958,30 +19982,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 4,
     "infDesc": "Pochissimi infortuni",
     "xfmv": 6.19
-  },
-  "1137037e-c927-401f-b891-43a2965753a2": {
-    "playerId": "1137037e-c927-401f-b891-43a2965753a2",
-    "name": "Zaniolo",
-    "role": "C",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 6.96
-  },
-  "zaniolo": {
-    "playerId": "1137037e-c927-401f-b891-43a2965753a2",
-    "name": "Zaniolo",
-    "role": "C",
-    "titIndex": 5,
-    "titDesc": "Titolare inamovibile",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 6.96
   },
   "bfba87ce-190b-4eab-a120-44416eb074c5": {
     "playerId": "bfba87ce-190b-4eab-a120-44416eb074c5",
@@ -20751,17 +20751,17 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 5.02
   },
-  "bologna_holm_5678": {
-    "playerId": "b894b38e-67c8-42fb-946f-36b8a7b60349",
-    "name": "Holm",
+  "bologna_helland_7326": {
+    "playerId": "4233bc51-6269-438c-8e85-5a77b7c17562",
+    "name": "Helland",
     "role": "D",
     "titIndex": 3,
     "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 1,
-    "infDesc": "Molto fragile",
-    "xfmv": 5.94
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 4,
+    "infDesc": "Pochissimi infortuni",
+    "xfmv": 5.84
   },
   "bologna_heggem_7212": {
     "playerId": "dcd02213-98f7-48f7-9fe1-0825be166801",
@@ -20787,6 +20787,18 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Pochissimi infortuni",
     "xfmv": 6.03
   },
+  "bologna_zortea_4433": {
+    "playerId": "2a411338-4370-4a88-8d00-f47f2167b09f",
+    "name": "Zortea",
+    "role": "D",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 5.97
+  },
   "bologna_mirandaj_4734": {
     "playerId": "c904108e-6a70-494d-9732-b39d2fc8264a",
     "name": "Miranda J.",
@@ -20798,18 +20810,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 3,
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 6.09
-  },
-  "bologna_ferguson_5858": {
-    "playerId": "d796b194-efcc-4186-9291-2a8afcbf35ae",
-    "name": "Ferguson",
-    "role": "C",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.26
   },
   "bologna_pobega_5298": {
     "playerId": "c07a5ed0-b1db-429b-9291-2998365fffc3",
@@ -20823,6 +20823,18 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ha avuto diversi infortuni",
     "xfmv": 6.31
   },
+  "bologna_ferguson_5858": {
+    "playerId": "d796b194-efcc-4186-9291-2a8afcbf35ae",
+    "name": "Ferguson",
+    "role": "C",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.26
+  },
   "bologna_orsolini_2167": {
     "playerId": "c8bad906-4705-460c-88d4-708b73446b1b",
     "name": "Orsolini",
@@ -20834,18 +20846,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 2,
     "infDesc": "Ha avuto diversi infortuni",
     "xfmv": 7.17
-  },
-  "bologna_bernardeschi_184": {
-    "playerId": "c3763cc2-a3d9-403f-8f5a-856896a47c5d",
-    "name": "Bernardeschi",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.61
   },
   "bologna_cambiaghi_4436": {
     "playerId": "5232e236-cf75-4f0c-baf3-47c6c2e2887a",
@@ -20871,6 +20871,18 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Molto fragile",
     "xfmv": 6.76
   },
+  "bologna_bernardeschi_184": {
+    "playerId": "c3763cc2-a3d9-403f-8f5a-856896a47c5d",
+    "name": "Bernardeschi",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.61
+  },
   "bologna_mbangula_6833": {
     "playerId": "fbe3ff89-8369-4e4f-af9e-6176daa6e0c3",
     "name": "Mbangula",
@@ -20895,29 +20907,17 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Pochissimi infortuni",
     "xfmv": 6.72
   },
-  "bologna_helland_7326": {
-    "playerId": "4233bc51-6269-438c-8e85-5a77b7c17562",
-    "name": "Helland",
+  "bologna_holm_5678": {
+    "playerId": "b894b38e-67c8-42fb-946f-36b8a7b60349",
+    "name": "Holm",
     "role": "D",
     "titIndex": 3,
     "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 4,
-    "infDesc": "Pochissimi infortuni",
-    "xfmv": 5.84
-  },
-  "bologna_zortea_4433": {
-    "playerId": "2a411338-4370-4a88-8d00-f47f2167b09f",
-    "name": "Zortea",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 5.97
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 1,
+    "infDesc": "Molto fragile",
+    "xfmv": 5.94
   },
   "bologna_vitik_7068": {
     "playerId": "c54397de-b393-4e6c-8db3-ff1835fb14a5",
@@ -24171,17 +24171,17 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Molto fragile",
     "xfmv": 6.38
   },
-  "monza_colpani_5878": {
-    "playerId": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
-    "name": "Colpani",
-    "role": "C",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.32
+  "monza_robinsonj_7546": {
+    "playerId": "6a2d0ee2-6bae-42d1-9cfd-06994a361b3d",
+    "name": "Robinson J.",
+    "role": "A",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.33
   },
   "monza_varelag_7523": {
     "playerId": "0053b230-688b-4fef-90f5-b823c64ea378",
@@ -24195,17 +24195,17 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 6.68
   },
-  "monza_robinsonj_7546": {
-    "playerId": "6a2d0ee2-6bae-42d1-9cfd-06994a361b3d",
-    "name": "Robinson J.",
-    "role": "A",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.33
+  "monza_colpani_5878": {
+    "playerId": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
+    "name": "Colpani",
+    "role": "C",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.32
   },
   "monza_akinsanmiro_6593": {
     "playerId": "fd980a09-99b1-4174-81e5-60cbcd1fbb49",
@@ -24711,17 +24711,17 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Pochissimi infortuni",
     "xfmv": 5.19
   },
-  "atalanta_zappacosta_554": {
-    "playerId": "088bb69b-e23f-402f-bc6e-3ad4bb311560",
-    "name": "Zappacosta",
+  "atalanta_bellanova_4887": {
+    "playerId": "bde8b7a8-9307-4d1e-a3cc-430c5bee432b",
+    "name": "Bellanova",
     "role": "D",
-    "titIndex": 4,
-    "titDesc": "Titolare con concorrenza",
-    "affIndex": 4,
-    "affDesc": "Quasi sempre sufficiente",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
     "infIndex": 3,
     "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.22
+    "xfmv": 6.04
   },
   "atalanta_kristensent_6485": {
     "playerId": "e8093c47-4f1a-4bcb-83b1-0c64385cddbe",
@@ -24891,6 +24891,18 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ha avuto diversi infortuni",
     "xfmv": 5.89
   },
+  "atalanta_zappacosta_554": {
+    "playerId": "088bb69b-e23f-402f-bc6e-3ad4bb311560",
+    "name": "Zappacosta",
+    "role": "D",
+    "titIndex": 4,
+    "titDesc": "Titolare con concorrenza",
+    "affIndex": 4,
+    "affDesc": "Quasi sempre sufficiente",
+    "infIndex": 3,
+    "infDesc": "Ogni tanto salta qualche partita",
+    "xfmv": 6.22
+  },
   "atalanta_kolasinac_2640": {
     "playerId": "4e863a5b-d6ea-4aa0-8915-ecd6686bfa7b",
     "name": "Kolasinac",
@@ -24914,18 +24926,6 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 2,
     "infDesc": "Ha avuto diversi infortuni",
     "xfmv": 5.87
-  },
-  "atalanta_bellanova_4887": {
-    "playerId": "bde8b7a8-9307-4d1e-a3cc-430c5bee432b",
-    "name": "Bellanova",
-    "role": "D",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 3,
-    "infDesc": "Ogni tanto salta qualche partita",
-    "xfmv": 6.04
   },
   "atalanta_pasalic_2077": {
     "playerId": "515cb6cb-fae1-428c-89cc-a97f5ccbc6c8",
@@ -25671,18 +25671,6 @@ export const PLAYER_INDICES_MAP = {
     "infDesc": "Ogni tanto salta qualche partita",
     "xfmv": 6.05
   },
-  "parma_fabbian_6206": {
-    "playerId": "72b2eb13-c625-4fd5-b0e1-349d05f9e2e6",
-    "name": "Fabbian",
-    "role": "C",
-    "titIndex": 3,
-    "titDesc": "Nelle rotazioni",
-    "affIndex": 3,
-    "affDesc": "Alterna buone prestazioni ad altre deludenti",
-    "infIndex": 5,
-    "infDesc": "È sempre integro",
-    "xfmv": 6.13
-  },
   "parma_toure_6229": {
     "playerId": "280d15dc-3cf6-47ec-ad41-19b983b09d20",
     "name": "Tourè E.",
@@ -25778,6 +25766,18 @@ export const PLAYER_INDICES_MAP = {
     "infIndex": 5,
     "infDesc": "È sempre integro",
     "xfmv": 5.87
+  },
+  "parma_fabbian_6206": {
+    "playerId": "72b2eb13-c625-4fd5-b0e1-349d05f9e2e6",
+    "name": "Fabbian",
+    "role": "C",
+    "titIndex": 3,
+    "titDesc": "Nelle rotazioni",
+    "affIndex": 3,
+    "affDesc": "Alterna buone prestazioni ad altre deludenti",
+    "infIndex": 5,
+    "infDesc": "È sempre integro",
+    "xfmv": 6.13
   },
   "parma_sierro_7628": {
     "playerId": "0a19ce7d-4407-4475-a8ee-9331ef0d39c2",
