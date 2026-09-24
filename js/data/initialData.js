@@ -720,7 +720,7 @@ export const INITIAL_TEAMS = [
           "diffM": -20,
           "fvm": 256,
           "fvmM": 256,
-          "classic_8_mod_median": 7.3,
+          "classic_8_mod_median": 7.2,
           "classic_10_mod_median": 13.4,
           "classic_12_mod_median": 17.8
         },
@@ -921,7 +921,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Edon Zhegrova alla fine è rimasto alla Juve nell’ultimo giorno di mercato, ma al momento i bianconeri possono escluderlo dalla lista UEFA. Il kosovaro non è più parte del progetto tecnico di Spalletti, potete evitarlo al fantacalcio.",
+        "fantaComment": "",
         "quotazioni": {
           "qtA": 16,
           "qtI": 9,
@@ -2007,7 +2007,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Ivan Provedel è partito in casa Lazio mentre è tornato dal prestito Christos Mandas. In partenza, il titolare in porta scelto da Rino Gattuso è proprio il greco, con Motta come vice. Il nuovo allenatore ha scelto questa gerarchia iniziale, ma il gap tra i due portieri resta comunque ridotto e il consiglio per il fantacalcio è di pensare alla spesa di coppia e non del solo Mandas. Meglio averli entrambi in rosa e non correre rischi se decidete di puntare sulla porta della Lazio, ma nelle prime tre il greco ha dato importanti garanzie e convinto. Il titolare è lui.",
+        "fantaComment": "Ivan Provedel è partito in casa Lazio mentre è tornato dal prestito Christos Mandas. In partenza, il titolare in porta scelto da Rino Gattuso è proprio il greco, con Motta come vice. Il nuovo allenatore ha scelto questa gerarchia iniziale, ma il gap tra i due portieri resta comunque ridotto e il consiglio per il fantacalcio è di pensare alla spesa di coppia e non al solo Mandas. Meglio averli entrambi in rosa e non correre rischi se decidete di puntare sulla porta della Lazio, ma nelle prime uscite il greco ha dato importanti garanzie e convinto. Il titolare è lui.",
         "quotazioni": {
           "qtA": 38,
           "qtI": 28,
@@ -2645,7 +2645,7 @@ export const INITIAL_TEAMS = [
         "punizioni": true,
         "corner": true,
         "positionNotes": "",
-        "fantaComment": "La scorsa stagione di Mattia Zaccagni è stata un flop vero e proprio. Inutile nascondersi: 3 gol e 0 assist in 26 partite a voto, diversi infortuni e addirittura 6 gialli e 1 rosso. La classica annata da dimenticare per il giocatore della Lazio, che riparte da Gattuso dopo l'addio di Sarri. A livello tattico non cambia niente: era 4-3-3 e sarà ancora tridente offensivo, con Zaccagni titolare a sinistra. Da capire se avrà i rigori, se li contende con Taylor e Pinamonti. Sicuramente visti i numeri della scorsa stagione, si paga molto meno in partenza di un anno fa. È un semi-top, anche perché non ha le coppe e se sta bene le gioca tutte. Ma dovrà fin da subito mostrare sprazzi di ripresa, perché chi lo aveva l'anno scorso è veramente rimasto molto deluso. ",
+        "fantaComment": "La scorsa stagione di Mattia Zaccagni è stata un flop vero e proprio. Inutile nascondersi: 3 gol e 0 assist in 26 partite a voto, diversi infortuni e addirittura 6 gialli e 1 rosso. La classica annata da dimenticare per il giocatore della Lazio, che riparte da Gattuso dopo l'addio di Sarri. A livello tattico non cambia niente: era 4-3-3 e sarà ancora tridente offensivo, con Zaccagni titolare a sinistra. È il primo rigorista della squadra oltretutto, davanti a Taylor e Pinamonti. Sicuramente visti i numeri della scorsa stagione, si paga molto meno in partenza di un anno fa. È un semi-top, anche perché non ha le coppe e se sta bene le gioca tutte. Ma dovrà fin da subito mostrare sprazzi di ripresa, perché chi lo aveva l'anno scorso è veramente rimasto molto deluso.",
         "quotazioni": {
           "qtA": 53,
           "qtI": 41,
@@ -2716,7 +2716,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Andrea Pinamonti può diventare anche un secondo slot dopo il suo passaggio alla Lazio. Dalla sua ha ancora la titolarità, anche se magari avrà più concorrenza rispetto al Sassuolo. Come lato negativo ci sono sempre le insufficienze quando non segna, infatti arriva da una media-voto negativa del 5,88. Compensa però con 9 gol e 3 assist, la doppia cifra la raggiunge o ci va molto vicino, ci proverà pure alla Lazio come obiettivo minimo. Potrebbe avere anche i rigori, se li giocherà con Zaccagni e Taylor. In carriera 20 su 24 per lui.",
+        "fantaComment": "Andrea Pinamonti può diventare anche un secondo slot dopo il suo passaggio alla Lazio. Dalla sua ha ancora la titolarità, anche se magari avrà più concorrenza rispetto al Sassuolo e infatti Noslin ha segnato 2 gol consecutivi. Come lato negativo ci sono sempre le insufficienze quando non segna, infatti arriva da una media-voto negativa del 5,88. Compensa però con 9 gol e 3 assist, la doppia cifra la raggiunge o ci va molto vicino, ci proverà pure alla Lazio come obiettivo minimo. Tema rigori, parte dietro a Zaccagni e Taylor nella gerarchia iniziale di Gattuso.",
         "quotazioni": {
           "qtA": 34,
           "qtI": 39,
@@ -3873,7 +3873,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Lukasz Skorupski è stato a lungo fuori per infortunio nella scorsa stagione: solo 18 partite a voto, con 15 gol subiti e 7 clean sheet. Il club ha deciso di confermare la fiducia all'estremo difensore polacco e Ravaglia è così partito per giocare con maggior continuità. Skorupski è il titolare della porta rossoblù di Domenico Tedesco, si prende da primo portiere al fantacalcio, poi chiaramente dipende dal numero di partecipanti e soprattutto dalle strategie per la porta dei partecipanti. Alle sue spalle è stato promosso Pessina come vice, ma non ci sono dubbi in partenza: Skorupski è il titolare e se sta bene gioca lui. Inoltre, la squadra non ha le coppe quindi ci sarà meno alternanza rispetto alle ultime stagioni. ",
+        "fantaComment": "Lukasz Skorupski è stato a lungo fuori per infortunio nella scorsa stagione: solo 18 partite a voto, con 15 gol subiti e 7 clean sheet. Il club ha deciso di confermare la fiducia all'estremo difensore polacco e Ravaglia è così partito per giocare con maggior continuità. Skorupski è il titolare della porta rossoblù di Raffaele Palladino, si prende da primo portiere al fantacalcio, poi chiaramente dipende dal numero di partecipanti e soprattutto dalle strategie per la porta dei partecipanti. Alle sue spalle è stato promosso Pessina come vice e visto il difficile inizio di stagione del polacco, chissà che non possa esserci un ribaltone: per ora bisogna parlare di un ballottaggio aperto verso la ripresa. Anche se Palladino ha detto che Skorupski non si discute...",
         "quotazioni": {
           "qtA": 16,
           "qtI": 20,
@@ -4014,7 +4014,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Torbjørn Heggem dopo il Mondiale è pronto anche a prendersi la titolarità fissa al centro del Bologna. Partito Lucumi, è uno dei candidati assieme al nuovo arrivato Theate per comporre la coppia di centrali di Tedesco. Classico giocatore low cost per completare il vostro reparto difensivo.",
+        "fantaComment": "Torbjørn Heggem dopo il Mondiale è pronto anche a prendersi la titolarità fissa al centro del Bologna. Partito Lucumi, è uno dei candidati assieme al nuovo arrivato Theate e a Helland per comporre la difesa a tre del nuovo arrivato Palladino. Classico giocatore low cost per completare il vostro reparto difensivo.",
         "quotazioni": {
           "qtA": 5,
           "qtI": 2,
@@ -4227,7 +4227,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Juan Miranda non ha sempre convinto dal suo arrivo in Italia ma nell'ultima stagione ha trovato continuità: 31 presenze, 6,1 di fanta-media, un gol e tre assist. Terzino che non ruba l'occhio per le sue sgroppate e le sue incursioni ma più per l'apporto alla manovra e all'equilibrio, per lo spagnolo pesano anche 6 ammonizioni in ottica fantacalcio. In partenza è il titolare in casa Bologna sulla sinistra anche se il nuovo arrivato Alhassane ha già trovato spazio e piace a Tedesco: si giocano il posto.",
+        "fantaComment": "Juan Miranda non ha sempre convinto dal suo arrivo in Italia ma nell'ultima stagione ha trovato continuità: 31 presenze, 6,1 di fanta-media, un gol e tre assist. Terzino che non ruba l'occhio per le sue sgroppate e le sue incursioni ma più per l'apporto alla manovra e all'equilibrio, per lo spagnolo pesano anche 6 ammonizioni in ottica fantacalcio. In partenza è il titolare in casa Bologna sulla sinistra anche se il nuovo arrivato Alhassane ha già trovato spazio (ma prima con Tedesco). La sensazione è che con Palladino il titolare fisso possa essere Miranda. ",
         "quotazioni": {
           "qtA": 12,
           "qtI": 15,
@@ -4298,7 +4298,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Freuler è partito, Tommaso Pobega si candida così ad avere più spazio nel centrocampo del Bologna. Stiamo parlando di un potenziale titolare, ma le gerarchie sono da scrivere col nuovo allenatore Tedesco. Ha anche qualche bonus nel repertorio, più gol con i suoi inserimenti che assist. ",
+        "fantaComment": "Freuler è partito, Tommaso Pobega si candida così ad avere più spazio nel centrocampo del Bologna. Stiamo parlando di un potenziale titolare, ma le gerarchie sono da scrivere col nuovo allenatore Palladino. Ha anche qualche bonus nel repertorio, più gol con i suoi inserimenti che assist.",
         "quotazioni": {
           "qtA": 3,
           "qtI": 5,
@@ -4369,7 +4369,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": true,
         "positionNotes": "",
-        "fantaComment": "Lewis Ferguson nella passata stagione ha deluso le aspettative: solo 1 gol in 23 partite a voto. Italiano per un periodo lo schierava solo in Europa e i numeri lo dimostrano. Si riparte da zero con Tedesco e senza coppe: potrà avere maggior spazio e continuità, magari trovare anche qualche bonus in più. Rimane un giocatore da rendimento, ma low cost.",
+        "fantaComment": "Lewis Ferguson nella passata stagione ha deluso le aspettative: solo 1 gol in 23 partite a voto. Italiano per un periodo lo schierava solo in Europa e i numeri lo dimostrano. Si riparte da zero con Palladino e senza coppe: potrà avere maggior spazio e continuità, magari trovare anche qualche bonus in più. Rimane un giocatore da rendimento, ma low cost.",
         "quotazioni": {
           "qtA": 4,
           "qtI": 2,
@@ -4430,7 +4430,7 @@ export const INITIAL_TEAMS = [
         "fantaRole": "C",
         "photoUrl": "https://cdn.falsesoftware.com/players/132126/v1.webp",
         "playerImage": "https://cdn.falsesoftware.com/players/132126/v1.webp",
-        "appetibilita": 96,
+        "appetibilita": 95,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": true,
@@ -4440,7 +4440,7 @@ export const INITIAL_TEAMS = [
         "punizioni": true,
         "corner": true,
         "positionNotes": "",
-        "fantaComment": "Non la sua miglior stagione, ma Riccardo Orsolini ha chiuso il 25/26 con 10 gol e 1 assist in 34 partite a voto. E anche 2 rigori sbagliati sui 6 tirati: per questo la fanta-media del 6,76. Ma rimane il rigorista della squadra, uno specialista assoluto, non ci sono dubbi su questo ed è un fattore molto importante in chiave fantacalcio, a volte cruciale. L'arrivo di Tedesco in panchina al posto di Italiano non sposta: sarà l'esterno titolare a destra, nel tridente offensivo. Rimane un primo slot, nonostante gli alti e bassi della scorsa stagione. E poi c'è un dettaglio da non sottovalutare: non avrà coppe, quindi di fatto se starà bene le giocherà tutte. Se starà bene appunto, perché si è fermato contro l’Atalanta per un problema muscolare: si tratta di una lesione con stop di tre settimane, salterà le prossime tre gare e tornerà dopo la sosta alla 6a. Non un infortunio che incide in chiave asta, può solo calare leggermente il prezzo.",
+        "fantaComment": "Non la sua miglior stagione, ma Riccardo Orsolini ha chiuso il 25/26 con 10 gol e 1 assist in 34 partite a voto. E anche 2 rigori sbagliati sui 6 tirati: per questo la fanta-media del 6,76. Ma rimane il rigorista della squadra, uno specialista assoluto, non ci sono dubbi su questo ed è un fattore molto importante in chiave fantacalcio, a volte cruciale. L'arrivo di Palladino in panchina al posto di Tedesco non sposta: sarà l'esterno titolare a destra, nel tridente offensivo. Rimane un primo slot, nonostante gli alti e bassi della scorsa stagione. E poi c'è un dettaglio da non sottovalutare: non avrà coppe, quindi di fatto se starà bene le giocherà tutte. Se starà bene appunto, perché si è fermato contro l’Atalanta per un problema muscolare: si tratta di una lesione con stop di tre settimane, salterà le prossime tre gare e tornerà dopo la sosta alla 6a. Non un infortunio che incide in chiave asta, può solo calare leggermente il prezzo.",
         "quotazioni": {
           "qtA": 64,
           "qtI": 72,
@@ -4511,7 +4511,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Nicolò Cambiaghi è una delle novità del listone, da quest’anno è centrocampista. Resta comunque un jolly di seconda fascia, anche se guadagna un po’ di valore. Arriva da una stagione con 3 gol e 4 assist, anche con Tedesco dovrà giocarsi il posto: partito Rowe, è arrivato Mbangula e sono proprio lui a contendersi una maglia. Sempre che l'allenatore non provi anche Bernardeschi a sinistra.",
+        "fantaComment": "Nicolò Cambiaghi è una delle novità del listone, da quest’anno è centrocampista. Resta comunque un jolly di seconda fascia, anche se guadagna un po’ di valore. Arriva da una stagione con 3 gol e 4 assist, anche con Palladino dovrà giocarsi il posto: partito Rowe, è arrivato Mbangula e sono proprio lui a contendersi una maglia. Sempre che l'allenatore non provi anche Bernardeschi a sinistra.",
         "quotazioni": {
           "qtA": 13,
           "qtI": 7,
@@ -4592,7 +4592,7 @@ export const INITIAL_TEAMS = [
           "diffM": -15,
           "fvm": 144,
           "fvmM": 144,
-          "classic_8_mod_median": 3.6,
+          "classic_8_mod_median": 3.5,
           "classic_10_mod_median": 7.3,
           "classic_12_mod_median": 10
         },
@@ -4654,7 +4654,7 @@ export const INITIAL_TEAMS = [
         "punizioni": true,
         "corner": true,
         "positionNotes": "",
-        "fantaComment": "Sprazzi del vero Federico Bernardeschi nella passata stagione, al Bologna ha fatto vedere cose importanti. 4 gol e 2 assist in 24 partite a voto, ha saltato quasi 10 partite per infortunio di fatto. Quando c'è stato, è praticamente sempre andato a voto. Per Italiano era principalmente il vice Orsolini, Tedesco invece li sta provando a far coesistere. Per Bernardeschi all'asta siamo sul 4° slot, è un giocatore che senza coppe può portare anche 7-8 tra gol e assist. Sempre se sta bene, questo è un punto cruciale. ",
+        "fantaComment": "Sprazzi del vero Federico Bernardeschi nella passata stagione, al Bologna ha fatto vedere cose importanti. 4 gol e 2 assist in 24 partite a voto, ha saltato quasi 10 partite per infortunio di fatto. Quando c'è stato, è praticamente sempre andato a voto. Per Italiano era principalmente il vice Orsolini, Palladino vuole provare anche a farli coesistere, almeno in alcune partite. Per Bernardeschi all'asta siamo sul 4° slot, è un giocatore che senza coppe può portare anche 7-8 tra gol e assist. Sempre se sta bene, questo è un punto cruciale.",
         "quotazioni": {
           "qtA": 27,
           "qtI": 21,
@@ -4721,7 +4721,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Samuel Mbangula torna in Serie A dopo appena una stagione e vestirà la maglia del Bologna. 22enne belga, è un'ala sinistra che fa delle accelerazioni la sua migliore qualità. Arriva per rimpiazzare Rowe e come caratteristiche lo ricorda. Nei primi due anni tra le big del calcio internazionale il 2004 si è messo in mostra: 3 gol e 4 assist alla Juventus, stesso risultato nell’ultima stagione al Werder Brema in 26 presenze. Al Bologna si giocherà il posto con Cambiaghi a sinistra e solo inizialmente partirà dietro (deve adattarsi) ma alla lunga può prendersi il posto. Occhio anche al rapporto con Tedesco che lo aveva convocato per le uniche sue presenze in nazionale maggiore belga. Al fantacalcio, listato centrocampista, stuzzica e non poco: può portare bonus.",
+        "fantaComment": "Samuel Mbangula torna in Serie A dopo appena una stagione e vestirà la maglia del Bologna. 22enne belga, è un'ala sinistra che fa delle accelerazioni la sua migliore qualità. Arriva per rimpiazzare Rowe e come caratteristiche lo ricorda. Nei primi due anni tra le big del calcio internazionale il 2004 si è messo in mostra: 3 gol e 4 assist alla Juventus, stesso risultato nell’ultima stagione al Werder Brema in 26 presenze. Al Bologna si giocherà il posto con Cambiaghi a sinistra e solo inizialmente partirà dietro (deve adattarsi) ma alla lunga può prendersi il posto. Al fantacalcio, listato centrocampista, stuzzica e non poco: può portare bonus.",
         "quotazioni": {
           "qtA": 14,
           "qtI": 1,
@@ -4855,7 +4855,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Emil Holm va verso la permanenza a Bologna e si giocherà un posto sulla fascia destra con Zortea e il solito De Silvestri. Dopo le appena 7 presenze collezionate nella breve esperienza alla Juve, lo svedese vuole convincere Tedesco con le sua capacità di saltare l'uomo e arrivare sul fondo a crossare. Appena 16 le presenze nella passata stagione, tempestata di problemi di natura fisica. Al fantacalcio è un vero e proprio jolly, un'incognita: garanzia di assist (4 in stagione e un gol) ma, allo stesso tempo, titolarità e integrità fisica non sono al momento dalla sua.",
+        "fantaComment": "Emil Holm va verso la permanenza a Bologna e si giocherà un posto sulla fascia destra con Zortea e il solito De Silvestri. Dopo le appena 7 presenze collezionate nella breve esperienza alla Juve, lo svedese vuole convincere il nuovo allenatore Palladino con le sua capacità di saltare l'uomo e arrivare sul fondo a crossare. Appena 16 le presenze nella passata stagione, tempestata di problemi di natura fisica. Al fantacalcio è un vero e proprio jolly, un'incognita: garanzia di assist (4 in stagione e un gol) ma, allo stesso tempo, titolarità e integrità fisica non sono al momento dalla sua.",
         "quotazioni": {
           "qtA": 7,
           "qtI": 8,
@@ -4922,7 +4922,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Martin Vitik si è ambientato nella passata stagione a Bologna e ora insegue per essere uno dei due titolari al centro della difesa di Tedesco, dopo la partenza di Lucumì. Classico giocatore da 1-2 crediti per completare la vostra difesa all'asta, si tratta di un colpo low cost ma non di un titolare fisso al momento.",
+        "fantaComment": "Martin Vitik si è ambientato nella passata stagione a Bologna e ora insegue per essere uno dei tre titolari al centro della difesa di Palladino, dopo la partenza di Lucumì. Classico giocatore da 1-2 crediti per completare la vostra difesa all'asta, si tratta di un colpo low cost ma non di un titolare fisso al momento.",
         "quotazioni": {
           "qtA": 1,
           "qtI": 3,
@@ -5190,7 +5190,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Jens Odgaard in cerca di spazio in casa Bologna, dopo la scorsa stagione con più ombre che luci. Alla fine 5 gol e 1 assist in 22 partite a voto, ha giocato decisamente meno del previsto per le scelte di Italiano. Ora è arrivato Tedesco, che sta provando il 4-3-3 e Odgaard è stato provato soprattutto da mezzala. Sulla carta non è un titolare fisso in partenza, ma un jolly, più da gara in corso che dall'inizio. Il Bologna non avrà più le coppe e allora ecco che al fantacalcio va preso alle giuste condizioni: con titolari certi, consapevoli che a volte andrà a voto e altre no. Non sarebbe una sorpresa se replicasse i numeri della passata stagione o giù di lì.",
+        "fantaComment": "Jens Odgaard in cerca di spazio in casa Bologna, dopo la scorsa stagione con più ombre che luci. Alla fine 5 gol e 1 assist in 22 partite a voto, ha giocato decisamente meno del previsto per le scelte di Italiano. Ora è arrivato Palladino, che sta provando il 3-4-3 ma Odgaard si è infortunato nella sosta e tornerà verso fine ottobre. Sulla carta non è un titolare fisso in partenza, ma un jolly, più da gara in corso che dall'inizio. Il Bologna non avrà più le coppe e allora ecco che al fantacalcio va preso alle giuste condizioni: con titolari certi, consapevoli che a volte andrà a voto e altre no. Non sarebbe una sorpresa se replicasse i numeri della passata stagione o giù di lì.",
         "quotazioni": {
           "qtA": 13,
           "qtI": 25,
@@ -5391,7 +5391,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Acquisto per presente e futuro per il Bologna, che ha acquistato Milek Amondarain dall'Estudiantes. 1 gol e 2 assist in 6 partite di Libertadores nel 2026, 2 gol e 1 assist in 14 nel Torneo Apertura. Si tratta di un centrocampista centrale che può agire anche sulla trequarti, è destro di piede ed è stato elogiato anche da Veron. \"È fortissimo e sta emergendo, è un centrocampista box to box, ha ottime prospettive\". La descrizione delle sue caratteristiche è arrivata proprio dall'ex centrocampista: è la più classica delle scommesse a centrocampo per il fanta. Non parte come titolare, ma dopo un periodo di ambientamento potrà trovare spazio nelle rotazioni di Tedesco. Anche perché le gerarchie sono tutte da scrivere. Dovete potervelo permettere, in un reparto con tanti titolari può essere un colpo intrigante. ",
+        "fantaComment": "Acquisto per presente e futuro per il Bologna, che ha acquistato Milek Amondarain dall'Estudiantes. 1 gol e 2 assist in 6 partite di Libertadores nel 2026, 2 gol e 1 assist in 14 nel Torneo Apertura. Si tratta di un centrocampista centrale che può agire anche sulla trequarti, è destro di piede ed è stato elogiato anche da Veron. \"È fortissimo e sta emergendo, è un centrocampista box to box, ha ottime prospettive\". La descrizione delle sue caratteristiche è arrivata proprio dall'ex centrocampista: è la più classica delle scommesse a centrocampo per il fanta. Non parte come titolare, ma dopo un periodo di ambientamento proverà a trovare spazio nelle rotazioni di Palladino. Anche perché le gerarchie sono tutte da scrivere. Dovete potervelo permettere, in un reparto con tanti titolari può essere un colpo intrigante.",
         "quotazioni": {
           "qtA": 2,
           "qtI": 11,
@@ -9815,7 +9815,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Evan Ndicka è rimasto nonostante i tanti estimatori ed è la colonna portante della difesa della Roma (insieme a Mancini). Meno falloso dei compagni di reparto con appena 5 ammonizioni in 31 presenze stagionali, il 26enne ivoriano ha chiuso con un 6,32 di fanta-media. Al fantacalcio, tra i difensori delle big, è uno dei più affidabili per titolarità e non solo. Solido nella marcatura a uomo, è bravo a svettare sui diretti avversari e, allo stesso tempo, a insaccare la palla in porta nell'area opposta: i 3 gol messi a segno ne sono la testimonianza. La Roma ha segnato molto su palla inattiva con Gasperini.",
+        "fantaComment": "Evan Ndicka è rimasto nonostante i tanti estimatori ed è la colonna portante della difesa della Roma (insieme a Mancini). Meno falloso dei compagni di reparto con appena 5 ammonizioni in 31 presenze stagionali, il 26enne ivoriano ha chiuso con un 6,32 di fanta-media. Al fantacalcio, tra i difensori delle big, è uno dei più affidabili per titolarità e non solo. Solido nella marcatura a uomo, è bravo a svettare sui diretti avversari e, allo stesso tempo, a insaccare la palla in porta nell'area opposta: i 3 gol messi a segno ne sono la testimonianza. La Roma ha segnato molto su palla inattiva con Gasperini. Attenzione solo alla concorrenza del nuovo arrivato Balerdi che ha convinto: ci sarà un'alternanza tra i due. ",
         "quotazioni": {
           "qtA": 16,
           "qtI": 24,
@@ -10028,7 +10028,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": true,
         "positionNotes": "",
-        "fantaComment": "Wesley è stato una delle rivelazioni dell'ultima Serie A in difesa, forse solo dietro a Palestra. Gasperini se lo coccola dopo averlo plasmato a vero e proprio esterno, marchio di fabbrica del suo 3-4-2-1. Esterno di spinta ma, allo stesso tempo, sempre più solido anche in fase di ripiegamento, il brasiliano ha realizzato 5 gol in 30 presenze: una fanta-media del 6,47 rappresenta il biglietto da visita del terzino al fantacalcio. Dotato di un buon tiro e bravo nell'inserirsi sul secondo palo sui cross che arrivano dal lato opposto, il 22enne è una spina nel fianco per le difese avversarie. Vuole ripetersi, via libera per essere il vostro top di reparto arretrato, dopo essersi messo subito alle spalle l'infortunio muscolare subito al Mondiale. Con l'arrivo di Molina a destra, Wesley rimarrà il titolare della corsia mancina in partenza, proprio dove è stato impiegato prevalentemente nella passata stagione. Si attende il primo assist in Serie A.",
+        "fantaComment": "Wesley è stato una delle rivelazioni dell'ultima Serie A in difesa, forse solo dietro a Palestra. Gasperini se lo coccola dopo averlo plasmato a vero e proprio esterno, marchio di fabbrica del suo 3-4-2-1. Esterno di spinta ma, allo stesso tempo, sempre più solido anche in fase di ripiegamento, il brasiliano ha realizzato 5 gol in 30 presenze: una fanta-media del 6,47 rappresenta il biglietto da visita del terzino al fantacalcio. Dotato di un buon tiro e bravo nell'inserirsi sul secondo palo sui cross che arrivano dal lato opposto, il 22enne è una spina nel fianco per le difese avversarie. Vuole ripetersi, via libera per essere il vostro top di reparto arretrato, dopo essersi messo subito alle spalle l'infortunio muscolare subito al Mondiale. Con l'arrivo di Molina a destra, Wesley rimarrà il titolare della corsia mancina in partenza, proprio dove è stato impiegato prevalentemente nella passata stagione. ",
         "quotazioni": {
           "qtA": 49,
           "qtI": 45,
@@ -10584,7 +10584,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Leonardo Balerdi è un nuovo difensore della Roma. Gasperini ha detto che i giallorossi hanno preso un capitano che ha personalità. Si tratta di un centrale alto 188 cm e che ha 27 anni, di nazionalità argentina. Al Marsiglia ha giocato molto negli ultimi anni, solo nel 2022-23 è riuscito a giocare più di 30 partite (35), nelle altre stagioni si è fermato sulle 26/27 per alcuni problemi fisici o scelte tecniche. Anche nel 2026 ha avuto un paio di stop muscolari. Alla Roma non parte come titolare ma ha già dimostrato di essere più di una semplice alternativa.",
+        "fantaComment": "Leonardo Balerdi è un nuovo difensore della Roma. Gasperini ha detto che i giallorossi hanno preso un capitano che ha personalità. Si tratta di un centrale alto 188 cm e che ha 27 anni, di nazionalità argentina. Al Marsiglia ha giocato molto negli ultimi anni, solo nel 2022-23 è riuscito a giocare più di 30 partite (35), nelle altre stagioni si è fermato sulle 26/27 per alcuni problemi fisici o scelte tecniche. Anche nel 2026 ha avuto un paio di stop muscolari. Alla Roma non parte come titolare ma ha già dimostrato di essere più di una semplice alternativa: si gioca il posto con Ndicka, possibile alternanza tra i due.",
         "quotazioni": {
           "qtA": 17,
           "qtI": 1,
@@ -15071,7 +15071,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Justin Bijlow è arrivato al Genoa nel mercato invernale e si è preso subito la titolarità, ha chiuso la stagione con 20 gol subiti in 16 partite e 5 clean sheet. Riparte da prima scelta nella squadra di De Rossi, siamo in provincia, in una squadra che punta a rimanere fuori dalla corsa salvezza e a posizionarsi nel lato sinistro della classifica. Più da modificatore che da inviolata, ma occhio al Genoa in casa: può regalare diversi clean sheet. Da prendere o in alternanza alla porta di una big oppure insieme ad altri portieri di provincia, senza pagarli come un big, ma andando al risparmio per avere più soldi da investire in altri reparti. ",
+        "fantaComment": "Justin Bijlow è arrivato al Genoa nel mercato invernale e si è preso subito la titolarità, ha chiuso la stagione con 20 gol subiti in 16 partite e 5 clean sheet. Riparte da prima scelta nella squadra di De Rossi, siamo in provincia, in una squadra che come obiettivo ha la salvezza. Più da modificatore che da inviolata, ma occhio al Genoa in casa: può regalare qualche clean sheet. Da prendere o in alternanza alla porta di una big oppure insieme ad altri portieri di provincia, senza pagarli come un big, ma andando al risparmio per avere più soldi da investire in altri reparti.",
         "quotazioni": {
           "qtA": 7,
           "qtI": 9,
@@ -18731,7 +18731,7 @@ export const INITIAL_TEAMS = [
           "diffM": 0,
           "fvm": 1,
           "fvmM": 1,
-          "classic_8_mod_median": 0.3,
+          "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0
         },
@@ -19783,7 +19783,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Carlos Augusto è un vero e proprio jolly sia per Chivu che per i fantallenatori, non tanto in termini di bonus (1 gol e 1 assist nel 25/26), ma in termini di presenza e continuità di prestazioni. Braccetto nella difesa a tre o a fare la staffetta con Dimarco sull'esterno, il brasiliano si è sempre affermato come un comprimario all'Inter, le 28 volte a voto lo testimoniano. All'asta non va strapagato ma può regalare buoni voti in ottica modificatore difesa, ricordando che si tratta di un ottimo back-up nella squadra campione d'Italia.",
+        "fantaComment": "Carlos Augusto è un vero e proprio jolly sia per Chivu che per i fantallenatori, non tanto in termini di bonus (1 gol e 1 assist nel 25/26), ma in termini di presenza e continuità di prestazioni. Braccetto nella difesa a tre o a fare la staffetta con Dimarco sull'esterno, il brasiliano si è sempre affermato come un comprimario all'Inter, le 28 volte a voto lo testimoniano. All'asta non va strapagato ma può regalare buoni voti in ottica modificatore difesa, ricordando che si tratta di un ottimo back-up nella squadra campione d'Italia. Ed è partito molto bene in queste prime uscite, sia da braccetto che a tutta fascia. ",
         "quotazioni": {
           "qtA": 16,
           "qtI": 10,
@@ -20252,7 +20252,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Djed Spence arriva all'Inter e in Serie A prendendosi la fascia destra che fu in passato di Denzel Dumfries. Operazione da circa 35 milioni, non economica per i nerazzurri. Mondiale, a sorpresa, da protagonista con l'Inghilterra dove ha mostrato tutte le sue caratteristiche. Per lui non sarà un impatto nuovo con la Serie A, avendo già assaggiato il nostro campionato con la maglia del Genoa. Al Tottenham pochi bonus, la stagione più prolifica dell'esterno risale alla stagione 2021/22 quando in Championship con il Nottingham Forest siglò 2 gol e 5 assist. Al fantacalcio è un primo slot principalmente perché gioca nell'Inter: buoni voti per il modificatore difesa e con un Inter molto prolifica chissà che l'inglese non scopra i bonus. Il problema è la concorrenza di Diouf, che fa sul serio, quindi Spence non avrà il posto fisso. In più partirà un po' in ritardo e non potrà essere subito titolare.",
+        "fantaComment": "Djed Spence arriva all'Inter e in Serie A prendendosi la fascia destra che fu in passato di Denzel Dumfries. Operazione da circa 35 milioni, non economica per i nerazzurri. Mondiale, a sorpresa, da protagonista con l'Inghilterra dove ha mostrato tutte le sue caratteristiche. Per lui non sarà un impatto nuovo con la Serie A, avendo già assaggiato il nostro campionato con la maglia del Genoa. Al Tottenham pochi bonus, la stagione più prolifica dell'esterno risale alla stagione 2021/22 quando in Championship con il Nottingham Forest siglò 2 gol e 5 assist. Al fantacalcio è un primo slot principalmente perché gioca nell'Inter: buoni voti per il modificatore difesa e con un Inter molto prolifica chissà che l'inglese non scopra i bonus. Il problema è la concorrenza di Diouf, che fa sul serio, quindi Spence non avrà il posto fisso. In più è partito in ritardo e non si è mai visto finora, ma dopo la sosta ci sarà. ",
         "quotazioni": {
           "qtA": 19,
           "qtI": 1,
@@ -21320,7 +21320,7 @@ export const INITIAL_TEAMS = [
           "diffM": 1,
           "fvm": 442,
           "fvmM": 442,
-          "classic_8_mod_median": 25.2,
+          "classic_8_mod_median": 25.1,
           "classic_10_mod_median": 28,
           "classic_12_mod_median": 28
         },
@@ -22906,7 +22906,7 @@ export const INITIAL_TEAMS = [
           "diffM": -7,
           "fvm": 202,
           "fvmM": 202,
-          "classic_8_mod_median": 11.8,
+          "classic_8_mod_median": 11.7,
           "classic_10_mod_median": 15,
           "classic_12_mod_median": 16.4
         },
@@ -24201,7 +24201,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Noel Tornqvist è il nuovo portiere del Monza, è un classe 2002 svedese. Arriva dal Como, dove però non ha mai giocato. Prima era titolare al Mjällby AIF in Svezia. Al Monza può essere nuovamente titolare, prendendo il posto di Thiam con cui sarà in ballottaggio. In ogni caso la porta della squadra di Juric è una delle peggiori della Serie A, quindi Tornqvist è solo per leghe numerose.",
+        "fantaComment": "Noel Tornqvist è il nuovo portiere del Monza, è un classe 2002 svedese. Arriva dal Como, dove però non ha mai giocato. Prima era titolare al Mjällby AIF in Svezia. Al Monza può essere nuovamente titolare, ha preso il posto di Thiam che non ha convinto nelle prime giornate. In ogni caso la porta della squadra di Juric è una delle peggiori della Serie A, quindi Tornqvist è solo per leghe numerose.",
         "quotazioni": {
           "qtA": 5,
           "qtI": 1,
@@ -24555,7 +24555,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Ricardo Mangas sbarca in Serie A al Monza dopo una carriera passata in Portogallo al netto di due avventure in Francia (Bordeaux) e Russia (Spartak Mosca). Terzino sinistro classe 1998 arriva in prestito con obbligo di riscatto dallo Sporting Lisbona. Troverà Juric che sa come valorizzare gli esterni con Mangas che ha ricoperto il ruolo per molto tempo anche se abituato anche a giocare in una difesa a 4. Non ha sempre trovato grande continuità in carriera e le appena 15 presenze nella scorsa stagione e le 11 della annata precedente in Russia lo testimoniano. Nonostante ciò, Mangas porta con sé al fantacalcio una notevole propensione al gol: 2 allo Sporting, 3 allo Spartak, 4 al Vitoria Guimaraes, 4 al Boavista e 3 al Bordeaux nelle ultime stagioni. All'asta rimane un esterno di una neopromossa ma la curiosità di vedere il portoghese ai servizi di Juric è tanta e può essere potenzialmente un 5-6° slot.",
+        "fantaComment": "Ricardo Mangas sbarca in Serie A al Monza dopo una carriera passata in Portogallo al netto di due avventure in Francia (Bordeaux) e Russia (Spartak Mosca). Terzino sinistro classe 1998 arriva in prestito con obbligo di riscatto dallo Sporting Lisbona. Troverà Juric che sa come valorizzare gli esterni con Mangas che ha ricoperto il ruolo per molto tempo anche se abituato anche a giocare in una difesa a 4. Non ha sempre trovato grande continuità in carriera e le appena 15 presenze nella scorsa stagione e le 11 della annata precedente in Russia lo testimoniano. Nonostante ciò, Mangas porta con sé al fantacalcio una notevole propensione al gol: 2 allo Sporting, 3 allo Spartak, 4 al Vitoria Guimaraes, 4 al Boavista e 3 al Bordeaux nelle ultime stagioni. All'asta rimane un esterno di una neopromossa ma la curiosità di vedere il portoghese ai servizi di Juric è tanta e può essere potenzialmente un 5-6° slot. Anche in questa Serie A è partito sicuramente col piede giusto.",
         "quotazioni": {
           "qtA": 14,
           "qtI": 7,
@@ -28074,7 +28074,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Per Raoul Bellanova potrebbe essere la stagione del riscatto dopo l'ultima annata in chiaroscuro nella quale ha trovato spazio appena 22 volte, di cui solo 15 da titolare, e collezionando appena un assist (5,82 di fanta-media). Al fantacalcio si può comporre la coppia con Zappacosta che al momento rimane davanti. Entrambi dovranno fare i conti con la nuova posizione arretrata di terzino destro nel 4-3-3 di Sarri.",
+        "fantaComment": "Per Raoul Bellanova potrebbe essere la stagione del riscatto dopo l'ultima annata in chiaroscuro nella quale ha trovato spazio appena 22 volte, di cui solo 15 da titolare, e collezionando appena un assist (5,82 di fanta-media). Al fantacalcio si può comporre la coppia con Zappacosta che al momento rimane leggermente davanti. Entrambi dovranno fare i conti con la nuova posizione arretrata di terzino destro nel 4-3-3 di Sarri.",
         "quotazioni": {
           "qtA": 9,
           "qtI": 15,
@@ -28723,7 +28723,7 @@ export const INITIAL_TEAMS = [
           "diffM": -17,
           "fvm": 282,
           "fvmM": 282,
-          "classic_8_mod_median": 8.8,
+          "classic_8_mod_median": 8.7,
           "classic_10_mod_median": 12,
           "classic_12_mod_median": 14
         },
@@ -29188,7 +29188,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Davide Zappacosta, da anni ormai, presiede la fascia destra dell'Atalanta grazie ad un'ottima continuità a livello di prestazioni. Abile nel saltare l'uomo e trovare il fondo per poi cercare l'uomo sul secondo palo o uno scarico a rimorchio, il classe 1992 ha totalizzato 3 gol e 1 assist nell'ultimo campionato andando a voto 35 volte (30 da titolari). Non solo assist e cross per i compagni ma, come testimoniano i numeri, una propensione al +3 trovando spesso lo spazio per calciare in profondità. Al fantacalcio non va sottovalutato e rimane una delle prime scelte: occhio al nuovo ruolo e al conseguente arretramento nella linea a 4 con Sarri.",
+        "fantaComment": "Davide Zappacosta, da anni ormai, presiede la fascia destra dell'Atalanta grazie ad un'ottima continuità a livello di prestazioni. Abile nel saltare l'uomo e trovare il fondo per poi cercare l'uomo sul secondo palo o uno scarico a rimorchio, il classe 1992 ha totalizzato 3 gol e 1 assist nell'ultimo campionato andando a voto 35 volte (30 da titolari). Non solo assist e cross per i compagni ma, come testimoniano i numeri, una propensione al +3 trovando spesso lo spazio per calciare in profondità. Al fantacalcio non va sottovalutato e rimane una delle prime scelte, anche se c'è la concorrenza di Bellanova: occhio al nuovo ruolo e al conseguente arretramento nella linea a 4 con Sarri.",
         "quotazioni": {
           "qtA": 11,
           "qtI": 15,
@@ -31988,7 +31988,7 @@ export const INITIAL_TEAMS = [
           "diffM": 15,
           "fvm": 118,
           "fvmM": 118,
-          "classic_8_mod_median": 1.4,
+          "classic_8_mod_median": 1.5,
           "classic_10_mod_median": 1,
           "classic_12_mod_median": 1.6
         },
@@ -33560,7 +33560,7 @@ export const INITIAL_TEAMS = [
           "fvm": 19,
           "fvmM": 19,
           "classic_8_mod_median": 0.4,
-          "classic_10_mod_median": 0.6,
+          "classic_10_mod_median": 0.5,
           "classic_12_mod_median": 0.8
         },
         "stats": {
@@ -35839,7 +35839,7 @@ export const INITIAL_TEAMS = [
         "punizioni": true,
         "corner": true,
         "positionNotes": "",
-        "fantaComment": "C'è stato per settimane un caso Nicolò Zaniolo a Udine, che poi si è chiuso con il rinnovo di contratto con adeguamento per il centrocampista. Si è ritrovato in tutto e per tutto sotto la guida di Runjaic, riparte da 5 gol e 5 assist in 31 partite a voto. Ha avuto continuità e anche i numeri in termini di bonus lo dimostrano, è diventato quasi un top al fantacalcio dopo le prestazioni della scorsa stagione. Gli infortuni restano il punto debole, parte con uno stop che lo terrà fuori fino a fine settembre. Un aspetto importante da limare: i gialli, addirittura 8 nella passata stagione. Troppi per un centrocampista che di fatto gioca in attacco accanto a Davis. Proverà a migliorare il bottino di bonus e diminuire quello dei malus: può essere la stagione della conferma per Zaniolo. E chissà che non possa tornare anche in Nazionale, è il suo grande obiettivo.",
+        "fantaComment": "C'è stato per settimane un caso Nicolò Zaniolo a Udine, che poi si è chiuso con il rinnovo di contratto con adeguamento per il centrocampista. Si è ritrovato in tutto e per tutto sotto la guida di Runjaic, riparte da 5 gol e 5 assist in 31 partite a voto. Ha avuto continuità e anche i numeri in termini di bonus lo dimostrano, è diventato quasi un top al fantacalcio dopo le prestazioni della scorsa stagione. Gli infortuni restano il punto debole, parte con uno stop che lo terrà fuori fino a fine settembre. Un aspetto importante da limare: i gialli, addirittura 8 nella passata stagione. Troppi per un centrocampista che di fatto gioca in attacco accanto a Davis. Proverà a migliorare il bottino di bonus e diminuire quello dei malus: può essere la stagione della conferma per Zaniolo. Ed è tornato anche in Nazionale, ha raggiunto il suo grande obiettivo.",
         "quotazioni": {
           "qtA": 44,
           "qtI": 50,
@@ -37525,7 +37525,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Edon Zhegrova alla fine è rimasto alla Juve nell’ultimo giorno di mercato, ma al momento i bianconeri possono escluderlo dalla lista UEFA. Il kosovaro non è più parte del progetto tecnico di Spalletti, potete evitarlo al fantacalcio.",
+    "fantaComment": "",
     "quotazioni": {
       "qtA": 16,
       "qtI": 9,
@@ -37667,7 +37667,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 15,
       "fvm": 118,
       "fvmM": 118,
-      "classic_8_mod_median": 1.4,
+      "classic_8_mod_median": 1.5,
       "classic_10_mod_median": 1,
       "classic_12_mod_median": 1.6
     },
@@ -38317,7 +38317,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Carlos Augusto è un vero e proprio jolly sia per Chivu che per i fantallenatori, non tanto in termini di bonus (1 gol e 1 assist nel 25/26), ma in termini di presenza e continuità di prestazioni. Braccetto nella difesa a tre o a fare la staffetta con Dimarco sull'esterno, il brasiliano si è sempre affermato come un comprimario all'Inter, le 28 volte a voto lo testimoniano. All'asta non va strapagato ma può regalare buoni voti in ottica modificatore difesa, ricordando che si tratta di un ottimo back-up nella squadra campione d'Italia.",
+    "fantaComment": "Carlos Augusto è un vero e proprio jolly sia per Chivu che per i fantallenatori, non tanto in termini di bonus (1 gol e 1 assist nel 25/26), ma in termini di presenza e continuità di prestazioni. Braccetto nella difesa a tre o a fare la staffetta con Dimarco sull'esterno, il brasiliano si è sempre affermato come un comprimario all'Inter, le 28 volte a voto lo testimoniano. All'asta non va strapagato ma può regalare buoni voti in ottica modificatore difesa, ricordando che si tratta di un ottimo back-up nella squadra campione d'Italia. Ed è partito molto bene in queste prime uscite, sia da braccetto che a tutta fascia. ",
     "quotazioni": {
       "qtA": 16,
       "qtI": 10,
@@ -40759,7 +40759,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Ricardo Mangas sbarca in Serie A al Monza dopo una carriera passata in Portogallo al netto di due avventure in Francia (Bordeaux) e Russia (Spartak Mosca). Terzino sinistro classe 1998 arriva in prestito con obbligo di riscatto dallo Sporting Lisbona. Troverà Juric che sa come valorizzare gli esterni con Mangas che ha ricoperto il ruolo per molto tempo anche se abituato anche a giocare in una difesa a 4. Non ha sempre trovato grande continuità in carriera e le appena 15 presenze nella scorsa stagione e le 11 della annata precedente in Russia lo testimoniano. Nonostante ciò, Mangas porta con sé al fantacalcio una notevole propensione al gol: 2 allo Sporting, 3 allo Spartak, 4 al Vitoria Guimaraes, 4 al Boavista e 3 al Bordeaux nelle ultime stagioni. All'asta rimane un esterno di una neopromossa ma la curiosità di vedere il portoghese ai servizi di Juric è tanta e può essere potenzialmente un 5-6° slot.",
+    "fantaComment": "Ricardo Mangas sbarca in Serie A al Monza dopo una carriera passata in Portogallo al netto di due avventure in Francia (Bordeaux) e Russia (Spartak Mosca). Terzino sinistro classe 1998 arriva in prestito con obbligo di riscatto dallo Sporting Lisbona. Troverà Juric che sa come valorizzare gli esterni con Mangas che ha ricoperto il ruolo per molto tempo anche se abituato anche a giocare in una difesa a 4. Non ha sempre trovato grande continuità in carriera e le appena 15 presenze nella scorsa stagione e le 11 della annata precedente in Russia lo testimoniano. Nonostante ciò, Mangas porta con sé al fantacalcio una notevole propensione al gol: 2 allo Sporting, 3 allo Spartak, 4 al Vitoria Guimaraes, 4 al Boavista e 3 al Bordeaux nelle ultime stagioni. All'asta rimane un esterno di una neopromossa ma la curiosità di vedere il portoghese ai servizi di Juric è tanta e può essere potenzialmente un 5-6° slot. Anche in questa Serie A è partito sicuramente col piede giusto.",
     "quotazioni": {
       "qtA": 14,
       "qtI": 7,
@@ -40891,7 +40891,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "La scorsa stagione di Mattia Zaccagni è stata un flop vero e proprio. Inutile nascondersi: 3 gol e 0 assist in 26 partite a voto, diversi infortuni e addirittura 6 gialli e 1 rosso. La classica annata da dimenticare per il giocatore della Lazio, che riparte da Gattuso dopo l'addio di Sarri. A livello tattico non cambia niente: era 4-3-3 e sarà ancora tridente offensivo, con Zaccagni titolare a sinistra. Da capire se avrà i rigori, se li contende con Taylor e Pinamonti. Sicuramente visti i numeri della scorsa stagione, si paga molto meno in partenza di un anno fa. È un semi-top, anche perché non ha le coppe e se sta bene le gioca tutte. Ma dovrà fin da subito mostrare sprazzi di ripresa, perché chi lo aveva l'anno scorso è veramente rimasto molto deluso. ",
+    "fantaComment": "La scorsa stagione di Mattia Zaccagni è stata un flop vero e proprio. Inutile nascondersi: 3 gol e 0 assist in 26 partite a voto, diversi infortuni e addirittura 6 gialli e 1 rosso. La classica annata da dimenticare per il giocatore della Lazio, che riparte da Gattuso dopo l'addio di Sarri. A livello tattico non cambia niente: era 4-3-3 e sarà ancora tridente offensivo, con Zaccagni titolare a sinistra. È il primo rigorista della squadra oltretutto, davanti a Taylor e Pinamonti. Sicuramente visti i numeri della scorsa stagione, si paga molto meno in partenza di un anno fa. È un semi-top, anche perché non ha le coppe e se sta bene le gioca tutte. Ma dovrà fin da subito mostrare sprazzi di ripresa, perché chi lo aveva l'anno scorso è veramente rimasto molto deluso.",
     "quotazioni": {
       "qtA": 53,
       "qtI": 41,
@@ -41287,7 +41287,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Sprazzi del vero Federico Bernardeschi nella passata stagione, al Bologna ha fatto vedere cose importanti. 4 gol e 2 assist in 24 partite a voto, ha saltato quasi 10 partite per infortunio di fatto. Quando c'è stato, è praticamente sempre andato a voto. Per Italiano era principalmente il vice Orsolini, Tedesco invece li sta provando a far coesistere. Per Bernardeschi all'asta siamo sul 4° slot, è un giocatore che senza coppe può portare anche 7-8 tra gol e assist. Sempre se sta bene, questo è un punto cruciale. ",
+    "fantaComment": "Sprazzi del vero Federico Bernardeschi nella passata stagione, al Bologna ha fatto vedere cose importanti. 4 gol e 2 assist in 24 partite a voto, ha saltato quasi 10 partite per infortunio di fatto. Quando c'è stato, è praticamente sempre andato a voto. Per Italiano era principalmente il vice Orsolini, Palladino vuole provare anche a farli coesistere, almeno in alcune partite. Per Bernardeschi all'asta siamo sul 4° slot, è un giocatore che senza coppe può portare anche 7-8 tra gol e assist. Sempre se sta bene, questo è un punto cruciale.",
     "quotazioni": {
       "qtA": 27,
       "qtI": 21,
@@ -41485,7 +41485,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Wesley è stato una delle rivelazioni dell'ultima Serie A in difesa, forse solo dietro a Palestra. Gasperini se lo coccola dopo averlo plasmato a vero e proprio esterno, marchio di fabbrica del suo 3-4-2-1. Esterno di spinta ma, allo stesso tempo, sempre più solido anche in fase di ripiegamento, il brasiliano ha realizzato 5 gol in 30 presenze: una fanta-media del 6,47 rappresenta il biglietto da visita del terzino al fantacalcio. Dotato di un buon tiro e bravo nell'inserirsi sul secondo palo sui cross che arrivano dal lato opposto, il 22enne è una spina nel fianco per le difese avversarie. Vuole ripetersi, via libera per essere il vostro top di reparto arretrato, dopo essersi messo subito alle spalle l'infortunio muscolare subito al Mondiale. Con l'arrivo di Molina a destra, Wesley rimarrà il titolare della corsia mancina in partenza, proprio dove è stato impiegato prevalentemente nella passata stagione. Si attende il primo assist in Serie A.",
+    "fantaComment": "Wesley è stato una delle rivelazioni dell'ultima Serie A in difesa, forse solo dietro a Palestra. Gasperini se lo coccola dopo averlo plasmato a vero e proprio esterno, marchio di fabbrica del suo 3-4-2-1. Esterno di spinta ma, allo stesso tempo, sempre più solido anche in fase di ripiegamento, il brasiliano ha realizzato 5 gol in 30 presenze: una fanta-media del 6,47 rappresenta il biglietto da visita del terzino al fantacalcio. Dotato di un buon tiro e bravo nell'inserirsi sul secondo palo sui cross che arrivano dal lato opposto, il 22enne è una spina nel fianco per le difese avversarie. Vuole ripetersi, via libera per essere il vostro top di reparto arretrato, dopo essersi messo subito alle spalle l'infortunio muscolare subito al Mondiale. Con l'arrivo di Molina a destra, Wesley rimarrà il titolare della corsia mancina in partenza, proprio dove è stato impiegato prevalentemente nella passata stagione. ",
     "quotazioni": {
       "qtA": 49,
       "qtI": 45,
@@ -41957,7 +41957,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 1,
       "fvm": 442,
       "fvmM": 442,
-      "classic_8_mod_median": 25.2,
+      "classic_8_mod_median": 25.1,
       "classic_10_mod_median": 28,
       "classic_12_mod_median": 28
     },
@@ -43399,7 +43399,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Leonardo Balerdi è un nuovo difensore della Roma. Gasperini ha detto che i giallorossi hanno preso un capitano che ha personalità. Si tratta di un centrale alto 188 cm e che ha 27 anni, di nazionalità argentina. Al Marsiglia ha giocato molto negli ultimi anni, solo nel 2022-23 è riuscito a giocare più di 30 partite (35), nelle altre stagioni si è fermato sulle 26/27 per alcuni problemi fisici o scelte tecniche. Anche nel 2026 ha avuto un paio di stop muscolari. Alla Roma non parte come titolare ma ha già dimostrato di essere più di una semplice alternativa.",
+    "fantaComment": "Leonardo Balerdi è un nuovo difensore della Roma. Gasperini ha detto che i giallorossi hanno preso un capitano che ha personalità. Si tratta di un centrale alto 188 cm e che ha 27 anni, di nazionalità argentina. Al Marsiglia ha giocato molto negli ultimi anni, solo nel 2022-23 è riuscito a giocare più di 30 partite (35), nelle altre stagioni si è fermato sulle 26/27 per alcuni problemi fisici o scelte tecniche. Anche nel 2026 ha avuto un paio di stop muscolari. Alla Roma non parte come titolare ma ha già dimostrato di essere più di una semplice alternativa: si gioca il posto con Ndicka, possibile alternanza tra i due.",
     "quotazioni": {
       "qtA": 17,
       "qtI": 1,
@@ -43541,7 +43541,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -15,
       "fvm": 144,
       "fvmM": 144,
-      "classic_8_mod_median": 3.6,
+      "classic_8_mod_median": 3.5,
       "classic_10_mod_median": 7.3,
       "classic_12_mod_median": 10
     },
@@ -43729,7 +43729,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Ivan Provedel è partito in casa Lazio mentre è tornato dal prestito Christos Mandas. In partenza, il titolare in porta scelto da Rino Gattuso è proprio il greco, con Motta come vice. Il nuovo allenatore ha scelto questa gerarchia iniziale, ma il gap tra i due portieri resta comunque ridotto e il consiglio per il fantacalcio è di pensare alla spesa di coppia e non del solo Mandas. Meglio averli entrambi in rosa e non correre rischi se decidete di puntare sulla porta della Lazio, ma nelle prime tre il greco ha dato importanti garanzie e convinto. Il titolare è lui.",
+    "fantaComment": "Ivan Provedel è partito in casa Lazio mentre è tornato dal prestito Christos Mandas. In partenza, il titolare in porta scelto da Rino Gattuso è proprio il greco, con Motta come vice. Il nuovo allenatore ha scelto questa gerarchia iniziale, ma il gap tra i due portieri resta comunque ridotto e il consiglio per il fantacalcio è di pensare alla spesa di coppia e non al solo Mandas. Meglio averli entrambi in rosa e non correre rischi se decidete di puntare sulla porta della Lazio, ma nelle prime uscite il greco ha dato importanti garanzie e convinto. Il titolare è lui.",
     "quotazioni": {
       "qtA": 38,
       "qtI": 28,
@@ -43937,7 +43937,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -17,
       "fvm": 282,
       "fvmM": 282,
-      "classic_8_mod_median": 8.8,
+      "classic_8_mod_median": 8.7,
       "classic_10_mod_median": 12,
       "classic_12_mod_median": 14
     },
@@ -45511,7 +45511,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Juan Miranda non ha sempre convinto dal suo arrivo in Italia ma nell'ultima stagione ha trovato continuità: 31 presenze, 6,1 di fanta-media, un gol e tre assist. Terzino che non ruba l'occhio per le sue sgroppate e le sue incursioni ma più per l'apporto alla manovra e all'equilibrio, per lo spagnolo pesano anche 6 ammonizioni in ottica fantacalcio. In partenza è il titolare in casa Bologna sulla sinistra anche se il nuovo arrivato Alhassane ha già trovato spazio e piace a Tedesco: si giocano il posto.",
+    "fantaComment": "Juan Miranda non ha sempre convinto dal suo arrivo in Italia ma nell'ultima stagione ha trovato continuità: 31 presenze, 6,1 di fanta-media, un gol e tre assist. Terzino che non ruba l'occhio per le sue sgroppate e le sue incursioni ma più per l'apporto alla manovra e all'equilibrio, per lo spagnolo pesano anche 6 ammonizioni in ottica fantacalcio. In partenza è il titolare in casa Bologna sulla sinistra anche se il nuovo arrivato Alhassane ha già trovato spazio (ma prima con Tedesco). La sensazione è che con Palladino il titolare fisso possa essere Miranda. ",
     "quotazioni": {
       "qtA": 12,
       "qtI": 15,
@@ -45907,7 +45907,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Samuel Mbangula torna in Serie A dopo appena una stagione e vestirà la maglia del Bologna. 22enne belga, è un'ala sinistra che fa delle accelerazioni la sua migliore qualità. Arriva per rimpiazzare Rowe e come caratteristiche lo ricorda. Nei primi due anni tra le big del calcio internazionale il 2004 si è messo in mostra: 3 gol e 4 assist alla Juventus, stesso risultato nell’ultima stagione al Werder Brema in 26 presenze. Al Bologna si giocherà il posto con Cambiaghi a sinistra e solo inizialmente partirà dietro (deve adattarsi) ma alla lunga può prendersi il posto. Occhio anche al rapporto con Tedesco che lo aveva convocato per le uniche sue presenze in nazionale maggiore belga. Al fantacalcio, listato centrocampista, stuzzica e non poco: può portare bonus.",
+    "fantaComment": "Samuel Mbangula torna in Serie A dopo appena una stagione e vestirà la maglia del Bologna. 22enne belga, è un'ala sinistra che fa delle accelerazioni la sua migliore qualità. Arriva per rimpiazzare Rowe e come caratteristiche lo ricorda. Nei primi due anni tra le big del calcio internazionale il 2004 si è messo in mostra: 3 gol e 4 assist alla Juventus, stesso risultato nell’ultima stagione al Werder Brema in 26 presenze. Al Bologna si giocherà il posto con Cambiaghi a sinistra e solo inizialmente partirà dietro (deve adattarsi) ma alla lunga può prendersi il posto. Al fantacalcio, listato centrocampista, stuzzica e non poco: può portare bonus.",
     "quotazioni": {
       "qtA": 14,
       "qtI": 1,
@@ -48481,7 +48481,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Freuler è partito, Tommaso Pobega si candida così ad avere più spazio nel centrocampo del Bologna. Stiamo parlando di un potenziale titolare, ma le gerarchie sono da scrivere col nuovo allenatore Tedesco. Ha anche qualche bonus nel repertorio, più gol con i suoi inserimenti che assist. ",
+    "fantaComment": "Freuler è partito, Tommaso Pobega si candida così ad avere più spazio nel centrocampo del Bologna. Stiamo parlando di un potenziale titolare, ma le gerarchie sono da scrivere col nuovo allenatore Palladino. Ha anche qualche bonus nel repertorio, più gol con i suoi inserimenti che assist.",
     "quotazioni": {
       "qtA": 3,
       "qtI": 5,
@@ -48877,7 +48877,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Lewis Ferguson nella passata stagione ha deluso le aspettative: solo 1 gol in 23 partite a voto. Italiano per un periodo lo schierava solo in Europa e i numeri lo dimostrano. Si riparte da zero con Tedesco e senza coppe: potrà avere maggior spazio e continuità, magari trovare anche qualche bonus in più. Rimane un giocatore da rendimento, ma low cost.",
+    "fantaComment": "Lewis Ferguson nella passata stagione ha deluso le aspettative: solo 1 gol in 23 partite a voto. Italiano per un periodo lo schierava solo in Europa e i numeri lo dimostrano. Si riparte da zero con Palladino e senza coppe: potrà avere maggior spazio e continuità, magari trovare anche qualche bonus in più. Rimane un giocatore da rendimento, ma low cost.",
     "quotazioni": {
       "qtA": 4,
       "qtI": 2,
@@ -49735,7 +49735,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Emil Holm va verso la permanenza a Bologna e si giocherà un posto sulla fascia destra con Zortea e il solito De Silvestri. Dopo le appena 7 presenze collezionate nella breve esperienza alla Juve, lo svedese vuole convincere Tedesco con le sua capacità di saltare l'uomo e arrivare sul fondo a crossare. Appena 16 le presenze nella passata stagione, tempestata di problemi di natura fisica. Al fantacalcio è un vero e proprio jolly, un'incognita: garanzia di assist (4 in stagione e un gol) ma, allo stesso tempo, titolarità e integrità fisica non sono al momento dalla sua.",
+    "fantaComment": "Emil Holm va verso la permanenza a Bologna e si giocherà un posto sulla fascia destra con Zortea e il solito De Silvestri. Dopo le appena 7 presenze collezionate nella breve esperienza alla Juve, lo svedese vuole convincere il nuovo allenatore Palladino con le sua capacità di saltare l'uomo e arrivare sul fondo a crossare. Appena 16 le presenze nella passata stagione, tempestata di problemi di natura fisica. Al fantacalcio è un vero e proprio jolly, un'incognita: garanzia di assist (4 in stagione e un gol) ma, allo stesso tempo, titolarità e integrità fisica non sono al momento dalla sua.",
     "quotazioni": {
       "qtA": 7,
       "qtI": 8,
@@ -54817,7 +54817,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Martin Vitik si è ambientato nella passata stagione a Bologna e ora insegue per essere uno dei due titolari al centro della difesa di Tedesco, dopo la partenza di Lucumì. Classico giocatore da 1-2 crediti per completare la vostra difesa all'asta, si tratta di un colpo low cost ma non di un titolare fisso al momento.",
+    "fantaComment": "Martin Vitik si è ambientato nella passata stagione a Bologna e ora insegue per essere uno dei tre titolari al centro della difesa di Palladino, dopo la partenza di Lucumì. Classico giocatore da 1-2 crediti per completare la vostra difesa all'asta, si tratta di un colpo low cost ma non di un titolare fisso al momento.",
     "quotazioni": {
       "qtA": 1,
       "qtI": 3,
@@ -55092,7 +55092,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 19,
       "fvmM": 19,
       "classic_8_mod_median": 0.4,
-      "classic_10_mod_median": 0.6,
+      "classic_10_mod_median": 0.5,
       "classic_12_mod_median": 0.8
     },
     "stats": {
@@ -55401,7 +55401,7 @@ export const CSV_PLAYER_CATALOG = [
     "fantaRole": "C",
     "photoUrl": "https://cdn.falsesoftware.com/players/132126/v1.webp",
     "playerImage": "https://cdn.falsesoftware.com/players/132126/v1.webp",
-    "appetibilita": 96,
+    "appetibilita": 95,
     "status": "in_ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -55411,7 +55411,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Non la sua miglior stagione, ma Riccardo Orsolini ha chiuso il 25/26 con 10 gol e 1 assist in 34 partite a voto. E anche 2 rigori sbagliati sui 6 tirati: per questo la fanta-media del 6,76. Ma rimane il rigorista della squadra, uno specialista assoluto, non ci sono dubbi su questo ed è un fattore molto importante in chiave fantacalcio, a volte cruciale. L'arrivo di Tedesco in panchina al posto di Italiano non sposta: sarà l'esterno titolare a destra, nel tridente offensivo. Rimane un primo slot, nonostante gli alti e bassi della scorsa stagione. E poi c'è un dettaglio da non sottovalutare: non avrà coppe, quindi di fatto se starà bene le giocherà tutte. Se starà bene appunto, perché si è fermato contro l’Atalanta per un problema muscolare: si tratta di una lesione con stop di tre settimane, salterà le prossime tre gare e tornerà dopo la sosta alla 6a. Non un infortunio che incide in chiave asta, può solo calare leggermente il prezzo.",
+    "fantaComment": "Non la sua miglior stagione, ma Riccardo Orsolini ha chiuso il 25/26 con 10 gol e 1 assist in 34 partite a voto. E anche 2 rigori sbagliati sui 6 tirati: per questo la fanta-media del 6,76. Ma rimane il rigorista della squadra, uno specialista assoluto, non ci sono dubbi su questo ed è un fattore molto importante in chiave fantacalcio, a volte cruciale. L'arrivo di Palladino in panchina al posto di Tedesco non sposta: sarà l'esterno titolare a destra, nel tridente offensivo. Rimane un primo slot, nonostante gli alti e bassi della scorsa stagione. E poi c'è un dettaglio da non sottovalutare: non avrà coppe, quindi di fatto se starà bene le giocherà tutte. Se starà bene appunto, perché si è fermato contro l’Atalanta per un problema muscolare: si tratta di una lesione con stop di tre settimane, salterà le prossime tre gare e tornerà dopo la sosta alla 6a. Non un infortunio che incide in chiave asta, può solo calare leggermente il prezzo.",
     "quotazioni": {
       "qtA": 64,
       "qtI": 72,
@@ -55675,7 +55675,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Davide Zappacosta, da anni ormai, presiede la fascia destra dell'Atalanta grazie ad un'ottima continuità a livello di prestazioni. Abile nel saltare l'uomo e trovare il fondo per poi cercare l'uomo sul secondo palo o uno scarico a rimorchio, il classe 1992 ha totalizzato 3 gol e 1 assist nell'ultimo campionato andando a voto 35 volte (30 da titolari). Non solo assist e cross per i compagni ma, come testimoniano i numeri, una propensione al +3 trovando spesso lo spazio per calciare in profondità. Al fantacalcio non va sottovalutato e rimane una delle prime scelte: occhio al nuovo ruolo e al conseguente arretramento nella linea a 4 con Sarri.",
+    "fantaComment": "Davide Zappacosta, da anni ormai, presiede la fascia destra dell'Atalanta grazie ad un'ottima continuità a livello di prestazioni. Abile nel saltare l'uomo e trovare il fondo per poi cercare l'uomo sul secondo palo o uno scarico a rimorchio, il classe 1992 ha totalizzato 3 gol e 1 assist nell'ultimo campionato andando a voto 35 volte (30 da titolari). Non solo assist e cross per i compagni ma, come testimoniano i numeri, una propensione al +3 trovando spesso lo spazio per calciare in profondità. Al fantacalcio non va sottovalutato e rimane una delle prime scelte, anche se c'è la concorrenza di Bellanova: occhio al nuovo ruolo e al conseguente arretramento nella linea a 4 con Sarri.",
     "quotazioni": {
       "qtA": 11,
       "qtI": 15,
@@ -56137,7 +56137,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Nicolò Cambiaghi è una delle novità del listone, da quest’anno è centrocampista. Resta comunque un jolly di seconda fascia, anche se guadagna un po’ di valore. Arriva da una stagione con 3 gol e 4 assist, anche con Tedesco dovrà giocarsi il posto: partito Rowe, è arrivato Mbangula e sono proprio lui a contendersi una maglia. Sempre che l'allenatore non provi anche Bernardeschi a sinistra.",
+    "fantaComment": "Nicolò Cambiaghi è una delle novità del listone, da quest’anno è centrocampista. Resta comunque un jolly di seconda fascia, anche se guadagna un po’ di valore. Arriva da una stagione con 3 gol e 4 assist, anche con Palladino dovrà giocarsi il posto: partito Rowe, è arrivato Mbangula e sono proprio lui a contendersi una maglia. Sempre che l'allenatore non provi anche Bernardeschi a sinistra.",
     "quotazioni": {
       "qtA": 13,
       "qtI": 7,
@@ -57995,7 +57995,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -7,
       "fvm": 202,
       "fvmM": 202,
-      "classic_8_mod_median": 11.8,
+      "classic_8_mod_median": 11.7,
       "classic_10_mod_median": 15,
       "classic_12_mod_median": 16.4
     },
@@ -58447,7 +58447,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "C'è stato per settimane un caso Nicolò Zaniolo a Udine, che poi si è chiuso con il rinnovo di contratto con adeguamento per il centrocampista. Si è ritrovato in tutto e per tutto sotto la guida di Runjaic, riparte da 5 gol e 5 assist in 31 partite a voto. Ha avuto continuità e anche i numeri in termini di bonus lo dimostrano, è diventato quasi un top al fantacalcio dopo le prestazioni della scorsa stagione. Gli infortuni restano il punto debole, parte con uno stop che lo terrà fuori fino a fine settembre. Un aspetto importante da limare: i gialli, addirittura 8 nella passata stagione. Troppi per un centrocampista che di fatto gioca in attacco accanto a Davis. Proverà a migliorare il bottino di bonus e diminuire quello dei malus: può essere la stagione della conferma per Zaniolo. E chissà che non possa tornare anche in Nazionale, è il suo grande obiettivo.",
+    "fantaComment": "C'è stato per settimane un caso Nicolò Zaniolo a Udine, che poi si è chiuso con il rinnovo di contratto con adeguamento per il centrocampista. Si è ritrovato in tutto e per tutto sotto la guida di Runjaic, riparte da 5 gol e 5 assist in 31 partite a voto. Ha avuto continuità e anche i numeri in termini di bonus lo dimostrano, è diventato quasi un top al fantacalcio dopo le prestazioni della scorsa stagione. Gli infortuni restano il punto debole, parte con uno stop che lo terrà fuori fino a fine settembre. Un aspetto importante da limare: i gialli, addirittura 8 nella passata stagione. Troppi per un centrocampista che di fatto gioca in attacco accanto a Davis. Proverà a migliorare il bottino di bonus e diminuire quello dei malus: può essere la stagione della conferma per Zaniolo. Ed è tornato anche in Nazionale, ha raggiunto il suo grande obiettivo.",
     "quotazioni": {
       "qtA": 44,
       "qtI": 50,
@@ -60295,7 +60295,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Evan Ndicka è rimasto nonostante i tanti estimatori ed è la colonna portante della difesa della Roma (insieme a Mancini). Meno falloso dei compagni di reparto con appena 5 ammonizioni in 31 presenze stagionali, il 26enne ivoriano ha chiuso con un 6,32 di fanta-media. Al fantacalcio, tra i difensori delle big, è uno dei più affidabili per titolarità e non solo. Solido nella marcatura a uomo, è bravo a svettare sui diretti avversari e, allo stesso tempo, a insaccare la palla in porta nell'area opposta: i 3 gol messi a segno ne sono la testimonianza. La Roma ha segnato molto su palla inattiva con Gasperini.",
+    "fantaComment": "Evan Ndicka è rimasto nonostante i tanti estimatori ed è la colonna portante della difesa della Roma (insieme a Mancini). Meno falloso dei compagni di reparto con appena 5 ammonizioni in 31 presenze stagionali, il 26enne ivoriano ha chiuso con un 6,32 di fanta-media. Al fantacalcio, tra i difensori delle big, è uno dei più affidabili per titolarità e non solo. Solido nella marcatura a uomo, è bravo a svettare sui diretti avversari e, allo stesso tempo, a insaccare la palla in porta nell'area opposta: i 3 gol messi a segno ne sono la testimonianza. La Roma ha segnato molto su palla inattiva con Gasperini. Attenzione solo alla concorrenza del nuovo arrivato Balerdi che ha convinto: ci sarà un'alternanza tra i due. ",
     "quotazioni": {
       "qtA": 16,
       "qtI": 24,
@@ -60823,7 +60823,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Djed Spence arriva all'Inter e in Serie A prendendosi la fascia destra che fu in passato di Denzel Dumfries. Operazione da circa 35 milioni, non economica per i nerazzurri. Mondiale, a sorpresa, da protagonista con l'Inghilterra dove ha mostrato tutte le sue caratteristiche. Per lui non sarà un impatto nuovo con la Serie A, avendo già assaggiato il nostro campionato con la maglia del Genoa. Al Tottenham pochi bonus, la stagione più prolifica dell'esterno risale alla stagione 2021/22 quando in Championship con il Nottingham Forest siglò 2 gol e 5 assist. Al fantacalcio è un primo slot principalmente perché gioca nell'Inter: buoni voti per il modificatore difesa e con un Inter molto prolifica chissà che l'inglese non scopra i bonus. Il problema è la concorrenza di Diouf, che fa sul serio, quindi Spence non avrà il posto fisso. In più partirà un po' in ritardo e non potrà essere subito titolare.",
+    "fantaComment": "Djed Spence arriva all'Inter e in Serie A prendendosi la fascia destra che fu in passato di Denzel Dumfries. Operazione da circa 35 milioni, non economica per i nerazzurri. Mondiale, a sorpresa, da protagonista con l'Inghilterra dove ha mostrato tutte le sue caratteristiche. Per lui non sarà un impatto nuovo con la Serie A, avendo già assaggiato il nostro campionato con la maglia del Genoa. Al Tottenham pochi bonus, la stagione più prolifica dell'esterno risale alla stagione 2021/22 quando in Championship con il Nottingham Forest siglò 2 gol e 5 assist. Al fantacalcio è un primo slot principalmente perché gioca nell'Inter: buoni voti per il modificatore difesa e con un Inter molto prolifica chissà che l'inglese non scopra i bonus. Il problema è la concorrenza di Diouf, che fa sul serio, quindi Spence non avrà il posto fisso. In più è partito in ritardo e non si è mai visto finora, ma dopo la sosta ci sarà. ",
     "quotazioni": {
       "qtA": 19,
       "qtI": 1,
@@ -61549,7 +61549,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Torbjørn Heggem dopo il Mondiale è pronto anche a prendersi la titolarità fissa al centro del Bologna. Partito Lucumi, è uno dei candidati assieme al nuovo arrivato Theate per comporre la coppia di centrali di Tedesco. Classico giocatore low cost per completare il vostro reparto difensivo.",
+    "fantaComment": "Torbjørn Heggem dopo il Mondiale è pronto anche a prendersi la titolarità fissa al centro del Bologna. Partito Lucumi, è uno dei candidati assieme al nuovo arrivato Theate e a Helland per comporre la difesa a tre del nuovo arrivato Palladino. Classico giocatore low cost per completare il vostro reparto difensivo.",
     "quotazioni": {
       "qtA": 5,
       "qtI": 2,
@@ -61813,7 +61813,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Jens Odgaard in cerca di spazio in casa Bologna, dopo la scorsa stagione con più ombre che luci. Alla fine 5 gol e 1 assist in 22 partite a voto, ha giocato decisamente meno del previsto per le scelte di Italiano. Ora è arrivato Tedesco, che sta provando il 4-3-3 e Odgaard è stato provato soprattutto da mezzala. Sulla carta non è un titolare fisso in partenza, ma un jolly, più da gara in corso che dall'inizio. Il Bologna non avrà più le coppe e allora ecco che al fantacalcio va preso alle giuste condizioni: con titolari certi, consapevoli che a volte andrà a voto e altre no. Non sarebbe una sorpresa se replicasse i numeri della passata stagione o giù di lì.",
+    "fantaComment": "Jens Odgaard in cerca di spazio in casa Bologna, dopo la scorsa stagione con più ombre che luci. Alla fine 5 gol e 1 assist in 22 partite a voto, ha giocato decisamente meno del previsto per le scelte di Italiano. Ora è arrivato Palladino, che sta provando il 3-4-3 ma Odgaard si è infortunato nella sosta e tornerà verso fine ottobre. Sulla carta non è un titolare fisso in partenza, ma un jolly, più da gara in corso che dall'inizio. Il Bologna non avrà più le coppe e allora ecco che al fantacalcio va preso alle giuste condizioni: con titolari certi, consapevoli che a volte andrà a voto e altre no. Non sarebbe una sorpresa se replicasse i numeri della passata stagione o giù di lì.",
     "quotazioni": {
       "qtA": 13,
       "qtI": 25,
@@ -62143,7 +62143,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Per Raoul Bellanova potrebbe essere la stagione del riscatto dopo l'ultima annata in chiaroscuro nella quale ha trovato spazio appena 22 volte, di cui solo 15 da titolare, e collezionando appena un assist (5,82 di fanta-media). Al fantacalcio si può comporre la coppia con Zappacosta che al momento rimane davanti. Entrambi dovranno fare i conti con la nuova posizione arretrata di terzino destro nel 4-3-3 di Sarri.",
+    "fantaComment": "Per Raoul Bellanova potrebbe essere la stagione del riscatto dopo l'ultima annata in chiaroscuro nella quale ha trovato spazio appena 22 volte, di cui solo 15 da titolare, e collezionando appena un assist (5,82 di fanta-media). Al fantacalcio si può comporre la coppia con Zappacosta che al momento rimane leggermente davanti. Entrambi dovranno fare i conti con la nuova posizione arretrata di terzino destro nel 4-3-3 di Sarri.",
     "quotazioni": {
       "qtA": 9,
       "qtI": 15,
@@ -64189,7 +64189,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Noel Tornqvist è il nuovo portiere del Monza, è un classe 2002 svedese. Arriva dal Como, dove però non ha mai giocato. Prima era titolare al Mjällby AIF in Svezia. Al Monza può essere nuovamente titolare, prendendo il posto di Thiam con cui sarà in ballottaggio. In ogni caso la porta della squadra di Juric è una delle peggiori della Serie A, quindi Tornqvist è solo per leghe numerose.",
+    "fantaComment": "Noel Tornqvist è il nuovo portiere del Monza, è un classe 2002 svedese. Arriva dal Como, dove però non ha mai giocato. Prima era titolare al Mjällby AIF in Svezia. Al Monza può essere nuovamente titolare, ha preso il posto di Thiam che non ha convinto nelle prime giornate. In ogni caso la porta della squadra di Juric è una delle peggiori della Serie A, quindi Tornqvist è solo per leghe numerose.",
     "quotazioni": {
       "qtA": 5,
       "qtI": 1,
@@ -64265,7 +64265,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -20,
       "fvm": 256,
       "fvmM": 256,
-      "classic_8_mod_median": 7.3,
+      "classic_8_mod_median": 7.2,
       "classic_10_mod_median": 13.4,
       "classic_12_mod_median": 17.8
     },
@@ -65509,7 +65509,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Acquisto per presente e futuro per il Bologna, che ha acquistato Milek Amondarain dall'Estudiantes. 1 gol e 2 assist in 6 partite di Libertadores nel 2026, 2 gol e 1 assist in 14 nel Torneo Apertura. Si tratta di un centrocampista centrale che può agire anche sulla trequarti, è destro di piede ed è stato elogiato anche da Veron. \"È fortissimo e sta emergendo, è un centrocampista box to box, ha ottime prospettive\". La descrizione delle sue caratteristiche è arrivata proprio dall'ex centrocampista: è la più classica delle scommesse a centrocampo per il fanta. Non parte come titolare, ma dopo un periodo di ambientamento potrà trovare spazio nelle rotazioni di Tedesco. Anche perché le gerarchie sono tutte da scrivere. Dovete potervelo permettere, in un reparto con tanti titolari può essere un colpo intrigante. ",
+    "fantaComment": "Acquisto per presente e futuro per il Bologna, che ha acquistato Milek Amondarain dall'Estudiantes. 1 gol e 2 assist in 6 partite di Libertadores nel 2026, 2 gol e 1 assist in 14 nel Torneo Apertura. Si tratta di un centrocampista centrale che può agire anche sulla trequarti, è destro di piede ed è stato elogiato anche da Veron. \"È fortissimo e sta emergendo, è un centrocampista box to box, ha ottime prospettive\". La descrizione delle sue caratteristiche è arrivata proprio dall'ex centrocampista: è la più classica delle scommesse a centrocampo per il fanta. Non parte come titolare, ma dopo un periodo di ambientamento proverà a trovare spazio nelle rotazioni di Palladino. Anche perché le gerarchie sono tutte da scrivere. Dovete potervelo permettere, in un reparto con tanti titolari può essere un colpo intrigante.",
     "quotazioni": {
       "qtA": 2,
       "qtI": 11,
@@ -65839,7 +65839,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Andrea Pinamonti può diventare anche un secondo slot dopo il suo passaggio alla Lazio. Dalla sua ha ancora la titolarità, anche se magari avrà più concorrenza rispetto al Sassuolo. Come lato negativo ci sono sempre le insufficienze quando non segna, infatti arriva da una media-voto negativa del 5,88. Compensa però con 9 gol e 3 assist, la doppia cifra la raggiunge o ci va molto vicino, ci proverà pure alla Lazio come obiettivo minimo. Potrebbe avere anche i rigori, se li giocherà con Zaccagni e Taylor. In carriera 20 su 24 per lui.",
+    "fantaComment": "Andrea Pinamonti può diventare anche un secondo slot dopo il suo passaggio alla Lazio. Dalla sua ha ancora la titolarità, anche se magari avrà più concorrenza rispetto al Sassuolo e infatti Noslin ha segnato 2 gol consecutivi. Come lato negativo ci sono sempre le insufficienze quando non segna, infatti arriva da una media-voto negativa del 5,88. Compensa però con 9 gol e 3 assist, la doppia cifra la raggiunge o ci va molto vicino, ci proverà pure alla Lazio come obiettivo minimo. Tema rigori, parte dietro a Zaccagni e Taylor nella gerarchia iniziale di Gattuso.",
     "quotazioni": {
       "qtA": 34,
       "qtI": 39,
@@ -67951,7 +67951,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Lukasz Skorupski è stato a lungo fuori per infortunio nella scorsa stagione: solo 18 partite a voto, con 15 gol subiti e 7 clean sheet. Il club ha deciso di confermare la fiducia all'estremo difensore polacco e Ravaglia è così partito per giocare con maggior continuità. Skorupski è il titolare della porta rossoblù di Domenico Tedesco, si prende da primo portiere al fantacalcio, poi chiaramente dipende dal numero di partecipanti e soprattutto dalle strategie per la porta dei partecipanti. Alle sue spalle è stato promosso Pessina come vice, ma non ci sono dubbi in partenza: Skorupski è il titolare e se sta bene gioca lui. Inoltre, la squadra non ha le coppe quindi ci sarà meno alternanza rispetto alle ultime stagioni. ",
+    "fantaComment": "Lukasz Skorupski è stato a lungo fuori per infortunio nella scorsa stagione: solo 18 partite a voto, con 15 gol subiti e 7 clean sheet. Il club ha deciso di confermare la fiducia all'estremo difensore polacco e Ravaglia è così partito per giocare con maggior continuità. Skorupski è il titolare della porta rossoblù di Raffaele Palladino, si prende da primo portiere al fantacalcio, poi chiaramente dipende dal numero di partecipanti e soprattutto dalle strategie per la porta dei partecipanti. Alle sue spalle è stato promosso Pessina come vice e visto il difficile inizio di stagione del polacco, chissà che non possa esserci un ribaltone: per ora bisogna parlare di un ballottaggio aperto verso la ripresa. Anche se Palladino ha detto che Skorupski non si discute...",
     "quotazioni": {
       "qtA": 16,
       "qtI": 20,
@@ -68215,7 +68215,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Justin Bijlow è arrivato al Genoa nel mercato invernale e si è preso subito la titolarità, ha chiuso la stagione con 20 gol subiti in 16 partite e 5 clean sheet. Riparte da prima scelta nella squadra di De Rossi, siamo in provincia, in una squadra che punta a rimanere fuori dalla corsa salvezza e a posizionarsi nel lato sinistro della classifica. Più da modificatore che da inviolata, ma occhio al Genoa in casa: può regalare diversi clean sheet. Da prendere o in alternanza alla porta di una big oppure insieme ad altri portieri di provincia, senza pagarli come un big, ma andando al risparmio per avere più soldi da investire in altri reparti. ",
+    "fantaComment": "Justin Bijlow è arrivato al Genoa nel mercato invernale e si è preso subito la titolarità, ha chiuso la stagione con 20 gol subiti in 16 partite e 5 clean sheet. Riparte da prima scelta nella squadra di De Rossi, siamo in provincia, in una squadra che come obiettivo ha la salvezza. Più da modificatore che da inviolata, ma occhio al Genoa in casa: può regalare qualche clean sheet. Da prendere o in alternanza alla porta di una big oppure insieme ad altri portieri di provincia, senza pagarli come un big, ma andando al risparmio per avere più soldi da investire in altri reparti.",
     "quotazioni": {
       "qtA": 7,
       "qtI": 9,
@@ -71261,7 +71261,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 0,
       "fvm": 1,
       "fvmM": 1,
-      "classic_8_mod_median": 0.3,
+      "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0
     },
