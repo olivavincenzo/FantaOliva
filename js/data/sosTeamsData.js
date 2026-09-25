@@ -6230,7 +6230,7 @@ export const SOS_TEAMS_DATA = {
     "attackRating": 4.5,
     "defenseRating": 4.5,
     "comment": "Dopo anni di cambiamenti tattici, il ritorno di Allegri al Milan segnerebbe un ritorno al pragmatismo e alla solidità. Il tecnico livornese incarna una filosofia votata all’equilibrio: linee strette, difesa ordinata, gestione dei ritmi e adattamento costante all’avversario. Non ama il pressing alto sistematico, ma preferisce tempi di pressione mirati e ripartenze rapide dopo il recupero. In fase offensiva punta sulla lettura dei momenti: verticalizzazioni improvvise, inserimenti intelligenti e massima attenzione all’efficacia. Il risultato viene prima della prestazione, e la valorizzazione dei profili più duttili e intelligenti tatticamente è una costante.",
-    "sosFantaComment": "È arrivato Ruben Amorim in panchina, il suo Milan gioca col 3-4-2-1.  Sulla trequarti Pulisic è pronto a diventare inamovibile ora che sta bene, al suo fianco o Cisse o Saelemaekers e c'è anche il nuovo arrivato Hutchinson. Chukwueze a destra finora ha convinto e a sinistra può spuntarla Moreira alla lunga, anche perché Estupinan e Bartesaghi non hanno brillato finora. Musah in alcune partite può giocare al posto di Modric, quando serve più sostanza e meno palleggio. De Winter e Gabbia si giocano il posto al centro della difesa, verranno anche alternati.",
+    "sosFantaComment": "È arrivato Ruben Amorim in panchina, il suo Milan gioca col 3-4-2-1. Sulla trequarti Pulisic è pronto a diventare inamovibile ora che sta bene, al suo fianco o Cisse o Saelemaekers e c'è anche il nuovo arrivato Hutchinson. Chukwueze a destra finora ha convinto e a sinistra può spuntarla Moreira, anche perché Estupinan e Bartesaghi non hanno brillato finora mentre il belga ha dato segnali importantissimi. Musah in alcune partite può giocare al posto di Modric, quando serve più sostanza e meno palleggio. De Winter e Gabbia si giocano il posto al centro della difesa, verranno anche alternati.",
     "keyPoints": [
       {
         "text": "Trequartisti ed esterni mobili in fase offensiva",
@@ -6374,20 +6374,6 @@ export const SOS_TEAMS_DATA = {
       }
     ],
     "ballottaggi": [
-      [
-        {
-          "playerId": "a22c4fed-ed14-4567-bb53-c672d5bf5a5a",
-          "name": "Moreira",
-          "role": "C",
-          "perc": 55
-        },
-        {
-          "playerId": "dbfc35e4-c44e-4082-921e-cacfec2de8a0",
-          "name": "Estupinan",
-          "role": "D",
-          "perc": 45
-        }
-      ],
       [
         {
           "playerId": "faff68a8-6487-469e-add5-36912ee075a1",
@@ -6492,7 +6478,7 @@ export const SOS_TEAMS_DATA = {
     "attackRating": 4.5,
     "defenseRating": 4.5,
     "comment": "Dopo anni di cambiamenti tattici, il ritorno di Allegri al Milan segnerebbe un ritorno al pragmatismo e alla solidità. Il tecnico livornese incarna una filosofia votata all’equilibrio: linee strette, difesa ordinata, gestione dei ritmi e adattamento costante all’avversario. Non ama il pressing alto sistematico, ma preferisce tempi di pressione mirati e ripartenze rapide dopo il recupero. In fase offensiva punta sulla lettura dei momenti: verticalizzazioni improvvise, inserimenti intelligenti e massima attenzione all’efficacia. Il risultato viene prima della prestazione, e la valorizzazione dei profili più duttili e intelligenti tatticamente è una costante.",
-    "sosFantaComment": "È arrivato Ruben Amorim in panchina, il suo Milan gioca col 3-4-2-1.  Sulla trequarti Pulisic è pronto a diventare inamovibile ora che sta bene, al suo fianco o Cisse o Saelemaekers e c'è anche il nuovo arrivato Hutchinson. Chukwueze a destra finora ha convinto e a sinistra può spuntarla Moreira alla lunga, anche perché Estupinan e Bartesaghi non hanno brillato finora. Musah in alcune partite può giocare al posto di Modric, quando serve più sostanza e meno palleggio. De Winter e Gabbia si giocano il posto al centro della difesa, verranno anche alternati.",
+    "sosFantaComment": "È arrivato Ruben Amorim in panchina, il suo Milan gioca col 3-4-2-1. Sulla trequarti Pulisic è pronto a diventare inamovibile ora che sta bene, al suo fianco o Cisse o Saelemaekers e c'è anche il nuovo arrivato Hutchinson. Chukwueze a destra finora ha convinto e a sinistra può spuntarla Moreira, anche perché Estupinan e Bartesaghi non hanno brillato finora mentre il belga ha dato segnali importantissimi. Musah in alcune partite può giocare al posto di Modric, quando serve più sostanza e meno palleggio. De Winter e Gabbia si giocano il posto al centro della difesa, verranno anche alternati.",
     "keyPoints": [
       {
         "text": "Trequartisti ed esterni mobili in fase offensiva",
@@ -6636,20 +6622,6 @@ export const SOS_TEAMS_DATA = {
       }
     ],
     "ballottaggi": [
-      [
-        {
-          "playerId": "a22c4fed-ed14-4567-bb53-c672d5bf5a5a",
-          "name": "Moreira",
-          "role": "C",
-          "perc": 55
-        },
-        {
-          "playerId": "dbfc35e4-c44e-4082-921e-cacfec2de8a0",
-          "name": "Estupinan",
-          "role": "D",
-          "perc": 45
-        }
-      ],
       [
         {
           "playerId": "faff68a8-6487-469e-add5-36912ee075a1",
@@ -8762,7 +8734,7 @@ export const SOS_TEAMS_DATA = {
     "attackRating": 3.0,
     "defenseRating": 3.0,
     "comment": "Il sistema del tecnico dei friulani si basa su una struttura ordinata e aggressiva, con grande attenzione alla riconquista del pallone e rapide transizioni offensive. Tatticamente, la squadra tende a mantenere una difesa posizionata piuttosto bassa, privilegiando la compattezza e la copertura degli spazi piuttosto che una linea alta che esponga ai contropiedi avversari. Questo approccio permette all’Udinese di limitare le occasioni avversarie, ma può riduce anche le occasione da goal da parte degli attaccanti.",
-    "sosFantaComment": "È rimasto Kosta Runjaic in panchina nell'Udinese, ha provato più il 3-4-2-1 del 3-5-2 finora. In difesa Solet se sta bene è la certezza, al suo fianco è tutto aperto: Abankwah e Kabasele i favoriti, ma ci sono anche Palma e Bertola. A destra la novità è Vojvoda aspettando il pieno recupero di Zanoli (già dopo la sosta si giocano una maglia). Partito Atta, a centrocampo Piotrowski (una volta tornato dall'operazione) avanti su Miller e sul nuovo arrivato Unai Gomez (più trequartista che centrocampista). Ekkelenkamp provato più avanzato accanto a Zaniolo, alle spalle di Davis.",
+    "sosFantaComment": "È rimasto Kosta Runjaic in panchina nell'Udinese, ha provato più il 3-4-2-1 del 3-5-2 finora. In difesa Solet se sta bene è la certezza ed è arrivato Alaba durante la sosta: rinforzo di esperienza internazionale, se non ha problemi fisici è il titolarissimo come braccetto sinistro. Al centro del reparto o Palma o Kabasele. A destra la novità è Vojvoda aspettando il pieno recupero di Zanoli (già dopo la sosta si giocano una maglia). Partito Atta, a centrocampo Piotrowski (una volta tornato dall'operazione) avanti su Miller e sul nuovo arrivato Unai Gomez (più trequartista che centrocampista). Ekkelenkamp provato più avanzato accanto a Zaniolo, alle spalle di Davis.",
     "keyPoints": [
       {
         "text": "Contropiedi efficaci",
@@ -8795,21 +8767,21 @@ export const SOS_TEAMS_DATA = {
         "role": "P"
       },
       {
-        "playerId": "2edd4901-5632-4cc8-b8b8-981150639745",
-        "csvId": 6021,
-        "name": "Abankwah",
-        "role": "D"
-      },
-      {
-        "playerId": "917b4ad5-2521-4728-96a1-e5df0346dcf3",
-        "csvId": 4263,
-        "name": "Kabasele",
-        "role": "D"
-      },
-      {
         "playerId": "21898bcb-7bbf-46c7-9892-8e05475fcb53",
-        "csvId": "6956",
+        "csvId": 6956,
         "name": "Solet",
+        "role": "D"
+      },
+      {
+        "playerId": "a778e4d5-7591-4341-93cc-3fedebf36602",
+        "csvId": 6925,
+        "name": "Palma",
+        "role": "D"
+      },
+      {
+        "playerId": "fc88b220-fb24-498f-b3d8-eb1769040b84",
+        "csvId": 2404,
+        "name": "Alaba",
         "role": "D"
       },
       {
@@ -8874,9 +8846,9 @@ export const SOS_TEAMS_DATA = {
     ],
     "pun": [
       {
-        "playerId": "1137037e-c927-401f-b891-43a2965753a2",
-        "name": "Zaniolo",
-        "role": "C"
+        "playerId": "fc88b220-fb24-498f-b3d8-eb1769040b84",
+        "name": "Alaba",
+        "role": "D"
       },
       {
         "playerId": "2b362169-cf19-4a08-a822-d99382ed5e0e",
@@ -8886,9 +8858,9 @@ export const SOS_TEAMS_DATA = {
     ],
     "corner": [
       {
-        "playerId": "1137037e-c927-401f-b891-43a2965753a2",
-        "name": "Zaniolo",
-        "role": "C"
+        "playerId": "fc88b220-fb24-498f-b3d8-eb1769040b84",
+        "name": "Alaba",
+        "role": "D"
       },
       {
         "playerId": "2b362169-cf19-4a08-a822-d99382ed5e0e",
@@ -8918,30 +8890,16 @@ export const SOS_TEAMS_DATA = {
       ],
       [
         {
-          "playerId": "2edd4901-5632-4cc8-b8b8-981150639745",
-          "name": "Abankwah",
+          "playerId": "a778e4d5-7591-4341-93cc-3fedebf36602",
+          "name": "Palma",
           "role": "D",
           "perc": 51
         },
         {
-          "playerId": "a778e4d5-7591-4341-93cc-3fedebf36602",
-          "name": "Palma",
-          "role": "D",
-          "perc": 49
-        }
-      ],
-      [
-        {
           "playerId": "917b4ad5-2521-4728-96a1-e5df0346dcf3",
           "name": "Kabasele",
           "role": "D",
-          "perc": 55
-        },
-        {
-          "playerId": "6d52d426-d54a-44b0-a83d-170404ac1049",
-          "name": "Bertola",
-          "role": "D",
-          "perc": 45
+          "perc": 49
         }
       ]
     ],
@@ -9006,7 +8964,7 @@ export const SOS_TEAMS_DATA = {
     "attackRating": 3.0,
     "defenseRating": 3.0,
     "comment": "Il sistema del tecnico dei friulani si basa su una struttura ordinata e aggressiva, con grande attenzione alla riconquista del pallone e rapide transizioni offensive. Tatticamente, la squadra tende a mantenere una difesa posizionata piuttosto bassa, privilegiando la compattezza e la copertura degli spazi piuttosto che una linea alta che esponga ai contropiedi avversari. Questo approccio permette all’Udinese di limitare le occasioni avversarie, ma può riduce anche le occasione da goal da parte degli attaccanti.",
-    "sosFantaComment": "È rimasto Kosta Runjaic in panchina nell'Udinese, ha provato più il 3-4-2-1 del 3-5-2 finora. In difesa Solet se sta bene è la certezza, al suo fianco è tutto aperto: Abankwah e Kabasele i favoriti, ma ci sono anche Palma e Bertola. A destra la novità è Vojvoda aspettando il pieno recupero di Zanoli (già dopo la sosta si giocano una maglia). Partito Atta, a centrocampo Piotrowski (una volta tornato dall'operazione) avanti su Miller e sul nuovo arrivato Unai Gomez (più trequartista che centrocampista). Ekkelenkamp provato più avanzato accanto a Zaniolo, alle spalle di Davis.",
+    "sosFantaComment": "È rimasto Kosta Runjaic in panchina nell'Udinese, ha provato più il 3-4-2-1 del 3-5-2 finora. In difesa Solet se sta bene è la certezza ed è arrivato Alaba durante la sosta: rinforzo di esperienza internazionale, se non ha problemi fisici è il titolarissimo come braccetto sinistro. Al centro del reparto o Palma o Kabasele. A destra la novità è Vojvoda aspettando il pieno recupero di Zanoli (già dopo la sosta si giocano una maglia). Partito Atta, a centrocampo Piotrowski (una volta tornato dall'operazione) avanti su Miller e sul nuovo arrivato Unai Gomez (più trequartista che centrocampista). Ekkelenkamp provato più avanzato accanto a Zaniolo, alle spalle di Davis.",
     "keyPoints": [
       {
         "text": "Contropiedi efficaci",
@@ -9039,21 +8997,21 @@ export const SOS_TEAMS_DATA = {
         "role": "P"
       },
       {
-        "playerId": "2edd4901-5632-4cc8-b8b8-981150639745",
-        "csvId": 6021,
-        "name": "Abankwah",
-        "role": "D"
-      },
-      {
-        "playerId": "917b4ad5-2521-4728-96a1-e5df0346dcf3",
-        "csvId": 4263,
-        "name": "Kabasele",
-        "role": "D"
-      },
-      {
         "playerId": "21898bcb-7bbf-46c7-9892-8e05475fcb53",
-        "csvId": "6956",
+        "csvId": 6956,
         "name": "Solet",
+        "role": "D"
+      },
+      {
+        "playerId": "a778e4d5-7591-4341-93cc-3fedebf36602",
+        "csvId": 6925,
+        "name": "Palma",
+        "role": "D"
+      },
+      {
+        "playerId": "fc88b220-fb24-498f-b3d8-eb1769040b84",
+        "csvId": 2404,
+        "name": "Alaba",
         "role": "D"
       },
       {
@@ -9118,9 +9076,9 @@ export const SOS_TEAMS_DATA = {
     ],
     "pun": [
       {
-        "playerId": "1137037e-c927-401f-b891-43a2965753a2",
-        "name": "Zaniolo",
-        "role": "C"
+        "playerId": "fc88b220-fb24-498f-b3d8-eb1769040b84",
+        "name": "Alaba",
+        "role": "D"
       },
       {
         "playerId": "2b362169-cf19-4a08-a822-d99382ed5e0e",
@@ -9130,9 +9088,9 @@ export const SOS_TEAMS_DATA = {
     ],
     "corner": [
       {
-        "playerId": "1137037e-c927-401f-b891-43a2965753a2",
-        "name": "Zaniolo",
-        "role": "C"
+        "playerId": "fc88b220-fb24-498f-b3d8-eb1769040b84",
+        "name": "Alaba",
+        "role": "D"
       },
       {
         "playerId": "2b362169-cf19-4a08-a822-d99382ed5e0e",
@@ -9162,30 +9120,16 @@ export const SOS_TEAMS_DATA = {
       ],
       [
         {
-          "playerId": "2edd4901-5632-4cc8-b8b8-981150639745",
-          "name": "Abankwah",
+          "playerId": "a778e4d5-7591-4341-93cc-3fedebf36602",
+          "name": "Palma",
           "role": "D",
           "perc": 51
         },
         {
-          "playerId": "a778e4d5-7591-4341-93cc-3fedebf36602",
-          "name": "Palma",
-          "role": "D",
-          "perc": 49
-        }
-      ],
-      [
-        {
           "playerId": "917b4ad5-2521-4728-96a1-e5df0346dcf3",
           "name": "Kabasele",
           "role": "D",
-          "perc": 55
-        },
-        {
-          "playerId": "6d52d426-d54a-44b0-a83d-170404ac1049",
-          "name": "Bertola",
-          "role": "D",
-          "perc": 45
+          "perc": 49
         }
       ]
     ],

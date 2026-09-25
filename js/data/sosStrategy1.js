@@ -901,6 +901,7 @@ export const SOS_STRATEGY_1 = {
     "frattesi": "tier_c_2",
     "atta": "tier_c_3",
     "yildiz": "tier_a_9",
+    "alaba": "tier_d_5",
     "spence": "tier_d_3",
     "tavares n.": "tier_d_4",
     "tavaresn": "tier_d_4",

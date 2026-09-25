@@ -14471,6 +14471,36 @@
     }
   },
   {
+    "player_id": "fc88b220-fb24-498f-b3d8-eb1769040b84",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 5,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 9,
+    "perc_price": "1.8000",
+    "ex_fmv": null,
+    "comment": "David Alaba - 34 anni compiuti lo scorso giugno - sbarca al fantacalcio: l’Udinese lo ha ufficializzato durante la sosta. Il capitano della nazionale austriaca arriva per essere il braccetto di sinistra titolare, con Solet pronto a slittare sul centro-destra. Se starà bene, una maglia sarà sempre di Alaba e su questo non ci sono dubbi. Ma gli infortuni sono un fattore da considerare: ora è integro, ma negli anni è stato falcidiato dagli infortuni. Ed è giusto dire che l’ultima stagione da vero titolare al Real risale al 2022/23, con 23 partite nella Liga. Solo 16 partite in tutte le competizioni nell'ultima stagione al Real. I numeri sono comunque clamorosi, arriva un giocatore importantissimo. 132 partite con il Real, 5 gol e 9 assist; 431 al Bayern Monaco, con 33 gol e addirittura 55 assist; e anche 117 presenze in nazionale con l'Austria, di cui è il capitano. Se sta bene è un fattore, anche sui piazzati: 16 gol su punizione in carriera, è stato uno specialista negli anni, anche di corner col suo mancino. Diventa sicuramente un candidato importante sui piazzati, se non il principale: li contende soprattutto a Zaniolo ed Ekkelenkamp, i primi due specialisti prima del suo arrivo. 8 rigori segnati e 4 sbagliati: non si può parlare di uno specialista, potrebbe essere la prima alternativa a Davis che dovrebbe restare il rigorista della squadra. Siamo sul terzo slot al fantacalcio, alle giuste condizioni (circa 10 crediti massimo su 500) potete prenderlo se avete l’asta di riparazione. Altrimenti se ne riparlerà dopo il mercato di gennaio.",
+    "tit_index": 5,
+    "aff_index": 3,
+    "inf_index": 3,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-09-24",
+    "updated_at": "2026-09-24",
+    "createdAt": "2026-09-24",
+    "updatedAt": "2026-09-24",
+    "player": {
+      "player_id": "fc88b220-fb24-498f-b3d8-eb1769040b84",
+      "role": "D",
+      "mantra_roles": [
+        "Dc"
+      ]
+    }
+  },
+  {
     "player_id": "ae4ddedd-7c30-471d-be3a-e3adb7dc765e",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",

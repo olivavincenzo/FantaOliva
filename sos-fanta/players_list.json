@@ -9720,6 +9720,33 @@
       }
     },
     {
+      "player_id": "fc88b220-fb24-498f-b3d8-eb1769040b84",
+      "sportsmonks_id": 31288,
+      "fantalab_id": "fc88b220-fb24-498f-b3d8-eb1769040b84",
+      "fantacalcio_id": 2404,
+      "name": "Alaba",
+      "full_name": "David Alaba ",
+      "team_id": 346,
+      "team_name": "Udinese",
+      "team_short": "UDI",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/346.png",
+      "role": "D",
+      "mantra_roles": [
+        "Dc"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/31288/v2.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": null,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 5.67,
+        "mv": 5.75
+      }
+    },
+    {
       "player_id": "56047277-ecee-44df-a949-782ccdb20a4b",
       "sportsmonks_id": 99534,
       "fantalab_id": "56047277-ecee-44df-a949-782ccdb20a4b",
@@ -14863,7 +14890,7 @@
     "fallback_price"
   ],
   "pagination": {
-    "total": 535,
+    "total": 536,
     "limit": 1000,
     "offset": 0
   },
