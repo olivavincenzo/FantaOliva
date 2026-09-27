@@ -723,8 +723,8 @@
         "id": 4436
       },
       {
-        "player_id": "7a6908eb-f092-4f48-95af-b03ba52381dd",
-        "id": 6675
+        "player_id": "ab2a5fb7-6ee0-4efe-92d2-adafe3bb3d3d",
+        "id": 4359
       }
     ],
     "rig": [
@@ -764,7 +764,7 @@
     "comment": "Il Bologna si caratterizza per un gioco molto dinamico, con i giocatori che spesso si scambiano le posizioni per creare confusione nella difesa avversaria. Il ruolo degli esterni d’attacco è fondamentale: sono loro a garantire ampiezza, velocità e spesso i gol e gli assist più importanti. La difesa è molto alta, in linea con il pressing aggressivo che la squadra mette in campo, ma questo comporta qualche rischio in ripartenza. Attenzione anche al turn over elevato, che può influenzare la continuità di rendimento di alcuni giocatori, specialmente in ottica fantacalcio.",
     "sosFantaComment": "Scossone in casa Bologna: è arrivato l'esonero di Tedesco dopo 4 giornate, al suo posto la squadra è stata affidata a Raffaele Palladino. In carriera ha utilizzato tanti moduli, ma, come visto contro il Torino, sembra intenzionato a perseguire la strada del 3-4-3. Testa a testa tra Dovbyk e Piccoli davanti, come era già con Tedesco del resto. Ai lati Orsolini e Cambiaghi rispettivamente in vantaggio su Bernardeschi e Mbangula. A centrocampo Pobega più di Moro accanto a Ferguson. In difesa si azzera tutto sulle fasce: Zortea o Holm a destra, a sinistra Miranda in pole su Alhassane. I tre dietro sono Helland, Heggem e Theate.",
     "created_at": "2026-07-21T13:36:37.003Z",
-    "updated_at": "2026-09-22T08:58:59.761Z",
+    "updated_at": "2026-09-26T21:20:43.686Z",
     "up": [
       {
         "player_id": "c3763cc2-a3d9-403f-8f5a-856896a47c5d",
@@ -838,11 +838,11 @@
       {
         "players": [
           {
-            "player_id": "7a6908eb-f092-4f48-95af-b03ba52381dd",
+            "player_id": "ab2a5fb7-6ee0-4efe-92d2-adafe3bb3d3d",
             "perc": 51
           },
           {
-            "player_id": "ab2a5fb7-6ee0-4efe-92d2-adafe3bb3d3d",
+            "player_id": "7a6908eb-f092-4f48-95af-b03ba52381dd",
             "perc": 49
           }
         ]
@@ -926,7 +926,7 @@
       }
     ],
     "createdAt": "2026-07-21T13:36:37.003Z",
-    "updatedAt": "2026-09-22T08:58:59.761Z"
+    "updatedAt": "2026-09-26T21:20:43.686Z"
   },
   {
     "team": "GEN",
@@ -3448,252 +3448,6 @@
     "updatedAt": "2026-09-22T10:41:52.903Z"
   },
   {
-    "team": "LAZ",
-    "season": "s_26_27",
-    "starters": [
-      {
-        "player_id": "c005a40e-c9d9-4673-94b5-1c85551c4460",
-        "id": 6482
-      },
-      {
-        "player_id": "46cb2e9f-1fe6-459b-87b0-af6cb7f17417",
-        "id": "2188"
-      },
-      {
-        "player_id": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
-        "id": 6320
-      },
-      {
-        "player_id": "19139ae2-8ceb-4f21-9980-134c64d95c92",
-        "id": 7012
-      },
-      {
-        "player_id": "e0da5b59-193d-4063-8b09-f6a556e70afd",
-        "id": 5620
-      },
-      {
-        "player_id": "38edda0f-f801-4946-b49b-cd87541fa645",
-        "id": "7314"
-      },
-      {
-        "player_id": "eb46d3ff-e668-421c-8274-0716cdb571b2",
-        "id": 4459
-      },
-      {
-        "player_id": "51f0abe3-4fe5-42fb-9994-34fbddcb56d5",
-        "id": 2848
-      },
-      {
-        "player_id": "b82add03-f6f8-4788-94a2-4d9165698df5",
-        "id": 5500
-      },
-      {
-        "player_id": "36aefe1e-18af-4824-9091-ef98f30c9778",
-        "id": "632"
-      },
-      {
-        "player_id": "ced01d22-1684-45d0-bcde-9898ff26ae86",
-        "id": 2038
-      }
-    ],
-    "rig": [
-      {
-        "player_id": "36aefe1e-18af-4824-9091-ef98f30c9778"
-      },
-      {
-        "player_id": "38edda0f-f801-4946-b49b-cd87541fa645"
-      },
-      {
-        "player_id": "ced01d22-1684-45d0-bcde-9898ff26ae86"
-      }
-    ],
-    "pun": [
-      {
-        "player_id": "36aefe1e-18af-4824-9091-ef98f30c9778"
-      },
-      {
-        "player_id": "1392a871-45c8-4782-8b9e-583c324b8eec"
-      }
-    ],
-    "corner": [
-      {
-        "player_id": "36aefe1e-18af-4824-9091-ef98f30c9778"
-      },
-      {
-        "player_id": "38edda0f-f801-4946-b49b-cd87541fa645"
-      },
-      {
-        "player_id": "eb46d3ff-e668-421c-8274-0716cdb571b2"
-      }
-    ],
-    "module": "4-3-3",
-    "coach": "Gennaro Gattuso",
-    "attack": 3.5,
-    "defense": 4,
-    "comment": "Torna alla Lazio dopo il biennio 2022-2024 con idee chiare e un gioco che conosciamo fin troppo bene. Il suo 4-3-3 si fonda su possesso palla, costruzione ragionata e movimenti codificati. Predilige giocatori tecnici e intelligenti: chi sta in mezzo deve saper palleggiare e inserirsi, mentre chi gioca largo ha il compito di dare ampiezza e saltare l’uomo. Il centravanti, invece, non può limitarsi a finalizzare: deve partecipare attivamente alla manovra. Chi ha già lavorato con lui parte favorito in chiave fantacalcio, mentre i nuovi potrebbero aver bisogno di tempo per assimilare i meccanismi.",
-    "sosFantaComment": "Grande avvio di stagione per la Lazio di Rino Gattuso, che ha proseguito col 4-3-3 della scorsa stagione ma sono cambiati i principi. Doekhi o Sutalo al centro della difesa, gioca chi sta meglio e dipende anche dall'avversario. Stesso discorso a destra tra Marusic e Floriani Mussolini. Belahyane ha risposto presente, aspettando i recuperi al 100% di Rovella e Cataldi: sono loro tre in corsa per un posto. Sorpresa Noslin, prova a insidiare Pinamonti che comunque rimane il titolare sulla carta. A destra Cancellieri o Isaksen, testa a testa e c'è anche il jolly Gudmundsson che può ricoprire tutti i ruoli nel tridente e fare anche la mezzala di 'scorta'.",
-    "created_at": "2026-07-21T12:45:39.344Z",
-    "updated_at": "2026-09-22T10:51:24.778Z",
-    "up": [
-      {
-        "player_id": "51f0abe3-4fe5-42fb-9994-34fbddcb56d5",
-        "points": [
-          {
-            "text": "Utile negli inserimenti richiesti dal mister",
-            "tone": "good"
-          },
-          {
-            "tone": "good",
-            "text": "Propensione alla fase offensiva"
-          }
-        ]
-      },
-      {
-        "player_id": "36aefe1e-18af-4824-9091-ef98f30c9778",
-        "points": [
-          {
-            "text": "Fantasista della squadra",
-            "tone": "good"
-          },
-          {
-            "tone": "good",
-            "text": "Fulcro del gioco offensivo"
-          }
-        ]
-      }
-    ],
-    "down": [
-      {
-        "player_id": "eb46d3ff-e668-421c-8274-0716cdb571b2",
-        "points": [
-          {
-            "text": "Propensione a cartellini nel gioco di Gattuso",
-            "tone": "bad"
-          }
-        ]
-      }
-    ],
-    "young": [
-      {
-        "player_id": "19139ae2-8ceb-4f21-9980-134c64d95c92",
-        "points": [
-          {
-            "text": "Può ricavarsi molto spazio nelle gerarchie",
-            "tone": "good"
-          }
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "player_id": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
-        "points": [
-          {
-            "text": "Forte sulle palle inattive",
-            "tone": "good"
-          }
-        ]
-      }
-    ],
-    "ballottaggi": [
-      {
-        "players": [
-          {
-            "player_id": "eb46d3ff-e668-421c-8274-0716cdb571b2",
-            "perc": 55
-          },
-          {
-            "player_id": "1392a871-45c8-4782-8b9e-583c324b8eec",
-            "perc": 45
-          }
-        ]
-      },
-      {
-        "players": [
-          {
-            "player_id": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
-            "perc": 51
-          },
-          {
-            "player_id": "c571ffe8-70c1-40b4-8175-6752f18eae5f",
-            "perc": 49
-          }
-        ]
-      },
-      {
-        "players": [
-          {
-            "player_id": "b82add03-f6f8-4788-94a2-4d9165698df5",
-            "perc": 51
-          },
-          {
-            "player_id": "1d26239a-02e3-4ee4-9c63-17d5dcb9b5be",
-            "perc": 49
-          }
-        ]
-      },
-      {
-        "players": [
-          {
-            "player_id": "46cb2e9f-1fe6-459b-87b0-af6cb7f17417",
-            "perc": 51
-          },
-          {
-            "player_id": "e776d386-f107-4da9-8341-55a10fdf6c44",
-            "perc": 49
-          }
-        ]
-      },
-      {
-        "players": [
-          {
-            "player_id": "ced01d22-1684-45d0-bcde-9898ff26ae86",
-            "perc": 60
-          },
-          {
-            "player_id": "b802051e-a34a-49ab-a8e4-7bf11ded728e",
-            "perc": 40
-          }
-        ]
-      }
-    ],
-    "coachRating": {
-      "attack": 3.5,
-      "defense": 4,
-      "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Gattuso.webp"
-    },
-    "keyPoints": [
-      {
-        "text": "Punta centrale riferimento principale ",
-        "tone": "good"
-      },
-      {
-        "text": "Gioco aggressivo, cartellini e falli elevati",
-        "tone": "bad"
-      },
-      {
-        "text": "Esterni di difesa propositivi",
-        "tone": "good"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "att-center",
-        "tone": "good"
-      },
-      {
-        "role": "def-fullbacks",
-        "tone": "good"
-      },
-      {
-        "role": "mid-holding",
-        "tone": "bad"
-      }
-    ],
-    "createdAt": "2026-07-21T12:45:39.344Z",
-    "updatedAt": "2026-09-22T10:51:24.778Z"
-  },
-  {
     "team": "ROM",
     "season": "s_26_27",
     "starters": [
@@ -3914,6 +3668,252 @@
     ],
     "createdAt": "2026-07-21T13:08:51.218Z",
     "updatedAt": "2026-09-22T11:02:18.875Z"
+  },
+  {
+    "team": "LAZ",
+    "season": "s_26_27",
+    "starters": [
+      {
+        "player_id": "c005a40e-c9d9-4673-94b5-1c85551c4460",
+        "id": 6482
+      },
+      {
+        "player_id": "46cb2e9f-1fe6-459b-87b0-af6cb7f17417",
+        "id": "2188"
+      },
+      {
+        "player_id": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
+        "id": 6320
+      },
+      {
+        "player_id": "19139ae2-8ceb-4f21-9980-134c64d95c92",
+        "id": 7012
+      },
+      {
+        "player_id": "e0da5b59-193d-4063-8b09-f6a556e70afd",
+        "id": 5620
+      },
+      {
+        "player_id": "51f0abe3-4fe5-42fb-9994-34fbddcb56d5",
+        "id": 2848
+      },
+      {
+        "player_id": "eb46d3ff-e668-421c-8274-0716cdb571b2",
+        "id": 4459
+      },
+      {
+        "player_id": "38edda0f-f801-4946-b49b-cd87541fa645",
+        "id": 7314
+      },
+      {
+        "player_id": "b82add03-f6f8-4788-94a2-4d9165698df5",
+        "id": 5500
+      },
+      {
+        "player_id": "36aefe1e-18af-4824-9091-ef98f30c9778",
+        "id": "632"
+      },
+      {
+        "player_id": "ced01d22-1684-45d0-bcde-9898ff26ae86",
+        "id": 2038
+      }
+    ],
+    "rig": [
+      {
+        "player_id": "36aefe1e-18af-4824-9091-ef98f30c9778"
+      },
+      {
+        "player_id": "38edda0f-f801-4946-b49b-cd87541fa645"
+      },
+      {
+        "player_id": "ced01d22-1684-45d0-bcde-9898ff26ae86"
+      }
+    ],
+    "pun": [
+      {
+        "player_id": "36aefe1e-18af-4824-9091-ef98f30c9778"
+      },
+      {
+        "player_id": "1392a871-45c8-4782-8b9e-583c324b8eec"
+      }
+    ],
+    "corner": [
+      {
+        "player_id": "36aefe1e-18af-4824-9091-ef98f30c9778"
+      },
+      {
+        "player_id": "38edda0f-f801-4946-b49b-cd87541fa645"
+      },
+      {
+        "player_id": "eb46d3ff-e668-421c-8274-0716cdb571b2"
+      }
+    ],
+    "module": "4-3-3",
+    "coach": "Gennaro Gattuso",
+    "attack": 3.5,
+    "defense": 4,
+    "comment": "Torna alla Lazio dopo il biennio 2022-2024 con idee chiare e un gioco che conosciamo fin troppo bene. Il suo 4-3-3 si fonda su possesso palla, costruzione ragionata e movimenti codificati. Predilige giocatori tecnici e intelligenti: chi sta in mezzo deve saper palleggiare e inserirsi, mentre chi gioca largo ha il compito di dare ampiezza e saltare l’uomo. Il centravanti, invece, non può limitarsi a finalizzare: deve partecipare attivamente alla manovra. Chi ha già lavorato con lui parte favorito in chiave fantacalcio, mentre i nuovi potrebbero aver bisogno di tempo per assimilare i meccanismi.",
+    "sosFantaComment": "Grande avvio di stagione per la Lazio di Rino Gattuso, che ha proseguito col 4-3-3 della scorsa stagione ma sono cambiati i principi. Doekhi o Sutalo al centro della difesa, gioca chi sta meglio e dipende anche dall'avversario. Stesso discorso a destra tra Marusic e Floriani Mussolini. Belahyane ha risposto presente, aspettando i recuperi al 100% di Rovella e Cataldi: sono loro tre in corsa per un posto. Sorpresa Noslin, prova a insidiare Pinamonti che comunque rimane il titolare sulla carta. A destra Cancellieri o Isaksen, testa a testa e c'è anche il jolly Gudmundsson che può ricoprire tutti i ruoli nel tridente e fare anche la mezzala di 'scorta'.",
+    "created_at": "2026-07-21T12:45:39.344Z",
+    "updated_at": "2026-09-26T22:34:34.213Z",
+    "up": [
+      {
+        "player_id": "51f0abe3-4fe5-42fb-9994-34fbddcb56d5",
+        "points": [
+          {
+            "text": "Utile negli inserimenti richiesti dal mister",
+            "tone": "good"
+          },
+          {
+            "tone": "good",
+            "text": "Propensione alla fase offensiva"
+          }
+        ]
+      },
+      {
+        "player_id": "36aefe1e-18af-4824-9091-ef98f30c9778",
+        "points": [
+          {
+            "text": "Fantasista della squadra",
+            "tone": "good"
+          },
+          {
+            "tone": "good",
+            "text": "Fulcro del gioco offensivo"
+          }
+        ]
+      }
+    ],
+    "down": [
+      {
+        "player_id": "eb46d3ff-e668-421c-8274-0716cdb571b2",
+        "points": [
+          {
+            "text": "Propensione a cartellini nel gioco di Gattuso",
+            "tone": "bad"
+          }
+        ]
+      }
+    ],
+    "young": [
+      {
+        "player_id": "19139ae2-8ceb-4f21-9980-134c64d95c92",
+        "points": [
+          {
+            "text": "Può ricavarsi molto spazio nelle gerarchie",
+            "tone": "good"
+          }
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "player_id": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
+        "points": [
+          {
+            "text": "Forte sulle palle inattive",
+            "tone": "good"
+          }
+        ]
+      }
+    ],
+    "ballottaggi": [
+      {
+        "players": [
+          {
+            "player_id": "eb46d3ff-e668-421c-8274-0716cdb571b2",
+            "perc": 55
+          },
+          {
+            "player_id": "1392a871-45c8-4782-8b9e-583c324b8eec",
+            "perc": 45
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "c571ffe8-70c1-40b4-8175-6752f18eae5f",
+            "perc": 55
+          },
+          {
+            "player_id": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
+            "perc": 45
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "b82add03-f6f8-4788-94a2-4d9165698df5",
+            "perc": 51
+          },
+          {
+            "player_id": "1d26239a-02e3-4ee4-9c63-17d5dcb9b5be",
+            "perc": 49
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "46cb2e9f-1fe6-459b-87b0-af6cb7f17417",
+            "perc": 51
+          },
+          {
+            "player_id": "e776d386-f107-4da9-8341-55a10fdf6c44",
+            "perc": 49
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "ced01d22-1684-45d0-bcde-9898ff26ae86",
+            "perc": 51
+          },
+          {
+            "player_id": "b802051e-a34a-49ab-a8e4-7bf11ded728e",
+            "perc": 49
+          }
+        ]
+      }
+    ],
+    "coachRating": {
+      "attack": 3.5,
+      "defense": 4,
+      "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Gattuso.webp"
+    },
+    "keyPoints": [
+      {
+        "text": "Punta centrale riferimento principale ",
+        "tone": "good"
+      },
+      {
+        "text": "Gioco aggressivo, cartellini e falli elevati",
+        "tone": "bad"
+      },
+      {
+        "text": "Esterni di difesa propositivi",
+        "tone": "good"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "att-center",
+        "tone": "good"
+      },
+      {
+        "role": "def-fullbacks",
+        "tone": "good"
+      },
+      {
+        "role": "mid-holding",
+        "tone": "bad"
+      }
+    ],
+    "createdAt": "2026-07-21T12:45:39.344Z",
+    "updatedAt": "2026-09-26T22:34:34.213Z"
   },
   {
     "team": "UDI",

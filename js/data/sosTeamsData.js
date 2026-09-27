@@ -1597,9 +1597,9 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
-        "playerId": "7a6908eb-f092-4f48-95af-b03ba52381dd",
-        "csvId": 6675,
-        "name": "Dovbyk",
+        "playerId": "ab2a5fb7-6ee0-4efe-92d2-adafe3bb3d3d",
+        "csvId": 4359,
+        "name": "Piccoli",
         "role": "A"
       }
     ],
@@ -1666,14 +1666,14 @@ export const SOS_TEAMS_DATA = {
       ],
       [
         {
-          "playerId": "7a6908eb-f092-4f48-95af-b03ba52381dd",
-          "name": "Dovbyk",
+          "playerId": "ab2a5fb7-6ee0-4efe-92d2-adafe3bb3d3d",
+          "name": "Piccoli",
           "role": "A",
           "perc": 51
         },
         {
-          "playerId": "ab2a5fb7-6ee0-4efe-92d2-adafe3bb3d3d",
-          "name": "Piccoli",
+          "playerId": "7a6908eb-f092-4f48-95af-b03ba52381dd",
+          "name": "Dovbyk",
           "role": "A",
           "perc": 49
         }
@@ -1882,9 +1882,9 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
-        "playerId": "7a6908eb-f092-4f48-95af-b03ba52381dd",
-        "csvId": 6675,
-        "name": "Dovbyk",
+        "playerId": "ab2a5fb7-6ee0-4efe-92d2-adafe3bb3d3d",
+        "csvId": 4359,
+        "name": "Piccoli",
         "role": "A"
       }
     ],
@@ -1951,14 +1951,14 @@ export const SOS_TEAMS_DATA = {
       ],
       [
         {
-          "playerId": "7a6908eb-f092-4f48-95af-b03ba52381dd",
-          "name": "Dovbyk",
+          "playerId": "ab2a5fb7-6ee0-4efe-92d2-adafe3bb3d3d",
+          "name": "Piccoli",
           "role": "A",
           "perc": 51
         },
         {
-          "playerId": "ab2a5fb7-6ee0-4efe-92d2-adafe3bb3d3d",
-          "name": "Piccoli",
+          "playerId": "7a6908eb-f092-4f48-95af-b03ba52381dd",
+          "name": "Dovbyk",
           "role": "A",
           "perc": 49
         }
@@ -7671,558 +7671,6 @@ export const SOS_TEAMS_DATA = {
       }
     ]
   },
-  "LAZ": {
-    "code": "LAZ",
-    "name": "Lazio",
-    "city": "Roma",
-    "stadium": "Stadio Olimpico",
-    "primaryColor": "#87ceeb",
-    "secondaryColor": "#ffffff",
-    "accentColor": "#002b49",
-    "coach": "Gennaro Gattuso",
-    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Gattuso.webp",
-    "defaultFormation": "4-3-3",
-    "module": "4-3-3",
-    "attackRating": 3.5,
-    "defenseRating": 4.0,
-    "comment": "Torna alla Lazio dopo il biennio 2022-2024 con idee chiare e un gioco che conosciamo fin troppo bene. Il suo 4-3-3 si fonda su possesso palla, costruzione ragionata e movimenti codificati. Predilige giocatori tecnici e intelligenti: chi sta in mezzo deve saper palleggiare e inserirsi, mentre chi gioca largo ha il compito di dare ampiezza e saltare l’uomo. Il centravanti, invece, non può limitarsi a finalizzare: deve partecipare attivamente alla manovra. Chi ha già lavorato con lui parte favorito in chiave fantacalcio, mentre i nuovi potrebbero aver bisogno di tempo per assimilare i meccanismi.",
-    "sosFantaComment": "Grande avvio di stagione per la Lazio di Rino Gattuso, che ha proseguito col 4-3-3 della scorsa stagione ma sono cambiati i principi. Doekhi o Sutalo al centro della difesa, gioca chi sta meglio e dipende anche dall'avversario. Stesso discorso a destra tra Marusic e Floriani Mussolini. Belahyane ha risposto presente, aspettando i recuperi al 100% di Rovella e Cataldi: sono loro tre in corsa per un posto. Sorpresa Noslin, prova a insidiare Pinamonti che comunque rimane il titolare sulla carta. A destra Cancellieri o Isaksen, testa a testa e c'è anche il jolly Gudmundsson che può ricoprire tutti i ruoli nel tridente e fare anche la mezzala di 'scorta'.",
-    "keyPoints": [
-      {
-        "text": "Punta centrale riferimento principale ",
-        "tone": "good"
-      },
-      {
-        "text": "Gioco aggressivo, cartellini e falli elevati",
-        "tone": "bad"
-      },
-      {
-        "text": "Esterni di difesa propositivi",
-        "tone": "good"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "att-center",
-        "tone": "good"
-      },
-      {
-        "role": "def-fullbacks",
-        "tone": "good"
-      },
-      {
-        "role": "mid-holding",
-        "tone": "bad"
-      }
-    ],
-    "starters": [
-      {
-        "playerId": "c005a40e-c9d9-4673-94b5-1c85551c4460",
-        "csvId": 6482,
-        "name": "Mandas",
-        "role": "P"
-      },
-      {
-        "playerId": "46cb2e9f-1fe6-459b-87b0-af6cb7f17417",
-        "csvId": "2188",
-        "name": "Marusic",
-        "role": "D"
-      },
-      {
-        "playerId": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
-        "csvId": 6320,
-        "name": "Doekhi",
-        "role": "D"
-      },
-      {
-        "playerId": "19139ae2-8ceb-4f21-9980-134c64d95c92",
-        "csvId": 7012,
-        "name": "Provstgaard",
-        "role": "D"
-      },
-      {
-        "playerId": "e0da5b59-193d-4063-8b09-f6a556e70afd",
-        "csvId": 5620,
-        "name": "Tavares N.",
-        "role": "D"
-      },
-      {
-        "playerId": "38edda0f-f801-4946-b49b-cd87541fa645",
-        "csvId": "7314",
-        "name": "Taylor K.",
-        "role": "C"
-      },
-      {
-        "playerId": "eb46d3ff-e668-421c-8274-0716cdb571b2",
-        "csvId": 4459,
-        "name": "Rovella",
-        "role": "C"
-      },
-      {
-        "playerId": "51f0abe3-4fe5-42fb-9994-34fbddcb56d5",
-        "csvId": 2848,
-        "name": "Frattesi",
-        "role": "C"
-      },
-      {
-        "playerId": "b82add03-f6f8-4788-94a2-4d9165698df5",
-        "csvId": 5500,
-        "name": "Cancellieri",
-        "role": "C"
-      },
-      {
-        "playerId": "36aefe1e-18af-4824-9091-ef98f30c9778",
-        "csvId": "632",
-        "name": "Zaccagni",
-        "role": "C"
-      },
-      {
-        "playerId": "ced01d22-1684-45d0-bcde-9898ff26ae86",
-        "csvId": 2038,
-        "name": "Pinamonti",
-        "role": "A"
-      }
-    ],
-    "rig": [
-      {
-        "playerId": "36aefe1e-18af-4824-9091-ef98f30c9778",
-        "name": "Zaccagni",
-        "role": "C"
-      },
-      {
-        "playerId": "38edda0f-f801-4946-b49b-cd87541fa645",
-        "name": "Taylor K.",
-        "role": "C"
-      },
-      {
-        "playerId": "ced01d22-1684-45d0-bcde-9898ff26ae86",
-        "name": "Pinamonti",
-        "role": "A"
-      }
-    ],
-    "pun": [
-      {
-        "playerId": "36aefe1e-18af-4824-9091-ef98f30c9778",
-        "name": "Zaccagni",
-        "role": "C"
-      },
-      {
-        "playerId": "1392a871-45c8-4782-8b9e-583c324b8eec",
-        "name": "Cataldi",
-        "role": "C"
-      }
-    ],
-    "corner": [
-      {
-        "playerId": "36aefe1e-18af-4824-9091-ef98f30c9778",
-        "name": "Zaccagni",
-        "role": "C"
-      },
-      {
-        "playerId": "38edda0f-f801-4946-b49b-cd87541fa645",
-        "name": "Taylor K.",
-        "role": "C"
-      },
-      {
-        "playerId": "eb46d3ff-e668-421c-8274-0716cdb571b2",
-        "name": "Rovella",
-        "role": "C"
-      }
-    ],
-    "ballottaggi": [
-      [
-        {
-          "playerId": "eb46d3ff-e668-421c-8274-0716cdb571b2",
-          "name": "Rovella",
-          "role": "C",
-          "perc": 55
-        },
-        {
-          "playerId": "1392a871-45c8-4782-8b9e-583c324b8eec",
-          "name": "Cataldi",
-          "role": "C",
-          "perc": 45
-        }
-      ],
-      [
-        {
-          "playerId": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
-          "name": "Doekhi",
-          "role": "D",
-          "perc": 51
-        },
-        {
-          "playerId": "c571ffe8-70c1-40b4-8175-6752f18eae5f",
-          "name": "Sutalo J.",
-          "role": "D",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "b82add03-f6f8-4788-94a2-4d9165698df5",
-          "name": "Cancellieri",
-          "role": "C",
-          "perc": 51
-        },
-        {
-          "playerId": "1d26239a-02e3-4ee4-9c63-17d5dcb9b5be",
-          "name": "Isaksen",
-          "role": "C",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "46cb2e9f-1fe6-459b-87b0-af6cb7f17417",
-          "name": "Marusic",
-          "role": "D",
-          "perc": 51
-        },
-        {
-          "playerId": "e776d386-f107-4da9-8341-55a10fdf6c44",
-          "name": "Floriani Mussolini",
-          "role": "D",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "ced01d22-1684-45d0-bcde-9898ff26ae86",
-          "name": "Pinamonti",
-          "role": "A",
-          "perc": 60
-        },
-        {
-          "playerId": "b802051e-a34a-49ab-a8e4-7bf11ded728e",
-          "name": "Noslin",
-          "role": "A",
-          "perc": 40
-        }
-      ]
-    ],
-    "up": [
-      {
-        "playerId": "51f0abe3-4fe5-42fb-9994-34fbddcb56d5",
-        "name": "Frattesi",
-        "points": [
-          "Utile negli inserimenti richiesti dal mister",
-          "Propensione alla fase offensiva"
-        ]
-      },
-      {
-        "playerId": "36aefe1e-18af-4824-9091-ef98f30c9778",
-        "name": "Zaccagni",
-        "points": [
-          "Fantasista della squadra",
-          "Fulcro del gioco offensivo"
-        ]
-      }
-    ],
-    "down": [
-      {
-        "playerId": "eb46d3ff-e668-421c-8274-0716cdb571b2",
-        "name": "Rovella",
-        "points": [
-          "Propensione a cartellini nel gioco di Gattuso"
-        ]
-      }
-    ],
-    "young": [
-      {
-        "playerId": "19139ae2-8ceb-4f21-9980-134c64d95c92",
-        "name": "Provstgaard",
-        "points": [
-          "Può ricavarsi molto spazio nelle gerarchie"
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "playerId": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
-        "name": "Doekhi",
-        "points": [
-          "Forte sulle palle inattive"
-        ]
-      }
-    ]
-  },
-  "lazio": {
-    "code": "LAZ",
-    "name": "Lazio",
-    "city": "Roma",
-    "stadium": "Stadio Olimpico",
-    "primaryColor": "#87ceeb",
-    "secondaryColor": "#ffffff",
-    "accentColor": "#002b49",
-    "coach": "Gennaro Gattuso",
-    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Gattuso.webp",
-    "defaultFormation": "4-3-3",
-    "module": "4-3-3",
-    "attackRating": 3.5,
-    "defenseRating": 4.0,
-    "comment": "Torna alla Lazio dopo il biennio 2022-2024 con idee chiare e un gioco che conosciamo fin troppo bene. Il suo 4-3-3 si fonda su possesso palla, costruzione ragionata e movimenti codificati. Predilige giocatori tecnici e intelligenti: chi sta in mezzo deve saper palleggiare e inserirsi, mentre chi gioca largo ha il compito di dare ampiezza e saltare l’uomo. Il centravanti, invece, non può limitarsi a finalizzare: deve partecipare attivamente alla manovra. Chi ha già lavorato con lui parte favorito in chiave fantacalcio, mentre i nuovi potrebbero aver bisogno di tempo per assimilare i meccanismi.",
-    "sosFantaComment": "Grande avvio di stagione per la Lazio di Rino Gattuso, che ha proseguito col 4-3-3 della scorsa stagione ma sono cambiati i principi. Doekhi o Sutalo al centro della difesa, gioca chi sta meglio e dipende anche dall'avversario. Stesso discorso a destra tra Marusic e Floriani Mussolini. Belahyane ha risposto presente, aspettando i recuperi al 100% di Rovella e Cataldi: sono loro tre in corsa per un posto. Sorpresa Noslin, prova a insidiare Pinamonti che comunque rimane il titolare sulla carta. A destra Cancellieri o Isaksen, testa a testa e c'è anche il jolly Gudmundsson che può ricoprire tutti i ruoli nel tridente e fare anche la mezzala di 'scorta'.",
-    "keyPoints": [
-      {
-        "text": "Punta centrale riferimento principale ",
-        "tone": "good"
-      },
-      {
-        "text": "Gioco aggressivo, cartellini e falli elevati",
-        "tone": "bad"
-      },
-      {
-        "text": "Esterni di difesa propositivi",
-        "tone": "good"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "att-center",
-        "tone": "good"
-      },
-      {
-        "role": "def-fullbacks",
-        "tone": "good"
-      },
-      {
-        "role": "mid-holding",
-        "tone": "bad"
-      }
-    ],
-    "starters": [
-      {
-        "playerId": "c005a40e-c9d9-4673-94b5-1c85551c4460",
-        "csvId": 6482,
-        "name": "Mandas",
-        "role": "P"
-      },
-      {
-        "playerId": "46cb2e9f-1fe6-459b-87b0-af6cb7f17417",
-        "csvId": "2188",
-        "name": "Marusic",
-        "role": "D"
-      },
-      {
-        "playerId": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
-        "csvId": 6320,
-        "name": "Doekhi",
-        "role": "D"
-      },
-      {
-        "playerId": "19139ae2-8ceb-4f21-9980-134c64d95c92",
-        "csvId": 7012,
-        "name": "Provstgaard",
-        "role": "D"
-      },
-      {
-        "playerId": "e0da5b59-193d-4063-8b09-f6a556e70afd",
-        "csvId": 5620,
-        "name": "Tavares N.",
-        "role": "D"
-      },
-      {
-        "playerId": "38edda0f-f801-4946-b49b-cd87541fa645",
-        "csvId": "7314",
-        "name": "Taylor K.",
-        "role": "C"
-      },
-      {
-        "playerId": "eb46d3ff-e668-421c-8274-0716cdb571b2",
-        "csvId": 4459,
-        "name": "Rovella",
-        "role": "C"
-      },
-      {
-        "playerId": "51f0abe3-4fe5-42fb-9994-34fbddcb56d5",
-        "csvId": 2848,
-        "name": "Frattesi",
-        "role": "C"
-      },
-      {
-        "playerId": "b82add03-f6f8-4788-94a2-4d9165698df5",
-        "csvId": 5500,
-        "name": "Cancellieri",
-        "role": "C"
-      },
-      {
-        "playerId": "36aefe1e-18af-4824-9091-ef98f30c9778",
-        "csvId": "632",
-        "name": "Zaccagni",
-        "role": "C"
-      },
-      {
-        "playerId": "ced01d22-1684-45d0-bcde-9898ff26ae86",
-        "csvId": 2038,
-        "name": "Pinamonti",
-        "role": "A"
-      }
-    ],
-    "rig": [
-      {
-        "playerId": "36aefe1e-18af-4824-9091-ef98f30c9778",
-        "name": "Zaccagni",
-        "role": "C"
-      },
-      {
-        "playerId": "38edda0f-f801-4946-b49b-cd87541fa645",
-        "name": "Taylor K.",
-        "role": "C"
-      },
-      {
-        "playerId": "ced01d22-1684-45d0-bcde-9898ff26ae86",
-        "name": "Pinamonti",
-        "role": "A"
-      }
-    ],
-    "pun": [
-      {
-        "playerId": "36aefe1e-18af-4824-9091-ef98f30c9778",
-        "name": "Zaccagni",
-        "role": "C"
-      },
-      {
-        "playerId": "1392a871-45c8-4782-8b9e-583c324b8eec",
-        "name": "Cataldi",
-        "role": "C"
-      }
-    ],
-    "corner": [
-      {
-        "playerId": "36aefe1e-18af-4824-9091-ef98f30c9778",
-        "name": "Zaccagni",
-        "role": "C"
-      },
-      {
-        "playerId": "38edda0f-f801-4946-b49b-cd87541fa645",
-        "name": "Taylor K.",
-        "role": "C"
-      },
-      {
-        "playerId": "eb46d3ff-e668-421c-8274-0716cdb571b2",
-        "name": "Rovella",
-        "role": "C"
-      }
-    ],
-    "ballottaggi": [
-      [
-        {
-          "playerId": "eb46d3ff-e668-421c-8274-0716cdb571b2",
-          "name": "Rovella",
-          "role": "C",
-          "perc": 55
-        },
-        {
-          "playerId": "1392a871-45c8-4782-8b9e-583c324b8eec",
-          "name": "Cataldi",
-          "role": "C",
-          "perc": 45
-        }
-      ],
-      [
-        {
-          "playerId": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
-          "name": "Doekhi",
-          "role": "D",
-          "perc": 51
-        },
-        {
-          "playerId": "c571ffe8-70c1-40b4-8175-6752f18eae5f",
-          "name": "Sutalo J.",
-          "role": "D",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "b82add03-f6f8-4788-94a2-4d9165698df5",
-          "name": "Cancellieri",
-          "role": "C",
-          "perc": 51
-        },
-        {
-          "playerId": "1d26239a-02e3-4ee4-9c63-17d5dcb9b5be",
-          "name": "Isaksen",
-          "role": "C",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "46cb2e9f-1fe6-459b-87b0-af6cb7f17417",
-          "name": "Marusic",
-          "role": "D",
-          "perc": 51
-        },
-        {
-          "playerId": "e776d386-f107-4da9-8341-55a10fdf6c44",
-          "name": "Floriani Mussolini",
-          "role": "D",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "ced01d22-1684-45d0-bcde-9898ff26ae86",
-          "name": "Pinamonti",
-          "role": "A",
-          "perc": 60
-        },
-        {
-          "playerId": "b802051e-a34a-49ab-a8e4-7bf11ded728e",
-          "name": "Noslin",
-          "role": "A",
-          "perc": 40
-        }
-      ]
-    ],
-    "up": [
-      {
-        "playerId": "51f0abe3-4fe5-42fb-9994-34fbddcb56d5",
-        "name": "Frattesi",
-        "points": [
-          "Utile negli inserimenti richiesti dal mister",
-          "Propensione alla fase offensiva"
-        ]
-      },
-      {
-        "playerId": "36aefe1e-18af-4824-9091-ef98f30c9778",
-        "name": "Zaccagni",
-        "points": [
-          "Fantasista della squadra",
-          "Fulcro del gioco offensivo"
-        ]
-      }
-    ],
-    "down": [
-      {
-        "playerId": "eb46d3ff-e668-421c-8274-0716cdb571b2",
-        "name": "Rovella",
-        "points": [
-          "Propensione a cartellini nel gioco di Gattuso"
-        ]
-      }
-    ],
-    "young": [
-      {
-        "playerId": "19139ae2-8ceb-4f21-9980-134c64d95c92",
-        "name": "Provstgaard",
-        "points": [
-          "Può ricavarsi molto spazio nelle gerarchie"
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "playerId": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
-        "name": "Doekhi",
-        "points": [
-          "Forte sulle palle inattive"
-        ]
-      }
-    ]
-  },
   "ROM": {
     "code": "ROM",
     "name": "Roma",
@@ -8715,6 +8163,558 @@ export const SOS_TEAMS_DATA = {
         "name": "Hermoso",
         "points": [
           "Molto costante nelle prestazioni"
+        ]
+      }
+    ]
+  },
+  "LAZ": {
+    "code": "LAZ",
+    "name": "Lazio",
+    "city": "Roma",
+    "stadium": "Stadio Olimpico",
+    "primaryColor": "#87ceeb",
+    "secondaryColor": "#ffffff",
+    "accentColor": "#002b49",
+    "coach": "Gennaro Gattuso",
+    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Gattuso.webp",
+    "defaultFormation": "4-3-3",
+    "module": "4-3-3",
+    "attackRating": 3.5,
+    "defenseRating": 4.0,
+    "comment": "Torna alla Lazio dopo il biennio 2022-2024 con idee chiare e un gioco che conosciamo fin troppo bene. Il suo 4-3-3 si fonda su possesso palla, costruzione ragionata e movimenti codificati. Predilige giocatori tecnici e intelligenti: chi sta in mezzo deve saper palleggiare e inserirsi, mentre chi gioca largo ha il compito di dare ampiezza e saltare l’uomo. Il centravanti, invece, non può limitarsi a finalizzare: deve partecipare attivamente alla manovra. Chi ha già lavorato con lui parte favorito in chiave fantacalcio, mentre i nuovi potrebbero aver bisogno di tempo per assimilare i meccanismi.",
+    "sosFantaComment": "Grande avvio di stagione per la Lazio di Rino Gattuso, che ha proseguito col 4-3-3 della scorsa stagione ma sono cambiati i principi. Doekhi o Sutalo al centro della difesa, gioca chi sta meglio e dipende anche dall'avversario. Stesso discorso a destra tra Marusic e Floriani Mussolini. Belahyane ha risposto presente, aspettando i recuperi al 100% di Rovella e Cataldi: sono loro tre in corsa per un posto. Sorpresa Noslin, prova a insidiare Pinamonti che comunque rimane il titolare sulla carta. A destra Cancellieri o Isaksen, testa a testa e c'è anche il jolly Gudmundsson che può ricoprire tutti i ruoli nel tridente e fare anche la mezzala di 'scorta'.",
+    "keyPoints": [
+      {
+        "text": "Punta centrale riferimento principale ",
+        "tone": "good"
+      },
+      {
+        "text": "Gioco aggressivo, cartellini e falli elevati",
+        "tone": "bad"
+      },
+      {
+        "text": "Esterni di difesa propositivi",
+        "tone": "good"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "att-center",
+        "tone": "good"
+      },
+      {
+        "role": "def-fullbacks",
+        "tone": "good"
+      },
+      {
+        "role": "mid-holding",
+        "tone": "bad"
+      }
+    ],
+    "starters": [
+      {
+        "playerId": "c005a40e-c9d9-4673-94b5-1c85551c4460",
+        "csvId": 6482,
+        "name": "Mandas",
+        "role": "P"
+      },
+      {
+        "playerId": "46cb2e9f-1fe6-459b-87b0-af6cb7f17417",
+        "csvId": "2188",
+        "name": "Marusic",
+        "role": "D"
+      },
+      {
+        "playerId": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
+        "csvId": 6320,
+        "name": "Doekhi",
+        "role": "D"
+      },
+      {
+        "playerId": "19139ae2-8ceb-4f21-9980-134c64d95c92",
+        "csvId": 7012,
+        "name": "Provstgaard",
+        "role": "D"
+      },
+      {
+        "playerId": "e0da5b59-193d-4063-8b09-f6a556e70afd",
+        "csvId": 5620,
+        "name": "Tavares N.",
+        "role": "D"
+      },
+      {
+        "playerId": "51f0abe3-4fe5-42fb-9994-34fbddcb56d5",
+        "csvId": 2848,
+        "name": "Frattesi",
+        "role": "C"
+      },
+      {
+        "playerId": "eb46d3ff-e668-421c-8274-0716cdb571b2",
+        "csvId": 4459,
+        "name": "Rovella",
+        "role": "C"
+      },
+      {
+        "playerId": "38edda0f-f801-4946-b49b-cd87541fa645",
+        "csvId": 7314,
+        "name": "Taylor K.",
+        "role": "C"
+      },
+      {
+        "playerId": "b82add03-f6f8-4788-94a2-4d9165698df5",
+        "csvId": 5500,
+        "name": "Cancellieri",
+        "role": "C"
+      },
+      {
+        "playerId": "36aefe1e-18af-4824-9091-ef98f30c9778",
+        "csvId": "632",
+        "name": "Zaccagni",
+        "role": "C"
+      },
+      {
+        "playerId": "ced01d22-1684-45d0-bcde-9898ff26ae86",
+        "csvId": 2038,
+        "name": "Pinamonti",
+        "role": "A"
+      }
+    ],
+    "rig": [
+      {
+        "playerId": "36aefe1e-18af-4824-9091-ef98f30c9778",
+        "name": "Zaccagni",
+        "role": "C"
+      },
+      {
+        "playerId": "38edda0f-f801-4946-b49b-cd87541fa645",
+        "name": "Taylor K.",
+        "role": "C"
+      },
+      {
+        "playerId": "ced01d22-1684-45d0-bcde-9898ff26ae86",
+        "name": "Pinamonti",
+        "role": "A"
+      }
+    ],
+    "pun": [
+      {
+        "playerId": "36aefe1e-18af-4824-9091-ef98f30c9778",
+        "name": "Zaccagni",
+        "role": "C"
+      },
+      {
+        "playerId": "1392a871-45c8-4782-8b9e-583c324b8eec",
+        "name": "Cataldi",
+        "role": "C"
+      }
+    ],
+    "corner": [
+      {
+        "playerId": "36aefe1e-18af-4824-9091-ef98f30c9778",
+        "name": "Zaccagni",
+        "role": "C"
+      },
+      {
+        "playerId": "38edda0f-f801-4946-b49b-cd87541fa645",
+        "name": "Taylor K.",
+        "role": "C"
+      },
+      {
+        "playerId": "eb46d3ff-e668-421c-8274-0716cdb571b2",
+        "name": "Rovella",
+        "role": "C"
+      }
+    ],
+    "ballottaggi": [
+      [
+        {
+          "playerId": "eb46d3ff-e668-421c-8274-0716cdb571b2",
+          "name": "Rovella",
+          "role": "C",
+          "perc": 55
+        },
+        {
+          "playerId": "1392a871-45c8-4782-8b9e-583c324b8eec",
+          "name": "Cataldi",
+          "role": "C",
+          "perc": 45
+        }
+      ],
+      [
+        {
+          "playerId": "c571ffe8-70c1-40b4-8175-6752f18eae5f",
+          "name": "Sutalo J.",
+          "role": "D",
+          "perc": 55
+        },
+        {
+          "playerId": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
+          "name": "Doekhi",
+          "role": "D",
+          "perc": 45
+        }
+      ],
+      [
+        {
+          "playerId": "b82add03-f6f8-4788-94a2-4d9165698df5",
+          "name": "Cancellieri",
+          "role": "C",
+          "perc": 51
+        },
+        {
+          "playerId": "1d26239a-02e3-4ee4-9c63-17d5dcb9b5be",
+          "name": "Isaksen",
+          "role": "C",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "46cb2e9f-1fe6-459b-87b0-af6cb7f17417",
+          "name": "Marusic",
+          "role": "D",
+          "perc": 51
+        },
+        {
+          "playerId": "e776d386-f107-4da9-8341-55a10fdf6c44",
+          "name": "Floriani Mussolini",
+          "role": "D",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "ced01d22-1684-45d0-bcde-9898ff26ae86",
+          "name": "Pinamonti",
+          "role": "A",
+          "perc": 51
+        },
+        {
+          "playerId": "b802051e-a34a-49ab-a8e4-7bf11ded728e",
+          "name": "Noslin",
+          "role": "A",
+          "perc": 49
+        }
+      ]
+    ],
+    "up": [
+      {
+        "playerId": "51f0abe3-4fe5-42fb-9994-34fbddcb56d5",
+        "name": "Frattesi",
+        "points": [
+          "Utile negli inserimenti richiesti dal mister",
+          "Propensione alla fase offensiva"
+        ]
+      },
+      {
+        "playerId": "36aefe1e-18af-4824-9091-ef98f30c9778",
+        "name": "Zaccagni",
+        "points": [
+          "Fantasista della squadra",
+          "Fulcro del gioco offensivo"
+        ]
+      }
+    ],
+    "down": [
+      {
+        "playerId": "eb46d3ff-e668-421c-8274-0716cdb571b2",
+        "name": "Rovella",
+        "points": [
+          "Propensione a cartellini nel gioco di Gattuso"
+        ]
+      }
+    ],
+    "young": [
+      {
+        "playerId": "19139ae2-8ceb-4f21-9980-134c64d95c92",
+        "name": "Provstgaard",
+        "points": [
+          "Può ricavarsi molto spazio nelle gerarchie"
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "playerId": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
+        "name": "Doekhi",
+        "points": [
+          "Forte sulle palle inattive"
+        ]
+      }
+    ]
+  },
+  "lazio": {
+    "code": "LAZ",
+    "name": "Lazio",
+    "city": "Roma",
+    "stadium": "Stadio Olimpico",
+    "primaryColor": "#87ceeb",
+    "secondaryColor": "#ffffff",
+    "accentColor": "#002b49",
+    "coach": "Gennaro Gattuso",
+    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Gattuso.webp",
+    "defaultFormation": "4-3-3",
+    "module": "4-3-3",
+    "attackRating": 3.5,
+    "defenseRating": 4.0,
+    "comment": "Torna alla Lazio dopo il biennio 2022-2024 con idee chiare e un gioco che conosciamo fin troppo bene. Il suo 4-3-3 si fonda su possesso palla, costruzione ragionata e movimenti codificati. Predilige giocatori tecnici e intelligenti: chi sta in mezzo deve saper palleggiare e inserirsi, mentre chi gioca largo ha il compito di dare ampiezza e saltare l’uomo. Il centravanti, invece, non può limitarsi a finalizzare: deve partecipare attivamente alla manovra. Chi ha già lavorato con lui parte favorito in chiave fantacalcio, mentre i nuovi potrebbero aver bisogno di tempo per assimilare i meccanismi.",
+    "sosFantaComment": "Grande avvio di stagione per la Lazio di Rino Gattuso, che ha proseguito col 4-3-3 della scorsa stagione ma sono cambiati i principi. Doekhi o Sutalo al centro della difesa, gioca chi sta meglio e dipende anche dall'avversario. Stesso discorso a destra tra Marusic e Floriani Mussolini. Belahyane ha risposto presente, aspettando i recuperi al 100% di Rovella e Cataldi: sono loro tre in corsa per un posto. Sorpresa Noslin, prova a insidiare Pinamonti che comunque rimane il titolare sulla carta. A destra Cancellieri o Isaksen, testa a testa e c'è anche il jolly Gudmundsson che può ricoprire tutti i ruoli nel tridente e fare anche la mezzala di 'scorta'.",
+    "keyPoints": [
+      {
+        "text": "Punta centrale riferimento principale ",
+        "tone": "good"
+      },
+      {
+        "text": "Gioco aggressivo, cartellini e falli elevati",
+        "tone": "bad"
+      },
+      {
+        "text": "Esterni di difesa propositivi",
+        "tone": "good"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "att-center",
+        "tone": "good"
+      },
+      {
+        "role": "def-fullbacks",
+        "tone": "good"
+      },
+      {
+        "role": "mid-holding",
+        "tone": "bad"
+      }
+    ],
+    "starters": [
+      {
+        "playerId": "c005a40e-c9d9-4673-94b5-1c85551c4460",
+        "csvId": 6482,
+        "name": "Mandas",
+        "role": "P"
+      },
+      {
+        "playerId": "46cb2e9f-1fe6-459b-87b0-af6cb7f17417",
+        "csvId": "2188",
+        "name": "Marusic",
+        "role": "D"
+      },
+      {
+        "playerId": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
+        "csvId": 6320,
+        "name": "Doekhi",
+        "role": "D"
+      },
+      {
+        "playerId": "19139ae2-8ceb-4f21-9980-134c64d95c92",
+        "csvId": 7012,
+        "name": "Provstgaard",
+        "role": "D"
+      },
+      {
+        "playerId": "e0da5b59-193d-4063-8b09-f6a556e70afd",
+        "csvId": 5620,
+        "name": "Tavares N.",
+        "role": "D"
+      },
+      {
+        "playerId": "51f0abe3-4fe5-42fb-9994-34fbddcb56d5",
+        "csvId": 2848,
+        "name": "Frattesi",
+        "role": "C"
+      },
+      {
+        "playerId": "eb46d3ff-e668-421c-8274-0716cdb571b2",
+        "csvId": 4459,
+        "name": "Rovella",
+        "role": "C"
+      },
+      {
+        "playerId": "38edda0f-f801-4946-b49b-cd87541fa645",
+        "csvId": 7314,
+        "name": "Taylor K.",
+        "role": "C"
+      },
+      {
+        "playerId": "b82add03-f6f8-4788-94a2-4d9165698df5",
+        "csvId": 5500,
+        "name": "Cancellieri",
+        "role": "C"
+      },
+      {
+        "playerId": "36aefe1e-18af-4824-9091-ef98f30c9778",
+        "csvId": "632",
+        "name": "Zaccagni",
+        "role": "C"
+      },
+      {
+        "playerId": "ced01d22-1684-45d0-bcde-9898ff26ae86",
+        "csvId": 2038,
+        "name": "Pinamonti",
+        "role": "A"
+      }
+    ],
+    "rig": [
+      {
+        "playerId": "36aefe1e-18af-4824-9091-ef98f30c9778",
+        "name": "Zaccagni",
+        "role": "C"
+      },
+      {
+        "playerId": "38edda0f-f801-4946-b49b-cd87541fa645",
+        "name": "Taylor K.",
+        "role": "C"
+      },
+      {
+        "playerId": "ced01d22-1684-45d0-bcde-9898ff26ae86",
+        "name": "Pinamonti",
+        "role": "A"
+      }
+    ],
+    "pun": [
+      {
+        "playerId": "36aefe1e-18af-4824-9091-ef98f30c9778",
+        "name": "Zaccagni",
+        "role": "C"
+      },
+      {
+        "playerId": "1392a871-45c8-4782-8b9e-583c324b8eec",
+        "name": "Cataldi",
+        "role": "C"
+      }
+    ],
+    "corner": [
+      {
+        "playerId": "36aefe1e-18af-4824-9091-ef98f30c9778",
+        "name": "Zaccagni",
+        "role": "C"
+      },
+      {
+        "playerId": "38edda0f-f801-4946-b49b-cd87541fa645",
+        "name": "Taylor K.",
+        "role": "C"
+      },
+      {
+        "playerId": "eb46d3ff-e668-421c-8274-0716cdb571b2",
+        "name": "Rovella",
+        "role": "C"
+      }
+    ],
+    "ballottaggi": [
+      [
+        {
+          "playerId": "eb46d3ff-e668-421c-8274-0716cdb571b2",
+          "name": "Rovella",
+          "role": "C",
+          "perc": 55
+        },
+        {
+          "playerId": "1392a871-45c8-4782-8b9e-583c324b8eec",
+          "name": "Cataldi",
+          "role": "C",
+          "perc": 45
+        }
+      ],
+      [
+        {
+          "playerId": "c571ffe8-70c1-40b4-8175-6752f18eae5f",
+          "name": "Sutalo J.",
+          "role": "D",
+          "perc": 55
+        },
+        {
+          "playerId": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
+          "name": "Doekhi",
+          "role": "D",
+          "perc": 45
+        }
+      ],
+      [
+        {
+          "playerId": "b82add03-f6f8-4788-94a2-4d9165698df5",
+          "name": "Cancellieri",
+          "role": "C",
+          "perc": 51
+        },
+        {
+          "playerId": "1d26239a-02e3-4ee4-9c63-17d5dcb9b5be",
+          "name": "Isaksen",
+          "role": "C",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "46cb2e9f-1fe6-459b-87b0-af6cb7f17417",
+          "name": "Marusic",
+          "role": "D",
+          "perc": 51
+        },
+        {
+          "playerId": "e776d386-f107-4da9-8341-55a10fdf6c44",
+          "name": "Floriani Mussolini",
+          "role": "D",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "ced01d22-1684-45d0-bcde-9898ff26ae86",
+          "name": "Pinamonti",
+          "role": "A",
+          "perc": 51
+        },
+        {
+          "playerId": "b802051e-a34a-49ab-a8e4-7bf11ded728e",
+          "name": "Noslin",
+          "role": "A",
+          "perc": 49
+        }
+      ]
+    ],
+    "up": [
+      {
+        "playerId": "51f0abe3-4fe5-42fb-9994-34fbddcb56d5",
+        "name": "Frattesi",
+        "points": [
+          "Utile negli inserimenti richiesti dal mister",
+          "Propensione alla fase offensiva"
+        ]
+      },
+      {
+        "playerId": "36aefe1e-18af-4824-9091-ef98f30c9778",
+        "name": "Zaccagni",
+        "points": [
+          "Fantasista della squadra",
+          "Fulcro del gioco offensivo"
+        ]
+      }
+    ],
+    "down": [
+      {
+        "playerId": "eb46d3ff-e668-421c-8274-0716cdb571b2",
+        "name": "Rovella",
+        "points": [
+          "Propensione a cartellini nel gioco di Gattuso"
+        ]
+      }
+    ],
+    "young": [
+      {
+        "playerId": "19139ae2-8ceb-4f21-9980-134c64d95c92",
+        "name": "Provstgaard",
+        "points": [
+          "Può ricavarsi molto spazio nelle gerarchie"
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "playerId": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
+        "name": "Doekhi",
+        "points": [
+          "Forte sulle palle inattive"
         ]
       }
     ]
