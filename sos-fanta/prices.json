@@ -1972,7 +1972,7 @@
   {
     "player_id": "aab3ee14-90d4-4eec-af47-33514cb8a009",
     "price": 1,
-    "in_listone": true
+    "in_listone": false
   },
   {
     "player_id": "aafed9d1-94e6-46a4-b6a6-9747f82b9576",
@@ -2172,6 +2172,11 @@
   {
     "player_id": "bb0e0e1e-c1f8-4676-94d1-ec1358aff228",
     "price": 1,
+    "in_listone": true
+  },
+  {
+    "player_id": "bb2086fc-abc8-45f0-b298-95dc4cecde1e",
+    "price": 3,
     "in_listone": true
   },
   {

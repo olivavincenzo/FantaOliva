@@ -519,466 +519,6 @@ export const SOS_TEAMS_DATA = {
       }
     ]
   },
-  "PAR": {
-    "code": "PAR",
-    "name": "Parma",
-    "city": "Parma",
-    "stadium": "Ennio Tardini",
-    "primaryColor": "#ffd700",
-    "secondaryColor": "#003399",
-    "accentColor": "#000000",
-    "coach": "Carlos Cuesta",
-    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Cuesta.webp",
-    "defaultFormation": "3-4-2-1",
-    "module": "3-4-2-1",
-    "attackRating": 2.0,
-    "defenseRating": 2.5,
-    "comment": "ll nuovo Parma abbraccia un calcio moderno e ambizioso: pressing alto, scambi di posizione e ricerca costante della superiorità numerica. Un’impronta propositiva che può tradursi in bonus preziosi per i fantallenatori. Il mantra sarà il coraggio nelle giocate e la fluidità tra i reparti. Per rendere efficace il sistema serviranno interpreti duttili, tecnici e dinamici: il mercato estivo sarà quindi decisivo. Nel precampionato è stata testata la difesa a tre, con Delprato e Valeri schierati da quinti per garantire ampiezza e spinta. Le due punte saranno supportate da centrocampisti offensivi e inserimenti continui.",
-    "sosFantaComment": "Confermato Cuesta in panchina nel Parma, è subito tornato al 3-4-2-1 dopo aver provato la difesa a 4. A centrocampo i titolari sono Keita e Bernabé, ma troverà spazio anche Sierro. In attacco i tre titolari sono: El Bilal Touré, Romero e il baby Lontani, vera e propria sorpresa di questa prima parte di stagione. Senza dimenticare Elphege. In alcune gare, potrà giocare Fabbian sulla trequarti per dare maggior solidità.",
-    "keyPoints": [
-      {
-        "text": "Solidità difensiva",
-        "tone": "good"
-      },
-      {
-        "text": "Molti cross verso la punta centrale",
-        "tone": "neutral"
-      },
-      {
-        "text": "Poca efficacia offensiva",
-        "tone": "bad"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "mid-wide",
-        "tone": "good"
-      },
-      {
-        "role": "mid-holding",
-        "tone": "bad"
-      }
-    ],
-    "starters": [
-      {
-        "playerId": "2d677888-6808-453b-976b-a9bde9d6c7e4",
-        "csvId": 6662,
-        "name": "Corvi",
-        "role": "P"
-      },
-      {
-        "playerId": "0ea3b547-311e-4fa7-a58a-26f37efb05f5",
-        "csvId": 6664,
-        "name": "Delprato",
-        "role": "D"
-      },
-      {
-        "playerId": "b13f6c95-3e12-4745-85eb-c646483bea89",
-        "csvId": 7235,
-        "name": "Troilo",
-        "role": "D"
-      },
-      {
-        "playerId": "1b344136-9333-44d3-a27e-e9a80f819cea",
-        "csvId": 4137,
-        "name": "Diego Carlos",
-        "role": "D"
-      },
-      {
-        "playerId": "eb1e8211-468b-4db8-b9be-1a15afa2339d",
-        "csvId": 7255,
-        "name": "Britschgi",
-        "role": "D"
-      },
-      {
-        "playerId": "4505706f-e4f1-483b-995c-6c12460a2fe7",
-        "csvId": 5862,
-        "name": "Valeri",
-        "role": "D"
-      },
-      {
-        "playerId": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
-        "csvId": 6666,
-        "name": "Bernabè",
-        "role": "C"
-      },
-      {
-        "playerId": "9ce7c50c-4dc1-427e-ab59-516c891e2ffb",
-        "csvId": 6898,
-        "name": "Keita M.",
-        "role": "C"
-      },
-      {
-        "playerId": "280d15dc-3cf6-47ec-ad41-19b983b09d20",
-        "csvId": 6229,
-        "name": "Tourè E.",
-        "role": "A"
-      },
-      {
-        "playerId": "2e331f32-cc88-4a67-b471-f05a2db80063",
-        "csvId": 7561,
-        "name": "",
-        "role": ""
-      },
-      {
-        "playerId": "eb01cf4b-a689-4016-8c30-0e7b058d0210",
-        "csvId": 7554,
-        "name": "Romero D.",
-        "role": "A"
-      }
-    ],
-    "rig": [
-      {
-        "playerId": "280d15dc-3cf6-47ec-ad41-19b983b09d20",
-        "name": "Tourè E.",
-        "role": "A"
-      },
-      {
-        "playerId": "d063038f-c807-450b-a1a0-4ef17966dddc",
-        "name": "Elphege",
-        "role": "A"
-      },
-      {
-        "playerId": "4505706f-e4f1-483b-995c-6c12460a2fe7",
-        "name": "Valeri",
-        "role": "D"
-      }
-    ],
-    "pun": [
-      {
-        "playerId": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
-        "name": "Bernabè",
-        "role": "C"
-      },
-      {
-        "playerId": "97d6767e-9030-4c03-bb3b-80d0b33b4b82",
-        "name": "Nicolussi Caviglia",
-        "role": "C"
-      }
-    ],
-    "corner": [
-      {
-        "playerId": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
-        "name": "Bernabè",
-        "role": "C"
-      },
-      {
-        "playerId": "97d6767e-9030-4c03-bb3b-80d0b33b4b82",
-        "name": "Nicolussi Caviglia",
-        "role": "C"
-      },
-      {
-        "playerId": "4505706f-e4f1-483b-995c-6c12460a2fe7",
-        "name": "Valeri",
-        "role": "D"
-      }
-    ],
-    "ballottaggi": [
-      [
-        {
-          "playerId": "eb01cf4b-a689-4016-8c30-0e7b058d0210",
-          "name": "Romero D.",
-          "role": "A",
-          "perc": 60
-        },
-        {
-          "playerId": "d063038f-c807-450b-a1a0-4ef17966dddc",
-          "name": "Elphege",
-          "role": "A",
-          "perc": 40
-        }
-      ],
-      [
-        {
-          "playerId": "2e331f32-cc88-4a67-b471-f05a2db80063",
-          "name": "",
-          "role": "",
-          "perc": 60
-        },
-        {
-          "playerId": "72b2eb13-c625-4fd5-b0e1-349d05f9e2e6",
-          "name": "Fabbian",
-          "role": "C",
-          "perc": 40
-        }
-      ]
-    ],
-    "up": [
-      {
-        "playerId": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
-        "name": "Bernabè",
-        "points": [
-          "Riferimento tecnico del centrocampo",
-          "Impiegato molto in fase offensiva"
-        ]
-      },
-      {
-        "playerId": "4505706f-e4f1-483b-995c-6c12460a2fe7",
-        "name": "Valeri",
-        "points": [
-          "Tiratore di corner.",
-          "Ottimi cross per la punta."
-        ]
-      }
-    ],
-    "down": [
-      {
-        "playerId": "13034c80-e0fe-41b2-afdf-fcd19188d226",
-        "name": "Ordonez C.",
-        "points": [
-          "Responsabilità prettsmente difensive"
-        ]
-      }
-    ],
-    "young": [
-      {
-        "playerId": "2e331f32-cc88-4a67-b471-f05a2db80063",
-        "name": "",
-        "points": [
-          "Sta scalando velocemente le gerarchie"
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "playerId": "0ea3b547-311e-4fa7-a58a-26f37efb05f5",
-        "name": "Delprato",
-        "points": [
-          "Coinvolto nella fase offensiva"
-        ]
-      }
-    ]
-  },
-  "parma": {
-    "code": "PAR",
-    "name": "Parma",
-    "city": "Parma",
-    "stadium": "Ennio Tardini",
-    "primaryColor": "#ffd700",
-    "secondaryColor": "#003399",
-    "accentColor": "#000000",
-    "coach": "Carlos Cuesta",
-    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Cuesta.webp",
-    "defaultFormation": "3-4-2-1",
-    "module": "3-4-2-1",
-    "attackRating": 2.0,
-    "defenseRating": 2.5,
-    "comment": "ll nuovo Parma abbraccia un calcio moderno e ambizioso: pressing alto, scambi di posizione e ricerca costante della superiorità numerica. Un’impronta propositiva che può tradursi in bonus preziosi per i fantallenatori. Il mantra sarà il coraggio nelle giocate e la fluidità tra i reparti. Per rendere efficace il sistema serviranno interpreti duttili, tecnici e dinamici: il mercato estivo sarà quindi decisivo. Nel precampionato è stata testata la difesa a tre, con Delprato e Valeri schierati da quinti per garantire ampiezza e spinta. Le due punte saranno supportate da centrocampisti offensivi e inserimenti continui.",
-    "sosFantaComment": "Confermato Cuesta in panchina nel Parma, è subito tornato al 3-4-2-1 dopo aver provato la difesa a 4. A centrocampo i titolari sono Keita e Bernabé, ma troverà spazio anche Sierro. In attacco i tre titolari sono: El Bilal Touré, Romero e il baby Lontani, vera e propria sorpresa di questa prima parte di stagione. Senza dimenticare Elphege. In alcune gare, potrà giocare Fabbian sulla trequarti per dare maggior solidità.",
-    "keyPoints": [
-      {
-        "text": "Solidità difensiva",
-        "tone": "good"
-      },
-      {
-        "text": "Molti cross verso la punta centrale",
-        "tone": "neutral"
-      },
-      {
-        "text": "Poca efficacia offensiva",
-        "tone": "bad"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "mid-wide",
-        "tone": "good"
-      },
-      {
-        "role": "mid-holding",
-        "tone": "bad"
-      }
-    ],
-    "starters": [
-      {
-        "playerId": "2d677888-6808-453b-976b-a9bde9d6c7e4",
-        "csvId": 6662,
-        "name": "Corvi",
-        "role": "P"
-      },
-      {
-        "playerId": "0ea3b547-311e-4fa7-a58a-26f37efb05f5",
-        "csvId": 6664,
-        "name": "Delprato",
-        "role": "D"
-      },
-      {
-        "playerId": "b13f6c95-3e12-4745-85eb-c646483bea89",
-        "csvId": 7235,
-        "name": "Troilo",
-        "role": "D"
-      },
-      {
-        "playerId": "1b344136-9333-44d3-a27e-e9a80f819cea",
-        "csvId": 4137,
-        "name": "Diego Carlos",
-        "role": "D"
-      },
-      {
-        "playerId": "eb1e8211-468b-4db8-b9be-1a15afa2339d",
-        "csvId": 7255,
-        "name": "Britschgi",
-        "role": "D"
-      },
-      {
-        "playerId": "4505706f-e4f1-483b-995c-6c12460a2fe7",
-        "csvId": 5862,
-        "name": "Valeri",
-        "role": "D"
-      },
-      {
-        "playerId": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
-        "csvId": 6666,
-        "name": "Bernabè",
-        "role": "C"
-      },
-      {
-        "playerId": "9ce7c50c-4dc1-427e-ab59-516c891e2ffb",
-        "csvId": 6898,
-        "name": "Keita M.",
-        "role": "C"
-      },
-      {
-        "playerId": "280d15dc-3cf6-47ec-ad41-19b983b09d20",
-        "csvId": 6229,
-        "name": "Tourè E.",
-        "role": "A"
-      },
-      {
-        "playerId": "2e331f32-cc88-4a67-b471-f05a2db80063",
-        "csvId": 7561,
-        "name": "",
-        "role": ""
-      },
-      {
-        "playerId": "eb01cf4b-a689-4016-8c30-0e7b058d0210",
-        "csvId": 7554,
-        "name": "Romero D.",
-        "role": "A"
-      }
-    ],
-    "rig": [
-      {
-        "playerId": "280d15dc-3cf6-47ec-ad41-19b983b09d20",
-        "name": "Tourè E.",
-        "role": "A"
-      },
-      {
-        "playerId": "d063038f-c807-450b-a1a0-4ef17966dddc",
-        "name": "Elphege",
-        "role": "A"
-      },
-      {
-        "playerId": "4505706f-e4f1-483b-995c-6c12460a2fe7",
-        "name": "Valeri",
-        "role": "D"
-      }
-    ],
-    "pun": [
-      {
-        "playerId": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
-        "name": "Bernabè",
-        "role": "C"
-      },
-      {
-        "playerId": "97d6767e-9030-4c03-bb3b-80d0b33b4b82",
-        "name": "Nicolussi Caviglia",
-        "role": "C"
-      }
-    ],
-    "corner": [
-      {
-        "playerId": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
-        "name": "Bernabè",
-        "role": "C"
-      },
-      {
-        "playerId": "97d6767e-9030-4c03-bb3b-80d0b33b4b82",
-        "name": "Nicolussi Caviglia",
-        "role": "C"
-      },
-      {
-        "playerId": "4505706f-e4f1-483b-995c-6c12460a2fe7",
-        "name": "Valeri",
-        "role": "D"
-      }
-    ],
-    "ballottaggi": [
-      [
-        {
-          "playerId": "eb01cf4b-a689-4016-8c30-0e7b058d0210",
-          "name": "Romero D.",
-          "role": "A",
-          "perc": 60
-        },
-        {
-          "playerId": "d063038f-c807-450b-a1a0-4ef17966dddc",
-          "name": "Elphege",
-          "role": "A",
-          "perc": 40
-        }
-      ],
-      [
-        {
-          "playerId": "2e331f32-cc88-4a67-b471-f05a2db80063",
-          "name": "",
-          "role": "",
-          "perc": 60
-        },
-        {
-          "playerId": "72b2eb13-c625-4fd5-b0e1-349d05f9e2e6",
-          "name": "Fabbian",
-          "role": "C",
-          "perc": 40
-        }
-      ]
-    ],
-    "up": [
-      {
-        "playerId": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
-        "name": "Bernabè",
-        "points": [
-          "Riferimento tecnico del centrocampo",
-          "Impiegato molto in fase offensiva"
-        ]
-      },
-      {
-        "playerId": "4505706f-e4f1-483b-995c-6c12460a2fe7",
-        "name": "Valeri",
-        "points": [
-          "Tiratore di corner.",
-          "Ottimi cross per la punta."
-        ]
-      }
-    ],
-    "down": [
-      {
-        "playerId": "13034c80-e0fe-41b2-afdf-fcd19188d226",
-        "name": "Ordonez C.",
-        "points": [
-          "Responsabilità prettsmente difensive"
-        ]
-      }
-    ],
-    "young": [
-      {
-        "playerId": "2e331f32-cc88-4a67-b471-f05a2db80063",
-        "name": "",
-        "points": [
-          "Sta scalando velocemente le gerarchie"
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "playerId": "0ea3b547-311e-4fa7-a58a-26f37efb05f5",
-        "name": "Delprato",
-        "points": [
-          "Coinvolto nella fase offensiva"
-        ]
-      }
-    ]
-  },
   "LEC": {
     "code": "LEC",
     "name": "Lecce",
@@ -3787,9 +3327,9 @@ export const SOS_TEAMS_DATA = {
         "role": "D"
       },
       {
-        "playerId": "349b1554-cf28-42c6-bc65-6582f28a0f5b",
-        "csvId": 5319,
-        "name": "Sohm",
+        "playerId": "91398549-f981-4cf1-85fd-ddf3b2d5bdab",
+        "csvId": 6994,
+        "name": "Perez K.",
         "role": "C"
       },
       {
@@ -3880,14 +3420,14 @@ export const SOS_TEAMS_DATA = {
       ],
       [
         {
-          "playerId": "349b1554-cf28-42c6-bc65-6582f28a0f5b",
-          "name": "Sohm",
+          "playerId": "91398549-f981-4cf1-85fd-ddf3b2d5bdab",
+          "name": "Perez K.",
           "role": "C",
           "perc": 55
         },
         {
-          "playerId": "91398549-f981-4cf1-85fd-ddf3b2d5bdab",
-          "name": "Perez K.",
+          "playerId": "349b1554-cf28-42c6-bc65-6582f28a0f5b",
+          "name": "Sohm",
           "role": "C",
           "perc": 45
         }
@@ -4035,9 +3575,9 @@ export const SOS_TEAMS_DATA = {
         "role": "D"
       },
       {
-        "playerId": "349b1554-cf28-42c6-bc65-6582f28a0f5b",
-        "csvId": 5319,
-        "name": "Sohm",
+        "playerId": "91398549-f981-4cf1-85fd-ddf3b2d5bdab",
+        "csvId": 6994,
+        "name": "Perez K.",
         "role": "C"
       },
       {
@@ -4128,14 +3668,14 @@ export const SOS_TEAMS_DATA = {
       ],
       [
         {
-          "playerId": "349b1554-cf28-42c6-bc65-6582f28a0f5b",
-          "name": "Sohm",
+          "playerId": "91398549-f981-4cf1-85fd-ddf3b2d5bdab",
+          "name": "Perez K.",
           "role": "C",
           "perc": 55
         },
         {
-          "playerId": "91398549-f981-4cf1-85fd-ddf3b2d5bdab",
-          "name": "Perez K.",
+          "playerId": "349b1554-cf28-42c6-bc65-6582f28a0f5b",
+          "name": "Sohm",
           "role": "C",
           "perc": 45
         }
@@ -5261,9 +4801,9 @@ export const SOS_TEAMS_DATA = {
         "role": "D"
       },
       {
-        "playerId": "54398484-ccc0-43e1-b9a1-716b35d836d1",
-        "csvId": 7260,
-        "name": "Ziolkowski",
+        "playerId": "b6596869-9189-4e7e-910b-d56d056ee034",
+        "csvId": 6659,
+        "name": "Lucchesi",
         "role": "D"
       },
       {
@@ -5297,16 +4837,16 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
+        "playerId": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
+        "csvId": 5878,
+        "name": "Colpani",
+        "role": "C"
+      },
+      {
         "playerId": "6a2d0ee2-6bae-42d1-9cfd-06994a361b3d",
         "csvId": 7546,
         "name": "Robinson J.",
         "role": "A"
-      },
-      {
-        "playerId": "8194c04b-9af2-4f63-af75-712ae72e0842",
-        "csvId": 7620,
-        "name": "",
-        "role": ""
       },
       {
         "playerId": "0053b230-688b-4fef-90f5-b823c64ea378",
@@ -5521,9 +5061,9 @@ export const SOS_TEAMS_DATA = {
         "role": "D"
       },
       {
-        "playerId": "54398484-ccc0-43e1-b9a1-716b35d836d1",
-        "csvId": 7260,
-        "name": "Ziolkowski",
+        "playerId": "b6596869-9189-4e7e-910b-d56d056ee034",
+        "csvId": 6659,
+        "name": "Lucchesi",
         "role": "D"
       },
       {
@@ -5557,16 +5097,16 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
+        "playerId": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
+        "csvId": 5878,
+        "name": "Colpani",
+        "role": "C"
+      },
+      {
         "playerId": "6a2d0ee2-6bae-42d1-9cfd-06994a361b3d",
         "csvId": 7546,
         "name": "Robinson J.",
         "role": "A"
-      },
-      {
-        "playerId": "8194c04b-9af2-4f63-af75-712ae72e0842",
-        "csvId": 7620,
-        "name": "",
-        "role": ""
       },
       {
         "playerId": "0053b230-688b-4fef-90f5-b823c64ea378",
@@ -8225,9 +7765,9 @@ export const SOS_TEAMS_DATA = {
         "role": "D"
       },
       {
-        "playerId": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
-        "csvId": 6320,
-        "name": "Doekhi",
+        "playerId": "c571ffe8-70c1-40b4-8175-6752f18eae5f",
+        "csvId": 7580,
+        "name": "Sutalo J.",
         "role": "D"
       },
       {
@@ -8435,10 +7975,10 @@ export const SOS_TEAMS_DATA = {
     ],
     "hidden": [
       {
-        "playerId": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
-        "name": "Doekhi",
+        "playerId": "b82add03-f6f8-4788-94a2-4d9165698df5",
+        "name": "Cancellieri",
         "points": [
-          "Forte sulle palle inattive"
+          "Utilizzato spesso e in zona offensiva"
         ]
       }
     ]
@@ -8501,9 +8041,9 @@ export const SOS_TEAMS_DATA = {
         "role": "D"
       },
       {
-        "playerId": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
-        "csvId": 6320,
-        "name": "Doekhi",
+        "playerId": "c571ffe8-70c1-40b4-8175-6752f18eae5f",
+        "csvId": 7580,
+        "name": "Sutalo J.",
         "role": "D"
       },
       {
@@ -8711,10 +8251,470 @@ export const SOS_TEAMS_DATA = {
     ],
     "hidden": [
       {
-        "playerId": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
-        "name": "Doekhi",
+        "playerId": "b82add03-f6f8-4788-94a2-4d9165698df5",
+        "name": "Cancellieri",
         "points": [
-          "Forte sulle palle inattive"
+          "Utilizzato spesso e in zona offensiva"
+        ]
+      }
+    ]
+  },
+  "PAR": {
+    "code": "PAR",
+    "name": "Parma",
+    "city": "Parma",
+    "stadium": "Ennio Tardini",
+    "primaryColor": "#ffd700",
+    "secondaryColor": "#003399",
+    "accentColor": "#000000",
+    "coach": "Carlos Cuesta",
+    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Cuesta.webp",
+    "defaultFormation": "3-4-2-1",
+    "module": "3-4-2-1",
+    "attackRating": 2.0,
+    "defenseRating": 2.5,
+    "comment": "ll nuovo Parma abbraccia un calcio moderno e ambizioso: pressing alto, scambi di posizione e ricerca costante della superiorità numerica. Un’impronta propositiva che può tradursi in bonus preziosi per i fantallenatori. Il mantra sarà il coraggio nelle giocate e la fluidità tra i reparti. Per rendere efficace il sistema serviranno interpreti duttili, tecnici e dinamici: il mercato estivo sarà quindi decisivo. Nel precampionato è stata testata la difesa a tre, con Delprato e Valeri schierati da quinti per garantire ampiezza e spinta. Le due punte saranno supportate da centrocampisti offensivi e inserimenti continui.",
+    "sosFantaComment": "Con l’arrivo di Alberto Gilardino al posto di Cuesta, la base tattica del Parma dovrebbe rimanere la difesa a tre. Il nuovo allenatore può ripartire dal 3-4-2-1, senza escludere il passaggio al 3-5-2 in alcune partite. In porta spazio a Corvi, mentre Delprato, Troilo e Diego Carlos sono i favoriti per comporre il terzetto arretrato. Valeri e Britschgi partono avanti sulle fasce, ma in alcune gare anche Delprato può essere utilizzato in una posizione più avanzata al posto dello svizzero. A centrocampo Keita è un punto fermo, con Sierro pronto a trovare spazio. Da capire soprattutto la posizione di Bernabé, che Gilardino può utilizzare sia in mediana sia sulla trequarti. In attacco restano centrali El Bilal Touré, Romero e il giovane Lontani, grande sorpresa di questo avvio di stagione, senza dimenticare Elphege e Fabbian come ulteriori soluzioni offensive.",
+    "keyPoints": [
+      {
+        "text": "Solidità difensiva",
+        "tone": "good"
+      },
+      {
+        "text": "Molti cross verso la punta centrale",
+        "tone": "neutral"
+      },
+      {
+        "text": "Poca efficacia offensiva",
+        "tone": "bad"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "mid-wide",
+        "tone": "good"
+      },
+      {
+        "role": "mid-holding",
+        "tone": "bad"
+      }
+    ],
+    "starters": [
+      {
+        "playerId": "2d677888-6808-453b-976b-a9bde9d6c7e4",
+        "csvId": 6662,
+        "name": "Corvi",
+        "role": "P"
+      },
+      {
+        "playerId": "0ea3b547-311e-4fa7-a58a-26f37efb05f5",
+        "csvId": 6664,
+        "name": "Delprato",
+        "role": "D"
+      },
+      {
+        "playerId": "b13f6c95-3e12-4745-85eb-c646483bea89",
+        "csvId": 7235,
+        "name": "Troilo",
+        "role": "D"
+      },
+      {
+        "playerId": "1b344136-9333-44d3-a27e-e9a80f819cea",
+        "csvId": 4137,
+        "name": "Diego Carlos",
+        "role": "D"
+      },
+      {
+        "playerId": "eb1e8211-468b-4db8-b9be-1a15afa2339d",
+        "csvId": 7255,
+        "name": "Britschgi",
+        "role": "D"
+      },
+      {
+        "playerId": "4505706f-e4f1-483b-995c-6c12460a2fe7",
+        "csvId": 5862,
+        "name": "Valeri",
+        "role": "D"
+      },
+      {
+        "playerId": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
+        "csvId": 6666,
+        "name": "Bernabè",
+        "role": "C"
+      },
+      {
+        "playerId": "9ce7c50c-4dc1-427e-ab59-516c891e2ffb",
+        "csvId": 6898,
+        "name": "Keita M.",
+        "role": "C"
+      },
+      {
+        "playerId": "280d15dc-3cf6-47ec-ad41-19b983b09d20",
+        "csvId": 6229,
+        "name": "Tourè E.",
+        "role": "A"
+      },
+      {
+        "playerId": "2e331f32-cc88-4a67-b471-f05a2db80063",
+        "csvId": 7561,
+        "name": "",
+        "role": ""
+      },
+      {
+        "playerId": "eb01cf4b-a689-4016-8c30-0e7b058d0210",
+        "csvId": 7554,
+        "name": "Romero D.",
+        "role": "A"
+      }
+    ],
+    "rig": [
+      {
+        "playerId": "280d15dc-3cf6-47ec-ad41-19b983b09d20",
+        "name": "Tourè E.",
+        "role": "A"
+      },
+      {
+        "playerId": "d063038f-c807-450b-a1a0-4ef17966dddc",
+        "name": "Elphege",
+        "role": "A"
+      },
+      {
+        "playerId": "4505706f-e4f1-483b-995c-6c12460a2fe7",
+        "name": "Valeri",
+        "role": "D"
+      }
+    ],
+    "pun": [
+      {
+        "playerId": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
+        "name": "Bernabè",
+        "role": "C"
+      },
+      {
+        "playerId": "97d6767e-9030-4c03-bb3b-80d0b33b4b82",
+        "name": "Nicolussi Caviglia",
+        "role": "C"
+      }
+    ],
+    "corner": [
+      {
+        "playerId": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
+        "name": "Bernabè",
+        "role": "C"
+      },
+      {
+        "playerId": "97d6767e-9030-4c03-bb3b-80d0b33b4b82",
+        "name": "Nicolussi Caviglia",
+        "role": "C"
+      },
+      {
+        "playerId": "4505706f-e4f1-483b-995c-6c12460a2fe7",
+        "name": "Valeri",
+        "role": "D"
+      }
+    ],
+    "ballottaggi": [
+      [
+        {
+          "playerId": "280d15dc-3cf6-47ec-ad41-19b983b09d20",
+          "name": "Tourè E.",
+          "role": "A",
+          "perc": 60
+        },
+        {
+          "playerId": "d063038f-c807-450b-a1a0-4ef17966dddc",
+          "name": "Elphege",
+          "role": "A",
+          "perc": 40
+        }
+      ],
+      [
+        {
+          "playerId": "2e331f32-cc88-4a67-b471-f05a2db80063",
+          "name": "",
+          "role": "",
+          "perc": 60
+        },
+        {
+          "playerId": "72b2eb13-c625-4fd5-b0e1-349d05f9e2e6",
+          "name": "Fabbian",
+          "role": "C",
+          "perc": 40
+        }
+      ]
+    ],
+    "up": [
+      {
+        "playerId": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
+        "name": "Bernabè",
+        "points": [
+          "Riferimento tecnico del centrocampo",
+          "Impiegato molto in fase offensiva"
+        ]
+      },
+      {
+        "playerId": "4505706f-e4f1-483b-995c-6c12460a2fe7",
+        "name": "Valeri",
+        "points": [
+          "Tiratore di corner.",
+          "Ottimi cross per la punta."
+        ]
+      }
+    ],
+    "down": [
+      {
+        "playerId": "13034c80-e0fe-41b2-afdf-fcd19188d226",
+        "name": "Ordonez C.",
+        "points": [
+          "Responsabilità prettsmente difensive"
+        ]
+      }
+    ],
+    "young": [
+      {
+        "playerId": "2e331f32-cc88-4a67-b471-f05a2db80063",
+        "name": "",
+        "points": [
+          "Sta scalando velocemente le gerarchie"
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "playerId": "0ea3b547-311e-4fa7-a58a-26f37efb05f5",
+        "name": "Delprato",
+        "points": [
+          "Coinvolto nella fase offensiva"
+        ]
+      }
+    ]
+  },
+  "parma": {
+    "code": "PAR",
+    "name": "Parma",
+    "city": "Parma",
+    "stadium": "Ennio Tardini",
+    "primaryColor": "#ffd700",
+    "secondaryColor": "#003399",
+    "accentColor": "#000000",
+    "coach": "Carlos Cuesta",
+    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Cuesta.webp",
+    "defaultFormation": "3-4-2-1",
+    "module": "3-4-2-1",
+    "attackRating": 2.0,
+    "defenseRating": 2.5,
+    "comment": "ll nuovo Parma abbraccia un calcio moderno e ambizioso: pressing alto, scambi di posizione e ricerca costante della superiorità numerica. Un’impronta propositiva che può tradursi in bonus preziosi per i fantallenatori. Il mantra sarà il coraggio nelle giocate e la fluidità tra i reparti. Per rendere efficace il sistema serviranno interpreti duttili, tecnici e dinamici: il mercato estivo sarà quindi decisivo. Nel precampionato è stata testata la difesa a tre, con Delprato e Valeri schierati da quinti per garantire ampiezza e spinta. Le due punte saranno supportate da centrocampisti offensivi e inserimenti continui.",
+    "sosFantaComment": "Con l’arrivo di Alberto Gilardino al posto di Cuesta, la base tattica del Parma dovrebbe rimanere la difesa a tre. Il nuovo allenatore può ripartire dal 3-4-2-1, senza escludere il passaggio al 3-5-2 in alcune partite. In porta spazio a Corvi, mentre Delprato, Troilo e Diego Carlos sono i favoriti per comporre il terzetto arretrato. Valeri e Britschgi partono avanti sulle fasce, ma in alcune gare anche Delprato può essere utilizzato in una posizione più avanzata al posto dello svizzero. A centrocampo Keita è un punto fermo, con Sierro pronto a trovare spazio. Da capire soprattutto la posizione di Bernabé, che Gilardino può utilizzare sia in mediana sia sulla trequarti. In attacco restano centrali El Bilal Touré, Romero e il giovane Lontani, grande sorpresa di questo avvio di stagione, senza dimenticare Elphege e Fabbian come ulteriori soluzioni offensive.",
+    "keyPoints": [
+      {
+        "text": "Solidità difensiva",
+        "tone": "good"
+      },
+      {
+        "text": "Molti cross verso la punta centrale",
+        "tone": "neutral"
+      },
+      {
+        "text": "Poca efficacia offensiva",
+        "tone": "bad"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "mid-wide",
+        "tone": "good"
+      },
+      {
+        "role": "mid-holding",
+        "tone": "bad"
+      }
+    ],
+    "starters": [
+      {
+        "playerId": "2d677888-6808-453b-976b-a9bde9d6c7e4",
+        "csvId": 6662,
+        "name": "Corvi",
+        "role": "P"
+      },
+      {
+        "playerId": "0ea3b547-311e-4fa7-a58a-26f37efb05f5",
+        "csvId": 6664,
+        "name": "Delprato",
+        "role": "D"
+      },
+      {
+        "playerId": "b13f6c95-3e12-4745-85eb-c646483bea89",
+        "csvId": 7235,
+        "name": "Troilo",
+        "role": "D"
+      },
+      {
+        "playerId": "1b344136-9333-44d3-a27e-e9a80f819cea",
+        "csvId": 4137,
+        "name": "Diego Carlos",
+        "role": "D"
+      },
+      {
+        "playerId": "eb1e8211-468b-4db8-b9be-1a15afa2339d",
+        "csvId": 7255,
+        "name": "Britschgi",
+        "role": "D"
+      },
+      {
+        "playerId": "4505706f-e4f1-483b-995c-6c12460a2fe7",
+        "csvId": 5862,
+        "name": "Valeri",
+        "role": "D"
+      },
+      {
+        "playerId": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
+        "csvId": 6666,
+        "name": "Bernabè",
+        "role": "C"
+      },
+      {
+        "playerId": "9ce7c50c-4dc1-427e-ab59-516c891e2ffb",
+        "csvId": 6898,
+        "name": "Keita M.",
+        "role": "C"
+      },
+      {
+        "playerId": "280d15dc-3cf6-47ec-ad41-19b983b09d20",
+        "csvId": 6229,
+        "name": "Tourè E.",
+        "role": "A"
+      },
+      {
+        "playerId": "2e331f32-cc88-4a67-b471-f05a2db80063",
+        "csvId": 7561,
+        "name": "",
+        "role": ""
+      },
+      {
+        "playerId": "eb01cf4b-a689-4016-8c30-0e7b058d0210",
+        "csvId": 7554,
+        "name": "Romero D.",
+        "role": "A"
+      }
+    ],
+    "rig": [
+      {
+        "playerId": "280d15dc-3cf6-47ec-ad41-19b983b09d20",
+        "name": "Tourè E.",
+        "role": "A"
+      },
+      {
+        "playerId": "d063038f-c807-450b-a1a0-4ef17966dddc",
+        "name": "Elphege",
+        "role": "A"
+      },
+      {
+        "playerId": "4505706f-e4f1-483b-995c-6c12460a2fe7",
+        "name": "Valeri",
+        "role": "D"
+      }
+    ],
+    "pun": [
+      {
+        "playerId": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
+        "name": "Bernabè",
+        "role": "C"
+      },
+      {
+        "playerId": "97d6767e-9030-4c03-bb3b-80d0b33b4b82",
+        "name": "Nicolussi Caviglia",
+        "role": "C"
+      }
+    ],
+    "corner": [
+      {
+        "playerId": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
+        "name": "Bernabè",
+        "role": "C"
+      },
+      {
+        "playerId": "97d6767e-9030-4c03-bb3b-80d0b33b4b82",
+        "name": "Nicolussi Caviglia",
+        "role": "C"
+      },
+      {
+        "playerId": "4505706f-e4f1-483b-995c-6c12460a2fe7",
+        "name": "Valeri",
+        "role": "D"
+      }
+    ],
+    "ballottaggi": [
+      [
+        {
+          "playerId": "280d15dc-3cf6-47ec-ad41-19b983b09d20",
+          "name": "Tourè E.",
+          "role": "A",
+          "perc": 60
+        },
+        {
+          "playerId": "d063038f-c807-450b-a1a0-4ef17966dddc",
+          "name": "Elphege",
+          "role": "A",
+          "perc": 40
+        }
+      ],
+      [
+        {
+          "playerId": "2e331f32-cc88-4a67-b471-f05a2db80063",
+          "name": "",
+          "role": "",
+          "perc": 60
+        },
+        {
+          "playerId": "72b2eb13-c625-4fd5-b0e1-349d05f9e2e6",
+          "name": "Fabbian",
+          "role": "C",
+          "perc": 40
+        }
+      ]
+    ],
+    "up": [
+      {
+        "playerId": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
+        "name": "Bernabè",
+        "points": [
+          "Riferimento tecnico del centrocampo",
+          "Impiegato molto in fase offensiva"
+        ]
+      },
+      {
+        "playerId": "4505706f-e4f1-483b-995c-6c12460a2fe7",
+        "name": "Valeri",
+        "points": [
+          "Tiratore di corner.",
+          "Ottimi cross per la punta."
+        ]
+      }
+    ],
+    "down": [
+      {
+        "playerId": "13034c80-e0fe-41b2-afdf-fcd19188d226",
+        "name": "Ordonez C.",
+        "points": [
+          "Responsabilità prettsmente difensive"
+        ]
+      }
+    ],
+    "young": [
+      {
+        "playerId": "2e331f32-cc88-4a67-b471-f05a2db80063",
+        "name": "",
+        "points": [
+          "Sta scalando velocemente le gerarchie"
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "playerId": "0ea3b547-311e-4fa7-a58a-26f37efb05f5",
+        "name": "Delprato",
+        "points": [
+          "Coinvolto nella fase offensiva"
         ]
       }
     ]

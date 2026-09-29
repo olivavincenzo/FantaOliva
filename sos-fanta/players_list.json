@@ -8588,7 +8588,7 @@
       "fantalab_id": "7b207af5-acdb-4021-9633-5b6fd9e29fa6",
       "fantacalcio_id": 7418,
       "name": "Chakvetadze",
-      "full_name": "Giorgi Chakvetadze ",
+      "full_name": "Giorgi Chakvetadze",
       "team_id": 346,
       "team_name": "Udinese",
       "team_short": "UDI",
@@ -9082,34 +9082,6 @@
       "stats": {
         "fmv": 5.75,
         "mv": 5.75
-      }
-    },
-    {
-      "player_id": "aab3ee14-90d4-4eec-af47-33514cb8a009",
-      "sportsmonks_id": 129706,
-      "fantalab_id": "aab3ee14-90d4-4eec-af47-33514cb8a009",
-      "fantacalcio_id": 327,
-      "name": "Patric",
-      "full_name": "Patric ",
-      "team_id": 43,
-      "team_name": "Lazio",
-      "team_short": "LAZ",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/43.png",
-      "role": "D",
-      "mantra_roles": [
-        "Dd",
-        "Dc"
-      ],
-      "player_image": "https://cdn.falsesoftware.com/players/129706/v1.webp",
-      "league": "serie_a",
-      "league_id": 384,
-      "league_name": "Serie A",
-      "presenze": 0,
-      "is_in_listone": true,
-      "is_in_listone_euroleghe": true,
-      "stats": {
-        "fmv": 5.75,
-        "mv": 5.85
       }
     },
     {
@@ -14244,6 +14216,33 @@
       "league_id": 384,
       "league_name": "Serie A",
       "presenze": 0,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": null,
+        "mv": null
+      }
+    },
+    {
+      "player_id": "bb2086fc-abc8-45f0-b298-95dc4cecde1e",
+      "sportsmonks_id": 128798,
+      "fantalab_id": "bb2086fc-abc8-45f0-b298-95dc4cecde1e",
+      "fantacalcio_id": 283,
+      "name": "Neto",
+      "full_name": "Neto",
+      "team_id": 625,
+      "team_name": "Juventus",
+      "team_short": "JUV",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/625.png",
+      "role": "P",
+      "mantra_roles": [
+        "Por"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/128798/v1.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": null,
       "is_in_listone": true,
       "is_in_listone_euroleghe": false,
       "stats": {

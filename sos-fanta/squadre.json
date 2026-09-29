@@ -243,212 +243,6 @@
     "updatedAt": "2026-09-22T11:04:36.790Z"
   },
   {
-    "team": "PAR",
-    "season": "s_26_27",
-    "starters": [
-      {
-        "player_id": "2d677888-6808-453b-976b-a9bde9d6c7e4",
-        "id": 6662
-      },
-      {
-        "player_id": "0ea3b547-311e-4fa7-a58a-26f37efb05f5",
-        "id": 6664
-      },
-      {
-        "player_id": "b13f6c95-3e12-4745-85eb-c646483bea89",
-        "id": 7235
-      },
-      {
-        "player_id": "1b344136-9333-44d3-a27e-e9a80f819cea",
-        "id": 4137
-      },
-      {
-        "player_id": "eb1e8211-468b-4db8-b9be-1a15afa2339d",
-        "id": 7255
-      },
-      {
-        "player_id": "4505706f-e4f1-483b-995c-6c12460a2fe7",
-        "id": 5862
-      },
-      {
-        "player_id": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
-        "id": 6666
-      },
-      {
-        "player_id": "9ce7c50c-4dc1-427e-ab59-516c891e2ffb",
-        "id": 6898
-      },
-      {
-        "player_id": "280d15dc-3cf6-47ec-ad41-19b983b09d20",
-        "id": 6229
-      },
-      {
-        "player_id": "2e331f32-cc88-4a67-b471-f05a2db80063",
-        "id": 7561
-      },
-      {
-        "player_id": "eb01cf4b-a689-4016-8c30-0e7b058d0210",
-        "id": 7554
-      }
-    ],
-    "rig": [
-      {
-        "player_id": "280d15dc-3cf6-47ec-ad41-19b983b09d20"
-      },
-      {
-        "player_id": "d063038f-c807-450b-a1a0-4ef17966dddc"
-      },
-      {
-        "player_id": "4505706f-e4f1-483b-995c-6c12460a2fe7"
-      }
-    ],
-    "pun": [
-      {
-        "player_id": "f1421f6f-3f6a-436b-9ed3-997e353873e0"
-      },
-      {
-        "player_id": "97d6767e-9030-4c03-bb3b-80d0b33b4b82"
-      }
-    ],
-    "corner": [
-      {
-        "player_id": "f1421f6f-3f6a-436b-9ed3-997e353873e0"
-      },
-      {
-        "player_id": "97d6767e-9030-4c03-bb3b-80d0b33b4b82"
-      },
-      {
-        "player_id": "4505706f-e4f1-483b-995c-6c12460a2fe7"
-      }
-    ],
-    "module": "3-4-2-1",
-    "coach": "Carlos Cuesta",
-    "attack": 2,
-    "defense": 2.5,
-    "comment": "ll nuovo Parma abbraccia un calcio moderno e ambizioso: pressing alto, scambi di posizione e ricerca costante della superiorità numerica. Un’impronta propositiva che può tradursi in bonus preziosi per i fantallenatori. Il mantra sarà il coraggio nelle giocate e la fluidità tra i reparti. Per rendere efficace il sistema serviranno interpreti duttili, tecnici e dinamici: il mercato estivo sarà quindi decisivo. Nel precampionato è stata testata la difesa a tre, con Delprato e Valeri schierati da quinti per garantire ampiezza e spinta. Le due punte saranno supportate da centrocampisti offensivi e inserimenti continui.",
-    "sosFantaComment": "Confermato Cuesta in panchina nel Parma, è subito tornato al 3-4-2-1 dopo aver provato la difesa a 4. A centrocampo i titolari sono Keita e Bernabé, ma troverà spazio anche Sierro. In attacco i tre titolari sono: El Bilal Touré, Romero e il baby Lontani, vera e propria sorpresa di questa prima parte di stagione. Senza dimenticare Elphege. In alcune gare, potrà giocare Fabbian sulla trequarti per dare maggior solidità.",
-    "created_at": "2026-07-21T13:10:52.139Z",
-    "updated_at": "2026-09-22T11:01:04.753Z",
-    "up": [
-      {
-        "player_id": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
-        "points": [
-          {
-            "text": "Riferimento tecnico del centrocampo",
-            "tone": "good"
-          },
-          {
-            "tone": "good",
-            "text": "Impiegato molto in fase offensiva"
-          }
-        ]
-      },
-      {
-        "player_id": "4505706f-e4f1-483b-995c-6c12460a2fe7",
-        "points": [
-          {
-            "text": "Tiratore di corner.",
-            "tone": "good"
-          },
-          {
-            "tone": "good",
-            "text": "Ottimi cross per la punta."
-          }
-        ]
-      }
-    ],
-    "down": [
-      {
-        "player_id": "13034c80-e0fe-41b2-afdf-fcd19188d226",
-        "points": [
-          {
-            "text": "Responsabilità prettsmente difensive",
-            "tone": "bad"
-          }
-        ]
-      }
-    ],
-    "young": [
-      {
-        "player_id": "2e331f32-cc88-4a67-b471-f05a2db80063",
-        "points": [
-          {
-            "text": "Sta scalando velocemente le gerarchie",
-            "tone": "good"
-          }
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "player_id": "0ea3b547-311e-4fa7-a58a-26f37efb05f5",
-        "points": [
-          {
-            "text": "Coinvolto nella fase offensiva",
-            "tone": "good"
-          }
-        ]
-      }
-    ],
-    "ballottaggi": [
-      {
-        "players": [
-          {
-            "player_id": "eb01cf4b-a689-4016-8c30-0e7b058d0210",
-            "perc": 60
-          },
-          {
-            "player_id": "d063038f-c807-450b-a1a0-4ef17966dddc",
-            "perc": 40
-          }
-        ]
-      },
-      {
-        "players": [
-          {
-            "player_id": "2e331f32-cc88-4a67-b471-f05a2db80063",
-            "perc": 60
-          },
-          {
-            "player_id": "72b2eb13-c625-4fd5-b0e1-349d05f9e2e6",
-            "perc": 40
-          }
-        ]
-      }
-    ],
-    "coachRating": {
-      "attack": 2,
-      "defense": 2.5,
-      "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Cuesta.webp"
-    },
-    "keyPoints": [
-      {
-        "text": "Solidità difensiva",
-        "tone": "good"
-      },
-      {
-        "text": "Molti cross verso la punta centrale",
-        "tone": "neutral"
-      },
-      {
-        "text": "Poca efficacia offensiva",
-        "tone": "bad"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "mid-wide",
-        "tone": "good"
-      },
-      {
-        "role": "mid-holding",
-        "tone": "bad"
-      }
-    ],
-    "createdAt": "2026-07-21T13:10:52.139Z",
-    "updatedAt": "2026-09-22T11:01:04.753Z"
-  },
-  {
     "team": "LEC",
     "season": "s_26_27",
     "starters": [
@@ -1688,8 +1482,8 @@
         "id": 5695
       },
       {
-        "player_id": "349b1554-cf28-42c6-bc65-6582f28a0f5b",
-        "id": 5319
+        "player_id": "91398549-f981-4cf1-85fd-ddf3b2d5bdab",
+        "id": 6994
       },
       {
         "player_id": "910fbb96-6768-40c7-95cc-2fdeb9351f0c",
@@ -1745,7 +1539,7 @@
     "comment": "",
     "sosFantaComment": "Giovanni Stroppa per ora confermato sulla panchina del neopromosso Venezia, avanti con il 3-5-2 ma con grandi novità soprattutto in attacco. Akor Adams e Yeboah sono in pole, occhio all'altro nuovo arrivato Rrahmani alle loro spalle. Basic e Sohm si candidano a giocare con Busio, Kike Perez prima alternativa. Hainaut a destra si gioca il posto con Mazzocchi, a sinistra Haps, Correia o Sagrado; in difesa Juan Jesus e Bella-Kotchap sono arrivati per giocare.",
     "created_at": "2026-07-21T14:07:58.512Z",
-    "updated_at": "2026-09-22T11:06:41.172Z",
+    "updated_at": "2026-09-28T14:36:21.003Z",
     "up": [
       {
         "player_id": "248504d8-fd98-41ce-8f6b-db46784043a5",
@@ -1823,11 +1617,11 @@
       {
         "players": [
           {
-            "player_id": "349b1554-cf28-42c6-bc65-6582f28a0f5b",
+            "player_id": "91398549-f981-4cf1-85fd-ddf3b2d5bdab",
             "perc": 55
           },
           {
-            "player_id": "91398549-f981-4cf1-85fd-ddf3b2d5bdab",
+            "player_id": "349b1554-cf28-42c6-bc65-6582f28a0f5b",
             "perc": 45
           }
         ]
@@ -1879,7 +1673,7 @@
       }
     ],
     "createdAt": "2026-07-21T14:07:58.512Z",
-    "updatedAt": "2026-09-22T11:06:41.172Z"
+    "updatedAt": "2026-09-28T14:36:21.003Z"
   },
   {
     "team": "NAP",
@@ -2346,8 +2140,8 @@
         "id": 7238
       },
       {
-        "player_id": "54398484-ccc0-43e1-b9a1-716b35d836d1",
-        "id": 7260
+        "player_id": "b6596869-9189-4e7e-910b-d56d056ee034",
+        "id": 6659
       },
       {
         "player_id": "f729e4bf-bf18-4e1d-827a-20ef37865b8a",
@@ -2370,12 +2164,12 @@
         "id": 2741
       },
       {
-        "player_id": "6a2d0ee2-6bae-42d1-9cfd-06994a361b3d",
-        "id": 7546
+        "player_id": "4ce121ab-ce7a-4446-9f7e-41ffa85e2d91",
+        "id": 5878
       },
       {
-        "player_id": "8194c04b-9af2-4f63-af75-712ae72e0842",
-        "id": 7620
+        "player_id": "6a2d0ee2-6bae-42d1-9cfd-06994a361b3d",
+        "id": 7546
       },
       {
         "player_id": "0053b230-688b-4fef-90f5-b823c64ea378",
@@ -2419,7 +2213,7 @@
     "comment": "",
     "sosFantaComment": "Ivan Juric ha subito schierato il suo Monza col 3-4-2-1: sarà questo l'abito della squadra. Thiam non ha convinto, Tornqvist già prima della sosta è diventato il titolare. A centrocampo giocano i nuovi arrivati Folorunsho e Akinsanmiro, aspettando che torni Pessina (entro fine ottobre) A destra una volta recuperato Touré si gioca un posto con Birindelli. Varela a guidare l'attacco (Cutrone parte da vice), a supporto c'è grande abbondanza: Robinson e Zeballos sono i favoriti, ma ci sono anche Colpani, Mota e Ngonge. ",
     "created_at": "2026-07-21T13:04:19.695Z",
-    "updated_at": "2026-09-22T10:56:53.021Z",
+    "updated_at": "2026-09-28T14:23:38.462Z",
     "up": [
       {
         "player_id": "88893e63-f3f6-4224-838b-8e189ef9f312",
@@ -2569,7 +2363,7 @@
       }
     ],
     "createdAt": "2026-07-21T13:04:19.695Z",
-    "updatedAt": "2026-09-22T10:56:53.021Z"
+    "updatedAt": "2026-09-28T14:23:38.462Z"
   },
   {
     "team": "TOR",
@@ -3682,8 +3476,8 @@
         "id": "2188"
       },
       {
-        "player_id": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
-        "id": 6320
+        "player_id": "c571ffe8-70c1-40b4-8175-6752f18eae5f",
+        "id": 7580
       },
       {
         "player_id": "19139ae2-8ceb-4f21-9980-134c64d95c92",
@@ -3755,7 +3549,7 @@
     "comment": "Torna alla Lazio dopo il biennio 2022-2024 con idee chiare e un gioco che conosciamo fin troppo bene. Il suo 4-3-3 si fonda su possesso palla, costruzione ragionata e movimenti codificati. Predilige giocatori tecnici e intelligenti: chi sta in mezzo deve saper palleggiare e inserirsi, mentre chi gioca largo ha il compito di dare ampiezza e saltare l’uomo. Il centravanti, invece, non può limitarsi a finalizzare: deve partecipare attivamente alla manovra. Chi ha già lavorato con lui parte favorito in chiave fantacalcio, mentre i nuovi potrebbero aver bisogno di tempo per assimilare i meccanismi.",
     "sosFantaComment": "Grande avvio di stagione per la Lazio di Rino Gattuso, che ha proseguito col 4-3-3 della scorsa stagione ma sono cambiati i principi. Doekhi o Sutalo al centro della difesa, gioca chi sta meglio e dipende anche dall'avversario. Stesso discorso a destra tra Marusic e Floriani Mussolini. Belahyane ha risposto presente, aspettando i recuperi al 100% di Rovella e Cataldi: sono loro tre in corsa per un posto. Sorpresa Noslin, prova a insidiare Pinamonti che comunque rimane il titolare sulla carta. A destra Cancellieri o Isaksen, testa a testa e c'è anche il jolly Gudmundsson che può ricoprire tutti i ruoli nel tridente e fare anche la mezzala di 'scorta'.",
     "created_at": "2026-07-21T12:45:39.344Z",
-    "updated_at": "2026-09-26T22:34:34.213Z",
+    "updated_at": "2026-09-28T14:07:54.859Z",
     "up": [
       {
         "player_id": "51f0abe3-4fe5-42fb-9994-34fbddcb56d5",
@@ -3808,10 +3602,10 @@
     ],
     "hidden": [
       {
-        "player_id": "e5a2f6c8-efd6-4dad-bf0a-3878aa5503bb",
+        "player_id": "b82add03-f6f8-4788-94a2-4d9165698df5",
         "points": [
           {
-            "text": "Forte sulle palle inattive",
+            "text": "Utilizzato spesso e in zona offensiva",
             "tone": "good"
           }
         ]
@@ -3913,7 +3707,213 @@
       }
     ],
     "createdAt": "2026-07-21T12:45:39.344Z",
-    "updatedAt": "2026-09-26T22:34:34.213Z"
+    "updatedAt": "2026-09-28T14:07:54.859Z"
+  },
+  {
+    "team": "PAR",
+    "season": "s_26_27",
+    "starters": [
+      {
+        "player_id": "2d677888-6808-453b-976b-a9bde9d6c7e4",
+        "id": 6662
+      },
+      {
+        "player_id": "0ea3b547-311e-4fa7-a58a-26f37efb05f5",
+        "id": 6664
+      },
+      {
+        "player_id": "b13f6c95-3e12-4745-85eb-c646483bea89",
+        "id": 7235
+      },
+      {
+        "player_id": "1b344136-9333-44d3-a27e-e9a80f819cea",
+        "id": 4137
+      },
+      {
+        "player_id": "eb1e8211-468b-4db8-b9be-1a15afa2339d",
+        "id": 7255
+      },
+      {
+        "player_id": "4505706f-e4f1-483b-995c-6c12460a2fe7",
+        "id": 5862
+      },
+      {
+        "player_id": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
+        "id": 6666
+      },
+      {
+        "player_id": "9ce7c50c-4dc1-427e-ab59-516c891e2ffb",
+        "id": 6898
+      },
+      {
+        "player_id": "280d15dc-3cf6-47ec-ad41-19b983b09d20",
+        "id": 6229
+      },
+      {
+        "player_id": "2e331f32-cc88-4a67-b471-f05a2db80063",
+        "id": 7561
+      },
+      {
+        "player_id": "eb01cf4b-a689-4016-8c30-0e7b058d0210",
+        "id": 7554
+      }
+    ],
+    "rig": [
+      {
+        "player_id": "280d15dc-3cf6-47ec-ad41-19b983b09d20"
+      },
+      {
+        "player_id": "d063038f-c807-450b-a1a0-4ef17966dddc"
+      },
+      {
+        "player_id": "4505706f-e4f1-483b-995c-6c12460a2fe7"
+      }
+    ],
+    "pun": [
+      {
+        "player_id": "f1421f6f-3f6a-436b-9ed3-997e353873e0"
+      },
+      {
+        "player_id": "97d6767e-9030-4c03-bb3b-80d0b33b4b82"
+      }
+    ],
+    "corner": [
+      {
+        "player_id": "f1421f6f-3f6a-436b-9ed3-997e353873e0"
+      },
+      {
+        "player_id": "97d6767e-9030-4c03-bb3b-80d0b33b4b82"
+      },
+      {
+        "player_id": "4505706f-e4f1-483b-995c-6c12460a2fe7"
+      }
+    ],
+    "module": "3-4-2-1",
+    "coach": "Carlos Cuesta",
+    "attack": 2,
+    "defense": 2.5,
+    "comment": "ll nuovo Parma abbraccia un calcio moderno e ambizioso: pressing alto, scambi di posizione e ricerca costante della superiorità numerica. Un’impronta propositiva che può tradursi in bonus preziosi per i fantallenatori. Il mantra sarà il coraggio nelle giocate e la fluidità tra i reparti. Per rendere efficace il sistema serviranno interpreti duttili, tecnici e dinamici: il mercato estivo sarà quindi decisivo. Nel precampionato è stata testata la difesa a tre, con Delprato e Valeri schierati da quinti per garantire ampiezza e spinta. Le due punte saranno supportate da centrocampisti offensivi e inserimenti continui.",
+    "sosFantaComment": "Con l’arrivo di Alberto Gilardino al posto di Cuesta, la base tattica del Parma dovrebbe rimanere la difesa a tre. Il nuovo allenatore può ripartire dal 3-4-2-1, senza escludere il passaggio al 3-5-2 in alcune partite. In porta spazio a Corvi, mentre Delprato, Troilo e Diego Carlos sono i favoriti per comporre il terzetto arretrato. Valeri e Britschgi partono avanti sulle fasce, ma in alcune gare anche Delprato può essere utilizzato in una posizione più avanzata al posto dello svizzero. A centrocampo Keita è un punto fermo, con Sierro pronto a trovare spazio. Da capire soprattutto la posizione di Bernabé, che Gilardino può utilizzare sia in mediana sia sulla trequarti. In attacco restano centrali El Bilal Touré, Romero e il giovane Lontani, grande sorpresa di questo avvio di stagione, senza dimenticare Elphege e Fabbian come ulteriori soluzioni offensive.",
+    "created_at": "2026-07-21T13:10:52.139Z",
+    "updated_at": "2026-09-29T08:52:12.982Z",
+    "up": [
+      {
+        "player_id": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
+        "points": [
+          {
+            "text": "Riferimento tecnico del centrocampo",
+            "tone": "good"
+          },
+          {
+            "tone": "good",
+            "text": "Impiegato molto in fase offensiva"
+          }
+        ]
+      },
+      {
+        "player_id": "4505706f-e4f1-483b-995c-6c12460a2fe7",
+        "points": [
+          {
+            "text": "Tiratore di corner.",
+            "tone": "good"
+          },
+          {
+            "tone": "good",
+            "text": "Ottimi cross per la punta."
+          }
+        ]
+      }
+    ],
+    "down": [
+      {
+        "player_id": "13034c80-e0fe-41b2-afdf-fcd19188d226",
+        "points": [
+          {
+            "text": "Responsabilità prettsmente difensive",
+            "tone": "bad"
+          }
+        ]
+      }
+    ],
+    "young": [
+      {
+        "player_id": "2e331f32-cc88-4a67-b471-f05a2db80063",
+        "points": [
+          {
+            "text": "Sta scalando velocemente le gerarchie",
+            "tone": "good"
+          }
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "player_id": "0ea3b547-311e-4fa7-a58a-26f37efb05f5",
+        "points": [
+          {
+            "text": "Coinvolto nella fase offensiva",
+            "tone": "good"
+          }
+        ]
+      }
+    ],
+    "ballottaggi": [
+      {
+        "players": [
+          {
+            "player_id": "280d15dc-3cf6-47ec-ad41-19b983b09d20",
+            "perc": 60
+          },
+          {
+            "player_id": "d063038f-c807-450b-a1a0-4ef17966dddc",
+            "perc": 40
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "2e331f32-cc88-4a67-b471-f05a2db80063",
+            "perc": 60
+          },
+          {
+            "player_id": "72b2eb13-c625-4fd5-b0e1-349d05f9e2e6",
+            "perc": 40
+          }
+        ]
+      }
+    ],
+    "coachRating": {
+      "attack": 2,
+      "defense": 2.5,
+      "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Cuesta.webp"
+    },
+    "keyPoints": [
+      {
+        "text": "Solidità difensiva",
+        "tone": "good"
+      },
+      {
+        "text": "Molti cross verso la punta centrale",
+        "tone": "neutral"
+      },
+      {
+        "text": "Poca efficacia offensiva",
+        "tone": "bad"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "mid-wide",
+        "tone": "good"
+      },
+      {
+        "role": "mid-holding",
+        "tone": "bad"
+      }
+    ],
+    "createdAt": "2026-07-21T13:10:52.139Z",
+    "updatedAt": "2026-09-29T08:52:12.982Z"
   },
   {
     "team": "UDI",

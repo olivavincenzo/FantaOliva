@@ -1003,37 +1003,6 @@
     }
   },
   {
-    "player_id": "9ce7c50c-4dc1-427e-ab59-516c891e2ffb",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 14,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 1,
-    "perc_price": "0.2000",
-    "ex_fmv": null,
-    "comment": "1 gol e 1 assist per 36 partite a voto per Mandela Keita, intoccabile nel centrocampo del Parma di Cuesta. Lo era e lo sarà ancora, può giocare sia da mediano puro davanti alla difesa che da mezzala, mixa qualità e quantità. Un dato positivo per il fanta: nonostante ruolo e caratteristiche, soltanto 1 giallo per lui nella passata stagione. Colpo low cost per completare il centrocampo, è il classico titolare in provincia.",
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": [],
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-24",
-    "updated_at": "2026-08-02",
-    "createdAt": "2026-07-24",
-    "updatedAt": "2026-08-02",
-    "player": {
-      "player_id": "9ce7c50c-4dc1-427e-ab59-516c891e2ffb",
-      "role": "C",
-      "mantra_roles": [
-        "M",
-        "C"
-      ]
-    }
-  },
-  {
     "player_id": "9ecf743b-95b3-46f4-b3b8-777f6ed9262f",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
@@ -3527,37 +3496,6 @@
     }
   },
   {
-    "player_id": "aab3ee14-90d4-4eec-af47-33514cb8a009",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 19,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": null,
-    "perc_price": null,
-    "ex_fmv": null,
-    "comment": null,
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": null,
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-24",
-    "updated_at": "2026-07-24",
-    "createdAt": "2026-07-24",
-    "updatedAt": "2026-07-24",
-    "player": {
-      "player_id": "aab3ee14-90d4-4eec-af47-33514cb8a009",
-      "role": "D",
-      "mantra_roles": [
-        "Dd",
-        "Dc"
-      ]
-    }
-  },
-  {
     "player_id": "732b19cf-3340-4588-ba8a-85459261b4c1",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
@@ -5313,36 +5251,6 @@
     }
   },
   {
-    "player_id": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 11,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 4,
-    "perc_price": "0.8000",
-    "ex_fmv": null,
-    "comment": "3 gol e 1 assist per Adrian Bernabé in 32 partite a voto nella scorsa stagione. È un titolare fisso nel Parma di Cuesta se sta bene, anche se ogni tanto qualche acciacco lo ha (era infortunato anche a inizio pre-campionato). Classico giocatore da 6/6,5 fisso, la sensazione è che possa fare anche qualcosa in più in termini di bonus. Col suo mancino, calcia punizioni e corner e non è un fattore da poco. Siamo sopra ai low cost, se cercate un voto praticamente fisso può fare al caso vostro.",
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": [],
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-23",
-    "updated_at": "2026-08-02",
-    "createdAt": "2026-07-23",
-    "updatedAt": "2026-08-02",
-    "player": {
-      "player_id": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
-      "role": "C",
-      "mantra_roles": [
-        "C"
-      ]
-    }
-  },
-  {
     "player_id": "21898bcb-7bbf-46c7-9892-8e05475fcb53",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
@@ -6064,36 +5972,6 @@
     "updatedAt": "2026-08-03",
     "player": {
       "player_id": "ec99ae79-a018-4cd8-a4b1-1fe2f703553b",
-      "role": "P",
-      "mantra_roles": [
-        "Por"
-      ]
-    }
-  },
-  {
-    "player_id": "2d677888-6808-453b-976b-a9bde9d6c7e4",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 13,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 4,
-    "perc_price": "0.8000",
-    "ex_fmv": null,
-    "comment": "Edoardo Corvi è diventato titolare quando è mancato Suzuki per infortunio in casa Parma. 17 partite a voto e 18 gol subiti, ma sul campo ha dato segnali importanti, si è conquistato la piena fiducia di Cuesta. E per questo parte in pole sul nuovo arrivato Daffara, che si è anche infortunato nel pre-campionato. Poi sarà il campo a dire chi sarà il titolare, ma Corvi parte avanti (7 clean sheet per lui). Se non fate la coppia, al momento quindi si punta su di lui all'asta. E la strategia è chiara: o lo prendete da alternare alla porta di una big o da alternare con altri portieri di provincia. In quest'ultima categoria, il Parma è sicuramente tra le squadre che si presenta con maggior solidità difensiva dopo la scorsa stagione. Bisognerà capire se riuscirà a confermare questi numeri.",
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": [],
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-24",
-    "updated_at": "2026-08-03",
-    "createdAt": "2026-07-24",
-    "updatedAt": "2026-08-03",
-    "player": {
-      "player_id": "2d677888-6808-453b-976b-a9bde9d6c7e4",
       "role": "P",
       "mantra_roles": [
         "Por"
@@ -7555,38 +7433,6 @@
       "role": "P",
       "mantra_roles": [
         "Por"
-      ]
-    }
-  },
-  {
-    "player_id": "0ea3b547-311e-4fa7-a58a-26f37efb05f5",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 8,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 7,
-    "perc_price": "1.4000",
-    "ex_fmv": null,
-    "comment": "Enrico Delprato è una vera e propria sicurezza al fantacalcio tra i difensori delle 'provinciali' per titolarità. Capitano del Parma, ha totalizzato 35 presenze nell'ultima stagione andando in gol per 2 volte. Una fanta-media che raggiunge il 6,01 con 5 ammonizioni, non tante considerando che ha giocato per larga parte del campionato anche da braccetto di difesa. Con Cuesta che vira al 4-3-3, il 26enne tornerà a spingere a destra e il terzino ha una certa dimistichezza nell'alzarsi e partecipare alle offensive crociate, può essere un fattore. Al fantacalcio è un'idea concreta se vi serve un titolare a prezzi non troppo alti.",
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": [],
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-24",
-    "updated_at": "2026-08-27",
-    "createdAt": "2026-07-24",
-    "updatedAt": "2026-08-27",
-    "player": {
-      "player_id": "0ea3b547-311e-4fa7-a58a-26f37efb05f5",
-      "role": "D",
-      "mantra_roles": [
-        "B",
-        "Dd",
-        "E"
       ]
     }
   },
@@ -12082,37 +11928,6 @@
     }
   },
   {
-    "player_id": "4505706f-e4f1-483b-995c-6c12460a2fe7",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 11,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 6,
-    "perc_price": "1.2000",
-    "ex_fmv": null,
-    "comment": "Emanuele Valeri è a tutti gli effetti un punto fermo per il Parma e per Carlos Cuesta. Terzino sinistro a tutta fascia, il 27enne ha ottimi tempi di inserimento e accompagna molto l'azione d'attacco. Sinistro delicato, è tra i designati a battere calci piazzati e rigori. Al fantacalcio è uno dei migliori tra i titolari low-cost per continuità e integrità fisica (34 presenze e 6,09 di fanta-media), può essere un fattore anche per il modificatore difesa. 2 assist la scorsa stagione.",
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": [],
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-24",
-    "updated_at": "2026-08-27",
-    "createdAt": "2026-07-24",
-    "updatedAt": "2026-08-27",
-    "player": {
-      "player_id": "4505706f-e4f1-483b-995c-6c12460a2fe7",
-      "role": "D",
-      "mantra_roles": [
-        "Ds",
-        "E"
-      ]
-    }
-  },
-  {
     "player_id": "a5ccb009-6b25-4d64-b16f-169784fd8920",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
@@ -13953,36 +13768,6 @@
     }
   },
   {
-    "player_id": "1b344136-9333-44d3-a27e-e9a80f819cea",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 13,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 3,
-    "perc_price": "0.6000",
-    "ex_fmv": null,
-    "comment": "Diego Carlos torna in Serie A, questa volta non con la maglia del Como ma con quella del Parma, che mette a segno un acquisto di esperienza in difesa. Centrale roccioso di 185 cm, sarà titolare nella retroguardia di Carlos Cuesta che ha perso durante il mercato Circati. Dopo diverse annate tempestate di infortuni tra Aston Villa e Fenerbahce, il nazionale brasiliano ha ritrovato la forma fisica a Como nell’ultima stagione dove si è giocato il posto da titolare e ha raccolto 27 presenze e un gol. Al fantacalcio è un acquisto low cost che andrà sempre a voto e chissà che non possa portare qualche bonus su palla inattiva.",
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": [],
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-09-01",
-    "updated_at": "2026-09-01",
-    "createdAt": "2026-09-01",
-    "updatedAt": "2026-09-01",
-    "player": {
-      "player_id": "1b344136-9333-44d3-a27e-e9a80f819cea",
-      "role": "D",
-      "mantra_roles": [
-        "Dc"
-      ]
-    }
-  },
-  {
     "player_id": "5a9eacee-7614-4621-b78f-5d0cc774cc76",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
@@ -14960,36 +14745,6 @@
     }
   },
   {
-    "player_id": "2e331f32-cc88-4a67-b471-f05a2db80063",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 10,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 3,
-    "perc_price": "0.6000",
-    "ex_fmv": null,
-    "comment": "Simone Lontani è un gioiellino di casa Parma, si tratta di un attaccante classe 2008 alto 181 cm. È molto bravo nell’uno contro uno e parte dall’esterno per saltare l’uomo. Cuesta gli sta dando fiducia e lui ha ripagato con un gol contro il Monza, così diventa una scommessa anche al fantacalcio.",
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": [],
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-08-17",
-    "updated_at": "2026-09-08",
-    "createdAt": "2026-08-17",
-    "updatedAt": "2026-09-08",
-    "player": {
-      "player_id": "2e331f32-cc88-4a67-b471-f05a2db80063",
-      "role": "A",
-      "mantra_roles": [
-        "A"
-      ]
-    }
-  },
-  {
     "player_id": "40b7cab1-faa3-4b57-a7ae-a775c8b35c97",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
@@ -15261,6 +15016,220 @@
       "role": "A",
       "mantra_roles": [
         "Pc"
+      ]
+    }
+  },
+  {
+    "player_id": "2e331f32-cc88-4a67-b471-f05a2db80063",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 10,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 3,
+    "perc_price": "0.6000",
+    "ex_fmv": null,
+    "comment": "Simone Lontani è un gioiellino di casa Parma, si tratta di un attaccante classe 2008 alto 181 cm. È molto bravo nell’uno contro uno e parte dall’esterno per saltare l’uomo. Cuesta gli ha dato fiducia e lui ha ripagato con un gol contro il Monza, così diventa una scommessa anche al fantacalcio. Adesso è arrivato Gilardino ma troverà ugualmente tantissimo spazio.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-08-17",
+    "updated_at": "2026-09-28",
+    "createdAt": "2026-08-17",
+    "updatedAt": "2026-09-28",
+    "player": {
+      "player_id": "2e331f32-cc88-4a67-b471-f05a2db80063",
+      "role": "A",
+      "mantra_roles": [
+        "A"
+      ]
+    }
+  },
+  {
+    "player_id": "2d677888-6808-453b-976b-a9bde9d6c7e4",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 13,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 4,
+    "perc_price": "0.8000",
+    "ex_fmv": null,
+    "comment": "Edoardo Corvi è diventato titolare quando è mancato Suzuki per infortunio in casa Parma. 17 partite a voto e 18 gol subiti, ma sul campo ha dato segnali importanti, si è conquistato la piena fiducia. E per questo parte in pole sul nuovo arrivato Daffara, che si è anche infortunato nel pre-campionato. Poi sarà il campo a dire chi sarà il titolare, ma Corvi parte avanti (7 clean sheet per lui). Se non fate la coppia, al momento quindi si punta su di lui all'asta. E la strategia è chiara: o lo prendete da alternare alla porta di una big o da alternare con altri portieri di provincia. In quest'ultima categoria, il Parma è sicuramente tra le squadre che si presenta con maggior solidità difensiva dopo la scorsa stagione. Bisognerà capire se riuscirà a confermare questi numeri.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-07-24",
+    "updated_at": "2026-09-28",
+    "createdAt": "2026-07-24",
+    "updatedAt": "2026-09-28",
+    "player": {
+      "player_id": "2d677888-6808-453b-976b-a9bde9d6c7e4",
+      "role": "P",
+      "mantra_roles": [
+        "Por"
+      ]
+    }
+  },
+  {
+    "player_id": "0ea3b547-311e-4fa7-a58a-26f37efb05f5",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 8,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 7,
+    "perc_price": "1.4000",
+    "ex_fmv": null,
+    "comment": "Enrico Delprato è una vera e propria sicurezza al fantacalcio tra i difensori delle 'provinciali' per titolarità. Capitano del Parma, ha totalizzato 35 presenze nell'ultima stagione andando in gol per 2 volte. Una fanta-media che raggiunge il 6,01 con 5 ammonizioni, non tante considerando che ha giocato per larga parte del campionato anche da braccetto di difesa. Il 26enne può giocare anche largo a destra e spingere: il terzino ha una certa dimestichezza nell'alzarsi e partecipare alle offensive crociate, può essere un fattore. Al fantacalcio è un'idea concreta se vi serve un titolare a prezzi non troppo alti.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-07-24",
+    "updated_at": "2026-09-28",
+    "createdAt": "2026-07-24",
+    "updatedAt": "2026-09-28",
+    "player": {
+      "player_id": "0ea3b547-311e-4fa7-a58a-26f37efb05f5",
+      "role": "D",
+      "mantra_roles": [
+        "B",
+        "Dd",
+        "E"
+      ]
+    }
+  },
+  {
+    "player_id": "4505706f-e4f1-483b-995c-6c12460a2fe7",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 11,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 6,
+    "perc_price": "1.2000",
+    "ex_fmv": null,
+    "comment": "Emanuele Valeri è a tutti gli effetti un punto fermo per il Parma. Terzino sinistro a tutta fascia, il 27enne ha ottimi tempi di inserimento e accompagna molto l'azione d'attacco. Sinistro delicato, è tra i designati a battere calci piazzati e rigori. Al fantacalcio è uno dei migliori tra i titolari low-cost per continuità e integrità fisica (34 presenze e 6,09 di fanta-media), può essere un fattore anche per il modificatore difesa. 2 assist la scorsa stagione.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-07-24",
+    "updated_at": "2026-09-28",
+    "createdAt": "2026-07-24",
+    "updatedAt": "2026-09-28",
+    "player": {
+      "player_id": "4505706f-e4f1-483b-995c-6c12460a2fe7",
+      "role": "D",
+      "mantra_roles": [
+        "Ds",
+        "E"
+      ]
+    }
+  },
+  {
+    "player_id": "1b344136-9333-44d3-a27e-e9a80f819cea",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 13,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 3,
+    "perc_price": "0.6000",
+    "ex_fmv": null,
+    "comment": "Diego Carlos torna in Serie A, questa volta non con la maglia del Como ma con quella del Parma, che mette a segno un acquisto di esperienza in difesa. Centrale roccioso di 185 cm, sarà titolare nella retroguardia che ha perso durante il mercato Circati. Dopo diverse annate tempestate di infortuni tra Aston Villa e Fenerbahce, il nazionale brasiliano ha ritrovato la forma fisica a Como nell’ultima stagione dove si è giocato il posto da titolare e ha raccolto 27 presenze e un gol. Al fantacalcio è un acquisto low cost che andrà sempre a voto e chissà che non possa portare qualche bonus su palla inattiva.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-09-01",
+    "updated_at": "2026-09-28",
+    "createdAt": "2026-09-01",
+    "updatedAt": "2026-09-28",
+    "player": {
+      "player_id": "1b344136-9333-44d3-a27e-e9a80f819cea",
+      "role": "D",
+      "mantra_roles": [
+        "Dc"
+      ]
+    }
+  },
+  {
+    "player_id": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 11,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 4,
+    "perc_price": "0.8000",
+    "ex_fmv": null,
+    "comment": "3 gol e 1 assist per Adrian Bernabé in 32 partite a voto nella scorsa stagione. È un titolare fisso nel Parma se sta bene, anche se ogni tanto qualche acciacco lo ha (era infortunato anche a inizio pre-campionato). Classico giocatore da 6/6,5 fisso, la sensazione è che possa fare anche qualcosa in più in termini di bonus. Col suo mancino, calcia punizioni e corner e non è un fattore da poco. Siamo sopra ai low cost, se cercate un voto praticamente fisso può fare al caso vostro.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-07-23",
+    "updated_at": "2026-09-28",
+    "createdAt": "2026-07-23",
+    "updatedAt": "2026-09-28",
+    "player": {
+      "player_id": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
+      "role": "C",
+      "mantra_roles": [
+        "C"
+      ]
+    }
+  },
+  {
+    "player_id": "9ce7c50c-4dc1-427e-ab59-516c891e2ffb",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 14,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 1,
+    "perc_price": "0.2000",
+    "ex_fmv": null,
+    "comment": "1 gol e 1 assist per 36 partite a voto per Mandela Keita, intoccabile nel centrocampo del Parma. Lo era e lo sarà ancora, può giocare sia da mediano puro davanti alla difesa che da mezzala, mixa qualità e quantità. Un dato positivo per il fanta: nonostante ruolo e caratteristiche, soltanto 1 giallo per lui nella passata stagione. Colpo low cost per completare il centrocampo, è il classico titolare in provincia.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-07-24",
+    "updated_at": "2026-09-28",
+    "createdAt": "2026-07-24",
+    "updatedAt": "2026-09-28",
+    "player": {
+      "player_id": "9ce7c50c-4dc1-427e-ab59-516c891e2ffb",
+      "role": "C",
+      "mantra_roles": [
+        "M",
+        "C"
       ]
     }
   }
