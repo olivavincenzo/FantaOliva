@@ -7867,36 +7867,6 @@
     }
   },
   {
-    "player_id": "244e0389-9c58-4c30-a0c2-dc221e3bb4ee",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 9,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 4,
-    "perc_price": "0.8000",
-    "ex_fmv": null,
-    "comment": "Alessandro Buongiorno è ai box per un infortunio al menisco che lo ha costretto a operarsi. Un paio di mesi di stop e rientro previsto dopo la sosta nazionali di novembre. Dovrebbe saltare indicativamente le prime 10/11 giornate di Serie A e sfrutterà la pausa per tornare in condizione per la 12a. Quando tornerà al 100% della condizione il titolare dovrebbe essere lui. L'ultima stagione, a livello di prestazioni, è stata travagliata ma la cura Allegri potrebbe riportarlo ai suoi livelli. Al fantacalcio, causa infortunio, non è più tra i top ma si può prendere in prospettiva per avere un potenziale big a prezzo di saldo.",
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": [],
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-24",
-    "updated_at": "2026-08-27",
-    "createdAt": "2026-07-24",
-    "updatedAt": "2026-08-27",
-    "player": {
-      "player_id": "244e0389-9c58-4c30-a0c2-dc221e3bb4ee",
-      "role": "D",
-      "mantra_roles": [
-        "Dc"
-      ]
-    }
-  },
-  {
     "player_id": "bd8db1bf-e321-4a41-8c85-d8c992036168",
     "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
     "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
@@ -9078,37 +9048,6 @@
     "updatedAt": "2026-09-23",
     "player": {
       "player_id": "bde8b7a8-9307-4d1e-a3cc-430c5bee432b",
-      "role": "D",
-      "mantra_roles": [
-        "Dd",
-        "E"
-      ]
-    }
-  },
-  {
-    "player_id": "b894b38e-67c8-42fb-946f-36b8a7b60349",
-    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
-    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
-    "fascia": 12,
-    "fascia_second": null,
-    "fascia_third": null,
-    "price": 2,
-    "perc_price": "0.4000",
-    "ex_fmv": null,
-    "comment": "Emil Holm va verso la permanenza a Bologna e si giocherà un posto sulla fascia destra con Zortea e il solito De Silvestri. Dopo le appena 7 presenze collezionate nella breve esperienza alla Juve, lo svedese vuole convincere il nuovo allenatore Palladino con le sua capacità di saltare l'uomo e arrivare sul fondo a crossare. Appena 16 le presenze nella passata stagione, tempestata di problemi di natura fisica. Al fantacalcio è un vero e proprio jolly, un'incognita: garanzia di assist (4 in stagione e un gol) ma, allo stesso tempo, titolarità e integrità fisica non sono al momento dalla sua.",
-    "tit_index": null,
-    "aff_index": null,
-    "inf_index": null,
-    "notes": [],
-    "target": null,
-    "unlocked": null,
-    "links": null,
-    "created_at": "2026-07-24",
-    "updated_at": "2026-09-23",
-    "createdAt": "2026-07-24",
-    "updatedAt": "2026-09-23",
-    "player": {
-      "player_id": "b894b38e-67c8-42fb-946f-36b8a7b60349",
       "role": "D",
       "mantra_roles": [
         "Dd",
@@ -15230,6 +15169,67 @@
       "mantra_roles": [
         "M",
         "C"
+      ]
+    }
+  },
+  {
+    "player_id": "b894b38e-67c8-42fb-946f-36b8a7b60349",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 9,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 1,
+    "perc_price": "0.2000",
+    "ex_fmv": null,
+    "comment": "Si è infortunato gravemente durante la sosta delle nazionali e ne avrà per diversi mesi a causa del problema accusato al bicipite femorale: una tegola pesante per il Bologna di Palladino. Di lui se ne riparlerà all'asta di riparazione di febbraio, ora non ha senso averlo in rosa al fantacalcio visto il lungo stop.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-07-24",
+    "updated_at": "2026-09-29",
+    "createdAt": "2026-07-24",
+    "updatedAt": "2026-09-29",
+    "player": {
+      "player_id": "b894b38e-67c8-42fb-946f-36b8a7b60349",
+      "role": "D",
+      "mantra_roles": [
+        "Dd",
+        "E"
+      ]
+    }
+  },
+  {
+    "player_id": "244e0389-9c58-4c30-a0c2-dc221e3bb4ee",
+    "strategy_id": "16f4475f-bec4-463a-9ce2-0ad554345a1a",
+    "user_id": "5feafc71-d84c-400f-a6de-03cf5b0004f7",
+    "fascia": 9,
+    "fascia_second": null,
+    "fascia_third": null,
+    "price": 1,
+    "perc_price": "0.2000",
+    "ex_fmv": null,
+    "comment": "Alessandro Buongiorno è ai box per un infortunio al menisco che lo ha costretto a operarsi. Un paio di mesi di stop e rientro previsto dopo la sosta nazionali di novembre. Dovrebbe saltare indicativamente le prime 10/11 giornate di Serie A e sfrutterà la pausa per tornare in condizione per la 12a. Quando tornerà al 100% della condizione il titolare dovrebbe essere lui. L'ultima stagione, a livello di prestazioni, è stata travagliata ma la cura Allegri potrebbe riportarlo ai suoi livelli. Al fantacalcio, causa infortunio, non è più tra i top ma si può prendere in prospettiva per avere un potenziale big a prezzo di saldo.",
+    "tit_index": null,
+    "aff_index": null,
+    "inf_index": null,
+    "notes": [],
+    "target": null,
+    "unlocked": null,
+    "links": null,
+    "created_at": "2026-07-24",
+    "updated_at": "2026-09-29",
+    "createdAt": "2026-07-24",
+    "updatedAt": "2026-09-29",
+    "player": {
+      "player_id": "244e0389-9c58-4c30-a0c2-dc221e3bb4ee",
+      "role": "D",
+      "mantra_roles": [
+        "Dc"
       ]
     }
   }

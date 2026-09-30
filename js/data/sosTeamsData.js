@@ -1050,7 +1050,7 @@ export const SOS_TEAMS_DATA = {
     "attackRating": 4.0,
     "defenseRating": 3.5,
     "comment": "Il Bologna si caratterizza per un gioco molto dinamico, con i giocatori che spesso si scambiano le posizioni per creare confusione nella difesa avversaria. Il ruolo degli esterni d’attacco è fondamentale: sono loro a garantire ampiezza, velocità e spesso i gol e gli assist più importanti. La difesa è molto alta, in linea con il pressing aggressivo che la squadra mette in campo, ma questo comporta qualche rischio in ripartenza. Attenzione anche al turn over elevato, che può influenzare la continuità di rendimento di alcuni giocatori, specialmente in ottica fantacalcio.",
-    "sosFantaComment": "Scossone in casa Bologna: è arrivato l'esonero di Tedesco dopo 4 giornate, al suo posto la squadra è stata affidata a Raffaele Palladino. In carriera ha utilizzato tanti moduli, ma, come visto contro il Torino, sembra intenzionato a perseguire la strada del 3-4-3. Testa a testa tra Dovbyk e Piccoli davanti, come era già con Tedesco del resto. Ai lati Orsolini e Cambiaghi rispettivamente in vantaggio su Bernardeschi e Mbangula. A centrocampo Pobega più di Moro accanto a Ferguson. In difesa si azzera tutto sulle fasce: Zortea o Holm a destra, a sinistra Miranda in pole su Alhassane. I tre dietro sono Helland, Heggem e Theate.",
+    "sosFantaComment": "Scossone in casa Bologna: è arrivato l'esonero di Tedesco dopo 4 giornate, al suo posto la squadra è stata affidata a Raffaele Palladino. In carriera ha utilizzato tanti moduli, ma, come visto contro il Torino, sembra intenzionato a perseguire la strada del 3-4-3. Testa a testa tra Dovbyk e Piccoli davanti, come era già con Tedesco del resto. Ai lati Orsolini e Cambiaghi rispettivamente in vantaggio su Bernardeschi e Mbangula. A centrocampo Pobega più di Moro accanto a Ferguson. In difesa si azzera tutto sulle fasce: Zortea a destra visto il grave infortunio di Holm (lungo stop per lui), a sinistra Miranda in pole su Alhassane. I tre dietro sono Helland, Heggem e Theate.",
     "keyPoints": [
       {
         "text": "Punta solitamente prolifica",
@@ -1190,20 +1190,6 @@ export const SOS_TEAMS_DATA = {
       }
     ],
     "ballottaggi": [
-      [
-        {
-          "playerId": "2a411338-4370-4a88-8d00-f47f2167b09f",
-          "name": "Zortea",
-          "role": "D",
-          "perc": 51
-        },
-        {
-          "playerId": "b894b38e-67c8-42fb-946f-36b8a7b60349",
-          "name": "Holm",
-          "role": "D",
-          "perc": 49
-        }
-      ],
       [
         {
           "playerId": "ab2a5fb7-6ee0-4efe-92d2-adafe3bb3d3d",
@@ -1335,7 +1321,7 @@ export const SOS_TEAMS_DATA = {
     "attackRating": 4.0,
     "defenseRating": 3.5,
     "comment": "Il Bologna si caratterizza per un gioco molto dinamico, con i giocatori che spesso si scambiano le posizioni per creare confusione nella difesa avversaria. Il ruolo degli esterni d’attacco è fondamentale: sono loro a garantire ampiezza, velocità e spesso i gol e gli assist più importanti. La difesa è molto alta, in linea con il pressing aggressivo che la squadra mette in campo, ma questo comporta qualche rischio in ripartenza. Attenzione anche al turn over elevato, che può influenzare la continuità di rendimento di alcuni giocatori, specialmente in ottica fantacalcio.",
-    "sosFantaComment": "Scossone in casa Bologna: è arrivato l'esonero di Tedesco dopo 4 giornate, al suo posto la squadra è stata affidata a Raffaele Palladino. In carriera ha utilizzato tanti moduli, ma, come visto contro il Torino, sembra intenzionato a perseguire la strada del 3-4-3. Testa a testa tra Dovbyk e Piccoli davanti, come era già con Tedesco del resto. Ai lati Orsolini e Cambiaghi rispettivamente in vantaggio su Bernardeschi e Mbangula. A centrocampo Pobega più di Moro accanto a Ferguson. In difesa si azzera tutto sulle fasce: Zortea o Holm a destra, a sinistra Miranda in pole su Alhassane. I tre dietro sono Helland, Heggem e Theate.",
+    "sosFantaComment": "Scossone in casa Bologna: è arrivato l'esonero di Tedesco dopo 4 giornate, al suo posto la squadra è stata affidata a Raffaele Palladino. In carriera ha utilizzato tanti moduli, ma, come visto contro il Torino, sembra intenzionato a perseguire la strada del 3-4-3. Testa a testa tra Dovbyk e Piccoli davanti, come era già con Tedesco del resto. Ai lati Orsolini e Cambiaghi rispettivamente in vantaggio su Bernardeschi e Mbangula. A centrocampo Pobega più di Moro accanto a Ferguson. In difesa si azzera tutto sulle fasce: Zortea a destra visto il grave infortunio di Holm (lungo stop per lui), a sinistra Miranda in pole su Alhassane. I tre dietro sono Helland, Heggem e Theate.",
     "keyPoints": [
       {
         "text": "Punta solitamente prolifica",
@@ -1475,20 +1461,6 @@ export const SOS_TEAMS_DATA = {
       }
     ],
     "ballottaggi": [
-      [
-        {
-          "playerId": "2a411338-4370-4a88-8d00-f47f2167b09f",
-          "name": "Zortea",
-          "role": "D",
-          "perc": 51
-        },
-        {
-          "playerId": "b894b38e-67c8-42fb-946f-36b8a7b60349",
-          "name": "Holm",
-          "role": "D",
-          "perc": 49
-        }
-      ],
       [
         {
           "playerId": "ab2a5fb7-6ee0-4efe-92d2-adafe3bb3d3d",
@@ -8267,8 +8239,8 @@ export const SOS_TEAMS_DATA = {
     "primaryColor": "#ffd700",
     "secondaryColor": "#003399",
     "accentColor": "#000000",
-    "coach": "Carlos Cuesta",
-    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Cuesta.webp",
+    "coach": "Alberto Gilardino",
+    "coachImage": "https://cdn.falsesoftware.com/cartoons/gilardino.webp",
     "defaultFormation": "3-4-2-1",
     "module": "3-4-2-1",
     "attackRating": 2.0,
@@ -8497,8 +8469,8 @@ export const SOS_TEAMS_DATA = {
     "primaryColor": "#ffd700",
     "secondaryColor": "#003399",
     "accentColor": "#000000",
-    "coach": "Carlos Cuesta",
-    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Cuesta.webp",
+    "coach": "Alberto Gilardino",
+    "coachImage": "https://cdn.falsesoftware.com/cartoons/gilardino.webp",
     "defaultFormation": "3-4-2-1",
     "module": "3-4-2-1",
     "attackRating": 2.0,

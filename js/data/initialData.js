@@ -932,7 +932,7 @@ export const INITIAL_TEAMS = [
           "diffM": 7,
           "fvm": 51,
           "fvmM": 51,
-          "classic_8_mod_median": 0.3,
+          "classic_8_mod_median": 0.4,
           "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0.4
         },
@@ -1670,7 +1670,7 @@ export const INITIAL_TEAMS = [
           "fvm": 368,
           "fvmM": 368,
           "classic_8_mod_median": 9.4,
-          "classic_10_mod_median": 11.3,
+          "classic_10_mod_median": 11.2,
           "classic_12_mod_median": 12.2
         },
         "stats": {
@@ -2004,7 +2004,7 @@ export const INITIAL_TEAMS = [
           "diffM": 2,
           "fvm": 10,
           "fvmM": 10,
-          "classic_8_mod_median": 0,
+          "classic_8_mod_median": 0.2,
           "classic_10_mod_median": 0,
           "classic_12_mod_median": 0
         },
@@ -2419,7 +2419,7 @@ export const INITIAL_TEAMS = [
         "fantaRole": "C",
         "photoUrl": "https://cdn.falsesoftware.com/players/134015/v2.webp",
         "playerImage": "https://cdn.falsesoftware.com/players/134015/v2.webp",
-        "appetibilita": 84,
+        "appetibilita": 85,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -3670,7 +3670,7 @@ export const INITIAL_TEAMS = [
           "fvm": 16,
           "fvmM": 16,
           "classic_8_mod_median": 0.2,
-          "classic_10_mod_median": 0,
+          "classic_10_mod_median": 0.2,
           "classic_12_mod_median": 0
         },
         "stats": {
@@ -4856,7 +4856,7 @@ export const INITIAL_TEAMS = [
         "punizioni": false,
         "corner": false,
         "positionNotes": "",
-        "fantaComment": "Emil Holm va verso la permanenza a Bologna e si giocherà un posto sulla fascia destra con Zortea e il solito De Silvestri. Dopo le appena 7 presenze collezionate nella breve esperienza alla Juve, lo svedese vuole convincere il nuovo allenatore Palladino con le sua capacità di saltare l'uomo e arrivare sul fondo a crossare. Appena 16 le presenze nella passata stagione, tempestata di problemi di natura fisica. Al fantacalcio è un vero e proprio jolly, un'incognita: garanzia di assist (4 in stagione e un gol) ma, allo stesso tempo, titolarità e integrità fisica non sono al momento dalla sua.",
+        "fantaComment": "Si è infortunato gravemente durante la sosta delle nazionali e ne avrà per diversi mesi a causa del problema accusato al bicipite femorale: una tegola pesante per il Bologna di Palladino. Di lui se ne riparlerà all'asta di riparazione di febbraio, ora non ha senso averlo in rosa al fantacalcio visto il lungo stop.",
         "quotazioni": {
           "qtA": 7,
           "qtI": 8,
@@ -7050,7 +7050,7 @@ export const INITIAL_TEAMS = [
         "fantaRole": "C",
         "photoUrl": "https://cdn.falsesoftware.com/players/37726091/v3.webp",
         "playerImage": "https://cdn.falsesoftware.com/players/37726091/v3.webp",
-        "appetibilita": 85,
+        "appetibilita": 84,
         "status": "panchina",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -8847,7 +8847,7 @@ export const INITIAL_TEAMS = [
         "fantaRole": "D",
         "photoUrl": "https://cdn.falsesoftware.com/players/31909/v1.webp",
         "playerImage": "https://cdn.falsesoftware.com/players/31909/v1.webp",
-        "appetibilita": 91,
+        "appetibilita": 90,
         "status": "panchina",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -9806,7 +9806,7 @@ export const INITIAL_TEAMS = [
         "fantaRole": "D",
         "photoUrl": "https://cdn.falsesoftware.com/players/99534/v1.webp",
         "playerImage": "https://cdn.falsesoftware.com/players/99534/v1.webp",
-        "appetibilita": 89,
+        "appetibilita": 88,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -12108,7 +12108,7 @@ export const INITIAL_TEAMS = [
         "fantaRole": "C",
         "photoUrl": "https://cdn.falsesoftware.com/players/37592696/v1.webp",
         "playerImage": "https://cdn.falsesoftware.com/players/37592696/v1.webp",
-        "appetibilita": 96,
+        "appetibilita": 95,
         "status": "panchina",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -15791,7 +15791,7 @@ export const INITIAL_TEAMS = [
           "diffM": -7,
           "fvm": 112,
           "fvmM": 112,
-          "classic_8_mod_median": 2.7,
+          "classic_8_mod_median": 2.6,
           "classic_10_mod_median": 5,
           "classic_12_mod_median": 7
         },
@@ -15844,7 +15844,7 @@ export const INITIAL_TEAMS = [
         "fantaRole": "C",
         "photoUrl": "https://cdn.falsesoftware.com/players/2511082/v1.webp",
         "playerImage": "https://cdn.falsesoftware.com/players/2511082/v1.webp",
-        "appetibilita": 92,
+        "appetibilita": 91,
         "status": "panchina",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -18176,7 +18176,7 @@ export const INITIAL_TEAMS = [
         "fantaRole": "C",
         "photoUrl": "https://cdn.falsesoftware.com/players/37616125/v3.webp",
         "playerImage": "https://cdn.falsesoftware.com/players/37616125/v3.webp",
-        "appetibilita": 82,
+        "appetibilita": 81,
         "status": "panchina",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -21179,7 +21179,7 @@ export const INITIAL_TEAMS = [
           "diffM": -3,
           "fvm": 246,
           "fvmM": 246,
-          "classic_8_mod_median": 9.8,
+          "classic_8_mod_median": 9.9,
           "classic_10_mod_median": 12.2,
           "classic_12_mod_median": 13.6
         },
@@ -22461,7 +22461,7 @@ export const INITIAL_TEAMS = [
         "fantaRole": "D",
         "photoUrl": "https://cdn.falsesoftware.com/players/132721/v1.webp",
         "playerImage": "https://cdn.falsesoftware.com/players/132721/v1.webp",
-        "appetibilita": 89,
+        "appetibilita": 88,
         "status": "tit_sicuro",
         "isAvailable": true,
         "isPenaltyTaker": false,
@@ -22836,7 +22836,7 @@ export const INITIAL_TEAMS = [
           "diffM": 2,
           "fvm": 19,
           "fvmM": 19,
-          "classic_8_mod_median": 0.3,
+          "classic_8_mod_median": 0.4,
           "classic_10_mod_median": 0.6,
           "classic_12_mod_median": 1.1
         },
@@ -28724,7 +28724,7 @@ export const INITIAL_TEAMS = [
           "diffM": -17,
           "fvm": 282,
           "fvmM": 282,
-          "classic_8_mod_median": 8.7,
+          "classic_8_mod_median": 8.6,
           "classic_10_mod_median": 12,
           "classic_12_mod_median": 14
         },
@@ -30531,7 +30531,7 @@ export const INITIAL_TEAMS = [
           "fvm": 32,
           "fvmM": 32,
           "classic_8_mod_median": 0.2,
-          "classic_10_mod_median": 0.3,
+          "classic_10_mod_median": 0.4,
           "classic_12_mod_median": 0.6
         },
         "stats": {
@@ -30732,7 +30732,7 @@ export const INITIAL_TEAMS = [
           "fvm": 179,
           "fvmM": 179,
           "classic_8_mod_median": 3.4,
-          "classic_10_mod_median": 6,
+          "classic_10_mod_median": 5.9,
           "classic_12_mod_median": 8
         },
         "stats": {
@@ -33306,7 +33306,7 @@ export const INITIAL_TEAMS = [
     "shortName": "PAR",
     "city": "Parma",
     "stadium": "Ennio Tardini",
-    "coach": "Carlos Cuesta",
+    "coach": "Alberto Gilardino",
     "primaryColor": "#ffd700",
     "secondaryColor": "#003399",
     "accentColor": "#000000",
@@ -35495,8 +35495,8 @@ export const INITIAL_TEAMS = [
           "diffM": 16,
           "fvm": 54,
           "fvmM": 54,
-          "classic_8_mod_median": 1.6,
-          "classic_10_mod_median": 1.8,
+          "classic_8_mod_median": 1.4,
+          "classic_10_mod_median": 1.4,
           "classic_12_mod_median": 0
         },
         "stats": {
@@ -37603,7 +37603,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 7,
       "fvm": 51,
       "fvmM": 51,
-      "classic_8_mod_median": 0.3,
+      "classic_8_mod_median": 0.4,
       "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0.4
     },
@@ -37801,7 +37801,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -3,
       "fvm": 246,
       "fvmM": 246,
-      "classic_8_mod_median": 9.8,
+      "classic_8_mod_median": 9.9,
       "classic_10_mod_median": 12.2,
       "classic_12_mod_median": 13.6
     },
@@ -38111,7 +38111,7 @@ export const CSV_PLAYER_CATALOG = [
     "fantaRole": "C",
     "photoUrl": "https://cdn.falsesoftware.com/players/134015/v2.webp",
     "playerImage": "https://cdn.falsesoftware.com/players/134015/v2.webp",
-    "appetibilita": 84,
+    "appetibilita": 85,
     "status": "panchina",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -41233,7 +41233,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 2,
       "fvm": 19,
       "fvmM": 19,
-      "classic_8_mod_median": 0.3,
+      "classic_8_mod_median": 0.4,
       "classic_10_mod_median": 0.6,
       "classic_12_mod_median": 1.1
     },
@@ -41675,7 +41675,7 @@ export const CSV_PLAYER_CATALOG = [
     "fantaRole": "C",
     "photoUrl": "https://cdn.falsesoftware.com/players/37592696/v1.webp",
     "playerImage": "https://cdn.falsesoftware.com/players/37592696/v1.webp",
-    "appetibilita": 96,
+    "appetibilita": 95,
     "status": "panchina",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -44005,7 +44005,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -17,
       "fvm": 282,
       "fvmM": 282,
-      "classic_8_mod_median": 8.7,
+      "classic_8_mod_median": 8.6,
       "classic_10_mod_median": 12,
       "classic_12_mod_median": 14
     },
@@ -44051,7 +44051,7 @@ export const CSV_PLAYER_CATALOG = [
     "fantaRole": "C",
     "photoUrl": "https://cdn.falsesoftware.com/players/2511082/v1.webp",
     "playerImage": "https://cdn.falsesoftware.com/players/2511082/v1.webp",
-    "appetibilita": 92,
+    "appetibilita": 91,
     "status": "panchina",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -46955,7 +46955,7 @@ export const CSV_PLAYER_CATALOG = [
     "fantaRole": "D",
     "photoUrl": "https://cdn.falsesoftware.com/players/31909/v1.webp",
     "playerImage": "https://cdn.falsesoftware.com/players/31909/v1.webp",
-    "appetibilita": 91,
+    "appetibilita": 90,
     "status": "in_ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -48494,7 +48494,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 32,
       "fvmM": 32,
       "classic_8_mod_median": 0.2,
-      "classic_10_mod_median": 0.3,
+      "classic_10_mod_median": 0.4,
       "classic_12_mod_median": 0.6
     },
     "stats": {
@@ -48869,7 +48869,7 @@ export const CSV_PLAYER_CATALOG = [
     "fantaRole": "D",
     "photoUrl": "https://cdn.falsesoftware.com/players/132721/v1.webp",
     "playerImage": "https://cdn.falsesoftware.com/players/132721/v1.webp",
-    "appetibilita": 89,
+    "appetibilita": 88,
     "status": "in_ballottaggio",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -49803,7 +49803,7 @@ export const CSV_PLAYER_CATALOG = [
     "punizioni": false,
     "corner": false,
     "positionNotes": "",
-    "fantaComment": "Emil Holm va verso la permanenza a Bologna e si giocherà un posto sulla fascia destra con Zortea e il solito De Silvestri. Dopo le appena 7 presenze collezionate nella breve esperienza alla Juve, lo svedese vuole convincere il nuovo allenatore Palladino con le sua capacità di saltare l'uomo e arrivare sul fondo a crossare. Appena 16 le presenze nella passata stagione, tempestata di problemi di natura fisica. Al fantacalcio è un vero e proprio jolly, un'incognita: garanzia di assist (4 in stagione e un gol) ma, allo stesso tempo, titolarità e integrità fisica non sono al momento dalla sua.",
+    "fantaComment": "Si è infortunato gravemente durante la sosta delle nazionali e ne avrà per diversi mesi a causa del problema accusato al bicipite femorale: una tegola pesante per il Bologna di Palladino. Di lui se ne riparlerà all'asta di riparazione di febbraio, ora non ha senso averlo in rosa al fantacalcio visto il lungo stop.",
     "quotazioni": {
       "qtA": 7,
       "qtI": 8,
@@ -52829,7 +52829,7 @@ export const CSV_PLAYER_CATALOG = [
     "fantaRole": "C",
     "photoUrl": "https://cdn.falsesoftware.com/players/37616125/v3.webp",
     "playerImage": "https://cdn.falsesoftware.com/players/37616125/v3.webp",
-    "appetibilita": 82,
+    "appetibilita": 81,
     "status": "panchina",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -58460,7 +58460,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 368,
       "fvmM": 368,
       "classic_8_mod_median": 9.4,
-      "classic_10_mod_median": 11.3,
+      "classic_10_mod_median": 11.2,
       "classic_12_mod_median": 12.2
     },
     "stats": {
@@ -59317,7 +59317,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -7,
       "fvm": 112,
       "fvmM": 112,
-      "classic_8_mod_median": 2.7,
+      "classic_8_mod_median": 2.6,
       "classic_10_mod_median": 5,
       "classic_12_mod_median": 7
     },
@@ -59978,7 +59978,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 179,
       "fvmM": 179,
       "classic_8_mod_median": 3.4,
-      "classic_10_mod_median": 6,
+      "classic_10_mod_median": 5.9,
       "classic_12_mod_median": 8
     },
     "stats": {
@@ -60307,8 +60307,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 16,
       "fvm": 54,
       "fvmM": 54,
-      "classic_8_mod_median": 1.6,
-      "classic_10_mod_median": 1.8,
+      "classic_8_mod_median": 1.4,
+      "classic_10_mod_median": 1.4,
       "classic_12_mod_median": 0
     },
     "stats": {
@@ -60353,7 +60353,7 @@ export const CSV_PLAYER_CATALOG = [
     "fantaRole": "D",
     "photoUrl": "https://cdn.falsesoftware.com/players/99534/v1.webp",
     "playerImage": "https://cdn.falsesoftware.com/players/99534/v1.webp",
-    "appetibilita": 89,
+    "appetibilita": 88,
     "status": "tit_sicuro",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -63719,7 +63719,7 @@ export const CSV_PLAYER_CATALOG = [
     "fantaRole": "C",
     "photoUrl": "https://cdn.falsesoftware.com/players/37726091/v3.webp",
     "playerImage": "https://cdn.falsesoftware.com/players/37726091/v3.webp",
-    "appetibilita": 85,
+    "appetibilita": 84,
     "status": "panchina",
     "isAvailable": true,
     "isPenaltyTaker": false,
@@ -70670,7 +70670,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 16,
       "fvmM": 16,
       "classic_8_mod_median": 0.2,
-      "classic_10_mod_median": 0,
+      "classic_10_mod_median": 0.2,
       "classic_12_mod_median": 0
     },
     "stats": {
@@ -71197,7 +71197,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 2,
       "fvm": 10,
       "fvmM": 10,
-      "classic_8_mod_median": 0,
+      "classic_8_mod_median": 0.2,
       "classic_10_mod_median": 0,
       "classic_12_mod_median": 0
     },

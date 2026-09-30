@@ -640,7 +640,6 @@ export const SOS_STRATEGY_1 = {
     "couto": "tier_d_7",
     "obrador": "tier_d_10",
     "masini": "tier_c_15",
-    "buongiorno": "tier_d_9",
     "dominguez b.": "tier_c_12",
     "dominguezb": "tier_c_12",
     "molina n.": "tier_d_2",
@@ -689,7 +688,6 @@ export const SOS_STRATEGY_1 = {
     "carlos augusto": "tier_d_6",
     "carlosaugusto": "tier_d_6",
     "bellanova": "tier_d_12",
-    "holm": "tier_d_12",
     "heggem": "tier_d_14",
     "martinez l.": "tier_a_1",
     "martinezl": "tier_a_1",
@@ -931,6 +929,8 @@ export const SOS_STRATEGY_1 = {
     "bernabè": "tier_c_11",
     "bernab": "tier_c_11",
     "keita m.": "tier_c_14",
-    "keitam": "tier_c_14"
+    "keitam": "tier_c_14",
+    "holm": "tier_d_9",
+    "buongiorno": "tier_d_9"
   }
 };

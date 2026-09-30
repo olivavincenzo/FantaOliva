@@ -556,9 +556,9 @@
     "attack": 4,
     "defense": 3.5,
     "comment": "Il Bologna si caratterizza per un gioco molto dinamico, con i giocatori che spesso si scambiano le posizioni per creare confusione nella difesa avversaria. Il ruolo degli esterni d’attacco è fondamentale: sono loro a garantire ampiezza, velocità e spesso i gol e gli assist più importanti. La difesa è molto alta, in linea con il pressing aggressivo che la squadra mette in campo, ma questo comporta qualche rischio in ripartenza. Attenzione anche al turn over elevato, che può influenzare la continuità di rendimento di alcuni giocatori, specialmente in ottica fantacalcio.",
-    "sosFantaComment": "Scossone in casa Bologna: è arrivato l'esonero di Tedesco dopo 4 giornate, al suo posto la squadra è stata affidata a Raffaele Palladino. In carriera ha utilizzato tanti moduli, ma, come visto contro il Torino, sembra intenzionato a perseguire la strada del 3-4-3. Testa a testa tra Dovbyk e Piccoli davanti, come era già con Tedesco del resto. Ai lati Orsolini e Cambiaghi rispettivamente in vantaggio su Bernardeschi e Mbangula. A centrocampo Pobega più di Moro accanto a Ferguson. In difesa si azzera tutto sulle fasce: Zortea o Holm a destra, a sinistra Miranda in pole su Alhassane. I tre dietro sono Helland, Heggem e Theate.",
+    "sosFantaComment": "Scossone in casa Bologna: è arrivato l'esonero di Tedesco dopo 4 giornate, al suo posto la squadra è stata affidata a Raffaele Palladino. In carriera ha utilizzato tanti moduli, ma, come visto contro il Torino, sembra intenzionato a perseguire la strada del 3-4-3. Testa a testa tra Dovbyk e Piccoli davanti, come era già con Tedesco del resto. Ai lati Orsolini e Cambiaghi rispettivamente in vantaggio su Bernardeschi e Mbangula. A centrocampo Pobega più di Moro accanto a Ferguson. In difesa si azzera tutto sulle fasce: Zortea a destra visto il grave infortunio di Holm (lungo stop per lui), a sinistra Miranda in pole su Alhassane. I tre dietro sono Helland, Heggem e Theate.",
     "created_at": "2026-07-21T13:36:37.003Z",
-    "updated_at": "2026-09-26T21:20:43.686Z",
+    "updated_at": "2026-09-29T12:57:41.477Z",
     "up": [
       {
         "player_id": "c3763cc2-a3d9-403f-8f5a-856896a47c5d",
@@ -617,18 +617,6 @@
       }
     ],
     "ballottaggi": [
-      {
-        "players": [
-          {
-            "player_id": "2a411338-4370-4a88-8d00-f47f2167b09f",
-            "perc": 51
-          },
-          {
-            "player_id": "b894b38e-67c8-42fb-946f-36b8a7b60349",
-            "perc": 49
-          }
-        ]
-      },
       {
         "players": [
           {
@@ -720,7 +708,7 @@
       }
     ],
     "createdAt": "2026-07-21T13:36:37.003Z",
-    "updatedAt": "2026-09-26T21:20:43.686Z"
+    "updatedAt": "2026-09-29T12:57:41.477Z"
   },
   {
     "team": "GEN",
@@ -3789,13 +3777,13 @@
       }
     ],
     "module": "3-4-2-1",
-    "coach": "Carlos Cuesta",
+    "coach": "Alberto Gilardino",
     "attack": 2,
     "defense": 2.5,
     "comment": "ll nuovo Parma abbraccia un calcio moderno e ambizioso: pressing alto, scambi di posizione e ricerca costante della superiorità numerica. Un’impronta propositiva che può tradursi in bonus preziosi per i fantallenatori. Il mantra sarà il coraggio nelle giocate e la fluidità tra i reparti. Per rendere efficace il sistema serviranno interpreti duttili, tecnici e dinamici: il mercato estivo sarà quindi decisivo. Nel precampionato è stata testata la difesa a tre, con Delprato e Valeri schierati da quinti per garantire ampiezza e spinta. Le due punte saranno supportate da centrocampisti offensivi e inserimenti continui.",
     "sosFantaComment": "Con l’arrivo di Alberto Gilardino al posto di Cuesta, la base tattica del Parma dovrebbe rimanere la difesa a tre. Il nuovo allenatore può ripartire dal 3-4-2-1, senza escludere il passaggio al 3-5-2 in alcune partite. In porta spazio a Corvi, mentre Delprato, Troilo e Diego Carlos sono i favoriti per comporre il terzetto arretrato. Valeri e Britschgi partono avanti sulle fasce, ma in alcune gare anche Delprato può essere utilizzato in una posizione più avanzata al posto dello svizzero. A centrocampo Keita è un punto fermo, con Sierro pronto a trovare spazio. Da capire soprattutto la posizione di Bernabé, che Gilardino può utilizzare sia in mediana sia sulla trequarti. In attacco restano centrali El Bilal Touré, Romero e il giovane Lontani, grande sorpresa di questo avvio di stagione, senza dimenticare Elphege e Fabbian come ulteriori soluzioni offensive.",
     "created_at": "2026-07-21T13:10:52.139Z",
-    "updated_at": "2026-09-29T08:52:12.982Z",
+    "updated_at": "2026-09-29T13:48:05.341Z",
     "up": [
       {
         "player_id": "f1421f6f-3f6a-436b-9ed3-997e353873e0",
@@ -3886,7 +3874,7 @@
     "coachRating": {
       "attack": 2,
       "defense": 2.5,
-      "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Cuesta.webp"
+      "coachImage": "https://cdn.falsesoftware.com/cartoons/gilardino.webp"
     },
     "keyPoints": [
       {
@@ -3913,7 +3901,7 @@
       }
     ],
     "createdAt": "2026-07-21T13:10:52.139Z",
-    "updatedAt": "2026-09-29T08:52:12.982Z"
+    "updatedAt": "2026-09-29T13:48:05.341Z"
   },
   {
     "team": "UDI",
