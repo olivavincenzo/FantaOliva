@@ -2005,7 +2005,7 @@ export const INITIAL_TEAMS = [
           "fvm": 10,
           "fvmM": 10,
           "classic_8_mod_median": 0.2,
-          "classic_10_mod_median": 0,
+          "classic_10_mod_median": 0.3,
           "classic_12_mod_median": 0
         },
         "stats": {
@@ -19585,7 +19585,7 @@ export const INITIAL_TEAMS = [
           "diffM": 16,
           "fvm": 595,
           "fvmM": 595,
-          "classic_8_mod_median": 34.1,
+          "classic_8_mod_median": 34.2,
           "classic_10_mod_median": 34.2,
           "classic_12_mod_median": 33.5
         },
@@ -28724,7 +28724,7 @@ export const INITIAL_TEAMS = [
           "diffM": -17,
           "fvm": 282,
           "fvmM": 282,
-          "classic_8_mod_median": 8.7,
+          "classic_8_mod_median": 8.6,
           "classic_10_mod_median": 12,
           "classic_12_mod_median": 14
         },
@@ -35495,7 +35495,7 @@ export const INITIAL_TEAMS = [
           "diffM": 16,
           "fvm": 54,
           "fvmM": 54,
-          "classic_8_mod_median": 1.6,
+          "classic_8_mod_median": 1.4,
           "classic_10_mod_median": 1.3,
           "classic_12_mod_median": 0
         },
@@ -37405,7 +37405,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 16,
       "fvm": 595,
       "fvmM": 595,
-      "classic_8_mod_median": 34.1,
+      "classic_8_mod_median": 34.2,
       "classic_10_mod_median": 34.2,
       "classic_12_mod_median": 33.5
     },
@@ -44005,7 +44005,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -17,
       "fvm": 282,
       "fvmM": 282,
-      "classic_8_mod_median": 8.7,
+      "classic_8_mod_median": 8.6,
       "classic_10_mod_median": 12,
       "classic_12_mod_median": 14
     },
@@ -60307,7 +60307,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 16,
       "fvm": 54,
       "fvmM": 54,
-      "classic_8_mod_median": 1.6,
+      "classic_8_mod_median": 1.4,
       "classic_10_mod_median": 1.3,
       "classic_12_mod_median": 0
     },
@@ -71198,7 +71198,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 10,
       "fvmM": 10,
       "classic_8_mod_median": 0.2,
-      "classic_10_mod_median": 0,
+      "classic_10_mod_median": 0.3,
       "classic_12_mod_median": 0
     },
     "stats": {
