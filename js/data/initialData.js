@@ -1000,7 +1000,7 @@ export const INITIAL_TEAMS = [
           "fvm": 157,
           "fvmM": 157,
           "classic_8_mod_median": 2.2,
-          "classic_10_mod_median": 3,
+          "classic_10_mod_median": 3.1,
           "classic_12_mod_median": 4.2
         },
         "stats": {
@@ -1670,7 +1670,7 @@ export const INITIAL_TEAMS = [
           "fvm": 368,
           "fvmM": 368,
           "classic_8_mod_median": 9.2,
-          "classic_10_mod_median": 11.2,
+          "classic_10_mod_median": 11,
           "classic_12_mod_median": 11.8
         },
         "stats": {
@@ -8314,7 +8314,7 @@ export const INITIAL_TEAMS = [
           "fvm": 131,
           "fvmM": 131,
           "classic_8_mod_median": 6.4,
-          "classic_10_mod_median": 7.8,
+          "classic_10_mod_median": 7.7,
           "classic_12_mod_median": 8.6
         },
         "stats": {
@@ -8384,8 +8384,8 @@ export const INITIAL_TEAMS = [
           "diffM": 20,
           "fvm": 202,
           "fvmM": 202,
-          "classic_8_mod_median": 4.1,
-          "classic_10_mod_median": 4.4,
+          "classic_8_mod_median": 4.2,
+          "classic_10_mod_median": 4.5,
           "classic_12_mod_median": 5.4
         },
         "stats": {
@@ -8800,7 +8800,7 @@ export const INITIAL_TEAMS = [
           "diffM": 30,
           "fvm": 352,
           "fvmM": 352,
-          "classic_8_mod_median": 14.7,
+          "classic_8_mod_median": 14.6,
           "classic_10_mod_median": 19,
           "classic_12_mod_median": 20.8
         },
@@ -10321,7 +10321,7 @@ export const INITIAL_TEAMS = [
           "diffM": 0,
           "fvm": 176,
           "fvmM": 176,
-          "classic_8_mod_median": 2.9,
+          "classic_8_mod_median": 3,
           "classic_10_mod_median": 3.6,
           "classic_12_mod_median": 4.4
         },
@@ -19727,7 +19727,7 @@ export const INITIAL_TEAMS = [
           "diffM": 34,
           "fvm": 285,
           "fvmM": 285,
-          "classic_8_mod_median": 9,
+          "classic_8_mod_median": 9.1,
           "classic_10_mod_median": 10,
           "classic_12_mod_median": 10.2
         },
@@ -22411,7 +22411,7 @@ export const INITIAL_TEAMS = [
           "diffM": -2,
           "fvm": 144,
           "fvmM": 144,
-          "classic_8_mod_median": 6.2,
+          "classic_8_mod_median": 6.1,
           "classic_10_mod_median": 8.2,
           "classic_12_mod_median": 10
         },
@@ -23528,7 +23528,7 @@ export const INITIAL_TEAMS = [
           "diffM": -4,
           "fvm": 138,
           "fvmM": 138,
-          "classic_8_mod_median": 1,
+          "classic_8_mod_median": 1.1,
           "classic_10_mod_median": 1.6,
           "classic_12_mod_median": 2.2
         },
@@ -35002,7 +35002,7 @@ export const INITIAL_TEAMS = [
           "fvm": 1,
           "fvmM": 1,
           "classic_8_mod_median": 0.3,
-          "classic_10_mod_median": 0.4,
+          "classic_10_mod_median": 0.3,
           "classic_12_mod_median": 0
         },
         "stats": {
@@ -35496,7 +35496,7 @@ export const INITIAL_TEAMS = [
           "fvm": 54,
           "fvmM": 54,
           "classic_8_mod_median": 1.4,
-          "classic_10_mod_median": 1.4,
+          "classic_10_mod_median": 1.3,
           "classic_12_mod_median": 0
         },
         "stats": {
@@ -35850,7 +35850,7 @@ export const INITIAL_TEAMS = [
           "diffM": -6,
           "fvm": 141,
           "fvmM": 141,
-          "classic_8_mod_median": 5.3,
+          "classic_8_mod_median": 5.2,
           "classic_10_mod_median": 7.8,
           "classic_12_mod_median": 9.2
         },
@@ -38197,7 +38197,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 34,
       "fvm": 285,
       "fvmM": 285,
-      "classic_8_mod_median": 9,
+      "classic_8_mod_median": 9.1,
       "classic_10_mod_median": 10,
       "classic_12_mod_median": 10.2
     },
@@ -38527,7 +38527,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 0,
       "fvm": 176,
       "fvmM": 176,
-      "classic_8_mod_median": 2.9,
+      "classic_8_mod_median": 3,
       "classic_10_mod_median": 3.6,
       "classic_12_mod_median": 4.4
     },
@@ -39187,8 +39187,8 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 20,
       "fvm": 202,
       "fvmM": 202,
-      "classic_8_mod_median": 4.1,
-      "classic_10_mod_median": 4.4,
+      "classic_8_mod_median": 4.2,
+      "classic_10_mod_median": 4.5,
       "classic_12_mod_median": 5.4
     },
     "stats": {
@@ -40244,7 +40244,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 157,
       "fvmM": 157,
       "classic_8_mod_median": 2.2,
-      "classic_10_mod_median": 3,
+      "classic_10_mod_median": 3.1,
       "classic_12_mod_median": 4.2
     },
     "stats": {
@@ -46645,7 +46645,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 30,
       "fvm": 352,
       "fvmM": 352,
-      "classic_8_mod_median": 14.7,
+      "classic_8_mod_median": 14.6,
       "classic_10_mod_median": 19,
       "classic_12_mod_median": 20.8
     },
@@ -47438,7 +47438,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 131,
       "fvmM": 131,
       "classic_8_mod_median": 6.4,
-      "classic_10_mod_median": 7.8,
+      "classic_10_mod_median": 7.7,
       "classic_12_mod_median": 8.6
     },
     "stats": {
@@ -51595,7 +51595,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -4,
       "fvm": 138,
       "fvmM": 138,
-      "classic_8_mod_median": 1,
+      "classic_8_mod_median": 1.1,
       "classic_10_mod_median": 1.6,
       "classic_12_mod_median": 2.2
     },
@@ -58460,7 +58460,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 368,
       "fvmM": 368,
       "classic_8_mod_median": 9.2,
-      "classic_10_mod_median": 11.2,
+      "classic_10_mod_median": 11,
       "classic_12_mod_median": 11.8
     },
     "stats": {
@@ -58525,7 +58525,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -6,
       "fvm": 141,
       "fvmM": 141,
-      "classic_8_mod_median": 5.3,
+      "classic_8_mod_median": 5.2,
       "classic_10_mod_median": 7.8,
       "classic_12_mod_median": 9.2
     },
@@ -60308,7 +60308,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 54,
       "fvmM": 54,
       "classic_8_mod_median": 1.4,
-      "classic_10_mod_median": 1.4,
+      "classic_10_mod_median": 1.3,
       "classic_12_mod_median": 0
     },
     "stats": {
@@ -67502,7 +67502,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 1,
       "fvmM": 1,
       "classic_8_mod_median": 0.3,
-      "classic_10_mod_median": 0.4,
+      "classic_10_mod_median": 0.3,
       "classic_12_mod_median": 0
     },
     "stats": {
@@ -67633,7 +67633,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -2,
       "fvm": 144,
       "fvmM": 144,
-      "classic_8_mod_median": 6.2,
+      "classic_8_mod_median": 6.1,
       "classic_10_mod_median": 8.2,
       "classic_12_mod_median": 10
     },
