@@ -2290,7 +2290,7 @@
       "fantalab_id": "1d2a470a-c2dd-4e85-9269-2432dab4989e",
       "fantacalcio_id": 6531,
       "name": "Jimenez A.",
-      "full_name": "Álex Jiménez",
+      "full_name": "Alejandro Jiménez Sánchez",
       "team_id": 109,
       "team_name": "Fiorentina",
       "team_short": "FIO",
@@ -4056,7 +4056,7 @@
       "fantalab_id": "4a7b3303-8034-4780-9253-42e14d253000",
       "fantacalcio_id": 6867,
       "name": "Valle",
-      "full_name": "Álex Valle",
+      "full_name": "Álex Valle Gómez",
       "team_id": 268,
       "team_name": "Como",
       "team_short": "COM",
@@ -6432,7 +6432,7 @@
       "fantalab_id": "95aaa469-351a-4ce1-a71f-97dce55d47de",
       "fantacalcio_id": 7329,
       "name": "Obrador",
-      "full_name": "Rafa Obrador",
+      "full_name": "Rafael Obrador Burguera",
       "team_id": 2714,
       "team_name": "Sassuolo",
       "team_short": "SAS",
@@ -13236,6 +13236,33 @@
       }
     },
     {
+      "player_id": "0d9e70de-d2ad-4074-9298-4bceda5b52dc",
+      "sportsmonks_id": 37673342,
+      "fantalab_id": "0d9e70de-d2ad-4074-9298-4bceda5b52dc",
+      "fantacalcio_id": 7633,
+      "name": "Obric",
+      "full_name": "Relja Obrić",
+      "team_id": 708,
+      "team_name": "Atalanta",
+      "team_short": "ATA",
+      "team_image": "https://cdn.falsesoftware.com/teams/atalanta.png",
+      "role": "D",
+      "mantra_roles": [
+        "Dc"
+      ],
+      "player_image": null,
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 5,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": null,
+        "mv": null
+      }
+    },
+    {
       "player_id": "aeed69d5-c370-4108-929d-ba03ac11e1ae",
       "sportsmonks_id": 8417254,
       "fantalab_id": "aeed69d5-c370-4108-929d-ba03ac11e1ae",
@@ -14889,7 +14916,7 @@
     "fallback_price"
   ],
   "pagination": {
-    "total": 536,
+    "total": 537,
     "limit": 1000,
     "offset": 0
   },
