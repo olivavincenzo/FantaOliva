@@ -6679,6 +6679,35 @@
       }
     },
     {
+      "player_id": "3b28787f-10ec-4f94-a072-b11caee629a0",
+      "sportsmonks_id": 933,
+      "fantalab_id": "3b28787f-10ec-4f94-a072-b11caee629a0",
+      "fantacalcio_id": 2525,
+      "name": "Darmian",
+      "full_name": "Matteo Darmian",
+      "team_id": 8513,
+      "team_name": "Bologna",
+      "team_short": "BOL",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/1/8513.png",
+      "role": "D",
+      "mantra_roles": [
+        "B",
+        "Dd",
+        "E"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/933/v1.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": null,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 6,
+        "mv": 6
+      }
+    },
+    {
       "player_id": "c4bdc06b-f44b-4a38-bcbd-f12ed77a0595",
       "sportsmonks_id": 9636624,
       "fantalab_id": "c4bdc06b-f44b-4a38-bcbd-f12ed77a0595",
@@ -14969,7 +14998,7 @@
     "perc_mantra_12"
   ],
   "pagination": {
-    "total": 537,
+    "total": 538,
     "limit": 1000,
     "offset": 0
   },

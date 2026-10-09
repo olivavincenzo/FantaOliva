@@ -580,7 +580,7 @@ export const INITIAL_TEAMS = [
           "fvm": 154,
           "fvmM": 154,
           "classic_8_mod_median": 5.8,
-          "classic_10_mod_median": 6.5,
+          "classic_10_mod_median": 6.6,
           "classic_12_mod_median": 7.4
         },
         "stats": {
@@ -2794,7 +2794,7 @@ export const INITIAL_TEAMS = [
           "diffM": -5,
           "fvm": 109,
           "fvmM": 109,
-          "classic_8_mod_median": 4.4,
+          "classic_8_mod_median": 4.3,
           "classic_10_mod_median": 6.4,
           "classic_12_mod_median": 7.4
         },
@@ -3984,8 +3984,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "bologna_holm_5678",
-          "bologna_vitik_7068",
-          "bologna_alhassane_7483"
+          "bologna_darmian_2525",
+          "bologna_vitik_7068"
         ],
         "slotId": "pos_2"
       },
@@ -4055,8 +4055,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "bologna_holm_5678",
-          "bologna_vitik_7068",
-          "bologna_alhassane_7483"
+          "bologna_darmian_2525",
+          "bologna_vitik_7068"
         ],
         "slotId": "pos_3"
       },
@@ -4126,8 +4126,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "bologna_holm_5678",
-          "bologna_vitik_7068",
-          "bologna_alhassane_7483"
+          "bologna_darmian_2525",
+          "bologna_vitik_7068"
         ],
         "slotId": "pos_4"
       },
@@ -4197,8 +4197,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "bologna_holm_5678",
-          "bologna_vitik_7068",
-          "bologna_alhassane_7483"
+          "bologna_darmian_2525",
+          "bologna_vitik_7068"
         ],
         "slotId": "pos_5"
       },
@@ -4268,8 +4268,8 @@ export const INITIAL_TEAMS = [
         },
         "substitutes": [
           "bologna_holm_5678",
-          "bologna_vitik_7068",
-          "bologna_alhassane_7483"
+          "bologna_darmian_2525",
+          "bologna_vitik_7068"
         ],
         "slotId": "pos_8"
       },
@@ -4892,6 +4892,73 @@ export const INITIAL_TEAMS = [
           "amm": 1,
           "espulsioni": 1,
           "esp": 1,
+          "au": 0
+        },
+        "substitutes": [],
+        "slotId": null
+      },
+      {
+        "id": "bologna_darmian_2525",
+        "csvId": "2525",
+        "fantalabId": "3b28787f-10ec-4f94-a072-b11caee629a0",
+        "name": "Darmian",
+        "displayName": "Darmian",
+        "fullName": "Matteo Darmian",
+        "teamName": "Bologna",
+        "teamId": "bologna",
+        "teamShort": "BOL",
+        "role": "TD",
+        "classicRole": "D",
+        "mantraRole": "B;Dd;E",
+        "fantaRole": "D",
+        "photoUrl": "https://cdn.falsesoftware.com/players/933/v1.webp",
+        "playerImage": "https://cdn.falsesoftware.com/players/933/v1.webp",
+        "appetibilita": 84,
+        "status": "panchina",
+        "isAvailable": true,
+        "isPenaltyTaker": false,
+        "isFreeKickTaker": false,
+        "isCornerTaker": false,
+        "rigorista": false,
+        "punizioni": false,
+        "corner": false,
+        "positionNotes": "",
+        "fantaComment": "",
+        "quotazioni": {
+          "qtA": 1,
+          "qtI": 1,
+          "diff": 0,
+          "qtAM": 1,
+          "qtIM": 1,
+          "diffM": 0,
+          "fvm": 1,
+          "fvmM": 1,
+          "classic_8_mod_median": 0,
+          "classic_10_mod_median": 0,
+          "classic_12_mod_median": 0
+        },
+        "stats": {
+          "titolarita": 5,
+          "fantamedia": 6.0,
+          "mediaVoto": 6.0,
+          "pv": 6,
+          "presenze": 6,
+          "gol": 0,
+          "gf": 0,
+          "gs": 0,
+          "golSubiti": 0,
+          "rp": 0,
+          "rc": 0,
+          "rPlus": 0,
+          "rMinus": 0,
+          "rigoriSegnati": 0,
+          "rigoriSbagliati": 0,
+          "assist": 0,
+          "ass": 0,
+          "ammonizioni": 0,
+          "amm": 0,
+          "espulsioni": 0,
+          "esp": 0,
           "au": 0
         },
         "substitutes": [],
@@ -10252,7 +10319,7 @@ export const INITIAL_TEAMS = [
           "diffM": 21,
           "fvm": 310,
           "fvmM": 310,
-          "classic_8_mod_median": 10.4,
+          "classic_8_mod_median": 10.5,
           "classic_10_mod_median": 10.8,
           "classic_12_mod_median": 10.7
         },
@@ -19443,7 +19510,7 @@ export const INITIAL_TEAMS = [
           "diffM": 4,
           "fvm": 253,
           "fvmM": 253,
-          "classic_8_mod_median": 14.4,
+          "classic_8_mod_median": 14.3,
           "classic_10_mod_median": 14.8,
           "classic_12_mod_median": 15.1
         },
@@ -35420,7 +35487,7 @@ export const INITIAL_TEAMS = [
           "diffM": -5,
           "fvm": 90,
           "fvmM": 90,
-          "classic_8_mod_median": 4.9,
+          "classic_8_mod_median": 4.8,
           "classic_10_mod_median": 5.6,
           "classic_12_mod_median": 6
         },
@@ -38330,7 +38397,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 4,
       "fvm": 253,
       "fvmM": 253,
-      "classic_8_mod_median": 14.4,
+      "classic_8_mod_median": 14.3,
       "classic_10_mod_median": 14.8,
       "classic_12_mod_median": 15.1
     },
@@ -38924,7 +38991,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 21,
       "fvm": 310,
       "fvmM": 310,
-      "classic_8_mod_median": 10.4,
+      "classic_8_mod_median": 10.5,
       "classic_10_mod_median": 10.8,
       "classic_12_mod_median": 10.7
     },
@@ -41235,7 +41302,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 154,
       "fvmM": 154,
       "classic_8_mod_median": 5.8,
-      "classic_10_mod_median": 6.5,
+      "classic_10_mod_median": 6.6,
       "classic_12_mod_median": 7.4
     },
     "stats": {
@@ -51266,7 +51333,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -5,
       "fvm": 90,
       "fvmM": 90,
-      "classic_8_mod_median": 4.9,
+      "classic_8_mod_median": 4.8,
       "classic_10_mod_median": 5.6,
       "classic_12_mod_median": 6
     },
@@ -53124,6 +53191,72 @@ export const CSV_PLAYER_CATALOG = [
       "mediaVoto": 6.0,
       "pv": 1,
       "presenze": 1,
+      "gol": 0,
+      "gf": 0,
+      "gs": 0,
+      "golSubiti": 0,
+      "rp": 0,
+      "rc": 0,
+      "rPlus": 0,
+      "rMinus": 0,
+      "rigoriSegnati": 0,
+      "rigoriSbagliati": 0,
+      "assist": 0,
+      "ass": 0,
+      "ammonizioni": 0,
+      "amm": 0,
+      "espulsioni": 0,
+      "esp": 0,
+      "au": 0
+    },
+    "substitutes": []
+  },
+  {
+    "id": "bologna_darmian_2525",
+    "csvId": "2525",
+    "fantalabId": "3b28787f-10ec-4f94-a072-b11caee629a0",
+    "name": "Darmian",
+    "displayName": "Darmian",
+    "fullName": "Matteo Darmian",
+    "teamName": "Bologna",
+    "teamId": "bologna",
+    "teamShort": "BOL",
+    "role": "TD",
+    "classicRole": "D",
+    "mantraRole": "B;Dd;E",
+    "fantaRole": "D",
+    "photoUrl": "https://cdn.falsesoftware.com/players/933/v1.webp",
+    "playerImage": "https://cdn.falsesoftware.com/players/933/v1.webp",
+    "appetibilita": 84,
+    "status": "panchina",
+    "isAvailable": true,
+    "isPenaltyTaker": false,
+    "isFreeKickTaker": false,
+    "isCornerTaker": false,
+    "rigorista": false,
+    "punizioni": false,
+    "corner": false,
+    "positionNotes": "",
+    "fantaComment": "",
+    "quotazioni": {
+      "qtA": 1,
+      "qtI": 1,
+      "diff": 0,
+      "qtAM": 1,
+      "qtIM": 1,
+      "diffM": 0,
+      "fvm": 1,
+      "fvmM": 1,
+      "classic_8_mod_median": 0,
+      "classic_10_mod_median": 0,
+      "classic_12_mod_median": 0
+    },
+    "stats": {
+      "titolarita": 5,
+      "fantamedia": 6.0,
+      "mediaVoto": 6.0,
+      "pv": 6,
+      "presenze": 6,
       "gol": 0,
       "gf": 0,
       "gs": 0,
@@ -65984,7 +66117,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -5,
       "fvm": 109,
       "fvmM": 109,
-      "classic_8_mod_median": 4.4,
+      "classic_8_mod_median": 4.3,
       "classic_10_mod_median": 6.4,
       "classic_12_mod_median": 7.4
     },
