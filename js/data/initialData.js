@@ -580,7 +580,7 @@ export const INITIAL_TEAMS = [
           "fvm": 154,
           "fvmM": 154,
           "classic_8_mod_median": 5.8,
-          "classic_10_mod_median": 6.6,
+          "classic_10_mod_median": 6.5,
           "classic_12_mod_median": 7.4
         },
         "stats": {
@@ -1535,7 +1535,7 @@ export const INITIAL_TEAMS = [
           "diffM": 40,
           "fvm": 131,
           "fvmM": 131,
-          "classic_8_mod_median": 3.8,
+          "classic_8_mod_median": 3.7,
           "classic_10_mod_median": 6.6,
           "classic_12_mod_median": 8.2
         },
@@ -30312,7 +30312,7 @@ export const INITIAL_TEAMS = [
           "diffM": -9,
           "fvm": 99,
           "fvmM": 99,
-          "classic_8_mod_median": 5.3,
+          "classic_8_mod_median": 5.2,
           "classic_10_mod_median": 8,
           "classic_12_mod_median": 9.3
         },
@@ -30454,7 +30454,7 @@ export const INITIAL_TEAMS = [
           "diffM": 36,
           "fvm": 118,
           "fvmM": 118,
-          "classic_8_mod_median": 2.5,
+          "classic_8_mod_median": 2.4,
           "classic_10_mod_median": 4,
           "classic_12_mod_median": 5.6
         },
@@ -41302,7 +41302,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 154,
       "fvmM": 154,
       "classic_8_mod_median": 5.8,
-      "classic_10_mod_median": 6.6,
+      "classic_10_mod_median": 6.5,
       "classic_12_mod_median": 7.4
     },
     "stats": {
@@ -54303,7 +54303,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 40,
       "fvm": 131,
       "fvmM": 131,
-      "classic_8_mod_median": 3.8,
+      "classic_8_mod_median": 3.7,
       "classic_10_mod_median": 6.6,
       "classic_12_mod_median": 8.2
     },
@@ -64071,7 +64071,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 36,
       "fvm": 118,
       "fvmM": 118,
-      "classic_8_mod_median": 2.5,
+      "classic_8_mod_median": 2.4,
       "classic_10_mod_median": 4,
       "classic_12_mod_median": 5.6
     },
@@ -64797,7 +64797,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": -9,
       "fvm": 99,
       "fvmM": 99,
-      "classic_8_mod_median": 5.3,
+      "classic_8_mod_median": 5.2,
       "classic_10_mod_median": 8,
       "classic_12_mod_median": 9.3
     },

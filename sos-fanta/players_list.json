@@ -6701,7 +6701,7 @@
       "league_name": "Serie A",
       "presenze": null,
       "is_in_listone": true,
-      "is_in_listone_euroleghe": false,
+      "is_in_listone_euroleghe": true,
       "stats": {
         "fmv": 6,
         "mv": 6
