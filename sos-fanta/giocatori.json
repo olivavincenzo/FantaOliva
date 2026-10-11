@@ -11136,6 +11136,89 @@
       }
     ]
   },
+  "7aefa97c-be70-402f-8095-4ffb6928e2ad": {
+    "player_id": "7aefa97c-be70-402f-8095-4ffb6928e2ad",
+    "name": "Vasquez D.",
+    "role": "P",
+    "stats": [
+      {
+        "player_id": "7aefa97c-be70-402f-8095-4ffb6928e2ad",
+        "season": "s_22_23",
+        "presenze": 0,
+        "mv": null,
+        "fmv": null,
+        "gf": 0,
+        "gs": 12,
+        "rp": 0,
+        "r_plus": 0,
+        "r_minus": 0,
+        "assist": 0,
+        "amm": 0,
+        "esp": 0,
+        "autogol": 0,
+        "injured": 0,
+        "starts_eleven": 0,
+        "min_playing_time": 0
+      },
+      {
+        "player_id": "7aefa97c-be70-402f-8095-4ffb6928e2ad",
+        "season": "s_23_24",
+        "presenze": 10,
+        "mv": null,
+        "fmv": null,
+        "gf": 0,
+        "gs": 8,
+        "rp": 0,
+        "r_plus": 0,
+        "r_minus": 0,
+        "assist": 0,
+        "amm": 1,
+        "esp": 0,
+        "autogol": 0,
+        "injured": 0,
+        "starts_eleven": 9,
+        "min_playing_time": 826
+      },
+      {
+        "player_id": "7aefa97c-be70-402f-8095-4ffb6928e2ad",
+        "season": "s_24_25",
+        "presenze": 31,
+        "mv": 6.02,
+        "fmv": 5.9,
+        "gf": 0,
+        "gs": 4,
+        "rp": 1,
+        "r_plus": 0,
+        "r_minus": 0,
+        "assist": 0,
+        "amm": 2,
+        "esp": 0,
+        "autogol": 0,
+        "injured": 0,
+        "starts_eleven": 32,
+        "min_playing_time": 2790
+      },
+      {
+        "player_id": "7aefa97c-be70-402f-8095-4ffb6928e2ad",
+        "season": "s_25_26",
+        "presenze": 1,
+        "mv": null,
+        "fmv": null,
+        "gf": 0,
+        "gs": 0,
+        "rp": 0,
+        "r_plus": 0,
+        "r_minus": 0,
+        "assist": 0,
+        "amm": 0,
+        "esp": 0,
+        "autogol": 0,
+        "injured": 0,
+        "starts_eleven": 1,
+        "min_playing_time": 90
+      }
+    ]
+  },
   "732b19cf-3340-4588-ba8a-85459261b4c1": {
     "player_id": "732b19cf-3340-4588-ba8a-85459261b4c1",
     "name": "Olivera",
@@ -31640,6 +31723,32 @@
         "injured": 0,
         "starts_eleven": 31,
         "min_playing_time": 2601
+      }
+    ]
+  },
+  "b78e7afa-38ee-4ac6-9609-3bbbe2d24b26": {
+    "player_id": "b78e7afa-38ee-4ac6-9609-3bbbe2d24b26",
+    "name": "Wiafe",
+    "role": "C",
+    "stats": [
+      {
+        "player_id": "b78e7afa-38ee-4ac6-9609-3bbbe2d24b26",
+        "season": "s_25_26",
+        "presenze": 9,
+        "mv": null,
+        "fmv": null,
+        "gf": 0,
+        "gs": 0,
+        "rp": 0,
+        "r_plus": 0,
+        "r_minus": 0,
+        "assist": 1,
+        "amm": 0,
+        "esp": 0,
+        "autogol": 0,
+        "injured": 1,
+        "starts_eleven": 5,
+        "min_playing_time": 428
       }
     ]
   },

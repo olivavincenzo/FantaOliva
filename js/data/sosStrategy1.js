@@ -381,6 +381,7 @@ export const SOS_STRATEGY_1 = {
     "berisha m.": "tier_c_15",
     "berisham": "tier_c_15",
     "fadera": "tier_c_17",
+    "wiafe": "tier_c_19",
     "przyborek": "tier_c_17",
     "perez k.": "tier_c_14",
     "perezk": "tier_c_14",
