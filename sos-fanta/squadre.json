@@ -16,8 +16,8 @@
         "id": 6672
       },
       {
-        "player_id": "0d58faf5-1ed1-4610-8a3b-caddd2c688a8",
-        "id": 7564
+        "player_id": "409ec215-c1df-4c66-b5f6-11e32645341d",
+        "id": 4147
       },
       {
         "player_id": "371edc7e-8557-4af7-ac46-3481c7601c38",
@@ -85,7 +85,7 @@
     "comment": "Il 4-3-3 di Grosso punta su verticalità e ripartenze rapide, con un gioco diretto che privilegia il lancio lungo rispetto alla costruzione dal basso. I due esterni offensivi sono centrali nel sistema: liberati da compiti difensivi, hanno licenza di colpire. Il centravanti è un punto di riferimento costante, cercato con palloni in profondità per sfruttare spazi e fisicità. A centrocampo servono corsa e intensità, più che palleggio. La difesa a quattro è solida ma può soffrire se attaccata in velocità. In chiave fantacalcio, occhio agli esterni offensivi: possono portare bonus importanti. Meno appetibili, invece, i difensori e i mediani.",
     "sosFantaComment": "4-2-3-1 o 4-3-3 per il nuovo allenatore Aquilani in casa Sassuolo. A destra Cinquegrano ha convinto e per questo Van der Brempt per il momento insegue, stesso discorso per Doig e Obrador a sinistra (al momento è il primo il titolare). A centrocampo Koné resterà fuori ancora per diversi mesi e, in attesa del suo rientro, spazio a Adzic o Bakola accanto a Matic. Thorstvedt alla fine è rimasto ed è la prima scelta sulla trequarti, ma occhio ad Adzic che si è presentato alla grande risultando subito decisivo e può fare sia il trequartista che la mezzala. ",
     "created_at": "2026-07-21T13:48:04.348Z",
-    "updated_at": "2026-09-22T11:04:36.790Z",
+    "updated_at": "2026-10-14T12:28:55.463Z",
     "up": [
       {
         "player_id": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
@@ -204,6 +204,18 @@
             "perc": 49
           }
         ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "409ec215-c1df-4c66-b5f6-11e32645341d",
+            "perc": 51
+          },
+          {
+            "player_id": "daf219f9-e5fb-4f2a-a7bf-808a15402abe",
+            "perc": 49
+          }
+        ]
       }
     ],
     "coachRating": {
@@ -240,7 +252,7 @@
       }
     ],
     "createdAt": "2026-07-21T13:48:04.348Z",
-    "updatedAt": "2026-09-22T11:04:36.790Z"
+    "updatedAt": "2026-10-14T12:28:55.463Z"
   },
   {
     "team": "LEC",
@@ -1498,7 +1510,7 @@
         "player_id": "cbf2eb75-d38b-44dc-9709-c3280b88a57d"
       },
       {
-        "player_id": "841ead71-8c30-4357-a513-9fbef459f3bb"
+        "player_id": "248504d8-fd98-41ce-8f6b-db46784043a5"
       }
     ],
     "pun": [
@@ -1521,20 +1533,20 @@
       }
     ],
     "module": "3-5-2",
-    "coach": "Giovanni Stroppa",
+    "coach": "Davide Nicola",
     "attack": 2.5,
     "defense": 2,
     "comment": "",
     "sosFantaComment": "Giovanni Stroppa per ora confermato sulla panchina del neopromosso Venezia, avanti con il 3-5-2 ma con grandi novità soprattutto in attacco. Akor Adams e Yeboah sono in pole, occhio all'altro nuovo arrivato Rrahmani alle loro spalle. Basic e Sohm si candidano a giocare con Busio, Kike Perez prima alternativa. Hainaut a destra si gioca il posto con Mazzocchi, a sinistra Haps, Correia o Sagrado; in difesa Juan Jesus e Bella-Kotchap sono arrivati per giocare.",
     "created_at": "2026-07-21T14:07:58.512Z",
-    "updated_at": "2026-09-28T14:36:21.003Z",
+    "updated_at": "2026-10-15T09:14:55.461Z",
     "up": [
       {
         "player_id": "248504d8-fd98-41ce-8f6b-db46784043a5",
         "points": [
           {
-            "tone": "good",
-            "text": "Buon attacco della profondità"
+            "tone": "neutral",
+            "text": "Svaria su tutto il fronte d'attacco"
           },
           {
             "tone": "good",
@@ -1551,7 +1563,7 @@
           },
           {
             "tone": "good",
-            "text": "Uomo chiave nel gioco di Stroppa"
+            "text": "Leader tecnico e carismatico"
           }
         ]
       }
@@ -1580,7 +1592,7 @@
     ],
     "hidden": [
       {
-        "player_id": "73f10bed-3c22-4d9c-937b-e5dd70eaaf12",
+        "player_id": "ce1cb519-9ff1-4394-a2b4-370d4cb27895",
         "points": [
           {
             "tone": "good",
@@ -1613,24 +1625,12 @@
             "perc": 45
           }
         ]
-      },
-      {
-        "players": [
-          {
-            "player_id": "ce1cb519-9ff1-4394-a2b4-370d4cb27895",
-            "perc": 51
-          },
-          {
-            "player_id": "89b6b9f9-a5d9-4f2c-9752-60e85cd8be37",
-            "perc": 49
-          }
-        ]
       }
     ],
     "coachRating": {
       "attack": 2.5,
       "defense": 2,
-      "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Stroppa.webp"
+      "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Nicola.webp"
     },
     "keyPoints": [
       {
@@ -1661,7 +1661,7 @@
       }
     ],
     "createdAt": "2026-07-21T14:07:58.512Z",
-    "updatedAt": "2026-09-28T14:36:21.003Z"
+    "updatedAt": "2026-10-15T09:14:55.461Z"
   },
   {
     "team": "NAP",

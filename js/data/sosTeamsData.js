@@ -67,9 +67,9 @@ export const SOS_TEAMS_DATA = {
         "role": "D"
       },
       {
-        "playerId": "0d58faf5-1ed1-4610-8a3b-caddd2c688a8",
-        "csvId": 7564,
-        "name": "Leysen F.",
+        "playerId": "409ec215-c1df-4c66-b5f6-11e32645341d",
+        "csvId": 4147,
+        "name": "Caleta-Car",
         "role": "D"
       },
       {
@@ -203,6 +203,20 @@ export const SOS_TEAMS_DATA = {
           "role": "C",
           "perc": 49
         }
+      ],
+      [
+        {
+          "playerId": "409ec215-c1df-4c66-b5f6-11e32645341d",
+          "name": "Caleta-Car",
+          "role": "D",
+          "perc": 51
+        },
+        {
+          "playerId": "daf219f9-e5fb-4f2a-a7bf-808a15402abe",
+          "name": "Odenthal",
+          "role": "D",
+          "perc": 49
+        }
       ]
     ],
     "up": [
@@ -325,9 +339,9 @@ export const SOS_TEAMS_DATA = {
         "role": "D"
       },
       {
-        "playerId": "0d58faf5-1ed1-4610-8a3b-caddd2c688a8",
-        "csvId": 7564,
-        "name": "Leysen F.",
+        "playerId": "409ec215-c1df-4c66-b5f6-11e32645341d",
+        "csvId": 4147,
+        "name": "Caleta-Car",
         "role": "D"
       },
       {
@@ -459,6 +473,20 @@ export const SOS_TEAMS_DATA = {
           "playerId": "18a51ba4-0193-458c-be47-c733b4d9dfd8",
           "name": "Bakola",
           "role": "C",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "409ec215-c1df-4c66-b5f6-11e32645341d",
+          "name": "Caleta-Car",
+          "role": "D",
+          "perc": 51
+        },
+        {
+          "playerId": "daf219f9-e5fb-4f2a-a7bf-808a15402abe",
+          "name": "Odenthal",
+          "role": "D",
           "perc": 49
         }
       ]
@@ -3225,8 +3253,8 @@ export const SOS_TEAMS_DATA = {
     "primaryColor": "#ff8800",
     "secondaryColor": "#006633",
     "accentColor": "#000000",
-    "coach": "Giovanni Stroppa",
-    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Stroppa.webp",
+    "coach": "Davide Nicola",
+    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Nicola.webp",
     "defaultFormation": "3-5-2",
     "module": "3-5-2",
     "attackRating": 2.5,
@@ -3341,8 +3369,8 @@ export const SOS_TEAMS_DATA = {
         "role": "A"
       },
       {
-        "playerId": "841ead71-8c30-4357-a513-9fbef459f3bb",
-        "name": "Rrahmani A.",
+        "playerId": "248504d8-fd98-41ce-8f6b-db46784043a5",
+        "name": "Yeboah J.",
         "role": "A"
       }
     ],
@@ -3403,20 +3431,6 @@ export const SOS_TEAMS_DATA = {
           "role": "C",
           "perc": 45
         }
-      ],
-      [
-        {
-          "playerId": "ce1cb519-9ff1-4394-a2b4-370d4cb27895",
-          "name": "Hainaut",
-          "role": "D",
-          "perc": 51
-        },
-        {
-          "playerId": "89b6b9f9-a5d9-4f2c-9752-60e85cd8be37",
-          "name": "Mazzocchi",
-          "role": "D",
-          "perc": 49
-        }
       ]
     ],
     "up": [
@@ -3424,7 +3438,7 @@ export const SOS_TEAMS_DATA = {
         "playerId": "248504d8-fd98-41ce-8f6b-db46784043a5",
         "name": "Yeboah J.",
         "points": [
-          "Buon attacco della profondità",
+          "Svaria su tutto il fronte d'attacco",
           "Bravo nel dribbling"
         ]
       },
@@ -3433,7 +3447,7 @@ export const SOS_TEAMS_DATA = {
         "name": "Busio",
         "points": [
           "Partecipa ad entrambe le fasi",
-          "Uomo chiave nel gioco di Stroppa"
+          "Leader tecnico e carismatico"
         ]
       }
     ],
@@ -3457,8 +3471,8 @@ export const SOS_TEAMS_DATA = {
     ],
     "hidden": [
       {
-        "playerId": "73f10bed-3c22-4d9c-937b-e5dd70eaaf12",
-        "name": "Haps",
+        "playerId": "ce1cb519-9ff1-4394-a2b4-370d4cb27895",
+        "name": "Hainaut",
         "points": [
           "Propensione al bonus con posizionamento avanzato"
         ]
@@ -3473,8 +3487,8 @@ export const SOS_TEAMS_DATA = {
     "primaryColor": "#ff8800",
     "secondaryColor": "#006633",
     "accentColor": "#000000",
-    "coach": "Giovanni Stroppa",
-    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Stroppa.webp",
+    "coach": "Davide Nicola",
+    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Nicola.webp",
     "defaultFormation": "3-5-2",
     "module": "3-5-2",
     "attackRating": 2.5,
@@ -3589,8 +3603,8 @@ export const SOS_TEAMS_DATA = {
         "role": "A"
       },
       {
-        "playerId": "841ead71-8c30-4357-a513-9fbef459f3bb",
-        "name": "Rrahmani A.",
+        "playerId": "248504d8-fd98-41ce-8f6b-db46784043a5",
+        "name": "Yeboah J.",
         "role": "A"
       }
     ],
@@ -3651,20 +3665,6 @@ export const SOS_TEAMS_DATA = {
           "role": "C",
           "perc": 45
         }
-      ],
-      [
-        {
-          "playerId": "ce1cb519-9ff1-4394-a2b4-370d4cb27895",
-          "name": "Hainaut",
-          "role": "D",
-          "perc": 51
-        },
-        {
-          "playerId": "89b6b9f9-a5d9-4f2c-9752-60e85cd8be37",
-          "name": "Mazzocchi",
-          "role": "D",
-          "perc": 49
-        }
       ]
     ],
     "up": [
@@ -3672,7 +3672,7 @@ export const SOS_TEAMS_DATA = {
         "playerId": "248504d8-fd98-41ce-8f6b-db46784043a5",
         "name": "Yeboah J.",
         "points": [
-          "Buon attacco della profondità",
+          "Svaria su tutto il fronte d'attacco",
           "Bravo nel dribbling"
         ]
       },
@@ -3681,7 +3681,7 @@ export const SOS_TEAMS_DATA = {
         "name": "Busio",
         "points": [
           "Partecipa ad entrambe le fasi",
-          "Uomo chiave nel gioco di Stroppa"
+          "Leader tecnico e carismatico"
         ]
       }
     ],
@@ -3705,8 +3705,8 @@ export const SOS_TEAMS_DATA = {
     ],
     "hidden": [
       {
-        "playerId": "73f10bed-3c22-4d9c-937b-e5dd70eaaf12",
-        "name": "Haps",
+        "playerId": "ce1cb519-9ff1-4394-a2b4-370d4cb27895",
+        "name": "Hainaut",
         "points": [
           "Propensione al bonus con posizionamento avanzato"
         ]
