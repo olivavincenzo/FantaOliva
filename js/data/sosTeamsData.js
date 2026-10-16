@@ -3267,11 +3267,11 @@ export const SOS_TEAMS_DATA = {
         "tone": "good"
       },
       {
-        "text": "Costruzione dal basso ossessiva",
+        "text": "Aggressività in fare di transizione",
         "tone": "neutral"
       },
       {
-        "text": "Interpreti del suo gioco potrebbero faticare in serie A",
+        "text": "Fase offensiva non molto prolifica",
         "tone": "bad"
       }
     ],
@@ -3443,11 +3443,11 @@ export const SOS_TEAMS_DATA = {
         ]
       },
       {
-        "playerId": "910fbb96-6768-40c7-95cc-2fdeb9351f0c",
-        "name": "Busio",
+        "playerId": "ce1cb519-9ff1-4394-a2b4-370d4cb27895",
+        "name": "Hainaut",
         "points": [
-          "Partecipa ad entrambe le fasi",
-          "Leader tecnico e carismatico"
+          "Propensione offensiva in zona bonus",
+          "Inserimenti in area di rigore avversaria"
         ]
       }
     ],
@@ -3456,7 +3456,7 @@ export const SOS_TEAMS_DATA = {
         "playerId": "4f4aa73b-ba5e-400e-a7e0-4f4cff87cfab",
         "name": "Moreno M.",
         "points": [
-          "Concorrenza elevata"
+          "Propensione al cartellino"
         ]
       }
     ],
@@ -3471,10 +3471,10 @@ export const SOS_TEAMS_DATA = {
     ],
     "hidden": [
       {
-        "playerId": "ce1cb519-9ff1-4394-a2b4-370d4cb27895",
-        "name": "Hainaut",
+        "playerId": "08623cd0-42e5-4a5b-8fe0-edff5096472c",
+        "name": "Sagrado",
         "points": [
-          "Propensione al bonus con posizionamento avanzato"
+          "Jolly difensivo che può ricoprire più ruoli"
         ]
       }
     ]
@@ -3501,11 +3501,11 @@ export const SOS_TEAMS_DATA = {
         "tone": "good"
       },
       {
-        "text": "Costruzione dal basso ossessiva",
+        "text": "Aggressività in fare di transizione",
         "tone": "neutral"
       },
       {
-        "text": "Interpreti del suo gioco potrebbero faticare in serie A",
+        "text": "Fase offensiva non molto prolifica",
         "tone": "bad"
       }
     ],
@@ -3677,11 +3677,11 @@ export const SOS_TEAMS_DATA = {
         ]
       },
       {
-        "playerId": "910fbb96-6768-40c7-95cc-2fdeb9351f0c",
-        "name": "Busio",
+        "playerId": "ce1cb519-9ff1-4394-a2b4-370d4cb27895",
+        "name": "Hainaut",
         "points": [
-          "Partecipa ad entrambe le fasi",
-          "Leader tecnico e carismatico"
+          "Propensione offensiva in zona bonus",
+          "Inserimenti in area di rigore avversaria"
         ]
       }
     ],
@@ -3690,7 +3690,7 @@ export const SOS_TEAMS_DATA = {
         "playerId": "4f4aa73b-ba5e-400e-a7e0-4f4cff87cfab",
         "name": "Moreno M.",
         "points": [
-          "Concorrenza elevata"
+          "Propensione al cartellino"
         ]
       }
     ],
@@ -3705,10 +3705,10 @@ export const SOS_TEAMS_DATA = {
     ],
     "hidden": [
       {
-        "playerId": "ce1cb519-9ff1-4394-a2b4-370d4cb27895",
-        "name": "Hainaut",
+        "playerId": "08623cd0-42e5-4a5b-8fe0-edff5096472c",
+        "name": "Sagrado",
         "points": [
-          "Propensione al bonus con posizionamento avanzato"
+          "Jolly difensivo che può ricoprire più ruoli"
         ]
       }
     ]

@@ -1539,7 +1539,7 @@
     "comment": "",
     "sosFantaComment": "Giovanni Stroppa per ora confermato sulla panchina del neopromosso Venezia, avanti con il 3-5-2 ma con grandi novità soprattutto in attacco. Akor Adams e Yeboah sono in pole, occhio all'altro nuovo arrivato Rrahmani alle loro spalle. Basic e Sohm si candidano a giocare con Busio, Kike Perez prima alternativa. Hainaut a destra si gioca il posto con Mazzocchi, a sinistra Haps, Correia o Sagrado; in difesa Juan Jesus e Bella-Kotchap sono arrivati per giocare.",
     "created_at": "2026-07-21T14:07:58.512Z",
-    "updated_at": "2026-10-15T09:14:55.461Z",
+    "updated_at": "2026-10-15T10:44:40.132Z",
     "up": [
       {
         "player_id": "248504d8-fd98-41ce-8f6b-db46784043a5",
@@ -1555,15 +1555,15 @@
         ]
       },
       {
-        "player_id": "910fbb96-6768-40c7-95cc-2fdeb9351f0c",
+        "player_id": "ce1cb519-9ff1-4394-a2b4-370d4cb27895",
         "points": [
           {
-            "tone": "neutral",
-            "text": "Partecipa ad entrambe le fasi"
+            "tone": "good",
+            "text": "Propensione offensiva in zona bonus"
           },
           {
             "tone": "good",
-            "text": "Leader tecnico e carismatico"
+            "text": "Inserimenti in area di rigore avversaria"
           }
         ]
       }
@@ -1574,7 +1574,7 @@
         "points": [
           {
             "tone": "bad",
-            "text": "Concorrenza elevata"
+            "text": "Propensione al cartellino"
           }
         ]
       }
@@ -1592,11 +1592,11 @@
     ],
     "hidden": [
       {
-        "player_id": "ce1cb519-9ff1-4394-a2b4-370d4cb27895",
+        "player_id": "08623cd0-42e5-4a5b-8fe0-edff5096472c",
         "points": [
           {
             "tone": "good",
-            "text": "Propensione al bonus con posizionamento avanzato"
+            "text": "Jolly difensivo che può ricoprire più ruoli"
           }
         ]
       }
@@ -1638,11 +1638,11 @@
         "tone": "good"
       },
       {
-        "text": "Costruzione dal basso ossessiva",
+        "text": "Aggressività in fare di transizione",
         "tone": "neutral"
       },
       {
-        "text": "Interpreti del suo gioco potrebbero faticare in serie A",
+        "text": "Fase offensiva non molto prolifica",
         "tone": "bad"
       }
     ],
@@ -1661,7 +1661,7 @@
       }
     ],
     "createdAt": "2026-07-21T14:07:58.512Z",
-    "updatedAt": "2026-10-15T09:14:55.461Z"
+    "updatedAt": "2026-10-15T10:44:40.132Z"
   },
   {
     "team": "NAP",
