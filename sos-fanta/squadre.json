@@ -340,7 +340,7 @@
     "comment": "Guiderà il Lecce con il suo classico 4-3-3, confermato anche in conferenza stampa. Rilevanti saranno le corsie esterne, con enfasi su velocità e dribbling degli esterni offensivi. Fondamentali le sovrapposizioni dei terzini e i passaggi filtranti per liberare gli 1vs1 sulle fasce. Cross dal fondo e inserimenti dei centrocampisti saranno una chiave tattica ricorrente. Gli attaccanti esterni e la punta centrale avranno grande spazio per incidere in zona bonus. Attenzione anche ai terzini propositivi, potenziali portatori di assist.",
     "sosFantaComment": "È rimasto Di Francesco sulla panchina del Lecce, ma c’è stato il passaggio dal 4-2-3-1 al 4-3-3. Partiamo dall’attacco: il nuovo arrivato Geubbels si candida per una maglia, con un ballottaggio apertissimo insieme a Stulic e una possibile alternanza tra i due. Dal mercato sono arrivati Monteiro e Fatah, si giocheranno il posto in fascia, col primo favorito. Mentre a destra c’è Pierotti (provato anche come mezzala), favorito su N'dri. Ilic se sta bene gioca, così come Coulibaly: al loro fianco o Ngom o Gorter o Maleh, penalizzato dal modulo invece Gandelman finora. In difesa o Gaspar o Siebert accanto a Tiago Gabriel.",
     "created_at": "2026-07-20T15:34:44.356Z",
-    "updated_at": "2026-09-22T10:53:10.813Z",
+    "updated_at": "2026-10-18T16:16:08.611Z",
     "up": [
       {
         "player_id": "ce950363-d565-4e38-aa78-93bb22b65fa1",
@@ -407,11 +407,11 @@
         "players": [
           {
             "player_id": "6a4053f5-483f-4064-8e7b-0edadbbfa824",
-            "perc": 55
+            "perc": 51
           },
           {
             "player_id": "248ae665-ab73-4e64-8e95-f19c50c469de",
-            "perc": 45
+            "perc": 49
           }
         ]
       },
@@ -431,11 +431,11 @@
         "players": [
           {
             "player_id": "ce950363-d565-4e38-aa78-93bb22b65fa1",
-            "perc": 55
+            "perc": 51
           },
           {
             "player_id": "fe4dd59e-c29f-4618-9ae7-8df11a3bfbbc",
-            "perc": 45
+            "perc": 49
           }
         ]
       },
@@ -482,7 +482,7 @@
       }
     ],
     "createdAt": "2026-07-20T15:34:44.356Z",
-    "updatedAt": "2026-09-22T10:53:10.813Z"
+    "updatedAt": "2026-10-18T16:16:08.611Z"
   },
   {
     "team": "BOL",
@@ -1979,7 +1979,7 @@
     "comment": "Promosso dopo l’ottimo lavoro svolto con la Primavera del Cagliari. La società ha scelto di puntare su un tecnico che conosce bene l’ambiente e che ha dimostrato di saper valorizzare i giovani, in linea con la nuova filosofia del club. Pisacane predilige un modulo con la difesa a 4  con grande attenzione all’organizzazione difensiva. Non è escluso, però, che in alcune partite possa optare per una linea a 3. Gli esterni difensivi avranno un ruolo chiave: dovranno garantire equilibrio tra copertura e spinta, supportando sia i centrali che il reparto offensivo. ",
     "sosFantaComment": "Grande inizio di stagione per il Cagliari di Pisacane. Zé Pedro o il nuovo arrivato Sugawara nel ruolo di terzino destro. Ha convinto Deiola da difensore: prova a insidiare Mina e si giocano il posto, a maggior ragione visti i svariati problemi fisici del colombiano. Winks e Romano sono arrivati per giocare in mediana, ma anche Fazzini: o mezzala o anche più avanzato, da trequartista/ala. Mendy ha convinto finora: è in pole sui nuovi arrivati Kevin Carlos e Nzola.",
     "created_at": "2026-07-21T13:13:06.733Z",
-    "updated_at": "2026-09-22T10:26:29.289Z",
+    "updated_at": "2026-10-18T16:12:58.497Z",
     "up": [
       {
         "player_id": "c9566c48-86e0-42ff-8820-d01b0d55efd7",
@@ -2081,6 +2081,24 @@
             "perc": 49
           }
         ]
+      },
+      {
+        "players": [
+          {},
+          {}
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
+            "perc": 51
+          },
+          {
+            "player_id": "ca1a4e82-6e21-4c6d-8daa-45de90b977b0",
+            "perc": 49
+          }
+        ]
       }
     ],
     "coachRating": {
@@ -2113,7 +2131,7 @@
       }
     ],
     "createdAt": "2026-07-21T13:13:06.733Z",
-    "updatedAt": "2026-09-22T10:26:29.289Z"
+    "updatedAt": "2026-10-18T16:12:58.497Z"
   },
   {
     "team": "MON",
@@ -2657,7 +2675,7 @@
     "comment": "Dopo anni di cambiamenti tattici, il ritorno di Allegri al Milan segnerebbe un ritorno al pragmatismo e alla solidità. Il tecnico livornese incarna una filosofia votata all’equilibrio: linee strette, difesa ordinata, gestione dei ritmi e adattamento costante all’avversario. Non ama il pressing alto sistematico, ma preferisce tempi di pressione mirati e ripartenze rapide dopo il recupero. In fase offensiva punta sulla lettura dei momenti: verticalizzazioni improvvise, inserimenti intelligenti e massima attenzione all’efficacia. Il risultato viene prima della prestazione, e la valorizzazione dei profili più duttili e intelligenti tatticamente è una costante.",
     "sosFantaComment": "È arrivato Ruben Amorim in panchina, il suo Milan gioca col 3-4-2-1. Sulla trequarti Pulisic è pronto a diventare inamovibile ora che sta bene, al suo fianco o Cisse o Saelemaekers e c'è anche il nuovo arrivato Hutchinson. Chukwueze a destra finora ha convinto e a sinistra può spuntarla Moreira, anche perché Estupinan e Bartesaghi non hanno brillato finora mentre il belga ha dato segnali importantissimi. Musah in alcune partite può giocare al posto di Modric, quando serve più sostanza e meno palleggio. De Winter e Gabbia si giocano il posto al centro della difesa, verranno anche alternati.",
     "created_at": "2026-07-21T12:48:10.325Z",
-    "updated_at": "2026-09-24T12:50:22.211Z",
+    "updated_at": "2026-10-18T16:17:45.461Z",
     "up": [
       {
         "player_id": "f5b1b43f-45be-4ebb-bed8-811434235418",
@@ -2727,7 +2745,7 @@
             "perc": 51
           },
           {
-            "player_id": "e8e7494e-aa9d-4469-9026-8615bbb45f32",
+            "player_id": "6ada201e-02d6-4da0-b333-4b3149daaab4",
             "perc": 49
           }
         ]
@@ -2736,11 +2754,11 @@
         "players": [
           {
             "player_id": "f5b1b43f-45be-4ebb-bed8-811434235418",
-            "perc": 51
+            "perc": 55
           },
           {
             "player_id": "a5ccb009-6b25-4d64-b16f-169784fd8920",
-            "perc": 49
+            "perc": 45
           }
         ]
       },
@@ -2791,7 +2809,7 @@
       }
     ],
     "createdAt": "2026-07-21T12:48:10.325Z",
-    "updatedAt": "2026-09-24T12:50:22.211Z"
+    "updatedAt": "2026-10-18T16:17:45.461Z"
   },
   {
     "team": "FRO",
@@ -3460,8 +3478,8 @@
         "id": 6482
       },
       {
-        "player_id": "46cb2e9f-1fe6-459b-87b0-af6cb7f17417",
-        "id": "2188"
+        "player_id": "e776d386-f107-4da9-8341-55a10fdf6c44",
+        "id": 7131
       },
       {
         "player_id": "c571ffe8-70c1-40b4-8175-6752f18eae5f",
@@ -3537,7 +3555,7 @@
     "comment": "Torna alla Lazio dopo il biennio 2022-2024 con idee chiare e un gioco che conosciamo fin troppo bene. Il suo 4-3-3 si fonda su possesso palla, costruzione ragionata e movimenti codificati. Predilige giocatori tecnici e intelligenti: chi sta in mezzo deve saper palleggiare e inserirsi, mentre chi gioca largo ha il compito di dare ampiezza e saltare l’uomo. Il centravanti, invece, non può limitarsi a finalizzare: deve partecipare attivamente alla manovra. Chi ha già lavorato con lui parte favorito in chiave fantacalcio, mentre i nuovi potrebbero aver bisogno di tempo per assimilare i meccanismi.",
     "sosFantaComment": "Grande avvio di stagione per la Lazio di Rino Gattuso, che ha proseguito col 4-3-3 della scorsa stagione ma sono cambiati i principi. Doekhi o Sutalo al centro della difesa, gioca chi sta meglio e dipende anche dall'avversario. Stesso discorso a destra tra Marusic e Floriani Mussolini. Belahyane ha risposto presente, aspettando i recuperi al 100% di Rovella e Cataldi: sono loro tre in corsa per un posto. Sorpresa Noslin, prova a insidiare Pinamonti che comunque rimane il titolare sulla carta. A destra Cancellieri o Isaksen, testa a testa e c'è anche il jolly Gudmundsson che può ricoprire tutti i ruoli nel tridente e fare anche la mezzala di 'scorta'.",
     "created_at": "2026-07-21T12:45:39.344Z",
-    "updated_at": "2026-09-28T14:07:54.859Z",
+    "updated_at": "2026-10-18T16:15:31.622Z",
     "up": [
       {
         "player_id": "51f0abe3-4fe5-42fb-9994-34fbddcb56d5",
@@ -3639,11 +3657,11 @@
       {
         "players": [
           {
-            "player_id": "46cb2e9f-1fe6-459b-87b0-af6cb7f17417",
+            "player_id": "e776d386-f107-4da9-8341-55a10fdf6c44",
             "perc": 51
           },
           {
-            "player_id": "e776d386-f107-4da9-8341-55a10fdf6c44",
+            "player_id": "46cb2e9f-1fe6-459b-87b0-af6cb7f17417",
             "perc": 49
           }
         ]
@@ -3695,7 +3713,7 @@
       }
     ],
     "createdAt": "2026-07-21T12:45:39.344Z",
-    "updatedAt": "2026-09-28T14:07:54.859Z"
+    "updatedAt": "2026-10-18T16:15:31.622Z"
   },
   {
     "team": "PAR",
@@ -4447,14 +4465,14 @@
         "player_id": "21a58529-376d-41b3-9bf8-2444f31c8a86"
       }
     ],
-    "module": "4-1-4-1",
+    "module": "4-3-3",
     "coach": "Paolo Vanoli",
     "attack": 3.5,
     "defense": 3,
     "comment": "Paolo Vanoli è chiamato a far risalire la squadra viola costretta a esonerare Pioli dopo l'ulitmo posto in classifica. Vanoli gioca con il 3-5-2 anche se lo scorsa stagione con il Torino ha utilizzato anche il 4-2-3-1 e il 4-3-3. Importante il ruolo degli esterni che sono chiamati ad accompagnare le azioni offensive con le mezzali che attaccano gli spazi per dare maggiore densità in attacco. Nel sistema del tecnico ex Torino, gli esterni hanno anche il compito di inserirsi con tempismo nell’area di rigore sul cross proveniente dal lato opposto, diventando di fatto un terzo attaccante. Vanoli infatti, fa della difesa a tre la sua base di partenza, e a Firenze troverà le condizioni ideali per confermare il proprio credo calcistico. Resta però da capire quali saranno gli interpreti del reparto, visto che finora le prestazioni della retroguardia sono state altalenanti con la sola eccezione di De Gea, spesso decisivo nel limitare i danni. ",
     "sosFantaComment": "Clamoroso ribaltone dopo l’inizio shock della Fiorentina: Paolo Vanoli è tornato in panchina al posto di Fabio Grosso. Il modulo è il 4-1-4-1 utilizzato nella passata stagione: Jimenez in pole a destra, a sinistra o Viery o Valdepenas e al centro o Ranieri o Viery stesso (può fare entrambi i ruoli appunto). Ndour parte avanti su Oulai nelle gerarchie, ma quest'ultimo avrà comunque spazio. Testa a testa serratissimo in attacco: Pellegrino leggermente avanti su Beto, ma sarà alternanza e dipende molto dal momento dei due e della squadra.",
     "created_at": "2026-07-21T12:36:56.706Z",
-    "updated_at": "2026-09-15T09:06:40.243Z",
+    "updated_at": "2026-10-18T16:14:28.630Z",
     "up": [
       {
         "player_id": "dc1712b1-57f3-433e-991a-2174387b8d39",
@@ -4537,7 +4555,7 @@
             "perc": 51
           },
           {
-            "player_id": "92bcdaf9-6420-4fb2-b3f5-ab7faca6f35f",
+            "player_id": "31786ff3-11ce-42f4-b5e3-a5ced40ae0b6",
             "perc": 49
           }
         ]
@@ -4558,11 +4576,11 @@
         "players": [
           {
             "player_id": "40b7cab1-faa3-4b57-a7ae-a775c8b35c97",
-            "perc": 51
+            "perc": 55
           },
           {
             "player_id": "38941855-dc42-4bba-923a-ff9515a68f2a",
-            "perc": 49
+            "perc": 45
           }
         ]
       },
@@ -4574,6 +4592,18 @@
           },
           {
             "player_id": "ce5cd19a-b929-4b5c-a0a4-067b0b355879",
+            "perc": 49
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "21a58529-376d-41b3-9bf8-2444f31c8a86",
+            "perc": 51
+          },
+          {
+            "player_id": "81dda297-825d-419f-bdc1-dadd2d326b6c",
             "perc": 49
           }
         ]
@@ -4613,6 +4643,6 @@
       }
     ],
     "createdAt": "2026-07-21T12:36:56.706Z",
-    "updatedAt": "2026-09-15T09:06:40.243Z"
+    "updatedAt": "2026-10-18T16:14:28.630Z"
   }
 ]

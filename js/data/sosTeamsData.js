@@ -707,13 +707,13 @@ export const SOS_TEAMS_DATA = {
           "playerId": "6a4053f5-483f-4064-8e7b-0edadbbfa824",
           "name": "Geubbels",
           "role": "A",
-          "perc": 55
+          "perc": 51
         },
         {
           "playerId": "248ae665-ab73-4e64-8e95-f19c50c469de",
           "name": "Stulic",
           "role": "A",
-          "perc": 45
+          "perc": 49
         }
       ],
       [
@@ -735,13 +735,13 @@ export const SOS_TEAMS_DATA = {
           "playerId": "ce950363-d565-4e38-aa78-93bb22b65fa1",
           "name": "Monteiro J.",
           "role": "C",
-          "perc": 55
+          "perc": 51
         },
         {
           "playerId": "fe4dd59e-c29f-4618-9ae7-8df11a3bfbbc",
           "name": "Fatah",
           "role": "A",
-          "perc": 45
+          "perc": 49
         }
       ],
       [
@@ -965,13 +965,13 @@ export const SOS_TEAMS_DATA = {
           "playerId": "6a4053f5-483f-4064-8e7b-0edadbbfa824",
           "name": "Geubbels",
           "role": "A",
-          "perc": 55
+          "perc": 51
         },
         {
           "playerId": "248ae665-ab73-4e64-8e95-f19c50c469de",
           "name": "Stulic",
           "role": "A",
-          "perc": 45
+          "perc": 49
         }
       ],
       [
@@ -993,13 +993,13 @@ export const SOS_TEAMS_DATA = {
           "playerId": "ce950363-d565-4e38-aa78-93bb22b65fa1",
           "name": "Monteiro J.",
           "role": "C",
-          "perc": 55
+          "perc": 51
         },
         {
           "playerId": "fe4dd59e-c29f-4618-9ae7-8df11a3bfbbc",
           "name": "Fatah",
           "role": "A",
-          "perc": 45
+          "perc": 49
         }
       ],
       [
@@ -4425,6 +4425,34 @@ export const SOS_TEAMS_DATA = {
           "role": "D",
           "perc": 49
         }
+      ],
+      [
+        {
+          "playerId": null,
+          "name": "",
+          "role": "",
+          "perc": 50
+        },
+        {
+          "playerId": null,
+          "name": "",
+          "role": "",
+          "perc": 50
+        }
+      ],
+      [
+        {
+          "playerId": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
+          "name": "Fazzini",
+          "role": "C",
+          "perc": 51
+        },
+        {
+          "playerId": "ca1a4e82-6e21-4c6d-8daa-45de90b977b0",
+          "name": "Nzola",
+          "role": "A",
+          "perc": 49
+        }
       ]
     ],
     "up": [
@@ -4668,6 +4696,34 @@ export const SOS_TEAMS_DATA = {
           "playerId": "d05121f2-7f6b-44df-8cd1-e4611b85700d",
           "name": "Sugawara",
           "role": "D",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": null,
+          "name": "",
+          "role": "",
+          "perc": 50
+        },
+        {
+          "playerId": null,
+          "name": "",
+          "role": "",
+          "perc": 50
+        }
+      ],
+      [
+        {
+          "playerId": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
+          "name": "Fazzini",
+          "role": "C",
+          "perc": 51
+        },
+        {
+          "playerId": "ca1a4e82-6e21-4c6d-8daa-45de90b977b0",
+          "name": "Nzola",
+          "role": "A",
           "perc": 49
         }
       ]
@@ -5894,8 +5950,8 @@ export const SOS_TEAMS_DATA = {
           "perc": 51
         },
         {
-          "playerId": "e8e7494e-aa9d-4469-9026-8615bbb45f32",
-          "name": "Saelemaekers",
+          "playerId": "6ada201e-02d6-4da0-b333-4b3149daaab4",
+          "name": "Musah",
           "role": "C",
           "perc": 49
         }
@@ -5905,13 +5961,13 @@ export const SOS_TEAMS_DATA = {
           "playerId": "f5b1b43f-45be-4ebb-bed8-811434235418",
           "name": "De Winter",
           "role": "D",
-          "perc": 51
+          "perc": 55
         },
         {
           "playerId": "a5ccb009-6b25-4d64-b16f-169784fd8920",
           "name": "Gabbia",
           "role": "D",
-          "perc": 49
+          "perc": 45
         }
       ],
       [
@@ -6142,8 +6198,8 @@ export const SOS_TEAMS_DATA = {
           "perc": 51
         },
         {
-          "playerId": "e8e7494e-aa9d-4469-9026-8615bbb45f32",
-          "name": "Saelemaekers",
+          "playerId": "6ada201e-02d6-4da0-b333-4b3149daaab4",
+          "name": "Musah",
           "role": "C",
           "perc": 49
         }
@@ -6153,13 +6209,13 @@ export const SOS_TEAMS_DATA = {
           "playerId": "f5b1b43f-45be-4ebb-bed8-811434235418",
           "name": "De Winter",
           "role": "D",
-          "perc": 51
+          "perc": 55
         },
         {
           "playerId": "a5ccb009-6b25-4d64-b16f-169784fd8920",
           "name": "Gabbia",
           "role": "D",
-          "perc": 49
+          "perc": 45
         }
       ],
       [
@@ -7731,9 +7787,9 @@ export const SOS_TEAMS_DATA = {
         "role": "P"
       },
       {
-        "playerId": "46cb2e9f-1fe6-459b-87b0-af6cb7f17417",
-        "csvId": "2188",
-        "name": "Marusic",
+        "playerId": "e776d386-f107-4da9-8341-55a10fdf6c44",
+        "csvId": 7131,
+        "name": "Floriani Mussolini",
         "role": "D"
       },
       {
@@ -7882,14 +7938,14 @@ export const SOS_TEAMS_DATA = {
       ],
       [
         {
-          "playerId": "46cb2e9f-1fe6-459b-87b0-af6cb7f17417",
-          "name": "Marusic",
+          "playerId": "e776d386-f107-4da9-8341-55a10fdf6c44",
+          "name": "Floriani Mussolini",
           "role": "D",
           "perc": 51
         },
         {
-          "playerId": "e776d386-f107-4da9-8341-55a10fdf6c44",
-          "name": "Floriani Mussolini",
+          "playerId": "46cb2e9f-1fe6-459b-87b0-af6cb7f17417",
+          "name": "Marusic",
           "role": "D",
           "perc": 49
         }
@@ -8007,9 +8063,9 @@ export const SOS_TEAMS_DATA = {
         "role": "P"
       },
       {
-        "playerId": "46cb2e9f-1fe6-459b-87b0-af6cb7f17417",
-        "csvId": "2188",
-        "name": "Marusic",
+        "playerId": "e776d386-f107-4da9-8341-55a10fdf6c44",
+        "csvId": 7131,
+        "name": "Floriani Mussolini",
         "role": "D"
       },
       {
@@ -8158,14 +8214,14 @@ export const SOS_TEAMS_DATA = {
       ],
       [
         {
-          "playerId": "46cb2e9f-1fe6-459b-87b0-af6cb7f17417",
-          "name": "Marusic",
+          "playerId": "e776d386-f107-4da9-8341-55a10fdf6c44",
+          "name": "Floriani Mussolini",
           "role": "D",
           "perc": 51
         },
         {
-          "playerId": "e776d386-f107-4da9-8341-55a10fdf6c44",
-          "name": "Floriani Mussolini",
+          "playerId": "46cb2e9f-1fe6-459b-87b0-af6cb7f17417",
+          "name": "Marusic",
           "role": "D",
           "perc": 49
         }
@@ -9747,8 +9803,8 @@ export const SOS_TEAMS_DATA = {
     "accentColor": "#ff0033",
     "coach": "Paolo Vanoli",
     "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Vanoli%20PNG.webp",
-    "defaultFormation": "4-1-4-1",
-    "module": "4-1-4-1",
+    "defaultFormation": "4-3-3",
+    "module": "4-3-3",
     "attackRating": 3.5,
     "defenseRating": 3.0,
     "comment": "Paolo Vanoli è chiamato a far risalire la squadra viola costretta a esonerare Pioli dopo l'ulitmo posto in classifica. Vanoli gioca con il 3-5-2 anche se lo scorsa stagione con il Torino ha utilizzato anche il 4-2-3-1 e il 4-3-3. Importante il ruolo degli esterni che sono chiamati ad accompagnare le azioni offensive con le mezzali che attaccano gli spazi per dare maggiore densità in attacco. Nel sistema del tecnico ex Torino, gli esterni hanno anche il compito di inserirsi con tempismo nell’area di rigore sul cross proveniente dal lato opposto, diventando di fatto un terzo attaccante. Vanoli infatti, fa della difesa a tre la sua base di partenza, e a Firenze troverà le condizioni ideali per confermare il proprio credo calcistico. Resta però da capire quali saranno gli interpreti del reparto, visto che finora le prestazioni della retroguardia sono state altalenanti con la sola eccezione di De Gea, spesso decisivo nel limitare i danni. ",
@@ -9904,8 +9960,8 @@ export const SOS_TEAMS_DATA = {
           "perc": 51
         },
         {
-          "playerId": "92bcdaf9-6420-4fb2-b3f5-ab7faca6f35f",
-          "name": "Viery",
+          "playerId": "31786ff3-11ce-42f4-b5e3-a5ced40ae0b6",
+          "name": "Pongracic",
           "role": "D",
           "perc": 49
         }
@@ -9929,13 +9985,13 @@ export const SOS_TEAMS_DATA = {
           "playerId": "40b7cab1-faa3-4b57-a7ae-a775c8b35c97",
           "name": "Ndour",
           "role": "C",
-          "perc": 51
+          "perc": 55
         },
         {
           "playerId": "38941855-dc42-4bba-923a-ff9515a68f2a",
           "name": "Oulai",
           "role": "C",
-          "perc": 49
+          "perc": 45
         }
       ],
       [
@@ -9949,6 +10005,20 @@ export const SOS_TEAMS_DATA = {
           "playerId": "ce5cd19a-b929-4b5c-a0a4-067b0b355879",
           "name": "Beto",
           "role": "A",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "21a58529-376d-41b3-9bf8-2444f31c8a86",
+          "name": "Goncalves P.",
+          "role": "C",
+          "perc": 51
+        },
+        {
+          "playerId": "81dda297-825d-419f-bdc1-dadd2d326b6c",
+          "name": "Njie",
+          "role": "C",
           "perc": 49
         }
       ]
@@ -10017,8 +10087,8 @@ export const SOS_TEAMS_DATA = {
     "accentColor": "#ff0033",
     "coach": "Paolo Vanoli",
     "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Vanoli%20PNG.webp",
-    "defaultFormation": "4-1-4-1",
-    "module": "4-1-4-1",
+    "defaultFormation": "4-3-3",
+    "module": "4-3-3",
     "attackRating": 3.5,
     "defenseRating": 3.0,
     "comment": "Paolo Vanoli è chiamato a far risalire la squadra viola costretta a esonerare Pioli dopo l'ulitmo posto in classifica. Vanoli gioca con il 3-5-2 anche se lo scorsa stagione con il Torino ha utilizzato anche il 4-2-3-1 e il 4-3-3. Importante il ruolo degli esterni che sono chiamati ad accompagnare le azioni offensive con le mezzali che attaccano gli spazi per dare maggiore densità in attacco. Nel sistema del tecnico ex Torino, gli esterni hanno anche il compito di inserirsi con tempismo nell’area di rigore sul cross proveniente dal lato opposto, diventando di fatto un terzo attaccante. Vanoli infatti, fa della difesa a tre la sua base di partenza, e a Firenze troverà le condizioni ideali per confermare il proprio credo calcistico. Resta però da capire quali saranno gli interpreti del reparto, visto che finora le prestazioni della retroguardia sono state altalenanti con la sola eccezione di De Gea, spesso decisivo nel limitare i danni. ",
@@ -10174,8 +10244,8 @@ export const SOS_TEAMS_DATA = {
           "perc": 51
         },
         {
-          "playerId": "92bcdaf9-6420-4fb2-b3f5-ab7faca6f35f",
-          "name": "Viery",
+          "playerId": "31786ff3-11ce-42f4-b5e3-a5ced40ae0b6",
+          "name": "Pongracic",
           "role": "D",
           "perc": 49
         }
@@ -10199,13 +10269,13 @@ export const SOS_TEAMS_DATA = {
           "playerId": "40b7cab1-faa3-4b57-a7ae-a775c8b35c97",
           "name": "Ndour",
           "role": "C",
-          "perc": 51
+          "perc": 55
         },
         {
           "playerId": "38941855-dc42-4bba-923a-ff9515a68f2a",
           "name": "Oulai",
           "role": "C",
-          "perc": 49
+          "perc": 45
         }
       ],
       [
@@ -10219,6 +10289,20 @@ export const SOS_TEAMS_DATA = {
           "playerId": "ce5cd19a-b929-4b5c-a0a4-067b0b355879",
           "name": "Beto",
           "role": "A",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "21a58529-376d-41b3-9bf8-2444f31c8a86",
+          "name": "Goncalves P.",
+          "role": "C",
+          "perc": 51
+        },
+        {
+          "playerId": "81dda297-825d-419f-bdc1-dadd2d326b6c",
+          "name": "Njie",
+          "role": "C",
           "perc": 49
         }
       ]
