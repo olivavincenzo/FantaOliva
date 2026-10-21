@@ -30022,7 +30022,7 @@ export const INITIAL_TEAMS = [
           "fvm": 51,
           "fvmM": 51,
           "classic_8_mod_median": 1.6,
-          "classic_10_mod_median": 2.9,
+          "classic_10_mod_median": 3,
           "classic_12_mod_median": 3.8
         },
         "stats": {
@@ -46387,7 +46387,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 51,
       "fvmM": 51,
       "classic_8_mod_median": 1.6,
-      "classic_10_mod_median": 2.9,
+      "classic_10_mod_median": 3,
       "classic_12_mod_median": 3.8
     },
     "stats": {
