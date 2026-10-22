@@ -1736,7 +1736,7 @@ export const INITIAL_TEAMS = [
           "diffM": 100,
           "fvm": 323,
           "fvmM": 323,
-          "classic_8_mod_median": 9.2,
+          "classic_8_mod_median": 9.1,
           "classic_10_mod_median": 11,
           "classic_12_mod_median": 11.8
         },
@@ -2125,7 +2125,7 @@ export const INITIAL_TEAMS = [
         "fantalabId": "e776d386-f107-4da9-8341-55a10fdf6c44",
         "name": "Floriani Mussolini",
         "displayName": "Floriani Mussolini",
-        "fullName": "Romano Floriani Mussolini",
+        "fullName": "Romano Floriani",
         "teamName": "Lazio",
         "teamId": "lazio",
         "teamShort": "LAZ",
@@ -9203,7 +9203,7 @@ export const INITIAL_TEAMS = [
           "fvm": 48,
           "fvmM": 48,
           "classic_8_mod_median": 0.8,
-          "classic_10_mod_median": 2,
+          "classic_10_mod_median": 1.9,
           "classic_12_mod_median": 2.8
         },
         "stats": {
@@ -32118,7 +32118,7 @@ export const INITIAL_TEAMS = [
           "fvm": 32,
           "fvmM": 32,
           "classic_8_mod_median": 0.2,
-          "classic_10_mod_median": 0.3,
+          "classic_10_mod_median": 0.4,
           "classic_12_mod_median": 0.8
         },
         "stats": {
@@ -44407,7 +44407,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 32,
       "fvmM": 32,
       "classic_8_mod_median": 0.2,
-      "classic_10_mod_median": 0.3,
+      "classic_10_mod_median": 0.4,
       "classic_12_mod_median": 0.8
     },
     "stats": {
@@ -54967,7 +54967,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 48,
       "fvmM": 48,
       "classic_8_mod_median": 0.8,
-      "classic_10_mod_median": 2,
+      "classic_10_mod_median": 1.9,
       "classic_12_mod_median": 2.8
     },
     "stats": {
@@ -55266,7 +55266,7 @@ export const CSV_PLAYER_CATALOG = [
     "fantalabId": "e776d386-f107-4da9-8341-55a10fdf6c44",
     "name": "Floriani Mussolini",
     "displayName": "Floriani Mussolini",
-    "fullName": "Romano Floriani Mussolini",
+    "fullName": "Romano Floriani",
     "teamName": "Lazio",
     "teamId": "lazio",
     "teamShort": "LAZ",
@@ -61764,7 +61764,7 @@ export const CSV_PLAYER_CATALOG = [
       "diffM": 100,
       "fvm": 323,
       "fvmM": 323,
-      "classic_8_mod_median": 9.2,
+      "classic_8_mod_median": 9.1,
       "classic_10_mod_median": 11,
       "classic_12_mod_median": 11.8
     },
