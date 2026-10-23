@@ -580,7 +580,7 @@ export const INITIAL_TEAMS = [
           "fvm": 134,
           "fvmM": 134,
           "classic_8_mod_median": 5.8,
-          "classic_10_mod_median": 6.6,
+          "classic_10_mod_median": 6.5,
           "classic_12_mod_median": 7.4
         },
         "stats": {
@@ -2086,7 +2086,7 @@ export const INITIAL_TEAMS = [
           "fvm": 128,
           "fvmM": 128,
           "classic_8_mod_median": 2.2,
-          "classic_10_mod_median": 3.2,
+          "classic_10_mod_median": 3.3,
           "classic_12_mod_median": 5
         },
         "stats": {
@@ -30022,7 +30022,7 @@ export const INITIAL_TEAMS = [
           "fvm": 51,
           "fvmM": 51,
           "classic_8_mod_median": 1.6,
-          "classic_10_mod_median": 3,
+          "classic_10_mod_median": 2.9,
           "classic_12_mod_median": 3.8
         },
         "stats": {
@@ -43879,7 +43879,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 134,
       "fvmM": 134,
       "classic_8_mod_median": 5.8,
-      "classic_10_mod_median": 6.6,
+      "classic_10_mod_median": 6.5,
       "classic_12_mod_median": 7.4
     },
     "stats": {
@@ -46387,7 +46387,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 51,
       "fvmM": 51,
       "classic_8_mod_median": 1.6,
-      "classic_10_mod_median": 3,
+      "classic_10_mod_median": 2.9,
       "classic_12_mod_median": 3.8
     },
     "stats": {
@@ -46981,7 +46981,7 @@ export const CSV_PLAYER_CATALOG = [
       "fvm": 128,
       "fvmM": 128,
       "classic_8_mod_median": 2.2,
-      "classic_10_mod_median": 3.2,
+      "classic_10_mod_median": 3.3,
       "classic_12_mod_median": 5
     },
     "stats": {
