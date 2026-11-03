@@ -9267,8 +9267,8 @@ export const SOS_TEAMS_DATA = {
     "primaryColor": "#000000",
     "secondaryColor": "#ffffff",
     "accentColor": "#ffd700",
-    "coach": "Kosta Runjaic",
-    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Runjaic.webp",
+    "coach": "Paolo Zanetti",
+    "coachImage": "https://cdn.falsesoftware.com/avatars/zanetti-cartoon.webp",
     "defaultFormation": "3-4-2-1",
     "module": "3-4-2-1",
     "attackRating": 3.0,
@@ -9307,21 +9307,21 @@ export const SOS_TEAMS_DATA = {
         "role": "P"
       },
       {
-        "playerId": "21898bcb-7bbf-46c7-9892-8e05475fcb53",
-        "csvId": 6956,
-        "name": "Solet",
-        "role": "D"
-      },
-      {
-        "playerId": "a778e4d5-7591-4341-93cc-3fedebf36602",
-        "csvId": 6925,
-        "name": "Palma",
+        "playerId": "2edd4901-5632-4cc8-b8b8-981150639745",
+        "csvId": 6021,
+        "name": "Abankwah",
         "role": "D"
       },
       {
         "playerId": "fc88b220-fb24-498f-b3d8-eb1769040b84",
         "csvId": 2404,
         "name": "Alaba",
+        "role": "D"
+      },
+      {
+        "playerId": "21898bcb-7bbf-46c7-9892-8e05475fcb53",
+        "csvId": 6956,
+        "name": "Solet",
         "role": "D"
       },
       {
@@ -9430,14 +9430,14 @@ export const SOS_TEAMS_DATA = {
       ],
       [
         {
-          "playerId": "a778e4d5-7591-4341-93cc-3fedebf36602",
-          "name": "Palma",
+          "playerId": "2edd4901-5632-4cc8-b8b8-981150639745",
+          "name": "Abankwah",
           "role": "D",
           "perc": 51
         },
         {
-          "playerId": "917b4ad5-2521-4728-96a1-e5df0346dcf3",
-          "name": "Kabasele",
+          "playerId": "a778e4d5-7591-4341-93cc-3fedebf36602",
+          "name": "Palma",
           "role": "D",
           "perc": 49
         }
@@ -9497,8 +9497,8 @@ export const SOS_TEAMS_DATA = {
     "primaryColor": "#000000",
     "secondaryColor": "#ffffff",
     "accentColor": "#ffd700",
-    "coach": "Kosta Runjaic",
-    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Runjaic.webp",
+    "coach": "Paolo Zanetti",
+    "coachImage": "https://cdn.falsesoftware.com/avatars/zanetti-cartoon.webp",
     "defaultFormation": "3-4-2-1",
     "module": "3-4-2-1",
     "attackRating": 3.0,
@@ -9537,21 +9537,21 @@ export const SOS_TEAMS_DATA = {
         "role": "P"
       },
       {
-        "playerId": "21898bcb-7bbf-46c7-9892-8e05475fcb53",
-        "csvId": 6956,
-        "name": "Solet",
-        "role": "D"
-      },
-      {
-        "playerId": "a778e4d5-7591-4341-93cc-3fedebf36602",
-        "csvId": 6925,
-        "name": "Palma",
+        "playerId": "2edd4901-5632-4cc8-b8b8-981150639745",
+        "csvId": 6021,
+        "name": "Abankwah",
         "role": "D"
       },
       {
         "playerId": "fc88b220-fb24-498f-b3d8-eb1769040b84",
         "csvId": 2404,
         "name": "Alaba",
+        "role": "D"
+      },
+      {
+        "playerId": "21898bcb-7bbf-46c7-9892-8e05475fcb53",
+        "csvId": 6956,
+        "name": "Solet",
         "role": "D"
       },
       {
@@ -9660,14 +9660,14 @@ export const SOS_TEAMS_DATA = {
       ],
       [
         {
-          "playerId": "a778e4d5-7591-4341-93cc-3fedebf36602",
-          "name": "Palma",
+          "playerId": "2edd4901-5632-4cc8-b8b8-981150639745",
+          "name": "Abankwah",
           "role": "D",
           "perc": 51
         },
         {
-          "playerId": "917b4ad5-2521-4728-96a1-e5df0346dcf3",
-          "name": "Kabasele",
+          "playerId": "a778e4d5-7591-4341-93cc-3fedebf36602",
+          "name": "Palma",
           "role": "D",
           "perc": 49
         }
