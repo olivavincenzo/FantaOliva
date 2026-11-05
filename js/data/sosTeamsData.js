@@ -1555,6 +1555,466 @@ export const SOS_TEAMS_DATA = {
       }
     ]
   },
+  "UDI": {
+    "code": "UDI",
+    "name": "Udinese",
+    "city": "Udine",
+    "stadium": "Bluenergy Stadium",
+    "primaryColor": "#000000",
+    "secondaryColor": "#ffffff",
+    "accentColor": "#ffd700",
+    "coach": "Paolo Zanetti",
+    "coachImage": "https://cdn.falsesoftware.com/avatars/zanetti-cartoon.webp",
+    "defaultFormation": "3-4-2-1",
+    "module": "3-4-2-1",
+    "attackRating": 3.0,
+    "defenseRating": 3.0,
+    "comment": "Il sistema del tecnico dei friulani si basa su una struttura ordinata e aggressiva, con grande attenzione alla riconquista del pallone e rapide transizioni offensive. Tatticamente, la squadra tende a mantenere una difesa posizionata piuttosto bassa, privilegiando la compattezza e la copertura degli spazi piuttosto che una linea alta che esponga ai contropiedi avversari. Questo approccio permette all’Udinese di limitare le occasioni avversarie, ma può riduce anche le occasione da goal da parte degli attaccanti.",
+    "sosFantaComment": "È rimasto Kosta Runjaic in panchina nell'Udinese, ha provato più il 3-4-2-1 del 3-5-2 finora. In difesa Solet se sta bene è la certezza ed è arrivato Alaba durante la sosta: rinforzo di esperienza internazionale, se non ha problemi fisici è il titolarissimo come braccetto sinistro. Al centro del reparto o Palma o Kabasele. A destra la novità è Vojvoda aspettando il pieno recupero di Zanoli (già dopo la sosta si giocano una maglia). Partito Atta, a centrocampo Piotrowski (una volta tornato dall'operazione) avanti su Miller e sul nuovo arrivato Unai Gomez (più trequartista che centrocampista). Ekkelenkamp provato più avanzato accanto a Zaniolo, alle spalle di Davis.",
+    "keyPoints": [
+      {
+        "text": "Transizioni offensivi efficaci",
+        "tone": "good"
+      },
+      {
+        "text": "Non elevata propensione offensiva",
+        "tone": "bad"
+      },
+      {
+        "text": "Discreta solidità difensiva ",
+        "tone": "neutral"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "treq-center",
+        "tone": "good"
+      },
+      {
+        "role": "gk",
+        "tone": "bad"
+      }
+    ],
+    "starters": [
+      {
+        "playerId": "cbe2156e-f2a7-4e4d-9d46-472bf9c4a258",
+        "csvId": "6462",
+        "name": "Okoye",
+        "role": "P"
+      },
+      {
+        "playerId": "a778e4d5-7591-4341-93cc-3fedebf36602",
+        "csvId": 6925,
+        "name": "Palma",
+        "role": "D"
+      },
+      {
+        "playerId": "fc88b220-fb24-498f-b3d8-eb1769040b84",
+        "csvId": 2404,
+        "name": "Alaba",
+        "role": "D"
+      },
+      {
+        "playerId": "21898bcb-7bbf-46c7-9892-8e05475fcb53",
+        "csvId": 6956,
+        "name": "Solet",
+        "role": "D"
+      },
+      {
+        "playerId": "38215a52-f2bd-4088-964f-fec353964b85",
+        "csvId": 4994,
+        "name": "Vojvoda",
+        "role": "D"
+      },
+      {
+        "playerId": "56ee78ba-2510-4d61-9f05-0756220a9156",
+        "csvId": "5555",
+        "name": "Kamara H.",
+        "role": "D"
+      },
+      {
+        "playerId": "6f1fa3c2-5ce5-4273-97e3-0fcb5c647657",
+        "csvId": 7198,
+        "name": "Piotrowski",
+        "role": "C"
+      },
+      {
+        "playerId": "c936ac6a-f383-43a3-8568-182189db11a8",
+        "csvId": "6680",
+        "name": "Karlstrom",
+        "role": "C"
+      },
+      {
+        "playerId": "1137037e-c927-401f-b891-43a2965753a2",
+        "csvId": 2766,
+        "name": "Zaniolo",
+        "role": "C"
+      },
+      {
+        "playerId": "2b362169-cf19-4a08-a822-d99382ed5e0e",
+        "csvId": 6684,
+        "name": "Ekkelenkamp",
+        "role": "C"
+      },
+      {
+        "playerId": "5bca84cb-b411-4807-b588-7cbc2d7dc3f8",
+        "csvId": "5637",
+        "name": "Davis K.",
+        "role": "A"
+      }
+    ],
+    "rig": [
+      {
+        "playerId": "5bca84cb-b411-4807-b588-7cbc2d7dc3f8",
+        "name": "Davis K.",
+        "role": "A"
+      },
+      {
+        "playerId": "1137037e-c927-401f-b891-43a2965753a2",
+        "name": "Zaniolo",
+        "role": "C"
+      },
+      {
+        "playerId": "2b362169-cf19-4a08-a822-d99382ed5e0e",
+        "name": "Ekkelenkamp",
+        "role": "C"
+      }
+    ],
+    "pun": [
+      {
+        "playerId": "1137037e-c927-401f-b891-43a2965753a2",
+        "name": "Zaniolo",
+        "role": "C"
+      },
+      {
+        "playerId": "2b362169-cf19-4a08-a822-d99382ed5e0e",
+        "name": "Ekkelenkamp",
+        "role": "C"
+      }
+    ],
+    "corner": [
+      {
+        "playerId": "56ee78ba-2510-4d61-9f05-0756220a9156",
+        "name": "Kamara H.",
+        "role": "D"
+      },
+      {
+        "playerId": "2b362169-cf19-4a08-a822-d99382ed5e0e",
+        "name": "Ekkelenkamp",
+        "role": "C"
+      },
+      {
+        "playerId": "38215a52-f2bd-4088-964f-fec353964b85",
+        "name": "Vojvoda",
+        "role": "D"
+      }
+    ],
+    "ballottaggi": [
+      [
+        {
+          "playerId": "6f1fa3c2-5ce5-4273-97e3-0fcb5c647657",
+          "name": "Piotrowski",
+          "role": "C",
+          "perc": 51
+        },
+        {
+          "playerId": "1608c14a-caaa-4907-9b7f-57aa2dc2b47b",
+          "name": "Miller L.",
+          "role": "C",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "a778e4d5-7591-4341-93cc-3fedebf36602",
+          "name": "Palma",
+          "role": "D",
+          "perc": 51
+        },
+        {
+          "playerId": "2edd4901-5632-4cc8-b8b8-981150639745",
+          "name": "Abankwah",
+          "role": "D",
+          "perc": 49
+        }
+      ]
+    ],
+    "up": [
+      {
+        "playerId": "5bca84cb-b411-4807-b588-7cbc2d7dc3f8",
+        "name": "Davis K.",
+        "points": [
+          "Presenza fisica in area",
+          "Bravo nelle ripartenze"
+        ]
+      },
+      {
+        "playerId": "2b362169-cf19-4a08-a822-d99382ed5e0e",
+        "name": "Ekkelenkamp",
+        "points": [
+          "Riferimento tecnico del centrocampo",
+          "Partecipazione alla fase offensiva"
+        ]
+      }
+    ],
+    "down": [
+      {
+        "playerId": "c936ac6a-f383-43a3-8568-182189db11a8",
+        "name": "Karlstrom",
+        "points": [
+          "Posizionamento molto arretrato"
+        ]
+      }
+    ],
+    "young": [
+      {
+        "playerId": "1608c14a-caaa-4907-9b7f-57aa2dc2b47b",
+        "name": "Miller L.",
+        "points": [
+          "Giocatore versatile che può agire in diversi ruoli del centrocampo"
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "playerId": "a778e4d5-7591-4341-93cc-3fedebf36602",
+        "name": "Palma",
+        "points": [
+          "Forte sulle palle inattive"
+        ]
+      }
+    ]
+  },
+  "udinese": {
+    "code": "UDI",
+    "name": "Udinese",
+    "city": "Udine",
+    "stadium": "Bluenergy Stadium",
+    "primaryColor": "#000000",
+    "secondaryColor": "#ffffff",
+    "accentColor": "#ffd700",
+    "coach": "Paolo Zanetti",
+    "coachImage": "https://cdn.falsesoftware.com/avatars/zanetti-cartoon.webp",
+    "defaultFormation": "3-4-2-1",
+    "module": "3-4-2-1",
+    "attackRating": 3.0,
+    "defenseRating": 3.0,
+    "comment": "Il sistema del tecnico dei friulani si basa su una struttura ordinata e aggressiva, con grande attenzione alla riconquista del pallone e rapide transizioni offensive. Tatticamente, la squadra tende a mantenere una difesa posizionata piuttosto bassa, privilegiando la compattezza e la copertura degli spazi piuttosto che una linea alta che esponga ai contropiedi avversari. Questo approccio permette all’Udinese di limitare le occasioni avversarie, ma può riduce anche le occasione da goal da parte degli attaccanti.",
+    "sosFantaComment": "È rimasto Kosta Runjaic in panchina nell'Udinese, ha provato più il 3-4-2-1 del 3-5-2 finora. In difesa Solet se sta bene è la certezza ed è arrivato Alaba durante la sosta: rinforzo di esperienza internazionale, se non ha problemi fisici è il titolarissimo come braccetto sinistro. Al centro del reparto o Palma o Kabasele. A destra la novità è Vojvoda aspettando il pieno recupero di Zanoli (già dopo la sosta si giocano una maglia). Partito Atta, a centrocampo Piotrowski (una volta tornato dall'operazione) avanti su Miller e sul nuovo arrivato Unai Gomez (più trequartista che centrocampista). Ekkelenkamp provato più avanzato accanto a Zaniolo, alle spalle di Davis.",
+    "keyPoints": [
+      {
+        "text": "Transizioni offensivi efficaci",
+        "tone": "good"
+      },
+      {
+        "text": "Non elevata propensione offensiva",
+        "tone": "bad"
+      },
+      {
+        "text": "Discreta solidità difensiva ",
+        "tone": "neutral"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "treq-center",
+        "tone": "good"
+      },
+      {
+        "role": "gk",
+        "tone": "bad"
+      }
+    ],
+    "starters": [
+      {
+        "playerId": "cbe2156e-f2a7-4e4d-9d46-472bf9c4a258",
+        "csvId": "6462",
+        "name": "Okoye",
+        "role": "P"
+      },
+      {
+        "playerId": "a778e4d5-7591-4341-93cc-3fedebf36602",
+        "csvId": 6925,
+        "name": "Palma",
+        "role": "D"
+      },
+      {
+        "playerId": "fc88b220-fb24-498f-b3d8-eb1769040b84",
+        "csvId": 2404,
+        "name": "Alaba",
+        "role": "D"
+      },
+      {
+        "playerId": "21898bcb-7bbf-46c7-9892-8e05475fcb53",
+        "csvId": 6956,
+        "name": "Solet",
+        "role": "D"
+      },
+      {
+        "playerId": "38215a52-f2bd-4088-964f-fec353964b85",
+        "csvId": 4994,
+        "name": "Vojvoda",
+        "role": "D"
+      },
+      {
+        "playerId": "56ee78ba-2510-4d61-9f05-0756220a9156",
+        "csvId": "5555",
+        "name": "Kamara H.",
+        "role": "D"
+      },
+      {
+        "playerId": "6f1fa3c2-5ce5-4273-97e3-0fcb5c647657",
+        "csvId": 7198,
+        "name": "Piotrowski",
+        "role": "C"
+      },
+      {
+        "playerId": "c936ac6a-f383-43a3-8568-182189db11a8",
+        "csvId": "6680",
+        "name": "Karlstrom",
+        "role": "C"
+      },
+      {
+        "playerId": "1137037e-c927-401f-b891-43a2965753a2",
+        "csvId": 2766,
+        "name": "Zaniolo",
+        "role": "C"
+      },
+      {
+        "playerId": "2b362169-cf19-4a08-a822-d99382ed5e0e",
+        "csvId": 6684,
+        "name": "Ekkelenkamp",
+        "role": "C"
+      },
+      {
+        "playerId": "5bca84cb-b411-4807-b588-7cbc2d7dc3f8",
+        "csvId": "5637",
+        "name": "Davis K.",
+        "role": "A"
+      }
+    ],
+    "rig": [
+      {
+        "playerId": "5bca84cb-b411-4807-b588-7cbc2d7dc3f8",
+        "name": "Davis K.",
+        "role": "A"
+      },
+      {
+        "playerId": "1137037e-c927-401f-b891-43a2965753a2",
+        "name": "Zaniolo",
+        "role": "C"
+      },
+      {
+        "playerId": "2b362169-cf19-4a08-a822-d99382ed5e0e",
+        "name": "Ekkelenkamp",
+        "role": "C"
+      }
+    ],
+    "pun": [
+      {
+        "playerId": "1137037e-c927-401f-b891-43a2965753a2",
+        "name": "Zaniolo",
+        "role": "C"
+      },
+      {
+        "playerId": "2b362169-cf19-4a08-a822-d99382ed5e0e",
+        "name": "Ekkelenkamp",
+        "role": "C"
+      }
+    ],
+    "corner": [
+      {
+        "playerId": "56ee78ba-2510-4d61-9f05-0756220a9156",
+        "name": "Kamara H.",
+        "role": "D"
+      },
+      {
+        "playerId": "2b362169-cf19-4a08-a822-d99382ed5e0e",
+        "name": "Ekkelenkamp",
+        "role": "C"
+      },
+      {
+        "playerId": "38215a52-f2bd-4088-964f-fec353964b85",
+        "name": "Vojvoda",
+        "role": "D"
+      }
+    ],
+    "ballottaggi": [
+      [
+        {
+          "playerId": "6f1fa3c2-5ce5-4273-97e3-0fcb5c647657",
+          "name": "Piotrowski",
+          "role": "C",
+          "perc": 51
+        },
+        {
+          "playerId": "1608c14a-caaa-4907-9b7f-57aa2dc2b47b",
+          "name": "Miller L.",
+          "role": "C",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "a778e4d5-7591-4341-93cc-3fedebf36602",
+          "name": "Palma",
+          "role": "D",
+          "perc": 51
+        },
+        {
+          "playerId": "2edd4901-5632-4cc8-b8b8-981150639745",
+          "name": "Abankwah",
+          "role": "D",
+          "perc": 49
+        }
+      ]
+    ],
+    "up": [
+      {
+        "playerId": "5bca84cb-b411-4807-b588-7cbc2d7dc3f8",
+        "name": "Davis K.",
+        "points": [
+          "Presenza fisica in area",
+          "Bravo nelle ripartenze"
+        ]
+      },
+      {
+        "playerId": "2b362169-cf19-4a08-a822-d99382ed5e0e",
+        "name": "Ekkelenkamp",
+        "points": [
+          "Riferimento tecnico del centrocampo",
+          "Partecipazione alla fase offensiva"
+        ]
+      }
+    ],
+    "down": [
+      {
+        "playerId": "c936ac6a-f383-43a3-8568-182189db11a8",
+        "name": "Karlstrom",
+        "points": [
+          "Posizionamento molto arretrato"
+        ]
+      }
+    ],
+    "young": [
+      {
+        "playerId": "1608c14a-caaa-4907-9b7f-57aa2dc2b47b",
+        "name": "Miller L.",
+        "points": [
+          "Giocatore versatile che può agire in diversi ruoli del centrocampo"
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "playerId": "a778e4d5-7591-4341-93cc-3fedebf36602",
+        "name": "Palma",
+        "points": [
+          "Forte sulle palle inattive"
+        ]
+      }
+    ]
+  },
   "SAS": {
     "code": "SAS",
     "name": "Sassuolo",
@@ -9255,466 +9715,6 @@ export const SOS_TEAMS_DATA = {
         "name": "Delprato",
         "points": [
           "Coinvolto nella fase offensiva"
-        ]
-      }
-    ]
-  },
-  "UDI": {
-    "code": "UDI",
-    "name": "Udinese",
-    "city": "Udine",
-    "stadium": "Bluenergy Stadium",
-    "primaryColor": "#000000",
-    "secondaryColor": "#ffffff",
-    "accentColor": "#ffd700",
-    "coach": "Paolo Zanetti",
-    "coachImage": "https://cdn.falsesoftware.com/avatars/zanetti-cartoon.webp",
-    "defaultFormation": "3-4-2-1",
-    "module": "3-4-2-1",
-    "attackRating": 3.0,
-    "defenseRating": 3.0,
-    "comment": "Il sistema del tecnico dei friulani si basa su una struttura ordinata e aggressiva, con grande attenzione alla riconquista del pallone e rapide transizioni offensive. Tatticamente, la squadra tende a mantenere una difesa posizionata piuttosto bassa, privilegiando la compattezza e la copertura degli spazi piuttosto che una linea alta che esponga ai contropiedi avversari. Questo approccio permette all’Udinese di limitare le occasioni avversarie, ma può riduce anche le occasione da goal da parte degli attaccanti.",
-    "sosFantaComment": "È rimasto Kosta Runjaic in panchina nell'Udinese, ha provato più il 3-4-2-1 del 3-5-2 finora. In difesa Solet se sta bene è la certezza ed è arrivato Alaba durante la sosta: rinforzo di esperienza internazionale, se non ha problemi fisici è il titolarissimo come braccetto sinistro. Al centro del reparto o Palma o Kabasele. A destra la novità è Vojvoda aspettando il pieno recupero di Zanoli (già dopo la sosta si giocano una maglia). Partito Atta, a centrocampo Piotrowski (una volta tornato dall'operazione) avanti su Miller e sul nuovo arrivato Unai Gomez (più trequartista che centrocampista). Ekkelenkamp provato più avanzato accanto a Zaniolo, alle spalle di Davis.",
-    "keyPoints": [
-      {
-        "text": "Contropiedi efficaci",
-        "tone": "good"
-      },
-      {
-        "text": "Propensione al fallo tattico",
-        "tone": "bad"
-      },
-      {
-        "text": "Efficacia del gioco dipendente dall'atletismo dei giocatori",
-        "tone": "neutral"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "att-center",
-        "tone": "good"
-      },
-      {
-        "role": "mid-holding",
-        "tone": "bad"
-      }
-    ],
-    "starters": [
-      {
-        "playerId": "cbe2156e-f2a7-4e4d-9d46-472bf9c4a258",
-        "csvId": "6462",
-        "name": "Okoye",
-        "role": "P"
-      },
-      {
-        "playerId": "2edd4901-5632-4cc8-b8b8-981150639745",
-        "csvId": 6021,
-        "name": "Abankwah",
-        "role": "D"
-      },
-      {
-        "playerId": "fc88b220-fb24-498f-b3d8-eb1769040b84",
-        "csvId": 2404,
-        "name": "Alaba",
-        "role": "D"
-      },
-      {
-        "playerId": "21898bcb-7bbf-46c7-9892-8e05475fcb53",
-        "csvId": 6956,
-        "name": "Solet",
-        "role": "D"
-      },
-      {
-        "playerId": "38215a52-f2bd-4088-964f-fec353964b85",
-        "csvId": 4994,
-        "name": "Vojvoda",
-        "role": "D"
-      },
-      {
-        "playerId": "56ee78ba-2510-4d61-9f05-0756220a9156",
-        "csvId": "5555",
-        "name": "Kamara H.",
-        "role": "D"
-      },
-      {
-        "playerId": "6f1fa3c2-5ce5-4273-97e3-0fcb5c647657",
-        "csvId": 7198,
-        "name": "Piotrowski",
-        "role": "C"
-      },
-      {
-        "playerId": "c936ac6a-f383-43a3-8568-182189db11a8",
-        "csvId": "6680",
-        "name": "Karlstrom",
-        "role": "C"
-      },
-      {
-        "playerId": "1137037e-c927-401f-b891-43a2965753a2",
-        "csvId": 2766,
-        "name": "Zaniolo",
-        "role": "C"
-      },
-      {
-        "playerId": "2b362169-cf19-4a08-a822-d99382ed5e0e",
-        "csvId": 6684,
-        "name": "Ekkelenkamp",
-        "role": "C"
-      },
-      {
-        "playerId": "5bca84cb-b411-4807-b588-7cbc2d7dc3f8",
-        "csvId": "5637",
-        "name": "Davis K.",
-        "role": "A"
-      }
-    ],
-    "rig": [
-      {
-        "playerId": "5bca84cb-b411-4807-b588-7cbc2d7dc3f8",
-        "name": "Davis K.",
-        "role": "A"
-      },
-      {
-        "playerId": "21898bcb-7bbf-46c7-9892-8e05475fcb53",
-        "name": "Solet",
-        "role": "D"
-      },
-      {
-        "playerId": "2b362169-cf19-4a08-a822-d99382ed5e0e",
-        "name": "Ekkelenkamp",
-        "role": "C"
-      }
-    ],
-    "pun": [
-      {
-        "playerId": "fc88b220-fb24-498f-b3d8-eb1769040b84",
-        "name": "Alaba",
-        "role": "D"
-      },
-      {
-        "playerId": "2b362169-cf19-4a08-a822-d99382ed5e0e",
-        "name": "Ekkelenkamp",
-        "role": "C"
-      }
-    ],
-    "corner": [
-      {
-        "playerId": "fc88b220-fb24-498f-b3d8-eb1769040b84",
-        "name": "Alaba",
-        "role": "D"
-      },
-      {
-        "playerId": "2b362169-cf19-4a08-a822-d99382ed5e0e",
-        "name": "Ekkelenkamp",
-        "role": "C"
-      },
-      {
-        "playerId": "38215a52-f2bd-4088-964f-fec353964b85",
-        "name": "Vojvoda",
-        "role": "D"
-      }
-    ],
-    "ballottaggi": [
-      [
-        {
-          "playerId": "6f1fa3c2-5ce5-4273-97e3-0fcb5c647657",
-          "name": "Piotrowski",
-          "role": "C",
-          "perc": 55
-        },
-        {
-          "playerId": "1608c14a-caaa-4907-9b7f-57aa2dc2b47b",
-          "name": "Miller L.",
-          "role": "C",
-          "perc": 45
-        }
-      ],
-      [
-        {
-          "playerId": "2edd4901-5632-4cc8-b8b8-981150639745",
-          "name": "Abankwah",
-          "role": "D",
-          "perc": 51
-        },
-        {
-          "playerId": "a778e4d5-7591-4341-93cc-3fedebf36602",
-          "name": "Palma",
-          "role": "D",
-          "perc": 49
-        }
-      ]
-    ],
-    "up": [
-      {
-        "playerId": "5bca84cb-b411-4807-b588-7cbc2d7dc3f8",
-        "name": "Davis K.",
-        "points": [
-          "Presenza fisica in area",
-          "Bravo nelle ripartenze"
-        ]
-      },
-      {
-        "playerId": "2b362169-cf19-4a08-a822-d99382ed5e0e",
-        "name": "Ekkelenkamp",
-        "points": [
-          "Riferimento tecnico del centrocampo",
-          "Partecipazione alla fase offensiva"
-        ]
-      }
-    ],
-    "down": [
-      {
-        "playerId": "c936ac6a-f383-43a3-8568-182189db11a8",
-        "name": "Karlstrom",
-        "points": [
-          "Posizionamento molto arretrato"
-        ]
-      }
-    ],
-    "young": [
-      {
-        "playerId": "1608c14a-caaa-4907-9b7f-57aa2dc2b47b",
-        "name": "Miller L.",
-        "points": [
-          "Giocatore versatile che può agire in diversi ruoli del centrocampo"
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "playerId": "917b4ad5-2521-4728-96a1-e5df0346dcf3",
-        "name": "Kabasele",
-        "points": [
-          "Forte sulle palle inattive"
-        ]
-      }
-    ]
-  },
-  "udinese": {
-    "code": "UDI",
-    "name": "Udinese",
-    "city": "Udine",
-    "stadium": "Bluenergy Stadium",
-    "primaryColor": "#000000",
-    "secondaryColor": "#ffffff",
-    "accentColor": "#ffd700",
-    "coach": "Paolo Zanetti",
-    "coachImage": "https://cdn.falsesoftware.com/avatars/zanetti-cartoon.webp",
-    "defaultFormation": "3-4-2-1",
-    "module": "3-4-2-1",
-    "attackRating": 3.0,
-    "defenseRating": 3.0,
-    "comment": "Il sistema del tecnico dei friulani si basa su una struttura ordinata e aggressiva, con grande attenzione alla riconquista del pallone e rapide transizioni offensive. Tatticamente, la squadra tende a mantenere una difesa posizionata piuttosto bassa, privilegiando la compattezza e la copertura degli spazi piuttosto che una linea alta che esponga ai contropiedi avversari. Questo approccio permette all’Udinese di limitare le occasioni avversarie, ma può riduce anche le occasione da goal da parte degli attaccanti.",
-    "sosFantaComment": "È rimasto Kosta Runjaic in panchina nell'Udinese, ha provato più il 3-4-2-1 del 3-5-2 finora. In difesa Solet se sta bene è la certezza ed è arrivato Alaba durante la sosta: rinforzo di esperienza internazionale, se non ha problemi fisici è il titolarissimo come braccetto sinistro. Al centro del reparto o Palma o Kabasele. A destra la novità è Vojvoda aspettando il pieno recupero di Zanoli (già dopo la sosta si giocano una maglia). Partito Atta, a centrocampo Piotrowski (una volta tornato dall'operazione) avanti su Miller e sul nuovo arrivato Unai Gomez (più trequartista che centrocampista). Ekkelenkamp provato più avanzato accanto a Zaniolo, alle spalle di Davis.",
-    "keyPoints": [
-      {
-        "text": "Contropiedi efficaci",
-        "tone": "good"
-      },
-      {
-        "text": "Propensione al fallo tattico",
-        "tone": "bad"
-      },
-      {
-        "text": "Efficacia del gioco dipendente dall'atletismo dei giocatori",
-        "tone": "neutral"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "att-center",
-        "tone": "good"
-      },
-      {
-        "role": "mid-holding",
-        "tone": "bad"
-      }
-    ],
-    "starters": [
-      {
-        "playerId": "cbe2156e-f2a7-4e4d-9d46-472bf9c4a258",
-        "csvId": "6462",
-        "name": "Okoye",
-        "role": "P"
-      },
-      {
-        "playerId": "2edd4901-5632-4cc8-b8b8-981150639745",
-        "csvId": 6021,
-        "name": "Abankwah",
-        "role": "D"
-      },
-      {
-        "playerId": "fc88b220-fb24-498f-b3d8-eb1769040b84",
-        "csvId": 2404,
-        "name": "Alaba",
-        "role": "D"
-      },
-      {
-        "playerId": "21898bcb-7bbf-46c7-9892-8e05475fcb53",
-        "csvId": 6956,
-        "name": "Solet",
-        "role": "D"
-      },
-      {
-        "playerId": "38215a52-f2bd-4088-964f-fec353964b85",
-        "csvId": 4994,
-        "name": "Vojvoda",
-        "role": "D"
-      },
-      {
-        "playerId": "56ee78ba-2510-4d61-9f05-0756220a9156",
-        "csvId": "5555",
-        "name": "Kamara H.",
-        "role": "D"
-      },
-      {
-        "playerId": "6f1fa3c2-5ce5-4273-97e3-0fcb5c647657",
-        "csvId": 7198,
-        "name": "Piotrowski",
-        "role": "C"
-      },
-      {
-        "playerId": "c936ac6a-f383-43a3-8568-182189db11a8",
-        "csvId": "6680",
-        "name": "Karlstrom",
-        "role": "C"
-      },
-      {
-        "playerId": "1137037e-c927-401f-b891-43a2965753a2",
-        "csvId": 2766,
-        "name": "Zaniolo",
-        "role": "C"
-      },
-      {
-        "playerId": "2b362169-cf19-4a08-a822-d99382ed5e0e",
-        "csvId": 6684,
-        "name": "Ekkelenkamp",
-        "role": "C"
-      },
-      {
-        "playerId": "5bca84cb-b411-4807-b588-7cbc2d7dc3f8",
-        "csvId": "5637",
-        "name": "Davis K.",
-        "role": "A"
-      }
-    ],
-    "rig": [
-      {
-        "playerId": "5bca84cb-b411-4807-b588-7cbc2d7dc3f8",
-        "name": "Davis K.",
-        "role": "A"
-      },
-      {
-        "playerId": "21898bcb-7bbf-46c7-9892-8e05475fcb53",
-        "name": "Solet",
-        "role": "D"
-      },
-      {
-        "playerId": "2b362169-cf19-4a08-a822-d99382ed5e0e",
-        "name": "Ekkelenkamp",
-        "role": "C"
-      }
-    ],
-    "pun": [
-      {
-        "playerId": "fc88b220-fb24-498f-b3d8-eb1769040b84",
-        "name": "Alaba",
-        "role": "D"
-      },
-      {
-        "playerId": "2b362169-cf19-4a08-a822-d99382ed5e0e",
-        "name": "Ekkelenkamp",
-        "role": "C"
-      }
-    ],
-    "corner": [
-      {
-        "playerId": "fc88b220-fb24-498f-b3d8-eb1769040b84",
-        "name": "Alaba",
-        "role": "D"
-      },
-      {
-        "playerId": "2b362169-cf19-4a08-a822-d99382ed5e0e",
-        "name": "Ekkelenkamp",
-        "role": "C"
-      },
-      {
-        "playerId": "38215a52-f2bd-4088-964f-fec353964b85",
-        "name": "Vojvoda",
-        "role": "D"
-      }
-    ],
-    "ballottaggi": [
-      [
-        {
-          "playerId": "6f1fa3c2-5ce5-4273-97e3-0fcb5c647657",
-          "name": "Piotrowski",
-          "role": "C",
-          "perc": 55
-        },
-        {
-          "playerId": "1608c14a-caaa-4907-9b7f-57aa2dc2b47b",
-          "name": "Miller L.",
-          "role": "C",
-          "perc": 45
-        }
-      ],
-      [
-        {
-          "playerId": "2edd4901-5632-4cc8-b8b8-981150639745",
-          "name": "Abankwah",
-          "role": "D",
-          "perc": 51
-        },
-        {
-          "playerId": "a778e4d5-7591-4341-93cc-3fedebf36602",
-          "name": "Palma",
-          "role": "D",
-          "perc": 49
-        }
-      ]
-    ],
-    "up": [
-      {
-        "playerId": "5bca84cb-b411-4807-b588-7cbc2d7dc3f8",
-        "name": "Davis K.",
-        "points": [
-          "Presenza fisica in area",
-          "Bravo nelle ripartenze"
-        ]
-      },
-      {
-        "playerId": "2b362169-cf19-4a08-a822-d99382ed5e0e",
-        "name": "Ekkelenkamp",
-        "points": [
-          "Riferimento tecnico del centrocampo",
-          "Partecipazione alla fase offensiva"
-        ]
-      }
-    ],
-    "down": [
-      {
-        "playerId": "c936ac6a-f383-43a3-8568-182189db11a8",
-        "name": "Karlstrom",
-        "points": [
-          "Posizionamento molto arretrato"
-        ]
-      }
-    ],
-    "young": [
-      {
-        "playerId": "1608c14a-caaa-4907-9b7f-57aa2dc2b47b",
-        "name": "Miller L.",
-        "points": [
-          "Giocatore versatile che può agire in diversi ruoli del centrocampo"
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "playerId": "917b4ad5-2521-4728-96a1-e5df0346dcf3",
-        "name": "Kabasele",
-        "points": [
-          "Forte sulle palle inattive"
         ]
       }
     ]

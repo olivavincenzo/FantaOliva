@@ -699,6 +699,212 @@
     "updatedAt": "2026-10-28T18:59:43.432Z"
   },
   {
+    "team": "UDI",
+    "season": "s_26_27",
+    "starters": [
+      {
+        "player_id": "cbe2156e-f2a7-4e4d-9d46-472bf9c4a258",
+        "id": "6462"
+      },
+      {
+        "player_id": "a778e4d5-7591-4341-93cc-3fedebf36602",
+        "id": 6925
+      },
+      {
+        "player_id": "fc88b220-fb24-498f-b3d8-eb1769040b84",
+        "id": 2404
+      },
+      {
+        "player_id": "21898bcb-7bbf-46c7-9892-8e05475fcb53",
+        "id": 6956
+      },
+      {
+        "player_id": "38215a52-f2bd-4088-964f-fec353964b85",
+        "id": 4994
+      },
+      {
+        "player_id": "56ee78ba-2510-4d61-9f05-0756220a9156",
+        "id": "5555"
+      },
+      {
+        "player_id": "6f1fa3c2-5ce5-4273-97e3-0fcb5c647657",
+        "id": 7198
+      },
+      {
+        "player_id": "c936ac6a-f383-43a3-8568-182189db11a8",
+        "id": "6680"
+      },
+      {
+        "player_id": "1137037e-c927-401f-b891-43a2965753a2",
+        "id": 2766
+      },
+      {
+        "player_id": "2b362169-cf19-4a08-a822-d99382ed5e0e",
+        "id": 6684
+      },
+      {
+        "player_id": "5bca84cb-b411-4807-b588-7cbc2d7dc3f8",
+        "id": "5637"
+      }
+    ],
+    "rig": [
+      {
+        "player_id": "5bca84cb-b411-4807-b588-7cbc2d7dc3f8"
+      },
+      {
+        "player_id": "1137037e-c927-401f-b891-43a2965753a2"
+      },
+      {
+        "player_id": "2b362169-cf19-4a08-a822-d99382ed5e0e"
+      }
+    ],
+    "pun": [
+      {
+        "player_id": "1137037e-c927-401f-b891-43a2965753a2"
+      },
+      {
+        "player_id": "2b362169-cf19-4a08-a822-d99382ed5e0e"
+      }
+    ],
+    "corner": [
+      {
+        "player_id": "56ee78ba-2510-4d61-9f05-0756220a9156"
+      },
+      {
+        "player_id": "2b362169-cf19-4a08-a822-d99382ed5e0e"
+      },
+      {
+        "player_id": "38215a52-f2bd-4088-964f-fec353964b85"
+      }
+    ],
+    "module": "3-4-2-1",
+    "coach": "Paolo Zanetti",
+    "attack": 3,
+    "defense": 3,
+    "comment": "Il sistema del tecnico dei friulani si basa su una struttura ordinata e aggressiva, con grande attenzione alla riconquista del pallone e rapide transizioni offensive. Tatticamente, la squadra tende a mantenere una difesa posizionata piuttosto bassa, privilegiando la compattezza e la copertura degli spazi piuttosto che una linea alta che esponga ai contropiedi avversari. Questo approccio permette all’Udinese di limitare le occasioni avversarie, ma può riduce anche le occasione da goal da parte degli attaccanti.",
+    "sosFantaComment": "È rimasto Kosta Runjaic in panchina nell'Udinese, ha provato più il 3-4-2-1 del 3-5-2 finora. In difesa Solet se sta bene è la certezza ed è arrivato Alaba durante la sosta: rinforzo di esperienza internazionale, se non ha problemi fisici è il titolarissimo come braccetto sinistro. Al centro del reparto o Palma o Kabasele. A destra la novità è Vojvoda aspettando il pieno recupero di Zanoli (già dopo la sosta si giocano una maglia). Partito Atta, a centrocampo Piotrowski (una volta tornato dall'operazione) avanti su Miller e sul nuovo arrivato Unai Gomez (più trequartista che centrocampista). Ekkelenkamp provato più avanzato accanto a Zaniolo, alle spalle di Davis.",
+    "created_at": "2026-07-21T13:49:09.077Z",
+    "updated_at": "2026-11-04T14:21:42.535Z",
+    "up": [
+      {
+        "player_id": "5bca84cb-b411-4807-b588-7cbc2d7dc3f8",
+        "points": [
+          {
+            "text": "Presenza fisica in area",
+            "tone": "good"
+          },
+          {
+            "tone": "good",
+            "text": "Bravo nelle ripartenze"
+          }
+        ]
+      },
+      {
+        "player_id": "2b362169-cf19-4a08-a822-d99382ed5e0e",
+        "points": [
+          {
+            "text": "Riferimento tecnico del centrocampo",
+            "tone": "good"
+          },
+          {
+            "tone": "good",
+            "text": "Partecipazione alla fase offensiva"
+          }
+        ]
+      }
+    ],
+    "down": [
+      {
+        "player_id": "c936ac6a-f383-43a3-8568-182189db11a8",
+        "points": [
+          {
+            "text": "Posizionamento molto arretrato",
+            "tone": "bad"
+          }
+        ]
+      }
+    ],
+    "young": [
+      {
+        "player_id": "1608c14a-caaa-4907-9b7f-57aa2dc2b47b",
+        "points": [
+          {
+            "text": "Giocatore versatile che può agire in diversi ruoli del centrocampo",
+            "tone": "good"
+          }
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "player_id": "a778e4d5-7591-4341-93cc-3fedebf36602",
+        "points": [
+          {
+            "tone": "neutral",
+            "text": "Forte sulle palle inattive"
+          }
+        ]
+      }
+    ],
+    "ballottaggi": [
+      {
+        "players": [
+          {
+            "player_id": "6f1fa3c2-5ce5-4273-97e3-0fcb5c647657",
+            "perc": 51
+          },
+          {
+            "player_id": "1608c14a-caaa-4907-9b7f-57aa2dc2b47b",
+            "perc": 49
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "a778e4d5-7591-4341-93cc-3fedebf36602",
+            "perc": 51
+          },
+          {
+            "player_id": "2edd4901-5632-4cc8-b8b8-981150639745",
+            "perc": 49
+          }
+        ]
+      }
+    ],
+    "coachRating": {
+      "attack": 3,
+      "defense": 3,
+      "coachImage": "https://cdn.falsesoftware.com/avatars/zanetti-cartoon.webp"
+    },
+    "keyPoints": [
+      {
+        "text": "Transizioni offensivi efficaci",
+        "tone": "good"
+      },
+      {
+        "text": "Non elevata propensione offensiva",
+        "tone": "bad"
+      },
+      {
+        "text": "Discreta solidità difensiva ",
+        "tone": "neutral"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "treq-center",
+        "tone": "good"
+      },
+      {
+        "role": "gk",
+        "tone": "bad"
+      }
+    ],
+    "createdAt": "2026-07-21T13:49:09.077Z",
+    "updatedAt": "2026-11-04T14:21:42.535Z"
+  },
+  {
     "team": "SAS",
     "season": "s_26_27",
     "starters": [
@@ -4161,212 +4367,6 @@
     ],
     "createdAt": "2026-07-21T13:10:52.139Z",
     "updatedAt": "2026-10-28T23:44:53.502Z"
-  },
-  {
-    "team": "UDI",
-    "season": "s_26_27",
-    "starters": [
-      {
-        "player_id": "cbe2156e-f2a7-4e4d-9d46-472bf9c4a258",
-        "id": "6462"
-      },
-      {
-        "player_id": "2edd4901-5632-4cc8-b8b8-981150639745",
-        "id": 6021
-      },
-      {
-        "player_id": "fc88b220-fb24-498f-b3d8-eb1769040b84",
-        "id": 2404
-      },
-      {
-        "player_id": "21898bcb-7bbf-46c7-9892-8e05475fcb53",
-        "id": 6956
-      },
-      {
-        "player_id": "38215a52-f2bd-4088-964f-fec353964b85",
-        "id": 4994
-      },
-      {
-        "player_id": "56ee78ba-2510-4d61-9f05-0756220a9156",
-        "id": "5555"
-      },
-      {
-        "player_id": "6f1fa3c2-5ce5-4273-97e3-0fcb5c647657",
-        "id": 7198
-      },
-      {
-        "player_id": "c936ac6a-f383-43a3-8568-182189db11a8",
-        "id": "6680"
-      },
-      {
-        "player_id": "1137037e-c927-401f-b891-43a2965753a2",
-        "id": 2766
-      },
-      {
-        "player_id": "2b362169-cf19-4a08-a822-d99382ed5e0e",
-        "id": 6684
-      },
-      {
-        "player_id": "5bca84cb-b411-4807-b588-7cbc2d7dc3f8",
-        "id": "5637"
-      }
-    ],
-    "rig": [
-      {
-        "player_id": "5bca84cb-b411-4807-b588-7cbc2d7dc3f8"
-      },
-      {
-        "player_id": "21898bcb-7bbf-46c7-9892-8e05475fcb53"
-      },
-      {
-        "player_id": "2b362169-cf19-4a08-a822-d99382ed5e0e"
-      }
-    ],
-    "pun": [
-      {
-        "player_id": "fc88b220-fb24-498f-b3d8-eb1769040b84"
-      },
-      {
-        "player_id": "2b362169-cf19-4a08-a822-d99382ed5e0e"
-      }
-    ],
-    "corner": [
-      {
-        "player_id": "fc88b220-fb24-498f-b3d8-eb1769040b84"
-      },
-      {
-        "player_id": "2b362169-cf19-4a08-a822-d99382ed5e0e"
-      },
-      {
-        "player_id": "38215a52-f2bd-4088-964f-fec353964b85"
-      }
-    ],
-    "module": "3-4-2-1",
-    "coach": "Paolo Zanetti",
-    "attack": 3,
-    "defense": 3,
-    "comment": "Il sistema del tecnico dei friulani si basa su una struttura ordinata e aggressiva, con grande attenzione alla riconquista del pallone e rapide transizioni offensive. Tatticamente, la squadra tende a mantenere una difesa posizionata piuttosto bassa, privilegiando la compattezza e la copertura degli spazi piuttosto che una linea alta che esponga ai contropiedi avversari. Questo approccio permette all’Udinese di limitare le occasioni avversarie, ma può riduce anche le occasione da goal da parte degli attaccanti.",
-    "sosFantaComment": "È rimasto Kosta Runjaic in panchina nell'Udinese, ha provato più il 3-4-2-1 del 3-5-2 finora. In difesa Solet se sta bene è la certezza ed è arrivato Alaba durante la sosta: rinforzo di esperienza internazionale, se non ha problemi fisici è il titolarissimo come braccetto sinistro. Al centro del reparto o Palma o Kabasele. A destra la novità è Vojvoda aspettando il pieno recupero di Zanoli (già dopo la sosta si giocano una maglia). Partito Atta, a centrocampo Piotrowski (una volta tornato dall'operazione) avanti su Miller e sul nuovo arrivato Unai Gomez (più trequartista che centrocampista). Ekkelenkamp provato più avanzato accanto a Zaniolo, alle spalle di Davis.",
-    "created_at": "2026-07-21T13:49:09.077Z",
-    "updated_at": "2026-11-02T23:34:16.771Z",
-    "up": [
-      {
-        "player_id": "5bca84cb-b411-4807-b588-7cbc2d7dc3f8",
-        "points": [
-          {
-            "text": "Presenza fisica in area",
-            "tone": "good"
-          },
-          {
-            "tone": "good",
-            "text": "Bravo nelle ripartenze"
-          }
-        ]
-      },
-      {
-        "player_id": "2b362169-cf19-4a08-a822-d99382ed5e0e",
-        "points": [
-          {
-            "text": "Riferimento tecnico del centrocampo",
-            "tone": "good"
-          },
-          {
-            "tone": "good",
-            "text": "Partecipazione alla fase offensiva"
-          }
-        ]
-      }
-    ],
-    "down": [
-      {
-        "player_id": "c936ac6a-f383-43a3-8568-182189db11a8",
-        "points": [
-          {
-            "text": "Posizionamento molto arretrato",
-            "tone": "bad"
-          }
-        ]
-      }
-    ],
-    "young": [
-      {
-        "player_id": "1608c14a-caaa-4907-9b7f-57aa2dc2b47b",
-        "points": [
-          {
-            "text": "Giocatore versatile che può agire in diversi ruoli del centrocampo",
-            "tone": "good"
-          }
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "player_id": "917b4ad5-2521-4728-96a1-e5df0346dcf3",
-        "points": [
-          {
-            "tone": "neutral",
-            "text": "Forte sulle palle inattive"
-          }
-        ]
-      }
-    ],
-    "ballottaggi": [
-      {
-        "players": [
-          {
-            "player_id": "6f1fa3c2-5ce5-4273-97e3-0fcb5c647657",
-            "perc": 55
-          },
-          {
-            "player_id": "1608c14a-caaa-4907-9b7f-57aa2dc2b47b",
-            "perc": 45
-          }
-        ]
-      },
-      {
-        "players": [
-          {
-            "player_id": "2edd4901-5632-4cc8-b8b8-981150639745",
-            "perc": 51
-          },
-          {
-            "player_id": "a778e4d5-7591-4341-93cc-3fedebf36602",
-            "perc": 49
-          }
-        ]
-      }
-    ],
-    "coachRating": {
-      "attack": 3,
-      "defense": 3,
-      "coachImage": "https://cdn.falsesoftware.com/avatars/zanetti-cartoon.webp"
-    },
-    "keyPoints": [
-      {
-        "text": "Contropiedi efficaci",
-        "tone": "good"
-      },
-      {
-        "text": "Propensione al fallo tattico",
-        "tone": "bad"
-      },
-      {
-        "text": "Efficacia del gioco dipendente dall'atletismo dei giocatori",
-        "tone": "neutral"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "att-center",
-        "tone": "good"
-      },
-      {
-        "role": "mid-holding",
-        "tone": "bad"
-      }
-    ],
-    "createdAt": "2026-07-21T13:49:09.077Z",
-    "updatedAt": "2026-11-02T23:34:16.771Z"
   },
   {
     "team": "ATA",
