@@ -909,12 +909,12 @@
     "season": "s_26_27",
     "starters": [
       {
-        "player_id": "9c483384-d40d-4152-aa37-d7fd00624646",
-        "id": "4236"
+        "player_id": "c824abfd-1f86-4d6f-a395-b9ed4661dc73",
+        "id": 4867
       },
       {
-        "player_id": "76cabc00-f29e-402b-aa35-b88bacfd8aae",
-        "id": 7573
+        "player_id": "78591c1c-9e6f-4f91-81e7-4b4db1a48fed",
+        "id": 4374
       },
       {
         "player_id": "1a34b9f5-bd27-4a6b-a2e5-3961be3bd835",
@@ -925,24 +925,24 @@
         "id": 4147
       },
       {
-        "player_id": "371edc7e-8557-4af7-ac46-3481c7601c38",
-        "id": 5851
+        "player_id": "76cabc00-f29e-402b-aa35-b88bacfd8aae",
+        "id": 7573
+      },
+      {
+        "player_id": "95aaa469-351a-4ce1-a71f-97dce55d47de",
+        "id": 7329
+      },
+      {
+        "player_id": "dc221c49-a187-478c-b460-b8daab6631e2",
+        "id": 5844
       },
       {
         "player_id": "9ecf743b-95b3-46f4-b3b8-777f6ed9262f",
         "id": 2528
       },
       {
-        "player_id": "18a51ba4-0193-458c-be47-c733b4d9dfd8",
-        "id": 7036
-      },
-      {
         "player_id": "749247cd-79ed-44d6-a376-50afab6e25a0",
         "id": 531
-      },
-      {
-        "player_id": "dc221c49-a187-478c-b460-b8daab6631e2",
-        "id": 5844
       },
       {
         "player_id": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
@@ -980,23 +980,23 @@
         "player_id": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8"
       },
       {
-        "player_id": "371edc7e-8557-4af7-ac46-3481c7601c38"
+        "player_id": "95aaa469-351a-4ce1-a71f-97dce55d47de"
       }
     ],
-    "module": "4-2-3-1",
-    "coach": "Alberto Aquilani",
+    "module": "3-4-2-1",
+    "coach": "Roberto D'Aversa",
     "attack": 3,
     "defense": 2.5,
     "comment": "Il 4-3-3 di Grosso punta su verticalità e ripartenze rapide, con un gioco diretto che privilegia il lancio lungo rispetto alla costruzione dal basso. I due esterni offensivi sono centrali nel sistema: liberati da compiti difensivi, hanno licenza di colpire. Il centravanti è un punto di riferimento costante, cercato con palloni in profondità per sfruttare spazi e fisicità. A centrocampo servono corsa e intensità, più che palleggio. La difesa a quattro è solida ma può soffrire se attaccata in velocità. In chiave fantacalcio, occhio agli esterni offensivi: possono portare bonus importanti. Meno appetibili, invece, i difensori e i mediani.",
     "sosFantaComment": "4-2-3-1 o 4-3-3 per il nuovo allenatore Aquilani in casa Sassuolo. A destra Cinquegrano ha convinto e per questo Van der Brempt per il momento insegue, stesso discorso per Doig e Obrador a sinistra (al momento è il primo il titolare). A centrocampo Koné resterà fuori ancora per diversi mesi e, in attesa del suo rientro, spazio a Adzic o Bakola accanto a Matic. Thorstvedt alla fine è rimasto ed è la prima scelta sulla trequarti, ma occhio ad Adzic che si è presentato alla grande risultando subito decisivo e può fare sia il trequartista che la mezzala. ",
     "created_at": "2026-07-21T13:48:04.348Z",
-    "updated_at": "2026-10-28T18:40:22.838Z",
+    "updated_at": "2026-11-10T14:05:48.273Z",
     "up": [
       {
         "player_id": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
         "points": [
           {
-            "text": "Abile in ripartenza",
+            "text": "Abile a saltare l'uomo",
             "tone": "good"
           },
           {
@@ -1021,10 +1021,10 @@
     ],
     "down": [
       {
-        "player_id": "9c483384-d40d-4152-aa37-d7fd00624646",
+        "player_id": "dc221c49-a187-478c-b460-b8daab6631e2",
         "points": [
           {
-            "text": "Può soffrire la costruzione dal basso",
+            "text": "Con D'Aversa i centrocampisti sono più bloccati",
             "tone": "bad"
           }
         ]
@@ -1034,11 +1034,11 @@
         "points": [
           {
             "tone": "bad",
-            "text": "Può soffrire la costruzione dal basso"
+            "text": "Potrebbe soffrire il nuovo modulo e i movimenti richiesti da D'Aversa in fase di impostazione"
           },
           {
             "tone": "bad",
-            "text": "Concorrenza per il posto"
+            "text": "Concorrenza nel ruolo "
           }
         ]
       }
@@ -1048,8 +1048,8 @@
         "player_id": "18a51ba4-0193-458c-be47-c733b4d9dfd8",
         "points": [
           {
-            "text": "Dinamico nel posizionamento",
-            "tone": "good"
+            "text": "Tanta concorrenza nel suo ruolo",
+            "tone": "bad"
           },
           {
             "tone": "good",
@@ -1060,15 +1060,15 @@
     ],
     "hidden": [
       {
-        "player_id": "c9db8149-35c2-4640-9b87-0ac4efe8d1b9",
+        "player_id": "3b5b8e3f-ce26-4764-80bd-334b9a5aef7f",
         "points": [
           {
-            "text": "Posizionamento avanzato",
+            "text": "Carattestiche idonee al gioco di D'Aversa",
             "tone": "good"
           },
           {
-            "tone": "good",
-            "text": "Buona visione della porta"
+            "tone": "bad",
+            "text": "Concorrenza Seba Esposito"
           }
         ]
       }
@@ -1077,12 +1077,12 @@
       {
         "players": [
           {
-            "player_id": "371edc7e-8557-4af7-ac46-3481c7601c38",
-            "perc": 55
+            "player_id": "95aaa469-351a-4ce1-a71f-97dce55d47de",
+            "perc": 51
           },
           {
-            "player_id": "95aaa469-351a-4ce1-a71f-97dce55d47de",
-            "perc": 45
+            "player_id": "371edc7e-8557-4af7-ac46-3481c7601c38",
+            "perc": 49
           }
         ]
       },
@@ -1090,11 +1090,11 @@
         "players": [
           {
             "player_id": "76cabc00-f29e-402b-aa35-b88bacfd8aae",
-            "perc": 55
+            "perc": 51
           },
           {
             "player_id": "d190b87f-14d2-4a26-b57d-a8b2803d175e",
-            "perc": 45
+            "perc": 49
           }
         ]
       },
@@ -1117,7 +1117,7 @@
             "perc": 51
           },
           {
-            "player_id": "daf219f9-e5fb-4f2a-a7bf-808a15402abe",
+            "player_id": "e64cb10e-8e0f-439a-8eb1-0ef08eb5fcf7",
             "perc": 49
           }
         ]
@@ -1125,11 +1125,23 @@
       {
         "players": [
           {
-            "player_id": "9c483384-d40d-4152-aa37-d7fd00624646",
+            "player_id": "c824abfd-1f86-4d6f-a395-b9ed4661dc73",
             "perc": 51
           },
           {
-            "player_id": "c824abfd-1f86-4d6f-a395-b9ed4661dc73",
+            "player_id": "9c483384-d40d-4152-aa37-d7fd00624646",
+            "perc": 49
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "720f5bed-4429-4b81-9117-7cd3b297a085",
+            "perc": 51
+          },
+          {
+            "player_id": "3b5b8e3f-ce26-4764-80bd-334b9a5aef7f",
             "perc": 49
           }
         ]
@@ -1138,38 +1150,38 @@
     "coachRating": {
       "attack": 3,
       "defense": 2.5,
-      "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Aquilani.webp"
+      "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Daversa.webp"
     },
     "keyPoints": [
       {
-        "text": "Costruzione dal basso",
+        "text": "Intensità e aggressività",
         "tone": "neutral"
       },
       {
-        "text": "Fluidità Tattica tra i moduli",
+        "text": "Verticalizzazioni rapide",
         "tone": "neutral"
       },
       {
-        "text": "Buona organizzazione del fraseggio in mezzo al campo",
+        "text": "Compattezza difensiva",
         "tone": "good"
       }
     ],
     "keyRoles": [
       {
-        "role": "treq-wings",
+        "role": "att-center",
         "tone": "good"
       },
       {
-        "role": "def-center",
-        "tone": "bad"
+        "role": "mid-wide",
+        "tone": "good"
       },
       {
-        "role": "gk",
+        "role": "mid-center",
         "tone": "bad"
       }
     ],
     "createdAt": "2026-07-21T13:48:04.348Z",
-    "updatedAt": "2026-10-28T18:40:22.838Z"
+    "updatedAt": "2026-11-10T14:05:48.273Z"
   },
   {
     "team": "LEC",

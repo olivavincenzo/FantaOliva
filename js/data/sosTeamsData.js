@@ -2023,54 +2023,54 @@ export const SOS_TEAMS_DATA = {
     "primaryColor": "#00a859",
     "secondaryColor": "#000000",
     "accentColor": "#ffffff",
-    "coach": "Alberto Aquilani",
-    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Aquilani.webp",
-    "defaultFormation": "4-2-3-1",
-    "module": "4-2-3-1",
+    "coach": "Roberto D'Aversa",
+    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Daversa.webp",
+    "defaultFormation": "3-4-2-1",
+    "module": "3-4-2-1",
     "attackRating": 3.0,
     "defenseRating": 2.5,
     "comment": "Il 4-3-3 di Grosso punta su verticalità e ripartenze rapide, con un gioco diretto che privilegia il lancio lungo rispetto alla costruzione dal basso. I due esterni offensivi sono centrali nel sistema: liberati da compiti difensivi, hanno licenza di colpire. Il centravanti è un punto di riferimento costante, cercato con palloni in profondità per sfruttare spazi e fisicità. A centrocampo servono corsa e intensità, più che palleggio. La difesa a quattro è solida ma può soffrire se attaccata in velocità. In chiave fantacalcio, occhio agli esterni offensivi: possono portare bonus importanti. Meno appetibili, invece, i difensori e i mediani.",
     "sosFantaComment": "4-2-3-1 o 4-3-3 per il nuovo allenatore Aquilani in casa Sassuolo. A destra Cinquegrano ha convinto e per questo Van der Brempt per il momento insegue, stesso discorso per Doig e Obrador a sinistra (al momento è il primo il titolare). A centrocampo Koné resterà fuori ancora per diversi mesi e, in attesa del suo rientro, spazio a Adzic o Bakola accanto a Matic. Thorstvedt alla fine è rimasto ed è la prima scelta sulla trequarti, ma occhio ad Adzic che si è presentato alla grande risultando subito decisivo e può fare sia il trequartista che la mezzala. ",
     "keyPoints": [
       {
-        "text": "Costruzione dal basso",
+        "text": "Intensità e aggressività",
         "tone": "neutral"
       },
       {
-        "text": "Fluidità Tattica tra i moduli",
+        "text": "Verticalizzazioni rapide",
         "tone": "neutral"
       },
       {
-        "text": "Buona organizzazione del fraseggio in mezzo al campo",
+        "text": "Compattezza difensiva",
         "tone": "good"
       }
     ],
     "keyRoles": [
       {
-        "role": "treq-wings",
+        "role": "att-center",
         "tone": "good"
       },
       {
-        "role": "def-center",
-        "tone": "bad"
+        "role": "mid-wide",
+        "tone": "good"
       },
       {
-        "role": "gk",
+        "role": "mid-center",
         "tone": "bad"
       }
     ],
     "starters": [
       {
-        "playerId": "9c483384-d40d-4152-aa37-d7fd00624646",
-        "csvId": "4236",
-        "name": "Muric",
+        "playerId": "c824abfd-1f86-4d6f-a395-b9ed4661dc73",
+        "csvId": 4867,
+        "name": "Turati",
         "role": "P"
       },
       {
-        "playerId": "76cabc00-f29e-402b-aa35-b88bacfd8aae",
-        "csvId": 7573,
-        "name": "",
-        "role": ""
+        "playerId": "78591c1c-9e6f-4f91-81e7-4b4db1a48fed",
+        "csvId": 4374,
+        "name": "Walukiewicz",
+        "role": "D"
       },
       {
         "playerId": "1a34b9f5-bd27-4a6b-a2e5-3961be3bd835",
@@ -2085,10 +2085,22 @@ export const SOS_TEAMS_DATA = {
         "role": "D"
       },
       {
-        "playerId": "371edc7e-8557-4af7-ac46-3481c7601c38",
-        "csvId": 5851,
-        "name": "Doig",
+        "playerId": "76cabc00-f29e-402b-aa35-b88bacfd8aae",
+        "csvId": 7573,
+        "name": "",
+        "role": ""
+      },
+      {
+        "playerId": "95aaa469-351a-4ce1-a71f-97dce55d47de",
+        "csvId": 7329,
+        "name": "Obrador",
         "role": "D"
+      },
+      {
+        "playerId": "dc221c49-a187-478c-b460-b8daab6631e2",
+        "csvId": 5844,
+        "name": "Thorstvedt",
+        "role": "C"
       },
       {
         "playerId": "9ecf743b-95b3-46f4-b3b8-777f6ed9262f",
@@ -2097,22 +2109,10 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
-        "playerId": "18a51ba4-0193-458c-be47-c733b4d9dfd8",
-        "csvId": 7036,
-        "name": "Bakola",
-        "role": "C"
-      },
-      {
         "playerId": "749247cd-79ed-44d6-a376-50afab6e25a0",
         "csvId": 531,
         "name": "Berardi",
         "role": "A"
-      },
-      {
-        "playerId": "dc221c49-a187-478c-b460-b8daab6631e2",
-        "csvId": 5844,
-        "name": "Thorstvedt",
-        "role": "C"
       },
       {
         "playerId": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
@@ -2168,24 +2168,24 @@ export const SOS_TEAMS_DATA = {
         "role": "A"
       },
       {
-        "playerId": "371edc7e-8557-4af7-ac46-3481c7601c38",
-        "name": "Doig",
+        "playerId": "95aaa469-351a-4ce1-a71f-97dce55d47de",
+        "name": "Obrador",
         "role": "D"
       }
     ],
     "ballottaggi": [
       [
         {
-          "playerId": "371edc7e-8557-4af7-ac46-3481c7601c38",
-          "name": "Doig",
-          "role": "D",
-          "perc": 55
-        },
-        {
           "playerId": "95aaa469-351a-4ce1-a71f-97dce55d47de",
           "name": "Obrador",
           "role": "D",
-          "perc": 45
+          "perc": 51
+        },
+        {
+          "playerId": "371edc7e-8557-4af7-ac46-3481c7601c38",
+          "name": "Doig",
+          "role": "D",
+          "perc": 49
         }
       ],
       [
@@ -2193,13 +2193,13 @@ export const SOS_TEAMS_DATA = {
           "playerId": "76cabc00-f29e-402b-aa35-b88bacfd8aae",
           "name": "",
           "role": "",
-          "perc": 55
+          "perc": 51
         },
         {
           "playerId": "d190b87f-14d2-4a26-b57d-a8b2803d175e",
           "name": "Van Der Brempt",
           "role": "D",
-          "perc": 45
+          "perc": 49
         }
       ],
       [
@@ -2224,23 +2224,37 @@ export const SOS_TEAMS_DATA = {
           "perc": 51
         },
         {
-          "playerId": "daf219f9-e5fb-4f2a-a7bf-808a15402abe",
-          "name": "Odenthal",
+          "playerId": "e64cb10e-8e0f-439a-8eb1-0ef08eb5fcf7",
+          "name": "Candè",
           "role": "D",
           "perc": 49
         }
       ],
       [
         {
-          "playerId": "9c483384-d40d-4152-aa37-d7fd00624646",
-          "name": "Muric",
+          "playerId": "c824abfd-1f86-4d6f-a395-b9ed4661dc73",
+          "name": "Turati",
           "role": "P",
           "perc": 51
         },
         {
-          "playerId": "c824abfd-1f86-4d6f-a395-b9ed4661dc73",
-          "name": "Turati",
+          "playerId": "9c483384-d40d-4152-aa37-d7fd00624646",
+          "name": "Muric",
           "role": "P",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "720f5bed-4429-4b81-9117-7cd3b297a085",
+          "name": "Esposito Se.",
+          "role": "A",
+          "perc": 51
+        },
+        {
+          "playerId": "3b5b8e3f-ce26-4764-80bd-334b9a5aef7f",
+          "name": "Bowie",
+          "role": "A",
           "perc": 49
         }
       ]
@@ -2250,7 +2264,7 @@ export const SOS_TEAMS_DATA = {
         "playerId": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
         "name": "Laurientè",
         "points": [
-          "Abile in ripartenza",
+          "Abile a saltare l'uomo",
           "Buon attacco della profondità"
         ]
       },
@@ -2265,18 +2279,18 @@ export const SOS_TEAMS_DATA = {
     ],
     "down": [
       {
-        "playerId": "9c483384-d40d-4152-aa37-d7fd00624646",
-        "name": "Muric",
+        "playerId": "dc221c49-a187-478c-b460-b8daab6631e2",
+        "name": "Thorstvedt",
         "points": [
-          "Può soffrire la costruzione dal basso"
+          "Con D'Aversa i centrocampisti sono più bloccati"
         ]
       },
       {
         "playerId": "78591c1c-9e6f-4f91-81e7-4b4db1a48fed",
         "name": "Walukiewicz",
         "points": [
-          "Può soffrire la costruzione dal basso",
-          "Concorrenza per il posto"
+          "Potrebbe soffrire il nuovo modulo e i movimenti richiesti da D'Aversa in fase di impostazione",
+          "Concorrenza nel ruolo "
         ]
       }
     ],
@@ -2285,18 +2299,18 @@ export const SOS_TEAMS_DATA = {
         "playerId": "18a51ba4-0193-458c-be47-c733b4d9dfd8",
         "name": "Bakola",
         "points": [
-          "Dinamico nel posizionamento",
+          "Tanta concorrenza nel suo ruolo",
           "Buona tecnica e personalità"
         ]
       }
     ],
     "hidden": [
       {
-        "playerId": "c9db8149-35c2-4640-9b87-0ac4efe8d1b9",
-        "name": "Adzic",
+        "playerId": "3b5b8e3f-ce26-4764-80bd-334b9a5aef7f",
+        "name": "Bowie",
         "points": [
-          "Posizionamento avanzato",
-          "Buona visione della porta"
+          "Carattestiche idonee al gioco di D'Aversa",
+          "Concorrenza Seba Esposito"
         ]
       }
     ]
@@ -2309,54 +2323,54 @@ export const SOS_TEAMS_DATA = {
     "primaryColor": "#00a859",
     "secondaryColor": "#000000",
     "accentColor": "#ffffff",
-    "coach": "Alberto Aquilani",
-    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Aquilani.webp",
-    "defaultFormation": "4-2-3-1",
-    "module": "4-2-3-1",
+    "coach": "Roberto D'Aversa",
+    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Daversa.webp",
+    "defaultFormation": "3-4-2-1",
+    "module": "3-4-2-1",
     "attackRating": 3.0,
     "defenseRating": 2.5,
     "comment": "Il 4-3-3 di Grosso punta su verticalità e ripartenze rapide, con un gioco diretto che privilegia il lancio lungo rispetto alla costruzione dal basso. I due esterni offensivi sono centrali nel sistema: liberati da compiti difensivi, hanno licenza di colpire. Il centravanti è un punto di riferimento costante, cercato con palloni in profondità per sfruttare spazi e fisicità. A centrocampo servono corsa e intensità, più che palleggio. La difesa a quattro è solida ma può soffrire se attaccata in velocità. In chiave fantacalcio, occhio agli esterni offensivi: possono portare bonus importanti. Meno appetibili, invece, i difensori e i mediani.",
     "sosFantaComment": "4-2-3-1 o 4-3-3 per il nuovo allenatore Aquilani in casa Sassuolo. A destra Cinquegrano ha convinto e per questo Van der Brempt per il momento insegue, stesso discorso per Doig e Obrador a sinistra (al momento è il primo il titolare). A centrocampo Koné resterà fuori ancora per diversi mesi e, in attesa del suo rientro, spazio a Adzic o Bakola accanto a Matic. Thorstvedt alla fine è rimasto ed è la prima scelta sulla trequarti, ma occhio ad Adzic che si è presentato alla grande risultando subito decisivo e può fare sia il trequartista che la mezzala. ",
     "keyPoints": [
       {
-        "text": "Costruzione dal basso",
+        "text": "Intensità e aggressività",
         "tone": "neutral"
       },
       {
-        "text": "Fluidità Tattica tra i moduli",
+        "text": "Verticalizzazioni rapide",
         "tone": "neutral"
       },
       {
-        "text": "Buona organizzazione del fraseggio in mezzo al campo",
+        "text": "Compattezza difensiva",
         "tone": "good"
       }
     ],
     "keyRoles": [
       {
-        "role": "treq-wings",
+        "role": "att-center",
         "tone": "good"
       },
       {
-        "role": "def-center",
-        "tone": "bad"
+        "role": "mid-wide",
+        "tone": "good"
       },
       {
-        "role": "gk",
+        "role": "mid-center",
         "tone": "bad"
       }
     ],
     "starters": [
       {
-        "playerId": "9c483384-d40d-4152-aa37-d7fd00624646",
-        "csvId": "4236",
-        "name": "Muric",
+        "playerId": "c824abfd-1f86-4d6f-a395-b9ed4661dc73",
+        "csvId": 4867,
+        "name": "Turati",
         "role": "P"
       },
       {
-        "playerId": "76cabc00-f29e-402b-aa35-b88bacfd8aae",
-        "csvId": 7573,
-        "name": "",
-        "role": ""
+        "playerId": "78591c1c-9e6f-4f91-81e7-4b4db1a48fed",
+        "csvId": 4374,
+        "name": "Walukiewicz",
+        "role": "D"
       },
       {
         "playerId": "1a34b9f5-bd27-4a6b-a2e5-3961be3bd835",
@@ -2371,10 +2385,22 @@ export const SOS_TEAMS_DATA = {
         "role": "D"
       },
       {
-        "playerId": "371edc7e-8557-4af7-ac46-3481c7601c38",
-        "csvId": 5851,
-        "name": "Doig",
+        "playerId": "76cabc00-f29e-402b-aa35-b88bacfd8aae",
+        "csvId": 7573,
+        "name": "",
+        "role": ""
+      },
+      {
+        "playerId": "95aaa469-351a-4ce1-a71f-97dce55d47de",
+        "csvId": 7329,
+        "name": "Obrador",
         "role": "D"
+      },
+      {
+        "playerId": "dc221c49-a187-478c-b460-b8daab6631e2",
+        "csvId": 5844,
+        "name": "Thorstvedt",
+        "role": "C"
       },
       {
         "playerId": "9ecf743b-95b3-46f4-b3b8-777f6ed9262f",
@@ -2383,22 +2409,10 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
-        "playerId": "18a51ba4-0193-458c-be47-c733b4d9dfd8",
-        "csvId": 7036,
-        "name": "Bakola",
-        "role": "C"
-      },
-      {
         "playerId": "749247cd-79ed-44d6-a376-50afab6e25a0",
         "csvId": 531,
         "name": "Berardi",
         "role": "A"
-      },
-      {
-        "playerId": "dc221c49-a187-478c-b460-b8daab6631e2",
-        "csvId": 5844,
-        "name": "Thorstvedt",
-        "role": "C"
       },
       {
         "playerId": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
@@ -2454,24 +2468,24 @@ export const SOS_TEAMS_DATA = {
         "role": "A"
       },
       {
-        "playerId": "371edc7e-8557-4af7-ac46-3481c7601c38",
-        "name": "Doig",
+        "playerId": "95aaa469-351a-4ce1-a71f-97dce55d47de",
+        "name": "Obrador",
         "role": "D"
       }
     ],
     "ballottaggi": [
       [
         {
-          "playerId": "371edc7e-8557-4af7-ac46-3481c7601c38",
-          "name": "Doig",
-          "role": "D",
-          "perc": 55
-        },
-        {
           "playerId": "95aaa469-351a-4ce1-a71f-97dce55d47de",
           "name": "Obrador",
           "role": "D",
-          "perc": 45
+          "perc": 51
+        },
+        {
+          "playerId": "371edc7e-8557-4af7-ac46-3481c7601c38",
+          "name": "Doig",
+          "role": "D",
+          "perc": 49
         }
       ],
       [
@@ -2479,13 +2493,13 @@ export const SOS_TEAMS_DATA = {
           "playerId": "76cabc00-f29e-402b-aa35-b88bacfd8aae",
           "name": "",
           "role": "",
-          "perc": 55
+          "perc": 51
         },
         {
           "playerId": "d190b87f-14d2-4a26-b57d-a8b2803d175e",
           "name": "Van Der Brempt",
           "role": "D",
-          "perc": 45
+          "perc": 49
         }
       ],
       [
@@ -2510,23 +2524,37 @@ export const SOS_TEAMS_DATA = {
           "perc": 51
         },
         {
-          "playerId": "daf219f9-e5fb-4f2a-a7bf-808a15402abe",
-          "name": "Odenthal",
+          "playerId": "e64cb10e-8e0f-439a-8eb1-0ef08eb5fcf7",
+          "name": "Candè",
           "role": "D",
           "perc": 49
         }
       ],
       [
         {
-          "playerId": "9c483384-d40d-4152-aa37-d7fd00624646",
-          "name": "Muric",
+          "playerId": "c824abfd-1f86-4d6f-a395-b9ed4661dc73",
+          "name": "Turati",
           "role": "P",
           "perc": 51
         },
         {
-          "playerId": "c824abfd-1f86-4d6f-a395-b9ed4661dc73",
-          "name": "Turati",
+          "playerId": "9c483384-d40d-4152-aa37-d7fd00624646",
+          "name": "Muric",
           "role": "P",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "720f5bed-4429-4b81-9117-7cd3b297a085",
+          "name": "Esposito Se.",
+          "role": "A",
+          "perc": 51
+        },
+        {
+          "playerId": "3b5b8e3f-ce26-4764-80bd-334b9a5aef7f",
+          "name": "Bowie",
+          "role": "A",
           "perc": 49
         }
       ]
@@ -2536,7 +2564,7 @@ export const SOS_TEAMS_DATA = {
         "playerId": "1d67bb6d-6ae0-4f03-99cd-d2e064abdca8",
         "name": "Laurientè",
         "points": [
-          "Abile in ripartenza",
+          "Abile a saltare l'uomo",
           "Buon attacco della profondità"
         ]
       },
@@ -2551,18 +2579,18 @@ export const SOS_TEAMS_DATA = {
     ],
     "down": [
       {
-        "playerId": "9c483384-d40d-4152-aa37-d7fd00624646",
-        "name": "Muric",
+        "playerId": "dc221c49-a187-478c-b460-b8daab6631e2",
+        "name": "Thorstvedt",
         "points": [
-          "Può soffrire la costruzione dal basso"
+          "Con D'Aversa i centrocampisti sono più bloccati"
         ]
       },
       {
         "playerId": "78591c1c-9e6f-4f91-81e7-4b4db1a48fed",
         "name": "Walukiewicz",
         "points": [
-          "Può soffrire la costruzione dal basso",
-          "Concorrenza per il posto"
+          "Potrebbe soffrire il nuovo modulo e i movimenti richiesti da D'Aversa in fase di impostazione",
+          "Concorrenza nel ruolo "
         ]
       }
     ],
@@ -2571,18 +2599,18 @@ export const SOS_TEAMS_DATA = {
         "playerId": "18a51ba4-0193-458c-be47-c733b4d9dfd8",
         "name": "Bakola",
         "points": [
-          "Dinamico nel posizionamento",
+          "Tanta concorrenza nel suo ruolo",
           "Buona tecnica e personalità"
         ]
       }
     ],
     "hidden": [
       {
-        "playerId": "c9db8149-35c2-4640-9b87-0ac4efe8d1b9",
-        "name": "Adzic",
+        "playerId": "3b5b8e3f-ce26-4764-80bd-334b9a5aef7f",
+        "name": "Bowie",
         "points": [
-          "Posizionamento avanzato",
-          "Buona visione della porta"
+          "Carattestiche idonee al gioco di D'Aversa",
+          "Concorrenza Seba Esposito"
         ]
       }
     ]
