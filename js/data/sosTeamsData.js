@@ -8299,7 +8299,7 @@ export const SOS_TEAMS_DATA = {
       {
         "playerId": "56047277-ecee-44df-a949-782ccdb20a4b",
         "csvId": 4317,
-        "name": "N'Dicka",
+        "name": "Ndicka",
         "role": "D"
       },
       {
@@ -8429,7 +8429,7 @@ export const SOS_TEAMS_DATA = {
       [
         {
           "playerId": "56047277-ecee-44df-a949-782ccdb20a4b",
-          "name": "N'Dicka",
+          "name": "Ndicka",
           "role": "D",
           "perc": 51
         },
@@ -8547,7 +8547,7 @@ export const SOS_TEAMS_DATA = {
       {
         "playerId": "56047277-ecee-44df-a949-782ccdb20a4b",
         "csvId": 4317,
-        "name": "N'Dicka",
+        "name": "Ndicka",
         "role": "D"
       },
       {
@@ -8677,7 +8677,7 @@ export const SOS_TEAMS_DATA = {
       [
         {
           "playerId": "56047277-ecee-44df-a949-782ccdb20a4b",
-          "name": "N'Dicka",
+          "name": "Ndicka",
           "role": "D",
           "perc": 51
         },

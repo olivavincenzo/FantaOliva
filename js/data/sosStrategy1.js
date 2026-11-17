@@ -679,7 +679,6 @@ export const SOS_STRATEGY_1 = {
     "omarfayed": "tier_d_17",
     "leysen f.": "tier_d_13",
     "leysenf": "tier_d_13",
-    "n'dicka": "tier_d_4",
     "ndicka": "tier_d_4",
     "badiashile": "tier_d_16",
     "sutalo j.": "tier_d_14",
