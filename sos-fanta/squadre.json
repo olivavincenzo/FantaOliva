@@ -1511,7 +1511,7 @@
     "comment": "Il Bologna si caratterizza per un gioco molto dinamico, con i giocatori che spesso si scambiano le posizioni per creare confusione nella difesa avversaria. Il ruolo degli esterni d’attacco è fondamentale: sono loro a garantire ampiezza, velocità e spesso i gol e gli assist più importanti. La difesa è molto alta, in linea con il pressing aggressivo che la squadra mette in campo, ma questo comporta qualche rischio in ripartenza. Attenzione anche al turn over elevato, che può influenzare la continuità di rendimento di alcuni giocatori, specialmente in ottica fantacalcio.",
     "sosFantaComment": "Scossone in casa Bologna: è arrivato l'esonero di Tedesco dopo 4 giornate, al suo posto la squadra è stata affidata a Raffaele Palladino. In carriera ha utilizzato tanti moduli, ma, come visto contro il Torino, sembra intenzionato a perseguire la strada del 3-4-3. Testa a testa tra Dovbyk e Piccoli davanti, come era già con Tedesco del resto. Ai lati Orsolini e Cambiaghi rispettivamente in vantaggio su Bernardeschi e Mbangula. A centrocampo Pobega più di Moro accanto a Ferguson. In difesa si azzera tutto sulle fasce: Zortea a destra visto il grave infortunio di Holm (lungo stop per lui), a sinistra Miranda in pole su Alhassane. I tre dietro sono Helland, Heggem e Theate.",
     "created_at": "2026-07-21T13:36:37.003Z",
-    "updated_at": "2026-10-28T18:58:17.831Z",
+    "updated_at": "2026-11-19T13:46:21.485Z",
     "up": [
       {
         "player_id": "c3763cc2-a3d9-403f-8f5a-856896a47c5d",
@@ -1523,26 +1523,26 @@
         ]
       },
       {
-        "player_id": "7a6908eb-f092-4f48-95af-b03ba52381dd",
+        "player_id": "c07a5ed0-b1db-429b-9291-2998365fffc3",
         "points": [
           {
-            "text": "Gioco che valorizza la punta",
+            "text": "Inserito negli schemi tattici di Palladino",
             "tone": "good"
           },
           {
-            "tone": "bad",
-            "text": "Ballottaggio con Piccoli"
+            "tone": "good",
+            "text": "Titolarità garantita"
           }
         ]
       }
     ],
     "down": [
       {
-        "player_id": "c07a5ed0-b1db-429b-9291-2998365fffc3",
+        "player_id": "c54397de-b393-4e6c-8db3-ff1835fb14a5",
         "points": [
           {
             "tone": "bad",
-            "text": "Posizionamento arretrato"
+            "text": "Tanta concorrenza nel reparto"
           }
         ]
       }
@@ -1649,7 +1649,7 @@
       }
     ],
     "createdAt": "2026-07-21T13:36:37.003Z",
-    "updatedAt": "2026-10-28T18:58:17.831Z"
+    "updatedAt": "2026-11-19T13:46:21.485Z"
   },
   {
     "team": "GEN",
@@ -2698,7 +2698,7 @@
     "comment": "Promosso dopo l’ottimo lavoro svolto con la Primavera del Cagliari. La società ha scelto di puntare su un tecnico che conosce bene l’ambiente e che ha dimostrato di saper valorizzare i giovani, in linea con la nuova filosofia del club. Pisacane predilige un modulo con la difesa a 4  con grande attenzione all’organizzazione difensiva. Non è escluso, però, che in alcune partite possa optare per una linea a 3. Gli esterni difensivi avranno un ruolo chiave: dovranno garantire equilibrio tra copertura e spinta, supportando sia i centrali che il reparto offensivo. ",
     "sosFantaComment": "Grande inizio di stagione per il Cagliari di Pisacane. Zé Pedro o il nuovo arrivato Sugawara nel ruolo di terzino destro. Ha convinto Deiola da difensore: prova a insidiare Mina e si giocano il posto, a maggior ragione visti i svariati problemi fisici del colombiano. Winks e Romano sono arrivati per giocare in mediana, ma anche Fazzini: o mezzala o anche più avanzato, da trequartista/ala. Mendy ha convinto finora: è in pole sui nuovi arrivati Kevin Carlos e Nzola.",
     "created_at": "2026-07-21T13:13:06.733Z",
-    "updated_at": "2026-10-28T17:33:57.362Z",
+    "updated_at": "2026-11-19T13:51:40.388Z",
     "up": [
       {
         "player_id": "c9566c48-86e0-42ff-8820-d01b0d55efd7",
@@ -2714,19 +2714,15 @@
         ]
       },
       {
-        "player_id": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
+        "player_id": "4d65afcd-dc9b-4804-ac3e-1fd5d688c48c",
         "points": [
           {
             "tone": "good",
-            "text": "Voluto fortemente da Pisacane"
+            "text": "Fondamentale per il gioco di Pisacane"
           },
           {
             "tone": "good",
-            "text": "Propensione al bonus"
-          },
-          {
-            "tone": "neutral",
-            "text": "Dubbio su integrità fisica"
+            "text": "Duttilità tattica"
           }
         ]
       }
@@ -2820,7 +2816,7 @@
       }
     ],
     "createdAt": "2026-07-21T13:13:06.733Z",
-    "updatedAt": "2026-10-28T17:33:57.362Z"
+    "updatedAt": "2026-11-19T13:51:40.388Z"
   },
   {
     "team": "MON",
@@ -3134,23 +3130,23 @@
     "comment": "Dopo anni di cambiamenti tattici, il ritorno di Allegri al Milan segnerebbe un ritorno al pragmatismo e alla solidità. Il tecnico livornese incarna una filosofia votata all’equilibrio: linee strette, difesa ordinata, gestione dei ritmi e adattamento costante all’avversario. Non ama il pressing alto sistematico, ma preferisce tempi di pressione mirati e ripartenze rapide dopo il recupero. In fase offensiva punta sulla lettura dei momenti: verticalizzazioni improvvise, inserimenti intelligenti e massima attenzione all’efficacia. Il risultato viene prima della prestazione, e la valorizzazione dei profili più duttili e intelligenti tatticamente è una costante.",
     "sosFantaComment": "È arrivato Ruben Amorim in panchina, il suo Milan gioca col 3-4-2-1. Sulla trequarti Pulisic è pronto a diventare inamovibile ora che sta bene, al suo fianco o Cisse o Saelemaekers e c'è anche il nuovo arrivato Hutchinson. Chukwueze a destra finora ha convinto e a sinistra può spuntarla Moreira, anche perché Estupinan e Bartesaghi non hanno brillato finora mentre il belga ha dato segnali importantissimi. Musah in alcune partite può giocare al posto di Modric, quando serve più sostanza e meno palleggio. De Winter e Gabbia si giocano il posto al centro della difesa, verranno anche alternati.",
     "created_at": "2026-07-21T12:48:10.325Z",
-    "updated_at": "2026-10-18T16:17:45.461Z",
+    "updated_at": "2026-11-19T13:49:28.278Z",
     "up": [
       {
-        "player_id": "f5b1b43f-45be-4ebb-bed8-811434235418",
+        "player_id": "a22c4fed-ed14-4567-bb53-c672d5bf5a5a",
         "points": [
           {
-            "text": "Marcatura stretta sulla punta avversaria",
+            "text": "Punto di forza delle transizioni rossonere",
             "tone": "good"
           },
           {
             "tone": "good",
-            "text": "Buono in fase di impostazione"
+            "text": "Duttilità tattica"
           }
         ]
       },
       {
-        "player_id": "cc4992f6-2313-4dfb-bd05-fde2ab22e067",
+        "player_id": "912f7b0d-01d8-45e0-b7c3-62ba2037a649",
         "points": [
           {
             "text": "Fulcro del gioco di Amorim",
@@ -3187,11 +3183,11 @@
     ],
     "hidden": [
       {
-        "player_id": "98d71181-5ff4-4e27-8603-a8d8c4ccfb49",
+        "player_id": "6ada201e-02d6-4da0-b333-4b3149daaab4",
         "points": [
           {
             "tone": "good",
-            "text": "Utilizzato sia sulla fascia che nella trequarti"
+            "text": "Alternativa tattica per il gioco di Amorim"
           }
         ]
       }
@@ -3268,7 +3264,7 @@
       }
     ],
     "createdAt": "2026-07-21T12:48:10.325Z",
-    "updatedAt": "2026-10-18T16:17:45.461Z"
+    "updatedAt": "2026-11-19T13:49:28.278Z"
   },
   {
     "team": "FRO",

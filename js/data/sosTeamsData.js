@@ -3380,20 +3380,20 @@ export const SOS_TEAMS_DATA = {
         ]
       },
       {
-        "playerId": "7a6908eb-f092-4f48-95af-b03ba52381dd",
-        "name": "Dovbyk",
+        "playerId": "c07a5ed0-b1db-429b-9291-2998365fffc3",
+        "name": "Pobega",
         "points": [
-          "Gioco che valorizza la punta",
-          "Ballottaggio con Piccoli"
+          "Inserito negli schemi tattici di Palladino",
+          "Titolarità garantita"
         ]
       }
     ],
     "down": [
       {
-        "playerId": "c07a5ed0-b1db-429b-9291-2998365fffc3",
-        "name": "Pobega",
+        "playerId": "c54397de-b393-4e6c-8db3-ff1835fb14a5",
+        "name": "Vitik",
         "points": [
-          "Posizionamento arretrato"
+          "Tanta concorrenza nel reparto"
         ]
       }
     ],
@@ -3637,20 +3637,20 @@ export const SOS_TEAMS_DATA = {
         ]
       },
       {
-        "playerId": "7a6908eb-f092-4f48-95af-b03ba52381dd",
-        "name": "Dovbyk",
+        "playerId": "c07a5ed0-b1db-429b-9291-2998365fffc3",
+        "name": "Pobega",
         "points": [
-          "Gioco che valorizza la punta",
-          "Ballottaggio con Piccoli"
+          "Inserito negli schemi tattici di Palladino",
+          "Titolarità garantita"
         ]
       }
     ],
     "down": [
       {
-        "playerId": "c07a5ed0-b1db-429b-9291-2998365fffc3",
-        "name": "Pobega",
+        "playerId": "c54397de-b393-4e6c-8db3-ff1835fb14a5",
+        "name": "Vitik",
         "points": [
-          "Posizionamento arretrato"
+          "Tanta concorrenza nel reparto"
         ]
       }
     ],
@@ -6023,12 +6023,11 @@ export const SOS_TEAMS_DATA = {
         ]
       },
       {
-        "playerId": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
-        "name": "Fazzini",
+        "playerId": "4d65afcd-dc9b-4804-ac3e-1fd5d688c48c",
+        "name": "Adopo",
         "points": [
-          "Voluto fortemente da Pisacane",
-          "Propensione al bonus",
-          "Dubbio su integrità fisica"
+          "Fondamentale per il gioco di Pisacane",
+          "Duttilità tattica"
         ]
       }
     ],
@@ -6254,12 +6253,11 @@ export const SOS_TEAMS_DATA = {
         ]
       },
       {
-        "playerId": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
-        "name": "Fazzini",
+        "playerId": "4d65afcd-dc9b-4804-ac3e-1fd5d688c48c",
+        "name": "Adopo",
         "points": [
-          "Voluto fortemente da Pisacane",
-          "Propensione al bonus",
-          "Dubbio su integrità fisica"
+          "Fondamentale per il gioco di Pisacane",
+          "Duttilità tattica"
         ]
       }
     ],
@@ -6987,16 +6985,16 @@ export const SOS_TEAMS_DATA = {
     ],
     "up": [
       {
-        "playerId": "f5b1b43f-45be-4ebb-bed8-811434235418",
-        "name": "De Winter",
+        "playerId": "a22c4fed-ed14-4567-bb53-c672d5bf5a5a",
+        "name": "Moreira",
         "points": [
-          "Marcatura stretta sulla punta avversaria",
-          "Buono in fase di impostazione"
+          "Punto di forza delle transizioni rossonere",
+          "Duttilità tattica"
         ]
       },
       {
-        "playerId": "cc4992f6-2313-4dfb-bd05-fde2ab22e067",
-        "name": "Ramos G.",
+        "playerId": "912f7b0d-01d8-45e0-b7c3-62ba2037a649",
+        "name": "Rabiot",
         "points": [
           "Fulcro del gioco di Amorim",
           "Titolarità solida"
@@ -7023,10 +7021,10 @@ export const SOS_TEAMS_DATA = {
     ],
     "hidden": [
       {
-        "playerId": "98d71181-5ff4-4e27-8603-a8d8c4ccfb49",
-        "name": "Chukwueze",
+        "playerId": "6ada201e-02d6-4da0-b333-4b3149daaab4",
+        "name": "Musah",
         "points": [
-          "Utilizzato sia sulla fascia che nella trequarti"
+          "Alternativa tattica per il gioco di Amorim"
         ]
       }
     ]
@@ -7235,16 +7233,16 @@ export const SOS_TEAMS_DATA = {
     ],
     "up": [
       {
-        "playerId": "f5b1b43f-45be-4ebb-bed8-811434235418",
-        "name": "De Winter",
+        "playerId": "a22c4fed-ed14-4567-bb53-c672d5bf5a5a",
+        "name": "Moreira",
         "points": [
-          "Marcatura stretta sulla punta avversaria",
-          "Buono in fase di impostazione"
+          "Punto di forza delle transizioni rossonere",
+          "Duttilità tattica"
         ]
       },
       {
-        "playerId": "cc4992f6-2313-4dfb-bd05-fde2ab22e067",
-        "name": "Ramos G.",
+        "playerId": "912f7b0d-01d8-45e0-b7c3-62ba2037a649",
+        "name": "Rabiot",
         "points": [
           "Fulcro del gioco di Amorim",
           "Titolarità solida"
@@ -7271,10 +7269,10 @@ export const SOS_TEAMS_DATA = {
     ],
     "hidden": [
       {
-        "playerId": "98d71181-5ff4-4e27-8603-a8d8c4ccfb49",
-        "name": "Chukwueze",
+        "playerId": "6ada201e-02d6-4da0-b333-4b3149daaab4",
+        "name": "Musah",
         "points": [
-          "Utilizzato sia sulla fascia che nella trequarti"
+          "Alternativa tattica per il gioco di Amorim"
         ]
       }
     ]
