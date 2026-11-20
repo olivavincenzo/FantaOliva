@@ -2183,6 +2183,502 @@ export const SOS_TEAMS_DATA = {
       }
     ]
   },
+  "MIL": {
+    "code": "MIL",
+    "name": "Milan",
+    "city": "Milano",
+    "stadium": "San Siro (Giuseppe Meazza)",
+    "primaryColor": "#e30613",
+    "secondaryColor": "#000000",
+    "accentColor": "#ffffff",
+    "coach": "Ruben Amorim",
+    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Amorim.webp",
+    "defaultFormation": "3-4-2-1",
+    "module": "3-4-2-1",
+    "attackRating": 4.5,
+    "defenseRating": 4.5,
+    "comment": "Dopo anni di cambiamenti tattici, il ritorno di Allegri al Milan segnerebbe un ritorno al pragmatismo e alla solidità. Il tecnico livornese incarna una filosofia votata all’equilibrio: linee strette, difesa ordinata, gestione dei ritmi e adattamento costante all’avversario. Non ama il pressing alto sistematico, ma preferisce tempi di pressione mirati e ripartenze rapide dopo il recupero. In fase offensiva punta sulla lettura dei momenti: verticalizzazioni improvvise, inserimenti intelligenti e massima attenzione all’efficacia. Il risultato viene prima della prestazione, e la valorizzazione dei profili più duttili e intelligenti tatticamente è una costante.",
+    "sosFantaComment": "È arrivato Ruben Amorim in panchina, il suo Milan gioca col 3-4-2-1. Sulla trequarti Pulisic è pronto a diventare inamovibile ora che sta bene, al suo fianco o Cisse o Saelemaekers e c'è anche il nuovo arrivato Hutchinson. Chukwueze a destra finora ha convinto e a sinistra può spuntarla Moreira, anche perché Estupinan e Bartesaghi non hanno brillato finora mentre il belga ha dato segnali importantissimi. Musah in alcune partite può giocare al posto di Modric, quando serve più sostanza e meno palleggio. De Winter e Gabbia si giocano il posto al centro della difesa, verranno anche alternati.",
+    "keyPoints": [
+      {
+        "text": "Trequartisti ed esterni mobili in fase offensiva",
+        "tone": "good"
+      },
+      {
+        "text": "Rigidità del sistema di gioco",
+        "tone": "neutral"
+      },
+      {
+        "text": "Dipendenza da un attaccante fisico",
+        "tone": "bad"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "mid-wide",
+        "tone": "good"
+      },
+      {
+        "role": "att-center",
+        "tone": "good"
+      },
+      {
+        "role": "def-halfbacks",
+        "tone": "bad"
+      }
+    ],
+    "starters": [
+      {
+        "playerId": "9f7a6ad7-d230-41f0-aa72-12933ab90027",
+        "csvId": "4312",
+        "name": "Maignan",
+        "role": "P"
+      },
+      {
+        "playerId": "7d117aaa-3a1c-4eb2-b76a-e4b784e21e06",
+        "csvId": 5833,
+        "name": "Gila",
+        "role": "D"
+      },
+      {
+        "playerId": "f5b1b43f-45be-4ebb-bed8-811434235418",
+        "csvId": 5739,
+        "name": "De Winter",
+        "role": "D"
+      },
+      {
+        "playerId": "0442eaa9-c6ac-4a7b-9135-8fd7ee6b2312",
+        "csvId": "5022",
+        "name": "Pavlovic",
+        "role": "D"
+      },
+      {
+        "playerId": "98d71181-5ff4-4e27-8603-a8d8c4ccfb49",
+        "csvId": 4856,
+        "name": "Chukwueze",
+        "role": "C"
+      },
+      {
+        "playerId": "a22c4fed-ed14-4567-bb53-c672d5bf5a5a",
+        "csvId": 6372,
+        "name": "Moreira",
+        "role": "C"
+      },
+      {
+        "playerId": "912f7b0d-01d8-45e0-b7c3-62ba2037a649",
+        "csvId": 2379,
+        "name": "Rabiot",
+        "role": "C"
+      },
+      {
+        "playerId": "f0cc9638-e365-41ec-a8d0-d55c37c876df",
+        "csvId": 2606,
+        "name": "Modric",
+        "role": "C"
+      },
+      {
+        "playerId": "c35852ca-fb1c-4449-b6a1-026f9628d99e",
+        "csvId": 2423,
+        "name": "Pulisic",
+        "role": "C"
+      },
+      {
+        "playerId": "faff68a8-6487-469e-add5-36912ee075a1",
+        "csvId": 6618,
+        "name": "Cissè A.",
+        "role": "C"
+      },
+      {
+        "playerId": "cc4992f6-2313-4dfb-bd05-fde2ab22e067",
+        "csvId": 6397,
+        "name": "Ramos G.",
+        "role": "A"
+      }
+    ],
+    "rig": [
+      {
+        "playerId": "cc4992f6-2313-4dfb-bd05-fde2ab22e067",
+        "name": "Ramos G.",
+        "role": "A"
+      },
+      {
+        "playerId": "c35852ca-fb1c-4449-b6a1-026f9628d99e",
+        "name": "Pulisic",
+        "role": "C"
+      },
+      {
+        "playerId": "f0cc9638-e365-41ec-a8d0-d55c37c876df",
+        "name": "Modric",
+        "role": "C"
+      }
+    ],
+    "pun": [
+      {
+        "playerId": "f0cc9638-e365-41ec-a8d0-d55c37c876df",
+        "name": "Modric",
+        "role": "C"
+      },
+      {
+        "playerId": "c35852ca-fb1c-4449-b6a1-026f9628d99e",
+        "name": "Pulisic",
+        "role": "C"
+      }
+    ],
+    "corner": [
+      {
+        "playerId": "f0cc9638-e365-41ec-a8d0-d55c37c876df",
+        "name": "Modric",
+        "role": "C"
+      },
+      {
+        "playerId": "c35852ca-fb1c-4449-b6a1-026f9628d99e",
+        "name": "Pulisic",
+        "role": "C"
+      },
+      {
+        "playerId": "4bf60a8e-e3c7-4373-b5d5-80f893e7948b",
+        "name": "Bartesaghi",
+        "role": "D"
+      }
+    ],
+    "ballottaggi": [
+      [
+        {
+          "playerId": "faff68a8-6487-469e-add5-36912ee075a1",
+          "name": "Cissè A.",
+          "role": "C",
+          "perc": 51
+        },
+        {
+          "playerId": "6ada201e-02d6-4da0-b333-4b3149daaab4",
+          "name": "Musah",
+          "role": "C",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "f5b1b43f-45be-4ebb-bed8-811434235418",
+          "name": "De Winter",
+          "role": "D",
+          "perc": 55
+        },
+        {
+          "playerId": "a5ccb009-6b25-4d64-b16f-169784fd8920",
+          "name": "Gabbia",
+          "role": "D",
+          "perc": 45
+        }
+      ],
+      [
+        {
+          "playerId": "f0cc9638-e365-41ec-a8d0-d55c37c876df",
+          "name": "Modric",
+          "role": "C",
+          "perc": 55
+        },
+        {
+          "playerId": "6ada201e-02d6-4da0-b333-4b3149daaab4",
+          "name": "Musah",
+          "role": "C",
+          "perc": 45
+        }
+      ]
+    ],
+    "up": [
+      {
+        "playerId": "a22c4fed-ed14-4567-bb53-c672d5bf5a5a",
+        "name": "Moreira",
+        "points": [
+          "Punto di forza delle transizioni rossonere",
+          "Duttilità tattica"
+        ]
+      },
+      {
+        "playerId": "912f7b0d-01d8-45e0-b7c3-62ba2037a649",
+        "name": "Rabiot",
+        "points": [
+          "Fulcro del gioco di Amorim",
+          "Titolarità solida"
+        ]
+      }
+    ],
+    "down": [
+      {
+        "playerId": "74d5c13f-53e3-430b-b745-9043e34f51af",
+        "name": "Tomori",
+        "points": [
+          "Non adatto ai ruoli di impostazione richiesti dal mister"
+        ]
+      }
+    ],
+    "young": [
+      {
+        "playerId": "faff68a8-6487-469e-add5-36912ee075a1",
+        "name": "Cissè A.",
+        "points": [
+          "Presenza costante in area avversaria"
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "playerId": "6ada201e-02d6-4da0-b333-4b3149daaab4",
+        "name": "Musah",
+        "points": [
+          "Presenza continua nelle rotazioni di Amorim"
+        ]
+      }
+    ]
+  },
+  "milan": {
+    "code": "MIL",
+    "name": "Milan",
+    "city": "Milano",
+    "stadium": "San Siro (Giuseppe Meazza)",
+    "primaryColor": "#e30613",
+    "secondaryColor": "#000000",
+    "accentColor": "#ffffff",
+    "coach": "Ruben Amorim",
+    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Amorim.webp",
+    "defaultFormation": "3-4-2-1",
+    "module": "3-4-2-1",
+    "attackRating": 4.5,
+    "defenseRating": 4.5,
+    "comment": "Dopo anni di cambiamenti tattici, il ritorno di Allegri al Milan segnerebbe un ritorno al pragmatismo e alla solidità. Il tecnico livornese incarna una filosofia votata all’equilibrio: linee strette, difesa ordinata, gestione dei ritmi e adattamento costante all’avversario. Non ama il pressing alto sistematico, ma preferisce tempi di pressione mirati e ripartenze rapide dopo il recupero. In fase offensiva punta sulla lettura dei momenti: verticalizzazioni improvvise, inserimenti intelligenti e massima attenzione all’efficacia. Il risultato viene prima della prestazione, e la valorizzazione dei profili più duttili e intelligenti tatticamente è una costante.",
+    "sosFantaComment": "È arrivato Ruben Amorim in panchina, il suo Milan gioca col 3-4-2-1. Sulla trequarti Pulisic è pronto a diventare inamovibile ora che sta bene, al suo fianco o Cisse o Saelemaekers e c'è anche il nuovo arrivato Hutchinson. Chukwueze a destra finora ha convinto e a sinistra può spuntarla Moreira, anche perché Estupinan e Bartesaghi non hanno brillato finora mentre il belga ha dato segnali importantissimi. Musah in alcune partite può giocare al posto di Modric, quando serve più sostanza e meno palleggio. De Winter e Gabbia si giocano il posto al centro della difesa, verranno anche alternati.",
+    "keyPoints": [
+      {
+        "text": "Trequartisti ed esterni mobili in fase offensiva",
+        "tone": "good"
+      },
+      {
+        "text": "Rigidità del sistema di gioco",
+        "tone": "neutral"
+      },
+      {
+        "text": "Dipendenza da un attaccante fisico",
+        "tone": "bad"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "mid-wide",
+        "tone": "good"
+      },
+      {
+        "role": "att-center",
+        "tone": "good"
+      },
+      {
+        "role": "def-halfbacks",
+        "tone": "bad"
+      }
+    ],
+    "starters": [
+      {
+        "playerId": "9f7a6ad7-d230-41f0-aa72-12933ab90027",
+        "csvId": "4312",
+        "name": "Maignan",
+        "role": "P"
+      },
+      {
+        "playerId": "7d117aaa-3a1c-4eb2-b76a-e4b784e21e06",
+        "csvId": 5833,
+        "name": "Gila",
+        "role": "D"
+      },
+      {
+        "playerId": "f5b1b43f-45be-4ebb-bed8-811434235418",
+        "csvId": 5739,
+        "name": "De Winter",
+        "role": "D"
+      },
+      {
+        "playerId": "0442eaa9-c6ac-4a7b-9135-8fd7ee6b2312",
+        "csvId": "5022",
+        "name": "Pavlovic",
+        "role": "D"
+      },
+      {
+        "playerId": "98d71181-5ff4-4e27-8603-a8d8c4ccfb49",
+        "csvId": 4856,
+        "name": "Chukwueze",
+        "role": "C"
+      },
+      {
+        "playerId": "a22c4fed-ed14-4567-bb53-c672d5bf5a5a",
+        "csvId": 6372,
+        "name": "Moreira",
+        "role": "C"
+      },
+      {
+        "playerId": "912f7b0d-01d8-45e0-b7c3-62ba2037a649",
+        "csvId": 2379,
+        "name": "Rabiot",
+        "role": "C"
+      },
+      {
+        "playerId": "f0cc9638-e365-41ec-a8d0-d55c37c876df",
+        "csvId": 2606,
+        "name": "Modric",
+        "role": "C"
+      },
+      {
+        "playerId": "c35852ca-fb1c-4449-b6a1-026f9628d99e",
+        "csvId": 2423,
+        "name": "Pulisic",
+        "role": "C"
+      },
+      {
+        "playerId": "faff68a8-6487-469e-add5-36912ee075a1",
+        "csvId": 6618,
+        "name": "Cissè A.",
+        "role": "C"
+      },
+      {
+        "playerId": "cc4992f6-2313-4dfb-bd05-fde2ab22e067",
+        "csvId": 6397,
+        "name": "Ramos G.",
+        "role": "A"
+      }
+    ],
+    "rig": [
+      {
+        "playerId": "cc4992f6-2313-4dfb-bd05-fde2ab22e067",
+        "name": "Ramos G.",
+        "role": "A"
+      },
+      {
+        "playerId": "c35852ca-fb1c-4449-b6a1-026f9628d99e",
+        "name": "Pulisic",
+        "role": "C"
+      },
+      {
+        "playerId": "f0cc9638-e365-41ec-a8d0-d55c37c876df",
+        "name": "Modric",
+        "role": "C"
+      }
+    ],
+    "pun": [
+      {
+        "playerId": "f0cc9638-e365-41ec-a8d0-d55c37c876df",
+        "name": "Modric",
+        "role": "C"
+      },
+      {
+        "playerId": "c35852ca-fb1c-4449-b6a1-026f9628d99e",
+        "name": "Pulisic",
+        "role": "C"
+      }
+    ],
+    "corner": [
+      {
+        "playerId": "f0cc9638-e365-41ec-a8d0-d55c37c876df",
+        "name": "Modric",
+        "role": "C"
+      },
+      {
+        "playerId": "c35852ca-fb1c-4449-b6a1-026f9628d99e",
+        "name": "Pulisic",
+        "role": "C"
+      },
+      {
+        "playerId": "4bf60a8e-e3c7-4373-b5d5-80f893e7948b",
+        "name": "Bartesaghi",
+        "role": "D"
+      }
+    ],
+    "ballottaggi": [
+      [
+        {
+          "playerId": "faff68a8-6487-469e-add5-36912ee075a1",
+          "name": "Cissè A.",
+          "role": "C",
+          "perc": 51
+        },
+        {
+          "playerId": "6ada201e-02d6-4da0-b333-4b3149daaab4",
+          "name": "Musah",
+          "role": "C",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "f5b1b43f-45be-4ebb-bed8-811434235418",
+          "name": "De Winter",
+          "role": "D",
+          "perc": 55
+        },
+        {
+          "playerId": "a5ccb009-6b25-4d64-b16f-169784fd8920",
+          "name": "Gabbia",
+          "role": "D",
+          "perc": 45
+        }
+      ],
+      [
+        {
+          "playerId": "f0cc9638-e365-41ec-a8d0-d55c37c876df",
+          "name": "Modric",
+          "role": "C",
+          "perc": 55
+        },
+        {
+          "playerId": "6ada201e-02d6-4da0-b333-4b3149daaab4",
+          "name": "Musah",
+          "role": "C",
+          "perc": 45
+        }
+      ]
+    ],
+    "up": [
+      {
+        "playerId": "a22c4fed-ed14-4567-bb53-c672d5bf5a5a",
+        "name": "Moreira",
+        "points": [
+          "Punto di forza delle transizioni rossonere",
+          "Duttilità tattica"
+        ]
+      },
+      {
+        "playerId": "912f7b0d-01d8-45e0-b7c3-62ba2037a649",
+        "name": "Rabiot",
+        "points": [
+          "Fulcro del gioco di Amorim",
+          "Titolarità solida"
+        ]
+      }
+    ],
+    "down": [
+      {
+        "playerId": "74d5c13f-53e3-430b-b745-9043e34f51af",
+        "name": "Tomori",
+        "points": [
+          "Non adatto ai ruoli di impostazione richiesti dal mister"
+        ]
+      }
+    ],
+    "young": [
+      {
+        "playerId": "faff68a8-6487-469e-add5-36912ee075a1",
+        "name": "Cissè A.",
+        "points": [
+          "Presenza costante in area avversaria"
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "playerId": "6ada201e-02d6-4da0-b333-4b3149daaab4",
+        "name": "Musah",
+        "points": [
+          "Presenza continua nelle rotazioni di Amorim"
+        ]
+      }
+    ]
+  },
   "UDI": {
     "code": "UDI",
     "name": "Udinese",
@@ -3383,7 +3879,7 @@ export const SOS_TEAMS_DATA = {
         "playerId": "c07a5ed0-b1db-429b-9291-2998365fffc3",
         "name": "Pobega",
         "points": [
-          "Inserito negli schemi tattici di Palladino",
+          "Utile negli inserimenti senza palla nella fase offensiva di Palladino",
           "Titolarità garantita"
         ]
       }
@@ -3640,7 +4136,7 @@ export const SOS_TEAMS_DATA = {
         "playerId": "c07a5ed0-b1db-429b-9291-2998365fffc3",
         "name": "Pobega",
         "points": [
-          "Inserito negli schemi tattici di Palladino",
+          "Utile negli inserimenti senza palla nella fase offensiva di Palladino",
           "Titolarità garantita"
         ]
       }
@@ -6026,7 +6522,7 @@ export const SOS_TEAMS_DATA = {
         "playerId": "4d65afcd-dc9b-4804-ac3e-1fd5d688c48c",
         "name": "Adopo",
         "points": [
-          "Fondamentale per il gioco di Pisacane",
+          "Utile nella fase di non possesso, garantisce copertura",
           "Duttilità tattica"
         ]
       }
@@ -6256,7 +6752,7 @@ export const SOS_TEAMS_DATA = {
         "playerId": "4d65afcd-dc9b-4804-ac3e-1fd5d688c48c",
         "name": "Adopo",
         "points": [
-          "Fondamentale per il gioco di Pisacane",
+          "Utile nella fase di non possesso, garantisce copertura",
           "Duttilità tattica"
         ]
       }
@@ -6489,12 +6985,11 @@ export const SOS_TEAMS_DATA = {
     ],
     "up": [
       {
-        "playerId": "88893e63-f3f6-4224-838b-8e189ef9f312",
-        "name": "Mota",
+        "playerId": "0053b230-688b-4fef-90f5-b823c64ea378",
+        "name": "Varela G.",
         "points": [
-          "Leader della squadra",
-          "Svaria su tutto il fronte d'attacco",
-          "Qualche dubbio sull'integrità fisica"
+          "Punto di riferimento offensivo ",
+          "Titolarità garantita"
         ]
       },
       {
@@ -6735,12 +7230,11 @@ export const SOS_TEAMS_DATA = {
     ],
     "up": [
       {
-        "playerId": "88893e63-f3f6-4224-838b-8e189ef9f312",
-        "name": "Mota",
+        "playerId": "0053b230-688b-4fef-90f5-b823c64ea378",
+        "name": "Varela G.",
         "points": [
-          "Leader della squadra",
-          "Svaria su tutto il fronte d'attacco",
-          "Qualche dubbio sull'integrità fisica"
+          "Punto di riferimento offensivo ",
+          "Titolarità garantita"
         ]
       },
       {
@@ -6777,502 +7271,6 @@ export const SOS_TEAMS_DATA = {
         "points": [
           "Elevata propensione offensiva",
           "Precisione nei cross"
-        ]
-      }
-    ]
-  },
-  "MIL": {
-    "code": "MIL",
-    "name": "Milan",
-    "city": "Milano",
-    "stadium": "San Siro (Giuseppe Meazza)",
-    "primaryColor": "#e30613",
-    "secondaryColor": "#000000",
-    "accentColor": "#ffffff",
-    "coach": "Ruben Amorim",
-    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Amorim.webp",
-    "defaultFormation": "3-4-2-1",
-    "module": "3-4-2-1",
-    "attackRating": 4.5,
-    "defenseRating": 4.5,
-    "comment": "Dopo anni di cambiamenti tattici, il ritorno di Allegri al Milan segnerebbe un ritorno al pragmatismo e alla solidità. Il tecnico livornese incarna una filosofia votata all’equilibrio: linee strette, difesa ordinata, gestione dei ritmi e adattamento costante all’avversario. Non ama il pressing alto sistematico, ma preferisce tempi di pressione mirati e ripartenze rapide dopo il recupero. In fase offensiva punta sulla lettura dei momenti: verticalizzazioni improvvise, inserimenti intelligenti e massima attenzione all’efficacia. Il risultato viene prima della prestazione, e la valorizzazione dei profili più duttili e intelligenti tatticamente è una costante.",
-    "sosFantaComment": "È arrivato Ruben Amorim in panchina, il suo Milan gioca col 3-4-2-1. Sulla trequarti Pulisic è pronto a diventare inamovibile ora che sta bene, al suo fianco o Cisse o Saelemaekers e c'è anche il nuovo arrivato Hutchinson. Chukwueze a destra finora ha convinto e a sinistra può spuntarla Moreira, anche perché Estupinan e Bartesaghi non hanno brillato finora mentre il belga ha dato segnali importantissimi. Musah in alcune partite può giocare al posto di Modric, quando serve più sostanza e meno palleggio. De Winter e Gabbia si giocano il posto al centro della difesa, verranno anche alternati.",
-    "keyPoints": [
-      {
-        "text": "Trequartisti ed esterni mobili in fase offensiva",
-        "tone": "good"
-      },
-      {
-        "text": "Rigidità del sistema di gioco",
-        "tone": "neutral"
-      },
-      {
-        "text": "Dipendenza da un attaccante fisico",
-        "tone": "bad"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "mid-wide",
-        "tone": "good"
-      },
-      {
-        "role": "att-center",
-        "tone": "good"
-      },
-      {
-        "role": "def-halfbacks",
-        "tone": "bad"
-      }
-    ],
-    "starters": [
-      {
-        "playerId": "9f7a6ad7-d230-41f0-aa72-12933ab90027",
-        "csvId": "4312",
-        "name": "Maignan",
-        "role": "P"
-      },
-      {
-        "playerId": "7d117aaa-3a1c-4eb2-b76a-e4b784e21e06",
-        "csvId": 5833,
-        "name": "Gila",
-        "role": "D"
-      },
-      {
-        "playerId": "f5b1b43f-45be-4ebb-bed8-811434235418",
-        "csvId": 5739,
-        "name": "De Winter",
-        "role": "D"
-      },
-      {
-        "playerId": "0442eaa9-c6ac-4a7b-9135-8fd7ee6b2312",
-        "csvId": "5022",
-        "name": "Pavlovic",
-        "role": "D"
-      },
-      {
-        "playerId": "98d71181-5ff4-4e27-8603-a8d8c4ccfb49",
-        "csvId": 4856,
-        "name": "Chukwueze",
-        "role": "C"
-      },
-      {
-        "playerId": "a22c4fed-ed14-4567-bb53-c672d5bf5a5a",
-        "csvId": 6372,
-        "name": "Moreira",
-        "role": "C"
-      },
-      {
-        "playerId": "912f7b0d-01d8-45e0-b7c3-62ba2037a649",
-        "csvId": 2379,
-        "name": "Rabiot",
-        "role": "C"
-      },
-      {
-        "playerId": "f0cc9638-e365-41ec-a8d0-d55c37c876df",
-        "csvId": 2606,
-        "name": "Modric",
-        "role": "C"
-      },
-      {
-        "playerId": "c35852ca-fb1c-4449-b6a1-026f9628d99e",
-        "csvId": 2423,
-        "name": "Pulisic",
-        "role": "C"
-      },
-      {
-        "playerId": "faff68a8-6487-469e-add5-36912ee075a1",
-        "csvId": 6618,
-        "name": "Cissè A.",
-        "role": "C"
-      },
-      {
-        "playerId": "cc4992f6-2313-4dfb-bd05-fde2ab22e067",
-        "csvId": 6397,
-        "name": "Ramos G.",
-        "role": "A"
-      }
-    ],
-    "rig": [
-      {
-        "playerId": "cc4992f6-2313-4dfb-bd05-fde2ab22e067",
-        "name": "Ramos G.",
-        "role": "A"
-      },
-      {
-        "playerId": "c35852ca-fb1c-4449-b6a1-026f9628d99e",
-        "name": "Pulisic",
-        "role": "C"
-      },
-      {
-        "playerId": "f0cc9638-e365-41ec-a8d0-d55c37c876df",
-        "name": "Modric",
-        "role": "C"
-      }
-    ],
-    "pun": [
-      {
-        "playerId": "f0cc9638-e365-41ec-a8d0-d55c37c876df",
-        "name": "Modric",
-        "role": "C"
-      },
-      {
-        "playerId": "c35852ca-fb1c-4449-b6a1-026f9628d99e",
-        "name": "Pulisic",
-        "role": "C"
-      }
-    ],
-    "corner": [
-      {
-        "playerId": "f0cc9638-e365-41ec-a8d0-d55c37c876df",
-        "name": "Modric",
-        "role": "C"
-      },
-      {
-        "playerId": "c35852ca-fb1c-4449-b6a1-026f9628d99e",
-        "name": "Pulisic",
-        "role": "C"
-      },
-      {
-        "playerId": "4bf60a8e-e3c7-4373-b5d5-80f893e7948b",
-        "name": "Bartesaghi",
-        "role": "D"
-      }
-    ],
-    "ballottaggi": [
-      [
-        {
-          "playerId": "faff68a8-6487-469e-add5-36912ee075a1",
-          "name": "Cissè A.",
-          "role": "C",
-          "perc": 51
-        },
-        {
-          "playerId": "6ada201e-02d6-4da0-b333-4b3149daaab4",
-          "name": "Musah",
-          "role": "C",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "f5b1b43f-45be-4ebb-bed8-811434235418",
-          "name": "De Winter",
-          "role": "D",
-          "perc": 55
-        },
-        {
-          "playerId": "a5ccb009-6b25-4d64-b16f-169784fd8920",
-          "name": "Gabbia",
-          "role": "D",
-          "perc": 45
-        }
-      ],
-      [
-        {
-          "playerId": "f0cc9638-e365-41ec-a8d0-d55c37c876df",
-          "name": "Modric",
-          "role": "C",
-          "perc": 55
-        },
-        {
-          "playerId": "6ada201e-02d6-4da0-b333-4b3149daaab4",
-          "name": "Musah",
-          "role": "C",
-          "perc": 45
-        }
-      ]
-    ],
-    "up": [
-      {
-        "playerId": "a22c4fed-ed14-4567-bb53-c672d5bf5a5a",
-        "name": "Moreira",
-        "points": [
-          "Punto di forza delle transizioni rossonere",
-          "Duttilità tattica"
-        ]
-      },
-      {
-        "playerId": "912f7b0d-01d8-45e0-b7c3-62ba2037a649",
-        "name": "Rabiot",
-        "points": [
-          "Fulcro del gioco di Amorim",
-          "Titolarità solida"
-        ]
-      }
-    ],
-    "down": [
-      {
-        "playerId": "74d5c13f-53e3-430b-b745-9043e34f51af",
-        "name": "Tomori",
-        "points": [
-          "Non adatto ai ruoli di impostazione richiesti dal mister"
-        ]
-      }
-    ],
-    "young": [
-      {
-        "playerId": "faff68a8-6487-469e-add5-36912ee075a1",
-        "name": "Cissè A.",
-        "points": [
-          "Talento utilizzato molto in fase offensiva"
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "playerId": "6ada201e-02d6-4da0-b333-4b3149daaab4",
-        "name": "Musah",
-        "points": [
-          "Alternativa tattica per il gioco di Amorim"
-        ]
-      }
-    ]
-  },
-  "milan": {
-    "code": "MIL",
-    "name": "Milan",
-    "city": "Milano",
-    "stadium": "San Siro (Giuseppe Meazza)",
-    "primaryColor": "#e30613",
-    "secondaryColor": "#000000",
-    "accentColor": "#ffffff",
-    "coach": "Ruben Amorim",
-    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Amorim.webp",
-    "defaultFormation": "3-4-2-1",
-    "module": "3-4-2-1",
-    "attackRating": 4.5,
-    "defenseRating": 4.5,
-    "comment": "Dopo anni di cambiamenti tattici, il ritorno di Allegri al Milan segnerebbe un ritorno al pragmatismo e alla solidità. Il tecnico livornese incarna una filosofia votata all’equilibrio: linee strette, difesa ordinata, gestione dei ritmi e adattamento costante all’avversario. Non ama il pressing alto sistematico, ma preferisce tempi di pressione mirati e ripartenze rapide dopo il recupero. In fase offensiva punta sulla lettura dei momenti: verticalizzazioni improvvise, inserimenti intelligenti e massima attenzione all’efficacia. Il risultato viene prima della prestazione, e la valorizzazione dei profili più duttili e intelligenti tatticamente è una costante.",
-    "sosFantaComment": "È arrivato Ruben Amorim in panchina, il suo Milan gioca col 3-4-2-1. Sulla trequarti Pulisic è pronto a diventare inamovibile ora che sta bene, al suo fianco o Cisse o Saelemaekers e c'è anche il nuovo arrivato Hutchinson. Chukwueze a destra finora ha convinto e a sinistra può spuntarla Moreira, anche perché Estupinan e Bartesaghi non hanno brillato finora mentre il belga ha dato segnali importantissimi. Musah in alcune partite può giocare al posto di Modric, quando serve più sostanza e meno palleggio. De Winter e Gabbia si giocano il posto al centro della difesa, verranno anche alternati.",
-    "keyPoints": [
-      {
-        "text": "Trequartisti ed esterni mobili in fase offensiva",
-        "tone": "good"
-      },
-      {
-        "text": "Rigidità del sistema di gioco",
-        "tone": "neutral"
-      },
-      {
-        "text": "Dipendenza da un attaccante fisico",
-        "tone": "bad"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "mid-wide",
-        "tone": "good"
-      },
-      {
-        "role": "att-center",
-        "tone": "good"
-      },
-      {
-        "role": "def-halfbacks",
-        "tone": "bad"
-      }
-    ],
-    "starters": [
-      {
-        "playerId": "9f7a6ad7-d230-41f0-aa72-12933ab90027",
-        "csvId": "4312",
-        "name": "Maignan",
-        "role": "P"
-      },
-      {
-        "playerId": "7d117aaa-3a1c-4eb2-b76a-e4b784e21e06",
-        "csvId": 5833,
-        "name": "Gila",
-        "role": "D"
-      },
-      {
-        "playerId": "f5b1b43f-45be-4ebb-bed8-811434235418",
-        "csvId": 5739,
-        "name": "De Winter",
-        "role": "D"
-      },
-      {
-        "playerId": "0442eaa9-c6ac-4a7b-9135-8fd7ee6b2312",
-        "csvId": "5022",
-        "name": "Pavlovic",
-        "role": "D"
-      },
-      {
-        "playerId": "98d71181-5ff4-4e27-8603-a8d8c4ccfb49",
-        "csvId": 4856,
-        "name": "Chukwueze",
-        "role": "C"
-      },
-      {
-        "playerId": "a22c4fed-ed14-4567-bb53-c672d5bf5a5a",
-        "csvId": 6372,
-        "name": "Moreira",
-        "role": "C"
-      },
-      {
-        "playerId": "912f7b0d-01d8-45e0-b7c3-62ba2037a649",
-        "csvId": 2379,
-        "name": "Rabiot",
-        "role": "C"
-      },
-      {
-        "playerId": "f0cc9638-e365-41ec-a8d0-d55c37c876df",
-        "csvId": 2606,
-        "name": "Modric",
-        "role": "C"
-      },
-      {
-        "playerId": "c35852ca-fb1c-4449-b6a1-026f9628d99e",
-        "csvId": 2423,
-        "name": "Pulisic",
-        "role": "C"
-      },
-      {
-        "playerId": "faff68a8-6487-469e-add5-36912ee075a1",
-        "csvId": 6618,
-        "name": "Cissè A.",
-        "role": "C"
-      },
-      {
-        "playerId": "cc4992f6-2313-4dfb-bd05-fde2ab22e067",
-        "csvId": 6397,
-        "name": "Ramos G.",
-        "role": "A"
-      }
-    ],
-    "rig": [
-      {
-        "playerId": "cc4992f6-2313-4dfb-bd05-fde2ab22e067",
-        "name": "Ramos G.",
-        "role": "A"
-      },
-      {
-        "playerId": "c35852ca-fb1c-4449-b6a1-026f9628d99e",
-        "name": "Pulisic",
-        "role": "C"
-      },
-      {
-        "playerId": "f0cc9638-e365-41ec-a8d0-d55c37c876df",
-        "name": "Modric",
-        "role": "C"
-      }
-    ],
-    "pun": [
-      {
-        "playerId": "f0cc9638-e365-41ec-a8d0-d55c37c876df",
-        "name": "Modric",
-        "role": "C"
-      },
-      {
-        "playerId": "c35852ca-fb1c-4449-b6a1-026f9628d99e",
-        "name": "Pulisic",
-        "role": "C"
-      }
-    ],
-    "corner": [
-      {
-        "playerId": "f0cc9638-e365-41ec-a8d0-d55c37c876df",
-        "name": "Modric",
-        "role": "C"
-      },
-      {
-        "playerId": "c35852ca-fb1c-4449-b6a1-026f9628d99e",
-        "name": "Pulisic",
-        "role": "C"
-      },
-      {
-        "playerId": "4bf60a8e-e3c7-4373-b5d5-80f893e7948b",
-        "name": "Bartesaghi",
-        "role": "D"
-      }
-    ],
-    "ballottaggi": [
-      [
-        {
-          "playerId": "faff68a8-6487-469e-add5-36912ee075a1",
-          "name": "Cissè A.",
-          "role": "C",
-          "perc": 51
-        },
-        {
-          "playerId": "6ada201e-02d6-4da0-b333-4b3149daaab4",
-          "name": "Musah",
-          "role": "C",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "f5b1b43f-45be-4ebb-bed8-811434235418",
-          "name": "De Winter",
-          "role": "D",
-          "perc": 55
-        },
-        {
-          "playerId": "a5ccb009-6b25-4d64-b16f-169784fd8920",
-          "name": "Gabbia",
-          "role": "D",
-          "perc": 45
-        }
-      ],
-      [
-        {
-          "playerId": "f0cc9638-e365-41ec-a8d0-d55c37c876df",
-          "name": "Modric",
-          "role": "C",
-          "perc": 55
-        },
-        {
-          "playerId": "6ada201e-02d6-4da0-b333-4b3149daaab4",
-          "name": "Musah",
-          "role": "C",
-          "perc": 45
-        }
-      ]
-    ],
-    "up": [
-      {
-        "playerId": "a22c4fed-ed14-4567-bb53-c672d5bf5a5a",
-        "name": "Moreira",
-        "points": [
-          "Punto di forza delle transizioni rossonere",
-          "Duttilità tattica"
-        ]
-      },
-      {
-        "playerId": "912f7b0d-01d8-45e0-b7c3-62ba2037a649",
-        "name": "Rabiot",
-        "points": [
-          "Fulcro del gioco di Amorim",
-          "Titolarità solida"
-        ]
-      }
-    ],
-    "down": [
-      {
-        "playerId": "74d5c13f-53e3-430b-b745-9043e34f51af",
-        "name": "Tomori",
-        "points": [
-          "Non adatto ai ruoli di impostazione richiesti dal mister"
-        ]
-      }
-    ],
-    "young": [
-      {
-        "playerId": "faff68a8-6487-469e-add5-36912ee075a1",
-        "name": "Cissè A.",
-        "points": [
-          "Talento utilizzato molto in fase offensiva"
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "playerId": "6ada201e-02d6-4da0-b333-4b3149daaab4",
-        "name": "Musah",
-        "points": [
-          "Alternativa tattica per il gioco di Amorim"
         ]
       }
     ]
