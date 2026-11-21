@@ -2609,8 +2609,8 @@
     "season": "s_26_27",
     "starters": [
       {
-        "player_id": "1bef666d-d305-4795-af71-2e946eb6ab0e",
-        "id": 572
+        "player_id": "85575d07-92d4-4504-962b-b60be45e68a6",
+        "id": 2170
       },
       {
         "player_id": "dbd256fc-4861-493d-8fc6-8abc4503c061",
@@ -2690,7 +2690,7 @@
     "comment": "Reduce dalla conquista dello scudetto, Conte ha portato a Napoli mentalità vincente, rigore tattico e una forte identità di squadra. Pur avendo nel 3-5-2 il suo marchio di fabbrica, ha dimostrato grande intelligenza adattandosi al contesto partenopeo, riuscendo a trovare equilibrio anche con il 4-3-3, modulo che meglio valorizza le caratteristiche tecniche e offensive della rosa azzurra. Le sue squadre si distinguono per organizzazione, intensità e spirito di sacrificio, con un’attenzione maniacale alla fase difensiva. Difensori centrali affidabili ed esterni dinamici restano fondamentali nel suo sistema, così come i centrocampisti con capacità di inserimento e gli attaccanti di movimento. ",
     "sosFantaComment": "Da Antonio Conte a Massimiliano Allegri, dalla difesa a 3 al 4-3-3 o 4-2-3-1. Meret più di Milinkovic, le prime uscite ufficiali dicono questo sulla gerarchia in porta ma occhio allo stop dell'italiano in Champions (tornerà dopo la sosta). Vi abbiamo sempre consigliato di prenderli in coppia. Inizia ai box la stagione di Buongiorno e lo stop non sarà breve (tornerà verso novembre): o il nuovo arrivato Badiashile o Marin fino a quel momento. Anguissa parte da prima alternativa di McTominay e/o De Bruyne. Nel tridente Politano e Alisson Santos hanno iniziato la stagione da titolari, ma quest'ultimo si è infortunato e perde terreno: occhio a Neres e Vergara più che a Lang. ",
     "created_at": "2026-07-21T13:11:53.537Z",
-    "updated_at": "2026-09-22T10:59:25.322Z",
+    "updated_at": "2026-11-20T15:38:09.424Z",
     "up": [
       {
         "player_id": "f61d5ce5-111a-4f71-b6f7-dfe4393621d3",
@@ -2780,12 +2780,12 @@
       {
         "players": [
           {
-            "player_id": "1bef666d-d305-4795-af71-2e946eb6ab0e",
-            "perc": 60
+            "player_id": "85575d07-92d4-4504-962b-b60be45e68a6",
+            "perc": 51
           },
           {
-            "player_id": "85575d07-92d4-4504-962b-b60be45e68a6",
-            "perc": 40
+            "player_id": "1bef666d-d305-4795-af71-2e946eb6ab0e",
+            "perc": 49
           }
         ]
       },
@@ -2832,7 +2832,7 @@
       }
     ],
     "createdAt": "2026-07-21T13:11:53.537Z",
-    "updatedAt": "2026-09-22T10:59:25.322Z"
+    "updatedAt": "2026-11-20T15:38:09.424Z"
   },
   {
     "team": "CAG",

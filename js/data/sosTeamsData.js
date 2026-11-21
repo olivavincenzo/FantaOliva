@@ -5851,9 +5851,9 @@ export const SOS_TEAMS_DATA = {
     ],
     "starters": [
       {
-        "playerId": "1bef666d-d305-4795-af71-2e946eb6ab0e",
-        "csvId": 572,
-        "name": "Meret",
+        "playerId": "85575d07-92d4-4504-962b-b60be45e68a6",
+        "csvId": 2170,
+        "name": "Milinkovic-Savic V.",
         "role": "P"
       },
       {
@@ -5994,16 +5994,16 @@ export const SOS_TEAMS_DATA = {
       ],
       [
         {
-          "playerId": "1bef666d-d305-4795-af71-2e946eb6ab0e",
-          "name": "Meret",
-          "role": "P",
-          "perc": 60
-        },
-        {
           "playerId": "85575d07-92d4-4504-962b-b60be45e68a6",
           "name": "Milinkovic-Savic V.",
           "role": "P",
-          "perc": 40
+          "perc": 51
+        },
+        {
+          "playerId": "1bef666d-d305-4795-af71-2e946eb6ab0e",
+          "name": "Meret",
+          "role": "P",
+          "perc": 49
         }
       ],
       [
@@ -6109,9 +6109,9 @@ export const SOS_TEAMS_DATA = {
     ],
     "starters": [
       {
-        "playerId": "1bef666d-d305-4795-af71-2e946eb6ab0e",
-        "csvId": 572,
-        "name": "Meret",
+        "playerId": "85575d07-92d4-4504-962b-b60be45e68a6",
+        "csvId": 2170,
+        "name": "Milinkovic-Savic V.",
         "role": "P"
       },
       {
@@ -6252,16 +6252,16 @@ export const SOS_TEAMS_DATA = {
       ],
       [
         {
-          "playerId": "1bef666d-d305-4795-af71-2e946eb6ab0e",
-          "name": "Meret",
-          "role": "P",
-          "perc": 60
-        },
-        {
           "playerId": "85575d07-92d4-4504-962b-b60be45e68a6",
           "name": "Milinkovic-Savic V.",
           "role": "P",
-          "perc": 40
+          "perc": 51
+        },
+        {
+          "playerId": "1bef666d-d305-4795-af71-2e946eb6ab0e",
+          "name": "Meret",
+          "role": "P",
+          "perc": 49
         }
       ],
       [
