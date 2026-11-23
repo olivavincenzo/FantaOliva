@@ -3139,6 +3139,592 @@ export const SOS_TEAMS_DATA = {
       }
     ]
   },
+  "COM": {
+    "code": "COM",
+    "name": "Como",
+    "city": "Como",
+    "stadium": "Giuseppe Sinigaglia",
+    "primaryColor": "#0047ab",
+    "secondaryColor": "#ffffff",
+    "accentColor": "#002244",
+    "coach": "Cesc Fabregas",
+    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Fabregas.webp",
+    "defaultFormation": "4-2-3-1",
+    "module": "4-2-3-1",
+    "attackRating": 5.0,
+    "defenseRating": 4.5,
+    "comment": "Ha costruito il suo Como su un’identità chiara e ambiziosa, ispirata al calcio di posizione. Il suo sistema predilige un 4-2-3-1 con interscambi tra i trequartisti, ricerca costante della superiorità posizionale e una gestione paziente del ritmo. Gli esterni alti sono fondamentali nel fissare l'ampiezza e liberare spazio tra le linee, mentre la squadra cerca sempre di mantenere il controllo del pallone anche sotto pressione. Questo approccio, coraggioso e ben codificato, ha portato il Como a uno storico decimo posto in Serie A, sorprendendo per maturità e qualità. In ottica fantacalcio, attenzione ai profili tecnici: chi sa muoversi tra le linee e leggere il gioco può emergere come protagonista.",
+    "sosFantaComment": "Como da Champions, vuol dire più rotazioni nel consolidato 4-2-3-1 di Fabregas. In porta è arrivato Sanchez, prova a insidiare Butez: si giocano il posto, è una gerarchia da definire, parlerà il campo. A destra è arrivato Yan Couto e parte in pole su Smolcic, mentre a sinistra il ballottaggio è tra Valle e il nuovo arrivato Kaiki, in un vero testa a testa. In mediana di fatto sono in tre per due maglie: Perrone, Da Cunha e Milla verranno alternati da Fabregas. Baturina e Diao partono in pole sulle fasce, ma anche Rodriguez avrà molte occasioni. In attacco Douvikas ha iniziato alla grande la stagione, ma anche il nuovo arrivato Kean troverà tanto spazio.",
+    "keyPoints": [
+      {
+        "text": "Valorizzazione giovani",
+        "tone": "good"
+      },
+      {
+        "text": "Solidità difensiva",
+        "tone": "good"
+      },
+      {
+        "text": "Manovra fluida in fase offensiva",
+        "tone": "good"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "gk",
+        "tone": "good"
+      },
+      {
+        "role": "treq-center",
+        "tone": "good"
+      },
+      {
+        "role": "def-fullbacks",
+        "tone": "bad"
+      },
+      {
+        "role": "att-center",
+        "tone": "good"
+      }
+    ],
+    "starters": [
+      {
+        "playerId": "05ed0add-6a0f-4ae8-aa97-eba61ba71d30",
+        "csvId": "6966",
+        "name": "Butez",
+        "role": "P"
+      },
+      {
+        "playerId": "d0d30a5a-3355-45a8-ad09-a29513473dae",
+        "csvId": 6727,
+        "name": "Couto",
+        "role": "D"
+      },
+      {
+        "playerId": "4a7ed4dd-66d1-4837-9557-1e8148c21322",
+        "csvId": "6869",
+        "name": "Ramon",
+        "role": "D"
+      },
+      {
+        "playerId": "2e3fad35-5759-49b0-98ec-e53c93dd10a6",
+        "csvId": 5641,
+        "name": "Chalobah T.",
+        "role": "D"
+      },
+      {
+        "playerId": "4a7b3303-8034-4780-9253-42e14d253000",
+        "csvId": "6867",
+        "name": "Valle",
+        "role": "D"
+      },
+      {
+        "playerId": "477d1d7c-8070-4188-87b0-04c710f57123",
+        "csvId": 6151,
+        "name": "Perrone",
+        "role": "C"
+      },
+      {
+        "playerId": "975f7429-8320-4cf5-92a9-093eb9ce4c82",
+        "csvId": "5559",
+        "name": "Da Cunha",
+        "role": "C"
+      },
+      {
+        "playerId": "0e555a7f-5113-49d2-9bbd-0a138250968f",
+        "csvId": "6967",
+        "name": "Diao",
+        "role": "A"
+      },
+      {
+        "playerId": "b6e4d803-fb64-4bf4-9771-3673e4c4dc9a",
+        "csvId": "6875",
+        "name": "Paz N.",
+        "role": "C"
+      },
+      {
+        "playerId": "883a53f2-3f11-4cc7-bbcc-ec7d21a99f74",
+        "csvId": "7126",
+        "name": "Baturina",
+        "role": "C"
+      },
+      {
+        "playerId": "21aae13c-0a10-4bf2-aa9a-0a44c6cec6b2",
+        "csvId": "7017",
+        "name": "Douvikas",
+        "role": "A"
+      }
+    ],
+    "rig": [
+      {
+        "playerId": "975f7429-8320-4cf5-92a9-093eb9ce4c82",
+        "name": "Da Cunha",
+        "role": "C"
+      },
+      {
+        "playerId": "21aae13c-0a10-4bf2-aa9a-0a44c6cec6b2",
+        "name": "Douvikas",
+        "role": "A"
+      },
+      {
+        "playerId": "883a53f2-3f11-4cc7-bbcc-ec7d21a99f74",
+        "name": "Baturina",
+        "role": "C"
+      }
+    ],
+    "pun": [
+      {
+        "playerId": "b6e4d803-fb64-4bf4-9771-3673e4c4dc9a",
+        "name": "Paz N.",
+        "role": "C"
+      },
+      {
+        "playerId": "56f6449f-dda3-48cd-b535-9016b9ac7e65",
+        "name": "Milla",
+        "role": "C"
+      }
+    ],
+    "corner": [
+      {
+        "playerId": "b6e4d803-fb64-4bf4-9771-3673e4c4dc9a",
+        "name": "Paz N.",
+        "role": "C"
+      },
+      {
+        "playerId": "56f6449f-dda3-48cd-b535-9016b9ac7e65",
+        "name": "Milla",
+        "role": "C"
+      },
+      {
+        "playerId": "975f7429-8320-4cf5-92a9-093eb9ce4c82",
+        "name": "Da Cunha",
+        "role": "C"
+      }
+    ],
+    "ballottaggi": [
+      [
+        {
+          "playerId": "477d1d7c-8070-4188-87b0-04c710f57123",
+          "name": "Perrone",
+          "role": "C",
+          "perc": 51
+        },
+        {
+          "playerId": "56f6449f-dda3-48cd-b535-9016b9ac7e65",
+          "name": "Milla",
+          "role": "C",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "d0d30a5a-3355-45a8-ad09-a29513473dae",
+          "name": "Couto",
+          "role": "D",
+          "perc": 55
+        },
+        {
+          "playerId": "fc066d51-ae78-42c1-b910-6a315514861c",
+          "name": "Smolcic I.",
+          "role": "D",
+          "perc": 45
+        }
+      ],
+      [
+        {
+          "playerId": "4a7b3303-8034-4780-9253-42e14d253000",
+          "name": "Valle",
+          "role": "D",
+          "perc": 51
+        },
+        {
+          "playerId": "e0a55f90-4742-4082-9921-d9ab29b25e18",
+          "name": "Kaiki Bruno",
+          "role": "D",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "0e555a7f-5113-49d2-9bbd-0a138250968f",
+          "name": "Diao",
+          "role": "A",
+          "perc": 55
+        },
+        {
+          "playerId": "5812c91b-36cc-413d-bc47-84de4f6e758a",
+          "name": "Liberali",
+          "role": "C",
+          "perc": 45
+        }
+      ],
+      [
+        {
+          "playerId": "2e3fad35-5759-49b0-98ec-e53c93dd10a6",
+          "name": "Chalobah T.",
+          "role": "D",
+          "perc": 51
+        },
+        {
+          "playerId": "eac8b0ac-13f0-4df2-b79a-3cdd43e9d242",
+          "name": "Kempf",
+          "role": "D",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "05ed0add-6a0f-4ae8-aa97-eba61ba71d30",
+          "name": "Butez",
+          "role": "P",
+          "perc": 51
+        },
+        {
+          "playerId": "4861bf31-26b9-4827-9718-9a6787414277",
+          "name": "Sanchez Ro.",
+          "role": "P",
+          "perc": 49
+        }
+      ]
+    ],
+    "up": [
+      {
+        "playerId": "975f7429-8320-4cf5-92a9-093eb9ce4c82",
+        "name": "Da Cunha",
+        "points": [
+          "Duttile Tatticamente"
+        ]
+      },
+      {
+        "playerId": "883a53f2-3f11-4cc7-bbcc-ec7d21a99f74",
+        "name": "Baturina",
+        "points": [
+          "Utilizzato su più ruoli della trequarti",
+          "Cinico in fase di finalizzazione"
+        ]
+      }
+    ],
+    "down": [
+      {
+        "playerId": "e0a55f90-4742-4082-9921-d9ab29b25e18",
+        "name": "Kaiki Bruno",
+        "points": [
+          "Ruolo in cui Fabregas fa molto turnover"
+        ]
+      }
+    ],
+    "young": [
+      {
+        "playerId": "5812c91b-36cc-413d-bc47-84de4f6e758a",
+        "name": "Liberali",
+        "points": [
+          "Doti tecniche perfette per il gioco di Fabregas"
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "playerId": "0e555a7f-5113-49d2-9bbd-0a138250968f",
+        "name": "Diao",
+        "points": [
+          "Abile in fase di finalizzazione"
+        ]
+      }
+    ]
+  },
+  "como": {
+    "code": "COM",
+    "name": "Como",
+    "city": "Como",
+    "stadium": "Giuseppe Sinigaglia",
+    "primaryColor": "#0047ab",
+    "secondaryColor": "#ffffff",
+    "accentColor": "#002244",
+    "coach": "Cesc Fabregas",
+    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Fabregas.webp",
+    "defaultFormation": "4-2-3-1",
+    "module": "4-2-3-1",
+    "attackRating": 5.0,
+    "defenseRating": 4.5,
+    "comment": "Ha costruito il suo Como su un’identità chiara e ambiziosa, ispirata al calcio di posizione. Il suo sistema predilige un 4-2-3-1 con interscambi tra i trequartisti, ricerca costante della superiorità posizionale e una gestione paziente del ritmo. Gli esterni alti sono fondamentali nel fissare l'ampiezza e liberare spazio tra le linee, mentre la squadra cerca sempre di mantenere il controllo del pallone anche sotto pressione. Questo approccio, coraggioso e ben codificato, ha portato il Como a uno storico decimo posto in Serie A, sorprendendo per maturità e qualità. In ottica fantacalcio, attenzione ai profili tecnici: chi sa muoversi tra le linee e leggere il gioco può emergere come protagonista.",
+    "sosFantaComment": "Como da Champions, vuol dire più rotazioni nel consolidato 4-2-3-1 di Fabregas. In porta è arrivato Sanchez, prova a insidiare Butez: si giocano il posto, è una gerarchia da definire, parlerà il campo. A destra è arrivato Yan Couto e parte in pole su Smolcic, mentre a sinistra il ballottaggio è tra Valle e il nuovo arrivato Kaiki, in un vero testa a testa. In mediana di fatto sono in tre per due maglie: Perrone, Da Cunha e Milla verranno alternati da Fabregas. Baturina e Diao partono in pole sulle fasce, ma anche Rodriguez avrà molte occasioni. In attacco Douvikas ha iniziato alla grande la stagione, ma anche il nuovo arrivato Kean troverà tanto spazio.",
+    "keyPoints": [
+      {
+        "text": "Valorizzazione giovani",
+        "tone": "good"
+      },
+      {
+        "text": "Solidità difensiva",
+        "tone": "good"
+      },
+      {
+        "text": "Manovra fluida in fase offensiva",
+        "tone": "good"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "gk",
+        "tone": "good"
+      },
+      {
+        "role": "treq-center",
+        "tone": "good"
+      },
+      {
+        "role": "def-fullbacks",
+        "tone": "bad"
+      },
+      {
+        "role": "att-center",
+        "tone": "good"
+      }
+    ],
+    "starters": [
+      {
+        "playerId": "05ed0add-6a0f-4ae8-aa97-eba61ba71d30",
+        "csvId": "6966",
+        "name": "Butez",
+        "role": "P"
+      },
+      {
+        "playerId": "d0d30a5a-3355-45a8-ad09-a29513473dae",
+        "csvId": 6727,
+        "name": "Couto",
+        "role": "D"
+      },
+      {
+        "playerId": "4a7ed4dd-66d1-4837-9557-1e8148c21322",
+        "csvId": "6869",
+        "name": "Ramon",
+        "role": "D"
+      },
+      {
+        "playerId": "2e3fad35-5759-49b0-98ec-e53c93dd10a6",
+        "csvId": 5641,
+        "name": "Chalobah T.",
+        "role": "D"
+      },
+      {
+        "playerId": "4a7b3303-8034-4780-9253-42e14d253000",
+        "csvId": "6867",
+        "name": "Valle",
+        "role": "D"
+      },
+      {
+        "playerId": "477d1d7c-8070-4188-87b0-04c710f57123",
+        "csvId": 6151,
+        "name": "Perrone",
+        "role": "C"
+      },
+      {
+        "playerId": "975f7429-8320-4cf5-92a9-093eb9ce4c82",
+        "csvId": "5559",
+        "name": "Da Cunha",
+        "role": "C"
+      },
+      {
+        "playerId": "0e555a7f-5113-49d2-9bbd-0a138250968f",
+        "csvId": "6967",
+        "name": "Diao",
+        "role": "A"
+      },
+      {
+        "playerId": "b6e4d803-fb64-4bf4-9771-3673e4c4dc9a",
+        "csvId": "6875",
+        "name": "Paz N.",
+        "role": "C"
+      },
+      {
+        "playerId": "883a53f2-3f11-4cc7-bbcc-ec7d21a99f74",
+        "csvId": "7126",
+        "name": "Baturina",
+        "role": "C"
+      },
+      {
+        "playerId": "21aae13c-0a10-4bf2-aa9a-0a44c6cec6b2",
+        "csvId": "7017",
+        "name": "Douvikas",
+        "role": "A"
+      }
+    ],
+    "rig": [
+      {
+        "playerId": "975f7429-8320-4cf5-92a9-093eb9ce4c82",
+        "name": "Da Cunha",
+        "role": "C"
+      },
+      {
+        "playerId": "21aae13c-0a10-4bf2-aa9a-0a44c6cec6b2",
+        "name": "Douvikas",
+        "role": "A"
+      },
+      {
+        "playerId": "883a53f2-3f11-4cc7-bbcc-ec7d21a99f74",
+        "name": "Baturina",
+        "role": "C"
+      }
+    ],
+    "pun": [
+      {
+        "playerId": "b6e4d803-fb64-4bf4-9771-3673e4c4dc9a",
+        "name": "Paz N.",
+        "role": "C"
+      },
+      {
+        "playerId": "56f6449f-dda3-48cd-b535-9016b9ac7e65",
+        "name": "Milla",
+        "role": "C"
+      }
+    ],
+    "corner": [
+      {
+        "playerId": "b6e4d803-fb64-4bf4-9771-3673e4c4dc9a",
+        "name": "Paz N.",
+        "role": "C"
+      },
+      {
+        "playerId": "56f6449f-dda3-48cd-b535-9016b9ac7e65",
+        "name": "Milla",
+        "role": "C"
+      },
+      {
+        "playerId": "975f7429-8320-4cf5-92a9-093eb9ce4c82",
+        "name": "Da Cunha",
+        "role": "C"
+      }
+    ],
+    "ballottaggi": [
+      [
+        {
+          "playerId": "477d1d7c-8070-4188-87b0-04c710f57123",
+          "name": "Perrone",
+          "role": "C",
+          "perc": 51
+        },
+        {
+          "playerId": "56f6449f-dda3-48cd-b535-9016b9ac7e65",
+          "name": "Milla",
+          "role": "C",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "d0d30a5a-3355-45a8-ad09-a29513473dae",
+          "name": "Couto",
+          "role": "D",
+          "perc": 55
+        },
+        {
+          "playerId": "fc066d51-ae78-42c1-b910-6a315514861c",
+          "name": "Smolcic I.",
+          "role": "D",
+          "perc": 45
+        }
+      ],
+      [
+        {
+          "playerId": "4a7b3303-8034-4780-9253-42e14d253000",
+          "name": "Valle",
+          "role": "D",
+          "perc": 51
+        },
+        {
+          "playerId": "e0a55f90-4742-4082-9921-d9ab29b25e18",
+          "name": "Kaiki Bruno",
+          "role": "D",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "0e555a7f-5113-49d2-9bbd-0a138250968f",
+          "name": "Diao",
+          "role": "A",
+          "perc": 55
+        },
+        {
+          "playerId": "5812c91b-36cc-413d-bc47-84de4f6e758a",
+          "name": "Liberali",
+          "role": "C",
+          "perc": 45
+        }
+      ],
+      [
+        {
+          "playerId": "2e3fad35-5759-49b0-98ec-e53c93dd10a6",
+          "name": "Chalobah T.",
+          "role": "D",
+          "perc": 51
+        },
+        {
+          "playerId": "eac8b0ac-13f0-4df2-b79a-3cdd43e9d242",
+          "name": "Kempf",
+          "role": "D",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "05ed0add-6a0f-4ae8-aa97-eba61ba71d30",
+          "name": "Butez",
+          "role": "P",
+          "perc": 51
+        },
+        {
+          "playerId": "4861bf31-26b9-4827-9718-9a6787414277",
+          "name": "Sanchez Ro.",
+          "role": "P",
+          "perc": 49
+        }
+      ]
+    ],
+    "up": [
+      {
+        "playerId": "975f7429-8320-4cf5-92a9-093eb9ce4c82",
+        "name": "Da Cunha",
+        "points": [
+          "Duttile Tatticamente"
+        ]
+      },
+      {
+        "playerId": "883a53f2-3f11-4cc7-bbcc-ec7d21a99f74",
+        "name": "Baturina",
+        "points": [
+          "Utilizzato su più ruoli della trequarti",
+          "Cinico in fase di finalizzazione"
+        ]
+      }
+    ],
+    "down": [
+      {
+        "playerId": "e0a55f90-4742-4082-9921-d9ab29b25e18",
+        "name": "Kaiki Bruno",
+        "points": [
+          "Ruolo in cui Fabregas fa molto turnover"
+        ]
+      }
+    ],
+    "young": [
+      {
+        "playerId": "5812c91b-36cc-413d-bc47-84de4f6e758a",
+        "name": "Liberali",
+        "points": [
+          "Doti tecniche perfette per il gioco di Fabregas"
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "playerId": "0e555a7f-5113-49d2-9bbd-0a138250968f",
+        "name": "Diao",
+        "points": [
+          "Abile in fase di finalizzazione"
+        ]
+      }
+    ]
+  },
   "LEC": {
     "code": "LEC",
     "name": "Lecce",
@@ -4693,592 +5279,6 @@ export const SOS_TEAMS_DATA = {
       }
     ]
   },
-  "COM": {
-    "code": "COM",
-    "name": "Como",
-    "city": "Como",
-    "stadium": "Giuseppe Sinigaglia",
-    "primaryColor": "#0047ab",
-    "secondaryColor": "#ffffff",
-    "accentColor": "#002244",
-    "coach": "Cesc Fabregas",
-    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Fabregas.webp",
-    "defaultFormation": "4-2-3-1",
-    "module": "4-2-3-1",
-    "attackRating": 5.0,
-    "defenseRating": 4.5,
-    "comment": "Ha costruito il suo Como su un’identità chiara e ambiziosa, ispirata al calcio di posizione. Il suo sistema predilige un 4-2-3-1 con interscambi tra i trequartisti, ricerca costante della superiorità posizionale e una gestione paziente del ritmo. Gli esterni alti sono fondamentali nel fissare l'ampiezza e liberare spazio tra le linee, mentre la squadra cerca sempre di mantenere il controllo del pallone anche sotto pressione. Questo approccio, coraggioso e ben codificato, ha portato il Como a uno storico decimo posto in Serie A, sorprendendo per maturità e qualità. In ottica fantacalcio, attenzione ai profili tecnici: chi sa muoversi tra le linee e leggere il gioco può emergere come protagonista.",
-    "sosFantaComment": "Como da Champions, vuol dire più rotazioni nel consolidato 4-2-3-1 di Fabregas. In porta è arrivato Sanchez, prova a insidiare Butez: si giocano il posto, è una gerarchia da definire, parlerà il campo. A destra è arrivato Yan Couto e parte in pole su Smolcic, mentre a sinistra il ballottaggio è tra Valle e il nuovo arrivato Kaiki, in un vero testa a testa. In mediana di fatto sono in tre per due maglie: Perrone, Da Cunha e Milla verranno alternati da Fabregas. Baturina e Diao partono in pole sulle fasce, ma anche Rodriguez avrà molte occasioni. In attacco Douvikas ha iniziato alla grande la stagione, ma anche il nuovo arrivato Kean troverà tanto spazio.",
-    "keyPoints": [
-      {
-        "text": "Valorizzazione giovani",
-        "tone": "good"
-      },
-      {
-        "text": "Solidità difensiva",
-        "tone": "good"
-      },
-      {
-        "text": "Manovra fluida in fase offensiva",
-        "tone": "good"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "gk",
-        "tone": "good"
-      },
-      {
-        "role": "treq-center",
-        "tone": "good"
-      },
-      {
-        "role": "def-fullbacks",
-        "tone": "bad"
-      },
-      {
-        "role": "att-center",
-        "tone": "good"
-      }
-    ],
-    "starters": [
-      {
-        "playerId": "05ed0add-6a0f-4ae8-aa97-eba61ba71d30",
-        "csvId": "6966",
-        "name": "Butez",
-        "role": "P"
-      },
-      {
-        "playerId": "d0d30a5a-3355-45a8-ad09-a29513473dae",
-        "csvId": 6727,
-        "name": "Couto",
-        "role": "D"
-      },
-      {
-        "playerId": "4a7ed4dd-66d1-4837-9557-1e8148c21322",
-        "csvId": "6869",
-        "name": "Ramon",
-        "role": "D"
-      },
-      {
-        "playerId": "2e3fad35-5759-49b0-98ec-e53c93dd10a6",
-        "csvId": 5641,
-        "name": "Chalobah T.",
-        "role": "D"
-      },
-      {
-        "playerId": "4a7b3303-8034-4780-9253-42e14d253000",
-        "csvId": "6867",
-        "name": "Valle",
-        "role": "D"
-      },
-      {
-        "playerId": "56f6449f-dda3-48cd-b535-9016b9ac7e65",
-        "csvId": 7412,
-        "name": "Milla",
-        "role": "C"
-      },
-      {
-        "playerId": "975f7429-8320-4cf5-92a9-093eb9ce4c82",
-        "csvId": "5559",
-        "name": "Da Cunha",
-        "role": "C"
-      },
-      {
-        "playerId": "0e555a7f-5113-49d2-9bbd-0a138250968f",
-        "csvId": "6967",
-        "name": "Diao",
-        "role": "A"
-      },
-      {
-        "playerId": "b6e4d803-fb64-4bf4-9771-3673e4c4dc9a",
-        "csvId": "6875",
-        "name": "Paz N.",
-        "role": "C"
-      },
-      {
-        "playerId": "883a53f2-3f11-4cc7-bbcc-ec7d21a99f74",
-        "csvId": "7126",
-        "name": "Baturina",
-        "role": "C"
-      },
-      {
-        "playerId": "21aae13c-0a10-4bf2-aa9a-0a44c6cec6b2",
-        "csvId": "7017",
-        "name": "Douvikas",
-        "role": "A"
-      }
-    ],
-    "rig": [
-      {
-        "playerId": "975f7429-8320-4cf5-92a9-093eb9ce4c82",
-        "name": "Da Cunha",
-        "role": "C"
-      },
-      {
-        "playerId": "e2f65951-61bc-4469-bd01-9340d6a556b2",
-        "name": "Kean",
-        "role": "A"
-      },
-      {
-        "playerId": "21aae13c-0a10-4bf2-aa9a-0a44c6cec6b2",
-        "name": "Douvikas",
-        "role": "A"
-      }
-    ],
-    "pun": [
-      {
-        "playerId": "b6e4d803-fb64-4bf4-9771-3673e4c4dc9a",
-        "name": "Paz N.",
-        "role": "C"
-      },
-      {
-        "playerId": "56f6449f-dda3-48cd-b535-9016b9ac7e65",
-        "name": "Milla",
-        "role": "C"
-      }
-    ],
-    "corner": [
-      {
-        "playerId": "b6e4d803-fb64-4bf4-9771-3673e4c4dc9a",
-        "name": "Paz N.",
-        "role": "C"
-      },
-      {
-        "playerId": "56f6449f-dda3-48cd-b535-9016b9ac7e65",
-        "name": "Milla",
-        "role": "C"
-      },
-      {
-        "playerId": "975f7429-8320-4cf5-92a9-093eb9ce4c82",
-        "name": "Da Cunha",
-        "role": "C"
-      }
-    ],
-    "ballottaggi": [
-      [
-        {
-          "playerId": "56f6449f-dda3-48cd-b535-9016b9ac7e65",
-          "name": "Milla",
-          "role": "C",
-          "perc": 51
-        },
-        {
-          "playerId": "477d1d7c-8070-4188-87b0-04c710f57123",
-          "name": "Perrone",
-          "role": "C",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "d0d30a5a-3355-45a8-ad09-a29513473dae",
-          "name": "Couto",
-          "role": "D",
-          "perc": 55
-        },
-        {
-          "playerId": "fc066d51-ae78-42c1-b910-6a315514861c",
-          "name": "Smolcic I.",
-          "role": "D",
-          "perc": 45
-        }
-      ],
-      [
-        {
-          "playerId": "4a7b3303-8034-4780-9253-42e14d253000",
-          "name": "Valle",
-          "role": "D",
-          "perc": 55
-        },
-        {
-          "playerId": "e0a55f90-4742-4082-9921-d9ab29b25e18",
-          "name": "Kaiki Bruno",
-          "role": "D",
-          "perc": 45
-        }
-      ],
-      [
-        {
-          "playerId": "975f7429-8320-4cf5-92a9-093eb9ce4c82",
-          "name": "Da Cunha",
-          "role": "C",
-          "perc": 51
-        },
-        {
-          "playerId": "477d1d7c-8070-4188-87b0-04c710f57123",
-          "name": "Perrone",
-          "role": "C",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "21aae13c-0a10-4bf2-aa9a-0a44c6cec6b2",
-          "name": "Douvikas",
-          "role": "A",
-          "perc": 51
-        },
-        {
-          "playerId": "e2f65951-61bc-4469-bd01-9340d6a556b2",
-          "name": "Kean",
-          "role": "A",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "05ed0add-6a0f-4ae8-aa97-eba61ba71d30",
-          "name": "Butez",
-          "role": "P",
-          "perc": 51
-        },
-        {
-          "playerId": "4861bf31-26b9-4827-9718-9a6787414277",
-          "name": "Sanchez Ro.",
-          "role": "P",
-          "perc": 49
-        }
-      ]
-    ],
-    "up": [
-      {
-        "playerId": "975f7429-8320-4cf5-92a9-093eb9ce4c82",
-        "name": "Da Cunha",
-        "points": [
-          "Duttile Tatticamente"
-        ]
-      },
-      {
-        "playerId": "883a53f2-3f11-4cc7-bbcc-ec7d21a99f74",
-        "name": "Baturina",
-        "points": [
-          "Utilizzato su più ruoli della trequarti",
-          "Cinico in fase di finalizzazione"
-        ]
-      }
-    ],
-    "down": [
-      {
-        "playerId": "e0a55f90-4742-4082-9921-d9ab29b25e18",
-        "name": "Kaiki Bruno",
-        "points": [
-          "Ruolo in cui Fabregas fa molto turnover"
-        ]
-      }
-    ],
-    "young": [
-      {
-        "playerId": "5812c91b-36cc-413d-bc47-84de4f6e758a",
-        "name": "Liberali",
-        "points": [
-          "Doti tecniche perfette per il gioco di Fabregas"
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "playerId": "0e555a7f-5113-49d2-9bbd-0a138250968f",
-        "name": "Diao",
-        "points": [
-          "Abile in fase di finalizzazione"
-        ]
-      }
-    ]
-  },
-  "como": {
-    "code": "COM",
-    "name": "Como",
-    "city": "Como",
-    "stadium": "Giuseppe Sinigaglia",
-    "primaryColor": "#0047ab",
-    "secondaryColor": "#ffffff",
-    "accentColor": "#002244",
-    "coach": "Cesc Fabregas",
-    "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Fabregas.webp",
-    "defaultFormation": "4-2-3-1",
-    "module": "4-2-3-1",
-    "attackRating": 5.0,
-    "defenseRating": 4.5,
-    "comment": "Ha costruito il suo Como su un’identità chiara e ambiziosa, ispirata al calcio di posizione. Il suo sistema predilige un 4-2-3-1 con interscambi tra i trequartisti, ricerca costante della superiorità posizionale e una gestione paziente del ritmo. Gli esterni alti sono fondamentali nel fissare l'ampiezza e liberare spazio tra le linee, mentre la squadra cerca sempre di mantenere il controllo del pallone anche sotto pressione. Questo approccio, coraggioso e ben codificato, ha portato il Como a uno storico decimo posto in Serie A, sorprendendo per maturità e qualità. In ottica fantacalcio, attenzione ai profili tecnici: chi sa muoversi tra le linee e leggere il gioco può emergere come protagonista.",
-    "sosFantaComment": "Como da Champions, vuol dire più rotazioni nel consolidato 4-2-3-1 di Fabregas. In porta è arrivato Sanchez, prova a insidiare Butez: si giocano il posto, è una gerarchia da definire, parlerà il campo. A destra è arrivato Yan Couto e parte in pole su Smolcic, mentre a sinistra il ballottaggio è tra Valle e il nuovo arrivato Kaiki, in un vero testa a testa. In mediana di fatto sono in tre per due maglie: Perrone, Da Cunha e Milla verranno alternati da Fabregas. Baturina e Diao partono in pole sulle fasce, ma anche Rodriguez avrà molte occasioni. In attacco Douvikas ha iniziato alla grande la stagione, ma anche il nuovo arrivato Kean troverà tanto spazio.",
-    "keyPoints": [
-      {
-        "text": "Valorizzazione giovani",
-        "tone": "good"
-      },
-      {
-        "text": "Solidità difensiva",
-        "tone": "good"
-      },
-      {
-        "text": "Manovra fluida in fase offensiva",
-        "tone": "good"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "gk",
-        "tone": "good"
-      },
-      {
-        "role": "treq-center",
-        "tone": "good"
-      },
-      {
-        "role": "def-fullbacks",
-        "tone": "bad"
-      },
-      {
-        "role": "att-center",
-        "tone": "good"
-      }
-    ],
-    "starters": [
-      {
-        "playerId": "05ed0add-6a0f-4ae8-aa97-eba61ba71d30",
-        "csvId": "6966",
-        "name": "Butez",
-        "role": "P"
-      },
-      {
-        "playerId": "d0d30a5a-3355-45a8-ad09-a29513473dae",
-        "csvId": 6727,
-        "name": "Couto",
-        "role": "D"
-      },
-      {
-        "playerId": "4a7ed4dd-66d1-4837-9557-1e8148c21322",
-        "csvId": "6869",
-        "name": "Ramon",
-        "role": "D"
-      },
-      {
-        "playerId": "2e3fad35-5759-49b0-98ec-e53c93dd10a6",
-        "csvId": 5641,
-        "name": "Chalobah T.",
-        "role": "D"
-      },
-      {
-        "playerId": "4a7b3303-8034-4780-9253-42e14d253000",
-        "csvId": "6867",
-        "name": "Valle",
-        "role": "D"
-      },
-      {
-        "playerId": "56f6449f-dda3-48cd-b535-9016b9ac7e65",
-        "csvId": 7412,
-        "name": "Milla",
-        "role": "C"
-      },
-      {
-        "playerId": "975f7429-8320-4cf5-92a9-093eb9ce4c82",
-        "csvId": "5559",
-        "name": "Da Cunha",
-        "role": "C"
-      },
-      {
-        "playerId": "0e555a7f-5113-49d2-9bbd-0a138250968f",
-        "csvId": "6967",
-        "name": "Diao",
-        "role": "A"
-      },
-      {
-        "playerId": "b6e4d803-fb64-4bf4-9771-3673e4c4dc9a",
-        "csvId": "6875",
-        "name": "Paz N.",
-        "role": "C"
-      },
-      {
-        "playerId": "883a53f2-3f11-4cc7-bbcc-ec7d21a99f74",
-        "csvId": "7126",
-        "name": "Baturina",
-        "role": "C"
-      },
-      {
-        "playerId": "21aae13c-0a10-4bf2-aa9a-0a44c6cec6b2",
-        "csvId": "7017",
-        "name": "Douvikas",
-        "role": "A"
-      }
-    ],
-    "rig": [
-      {
-        "playerId": "975f7429-8320-4cf5-92a9-093eb9ce4c82",
-        "name": "Da Cunha",
-        "role": "C"
-      },
-      {
-        "playerId": "e2f65951-61bc-4469-bd01-9340d6a556b2",
-        "name": "Kean",
-        "role": "A"
-      },
-      {
-        "playerId": "21aae13c-0a10-4bf2-aa9a-0a44c6cec6b2",
-        "name": "Douvikas",
-        "role": "A"
-      }
-    ],
-    "pun": [
-      {
-        "playerId": "b6e4d803-fb64-4bf4-9771-3673e4c4dc9a",
-        "name": "Paz N.",
-        "role": "C"
-      },
-      {
-        "playerId": "56f6449f-dda3-48cd-b535-9016b9ac7e65",
-        "name": "Milla",
-        "role": "C"
-      }
-    ],
-    "corner": [
-      {
-        "playerId": "b6e4d803-fb64-4bf4-9771-3673e4c4dc9a",
-        "name": "Paz N.",
-        "role": "C"
-      },
-      {
-        "playerId": "56f6449f-dda3-48cd-b535-9016b9ac7e65",
-        "name": "Milla",
-        "role": "C"
-      },
-      {
-        "playerId": "975f7429-8320-4cf5-92a9-093eb9ce4c82",
-        "name": "Da Cunha",
-        "role": "C"
-      }
-    ],
-    "ballottaggi": [
-      [
-        {
-          "playerId": "56f6449f-dda3-48cd-b535-9016b9ac7e65",
-          "name": "Milla",
-          "role": "C",
-          "perc": 51
-        },
-        {
-          "playerId": "477d1d7c-8070-4188-87b0-04c710f57123",
-          "name": "Perrone",
-          "role": "C",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "d0d30a5a-3355-45a8-ad09-a29513473dae",
-          "name": "Couto",
-          "role": "D",
-          "perc": 55
-        },
-        {
-          "playerId": "fc066d51-ae78-42c1-b910-6a315514861c",
-          "name": "Smolcic I.",
-          "role": "D",
-          "perc": 45
-        }
-      ],
-      [
-        {
-          "playerId": "4a7b3303-8034-4780-9253-42e14d253000",
-          "name": "Valle",
-          "role": "D",
-          "perc": 55
-        },
-        {
-          "playerId": "e0a55f90-4742-4082-9921-d9ab29b25e18",
-          "name": "Kaiki Bruno",
-          "role": "D",
-          "perc": 45
-        }
-      ],
-      [
-        {
-          "playerId": "975f7429-8320-4cf5-92a9-093eb9ce4c82",
-          "name": "Da Cunha",
-          "role": "C",
-          "perc": 51
-        },
-        {
-          "playerId": "477d1d7c-8070-4188-87b0-04c710f57123",
-          "name": "Perrone",
-          "role": "C",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "21aae13c-0a10-4bf2-aa9a-0a44c6cec6b2",
-          "name": "Douvikas",
-          "role": "A",
-          "perc": 51
-        },
-        {
-          "playerId": "e2f65951-61bc-4469-bd01-9340d6a556b2",
-          "name": "Kean",
-          "role": "A",
-          "perc": 49
-        }
-      ],
-      [
-        {
-          "playerId": "05ed0add-6a0f-4ae8-aa97-eba61ba71d30",
-          "name": "Butez",
-          "role": "P",
-          "perc": 51
-        },
-        {
-          "playerId": "4861bf31-26b9-4827-9718-9a6787414277",
-          "name": "Sanchez Ro.",
-          "role": "P",
-          "perc": 49
-        }
-      ]
-    ],
-    "up": [
-      {
-        "playerId": "975f7429-8320-4cf5-92a9-093eb9ce4c82",
-        "name": "Da Cunha",
-        "points": [
-          "Duttile Tatticamente"
-        ]
-      },
-      {
-        "playerId": "883a53f2-3f11-4cc7-bbcc-ec7d21a99f74",
-        "name": "Baturina",
-        "points": [
-          "Utilizzato su più ruoli della trequarti",
-          "Cinico in fase di finalizzazione"
-        ]
-      }
-    ],
-    "down": [
-      {
-        "playerId": "e0a55f90-4742-4082-9921-d9ab29b25e18",
-        "name": "Kaiki Bruno",
-        "points": [
-          "Ruolo in cui Fabregas fa molto turnover"
-        ]
-      }
-    ],
-    "young": [
-      {
-        "playerId": "5812c91b-36cc-413d-bc47-84de4f6e758a",
-        "name": "Liberali",
-        "points": [
-          "Doti tecniche perfette per il gioco di Fabregas"
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "playerId": "0e555a7f-5113-49d2-9bbd-0a138250968f",
-        "name": "Diao",
-        "points": [
-          "Abile in fase di finalizzazione"
-        ]
-      }
-    ]
-  },
   "JUV": {
     "code": "JUV",
     "name": "Juventus",
@@ -6379,9 +6379,9 @@ export const SOS_TEAMS_DATA = {
         "role": "D"
       },
       {
-        "playerId": "1a88a4d7-81a0-42c2-911f-33ffef2551c6",
-        "csvId": "4210",
-        "name": "Mina",
+        "playerId": "c1ccf92c-b87c-4abd-9e4a-9c38375c920d",
+        "csvId": 7532,
+        "name": "Kofler",
         "role": "D"
       },
       {
@@ -6409,9 +6409,9 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
-        "playerId": "d11d503a-b278-4e14-b201-b7862e1f955d",
-        "csvId": 1871,
-        "name": "Deiola",
+        "playerId": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
+        "csvId": 6010,
+        "name": "Fazzini",
         "role": "C"
       },
       {
@@ -6496,15 +6496,29 @@ export const SOS_TEAMS_DATA = {
       ],
       [
         {
-          "playerId": "d11d503a-b278-4e14-b201-b7862e1f955d",
-          "name": "Deiola",
+          "playerId": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
+          "name": "Fazzini",
           "role": "C",
           "perc": 51
         },
         {
-          "playerId": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
-          "name": "Fazzini",
+          "playerId": "28753317-40c7-4cad-be90-7ac0bf090819",
+          "name": "Massolin",
           "role": "C",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "c1ccf92c-b87c-4abd-9e4a-9c38375c920d",
+          "name": "Kofler",
+          "role": "D",
+          "perc": 51
+        },
+        {
+          "playerId": "1a88a4d7-81a0-42c2-911f-33ffef2551c6",
+          "name": "Mina",
+          "role": "D",
           "perc": 49
         }
       ]
@@ -6609,9 +6623,9 @@ export const SOS_TEAMS_DATA = {
         "role": "D"
       },
       {
-        "playerId": "1a88a4d7-81a0-42c2-911f-33ffef2551c6",
-        "csvId": "4210",
-        "name": "Mina",
+        "playerId": "c1ccf92c-b87c-4abd-9e4a-9c38375c920d",
+        "csvId": 7532,
+        "name": "Kofler",
         "role": "D"
       },
       {
@@ -6639,9 +6653,9 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
-        "playerId": "d11d503a-b278-4e14-b201-b7862e1f955d",
-        "csvId": 1871,
-        "name": "Deiola",
+        "playerId": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
+        "csvId": 6010,
+        "name": "Fazzini",
         "role": "C"
       },
       {
@@ -6726,15 +6740,29 @@ export const SOS_TEAMS_DATA = {
       ],
       [
         {
-          "playerId": "d11d503a-b278-4e14-b201-b7862e1f955d",
-          "name": "Deiola",
+          "playerId": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
+          "name": "Fazzini",
           "role": "C",
           "perc": 51
         },
         {
-          "playerId": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
-          "name": "Fazzini",
+          "playerId": "28753317-40c7-4cad-be90-7ac0bf090819",
+          "name": "Massolin",
           "role": "C",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "c1ccf92c-b87c-4abd-9e4a-9c38375c920d",
+          "name": "Kofler",
+          "role": "D",
+          "perc": 51
+        },
+        {
+          "playerId": "1a88a4d7-81a0-42c2-911f-33ffef2551c6",
+          "name": "Mina",
+          "role": "D",
           "perc": 49
         }
       ]

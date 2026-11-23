@@ -1418,6 +1418,264 @@
     "updatedAt": "2026-11-04T14:21:42.535Z"
   },
   {
+    "team": "COM",
+    "season": "s_26_27",
+    "starters": [
+      {
+        "player_id": "05ed0add-6a0f-4ae8-aa97-eba61ba71d30",
+        "id": "6966"
+      },
+      {
+        "player_id": "d0d30a5a-3355-45a8-ad09-a29513473dae",
+        "id": 6727
+      },
+      {
+        "player_id": "4a7ed4dd-66d1-4837-9557-1e8148c21322",
+        "id": "6869"
+      },
+      {
+        "player_id": "2e3fad35-5759-49b0-98ec-e53c93dd10a6",
+        "id": 5641
+      },
+      {
+        "player_id": "4a7b3303-8034-4780-9253-42e14d253000",
+        "id": "6867"
+      },
+      {
+        "player_id": "477d1d7c-8070-4188-87b0-04c710f57123",
+        "id": 6151
+      },
+      {
+        "player_id": "975f7429-8320-4cf5-92a9-093eb9ce4c82",
+        "id": "5559"
+      },
+      {
+        "player_id": "0e555a7f-5113-49d2-9bbd-0a138250968f",
+        "id": "6967"
+      },
+      {
+        "player_id": "b6e4d803-fb64-4bf4-9771-3673e4c4dc9a",
+        "id": "6875"
+      },
+      {
+        "player_id": "883a53f2-3f11-4cc7-bbcc-ec7d21a99f74",
+        "id": "7126"
+      },
+      {
+        "player_id": "21aae13c-0a10-4bf2-aa9a-0a44c6cec6b2",
+        "id": "7017"
+      }
+    ],
+    "rig": [
+      {
+        "player_id": "975f7429-8320-4cf5-92a9-093eb9ce4c82"
+      },
+      {
+        "player_id": "21aae13c-0a10-4bf2-aa9a-0a44c6cec6b2"
+      },
+      {
+        "player_id": "883a53f2-3f11-4cc7-bbcc-ec7d21a99f74"
+      }
+    ],
+    "pun": [
+      {
+        "player_id": "b6e4d803-fb64-4bf4-9771-3673e4c4dc9a"
+      },
+      {
+        "player_id": "56f6449f-dda3-48cd-b535-9016b9ac7e65"
+      }
+    ],
+    "corner": [
+      {
+        "player_id": "b6e4d803-fb64-4bf4-9771-3673e4c4dc9a"
+      },
+      {
+        "player_id": "56f6449f-dda3-48cd-b535-9016b9ac7e65"
+      },
+      {
+        "player_id": "975f7429-8320-4cf5-92a9-093eb9ce4c82"
+      }
+    ],
+    "module": "4-2-3-1",
+    "coach": "Cesc Fabregas",
+    "attack": 5,
+    "defense": 4.5,
+    "comment": "Ha costruito il suo Como su un’identità chiara e ambiziosa, ispirata al calcio di posizione. Il suo sistema predilige un 4-2-3-1 con interscambi tra i trequartisti, ricerca costante della superiorità posizionale e una gestione paziente del ritmo. Gli esterni alti sono fondamentali nel fissare l'ampiezza e liberare spazio tra le linee, mentre la squadra cerca sempre di mantenere il controllo del pallone anche sotto pressione. Questo approccio, coraggioso e ben codificato, ha portato il Como a uno storico decimo posto in Serie A, sorprendendo per maturità e qualità. In ottica fantacalcio, attenzione ai profili tecnici: chi sa muoversi tra le linee e leggere il gioco può emergere come protagonista.",
+    "sosFantaComment": "Como da Champions, vuol dire più rotazioni nel consolidato 4-2-3-1 di Fabregas. In porta è arrivato Sanchez, prova a insidiare Butez: si giocano il posto, è una gerarchia da definire, parlerà il campo. A destra è arrivato Yan Couto e parte in pole su Smolcic, mentre a sinistra il ballottaggio è tra Valle e il nuovo arrivato Kaiki, in un vero testa a testa. In mediana di fatto sono in tre per due maglie: Perrone, Da Cunha e Milla verranno alternati da Fabregas. Baturina e Diao partono in pole sulle fasce, ma anche Rodriguez avrà molte occasioni. In attacco Douvikas ha iniziato alla grande la stagione, ma anche il nuovo arrivato Kean troverà tanto spazio.",
+    "created_at": "2026-07-21T12:27:26.063Z",
+    "updated_at": "2026-11-22T17:41:14.496Z",
+    "up": [
+      {
+        "player_id": "975f7429-8320-4cf5-92a9-093eb9ce4c82",
+        "points": [
+          {
+            "tone": "good",
+            "text": "Duttile Tatticamente"
+          }
+        ]
+      },
+      {
+        "player_id": "883a53f2-3f11-4cc7-bbcc-ec7d21a99f74",
+        "points": [
+          {
+            "tone": "good",
+            "text": "Utilizzato su più ruoli della trequarti"
+          },
+          {
+            "tone": "good",
+            "text": "Cinico in fase di finalizzazione"
+          }
+        ]
+      }
+    ],
+    "down": [
+      {
+        "player_id": "e0a55f90-4742-4082-9921-d9ab29b25e18",
+        "points": [
+          {
+            "text": "Ruolo in cui Fabregas fa molto turnover",
+            "tone": "bad"
+          }
+        ]
+      }
+    ],
+    "young": [
+      {
+        "player_id": "5812c91b-36cc-413d-bc47-84de4f6e758a",
+        "points": [
+          {
+            "text": "Doti tecniche perfette per il gioco di Fabregas",
+            "tone": "good"
+          }
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "player_id": "0e555a7f-5113-49d2-9bbd-0a138250968f",
+        "points": [
+          {
+            "text": "Abile in fase di finalizzazione",
+            "tone": "good"
+          }
+        ]
+      }
+    ],
+    "ballottaggi": [
+      {
+        "players": [
+          {
+            "player_id": "477d1d7c-8070-4188-87b0-04c710f57123",
+            "perc": 51
+          },
+          {
+            "player_id": "56f6449f-dda3-48cd-b535-9016b9ac7e65",
+            "perc": 49
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "d0d30a5a-3355-45a8-ad09-a29513473dae",
+            "perc": 55
+          },
+          {
+            "player_id": "fc066d51-ae78-42c1-b910-6a315514861c",
+            "perc": 45
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "4a7b3303-8034-4780-9253-42e14d253000",
+            "perc": 51
+          },
+          {
+            "player_id": "e0a55f90-4742-4082-9921-d9ab29b25e18",
+            "perc": 49
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "0e555a7f-5113-49d2-9bbd-0a138250968f",
+            "perc": 55
+          },
+          {
+            "player_id": "5812c91b-36cc-413d-bc47-84de4f6e758a",
+            "perc": 45
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "2e3fad35-5759-49b0-98ec-e53c93dd10a6",
+            "perc": 51
+          },
+          {
+            "player_id": "eac8b0ac-13f0-4df2-b79a-3cdd43e9d242",
+            "perc": 49
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "05ed0add-6a0f-4ae8-aa97-eba61ba71d30",
+            "perc": 51
+          },
+          {
+            "player_id": "4861bf31-26b9-4827-9718-9a6787414277",
+            "perc": 49
+          }
+        ]
+      }
+    ],
+    "coachRating": {
+      "attack": 5,
+      "defense": 4.5,
+      "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Fabregas.webp"
+    },
+    "keyPoints": [
+      {
+        "text": "Valorizzazione giovani",
+        "tone": "good"
+      },
+      {
+        "text": "Solidità difensiva",
+        "tone": "good"
+      },
+      {
+        "text": "Manovra fluida in fase offensiva",
+        "tone": "good"
+      }
+    ],
+    "keyRoles": [
+      {
+        "role": "gk",
+        "tone": "good"
+      },
+      {
+        "role": "treq-center",
+        "tone": "good"
+      },
+      {
+        "role": "def-fullbacks",
+        "tone": "bad"
+      },
+      {
+        "role": "att-center",
+        "tone": "good"
+      }
+    ],
+    "createdAt": "2026-07-21T12:27:26.063Z",
+    "updatedAt": "2026-11-22T17:41:14.496Z"
+  },
+  {
     "team": "LEC",
     "season": "s_26_27",
     "starters": [
@@ -2108,264 +2366,6 @@
     "updatedAt": "2026-09-22T10:39:33.328Z"
   },
   {
-    "team": "COM",
-    "season": "s_26_27",
-    "starters": [
-      {
-        "player_id": "05ed0add-6a0f-4ae8-aa97-eba61ba71d30",
-        "id": "6966"
-      },
-      {
-        "player_id": "d0d30a5a-3355-45a8-ad09-a29513473dae",
-        "id": 6727
-      },
-      {
-        "player_id": "4a7ed4dd-66d1-4837-9557-1e8148c21322",
-        "id": "6869"
-      },
-      {
-        "player_id": "2e3fad35-5759-49b0-98ec-e53c93dd10a6",
-        "id": 5641
-      },
-      {
-        "player_id": "4a7b3303-8034-4780-9253-42e14d253000",
-        "id": "6867"
-      },
-      {
-        "player_id": "56f6449f-dda3-48cd-b535-9016b9ac7e65",
-        "id": 7412
-      },
-      {
-        "player_id": "975f7429-8320-4cf5-92a9-093eb9ce4c82",
-        "id": "5559"
-      },
-      {
-        "player_id": "0e555a7f-5113-49d2-9bbd-0a138250968f",
-        "id": "6967"
-      },
-      {
-        "player_id": "b6e4d803-fb64-4bf4-9771-3673e4c4dc9a",
-        "id": "6875"
-      },
-      {
-        "player_id": "883a53f2-3f11-4cc7-bbcc-ec7d21a99f74",
-        "id": "7126"
-      },
-      {
-        "player_id": "21aae13c-0a10-4bf2-aa9a-0a44c6cec6b2",
-        "id": "7017"
-      }
-    ],
-    "rig": [
-      {
-        "player_id": "975f7429-8320-4cf5-92a9-093eb9ce4c82"
-      },
-      {
-        "player_id": "e2f65951-61bc-4469-bd01-9340d6a556b2"
-      },
-      {
-        "player_id": "21aae13c-0a10-4bf2-aa9a-0a44c6cec6b2"
-      }
-    ],
-    "pun": [
-      {
-        "player_id": "b6e4d803-fb64-4bf4-9771-3673e4c4dc9a"
-      },
-      {
-        "player_id": "56f6449f-dda3-48cd-b535-9016b9ac7e65"
-      }
-    ],
-    "corner": [
-      {
-        "player_id": "b6e4d803-fb64-4bf4-9771-3673e4c4dc9a"
-      },
-      {
-        "player_id": "56f6449f-dda3-48cd-b535-9016b9ac7e65"
-      },
-      {
-        "player_id": "975f7429-8320-4cf5-92a9-093eb9ce4c82"
-      }
-    ],
-    "module": "4-2-3-1",
-    "coach": "Cesc Fabregas",
-    "attack": 5,
-    "defense": 4.5,
-    "comment": "Ha costruito il suo Como su un’identità chiara e ambiziosa, ispirata al calcio di posizione. Il suo sistema predilige un 4-2-3-1 con interscambi tra i trequartisti, ricerca costante della superiorità posizionale e una gestione paziente del ritmo. Gli esterni alti sono fondamentali nel fissare l'ampiezza e liberare spazio tra le linee, mentre la squadra cerca sempre di mantenere il controllo del pallone anche sotto pressione. Questo approccio, coraggioso e ben codificato, ha portato il Como a uno storico decimo posto in Serie A, sorprendendo per maturità e qualità. In ottica fantacalcio, attenzione ai profili tecnici: chi sa muoversi tra le linee e leggere il gioco può emergere come protagonista.",
-    "sosFantaComment": "Como da Champions, vuol dire più rotazioni nel consolidato 4-2-3-1 di Fabregas. In porta è arrivato Sanchez, prova a insidiare Butez: si giocano il posto, è una gerarchia da definire, parlerà il campo. A destra è arrivato Yan Couto e parte in pole su Smolcic, mentre a sinistra il ballottaggio è tra Valle e il nuovo arrivato Kaiki, in un vero testa a testa. In mediana di fatto sono in tre per due maglie: Perrone, Da Cunha e Milla verranno alternati da Fabregas. Baturina e Diao partono in pole sulle fasce, ma anche Rodriguez avrà molte occasioni. In attacco Douvikas ha iniziato alla grande la stagione, ma anche il nuovo arrivato Kean troverà tanto spazio.",
-    "created_at": "2026-07-21T12:27:26.063Z",
-    "updated_at": "2026-09-22T10:27:53.719Z",
-    "up": [
-      {
-        "player_id": "975f7429-8320-4cf5-92a9-093eb9ce4c82",
-        "points": [
-          {
-            "tone": "good",
-            "text": "Duttile Tatticamente"
-          }
-        ]
-      },
-      {
-        "player_id": "883a53f2-3f11-4cc7-bbcc-ec7d21a99f74",
-        "points": [
-          {
-            "tone": "good",
-            "text": "Utilizzato su più ruoli della trequarti"
-          },
-          {
-            "tone": "good",
-            "text": "Cinico in fase di finalizzazione"
-          }
-        ]
-      }
-    ],
-    "down": [
-      {
-        "player_id": "e0a55f90-4742-4082-9921-d9ab29b25e18",
-        "points": [
-          {
-            "text": "Ruolo in cui Fabregas fa molto turnover",
-            "tone": "bad"
-          }
-        ]
-      }
-    ],
-    "young": [
-      {
-        "player_id": "5812c91b-36cc-413d-bc47-84de4f6e758a",
-        "points": [
-          {
-            "text": "Doti tecniche perfette per il gioco di Fabregas",
-            "tone": "good"
-          }
-        ]
-      }
-    ],
-    "hidden": [
-      {
-        "player_id": "0e555a7f-5113-49d2-9bbd-0a138250968f",
-        "points": [
-          {
-            "text": "Abile in fase di finalizzazione",
-            "tone": "good"
-          }
-        ]
-      }
-    ],
-    "ballottaggi": [
-      {
-        "players": [
-          {
-            "player_id": "56f6449f-dda3-48cd-b535-9016b9ac7e65",
-            "perc": 51
-          },
-          {
-            "player_id": "477d1d7c-8070-4188-87b0-04c710f57123",
-            "perc": 49
-          }
-        ]
-      },
-      {
-        "players": [
-          {
-            "player_id": "d0d30a5a-3355-45a8-ad09-a29513473dae",
-            "perc": 55
-          },
-          {
-            "player_id": "fc066d51-ae78-42c1-b910-6a315514861c",
-            "perc": 45
-          }
-        ]
-      },
-      {
-        "players": [
-          {
-            "player_id": "4a7b3303-8034-4780-9253-42e14d253000",
-            "perc": 55
-          },
-          {
-            "player_id": "e0a55f90-4742-4082-9921-d9ab29b25e18",
-            "perc": 45
-          }
-        ]
-      },
-      {
-        "players": [
-          {
-            "player_id": "975f7429-8320-4cf5-92a9-093eb9ce4c82",
-            "perc": 51
-          },
-          {
-            "player_id": "477d1d7c-8070-4188-87b0-04c710f57123",
-            "perc": 49
-          }
-        ]
-      },
-      {
-        "players": [
-          {
-            "player_id": "21aae13c-0a10-4bf2-aa9a-0a44c6cec6b2",
-            "perc": 51
-          },
-          {
-            "player_id": "e2f65951-61bc-4469-bd01-9340d6a556b2",
-            "perc": 49
-          }
-        ]
-      },
-      {
-        "players": [
-          {
-            "player_id": "05ed0add-6a0f-4ae8-aa97-eba61ba71d30",
-            "perc": 51
-          },
-          {
-            "player_id": "4861bf31-26b9-4827-9718-9a6787414277",
-            "perc": 49
-          }
-        ]
-      }
-    ],
-    "coachRating": {
-      "attack": 5,
-      "defense": 4.5,
-      "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/Fabregas.webp"
-    },
-    "keyPoints": [
-      {
-        "text": "Valorizzazione giovani",
-        "tone": "good"
-      },
-      {
-        "text": "Solidità difensiva",
-        "tone": "good"
-      },
-      {
-        "text": "Manovra fluida in fase offensiva",
-        "tone": "good"
-      }
-    ],
-    "keyRoles": [
-      {
-        "role": "gk",
-        "tone": "good"
-      },
-      {
-        "role": "treq-center",
-        "tone": "good"
-      },
-      {
-        "role": "def-fullbacks",
-        "tone": "bad"
-      },
-      {
-        "role": "att-center",
-        "tone": "good"
-      }
-    ],
-    "createdAt": "2026-07-21T12:27:26.063Z",
-    "updatedAt": "2026-09-22T10:27:53.719Z"
-  },
-  {
     "team": "JUV",
     "season": "s_26_27",
     "starters": [
@@ -2847,8 +2847,8 @@
         "id": "7274"
       },
       {
-        "player_id": "1a88a4d7-81a0-42c2-911f-33ffef2551c6",
-        "id": "4210"
+        "player_id": "c1ccf92c-b87c-4abd-9e4a-9c38375c920d",
+        "id": 7532
       },
       {
         "player_id": "ce5b19a3-93bc-4d98-b799-c466274df41a",
@@ -2867,8 +2867,8 @@
         "id": 4260
       },
       {
-        "player_id": "d11d503a-b278-4e14-b201-b7862e1f955d",
-        "id": 1871
+        "player_id": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
+        "id": 6010
       },
       {
         "player_id": "4d65afcd-dc9b-4804-ac3e-1fd5d688c48c",
@@ -2920,7 +2920,7 @@
     "comment": "Promosso dopo l’ottimo lavoro svolto con la Primavera del Cagliari. La società ha scelto di puntare su un tecnico che conosce bene l’ambiente e che ha dimostrato di saper valorizzare i giovani, in linea con la nuova filosofia del club. Pisacane predilige un modulo con la difesa a 4  con grande attenzione all’organizzazione difensiva. Non è escluso, però, che in alcune partite possa optare per una linea a 3. Gli esterni difensivi avranno un ruolo chiave: dovranno garantire equilibrio tra copertura e spinta, supportando sia i centrali che il reparto offensivo. ",
     "sosFantaComment": "Grande inizio di stagione per il Cagliari di Pisacane. Zé Pedro o il nuovo arrivato Sugawara nel ruolo di terzino destro. Ha convinto Deiola da difensore: prova a insidiare Mina e si giocano il posto, a maggior ragione visti i svariati problemi fisici del colombiano. Winks e Romano sono arrivati per giocare in mediana, ma anche Fazzini: o mezzala o anche più avanzato, da trequartista/ala. Mendy ha convinto finora: è in pole sui nuovi arrivati Kevin Carlos e Nzola.",
     "created_at": "2026-07-21T13:13:06.733Z",
-    "updated_at": "2026-11-20T11:16:26.548Z",
+    "updated_at": "2026-11-22T16:14:51.965Z",
     "up": [
       {
         "player_id": "c9566c48-86e0-42ff-8820-d01b0d55efd7",
@@ -2998,11 +2998,23 @@
       {
         "players": [
           {
-            "player_id": "d11d503a-b278-4e14-b201-b7862e1f955d",
+            "player_id": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
             "perc": 51
           },
           {
-            "player_id": "b5b204ae-aa93-48b4-a220-73953eb4aa27",
+            "player_id": "28753317-40c7-4cad-be90-7ac0bf090819",
+            "perc": 49
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "c1ccf92c-b87c-4abd-9e4a-9c38375c920d",
+            "perc": 51
+          },
+          {
+            "player_id": "1a88a4d7-81a0-42c2-911f-33ffef2551c6",
             "perc": 49
           }
         ]
@@ -3038,7 +3050,7 @@
       }
     ],
     "createdAt": "2026-07-21T13:13:06.733Z",
-    "updatedAt": "2026-11-20T11:16:26.548Z"
+    "updatedAt": "2026-11-22T16:14:51.965Z"
   },
   {
     "team": "MON",
