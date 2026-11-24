@@ -2160,8 +2160,8 @@
         "id": 6020
       },
       {
-        "player_id": "3d49b936-1e2d-4daa-9b4c-5da87824531d",
-        "id": 5946
+        "player_id": "965c9759-e219-4f4d-a30c-18a8db5cc2b8",
+        "id": 2857
       },
       {
         "player_id": "a694ffa3-522e-4fb2-bbb0-074554dcec12",
@@ -2172,12 +2172,12 @@
         "id": 5823
       },
       {
-        "player_id": "16bd57cd-1af6-42ea-abfd-23a1051c73c1",
-        "id": 7600
+        "player_id": "05a6d08b-b086-46f1-82ee-bdd2ca64ae31",
+        "id": 4970
       },
       {
-        "player_id": "71a719be-e4c4-4b55-abe6-2a33135d4d18",
-        "id": "4923"
+        "player_id": "16bd57cd-1af6-42ea-abfd-23a1051c73c1",
+        "id": 7600
       }
     ],
     "rig": [
@@ -2210,14 +2210,14 @@
         "player_id": "05a6d08b-b086-46f1-82ee-bdd2ca64ae31"
       }
     ],
-    "module": "3-5-2",
+    "module": "3-4-2-1",
     "coach": "Daniele De Rossi",
     "attack": 3,
     "defense": 3,
     "comment": "De Rossi è chiamato a far risalire il Genoa dopo l'esonero di Patrick Viera a causa del rendimento dei grifoni in piena zona retrocessione. Il tecnico ex Roma propone un calcio propositivo, fondato su costruzione dal basso, intensità e compattezza. Tra i principi chiave spiccano una pressione alta coordinata, fluidità tra reparti e cura dei dettagli tecnici e tattici. De Rossi potrebbe sviluppare, almeno inizialmente, il proprio progetto al Genoa optando per il sistema di gioco del 3-5-2, ma non è escluso il passaggio al 4-3-3 opzione tanto cara al tecnico romano e che rimane quella più utilizzata nel corso delle sue esperienze precedenti.",
     "sosFantaComment": "Inizio di stagione complicato per De Rossi e il suo Genoa. A destra è andato via Norton-Cuffy e sono arrivati Drameh ed Ehizibue che si contenderanno il posto, con quest'ultimo favorito. A sinistra Ellertsson parte nettamente avanti su Mitaj. In caso di 3-5-2 come si è visto Osmajic può trovare spazio accanto a Colombo: parte lui avanti su El Shaarawy e Vitinha. Sono di fatto loro tre per un posto. Occhio a Meichtry, è promettente e prova a insidiare Sow, può giocare anche più avanzato da vice Baldanzi. Stesso dicasi per Traoré, che in partenza non è un titolare. ",
     "created_at": "2026-07-21T13:42:48.789Z",
-    "updated_at": "2026-09-22T10:39:33.328Z",
+    "updated_at": "2026-11-23T22:38:22.618Z",
     "up": [
       {
         "player_id": "3ba8d8de-4fd3-47ed-90b2-00ec9789f80c",
@@ -2283,11 +2283,11 @@
       {
         "players": [
           {
-            "player_id": "16bd57cd-1af6-42ea-abfd-23a1051c73c1",
+            "player_id": "05a6d08b-b086-46f1-82ee-bdd2ca64ae31",
             "perc": 51
           },
           {
-            "player_id": "0992e869-48bb-4438-9aa9-d212c238371c",
+            "player_id": "a34e2242-a8a2-479d-af45-90a3b6646223",
             "perc": 49
           }
         ]
@@ -2295,23 +2295,11 @@
       {
         "players": [
           {
-            "player_id": "72dbbe00-ef42-4579-ba5e-74ac1cc06c8c",
-            "perc": 60
-          },
-          {
-            "player_id": "bfba87ce-190b-4eab-a120-44416eb074c5",
-            "perc": 40
-          }
-        ]
-      },
-      {
-        "players": [
-          {
-            "player_id": "3d49b936-1e2d-4daa-9b4c-5da87824531d",
+            "player_id": "a694ffa3-522e-4fb2-bbb0-074554dcec12",
             "perc": 55
           },
           {
-            "player_id": "47b98f36-e016-472c-b964-68dacaa07147",
+            "player_id": "4c0a9b1a-5827-48ac-814d-ed4b602d3c8c",
             "perc": 45
           }
         ]
@@ -2319,11 +2307,23 @@
       {
         "players": [
           {
-            "player_id": "1d51f5cf-e44d-402b-9882-54dab796376e",
+            "player_id": "965c9759-e219-4f4d-a30c-18a8db5cc2b8",
             "perc": 51
           },
           {
-            "player_id": "3490cc1c-60cd-4cb8-b606-45c9c3279e4c",
+            "player_id": "b78e7afa-38ee-4ac6-9609-3bbbe2d24b26",
+            "perc": 49
+          }
+        ]
+      },
+      {
+        "players": [
+          {
+            "player_id": "3bd6183c-6649-49f7-883f-17ff1646b2da",
+            "perc": 51
+          },
+          {
+            "player_id": "0992e869-48bb-4438-9aa9-d212c238371c",
             "perc": 49
           }
         ]
@@ -2363,7 +2363,7 @@
       }
     ],
     "createdAt": "2026-07-21T13:42:48.789Z",
-    "updatedAt": "2026-09-22T10:39:33.328Z"
+    "updatedAt": "2026-11-23T22:38:22.618Z"
   },
   {
     "team": "JUV",

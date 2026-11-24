@@ -4765,8 +4765,8 @@ export const SOS_TEAMS_DATA = {
     "accentColor": "#ffffff",
     "coach": "Daniele De Rossi",
     "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/De%20Rossi.webp",
-    "defaultFormation": "3-5-2",
-    "module": "3-5-2",
+    "defaultFormation": "3-4-2-1",
+    "module": "3-4-2-1",
     "attackRating": 3.0,
     "defenseRating": 3.0,
     "comment": "De Rossi è chiamato a far risalire il Genoa dopo l'esonero di Patrick Viera a causa del rendimento dei grifoni in piena zona retrocessione. Il tecnico ex Roma propone un calcio propositivo, fondato su costruzione dal basso, intensità e compattezza. Tra i principi chiave spiccano una pressione alta coordinata, fluidità tra reparti e cura dei dettagli tecnici e tattici. De Rossi potrebbe sviluppare, almeno inizialmente, il proprio progetto al Genoa optando per il sistema di gioco del 3-5-2, ma non è escluso il passaggio al 4-3-3 opzione tanto cara al tecnico romano e che rimane quella più utilizzata nel corso delle sue esperienze precedenti.",
@@ -4837,9 +4837,9 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
-        "playerId": "3d49b936-1e2d-4daa-9b4c-5da87824531d",
-        "csvId": 5946,
-        "name": "Sow",
+        "playerId": "965c9759-e219-4f4d-a30c-18a8db5cc2b8",
+        "csvId": 2857,
+        "name": "Traorè Hj.",
         "role": "C"
       },
       {
@@ -4855,15 +4855,15 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
+        "playerId": "05a6d08b-b086-46f1-82ee-bdd2ca64ae31",
+        "csvId": 4970,
+        "name": "Messias",
+        "role": "C"
+      },
+      {
         "playerId": "16bd57cd-1af6-42ea-abfd-23a1051c73c1",
         "csvId": 7600,
         "name": "Osmajic",
-        "role": "A"
-      },
-      {
-        "playerId": "71a719be-e4c4-4b55-abe6-2a33135d4d18",
-        "csvId": "4923",
-        "name": "Colombo",
         "role": "A"
       }
     ],
@@ -4916,57 +4916,57 @@ export const SOS_TEAMS_DATA = {
     "ballottaggi": [
       [
         {
-          "playerId": "16bd57cd-1af6-42ea-abfd-23a1051c73c1",
-          "name": "Osmajic",
-          "role": "A",
+          "playerId": "05a6d08b-b086-46f1-82ee-bdd2ca64ae31",
+          "name": "Messias",
+          "role": "C",
           "perc": 51
         },
         {
-          "playerId": "0992e869-48bb-4438-9aa9-d212c238371c",
-          "name": "El Shaarawy",
-          "role": "C",
+          "playerId": "a34e2242-a8a2-479d-af45-90a3b6646223",
+          "name": "Vitinha O.",
+          "role": "A",
           "perc": 49
         }
       ],
       [
         {
-          "playerId": "72dbbe00-ef42-4579-ba5e-74ac1cc06c8c",
-          "name": "Ellertsson",
-          "role": "C",
-          "perc": 60
-        },
-        {
-          "playerId": "bfba87ce-190b-4eab-a120-44416eb074c5",
-          "name": "Mitaj",
-          "role": "D",
-          "perc": 40
-        }
-      ],
-      [
-        {
-          "playerId": "3d49b936-1e2d-4daa-9b4c-5da87824531d",
-          "name": "Sow",
+          "playerId": "a694ffa3-522e-4fb2-bbb0-074554dcec12",
+          "name": "Frendrup",
           "role": "C",
           "perc": 55
         },
         {
-          "playerId": "47b98f36-e016-472c-b964-68dacaa07147",
-          "name": "Meichtry",
+          "playerId": "4c0a9b1a-5827-48ac-814d-ed4b602d3c8c",
+          "name": "Amorim",
           "role": "C",
           "perc": 45
         }
       ],
       [
         {
-          "playerId": "1d51f5cf-e44d-402b-9882-54dab796376e",
-          "name": "Ehizibue",
-          "role": "D",
+          "playerId": "965c9759-e219-4f4d-a30c-18a8db5cc2b8",
+          "name": "Traorè Hj.",
+          "role": "C",
           "perc": 51
         },
         {
-          "playerId": "3490cc1c-60cd-4cb8-b606-45c9c3279e4c",
-          "name": "Drameh",
-          "role": "D",
+          "playerId": "b78e7afa-38ee-4ac6-9609-3bbbe2d24b26",
+          "name": "Wiafe",
+          "role": "C",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "3bd6183c-6649-49f7-883f-17ff1646b2da",
+          "name": "Baldanzi",
+          "role": "C",
+          "perc": 51
+        },
+        {
+          "playerId": "0992e869-48bb-4438-9aa9-d212c238371c",
+          "name": "El Shaarawy",
+          "role": "C",
           "perc": 49
         }
       ]
@@ -5027,8 +5027,8 @@ export const SOS_TEAMS_DATA = {
     "accentColor": "#ffffff",
     "coach": "Daniele De Rossi",
     "coachImage": "https://cdn.falsesoftware.com/cartoons/coach/De%20Rossi.webp",
-    "defaultFormation": "3-5-2",
-    "module": "3-5-2",
+    "defaultFormation": "3-4-2-1",
+    "module": "3-4-2-1",
     "attackRating": 3.0,
     "defenseRating": 3.0,
     "comment": "De Rossi è chiamato a far risalire il Genoa dopo l'esonero di Patrick Viera a causa del rendimento dei grifoni in piena zona retrocessione. Il tecnico ex Roma propone un calcio propositivo, fondato su costruzione dal basso, intensità e compattezza. Tra i principi chiave spiccano una pressione alta coordinata, fluidità tra reparti e cura dei dettagli tecnici e tattici. De Rossi potrebbe sviluppare, almeno inizialmente, il proprio progetto al Genoa optando per il sistema di gioco del 3-5-2, ma non è escluso il passaggio al 4-3-3 opzione tanto cara al tecnico romano e che rimane quella più utilizzata nel corso delle sue esperienze precedenti.",
@@ -5099,9 +5099,9 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
-        "playerId": "3d49b936-1e2d-4daa-9b4c-5da87824531d",
-        "csvId": 5946,
-        "name": "Sow",
+        "playerId": "965c9759-e219-4f4d-a30c-18a8db5cc2b8",
+        "csvId": 2857,
+        "name": "Traorè Hj.",
         "role": "C"
       },
       {
@@ -5117,15 +5117,15 @@ export const SOS_TEAMS_DATA = {
         "role": "C"
       },
       {
+        "playerId": "05a6d08b-b086-46f1-82ee-bdd2ca64ae31",
+        "csvId": 4970,
+        "name": "Messias",
+        "role": "C"
+      },
+      {
         "playerId": "16bd57cd-1af6-42ea-abfd-23a1051c73c1",
         "csvId": 7600,
         "name": "Osmajic",
-        "role": "A"
-      },
-      {
-        "playerId": "71a719be-e4c4-4b55-abe6-2a33135d4d18",
-        "csvId": "4923",
-        "name": "Colombo",
         "role": "A"
       }
     ],
@@ -5178,57 +5178,57 @@ export const SOS_TEAMS_DATA = {
     "ballottaggi": [
       [
         {
-          "playerId": "16bd57cd-1af6-42ea-abfd-23a1051c73c1",
-          "name": "Osmajic",
-          "role": "A",
+          "playerId": "05a6d08b-b086-46f1-82ee-bdd2ca64ae31",
+          "name": "Messias",
+          "role": "C",
           "perc": 51
         },
         {
-          "playerId": "0992e869-48bb-4438-9aa9-d212c238371c",
-          "name": "El Shaarawy",
-          "role": "C",
+          "playerId": "a34e2242-a8a2-479d-af45-90a3b6646223",
+          "name": "Vitinha O.",
+          "role": "A",
           "perc": 49
         }
       ],
       [
         {
-          "playerId": "72dbbe00-ef42-4579-ba5e-74ac1cc06c8c",
-          "name": "Ellertsson",
-          "role": "C",
-          "perc": 60
-        },
-        {
-          "playerId": "bfba87ce-190b-4eab-a120-44416eb074c5",
-          "name": "Mitaj",
-          "role": "D",
-          "perc": 40
-        }
-      ],
-      [
-        {
-          "playerId": "3d49b936-1e2d-4daa-9b4c-5da87824531d",
-          "name": "Sow",
+          "playerId": "a694ffa3-522e-4fb2-bbb0-074554dcec12",
+          "name": "Frendrup",
           "role": "C",
           "perc": 55
         },
         {
-          "playerId": "47b98f36-e016-472c-b964-68dacaa07147",
-          "name": "Meichtry",
+          "playerId": "4c0a9b1a-5827-48ac-814d-ed4b602d3c8c",
+          "name": "Amorim",
           "role": "C",
           "perc": 45
         }
       ],
       [
         {
-          "playerId": "1d51f5cf-e44d-402b-9882-54dab796376e",
-          "name": "Ehizibue",
-          "role": "D",
+          "playerId": "965c9759-e219-4f4d-a30c-18a8db5cc2b8",
+          "name": "Traorè Hj.",
+          "role": "C",
           "perc": 51
         },
         {
-          "playerId": "3490cc1c-60cd-4cb8-b606-45c9c3279e4c",
-          "name": "Drameh",
-          "role": "D",
+          "playerId": "b78e7afa-38ee-4ac6-9609-3bbbe2d24b26",
+          "name": "Wiafe",
+          "role": "C",
+          "perc": 49
+        }
+      ],
+      [
+        {
+          "playerId": "3bd6183c-6649-49f7-883f-17ff1646b2da",
+          "name": "Baldanzi",
+          "role": "C",
+          "perc": 51
+        },
+        {
+          "playerId": "0992e869-48bb-4438-9aa9-d212c238371c",
+          "name": "El Shaarawy",
+          "role": "C",
           "perc": 49
         }
       ]
