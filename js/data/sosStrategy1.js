@@ -353,6 +353,7 @@ export const SOS_STRATEGY_1 = {
     "yeboah j.": "tier_a_13",
     "yeboahj": "tier_a_13",
     "trepy": "tier_a_19",
+    "pellegri": "tier_a_19",
     "milik": "tier_a_19",
     "lisman": "tier_a_19",
     "lauberbach": "tier_a_19",

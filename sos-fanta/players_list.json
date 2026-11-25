@@ -5626,6 +5626,33 @@
       }
     },
     {
+      "player_id": "53e1c81b-3147-4d13-ae81-977f556b52ba",
+      "sportsmonks_id": 133957,
+      "fantalab_id": "53e1c81b-3147-4d13-ae81-977f556b52ba",
+      "fantacalcio_id": 2103,
+      "name": "Pellegri",
+      "full_name": "Pietro Pellegri",
+      "team_id": 613,
+      "team_name": "Torino",
+      "team_short": "TOR",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/613.png",
+      "role": "A",
+      "mantra_roles": [
+        "Pc"
+      ],
+      "player_image": "https://cdn.falsesoftware.com/players/133957/v1.webp",
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 7,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": 6.11,
+        "mv": 6.11
+      }
+    },
+    {
       "player_id": "8a0855b4-5bbc-45b0-95e7-ea1ebd420246",
       "sportsmonks_id": 540256,
       "fantalab_id": "8a0855b4-5bbc-45b0-95e7-ea1ebd420246",
@@ -13788,6 +13815,33 @@
       }
     },
     {
+      "player_id": "69e150cf-2141-415b-a073-cdb374683d1a",
+      "sportsmonks_id": 37773483,
+      "fantalab_id": "69e150cf-2141-415b-a073-cdb374683d1a",
+      "fantacalcio_id": 7653,
+      "name": "Sonzogni",
+      "full_name": "Mattia Sonzogni",
+      "team_id": 708,
+      "team_name": "Atalanta",
+      "team_short": "ATA",
+      "team_image": "https://cdn.falsesoftware.com/teams/atalanta.png",
+      "role": "P",
+      "mantra_roles": [
+        "Por"
+      ],
+      "player_image": null,
+      "league": "serie_a",
+      "league_id": 384,
+      "league_name": "Serie A",
+      "presenze": 7,
+      "is_in_listone": true,
+      "is_in_listone_euroleghe": false,
+      "stats": {
+        "fmv": null,
+        "mv": null
+      }
+    },
+    {
       "player_id": "aeed69d5-c370-4108-929d-ba03ac11e1ae",
       "sportsmonks_id": 8417254,
       "fantalab_id": "aeed69d5-c370-4108-929d-ba03ac11e1ae",
@@ -15081,7 +15135,7 @@
     "perc_mantra_12"
   ],
   "pagination": {
-    "total": 541,
+    "total": 543,
     "limit": 1000,
     "offset": 0
   },
